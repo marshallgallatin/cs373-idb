@@ -1,0 +1,38 @@
+version: "2"
+
+# A Docker Compose file for configuration of the production environment
+
+services:
+  app:
+    extends:
+      file: docker-compose-common.yml
+      service: app
+    image: marshallgallatin/cs373idb_app
+    env_file: pythonwebapp-mysql-prod.env
+    environment:
+      # Always deploy to n1 so the lb always has the same IP address. This is
+      # just for convenience and isn't strictly necessary.
+      - "constraint:node==*n1"
+
+  db:
+    extends:
+      file: docker-compose-common.yml
+      service: db
+    image: marshallgallatin/cs373idb_db
+    expose:
+      # Expose port 3306 so it's only visibile on the container, not the host
+      - "3306"
+    env_file:
+      - pythonwebapp-mysql-prod.env
+      - pythonwebapp-mysql-root-prod.env
+    volumes_from:
+      # Mount the volumes from the data container to store our MySQL files
+      - data
+
+  data:
+    extends:
+      file: docker-compose-common.yml
+      service: data
+
+networks:
+  backend: {}
