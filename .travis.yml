@@ -7,11 +7,15 @@ python:
 
 sudo: false
 
+notifications:
+  slack: swedishchefs:nnxnMlhhs96km2J9KozWHPiB
+
 install:
     - pip install --upgrade pip
     - pip --version
     - pip install coverage
-    - pip install Flask    
+    - pip install Flask
+    - pip install sqlalchemy 
 
 before_script:
     - uname -a
