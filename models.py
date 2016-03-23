@@ -1,7 +1,7 @@
 from sqlalchemy import Column, ForeignKey, Integer, Float, String, Table, Interval, Enum, Boolean, CheckConstraint
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
-from enums import enumToTuple, Continent
+from enums import enumToTuple, Continent, Cuisine
 from constraints import isPercentage, isNonnegative, isNotNull
 
 Base = declarative_base()
@@ -21,6 +21,7 @@ class Recipe(Base):
     Optional Attributes:
         imageURI (str): The URI of the image for this recipe.
         instructions (str): The instructions for the recipe as a str.
+        cuisine (str): The region where the recipe originates from.
         preparationMinutes (int): The amount of time, in minutes, the recipe should take to prepare.
         cookingMinutes (int): The amount of time, in minutes, the recipe will need to cook.
         readyInMinutes (int): The sum of preparationMinutes and cookingMinutes, if given.
@@ -46,6 +47,7 @@ class Recipe(Base):
 
     imageURI     = Column(String, nullable=True)
     instructions = Column(String, nullable=True) #@TODO: Make this cleaner/formatted
+    cuisine      = Column(Enum(*enumToTuple(Cuisine)), nullable=True)
 
     preparationMinutes = Column(Integer, nullable=True) # Add constaint
     cookingMinutes     = Column(Integer, nullable=True) # Add constaint
