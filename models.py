@@ -123,7 +123,7 @@ class NutrionalContent(Base):
         - 'totalCarbohydratesInGrams' is non-negative
         - 'dietaryFiberInGrams' is non-negative
         - 'sugarInGrams' is non-negative
-        - 'protienInGrams' is non-negative
+        - 'proteinInGrams' is non-negative
         - 'vitaminAPercentage' is in the range [0.0, 100.0]
         - 'vitaminCPercentage' is in the range [0.0, 100.0]
         - 'calciumPercentage' is in the range [0.0, 100.0]
@@ -147,7 +147,7 @@ class NutrionalContent(Base):
     totalCarbohydratesInGrams = Column(Integer, isNonnegative('totalCarbohydratesInGrams'), nullable=False)
     dietaryFiberInGrams       = Column(Float,   isNonnegative('dietaryFiberInGrams')      , nullable=False)
     sugarInGrams              = Column(Float,   isNonnegative('sugarInGrams')             , nullable=False)
-    protienInGrams            = Column(Float,   isNonnegative('protienInGrams')           , nullable=False)
+    proteinInGrams            = Column(Float,   isNonnegative('protienInGrams')           , nullable=False)
     vitaminAPercentage        = Column(Integer, isPercentage('vitaminAPercentage')        , nullable=False)
     vitaminCPercentage        = Column(Integer, isPercentage('vitaminCPercentage')        , nullable=False)
     calciumPercentage         = Column(Integer, isPercentage('calciumPercentage')         , nullable=False)
