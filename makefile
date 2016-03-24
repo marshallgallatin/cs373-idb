@@ -56,8 +56,8 @@ test: tests.py
 IDB1.log:
 	git log > IDB1.log
 	
-model.html: models.py
-	pydoc3 -w models
+models.html: models.py
+	pydoc -w models
 
 # Variables needed for the docker-* targets
 IMAGE_PREFIX := cs373idb

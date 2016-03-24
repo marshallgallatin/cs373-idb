@@ -1,0 +1,415 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module models</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>models</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/marshall/git/cs373/cs373-idb/models.py">/home/marshall/git/cs373/cs373-idb/models.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial">sqlalchemy.ext.declarative.api.Base(<a href="__builtin__.html#object">__builtin__.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="models.html#Ingredient">Ingredient</a>
+</font></dt><dt><font face="helvetica, arial"><a href="models.html#IngredientsInRecipes">IngredientsInRecipes</a>
+</font></dt><dt><font face="helvetica, arial"><a href="models.html#NutritionalContent">NutritionalContent</a>
+</font></dt><dt><font face="helvetica, arial"><a href="models.html#Recipe">Recipe</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Ingredient">class <strong>Ingredient</strong></a>(sqlalchemy.ext.declarative.api.Base)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>The&nbsp;<a href="#Ingredient">Ingredient</a>&nbsp;Table<br>
+The&nbsp;<a href="#Ingredient">Ingredient</a>&nbsp;table&nbsp;has&nbsp;entries&nbsp;for&nbsp;an&nbsp;ingredient.<br>
+&nbsp;<br>
+Required&nbsp;Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(str):&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;ingredient.<br>
+&nbsp;<br>
+Relational&nbsp;Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;recipes&nbsp;(<a href="#IngredientsInRecipes">IngredientsInRecipes</a>):&nbsp;A&nbsp;list&nbsp;of&nbsp;<a href="#IngredientsInRecipes">IngredientsInRecipes</a>&nbsp;objects&nbsp;that&nbsp;apply&nbsp;to&nbsp;this&nbsp;ingredient.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;relevant&nbsp;information&nbsp;for&nbsp;this&nbsp;object&nbsp;is&nbsp;everything&nbsp;but&nbsp;'ingredient',&nbsp;since&nbsp;'ingredient'&nbsp;will&nbsp;refer<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;this&nbsp;object.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;nutrional_content(NutrionalContent):&nbsp;The&nbsp;nutrional&nbsp;content&nbsp;object&nbsp;that&nbsp;describes&nbsp;the&nbsp;nutrional&nbsp;content&nbsp;of&nbsp;the&nbsp;ingredient.<br>
+&nbsp;<br>
+Optional&nbsp;Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;scientific_name&nbsp;(str):&nbsp;The&nbsp;scientific&nbsp;name&nbsp;of&nbsp;the&nbsp;ingredient.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;continent_of_origin&nbsp;(Continent):&nbsp;The&nbsp;continent&nbsp;that&nbsp;the&nbsp;ingredient&nbsp;originates&nbsp;from.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Valid&nbsp;values&nbsp;are&nbsp;Africa,&nbsp;Antartica,&nbsp;Asia,&nbsp;Australia,&nbsp;Europe,&nbsp;NorthAmerica,&nbsp;and&nbsp;SouthAmerica.<br>
+&nbsp;<br>
+Single&nbsp;Column&nbsp;Constraints:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None.<br>
+&nbsp;<br>
+Table&nbsp;Constraints:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="models.html#Ingredient">Ingredient</a></dd>
+<dd>sqlalchemy.ext.declarative.api.Base</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Ingredient-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt><dd><tt>A&nbsp;simple&nbsp;constructor&nbsp;that&nbsp;allows&nbsp;initialization&nbsp;from&nbsp;kwargs.<br>
+&nbsp;<br>
+Sets&nbsp;attributes&nbsp;on&nbsp;the&nbsp;constructed&nbsp;instance&nbsp;using&nbsp;the&nbsp;names&nbsp;and<br>
+values&nbsp;in&nbsp;``kwargs``.<br>
+&nbsp;<br>
+Only&nbsp;keys&nbsp;that&nbsp;are&nbsp;present&nbsp;as<br>
+attributes&nbsp;of&nbsp;the&nbsp;instance's&nbsp;class&nbsp;are&nbsp;allowed.&nbsp;These&nbsp;could&nbsp;be,<br>
+for&nbsp;example,&nbsp;any&nbsp;mapped&nbsp;columns&nbsp;or&nbsp;relationships.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>continent_of_origin</strong></dt>
+</dl>
+<dl><dt><strong>id</strong></dt>
+</dl>
+<dl><dt><strong>name</strong></dt>
+</dl>
+<dl><dt><strong>nutritional_content</strong></dt>
+</dl>
+<dl><dt><strong>recipes</strong></dt>
+</dl>
+<dl><dt><strong>scientific_name</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__mapper__</strong> = &lt;Mapper at 0x7fdec849a950; Ingredient&gt;</dl>
+
+<dl><dt><strong>__table__</strong> = Table('Ingredient', MetaData(bind=None), Column(...'Continent'&gt;'), table=&lt;Ingredient&gt;), schema=None)</dl>
+
+<dl><dt><strong>__tablename__</strong> = 'Ingredient'</dl>
+
+<hr>
+Data descriptors inherited from sqlalchemy.ext.declarative.api.Base:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from sqlalchemy.ext.declarative.api.Base:<br>
+<dl><dt><strong>metadata</strong> = MetaData(bind=None)</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="IngredientsInRecipes">class <strong>IngredientsInRecipes</strong></a>(sqlalchemy.ext.declarative.api.Base)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>The&nbsp;<a href="#IngredientsInRecipes">IngredientsInRecipes</a>&nbsp;Table<br>
+The&nbsp;<a href="#IngredientsInRecipes">IngredientsInRecipes</a>&nbsp;table&nbsp;has&nbsp;entries&nbsp;for&nbsp;each&nbsp;ingredient&nbsp;in&nbsp;each&nbsp;recipe.<br>
+&nbsp;<br>
+Required&nbsp;Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;recipe_id&nbsp;(int)(ForeignKey):&nbsp;The&nbsp;id&nbsp;of&nbsp;the&nbsp;recipe&nbsp;in&nbsp;the&nbsp;'<a href="#Recipe">Recipe</a>'&nbsp;table.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ingredient_id&nbsp;(int)(ForeignKey):&nbsp;The&nbsp;id&nbsp;of&nbsp;the&nbsp;ingredient&nbsp;in&nbsp;the&nbsp;'<a href="#Ingredient">Ingredient</a>'&nbsp;table.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;original_string&nbsp;(str):&nbsp;The&nbsp;ingredient&nbsp;string&nbsp;as&nbsp;it&nbsp;appears&nbsp;in&nbsp;the&nbsp;recipe.&nbsp;(E.g.&nbsp;"One&nbsp;half&nbsp;cup&nbsp;of&nbsp;sugar.")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ingredient_index&nbsp;(int):&nbsp;The&nbsp;index&nbsp;the&nbsp;ingredient&nbsp;appears&nbsp;in&nbsp;the&nbsp;recipe's&nbsp;ingredient&nbsp;list,&nbsp;0-based.<br>
+&nbsp;<br>
+Relational&nbsp;Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;recipe&nbsp;(<a href="#Recipe">Recipe</a>):&nbsp;The&nbsp;<a href="#Recipe">Recipe</a>&nbsp;object&nbsp;for&nbsp;this&nbsp;entry.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ingredient&nbsp;(<a href="#Ingredient">Ingredient</a>):&nbsp;The&nbsp;<a href="#Ingredient">Ingredient</a>&nbsp;object&nbsp;for&nbsp;this&nbsp;entry<br>
+&nbsp;<br>
+Optional&nbsp;Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;amount&nbsp;(float):&nbsp;The&nbsp;amount&nbsp;of&nbsp;the&nbsp;ingredient&nbsp;in&nbsp;units&nbsp;of&nbsp;'unit'.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;unit&nbsp;(str):&nbsp;The&nbsp;string&nbsp;representation&nbsp;of&nbsp;the&nbsp;unit&nbsp;the&nbsp;amount&nbsp;is&nbsp;in.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;unit_short&nbsp;(str):&nbsp;The&nbsp;abbreviated&nbsp;version&nbsp;of&nbsp;unit.<br>
+&nbsp;<br>
+Single&nbsp;Column&nbsp;Constraints:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None.<br>
+&nbsp;<br>
+Table&nbsp;Constraints:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="models.html#IngredientsInRecipes">IngredientsInRecipes</a></dd>
+<dd>sqlalchemy.ext.declarative.api.Base</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="IngredientsInRecipes-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt><dd><tt>A&nbsp;simple&nbsp;constructor&nbsp;that&nbsp;allows&nbsp;initialization&nbsp;from&nbsp;kwargs.<br>
+&nbsp;<br>
+Sets&nbsp;attributes&nbsp;on&nbsp;the&nbsp;constructed&nbsp;instance&nbsp;using&nbsp;the&nbsp;names&nbsp;and<br>
+values&nbsp;in&nbsp;``kwargs``.<br>
+&nbsp;<br>
+Only&nbsp;keys&nbsp;that&nbsp;are&nbsp;present&nbsp;as<br>
+attributes&nbsp;of&nbsp;the&nbsp;instance's&nbsp;class&nbsp;are&nbsp;allowed.&nbsp;These&nbsp;could&nbsp;be,<br>
+for&nbsp;example,&nbsp;any&nbsp;mapped&nbsp;columns&nbsp;or&nbsp;relationships.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>amount</strong></dt>
+</dl>
+<dl><dt><strong>ingredient</strong></dt>
+</dl>
+<dl><dt><strong>ingredient_id</strong></dt>
+</dl>
+<dl><dt><strong>ingredient_index</strong></dt>
+</dl>
+<dl><dt><strong>original_string</strong></dt>
+</dl>
+<dl><dt><strong>recipe</strong></dt>
+</dl>
+<dl><dt><strong>recipe_id</strong></dt>
+</dl>
+<dl><dt><strong>unit</strong></dt>
+</dl>
+<dl><dt><strong>unit_short</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__mapper__</strong> = &lt;Mapper at 0x7fdec844ad50; IngredientsInRecipes&gt;</dl>
+
+<dl><dt><strong>__table__</strong> = Table('IngredientsInRecipes', MetaData(bind=None...redientsInRecipes&gt;, nullable=False), schema=None)</dl>
+
+<dl><dt><strong>__tablename__</strong> = 'IngredientsInRecipes'</dl>
+
+<hr>
+Data descriptors inherited from sqlalchemy.ext.declarative.api.Base:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from sqlalchemy.ext.declarative.api.Base:<br>
+<dl><dt><strong>metadata</strong> = MetaData(bind=None)</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="NutritionalContent">class <strong>NutritionalContent</strong></a>(sqlalchemy.ext.declarative.api.Base)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>The&nbsp;<a href="#NutritionalContent">NutritionalContent</a>&nbsp;Table<br>
+The&nbsp;<a href="#NutritionalContent">NutritionalContent</a>&nbsp;table&nbsp;has&nbsp;entries&nbsp;that&nbsp;describe&nbsp;the&nbsp;nutrional&nbsp;information&nbsp;of&nbsp;ingredients.<br>
+&nbsp;<br>
+Required&nbsp;Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None<br>
+&nbsp;<br>
+Relational&nbsp;Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ingredient&nbsp;(<a href="#Ingredient">Ingredient</a>):&nbsp;The&nbsp;ingredient&nbsp;object&nbsp;this&nbsp;content&nbsp;is&nbsp;describing.<br>
+&nbsp;<br>
+Optional&nbsp;Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;serving_size&nbsp;(float):&nbsp;The&nbsp;amount&nbsp;of&nbsp;the&nbsp;ingredient&nbsp;that&nbsp;is&nbsp;generally&nbsp;served,&nbsp;in&nbsp;units&nbsp;of&nbsp;'serving_size_units'.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;serving_size_units&nbsp;(str)&nbsp;:&nbsp;The&nbsp;units&nbsp;that&nbsp;the&nbsp;'serving_size'&nbsp;is&nbsp;in.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;calories&nbsp;(int):&nbsp;The&nbsp;number&nbsp;of&nbsp;Calories&nbsp;in&nbsp;one&nbsp;serving.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;...&nbsp;(The&nbsp;rest&nbsp;are&nbsp;assumed&nbsp;to&nbsp;be&nbsp;self-documenting)<br>
+&nbsp;<br>
+Single&nbsp;Column&nbsp;Constraints:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;'serving_size'&nbsp;is&nbsp;non-negative<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;'calories'&nbsp;is&nbsp;non-negative<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;'total_fat_in_grams'&nbsp;is&nbsp;non-negative<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;'saturated_fat_in_grams'&nbsp;is&nbsp;non-negative<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;'cholesterol_in_milligrams'&nbsp;is&nbsp;non-negative<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;'sodium_in_milligrams'&nbsp;is&nbsp;non-negative<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;'total_carbohydrates_in_grams'&nbsp;is&nbsp;non-negative<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;'dietary_fiber_in_grams'&nbsp;is&nbsp;non-negative<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;'sugar_in_grams'&nbsp;is&nbsp;non-negative<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;'protein_in_grams'&nbsp;is&nbsp;non-negative<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;'vitamin_a_percentage'&nbsp;is&nbsp;in&nbsp;the&nbsp;range&nbsp;[0.0,&nbsp;100.0]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;'vitamin_c_percentage'&nbsp;is&nbsp;in&nbsp;the&nbsp;range&nbsp;[0.0,&nbsp;100.0]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;'calcium_percentage'&nbsp;is&nbsp;in&nbsp;the&nbsp;range&nbsp;[0.0,&nbsp;100.0]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;'iron_percentage'&nbsp;is&nbsp;in&nbsp;the&nbsp;range&nbsp;[0.0,&nbsp;100.0]<br>
+&nbsp;<br>
+Table&nbsp;Constraints:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="models.html#NutritionalContent">NutritionalContent</a></dd>
+<dd>sqlalchemy.ext.declarative.api.Base</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="NutritionalContent-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt><dd><tt>A&nbsp;simple&nbsp;constructor&nbsp;that&nbsp;allows&nbsp;initialization&nbsp;from&nbsp;kwargs.<br>
+&nbsp;<br>
+Sets&nbsp;attributes&nbsp;on&nbsp;the&nbsp;constructed&nbsp;instance&nbsp;using&nbsp;the&nbsp;names&nbsp;and<br>
+values&nbsp;in&nbsp;``kwargs``.<br>
+&nbsp;<br>
+Only&nbsp;keys&nbsp;that&nbsp;are&nbsp;present&nbsp;as<br>
+attributes&nbsp;of&nbsp;the&nbsp;instance's&nbsp;class&nbsp;are&nbsp;allowed.&nbsp;These&nbsp;could&nbsp;be,<br>
+for&nbsp;example,&nbsp;any&nbsp;mapped&nbsp;columns&nbsp;or&nbsp;relationships.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>calcium_percentage</strong></dt>
+</dl>
+<dl><dt><strong>calories</strong></dt>
+</dl>
+<dl><dt><strong>cholesterol_in_milligrams</strong></dt>
+</dl>
+<dl><dt><strong>dietary_fiber_in_grams</strong></dt>
+</dl>
+<dl><dt><strong>id</strong></dt>
+</dl>
+<dl><dt><strong>ingredient</strong></dt>
+</dl>
+<dl><dt><strong>ingredient_id</strong></dt>
+</dl>
+<dl><dt><strong>iron_percentage</strong></dt>
+</dl>
+<dl><dt><strong>protein_in_grams</strong></dt>
+</dl>
+<dl><dt><strong>saturated_fat_in_grams</strong></dt>
+</dl>
+<dl><dt><strong>serving_size</strong></dt>
+</dl>
+<dl><dt><strong>serving_size_units</strong></dt>
+</dl>
+<dl><dt><strong>sodium_in_milligrams</strong></dt>
+</dl>
+<dl><dt><strong>sugar_in_grams</strong></dt>
+</dl>
+<dl><dt><strong>total_carbohydrates_in_grams</strong></dt>
+</dl>
+<dl><dt><strong>total_fat_in_grams</strong></dt>
+</dl>
+<dl><dt><strong>vitamin_a_percentage</strong></dt>
+</dl>
+<dl><dt><strong>vitamin_c_percentage</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__mapper__</strong> = &lt;Mapper at 0x7fdec844a650; NutritionalContent&gt;</dl>
+
+<dl><dt><strong>__table__</strong> = Table('Nutritional Content', MetaData(bind=None)...tritional Content&gt;, nullable=False), schema=None)</dl>
+
+<dl><dt><strong>__tablename__</strong> = 'Nutritional Content'</dl>
+
+<hr>
+Data descriptors inherited from sqlalchemy.ext.declarative.api.Base:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from sqlalchemy.ext.declarative.api.Base:<br>
+<dl><dt><strong>metadata</strong> = MetaData(bind=None)</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Recipe">class <strong>Recipe</strong></a>(sqlalchemy.ext.declarative.api.Base)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>The&nbsp;<a href="#Recipe">Recipe</a>&nbsp;Table<br>
+The&nbsp;<a href="#Recipe">Recipe</a>&nbsp;table&nbsp;has&nbsp;entries&nbsp;for&nbsp;each&nbsp;<a href="#Recipe">Recipe</a>&nbsp;with&nbsp;the&nbsp;following&nbsp;attributes:<br>
+&nbsp;<br>
+Required&nbsp;Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;title&nbsp;(str):&nbsp;The&nbsp;title&nbsp;of&nbsp;the&nbsp;recipe.<br>
+&nbsp;<br>
+Relational&nbsp;Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ingredients&nbsp;(<a href="#IngredientsInRecipes">IngredientsInRecipes</a>):&nbsp;A&nbsp;list&nbsp;of&nbsp;<a href="#IngredientsInRecipes">IngredientsInRecipes</a>&nbsp;objects&nbsp;that&nbsp;apply&nbsp;to&nbsp;this&nbsp;recipe.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;relevant&nbsp;information&nbsp;for&nbsp;this&nbsp;object&nbsp;is&nbsp;everything&nbsp;but&nbsp;'recipe',&nbsp;since&nbsp;'recipe'&nbsp;will&nbsp;refer<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;this&nbsp;object.<br>
+&nbsp;<br>
+Optional&nbsp;Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;image_uri&nbsp;(str):&nbsp;The&nbsp;URI&nbsp;of&nbsp;the&nbsp;image&nbsp;for&nbsp;this&nbsp;recipe.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;instructions&nbsp;(str):&nbsp;The&nbsp;instructions&nbsp;for&nbsp;the&nbsp;recipe&nbsp;as&nbsp;a&nbsp;str.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;cuisine&nbsp;(str):&nbsp;The&nbsp;region&nbsp;where&nbsp;the&nbsp;recipe&nbsp;originates&nbsp;from.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;preparation_minutes&nbsp;(int):&nbsp;The&nbsp;amount&nbsp;of&nbsp;time,&nbsp;in&nbsp;minutes,&nbsp;the&nbsp;recipe&nbsp;should&nbsp;take&nbsp;to&nbsp;prepare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;cooking_minutes&nbsp;(int):&nbsp;The&nbsp;amount&nbsp;of&nbsp;time,&nbsp;in&nbsp;minutes,&nbsp;the&nbsp;recipe&nbsp;will&nbsp;need&nbsp;to&nbsp;cook.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ready_in_minutes&nbsp;(int):&nbsp;The&nbsp;sum&nbsp;of&nbsp;preparationMinutes&nbsp;and&nbsp;cookingMinutes,&nbsp;if&nbsp;given.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;servings&nbsp;(int):&nbsp;The&nbsp;amount&nbsp;of&nbsp;food&nbsp;made&nbsp;by&nbsp;recipe,&nbsp;where&nbsp;one&nbsp;serving&nbsp;is&nbsp;enough&nbsp;to&nbsp;feed&nbsp;one&nbsp;person.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;vegetarian&nbsp;(bool):&nbsp;False&nbsp;if&nbsp;meat&nbsp;is&nbsp;an&nbsp;ingredient,&nbsp;True&nbsp;otherwise<br>
+&nbsp;&nbsp;&nbsp;&nbsp;vegan&nbsp;(bool):&nbsp;False&nbsp;if&nbsp;an&nbsp;animal&nbsp;product&nbsp;is&nbsp;an&nbsp;ingredient,&nbsp;True&nbsp;otherwise.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;gluten_free&nbsp;(bool):&nbsp;False&nbsp;if&nbsp;an&nbsp;ingredient&nbsp;contains&nbsp;Gluten,&nbsp;True&nbsp;otherwise.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dairy_free&nbsp;(bool):&nbsp;False&nbsp;if&nbsp;an&nbsp;ingredient&nbsp;contains&nbsp;dairy&nbsp;products,&nbsp;True&nbsp;otherwise.<br>
+&nbsp;<br>
+Single&nbsp;Column&nbsp;Constraints:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None.<br>
+&nbsp;<br>
+Table&nbsp;Constraints:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;A&nbsp;recipe&nbsp;can't&nbsp;be&nbsp;vegan&nbsp;and&nbsp;not&nbsp;vegetarian,&nbsp;assuming&nbsp;both&nbsp;are&nbsp;not&nbsp;None.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;A&nbsp;recipe&nbsp;can't&nbsp;be&nbsp;vegan,&nbsp;and&nbsp;not&nbsp;dairy_free,&nbsp;assuming&nbsp;both&nbsp;are&nbsp;not&nbsp;None.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="models.html#Recipe">Recipe</a></dd>
+<dd>sqlalchemy.ext.declarative.api.Base</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Recipe-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt><dd><tt>A&nbsp;simple&nbsp;constructor&nbsp;that&nbsp;allows&nbsp;initialization&nbsp;from&nbsp;kwargs.<br>
+&nbsp;<br>
+Sets&nbsp;attributes&nbsp;on&nbsp;the&nbsp;constructed&nbsp;instance&nbsp;using&nbsp;the&nbsp;names&nbsp;and<br>
+values&nbsp;in&nbsp;``kwargs``.<br>
+&nbsp;<br>
+Only&nbsp;keys&nbsp;that&nbsp;are&nbsp;present&nbsp;as<br>
+attributes&nbsp;of&nbsp;the&nbsp;instance's&nbsp;class&nbsp;are&nbsp;allowed.&nbsp;These&nbsp;could&nbsp;be,<br>
+for&nbsp;example,&nbsp;any&nbsp;mapped&nbsp;columns&nbsp;or&nbsp;relationships.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>cuisine</strong></dt>
+</dl>
+<dl><dt><strong>dairy_free</strong></dt>
+</dl>
+<dl><dt><strong>gluten_free</strong></dt>
+</dl>
+<dl><dt><strong>id</strong></dt>
+</dl>
+<dl><dt><strong>image_uri</strong></dt>
+</dl>
+<dl><dt><strong>ingredients</strong></dt>
+</dl>
+<dl><dt><strong>instructions</strong></dt>
+</dl>
+<dl><dt><strong>ready_in_minutes</strong></dt>
+</dl>
+<dl><dt><strong>servings</strong></dt>
+</dl>
+<dl><dt><strong>title</strong></dt>
+</dl>
+<dl><dt><strong>vegan</strong></dt>
+</dl>
+<dl><dt><strong>vegetarian</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__mapper__</strong> = &lt;Mapper at 0x7fdec84880d0; Recipe&gt;</dl>
+
+<dl><dt><strong>__table__</strong> = Table('Recipe', MetaData(bind=None), Column('id'...y_free', Boolean(), table=&lt;Recipe&gt;), schema=None)</dl>
+
+<dl><dt><strong>__tablename__</strong> = 'Recipe'</dl>
+
+<hr>
+Data descriptors inherited from sqlalchemy.ext.declarative.api.Base:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from sqlalchemy.ext.declarative.api.Base:<br>
+<dl><dt><strong>metadata</strong> = MetaData(bind=None)</dl>
+
+</td></tr></table></td></tr></table>
+</body></html>
