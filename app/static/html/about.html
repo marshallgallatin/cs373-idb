@@ -93,14 +93,15 @@
 	</div>
 	<div class="row">
 		<div class="col-xs-12 col-sm-4">
-			<img class="img-responsive" src="http://minbi.github.io/cs373-blog/me.png"></img>
+			<img class="img-responsive" src="/static/img/jc-headshot.jpg"></img>
 		</div>
 		<div class="col-xs-12 col-sm-8">
-			<p>I'm an adult. Ask me whether a website is safe to visit.</p>
-			<b>Major responsibilities: </b>Front End<br />
-			Commits		<span class="label label-success">3</span><br />
+			<p>I am a senior getting my BS in CS at UT. I am very passionate about computer science, and love back-end work. My favorite languages are C++ and python, and I believe you can never have too many monitors.
+I am currently employed at National Instruments and have been working there for almost 2 years. I love a good coding challenge, and write apps in spare time (if I have any).</p>
+			<b>Major responsibilities: </b>Database, unit tests, and some API work<br />
+			Commits		<span class="label label-success">7</span><br />
 			Issues		<span class="label label-danger">0</span><br />
-			Unit tests	<span class="label label-info">0</span>
+			Unit tests	<span class="label label-info">14</span>
 		</div>
 	</div>
 	<div class="page-header">
@@ -126,10 +127,10 @@
 			<img class="img-responsive" src="http://minbi.github.io/cs373-blog/me.png"></img>
 		</div>
 		<div class="col-xs-12 col-sm-8">
-			<p>I'm an adult. Ask me whether a website is safe to visit.</p>
-			<b>Major responsibilities: </b>Front End<br />
-			Commits		<span class="label label-success">3</span><br />
-			Issues		<span class="label label-danger">0</span><br />
+			<p> I'm a senior UT Computer Science undergrad, National Instruments intern, and keyboard player in a <a href="https://www.facebook.com/TheReturnersVGM">video game music cover band</a>. I love all things computer-related, and in my time off I enjoy playing video games, cooking, and exploring the outdoors.</p>
+			<b>Major responsibilities: </b>Data analyst and API co-designer<br />
+			Commits		<span class="label label-success">12</span><br />
+			Issues		<span class="label label-danger">1</span><br />
 			Unit tests	<span class="label label-info">0</span>
 		</div>
 	</div>
@@ -166,7 +167,7 @@
 	<h2>Data</h2>
 	</div>
 	<h3>Spoonacular</h3>
-	<p>Our recipe data was scraped programmatically from Spoonacular's Food API using Python scripts. The requests package allowed us to send GET requests and parse the responses in JSON format. Here is an example of such a request using a Python script:</p>
+	<p>Our recipe data was scraped programmatically from Spoonacular's <a href="https://spoonacular.com/food-api">Food API</a> using Python scripts. The <a href="http://python-requests.org/">requests</a> package allowed us to send GET requests and parse the responses in JSON format. Here is an example of such a request using a Python script:</p>
 	<pre>#!/usr/bin/env python3
 import requests
 payload = {'Accept': 'application/json', 'X-Mashape-Key': <redacted>}
@@ -177,7 +178,7 @@ for item in data['results']:
 	</pre>
 	
 	<h3>USDA</h3>
-	<p>The US Department of Agriculture maintains an enormous Nutrient Database that is open to the public and even provides a RESTful API to programmatically lookup data. For instance, the following GET invocation will return foods and ingredients that contain the word "butter" in their database:</p>
+	<p>The US Department of Agriculture maintains an enormous <a href="https://ndb.nal.usda.gov/">Nutrient Database</a> that is open to the public and even provides a RESTful API to programmatically lookup data. For instance, the following GET invocation will return foods and ingredients that contain the word "butter" in their database:</p>
 	<pre>http://api.nal.usda.gov/ndb/search/?format=json&q=butter&sort=n&max=25&offset=0&api_key=DEMO_KEY</pre>
 	
 	<div class="page-header">
