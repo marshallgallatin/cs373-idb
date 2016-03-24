@@ -104,7 +104,7 @@
 			<tbody>
 				<tr ng:repeat="row in body.$orderBy(sort.column, sort.descending)">
 					<td>{{row.a}}</td>
-					<td>{{row.b}}</td>
+					<td onclick="top.location = 'http://swedishchef.me/' + $(this).siblings(0).html().match(/\d+/) + '.html';">{{row.b}}</td>
 					<td>{{row.c}}</td>
 					<td>{{row.d}}</td>
 					<td>{{row.e}}</td>
