@@ -7,14 +7,17 @@ Welcome to the RESTipe API. RESTipe allows users to query recipes and ingredient
 
 # Group Recipe
 
-## Recipe Collection [/recipes{?limit}]
-A resource representing all of the recipes in the database. Use the `limit` parameter to set an upper bound on the number of results.
+## Recipe Collection [/recipes{?limit,cuisine,diet}]
+A resource representing all of the recipes in the database. Use the `limit` parameter to set an upper bound on the number of results. Other query options include *cuisine* and *diet*.
 
-+ Parameters
++ Parameters  
     + limit (number, optional) - The maximum number of results to return.
         + Default: `10`
+    + cuisine (string, optional) - The type of cuisine. Example: **mexican**
+    + diet (string, optional) - The dietary restriction for which a recipe must be compliant. Example: **vegan**
+
         
-### List All Recipes [GET]
+### List Recipes [GET]
 
 + Response 200 (application/json)
 
@@ -26,7 +29,7 @@ A resource representing all of the recipes in the database. Use the `limit` para
                     "image_uri": "https://spoonacular.com/recipeImages/Jambalaya-648427.jpg",
                     "cuisine": "cajun",
                     "ready_in_minutes": 45,
-                    "servings": 10,
+                    "servings": 10
                 },
                 {
                     "id": 2,
@@ -56,7 +59,7 @@ A recipe contains a set of ingredients and instructions for preparing a food dis
             "title": "Jambalaya",
             "ingredients": [
                 {
-                    "ingredient_id": 1,
+                    "id": 1,
                     "name": "basil",
                     "amount": 1,
                     "unit": "teaspoon",
@@ -97,7 +100,7 @@ A recipe contains a set of ingredients and instructions for preparing a food dis
 A set of actions that can be performed on the recipe collections. 
 
 ### Filter On Dietary Restrictions [POST]
-Returns a subset of recipes that satisfy the filter.
+Returns a subset of recipes that satisfy the filter. If one of the filter attributes is false, then the recipes returned may be either true or false in that attribute.
 
 + Request (application/json)
         
@@ -136,7 +139,7 @@ A resource representing all of the ingredients in the database. Use the `limit` 
     + limit (number, optional) - The maximum number of results to return.
         + Default: `10`
         
-### List All Ingredients [GET]
+### List Ingredients [GET]
 
 + Response 200 (application/json)
 
@@ -157,8 +160,8 @@ A resource representing all of the ingredients in the database. Use the `limit` 
             ]
         }
 
-## Ingredient [/ingredient/{id}]
-An ingredient contains nutritional information about a recipe component, as well as interesting facts such as *scientific name*. Nutritional information corresponds to 100g of the ingredient.
+## Ingredient [/ingredients/{id}]
+An ingredient contains information about a recipe component.
 
 + Parameters
     + id (number) - ID of the ingredient in the form of an integer
@@ -170,7 +173,6 @@ An ingredient contains nutritional information about a recipe component, as well
         {
             "id": 1,
             "name": "basil",
-            "nutrional_content_id": 1,
             "scientific_name": "Ocimum basilicum",
             "continent_of_origin": "Asia",
             "calories": 233,
@@ -179,23 +181,19 @@ An ingredient contains nutritional information about a recipe component, as well
             "protein": 22.98
         }
         
-# Group Nutrition
-
-## Nutrition [/nutrition/{id}]
-A nutritional content includes more information about an ingredient's nutritional content.
+## Nutrition Information [/ingredients/{id}/nutrition]
+Nutritional information corresponds to 100g of the queried ingredient.
 
 + Parameters
     + id (number) - ID of the ingredient in the form of an integer
 
-### Lookup Nutrition by ID [GET]
+### Lookup Nutrition by Ingredient ID [GET]
 
 + Response 200 (application/json)
 
         {
             "id": 1,
-            "ingredient_id": 1,
-            "serving_size": 100,
-            "serving_size_units": "g",
+            "name": "basil",
             "calories": 233,
             "total_fat_in_grams": 4.07,
             "saturated_fat_in_grams": 2.157,
@@ -205,8 +203,8 @@ A nutritional content includes more information about an ingredient's nutritiona
             "dietary_fiber_in_grams": 37.7, 
             "sugar_in_grams": 1.71,
             "protein_in_grams": 22.98,
-            "vitamin_a_percentage": ,
-            "vitamin_c_percentage": ,
-            "calcium_percentage": ,
-            "iron_percentage":
+            "vitamin_a_iu": 744,
+            "vitamin_c_in_milligrams": 0.8,
+            "calcium_in_milligrams": 2240,
+            "iron_in_milligrams": 89.8
         }
