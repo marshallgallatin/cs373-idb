@@ -167,7 +167,7 @@ I am currently employed at National Instruments and have been working there for 
 	<h2>Data</h2>
 	</div>
 	<h3>Spoonacular</h3>
-	<p>Our recipe data was scraped programmatically from Spoonacular's Food API using Python scripts. The requests package allowed us to send GET requests and parse the responses in JSON format. Here is an example of such a request using a Python script:</p>
+	<p>Our recipe data was scraped programmatically from Spoonacular's <a href="https://spoonacular.com/food-api">Food API</a> using Python scripts. The <a href="http://python-requests.org/">requests</a> package allowed us to send GET requests and parse the responses in JSON format. Here is an example of such a request using a Python script:</p>
 	<pre>#!/usr/bin/env python3
 import requests
 payload = {'Accept': 'application/json', 'X-Mashape-Key': <redacted>}
@@ -178,7 +178,7 @@ for item in data['results']:
 	</pre>
 	
 	<h3>USDA</h3>
-	<p>The US Department of Agriculture maintains an enormous Nutrient Database that is open to the public and even provides a RESTful API to programmatically lookup data. For instance, the following GET invocation will return foods and ingredients that contain the word "butter" in their database:</p>
+	<p>The US Department of Agriculture maintains an enormous <a href="https://ndb.nal.usda.gov/">Nutrient Database</a> that is open to the public and even provides a RESTful API to programmatically lookup data. For instance, the following GET invocation will return foods and ingredients that contain the word "butter" in their database:</p>
 	<pre>http://api.nal.usda.gov/ndb/search/?format=json&q=butter&sort=n&max=25&offset=0&api_key=DEMO_KEY</pre>
 	
 	<div class="page-header">
