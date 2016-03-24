@@ -7,12 +7,15 @@ Welcome to the RESTipe API. RESTipe allows users to query recipes and ingredient
 
 # Group Recipe
 
-## Recipe Collection [/recipes{?limit}]
-A resource representing all of the recipes in the database. Use the `limit` parameter to set an upper bound on the number of results.
+## Recipe Collection [/recipes{?limit,cuisine,diet}]
+A resource representing all of the recipes in the database. Use the `limit` parameter to set an upper bound on the number of results. Other query options include *cuisine* and *diet*.
 
-+ Parameters
++ Parameters  
     + limit (number, optional) - The maximum number of results to return.
         + Default: `10`
+    + cuisine (string, optional) - The type of cuisine. Example: **mexican**
+    + diet (string, optional) - The dietary restriction for which a recipe must be compliant. Example: **vegan**
+
         
 ### List All Recipes [GET]
 
@@ -97,7 +100,7 @@ A recipe contains a set of ingredients and instructions for preparing a food dis
 A set of actions that can be performed on the recipe collections. 
 
 ### Filter On Dietary Restrictions [POST]
-Returns a subset of recipes that satisfy the filter.
+Returns a subset of recipes that satisfy the filter. If one of the filter attributes is false, then the recipes returned may be either true or false in that attribute.
 
 + Request (application/json)
         
@@ -182,7 +185,7 @@ An ingredient contains nutritional information about a recipe component, as well
 # Group Nutrition
 
 ## Nutrition [/nutrition/{id}]
-A nutritional content includes more information about an ingredient's nutritional content.
+A nutrition resource includes more information about an ingredient's nutritional content.
 
 + Parameters
     + id (number) - ID of the ingredient in the form of an integer
