@@ -19,24 +19,24 @@ class Recipe(Base):
             to this object.
 
     Optional Attributes:
-        imageURI (str): The URI of the image for this recipe.
+        image_uri (str): The URI of the image for this recipe.
         instructions (str): The instructions for the recipe as a str.
         cuisine (str): The region where the recipe originates from.
-        preparationMinutes (int): The amount of time, in minutes, the recipe should take to prepare.
-        cookingMinutes (int): The amount of time, in minutes, the recipe will need to cook.
-        readyInMinutes (int): The sum of preparationMinutes and cookingMinutes, if given.
+        preparation_minutes (int): The amount of time, in minutes, the recipe should take to prepare.
+        cooking_minutes (int): The amount of time, in minutes, the recipe will need to cook.
+        ready_in_minutes (int): The sum of preparationMinutes and cookingMinutes, if given.
         servings (int): The amount of food made by recipe, where one serving is enough to feed one person.
         vegetarian (bool): False if meat is an ingredient, True otherwise
         vegan (bool): False if an animal product is an ingredient, True otherwise.
-        glutenFree (bool): False if an ingredient contains Gluten, True otherwise.
-        dairyFree (bool): False if an ingredient contains dairy products, True otherwise.
+        gluten_free (bool): False if an ingredient contains Gluten, True otherwise.
+        dairy_free (bool): False if an ingredient contains dairy products, True otherwise.
 
     Single Column Constraints:
         None.
 
     Table Constraints:
         - A recipe can't be vegan and not vegetarian, assuming both are not None.
-        - A recipe can't be vegan, and not dairyFree, assuming both are not None.
+        - A recipe can't be vegan, and not dairy_free, assuming both are not None.
     """
     __tablename__ = 'Recipe'
 
@@ -45,22 +45,22 @@ class Recipe(Base):
 
     ingredients = relationship('IngredientsInRecipes', back_populates ='recipe')
 
-    imageURI     = Column(String, nullable=True)
+    image_uri    = Column(String, nullable=True)
     instructions = Column(String, nullable=True) #@TODO: Make this cleaner/formatted
     cuisine      = Column(Enum(*enumToTuple(Cuisine)), nullable=True)
 
-    preparationMinutes = Column(Integer, nullable=True) # Add constaint
-    cookingMinutes     = Column(Integer, nullable=True) # Add constaint
-    readyInMinutes     = Column(Integer, nullable=True) # Add constaint
-    servings           = Column(Integer, nullable=True) # Add constaint
+    preparation_minutes = Column(Integer, nullable=True) # Add constaint
+    cooking_minutes     = Column(Integer, nullable=True) # Add constaint
+    ready_in_minutes    = Column(Integer, nullable=True) # Add constaint
+    servings            = Column(Integer, nullable=True) # Add constaint
 
-    vegetarian         = Column(Boolean, nullable=True)
-    vegan              = Column(Boolean, nullable=True)
-    glutenFree         = Column(Boolean, nullable=True)
-    dairyFree          = Column(Boolean, nullable=True)
+    vegetarian  = Column(Boolean, nullable=True)
+    vegan       = Column(Boolean, nullable=True)
+    gluten_free = Column(Boolean, nullable=True)
+    dairy_free  = Column(Boolean, nullable=True)
 
     CheckConstraint('NOT ((vegan IS NOT NULL AND vegetarian IS NOT NULL) AND (vegan AND NOT vegetarian))')
-    CheckConstraint('NOT ((vegan IS NOT NULL AND dairyFree IS NOT NULL) AND (vegan AND NOT dairyFree))')
+    CheckConstraint('NOT ((vegan IS NOT NULL AND dairy_free IS NOT NULL) AND (vegan AND NOT dairy_free))')
 
 class Ingredient(Base):
     """The Ingredient Table
@@ -73,11 +73,11 @@ class Ingredient(Base):
         recipes (IngredientsInRecipes): A list of IngredientsInRecipes objects that apply to this ingredient.
             The relevant information for this object is everything but 'ingredient', since 'ingredient' will refer
             to this object.
-        nutrionalContent(NutrionalContent): The nutrional content object that describes the nutrional content of the ingredient.
+        nutrional_content(NutrionalContent): The nutrional content object that describes the nutrional content of the ingredient.
 
     Optional Attributes:
-        scientificName (str): The scientific name of the ingredient.
-        continentOfOrigin (Continent): The continent that the ingredient originates from.
+        scientific_name (str): The scientific name of the ingredient.
+        continent_of_origin (Continent): The continent that the ingredient originates from.
             Valid values are Africa, Antartica, Asia, Australia, Europe, NorthAmerica, and SouthAmerica.
 
     Single Column Constraints:
@@ -92,10 +92,10 @@ class Ingredient(Base):
     name = Column(String, nullable=False)
 
     recipes = relationship('IngredientsInRecipes', back_populates ='ingredient')
-    nutrionalContent = relationship("NutrionalContent", uselist=False, back_populates="ingredient")
+    nutrional_content = relationship("NutrionalContent", uselist=False, back_populates="ingredient")
 
-    scientificName = Column(String, nullable=True)
-    continentOfOrigin = Column(Enum(*enumToTuple(Continent)), nullable=True)
+    scientific_name = Column(String, nullable=True)
+    continent_of_origin = Column(Enum(*enumToTuple(Continent)), nullable=True)
 
 class NutrionalContent(Base):
     """The NutrionalContent Table
@@ -108,26 +108,26 @@ class NutrionalContent(Base):
         ingredient (Ingredient): The ingredient object this content is describing.
 
     Optional Attributes:
-        servingSize (float): The amount of the ingredient that is generally served, in units of 'servingSizeUnits'.
-        servingSizeUnits (str) : The units that the 'servingSize' is in.
+        serving_size (float): The amount of the ingredient that is generally served, in units of 'serving_size_units'.
+        serving_size_units (str) : The units that the 'serving_size' is in.
         calories (int): The number of Calories in one serving.
         ... (The rest are assumed to be self-documenting)
 
     Single Column Constraints:
-        - 'servingSize' is non-negative
+        - 'serving_size' is non-negative
         - 'calories' is non-negative
-        - 'totalFatInGrams' is non-negative
-        - 'saturatedFatInGrams' is non-negative
-        - 'cholesterolInMilligrams' is non-negative
-        - 'sodiumInMilligrams' is non-negative
-        - 'totalCarbohydratesInGrams' is non-negative
-        - 'dietaryFiberInGrams' is non-negative
-        - 'sugarInGrams' is non-negative
-        - 'proteinInGrams' is non-negative
-        - 'vitaminAPercentage' is in the range [0.0, 100.0]
-        - 'vitaminCPercentage' is in the range [0.0, 100.0]
-        - 'calciumPercentage' is in the range [0.0, 100.0]
-        - 'ironPercentage' is in the range [0.0, 100.0]
+        - 'total_fat_in_grams' is non-negative
+        - 'saturated_fat_in_grams' is non-negative
+        - 'cholesterol_in_milligrams' is non-negative
+        - 'sodium_in_milligrams' is non-negative
+        - 'total_carbohydrates_in_grams' is non-negative
+        - 'dietary_fiber_in_grams' is non-negative
+        - 'sugar_in_grams' is non-negative
+        - 'protein_in_grams' is non-negative
+        - 'vitamin_a_percentage' is in the range [0.0, 100.0]
+        - 'vitamin_c_percentage' is in the range [0.0, 100.0]
+        - 'calcium_percentage' is in the range [0.0, 100.0]
+        - 'iron_percentage' is in the range [0.0, 100.0]
 
     Table Constraints:
         None.
@@ -135,23 +135,23 @@ class NutrionalContent(Base):
     __tablename__ = 'Nutrional Content'
 
     id = Column(Integer, primary_key=True)
-    ingredient = relationship("Ingredient", back_populates="nutrionalContent")
+    ingredient = relationship("Ingredient", back_populates="nutrional_content")
 
-    servingSize               = Column(Float,   isNonnegative('servingSize')              , nullable=False)
-    servingSizeUnits          = Column(String,                                              nullable=False)
-    calories                  = Column(Integer, isNonnegative('calories')                 , nullable=False)
-    totalFatInGrams           = Column(Integer, isNonnegative('totalFatInGrams')          , nullable=False)
-    saturatedFatInGrams       = Column(Integer, isNonnegative('saturatedFatInGrams')      , nullable=False)
-    cholesterolInMilligrams   = Column(Integer, isNonnegative('cholesterolInMilligrams')  , nullable=False)
-    sodiumInMilligrams        = Column(Integer, isNonnegative('sodiumInMilligrams')       , nullable=False)
-    totalCarbohydratesInGrams = Column(Integer, isNonnegative('totalCarbohydratesInGrams'), nullable=False)
-    dietaryFiberInGrams       = Column(Float,   isNonnegative('dietaryFiberInGrams')      , nullable=False)
-    sugarInGrams              = Column(Float,   isNonnegative('sugarInGrams')             , nullable=False)
-    proteinInGrams            = Column(Float,   isNonnegative('proteinInGrams')           , nullable=False)
-    vitaminAPercentage        = Column(Integer, isPercentage('vitaminAPercentage')        , nullable=False)
-    vitaminCPercentage        = Column(Integer, isPercentage('vitaminCPercentage')        , nullable=False)
-    calciumPercentage         = Column(Integer, isPercentage('calciumPercentage')         , nullable=False)
-    ironPercentage            = Column(Integer, isPercentage('ironPercentage')            , nullable=False)
+    serving_size                 = Column(Float,   isNonnegative('serving_size')                , nullable=False)
+    serving_size_units           = Column(String,                                                 nullable=False)
+    calories                     = Column(Integer, isNonnegative('calories')                    , nullable=False)
+    total_fat_in_grams           = Column(Integer, isNonnegative('total_fat_in_grams')          , nullable=False)
+    saturated_fat_in_grams       = Column(Integer, isNonnegative('saturated_fat_in_grams')      , nullable=False)
+    cholesterol_in_milligrams    = Column(Integer, isNonnegative('cholesterol_in_milligrams')   , nullable=False)
+    sodium_in_milligrams         = Column(Integer, isNonnegative('sodium_in_milligrams')        , nullable=False)
+    total_carbohydrates_in_grams = Column(Integer, isNonnegative('total_carbohydrates_in_grams'), nullable=False)
+    dietary_fiber_in_grams       = Column(Float,   isNonnegative('dietary_fiber_in_grams')      , nullable=False)
+    sugar_in_grams               = Column(Float,   isNonnegative('sugar_in_grams')              , nullable=False)
+    protein_in_grams             = Column(Float,   isNonnegative('protein_in_grams')            , nullable=False)
+    vitamin_a_percentage         = Column(Integer, isPercentage('vitamin_a_percentage')         , nullable=False)
+    vitamin_c_percentage         = Column(Integer, isPercentage('vitamin_c_percentage')         , nullable=False)
+    calcium_percentage           = Column(Integer, isPercentage('calcium_percentage')           , nullable=False)
+    iron_percentage              = Column(Integer, isPercentage('iron_percentage')              , nullable=False)
 
 class IngredientsInRecipes(Base):
     """The IngredientsInRecipes Table
@@ -160,8 +160,8 @@ class IngredientsInRecipes(Base):
     Required Attributes:
         recipe_id (int)(ForeignKey): The id of the recipe in the 'Recipe' table.
         ingredient_id (int)(ForeignKey): The id of the ingredient in the 'Ingredient' table.
-        originalString (str): The ingredient string as it appears in the recipe. (E.g. "One half cup of sugar.")
-        ingredientIndex (int): The index the ingredient appears in the recipe's ingredient list, 0-based.
+        original_string (str): The ingredient string as it appears in the recipe. (E.g. "One half cup of sugar.")
+        ingredient_index (int): The index the ingredient appears in the recipe's ingredient list, 0-based.
 
     Relational Attributes:
         recipe (Recipe): The Recipe object for this entry.
@@ -170,7 +170,7 @@ class IngredientsInRecipes(Base):
     Optional Attributes:
         amount (float): The amount of the ingredient in units of 'unit'.
         unit (str): The string representation of the unit the amount is in.
-        unitShort (str): The abbreviated version of unit.
+        unit_short (str): The abbreviated version of unit.
 
     Single Column Constraints:
         None.
@@ -182,12 +182,12 @@ class IngredientsInRecipes(Base):
     recipe_id     = Column(Integer, ForeignKey('Recipe.id'),     primary_key=True)
     ingredient_id = Column(Integer, ForeignKey('Ingredient.id'), primary_key=True)
 
-    originalString = Column(String, nullable=False)
-    amount         = Column(Float,  nullable=True)
-    unit           = Column(String, nullable=True)
-    unitShort      = Column(String, nullable=True)
+    original_string = Column(String, nullable=False)
+    amount          = Column(Float,  nullable=True)
+    unit            = Column(String, nullable=True)
+    unit_short      = Column(String, nullable=True)
 
-    ingredientIndex  = Column(Integer, nullable=False)
+    ingredient_index = Column(Integer, nullable=False)
 
     # Relationships
     recipe     = relationship(Recipe,     back_populates="ingredients")
