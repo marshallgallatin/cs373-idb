@@ -74,8 +74,6 @@ class TestNutritionalContent(DatabaseTest):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.test_kwargs = {
-            'serving_size'                 : 1.0,
-            'serving_size_units'           : 'cups',
             'calories'                     : 100,
             'total_fat_in_grams'           : 2,
             'saturated_fat_in_grams'       : 1,
@@ -85,14 +83,13 @@ class TestNutritionalContent(DatabaseTest):
             'dietary_fiber_in_grams'       : 1.5,
             'sugar_in_grams'               : 30.0,
             'protein_in_grams'             : 2.0,
-            'vitamin_a_percentage'         : 50.0,
-            'vitamin_c_percentage'         : 50.0,
-            'calcium_percentage'           : 50.0,
-            'iron_percentage'              : 50.0
+            'vitamin_a_in_iu'              : 50.0,
+            'vitamin_c_in_milligrams'      : 50.0,
+            'calcium_in_milligrams'        : 50.0,
+            'iron_in_milligrams'           : 50.0
         }
 
         self.bad_args1 = {
-            'serving_size'                 : -1.0,
             'calories'                     : -100,
             'total_fat_in_grams'           : -2,
             'saturated_fat_in_grams'       : -1,
@@ -102,17 +99,10 @@ class TestNutritionalContent(DatabaseTest):
             'dietary_fiber_in_grams'       : -1.5,
             'sugar_in_grams'               : -30.0,
             'protein_in_grams'             : -2.0,
-            'vitamin_a_percentage'         : -50.0,
-            'vitamin_c_percentage'         : -50.0,
-            'calcium_percentage'           : -50.0,
-            'iron_percentage'              : -50.0
-        }
-
-        self.bad_args2 = {
-            'vitamin_a_percentage'         : 110.0,
-            'vitamin_c_percentage'         : 110.0,
-            'calcium_percentage'           : 110.0,
-            'iron_percentage'              : 110.0
+            'vitamin_a_in_iu'              : -50.0,
+            'vitamin_c_in_milligrams'      : -50.0,
+            'calcium_in_milligrams'        : -50.0,
+            'iron_in_milligrams'           : -50.0
         }
 
     def test_instantiation1(self):
@@ -132,16 +122,6 @@ class TestNutritionalContent(DatabaseTest):
 
     def test_constraints1(self):
         for key in self.bad_args1:
-            with self.subTest(key = key):
-                bad_kwargs = copy.copy(self.test_kwargs)
-                bad_kwargs[key] = self.bad_args1[key]
-                with self.assertRaises(Exception):
-                    new_nutritional_content = NutritionalContent(**bad_kwargs)
-                    self.session.add(new_nutritional_content)
-                    self.session.commit()
-
-    def test_constraints2(self):
-        for key in self.bad_args2:
             with self.subTest(key = key):
                 bad_kwargs = copy.copy(self.test_kwargs)
                 bad_kwargs[key] = self.bad_args1[key]
