@@ -15,7 +15,6 @@ A resource representing all of the recipes in the database. Use the `limit` para
         + Default: `10`
     + cuisine (string, optional) - The type of cuisine. Example: **mexican**
     + diet (string, optional) - The dietary restriction for which a recipe must be compliant. Example: **vegan**
-
         
 ### List Recipes [GET]
 
@@ -130,6 +129,32 @@ Returns a subset of recipes that satisfy the filter. If one of the filter attrib
             ]
         }
         
+## Recipe Search [/recipes/ingredientSearch{?ingredients}]
+A way to search Recipes by the ingredients that the recipe contains. 
+
++ Parameters
+    + ingredients (string, optional) - A list of ingredients that a recipe must contain. Example: **basil,bay leafr**
+
+### Ingredient Search [GET]
+
++ Response 201 (application/json)
+
+        {
+             "recipes": [
+                {
+                    "id": 1,
+                    "title": "Jambalaya",
+                    "image_uri": "https://spoonacular.com/recipeImages/Jambalaya-648427.jpg",
+                    "cuisine": "cajun",
+                    "ready_in_minutes": 45,
+                    "servings": 10
+                },
+                {
+                    ...
+                }
+            ]
+        }
+        
 # Group Ingredient
 
 ## Ingredient Collection [/ingredients{?limit}]
@@ -174,20 +199,16 @@ An ingredient contains information about a recipe component.
             "id": 1,
             "name": "basil",
             "scientific_name": "Ocimum basilicum",
-            "continent_of_origin": "Asia",
-            "calories": 233,
-            "fat": 4.07,
-            "carbohydrates": 47.75,
-            "protein": 22.98
+            "continent_of_origin": "Asia"
         }
         
 ## Nutrition Information [/ingredients/{id}/nutrition]
-Nutritional information corresponds to 100g of the queried ingredient.
+Contains complete nutrion information for the specified ingredient. Information corresponds to 100g of the queried ingredient.
 
 + Parameters
     + id (number) - ID of the ingredient in the form of an integer
 
-### Lookup Nutrition by Ingredient ID [GET]
+### Lookup Nutrition Information by Ingredient ID [GET]
 
 + Response 200 (application/json)
 
