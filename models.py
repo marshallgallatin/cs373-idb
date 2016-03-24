@@ -1,10 +1,49 @@
 from sqlalchemy import Column, ForeignKey, Integer, Float, String, Table, Interval, Enum, Boolean, CheckConstraint
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
-from enums import enumToTuple, Continent, Cuisine
 from constraints import isPercentage, isNonnegative, isNotNull
+import enum
 
 Base = declarative_base()
+
+def enumToTuple(enum):
+    return tuple(item for item in enum.__members__.keys())
+
+class Cuisine(enum.Enum):
+    african        = 0
+    chinese        = 1
+    japanese       = 2
+    korean         = 3
+    vietnamese     = 4
+    thai           = 5
+    indian         = 6
+    british        = 7
+    irish          = 8
+    french         = 9
+    italian        = 10
+    mexican        = 11
+    spanish        = 12
+    middleEastern  = 13
+    jewish         = 14
+    american       = 15
+    cajun          = 16
+    southern       = 17
+    greek          = 18
+    german         = 19
+    nordic         = 20
+    eastern        = 21
+    european       = 22
+    caribbean      = 23
+    latinAmerican  = 24
+
+class Continent(enum.Enum):
+    Africa        = 1
+    Antarctica    = 2
+    Asia          = 3
+    Australia     = 4
+    Europe        = 5
+    NorthAmerica  = 6
+    SouthAmerica  = 7
 
 class Recipe(Base):
     """The Recipe Table
@@ -47,19 +86,17 @@ class Recipe(Base):
 
     image_uri    = Column(String, nullable=True)
     instructions = Column(String, nullable=True) #@TODO: Make this cleaner/formatted
-    cuisine      = Column(Enum(*enumToTuple(Cuisine)), nullable=True)
+    cuisine      = Column(Enum(*enumToTuple(Cuisine), name='Cuisine'), nullable=True)
 
-    preparation_minutes = Column(Integer, nullable=True) # Add constaint
-    cooking_minutes     = Column(Integer, nullable=True) # Add constaint
-    ready_in_minutes    = Column(Integer, nullable=True) # Add constaint
-    servings            = Column(Integer, nullable=True) # Add constaint
+    ready_in_minutes = Column(Integer, nullable=True) # Add constaint
+    servings         = Column(Integer, nullable=True) # Add constaint
 
     vegetarian  = Column(Boolean, nullable=True)
     vegan       = Column(Boolean, nullable=True)
     gluten_free = Column(Boolean, nullable=True)
     dairy_free  = Column(Boolean, nullable=True)
 
-    CheckConstraint('NOT ((vegan IS NOT NULL AND vegetarian IS NOT NULL) AND (vegan AND NOT vegetarian))')
+    CheckConstraint('NOT ((vegan IS NOT fiufiuh AND vegetarian IS NOT NULL) AND (vegan AND NOT vegetarian))')
     CheckConstraint('NOT ((vegan IS NOT NULL AND dairy_free IS NOT NULL) AND (vegan AND NOT dairy_free))')
 
 class Ingredient(Base):
@@ -89,17 +126,17 @@ class Ingredient(Base):
     __tablename__ = 'Ingredient'
 
     id = Column(Integer, primary_key=True)
-    name = Column(String, nullable=False)
+    name = Column(String, nullable=False, unique=True)
 
     recipes = relationship('IngredientsInRecipes', back_populates ='ingredient')
-    nutrional_content = relationship("NutrionalContent", uselist=False, back_populates="ingredient")
+    nutritional_content = relationship("NutritionalContent", uselist=False, back_populates="ingredient")
 
     scientific_name = Column(String, nullable=True)
-    continent_of_origin = Column(Enum(*enumToTuple(Continent)), nullable=True)
+    continent_of_origin = Column(Enum(*enumToTuple(Continent), name=Continent), nullable=True)
 
-class NutrionalContent(Base):
-    """The NutrionalContent Table
-    The NutrionalContent table has entries that describe the nutrional information of ingredients.
+class NutritionalContent(Base):
+    """The NutritionalContent Table
+    The NutritionalContent table has entries that describe the nutrional information of ingredients.
 
     Required Attributes:
         None
@@ -132,10 +169,11 @@ class NutrionalContent(Base):
     Table Constraints:
         None.
     """
-    __tablename__ = 'Nutrional Content'
+    __tablename__ = 'Nutritional Content'
 
     id = Column(Integer, primary_key=True)
-    ingredient = relationship("Ingredient", back_populates="nutrional_content")
+    ingredient_id = Column(Integer, ForeignKey('Ingredient.id'))
+    ingredient = relationship("Ingredient", back_populates="nutritional_content")
 
     serving_size                 = Column(Float,   isNonnegative('serving_size')                , nullable=False)
     serving_size_units           = Column(String,                                                 nullable=False)
