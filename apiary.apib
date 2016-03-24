@@ -5,14 +5,16 @@ HOST: http://api.swedishchef.me/
 
 Welcome to the RESTipe API. RESTipe allows users to query recipes and ingredients, as well as using criteria to discover new recipes.
 
+# Group Recipe
+
 ## Recipe Collection [/recipes{?limit}]
 A resource representing all of the recipes in the database. Use the `limit` parameter to set an upper bound on the number of results.
-
-### List All Recipes [GET]
 
 + Parameters
     + limit (number, optional) - The maximum number of results to return.
         + Default: `10`
+        
+### List All Recipes [GET]
 
 + Response 200 (application/json)
 
@@ -44,7 +46,7 @@ A recipe contains a set of ingredients and instructions for preparing a food dis
 
 + Parameters
     + id (number) - ID of the recipe in the form of an integer
-    
+
 ### Lookup Recipe by ID [GET]
 
 + Response 200 (application/json)
@@ -55,9 +57,9 @@ A recipe contains a set of ingredients and instructions for preparing a food dis
             "ingredients": [
                 {
                     "ingredient_id": 1,
-                    "name":"basil",
-                    "amount":1,
-                    "unit":"teaspoon",
+                    "name": "basil",
+                    "amount": 1,
+                    "unit": "teaspoon",
                     "original_string": "1 teaspoon basil"
                 },
                 {
@@ -90,15 +92,51 @@ A recipe contains a set of ingredients and instructions for preparing a food dis
             "gluten_free": true,
             "dairy_free": true
         }
+        
+## Recipe Actions [/recipes/action]
+A set of actions that can be performed on the recipe collections. 
+
+### Filter On Dietary Restrictions [POST]
+Returns a subset of recipes that satisfy the filter.
+
++ Request (application/json)
+        
+        {
+            "action_type": "filter",
+            "vegetarian": false,
+            "vegan": false,
+            "gluten_free": true,
+            "dairy_free": true
+        }
+        
++ Response 201 (application/json)
+        
+        {
+            "recipes": [
+                {
+                    "id": 1,
+                    "title": "Jambalaya",
+                    "image_uri": "https://spoonacular.com/recipeImages/Jambalaya-648427.jpg",
+                    "cuisine": "cajun",
+                    "ready_in_minutes": 45,
+                    "servings": 10,
+                },
+                {
+                    ...
+                }
+            ]
+        }
+        
+# Group Ingredient
 
 ## Ingredient Collection [/ingredients{?limit}]
 A resource representing all of the ingredients in the database. Use the `limit` parameter to set an upper bound on the number of results.
 
-### List All Ingredients [GET]
-
 + Parameters
     + limit (number, optional) - The maximum number of results to return.
         + Default: `10`
+        
+### List All Ingredients [GET]
 
 + Response 200 (application/json)
 
@@ -132,10 +170,43 @@ An ingredient contains nutritional information about a recipe component, as well
         {
             "id": 1,
             "name": "basil",
+            "nutrional_content_id": 1,
             "scientific_name": "Ocimum basilicum",
             "continent_of_origin": "Asia",
             "calories": 233,
             "fat": 4.07,
             "carbohydrates": 47.75,
             "protein": 22.98
+        }
+        
+# Group Nutrition
+
+## Nutrition [/nutrition/{id}]
+A nutritional content includes more information about an ingredient's nutritional content.
+
++ Parameters
+    + id (number) - ID of the ingredient in the form of an integer
+
+### Lookup Nutrition by ID [GET]
+
++ Response 200 (application/json)
+
+        {
+            "id": 1,
+            "ingredient_id": 1,
+            "serving_size": 100,
+            "serving_size_units": "g",
+            "calories": 233,
+            "total_fat_in_grams": 4.07,
+            "saturated_fat_in_grams": 2.157,
+            "cholesterol_in_milligrams": 0.0,
+            "sodium_in_milligrams": 76,
+            "total_carbohydrates_in_grams": 47.75,
+            "dietary_fiber_in_grams": 37.7, 
+            "sugar_in_grams": 1.71,
+            "protein_in_grams": 22.98,
+            "vitamin_a_percentage": ,
+            "vitamin_c_percentage": ,
+            "calcium_percentage": ,
+            "iron_percentage":
         }
