@@ -3,27 +3,139 @@ HOST: http://api.swedishchef.me/
 
 # RESTipe
 
-RESTipe is a rich API allowing users to query recipes and ingredients, with lots of helpful information for both.
+Welcome to the RESTipe API. RESTipe allows users to query recipes and ingredients, as well as using criteria to discover new recipes.
 
-## Recipes Collection [/recipes]
+## Recipe Collection [/recipes{?limit}]
+A resource representing all of the recipes in the database. Use the `limit` parameter to set an upper bound on the number of results.
 
-### List All Recipe IDs [GET]
+### List All Recipes [GET]
 
-+ Response 200 (application/json)
-
-        [
-            8675309,
-            88,
-            373,
-            ...
-        ]
-
-### List All Recipe IDs With Given Attributes [GET]
++ Parameters
+    + limit (number, optional) - The maximum number of results to return.
+        + Default: `10`
 
 + Response 200 (application/json)
 
-        [
-        
-        ]
+        {
+            "recipes": [
+                {
+                    "id": 1,
+                    "title": "Jambalaya",
+                    "image_uri": "https://spoonacular.com/recipeImages/Jambalaya-648427.jpg",
+                    "cuisine": "cajun",
+                    "ready_in_minutes": 45,
+                    "servings": 10,
+                },
+                {
+                    "id": 2,
+                    "title": "Spanakopita (Greek Spinach Pie)",
+                    ...
+                },
+                {
+                    "id": 3,
+                    "title": "Grilled Chicken Banh Mi",
+                    ...
+                }
+            ]
+        }
 
-## Single Recipe [/recipes/{id}]
+## Recipe [/recipes/{id}]
+A recipe contains a set of ingredients and instructions for preparing a food dish, as well as categorical information such as *cuisine* and dietary info such as *vegan*.
+
++ Parameters
+    + id (number) - ID of the recipe in the form of an integer
+    
+### Lookup Recipe by ID [GET]
+
++ Response 200 (application/json)
+
+        {
+            "id": 1,
+            "title": "Jambalaya",
+            "ingredients": [
+                {
+                    "ingredient_id": 1,
+                    "name":"basil",
+                    "amount":1,
+                    "unit":"teaspoon",
+                    "original_string": "1 teaspoon basil"
+                },
+                {
+                    "id": 2,
+                    "name": "bay leaf",
+                    "amount": 1,
+                    "unit": "",
+                    "originalString": "1 Bay leaf"
+                },
+                {
+                    "id": 3,
+                    "name": "canned tomato sauce",
+                    "amount": 8,
+                    "unit": "ounces",
+                    "originalString": "8 ounces can tomato sauce"
+                },
+                {
+                    "id": 4,
+                    "name": "canned tomatoes",
+                    ...
+                }
+            ],
+            "image_uri": "https://spoonacular.com/recipeImages/Jambalaya-648427.jpg",
+            "instructions": "1. Brown sausage. blacken fish with pepper and paprika. Brown in hot skillet. Saute onion, celery, green pepper, garlic until limp. Add stock and tomato sauce, spices, vegetable and meats to crock pot or large stock pot; boil for 1 hour on low or crock pot until done.",
+            "cuisine": "cajun",
+            "ready_in_minutes": 45,
+            "servings": 10,
+            "vegetarian": false,
+            "vegan": false,
+            "gluten_free": true,
+            "dairy_free": true
+        }
+
+## Ingredient Collection [/ingredients{?limit}]
+A resource representing all of the ingredients in the database. Use the `limit` parameter to set an upper bound on the number of results.
+
+### List All Ingredients [GET]
+
++ Parameters
+    + limit (number, optional) - The maximum number of results to return.
+        + Default: `10`
+
++ Response 200 (application/json)
+
+        {
+            "ingredients": [
+                {
+                    "id": 1,
+                    "name": "basil"
+                },
+                {
+                    "id": 2,
+                    "name": "bay leaf"
+                },
+                {
+                    "id": 3,
+                    "name": "canned tomato sauce"
+                }
+            ]
+        }
+
+## Ingredient [/ingredient/{id}]
+An ingredient contains nutritional information about a recipe component, as well as interesting facts such as *scientific name*. Nutritional information corresponds to 100g of the ingredient.
+
++ Parameters
+    + id (number) - ID of the ingredient in the form of an integer
+    
+### Lookup Ingredient by ID [GET]
+
++ Response 200 (application/json)
+
+        {
+            "id": 1,
+            "name": "basil",
+            "scientific_name": "Ocimum basilicum",
+            "continent_of_origin": "Asia",
+            "calories": 233,
+            "fat": 4.07,
+            "carbohydrates": 47.75,
+            "protein": 22.98
+        }
