@@ -1,111 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>About</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+	
+	<style>
+	body {
+		background-color: grey
+	}
+	div {
+		background-color: white
+	}
+	.glyphicon-ok {
+		color: green;
+	}
+	td {
+		padding-left: 5px
+	}
+	.img-responsive {
+		max-height: 300px
+	}
+	.panel-code {
+		font-family: Menlo, Monaco, Consolas, "Courier New" , monospace;
+		background-color: #f9f2f4;
+		text-align: left;
+		white-space: pre;
+		overflow: scroll;
+	}
+	</style>
+	<script>
+		//start http://stackoverflow.com/questions/14735274/bootstrap-css-hides-portion-of-container-below-navbar-navbar-fixed-top
+		var onResize = function() {
+			// apply dynamic padding at the top of the body according to the fixed navbar height
+			$("body").css("padding-top", $(".navbar-fixed-top").height() + 10);
+		}
+
+		// attach the function to the window resize event
+		$(window).resize(onResize);
+
+		// call it also when the page is ready after load or reload
+		$(function() {
+			onResize();
+		});
+		//end http://stackoverflow.com/questions/14735274/bootstrap-css-hides-portion-of-container-below-navbar-navbar-fixed-top
+	</script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">SWEdish Chefs</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Recipes</a></li>
+			<li><a href="#">Ingredients</a></li>
+			<li><a href="#">Places</a></li>
+			<li class="active"><a href="#">About</a></li>
+		</ul>
+	</div>
+</nav>
+
 <div class="container">
+	<h1>SWEdish Chefs</h1>
+	<div class="page-header">
+	<h2>Group Members</h2>
+	<p>Min Bi, Joshua Cannon, Marshall Gallatin, K.C. Hawes-Domingue, Victor Yap</p>
+	</div>
+	<div class="page-header">
+	<h3>Min Bi</h3>
+	</div>
 	<div class="row">
-	<div class="col-md-12">
-  		<h1>SWEdish Chefs</h1>
-  		<h3>Members: Min Bi, Joshua Cannon, Marshall Gallatin, K.C. Hawes-Domingue, Victor Yap</h3>
-  	</div>
-  	</div>
-  	<div class="row">
-    	<div class="col-md-4">
-    		<div class="panel panel-default">
-	  			<div class="panel-body">
-    			name: Min Bi</br>
-    			photo: TODO</br>
-    			bio: TODO</br>
-    			major responsibilities: TODO</br>
-    			no. of commits: TODO</br>
-    			no. of issues: TODO</br>
-    			no. of unit tests: TODO
-  				</div>
-			</div>
-    	</div>
-    	<div class="col-md-4">
-    		<div class="panel panel-default">
-	  			<div class="panel-body">
-    			name: Joshua Cannon</br>
-    			photo: TODO</br>
-    			bio: TODO</br>
-    			major responsibilities: TODO</br>
-    			no. of commits: TODO</br>
-    			no. of issues: TODO</br>
-    			no. of unit tests: TODO
-  				</div>
-			</div>
-    	</div>
-    	<div class="col-md-4">
-    		<div class="panel panel-default">
-	  			<div class="panel-body">
-    			name: Marshall Gallatin</br>
-    			photo: TODO</br>
-    			bio: TODO</br>
-    			major responsibilities: TODO</br>
-    			no. of commits: TODO</br>
-    			no. of issues: TODO</br>
-    			no. of unit tests: TODO
-  				</div>
-			</div>
-    	</div>
+		<div class="col-xs-12 col-sm-4">
+			<img class="img-responsive" src="http://minbi.github.io/cs373-blog/me.png"></img>
+		</div>
+		<div class="col-xs-12 col-sm-8">
+			<p>I'm an adult. Ask me whether a website is safe to visit.</p>
+			<b>Major responsibilities: </b>Front End<br />
+			Commits		<span class="label label-success">3</span><br />
+			Issues		<span class="label label-danger">0</span><br />
+			Unit tests	<span class="label label-info">0</span>
+		</div>
 	</div>
-  	<div class="row">
-    	<div class="col-md-4">
-    		<div class="panel panel-default">
-	  			<div class="panel-body">
-    			name: K.C. Hawes-Domingue</br>
-    			photo: TODO</br>
-    			bio: TODO</br>
-    			major responsibilities: TODO</br>
-    			no. of commits: TODO</br>
-    			no. of issues: TODO</br>
-    			no. of unit tests: TODO
-  				</div>
-			</div>
-    	</div>
-    	<div class="col-md-4">
-    		<div class="panel panel-default">
-	  			<div class="panel-body">
-    			name: Victor Yap</br>
-    			photo: TODO</br>
-    			bio: TODO</br>
-    			major responsibilities: TODO</br>
-    			no. of commits: TODO</br>
-    			no. of issues: TODO</br>
-    			no. of unit tests: TODO
-  				</div>
-			</div>
-    	</div>
-   	<div class="col-md-4">
-the group name
-the group members
-for each member:
-
-    name
-    photo
-    bio
-    major responsibilities
-    no. of commits
-    no. of issues
-    no. of unit tests
-
-stats:
-
-    total no. of commits
-    total no. of issues
-    total no. of unit tests
-    a link to the Apiary API
-    a link to the GitHub Issue Tracker
-    a link to the GitHub Repo
-    a link to the GitHub Wiki
-
-data:
-
-    links to the data sources
-    description of how each was scraped
-
-tools:
-
-    tools used
-
-   	</div>
+	<div class="page-header">
+	<h3>Joshua Cannon</h3>
 	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-4">
+			<img class="img-responsive" src="http://minbi.github.io/cs373-blog/me.png"></img>
+		</div>
+		<div class="col-xs-12 col-sm-8">
+			<p>I'm an adult. Ask me whether a website is safe to visit.</p>
+			<b>Major responsibilities: </b>Front End<br />
+			Commits		<span class="label label-success">3</span><br />
+			Issues		<span class="label label-danger">0</span><br />
+			Unit tests	<span class="label label-info">0</span>
+		</div>
+	</div>
+	<div class="page-header">
+	<h3>Marshall Gallatin</h3>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-4">
+			<img class="img-responsive" src="http://minbi.github.io/cs373-blog/me.png"></img>
+		</div>
+		<div class="col-xs-12 col-sm-8">
+			<p>I'm an adult. Ask me whether a website is safe to visit.</p>
+			<b>Major responsibilities: </b>Front End<br />
+			Commits		<span class="label label-success">3</span><br />
+			Issues		<span class="label label-danger">0</span><br />
+			Unit tests	<span class="label label-info">0</span>
+		</div>
+	</div>
+	<div class="page-header">
+	<h3>K.C. Hawes-Domingue</h3>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-4">
+			<img class="img-responsive" src="http://minbi.github.io/cs373-blog/me.png"></img>
+		</div>
+		<div class="col-xs-12 col-sm-8">
+			<p>I'm an adult. Ask me whether a website is safe to visit.</p>
+			<b>Major responsibilities: </b>Front End<br />
+			Commits		<span class="label label-success">3</span><br />
+			Issues		<span class="label label-danger">0</span><br />
+			Unit tests	<span class="label label-info">0</span>
+		</div>
+	</div>
+	<div class="page-header">
+	<h3>Victor Yap</h3>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-4">
+			<img class="img-responsive" src="http://vicyap.github.io/images/headshot.png"></img>
+		</div>
+		<div class="col-xs-12 col-sm-8">
+			<p>I am a 4th-year student at the University of Texas - Austin studying Computer Science and Electrical Engineering. My interests in these fields include software engineering, signal processing, and statistical inference. A couple of topics I still wish to learn more about or become more acquainted with are computer networking, databases, and mobile app development. I am planned to graduate in December 2016, so hopefully I still have time to learn more about those topics.</p>
+			<p>On the side I am an avid listener to most music, especially electronic music. Right now my favorites artists include Skrillex, Porter Robinson, Tchami, Major Lazer,  Disclosure, Odesza, Flume, etc. The list could go on and on for a while. My interest in music and music production is also what drives my interest in signal processing and its applications to music production.</p><br /><br />
+			<b>Major responsibilities: </b>Apiary, API Design, Wiki Design Page<br />
+			Commits		<span class="label label-success">3</span><br />
+			Issues		<span class="label label-danger">0</span><br />
+			Unit tests	<span class="label label-info">0</span>
+		</div>
+	</div>
+	<div class="page-header">
+	<h2>Total Stats</h2>
+	</div>
+	Commits		<span class="label label-success">50</span><br />
+	Issues		<span class="label label-danger">15</span><br />
+	Unit tests	<span class="label label-info">003</span><br />
+	<div class="page-header">
+	<h2>Links</h2>
+	</div>
+	<a class="btn btn-info" href="https://app.apiary.io/restipe/">Apiary API</a>
+	<a class="btn btn-danger" href="https://github.com/marshallgallatin/cs373-idb/issues">GitHub Issue Tracker</a>
+	<a class="btn btn-success" href="https://github.com/marshallgallatin/cs373-idb">GitHub Repo</a>
+	<a class="btn btn-primary" href="https://github.com/marshallgallatin/cs373-idb/wiki">GitHub Wiki</a>
+	<div class="page-header">
+	<h2>Data</h2>
+	</div>
+	<h3>Spoonacular</h3>
+	<p>Our recipe data was scraped programmatically from Spoonacular's Food API using Python scripts. The requests package allowed us to send GET requests and parse the responses in JSON format. Here is an example of such a request using a Python script:</p>
+	<pre>#!/usr/bin/env python3
+import requests
+payload = {'Accept': 'application/json', 'X-Mashape-Key': <redacted>}
+response = requests.get('https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/search?cuisine=cajun&diet=pescetarian', headers=payload)
+data = response.json()
+for item in data['results']:
+	print(item['title'])
+	</pre>
+	
+	<h3>USDA</h3>
+	<p>The US Department of Agriculture maintains an enormous Nutrient Database that is open to the public and even provides a RESTful API to programmatically lookup data. For instance, the following GET invocation will return foods and ingredients that contain the word "butter" in their database:</p>
+	<pre>http://api.nal.usda.gov/ndb/search/?format=json&q=butter&sort=n&max=25&offset=0&api_key=DEMO_KEY</pre>
+	
+	<div class="page-header">
+	<h2>Tools</h2>
+	</div>
+	<ul class="list-group">
+		<li class="list-group-item">Apiary</li>
+		<li class="list-group-item">AngularJS</li>
+		<li class="list-group-item">Bootstrap</li>
+		<li class="list-group-item">Carina</li>
+		<li class="list-group-item">Docker</li>
+		<li class="list-group-item">Flask</li>
+		<li class="list-group-item">Github</li>
+		<li class="list-group-item">Github Issue Tracker</li>
+		<li class="list-group-item">Github Wiki</li>
+		<li class="list-group-item">Rackspace</li>
+		<li class="list-group-item">Slack</li>
+		<li class="list-group-item">SQLAlchemy</li>
+		<li class="list-group-item">Travis CI</li>
+	</ul>
 </div>
-
+</body>
+</html>
