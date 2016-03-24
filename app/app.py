@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def splash():
-    return app.send_static_file('html/splash.html')
+    return app.send_static_file('html/index.html')
 
 @app.route("/<path:path>")
 def static_html(path):
