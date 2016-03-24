@@ -98,19 +98,16 @@ class NutritionalContent(Base):
     The NutritionalContent table has entries that describe the nutrional information of ingredients.
 
     Required Attributes:
-        None
+        calories (int): The number of Calories in one serving.
+        ... (The rest are assumed to be self-documenting)
 
     Relational Attributes:
         ingredient (Ingredient): The ingredient object this content is describing.
 
     Optional Attributes:
-        serving_size (float): The amount of the ingredient that is generally served, in units of 'serving_size_units'.
-        serving_size_units (str) : The units that the 'serving_size' is in.
-        calories (int): The number of Calories in one serving.
-        ... (The rest are assumed to be self-documenting)
+        None
 
     Single Column Constraints:
-        - 'serving_size' is non-negative
         - 'calories' is non-negative
         - 'total_fat_in_grams' is non-negative
         - 'saturated_fat_in_grams' is non-negative
@@ -120,10 +117,10 @@ class NutritionalContent(Base):
         - 'dietary_fiber_in_grams' is non-negative
         - 'sugar_in_grams' is non-negative
         - 'protein_in_grams' is non-negative
-        - 'vitamin_a_percentage' is in the range [0.0, 100.0]
-        - 'vitamin_c_percentage' is in the range [0.0, 100.0]
-        - 'calcium_percentage' is in the range [0.0, 100.0]
-        - 'iron_percentage' is in the range [0.0, 100.0]
+        - 'vitamin_a_in_iu' is non-negative
+        - 'vitamin_c_in_milligrams' is non-negative
+        - 'calcium_in_milligrams' is non-negative
+        - 'iron_in_milligrams' is non-negative
 
     Table Constraints:
         None.
@@ -134,8 +131,6 @@ class NutritionalContent(Base):
     ingredient_id = Column(Integer, ForeignKey('Ingredient.id'))
     ingredient = relationship("Ingredient", back_populates="nutritional_content")
 
-    serving_size                 = Column(Float,   isNonnegative('serving_size')                , nullable=False)
-    serving_size_units           = Column(String,                                                 nullable=False)
     calories                     = Column(Integer, isNonnegative('calories')                    , nullable=False)
     total_fat_in_grams           = Column(Integer, isNonnegative('total_fat_in_grams')          , nullable=False)
     saturated_fat_in_grams       = Column(Integer, isNonnegative('saturated_fat_in_grams')      , nullable=False)
@@ -145,10 +140,10 @@ class NutritionalContent(Base):
     dietary_fiber_in_grams       = Column(Float,   isNonnegative('dietary_fiber_in_grams')      , nullable=False)
     sugar_in_grams               = Column(Float,   isNonnegative('sugar_in_grams')              , nullable=False)
     protein_in_grams             = Column(Float,   isNonnegative('protein_in_grams')            , nullable=False)
-    vitamin_a_percentage         = Column(Integer, isPercentage('vitamin_a_percentage')         , nullable=False)
-    vitamin_c_percentage         = Column(Integer, isPercentage('vitamin_c_percentage')         , nullable=False)
-    calcium_percentage           = Column(Integer, isPercentage('calcium_percentage')           , nullable=False)
-    iron_percentage              = Column(Integer, isPercentage('iron_percentage')              , nullable=False)
+    vitamin_a_in_iu              = Column(Integer, isNonnegative('vitamin_a_percentage')        , nullable=False)
+    vitamin_c_in_milligrams      = Column(Integer, isNonnegative('vitamin_c_percentage')        , nullable=False)
+    calcium_in_milligrams        = Column(Integer, isNonnegative('calcium_percentage')          , nullable=False)
+    iron_in_milligrams           = Column(Integer, isNonnegative('iron_percentage')             , nullable=False)
 
 class IngredientsInRecipes(Base):
     """The IngredientsInRecipes Table
