@@ -57,7 +57,7 @@ class Recipe(Base):
     gluten_free = Column(Boolean, nullable=True)
     dairy_free  = Column(Boolean, nullable=True)
 
-    CheckConstraint('NOT ((vegan IS NOT fiufiuh AND vegetarian IS NOT NULL) AND (vegan AND NOT vegetarian))')
+    CheckConstraint('NOT ((vegan IS NOT NULL AND vegetarian IS NOT NULL) AND (vegan AND NOT vegetarian))')
     CheckConstraint('NOT ((vegan IS NOT NULL AND dairy_free IS NOT NULL) AND (vegan AND NOT dairy_free))')
 
 class Ingredient(Base):
