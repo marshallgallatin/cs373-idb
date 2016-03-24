@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Ingredients</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" ng:autobind src="http://code.angularjs.org/0.10.5/angular-0.10.5.js"></script>
+	<style>
+	body {
+		background-color: grey
+	}
+	.glyphicon-ok {
+		color: green;
+	}
+	tr {
+		cursor: hand;
+		cursor: pointer;
+	}
+	</style>
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script>
+		//start http://stackoverflow.com/questions/14735274/bootstrap-css-hides-portion-of-container-below-navbar-navbar-fixed-top
+		var onResize = function() {
+			// apply dynamic padding at the top of the body according to the fixed navbar height
+			$("body").css("padding-top", $(".navbar-fixed-top").height() + 10);
+		}
+
+		// attach the function to the window resize event
+		$(window).resize(onResize);
+
+		// call it also when the page is ready after load or reload
+		$(function() {
+			onResize();
+		});
+		//end http://stackoverflow.com/questions/14735274/bootstrap-css-hides-portion-of-container-below-navbar-navbar-fixed-top
+		function sort() {
+			var table = this;
+			
+			// data
+			table.head = {
+				a:"NDB No",
+				b:"Short Description",
+				c:"Calories",
+				d:"Protein (g)",
+				e:"Total Fat (g)",
+				f:"Carbs (g)",
+				g:"Fiber (g)",
+				h:"Sugars (g)",
+				i:"Calcium (%DV)",
+				j:"Iron (%DV)",
+				k:"Sodium (%DV)",
+				l:"Vit C (%DV)",
+				m:"Vit A (IU)",
+				n:"Saturated Fat (g)",
+				o:"Cholesterol (g)"
+			};
+			table.body = [
+				{a: 1141,b: "EGG,TURKEY,WHL,FRSH,RAW",c: 171,d: 13.68,e: 11.88,f: 1.15,g: 0,h: 0,i: 99,j: 4.1,k: 151,l: 0,m: 554,n: 3.632,o: 933},
+				{a: 1278,b: "YOGURT,GREEK,NONFAT,VANILLA,DANNON OIKOS",c: 85,d: 8.12,e: 0.14,f: 12.72,g: 0.5,h: 11.4,i: 89,j: 0.04,k: 32,l: 0,m: 0,n: 0.09,o: 0},
+				{a: 2065,b: "SPEARMINT,FRESH",c: 44,d: 3.29,e: 0.73,f: 8.41,g: 6.8,h: 0,i: 199,j: 11.87,k: 30,l: 13.3,m: 4054,n: 0.191,o: 0}
+			];
+
+			table.sort = {
+				column: 'b',
+				descending: false
+			};
+
+			table.selectedCls = function(column) {
+				return column == table.sort.column && 'sort-' + table.sort.descending;
+			};
+
+			table.changeSorting = function(column) {
+				var sort = table.sort;
+				if (sort.column == column) {
+					sort.descending = !sort.descending;
+				} else {
+					sort.column = column;
+					sort.descending = false;
+				}
+			};
+		}
+	</script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">SWEdish Chefs</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Recipes</a></li>
+			<li class="active"><a href="#">Ingredients</a></li>
+			<li><a href="#">Places</a></li>
+		</ul>
+	</div>
+</nav>
+
+<div style="background-color:white" class="container">
+
+	<div class="table-responsive">
+		<table ng:controller="sort" class="table table-default table-hover">
+			<thead>
+				<tr>
+					<th ng:repeat="(i,th) in head" ng:class="selectedCls(i)" ng:click="changeSorting(i)">{{th}}</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng:repeat="row in body.$orderBy(sort.column, sort.descending)">
+					<td>{{row.a}}</td>
+					<td>{{row.b}}</td>
+					<td>{{row.c}}</td>
+					<td>{{row.d}}</td>
+					<td>{{row.e}}</td>
+					<td>{{row.f}}</td>
+					<td>{{row.g}}</td>
+					<td>{{row.h}}</td>
+					<td>{{row.i}}</td>
+					<td>{{row.j}}</td>
+					<td>{{row.k}}</td>
+					<td>{{row.l}}</td>
+					<td>{{row.m}}</td>
+					<td>{{row.n}}</td>
+					<td>{{row.o}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+</body>
+</html>
