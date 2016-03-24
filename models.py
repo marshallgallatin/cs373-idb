@@ -22,8 +22,6 @@ class Recipe(Base):
         image_uri (str): The URI of the image for this recipe.
         instructions (str): The instructions for the recipe as a str.
         cuisine (str): The region where the recipe originates from.
-        preparation_minutes (int): The amount of time, in minutes, the recipe should take to prepare.
-        cooking_minutes (int): The amount of time, in minutes, the recipe will need to cook.
         ready_in_minutes (int): The sum of preparationMinutes and cookingMinutes, if given.
         servings (int): The amount of food made by recipe, where one serving is enough to feed one person.
         vegetarian (bool): False if meat is an ingredient, True otherwise
