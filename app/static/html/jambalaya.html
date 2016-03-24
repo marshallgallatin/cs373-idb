@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Recipe Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<style>
+	body {
+		background-color: grey
+	}
+	div {
+		background-color: white
+	}
+	.glyphicon-ok {
+		color: green;
+	}
+	tr {
+		cursor: hand;
+		cursor: pointer;
+	}
+	</style>
+	<script>
+		$(document).ready(function(){
+			$("table tr").click(function(event){
+				$glyph = $(this).children().find(".glyphicon");
+				$glyph.toggleClass("glyphicon-minus glyphicon-ok");
+				$textD = $(this).children().eq(1);
+				$nextRow = $(this).next().children().eq(1);
+				
+				if ($textD.hasClass("text-muted")) {
+					//Backward
+					if ($(this).prev().prop("tagName") == undefined || $(this).prev().children().eq(1).hasClass("text-muted"))
+						$textD.addClass("info");
+					
+					if (!$nextRow.hasClass("text-muted"))
+						$nextRow.removeClass("info");
+				} else {
+					//Forward
+					$textD.removeClass("info");
+					
+					if (!$nextRow.hasClass("text-muted"))
+						$nextRow.toggleClass("info");
+				}
+				$textD.toggleClass("text-muted");
+			});
+			$("table tr").hover(function(){
+				$('this').css('cursor', 'pointer');
+			});
+		});
+		//start http://stackoverflow.com/questions/14735274/bootstrap-css-hides-portion-of-container-below-navbar-navbar-fixed-top
+		var onResize = function() {
+			// apply dynamic padding at the top of the body according to the fixed navbar height
+			$("body").css("padding-top", $(".navbar-fixed-top").height() + 10);
+		}
+
+		// attach the function to the window resize event
+		$(window).resize(onResize);
+
+		// call it also when the page is ready after load or reload
+		$(function() {
+			onResize();
+		});
+		//end http://stackoverflow.com/questions/14735274/bootstrap-css-hides-portion-of-container-below-navbar-navbar-fixed-top
+	</script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="/index.html">SWEdish Chefs</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="/index.html">Home</a></li>
+			<li class="active"><a href="/recipes.html">Recipes</a></li>
+			<li><a href="/ingredients.html">Ingredients</a></li>
+			<li><a href="/about.html">About</a></li>
+		</ul>
+	</div>
+</nav>
+
+<div class="container">
+	<div class="col-xs-12 col-sm-6 col-lg-6">
+		<h1>Jambalaya</h1>
+	</div>
+	<div style="padding-top:10px" class="col-xs-12 col-sm-6 col-lg-6">
+		<img class="img-responsive" src="https://webknox.com/recipeImages/648427-556x370.jpg"></img>
+	</div>
+	
+	<div class="page-header">
+		<h3>Ingredients</h3>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-lg-4">
+		<div class="checkbox">
+			<label><input type="checkbox" value="">1 teaspoon basil</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="">1 bay leaf</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="">8 ounces canned tomato sauce</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="">14.5 ounces canned tomatoes</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="">5 celery stalks</label>
+		</div>
+        <div class="checkbox">
+			<label><input type="checkbox" value="">2 cups chicken stock</label>
+		</div>
+        <div class="checkbox">
+			<label><input type="checkbox" value="">2 pounds fish</label>
+		</div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="checkbox">
+			<label><input type="checkbox" value="">0.71 ounces garlic</label>
+		</div>
+        <div class="checkbox">
+			<label><input type="checkbox" value="">1 green bell pepper</label>
+		</div>
+        <div class="checkbox">
+			<label><input type="checkbox" value="">10 servings okra</label>
+		</div>
+        <div class="checkbox">
+			<label><input type="checkbox" value="">0.75 cups onion</label>
+		</div>
+        <div class="checkbox">
+			<label><input type="checkbox" value="">10 servings paprika</label>
+		</div>
+        <div class="checkbox">
+			<label><input type="checkbox" value="">10 servings pepper</label>
+		</div>
+        <div class="checkbox">
+			<label><input type="checkbox" value="">2 links sausage</label>
+		</div>
+        <div class="checkbox">
+			<label><input type="checkbox" value="">0.5 teaspoons thyme</label>
+		</div>
+	</div>
+    
+	<div class="page-header">
+		<h3>Instructions</h3>
+	</div>
+	<div>
+		<table class="table table-default">
+		<tr>
+		<td><span class="glyphicon glyphicon-minus"></span></td>
+		<td class="info">Brown sausage. Blacken fish with pepper and paprika. Brown in hot skillet.</td>
+		</tr>
+		<tr>
+		<td><span class="glyphicon glyphicon-minus"></span></td>
+		<td>Saute onion, celery, green pepper, garlic until limp.</td>
+		</tr>
+		<tr>
+		<td><span class="glyphicon glyphicon-minus"></span></td>
+		<td>Add stock and tomato sauce, spices, vegetable and meats to crock pot or large stock pot</td>
+		</tr>
+		<tr>
+		<td><span class="glyphicon glyphicon-minus"></span></td>
+		<td>Boil for 1 hour on low or crock pot until done.</td>
+		</tr>
+		</table>
+	</div>
+</div>
+</body>
+</html>
