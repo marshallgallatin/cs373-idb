@@ -129,11 +129,11 @@ Returns a subset of recipes that satisfy the filter. If one of the filter attrib
             ]
         }
         
-## Recipe Search [/recipes/ingredientSearch{?ingredients}]
-A way to search Recipes by the ingredients that the recipe contains. 
+## Search Recipes by Ingredients [/recipes/ingredientSearch{?ingredients}]
+A way to find recipes that contain a certain set of ingredients. 
 
 + Parameters
-    + ingredients (string, optional) - A list of ingredients that a recipe must contain. Example: **basil,bay leafr**
+    + ingredients (string, required) - A list of ingredients that a recipe must contain. Example: **cucumber,cilantro,grilled chicken**
 
 ### Ingredient Search [GET]
 
@@ -142,12 +142,12 @@ A way to search Recipes by the ingredients that the recipe contains.
         {
              "recipes": [
                 {
-                    "id": 1,
-                    "title": "Jambalaya",
-                    "image_uri": "https://spoonacular.com/recipeImages/Jambalaya-648427.jpg",
-                    "cuisine": "cajun",
-                    "ready_in_minutes": 45,
-                    "servings": 10
+                    "id": 3,
+                    "title": "Grilled Chicken Banh Mi",
+                    "image_uri": "https://spoonacular.com/recipeImages/Grilled-Chicken-Banh-Mi-645634.jpg",
+                    "cuisine": "vietnamese",
+                    "ready_in_minutes": 110,
+                    "servings": 6
                 },
                 {
                     ...
@@ -203,7 +203,7 @@ An ingredient contains information about a recipe component.
         }
         
 ## Nutrition Information [/ingredients/{id}/nutrition]
-Contains complete nutrion information for the specified ingredient. Information corresponds to 100g of the queried ingredient.
+Contains complete nutrition information for the specified ingredient. Information corresponds to 100g of the queried ingredient.
 
 + Parameters
     + id (number) - ID of the ingredient in the form of an integer
