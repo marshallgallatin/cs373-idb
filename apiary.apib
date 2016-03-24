@@ -174,20 +174,16 @@ An ingredient contains information about a recipe component.
             "id": 1,
             "name": "basil",
             "scientific_name": "Ocimum basilicum",
-            "continent_of_origin": "Asia",
-            "calories": 233,
-            "fat": 4.07,
-            "carbohydrates": 47.75,
-            "protein": 22.98
+            "continent_of_origin": "Asia"
         }
         
 ## Nutrition Information [/ingredients/{id}/nutrition]
-Nutritional information corresponds to 100g of the queried ingredient.
+Contains complete nutrion information for the specified ingredient. Information corresponds to 100g of the queried ingredient.
 
 + Parameters
     + id (number) - ID of the ingredient in the form of an integer
 
-### Lookup Nutrition by Ingredient ID [GET]
+### Lookup Nutrition Information by Ingredient ID [GET]
 
 + Response 200 (application/json)
 
