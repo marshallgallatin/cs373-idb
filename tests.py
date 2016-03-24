@@ -4,8 +4,9 @@ from constants import databaseName
 from models import Base, Recipe, Ingredient, NutritionalContent, IngredientsInRecipes
 from sqlalchemy.engine import create_engine
 from sqlalchemy.orm.session import Session
-from unittest import main, TestCase, skip
+from unittest import main, TestCase, skip, skipIf
 import copy
+import importlib
 
 global transaction, connection, engine
 
@@ -185,15 +186,16 @@ class TestIngredientsInRecipes(DatabaseTest):
             self.session.commit()
 
 if __name__ == "__main__" :
-    # Set up the database
-    engine = create_engine(databaseName)
-    connection = engine.connect()
-    transaction = connection.begin()
-    Base.metadata.create_all(connection)
+    if importlib.find_loader('psycog2') is not None:
+        # Set up the database
+        engine = create_engine(databaseName)
+        connection = engine.connect()
+        transaction = connection.begin()
+        Base.metadata.create_all(connection)
 
-    main()
+        main()
 
-    # Tear down the database
-    transaction.rollback()
-    connection.close()
-    engine.dispose()
+        # Tear down the database
+        transaction.rollback()
+        connection.close()
+        engine.dispose()
