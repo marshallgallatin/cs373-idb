@@ -15,6 +15,10 @@
 	.glyphicon-ok {
 		color: green;
 	}
+	thead {
+		cursor: hand;
+		cursor: pointer;
+	}
 	</style>
 	<script src="http://maps.googleapis.com/maps/api/js"></script>
 	<script>
@@ -56,7 +60,8 @@
 			table.body = [
 				{a: 2044,b: "BASIL,FRESH",c: 23,d: 3.15,e: 0.64,f: 2.65,g: 1.6,h: 0.3,i: 177,j: 3.17,k: 4,l: 18,m: 5275,n: 0.041,o: 0},
 				{a: 1145,b: "BUTTER,WITHOUT SALT",c: 717,d: 0.85,e: 81.11,f: 0.06,g: 0,h: 0.06,i: 24,j: 0.02,k: 11,l: 0,m: 2499,n: 50.489,o: 215},
-				{a: 15270,b: "CRUSTACEANS,SHRIMP,RAW (NOT PREVIOUSLY FROZEN)",c: 85,d: 20.1,e: 0.51,f: 0,g: 0,h: 0,i: 64,j: 0.52,k: 119,l: 0,m: 0,n: 0.101,o: 161}
+				{a: 15270,b: "CRUSTACEANS,SHRIMP,RAW (NOT PREVIOUSLY FROZEN)",c: 85,d: 20.1,e: 0.51,f: 0,g: 0,h: 0,i: 64,j: 0.52,k: 119,l: 0,m: 0,n: 0.101,o: 161},
+				{a: 2047,b: "SALT,TABLE",c: 0,d: 0,e: 0,f: 0,g: 0,h: 0,i: 24,j: 0.33,k: 38758,l: 0,m: 0,n: 0,o: 0},
 			];
 
 			table.sort = {
@@ -92,14 +97,22 @@
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container-fluid">
 		<div class="navbar-header">
+		    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 			<a class="navbar-brand" href="/index.html">IRDb</a>
 		</div>
+        <div id="navbar" class="navbar-collapse collapse" ng-controller="HeaderController">
 		<ul class="nav navbar-nav">
 			<li><a href="/index.html">Home</a></li>
 			<li><a href="/recipes.html">Recipes</a></li>
 			<li class="active"><a href="/ingredients.html">Ingredients</a></li>
 			<li><a href="/about.html">About</a></li>
 		</ul>
+        </div><!--/.nav-collapse -->
 	</div>
 </nav>
 

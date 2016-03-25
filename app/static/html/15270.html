@@ -53,14 +53,22 @@
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container-fluid">
 		<div class="navbar-header">
+		    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 			<a class="navbar-brand" href="/index.html">IRDb</a>
 		</div>
+        <div id="navbar" class="navbar-collapse collapse" ng-controller="HeaderController">
 		<ul class="nav navbar-nav">
 			<li><a href="/index.html">Home</a></li>
 			<li><a href="/recipes.html">Recipes</a></li>
 			<li class="active"><a href="/ingredients.html">Ingredients</a></li>
 			<li><a href="/about.html">About</a></li>
 		</ul>
+        </div><!--/.nav-collapse -->
 	</div>
 </nav>
 
@@ -68,6 +76,7 @@
 	<div style="padding-bottom:10px">
 	<div class="col-xs-12 col-sm-6 col-lg-6">
 		<h1 style="word-wrap: break-word">CRUSTACEANS,SHRIMP,RAW (NOT PREVIOUSLY FROZEN)</h1>
+		<h3><i>Penaeidae family</i></h3>
 	</div>
 	<div style="padding-top:10px" class="col-xs-12 col-sm-6 col-lg-6">
 		<img class="img-responsive" src="http://www.weissmeats.com/image/cache/data/raw-shrimp-500x500.png"></img>

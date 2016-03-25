@@ -72,14 +72,22 @@
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container-fluid">
 		<div class="navbar-header">
+		    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 			<a class="navbar-brand" href="/index.html">IRDb</a>
 		</div>
+        <div id="navbar" class="navbar-collapse collapse" ng-controller="HeaderController">
 		<ul class="nav navbar-nav">
 			<li><a href="/index.html">Home</a></li>
 			<li class="active"><a href="/recipes.html">Recipes</a></li>
 			<li><a href="/ingredients.html">Ingredients</a></li>
 			<li><a href="/about.html">About</a></li>
 		</ul>
+        </div><!--/.nav-collapse -->
 	</div>
 </nav>
 
@@ -95,55 +103,55 @@
 		<h3>Ingredients</h3>
 	</div>
 	<div class="row">
-	<div class="col-xs-12 col-sm-6 col-lg-4">
-		<div class="checkbox">
-			<label><input type="checkbox" value="">1 teaspoon <a href="/2044.html">basil</a></label>
+		<div class="col-xs-12 col-sm-6 col-lg-4">
+			<div class="checkbox">
+				<label><input type="checkbox" value="">1 teaspoon <a href="/2044.html">basil</a></label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">1 bay leaf</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">8 ounces canned tomato sauce</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">14.5 ounces canned tomatoes</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">5 celery stalks</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">2 cups chicken stock</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">2 pounds fish</label>
+			</div>
 		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="">1 bay leaf</label>
+		<div class="col-xs-12 col-sm-6 col-lg-4">
+			<div class="checkbox">
+				<label><input type="checkbox" value="">0.71 ounces garlic</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">1 green bell pepper</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">10 servings okra</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">0.75 cups onion</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">paprika, to taste</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value=""><a href="/2047.html">salt</a> and pepper, to taste</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">2 links sausage</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">0.5 teaspoons thyme</label>
+			</div>
 		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="">8 ounces canned tomato sauce</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="">14.5 ounces canned tomatoes</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" value="">5 celery stalks</label>
-		</div>
-        <div class="checkbox">
-			<label><input type="checkbox" value="">2 cups chicken stock</label>
-		</div>
-        <div class="checkbox">
-			<label><input type="checkbox" value="">2 pounds fish</label>
-		</div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-lg-4">
-        <div class="checkbox">
-			<label><input type="checkbox" value="">0.71 ounces garlic</label>
-		</div>
-        <div class="checkbox">
-			<label><input type="checkbox" value="">1 green bell pepper</label>
-		</div>
-        <div class="checkbox">
-			<label><input type="checkbox" value="">10 servings okra</label>
-		</div>
-        <div class="checkbox">
-			<label><input type="checkbox" value="">0.75 cups onion</label>
-		</div>
-        <div class="checkbox">
-			<label><input type="checkbox" value="">10 servings paprika</label>
-		</div>
-        <div class="checkbox">
-			<label><input type="checkbox" value="">10 servings pepper</label>
-		</div>
-        <div class="checkbox">
-			<label><input type="checkbox" value="">2 links sausage</label>
-		</div>
-        <div class="checkbox">
-			<label><input type="checkbox" value="">0.5 teaspoons thyme</label>
-		</div>
-	</div>
 	</div>
     
 	<div class="page-header">

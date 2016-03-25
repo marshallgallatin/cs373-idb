@@ -67,7 +67,6 @@ APP_FILES:=                    \
     ./app/app.py               \
     ./app/Dockerfile           \
     ./app/requirements.txt     \
-    ./app/templates/index.html \
 
 DB_FILES:=          \
     ./db/mysql.cnf  \
