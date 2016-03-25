@@ -41,7 +41,7 @@
 				b:"Short Description",
 				c:"Ingredients",
 				d:"Directions",
-				e:"Image URL",
+				e:"Image",
 				f:"Cuisine"
 			};
 			table.body = [
@@ -112,7 +112,7 @@
 					<td style="color:blue;cursor: hand;cursor: pointer;" onclick="top.location = 'http://swedishchef.me/' + $(this).siblings(0).html().match(/\d+/) + '.html';">{{row.b}}</td>
 					<td>{{row.c}}</td>
 					<td>{{row.d}}</td>
-					<td>{{row.e}}</td>
+					<td><img class="img-responsive img-thumbnail" width="100px" src="{{row.e}}"/></td>
 					<td>{{row.f}}</td>
 				</tr>
 			</tbody>
