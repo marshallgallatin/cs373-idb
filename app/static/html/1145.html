@@ -24,7 +24,7 @@
 		function initialize() {
 		  var mapProp = {
 			center:new google.maps.LatLng(39.3911332,-93.9863491),
-			zoom:5,
+			zoom:3,
 			mapTypeId:google.maps.MapTypeId.ROADMAP
 		  };
 		  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
@@ -74,7 +74,10 @@
 	</div>
 	</div>
 	
-	<div id="googleMap" class="col-xs-12 col-sm-6" style="height:300px;background-color:transparent"></div>
+	<div class="col-xs-12 col-sm-6">
+	<h3>Produced here:</h3>
+	<div id="googleMap" style="height:300px;background-color:transparent"></div>
+	</div>
 	
 	<div class="col-xs-12 col-sm-6">
 		<table class="table table-default table-hover">
