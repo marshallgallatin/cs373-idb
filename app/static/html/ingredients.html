@@ -15,10 +15,6 @@
 	.glyphicon-ok {
 		color: green;
 	}
-	tr {
-		cursor: hand;
-		cursor: pointer;
-	}
 	</style>
 	<script src="http://maps.googleapis.com/maps/api/js"></script>
 	<script>
@@ -96,7 +92,7 @@
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="/index.html">SWEdish Chefs</a>
+			<a class="navbar-brand" href="/index.html">IRDb</a>
 		</div>
 		<ul class="nav navbar-nav">
 			<li><a href="/index.html">Home</a></li>
@@ -119,7 +115,7 @@
 			<tbody>
 				<tr ng:repeat="row in body.$orderBy(sort.column, sort.descending)">
 					<td>{{row.a}}</td>
-					<td onclick="top.location = 'http://swedishchef.me/' + $(this).siblings(0).html().match(/\d+/) + '.html';">{{row.b}}</td>
+					<td style="color:blue;cursor: hand;cursor: pointer;" onclick="top.location = 'http://swedishchef.me/' + $(this).siblings(0).html().match(/\d+/) + '.html';">{{row.b}}</td>
 					<td>{{row.c}}</td>
 					<td>{{row.d}}</td>
 					<td>{{row.e}}</td>
