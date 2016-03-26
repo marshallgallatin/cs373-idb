@@ -72,6 +72,10 @@ DB_FILES:=          \
     ./db/mysql.cnf  \
     ./db/Dockerfile \
 
+docker-build-lb:
+	docker build -t $(DOCKER_HUB_USERNAME)/$(IMAGE_PREFIX)_lb  lb
+	docker push $(DOCKER_HUB_USERNAME)/$(IMAGE_PREFIX)_lb
+
 docker-build-app: $(APP_FILES)
 	docker build -t $(DOCKER_HUB_USERNAME)/$(IMAGE_PREFIX)_app  app
 	docker push $(DOCKER_HUB_USERNAME)/$(IMAGE_PREFIX)_app
