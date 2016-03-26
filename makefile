@@ -84,7 +84,7 @@ docker-build-db: $(DB_FILES)
 	docker build -t $(DOCKER_HUB_USERNAME)/$(IMAGE_PREFIX)_db  db
 	docker push $(DOCKER_HUB_USERNAME)/$(IMAGE_PREFIX)_db
 
-docker-deploy: docker-build-app docker-build-db
+docker-deploy: docker-build-lb docker-build-app docker-build-db
 	docker-compose down
 	docker-compose --file docker-compose-prod.yml up -d
 
