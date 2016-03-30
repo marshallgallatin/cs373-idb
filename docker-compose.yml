@@ -3,11 +3,20 @@ version: "2"
 # A Docker Compose file for configuration of the development environment
 
 services:
+  # load balancer
+  lb:
+    extends:
+      file: docker-compose-common.yml
+      service: lb
+
   # app
   app:
     extends:
       file: docker-compose-common.yml
       service: app
+    ports:
+      # Publish the port so it's visible on the host, you can access the app directly
+      - "5000:5000"
     volumes:
       # Mount the app dir in the container as /src so our changes to the app code
       # are also changed in the container
@@ -18,7 +27,7 @@ services:
       # for our local development environment
       - MYSQL_USER=guestbook-admin
       - MYSQL_PASSWORD=my-guestbook-admin-password
-    command: python ./app.py
+    command: gunicorn --reload app:app --bind 0.0.0.0:5000
       # Run Gunicorn to serve app requests and reload on change so we can see our
       # changes to the app code
 
