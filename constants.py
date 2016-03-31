@@ -1,1 +1,1 @@
-databaseName = 'postgresql+psycopg2://user:pass@localhost:5432/postgres'
+databaseName = 'postgresql+psycopg2://postgres:SWEdishchefs@localhost:5432/postgres'
