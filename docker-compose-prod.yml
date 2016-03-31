@@ -21,7 +21,7 @@ services:
     expose:
       # Expose port 5000 so it's only visibile on the container, not the host
       - "5000"
-    env_file: pythonwebapp-mysql-prod.env
+    env_file: cs373-postgres-prod.env
     command: gunicorn app:app --bind 0.0.0.0:5000
       # Run Gunicorn to serve app requests
 
@@ -31,11 +31,10 @@ services:
       service: db
     image: marshallgallatin/cs373idb_db
     expose:
-      # Expose port 3306 so it's only visibile on the container, not the host
-      - "3306"
+      # Expose port 5432 so it's only visibile on the container, not the host
+      - "5432"
     env_file:
-      - pythonwebapp-mysql-prod.env
-      - pythonwebapp-mysql-root-prod.env
+      - cs373-postgres-prod.env
     volumes_from:
       # Mount the volumes from the data container to store our MySQL files
       - data

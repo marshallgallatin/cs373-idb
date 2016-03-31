@@ -1,3 +1,2 @@
-FROM mysql:5.6
+FROM postgres:9.4
 
-ADD mysql.cnf /etc/mysql/conf.d/

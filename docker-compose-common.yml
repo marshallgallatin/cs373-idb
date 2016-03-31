@@ -24,8 +24,8 @@ services:
           - apps
     environment:
       # Environment variables to configure the app on startup.
-      - MYSQL_DATABASE=guestbook
-      - MYSQL_HOST=cs373idb_db
+      - POSTGRES_DB=irdatabase
+      - POSTGRES_HOST=cs373idb_db
 
   db:
     # The database container. Built from the db/Dockerfile.
@@ -36,7 +36,7 @@ services:
       - backend
     environment:
       # Environment variables to configure MySQL on startup.
-      - MYSQL_DATABASE=guestbook
+      - POSTGRES_DB=irdatabase
 
   data:
     container_name: cs373idb_db_data
@@ -44,7 +44,7 @@ services:
     # https://getcarina.com/docs/tutorials/data-volume-containers/
     image: cirros
     volumes:
-      # Mount this path as a volume to store our MySQL files
-      - /var/lib/mysql
+      # Mount this path as a volume to store our PostGres files
+      - /var/lib/postgresql
     command: /bin/true
       # Run a trivial command to exit quickly. Volumes don't need a running container.
