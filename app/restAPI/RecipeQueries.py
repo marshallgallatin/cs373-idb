@@ -50,7 +50,7 @@ def getRecipeByID(id):
         id (int): ID of the recipe.
     """
     with sessionInstance() as session:
-        result = session.query(Recipe).filter(Recipe.id = id).one()
+        return session.query(Recipe).filter(Recipe.id = id).one()
 
 def getFilteredRecipes(actionBody):
     """

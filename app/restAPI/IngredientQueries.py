@@ -18,4 +18,15 @@ def getIngredientByID(id):
         id (int): ID of the recipe.
     """
     with sessionInstance() as session:
-        result = session.query(Ingredient).filter(Recipe.id = id).one()
+        return session.query(Ingredient).filter(Recipe.id = id).one()
+
+
+def getIngredientByID(id):
+    """
+    ...
+
+    arguments:
+        id (int): ID of the recipe.
+    """
+    with sessionInstance() as session:
+        return session.query(Ingredient).filter(Recipe.id = id).one().nutritional_content
