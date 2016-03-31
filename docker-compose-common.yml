@@ -3,6 +3,16 @@ version: "2"
 # A Docker Compose file for common configuration between development and production environments
 
 services:
+  lb:
+    # The load balancer container. Built from the lb/Dockerfile.
+    container_name: cs373idb_lb
+    build: lb
+    restart: unless-stopped
+    networks:
+      - backend
+    ports:
+      - "80:80"
+
   app:
     # The app container. Built from the app/Dockerfile.
     build: app
@@ -16,8 +26,6 @@ services:
       # Environment variables to configure the app on startup.
       - MYSQL_DATABASE=guestbook
       - MYSQL_HOST=cs373idb_db
-    ports:
-      - "80:5000"
 
   db:
     # The database container. Built from the db/Dockerfile.
