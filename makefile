@@ -61,7 +61,7 @@ models.html: models.py
 
 # Variables needed for the docker-* targets
 IMAGE_PREFIX := cs373idb
-DOCKER_HUB_USERNAME := marshallgallatin
+DOCKER_HUB_USERNAME := $(IMAGE_PREFIX)
 
 APP_FILES:=                    \
     ./app/app.py               \
