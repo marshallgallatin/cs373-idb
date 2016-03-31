@@ -17,7 +17,7 @@ services:
       - MYSQL_DATABASE=guestbook
       - MYSQL_HOST=cs373idb_db
     ports:
-      - "80:80"
+      - "80:5000"
 
   db:
     # The database container. Built from the db/Dockerfile.

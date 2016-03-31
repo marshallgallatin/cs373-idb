@@ -1,0 +1,231 @@
+FORMAT: 1A
+HOST: http://api.swedishchef.me/
+
+# RESTipe
+
+Welcome to the RESTipe API. RESTipe allows users to query recipes and ingredients, as well as using criteria to discover new recipes.
+
+# Group Recipe
+
+## Recipe Collection [/recipes{?limit,cuisine,diet}]
+A resource representing all of the recipes in the database. Use the `limit` parameter to set an upper bound on the number of results. Other query options include *cuisine* and *diet*.
+
++ Parameters  
+    + limit (number, optional) - The maximum number of results to return.
+        + Default: `10`
+    + cuisine (string, optional) - The type of cuisine. Example: **mexican**
+    + diet (string, optional) - The dietary restriction for which a recipe must be compliant. Example: **vegan**
+        
+### List Recipes [GET]
+
++ Response 200 (application/json)
+
+        {
+            "recipes": [
+                {
+                    "id": 1,
+                    "title": "Jambalaya",
+                    "image_uri": "https://spoonacular.com/recipeImages/Jambalaya-648427.jpg",
+                    "cuisine": "cajun",
+                    "ready_in_minutes": 45,
+                    "servings": 10
+                },
+                {
+                    "id": 2,
+                    "title": "Spanakopita (Greek Spinach Pie)",
+                    ...
+                },
+                {
+                    "id": 3,
+                    "title": "Grilled Chicken Banh Mi",
+                    ...
+                }
+            ]
+        }
+
+## Recipe [/recipes/{id}]
+A recipe contains a set of ingredients and instructions for preparing a food dish, as well as categorical information such as *cuisine* and dietary info such as *vegan*.
+
++ Parameters
+    + id (number) - ID of the recipe in the form of an integer
+
+### Lookup Recipe by ID [GET]
+
++ Response 200 (application/json)
+
+        {
+            "id": 1,
+            "title": "Jambalaya",
+            "ingredients": [
+                {
+                    "id": 1,
+                    "name": "basil",
+                    "amount": 1,
+                    "unit": "teaspoon",
+                    "original_string": "1 teaspoon basil"
+                },
+                {
+                    "id": 2,
+                    "name": "bay leaf",
+                    "amount": 1,
+                    "unit": "",
+                    "originalString": "1 Bay leaf"
+                },
+                {
+                    "id": 3,
+                    "name": "canned tomato sauce",
+                    "amount": 8,
+                    "unit": "ounces",
+                    "originalString": "8 ounces can tomato sauce"
+                },
+                {
+                    "id": 4,
+                    "name": "canned tomatoes",
+                    ...
+                }
+            ],
+            "image_uri": "https://spoonacular.com/recipeImages/Jambalaya-648427.jpg",
+            "instructions": "1. Brown sausage. blacken fish with pepper and paprika. Brown in hot skillet. Saute onion, celery, green pepper, garlic until limp. Add stock and tomato sauce, spices, vegetable and meats to crock pot or large stock pot; boil for 1 hour on low or crock pot until done.",
+            "cuisine": "cajun",
+            "ready_in_minutes": 45,
+            "servings": 10,
+            "vegetarian": false,
+            "vegan": false,
+            "gluten_free": true,
+            "dairy_free": true
+        }
+        
+## Recipe Actions [/recipes/action]
+A set of actions that can be performed on the recipe collections. 
+
+### Filter On Dietary Restrictions [POST]
+Returns a subset of recipes that satisfy the filter. If one of the filter attributes is false, then the recipes returned may be either true or false in that attribute.
+
++ Request (application/json)
+        
+        {
+            "action_type": "filter",
+            "vegetarian": false,
+            "vegan": false,
+            "gluten_free": true,
+            "dairy_free": true
+        }
+        
++ Response 201 (application/json)
+        
+        {
+            "recipes": [
+                {
+                    "id": 1,
+                    "title": "Jambalaya",
+                    "image_uri": "https://spoonacular.com/recipeImages/Jambalaya-648427.jpg",
+                    "cuisine": "cajun",
+                    "ready_in_minutes": 45,
+                    "servings": 10,
+                },
+                {
+                    ...
+                }
+            ]
+        }
+        
+## Search Recipes by Ingredients [/recipes/ingredientSearch{?ingredients}]
+A way to find recipes that contain a certain set of ingredients. 
+
++ Parameters
+    + ingredients (string, required) - A list of ingredients that a recipe must contain. Example: **cucumber,cilantro,grilled chicken**
+
+### Ingredient Search [GET]
+
++ Response 201 (application/json)
+
+        {
+             "recipes": [
+                {
+                    "id": 3,
+                    "title": "Grilled Chicken Banh Mi",
+                    "image_uri": "https://spoonacular.com/recipeImages/Grilled-Chicken-Banh-Mi-645634.jpg",
+                    "cuisine": "vietnamese",
+                    "ready_in_minutes": 110,
+                    "servings": 6
+                },
+                {
+                    ...
+                }
+            ]
+        }
+        
+# Group Ingredient
+
+## Ingredient Collection [/ingredients{?limit}]
+A resource representing all of the ingredients in the database. Use the `limit` parameter to set an upper bound on the number of results.
+
++ Parameters
+    + limit (number, optional) - The maximum number of results to return.
+        + Default: `10`
+        
+### List Ingredients [GET]
+
++ Response 200 (application/json)
+
+        {
+            "ingredients": [
+                {
+                    "id": 1,
+                    "name": "basil"
+                },
+                {
+                    "id": 2,
+                    "name": "bay leaf"
+                },
+                {
+                    "id": 3,
+                    "name": "canned tomato sauce"
+                }
+            ]
+        }
+
+## Ingredient [/ingredients/{id}]
+An ingredient contains information about a recipe component.
+
++ Parameters
+    + id (number) - ID of the ingredient in the form of an integer
+    
+### Lookup Ingredient by ID [GET]
+
++ Response 200 (application/json)
+
+        {
+            "id": 1,
+            "name": "basil",
+            "scientific_name": "Ocimum basilicum",
+            "continent_of_origin": "Asia"
+        }
+        
+## Nutrition Information [/ingredients/{id}/nutrition]
+Contains complete nutrition information for the specified ingredient. Information corresponds to 100g of the queried ingredient.
+
++ Parameters
+    + id (number) - ID of the ingredient in the form of an integer
+
+### Lookup Nutrition Information by Ingredient ID [GET]
+
++ Response 200 (application/json)
+
+        {
+            "id": 1,
+            "name": "basil",
+            "calories": 233,
+            "total_fat_in_grams": 4.07,
+            "saturated_fat_in_grams": 2.157,
+            "cholesterol_in_milligrams": 0.0,
+            "sodium_in_milligrams": 76,
+            "total_carbohydrates_in_grams": 47.75,
+            "dietary_fiber_in_grams": 37.7, 
+            "sugar_in_grams": 1.71,
+            "protein_in_grams": 22.98,
+            "vitamin_a_iu": 744,
+            "vitamin_c_in_milligrams": 0.8,
+            "calcium_in_milligrams": 2240,
+            "iron_in_milligrams": 89.8
+        }

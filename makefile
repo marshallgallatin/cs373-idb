@@ -4,7 +4,7 @@ FILES :=                              \
     makefile                          \
     apiary.apib                       \
     IDB1.log                          \
-    model.html                        \
+    models.html                        \
     models.py                         \
     tests.py                          \
     UML.pdf
@@ -56,8 +56,8 @@ test: tests.py
 IDB1.log:
 	git log > IDB1.log
 	
-model.html: models.py
-	pydoc3 -w model
+models.html: models.py
+	pydoc -w models
 
 # Variables needed for the docker-* targets
 IMAGE_PREFIX := cs373idb
@@ -67,7 +67,6 @@ APP_FILES:=                    \
     ./app/app.py               \
     ./app/Dockerfile           \
     ./app/requirements.txt     \
-    ./app/templates/index.html \
 
 DB_FILES:=          \
     ./db/mysql.cnf  \
@@ -82,5 +81,6 @@ docker-build-db: $(DB_FILES)
 	docker push $(DOCKER_HUB_USERNAME)/$(IMAGE_PREFIX)_db
 
 docker-deploy: docker-build-app docker-build-db
+	docker-compose down
 	docker-compose --file docker-compose-prod.yml up -d
 

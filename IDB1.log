@@ -1,0 +1,603 @@
+commit db448348b97bf2491bb98fc96aad31701f5a34fa
+Author: Joshua Cannon <jcannon@cs.utexas.edu>
+Date:   Thu Mar 24 20:09:22 2016 -0500
+
+    adding png version of UML
+
+commit 0c4e83fc49c60aa3a26b10d5df3efb774a6df84b
+Merge: a12df60 7dc8d59
+Author: Joshua Cannon <jcannon@cs.utexas.edu>
+Date:   Thu Mar 24 20:07:21 2016 -0500
+
+    Merge branch 'master' of github.com:marshallgallatin/cs373-idb
+
+commit a12df6032bd7cbe0da4f416d5eecff7e7774df43
+Author: Joshua Cannon <jcannon@cs.utexas.edu>
+Date:   Thu Mar 24 20:07:07 2016 -0500
+
+    updating UML
+
+commit 7dc8d594734b17b7b0596442017a514642893186
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Thu Mar 24 19:42:17 2016 -0500
+
+    added link to Jambalya
+
+commit a93e6d37db74f5a66e4f1dea5ac5d821b64e0c04
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 19:39:57 2016 -0500
+
+    Ingred to Recipe
+
+commit 272507a370111f2d9aeda3e55b83d7e634f19c32
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 19:21:40 2016 -0500
+
+    More bio for me
+
+commit be3b70b409c0be877208f2609a7d8859f49f3631
+Merge: 76e0b33 81a2322
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 19:12:12 2016 -0500
+
+    Merge branch 'master' of https://github.com/marshallgallatin/cs373-idb
+
+commit 76e0b33bf3d498157f801ff58588b0a63acc93c0
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 19:12:00 2016 -0500
+
+    Change typoe movie to recipe
+
+commit 81a2322806e7e1befb23c06dbda2bc8f450bb420
+Merge: cf23bed 62aabd2
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Thu Mar 24 19:10:42 2016 -0500
+
+    Merge branch 'master' of https://github.com/marshallgallatin/cs373-idb
+
+commit cf23bed3713f48542c2f9dcee73fdf8dfc1cc199
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Thu Mar 24 19:10:31 2016 -0500
+
+    added links from the shrimp page to the ingredients
+
+commit 62aabd26818f9fa46f6381b83cee714a5b08a5bd
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 19:09:42 2016 -0500
+
+    Header for map
+
+commit 71504a79fba8b4bfee0f85e85b510699cdd97f90
+Merge: 00d38ae 4fa037f
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 19:04:00 2016 -0500
+
+    Merge branch 'master' of https://github.com/marshallgallatin/cs373-idb
+
+commit 00d38ae78ff84909457fe33a356478c4a590ade7
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 19:03:48 2016 -0500
+
+    Garlic Shrimp
+
+commit 4fa037f90bf914ab51da651677089ca8139abc17
+Merge: d5ddfd1 91a6cae
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Thu Mar 24 19:00:35 2016 -0500
+
+    Merge branch 'master' of https://github.com/marshallgallatin/cs373-idb
+
+commit d5ddfd18297affbcd6b8b141cb885045f295465c
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Thu Mar 24 19:00:11 2016 -0500
+
+    added a link to the basil page
+
+commit 91a6cae3a8292dd5b1b7e7a26401f7b3254906d4
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 18:55:47 2016 -0500
+
+    Formatting issue fix
+
+commit f51ca51d324c9a3087776d631f20d20ee7fc1939
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 18:51:47 2016 -0500
+
+    typo
+
+commit 8c13a983856d3b4bdec814576cddec327acfd136
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 18:50:54 2016 -0500
+
+    Company renamed
+
+commit d47ec4191633a4f5414975fe36eacbc766c20afb
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 18:44:36 2016 -0500
+
+    More tools, more apprent clickable stuff in recipes and ingredients
+
+commit a6ec8802dcbf7a4bbc8428c520f45effe401223b
+Merge: 3c45673 5201bb7
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 18:32:09 2016 -0500
+
+    Index updates
+
+commit 3c456732d03082ed7c7d255caf856c99a8d79f37
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 18:30:41 2016 -0500
+
+    Update index
+
+commit 5201bb74233508aa7826d34e6797c06b8c59ab3b
+Merge: 360fadc 65880aa
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Thu Mar 24 18:26:06 2016 -0500
+
+    Merge branch 'master' of https://github.com/marshallgallatin/cs373-idb
+
+commit 360fadc43bf63c253dd02b65625383cd3d6a161a
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Thu Mar 24 18:25:51 2016 -0500
+
+    updated the splash screen for the 3 ingredients
+
+commit 65880aa1bb96982ad29ed824bdf9d9100f90ca8c
+Merge: 469096c 30b9728
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 18:22:12 2016 -0500
+
+    Merge branch 'master' of https://github.com/marshallgallatin/cs373-idb
+
+commit 469096c6bdbaab45cd5d11c3660af6e0d5694087
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 18:22:00 2016 -0500
+
+    Recipes updates
+
+commit 30b972822669315fa1b41806af123fd63c7708d3
+Author: K.C <hawesdomingue@utexas.edu>
+Date:   Thu Mar 24 18:18:19 2016 -0500
+
+    Finished first version of API docs
+
+commit 0724c9bb752cd4280db61eec678d1302326b1579
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 18:12:19 2016 -0500
+
+    Recipes, separate ingredient pages
+
+commit 270382bc04e85aaab3108c3f3b78b539d339d40e
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Thu Mar 24 17:43:12 2016 -0500
+
+    updated to show K.C.'s picture for K.C. on the about page
+
+commit 8808310d51807275593d30c84afd582d2569ac77
+Merge: b9c7745 f2bfcf2
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 17:33:49 2016 -0500
+
+    Merge branch 'master' of https://github.com/marshallgallatin/cs373-idb
+
+commit b9c77450b98cd594482a7f3950b63f0e50c5c850
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 17:33:36 2016 -0500
+
+    Updated pages
+
+commit f2bfcf22c1764b7433baba833f056b19c807c96c
+Author: HawesDomingue <HawesDomingue@utexas.edu>
+Date:   Thu Mar 24 17:24:49 2016 -0500
+
+    Adding links to data info
+
+commit 71583c6fac39c2ad4747407a27f7ac060689e61f
+Author: HawesDomingue <HawesDomingue@utexas.edu>
+Date:   Thu Mar 24 17:20:43 2016 -0500
+
+    Adding KC's bio
+
+commit e9017d7a8d3c92ea9522c44e28102e3772af59cd
+Author: HawesDomingue <HawesDomingue@utexas.edu>
+Date:   Thu Mar 24 17:11:35 2016 -0500
+
+    Adding KC's headshot
+
+commit 7f6bf58b2181695f28183a2213b5abbd9eff0bb6
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Thu Mar 24 17:01:03 2016 -0500
+
+    added Josh's info to the about page
+
+commit 9f494a1b31edbd1c02a9c02ff82f68a33c33ca82
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Thu Mar 24 16:49:32 2016 -0500
+
+    updated models.html due to models.py changes
+
+commit 0be0d5ab0bf352963c65a3da0c09215b1fa172a4
+Author: Joshie196 <joshdcannon@gmail.com>
+Date:   Thu Mar 24 16:26:40 2016 -0500
+
+    Fixing tests to match changes to models
+
+commit adaeecfc5afdbdf395eadbb43be47bdedee3440d
+Author: Joshie196 <joshdcannon@gmail.com>
+Date:   Thu Mar 24 16:25:05 2016 -0500
+
+    Removing unneeded entries
+
+commit fc3e443979e75ec90c516ed36fb1a8f24983db26
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Thu Mar 24 16:19:03 2016 -0500
+
+    Updated about page for Marshall
+
+commit 0f129da657728c7ad53438b83150e4d0660d1d5e
+Author: Victor Yap <victor.yap@utexas.edu>
+Date:   Thu Mar 24 15:54:21 2016 -0500
+
+    added jambalaya, spanakopita, vietnamese banh to recipe.html
+
+commit 54428ce9dca6dada28ae5ad737e2c56736530580
+Merge: 7bf84e7 d8a0fac
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 15:06:10 2016 -0500
+
+    Merge branch 'master' of https://github.com/marshallgallatin/cs373-idb
+
+commit 7bf84e7779fa3167a0b13df5534f5998a8d760b7
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 15:05:55 2016 -0500
+
+    Links added, Index page added
+
+commit d8a0facce1b7525cade73aac504c2d280c7ac81c
+Author: Victor Yap <victor.yap@utexas.edu>
+Date:   Thu Mar 24 14:39:22 2016 -0500
+
+    fixed victor's headshot image
+
+commit f8633ad16812bb05a4bfb665e037920de1d30951
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Thu Mar 24 14:18:02 2016 -0500
+
+    updated tests.py to not do anything if the database stuff isn't installed
+
+commit bbd035683f3aef21c5a0612cc49aef047a127556
+Merge: 4a4260e 5f26df7
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 14:07:03 2016 -0500
+
+    Merge branch 'master' of https://github.com/marshallgallatin/cs373-idb
+
+commit 4a4260ec4c85c1be02eb58e565aea09fa3d15011
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 14:06:53 2016 -0500
+
+    About page update
+
+commit 5f26df7df36ab1c15231120b38ef406f3fff378b
+Author: Victor Yap <victor.yap@utexas.edu>
+Date:   Thu Mar 24 12:23:06 2016 -0500
+
+    Transferring API Description file from Apiary.io, Moved ingredientSearch Parameter into its own resource, /recipe/ingredientSearch
+
+commit 3f84216825f5ae72f0513157057a12b534cf57dd
+Author: Victor Yap <victor.yap@utexas.edu>
+Date:   Thu Mar 24 12:11:09 2016 -0500
+
+    Transferring API Description file from Apiary.io, Added ingredientSearch parameter to Recipe Collection
+
+commit c2a6909b51cabb83e9b1abc8daec4596dd96a4ba
+Author: K.C <hawesdomingue@utexas.edu>
+Date:   Thu Mar 24 10:26:49 2016 -0500
+
+    Small changes to API docs
+
+commit cab5878cd575f7a7c131b1a22d819e284f2e3d9b
+Merge: 7de69af a385e69
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 10:23:05 2016 -0500
+
+    Merge branch 'master' of https://github.com/marshallgallatin/cs373-idb
+
+commit 7de69af24861311fd056e7e60ac4fc010bea1fb8
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 10:22:37 2016 -0500
+
+    Ingredient model html page
+
+commit a385e69bb134d48b708b708b2ba79f7632b3dafe
+Author: K.C <hawesdomingue@utexas.edu>
+Date:   Thu Mar 24 10:06:25 2016 -0500
+
+    API looking better
+
+commit 1683bf726554b3e997f2309da3f48a75b0ed1c20
+Author: Joshie196 <joshdcannon@gmail.com>
+Date:   Thu Mar 24 09:22:25 2016 -0500
+
+    Removing documentation to removed attributes
+
+commit fb9f3078e805ff39b830de449e80aba6102197e0
+Author: K.C <hawesdomingue@utexas.edu>
+Date:   Thu Mar 24 08:39:56 2016 -0500
+
+    Adding more queries to /recipes
+
+commit 436ae3fa48041749b248c7cc9c8d0b601e7b2f13
+Author: minbi <min.bi.888@gmail.com>
+Date:   Thu Mar 24 08:34:09 2016 -0500
+
+    Ingredient and Recipe page
+
+commit 2b1b405d2183869c0d76762b08c4310eb5438cf9
+Author: Victor Yap <victor.yap@utexas.edu>
+Date:   Thu Mar 24 04:10:46 2016 -0500
+
+    Transferring API Description file from Apiary.io, added Nutrition, added Recipe Action, Updated formatting
+
+commit f220a7c52d6e8d58e6c15a2d74fbd09ada4e5b78
+Author: K.C <hawesdomingue@utexas.edu>
+Date:   Thu Mar 24 01:40:16 2016 -0500
+
+    Transferring API Description file from Apiary.io
+
+commit 70bb6fcbd380c4f59a759c4b667c35dee25e96cb
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Thu Mar 24 01:29:03 2016 -0500
+
+    started the about page
+
+commit 5c248672c73b875a1aaf94935245755440d9c5fd
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Wed Mar 23 23:40:50 2016 -0500
+
+    fixed the makefile
+
+commit 400332125269ec3f406a5548bd5001cc0417c0dd
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Wed Mar 23 23:39:07 2016 -0500
+
+    fixed typo in .travis.yml
+
+commit 1a90b9c84ea1b8a0e668d55f8975ef1709dcd94b
+Merge: f15b189 f57d9b4
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Wed Mar 23 23:37:26 2016 -0500
+
+    Merge branch 'master' of https://github.com/marshallgallatin/cs373-idb
+
+commit f15b189db958d1dc105903f58ee03846a9ac75fa
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Wed Mar 23 23:37:09 2016 -0500
+
+    updated makefile and added models.html
+
+commit f57d9b47cff740271d4b30406af2dfbf2bd99498
+Author: Joshie196 <joshdcannon@gmail.com>
+Date:   Wed Mar 23 23:29:42 2016 -0500
+
+    Updating UML
+
+commit 23c63b6b6e6cabb28f5aad4fe123052b25ff9f47
+Author: Joshie196 <joshdcannon@gmail.com>
+Date:   Wed Mar 23 23:11:37 2016 -0500
+
+    Fixing typo
+
+commit d1ca27dfec64e52b72d3eb6d20a2a87548d2fb66
+Author: Joshie196 <joshdcannon@gmail.com>
+Date:   Wed Mar 23 23:09:53 2016 -0500
+
+    Adding missing files
+
+commit fd830d6969f0845d29479a18382a8c32c6657f6e
+Author: Joshie196 <joshdcannon@gmail.com>
+Date:   Wed Mar 23 23:05:07 2016 -0500
+
+    Adding the enums
+
+commit d3570815d07aea4df223a954b58ab39ef088ec3a
+Author: Joshie196 <joshdcannon@gmail.com>
+Date:   Wed Mar 23 23:00:06 2016 -0500
+
+    Update tests.py
+
+commit 8726e245f4085c32b5d167d13cf07f36264b1e36
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Wed Mar 23 22:53:18 2016 -0500
+
+    updated the index and controllers
+
+commit 7125146dd9e5fa79ab028cf672e132ab36910252
+Merge: ffa88cf 5e43164
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Wed Mar 23 22:27:16 2016 -0500
+
+    Merge branch 'master' of https://github.com/marshallgallatin/cs373-idb
+
+commit ffa88cffe011c93abfe0cd8cc5abd3a82d746616
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Wed Mar 23 22:27:02 2016 -0500
+
+    updated to be single page navigation
+
+commit 5e431642b69888b2d08d773e647132b87b1b0990
+Author: HawesDomingue <HawesDomingue@utexas.edu>
+Date:   Wed Mar 23 22:07:47 2016 -0500
+
+    Adding scraped data
+
+commit a347849df81124900d55511381eb663967802749
+Merge: a722b8f edc28ae
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Wed Mar 23 21:45:07 2016 -0500
+
+    Merge branch 'master' of https://github.com/marshallgallatin/cs373-idb
+
+commit a722b8f5436f86452cc97bece5612bd6c6abe142
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Wed Mar 23 21:45:02 2016 -0500
+
+    added bootstrap and two static webpages that are empty, updated app.py to serve any webpage from the static/html folder
+
+commit edc28ae61dbedaa2dc8c3766ef176af644340d3b
+Author: Joshie196 <joshdcannon@gmail.com>
+Date:   Wed Mar 23 12:46:16 2016 -0500
+
+    changing members to use underscores instead of CamelCase
+
+commit 3a1c872aeaddaf1874ff39e583cd2728c88f0fc2
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Wed Mar 23 00:54:34 2016 -0500
+
+    added slack notifications to travis, updated travis to install sqlalchemy, updated the makfile to hopefully create model.hmtl correctly
+
+commit 63c54124e1bb0ffc5498fabd9c7c8aea1adafdf1
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Wed Mar 23 00:39:06 2016 -0500
+
+    Transferring API Description file from Apiary.io
+
+commit 3a05676ccdeb565899b3c062cc59793223666281
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Tue Mar 22 23:46:34 2016 -0500
+
+    updated so app.py runs on port 5000, but is exposed to the outside on port 80, this should make running the app locally easier, since you have to be sudo to run on port 80
+
+commit 6634411ed8dc4868c8bd6284fea977bdd3fc10a0
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Tue Mar 22 23:05:11 2016 -0500
+
+    put the port back on port 80, cause you know that would help
+
+commit a70aa7b789474377c59829b4f4b0d78ab1be736c
+Author: Joshie196 <joshdcannon@gmail.com>
+Date:   Tue Mar 22 22:28:19 2016 -0500
+
+    still fixing typo
+
+commit 0c7d4866280bc4bf84c05f950de16b6fb9f2139a
+Author: Joshie196 <joshdcannon@gmail.com>
+Date:   Tue Mar 22 22:27:44 2016 -0500
+
+    fixing typo
+
+commit 272b352060f6eb51b62c2c79449f47df6eaa53f0
+Merge: 25359b4 f9e2703
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Tue Mar 22 20:40:49 2016 -0500
+
+    Merge branch 'master' of https://github.com/marshallgallatin/cs373-idb
+
+commit 25359b48e48fcb58c45e7f38d54a6a9972260266
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Tue Mar 22 20:40:18 2016 -0500
+
+    a simple simple simple static page to deliver
+
+commit f9e270383fb947e8921ef5c9f74b144fcef960b5
+Author: Joshie196 <joshdcannon@gmail.com>
+Date:   Tue Mar 22 20:31:51 2016 -0500
+
+    Adding cuisine
+
+commit 710c6807fbd6afca909878c9fd9ad4658dd0a756
+Merge: 5561ddb 4a5e7c4
+Author: Joshie196 <joshdcannon@gmail.com>
+Date:   Tue Mar 22 20:18:48 2016 -0500
+
+    Merge pull request #16 from marshallgallatin/joshua
+    
+    Adding models.py
+
+commit 4a5e7c46d1cc4d37f0fc7bf07fc2f8b1d2b5f760
+Author: Joshie196 <joshdcannon@gmail.com>
+Date:   Mon Mar 21 22:48:09 2016 -0500
+
+    Create models.py
+
+commit 0bc7dda2237ab37e95c21b9d20c2a8cb313bfaa5
+Merge: 8543e7b 5561ddb
+Author: Joshie196 <joshdcannon@gmail.com>
+Date:   Mon Mar 21 22:47:01 2016 -0500
+
+    Merge pull request #15 from marshallgallatin/master
+    
+    Merging
+
+commit 5561ddb8e9aa387309561256834f87851d841d12
+Author: K.C <HawesDomingue@utexas.edu>
+Date:   Mon Mar 21 00:43:00 2016 -0500
+
+    Adding abbreviated nutrient file from NDB
+    
+    See [documentation](http://www.ars.usda.gov/SP2UserFiles/Place/80400525/Data/SR/SR28/sr28_doc.pdf) for more details:
+    "It contains all the food items found in the relational database, but with fewer nutrients and other related information. The abbreviated file does not include values for starch, fluoride, betaine, vitamin D2 and D3, added vitamin E, added vitamin B12, alcohol, caffeine, theobromine, phytosterols, individual amino acids, individual fatty acids, or sugars."
+
+commit 20e68b70723ec6a449fd03717bdca1ca7810f9f9
+Author: K.C <HawesDomingue@utexas.edu>
+Date:   Mon Mar 21 00:23:14 2016 -0500
+
+    Adding complete CSV food description table
+    
+    See [usda.gov](http://www.ars.usda.gov/sp2UserFiles/Place/80400525/Data/SR/SR28/sr28_doc.pdf) for more info:
+    "This file contains long and short descriptions and food group designators for all food items, along with common names, manufacturer name, scientific name, percentage and description of refuse, and factors used for calculating protein and kilocalories, if applicable. Items used in the
+    FNDDS are also identified by value of “Y” in the Survey field."
+
+commit d9f52d51afdc024323ea31d901c5b7d608555cc7
+Author: K.C <HawesDomingue@utexas.edu>
+Date:   Mon Mar 21 00:19:46 2016 -0500
+
+    Replacing with better data
+
+commit a5a0cfd6754e3fbe6af4ccd658e85ec1d2da08b9
+Author: K.C <HawesDomingue@utexas.edu>
+Date:   Sun Mar 20 22:17:11 2016 -0500
+
+    Adding ingredient data
+    
+    CSV file that maps NutrientDB IDs to names for future lookup purposes
+
+commit 8543e7b9142fda07c33c1b01c6f4708f46e6f938
+Merge: 4f9cfc6 54e8be8
+Author: marshallgallatin <marshallgallatin@gmail.com>
+Date:   Sun Mar 20 19:15:38 2016 -0500
+
+    Merge pull request #14 from marshallgallatin/marshall
+    
+    Pushed in some of the required files and added the super simple, very basic flask implementation.
+
+commit 54e8be8a490cf0f46cf374e67acc0975443626b7
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Sun Mar 20 15:56:12 2016 -0500
+
+    added the very very very very basic app and db stuff, mostly followed the steps here: https://getcarina.com/docs/tutorials/develop-a-python-web-application/
+
+commit 491908118d42d39371c584d0e2059cb31694a43d
+Author: Marshall Gallatin <marshallgallatin@gmail.com>
+Date:   Sun Mar 20 15:55:05 2016 -0500
+
+    added the .gitignore, the .travis.yml, the makefile, and the tests.py file
+
+commit 4f9cfc6a0a8c1bca775647039d724ac4ecf0fe4d
+Author: K.C <HawesDomingue@utexas.edu>
+Date:   Wed Mar 16 18:50:16 2016 -0500
+
+    Adding build status for funsies
+
+commit c2227c36ba6b6e87b94df7e1a46add48ecd9f1e1
+Author: K.C <HawesDomingue@utexas.edu>
+Date:   Thu Mar 10 20:06:07 2016 -0600
+
+    Adding UML diagram
+
+commit 98ae0c0b15e0a1759ad68be79e4cbecc47050bb8
+Author: marshallgallatin <marshallgallatin@gmail.com>
+Date:   Thu Mar 10 20:03:31 2016 -0600
+
+    Initial commit
