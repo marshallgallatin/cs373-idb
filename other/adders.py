@@ -1,3 +1,5 @@
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), os.pardir))
 from useDatabase import *
 import json
 import re
@@ -18,21 +20,22 @@ def addRecipeFromSpoonacular(spoonacularResult):
 
     print(knownIngredientsNames)
 
-    session.add(newRecipe)
-    for index, extractedIngredient in enumerate(listOfExtractedIngredients):
-        extractedIngredientName = extractedIngredient['name']
+    with sessionInstance() as session:
+        session.add(newRecipe)
+        for index, extractedIngredient in enumerate(listOfExtractedIngredients):
+            extractedIngredientName = extractedIngredient['name']
 
-        argumentDictionary = {convert(key):extractedIngredient[key] for key in extractedIngredient if (convert(key) in dir(IngredientsInRecipes) and key != 'id')}
-        ingredientInRecipe = IngredientsInRecipes(**argumentDictionary)
-        ingredientInRecipe.ingredient_index = index
-        ingredientInRecipe.recipe = newRecipe
+            argumentDictionary = {convert(key):extractedIngredient[key] for key in extractedIngredient if (convert(key) in dir(IngredientsInRecipes) and key != 'id')}
+            ingredientInRecipe = IngredientsInRecipes(**argumentDictionary)
+            ingredientInRecipe.ingredient_index = index
+            ingredientInRecipe.recipe = newRecipe
 
-        if extractedIngredientName in knownIngredientsNames:
-            ingredientInRecipe.ingredient = [ingredient for ingredient in knownIngredients if ingredient.name == extractedIngredientName][0]
-        else:
-            # All we get for an ingredient from Spoonacular is the name
-            ingredientInRecipe.ingredient = Ingredient(name = extractedIngredientName)
+            if extractedIngredientName in knownIngredientsNames:
+                ingredientInRecipe.ingredient = [ingredient for ingredient in knownIngredients if ingredient.name == extractedIngredientName][0]
+            else:
+                # All we get for an ingredient from Spoonacular is the name
+                ingredientInRecipe.ingredient = Ingredient(name = extractedIngredientName)
+                session.add(ingredientInRecipe)
+
             session.add(ingredientInRecipe)
-
-        session.add(ingredientInRecipe)
-    session.commit()
+        session.commit()
