@@ -21,7 +21,7 @@ def getIngredientByID(id):
         return session.query(Ingredient).filter(Recipe.id = id).one()
 
 
-def getIngredientByID(id):
+def getNutrionalInfortmationFromIngredientByID(id):
     """
     ...
 
