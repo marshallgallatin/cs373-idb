@@ -64,6 +64,14 @@ class TestIngredient(DatabaseTest):
             self.session.add(new_ingredient)
             self.session.commit()
 
+    def test_nameUniqueness(self):
+        with self.assertRaises(Exception):
+            new_ingredient1 = Ingredient(name='salt')
+            new_ingredient2 = Ingredient(name='salt')
+            self.session.add(new_ingredient1)
+            self.session.add(new_ingredient2)
+            self.session.commit()
+
     def test_enum(self):
         with self.assertRaises(Exception):
             new_ingredient = Ingredient(name='flour', continent_of_origin = 99) # an undefined continent

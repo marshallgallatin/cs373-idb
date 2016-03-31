@@ -46,7 +46,7 @@ def getRecipeByID(id):
     """
     ...
 
-    kwargs:
+    arguments:
         id (int): ID of the recipe.
     """
     with sessionInstance() as session:
