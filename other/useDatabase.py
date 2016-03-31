@@ -2,6 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 import sys, os
 sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), os.pardir))
+from models import Base
 from constants import databaseName
 
 engine = create_engine(databaseName)
