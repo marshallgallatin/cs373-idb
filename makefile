@@ -69,7 +69,6 @@ APP_FILES:=                    \
     ./app/requirements.txt     \
 
 DB_FILES:=          \
-    ./db/mysql.cnf  \
     ./db/Dockerfile \
 
 docker-build-lb:
@@ -84,7 +83,9 @@ docker-build-db: $(DB_FILES)
 	docker build -t $(DOCKER_HUB_USERNAME)/$(IMAGE_PREFIX)_db  db
 	docker push $(DOCKER_HUB_USERNAME)/$(IMAGE_PREFIX)_db
 
-docker-deploy: docker-build-lb docker-build-app docker-build-db
+docker-build-all: docker-build-lb docker-build-app docker-build-db
+
+docker-deploy: 
 	docker-compose down
 	docker-compose --file docker-compose-prod.yml up -d
 
