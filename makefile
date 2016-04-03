@@ -4,9 +4,9 @@ FILES :=                              \
     makefile                          \
     apiary.apib                       \
     IDB1.log                          \
-    models.html                        \
-    models.py                         \
-    tests.py                          \
+    models.html                       \
+    ./app/models.py                   \
+    ./app/tests.py                    \
     UML.pdf
 
 check:
@@ -48,25 +48,36 @@ status:
 	git remote -v
 	git status
 
-test: tests.py
-	coverage3 run    --branch tests.py >  tests.tmp 2>&1
+test: ./app/tests.py
+	coverage3 run    --branch ./app/tests.py >  tests.tmp 2>&1
 	coverage3 report -m                >> tests.tmp
 	cat tests.tmp
 
 IDB1.log:
 	git log > IDB1.log
 	
-models.html: models.py
-	pydoc -w models
+models.html: ./app/models.py
+	pydoc -w ./app/models
 
 # Variables needed for the docker-* targets
 IMAGE_PREFIX := cs373idb
 DOCKER_HUB_USERNAME := $(IMAGE_PREFIX)
 
-APP_FILES:=                    \
-    ./app/app.py               \
-    ./app/Dockerfile           \
-    ./app/requirements.txt     \
+APP_FILES:=                     \
+    ./app/app.py                \
+    ./app/constants.py          \
+    ./app/constraints.py        \
+    ./app/enums.py              \
+    ./app/IngredientQueries.py  \
+    ./app/models.py             \
+    ./app/QueryExceptions.py    \
+    ./app/QueryHelpers.py       \
+    ./app/RecipeQueries.py      \
+    ./app/testModels.py         \
+    ./app/tests.py              \
+    ./app/useDatabase.py        \
+    ./app/Dockerfile            \
+    ./app/requirements.txt      \
 
 DB_FILES:=          \
     ./db/Dockerfile \
