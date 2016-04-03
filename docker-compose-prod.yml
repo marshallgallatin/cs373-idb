@@ -7,7 +7,7 @@ services:
     extends:
       file: docker-compose-common.yml
       service: lb
-    image: marshallgallatin/cs373idb_lb
+    image: cs373idb/cs373idb_lb
     environment:
       # Always deploy to n1 so the lb always has the same IP address. This is
       # just for convenience and isn't strictly necessary.
@@ -17,7 +17,7 @@ services:
     extends:
       file: docker-compose-common.yml
       service: app
-    image: marshallgallatin/cs373idb_app
+    image: cs373idb/cs373idb_app
     expose:
       # Expose port 5000 so it's only visibile on the container, not the host
       - "5000"
@@ -29,7 +29,7 @@ services:
     extends:
       file: docker-compose-common.yml
       service: db
-    image: marshallgallatin/cs373idb_db
+    image: cs373idb/cs373idb_db
     expose:
       # Expose port 5432 so it's only visibile on the container, not the host
       - "5432"
