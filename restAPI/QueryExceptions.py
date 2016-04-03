@@ -1,0 +1,2 @@
+class BadQueryException(Exception):
+    pass

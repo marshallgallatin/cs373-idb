@@ -140,10 +140,10 @@ class NutritionalContent(Base):
     dietary_fiber_in_grams       = Column(Float,   isNonnegative('dietary_fiber_in_grams')      , nullable=False)
     sugar_in_grams               = Column(Float,   isNonnegative('sugar_in_grams')              , nullable=False)
     protein_in_grams             = Column(Float,   isNonnegative('protein_in_grams')            , nullable=False)
-    vitamin_a_in_iu              = Column(Integer, isNonnegative('vitamin_a_percentage')        , nullable=False)
-    vitamin_c_in_milligrams      = Column(Integer, isNonnegative('vitamin_c_percentage')        , nullable=False)
-    calcium_in_milligrams        = Column(Integer, isNonnegative('calcium_percentage')          , nullable=False)
-    iron_in_milligrams           = Column(Integer, isNonnegative('iron_percentage')             , nullable=False)
+    vitamin_a_in_iu              = Column(Integer, isNonnegative('vitamin_a_in_iu')             , nullable=False)
+    vitamin_c_in_milligrams      = Column(Integer, isNonnegative('vitamin_c_in_milligrams')     , nullable=False)
+    calcium_in_milligrams        = Column(Integer, isNonnegative('calcium_in_milligrams')       , nullable=False)
+    iron_in_milligrams           = Column(Integer, isNonnegative('iron_in_milligrams')          , nullable=False)
 
 class IngredientsInRecipes(Base):
     """The IngredientsInRecipes Table
