@@ -29,12 +29,11 @@ class Cuisine(Enum):
 
 class Continent(Enum):
     Africa        = 1
-    Antarctica    = 2
-    Asia          = 3
-    Australia     = 4
-    Europe        = 5
-    NorthAmerica  = 6
-    SouthAmerica  = 7
+    Asia          = 2
+    Europe        = 3
+    NorthAmerica  = 4
+    Oceania       = 5
+    SouthAmerica  = 6
 
 def enumToTuple(enum):
     return tuple(item for item in enum.__members__.keys())
