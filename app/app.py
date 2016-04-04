@@ -1,10 +1,57 @@
 #!/usr/bin/env python3
 
 from flask import Flask, jsonify, request
+from flask_restful import reqparse, abort, Api, Resource
 import RecipeQueries
+from jsonifyModels import jsonifyQueryResult
 
 
 app = Flask(__name__)
+api = Api(app)
+
+list_recipe_parser = reqparse.RequestParser()
+list_recipe_parser.add_argument('limit', type=int, help='The number of recipes to return. ERROR: {error_msg}')
+list_recipe_parser.add_argument('cuisine', type=str, help='The Cuisine to filter by. ERROR: {error_msg}')
+list_recipe_parser.add_argument('diet', type=str, help='The dietary restriction to filter by. ERROR: {error_msg}')
+
+class ListRecipes(Resource):
+    """ 
+    Implements the Recipe Collection [/recipes{?limit,cuisine,diet}] RESTful API entry point.
+    """
+    def get(self):
+        rlist = []
+        parsed_args = list_recipe_parser.parse_args()
+        filtered_args = {k : parsed_args[k] for k in parsed_args if parsed_args[k] is not None }
+        for r in RecipeQueries.getAllRecipes(**filtered_args):
+            rlist.append(dict({"id": r.id, "title": r.title, "image_uri":r.image_uri, "cuisine": r.cuisine, "ready_in_minutes": r.ready_in_minutes, "servings": r.servings}))
+        return jsonify({"recipes": rlist})
+        
+class RecipeByID(Resource):
+    """
+    Recipe [/recipes/{id}]
+    """
+    def get(self, rec_id):
+        recipe = RecipeQueries.getRecipeByID(rec_id)
+        recipe_dict = { 
+            "id": recipe.id,
+            "title": recipe.title,
+            "ingredients": [
+                "TODO: JSONFIY INGREDIENTS"
+            ],
+            "image_uri": recipe.image_uri,
+            "instructions": recipe.instructions,
+            "cuisine": recipe.cuisine,
+            "ready_in_minutes": recipe.ready_in_minutes,
+            "servings": recipe.servings,
+            "vegetarian": recipe.vegetarian,
+            "vegan": recipe.vegan,
+            "gluten_free": recipe.gluten_free,
+            "dairy_free": recipe.dairy_free
+        }
+        return jsonify(recipe_dict)
+        
+api.add_resource(ListRecipes, '/recipes')
+api.add_resource(RecipeByID, '/recipes/<int:rec_id>')
 
 @app.route("/")
 def splash():
@@ -13,19 +60,6 @@ def splash():
 @app.route("/<path:path>")
 def static_html(path):
     return app.send_static_file('html/{}'.format(path))
-    
-@app.route("/recipes")
-def list_recipes():
-    """ Implements the Recipe Collection [/recipes{?limit,cuisine,diet}] RESTful API entry point  """
-    # request.args is a MultiDict, this converts it to a regular dictionary.  
-    # Multiple values passed in are discarded.
-    req_args = {k : request.args[k] for k in request.args }
-    if "limit" in req_args:
-        req_args["limit"] = int(req_args["limit"])
-    rlist = []
-    for r in RecipeQueries.getAllRecipes(**req_args):
-        rlist.append(dict({"id": r.id, "title": r.title, "image_uri":r.image_uri, "cuisine": r.cuisine, "ready_in_minutes": r.ready_in_minutes, "servings": r.servings}))
-    return jsonify({"recipes": rlist})
 
 ############  WEBSITE TEST ENTRY POINTS ###########
 # These are temporary and just so that web development can begin
@@ -102,4 +136,4 @@ def test_recipe():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000)
