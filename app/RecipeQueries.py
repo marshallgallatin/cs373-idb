@@ -28,7 +28,7 @@ def getAllRecipes(limit=10, **kwargs):
 
         restrictions = {}
         if 'cuisine' in kwargs:
-            restrictions['cuisine'] = Cuisine[kwargs['cuisine']]
+            restrictions['cuisine'] = Cuisine[kwargs['cuisine']].name
 
         if 'diet' in kwargs:
             diet = kwargs['diet']

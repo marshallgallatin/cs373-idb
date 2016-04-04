@@ -15,10 +15,15 @@ def static_html(path):
     return app.send_static_file('html/{}'.format(path))
     
 @app.route("/recipes")
-def get_recipes():
-    """Doesn't quite work yet - request.args is a multidict"""
+def list_recipes():
+    """ Implements the Recipe Collection [/recipes{?limit,cuisine,diet}] RESTful API entry point  """
+    # request.args is a MultiDict, this converts it to a regular dictionary.  
+    # Multiple values passed in are discarded.
+    req_args = {k : request.args[k] for k in request.args }
+    if "limit" in req_args:
+        req_args["limit"] = int(req_args["limit"])
     rlist = []
-    for r in RecipeQueries.getAllRecipes(**request.args):
+    for r in RecipeQueries.getAllRecipes(**req_args):
         rlist.append(dict({"id": r.id, "title": r.title, "image_uri":r.image_uri, "cuisine": r.cuisine, "ready_in_minutes": r.ready_in_minutes, "servings": r.servings}))
     return jsonify({"recipes": rlist})
 
@@ -97,4 +102,4 @@ def test_recipe():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000, debug=True)
