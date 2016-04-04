@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import re
 from flask import Flask, jsonify, request, render_template
 from flask_restful import reqparse, abort, Api, Resource
 import RecipeQueries
