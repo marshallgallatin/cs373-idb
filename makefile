@@ -55,7 +55,7 @@ test: ./app/tests.py
 
 IDB1.log:
 	git log > IDB1.log
-	
+
 models.html: ./app/models.py
 	pydoc -w ./app/models
 
@@ -76,6 +76,7 @@ APP_FILES:=                     \
     ./app/testModels.py         \
     ./app/tests.py              \
     ./app/useDatabase.py        \
+    ./app/jsonifyModels.py      \
     ./app/Dockerfile            \
     ./app/requirements.txt      \
 
@@ -96,7 +97,7 @@ docker-build-db: $(DB_FILES)
 
 docker-build-all: docker-build-lb docker-build-app docker-build-db
 
-docker-deploy: 
+docker-deploy:
 	docker-compose down
 	docker-compose --file docker-compose-prod.yml up -d
 
