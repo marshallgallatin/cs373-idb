@@ -53,46 +53,6 @@ def test_recipes():
         }
     ]}
     return jsonify(testdict)
-    
-@app.route("/test/recipes/1")
-def test_recipe():
-    testdict = {
-        "id": 1,
-        "title": "Jambalaya",
-        "ingredients": [
-            {
-                "id": 1,
-                "name": "basil",
-                "amount": 1,
-                "unit": "teaspoon",
-                "original_string": "1 teaspoon basil"
-            },
-            {
-                "id": 2,
-                "name": "bay leaf",
-                "amount": 1,
-                "unit": "",
-                "originalString": "1 Bay leaf"
-            },
-            {
-                "id": 3,
-                "name": "canned tomato sauce",
-                "amount": 8,
-                "unit": "ounces",
-                "originalString": "8 ounces can tomato sauce"
-            }
-        ],
-        "image_uri": "https://spoonacular.com/recipeImages/Jambalaya-648427.jpg",
-        "instructions": "1. Brown sausage. blacken fish with pepper and paprika. Brown in hot skillet. Saute onion, celery, green pepper, garlic until limp. Add stock and tomato sauce, spices, vegetable and meats to crock pot or large stock pot; boil for 1 hour on low or crock pot until done.",
-        "cuisine": "cajun",
-        "ready_in_minutes": 45,
-        "servings": 10,
-        "vegetarian": False,
-        "vegan": False,
-        "gluten_free": True,
-        "dairy_free": True
-    }
-    return jsonify(testdict)
 
 """
 Copied from  cs373-idb/db/scraped_data/recipes/african/african632003.json
