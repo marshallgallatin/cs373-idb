@@ -25,8 +25,8 @@ services:
       # Environment variables to configure the app on startup.
       # We don't care about commiting these creds to GitHub because they're only
       # for our local development environment
-      - POSTGRES_USER=postgres-user
-      - POSTGRES_PASSWORD=postgres-simple-password
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=SWEdishchefs
     command: gunicorn --reload app:app --bind 0.0.0.0:5000
       # Run Gunicorn to serve app requests and reload on change so we can see our
       # changes to the app code
@@ -42,8 +42,8 @@ services:
       # Environment variables to configure MySQL on startup.
       # We don't care about commiting these creds to GitHub because they're only
       # for our local development environment
-      - POSTGRES_USER=postgres-user
-      - POSTGRES_PASSWORD=postgres-simple-password
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=SWEdishchefs
     volumes_from:
       # Mount the volumes from the data container to store our MySQL files
       - data

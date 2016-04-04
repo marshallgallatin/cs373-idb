@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
+import RecipeQueries
+
+
 app = Flask(__name__)
 
 @app.route("/")
@@ -10,10 +13,25 @@ def splash():
 @app.route("/<path:path>")
 def static_html(path):
     return app.send_static_file('html/{}'.format(path))
+    
+@app.route("/recipes")
+def get_recipes():
+    """Doesn't quite work yet - request.args is a multidict"""
+    rlist = []
+    for r in RecipeQueries.getAllRecipes(**request.args):
+        rlist.append(dict({"id": r.id, "title": r.title, "image_uri":r.image_uri, "cuisine": r.cuisine, "ready_in_minutes": r.ready_in_minutes, "servings": r.servings}))
+    return jsonify({"recipes": rlist})
 
 ############  WEBSITE TEST ENTRY POINTS ###########
 # These are temporary and just so that web development can begin
 # while we nail down getting the database working and api implemented
+@app.route("/dbdump")
+def dump_database():
+    rlist = []
+    for r in RecipeQueries.getAllRecipes():
+        rlist.append(dict({"id": r.id, "title": r.title, "image_uri":r.image_uri, "cuisine": r.cuisine, "ready_in_minutes": r.ready_in_minutes, "servings": r.servings}))
+    return jsonify({"recipes": rlist})
+
 @app.route("/test/recipes")
 def test_recipes():
     testdict = { "recipes": [
