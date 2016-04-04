@@ -70,6 +70,14 @@ class IngredientTest(DatabaseTest):
             self.session.add(new_ingredient)
             self.session.commit()
 
+    def test_name_uniqueness(self):
+        new_ingredient1 = TestIngredient(name="egg noodles")
+        new_ingredient2 = TestIngredient(name="egg noodles")
+        self.session.add(new_ingredient1)
+        self.session.add(new_ingredient2)
+        with self.assertRaises(Exception):
+            self.session.commit()
+
 class NutritionalContentTest(DatabaseTest):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
