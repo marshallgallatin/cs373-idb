@@ -4,6 +4,9 @@ language: python
 
 python:
     - "3.4"
+    
+services:
+    - postgresql
 
 sudo: false
 
@@ -15,19 +18,22 @@ install:
     - pip --version
     - pip install coverage
     - pip install Flask
-    - pip install sqlalchemy 
+    - pip install sqlalchemy
+    - pip install flask-restful
+    - pip install psycopg2
 
 before_script:
     - uname -a
     - printenv
     - pip list
+    - psql -c 'create database travis_ci_test;' -U postgres
 
 script:
     - date
     - ls -al
     - make models.html
     - ls -al
-    - make IDB1.log
+    - make IDB2.log
     - ls -al
     - make test
     - ls -al
