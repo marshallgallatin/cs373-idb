@@ -55,7 +55,7 @@
 		<h1>{{ title }}</h1>
 	</div>
 	<div style="padding-top:10px" class="col-xs-12 col-sm-6 col-lg-6">
-		<img class="img-responsive" src={{ img_uri }}></img>
+		<img class="img-responsive" src={{ image_uri }}></img>
 	</div>
 	
 	<div class="page-header">
@@ -63,19 +63,22 @@
 	</div>
 	<div class="row">
 		<div class="col-xs-12 col-sm-6 col-lg-4">
-			<div class="checkbox">
-				<label><input type="checkbox" value="">{{test_ingred | safe}}</label>
-			</div>
 			{% for ingredient in ingredients1 %}
 			<div class="checkbox">
-				<label><input type="checkbox" value="">{{ingredient | safe}}</label>
+				<label>
+                    <input type="checkbox" value=""></input>
+                    <a href="{{ ingredient.href }}">{{ingredient.original_string | safe}}</a>
+                </label>
 			</div>
 			{% endfor %}
 		</div>
 		<div class="col-xs-12 col-sm-6 col-lg-4">
 			{% for ingredient in ingredients2 %}
 			<div class="checkbox">
-				<label><input type="checkbox" value="">{{ingredient | safe}}</label>
+				<label>
+                    <input type="checkbox" value=""></input>
+                    <a href="{{ ingredient.href }}">{{ingredient.original_string | safe}}</a>
+                </label>
 			</div>
 			{% endfor %}
 		</div>

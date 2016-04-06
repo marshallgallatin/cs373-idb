@@ -165,17 +165,15 @@ Copied from  cs373-idb/db/scraped_data/recipes/african/african632003.json
 @app.route('/recipe.html')
 @app.route('/recipe_<r_id>.html')
 def recipe(r_id=None):
-	store = {"id":"1",
-	"instructions":"<ol><li>Saute onions in large pot until soft. Add all ingredients except for peanut butter and simmer for 1 1/2 hours. </li><li>Stir a spoonful of peanut butter into each serving.</li></ol>",
-	"ingredients":["a","<b>b</b>"],
-	"test_ingred":"1 teaspoon <a href=\"/2044.html\">basil</a>",
-	"ingred":4,
-	"title":"Jamba",
-	"recipeslit":"active",
-	"img_uri":"https://webknox.com/recipeImages/648427-556x370.jpg"}
+	store = RecipeQueries.getRecipeByID(r_id)
+	add_hrefs(store)
 	split_ingredients(store)
 	split_instructions(store)
 	return render_template('recipe.html', **store)
+
+def add_hrefs(d):
+    for ingredient in d["ingredients"]:
+        ingredient["href"] = "/ingredient_" + str(ingredient["id"]) + ".html"
 
 def split_ingredients(d):
 	l = d["ingredients"]
