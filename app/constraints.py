@@ -9,8 +9,8 @@ def isNonnegative(name):
 def isNotNull(name):
     return CheckConstraint('(' + name + 'IS NOT NULL)')
 
-def AND(constaint1, constaint2):
-    return '(' + constaint1.sqltext + ') AND (' + constaint2.sqltext + ')'
+def AND(constraint1, constraint2):
+    return '(' + constraint1.sqltext + ') AND (' + constraint2.sqltext + ')'
 
-def OR(constaint1, constaint2):
-    return '(' + constaint1.sqltext + ') OR (' + constaint2.sqltext + ')'
+def OR(constraint1, constraint2):
+    return '(' + constraint1.sqltext + ') OR (' + constraint2.sqltext + ')'

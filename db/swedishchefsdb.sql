@@ -77,17 +77,18 @@ SET search_path = public, pg_catalog;
 
 --
 -- TOC entry 535 (class 1247 OID 16446)
--- Name: <enum 'Continent'>; Type: TYPE; Schema: public; Owner: -
+-- Name: <enum 'Origin'>; Type: TYPE; Schema: public; Owner: -
 --
 
-CREATE TYPE "<enum 'Continent'>" AS ENUM (
+CREATE TYPE "<enum 'Origin'>" AS ENUM (
     'Africa',
-    'Antarctica',
     'Asia',
     'Australia',
     'Europe',
     'NorthAmerica',
-    'SouthAmerica'
+    'Oceania',
+    'SouthAmerica',
+    'Worldwide'
 );
 
 
@@ -118,8 +119,7 @@ CREATE TYPE "Cuisine" AS ENUM (
     'greek',
     'german',
     'nordic',
-    'eastern',
-    'european',
+    'easternEuropean',
     'caribbean',
     'latinAmerican'
 );
@@ -137,8 +137,9 @@ SET default_with_oids = false;
 CREATE TABLE "Ingredient" (
     id integer NOT NULL,
     name character varying NOT NULL,
+    image_uri character varying,
     scientific_name character varying,
-    continent_of_origin "<enum 'Continent'>"
+    origin "<enum 'Origin'>"
 );
 
 
@@ -189,31 +190,31 @@ CREATE TABLE "Nutritional Content" (
     id integer NOT NULL,
     ingredient_id integer,
     calories integer NOT NULL,
-    total_fat_in_grams integer NOT NULL,
-    saturated_fat_in_grams integer NOT NULL,
-    cholesterol_in_milligrams integer NOT NULL,
-    sodium_in_milligrams integer NOT NULL,
-    total_carbohydrates_in_grams integer NOT NULL,
-    dietary_fiber_in_grams double precision NOT NULL,
-    sugar_in_grams double precision NOT NULL,
-    protein_in_grams double precision NOT NULL,
-    vitamin_a_in_iu integer NOT NULL,
-    vitamin_c_in_milligrams integer NOT NULL,
-    calcium_in_milligrams integer NOT NULL,
-    iron_in_milligrams integer NOT NULL,
-    CONSTRAINT "Nutritional Content_calcium_in_milligrams_check" CHECK ((calcium_in_milligrams >= 0)),
+    total_fat_g integer NOT NULL,
+    saturated_fat_g integer NOT NULL,
+    cholesterol_mg integer NOT NULL,
+    sodium_mg integer NOT NULL,
+    total_carbohydrates_g integer NOT NULL,
+    dietary_fiber_g double precision NOT NULL,
+    sugar_g double precision NOT NULL,
+    protein_g double precision NOT NULL,
+    vitamin_a_iu integer NOT NULL,
+    vitamin_c_mg integer NOT NULL,
+    calcium_mg integer NOT NULL,
+    iron_mg integer NOT NULL,
+    CONSTRAINT "Nutritional Content_calcium_mg_check" CHECK ((calcium_mg >= 0)),
     CONSTRAINT "Nutritional Content_calories_check" CHECK ((calories >= 0)),
-    CONSTRAINT "Nutritional Content_cholesterol_in_milligrams_check" CHECK ((cholesterol_in_milligrams >= 0)),
-    CONSTRAINT "Nutritional Content_dietary_fiber_in_grams_check" CHECK ((dietary_fiber_in_grams >= (0)::double precision)),
-    CONSTRAINT "Nutritional Content_iron_in_milligrams_check" CHECK ((iron_in_milligrams >= 0)),
-    CONSTRAINT "Nutritional Content_protein_in_grams_check" CHECK ((protein_in_grams >= (0)::double precision)),
-    CONSTRAINT "Nutritional Content_saturated_fat_in_grams_check" CHECK ((saturated_fat_in_grams >= 0)),
-    CONSTRAINT "Nutritional Content_sodium_in_milligrams_check" CHECK ((sodium_in_milligrams >= 0)),
-    CONSTRAINT "Nutritional Content_sugar_in_grams_check" CHECK ((sugar_in_grams >= (0)::double precision)),
-    CONSTRAINT "Nutritional Content_total_carbohydrates_in_grams_check" CHECK ((total_carbohydrates_in_grams >= 0)),
-    CONSTRAINT "Nutritional Content_total_fat_in_grams_check" CHECK ((total_fat_in_grams >= 0)),
-    CONSTRAINT "Nutritional Content_vitamin_a_in_iu_check" CHECK ((vitamin_a_in_iu >= 0)),
-    CONSTRAINT "Nutritional Content_vitamin_c_in_milligrams_check" CHECK ((vitamin_c_in_milligrams >= 0))
+    CONSTRAINT "Nutritional Content_cholesterol_mg_check" CHECK ((cholesterol_mg >= 0)),
+    CONSTRAINT "Nutritional Content_dietary_fiber_g_check" CHECK ((dietary_fiber_g >= (0)::double precision)),
+    CONSTRAINT "Nutritional Content_iron_mg_check" CHECK ((iron_mg >= 0)),
+    CONSTRAINT "Nutritional Content_protein_g_check" CHECK ((protein_g >= (0)::double precision)),
+    CONSTRAINT "Nutritional Content_saturated_fat_g_check" CHECK ((saturated_fat_g >= 0)),
+    CONSTRAINT "Nutritional Content_sodium_mg_check" CHECK ((sodium_mg >= 0)),
+    CONSTRAINT "Nutritional Content_sugar_g_check" CHECK ((sugar_g >= (0)::double precision)),
+    CONSTRAINT "Nutritional Content_total_carbohydrates_g_check" CHECK ((total_carbohydrates_g >= 0)),
+    CONSTRAINT "Nutritional Content_total_fat_g_check" CHECK ((total_fat_g >= 0)),
+    CONSTRAINT "Nutritional Content_vitamin_a_iu_check" CHECK ((vitamin_a_iu >= 0)),
+    CONSTRAINT "Nutritional Content_vitamin_c_mg_check" CHECK ((vitamin_c_mg >= 0))
 );
 
 
@@ -311,7 +312,7 @@ ALTER TABLE ONLY "Recipe" ALTER COLUMN id SET DEFAULT nextval('"Recipe_id_seq"':
 -- Data for Name: Ingredient; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY "Ingredient" (id, name, scientific_name, continent_of_origin) FROM stdin;
+COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM stdin;
 1	black eyed peas	\N	\N
 2	carrots	\N	\N
 3	green pepper	\N	\N
@@ -494,7 +495,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 -- Data for Name: Nutritional Content; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY "Nutritional Content" (id, ingredient_id, calories, total_fat_in_grams, saturated_fat_in_grams, cholesterol_in_milligrams, sodium_in_milligrams, total_carbohydrates_in_grams, dietary_fiber_in_grams, sugar_in_grams, protein_in_grams, vitamin_a_in_iu, vitamin_c_in_milligrams, calcium_in_milligrams, iron_in_milligrams) FROM stdin;
+COPY "Nutritional Content" (id, ingredient_id, calories, total_fat_g, saturated_fat_g, cholesterol_mg, sodium_mg, total_carbohydrates_g, dietary_fiber_g, sugar_g, protein_g, vitamin_a_iu, vitamin_c_mg, calcium_mg, iron_mg) FROM stdin;
 \.
 
 

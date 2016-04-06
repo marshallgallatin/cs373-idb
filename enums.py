@@ -27,13 +27,14 @@ class Cuisine(Enum):
     caribbean      = 23
     latinAmerican  = 24
 
-class Continent(Enum):
+class Origin(Enum):
     Africa        = 1
     Asia          = 2
     Europe        = 3
     NorthAmerica  = 4
     Oceania       = 5
     SouthAmerica  = 6
+    Worldwide     = 7
 
 def enumToTuple(enum):
     return tuple(item for item in enum.__members__.keys())
