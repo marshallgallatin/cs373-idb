@@ -95,40 +95,6 @@ A recipe contains a set of ingredients and instructions for preparing a food dis
             "dairy_free": true
         }
         
-## Recipe Actions [/recipes/action]
-A set of actions that can be performed on the recipe collections. 
-
-### Filter On Dietary Restrictions [POST]
-Returns a subset of recipes that satisfy the filter. If one of the filter attributes is false, then the recipes returned may be either true or false in that attribute.
-
-+ Request (application/json)
-        
-        {
-            "action_type": "filter",
-            "vegetarian": false,
-            "vegan": false,
-            "gluten_free": true,
-            "dairy_free": true
-        }
-        
-+ Response 201 (application/json)
-        
-        {
-            "recipes": [
-                {
-                    "id": 1,
-                    "title": "Jambalaya",
-                    "image_uri": "https://spoonacular.com/recipeImages/Jambalaya-648427.jpg",
-                    "cuisine": "cajun",
-                    "ready_in_minutes": 45,
-                    "servings": 10,
-                },
-                {
-                    ...
-                }
-            ]
-        }
-        
 ## Search Recipes by Ingredients [/recipes/ingredientSearch{?ingredients}]
 A way to find recipes that contain a certain set of ingredients. 
 
