@@ -50,7 +50,7 @@ status:
 
 test: ./app/tests.py
 	coverage3 run    --branch ./app/tests.py >  tests.tmp 2>&1
-	coverage3 report -m                >> tests.tmp
+	coverage3 report -m --omit=/usr/local/lib/python3.4/dist-packages/*,/home/travis/virtualenv/python3.4.2/lib/python3.4/site-packages/* >> tests.tmp
 	cat tests.tmp
 
 IDB2.log:
