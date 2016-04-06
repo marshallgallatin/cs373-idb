@@ -51,5 +51,25 @@ def getNutritionalInformationFromIngredientByID(id):
               Note: 'None' can be returned if the ingredient doesn't exist, or if the ingredient doesn't have nutritional information.
     """
 
-    ingredient = getIngredientByID(id)
-    return None if ingredient is None else ingredient.nutritional_content
+    with sessionInstance() as session:
+        try:
+            ingredient = session.query(models.Ingredient).filter(models.Ingredient.id == id).one()
+            return None if ingredient.nutritional_content is None else ingredient.nutritional_content.fullDict()
+        except orm.exc.NoResultFound:
+            return None
+
+def getRecipesUsingIngredientById(id):
+    """Gets the recipes from the database who have the given ingredient id as an ingredient.
+
+    Args:
+        id (int): ID of the ingredient.
+
+    Retuns:
+        list: A list of all the recipe summaries dicts who use the given ingredient.
+    """
+    with sessionInstance() as session:
+        try:
+            ingredient = session.query(models.Ingredient).filter(models.Ingredient.id == id).one()
+            return [ingredientInRecipe.recipe.summaryDict() for ingredientInRecipe in ingredient.recipes]
+        except orm.exc.NoResultFound:
+            return None

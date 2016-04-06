@@ -7,11 +7,13 @@ Welcome to the RESTipe API. RESTipe allows users to query recipes and ingredient
 
 # Group Recipe
 
-## Recipe Collection [/recipes{?limit,cuisine,diet}]
-A resource representing all of the recipes in the database. Use the `limit` parameter to set an upper bound on the number of results. Other query options include *cuisine* and *diet*.
+## Recipe Collection [/recipes{?page,limit,cuisine,diet}]
+A resource representing all of the recipes in the database. Use the *limit* parameter to set an upper bound on the number of results. Other query options include *cuisine* and *diet*.
 
 + Parameters  
-    + limit (number, optional) - The maximum number of results to return.
+    + page (number, optional) - Whcih page of recipes to return.
+        + Default: `1`
+    + limit (number, optional) - The maximum number of results to return per page.
         + Default: `10`
     + cuisine (string, optional) - The type of cuisine. Example: **mexican**
     + diet (string, optional) - The dietary restriction for which a recipe must be compliant. Example: **vegan**
@@ -41,6 +43,8 @@ A resource representing all of the recipes in the database. Use the `limit` para
                     ...
                 }
             ]
+            "prev": "http://api.swedishchef.me/recipes?page=1&limit=10"
+            "next": "http://api.swedishchef.me/recipes?page=3&limit=10"
         }
 
 ## Recipe [/recipes/{id}]
@@ -122,10 +126,12 @@ A way to find recipes that contain a certain set of ingredients.
         
 # Group Ingredient
 
-## Ingredient Collection [/ingredients{?limit}]
-A resource representing all of the ingredients in the database. Use the `limit` parameter to set an upper bound on the number of results.
+## Ingredient Collection [/ingredients{?page,limit}]
+A resource representing all of the ingredients in the database. Use the *limit* parameter to set an upper bound on the number of results.
 
 + Parameters
+    + page (number, optional) - Whcih page of recipes to return.
+        + Default: `1`
     + limit (number, optional) - The maximum number of results to return.
         + Default: `10`
         
@@ -148,6 +154,8 @@ A resource representing all of the ingredients in the database. Use the `limit` 
                     "name": "canned tomato sauce"
                 }
             ]
+            "prev": "http://api.swedishchef.me/ingredients?page=1&limit=10"
+            "next": "http://api.swedishchef.me/ingredients?page=3&limit=10"
         }
 
 ## Ingredient [/ingredients/{id}]
@@ -191,4 +199,43 @@ Contains complete nutrition information for the specified ingredient. Informatio
             "vitamin_c_in_milligrams": 0.8,
             "calcium_in_milligrams": 2240,
             "iron_in_milligrams": 89.8
+        }
+        
+## Recipes ingredient is in [/ingredients/{id}/recipes{?page,limit}]
+A way to find all recipes who have the given ingredient as an ingredient.
+
++ Parameters
+    + id (number) - ID of the ingredient in the form of an integer
+    + page (number, optional) - Whcih page of recipes to return.
+        + Default: `1`
+    + limit (number, optional) - The maximum number of results to return.
+        + Default: `10`
+
+### Lookup Recipes by Ingredient ID [GET]
+
++ Response 200 (application/json)
+
+        {
+            "recipes": [
+                {
+                    "id": 1,
+                    "title": "Jambalaya",
+                    "image_uri": "https://spoonacular.com/recipeImages/Jambalaya-648427.jpg",
+                    "cuisine": "cajun",
+                    "ready_in_minutes": 45,
+                    "servings": 10
+                },
+                {
+                    "id": 2,
+                    "title": "Spanakopita (Greek Spinach Pie)",
+                    ...
+                },
+                {
+                    "id": 3,
+                    "title": "Grilled Chicken Banh Mi",
+                    ...
+                }
+            ]
+            "prev": "http://api.swedishchef.me/ingredients/{id}/recipes?page=1&limit=10"
+            "next": "http://api.swedishchef.me/ingredients/{id}/recipes?page=3&limit=10"
         }
