@@ -1,12 +1,13 @@
 -- **** ENUMS ****
 
-CREATE TYPE "<enum 'Continent'>" AS ENUM (
+CREATE TYPE "<enum 'Origin'>" AS ENUM (
     'Africa',
     'Asia',
     'Europe',
     'NorthAmerica',
     'Oceania',
-    'SouthAmerica'
+    'SouthAmerica',
+    'Worldwide'
 );
 
 -- **** TABLES ****
@@ -17,8 +18,9 @@ CREATE TABLE "Ingredient"
 (
   id serial NOT NULL,
   name character varying NOT NULL,
+  image_uri character varying,
   scientific_name character varying,
-  continent_of_origin "<enum 'Continent'>",
+  origin "<enum 'Origin'>",
   CONSTRAINT "Ingredient_pkey" PRIMARY KEY (id),
   CONSTRAINT "Ingredient_name_key" UNIQUE (name)
 );
@@ -52,35 +54,35 @@ CREATE TABLE "Nutritional Content"
   id serial NOT NULL,
   ingredient_id integer,
   calories integer NOT NULL,
-  total_fat_in_grams integer NOT NULL,
-  saturated_fat_in_grams integer NOT NULL,
-  cholesterol_in_milligrams integer NOT NULL,
-  sodium_in_milligrams integer NOT NULL,
-  total_carbohydrates_in_grams integer NOT NULL,
-  dietary_fiber_in_grams double precision NOT NULL,
-  sugar_in_grams double precision NOT NULL,
-  protein_in_grams double precision NOT NULL,
-  vitamin_a_in_iu integer NOT NULL,
-  vitamin_c_in_milligrams integer NOT NULL,
-  calcium_in_milligrams integer NOT NULL,
-  iron_in_milligrams integer NOT NULL,
+  total_fat_g integer NOT NULL,
+  saturated_fat_g integer NOT NULL,
+  cholesterol_mg integer NOT NULL,
+  sodium_mg integer NOT NULL,
+  total_carbohydrates_g integer NOT NULL,
+  dietary_fiber_g double precision NOT NULL,
+  sugar_g double precision NOT NULL,
+  protein_g double precision NOT NULL,
+  vitamin_a_iu integer NOT NULL,
+  vitamin_c_mg integer NOT NULL,
+  calcium_mg integer NOT NULL,
+  iron_mg integer NOT NULL,
   CONSTRAINT "Nutritional Content_pkey" PRIMARY KEY (id),
   CONSTRAINT "Nutritional Content_ingredient_id_fkey" FOREIGN KEY (ingredient_id)
       REFERENCES "Ingredient" (id) MATCH SIMPLE
       ON UPDATE NO ACTION ON DELETE NO ACTION,
-  CONSTRAINT "Nutritional Content_calcium_in_milligrams_check" CHECK (calcium_in_milligrams >= 0),
+  CONSTRAINT "Nutritional Content_calcium_mg_check" CHECK (calcium_mg >= 0),
   CONSTRAINT "Nutritional Content_calories_check" CHECK (calories >= 0),
-  CONSTRAINT "Nutritional Content_cholesterol_in_milligrams_check" CHECK (cholesterol_in_milligrams >= 0),
-  CONSTRAINT "Nutritional Content_dietary_fiber_in_grams_check" CHECK (dietary_fiber_in_grams >= 0::double precision),
-  CONSTRAINT "Nutritional Content_iron_in_milligrams_check" CHECK (iron_in_milligrams >= 0),
-  CONSTRAINT "Nutritional Content_protein_in_grams_check" CHECK (protein_in_grams >= 0::double precision),
-  CONSTRAINT "Nutritional Content_saturated_fat_in_grams_check" CHECK (saturated_fat_in_grams >= 0),
-  CONSTRAINT "Nutritional Content_sodium_in_milligrams_check" CHECK (sodium_in_milligrams >= 0),
-  CONSTRAINT "Nutritional Content_sugar_in_grams_check" CHECK (sugar_in_grams >= 0::double precision),
-  CONSTRAINT "Nutritional Content_total_carbohydrates_in_grams_check" CHECK (total_carbohydrates_in_grams >= 0),
-  CONSTRAINT "Nutritional Content_total_fat_in_grams_check" CHECK (total_fat_in_grams >= 0),
-  CONSTRAINT "Nutritional Content_vitamin_a_in_iu_check" CHECK (vitamin_a_in_iu >= 0),
-  CONSTRAINT "Nutritional Content_vitamin_c_in_milligrams_check" CHECK (vitamin_c_in_milligrams >= 0)
+  CONSTRAINT "Nutritional Content_cholesterol_mg_check" CHECK (cholesterol_mg >= 0),
+  CONSTRAINT "Nutritional Content_dietary_fiber_g_check" CHECK (dietary_fiber_g >= 0::double precision),
+  CONSTRAINT "Nutritional Content_iron_mg_check" CHECK (iron_mg >= 0),
+  CONSTRAINT "Nutritional Content_protein_g_check" CHECK (protein_g >= 0::double precision),
+  CONSTRAINT "Nutritional Content_saturated_fat_g_check" CHECK (saturated_fat_g >= 0),
+  CONSTRAINT "Nutritional Content_sodium_mg_check" CHECK (sodium_mg >= 0),
+  CONSTRAINT "Nutritional Content_sugar_g_check" CHECK (sugar_g >= 0::double precision),
+  CONSTRAINT "Nutritional Content_total_carbohydrates_g_check" CHECK (total_carbohydrates_g >= 0),
+  CONSTRAINT "Nutritional Content_total_fat_g_check" CHECK (total_fat_g >= 0),
+  CONSTRAINT "Nutritional Content_vitamin_a_iu_check" CHECK (vitamin_a_iu >= 0),
+  CONSTRAINT "Nutritional Content_vitamin_c_mg_check" CHECK (vitamin_c_mg >= 0)
 );
 
 -- Table: "Recipe"
