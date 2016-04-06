@@ -76,7 +76,6 @@ APP_FILES:=                     \
     ./app/testModels.py         \
     ./app/tests.py              \
     ./app/useDatabase.py        \
-    ./app/jsonifyModels.py      \
     ./app/Dockerfile            \
     ./app/requirements.txt      \
 
