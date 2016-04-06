@@ -1,1 +1,159 @@
-{"vegetarian": false, "glutenFree": false, "title": "Transylvanian Goulash", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/FQ2NYZP8/transylvanian-goulash", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Wash sauerkraut under cold running water then soak in cold water for 20 minutes to reduce sourness. Strain well, pressing out excess water.</li><li>NOTE: I am a big fan of searing meat, because I think it gives sauces a deeper flavor. While the original recipe didn't say to do this-- I plan to sear the pork in some olive oil and then to continue with cooking the onion and garlic and carrying on with the rest of the steps.</li><li>Melt butter in a 5-quart casserole; add the onions. Cook over medium heat, stirring occasionally until lightly colored, 6 to 8 minutes.</li><li>Add the garlic, season with salt and cook a minute or two longer.</li><li>Stir in paprika, pour in 1/2 cup of broth and bring to boil.</li><li>Add the pork cubes. Spread sauerkraut over pork sprinkle with caraway seeds. Combine tomato puree, tomato paste and reserved broth, in a small bowl. Mix well and pour over sauerkraut. Bring to a boil.</li><li>If using a crock-pot, transfer contents of casserole to crock-pot insert. Cover, and cook on high, for 3 to 3-1/2 hours, or until pork is fork tender but still retains its shape.</li><li>If using a conventional oven, preheat to 250 degrees F. Cover casserole and transfer to the oven. Cook, covered, for 3 to 3-1/2 hours, or until pork cubes are tender but still retain their shape.</li><li>When the pork is tender, transfer meat and sauerkraut to a serving platter with high sides. Tent with foil to keep warm.</li><li>Transfer the sauce to a 2-quart pan. Set over medium heat. Combine flour, heavy cream and sour cream in a small bowl. Whisk until smooth. Stir mixture into sauce and simmer for 10 minutes longer. Do not boil. Season to taste with salt and pepper. Pour over meat and serve. Pass additional sour cream as a side.</li><li>NOTES: I added 2 Tablespoons of tomato paste to this recipe, which we thought gave the sauce deep depth of flavor. We also served this over creamy mashed potatoes. This freezes really well.</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Milk, Eggs, Other Dairy", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons butter", "name": "butter"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "1-\u00bd teaspoons caraway seeds", "name": "caraway seeds"}, {"aisle": "Canned and Jarred", "unitLong": "cups", "amount": 3.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "3 cups chicken broth", "name": "chicken broth"}, {"aisle": "Baking", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup All-purpose Flour", "name": "flour"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 large garlic clove, miced", "name": "garlic clove"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cups", "amount": 2.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "2 cups \u2022 heavy cream, for whipping", "name": "heavy cream"}, {"aisle": "Spices and Seasonings", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons sweet Hungarian paprika", "name": "hungarian sweet paprika"}, {"aisle": "Produce", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup onion, finely chopped", "name": "onion"}, {"aisle": "Meat", "unitLong": "pounds", "amount": 4.0, "unitShort": "lb", "metaInformation": [], "unit": "pounds", "originalString": "4 pounds boneless pork shoulder, cut in 2-inch cubes", "name": "pork shoulder"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.25, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/4 teaspoon \u2022 Salt", "name": "salt"}, {"aisle": "Canned and Jarred", "unitLong": "pound", "amount": 1.0, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1 pound (drained weight) sauerkraut", "name": "sauerkraut"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "\u00bd cup sour cream", "name": "sour cream"}, {"aisle": "Pasta and Rice", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "\u00bc cup tomato puree or plain tomato sauce", "name": "tomato sauce"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/transylvanian-goulash-663792", "weightWatcherSmartPoints": 22, "id": 663792, "image": "https://spoonacular.com/recipeImages/Transylvanian-Goulash-663792.jpg", "servings": 8, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Transylvanian Goulash",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/FQ2NYZP8/transylvanian-goulash",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Wash sauerkraut under cold running water then soak in cold water for 20 minutes to reduce sourness. Strain well, pressing out excess water.</li><li>NOTE: I am a big fan of searing meat, because I think it gives sauces a deeper flavor. While the original recipe didn't say to do this-- I plan to sear the pork in some olive oil and then to continue with cooking the onion and garlic and carrying on with the rest of the steps.</li><li>Melt butter in a 5-quart casserole; add the onions. Cook over medium heat, stirring occasionally until lightly colored, 6 to 8 minutes.</li><li>Add the garlic, season with salt and cook a minute or two longer.</li><li>Stir in paprika, pour in 1/2 cup of broth and bring to boil.</li><li>Add the pork cubes. Spread sauerkraut over pork sprinkle with caraway seeds. Combine tomato puree, tomato paste and reserved broth, in a small bowl. Mix well and pour over sauerkraut. Bring to a boil.</li><li>If using a crock-pot, transfer contents of casserole to crock-pot insert. Cover, and cook on high, for 3 to 3-1/2 hours, or until pork is fork tender but still retains its shape.</li><li>If using a conventional oven, preheat to 250 degrees F. Cover casserole and transfer to the oven. Cook, covered, for 3 to 3-1/2 hours, or until pork cubes are tender but still retain their shape.</li><li>When the pork is tender, transfer meat and sauerkraut to a serving platter with high sides. Tent with foil to keep warm.</li><li>Transfer the sauce to a 2-quart pan. Set over medium heat. Combine flour, heavy cream and sour cream in a small bowl. Whisk until smooth. Stir mixture into sauce and simmer for 10 minutes longer. Do not boil. Season to taste with salt and pepper. Pour over meat and serve. Pass additional sour cream as a side.</li><li>NOTES: I added 2 Tablespoons of tomato paste to this recipe, which we thought gave the sauce deep depth of flavor. We also served this over creamy mashed potatoes. This freezes really well.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons butter",
+      "name": "butter"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "1-½ teaspoons caraway seeds",
+      "name": "caraway seeds"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "cups",
+      "amount": 3.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "3 cups chicken broth",
+      "name": "chicken broth"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup All-purpose Flour",
+      "name": "flour"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "clove",
+      "amount": 1.0,
+      "unitShort": "clove",
+      "metaInformation": [],
+      "unit": "clove",
+      "originalString": "1 large garlic clove, miced",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 cups • heavy cream, for whipping",
+      "name": "heavy whipping cream"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons sweet Hungarian paprika",
+      "name": "hungarian sweet paprika"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup onion, finely chopped",
+      "name": "onion"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pounds",
+      "amount": 4.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pounds",
+      "originalString": "4 pounds boneless pork shoulder, cut in 2-inch cubes",
+      "name": "pork shoulder"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.25,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/4 teaspoon • Salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1 pound (drained weight) sauerkraut",
+      "name": "sauerkraut"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "½ cup sour cream",
+      "name": "sour cream"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "¼ cup tomato puree or plain tomato sauce",
+      "name": "tomato sauce"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/transylvanian-goulash-663792",
+  "weightWatcherSmartPoints": 22,
+  "id": 663792,
+  "image": "https://spoonacular.com/recipeImages/Transylvanian-Goulash-663792.jpg",
+  "servings": 8,
+  "whole30": false,
+  "lowFodmap": false
+}

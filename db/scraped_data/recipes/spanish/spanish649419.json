@@ -1,1 +1,79 @@
-{"vegetarian": true, "glutenFree": true, "title": "Leche Flan (Caramel Flan)", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/SV8HNT37/leche-flan-caramel-flan", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Making the Caramel Syrup:Simply put 2 tablespoons of white sugar for each mould, and hold the mould over medium heat, allowing the sugar to dissolve. Swirl the mould gently to evenly distribute the caramel to coat the mould. Make sure not to burn the caramel as this would make it bitter. A pale brown color is what you should achieve. Set each aside to cool down.</li><li>Making the Custard:In a mixing bowl, combine all the ingredients namely the egg yolks, vanilla extract, white sugar, condense and evaporated milk. Make sure you include as little egg white as possible to the mixture. This will make your flan creamier and bubble-free.</li><li>Use a whisk to mix the ingredients thoroughly, making sure the sugar has been completely dissolved.</li><li>Pour the mixture in the moulds. Fill each up at least just half high as the mould, because the mixture is expected to expand once it's steamed.</li><li>Cover each mould with an aluminum foil to avoid the moisture from the steam to come in contact with the flan. This will cause it to become watery.</li><li>Steam cook for around an hour at steady heat. It is essential that you do not change the amount of heat as this might cause uneven cooking.</li><li>Check every now and then whether the flan is already ready or not, with the use of a fork. Just gently poke the flan with the fork and you will know it's ready if nothing sticks to the fork as you pull it out.</li><li>Once you achieve this, remove the moulds from the steamer right away and let it cool at room temperature. Avoid overcooking the flan as this will make it hard and dry.</li><li>Once the flans have cooled down, refrigerate for at least an hour before serving.</li><li>Upon Serving:Unmould the Leche Flan by running a knife around the edge of the mould, carefully inverting it onto a serving dish, allowing the caramelized sugar coat the flan. Serve and enjoy!</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 8.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "8 larges egg yolks", "name": "egg yolks"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 tall can Full Cream Evaporated Milk", "name": "full-fat milk"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cans", "amount": 0.5, "unitShort": "can", "metaInformation": [], "unit": "can", "originalString": "1/2 can Sweetened Condense Milk", "name": "milk"}, {"aisle": "Baking", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon vanilla extract", "name": "vanilla extract"}, {"aisle": "Baking", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon white sugar for each mould", "name": "white sugar"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/leche-flan-caramel-flan-649419", "weightWatcherSmartPoints": 6, "id": 649419, "image": "https://spoonacular.com/recipeImages/Leche-Flan-(Caramel-Flan)-649419.jpg", "servings": 3, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": true,
+  "title": "Leche Flan (Caramel Flan)",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/SV8HNT37/leche-flan-caramel-flan",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Making the Caramel Syrup:Simply put 2 tablespoons of white sugar for each mould, and hold the mould over medium heat, allowing the sugar to dissolve. Swirl the mould gently to evenly distribute the caramel to coat the mould. Make sure not to burn the caramel as this would make it bitter. A pale brown color is what you should achieve. Set each aside to cool down.</li><li>Making the Custard:In a mixing bowl, combine all the ingredients namely the egg yolks, vanilla extract, white sugar, condense and evaporated milk. Make sure you include as little egg white as possible to the mixture. This will make your flan creamier and bubble-free.</li><li>Use a whisk to mix the ingredients thoroughly, making sure the sugar has been completely dissolved.</li><li>Pour the mixture in the moulds. Fill each up at least just half high as the mould, because the mixture is expected to expand once it's steamed.</li><li>Cover each mould with an aluminum foil to avoid the moisture from the steam to come in contact with the flan. This will cause it to become watery.</li><li>Steam cook for around an hour at steady heat. It is essential that you do not change the amount of heat as this might cause uneven cooking.</li><li>Check every now and then whether the flan is already ready or not, with the use of a fork. Just gently poke the flan with the fork and you will know it's ready if nothing sticks to the fork as you pull it out.</li><li>Once you achieve this, remove the moulds from the steamer right away and let it cool at room temperature. Avoid overcooking the flan as this will make it hard and dry.</li><li>Once the flans have cooled down, refrigerate for at least an hour before serving.</li><li>Upon Serving:Unmould the Leche Flan by running a knife around the edge of the mould, carefully inverting it onto a serving dish, allowing the caramelized sugar coat the flan. Serve and enjoy!</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 8.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "8 larges egg yolks",
+      "name": "egg yolks"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 tall can Full Cream Evaporated Milk",
+      "name": "evaporated milk"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cans",
+      "amount": 0.5,
+      "unitShort": "can",
+      "metaInformation": [],
+      "unit": "can",
+      "originalString": "1/2 can Sweetened Condense Milk",
+      "name": "sweetened condensed milk"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon vanilla extract",
+      "name": "vanilla extract"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon white sugar for each mould",
+      "name": "white sugar"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/leche-flan-caramel-flan-649419",
+  "weightWatcherSmartPoints": 6,
+  "id": 649419,
+  "image": "https://spoonacular.com/recipeImages/Leche-Flan-(Caramel-Flan)-649419.jpg",
+  "servings": 3,
+  "whole30": false,
+  "lowFodmap": false
+}

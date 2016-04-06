@@ -64,13 +64,13 @@
     },
     {
       "aisle": "Produce",
-      "unitLong": "",
+      "unitLong": "cloves",
       "amount": 2.0,
-      "unitShort": "",
+      "unitShort": "cloves",
       "metaInformation": [],
-      "unit": "",
+      "unit": "cloves",
       "originalString": "2 garlic cloves, sliced thin",
-      "name": "garlic cloves"
+      "name": "garlic"
     },
     {
       "aisle": "Spices and Seasonings",

@@ -54,13 +54,13 @@
     },
     {
       "aisle": "Produce",
-      "unitLong": "",
+      "unitLong": "cloves",
       "amount": 2.0,
-      "unitShort": "",
+      "unitShort": "cloves",
       "metaInformation": [],
-      "unit": "",
+      "unit": "cloves",
       "originalString": "2 garlic cloves minced",
-      "name": "garlic cloves"
+      "name": "garlic"
     },
     {
       "aisle": "Pasta and Rice",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "g",
       "originalString": "500g long grain rice",
-      "name": "long grain rice"
+      "name": "long-grain rice"
     },
     {
       "aisle": "Seafood",

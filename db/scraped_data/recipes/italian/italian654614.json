@@ -8,7 +8,7 @@
   "sourceName": "Foodista",
   "vegan": false,
   "sustainable": false,
-  "instructions": "<ol><li>Warm the olive oil and garlic in a medium cooking pot. When the garlic has coloured slightly, add the leeks. Saute over a low heat for 20 minutes, adding water as necessary to keep the vegetables from turning brown.</li><li>Stir in the stock and pured tomatoes and bring to the boil, then reduce the heat and simmer gently for 20 minutes.</li><li>Turn off the heat and add the bread, pushing it into the liquid with a wooden spoon.</li><li>Stir in the torn basil leaves and season to taste with salt and pepper. Leave to rest for 30 minutes.</li><li>Now whisk the soup energetically until it has a porridge-like consistency. Taste and adjust the seasoning.</li><li>Ladle into bowls, drizzle with extra virgin olive oil and serve.</li></ol>",
+  "instructions": "<ol><li>Warm the olive oil and garlic in a medium cooking pot. When the garlic has coloured slightly, add the leeks. Saute over a low heat for 20 minutes, adding water as necessary to keep the vegetables from turning brown.</li><li>Stir in the stock and pured tomatoes and bring to the boil, then reduce the heat and simmer gently for 20 minutes.</li><li>Turn off the heat and add the bread, pushing it into the liquid with a wooden spoon.</li><li>Stir in the torn basil leaves and season to taste with salt and pepper. Leave to rest for 30 minutes.</li><li>Now whisk the soup energetically until it has a porridge-like consistency. Taste and adjust the seasoning.</li><li>Ladle into bowls, drizzle with extra-virgin olive oil and serve.</li></ol>",
   "aggregateLikes": 3,
   "dairyFree": true,
   "extendedIngredients": [
@@ -39,18 +39,18 @@
       "unitShort": "servings",
       "metaInformation": [],
       "unit": "servings",
-      "originalString": "Extra virgin olive oil to drizzle",
+      "originalString": "extra-virgin olive oil to drizzle",
       "name": "extra-virgin olive oil"
     },
     {
       "aisle": "Produce",
-      "unitLong": "",
+      "unitLong": "cloves",
       "amount": 4.0,
-      "unitShort": "",
+      "unitShort": "cloves",
       "metaInformation": [],
-      "unit": "",
+      "unit": "cloves",
       "originalString": "4 garlic cloves minced",
-      "name": "garlic cloves"
+      "name": "garlic"
     },
     {
       "aisle": "Produce",
@@ -63,14 +63,14 @@
       "name": "leeks"
     },
     {
-      "aisle": "Meat",
+      "aisle": "Canned and Jarred",
       "unitLong": "liter",
       "amount": 1.0,
       "unitShort": "l",
       "metaInformation": [],
       "unit": "liter",
       "originalString": "1 liter meat stock (made with beef and chicken)",
-      "name": "meat"
+      "name": "stock"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",

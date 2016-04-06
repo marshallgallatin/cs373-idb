@@ -1,1 +1,129 @@
-{"vegetarian": false, "glutenFree": true, "title": "Flank Steak with Herbed Salsa", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/GJV558KY/flank-steak-with-herbed-salsa", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Preheat a grill pan or light a grill.</li><li>In a medium bowl, combine the tomatoes with the scallions, cilantro, Jalapeno, garlic and lemon  lime juice. Season the salsa with salt and freshly ground pepper.</li><li>Season with salt and pepper the flank steak.</li><li>Using a grill pan brush a shadow of oil on the bottom of it. Place the pan over high heat and when hot add the flank steak. Cook until nicely charred outside and medium rare inside. About 3 minutes per side.</li><li>Transfer the steak to a carving board and let rest for 5 minutes.</li><li>Thinly slice the steak across the grain and serve with the herbed salsa.</li></ol>", "aggregateLikes": 11, "dairyFree": true, "extendedIngredients": [{"aisle": "Produce", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup cilantro, finely chopped", "name": "cilantro"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "servings", "amount": 4.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Extra virgin olive oil", "name": "extra virgin olive oil"}, {"aisle": "Meat", "unitLong": "pound", "amount": 1.0, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1 1 pound flank steak", "name": "flank steak"}, {"aisle": "Produce", "unitLong": "", "amount": 3.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "3 garlic clove, minced", "name": "garlic clove"}, {"aisle": "Produce", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "\u00bd large jalapeno, seeded and minced ( whole 1 if brave)", "name": "jalapeno"}, {"aisle": "Produce", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1/2 Lemon, juice of", "name": "juice of lemon"}, {"aisle": "Produce", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "Juice of large \u00bd lime", "name": "juice of lime"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 4.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Salt and pepper", "name": "salt and pepper"}, {"aisle": "Produce", "unitLong": "", "amount": 4.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "4 scallions, white only finely chopped", "name": "scallions"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 medium tomatoes, finely chopped", "name": "tomatoes"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/flank-steak-with-herbed-salsa-643061", "weightWatcherSmartPoints": 7, "id": 643061, "image": "https://spoonacular.com/recipeImages/Flank-Steak-with-Herbed-Salsa-643061.jpg", "servings": 4, "whole30": true, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Flank Steak with Herbed Salsa",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/GJV558KY/flank-steak-with-herbed-salsa",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Preheat a grill pan or light a grill.</li><li>In a medium bowl, combine the tomatoes with the scallions, cilantro, Jalapeno, garlic and lemon  lime juice. Season the salsa with salt and freshly ground pepper.</li><li>Season with salt and pepper the flank steak.</li><li>Using a grill pan brush a shadow of oil on the bottom of it. Place the pan over high heat and when hot add the flank steak. Cook until nicely charred outside and medium rare inside. About 3 minutes per side.</li><li>Transfer the steak to a carving board and let rest for 5 minutes.</li><li>Thinly slice the steak across the grain and serve with the herbed salsa.</li></ol>",
+  "aggregateLikes": 11,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup cilantro, finely chopped",
+      "name": "cilantro"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "servings",
+      "amount": 4.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "extra-virgin olive oil",
+      "name": "extra-virgin olive oil"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1 1 pound flank steak",
+      "name": "flank steak"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "clove",
+      "amount": 3.0,
+      "unitShort": "clove",
+      "metaInformation": [],
+      "unit": "clove",
+      "originalString": "3 garlic clove, minced",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "½ large jalapeno, seeded and minced ( whole 1 if brave)",
+      "name": "jalapeno"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 Lemon, juice of",
+      "name": "lemon juice"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "Juice of large ½ lime",
+      "name": "lime juice"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 4.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Salt and pepper",
+      "name": "salt and pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 4.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "4 scallions, white only finely chopped",
+      "name": "scallions"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 medium tomatoes, finely chopped",
+      "name": "tomatoes"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/flank-steak-with-herbed-salsa-643061",
+  "weightWatcherSmartPoints": 7,
+  "id": 643061,
+  "image": "https://spoonacular.com/recipeImages/Flank-Steak-with-Herbed-Salsa-643061.jpg",
+  "servings": 4,
+  "whole30": true,
+  "lowFodmap": false
+}

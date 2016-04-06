@@ -1,1 +1,209 @@
-{"vegetarian": false, "glutenFree": true, "title": "Thai Veggie Slaw with Peanut Dressing and Crispy Wontons", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/MYMKCDHF/thai-veggie-slaw-with-peanut-dressing-and-crispy-wontons", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>1. Make the crispy wontons: Preheat oven to 375 degrees f. Lay the wontons out on a large baking sheet. Spray lightly with cooking spray and sprinkle with the Chinese five spice and cayenne. Flip the wontons over and repeat. Stack all the wonton skins on top of each other and slice into 1/2-3/4-inch strips. Spread the strips in an even layer back onto the baking sheet. Bake 10-12 minutes, until crisp and golden brown, flipping the strips halfway through and rotating the baking sheet. (Watch carefully that they don't burn) Remove from the oven and let cool before using.</li><li>2. Prepare the dressing: In the jar of a blender, add 1/2 c. peanuts and 2 T. canola oil. Blend until completely smooth, about a minute, scraping down the sides of the blender jar as necessary. Add in the remaining canola oil, lime juice, fish sauce, brown sugar, sriracha, ginger and garlic. Blend until smooth.</li><li>3. In a large bowl combine all the vegetables. Add the dressing and the remaining 1/2 c. peanuts. Toss well to combine. You can either mix the wontons into the salad, or reserve them for crumbling onto individual portions.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "c", "originalString": "1/2 c. canola oil, divided", "name": "canola oil"}, {"aisle": "Produce", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "c", "originalString": "1 c. julienned carrots", "name": "carrots"}, {"aisle": "Spices and Seasonings", "unitLong": "pinch", "amount": 1.0, "unitShort": "pinch", "metaInformation": [], "unit": "pinch", "originalString": "pinch of cayenne", "name": "cayenne"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "c", "originalString": "1/2 c. cilantro leaves", "name": "cilantro leaves"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "T", "originalString": "1 T. fish sauce", "name": "fish sauce"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 garlic clove, finely minced", "name": "garlic clove"}, {"aisle": "Ethnic Foods", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon Minced ginger", "name": "ginger"}, {"aisle": "Baking", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "t", "originalString": "2 t. light brown sugar", "name": "light brown sugar"}, {"aisle": "Produce", "unitLong": "tablespoons", "amount": 3.0, "unitShort": "T", "metaInformation": [], "unit": "T", "originalString": "3 T. fresh lime juice", "name": "lime juice"}, {"aisle": "Produce", "unitLong": "cups", "amount": 3.0, "unitShort": "c", "metaInformation": [], "unit": "c", "originalString": "1 small head of napa cabbage, shredded (about 3 c.)", "name": "napa cabbage"}, {"aisle": "Produce", "unitLong": "heads", "amount": 0.5, "unitShort": "head", "metaInformation": [], "unit": "head", "originalString": "1/2 head red cabbage", "name": "red cabbage"}, {"aisle": "Produce", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "c", "originalString": "1 c. thinly sliced scallion", "name": "scallion"}, {"aisle": "Produce", "unitLong": "ounces", "amount": 6.0, "unitShort": "oz", "metaInformation": [], "unit": "oz", "originalString": "6 oz. snow peas, trimmed, sliced on the diagonal about 1/2-inch thick", "name": "snow peas"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "t", "originalString": "1/2 t. Chinese five spice", "name": "spice mix"}, {"aisle": "Condiments", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "t", "originalString": "1 t. sriracha", "name": "sriracha"}, {"aisle": "Nuts", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "c", "originalString": "1 c. unsalted peanuts, divided", "name": "unsalted peanuts"}, {"aisle": "Ethnic Foods", "unitLong": "squares", "amount": 12.0, "unitShort": "square", "metaInformation": [], "unit": "square", "originalString": "12 square wonton wrappers", "name": "wonton wrappers"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 yellow bell pepper, thinly sliced", "name": "yellow bell pepper"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/thai-veggie-slaw-with-peanut-dressing-and-crispy-wontons-663169", "weightWatcherSmartPoints": 15, "id": 663169, "image": "https://spoonacular.com/recipeImages/Thai-Veggie-Slaw-with-Peanut-Dressing-and-Crispy-Wontons-663169.jpg", "servings": 6, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Thai Veggie Slaw with Peanut Dressing and Crispy Wontons",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/MYMKCDHF/thai-veggie-slaw-with-peanut-dressing-and-crispy-wontons",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>1. Make the crispy wontons: Preheat oven to 375 degrees f. Lay the wontons out on a large baking sheet. Spray lightly with cooking spray and sprinkle with the Chinese five spice and cayenne. Flip the wontons over and repeat. Stack all the wonton skins on top of each other and slice into 1/2-3/4-inch strips. Spread the strips in an even layer back onto the baking sheet. Bake 10-12 minutes, until crisp and golden brown, flipping the strips halfway through and rotating the baking sheet. (Watch carefully that they don't burn) Remove from the oven and let cool before using.</li><li>2. Prepare the dressing: In the jar of a blender, add 1/2 c. peanuts and 2 T. canola oil. Blend until completely smooth, about a minute, scraping down the sides of the blender jar as necessary. Add in the remaining canola oil, lime juice, fish sauce, brown sugar, sriracha, ginger and garlic. Blend until smooth.</li><li>3. In a large bowl combine all the vegetables. Add the dressing and the remaining 1/2 c. peanuts. Toss well to combine. You can either mix the wontons into the salad, or reserve them for crumbling onto individual portions.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "c",
+      "originalString": "1/2 c. canola oil, divided",
+      "name": "canola oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "c",
+      "originalString": "1 c. julienned carrots",
+      "name": "carrots"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "pinch",
+      "amount": 1.0,
+      "unitShort": "pinch",
+      "metaInformation": [],
+      "unit": "pinch",
+      "originalString": "pinch of cayenne",
+      "name": "cayenne"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "c",
+      "originalString": "1/2 c. cilantro leaves",
+      "name": "cilantro leaves"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "T",
+      "originalString": "1 T. fish sauce",
+      "name": "fish sauce"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "clove",
+      "amount": 1.0,
+      "unitShort": "clove",
+      "metaInformation": [],
+      "unit": "clove",
+      "originalString": "1 garlic clove, finely minced",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon Minced ginger",
+      "name": "ginger"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "t",
+      "originalString": "2 t. light brown sugar",
+      "name": "light brown sugar"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoons",
+      "amount": 3.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "T",
+      "originalString": "3 T. fresh lime juice",
+      "name": "lime juice"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 3.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "c",
+      "originalString": "1 small head of napa cabbage, shredded (about 3 c.)",
+      "name": "napa cabbage"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "heads",
+      "amount": 0.5,
+      "unitShort": "head",
+      "metaInformation": [],
+      "unit": "head",
+      "originalString": "1/2 head red cabbage",
+      "name": "red cabbage"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "c",
+      "originalString": "1 c. thinly sliced scallion",
+      "name": "scallion"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "ounces",
+      "amount": 6.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "oz",
+      "originalString": "6 oz. snow peas, trimmed, sliced on the diagonal about 1/2-inch thick",
+      "name": "snow peas"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "t",
+      "originalString": "1/2 t. Chinese five spice",
+      "name": "five-spice powder"
+    },
+    {
+      "aisle": "Condiments",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "t",
+      "originalString": "1 t. sriracha",
+      "name": "sriracha"
+    },
+    {
+      "aisle": "Nuts",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "c",
+      "originalString": "1 c. unsalted peanuts, divided",
+      "name": "unsalted peanuts"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "squares",
+      "amount": 12.0,
+      "unitShort": "square",
+      "metaInformation": [],
+      "unit": "square",
+      "originalString": "12 square wonton wrappers",
+      "name": "wonton wrappers"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 yellow bell pepper, thinly sliced",
+      "name": "yellow bell pepper"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/thai-veggie-slaw-with-peanut-dressing-and-crispy-wontons-663169",
+  "weightWatcherSmartPoints": 15,
+  "id": 663169,
+  "image": "https://spoonacular.com/recipeImages/Thai-Veggie-Slaw-with-Peanut-Dressing-and-Crispy-Wontons-663169.jpg",
+  "servings": 6,
+  "whole30": false,
+  "lowFodmap": false
+}

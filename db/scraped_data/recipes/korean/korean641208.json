@@ -1,1 +1,139 @@
-{"vegetarian": false, "glutenFree": true, "title": "Dak Bulgogi - Korean BBQ Chicken", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/QNLYWCMG/dak-bulgogi-korean-bbq-chicken", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Peel off thigh skins with a paring knife. Trim off excess fat. Cut into one single \"steak\" piece working around the bone. Save smaller pieces for cooking as well. Set aside in a large mixing bowl.</li><li>Pulse the marinade ingredients in a food processor until smooth.</li><li>Coat the chicken pieces with the marinade. Marinate overnight in the refrigerator or a minimum of 6-12 hours. With a skewer or toothpick, piercing the thighs for extra marinade absorption is optional.</li><li>Preheat a skillet or non stick pan over medium heat. Add the chicken thighs and cook for about 15-20 minutes or until cooked through. To ensure fully cooked thighs, use a meat thermometer and check for a reading of 165-170F.</li><li>Transfer to a serving plate and garnish with scallion. Serve with lettuce leaves. Enjoy!</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Produce", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "\u20221/2 apple or pear", "name": "apple"}, {"aisle": "Produce", "unitLong": "bunch", "amount": 1.0, "unitShort": "bunch", "metaInformation": [], "unit": "bunch", "originalString": "\u20221 bunch Boston bibb lettuce", "name": "boston bibb lettuce"}, {"aisle": "Baking", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tbsp", "originalString": "\u20221 tbsp brown sugar", "name": "brown sugar"}, {"aisle": "Meat", "unitLong": "pounds", "amount": 2.0, "unitShort": "lb", "metaInformation": [], "unit": "lbs", "originalString": "2 lbs chicken thighs", "name": "chicken thighs"}, {"aisle": "Produce", "unitLong": "", "amount": 3.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "\u20223 garlic cloves", "name": "garlic cloves"}, {"aisle": "Ethnic Foods", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "\u20221 tsp ginger", "name": "ginger"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "\u20221 tsp red pepper flakes", "name": "red pepper flakes"}, {"aisle": "Produce", "unitLong": "servings", "amount": 4.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "\u2022scallions", "name": "scallions"}, {"aisle": "Ethnic Foods", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "\u20221 tsp sesame oil", "name": "sesame oil"}, {"aisle": "Ethnic Foods", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "\u20221 tsp sesame seeds (garnish)", "name": "sesame seeds"}, {"aisle": "Ethnic Foods", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "\u20221/2 cup soy sauce", "name": "soy sauce"}], "readyInMinutes": 400, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/dak-bulgogi-korean-bbq-chicken-641208", "weightWatcherSmartPoints": 15, "id": 641208, "image": "https://spoonacular.com/recipeImages/Dak-Bulgogi-(Korean-BBQ-Chicken)-641208.jpg", "servings": 4, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Dak Bulgogi - Korean BBQ Chicken",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/QNLYWCMG/dak-bulgogi-korean-bbq-chicken",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Peel off thigh skins with a paring knife. Trim off excess fat. Cut into one single \"steak\" piece working around the bone. Save smaller pieces for cooking as well. Set aside in a large mixing bowl.</li><li>Pulse the marinade ingredients in a food processor until smooth.</li><li>Coat the chicken pieces with the marinade. Marinate overnight in the refrigerator or a minimum of 6-12 hours. With a skewer or toothpick, piercing the thighs for extra marinade absorption is optional.</li><li>Preheat a skillet or non stick pan over medium heat. Add the chicken thighs and cook for about 15-20 minutes or until cooked through. To ensure fully cooked thighs, use a meat thermometer and check for a reading of 165-170F.</li><li>Transfer to a serving plate and garnish with scallion. Serve with lettuce leaves. Enjoy!</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 apple or pear",
+      "name": "apple"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "bunch",
+      "amount": 1.0,
+      "unitShort": "bunch",
+      "metaInformation": [],
+      "unit": "bunch",
+      "originalString": "1 bunch Boston bibb lettuce",
+      "name": "boston bibb lettuce"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tbsp",
+      "originalString": "1 tbsp brown sugar",
+      "name": "brown sugar"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pounds",
+      "amount": 2.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "lbs",
+      "originalString": "2 lbs chicken thighs",
+      "name": "chicken thighs"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 3.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "3 garlic cloves",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1 tsp ginger",
+      "name": "ginger"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1 tsp red pepper flakes",
+      "name": "red pepper flakes"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "servings",
+      "amount": 4.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "scallions",
+      "name": "scallions"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1 tsp sesame oil",
+      "name": "sesame oil"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1 tsp sesame seeds (garnish)",
+      "name": "sesame seeds"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup soy sauce",
+      "name": "soy sauce"
+    }
+  ],
+  "readyInMinutes": 400,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/dak-bulgogi-korean-bbq-chicken-641208",
+  "weightWatcherSmartPoints": 15,
+  "id": 641208,
+  "image": "https://spoonacular.com/recipeImages/Dak-Bulgogi-(Korean-BBQ-Chicken)-641208.jpg",
+  "servings": 4,
+  "whole30": false,
+  "lowFodmap": false
+}

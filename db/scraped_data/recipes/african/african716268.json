@@ -34,13 +34,13 @@
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
-      "unitLong": "",
+      "unitLong": "tablespoons",
       "amount": 2.5,
-      "unitShort": "",
+      "unitShort": "T",
       "metaInformation": [],
-      "unit": "",
+      "unit": "tablespoons",
       "originalString": "2.5 Cooking spoons of oil",
-      "name": "cooking oil"
+      "name": "oil"
     },
     {
       "aisle": "Ethnic Foods",
@@ -54,13 +54,13 @@
     },
     {
       "aisle": "Produce",
-      "unitLong": "",
+      "unitLong": "cloves",
       "amount": 2.0,
-      "unitShort": "",
+      "unitShort": "cloves",
       "metaInformation": [],
-      "unit": "",
+      "unit": "cloves",
       "originalString": "2 garlic cloves",
-      "name": "garlic cloves"
+      "name": "garlic"
     },
     {
       "aisle": "Ethnic Foods",
@@ -101,16 +101,6 @@
       "unit": "serving",
       "originalString": "Salt",
       "name": "salt"
-    },
-    {
-      "aisle": "Spices and Seasonings",
-      "unitLong": "serving",
-      "amount": 1.0,
-      "unitShort": "serving",
-      "metaInformation": [],
-      "unit": "serving",
-      "originalString": "Seasoning",
-      "name": "seasoning mix"
     },
     {
       "aisle": "Produce",

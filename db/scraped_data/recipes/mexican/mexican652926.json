@@ -8,7 +8,7 @@
   "sourceName": "Foodista",
   "vegan": false,
   "sustainable": false,
-  "instructions": "<ol><li>To get started, grab a pan and melt up your butter. Add in the flour and create a roux. Then add in your milk, put the heat on medium and let the mixture thicken.</li><li>Turn the heat down to low and add in the cheese.</li><li>Once it's melted add in your green chiles, chili powder, cumin, and cilantro. Now add in the salsa.</li><li>Lay your chips in an oven proof bowl and pour the cheese over the top. Now add on your desired toppings.</li><li>Throw them in the oven for about 10 minutes at 350 degrees.</li></ol>",
+  "instructions": "<ol><li>To get started, grab a pan and melt up your butter. Add in the flour and create a roux. Then add in your milk, put the heat on medium and let the mixture thicken.</li><li>Turn the heat down to low and add in the cheese.</li><li>Once it's melted add in your green chilies, chili powder, cumin, and cilantro. Now add in the salsa.</li><li>Lay your chips in an oven proof bowl and pour the cheese over the top. Now add on your desired toppings.</li><li>Throw them in the oven for about 10 minutes at 350 degrees.</li></ol>",
   "aggregateLikes": 1,
   "dairyFree": false,
   "extendedIngredients": [
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "oz",
       "originalString": "4 Oz. Can of Green Chiles",
-      "name": "canned green chili peppers"
+      "name": "canned green chilies"
     },
     {
       "aisle": "Spices and Seasonings",

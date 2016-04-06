@@ -1,1 +1,219 @@
-{"vegetarian": false, "glutenFree": true, "title": "Dolsot Bibimbap", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/2522ZFCV/dolsot-bibimbap", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Marinate beef and tofu overnight in Korean barbecue marinade.</li><li>Cook rice and keep warm.</li><li>In sesame oil and a pinch of salt, saut carrots and zucchini until almost tender. If necessary add a bit more sesame oil and toss in the remaining vegetables, garlic and a pinch of sugar and continue to saut approximately 2 minutes, or until the vegetables are almost done (they will continue to cook in the dolsot or stone bowl)</li><li>Broil or barbecue the beef.</li><li>Pour a 1/2 - 1 teaspoon of sesame oil in the base of each stone bowl. Divide rice between the 4 stone bowls. Arrange all ingredients on top of the rice side by side around the bowl. Put a teaspoon (or more depending on taste) of the Korean chili paste on top of the vegetables and in the middle of the bowl place an egg yolk. Pour a tablespoon of sesame seed oil around the edge of the bowl.</li><li>Place stone bowl on top of stove and on high heat leave for approx 5 minutes or until you can hear the rice popping and crackling.</li><li>Remove from heat and serve. Be very careful as the stone bowl will be extremely hot.</li></ol>", "aggregateLikes": 7, "dairyFree": true, "extendedIngredients": [{"aisle": "Produce", "unitLong": "cups", "amount": 3.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "3 cups fresh baby spinach", "name": "baby spinach"}, {"aisle": "Produce", "unitLong": "cups", "amount": 1.5, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "1 1/2 cups bean sprouts", "name": "bean sprouts"}, {"aisle": "Frozen", "unitLong": "pounds", "amount": 0.75, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "3/4 pound thin strips sirloin, rib eye or bulgogi beef", "name": "beef"}, {"aisle": "Produce", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup carrots, julienned", "name": "carrots"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 4.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "4 egg yolks", "name": "egg yolks"}, {"aisle": "Produce", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup fresh shiitake mushrooms, thinly sliced", "name": "fresh shiitake mushrooms"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 garlic clove, minced", "name": "garlic clove"}, {"aisle": "Ethnic Foods", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup gochujang", "name": "gochujang"}, {"aisle": "Produce", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup green onions, chopped", "name": "green onions"}, {"aisle": "Ethnic Foods", "unitLong": "ounces", "amount": 10.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "10 ounces kimchi", "name": "kimchi"}, {"aisle": "Ethnic Foods", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup Korean barbecue bulgogi marinade", "name": "korean chile"}, {"aisle": "Spices and Seasonings", "unitLong": "pinch", "amount": 1.0, "unitShort": "pinch", "metaInformation": [], "unit": "pinch", "originalString": "Pinch of salt", "name": "salt"}, {"aisle": "Ethnic Foods", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup sesame oil", "name": "sesame oil"}, {"aisle": "Ethnic Foods", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 teaspoons toasted sesame seeds", "name": "sesame seeds"}, {"aisle": "Pasta and Rice", "unitLong": "cups", "amount": 4.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "4 cups short grain white rice, cooked", "name": "short grain rice"}, {"aisle": "Baking", "unitLong": "pinch", "amount": 1.0, "unitShort": "pinch", "metaInformation": [], "unit": "pinch", "originalString": "Pinch of sugar", "name": "sugar"}, {"aisle": "Pasta and Rice", "unitLong": "cups", "amount": 3.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "3 cups high grade Korean sushi rice", "name": "sushi rice"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.75, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "3/4 cup firm tofu, rinsed and cut into 1-inch cubes", "name": "tofu"}, {"aisle": "Produce", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup zucchini, julienned", "name": "zucchini"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/dolsot-bibimbap-641559", "weightWatcherSmartPoints": 51, "id": 641559, "image": "https://spoonacular.com/recipeImages/Dolsot-Bibimbap-641559.jpg", "servings": 4, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Dolsot Bibimbap",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/2522ZFCV/dolsot-bibimbap",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Marinate beef and tofu overnight in Korean barbecue marinade.</li><li>Cook rice and keep warm.</li><li>In sesame oil and a pinch of salt, saut carrots and zucchini until almost tender. If necessary add a bit more sesame oil and toss in the remaining vegetables, garlic and a pinch of sugar and continue to saut approximately 2 minutes, or until the vegetables are almost done (they will continue to cook in the dolsot or stone bowl)</li><li>Broil or barbecue the beef.</li><li>Pour a 1/2 - 1 teaspoon of sesame oil in the base of each stone bowl. Divide rice between the 4 stone bowls. Arrange all ingredients on top of the rice side by side around the bowl. Put a teaspoon (or more depending on taste) of the Korean chili paste on top of the vegetables and in the middle of the bowl place an egg yolk. Pour a tablespoon of sesame seed oil around the edge of the bowl.</li><li>Place stone bowl on top of stove and on high heat leave for approx 5 minutes or until you can hear the rice popping and crackling.</li><li>Remove from heat and serve. Be very careful as the stone bowl will be extremely hot.</li></ol>",
+  "aggregateLikes": 7,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 3.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "3 cups fresh baby spinach",
+      "name": "baby spinach"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 1.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "1 1/2 cups bean sprouts",
+      "name": "bean sprouts"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pounds",
+      "amount": 0.75,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "3/4 pound thin strips sirloin, rib eye or bulgogi beef",
+      "name": "beef"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup carrots, julienned",
+      "name": "carrots"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 4.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "4 egg yolks",
+      "name": "egg yolks"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup fresh shiitake mushrooms, thinly sliced",
+      "name": "fresh shiitake mushrooms"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "clove",
+      "amount": 1.0,
+      "unitShort": "clove",
+      "metaInformation": [],
+      "unit": "clove",
+      "originalString": "1 garlic clove, minced",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup gochujang",
+      "name": "gochujang"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup green onions, chopped",
+      "name": "green onions"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "ounces",
+      "amount": 10.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "10 ounces kimchi",
+      "name": "kimchi"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup Korean barbecue bulgogi marinade",
+      "name": "bulgogi marinade"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "pinch",
+      "amount": 1.0,
+      "unitShort": "pinch",
+      "metaInformation": [],
+      "unit": "pinch",
+      "originalString": "Pinch of salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup sesame oil",
+      "name": "sesame oil"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 teaspoons toasted sesame seeds",
+      "name": "sesame seeds"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "cups",
+      "amount": 4.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "4 cups short grain white rice, cooked",
+      "name": "short-grain rice"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "pinch",
+      "amount": 1.0,
+      "unitShort": "pinch",
+      "metaInformation": [],
+      "unit": "pinch",
+      "originalString": "Pinch of sugar",
+      "name": "sugar"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "cups",
+      "amount": 3.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "3 cups high grade Korean sushi rice",
+      "name": "sushi rice"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.75,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "3/4 cup firm tofu, rinsed and cut into 1-inch cubes",
+      "name": "firm tofu"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup zucchini, julienned",
+      "name": "zucchini"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/dolsot-bibimbap-641559",
+  "weightWatcherSmartPoints": 51,
+  "id": 641559,
+  "image": "https://spoonacular.com/recipeImages/Dolsot-Bibimbap-641559.jpg",
+  "servings": 4,
+  "whole30": false,
+  "lowFodmap": false
+}

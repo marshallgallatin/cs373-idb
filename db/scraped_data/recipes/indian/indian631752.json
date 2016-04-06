@@ -1,1 +1,169 @@
-{"vegetarian": true, "glutenFree": true, "title": "Indian Spiced Red Lentil Soup", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/N3PKYN5Q/indian-spiced-red-lentil-soup", "sourceName": "Foodista", "vegan": true, "sustainable": false, "instructions": "<ol><li>Put Cilantro Stems in Water and bring to a boil then remove Stems (This step is optional)</li><li>Rinse the Lentils and add to Stem Broth</li><li>Bring Lentils to a boil then turn heat down to medium</li><li>Add a bit of Lentil water to the Bullion cubes, mash well then add to Lentils</li><li>In a saut pan add  Grapeseed Oil, Coriander Seeds (you can put the seeds in a coffee grinder if you prefer) Cumin Seeds, Turmeric, Garam Masala.</li><li>Saut on medium heat until fragrant approximately about 5 minutes.</li><li>Mince Serranos, grate Ginger, mince Onions, mince Garlic and add to pan then saut until Onions are soft.</li><li>Add Tomato Sauce and cook on medium low for about 10 minutes then add to cooked Lentils and cook for 20 more minutes on low heat.</li><li>If you like a smooth texture to your soup you can put all of it in a food processor (blender or hand blender) to puree` or only use half for a slightly textured soup or leave it if you like it that way.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Canned and Jarred", "unitLong": "Cup", "amount": 1.0, "unitShort": "Cup", "metaInformation": [], "unit": "Cup", "originalString": "1 Cup canned crushed tomatoes", "name": "canned tomatoes"}, {"aisle": "Spices and Seasonings", "unitLong": "Teaspoons", "amount": 2.0, "unitShort": "Teaspoons", "metaInformation": [], "unit": "Teaspoons", "originalString": "2 Teaspoons Coriander Seeds or 1 Teaspoon Powder", "name": "coriander seeds"}, {"aisle": "Spices and Seasonings", "unitLong": "Teaspoon", "amount": 1.0, "unitShort": "Teaspoon", "metaInformation": [], "unit": "Teaspoon", "originalString": "1 Teaspoon Cumin Seeds", "name": "cumin seeds"}, {"aisle": "Beverages", "unitLong": "Cups", "amount": 12.0, "unitShort": "Cups", "metaInformation": [], "unit": "Cups", "originalString": "12 Cups Filtered Water", "name": "filtered water"}, {"aisle": "Ethnic Foods", "unitLong": "Teaspoons", "amount": 2.0, "unitShort": "Teaspoons", "metaInformation": [], "unit": "Teaspoons", "originalString": "2 Teaspoons Fresh organic Ginger", "name": "fresh ginger"}, {"aisle": "Ethnic Foods", "unitLong": "Tablespoon", "amount": 1.0, "unitShort": "Tablespoon", "metaInformation": [], "unit": "Tablespoon", "originalString": "1 Tablespoon Garam Masala", "name": "garam masala"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2-3 organic Garlic Cloves", "name": "garlic cloves"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "Cups", "amount": 0.25, "unitShort": "Cup", "metaInformation": [], "unit": "Cup", "originalString": "1/4 Cup Expeller Pressed Grapeseed Oil", "name": "grapeseed oil"}, {"aisle": "Canned and Jarred", "unitLong": "Cups", "amount": 3.0, "unitShort": "Cups", "metaInformation": [], "unit": "Cups", "originalString": "3 Cups organic Red Lentils", "name": "red lentils"}, {"aisle": "Spices and Seasonings", "unitLong": "Tablespoon", "amount": 1.0, "unitShort": "Tablespoon", "metaInformation": [], "unit": "Tablespoon", "originalString": "1 Tablespoon + 1 Teaspoon Sea Salt or to taste", "name": "sea salt"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2-4 Serrano peppers", "name": "serrano peppers"}, {"aisle": "Spices and Seasonings", "unitLong": "Tablespoons", "amount": 3.0, "unitShort": "Tablespoons", "metaInformation": [], "unit": "Tablespoons", "originalString": "3 Tablespoons Turmeric", "name": "turmeric"}, {"aisle": "Canned and Jarred", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 Vegetable Bouillon Cube", "name": "vegetable bouillon cube"}, {"aisle": "Produce", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1/2 organic White Onion", "name": "white onion"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/indian-spiced-red-lentil-soup-631752", "weightWatcherSmartPoints": 5, "id": 631752, "image": "https://spoonacular.com/recipeImages/Indian-Spiced-Red-Lentil-Soup-631752.jpg", "servings": 12, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": true,
+  "title": "Indian Spiced Red Lentil Soup",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/N3PKYN5Q/indian-spiced-red-lentil-soup",
+  "sourceName": "Foodista",
+  "vegan": true,
+  "sustainable": false,
+  "instructions": "<ol><li>Put Cilantro Stems in Water and bring to a boil then remove Stems (This step is optional)</li><li>Rinse the Lentils and add to Stem Broth</li><li>Bring Lentils to a boil then turn heat down to medium</li><li>Add a bit of Lentil water to the Bullion cubes, mash well then add to Lentils</li><li>In a saut pan add  Grapeseed Oil, Coriander Seeds (you can put the seeds in a coffee grinder if you prefer) Cumin Seeds, Turmeric, Garam Masala.</li><li>Saut on medium heat until fragrant approximately about 5 minutes.</li><li>Mince Serranos, grate Ginger, mince Onions, mince Garlic and add to pan then saut until Onions are soft.</li><li>Add Tomato Sauce and cook on medium low for about 10 minutes then add to cooked Lentils and cook for 20 more minutes on low heat.</li><li>If you like a smooth texture to your soup you can put all of it in a food processor (blender or hand blender) to puree` or only use half for a slightly textured soup or leave it if you like it that way.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "Cup",
+      "amount": 1.0,
+      "unitShort": "Cup",
+      "metaInformation": [],
+      "unit": "Cup",
+      "originalString": "1 Cup canned crushed tomatoes",
+      "name": "canned tomatoes"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "Teaspoons",
+      "amount": 2.0,
+      "unitShort": "Teaspoons",
+      "metaInformation": [],
+      "unit": "Teaspoons",
+      "originalString": "2 Teaspoons Coriander Seeds or 1 Teaspoon Powder",
+      "name": "coriander seeds"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "Teaspoon",
+      "amount": 1.0,
+      "unitShort": "Teaspoon",
+      "metaInformation": [],
+      "unit": "Teaspoon",
+      "originalString": "1 Teaspoon Cumin Seeds",
+      "name": "cumin seeds"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "Cups",
+      "amount": 12.0,
+      "unitShort": "Cups",
+      "metaInformation": [],
+      "unit": "Cups",
+      "originalString": "12 Cups Filtered Water",
+      "name": "water"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "Teaspoons",
+      "amount": 2.0,
+      "unitShort": "Teaspoons",
+      "metaInformation": [],
+      "unit": "Teaspoons",
+      "originalString": "2 Teaspoons Fresh organic Ginger",
+      "name": "fresh ginger"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "Tablespoon",
+      "amount": 1.0,
+      "unitShort": "Tablespoon",
+      "metaInformation": [],
+      "unit": "Tablespoon",
+      "originalString": "1 Tablespoon Garam Masala",
+      "name": "garam masala"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 2.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "2-3 organic Garlic Cloves",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "Cups",
+      "amount": 0.25,
+      "unitShort": "Cup",
+      "metaInformation": [],
+      "unit": "Cup",
+      "originalString": "1/4 Cup Expeller Pressed Grapeseed Oil",
+      "name": "grapeseed oil"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "Cups",
+      "amount": 3.0,
+      "unitShort": "Cups",
+      "metaInformation": [],
+      "unit": "Cups",
+      "originalString": "3 Cups organic Red Lentils",
+      "name": "red lentils"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "Tablespoon",
+      "amount": 1.0,
+      "unitShort": "Tablespoon",
+      "metaInformation": [],
+      "unit": "Tablespoon",
+      "originalString": "1 Tablespoon + 1 Teaspoon Sea Salt or to taste",
+      "name": "sea salt"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2-4 Serrano peppers",
+      "name": "serrano peppers"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "Tablespoons",
+      "amount": 3.0,
+      "unitShort": "Tablespoons",
+      "metaInformation": [],
+      "unit": "Tablespoons",
+      "originalString": "3 Tablespoons Turmeric",
+      "name": "turmeric"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 Vegetable Bouillon Cube",
+      "name": "vegetable bouillon cube"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 organic White Onion",
+      "name": "white onion"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/indian-spiced-red-lentil-soup-631752",
+  "weightWatcherSmartPoints": 5,
+  "id": 631752,
+  "image": "https://spoonacular.com/recipeImages/Indian-Spiced-Red-Lentil-Soup-631752.jpg",
+  "servings": 12,
+  "whole30": false,
+  "lowFodmap": false
+}
