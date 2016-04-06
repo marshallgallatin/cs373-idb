@@ -4,17 +4,18 @@ import models
 from enums import Cuisine
 import QueryHelpers
 
-def getAllRecipes(limit=10, **kwargs):
+def getAllRecipes(limit=10, page=1, **kwargs):
     """Gets all the recipes in the database, limiting the results to up to 'limit' results.
 
     Args:
-        limit (Optional(int)): The uppoer-bound on the number of recipes to return. Defaults to 10. Must be positive.
+        limit (Optional(int)): The upper-bound on the number of recipes to return. Defaults to 10. Must be positive.
+        page (Optional(int)): The page for large datasets. Defaults to 1. Must be positive.
         **kwargs:
             cuisine (str): The cuisine to filter by. (e.g. 'mexican')
             diet (str): The dietary restriction for which a recipe must be compliant (e.g. vegan)
 
     Returns:
-        list: A list of recipe objects, up to 'limit' of them, filtered by the given kwargs (if any).
+        list: A list of recipe summary dicts, up to 'limit' of them, filtered by the given kwargs (if any).
 
     Raises:
         QueryExceptions.BadQueryException: If limit is less than 0.
@@ -22,6 +23,7 @@ def getAllRecipes(limit=10, **kwargs):
     """
 
     QueryHelpers.ensureIsNonNegative(limit)
+    QueryHelpers.ensureIsNonNegative(page)
     QueryHelpers.ensureDictOnlyContains(kwargs, 'cuisine', 'diet')
     with sessionInstance() as session:
         restrictions = []
@@ -38,7 +40,7 @@ def getAllRecipes(limit=10, **kwargs):
             else:
                 restrictions[diet] = True
 
-        return session.query(models.Recipe).filter_by(**restrictions).limit(limit).all()
+        return [recipe.summaryDict() for recipe in session.query(models.Recipe).filter_by(**restrictions).slice(limit * (page - 1), limit * page).all()]
 
 def getRecipeByID(id):
     """Gets the single recipe from the database, whose id matches the given id.
@@ -47,12 +49,12 @@ def getRecipeByID(id):
         id (int): ID of the recipe.
 
     Retuns:
-        Recipe: The recipe with the given id if it exists, 'None' otherwise.
+        dict: The recipe's full dict with the given id if it exists, 'None' otherwise.
     """
 
     with sessionInstance() as session:
         try:
-            return session.query(models.Recipe).filter(models.Recipe.id == id).one()
+            return session.query(models.Recipe).filter(models.Recipe.id == id).one().fullDict()
         except orm.exc.NoResultFound:
             return None
 
@@ -63,7 +65,7 @@ def getRecipesByIngredients(ingredients):
         ingredients (list): The list of ingredients, as strings, that each recipe returned must contain.
 
     Retuns:
-        list:  A list of recipe objects, where each recipe contains every ingredient in 'ingredients'.
+        list: A list of recipe summary dicts, where each recipe contains every ingredient in 'ingredients'.
 
     Raises:
         QueryExceptions.BadQueryException: If 'ingredients' is empty.
@@ -89,4 +91,4 @@ def getRecipesByIngredients(ingredients):
             if counts[ingredientInRecipe.recipe_id] == len(ingredients):
                recipes.append(ingredientInRecipe.recipe)
 
-        return recipes
+        return [recipe.summaryDict() for recipe in recipes]
