@@ -53,6 +53,15 @@ class RecipeByID(Resource):
 api.add_resource(ListRecipes, '/recipes')
 api.add_resource(RecipeByID, '/recipes/<int:rec_id>')
 
+class UnitTest(Resource):
+    """
+    UnitTest [/unittest]
+    """
+    def get(self):
+        return "hello"
+
+api.add_resource(UnitTest, '/unittest')
+
 @app.route("/")
 def splash():
     return app.send_static_file('html/index.html')
@@ -245,4 +254,4 @@ def page_not_found(error):
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000, debug=True)
