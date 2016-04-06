@@ -1,1 +1,189 @@
-{"vegetarian": false, "glutenFree": false, "title": "Austrian Goulash", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/2F4YVV7B/austrian-goulash", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>You will need a large Dutch oven with a lid for best results. Add just enough olive oil to coat the pan and turn the heat high enough to make the oil shimmer, but not smoke.</li><li>Pat the meat dry and dredge in flour, seasoned with kosher salt & cracked pepper.</li><li>Add one piece of meat to the hot oil to make sure that it sizzles. Add the remaining meat, without crowding the pan and sear for about 3-4 minutes per side. You want a golden crust that will give the gravy great flavor.</li><li>Cook the meat in batches, if necessary and set aside in a bowl-- to collect the juice.</li><li>When all the meat is seared, turn the heat to medium and add a little more olive oil to the pan and cook the onion until tender-- 3-4 minutes. Add the sliced garlic and cook till fragrant-- 30 seconds or so.</li><li>Add the tomato paste and paprika, and cook for 1-2 minutes.</li><li>Add the tomato sauce, caraway seeds, lemon zest and chicken stock and stir well.</li><li>Bring to a simmer for about 15 minutes and taste for seasoning. Adjust as necessary. If the sauce is too thick, thin with a little more chicken stock or water until it is the consistency of a gravy.</li><li>Simmer for 2 hours, or you can use a slow cooker for 4-6 hours.</li><li>This stew tastes even better if made one day in advance.  Serve or buttered egg noodles or spaetzle or Bavarian Bread Dumplings-- recipes coming soon to my blog!</li></ol>", "aggregateLikes": 5, "dairyFree": true, "extendedIngredients": [{"aisle": "Meat", "unitLong": "pounds", "amount": 4.0, "unitShort": "lb", "metaInformation": [], "unit": "pounds", "originalString": "4-5 pounds stew cut meat*, cut into bite-sized chunks", "name": "lamb stew meat"}, {"aisle": "Pasta and Rice", "unitLong": "can", "amount": 1.0, "unitShort": "can", "metaInformation": [], "unit": "can", "originalString": "1 large can tomato sauce (approx 4 cups)", "name": "canned tomato sauce"}, {"aisle": "Spices and Seasonings", "unitLong": "Tbsp", "amount": 1.0, "unitShort": "Tbsp", "metaInformation": [], "unit": "Tbsp", "originalString": "1 Tbsp. caraway seeds", "name": "caraway seeds"}, {"aisle": "Canned and Jarred", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "\u00bd cup beef or chicken stock (or water)", "name": "chicken stock"}, {"aisle": "Baking", "unitLong": "servings", "amount": 12.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "flour for searing meat", "name": "flour"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 garlic cloves, sliced thin", "name": "garlic cloves"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "2 tsp. Hungarian Hot Paprika", "name": "hungarian paprika"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 12.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "kosher salt & pepper to taste", "name": "kosher salt"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "zest of 1 small lemon", "name": "lemon zest"}, {"aisle": "Meat", "unitLong": "can", "amount": 1.0, "unitShort": "can", "metaInformation": [], "unit": "can", "originalString": "NOTE: My recommended cut of meat, if your butcher can provide it, is \"chuck eye roast\". It's a very tender cut of meat that braises beautifully.", "name": "meat"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "servings", "amount": 12.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "olive oil for searing", "name": "olive oil"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 large onions, sliced thin", "name": "onions"}, {"aisle": "Spices and Seasonings", "unitLong": "Tbsp", "amount": 1.0, "unitShort": "Tbsp", "metaInformation": [], "unit": "Tbsp", "originalString": "1 Tbsp. mild paprika", "name": "paprika"}, {"aisle": "Baking", "unitLong": "servings", "amount": 12.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "flour seasoned with Kosher salt & cracked pepper-- about 1 cup flour, 1 Tbsp salt & pepper", "name": "seasoned flour"}, {"aisle": "Pasta and Rice", "unitLong": "Tbsps", "amount": 2.0, "unitShort": "Tbsp", "metaInformation": [], "unit": "Tbsp", "originalString": "2 Tbsp. tomato paste", "name": "tomato paste"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/austrian-goulash-633063", "weightWatcherSmartPoints": 10, "id": 633063, "image": "https://spoonacular.com/recipeImages/Austrian-Goulash-633063.jpg", "servings": 12, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Austrian Goulash",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/2F4YVV7B/austrian-goulash",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>You will need a large Dutch oven with a lid for best results. Add just enough olive oil to coat the pan and turn the heat high enough to make the oil shimmer, but not smoke.</li><li>Pat the meat dry and dredge in flour, seasoned with kosher salt & cracked pepper.</li><li>Add one piece of meat to the hot oil to make sure that it sizzles. Add the remaining meat, without crowding the pan and sear for about 3-4 minutes per side. You want a golden crust that will give the gravy great flavor.</li><li>Cook the meat in batches, if necessary and set aside in a bowl-- to collect the juice.</li><li>When all the meat is seared, turn the heat to medium and add a little more olive oil to the pan and cook the onion until tender-- 3-4 minutes. Add the sliced garlic and cook till fragrant-- 30 seconds or so.</li><li>Add the tomato paste and paprika, and cook for 1-2 minutes.</li><li>Add the tomato sauce, caraway seeds, lemon zest and chicken stock and stir well.</li><li>Bring to a simmer for about 15 minutes and taste for seasoning. Adjust as necessary. If the sauce is too thick, thin with a little more chicken stock or water until it is the consistency of a gravy.</li><li>Simmer for 2 hours, or you can use a slow cooker for 4-6 hours.</li><li>This stew tastes even better if made one day in advance.  Serve or buttered egg noodles or spaetzle or Bavarian Bread Dumplings-- recipes coming soon to my blog!</li></ol>",
+  "aggregateLikes": 5,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Meat",
+      "unitLong": "pounds",
+      "amount": 4.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pounds",
+      "originalString": "4-5 pounds stew cut meat*, cut into bite-sized chunks",
+      "name": "lamb stew meat"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "can",
+      "amount": 1.0,
+      "unitShort": "can",
+      "metaInformation": [],
+      "unit": "can",
+      "originalString": "1 large can tomato sauce (approx 4 cups)",
+      "name": "canned tomato sauce"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "Tbsp",
+      "amount": 1.0,
+      "unitShort": "Tbsp",
+      "metaInformation": [],
+      "unit": "Tbsp",
+      "originalString": "1 Tbsp. caraway seeds",
+      "name": "caraway seeds"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "½ cup beef or chicken stock (or water)",
+      "name": "chicken stock"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "servings",
+      "amount": 12.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "flour for searing meat",
+      "name": "flour"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 garlic cloves, sliced thin",
+      "name": "garlic cloves"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "2 tsp. Hungarian Hot Paprika",
+      "name": "hungarian paprika"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 12.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "kosher salt & pepper to taste",
+      "name": "kosher salt"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "zest of 1 small lemon",
+      "name": "lemon zest"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "servings",
+      "amount": 12.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "olive oil for searing",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 large onions, sliced thin",
+      "name": "onions"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "Tbsp",
+      "originalString": "1 Tbsp. mild paprika",
+      "name": "paprika"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "flour seasoned with Kosher salt & cracked pepper-- about 1 cup flour, 1 Tbsp salt & pepper",
+      "name": "flour"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoons",
+      "amount": 0.5,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "Tbsp",
+      "originalString": "1/2 Tbsp salt",
+      "name": "kosher salt"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoons",
+      "amount": 0.5,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "Tbsp",
+      "originalString": "1/2 Tbsp pepper",
+      "name": "ground pepper"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "Tbsp",
+      "originalString": "2 Tbsp. tomato paste",
+      "name": "tomato paste"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/austrian-goulash-633063",
+  "weightWatcherSmartPoints": 10,
+  "id": 633063,
+  "image": "https://spoonacular.com/recipeImages/Austrian-Goulash-633063.jpg",
+  "servings": 12,
+  "whole30": false,
+  "lowFodmap": false
+}

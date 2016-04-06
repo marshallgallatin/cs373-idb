@@ -1,1 +1,259 @@
-{"vegetarian": false, "glutenFree": false, "title": "Vietnamese Pho", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/62Q4GT4G/vietnamese-pho", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Soak bone overnight in cold water. Place bones, oxtails and flank steak in a large stock pot. Add water to cover and bring to a boil. Cook 10 minutes, drain and rinse pot and bones. Return bones to pot, add 6 quarts water and bring to a boil. Skim surface of scum and fat. Stir bones at bottom from time to time. Add 3 more quarts water, bring to a boil again and skim scum. Lower heat and let simmer. Char clove-studded onions, shallots, and ginger under a broiler until they release their fragrant odors. Tie charred vegetables, star anise, and cinnamon stick in a thick, dampened cheesecloth. Put it in stock with daikon. Simmer for 1 hour. Remove flank steak and continue simmering broth, uncovered pot, for 4-5 hours. Add more water if level goes below bones.</li><li>Meanwhile, slice beef sirloin against grain into paper-thin slices, about 2-by-2 inches. Slice flank steak the same way. Set aside. In a small bowl, combine scallions, cilantro, and half the sliced onions. Place remaining onions in another bowl and mix in hot chili sauce. Soak rice noodles in warm water for 30 minutes. Drain and set aside.</li><li>When broth is ready, discard bones. Strain broth through a colander lined with a double layer of damp cheesecloth into a clean pot. Add fish sauce and bring to a boil. Reduce heat to simmer. In another pot, bring 4 quarts of water to a boil. Add noodles and drain immediately. Do not overcook noodles. Divide among 4 large soup bowls. Top noodles with sliced meats.</li><li>Bring broth to a rolling boil, then ladle into soup bowls. Garnish with scallions mixture and black pepper. Serve the onions in hot chili sauce and remaining ingredients on the side to add as desired. Also, you can add Hoisin sauce as a dip.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Produce", "unitLong": "bunch", "amount": 1.0, "unitShort": "bunch", "metaInformation": [], "unit": "bunch", "originalString": "1 bunch Thai basil or regular basil", "name": "basil"}, {"aisle": "meat", "unitLong": "pounds", "amount": 5.0, "unitShort": "lb", "metaInformation": [], "unit": "pounds", "originalString": "5 pounds Beef bones with marrow", "name": "beef bones"}, {"aisle": "Meat", "unitLong": "pound", "amount": 1.0, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1 pound Beef sirloin", "name": "beef top sirloin steak"}, {"aisle": "Produce", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons hot chili peppers (optional)", "name": "chili peppers"}, {"aisle": "Ethnic Foods", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon Hot chili sauce", "name": "chili sauce"}, {"aisle": "Produce", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon Cilantro, chopped", "name": "cilantro"}, {"aisle": "Spices and Seasonings", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 Cinnamon stick", "name": "cinnamon stick"}, {"aisle": "Produce", "unitLong": "", "amount": 4.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "4 mediums daikon cut in 2-inch chunks", "name": "daikon"}, {"aisle": "Meat", "unitLong": "pound", "amount": 1.0, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1 pound Flank steak", "name": "flank steak"}, {"aisle": "Produce", "unitLong": "cups", "amount": 2.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "2 cups Fresh bean sprouts", "name": "fresh bean sprouts"}, {"aisle": "Produce", "unitLong": "bunch", "amount": 1.0, "unitShort": "bunch", "metaInformation": [], "unit": "bunch", "originalString": "1 bunch Fresh mint", "name": "fresh mint"}, {"aisle": "Ethnic Foods", "unitLong": "ounces", "amount": 2.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "2 ounces Piece ginger, unpeeled", "name": "ginger"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 Limes cut in wedges", "name": "limes"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 larges Onions, unpeeled, halved, and studded with 8 cloves", "name": "onions"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 mediums Onions, thinly sliced", "name": "onions"}, {"aisle": "Meat", "unitLong": "pounds", "amount": 5.0, "unitShort": "lb", "metaInformation": [], "unit": "pounds", "originalString": "5 pounds Oxtails", "name": "oxtails"}, {"aisle": "Gluten Free", "unitLong": "pound", "amount": 1.0, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1 pound Rice noodles \u00bc-inch wide (or banh pho)", "name": "rice noodles"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 42.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Black pepper and salt to taste", "name": "Salt & Pepper"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 Scallions, thinly sliced", "name": "scallions"}, {"aisle": "Produce", "unitLong": "", "amount": 3.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "3 Shallots, unpeeled", "name": "shallots"}, {"aisle": "Spices and Seasonings", "unitLong": "", "amount": 8.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "8 Star anise", "name": "star anise"}, {"aisle": "Baking", "unitLong": "tablespoons", "amount": 3.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "3 tablespoons sugar", "name": "sugar"}, {"aisle": "?", "unitLong": "Tablespoon", "amount": 1.0, "unitShort": "Tablespoon", "metaInformation": ["(Vietnamese fish sauce)"], "unit": "Tablespoon", "originalString": "1 Tablespoon Nuoc mam (Vietnamese fish sauce)", "name": "nuoc mam"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/vietnamese-pho-664836", "weightWatcherSmartPoints": 5, "id": 664836, "image": "https://spoonacular.com/recipeImages/Vietnamese-Pho-664836.jpg", "servings": 42, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Vietnamese Pho",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/62Q4GT4G/vietnamese-pho",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Soak bone overnight in cold water. Place bones, oxtails and flank steak in a large stock pot. Add water to cover and bring to a boil. Cook 10 minutes, drain and rinse pot and bones. Return bones to pot, add 6 quarts water and bring to a boil. Skim surface of scum and fat. Stir bones at bottom from time to time. Add 3 more quarts water, bring to a boil again and skim scum. Lower heat and let simmer. Char clove-studded onions, shallots, and ginger under a broiler until they release their fragrant odors. Tie charred vegetables, star anise, and cinnamon stick in a thick, dampened cheesecloth. Put it in stock with daikon. Simmer for 1 hour. Remove flank steak and continue simmering broth, uncovered pot, for 4-5 hours. Add more water if level goes below bones.</li><li>Meanwhile, slice beef sirloin against grain into paper-thin slices, about 2-by-2 inches. Slice flank steak the same way. Set aside. In a small bowl, combine scallions, cilantro, and half the sliced onions. Place remaining onions in another bowl and mix in hot chili sauce. Soak rice noodles in warm water for 30 minutes. Drain and set aside.</li><li>When broth is ready, discard bones. Strain broth through a colander lined with a double layer of damp cheesecloth into a clean pot. Add fish sauce and bring to a boil. Reduce heat to simmer. In another pot, bring 4 quarts of water to a boil. Add noodles and drain immediately. Do not overcook noodles. Divide among 4 large soup bowls. Top noodles with sliced meats.</li><li>Bring broth to a rolling boil, then ladle into soup bowls. Garnish with scallions mixture and black pepper. Serve the onions in hot chili sauce and remaining ingredients on the side to add as desired. Also, you can add Hoisin sauce as a dip.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "bunch",
+      "amount": 1.0,
+      "unitShort": "bunch",
+      "metaInformation": [],
+      "unit": "bunch",
+      "originalString": "1 bunch Thai basil or regular basil",
+      "name": "basil"
+    },
+    {
+      "aisle": "meat",
+      "unitLong": "pounds",
+      "amount": 5.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pounds",
+      "originalString": "5 pounds Beef bones with marrow",
+      "name": "beef bones"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1 pound Beef sirloin",
+      "name": "beef top sirloin steak"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons hot chili peppers (optional)",
+      "name": "chili peppers"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon Hot chili sauce",
+      "name": "chili sauce"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon Cilantro, chopped",
+      "name": "cilantro"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 Cinnamon stick",
+      "name": "cinnamon stick"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 4.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "4 mediums daikon cut in 2-inch chunks",
+      "name": "daikon"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1 pound Flank steak",
+      "name": "flank steak"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 cups Fresh bean sprouts",
+      "name": "fresh bean sprouts"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "bunch",
+      "amount": 1.0,
+      "unitShort": "bunch",
+      "metaInformation": [],
+      "unit": "bunch",
+      "originalString": "1 bunch Fresh mint",
+      "name": "fresh mint"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "ounces",
+      "amount": 2.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "2 ounces Piece ginger, unpeeled",
+      "name": "ginger"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 Limes cut in wedges",
+      "name": "limes"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 large Onions, unpeeled, halved, and studded with 8 cloves",
+      "name": "onions"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 mediums Onions, thinly sliced",
+      "name": "onions"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pounds",
+      "amount": 5.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pounds",
+      "originalString": "5 pounds Oxtails",
+      "name": "oxtails"
+    },
+    {
+      "aisle": "Gluten Free",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1 pound Rice noodles ¼-inch wide (or banh pho)",
+      "name": "rice noodles"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 42.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Black pepper and salt to taste",
+      "name": "Salt & Pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 Scallions, thinly sliced",
+      "name": "scallions"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 3.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "3 Shallots, unpeeled",
+      "name": "shallots"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "",
+      "amount": 8.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "8 Star anise",
+      "name": "star anise"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "tablespoons",
+      "amount": 3.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "3 tablespoons sugar",
+      "name": "sugar"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "Tablespoon",
+      "amount": 1.0,
+      "unitShort": "Tablespoon",
+      "metaInformation": [],
+      "unit": "Tablespoon",
+      "originalString": "1 Tablespoon Nuoc mam (Vietnamese fish sauce)",
+      "name": "nuoc mam"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/vietnamese-pho-664836",
+  "weightWatcherSmartPoints": 5,
+  "id": 664836,
+  "image": "https://spoonacular.com/recipeImages/Vietnamese-Pho-664836.jpg",
+  "servings": 42,
+  "whole30": false,
+  "lowFodmap": false
+}

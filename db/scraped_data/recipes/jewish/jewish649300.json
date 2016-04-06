@@ -1,1 +1,139 @@
-{"vegetarian": true, "glutenFree": false, "title": "Latkes", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/HL3CWK8N/latkes-fried-vegetable-pancakes-from-europe-and-the-middle-east", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>1. Skin the vegetables and in a standard food processor, grate them into a suitable bowl.</li><li>2. Take a handful of the grated vegetables and squeeze as much moisture from it as possible. Then place on a paper towel. Continue until you have squeezed out as much of the moisture as you can.</li><li>3. Clean and dry the original bowl and repeat the process of squeezing the vegetables dry but putting them in the bowl when finished. Then stir them to mix thoroughly.</li><li>4. In a separate bowl, beat the egg with the flour to form a sticky glue that will hold the latkes together.</li><li>5. Mix the sticky egg and flour with the vegetable mixture and form into flat pancakes about 3 to 4 inches in diameter then place on a cutting board.</li><li>6. Heat about 1/8 inch of peanut oil in a 10 inch cast iron skillet over medium high heat until a drop of water sizzles upon contact.</li><li>7. Place three of the pancakes into the skillet, press down with a spatula to thin them and cook until the edges start to turn deep brown. Flip them over carefully and cook for 2 to 3 minutes more.</li><li>8. Remove from pan and place on paper towels to drain excess oil.</li><li>9. Repeat until all are cooked and drained then place in a 175-200*F warming oven until ready to be served.</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Milk, Eggs, Other Dairy", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "applesauce and low fat sour cream for serving", "name": "cream"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 Egg, beaten", "name": "egg"}, {"aisle": "Produce", "unitLong": "cloves", "amount": 3.0, "unitShort": "cloves", "metaInformation": [], "unit": "cloves", "originalString": "3 cloves of garlic, skinned and coarse grated", "name": "garlic"}, {"aisle": "Ethnic Foods", "unitLong": "inches", "amount": 0.5, "unitShort": "inch", "metaInformation": [], "unit": "inch", "originalString": "\u00bd inch of ginger, skinned and coarse grated(optional for garlic flavoring)", "name": "ginger"}, {"aisle": "Produce", "unitLong": "Cs", "amount": 0.5, "unitShort": "C", "metaInformation": [], "unit": "C", "originalString": "\u00bd C of parsnips, skinned and coarse grated", "name": "parsnips"}, {"aisle": "Savory Snacks", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "peanut or other high temperature cooking oil", "name": "peanut"}, {"aisle": "Produce", "unitLong": "C", "amount": 1.0, "unitShort": "C", "metaInformation": [], "unit": "C", "originalString": "1 C of Yukon Gold or russet potatoes, skinned and coarse grated", "name": "russet potatoes"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "salt and pepper to taste", "name": "salt and pepper"}, {"aisle": "Baking", "unitLong": "ounce", "amount": 1.0, "unitShort": "oz", "metaInformation": [], "unit": "oz", "originalString": "1 oz white flour", "name": "white flour"}, {"aisle": "Produce", "unitLong": "Cs", "amount": 0.5, "unitShort": "C", "metaInformation": [], "unit": "C", "originalString": "\u00bd C of yams, skinned and coarse grated", "name": "yams"}, {"aisle": "?", "unitLong": "Cs", "amount": 0.5, "unitShort": "C", "metaInformation": ["red", "grated"], "unit": "C", "originalString": "\u00bd C of red or other onion, skinned and coarse grated", "name": "of"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/latkes-fried-vegetable-pancakes-from-europe-and-the-middle-east-649300", "weightWatcherSmartPoints": 6, "id": 649300, "image": "https://spoonacular.com/recipeImages/Latkes--Fried-Vegetable-Pancakes-from-Europe-and-the-Middle-East-649300.jpg", "servings": 2, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": false,
+  "title": "Latkes",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/HL3CWK8N/latkes-fried-vegetable-pancakes-from-europe-and-the-middle-east",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>1. Skin the vegetables and in a standard food processor, grate them into a suitable bowl.</li><li>2. Take a handful of the grated vegetables and squeeze as much moisture from it as possible. Then place on a paper towel. Continue until you have squeezed out as much of the moisture as you can.</li><li>3. Clean and dry the original bowl and repeat the process of squeezing the vegetables dry but putting them in the bowl when finished. Then stir them to mix thoroughly.</li><li>4. In a separate bowl, beat the egg with the flour to form a sticky glue that will hold the latkes together.</li><li>5. Mix the sticky egg and flour with the vegetable mixture and form into flat pancakes about 3 to 4 inches in diameter then place on a cutting board.</li><li>6. Heat about 1/8 inch of peanut oil in a 10 inch cast iron skillet over medium high heat until a drop of water sizzles upon contact.</li><li>7. Place three of the pancakes into the skillet, press down with a spatula to thin them and cook until the edges start to turn deep brown. Flip them over carefully and cook for 2 to 3 minutes more.</li><li>8. Remove from pan and place on paper towels to drain excess oil.</li><li>9. Repeat until all are cooked and drained then place in a 175-200*F warming oven until ready to be served.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "applesauce and low fat sour cream for serving",
+      "name": "low fat sour cream"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 Egg, beaten",
+      "name": "egg"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 3.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "3 cloves of garlic, skinned and coarse grated",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "inches",
+      "amount": 0.5,
+      "unitShort": "inch",
+      "metaInformation": [],
+      "unit": "inch",
+      "originalString": "½ inch of ginger, skinned and coarse grated (optional for garlic flavoring)",
+      "name": "ginger"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "½ C of parsnips, skinned and coarse grated",
+      "name": "parsnips"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "peanut or other high temperature cooking oil",
+      "name": "peanut oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 C of Yukon Gold or russet potatoes, skinned and coarse grated",
+      "name": "russet potatoes"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "salt and pepper to taste",
+      "name": "salt and pepper"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "ounce",
+      "amount": 1.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "oz",
+      "originalString": "1 oz white flour",
+      "name": "white flour"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "½ C of yams, skinned and coarse grated",
+      "name": "yams"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "½ C of red or other onion, skinned and coarse grated",
+      "name": "red onion"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/latkes-fried-vegetable-pancakes-from-europe-and-the-middle-east-649300",
+  "weightWatcherSmartPoints": 6,
+  "id": 649300,
+  "image": "https://spoonacular.com/recipeImages/Latkes--Fried-Vegetable-Pancakes-from-Europe-and-the-Middle-East-649300.jpg",
+  "servings": 2,
+  "whole30": false,
+  "lowFodmap": false
+}

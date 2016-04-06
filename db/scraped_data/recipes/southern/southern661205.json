@@ -1,1 +1,129 @@
-{"vegetarian": false, "glutenFree": true, "title": "Spicy Sweet Barbecue Sauce", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/3KWLJR8X/spicy-sweet-barbecue-sauce", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>In a medium saucepan, heat oil over medium heat. Add onion and garlic. Cook, stirring, until onion is soft and translucent, about 5 minutes.</li><li>Stir in tomatoes, chile, Worcestershire, vinegar, molasses, and lemon juice. Simmer over medium-low heat until reduced by a third, stirring occasionally, about 45 minutes.</li><li>Allow to cool slightly, then pure using an immersion blender (if you don't have one, you can pure the sauce in a blender, working with batches. Season with salt and black pepper. Refrigerate in a jar with tight-fitting lid for up to 2 weeks.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Canned and Jarred", "unitLong": "ounces", "amount": 28.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "1 can (28- ounces) crushed tomatoes", "name": "canned tomatoes"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoons", "amount": 1.5, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "1 1/2 tablespoons cider vinegar", "name": "cider vinegar"}, {"aisle": "Spices and Seasonings", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "Coarse salt and freshly ground black pepper", "name": "coarse salt"}, {"aisle": "Produce", "unitLong": "", "amount": 3.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "3 garlic cloves, minced", "name": "garlic cloves"}, {"aisle": "Produce", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1/2 Juice of lemon", "name": "juice of lemon"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon olive oil", "name": "olive oil"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 medium onion diced", "name": "onion"}, {"aisle": "Produce", "unitLong": "", "amount": 45.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2Stir in tomatoes, chile, Worcestershire, vinegar, molasses, and lemon juice. Simmer over medium-low heat until reduced by a third, stirring occasionally, about 45 minutes.", "name": "tomatoes"}, {"aisle": "Baking", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup unsulfured molasses", "name": "unsulfured molasses"}, {"aisle": "Condiments", "unitLong": "tablespoons", "amount": 1.5, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "1 1/2 tablespoons Worcestershire sauce", "name": "worcestershire sauce"}, {"aisle": "?", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": ["medium", "soft"], "unit": "c", "originalString": "1In a medium saucepan, heat oil over medium heat. Add onion and garlic. Cook, stirring, until onion is soft and translucent, about 5 minutes.", "name": "in a saucepan"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/spicy-sweet-barbecue-sauce-661205", "weightWatcherSmartPoints": 22, "id": 661205, "image": "https://spoonacular.com/recipeImages/Spicy-Sweet-Barbecue-Sauce-661205.jpg", "servings": 1, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Spicy Sweet Barbecue Sauce",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/3KWLJR8X/spicy-sweet-barbecue-sauce",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>In a medium saucepan, heat oil over medium heat. Add onion and garlic. Cook, stirring, until onion is soft and translucent, about 5 minutes.</li><li>Stir in tomatoes, chile, Worcestershire, vinegar, molasses, and lemon juice. Simmer over medium-low heat until reduced by a third, stirring occasionally, about 45 minutes.</li><li>Allow to cool slightly, then pure using an immersion blender (if you don't have one, you can pure the sauce in a blender, working with batches. Season with salt and black pepper. Refrigerate in a jar with tight-fitting lid for up to 2 weeks.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "ounces",
+      "amount": 28.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "1 can (28- ounces) crushed tomatoes",
+      "name": "canned tomatoes"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 1.5,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "1 1/2 tablespoons cider vinegar",
+      "name": "cider vinegar"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "Coarse salt and freshly ground black pepper",
+      "name": "salt and pepper"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "ounces",
+      "amount": 7.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "oz",
+      "originalString": "1 can chipotle chile, packed in adobo sauce, minced",
+      "name": "chipotle peppers"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 3.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "3 garlic cloves, minced",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 Juice of lemon",
+      "name": "lemon juice"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 1.5,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "1 1/2 tablespoons extra-virgin olive oil",
+      "name": "extra-virgin olive oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 medium onion diced",
+      "name": "onion"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup unsulfured molasses",
+      "name": "molasses"
+    },
+    {
+      "aisle": "Condiments",
+      "unitLong": "tablespoons",
+      "amount": 1.5,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "1 1/2 tablespoons Worcestershire sauce",
+      "name": "worcestershire sauce"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/spicy-sweet-barbecue-sauce-661205",
+  "weightWatcherSmartPoints": 22,
+  "id": 661205,
+  "image": "https://spoonacular.com/recipeImages/Spicy-Sweet-Barbecue-Sauce-661205.jpg",
+  "servings": 1,
+  "whole30": false,
+  "lowFodmap": false
+}

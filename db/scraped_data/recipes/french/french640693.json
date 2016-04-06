@@ -1,1 +1,169 @@
-{"vegetarian": true, "glutenFree": false, "title": "Creamy Ratatouille Over Penne", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/PB852KG7/creamy-ratatouille", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Heat olive oil in a large skillet over medium heat. Add onion, bell pepper, and zucchini and saut for about 7 minutes, stirring occasionally, until slightly softened.</li><li>Add eggplant and continue to saut mixture for another 3 minutes, stirring frequently. When vegetables are softened, add garlic and cook until fragrant, about 1 minute.</li><li>Add dried spices, salt, and pepper, followed by the tomato sauce and water. Allow mixture to come to a simmer and cook for 5 minutes, until slightly thickened.</li><li>Stir in mascarpone cheese and serve immediately.</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon black pepper", "name": "black pepper"}, {"aisle": "Pasta and Rice", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "cooked penne", "name": "cooked penne"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon dried basil", "name": "dried basil"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon dried oregano", "name": "dried oregano"}, {"aisle": "Produce", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup diced eggplant", "name": "eggplant"}, {"aisle": "Produce", "unitLong": "cloves", "amount": 2.0, "unitShort": "cloves", "metaInformation": [], "unit": "cloves", "originalString": "2 cloves garlic, minced", "name": "garlic"}, {"aisle": "Cheese", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon mascarpone cheese", "name": "mascarpone cheese"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon olive oil", "name": "olive oil"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup diced onion", "name": "onion"}, {"aisle": "Produce", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup diced red bell pepper", "name": "red bell pepper"}, {"aisle": "Spices and Seasonings", "unitLong": "pinch", "amount": 1.0, "unitShort": "pinch", "metaInformation": [], "unit": "pinch", "originalString": "Pinch salt", "name": "salt"}, {"aisle": "Beverages", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup water", "name": "water"}, {"aisle": "Produce", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup diced zucchini", "name": "zucchini"}, {"aisle": "?", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": ["peeled"], "unit": "cup", "originalString": "1 cup tomato sauce, or ground peeled tomatoes", "name": "ground tomatoes"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/creamy-ratatouille-over-penne-640693", "weightWatcherSmartPoints": 7, "id": 640693, "image": "https://spoonacular.com/recipeImages/Creamy-Ratatouille-640693.jpg", "servings": 2, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": false,
+  "title": "Creamy Ratatouille Over Penne",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/PB852KG7/creamy-ratatouille",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Heat olive oil in a large skillet over medium heat. Add onion, bell pepper, and zucchini and saut for about 7 minutes, stirring occasionally, until slightly softened.</li><li>Add eggplant and continue to saut mixture for another 3 minutes, stirring frequently. When vegetables are softened, add garlic and cook until fragrant, about 1 minute.</li><li>Add dried spices, salt, and pepper, followed by the tomato sauce and water. Allow mixture to come to a simmer and cook for 5 minutes, until slightly thickened.</li><li>Stir in mascarpone cheese and serve immediately.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon black pepper",
+      "name": "black pepper"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "cooked penne",
+      "name": "cooked penne"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon dried basil",
+      "name": "dried basil"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon dried oregano",
+      "name": "dried oregano"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup diced eggplant",
+      "name": "eggplant"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 2.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "2 cloves garlic, minced",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Cheese",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon mascarpone cheese",
+      "name": "mascarpone cheese"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon olive oil",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup diced onion",
+      "name": "onion"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup diced red bell pepper",
+      "name": "red bell pepper"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "pinch",
+      "amount": 1.0,
+      "unitShort": "pinch",
+      "metaInformation": [],
+      "unit": "pinch",
+      "originalString": "Pinch salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup water",
+      "name": "water"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup diced zucchini",
+      "name": "zucchini"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup tomato sauce, or ground peeled tomatoes",
+      "name": "canned tomato sauce"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/creamy-ratatouille-over-penne-640693",
+  "weightWatcherSmartPoints": 7,
+  "id": 640693,
+  "image": "https://spoonacular.com/recipeImages/Creamy-Ratatouille-640693.jpg",
+  "servings": 2,
+  "whole30": false,
+  "lowFodmap": false
+}

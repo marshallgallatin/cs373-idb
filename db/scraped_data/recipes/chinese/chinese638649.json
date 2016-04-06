@@ -1,1 +1,119 @@
-{"vegetarian": false, "glutenFree": true, "title": "Chinese Chicken Salad With Creamy Soy Dressing", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/BPHS2ZXF/chinese-chicken-salad-with-creamy-soy-dressing", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Whisk mayonnaise, soy sauce and ginger together in a large bowl until blended.</li><li>Add chicken, snow peas, peppers, carrots and green onion; toss to mix and coat.</li><li>Serve over torn spinach leaves.</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Produce", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup bell pepper, diced", "name": "bell pepper"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup carrot, slivered", "name": "carrot"}, {"aisle": "Condiments", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup fat-free mayonnaise", "name": "fat-free mayonnaise"}, {"aisle": "Ethnic Foods", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon ginger root, freshly grated", "name": "ginger root"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 green onions, sliced", "name": "green onions"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoons", "amount": 0.5, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1/2 tablespoon low-sodium soy sauce", "name": "low sodium soy sauce"}, {"aisle": "Meat", "unitLong": "cups", "amount": 3.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "8 ounces cooked boneless, skinless chicken breast, thinly sliced or shredded (about 3 cups) or 1 can Kirkland", "name": "skinless boneless chicken breast"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup snow peas, cut in half lengthwise on a diagonal", "name": "snow peas"}, {"aisle": "Produce", "unitLong": "cups", "amount": 2.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "2 cups torn spinach leaves or other greens of your choosing", "name": "spinach leaves"}], "readyInMinutes": 30, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/chinese-chicken-salad-with-creamy-soy-dressing-638649", "weightWatcherSmartPoints": 4, "id": 638649, "image": "https://spoonacular.com/recipeImages/Chinese-Chicken-Salad-With-Creamy-Soy-Dressing-638649.jpg", "servings": 2, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Chinese Chicken Salad With Creamy Soy Dressing",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/BPHS2ZXF/chinese-chicken-salad-with-creamy-soy-dressing",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Whisk mayonnaise, soy sauce and ginger together in a large bowl until blended.</li><li>Add chicken, snow peas, peppers, carrots and green onion; toss to mix and coat.</li><li>Serve over torn spinach leaves.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup bell pepper, diced",
+      "name": "bell pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup carrot, slivered",
+      "name": "carrot"
+    },
+    {
+      "aisle": "Condiments",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup fat-free mayonnaise",
+      "name": "fat-free mayonnaise"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon ginger root, freshly grated",
+      "name": "ginger root"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 green onions, sliced",
+      "name": "green onions"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoons",
+      "amount": 0.5,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1/2 tablespoon low-sodium soy sauce",
+      "name": "low sodium soy sauce"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "cups",
+      "amount": 3.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "8 ounces cooked boneless, skinless chicken breast, thinly sliced or shredded (about 3 cups) or 1 can Kirkland",
+      "name": "skinless boneless chicken breast"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup snow peas, cut in half lengthwise on a diagonal",
+      "name": "snow peas"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 cups torn spinach leaves or other greens of your choosing",
+      "name": "spinach leaves"
+    }
+  ],
+  "readyInMinutes": 30,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/chinese-chicken-salad-with-creamy-soy-dressing-638649",
+  "weightWatcherSmartPoints": 4,
+  "id": 638649,
+  "image": "https://spoonacular.com/recipeImages/Chinese-Chicken-Salad-With-Creamy-Soy-Dressing-638649.jpg",
+  "servings": 2,
+  "whole30": false,
+  "lowFodmap": false
+}

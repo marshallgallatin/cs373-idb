@@ -1,1 +1,179 @@
-{"vegetarian": true, "glutenFree": true, "title": "Vegetable Fried Rice", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/TNCSDDXY/vegetable-fried-rice", "sourceName": "Foodista", "vegan": true, "sustainable": false, "instructions": "<ol><li>Cook the basmati rice with 4 cups water..</li><li>Meanwhile, in a saucepan add the oil and fry the onions..</li><li>Once they turn soft and translucent add the ginger garlic paste and green chillies and saute for a minute..</li><li>Then add all the vegetables,salt and pepper..</li><li>Sprinkle very little water and allow the veggies to cook for two minutes..</li><li>They should be half cooked..</li><li>Now add the soya sauce and chilli sauce..</li><li>Now add the cooked rice to this vegetable mixture and stir this mixture for a minute or two in low flame..</li><li>Roast some cashews and raisins in ghee and also add them..</li><li>If you dont like the sweet taste you can omit the raisins..</li><li>Fried rice is ready..</li><li>It tastes good when served with gobi Manchurian..</li><li>Or just tomato sauce and raita will do..</li></ol>", "aggregateLikes": 2, "dairyFree": true, "extendedIngredients": [{"aisle": "Pasta and Rice", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "cup Basmati Rice - 2", "name": "basmati rice"}, {"aisle": "Pasta and Rice", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "cup Beans - \u00bd", "name": "beans"}, {"aisle": "Produce", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Bell peppers - I used half of red and yellow colour", "name": "bell peppers"}, {"aisle": "Produce", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "cup Cabbage - \u00bc finely grated", "name": "cabbage"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "\u00bc cup minced carrot", "name": "carrot"}, {"aisle": "Produce", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Cashews and raisins", "name": "raisins"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "Green chillies - 2 to 3 depending on your taste", "name": "chillies"}, {"aisle": "Produce", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "cup Corn - \u00bc", "name": "corn"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tbsp", "originalString": "Ginger garlic paste - 1 tbspn", "name": "ginger garlic paste"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "small Onions - 1 finely sliced", "name": "onions"}, {"aisle": "Produce", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "cup Green peas - \u00bc", "name": "peas"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Salt and pepper to taste", "name": "salt and pepper"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tbsp", "originalString": "Soya sauce - 1 tbspn", "name": "soya sauce"}, {"aisle": "Pasta and Rice", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tbsp", "originalString": "Chilli sauce/tomato sauce - 1 tbspn", "name": "tomato sauce"}, {"aisle": "?", "unitLong": "", "amount": 3.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "Oil - 3 spoons", "name": "oil spoons"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/vegetable-fried-rice-664553", "weightWatcherSmartPoints": 21, "id": 664553, "image": "https://spoonacular.com/recipeImages/Vegetable-Fried-Rice-664553.jpg", "servings": 2, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": true,
+  "title": "Vegetable Fried Rice",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/TNCSDDXY/vegetable-fried-rice",
+  "sourceName": "Foodista",
+  "vegan": true,
+  "sustainable": false,
+  "instructions": "<ol><li>Cook the basmati rice with 4 cups water..</li><li>Meanwhile, in a saucepan add the oil and fry the onions..</li><li>Once they turn soft and translucent add the ginger garlic paste and green chilies and saute for a minute..</li><li>Then add all the vegetables,salt and pepper..</li><li>Sprinkle very little water and allow the veggies to cook for two minutes..</li><li>They should be half cooked..</li><li>Now add the soya sauce and chili sauce..</li><li>Now add the cooked rice to this vegetable mixture and stir this mixture for a minute or two in low flame..</li><li>Roast some cashews and raisins in ghee and also add them..</li><li>If you dont like the sweet taste you can omit the raisins..</li><li>Fried rice is ready..</li><li>It tastes good when served with gobi Manchurian..</li><li>Or just tomato sauce and raita will do..</li></ol>",
+  "aggregateLikes": 2,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 cup Basmati Rice",
+      "name": "basmati rice"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "cup",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "½ cup Beans",
+      "name": "beans"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "servings",
+      "amount": 1.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Bell peppers - I used half of red and yellow colour",
+      "name": "bell pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "¼ cup Cabbage - finely grated",
+      "name": "cabbage"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "¼ cup minced carrot",
+      "name": "carrot"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Cashews and raisins",
+      "name": "raisins"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "Green chilies - 2 to 3 depending on your taste",
+      "name": "green chilies"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "¼ cup Corn",
+      "name": "corn"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tbsp",
+      "originalString": "Ginger garlic paste - 1 tbspn",
+      "name": "ginger garlic paste"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 small Onion - finely sliced",
+      "name": "onion"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "¼ cup Green peas",
+      "name": "peas"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Salt and pepper to taste",
+      "name": "salt and pepper"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tbsp",
+      "originalString": "Soya sauce - 1 tbspn",
+      "name": "soya sauce"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tbsp",
+      "originalString": "chili sauce/tomato sauce - 1 tbspn",
+      "name": "tomato sauce"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 3.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tbsp",
+      "originalString": "Oil - 3 tablespoons",
+      "name": "oil"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/vegetable-fried-rice-664553",
+  "weightWatcherSmartPoints": 21,
+  "id": 664553,
+  "image": "https://spoonacular.com/recipeImages/Vegetable-Fried-Rice-664553.jpg",
+  "servings": 2,
+  "whole30": false,
+  "lowFodmap": false
+}

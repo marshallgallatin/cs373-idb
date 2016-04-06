@@ -1,1 +1,169 @@
-{"vegetarian": true, "glutenFree": true, "title": "Vegetarian Spring Rolls With Garlic Lime Sauce", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/PTDX868M/vegetarian-spring-rolls-with-garlic-lime-sauce", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Julienne red and yellow bell pepper, carrots, jicama and Thai basil into 1/8in thin and 2 inch long strips.</li><li>Fill a round pie pan or shallow plate with warm water. Dip one rice paper, making sure both sides are soaked. Lay on a flat flour towel cloth. Wait ten seconds for the paper to soft before using.</li><li>Peel rice paper off of cloth.</li><li>Place half of one butter leaf lettuce on top. Make sure to discard the ribbing.</li><li>Add a thin layer of each vegetable and finish with a few pieces of Thai Basil.</li><li>Starting at one end, fold the edge towards the middle. Repeat with parallel side. Rotate the spring roll by 90 degrees and roll form one end to the next.</li><li>Cut each roll diagonally and place facing up on a serving platter.</li><li>Garlic Lime Hoisin Sauce: Using a mortar and pestle crush garlic and ginger. Whisk in lime and Sriracha. Add hoisin sauce and whisk to combine.</li></ol>", "aggregateLikes": 10, "dairyFree": true, "extendedIngredients": [{"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 carrots, julienned", "name": "carrots"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 1/2 garlic clove", "name": "garlic clove"}, {"aisle": "Ethnic Foods", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon ginger", "name": "ginger"}, {"aisle": "Ethnic Foods", "unitLong": "cups", "amount": 0.75, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "3/4 cup hoisin sauce", "name": "hoisin sauce"}, {"aisle": "Ethnic Foods", "unitLong": "servings", "amount": 10.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Garlic Lime Hoisin Sauce", "name": "hoisin sauce"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 jicama", "name": "jicama"}, {"aisle": "Produce", "unitLong": "head", "amount": 1.0, "unitShort": "head", "metaInformation": [], "unit": "head", "originalString": "1 head of butter leaf lettuce", "name": "lettuce leaf"}, {"aisle": "Produce", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons lime", "name": "lime"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 red bell pepper", "name": "red bell pepper"}, {"aisle": "Ethnic Foods", "unitLong": "sheets", "amount": 12.0, "unitShort": "sheet", "metaInformation": [], "unit": "sheet", "originalString": "12 rice paper sheets", "name": "rice paper"}, {"aisle": "Ethnic Foods", "unitLong": "servings", "amount": 10.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Vegetarian Spring Roll", "name": "spring roll paper"}, {"aisle": "Produce", "unitLong": "leaves", "amount": 12.0, "unitShort": "leaves", "metaInformation": [], "unit": "leaves", "originalString": "12 leaves of Thai basil", "name": "thai basil"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 yellow bell pepper", "name": "yellow bell pepper"}, {"aisle": "?", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": ["to taste", "(or )"], "unit": "teaspoon", "originalString": "1 teaspoon Sriracha (or to taste)", "name": "sriracha"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/vegetarian-spring-rolls-with-garlic-lime-sauce-664708", "weightWatcherSmartPoints": 3, "id": 664708, "image": "https://spoonacular.com/recipeImages/Vegetarian-Spring-Rolls-With-Garlic-Lime-Sauce-664708.jpg", "servings": 10, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": true,
+  "title": "Vegetarian Spring Rolls With Garlic Lime Sauce",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/PTDX868M/vegetarian-spring-rolls-with-garlic-lime-sauce",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Julienne red and yellow bell pepper, carrots, jicama and Thai basil into 1/8in thin and 2 inch long strips.</li><li>Fill a round pie pan or shallow plate with warm water. Dip one rice paper, making sure both sides are soaked. Lay on a flat flour towel cloth. Wait ten seconds for the paper to soft before using.</li><li>Peel rice paper off of cloth.</li><li>Place half of one butter leaf lettuce on top. Make sure to discard the ribbing.</li><li>Add a thin layer of each vegetable and finish with a few pieces of Thai Basil.</li><li>Starting at one end, fold the edge towards the middle. Repeat with parallel side. Rotate the spring roll by 90 degrees and roll form one end to the next.</li><li>Cut each roll diagonally and place facing up on a serving platter.</li><li>Garlic Lime Hoisin Sauce: Using a mortar and pestle crush garlic and ginger. Whisk in lime and Sriracha. Add hoisin sauce and whisk to combine.</li></ol>",
+  "aggregateLikes": 10,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 carrots, julienned",
+      "name": "carrots"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 1.5,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "1 1/2 garlic clove",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon ginger",
+      "name": "ginger"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "cups",
+      "amount": 0.75,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "3/4 cup hoisin sauce",
+      "name": "hoisin sauce"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "servings",
+      "amount": 10.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Garlic Lime Hoisin Sauce",
+      "name": "hoisin sauce"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 jicama",
+      "name": "jicama"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "head",
+      "amount": 1.0,
+      "unitShort": "head",
+      "metaInformation": [],
+      "unit": "head",
+      "originalString": "1 head of butter leaf lettuce",
+      "name": "butterhead lettuce"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons lime",
+      "name": "lime"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 red bell pepper",
+      "name": "red bell pepper"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "sheets",
+      "amount": 12.0,
+      "unitShort": "sheet",
+      "metaInformation": [],
+      "unit": "sheet",
+      "originalString": "12 rice paper sheets",
+      "name": "rice paper"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "servings",
+      "amount": 10.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Vegetarian Spring Roll",
+      "name": "spring roll paper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "leaves",
+      "amount": 12.0,
+      "unitShort": "leaves",
+      "metaInformation": [],
+      "unit": "leaves",
+      "originalString": "12 leaves of Thai basil",
+      "name": "thai basil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 yellow bell pepper",
+      "name": "yellow bell pepper"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon Sriracha (or to taste)",
+      "name": "sriracha"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/vegetarian-spring-rolls-with-garlic-lime-sauce-664708",
+  "weightWatcherSmartPoints": 3,
+  "id": 664708,
+  "image": "https://spoonacular.com/recipeImages/Vegetarian-Spring-Rolls-With-Garlic-Lime-Sauce-664708.jpg",
+  "servings": 10,
+  "whole30": false,
+  "lowFodmap": false
+}
