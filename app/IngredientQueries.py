@@ -4,11 +4,12 @@ import models
 from enums import Cuisine
 import QueryHelpers
 
-def getAllIngredients(limit=10):
+def getAllIngredients(limit=10, page=1):
     """Gets all the ingredients in the database, limiting the results to up to 'limit' results.
 
     Args:
-        limit (Optional(int)): The uppoer-bound on the number of ingredients to return. Defaults to 10. Must be positive.
+        limit (Optional(int)): The upper-bound on the number of ingredients to return. Defaults to 10. Must be positive.
+        page (Optional(int)): The page for large datasets. Defaults to 1. Must be positive.
 
     Returns:
         list: A list of ingredient objects, up to 'limit' of them.
@@ -18,8 +19,9 @@ def getAllIngredients(limit=10):
     """
 
     QueryHelpers.ensureIsNonNegative(limit)
+    QueryHelpers.ensureIsNonNegative(page)
     with sessionInstance() as session:
-        return session.query(models.Ingredient).limit(limit).all()
+        return session.query(models.Ingredient).slice(limit * (page - 1), limit * page).all()
 
 def getIngredientByID(id):
     """Gets the single ingredient from the database, whose id matches the given id.
