@@ -3,7 +3,7 @@ FILES :=                              \
     .travis.yml                       \
     makefile                          \
     apiary.apib                       \
-    IDB1.log                          \
+    IDB2.log                          \
     models.html                       \
     ./app/models.py                   \
     ./app/tests.py                    \
@@ -50,11 +50,11 @@ status:
 
 test: ./app/tests.py
 	coverage3 run    --branch ./app/tests.py >  tests.tmp 2>&1
-	coverage3 report -m                >> tests.tmp
+	coverage3 report -m --omit=/usr/local/lib/python3.4/dist-packages/*,/home/travis/virtualenv/python3.4.2/lib/python3.4/site-packages/* >> tests.tmp
 	cat tests.tmp
 
-IDB1.log:
-	git log > IDB1.log
+IDB2.log:
+	git log > IDB2.log
 
 models.html: ./app/models.py
 	pydoc -w ./app/models
@@ -76,7 +76,6 @@ APP_FILES:=                     \
     ./app/testModels.py         \
     ./app/tests.py              \
     ./app/useDatabase.py        \
-    ./app/jsonifyModels.py      \
     ./app/Dockerfile            \
     ./app/requirements.txt      \
 

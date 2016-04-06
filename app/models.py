@@ -3,6 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from enums import enumToTuple, Origin, Cuisine
 from constraints import isPercentage, isNonnegative, isNotNull
+from utility import getColumnNamesInDeclarationOrder, renameKeyInDict
 
 Base = declarative_base()
 
@@ -44,20 +45,57 @@ class Recipe(Base):
 
     ingredients = relationship('IngredientsInRecipes', back_populates='recipe')
 
-    image_uri = Column(String, nullable=True)
-    instructions = Column(String, nullable=True)  # @TODO: Make this cleaner/formatted
-    cuisine = Column(Enum(*enumToTuple(Cuisine), name='Cuisine'), nullable=True)
+    image_uri    = Column(String, nullable=True)
+    instructions = Column(String, nullable=True) #@TODO: Make this cleaner/formatted
+    cuisine      = Column(Enum(*enumToTuple(Cuisine), name='Cuisine'), nullable=True)
 
     ready_in_minutes = Column(Integer, nullable=True)  # Add constraint
-    servings = Column(Integer, nullable=True)  # Add constraint
+    servings         = Column(Integer, nullable=True)  # Add constraint
 
-    vegetarian = Column(Boolean, nullable=True)
-    vegan = Column(Boolean, nullable=True)
+    vegetarian  = Column(Boolean, nullable=True)
+    vegan       = Column(Boolean, nullable=True)
     gluten_free = Column(Boolean, nullable=True)
-    dairy_free = Column(Boolean, nullable=True)
+    dairy_free  = Column(Boolean, nullable=True)
 
     CheckConstraint('NOT ((vegan IS NOT NULL AND vegetarian IS NOT NULL) AND (vegan AND NOT vegetarian))')
     CheckConstraint('NOT ((vegan IS NOT NULL AND dairy_free IS NOT NULL) AND (vegan AND NOT dairy_free))')
+
+    def summaryDict(self):
+        """ A helper function that returns a dictionary representation of a Recipe, but only with a subset of information.
+
+        Returns:
+            dict: A dictionary with the names of a subset of columns as keys, and the value of column as the values.
+        """
+        summaryKeys = ['id', 'title', 'image_uri', 'cuisine', 'ready_in_minutes', 'servings']
+        selfAsDict = self.__dict__
+        return {key:selfAsDict[key] for key in summaryKeys}
+
+    def fullDict(self):
+        """ A helper function that returns a dictionary representation of a Recipe.
+        NOTE: MUST be called while the session is still open!
+
+        Returns:
+            dict: A dictionary with the names of each column as keys, and the value of column as the values.
+                  For 'ingredients', the value is a list of dictionaries, where each dictionary is a 'massaged' representation of an IngredientsInRecipes's fullDict(). (see massageIngredientInRecipeDict()
+        """
+        columnKeys = getColumnNamesInDeclarationOrder(Recipe)
+        columnKeys.remove('id')
+        selfAsDict = self.__dict__
+        returnDict = {key:selfAsDict[key] for key in columnKeys}
+
+        unsortedIngredientsInRecipes = [ingredientInRecipe.fullDict() for ingredientInRecipe in self.ingredients]
+        ingredientsInRecipesIndeces = [ingredientInRecipe.ingredient_index for ingredientInRecipe in self.ingredients]
+        sortedIngredientsInRecipes = [unsortedIngredientsInRecipes[index] for index in ingredientsInRecipesIndeces]
+
+        def massageIngredientInRecipeDict(ingredientInRecipeDict):
+            del ingredientInRecipeDict['recipe_id']
+            del ingredientInRecipeDict['ingredient_index']
+            del ingredientInRecipeDict['unit_short']
+            renameKeyInDict('ingredient_id', 'id', ingredientInRecipeDict)
+            return ingredientInRecipeDict
+
+        returnDict['ingredients'] = [massageIngredientInRecipeDict(ingredientInRecipe) for ingredientInRecipe in sortedIngredientsInRecipes]
+        return returnDict
 
 
 class Ingredient(Base):
@@ -80,7 +118,7 @@ class Ingredient(Base):
             Valid values are Africa, Asia, Europe, NorthAmerica, Oceania, SouthAmerica, and Worldwide.
 
     Single Column Constraints:
-        None.
+        - An ingredient's name must be unique
 
     Table Constraints:
         None.
@@ -96,6 +134,28 @@ class Ingredient(Base):
     image_uri = Column(String, nullable=True)
     scientific_name = Column(String, nullable=True)
     origin = Column(Enum(*enumToTuple(Origin), name=Origin), nullable=True)
+
+
+    def summaryDict(self):
+        """ A helper function that returns a dictionary representation of an Ingredient, but only with a subset of information.
+
+        Returns:
+            dict: A dictionary with the names of a subset of columns as keys, and the value of column as the values.
+        """
+        summaryKeys = ['id', 'name']
+        selfAsDict = self.__dict__
+        return {key:selfAsDict[key] for key in summaryKeys}
+
+    def fullDict(self):
+        """ A helper function that returns a dictionary representation of a Recipe.
+
+        Returns:
+            dict: A dictionary with the names of each column as keys, and the value of column as the values.
+        """
+        columnKeys = getColumnNamesInDeclarationOrder(Ingredient)
+        columnKeys.remove('id')
+        selfAsDict = self.__dict__
+        return {key:selfAsDict[key] for key in columnKeys}
 
 
 class NutritionalContent(Base):
@@ -151,6 +211,18 @@ class NutritionalContent(Base):
     iron_mg = Column(Integer, isNonnegative('iron_mg'), nullable=False)
 
 
+    def fullDict(self):
+        """ A helper function that returns a dictionary representation of a NutritionalContent.
+
+        Returns:
+            dict: A dictionary with the names of each column as keys, and the value of column as the values.
+        """
+        columnKeys = getColumnNamesInDeclarationOrder(NutritionalContent)
+        columnKeys.remove('id')
+        columnKeys.remove('ingredient_id')
+        selfAsDict = self.__dict__
+        return {key:selfAsDict[key] for key in columnKeys}
+
 class IngredientsInRecipes(Base):
     """The IngredientsInRecipes Table
     The IngredientsInRecipes table has entries for each ingredient in each recipe.
@@ -177,16 +249,27 @@ class IngredientsInRecipes(Base):
         None.
     """
     __tablename__ = 'IngredientsInRecipes'
-    recipe_id = Column(Integer, ForeignKey('Recipe.id'), primary_key=True)
+    recipe_id     = Column(Integer, ForeignKey('Recipe.id'),     primary_key=True)
     ingredient_id = Column(Integer, ForeignKey('Ingredient.id'), primary_key=True)
 
     original_string = Column(String, nullable=False)
-    amount = Column(Float, nullable=True)
-    unit = Column(String, nullable=True)
-    unit_short = Column(String, nullable=True)
+    amount          = Column(Float,  nullable=True)
+    unit            = Column(String, nullable=True)
+    unit_short      = Column(String, nullable=True)
 
     ingredient_index = Column(Integer, nullable=False)
 
     # Relationships
-    recipe = relationship(Recipe, back_populates="ingredients")
+    recipe     = relationship(Recipe,     back_populates="ingredients")
     ingredient = relationship(Ingredient, back_populates="recipes")
+
+    def fullDict(self):
+        """ A helper function that returns a dictionary representation of an IngredientInRecipe.
+        (specially useful for jsonify-ing a row)
+
+        Returns:
+            dict: A dictionary with the names of each column as keys, and the value of column as the values.
+        """
+        columnKeys = getColumnNamesInDeclarationOrder(IngredientsInRecipes)
+        selfAsDict = self.__dict__
+        return {key:selfAsDict[key] for key in columnKeys}
