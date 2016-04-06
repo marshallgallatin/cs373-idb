@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+{% block scripts %}
+	<style>
+	.glyphicon-ok {
+		color: green;
+	}
+	tr {
+		cursor: hand;
+		cursor: pointer;
+	}
+	.table td.fit, 
+	.table th.fit {
+		white-space: nowrap;
+		width: 1%;
+	}
+	</style>
+	<script>
+		$(document).ready(function(){
+			$("table tr").click(function(event){
+				$glyph = $(this).children().find(".glyphicon");
+				$glyph.toggleClass("glyphicon-minus glyphicon-ok");
+				$textD = $(this).children().eq(1);
+				$nextRow = $(this).next().children().eq(1);
+				
+				if ($textD.hasClass("text-muted")) {
+					//Backward
+					if ($(this).prev().prop("tagName") == undefined || $(this).prev().children().eq(1).hasClass("text-muted"))
+						$textD.addClass("info");
+					
+					if (!$nextRow.hasClass("text-muted"))
+						$nextRow.removeClass("info");
+				} else {
+					//Forward
+					$textD.removeClass("info");
+					
+					if (!$nextRow.hasClass("text-muted"))
+						$nextRow.toggleClass("info");
+				}
+				$textD.toggleClass("text-muted");
+			});
+			$("table tr").hover(function(){
+				$('this').css('cursor', 'pointer');
+			});
+		});
+		
+	</script>
+{% endblock scripts %}
+
+{% block title %}
+{{ title }}
+{% endblock title %}
+
+{% block content %}
+	<div class="col-xs-12 col-sm-6 col-lg-6">
+		<h1>{{ title }}</h1>
+	</div>
+	<div style="padding-top:10px" class="col-xs-12 col-sm-6 col-lg-6">
+		<img class="img-responsive" src={{ img_uri }}></img>
+	</div>
+	
+	<div class="page-header">
+		<h3>Ingredients</h3>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-lg-4">
+			<div class="checkbox">
+				<label><input type="checkbox" value="">{{test_ingred | safe}}</label>
+			</div>
+			{% for ingredient in ingredients1 %}
+			<div class="checkbox">
+				<label><input type="checkbox" value="">{{ingredient | safe}}</label>
+			</div>
+			{% endfor %}
+		</div>
+		<div class="col-xs-12 col-sm-6 col-lg-4">
+			{% for ingredient in ingredients2 %}
+			<div class="checkbox">
+				<label><input type="checkbox" value="">{{ingredient | safe}}</label>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+    
+	<div class="page-header">
+		<h3>Instructions</h3>
+	</div>
+	<div>
+		<table class="table table-default">
+		{% for step in instructions %}
+		<tr>
+		<td class="fit"><span class="glyphicon glyphicon-minus"></span></td>
+		<td class={% if loop.first %}info{% endif %}>{{ step }}</td>
+		</tr>
+		{% endfor %}		
+		</table>
+	</div>
+{% endblock content %}

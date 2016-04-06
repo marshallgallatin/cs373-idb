@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{% block title %}{% endblock %}</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<style>
+	body {
+		background-color: #f2f2f2
+	}
+	div.container {
+		background-color: white
+	}
+	</style>
+	<script>
+	//start http://stackoverflow.com/questions/14735274/bootstrap-css-hides-portion-of-container-below-navbar-navbar-fixed-top
+		var onResize = function() {
+			// apply dynamic padding at the top of the body according to the fixed navbar height
+			$("body").css("padding-top", $(".navbar-fixed-top").height() + 10);
+		}
+
+		// attach the function to the window resize event
+		$(window).resize(onResize);
+
+		// call it also when the page is ready after load or reload
+		$(function() {
+			onResize();
+		});
+	//end http://stackoverflow.com/questions/14735274/bootstrap-css-hides-portion-of-container-below-navbar-navbar-fixed-top
+	</script>
+	{% block scripts %}{% endblock %}
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+		    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+			<a class="navbar-brand" href="/index.html">IRDb</a>
+		</div>
+        <div id="navbar" class="navbar-collapse collapse" ng-controller="HeaderController">
+		<ul class="nav navbar-nav">
+			<li class={{ indexlit }}><a href="/index.html">Home</a></li>
+			<li class={{ recipeslit }}><a href="/recipes.html">Recipes</a></li>
+			<li class={{ ingredientslit }}><a href="/ingredients.html">Ingredients</a></li>
+			<li class={{ aboutlit }}><a href="/about.html">About</a></li>
+		</ul>
+        </div><!--/.nav-collapse -->
+	</div>
+</nav>
+
+<div class="container">
+{% block content %}{% endblock %}
+</div>
+</body>
+</html>
