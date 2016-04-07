@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "teaspoons",
       "originalString": "1 1/2 teaspoons ginger root",
-      "name": "ginger root"
+      "name": "ginger"
     },
     {
       "aisle": "Ethnic Foods",
@@ -63,14 +63,14 @@
 	  "name": "green onion"
     },
     {
-	  "aisle": "Ethnic Foods",
+	    "aisle": "Ethnic Foods",
       "unitLong": "tablespoon",
       "amount": 1.0,
       "unitShort": "T",
       "metaInformation": [],
       "unit": "tablespoon",
-	  "originalString": "1 tablespoon low sodium soy sauce",
-	  "name": "low-sodium soy sauce"
+	    "originalString": "1 tablespoon low sodium soy sauce",
+	    "name": "low-sodium soy sauce"
     },
     {
       "aisle": "Ethnic Foods",
