@@ -35,14 +35,6 @@ services:
       - "5432"
     env_file:
       - cs373-postgres-prod.env
-    volumes_from:
-      # Mount the volumes from the data container to store our MySQL files
-      - data
-
-  data:
-    extends:
-      file: docker-compose-common.yml
-      service: data
 
 networks:
   backend: {}
