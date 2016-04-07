@@ -50,7 +50,9 @@
 		});
 		//end http://stackoverflow.com/questions/14735274/bootstrap-css-hides-portion-of-container-below-navbar-navbar-fixed-top
 		function runTests() {
-			alert(1);
+			$http.get("unittest").then(function (transmit) {
+				$scope.unitoutput = transmit.data;
+			});
 		}
 	</script>
 </head>
@@ -219,7 +221,7 @@ for item in data['results']:
 	<h2>Tools</h2>
 	</div>
 	<a class="btn btn-default" onclick="runTests()">Run unit tests</a>
-	<pre id="unittests"></pre>
+	<pre id="unittests">{{unitoutput}}</pre>
 </div>
 </body>
 </html>
