@@ -298,75 +298,33 @@ ALTER TABLE ONLY "Recipe"
 --
 
 COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
-1  black eyed peas  \N  \N
-2  carrots  \N  \N
-3  green pepper  \N  \N
-4  onion  \N  \N
-5  peanut butter  \N  \N
-6  salt  \N  \N
-7  water  \N  \N
-14  canned chickpeas  \N  \N
-15  canola oil  \N  \N
-16  garlic  \N  \N
-17  harissa  \N  \N
-18  leek  \N  \N
-19  lemon juice  \N  \N
-20  rice noodles  \N  \N
-21  spinach leaves  \N  \N
-22  tomato paste  \N  \N
-36  brown rice  \N  \N
-37  canned coconut milk  \N  \N
-38  chicken breast  \N  \N
-39  chili flakes  \N  \N
-40  coconut oil  \N  \N
-41  curry powder  \N  \N
-42  garam masala  \N  \N
-43  ginger  \N  \N
-44  lemon grass  \N  \N
-45  snow peas  \N  \N
-46  canned tomatoes  \N  \N
-47  coriander seeds  \N  \N
-48  cumin seeds  \N  \N
-49  filtered water  \N  \N
-50  fresh ginger  \N  \N
-51  garlic cloves  \N  \N
-52  grapeseed oil  \N  \N
-53  red lentils  \N  \N
-54  sea salt  \N  \N
-55  serrano peppers  \N  \N
-56  turmeric  \N  \N
-57  vegetable bouillon CUBE \N  \N
-58  white onion  \N  \N
-59  apple cider  \N  \N
-60  coconut milk  \N  \N
-61  goat cheese  \N  \N
-62  granny smith apples  \N  \N
-63  leeks  \N  \N
-64  vegetable oil  \N  \N
-65  white mushrooms  \N  \N
-66  allspice  \N  \N
-67  green bell pepper  \N  \N
-68  pepper  \N  \N
-69  scallions  \N  \N
-70  scotch bonnet pepper  \N  \N
-71  skinless chicken thighs  \N  \N
-72  sweet potatoes  \N  \N
-73  thyme  \N  \N
-74  bay leaves  \N  \N
-75  boneless chicken breast  \N  \N
-76  butter  \N  \N
-77  chilli powder  \N  \N
-78  chillies  \N  \N
-79  cilantro leaves  \N  \N
-80  cream  \N  \N
-81  fennel seeds  \N  \N
-82  ketchup  \N  \N
-83  lime juice  \N  \N
-84  nuts  \N  \N
-85  red pepper powder  \N  \N
-86  sugar  \N  \N
-87  tomato  \N  \N
-88  yogurt  \N  \N
+1  black-eyed pea  https://upload.wikimedia.org/wikipedia/commons/d/d0/BlackEyedPeas.JPG  Vigna unguiculata subsp. unguiculata  Africa
+2  carrot  https://upload.wikimedia.org/wikipedia/commons/b/bd/13-08-31-wien-redaktionstreffen-EuT-by-Bi-frie-037.jpg  Daucus carota  Asia
+3  green bell pepper  \N  Capsicum annuum  NorthAmerica
+4  onion  \N  Allium cepa  Africa
+5  peanut butter  \N  \N  NorthAmerica
+6  salt  \N  Sodium chloride  Worldwide
+7  water  \N  Dihydrogen oxide  Worldwide
+8  baking powder  \N  Sodium aluminum sulfate  \N
+9  banana  \N  Musa acuminata Colla  \N
+10  butter  \N  \N  \N
+11  canola oil  \N  \N  \N
+12  cinnamon  \N  Cinnamomum aromaticum  \N
+13  cream cheese  \N  \N  \N
+14  egg  \N  \N  \N
+15  flour  \N  \N  \N
+16  nutmeg  \N  Myristica fragrans  \N
+17  honey  \N  \N  \N
+18  lemon juice  \N  \N  \N
+19  maple syrup  \N  \N  \N
+20  milk  \N  \N  \N
+21  white bread  \N  \N  \N
+22  bacon  \N  \N  \N
+23  garlic  \N  Allium sativum  \N
+24  cabbage  \N  Brassica oleracea (Capitata Group)  \N
+25  leek  \N  Allium ampeloprasum  \N
+26  mace  \N  Myristica fragrans  \N
+27  potato  \N  Solanum tuberosum  \N
 \.
 
 
@@ -385,91 +343,36 @@ SELECT pg_catalog.setval('"Ingredient_id_seq"', 95, TRUE);
 --
 
 COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, unit, unit_short, ingredient_index) FROM STDIN;
-5  1  2 cups dried black-eyed peas  2  cups C 0
-5  2  2 cups sliced carrots  2  cups C 1
-5  3  1 cup green pepper, diced  1  cup C 2
-5  4  1/2 cup chopped onion  0.5  cup C 3
-5  5  2 tablespoons peanut butter  2  tablespoons  T  4
-5  6  3/4 teaspoon salt  0.75  teaspoon  t  5
-5  7  150 ml water  150  ml  ml  6
-6  14  14 ounces can chickpeas (garbanzo beans), drained AND rinsed  14  ounces  oz  0
-6  15  1 tablespoon grapeseed OR canola oil  1  tablespoon  T  1
-6  16  10 Cloves garlic, (3 tbsp.) minced  3  tbsp  T  2
-6  17  2 tablespoons harissa  2  tablespoons  T  3
-6  18  1 leek, finely chopped  1      4
-6  19  A tablespoon OF lemon juice  1  tablespoon  T  5
-6  4  1 small Onion, minced  1      6
-6  20  1 package fresh pasta OR a LARGE handful OF rice noodles  1  package  pkg  7
-6  21  1/2 package OF fresh spinach leaves OR 3 good handfuls  0.5  package  pkg  8
-6  22  3 tablespoons tomato paste OR ketchup (yep, ketchup works great!)  3  tablespoons  T  9
-6  7  1 liter (4 cups) water, chicken broth, vegetable broth  4  cups C 10
-8  36  200 g brown rice  200  g  g  0
-8  37  1 can (400 ml) coconut milk  400  ml  ml  1
-8  38  400 g chicken breast, cubed  400  g  g  2
-8  39  chili flakes, TO taste  2  servings  servings  3
-8  40  1 tablespoon coconut oil  1  tablespoon  T  4
-8  41  2 teaspoons curry powder  2  teaspoons  t  5
-8  42  2 teaspoons garam masala  2  teaspoons  t  6
-8  16  2 cloves garlic  2  cloves  cloves  7
-8  43  1 inch ginger  1  inch  inch  8
-8  44  1 tablespoon lemon grass paste  1  tablespoon  T  9
-8  45  200 g snow peas, frozen  200  g  g  10
-8  22  1 tablespoon tomato paste  1  tablespoon  T  11
-9  46  1 Cup canned crushed tomatoes  1  Cup  Cup  0
-9  47  2 Teaspoons Coriander Seeds OR 1 Teaspoon Powder  2  Teaspoons  Teaspoons  1
-9  48  1 Teaspoon Cumin Seeds  1  Teaspoon  Teaspoon  2
-9  49  12 Cups Filtered Water  12  Cups  Cups  3
-9  50  2 Teaspoons Fresh organic Ginger  2  Teaspoons  Teaspoons  4
-9  42  1 Tablespoon Garam Masala  1  Tablespoon  Tablespoon  5
-9  51  2-3 organic Garlic Cloves  2      6
-9  52  1/4 Cup Expeller Pressed Grapeseed Oil  0.25  Cup  Cup  7
-9  53  3 Cups organic Red Lentils  3  Cups  Cups  8
-9  54  1 Tablespoon + 1 Teaspoon Sea Salt OR TO taste  1  Tablespoon  Tablespoon  9
-9  55  2-4 Serrano peppers  2      10
-9  56  3 Tablespoons Turmeric  3  Tablespoons  Tablespoons  11
-9  57  2 Vegetable Bouillon CUBE 2      12
-9  58  1/2 organic White Onion  0.5      13
-10  59  24 ounces Apple cider OR juice  24  ounces  oz  0
-10  60  7 ounces Coconut milk  7  ounces  oz  1
-10  41  2 teaspoons Curry powder  2  teaspoons  t  2
-10  61  2 packages Chavrie fresh goat cheese (reserve 1 pkg.FOR garnishing)  2  packages  packages  3
-10  62  2 inches Granny Smith apples (cut wedges)  2  inches  inches  4
-10  63  2 Leeks (chopped AND washed)  2      5
-10  56  1/2 teaspoon Turmeric  0.5  teaspoon  t  6
-10  64  2 ounces Vegetable oil  2  ounces  oz  7
-10  65  1 cup Sliced white mushrooms  1  cup C 8
-11  66  1tsp.allspice  1  tsp  t  0
-11  40  1 tbsp.coconut oil  1  tbsp  T  1
-11  41  6 tbsp.curry powder  6  tbsp  T  2
-11  16  1 tablespoon Garlic, granulated  1  tablespoon  T  3
-11  67  1 LARGE green pepper (chopped)  1      4
-11  4  1/2 medium Onion, chopped  0.5      5
-11  68  2 tsp.black pepper pepper  2  tsp  t  6
-11  6  1 1/2 teaspoons salt  1.5  teaspoons  t  7
-11  69  3 scallions (chopped)  3      8
-11  70  1 scotch bonnet pepper OR habanero (seeded AND minced)  1      9
-11  71  3lb OF chicken thighs, legs OR breast (skinless)  3  lb  lb  10
-11  72  2 sweet potatoes (chopped)  2      11
-11  73  1tbsp.thyme  1  tbsp  T  12
-11  7  2 cups water  2  cups C 13
-12  74  6 Bay leaves  6      0
-12  75  1 pound Chicken breast (boneless)  1  pound  lb  1
-12  76  Butter AS needed( I used oil+butter)  2  servings  servings  2
-12  77  1 tablespoon Chilli powder  1  tablespoon  T  3
-12  78  4 Green chillies  4      4
-12  79  Cilantro leaves  1  leaves  leaves  5
-12  80  1/4 cup Fresh Cream  0.25  cup C 6
-12  81  1/2 teaspoon Fennel seeds  0.5  teaspoon  t  7
-12  42  1 teaspoon garam masala  1  teaspoon  t  8
-12  82  1 teaspoon Ketchup  1  teaspoon  t  9
-12  83  1 tablespoon Lime juice  1  tablespoon  T  10
-12  84  A few nuts n raisins  9  servings  servings  11
-12  4  1 Big Onion Chopped  1      12
-12  85  1/2 teaspoon Pepper Powder  0.5  teaspoon  t  13
-12  6  1/4 teaspoon salt  0.25  teaspoon  t  14
-12  86  Sugar  2  servings  servings  15
-12  87  1 medium sized tomato blanched n Pureed  1      16
-12  88  1 tablespoon Yogurt  1  tablespoon  T  17
+1  1  2 cups dried black-eyed peas  2  cups  c  0
+1  2  2 cups sliced carrots  2  cups  c  1
+1  3  1 cup green pepper, diced  1  cup  c  2
+1  4  1 large chopped onion  1  cup  c  3
+1  5  peanut butter  4  tablespoon  T  4
+1  6  3/4 teaspoon salt  0.75  teaspoon  t  5
+1  7  6 cups water  6  cups  c  6
+7  8  5 1/2 teaspoons baking powder  5.5  teaspoons  t  0
+7  9  2 ripe but firm bananas, sliced thin  2      1
+7  10  1/2 cup butter or margarine - (¼ lb)  0.25  lb  lb  2
+7  11  4 t. canola (or vegetable) oil  4  t  t  3
+7  12  1/2 t. cinnamon  0.5  t  t  4
+7  13  8 ounces cream cheese  8  ounces  oz  5
+7  14  3 eggs  3      6
+7  15  10 1/2 cups all-purpose flour  10.5  cups  c  7
+7  16  dash of fresh ground nutmeg  1  dash  dash  8
+7  17  1 T. honey  1  T  T  9
+7  18  1/2 t. lemon juice  0.5  t  t  10
+7  19  maple syrup, for serving  4  servings  servings  11
+7  20  1 c. milk  1  c  c  12
+7  6  1/2 teaspoon salt  0.5  teaspoon  t  13
+7  21  8 slices of good quality white sandwich bread  8  slices  slices  14
+188  22  2-3 rashers bacon (optional)  2  slices  slices  0
+188  23  2 To 3 cloves garlic, minced  2  cloves  cloves  1
+188  24  1 pound green cabbage (kale can also be used)  1  pound  lb  2
+188  25  2 medium leeks, split lengthwise and rinsed well  2      3
+188  26  1/4 teaspoon mace  0.25  teaspoon  t  4
+188  27  2 pounds yellow or red potatoes, scrubbed and cubed but not peeled  2  pounds  lb  5
+188  6  Salt to taste  1      6
+188  20  1 cup whole milk  1  cup  c  7
 \.
 
 
@@ -480,6 +383,33 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 --
 
 COPY "Nutritional Content" (id, ingredient_id, calories, total_fat_g, saturated_fat_g, cholesterol_mg, sodium_mg, total_carbohydrates_g, dietary_fiber_g, sugar_g, protein_g, vitamin_a_iu, vitamin_c_mg, calcium_mg, iron_mg) FROM STDIN;
+1  1  336  1.26  0.331  0  16  60.03  10.6  6.9  23.52  50  1.5  110  8.27
+2  2  41  0.24  0.037  0  69  9.58  2.8  4.74  0.93  16706  5.9  33  0.3
+3  3  20  0.17  0.058  0  3  4.64  1.7  2.4  0.86  370  80.4  10  0.34
+4  4  40  0.1  0.042  0  4  9.34  1.7  4.24  1.1  2  7.4  23  0.21
+5  5  598  51.36  10.325  0  426  22.31  5  10.49  22.21  0  0  49  1.74
+6  6  0  0  0  0  38758  0  0  0  0  0  0  24  0.33
+7  7  0  0  0  0  4  0  0  0  0  0  0  3  0
+8  8  53  0  0  0  10600  27.7  0.2  0  0  0  0  5876  11.02
+9  9  89  0.33  0.112  0  1  22.84  2.6  12.23  1.09  64  8.7  5  0.26
+10  10  717  81.11  50.489  215  11  0.06  0  0.06  0.85  2499  0  24  0.02
+11  11  884  100  7.365  0  0  0  0  0  0  0  0  0  0
+12  12  247  1.24  0.345  0  10  80.59  53.1  2.17  3.99  295  3.8  1002  8.32
+13  13  350  34.44  20.213  101  314  5.52  0  3.76  6.15  1111  0  97  0.11
+14  14  143  9.51  3.126  372  142  0.72  0  0.37  12.56  540  0  56  1.75
+15  15  364  0.98  0.155  0  2  76.31  2.7  0.27  10.33  0  0  15  4.64
+16  16  525  36.31  25.94  0  16  49.29  20.8  2.99  5.84  102  3  184  3.04
+17  17  304  0  0  0  4  82.4  0.2  82.12  0.3  0  0.5  6  0.42
+18  18  22  0.24  0.04  0  1  6.9  0.3  2.52  0.35  6  38.7  6  0.08
+19  19  260  0.06  0.007  0  12  67.04  0  60.46  0.04  0  0  102  0.11
+20  20  61  3.25  1.865  10  43  4.8  0  5.05  3.15  162  0  113  0.03
+21  21  238  2.15  0.63  0  478  43.91  9.2  5  10.66  4  0  684  4.89
+22  22  417  39.69  13.296  66  662  1.28  0  1  12.62  37  0  5  0.41
+23  23  149  0.5  0.089  0  17  33.06  2.1  1  6.36  9  31.2  181  1.7
+24  24  25  0.1  0.034  0  18  5.8  2.5  3.2  1.28  98  36.6  40  0.47
+25  25  61  0.3  0.04  0  20  14.15  1.8  3.9  1.5  1667  12  59  2.1
+26  26  475  32.38  9.51  0  80  50.5  20.2  0  6.71  800  21  252  13.9
+27  27  77  0.09  0.025  0  6  17.49  2.1  0.82  2.05  2  19.7  12  0.81
 \.
 
 
@@ -498,13 +428,9 @@ SELECT pg_catalog.setval('"Nutritional Content_id_seq"', 1, FALSE);
 --
 
 COPY "Recipe" (id, title, image_uri, instructions, cuisine, ready_in_minutes, servings, vegetarian, vegan, gluten_free, dairy_free) FROM STDIN;
-6  North African Chickpea Soup  https://spoonacular.com/recipeImages/North-African-Chickpea-Soup-653275.jpg  <ol><li> IN a LARGE soup pot ADD the oil, onions AND celery.Cook OVER medium low heat UNTIL translucent.ADD the garlic AND saute UNTIL fragrant.ADD the tomato paste AND harissa.Cook a MINUTE THEN ADD the water OR stock slowly WHILE stirring TO combine the flavor paste IN the pot WITH the liquids.Throw IN the chickpeas AND bring TO a boil. AS soon AS it reaches a boil, reduce heat TO a simmer.</li><li> ADD the pasta AND cook according TO the package directions.My suggestion IS that IF you are USING fresh pasta, give it a rinse under tap water TO remove the starch BEFORE adding it TO the soup.It might make the broth cloudy.IF USING rice noodles ADD them RIGHT BEFORE serving TO prevent overcooked mushy noodles.TO cook rice noodles place them IN a shallow dish AND cover WITH hot water FOR 10-15 minutes TO soften.</li><li>Just BEFORE serving taste FOR seasoning, adjust TO your taste.Adding too much salt earlier ON could make things too salty because SOME OF the ingredients can bring a lot OF salt TO the pot.THEN ADD the spinach, it will ONLY take a MINUTE TO shrink INTO nearly NOTHING, but it IS sure a powerhouse vegetable that amps up the nutrition IN this meal quickly AND WITHOUT fuss.A squeeze OF fresh lemon juice AFTER it has been taken OFF the heat will ADD a nice bright flavor TO perk up those dreary dark days OF winter.Enjoy WITH SOME crusty bread.A meal you can feel good about, filling yet light.</li></ol>  african  45  4  t  t  f  t
-8  Coconut Chicken Curry WITH Snow Peas AND Rice  https://spoonacular.com/recipeImages/Coconut-Chicken-Curry- WITH -Snow-Peas- AND -Rice-157311.jpg  <p>1. Heat coconut oil IN a pan OVER medium-high heat.Pre-heat the oven TO 190 C OR 375 F.START cooking the brown rice.</p><p>2. ADD the cubed chicken breast TO the pan FOR a couple minutes UNTIL browned.Transfer the chicken FROM the pan INTO a casserole dish.</p><p>3. Fry the garlic AND ginger IN the pan, adding more coconut oil IF necessary.ADD the spices UNTIL fragrant.</p><p>4. ADD the coconut milk AND tomato paste TO the pan.</p><p>5. START steaming the frozen snow peas, giving the flavors IN the sauce SOME TIME TO meld.</p><p>6. Pour the sauce OVER the chicken breast cubes.</p><p>7. Put the casserole dish IN the oven FOR about 25 minutes, adding the snow peas FOR the LAST 10 minutes OR so.Once the chicken IS cooked through, stir IN the lemon grass paste.</p><p>8. Serve the chicken curry OVER brown rice.</p><p><span></span></p>  indian  45  2  f  f  t  t
-5  African Bean Soup  https://spoonacular.com/recipeImages/African-Bean-Soup-632003.jpg  <ol><li>Saute onions IN LARGE pot UNTIL soft.ADD ALL ingredients EXCEPT FOR peanut butter AND simmer FOR 1 1/2 hours.</li><li>Stir a spoonful OF peanut butter INTO EACH serving.</li></ol>  african  45  4  t  t  t  t
-9  Indian Spiced Red Lentil Soup  https://spoonacular.com/recipeImages/Indian-Spiced-Red-Lentil-Soup-631752.jpg  <ol><li>Put Cilantro Stems IN Water AND bring TO a boil THEN remove Stems (This step IS optional)</li><li>Rinse the Lentils AND ADD TO Stem Broth</li><li>Bring Lentils TO a boil THEN turn heat down TO medium</li><li> ADD a BIT OF Lentil water TO the Bullion cubes, mash well THEN ADD TO Lentils</li><li> IN a saut pan ADD Grapeseed Oil, Coriander Seeds (you can put the seeds IN a coffee grinder IF you prefer) Cumin Seeds, Turmeric, Garam Masala.</li><li>Saut ON medium heat UNTIL fragrant approximately about 5 minutes.</li><li>Mince Serranos, grate Ginger, mince Onions, mince Garlic AND ADD TO pan THEN saut UNTIL Onions are soft.</li><li> ADD Tomato Sauce AND cook ON medium low FOR about 10 minutes THEN ADD TO cooked Lentils AND cook FOR 20 more minutes ON low heat.</li><li> IF you LIKE a smooth texture TO your soup you can put ALL OF it IN a food processor (blender OR hand blender) TO puree` OR ONLY use half FOR a slightly textured soup OR leave it IF you LIKE it that way.</li></ol>  indian  45  12  t  t  t  t
-11  Authentic Jamaican Curry Chicken  https://spoonacular.com/recipeImages/Authentic-Jamaican-Curry-Chicken-633088.jpg  <ol >< li > Season the chicken WITH ALL OF the ingredients EXCEPT FOR the potatoes AND water AND marinate up TO 2 hours OR overnight IN the fridge.</li><li> ADD the oil TO a Dutch oven AND ON high heat, fry the ONLY the chicken pieces UNTIL it IS brown AND seared ON EACH side FOR about 10 minutes.</li><li> AFTER the meat IS nice AND brown ON BOTH sides, ADD the remaining vegetable marinade, scotch bonnet pepper AND water TO the pot, cover AND bring TO a boil.</li><li> ADD the potatoes AND lower TO a simmer AND stew it FOR about 1 HOUR UNTIL it has a thick consistency.</li></ol>  caribbean  45  4  f  f  t  t
-10  Apple Curry Soup  https://spoonacular.com/recipeImages/Apple-Curry-Soup-632528.jpg  <ol><li>Sweat leeks AND mushrooms IN vegetable oil UNTIL tender ( WITHOUT color) IN a heavy gauge sauce pot</li><li> ADD apples, apple cider, coconut milk, curry powder, turmeric.Bring TO boil AND simmer FOR 20 minutes.</li><li> ADD the Chavrie AND season WITH salt AND pepper</li><li>Pour entire contents IN a blender AND puree OR puree WITH a hand held mixer</li><li>Strain through a fine chinois.AND keep warm</li><li>Serve hot</li><li>Garnish WITH slices OF apple OR a dollop OF Chavrie</li></ol>  indian  45  1  t  f  t  f
-12  Balti Butter Chicken  https://spoonacular.com/recipeImages/Balti-Butter-Chicken-633960.jpg  <ol><li>Marinate the cleaned cubed chicken FOR ALL the ingredients AND keep it IN fridge FOR a minimum OF 5 hours OR the best overnight.</li><li>Grill it IN a Tandoor oven OR bake it conventional oven AT 400 F FOR 30-40 minutes, till they are firm n brown.When the juices run OUT, take it n reserve.</li><li>Take a kadai n melt SOME butter, ADD the onion AND green chillies AND saute till pink.Take it OUT n blend IN a mixer.</li><li> IN the same pan, pour butter, splutter fennel seeds AND roast the whole spices.</li><li>Now ADD the nuts AND raisins AND roast till brown n plump.(you can roast it separately n ADD TO the gravy AT LAST ALSO )</li><li>Now bring back the onion paste AND saute till brown.Add the reserved juice too..</li><li> ADD the tomato puree AND mix.</li><li> ADD the chilli powder, pepper powder, salt AND half OF garam masala.Mix well AND simmer FOR 2 minutes</li><li>Sprinkle the ketchup.</li><li>Now put the roasted chicken IN it AND cover WITH the gravy.</li><li>Simmer AND cover WITH a lid FOR 5-8 minutes.</li><li>Now remove the lid AND cook UNTIL the desired dryness LEVEL IS achieved.</li><li> ADD the fresh cream n stir IN FOR a MINUTE.</li><li>Sprinkle the Garam masala powder, a tad OF sugar AND mix well.</li><li>Garnish WITH cilantro leaves.</li><li> ADD a wee BIT OF butter BEFORE serving..:)</li></ol>  indian  45  2  f  f  t  f
+1  African Bean Soup  https://spoonacular.com/recipeImages/African-Bean-Soup-632003.jpg  <ol><li>Saute onions in large pot until soft. Add all ingredients except for peanut butter and simmer for 1 1/2 hours. </li><li>Stir a spoonful of peanut butter into each serving.</li></ol>  african  45  4  t  t  f  t
+7  Banana & Cream Cheese Stuffed French Toast  https://spoonacular.com/recipeImages/Banana---Cream-Cheese-Stuffed-French-Toast-633971.jpg  <ol><li>In a small bowl combine the softened cream cheese, honey, cinnamon, nutmeg and lemon juice, set aside while preparing the batter.</li><li>Whisk together all of the batter ingredients until thoroughly mixed. (This is a breeze if you use a blender.) Pour the batter into a wide, shallow dish (like a pie plate).</li><li>Spread the filling mixture equally over 1 side of each slice of bread, divide the sliced bananas between 4 slices of the bread, top with the remaining 4 slices, press lightly.</li><li>Melt 2 t. butter and 2 t. oil in a 12 inch nonstick skillet over medium heat until the butter foams and then subsides. Working with one sandwich at a time dip both sides in the batter and let the excess drip away, add to the hot pan, repeat with a second sandwich. Cook until golden brown on the first side, around 3-5 minutes, flip and repeat on the second side. Repeat this process with the remaining, oil, butter and sandwiches. To serve, cut into triangles and serve with maple syrup.</li></ol>  american  45  4  t  f  f  f
+188  Irish Colcannon  https://spoonacular.com/recipeImages/Irish-Colcannon-647974.jpg  <ol><li>Chop the cabbage and steam, using minimal water, until quite well done.</li><li>Boil potatoes. Clean and chop the leeks, including the first couple of inches of green, put into a saucepan with the milk and simmer until tender.</li><li>If using bacon, saute until crisp. When cool enough to handle, break into bite size pieces.</li><li>Drain potatoes and mash.</li><li>Stir in milk with leeks, cabbage, mace, garlic, and bacon. Gently mix to combine all ingredients, but take care not to over mash the potatoes.</li></ol>  irish  45  4  f  f  t  f
 \.
 
 
