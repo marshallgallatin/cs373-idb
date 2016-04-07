@@ -45,7 +45,8 @@
 		
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
 			$scope.getData = function () {
-				$http.get("recipes/{{ rec_id }}").then(function (transmit) {
+				//$http.get("recipes/{{ rec_id }}").then(function (transmit) {
+				$http.get("test/r").then(function (transmit) {
 					$scope.data = transmit.data;
 					$scope.data.instructions = $scope.data.instructions.replace("<ol><li>", "").replace("</li></ol>", "").split("</li><li>");
 					$scope.halfI = Math.floor($scope.data.ingredients.length / 2);
@@ -67,8 +68,8 @@
 	<div class="row">
 		<div class="col-xs-12 col-sm-6 col-lg-6">
 			<h1>{{ '{{data.title}}' }}</h1>
+			<img ng-show="data.gluten_free" style="max-height:30px;" src="https://www.moxiemultisportatx.com/wp-content/uploads/2015/06/GLUTEN-FREE-STAMP_18338414_xxl1.jpg"></img>
 			{{ '{{data}}' }}
-			{{ '{{halfI}}' }}
 		</div>
 		<div style="padding-top:10px" class="col-xs-12 col-sm-6 col-lg-6">
 			<img class="img-responsive" src={{ '{{data.image_uri}}' }}></img>
