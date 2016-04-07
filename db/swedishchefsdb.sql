@@ -300,14 +300,14 @@ ALTER TABLE ONLY "Recipe"
 COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 1  black-eyed pea  https://upload.wikimedia.org/wikipedia/commons/d/d0/BlackEyedPeas.JPG  Vigna unguiculata subsp. unguiculata  Africa
 2  carrot  https://upload.wikimedia.org/wikipedia/commons/b/bd/13-08-31-wien-redaktionstreffen-EuT-by-Bi-frie-037.jpg  Daucus carota  Asia
-3  green bell pepper  \N  Capsicum annuum  NorthAmerica
-4  onion  \N  Allium cepa  Africa
-5  peanut butter  \N  \N  NorthAmerica
-6  salt  \N  Sodium chloride  Worldwide
+3  green bell pepper  https://upload.wikimedia.org/wikipedia/commons/5/59/Capsicum3.JPG  Capsicum annuum  NorthAmerica
+4  onion  https://upload.wikimedia.org/wikipedia/commons/6/6a/White_onion_cross_section.jpg  Allium cepa  Africa
+5  peanut butter  https://commons.wikimedia.org/wiki/File:96_-_IMG_20150804_111725.jpg  \N  NorthAmerica
+6  salt  https://upload.wikimedia.org/wikipedia/commons/7/78/Salt_shaker_on_white_background.jpg  Sodium chloride  Worldwide
 7  water  \N  Dihydrogen oxide  Worldwide
 8  baking powder  \N  Sodium aluminum sulfate  \N
 9  banana  \N  Musa acuminata Colla  \N
-10  butter  \N  \N  \N
+10  butter  https://upload.wikimedia.org/wikipedia/commons/f/fd/Western-pack-butter.jpg  \N  \N
 11  canola oil  \N  \N  \N
 12  cinnamon  \N  Cinnamomum aromaticum  \N
 13  cream cheese  \N  \N  \N
