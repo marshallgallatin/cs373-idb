@@ -6,6 +6,23 @@
 		cursor: pointer;
 	}
 	</style>
+	<script>
+		angular.module('mbApp', []).controller('mbCtrl', function($scope) {
+			$scope.names = [
+				{id:'1',title:'Jamba'},
+				{id:'2',title:'Shrimp'},
+			];
+			$scope.mbReverse = false;
+			$scope.orderByMe = function(x) {
+				if ($scope.myOrderBy == x) {
+					$scope.mbReverse = !$scope.mbReverse;
+				} else {
+					$scope.mbReverse = false;
+				}
+				$scope.mmOrderBy = x;
+			}
+		});
+	</script>
 {% endblock scripts %}
 
 {% block title %}
