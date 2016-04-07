@@ -44,15 +44,11 @@
 		});
 		
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
-			$scope.getInstructions = function () {
-				$http.get("test/r").then(function (transmit) {
-					$scope.data = transmit.data;
-				});
-			}
 			$scope.getData = function () {
 				$http.get("test/r").then(function (transmit) {
 					$scope.data = transmit.data;
 					$scope.data.instructions = $scope.data.instructions.replace("<ol><li>", "").replace("</li></ol>", "").split("</li><li>");
+					$scope.halfI = Math.floor($scope.data.ingredients.length / 2);
 				});
 			}
 			$(function() {
@@ -68,12 +64,15 @@
 
 {% block content %}
 <div ng-app="mbApp" ng-controller="mbCtrl">
-	<div class="col-xs-12 col-sm-6 col-lg-6">
-		<h1>{{ '{{data.title}}' }}</h1>
-		{{ '{{data}}' }}
-	</div>
-	<div style="padding-top:10px" class="col-xs-12 col-sm-6 col-lg-6">
-		<img class="img-responsive" src={{ '{{data.image_uri}}' }}></img>
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-lg-6">
+			<h1>{{ '{{data.title}}' }}</h1>
+			{{ '{{data}}' }}
+			{{ '{{halfI}}' }}
+		</div>
+		<div style="padding-top:10px" class="col-xs-12 col-sm-6 col-lg-6">
+			<img class="img-responsive" src={{ '{{data.image_uri}}' }}></img>
+		</div>
 	</div>
 	
 	<div class="page-header">
@@ -84,18 +83,11 @@
 			<div class="checkbox">
 				<label><input type="checkbox" value="">{{test_ingred | safe}}</label>
 			</div>
-			{% for ingredient in ingredients1 %}
-			<div class="checkbox">
-				<label><input type="checkbox" value="">{{ingredient | safe}}</label>
+			<div class="checkbox" ng-repeat="x in data.ingredients">
+				<label><input type="checkbox" value=""><a ng-href="/ingredient_{{ '{{x.id}}' }}.html">{{ '{{x.original_string}}' }}</a></label>
 			</div>
-			{% endfor %}
 		</div>
 		<div class="col-xs-12 col-sm-6 col-lg-4">
-			{% for ingredient in ingredients2 %}
-			<div class="checkbox">
-				<label><input type="checkbox" value="">{{ingredient | safe}}</label>
-			</div>
-			{% endfor %}
 		</div>
 	</div>
     
