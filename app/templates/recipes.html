@@ -44,10 +44,12 @@
 		<tr>
 			<th ng-click="orderByMe('id')">ID</th>
 			<th ng-click="orderByMe('title')">Title</th>
+			<th ng-click="orderByMe('image_uri')">Image</th>
 		</tr>
 	<tr ng-repeat="x in data.recipes | orderBy:mbOrderBy:mbReverse">
 		<td>{{ '{{x.id}}' }}</td>
 		<td>{{ '{{x.title}}' }}</td>
+		<td><img ng-src="{{ '{{x.image_uri}}' }}"></img></td>
 	</tr>
 	</table>
 </div>
