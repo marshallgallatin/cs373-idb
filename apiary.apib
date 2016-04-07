@@ -11,7 +11,7 @@ Welcome to the RESTipe API. RESTipe allows users to query recipes and ingredient
 A resource representing all of the recipes in the database. Use the *limit* parameter to set an upper bound on the number of results. Other query options include *cuisine* and *diet*.
 
 + Parameters  
-    + page (number, optional) - Whcih page of recipes to return.
+    + page (number, optional) - Which page of recipes to return.
         + Default: `1`
     + limit (number, optional) - The maximum number of results to return per page.
         + Default: `10`
@@ -43,8 +43,6 @@ A resource representing all of the recipes in the database. Use the *limit* para
                     ...
                 }
             ]
-            "prev": "http://api.swedishchef.me/recipes?page=1&limit=10"
-            "next": "http://api.swedishchef.me/recipes?page=3&limit=10"
         }
 
 ## Recipe [/recipes/{id}]
@@ -102,7 +100,7 @@ A recipe contains a set of ingredients and instructions for preparing a food dis
 A way to find recipes that contain a certain set of ingredients. 
 
 + Parameters
-    + ingredients (string, required) - A list of ingredients that a recipe must contain. Example: **cucumber,cilantro,grilled chicken**
+    + ingredients (string, required) - A comma delimited list of ingredients that a recipe must contain. Example: **cucumber,cilantro,grilled chicken**
 
 ### Ingredient Search [GET]
 
@@ -154,8 +152,6 @@ A resource representing all of the ingredients in the database. Use the *limit* 
                     "name": "canned tomato sauce"
                 }
             ]
-            "prev": "http://api.swedishchef.me/ingredients?page=1&limit=10"
-            "next": "http://api.swedishchef.me/ingredients?page=3&limit=10"
         }
 
 ## Ingredient [/ingredients/{id}]
@@ -236,6 +232,4 @@ A way to find all recipes who have the given ingredient as an ingredient.
                     ...
                 }
             ]
-            "prev": "http://api.swedishchef.me/ingredients/{id}/recipes?page=1&limit=10"
-            "next": "http://api.swedishchef.me/ingredients/{id}/recipes?page=3&limit=10"
         }
