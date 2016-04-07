@@ -19,7 +19,7 @@ def getAllIngredients(limit=10, page=1):
     """
 
     QueryHelpers.ensureIsNonNegative(limit)
-    QueryHelpers.ensureIsNonNegative(page)
+    QueryHelpers.ensureIsPositive(page)
     with sessionInstance() as session:
         return [ingredient.summaryDict() for ingredient in session.query(models.Ingredient).slice(limit * (page - 1), limit * page).all()]
 
@@ -29,7 +29,7 @@ def getIngredientByID(id):
     Args:
         id (int): ID of the ingredient.
 
-    Retuns:
+    Returns:
         dict: The ingredient's full dict with the given id if it exists, 'None' otherwise.
     """
 
@@ -46,7 +46,7 @@ def getNutritionalInformationFromIngredientByID(id):
     Args:
         id (int): ID of the ingredient.
 
-    Retuns:
+    Returns:
         dict: The full dict of the nutritional information of the ingredient with the given id if it exists, 'None' otherwise.
               Note: 'None' can be returned if the ingredient doesn't exist, or if the ingredient doesn't have nutritional information.
     """
@@ -64,7 +64,7 @@ def getRecipesUsingIngredientById(id, limit=10, page=1):
         id (int): ID of the ingredient.
         limit (Optional(int)): The upper-bound on the number of ingredients to return. Defaults to 10. Must be positive.
         page (Optional(int)): The page for large datasets. Defaults to 1. Must be positive.
-    Retuns:
+    Returns:
         list: A list of all the recipe summaries dicts who use the given ingredient.
     Raises:
         QueryExceptions.BadQueryException: If limit is less than 0.
@@ -72,7 +72,7 @@ def getRecipesUsingIngredientById(id, limit=10, page=1):
     """
 
     QueryHelpers.ensureIsNonNegative(limit)
-    QueryHelpers.ensureIsNonNegative(page)
+    QueryHelpers.ensureIsPositive(page)
     with sessionInstance() as session:
         try:
             ingredient = session.query(models.Ingredient).filter(models.Ingredient.id == id).one()
@@ -80,3 +80,12 @@ def getRecipesUsingIngredientById(id, limit=10, page=1):
         except orm.exc.NoResultFound:
             return None
 
+def getNumberOfIngredients():
+    """Returns the number of ingredients.
+
+    Returns:
+       int: The number of ingredients in the database.
+   """
+
+    with sessionInstance() as session:
+        return session.query(models.Ingredient).count()

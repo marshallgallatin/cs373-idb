@@ -23,7 +23,7 @@ def getAllRecipes(limit=10, page=1, **kwargs):
     """
 
     QueryHelpers.ensureIsNonNegative(limit)
-    QueryHelpers.ensureIsNonNegative(page)
+    QueryHelpers.ensureIsPositive(page)
     QueryHelpers.ensureDictOnlyContains(kwargs, 'cuisine', 'diet')
     with sessionInstance() as session:
         restrictions = []
@@ -48,7 +48,7 @@ def getRecipeByID(id):
     Args:
         id (int): ID of the recipe.
 
-    Retuns:
+    Returns:
         dict: The recipe's full dict with the given id if it exists, 'None' otherwise.
     """
 
@@ -64,7 +64,7 @@ def getRecipesByIngredients(ingredients):
     Args:
         ingredients (list): The list of ingredients, as strings, that each recipe returned must contain.
 
-    Retuns:
+    Returns:
         list: A list of recipe summary dicts, where each recipe contains every ingredient in 'ingredients'.
 
     Raises:
@@ -92,3 +92,13 @@ def getRecipesByIngredients(ingredients):
                recipes.append(ingredientInRecipe.recipe)
 
         return [recipe.summaryDict() for recipe in recipes]
+
+def getNumberOfRecipes():
+    """Returns the number of recipes
+
+    Returns:
+       int: The number of recipes in the database.
+   """
+
+    with sessionInstance() as session:
+        return session.query(models.Recipe).count()
