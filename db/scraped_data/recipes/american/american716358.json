@@ -8,7 +8,7 @@
   "sourceName": "Afrolems",
   "vegan": false,
   "sustainable": false,
-  "instructions": "In a bowl, season the chopped chicken breast with one seasoning cube, ginger powder, black pepper, chili powder, and garlic and set aside.Whisk your eggs and set aside.Season your breadcrumbs with the seasoning cubes and divide into 2 equal portions and set aside.In a blender or food processor, pour in your chicken breast, flour, 1 portion of breadcrumbs, and egg and blend till smooth.Scrape into a bowl and mold into little balls using the extra breadcrumbs to properly coat it. The smaller the balls the better as the chicken would cook through better.In a deep fryer or a huge pot of oil on medium heat, allow to heat but not be extra hot and dunk your popcorn chicken to fry till brown.Serve hot.",
+  "instructions": "In a bowl, season the chopped chicken breast with one seasoning cube, ginger powder, black pepper, chili powder, and garlic and set aside. Whisk your eggs and set aside.Season your breadcrumbs with the seasoning cubes and divide into 2 equal portions and set aside.In a blender or food processor, pour in your chicken breast, flour, 1 portion of breadcrumbs, and egg and blend till smooth.Scrape into a bowl and mold into little balls using the extra breadcrumbs to properly coat it. The smaller the balls the better as the chicken would cook through better.In a deep fryer or a huge pot of oil on medium heat, allow to heat but not be extra hot and dunk your popcorn chicken to fry till brown.Serve hot.",
   "aggregateLikes": 100,
   "dairyFree": true,
   "extendedIngredients": [
@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup of all purpose flour",
-      "name": "all purpose flour"
+      "name": "flour"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 eggs",
-      "name": "eggs"
+      "name": "egg"
     },
     {
       "aisle": "Produce",

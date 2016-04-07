@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "3 egg yolks",
-      "name": "egg yolks"
+      "name": "egg yolk"
     },
     {
       "aisle": "Produce",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2-4 eggplants, thinly sliced",
-      "name": "eggplants"
+      "name": "eggplant"
     },
     {
       "aisle": "Cheese",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "tsp",
       "originalString": "¼ tsp ground allspice",
-      "name": "ground allspice"
+      "name": "allspice"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "tsp",
       "originalString": "¼ tsp ground cinnamon",
-      "name": "ground cinnamon"
+      "name": "cinnamon"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -170,7 +170,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 onions, finely chopped",
-      "name": "onions"
+      "name": "onion"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -180,7 +180,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "Salt and ground white pepper",
-      "name": "ground pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Spices and Seasonings",

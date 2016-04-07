@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon of curry",
-      "name": "curry paste"
+      "name": "curry"
     },
     {
       "aisle": "Produce",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "cubes",
       "originalString": "Seasoning cubes",
-      "name": "bouillon cubes"
+      "name": "vegetable bouillon"
     },
     {
       "aisle": "Produce",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup of chopped pineapples",
-      "name": "pineapples"
+      "name": "canned pineapple"
     },
     {
       "aisle": "Pasta and Rice",
@@ -129,18 +129,38 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cups",
-      "originalString": "1.5 cups of blended tomatoes, bell pepper and scotch bonnet pepper mix",
-      "name": "tomatoes"
+      "originalString": "1.5 cups of blended tomatoes",
+      "name": "tomato sauce"
     },
     {
-      "aisle": "Oil, Vinegar, Salad Dressing",
+      "aisle": "Produce",
       "unitLong": "",
-      "amount": 1.5,
+      "amount": 1.0,
       "unitShort": "",
       "metaInformation": [],
       "unit": "",
+      "originalString": "bell pepper",
+      "name": "green bell pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "scotch bonnet pepper",
+      "name": "scotch bonnet pepper"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 1.5,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
       "originalString": "1.5 cooking spoons of vegetable oil",
-      "name": "vegetable oil cooking spray"
+      "name": "vegetable oil"
     }
   ],
   "readyInMinutes": 45,

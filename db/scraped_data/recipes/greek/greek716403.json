@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "serving",
       "originalString": "extra-virgin olive oil, for serving",
-      "name": "extra-virgin olive oil"
+      "name": "olive oil"
     },
     {
       "aisle": "Cheese",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "pinch",
       "originalString": "pinch of red pepper flakes",
-      "name": "red pepper flakes"
+      "name": "crushed red pepper"
     }
   ],
   "readyInMinutes": 45,

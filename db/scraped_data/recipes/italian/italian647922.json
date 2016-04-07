@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup Shredded fresh basil leaves",
-      "name": "basil leaves"
+      "name": "basil"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "6 tablespoons extra-virgin olive oil",
-      "name": "extra-virgin olive oil"
+      "name": "olive oil"
     },
     {
       "aisle": "Cheese",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "4 ripe tomatoes sliced 1/4\" inch thick",
-      "name": "tomatoes"
+      "name": "tomato"
     }
   ],
   "readyInMinutes": 45,

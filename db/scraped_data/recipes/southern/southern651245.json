@@ -1,1 +1,149 @@
-{"vegetarian": false, "glutenFree": true, "title": "Mashed Sweet Potato, Apple and Cotija Quesadillas", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/P4P7P8NG/mashed-sweet-potato-apple-and-cotija-quesadillas", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Heat 1 tablespoon of oil in a medium saucepan and add onions and apples. Cook until they turn begin to brown, approximately 15-20 minutes.</li><li>As onions and apples cook, heat tortillas slightly in the oven (300 degrees for 10-15 minutes) or on the stove in a pan sprayed lightly with cooking spray. They should not get crispy, only warm.</li><li>In a small bowl, mash warm sweet potatoes, honey, 1 tablespoon butter, lime juice and zest, cumin, cilantro and red pepper flakes.</li><li>Spread a layer of sweet potatoes, onion-apple mixture and then crumble cheese on one half of the tortilla and fold over. (Resist the urge to overfill.) Using remaining 1 tablespoon of butter and 1 tablespoon oil, toast quesadillas on both sides until golden brown.</li><li>For a little added snazzle, whisk a bit of chili pepper, honey and lime juice together and drizzle on top.</li><li>We used Fujis. A crisp, sweet apple works best.</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Produce", "unitLong": "slices", "amount": 2.0, "unitShort": "slices", "metaInformation": [], "unit": "slices", "originalString": "2 apples, cored, peeled and sliced*", "name": "apples"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons butter or margarine", "name": "butter"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup cilantro, chopped", "name": "cilantro"}, {"aisle": "Cheese", "unitLong": "ounces", "amount": 4.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "4 ounces Cotija cheese", "name": "cotija cheese"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon cumin", "name": "cumin"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons grapeseed oil, divided", "name": "grapeseed oil"}, {"aisle": "Nut butters, Jams, and Honey", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons honey", "name": "honey"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "Juice and zest of 1 lime", "name": "juice of lime"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 red onion, sliced", "name": "red onion"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon red pepper flakes", "name": "red pepper flakes"}, {"aisle": "Produce", "unitLong": "pounds", "amount": 5.0, "unitShort": "lb", "metaInformation": [], "unit": "pounds", "originalString": "5 pounds sweet potatoes", "name": "sweet potatoes"}, {"aisle": "Pasta and Rice", "unitLong": "", "amount": 6.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "6 tortillas (corn or flour)", "name": "tortillas"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/mashed-sweet-potato-apple-and-cotija-quesadillas-651245", "weightWatcherSmartPoints": 41, "id": 651245, "image": "https://spoonacular.com/recipeImages/Mashed-Sweet-Potato--Apple-and-Cotija-Quesadillas-651245.jpg", "servings": 3, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Mashed Sweet Potato, Apple and Cotija Quesadillas",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/P4P7P8NG/mashed-sweet-potato-apple-and-cotija-quesadillas",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Heat 1 tablespoon of oil in a medium saucepan and add onions and apples. Cook until they turn begin to brown, approximately 15-20 minutes.</li><li>As onions and apples cook, heat tortillas slightly in the oven (300 degrees for 10-15 minutes) or on the stove in a pan sprayed lightly with cooking spray. They should not get crispy, only warm.</li><li>In a small bowl, mash warm sweet potatoes, honey, 1 tablespoon butter, lime juice and zest, cumin, cilantro and red pepper flakes.</li><li>Spread a layer of sweet potatoes, onion-apple mixture and then crumble cheese on one half of the tortilla and fold over. (Resist the urge to overfill.) Using remaining 1 tablespoon of butter and 1 tablespoon oil, toast quesadillas on both sides until golden brown.</li><li>For a little added snazzle, whisk a bit of chili pepper, honey and lime juice together and drizzle on top.</li><li>We used Fujis. A crisp, sweet apple works best.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "slices",
+      "amount": 2.0,
+      "unitShort": "slices",
+      "metaInformation": [],
+      "unit": "slices",
+      "originalString": "2 apples, cored, peeled and sliced*",
+      "name": "apple"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons butter or margarine",
+      "name": "butter"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup cilantro, chopped",
+      "name": "cilantro"
+    },
+    {
+      "aisle": "Cheese",
+      "unitLong": "ounces",
+      "amount": 4.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "4 ounces Cotija cheese",
+      "name": "cotija cheese"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon cumin",
+      "name": "cumin"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons grapeseed oil, divided",
+      "name": "grapeseed oil"
+    },
+    {
+      "aisle": "Nut butters, Jams, and Honey",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons honey",
+      "name": "honey"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "Juice and zest of 1 lime",
+      "name": "lime juice"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 red onion, sliced",
+      "name": "red onion"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon red pepper flakes",
+      "name": "crushed red pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "pounds",
+      "amount": 5.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pounds",
+      "originalString": "5 pounds sweet potatoes",
+      "name": "sweet potato"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "",
+      "amount": 6.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "6 tortillas (corn or flour)",
+      "name": "tortillas"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/mashed-sweet-potato-apple-and-cotija-quesadillas-651245",
+  "weightWatcherSmartPoints": 41,
+  "id": 651245,
+  "image": "https://spoonacular.com/recipeImages/Mashed-Sweet-Potato--Apple-and-Cotija-Quesadillas-651245.jpg",
+  "servings": 3,
+  "whole30": false,
+  "lowFodmap": false
+}

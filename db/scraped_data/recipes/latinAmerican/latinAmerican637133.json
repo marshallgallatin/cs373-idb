@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "½ cup fresh cilantro, chopped",
-      "name": "fresh cilantro"
+      "name": "cilantro"
     },
     {
       "aisle": "Produce",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "tsp",
       "originalString": "1 tsp ground cumin",
-      "name": "ground cumin"
+      "name": "cumin"
     },
     {
       "aisle": "Produce",
@@ -180,7 +180,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 Roma tomatoes, diced",
-      "name": "roma tomatoes"
+      "name": "tomato"
     },
     {
       "aisle": "Meat",

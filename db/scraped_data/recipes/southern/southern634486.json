@@ -1,1 +1,139 @@
-{"vegetarian": false, "glutenFree": true, "title": "BBQ Beef Brisket", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/T3NNZRNQ/bbq-beef-brisket", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Trim any large, thick pieces of fat from the brisket (dont remove all of the fat because it keeps the meat moist during cooking and adds flavor)</li><li>Sprinkle brisket with salt and pepper.</li><li>Mix the onion powder, garlic powder, smoked paprika, cumin, and cayenne pepper together in a small bowl.</li><li>Dry rub both sides of the brisket with the seasoning mixture.</li><li>Heat oil in a pan over medium-high heat and sear the meat on both sides.</li><li>Remove from the heat and set aside.</li><li>Stir together the honey barbecue sauce and brown sugar.</li><li>Pour half of the sauce into the bottom of your slow cooker.</li><li>Place the brisket, fatty side up, into the slow cooker.</li><li>Cover the top o the brisket with the remaining sauce.</li><li>Cover the slow cooker and set heat to low for 9 hours, or until fork tender.</li><li>When the brisket is cooked, remove it carefully from the slow cooker and place it on a cutting board.</li><li>Pour the sauce from the slow cooker into a saucepan and let it cool.</li><li>Skim the fat that has risen to the top of the sauce in the large bowl.</li><li>It will appear lighter in color than the sauce, like droplets of oil on the surface. Skim as much fat as you can.</li><li>In a small bowl, stir together cornstarch and 1 tbs. of water till completely smooth.</li><li>Pour the cornstarch mixture into the bowl of sauce and stir to combine.</li><li>Reduce the sauce quickly in a saucepan on the stovetop by simmering it to 10 minutes.</li><li>Pour the sauce over the brisket and serve.</li><li>The leftovers make great BBQ sandwiches.</li><li>If you like crockpot food, be sure to check out some of my favorite recipes at www.mealdiva.com</li></ol>", "aggregateLikes": 18, "dairyFree": true, "extendedIngredients": [{"aisle": "Condiments", "unitLong": "cups", "amount": 1.5, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "1 1/2 cups smokey barbecue sauce", "name": "barbecue sauce"}, {"aisle": "Meat", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 brisket, 5 lbs., first cut", "name": "beef brisket"}, {"aisle": "Baking", "unitLong": "tablespoons", "amount": 3.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "3 tablespoons brown sugar", "name": "brown sugar"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.25, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "1/4 tsp cayenne pepper (use 1/2 tsp for more heat)", "name": "cayenne pepper"}, {"aisle": "Baking", "unitLong": "tablespoons", "amount": 0.5, "unitShort": "T", "metaInformation": [], "unit": "tbsp", "originalString": "1/2 tbsp cornstarch", "name": "cornstarch"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "1/2 tsp cumin", "name": "cumin"}, {"aisle": "Spices and Seasonings", "unitLong": "ounces", "amount": 4.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "4 ounces garlic powder", "name": "garlic powder"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tbs", "amount": 2.0, "unitShort": "tbs", "metaInformation": [], "unit": "tbs", "originalString": "2 tbs. oil for searing", "name": "oil"}, {"aisle": "Spices and Seasonings", "unitLong": "ounces", "amount": 4.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "4 ounces onion powder", "name": "onion powder"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 8.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Salt and pepper", "name": "salt and pepper"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "1/2 tsp smoked paprika (optional)", "name": "smoked paprika"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/bbq-beef-brisket-634486", "weightWatcherSmartPoints": 17, "id": 634486, "image": "https://spoonacular.com/recipeImages/BBQ-Beef-Brisket-634486.jpg", "servings": 8, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "BBQ Beef Brisket",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/T3NNZRNQ/bbq-beef-brisket",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Trim any large, thick pieces of fat from the brisket (dont remove all of the fat because it keeps the meat moist during cooking and adds flavor)</li><li>Sprinkle brisket with salt and pepper.</li><li>Mix the onion powder, garlic powder, smoked paprika, cumin, and cayenne pepper together in a small bowl.</li><li>Dry rub both sides of the brisket with the seasoning mixture.</li><li>Heat oil in a pan over medium-high heat and sear the meat on both sides.</li><li>Remove from the heat and set aside.</li><li>Stir together the honey barbecue sauce and brown sugar.</li><li>Pour half of the sauce into the bottom of your slow cooker.</li><li>Place the brisket, fatty side up, into the slow cooker.</li><li>Cover the top o the brisket with the remaining sauce.</li><li>Cover the slow cooker and set heat to low for 9 hours, or until fork tender.</li><li>When the brisket is cooked, remove it carefully from the slow cooker and place it on a cutting board.</li><li>Pour the sauce from the slow cooker into a saucepan and let it cool.</li><li>Skim the fat that has risen to the top of the sauce in the large bowl.</li><li>It will appear lighter in color than the sauce, like droplets of oil on the surface. Skim as much fat as you can.</li><li>In a small bowl, stir together cornstarch and 1 tbs. of water till completely smooth.</li><li>Pour the cornstarch mixture into the bowl of sauce and stir to combine.</li><li>Reduce the sauce quickly in a saucepan on the stovetop by simmering it to 10 minutes.</li><li>Pour the sauce over the brisket and serve.</li><li>The leftovers make great BBQ sandwiches.</li><li>If you like crockpot food, be sure to check out some of my favorite recipes at www.mealdiva.com</li></ol>",
+  "aggregateLikes": 18,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Condiments",
+      "unitLong": "cups",
+      "amount": 1.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "1 1/2 cups smokey barbecue sauce",
+      "name": "barbecue sauce"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 brisket, 5 lbs., first cut",
+      "name": "beef brisket"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "tablespoons",
+      "amount": 3.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "3 tablespoons brown sugar",
+      "name": "brown sugar"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.25,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1/4 tsp cayenne pepper (use 1/2 tsp for more heat)",
+      "name": "cayenne pepper"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "tablespoons",
+      "amount": 0.5,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tbsp",
+      "originalString": "1/2 tbsp cornstarch",
+      "name": "corn starch"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1/2 tsp cumin",
+      "name": "cumin"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "ounces",
+      "amount": 4.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "4 ounces garlic powder",
+      "name": "garlic powder"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tbs",
+      "amount": 2.0,
+      "unitShort": "tbs",
+      "metaInformation": [],
+      "unit": "tbs",
+      "originalString": "2 tbs. oil for searing",
+      "name": "oil"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "ounces",
+      "amount": 4.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "4 ounces onion powder",
+      "name": "onion powder"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 8.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Salt and pepper",
+      "name": "salt and pepper"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1/2 tsp smoked paprika (optional)",
+      "name": "paprika"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/bbq-beef-brisket-634486",
+  "weightWatcherSmartPoints": 17,
+  "id": 634486,
+  "image": "https://spoonacular.com/recipeImages/BBQ-Beef-Brisket-634486.jpg",
+  "servings": 8,
+  "whole30": false,
+  "lowFodmap": false
+}

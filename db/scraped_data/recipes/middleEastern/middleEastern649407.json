@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons fresh parsley",
-      "name": "fresh parsley"
+      "name": "parsley"
     },
     {
       "aisle": "Produce",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon ground coriander",
-      "name": "ground coriander"
+      "name": "dried coriander"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon ground cumin",
-      "name": "ground cumin"
+      "name": "cumin"
     },
     {
       "aisle": "Produce",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 juice from lemons",
-      "name": "lemons"
+      "name": "lemon"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -190,7 +190,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons whole wheat flour",
-      "name": "whole wheat flour"
+      "name": "whole-wheat flour"
     },
     {
       "aisle": "Produce",

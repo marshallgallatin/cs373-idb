@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "serving",
       "originalString": "Bell Peppers for garnishing",
-      "name": "bell peppers"
+      "name": "green bell pepper"
     },
     {
       "aisle": "Meat",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon of Curry",
-      "name": "curry paste"
+      "name": "curry"
     },
     {
       "aisle": "Produce",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "handfuls",
       "originalString": "2 handfuls of Chopped onions",
-      "name": "onions"
+      "name": "onion"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "serving",
       "originalString": "Pepper",
-      "name": "pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Spices and Seasonings",

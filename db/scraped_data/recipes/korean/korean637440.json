@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "5 mushrooms, sliced (I like to use criminis)",
-      "name": "mushrooms"
+      "name": "mushroom"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "3 scallions, chopped",
-      "name": "scallions"
+      "name": "green onion"
     },
     {
       "aisle": "Ethnic Foods",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "Sesame seeds",
-      "name": "sesame seeds"
+      "name": "sesame seed"
     },
     {
       "aisle": "Ethnic Foods",

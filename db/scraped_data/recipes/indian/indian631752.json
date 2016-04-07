@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "Teaspoon",
       "originalString": "1 Teaspoon Cumin Seeds",
-      "name": "cumin seeds"
+      "name": "cumin seed"
     },
     {
       "aisle": "Beverages",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "Cups",
       "originalString": "3 Cups organic Red Lentils",
-      "name": "red lentils"
+      "name": "red lentil"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -150,7 +150,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "1/2 organic White Onion",
-      "name": "white onion"
+      "name": "onion"
     }
   ],
   "readyInMinutes": 45,

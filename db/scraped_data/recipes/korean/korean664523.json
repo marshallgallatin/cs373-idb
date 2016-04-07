@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "1 1/2 cups bean sprouts",
-      "name": "bean sprouts"
+      "name": "bean sprout"
     },
     {
       "aisle": "Produce",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup fresh shiitake mushrooms, thinly sliced",
-      "name": "fresh shiitake mushrooms"
+      "name": "shiitake mushroom"
     },
     {
       "aisle": "Produce",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup green onions, chopped",
-      "name": "green onions"
+      "name": "green onion"
     },
     {
       "aisle": "Ethnic Foods",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "teaspoons",
       "originalString": "2 teaspoons toasted sesame seeds",
-      "name": "sesame seeds"
+      "name": "sesame seed"
     },
     {
       "aisle": "Pasta and Rice",

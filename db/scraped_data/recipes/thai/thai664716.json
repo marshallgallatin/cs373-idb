@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "grams",
       "originalString": "20 grams stalks from pack coriander",
-      "name": "coriander"
+      "name": "cilantro"
     },
     {
       "aisle": "Produce",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon ground coriander",
-      "name": "ground coriander"
+      "name": "dried coriander"
     },
     {
       "aisle": "Pasta and Rice",
@@ -160,7 +160,7 @@
       "metaInformation": [],
       "unit": "grams",
       "originalString": "140 grams mushrooms, halved",
-      "name": "mushrooms"
+      "name": "mushroom"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -170,7 +170,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon freshly ground pepper",
-      "name": "pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Produce",
@@ -180,7 +180,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "1/2 red pepper, deseeded and roughly chopped",
-      "name": "red pepper"
+      "name": "red bell pepper"
     },
     {
       "aisle": "Produce",
@@ -190,7 +190,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "3 shallots, roughly chopped",
-      "name": "shallots"
+      "name": "shallot"
     },
     {
       "aisle": "Ethnic Foods",

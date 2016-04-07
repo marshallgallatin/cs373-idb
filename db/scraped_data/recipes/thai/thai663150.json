@@ -29,7 +29,7 @@
       "unitShort": "oz",
       "metaInformation": [],
       "unit": "ounces",
-      "originalString": "8 ounces baby bok choy or regular bok choy (shredded",
+      "originalString": "8 ounces baby bok choy or regular bok choy (shredded)",
       "name": "bok choy"
     },
     {
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup raw cashew nuts",
-      "name": "cashew nuts"
+      "name": "cashew"
     },
     {
       "aisle": "Produce",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons extra-virgin olive oil",
-      "name": "extra-virgin olive oil"
+      "name": "olive oil"
     },
     {
       "aisle": "Produce",

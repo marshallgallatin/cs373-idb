@@ -1,1 +1,139 @@
-{"vegetarian": true, "glutenFree": true, "title": "Pressed Bean, Veggie and Cheddar Burrito", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/ZMBD33DD/pressed-bean-veggie-cheddar-burrito", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Get all the ingredients ready first, diced the veggies, shred the cheese, rinse the beans. I leave the avocado slicing until I'm ready to assemble so it does't brown.</li><li>In a large saute pan, over medium high heat, add a few drizzles of olive oil and the corn, bell peppers and onions. Season with salt, pepper and garlic powder. You are looking just to cook until the veggies are just starting to soften. Add in the black beans and the lime juice. Cook for a couple minutes until the beans are warmed through.</li><li>Thats it! Now time to assemble. Lay the tortilla flat, add a line of cheese, the veggies and a few slices of avocado.</li><li>Fold the end over the filling then fold in the sides. Roll until almost at the end then add a little bit more cheese so it gets sealed a bit better.</li><li>Place the burrito onto a panini press set on high, You are looking just to crunch up the outside a bit. Notice mine opened up in the corner, its because I used whole grain tortilla wraps and found that they were more brittle then a regular wrap.</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 avocados, sliced", "name": "avocados"}, {"aisle": "Canned and Jarred", "unitLong": "can", "amount": 1.0, "unitShort": "can", "metaInformation": [], "unit": "can", "originalString": "1 can black beans, rinsed and drained", "name": "canned black beans"}, {"aisle": "Produce", "unitLong": "cups", "amount": 1.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 1/2 cup corn", "name": "corn"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "2 tsp garlic powder", "name": "garlic powder"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "juice of 1 lime", "name": "juice of lime"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tbsp", "originalString": "1 tbsp olive oil", "name": "olive oil"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 small onion, diced", "name": "onion"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 red bell peppers, diced", "name": "red bell peppers"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 4.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "salt & pepper", "name": "salt and pepper"}, {"aisle": "Cheese", "unitLong": "pound", "amount": 1.0, "unitShort": "lb", "metaInformation": [], "unit": "lb", "originalString": "1 lb sharp cheddar, grated", "name": "sharp cheddar"}, {"aisle": "Pasta and Rice", "unitLong": "", "amount": 4.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "4 tortilla wraps", "name": "tortilla wraps"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/pressed-bean-veggie-cheddar-burrito-657126", "weightWatcherSmartPoints": 31, "id": 657126, "image": "https://spoonacular.com/recipeImages/Pressed-Bean--Veggie---Cheddar-Burrito-657126.jpg", "servings": 4, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": true,
+  "title": "Pressed Bean, Veggie and Cheddar Burrito",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/ZMBD33DD/pressed-bean-veggie-cheddar-burrito",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Get all the ingredients ready first, diced the veggies, shred the cheese, rinse the beans. I leave the avocado slicing until I'm ready to assemble so it does't brown.</li><li>In a large saute pan, over medium high heat, add a few drizzles of olive oil and the corn, bell peppers and onions. Season with salt, pepper and garlic powder. You are looking just to cook until the veggies are just starting to soften. Add in the black beans and the lime juice. Cook for a couple minutes until the beans are warmed through.</li><li>Thats it! Now time to assemble. Lay the tortilla flat, add a line of cheese, the veggies and a few slices of avocado.</li><li>Fold the end over the filling then fold in the sides. Roll until almost at the end then add a little bit more cheese so it gets sealed a bit better.</li><li>Place the burrito onto a panini press set on high, You are looking just to crunch up the outside a bit. Notice mine opened up in the corner, its because I used whole grain tortilla wraps and found that they were more brittle then a regular wrap.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 avocados, sliced",
+      "name": "avocado"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "can",
+      "amount": 1.0,
+      "unitShort": "can",
+      "metaInformation": [],
+      "unit": "can",
+      "originalString": "1 can black beans, rinsed and drained",
+      "name": "canned black turtle beans"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 1.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 1/2 cup corn",
+      "name": "corn"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "2 tsp garlic powder",
+      "name": "garlic powder"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "juice of 1 lime",
+      "name": "lime juice"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tbsp",
+      "originalString": "1 tbsp olive oil",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 small onion, diced",
+      "name": "onion"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 red bell peppers, diced",
+      "name": "red bell pepper"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 4.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "salt & pepper",
+      "name": "salt and pepper"
+    },
+    {
+      "aisle": "Cheese",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "lb",
+      "originalString": "1 lb sharp cheddar, grated",
+      "name": "sharp cheddar"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "",
+      "amount": 4.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "4 tortilla wraps",
+      "name": "tortilla wraps"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/pressed-bean-veggie-cheddar-burrito-657126",
+  "weightWatcherSmartPoints": 31,
+  "id": 657126,
+  "image": "https://spoonacular.com/recipeImages/Pressed-Bean--Veggie---Cheddar-Burrito-657126.jpg",
+  "servings": 4,
+  "whole30": false,
+  "lowFodmap": false
+}

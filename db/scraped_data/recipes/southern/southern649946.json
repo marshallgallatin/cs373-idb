@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "pinch",
       "originalString": "pinch of curry",
-      "name": "curry paste"
+      "name": "curry"
     },
     {
       "aisle": "Produce",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups of dry lentils",
-      "name": "lentils"
+      "name": "lentil"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "pinch",
       "originalString": "pinch of pepper",
-      "name": "pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Spices and Seasonings",

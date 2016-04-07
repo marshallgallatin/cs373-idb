@@ -1,1 +1,139 @@
-{"vegetarian": false, "glutenFree": false, "title": "Mushroom-Swiss Hamburger Pie", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/TPFZRWFM/mushroom-swiss-hamburger-pie", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Preheat oven to 375F</li><li>Heat 1 teaspoon oil in a large skillet over medium heat and saute onions until translucent and just turning brown. Open the beer, take a sip and pour the rest in with the onions. Increase heat to medium-high and cook down until thick and syrupy.</li><li>Pour onion mixture into a large bowl, stir in thyme, mustard, salt and pepper and let cool. Add ground beef, breadcrumbs, parsley and eggs and mix thoroughly with clean hands.</li><li>Spray 9-inch pie plate with non stick and spread hamburger mixture evenly across the bottom and up the sides. Bake until meat reaches a temperature of 160F. Remove from oven and let stand 5 minutes.</li><li>Meanwhile, heat remaining oil over medium heat and lightly saute mushrooms.</li><li>Drain any fat from meat and top with mushrooms and shredded cheese. Turn oven to broil and cook until cheese is melted.</li><li>Makes 6 servings.</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Produce", "unitLong": "ounces", "amount": 10.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "10 ounces baby bella mushrooms, thickly sliced", "name": "baby bella mushrooms"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup fresh whole wheat bread crumbs (I used a food processor to turn 3 pieces of high-fiber 1/4 cup parsley, chopped", "name": "bread crumbs"}, {"aisle": "Condiments", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon Dijon mustard", "name": "dijon mustard"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon dried thyme", "name": "dried thyme"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 large egg and 1 egg white, lightly beaten", "name": "egg"}, {"aisle": "Meat", "unitLong": "pounds", "amount": 1.5, "unitShort": "lb", "metaInformation": [], "unit": "pounds", "originalString": "1 1/2 pounds lean ground beef (93 percent lean or better)", "name": "lean ground beef"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup olive oil", "name": "olive oil"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "teaspoon salt and fresh ground pepper to taste (I used about \u00bd each)", "name": "ground pepper"}, {"aisle": "Alcoholic Beverages", "unitLong": "ounces", "amount": 12.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "12 ounces bottle of stout beer (I used Dark Horse Brewing Company'", "name": "stout beer"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 medium sweet onion, diced", "name": "sweet onion"}, {"aisle": "Cheese", "unitLong": "ounces", "amount": 3.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "3 ounces low-fat Swiss cheese, shredded", "name": "swiss cheese"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/mushroom-swiss-hamburger-pie-652728", "weightWatcherSmartPoints": 71, "id": 652728, "image": "https://spoonacular.com/recipeImages/Mushroom-Swiss-Hamburger-Pie-652728.jpg", "servings": 1, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Mushroom-Swiss Hamburger Pie",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/TPFZRWFM/mushroom-swiss-hamburger-pie",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Preheat oven to 375F</li><li>Heat 1 teaspoon oil in a large skillet over medium heat and saute onions until translucent and just turning brown. Open the beer, take a sip and pour the rest in with the onions. Increase heat to medium-high and cook down until thick and syrupy.</li><li>Pour onion mixture into a large bowl, stir in thyme, mustard, salt and pepper and let cool. Add ground beef, breadcrumbs, parsley and eggs and mix thoroughly with clean hands.</li><li>Spray 9-inch pie plate with non stick and spread hamburger mixture evenly across the bottom and up the sides. Bake until meat reaches a temperature of 160F. Remove from oven and let stand 5 minutes.</li><li>Meanwhile, heat remaining oil over medium heat and lightly saute mushrooms.</li><li>Drain any fat from meat and top with mushrooms and shredded cheese. Turn oven to broil and cook until cheese is melted.</li><li>Makes 6 servings.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "ounces",
+      "amount": 10.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "10 ounces baby bella mushrooms, thickly sliced",
+      "name": "cremini mushroom"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup fresh whole wheat bread crumbs (I used a food processor to turn 3 pieces of high-fiber 1/4 cup parsley, chopped",
+      "name": "bread crumbs"
+    },
+    {
+      "aisle": "Condiments",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon Dijon mustard",
+      "name": "dijon mustard"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon dried thyme",
+      "name": "dried thyme"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 large egg and 1 egg white, lightly beaten",
+      "name": "egg"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pounds",
+      "amount": 1.5,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pounds",
+      "originalString": "1 1/2 pounds lean ground beef (93 percent lean or better)",
+      "name": "lean ground beef"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup olive oil",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "teaspoon salt and fresh ground pepper to taste (I used about ½ each)",
+      "name": "black pepper"
+    },
+    {
+      "aisle": "Alcoholic Beverages",
+      "unitLong": "ounces",
+      "amount": 12.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "12 ounces bottle of stout beer (I used Dark Horse Brewing Company'",
+      "name": "stout beer"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 medium sweet onion, diced",
+      "name": "sweet onion"
+    },
+    {
+      "aisle": "Cheese",
+      "unitLong": "ounces",
+      "amount": 3.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "3 ounces low-fat Swiss cheese, shredded",
+      "name": "swiss cheese"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/mushroom-swiss-hamburger-pie-652728",
+  "weightWatcherSmartPoints": 71,
+  "id": 652728,
+  "image": "https://spoonacular.com/recipeImages/Mushroom-Swiss-Hamburger-Pie-652728.jpg",
+  "servings": 1,
+  "whole30": false,
+  "lowFodmap": false
+}

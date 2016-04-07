@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup chopped fresh basil",
-      "name": "fresh basil"
+      "name": "basil"
     },
     {
       "aisle": "Produce",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 green bell peppers diced",
-      "name": "green bell peppers"
+      "name": "green bell pepper"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 lrg tomatoes chopped",
-      "name": "tomatoes"
+      "name": "tomato"
     },
     {
       "aisle": "Produce",

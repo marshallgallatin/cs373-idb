@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "some bean sprouts",
-      "name": "bean sprouts"
+      "name": "bean sprout"
     },
     {
       "aisle": "Produce",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "12 tiger prawns (peeled, deveined)",
-      "name": "tiger prawns"
+      "name": "shrimp"
     }
   ],
   "readyInMinutes": 45,

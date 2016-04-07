@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "5 large eggs (yolks and whites separated)",
-      "name": "eggs"
+      "name": "egg"
     },
     {
       "aisle": "Canned and Jarred",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup diced Roma tomato",
-      "name": "roma tomato"
+      "name": "tomato"
     },
     {
       "aisle": "Ethnic Foods",

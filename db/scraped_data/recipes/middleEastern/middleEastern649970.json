@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 pickle cucumbers halved and cut into half moons",
-      "name": "cucumbers"
+      "name": "cucumber"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "extra light olive oil",
-      "name": "extra-virgin olive oil"
+      "name": "olive oil"
     },
     {
       "aisle": "Produce",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 plum tomatoes cut into strips",
-      "name": "plum tomatoes"
+      "name": "tomato"
     },
     {
       "aisle": "Produce",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "bunch",
       "originalString": "1 bunch of radishes sliced",
-      "name": "radishes"
+      "name": "radish"
     },
     {
       "aisle": "Spices and Seasonings",

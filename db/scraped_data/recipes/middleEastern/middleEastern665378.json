@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "½ cup flat leaf parsley leaves (or a mix of parsley and mint)",
-      "name": "flat leaf parsley leaves"
+      "name": "parsley"
     },
     {
       "aisle": "Produce",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "1½ cups cooked lentils (many markets carry vacuum-packed, precooked lentils, or boil 1 cup dried brown lentils in 2 cups salted water until tender, then drain)",
-      "name": "lentils"
+      "name": "lentil"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -150,7 +150,7 @@
       "metaInformation": [],
       "unit": "bunch",
       "originalString": "1 small bunch red radishes or other varietals such as watermelon or daikon (about ½ cup, shredded)",
-      "name": "radishes"
+      "name": "radish"
     },
     {
       "aisle": "Spices and Seasonings",

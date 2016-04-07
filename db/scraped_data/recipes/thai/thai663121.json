@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "tsp",
       "originalString": "1 tsp black peppercorns",
-      "name": "black peppercorns"
+      "name": "black pepper"
     },
     {
       "aisle": "Canned and Jarred",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "tsp",
       "originalString": "1 tsp cumin seeds",
-      "name": "cumin seeds"
+      "name": "cumin seed"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "sprigs",
       "originalString": "2-3 sprigs coriander leaves (cut off roots and include the stems)",
-      "name": "dried coriander leaves"
+      "name": "dried coriander"
     },
     {
       "aisle": "Ethnic Foods",
@@ -150,7 +150,7 @@
       "metaInformation": [],
       "unit": "tsp",
       "originalString": "1/2 tsp lime rind",
-      "name": "lime rind"
+      "name": "lime zest"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -170,7 +170,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "5-6 dried red chilies",
-      "name": "red chilies"
+      "name": "dried chili peppers"
     },
     {
       "aisle": "Produce",
@@ -200,7 +200,7 @@
       "metaInformation": [],
       "unit": "slices",
       "originalString": "2-3 Shallots, sliced.",
-      "name": "shallots"
+      "name": "shallot"
     }
   ],
   "readyInMinutes": 45,

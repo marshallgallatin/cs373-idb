@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "3/4 cup dark brown sugar, packed firmly",
-      "name": "dark brown sugar"
+      "name": "brown sugar"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 eggs",
-      "name": "eggs"
+      "name": "egg"
     },
     {
       "aisle": "Baking",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon ground cinnamon",
-      "name": "ground cinnamon"
+      "name": "cinnamon"
     },
     {
       "aisle": "Spices and Seasonings",

@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "grams",
       "originalString": "75 grams Broccoli florets, blanched",
-      "name": "broccoli florets"
+      "name": "broccoli"
     },
     {
       "aisle": "Cheese",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 eggs, beaten",
-      "name": "eggs"
+      "name": "egg"
     },
     {
       "aisle": "Cheese",
@@ -180,7 +180,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "4 Spring onions, chopped",
-      "name": "green onions"
+      "name": "green onion"
     },
     {
       "aisle": "Cheese",
@@ -200,7 +200,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "4 Fresh tomatoes, skinned, de-seeded, chopped",
-      "name": "tomatoes"
+      "name": "tomato"
     }
   ],
   "readyInMinutes": 45,
