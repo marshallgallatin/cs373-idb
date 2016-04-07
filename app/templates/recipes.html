@@ -7,20 +7,29 @@
 	}
 	</style>
 	<script>
-		angular.module('mbApp', []).controller('mbCtrl', function($scope) {
+		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
 			$scope.names = [
 				{id:'1',title:'Jamba'},
 				{id:'2',title:'Shrimp'},
 			];
 			$scope.mbReverse = false;
 			$scope.orderByMe = function(x) {
-				if ($scope.myOrderBy == x) {
+				if ($scope.mbOrderBy == x) {
 					$scope.mbReverse = !$scope.mbReverse;
 				} else {
 					$scope.mbReverse = false;
 				}
 				$scope.mbOrderBy = x;
 			}
+			/*$scope.getData = function () {
+				$http.get("r").then(function (transmit) {
+					$scope.data = transmit.data;
+					alert($scope.data.recipes);
+				});
+			}
+			$(function() {
+				$scope.getData();
+			});*/
 		});
 	</script>
 {% endblock scripts %}
