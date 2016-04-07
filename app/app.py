@@ -225,7 +225,7 @@ def recipe(r_id=None):
 	"img_uri":"https://webknox.com/recipeImages/648427-556x370.jpg"}
 	split_ingredients(store)
 	split_instructions(store)
-	return render_template('recipe.html', **store, recipeslit="active")
+	return render_template('recipe.html', recipeslit="active", **store)
 
 def split_ingredients(d):
 	l = d["ingredients"]
@@ -258,7 +258,7 @@ def ingredient(i_id=None):
 	"iron":"4.1%",
 	"place":"30.2849185,-97.73624",
 	"img_uri":"http://www.essentialoilspedia.com/wp-content/uploads/basil_plant.jpg"}
-	return render_template('ingredient.html', i_id=i_id, **store, ingredientslit="active")
+	return render_template('ingredient.html', i_id=i_id, ingredientslit="active", **store)
 
 ############ END WEBSITE TEST ENTRY POINTS ###########
 
