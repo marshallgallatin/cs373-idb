@@ -5,9 +5,13 @@
 		cursor: hand;
 		cursor: pointer;
 	}
+	img {
+		height: 100px;
+	}
 	</style>
 	<script>
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
+			$scope.page = 1;
 			$scope.names = [
 				{id:'1',title:'Jamba'},
 				{id:'2',title:'Shrimp'},
@@ -22,7 +26,7 @@
 				$scope.mbOrderBy = x;
 			}
 			$scope.getData = function () {
-				$http.get("r").then(function (transmit) {
+				$http.get("recipes?limit=10&page=" + $scope.page).then(function (transmit) {
 					$scope.data = transmit.data;
 				});
 			}
