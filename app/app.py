@@ -5,6 +5,7 @@ from flask import Flask, jsonify, request, render_template
 from flask_restful import reqparse, abort, Api, Resource
 import RecipeQueries
 import IngredientQueries
+import subprocess
 
 app = Flask(__name__)
 
@@ -104,6 +105,11 @@ def splash():
 @app.route("/<path:path>")
 def static_html(path):
     return app.send_static_file('html/{}'.format(path))
+
+@app.route("unittest")
+def unittest():
+    out = subprocess.getoutput('python3 tests.py -v')
+    return out
 
 ############  WEBSITE TEST ENTRY POINTS ###########
 # These are temporary and just so that web development can begin
