@@ -1,1 +1,79 @@
-{"vegetarian": true, "glutenFree": true, "title": "Peanut Butter And Chocolate Oatmeal", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/JCCVHSNP/peanut-butter-and-chocolate-oatmeal", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Microwave all ingredients in a small bowl or mug for 1 minute, stir and enjoy!  Serve with crushed peanuts or almonds for some extra crunch!</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Ethnic Foods", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon agave", "name": "agave"}, {"aisle": "Nut butters, Jams, and Honey", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon organic crunchy peanut butter", "name": "crunchy peanut butter"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup non-fat milk", "name": "non-fat milk"}, {"aisle": "Cereal", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "cup quick cooking oats", "name": "quick cooking oats"}, {"aisle": "Baking", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon unsweetened cocoa", "name": "unsweetened cocoa"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/peanut-butter-and-chocolate-oatmeal-655219", "weightWatcherSmartPoints": 14, "id": 655219, "image": "https://spoonacular.com/recipeImages/Peanut-Butter-And-Chocolate-Oatmeal-655219.jpg", "servings": 1, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": true,
+  "title": "Peanut Butter And Chocolate Oatmeal",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/JCCVHSNP/peanut-butter-and-chocolate-oatmeal",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Microwave all ingredients in a small bowl or mug for 1 minute, stir and enjoy!  Serve with crushed peanuts or almonds for some extra crunch!</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon agave",
+      "name": "agave"
+    },
+    {
+      "aisle": "Nut butters, Jams, and Honey",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon organic crunchy peanut butter",
+      "name": "crunchy peanut butter"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup non-fat milk",
+      "name": "skim milk"
+    },
+    {
+      "aisle": "Cereal",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "cup quick cooking oats",
+      "name": "quick cooking oats"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon unsweetened cocoa",
+      "name": "unsweetened cocoa"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/peanut-butter-and-chocolate-oatmeal-655219",
+  "weightWatcherSmartPoints": 14,
+  "id": 655219,
+  "image": "https://spoonacular.com/recipeImages/Peanut-Butter-And-Chocolate-Oatmeal-655219.jpg",
+  "servings": 1,
+  "whole30": false,
+  "lowFodmap": false
+}

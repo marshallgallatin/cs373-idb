@@ -1,1 +1,209 @@
-{"vegetarian": true, "glutenFree": false, "title": "Vegan Jambalaya", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/8Q588CMR/cajun-cuisine-vegan-jambalaya", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Place 2 cups rice, 3 1/2 cups water and salt in a medium pot. Cook until water boils. Turn heat down to low.</li><li>Cook for 45 minutes.</li><li>Meanwhile, chop carrots, celery, onions and garlic.</li><li>In a wok or large pot, heat 2 Tbsp olive oil.</li><li>Fry vegetables.</li><li>Add instant roux, creole seasoning, pepper, tomato paste.</li><li>Add water, and bouillon cube and simmer until sauce thickens.</li><li>Add sausage and cooked for 5 minutes and then add beans Add petite diced tomatoes and cook for another 5 to 7 minutes.</li><li>Add 3 cups of cooked rice to mixture.</li><li>Cook for 10 to 15 minutes until sauce has distributed.</li><li>Turn heat off and add green onions and parsley before serving.</li><li>This dish is not spicy at all, but full of flavor.</li><li>Feel free to substitute with real sausage and cooked chicken.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "1 tsp black pepper", "name": "black pepper"}, {"aisle": "Canned and Jarred", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1/2 vegan Bouillon cube", "name": "bouillon cube"}, {"aisle": "Canned and Jarred", "unitLong": "ounces", "amount": 15.0, "unitShort": "oz", "metaInformation": [], "unit": "oz", "originalString": "1 15oz can kidney beans", "name": "canned kidney beans"}, {"aisle": "Canned and Jarred", "unitLong": "ounces", "amount": 14.5, "unitShort": "oz", "metaInformation": [], "unit": "oz", "originalString": "1 14.5 oz can petite diced tomatoes", "name": "canned tomatoes"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 carrots, diced", "name": "carrots"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 celery stalk, diced", "name": "celery stalk"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "2 tsp Tony Chachere's Creole Seasoning", "name": "creole seasoning"}, {"aisle": "Produce", "unitLong": "", "amount": 3.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "3 garlic cloves, minced", "name": "garlic cloves"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup green onions, chopped", "name": "green onions"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 3.0, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "3 tsp Tony Chachere's Instant Roux", "name": "Tony Chachere's Instant Roux"}, {"aisle": "Pasta and Rice", "unitLong": "cups", "amount": 2.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "2 cups whole grain rice", "name": "long-grain rice"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 onion, diced", "name": "onion"}, {"aisle": "Spices and Seasonings", "unitLong": "cups", "amount": 0.3333333333333333, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/3 cup parsley, chopped", "name": "parsley"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "1 tsp salt", "name": "salt"}, {"aisle": "Pasta and Rice", "unitLong": "Tbsps", "amount": 2.0, "unitShort": "Tbsp", "metaInformation": [], "unit": "Tbsp", "originalString": "2 Tbsp tomato paste", "name": "tomato paste"}, {"aisle": "Frozen", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 veggie sausage links", "name": "veggie sausage links"}, {"aisle": "Beverages", "unitLong": "cups", "amount": 0.75, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "3/4 cup water", "name": "water"}, {"aisle": "Beverages", "unitLong": "cups", "amount": 3.5, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "3 1/2 cups water", "name": "water"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/vegan-jambalaya-636714", "weightWatcherSmartPoints": 15, "id": 636714, "image": "https://spoonacular.com/recipeImages/Cajun-Cuisine--Vegan-Jambalaya-636714.jpg", "servings": 4, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": false,
+  "title": "Vegan Jambalaya",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/8Q588CMR/cajun-cuisine-vegan-jambalaya",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Place 2 cups rice, 3 1/2 cups water and salt in a medium pot. Cook until water boils. Turn heat down to low.</li><li>Cook for 45 minutes.</li><li>Meanwhile, chop carrots, celery, onions and garlic.</li><li>In a wok or large pot, heat 2 Tbsp olive oil.</li><li>Fry vegetables.</li><li>Add instant roux, creole seasoning, pepper, tomato paste.</li><li>Add water, and bouillon cube and simmer until sauce thickens.</li><li>Add sausage and cooked for 5 minutes and then add beans Add petite diced tomatoes and cook for another 5 to 7 minutes.</li><li>Add 3 cups of cooked rice to mixture.</li><li>Cook for 10 to 15 minutes until sauce has distributed.</li><li>Turn heat off and add green onions and parsley before serving.</li><li>This dish is not spicy at all, but full of flavor.</li><li>Feel free to substitute with real sausage and cooked chicken.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1 tsp black pepper",
+      "name": "black pepper"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 vegan Bouillon cube",
+      "name": "bouillon cube"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "ounces",
+      "amount": 15.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "oz",
+      "originalString": "1 15oz can kidney beans",
+      "name": "canned kidney beans"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "ounces",
+      "amount": 14.5,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "oz",
+      "originalString": "1 14.5 oz can petite diced tomatoes",
+      "name": "canned tomatoes"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 carrots, diced",
+      "name": "carrots"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 celery stalk, diced",
+      "name": "celery stalk"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "2 tsp Tony Chachere's Creole Seasoning",
+      "name": "creole seasoning"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 3.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "3 garlic cloves, minced",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup green onions, chopped",
+      "name": "green onions"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 3.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "3 tsp Tony Chachere's Instant Roux",
+      "name": "Tony Chachere's Instant Roux"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 cups whole grain rice",
+      "name": "long-grain rice"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 onion, diced",
+      "name": "onion"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "cups",
+      "amount": 0.3333333333333333,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/3 cup parsley, chopped",
+      "name": "parsley"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1 tsp salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "Tbsps",
+      "amount": 2.0,
+      "unitShort": "Tbsp",
+      "metaInformation": [],
+      "unit": "Tbsp",
+      "originalString": "2 Tbsp tomato paste",
+      "name": "tomato paste"
+    },
+    {
+      "aisle": "Frozen",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 veggie sausage links",
+      "name": "veggie sausage links"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "cups",
+      "amount": 0.75,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "3/4 cup water",
+      "name": "water"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "cups",
+      "amount": 3.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "3 1/2 cups water",
+      "name": "water"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/vegan-jambalaya-636714",
+  "weightWatcherSmartPoints": 15,
+  "id": 636714,
+  "image": "https://spoonacular.com/recipeImages/Cajun-Cuisine--Vegan-Jambalaya-636714.jpg",
+  "servings": 4,
+  "whole30": false,
+  "lowFodmap": false
+}

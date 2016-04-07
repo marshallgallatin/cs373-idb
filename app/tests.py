@@ -82,35 +82,35 @@ class NutritionalContentTest(DatabaseTest):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.test_kwargs = {
-            'calories'                     : 100,
-            'total_fat_in_grams'           : 2,
-            'saturated_fat_in_grams'       : 1,
-            'cholesterol_in_milligrams'    : 20,
-            'sodium_in_milligrams'         : 20,
-            'total_carbohydrates_in_grams' : 1,
-            'dietary_fiber_in_grams'       : 1.5,
-            'sugar_in_grams'               : 30.0,
-            'protein_in_grams'             : 2.0,
-            'vitamin_a_in_iu'              : 50.0,
-            'vitamin_c_in_milligrams'      : 50.0,
-            'calcium_in_milligrams'        : 50.0,
-            'iron_in_milligrams'           : 50.0
+            'calories'              : 100,
+            'total_fat_g'           : 2,
+            'saturated_fat_g'       : 1,
+            'cholesterol_mg'        : 20,
+            'sodium_mg'             : 20,
+            'total_carbohydrates_g' : 1,
+            'dietary_fiber_g'       : 1.5,
+            'sugar_g'               : 30.0,
+            'protein_g'             : 2.0,
+            'vitamin_a_iu'          : 50.0,
+            'vitamin_c_mg'          : 50.0,
+            'calcium_mg'            : 50.0,
+            'iron_mg'               : 50.0
         }
 
         self.bad_args1 = {
-            'calories'                     : -100,
-            'total_fat_in_grams'           : -2,
-            'saturated_fat_in_grams'       : -1,
-            'cholesterol_in_milligrams'    : -20,
-            'sodium_in_milligrams'         : -20,
-            'total_carbohydrates_in_grams' : -1,
-            'dietary_fiber_in_grams'       : -1.5,
-            'sugar_in_grams'               : -30.0,
-            'protein_in_grams'             : -2.0,
-            'vitamin_a_in_iu'              : -50.0,
-            'vitamin_c_in_milligrams'      : -50.0,
-            'calcium_in_milligrams'        : -50.0,
-            'iron_in_milligrams'           : -50.0
+            'calories'              : -100,
+            'total_fat_g'           : -2,
+            'saturated_fat_g'       : -1,
+            'cholesterol_mg'        : -20,
+            'sodium_mg'             : -20,
+            'total_carbohydrates_g' : -1,
+            'dietary_fiber_g'       : -1.5,
+            'sugar_g'               : -30.0,
+            'protein_g'             : -2.0,
+            'vitamin_a_iu'          : -50.0,
+            'vitamin_c_mg'          : -50.0,
+            'calcium_mg'            : -50.0,
+            'iron_mg'               : -50.0
         }
 
     def test_instantiation1(self):

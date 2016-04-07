@@ -1,1 +1,169 @@
-{"vegetarian": false, "glutenFree": false, "title": "Salmon and Broccoli Crepes", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/B85Z3KP2/salmon-and-broccoli-crepes", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Combine milk, water, egg and melted butter in a small bowl. Add flour and salt and whip until well blended. Allow to sit for 10 minutes.</li><li>Steam broccoli until just tender, and combine salmon, shallot, thyme, lemon juice, dijon and 1/2 cup sour cream. Chop pieces of salmon and broccoli with a spoon if you have extra large pieces. Warm salmon mixture in the microwave for 2 minutes.</li><li>Combine remaining sour cream and lemon zest.</li><li>Heat a medium non-stick skillet over medium heat and spray with cooking spray. Add 1/4 cup crepe batter to the pan and swirl around to create an even pancake. Cook 1  2 minutes on the first side to brown crepe, then flip and brown the other side. Crepes cook quickly because they are so thin. Remove to a plate and keep warm.</li><li>Fill a crepe with 1/4 salmon lengthwise and gently roll. Slice in half on a diagonal and top with a tablespoon of sour cream and lemon zest mixture.</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Produce", "unitLong": "cups", "amount": 2.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "2 cups broccoli florets, cut into small pieces", "name": "broccoli florets"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon butter", "name": "butter"}, {"aisle": "Condiments", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 teaspoons dijon mustard", "name": "dijon mustard"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 large egg white", "name": "egg"}, {"aisle": "Produce", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons lemon juice", "name": "lemon juice"}, {"aisle": "Spices and Seasonings", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon lemon thyme, fresh finely chopped", "name": "lemon thyme"}, {"aisle": "Produce", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon lemon zest", "name": "lemon zest"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup low fat milk", "name": "low fat milk"}, {"aisle": "Frozen", "unitLong": "tablespoons", "amount": 4.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "4 tablespoons reduced fat sour cream", "name": "reduced fat ice cream"}, {"aisle": "Seafood", "unitLong": "ounces", "amount": 8.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "8 ounces wild Alaskan Salmon filets, cooked and flaked into pieces", "name": "salmon filets"}, {"aisle": "Spices and Seasonings", "unitLong": "pinch", "amount": 1.0, "unitShort": "pinch", "metaInformation": [], "unit": "pinch", "originalString": "1 pinch salt", "name": "salt"}, {"aisle": "Produce", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons shallot, finely minced", "name": "shallot"}, {"aisle": "Beverages", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup water", "name": "water"}, {"aisle": "Baking", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup whole wheat pastry flour", "name": "whole wheat pastry flour"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/salmon-and-broccoli-crepes-659037", "weightWatcherSmartPoints": 6, "id": 659037, "image": "https://spoonacular.com/recipeImages/Salmon-and-Broccoli-Crepes-659037.jpg", "servings": 4, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Salmon and Broccoli Crepes",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/B85Z3KP2/salmon-and-broccoli-crepes",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Combine milk, water, egg and melted butter in a small bowl. Add flour and salt and whip until well blended. Allow to sit for 10 minutes.</li><li>Steam broccoli until just tender, and combine salmon, shallot, thyme, lemon juice, dijon and 1/2 cup sour cream. Chop pieces of salmon and broccoli with a spoon if you have extra large pieces. Warm salmon mixture in the microwave for 2 minutes.</li><li>Combine remaining sour cream and lemon zest.</li><li>Heat a medium non-stick skillet over medium heat and spray with cooking spray. Add 1/4 cup crepe batter to the pan and swirl around to create an even pancake. Cook 1  2 minutes on the first side to brown crepe, then flip and brown the other side. Crepes cook quickly because they are so thin. Remove to a plate and keep warm.</li><li>Fill a crepe with 1/4 salmon lengthwise and gently roll. Slice in half on a diagonal and top with a tablespoon of sour cream and lemon zest mixture.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 cups broccoli florets, cut into small pieces",
+      "name": "broccoli florets"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon butter",
+      "name": "butter"
+    },
+    {
+      "aisle": "Condiments",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 teaspoons dijon mustard",
+      "name": "dijon mustard"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 large egg white",
+      "name": "egg"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons lemon juice",
+      "name": "lemon juice"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon lemon thyme, fresh finely chopped",
+      "name": "lemon thyme"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon lemon zest",
+      "name": "lemon zest"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup low-fat milk",
+      "name": "low-fat milk"
+    },
+    {
+      "aisle": "Frozen",
+      "unitLong": "tablespoons",
+      "amount": 4.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "4 tablespoons reduced fat sour cream",
+      "name": "reduced fat ice cream"
+    },
+    {
+      "aisle": "Seafood",
+      "unitLong": "ounces",
+      "amount": 8.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "8 ounces wild Alaskan Salmon filets, cooked and flaked into pieces",
+      "name": "salmon filets"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "pinch",
+      "amount": 1.0,
+      "unitShort": "pinch",
+      "metaInformation": [],
+      "unit": "pinch",
+      "originalString": "1 pinch salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons shallot, finely minced",
+      "name": "shallot"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup water",
+      "name": "water"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup whole wheat pastry flour",
+      "name": "whole wheat pastry flour"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/salmon-and-broccoli-crepes-659037",
+  "weightWatcherSmartPoints": 6,
+  "id": 659037,
+  "image": "https://spoonacular.com/recipeImages/Salmon-and-Broccoli-Crepes-659037.jpg",
+  "servings": 4,
+  "whole30": false,
+  "lowFodmap": false
+}

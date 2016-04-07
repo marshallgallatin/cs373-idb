@@ -1,1 +1,129 @@
-{"vegetarian": false, "glutenFree": false, "title": "British Treacle Tart", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/3LH62BBP/british-treacle-tart", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Combine flour, salt and confectioners sugar in a large bowl.  Using tips of fingers, rub butter into flour until it looks mostly like wet sand.  Make a well in the middle, and pour in the egg.  Gradually work the egg into the flour until a moist dough forms, using the heel of your hand to distribute any remaining large pieces of butter. Shape into a 5-inch disk and cover with plastic wrap.  Refrigerate for 1 hour. This can be done in a food processor.</li><li>Roll out dough into a 13-inch circle. Lay dough into an 11-inch tart pan with a removable bottom, and press against the sides to secure dough. Refrigerate for one hour.</li><li>Preheat oven to 325 F.  Dock the bottom of the crust with a fork, lay a large, crumpled piece of parchment on top, and pour in pie weights (or a pound of dried beans). Bake for 25 minutes, until crust is a light golden brown. Set aside.</li><li>Increase the temperature to 350 F</li><li>Mix together the golden syrup and molasses with the lemon juice. Beat the eggs in a bowl and add to the treacle mixture. Finally stir in the bread crumbs.</li><li>Pour the mixture into the prepared tart case.</li><li>Bake for 20  25 minutes until the crust and filling are golden brown and firm to the touch. You may have to cover the crust with aluminum foil to keep it from getting too brown or burning.</li><li>Serve warm with crme fraiche which balances really well with the sweetness of the tart or a good vanilla ice cream.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup butter", "name": "butter"}, {"aisle": "Baking", "unitLong": "ounces", "amount": 10.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "10 ounces golden syrup", "name": "corn syrup"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 large egg, lightly beaten", "name": "egg"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 4.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "4 medium eggs", "name": "eggs"}, {"aisle": "Baking", "unitLong": "cups", "amount": 1.75, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "1 3/4 cups all-purpose flour", "name": "flour"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "ounce", "amount": 1.0, "unitShort": "oz", "metaInformation": [], "unit": "ounce", "originalString": "1 ounce fresh bread crumbs", "name": "fresh bread crumbs"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 Zest and juice of lemon", "name": "juice of lemon"}, {"aisle": "Baking", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon molasses", "name": "molasses"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon salt", "name": "salt"}, {"aisle": "Baking", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup confectioner's sugar", "name": "sugar"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/british-treacle-tart-636136", "weightWatcherSmartPoints": 181, "id": 636136, "image": "https://spoonacular.com/recipeImages/British-Treacle-Tart-636136.jpg", "servings": 1, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "British Treacle Tart",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/3LH62BBP/british-treacle-tart",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Combine flour, salt and confectioners sugar in a large bowl.  Using tips of fingers, rub butter into flour until it looks mostly like wet sand.  Make a well in the middle, and pour in the egg.  Gradually work the egg into the flour until a moist dough forms, using the heel of your hand to distribute any remaining large pieces of butter. Shape into a 5-inch disk and cover with plastic wrap.  Refrigerate for 1 hour. This can be done in a food processor.</li><li>Roll out dough into a 13-inch circle. Lay dough into an 11-inch tart pan with a removable bottom, and press against the sides to secure dough. Refrigerate for one hour.</li><li>Preheat oven to 325 F.  Dock the bottom of the crust with a fork, lay a large, crumpled piece of parchment on top, and pour in pie weights (or a pound of dried beans). Bake for 25 minutes, until crust is a light golden brown. Set aside.</li><li>Increase the temperature to 350 F</li><li>Mix together the golden syrup and molasses with the lemon juice. Beat the eggs in a bowl and add to the treacle mixture. Finally stir in the bread crumbs.</li><li>Pour the mixture into the prepared tart case.</li><li>Bake for 20  25 minutes until the crust and filling are golden brown and firm to the touch. You may have to cover the crust with aluminum foil to keep it from getting too brown or burning.</li><li>Serve warm with crme fraiche which balances really well with the sweetness of the tart or a good vanilla ice cream.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup butter",
+      "name": "butter"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "ounces",
+      "amount": 10.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "10 ounces golden syrup",
+      "name": "corn syrup"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 large egg, lightly beaten",
+      "name": "egg"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 4.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "4 medium eggs",
+      "name": "eggs"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 1.75,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "1 3/4 cups all-purpose flour",
+      "name": "flour"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "ounce",
+      "amount": 1.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounce",
+      "originalString": "1 ounce fresh bread crumbs",
+      "name": "fresh bread crumbs"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 Zest and juice of lemon",
+      "name": "lemon juice"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon molasses",
+      "name": "molasses"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup confectioner's sugar",
+      "name": "sugar"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/british-treacle-tart-636136",
+  "weightWatcherSmartPoints": 181,
+  "id": 636136,
+  "image": "https://spoonacular.com/recipeImages/British-Treacle-Tart-636136.jpg",
+  "servings": 1,
+  "whole30": false,
+  "lowFodmap": false
+}

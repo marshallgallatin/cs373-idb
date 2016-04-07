@@ -1,0 +1,139 @@
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Jordanian Mansaf",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/6M5XWNHX/jordanian-mansaf",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>IN A LARGE POT BEFORE TURNING ON HEAT MIX IN ALL YOGuRT</li><li>ON HIGH HEAT BRING YOGuRT (Or Jameed) TO A BOIL. (VERY IMPORTANT) MAKE SURE WHILE BRINGING YOGuRT TO BOIL, YOU ARE CONSTANTLY STIRRING YOGART WITH A WOODEN LADLE ONE WAY ONLY. SO IF YOU STARTED STIRRING TO THE LEFT YOU MUST KEEP STIRRING THAT WAY UNTIL YOGurT STARTS TO BOIL.</li><li>ONCE YOGuRT BOILS TURN HEAT OFF.</li><li>IN ANOTHER POT COVER lamb shanks or CUT UP LAMB (WITH BONES) WITH WATER.</li><li>ADD 1/4 OF AN ONION.</li><li>BOIL UNTIL LAMB IS TENDER.</li><li>REMOVE LAMB AND STRAIN WATER (LAMB BROTH) TO REMOVE ANY SMALL PARTICALS.</li><li>ADD ABOUT 2-3 CUPS OF THE WATER (LAMB BROTH ) TO THE POT OF COOKED YOGART.</li><li>Add salt to taste and if not tart enough you may add juice from about 1/2 a lemon.</li><li>Add lamb meat to the yogart and broth mixture (make sure to remove the onion)and let boil one more time.</li><li>Cook rice with 1 cup of butter</li><li>Brown almonds and pine nuts in remaining butter.</li><li>Once rice is cooked remove it from pot and place it in a large round platter, then spread half of the nuts on top of rice, then place lamb meat over rice and nuts, then spread remaining nuts over entire platter</li><li>Place the cooked yogurt in a large serving bowl</li><li>When serving put Arabic bread and wet it with some yogurt, then add rice and meat in individual plates and spread cooked yogurt and slivered nuts over it.</li><li>Enjoy</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Bakery/Bread",
+      "unitLong": "",
+      "amount": 6.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "6 loaves Arabic Flat Bread",
+      "name": "flat bread"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 Kilos LARGE CUT UP PEACES OF LAMB (WITH BONES) or Lamb Shanks",
+      "name": "lamb"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "liters",
+      "amount": 2.0,
+      "unitShort": "l",
+      "metaInformation": [],
+      "unit": "liters",
+      "originalString": "2 Liters WATER TO BOIL MEAT",
+      "name": "water"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 Larges ONION",
+      "name": "onions"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup FRIED PINE NUTS",
+      "name": "pine nuts"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "cups",
+      "amount": 3.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "3 cups RICE ( Short grain or any of your choice)",
+      "name": "rice"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cups",
+      "amount": 1.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "1 1/2 cups BUTTER",
+      "name": "butter"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "kilogram",
+      "amount": 1.0,
+      "unitShort": "kg",
+      "metaInformation": [],
+      "unit": "kilogram",
+      "originalString": "1 Kilo CONTAINER PLAIN whole milk YOGURT (Or you can just use JAMEED)",
+      "name": "yogurt"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "serving",
+      "amount": 6.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "Salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "tsp",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon Cumin, Turmeric, and any other spices if desired for",
+      "name": "cumin"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cup",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup SLIVERED ALMONDS",
+      "name": "slivered almonds"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/jordanian-mansaf-648615",
+  "weightWatcherSmartPoints": 43,
+  "id": 648615,
+  "image": "https://spoonacular.com/recipeImages/Jordanian-Mansaf-648615.jpg",
+  "servings": 6,
+  "whole30": false,
+  "lowFodmap": false
+}

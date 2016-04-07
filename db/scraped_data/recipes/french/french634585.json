@@ -1,1 +1,189 @@
-{"vegetarian": false, "glutenFree": false, "title": "Beef Bourguignon Pie With Mushy Green Pea", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/27N24DMJ/beef-bourguignon-pie-with-mushy-green-pea", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Making beef bourguignon</li><li>Cook bacon on medium heat until crispy. Absorb the excessive fat with paper and rest</li><li>In the same pan, add onions and cook until browned (approx. 3-5 minutes) and remove from pan</li><li>Add olive oil onto the same pan, cook mushrooms until browned and remove from pan</li><li>In the same pan, cook beef until browned. Then add cooked bacon and onions together with thyme and tomato paste. Stir fry until well combined.</li><li>Add wine and stock in and bring it to boil. Reduce to low heat and let it simmer (covered) for 1 hour</li><li>Add cooked mushrooms and continue to let it simmered (uncovered) until beef is tender (approx. 40-45 minutes). Then add in the parsley.</li><li>Making puff pie lid</li><li>Preheat the oven to 200'c (390'f) fan forced</li><li>Cut the puff pastry sheet to fit your baking dishes. Use cookie cutters to make creative shapes to decorate your puff pie lid such as flowers or alphabets or words (e.g. name, love etc). Bake the pastry on oil sprayed tray until light golden browned (5-10 minutes). Your tray must be at the middle of your fan oven.</li><li>Making mushy pea</li><li>On medium heat, cook onion until light golden browned.</li><li>Add cream and stock and bring to boil. Reduce heat to low and let it simmer for a few minutes.</li><li>Turn the heat off and mash it with folk gently. Season with salt and pepper.</li><li>To serve, spoon the beef bourguignon onto a baking dish (microwaved so it is warm). Close with the puff pie lid and serve with mushy green pea in another baking dish.</li></ol>", "aggregateLikes": 6, "dairyFree": false, "extendedIngredients": [{"aisle": "Meat", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 smalls bacon rasher, sliced to strips", "name": "bacon"}, {"aisle": "Canned and Jarred", "unitLong": "grams", "amount": 500.0, "unitShort": "g", "metaInformation": [], "unit": "grams", "originalString": "500 grams of gravy beef, trimmed and cut into 2cm pieces, coated in pl", "name": "beef gravy"}, {"aisle": "Canned and Jarred", "unitLong": "milliliters", "amount": 200.0, "unitShort": "ml", "metaInformation": [], "unit": "ml", "originalString": "200 ml of beef stock", "name": "beef stock"}, {"aisle": "Produce", "unitLong": "grams", "amount": 200.0, "unitShort": "g", "metaInformation": [], "unit": "grams", "originalString": "200 grams of button mushrooms", "name": "button mushrooms"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons of cream", "name": "cream"}, {"aisle": "Alcoholic Beverages", "unitLong": "milliliters", "amount": 80.0, "unitShort": "ml", "metaInformation": [], "unit": "ml", "originalString": "80 ml of dry red wine", "name": "dry red wine"}, {"aisle": "Spices and Seasonings", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup of finely chopped fresh flat leaf parsley", "name": "fresh flat leaf parsley"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon of fresh thyme leaves", "name": "fresh thyme leaves"}, {"aisle": "Produce", "unitLong": "cups", "amount": 2.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "2 cups of green peas thawed", "name": "green peas"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon of olive oil 2 tablespoons of finely chopped brown onion", "name": "olive oil"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 teaspoons of olive oil", "name": "olive oil"}, {"aisle": "Produce", "unitLong": "", "amount": 4.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "4 pickling onions, peeled and halved", "name": "onions"}, {"aisle": "Frozen", "unitLong": "sheet", "amount": 1.0, "unitShort": "sheet", "metaInformation": [], "unit": "sheet", "originalString": "1 sheet of ready rolled butter puff pastry", "name": "puff pastry"}, {"aisle": "Spices and Seasonings", "unitLong": "pinch", "amount": 1.0, "unitShort": "pinch", "metaInformation": [], "unit": "pinch", "originalString": "A pinch of salt and pepper", "name": "Salt & Pepper"}, {"aisle": "Pasta and Rice", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 teaspoons of tomato paste", "name": "tomato paste"}, {"aisle": "Canned and Jarred", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons of vegetable stock", "name": "vegetable stock"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/beef-bourguignon-pie-with-mushy-green-pea-634585", "weightWatcherSmartPoints": 40, "id": 634585, "image": "https://spoonacular.com/recipeImages/Beef-Bourguignon-Pie-With-Mushy-Green-Pea-634585.jpg", "servings": 2, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Beef Bourguignon Pie With Mushy Green Pea",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/27N24DMJ/beef-bourguignon-pie-with-mushy-green-pea",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Making beef bourguignon</li><li>Cook bacon on medium heat until crispy. Absorb the excessive fat with paper and rest</li><li>In the same pan, add onions and cook until browned (approx. 3-5 minutes) and remove from pan</li><li>Add olive oil onto the same pan, cook mushrooms until browned and remove from pan</li><li>In the same pan, cook beef until browned. Then add cooked bacon and onions together with thyme and tomato paste. Stir fry until well combined.</li><li>Add wine and stock in and bring it to boil. Reduce to low heat and let it simmer (covered) for 1 hour</li><li>Add cooked mushrooms and continue to let it simmered (uncovered) until beef is tender (approx. 40-45 minutes). Then add in the parsley.</li><li>Making puff pie lid</li><li>Preheat the oven to 200'c (390'f) fan forced</li><li>Cut the puff pastry sheet to fit your baking dishes. Use cookie cutters to make creative shapes to decorate your puff pie lid such as flowers or alphabets or words (e.g. name, love etc). Bake the pastry on oil sprayed tray until light golden browned (5-10 minutes). Your tray must be at the middle of your fan oven.</li><li>Making mushy pea</li><li>On medium heat, cook onion until light golden browned.</li><li>Add cream and stock and bring to boil. Reduce heat to low and let it simmer for a few minutes.</li><li>Turn the heat off and mash it with folk gently. Season with salt and pepper.</li><li>To serve, spoon the beef bourguignon onto a baking dish (microwaved so it is warm). Close with the puff pie lid and serve with mushy green pea in another baking dish.</li></ol>",
+  "aggregateLikes": 6,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Meat",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 smalls bacon rasher, sliced to strips",
+      "name": "bacon"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "grams",
+      "amount": 500.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "grams",
+      "originalString": "500 grams of gravy beef, trimmed and cut into 2cm pieces, coated in pl",
+      "name": "beef gravy"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "milliliters",
+      "amount": 200.0,
+      "unitShort": "ml",
+      "metaInformation": [],
+      "unit": "ml",
+      "originalString": "200 ml of beef stock",
+      "name": "beef stock"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "grams",
+      "amount": 200.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "grams",
+      "originalString": "200 grams of button mushrooms",
+      "name": "button mushrooms"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons of cream",
+      "name": "cream"
+    },
+    {
+      "aisle": "Alcoholic Beverages",
+      "unitLong": "milliliters",
+      "amount": 80.0,
+      "unitShort": "ml",
+      "metaInformation": [],
+      "unit": "ml",
+      "originalString": "80 ml of dry red wine",
+      "name": "dry red wine"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup of finely chopped fresh flat leaf parsley",
+      "name": "fresh flat leaf parsley"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon of fresh thyme leaves",
+      "name": "fresh thyme leaves"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 cups of green peas thawed",
+      "name": "green peas"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "1 teaspoon of olive oil 2 tablespoons of finely chopped brown onion",
+      "name": "onion"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 teaspoons of olive oil",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 4.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "4 pickling onions, peeled and halved",
+      "name": "onions"
+    },
+    {
+      "aisle": "Frozen",
+      "unitLong": "sheet",
+      "amount": 1.0,
+      "unitShort": "sheet",
+      "metaInformation": [],
+      "unit": "sheet",
+      "originalString": "1 sheet of ready rolled butter puff pastry",
+      "name": "puff pastry"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "pinch",
+      "amount": 1.0,
+      "unitShort": "pinch",
+      "metaInformation": [],
+      "unit": "pinch",
+      "originalString": "A pinch of salt and pepper",
+      "name": "salt and pepper"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 teaspoons of tomato paste",
+      "name": "tomato paste"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons of vegetable stock",
+      "name": "vegetable stock"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/beef-bourguignon-pie-with-mushy-green-pea-634585",
+  "weightWatcherSmartPoints": 40,
+  "id": 634585,
+  "image": "https://spoonacular.com/recipeImages/Beef-Bourguignon-Pie-With-Mushy-Green-Pea-634585.jpg",
+  "servings": 2,
+  "whole30": false,
+  "lowFodmap": false
+}

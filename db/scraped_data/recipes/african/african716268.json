@@ -1,1 +1,169 @@
-{"vegetarian": false, "glutenFree": true, "title": "African Chicken Peanut Stew", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.afrolems.com/2014/03/18/african-chicken-peanut-stew-recipe/", "sourceName": "Afrolems", "vegan": false, "sustainable": false, "instructions": "Season and Boil the Chicken for 10 minutes with salt, pepper, seasoning, a handful of onions.Once the\u00a0chicken is ready, in the same stock, Boil the\u00a0chopped sweet potatoes till its almost cooked. Save the stock in a separate Bowl and the\u00a0chicken and potatoes in a separate Bowl as well.In a pot, heat up one\u00a0cooking spoon of oil and fry the\u00a0chicken till it Browns. Take it out and heat up the other 1.5\u00a0cooking spoons of oil and fry the onions, tomatoes Both chopped and Blended, ginger and garlic.Add your seasoning, curry, thyme, parsley,\u00a0salt and pepper to the pot.Pour in your stock,\u00a0chicken and potatoes to\u00a0cook further.Stir in your peanut Butter and allow to\u00a0cook for 10 minutes on low heat.If your sauce gets too thick, add a little water to it. Serve with white rice or more sweet potatoes.You could also garnish the dish with Bell peppers.\u00a0\u00a0\u00a0", "aggregateLikes": 124, "dairyFree": true, "extendedIngredients": [{"aisle": "Produce", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "Bell Peppers for garnishing", "name": "bell peppers"}, {"aisle": "Meat", "unitLong": "Cups", "amount": 1.5, "unitShort": "Cups", "metaInformation": [], "unit": "Cups", "originalString": "1.5 Cups of Chopped Chicken", "name": "chicken"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "", "amount": 2.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2.5 Cooking spoons of oil", "name": "cooking oil"}, {"aisle": "Ethnic Foods", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon of Curry", "name": "curry paste"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 garlic cloves", "name": "garlic cloves"}, {"aisle": "Ethnic Foods", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "piece", "originalString": "Small piece of Chopped ginger", "name": "ginger"}, {"aisle": "Produce", "unitLong": "handfuls", "amount": 2.0, "unitShort": "handfuls", "metaInformation": [], "unit": "handfuls", "originalString": "2 handfuls of Chopped onions", "name": "onions"}, {"aisle": "Spices and Seasonings", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "Pepper", "name": "pepper"}, {"aisle": "Spices and Seasonings", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "Salt", "name": "salt"}, {"aisle": "Spices and Seasonings", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "Seasoning", "name": "seasoning mix"}, {"aisle": "Produce", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1/2 small sweet potato (Chopped)", "name": "sweet potato"}, {"aisle": "Spices and Seasonings", "unitLong": "pinch", "amount": 1.0, "unitShort": "pinch", "metaInformation": [], "unit": "pinch", "originalString": "Pinch of thyme", "name": "thyme"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 Chopped small tomato", "name": "tomato"}, {"aisle": "Produce", "unitLong": "", "amount": 1.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1.5 Cooking spoons of Blended tomato", "name": "tomato"}, {"aisle": "?", "unitLong": "Cup", "amount": 1.0, "unitShort": "Cup", "metaInformation": ["(Blended)"], "unit": "Cup", "originalString": "1 Cup of groundnut (Blended) or 1 Cooking spoon of peanut Butter", "name": "groundnut"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Afrolems", "license": "CC BY 4.0", "spoonacularSourceUrl": "https://spoonacular.com/african-chicken-peanut-stew-716268", "weightWatcherSmartPoints": 8, "id": 716268, "image": "https://spoonacular.com/recipeImages/african-chicken-peanut-stew-716268.jpg", "servings": 1, "whole30": true, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "African Chicken Peanut Stew",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.afrolems.com/2014/03/18/african-chicken-peanut-stew-recipe/",
+  "sourceName": "Afrolems",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "Season and Boil the Chicken for 10 minutes with salt, pepper, seasoning, a handful of onions.Once the chicken is ready, in the same stock, Boil the chopped sweet potatoes till its almost cooked. Save the stock in a separate Bowl and the chicken and potatoes in a separate Bowl as well.In a pot, heat up one cooking spoon of oil and fry the chicken till it Browns. Take it out and heat up the other 1.5 cooking spoons of oil and fry the onions, tomatoes Both chopped and Blended, ginger and garlic.Add your seasoning, curry, thyme, parsley, salt and pepper to the pot.Pour in your stock, chicken and potatoes to cook further.Stir in your peanut Butter and allow to cook for 10 minutes on low heat.If your sauce gets too thick, add a little water to it. Serve with white rice or more sweet potatoes.You could also garnish the dish with Bell peppers.   ",
+  "aggregateLikes": 124,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "Bell Peppers for garnishing",
+      "name": "bell peppers"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "Cups",
+      "amount": 1.5,
+      "unitShort": "Cups",
+      "metaInformation": [],
+      "unit": "Cups",
+      "originalString": "1.5 Cups of Chopped Chicken",
+      "name": "chicken"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 2.5,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2.5 Cooking spoons of oil",
+      "name": "oil"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon of Curry",
+      "name": "curry paste"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 2.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "2 garlic cloves",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "piece",
+      "originalString": "Small piece of Chopped ginger",
+      "name": "ginger"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "handfuls",
+      "amount": 2.0,
+      "unitShort": "handfuls",
+      "metaInformation": [],
+      "unit": "handfuls",
+      "originalString": "2 handfuls of Chopped onions",
+      "name": "onions"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "Pepper",
+      "name": "pepper"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "Salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 small sweet potato (Chopped)",
+      "name": "sweet potato"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "pinch",
+      "amount": 1.0,
+      "unitShort": "pinch",
+      "metaInformation": [],
+      "unit": "pinch",
+      "originalString": "Pinch of thyme",
+      "name": "thyme"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 Chopped small tomato",
+      "name": "tomato"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "cups",
+      "amount": 1.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "1.5 cups of Blended tomato",
+      "name": "canned tomato sauce"
+    },
+    {
+      "aisle": "Nut butters, Jams, and Honey",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup of groundnut (Blended) or peanut Butter",
+      "name": "peanut butter"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Afrolems",
+  "license": "CC BY 4.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/african-chicken-peanut-stew-716268",
+  "weightWatcherSmartPoints": 8,
+  "id": 716268,
+  "image": "https://spoonacular.com/recipeImages/african-chicken-peanut-stew-716268.jpg",
+  "servings": 1,
+  "whole30": true,
+  "lowFodmap": false
+}

@@ -1,0 +1,69 @@
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Dulce De Leche Shortbread Cookies",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/8ZXY64NT/dulce-de-leche-shortbread-cookies",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Using your fingers, combine all the ingredients to make a uniform dough. If it seems a little dry (like mine was) add in a TSP of cold water until it is the correct dough consistency.</li><li>Roll out to 1/2 inch thickness  I was in a place with no rolling pin when I was making these so I used a wine bottle, it works really well if you are in a pinch!</li><li>Cut them into circles  I used a shot glass and that was actually the perfect size! They were either 1 big bite or 2 little ones, just enough at one time.</li><li>Dont forget to keep using your scraps to make more cookies.</li><li>Bake the cookies at 350 F for 10-15 minutes on a parchment lined cookie sheet.</li><li>When the cookies are cool, spread with 1 TBSP dulce de leche. If you want, sprinkle with either pink himalaya salt or sea salt. Enjoy!</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 cups organic flour",
+      "name": "flour"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup organic sugar",
+      "name": "sugar"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "sticks",
+      "amount": 1.5,
+      "unitShort": "sticks",
+      "metaInformation": [],
+      "unit": "sticks",
+      "originalString": "1 1/2 sticks cold salted butter cut into small pieces",
+      "name": "salted butter"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon vanilla",
+      "name": "vanilla"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/dulce-de-leche-shortbread-cookies-641731",
+  "weightWatcherSmartPoints": 135,
+  "id": 641731,
+  "image": "https://spoonacular.com/recipeImages/Dulce-De-Leche-Shortbread-Cookies-641731.jpg",
+  "servings": 1,
+  "whole30": false,
+  "lowFodmap": false
+}

@@ -1,1 +1,189 @@
-{"vegetarian": false, "glutenFree": true, "title": "Gluten Free Dairy Free Sugar Free Chinese Chicken Salad", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/ZSNGMXBF/gluten-free-dairy-free-sugar-free-chinese-chicken-salad", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>For the salad:</li><li>Finely slice the red, and green cabbage.</li><li>Remove ends and finely slice romaine lettuce.</li><li>Trim ends of scallions (white and green side) and finely slice.</li><li>Peel and grate carrots, or put into a mini food processor to finely chop.</li><li>Peel clementines then remove pith from slices.</li><li>Add all the ingredients into a large serving bowl.</li><li>For the dressing:</li><li>Add all the ingredients into a glass jar and shake until well blended, or whisk all the ingredients in a mixing bowl.</li><li>Pour dressing over salad, toss to combine well.</li><li>If making ahead, dress the salad just before serving.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "milliliters", "amount": 5.0, "unitShort": "ml", "metaInformation": [], "unit": "ml", "originalString": "1 tsp. (5ml) of organic apple cider vinegar", "name": "apple cider vinegar"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon crushed black pepper", "name": "black pepper"}, {"aisle": "Spices and Seasonings", "unitLong": "tablespoons", "amount": 1.5, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "1 1/2 tablespoons black sesame seeds", "name": "black sesame seeds"}, {"aisle": "Produce", "unitLong": "", "amount": 3.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "3 carrots", "name": "carrots"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "Cs", "amount": 0.25, "unitShort": "C", "metaInformation": [], "unit": "C", "originalString": "1/4 C extra virgin olive oil + 7-8 Tbsp for frying", "name": "extra virgin olive oil"}, {"aisle": "Produce", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1/2 green cabbage", "name": "green cabbage"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon kosher salt", "name": "kosher salt"}, {"aisle": "Produce", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1/2 red cabbage", "name": "red cabbage"}, {"aisle": "Meat", "unitLong": "", "amount": 3.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "3 chicken breasts (bone in, preferably organic) roasted and shredded", "name": "chicken breasts"}, {"aisle": "Produce", "unitLong": "bunches", "amount": 2.0, "unitShort": "bunches", "metaInformation": [], "unit": "bunches", "originalString": "2 bunches romaine lettuce hearts", "name": "romaine hearts"}, {"aisle": "Produce", "unitLong": "", "amount": 6.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "6 scallions", "name": "scallions"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoons", "amount": 3.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "3 tablespoons sesame oil", "name": "sesame oil"}, {"aisle": "Canned and Jarred", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "juice of 1 mandarin (cut crosswise then tablespoon into jar over a strainer)", "name": "sweet pickle juice from the jar"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoons", "amount": 3.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "3 tablespoons white sesame seeds", "name": "white sesame seeds"}, {"aisle": "Baking", "unitLong": "tablespoons", "amount": 1.5, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "1 1/2 tablespoons xylitol (I use Epic Dental brand)", "name": "xylitol"}, {"aisle": "?", "unitLong": "", "amount": 6.0, "unitShort": "", "metaInformation": ["fresh"], "unit": "", "originalString": "6-8 fresh satsuma mandarins", "name": "satsuma mandarins"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/gluten-free-dairy-free-sugar-free-chinese-chicken-salad-644826", "weightWatcherSmartPoints": 4, "id": 644826, "image": "https://spoonacular.com/recipeImages/Gluten-Free-Dairy-Free-Sugar-Free-Chinese-Chicken-Salad-644826.jpg", "servings": 6, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Gluten Free Dairy Free Sugar Free Chinese Chicken Salad",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/ZSNGMXBF/gluten-free-dairy-free-sugar-free-chinese-chicken-salad",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>For the salad:</li><li>Finely slice the red, and green cabbage.</li><li>Remove ends and finely slice romaine lettuce.</li><li>Trim ends of scallions (white and green side) and finely slice.</li><li>Peel and grate carrots, or put into a mini food processor to finely chop.</li><li>Peel clementines then remove pith from slices.</li><li>Add all the ingredients into a large serving bowl.</li><li>For the dressing:</li><li>Add all the ingredients into a glass jar and shake until well blended, or whisk all the ingredients in a mixing bowl.</li><li>Pour dressing over salad, toss to combine well.</li><li>If making ahead, dress the salad just before serving.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "milliliters",
+      "amount": 5.0,
+      "unitShort": "ml",
+      "metaInformation": [],
+      "unit": "ml",
+      "originalString": "1 tsp. (5ml) of organic apple cider vinegar",
+      "name": "apple cider vinegar"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon crushed black pepper",
+      "name": "black pepper"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoons",
+      "amount": 1.5,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "1 1/2 tablespoons black sesame seeds",
+      "name": "black sesame seeds"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 3.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "3 carrots",
+      "name": "carrots"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "Cs",
+      "amount": 0.25,
+      "unitShort": "C",
+      "metaInformation": [],
+      "unit": "C",
+      "originalString": "1/4 C extra-virgin olive oil + 7-8 Tbsp for frying",
+      "name": "extra-virgin olive oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 green cabbage",
+      "name": "green cabbage"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon kosher salt",
+      "name": "kosher salt"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 red cabbage",
+      "name": "red cabbage"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "",
+      "amount": 3.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "3 chicken breasts (bone in, preferably organic) roasted and shredded",
+      "name": "chicken breasts"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "bunches",
+      "amount": 2.0,
+      "unitShort": "bunches",
+      "metaInformation": [],
+      "unit": "bunches",
+      "originalString": "2 bunches romaine lettuce hearts",
+      "name": "romaine hearts"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 6.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "6 scallions",
+      "name": "scallions"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoons",
+      "amount": 3.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "3 tablespoons sesame oil",
+      "name": "sesame oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "juice of 1 mandarin (cut crosswise then tablespoon into jar over a strainer)",
+      "name": "tangerine juice"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoons",
+      "amount": 3.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "3 tablespoons white sesame seeds",
+      "name": "white sesame seeds"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "tablespoons",
+      "amount": 1.5,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "1 1/2 tablespoons xylitol (I use Epic Dental brand)",
+      "name": "xylitol"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 6.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "6-8 fresh satsuma mandarins",
+      "name": "tangerines"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/gluten-free-dairy-free-sugar-free-chinese-chicken-salad-644826",
+  "weightWatcherSmartPoints": 4,
+  "id": 644826,
+  "image": "https://spoonacular.com/recipeImages/Gluten-Free-Dairy-Free-Sugar-Free-Chinese-Chicken-Salad-644826.jpg",
+  "servings": 6,
+  "whole30": false,
+  "lowFodmap": false
+}

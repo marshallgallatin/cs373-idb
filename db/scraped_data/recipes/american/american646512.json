@@ -1,1 +1,129 @@
-{"vegetarian": false, "glutenFree": true, "title": "Salmon Caesar Salad", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/36WZD7DS/healthy-salmon-caesar-salad-recipe", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Directions: Heat up a skillet/frying pan and sir the Salmon in the coconut oil/olive oil (don't forget to add the salt and paprika to it) until very lightly browned on each side (i like my salmon slightly undercooked-its up to you if you want it more done). Top with freshly squeezed lemon juice and let it sit in the frying pan for about 1 minute. In a Large bowl, mix the romaine lettuce with the Caesar salad dressing and dump it out into a large plate, top off with Asiago/Parmesan cheese and you can also sprinkle the toasted almonds on now. Place the Salmon (sliced) on top. You can sprinkle it with some more fresh lemon juice:) and black pepper!</li></ol>", "aggregateLikes": 4, "dairyFree": false, "extendedIngredients": [{"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons light caesar dressing", "name": "caesar dressing"}, {"aisle": "Produce", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons freshly squeezed lemon juice", "name": "lemon juice"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon Olive oil", "name": "olive oil"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.25, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/4 teaspoon paprika", "name": "paprika"}, {"aisle": "Cheese", "unitLong": "tablespoons", "amount": 8.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "8 tablespoons Parmesan cheese, shredded", "name": "parmesan cheese"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "add black pepper to taste", "name": "pepper"}, {"aisle": "Produce", "unitLong": "ounces", "amount": 8.0, "unitShort": "oz", "metaInformation": [], "unit": "oz", "originalString": "1 8 oz head of Romaine", "name": "romaine"}, {"aisle": "Seafood", "unitLong": "ounces", "amount": 6.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "6 ounces Salmon fillet", "name": "salmon fillet"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.25, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/4 teaspoon salt", "name": "salt"}, {"aisle": "Baking", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon slivered almonds", "name": "slivered almonds"}], "readyInMinutes": 45, "ketogenic": true, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/salmon-caesar-salad-646512", "weightWatcherSmartPoints": 10, "id": 646512, "image": "https://spoonacular.com/recipeImages/Healthy-Salmon-Caesar-Salad-646512.jpg", "servings": 2, "whole30": false, "lowFodmap": true}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Salmon Caesar Salad",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/36WZD7DS/healthy-salmon-caesar-salad-recipe",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Directions: Heat up a skillet/frying pan and sir the Salmon in the coconut oil/olive oil (don't forget to add the salt and paprika to it) until very lightly browned on each side (i like my salmon slightly undercooked-its up to you if you want it more done). Top with freshly squeezed lemon juice and let it sit in the frying pan for about 1 minute. In a Large bowl, mix the romaine lettuce with the Caesar salad dressing and dump it out into a large plate, top off with Asiago/Parmesan cheese and you can also sprinkle the toasted almonds on now. Place the Salmon (sliced) on top. You can sprinkle it with some more fresh lemon juice:) and black pepper!</li></ol>",
+  "aggregateLikes": 4,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons light caesar dressing",
+      "name": "caesar dressing"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons freshly squeezed lemon juice",
+      "name": "lemon juice"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon Olive oil",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.25,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/4 teaspoon paprika",
+      "name": "paprika"
+    },
+    {
+      "aisle": "Cheese",
+      "unitLong": "tablespoons",
+      "amount": 8.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "8 tablespoons Parmesan cheese, shredded",
+      "name": "parmesan cheese"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "add black pepper to taste",
+      "name": "pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "ounces",
+      "amount": 8.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "oz",
+      "originalString": "1 8 oz head of Romaine",
+      "name": "romaine"
+    },
+    {
+      "aisle": "Seafood",
+      "unitLong": "ounces",
+      "amount": 6.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "6 ounces Salmon fillet",
+      "name": "salmon fillet"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.25,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/4 teaspoon salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon slivered almonds",
+      "name": "slivered almonds"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": true,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/salmon-caesar-salad-646512",
+  "weightWatcherSmartPoints": 10,
+  "id": 646512,
+  "image": "https://spoonacular.com/recipeImages/Healthy-Salmon-Caesar-Salad-646512.jpg",
+  "servings": 2,
+  "whole30": false,
+  "lowFodmap": true
+}

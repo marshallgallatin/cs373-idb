@@ -1,0 +1,209 @@
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Turkey Kofta Pitas",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/BJJCX8VL/turkey-kofta-pitas",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Mix the ground turkey with the yellow onion, garlic, cumin, coriander, turmeric, parsley, egg, 2 tbsp olive oil, salt, and pepper. Make sure they are evenly distributed. Make into 1 inch thick patties. Add olive oil to frying pan over medium high heat. Once hot, place some of the turkey patties and cook 4 minutes per side. Cook in batches until all are finished. Set aside.</li><li>Meanwhile, make tzatziki. In a small bowl, add Greek yogurt, dill, lemon juice, and pepper. Refrigerate until ready to use.</li><li>To make pitas, place 2 turkey patties into each pita pocket half. Add  a tomato, a few slices of red onion, some parsley, tzatziki and hummus. Enjoy!</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1 tsp Coriander",
+      "name": "coriander"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1 tsp Cumin",
+      "name": "cumin"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "2 tsp Dill, Finely Chopped",
+      "name": "fresh dill"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 egg",
+      "name": "egg"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 3.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "3 cloves garlic, minced",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "½ cup nonfat greek yogurt",
+      "name": "greek yogurt"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pounds",
+      "amount": 2.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "lbs",
+      "originalString": "2 lbs ground turkey",
+      "name": "ground turkey"
+    },
+    {
+      "aisle": "Refrigerated",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "¼ cup hummus",
+      "name": "hummus"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "½ lemon, juiced",
+      "name": "lemon juice"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tbsp",
+      "originalString": "2 tbsp Olive OIl",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "¼ cup parsley, chopped",
+      "name": "parsley"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "2 tsp Pepper",
+      "name": "pepper"
+    },
+    {
+      "aisle": "Bakery/Bread",
+      "unitLong": "",
+      "amount": 4.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "4 whole-wheat pitas",
+      "name": "pita bread"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.25,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "¼ Red Onion, thinly sliced",
+      "name": "red onion"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1 tsp Salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 tomato, cut into ¼ inch slices, then halved",
+      "name": "tomato"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1 tsp Turmeric",
+      "name": "turmeric"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "½ yellow onion, finely chopped",
+      "name": "yellow onion"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/turkey-kofta-pitas-664037",
+  "weightWatcherSmartPoints": 11,
+  "id": 664037,
+  "image": "https://spoonacular.com/recipeImages/Turkey-Kofta-Pitas-664037.jpg",
+  "servings": 4,
+  "whole30": false,
+  "lowFodmap": false
+}

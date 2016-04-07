@@ -1,1 +1,169 @@
-{"vegetarian": false, "glutenFree": true, "title": "Lemony Greek Lentil Soup", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/KV6GLYDK/lemony-greek-lentil-soup", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Put the lentils, water, carrot and 1 teaspoon dried thyme into an 8-quart stockpot, cover and set over medium heat.</li><li>After 15 minutes, lower the heat somewhat and gently bring the water to a simmer, which should take another half an hour or so.</li><li>Once the lentils have reached the boiling point, turn off the burner and let them sit for 1 hour.</li><li>After the hour, bring the soup back to a simmer and add the lemon juice, dry basil, fresh thyme, oregano, pepper and salt and simmer for 1 hour.</li><li>Now, slowly saut the onion and garlic in the olive oil until the onion is tender.</li><li>Coarsely chop the tomatoes (I do this with kitchen scissors right in the can), and add them and the onion mixture to the soup. Adjust the salt to taste.</li><li>Bring everything back to the boiling point and simmer for another hour.  After this point, you can turn your burner to its lowest setting, and this soup will happily sit steaming with its lid cocked for several hours until you are ready to enjoy it.  Add more water if necessary.</li><li>Serve with crusty bread and a soft cheese like St. Andre or Cambazola</li></ol>", "aggregateLikes": 2, "dairyFree": true, "extendedIngredients": [{"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.125, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/8 teaspoon black pepper", "name": "black pepper"}, {"aisle": "Pasta and Rice", "unitLong": "pound", "amount": 1.0, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1 pound brown lentils", "name": "brown lentils"}, {"aisle": "Canned and Jarred", "unitLong": "ounces", "amount": 28.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "28 ounces can whole tomatoes", "name": "canned tomatoes"}, {"aisle": "Produce", "unitLong": "ounces", "amount": 12.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "12 ounces scrubbed and chopped carrot", "name": "carrot"}, {"aisle": "Bakery/Bread", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "cup (a little over 2 by measure)", "name": "cup cake"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 teaspoons dried basil", "name": "dried basil"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon dried oregano", "name": "dried oregano"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon dried thyme", "name": "dried thyme"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 teaspoons fresh thyme", "name": "fresh thyme"}, {"aisle": "Produce", "unitLong": "cloves", "amount": 2.0, "unitShort": "cloves", "metaInformation": [], "unit": "cloves", "originalString": "2 cloves garlic, chopped", "name": "garlic"}, {"aisle": "Produce", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons lemon juice, from 1 lemon", "name": "lemon juice"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon olive oil", "name": "olive oil"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.75, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 medium onion, chopped (about \u00be cup)", "name": "onion"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.25, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/4 teaspoon salt", "name": "salt"}, {"aisle": "Beverages", "unitLong": "quarts", "amount": 3.0, "unitShort": "quarts", "metaInformation": [], "unit": "quarts", "originalString": "3 quarts cold water", "name": "water"}, {"aisle": "?", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": ["dried", "(if none available, add 1 more )"], "unit": "teaspoon", "originalString": "teaspoon (if none available, add 1 more dried)", "name": "teaspoon"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/lemony-greek-lentil-soup-649886", "weightWatcherSmartPoints": 30, "id": 649886, "image": "https://spoonacular.com/recipeImages/Lemony-Greek-Lentil-Soup-649886.jpg", "servings": 6, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Lemony Greek Lentil Soup",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/KV6GLYDK/lemony-greek-lentil-soup",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Put the lentils, water, carrot and 1 teaspoon dried thyme into an 8-quart stockpot, cover and set over medium heat.</li><li>After 15 minutes, lower the heat somewhat and gently bring the water to a simmer, which should take another half an hour or so.</li><li>Once the lentils have reached the boiling point, turn off the burner and let them sit for 1 hour.</li><li>After the hour, bring the soup back to a simmer and add the lemon juice, dry basil, fresh thyme, oregano, pepper and salt and simmer for 1 hour.</li><li>Now, slowly saut the onion and garlic in the olive oil until the onion is tender.</li><li>Coarsely chop the tomatoes (I do this with kitchen scissors right in the can), and add them and the onion mixture to the soup. Adjust the salt to taste.</li><li>Bring everything back to the boiling point and simmer for another hour.  After this point, you can turn your burner to its lowest setting, and this soup will happily sit steaming with its lid cocked for several hours until you are ready to enjoy it.  Add more water if necessary.</li><li>Serve with crusty bread and a soft cheese like St. Andre or Cambazola</li></ol>",
+  "aggregateLikes": 2,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.125,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/8 teaspoon black pepper",
+      "name": "black pepper"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1 pound brown lentils",
+      "name": "brown lentils"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "ounces",
+      "amount": 28.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "28 ounces can whole tomatoes",
+      "name": "canned tomatoes"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "ounces",
+      "amount": 12.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "12 ounces scrubbed and chopped carrots",
+      "name": "carrots"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 teaspoons dried basil",
+      "name": "dried basil"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon dried oregano",
+      "name": "dried oregano"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon dried thyme",
+      "name": "dried thyme"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 teaspoons fresh thyme (if none available, use 1 more tsp dried)",
+      "name": "fresh thyme"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 2.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "2 cloves garlic, chopped",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons lemon juice, from 1 lemon",
+      "name": "lemon juice"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon olive oil",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.75,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 medium onion, chopped (about ¾ cup)",
+      "name": "onion"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.25,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/4 teaspoon salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "quarts",
+      "amount": 3.0,
+      "unitShort": "quarts",
+      "metaInformation": [],
+      "unit": "quarts",
+      "originalString": "3 quarts cold water",
+      "name": "water"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/lemony-greek-lentil-soup-649886",
+  "weightWatcherSmartPoints": 30,
+  "id": 649886,
+  "image": "https://spoonacular.com/recipeImages/Lemony-Greek-Lentil-Soup-649886.jpg",
+  "servings": 6,
+  "whole30": false,
+  "lowFodmap": false
+}

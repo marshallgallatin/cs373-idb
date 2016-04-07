@@ -1,1 +1,119 @@
-{"vegetarian": false, "glutenFree": false, "title": "Mussels in Irish Ale", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/GTW43H5Y/mussels-in-irish-ale", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Discard any mussels that are open before cooking and any that stay closed after cooking.</li><li>Place a large pot over a high heat and brown the pancetta pieces until just golden and sizzling. Add in a knob of butter, allow it to melt and then add the onion and garlic. Cook gently for three minutes until the onion is soft.</li><li>Add in the cider and allow to bubble away for a few minutes so all the flavours mingle in together. Tumble in the mussels, cover with a lid and allow them to steam for about four minutes until they open, making sure to give the pot a good shake once or twice during the cooking time.</li><li>Remove from the heat and stir in the cream and parsley and season with sea salt and ground black pepper.</li><li>Serve with some crusty bread to mop up the liquid!</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Alcoholic Beverages", "unitLong": "bottle", "amount": 1.0, "unitShort": "bottle", "metaInformation": [], "unit": "bottle", "originalString": "1 bottle Irish Ale", "name": "ale"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "grams", "amount": 60.0, "unitShort": "g", "metaInformation": [], "unit": "grams", "originalString": "60 grams butter", "name": "butter"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "tablespoons", "amount": 4.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "4 tablespoons of cream", "name": "cream"}, {"aisle": "Seafood", "unitLong": "", "amount": 40.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "40 mussels", "name": "mussels"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 medium onion, finely chopped", "name": "onion"}, {"aisle": "Meat", "unitLong": "", "amount": 5.0, "unitShort": "", "metaInformation": [], "unit": "pieces", "originalString": "5 pieces of pancetta, sliced into pieces", "name": "pancetta"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 4.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Salt and freshly ground black pepper, to taste", "name": "salt and pepper"}, {"aisle": "Produce", "unitLong": "cloves", "amount": 3.0, "unitShort": "cloves", "metaInformation": [], "unit": "cloves", "originalString": "3 whole cloves garlic (chopped)", "name": "whole garlic"}, {"aisle": "?", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": ["chopped"], "unit": "cup", "originalString": "\u00bc cup freshly chopped, parsley", "name": "freshly"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/mussels-in-irish-ale-652760", "weightWatcherSmartPoints": 10, "id": 652760, "image": "https://spoonacular.com/recipeImages/Mussels-in-Irish-Ale-652760.jpg", "servings": 4, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Mussels in Irish Ale",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/GTW43H5Y/mussels-in-irish-ale",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Discard any mussels that are open before cooking and any that stay closed after cooking.</li><li>Place a large pot over a high heat and brown the pancetta pieces until just golden and sizzling. Add in a knob of butter, allow it to melt and then add the onion and garlic. Cook gently for three minutes until the onion is soft.</li><li>Add in the cider and allow to bubble away for a few minutes so all the flavours mingle in together. Tumble in the mussels, cover with a lid and allow them to steam for about four minutes until they open, making sure to give the pot a good shake once or twice during the cooking time.</li><li>Remove from the heat and stir in the cream and parsley and season with sea salt and ground black pepper.</li><li>Serve with some crusty bread to mop up the liquid!</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Alcoholic Beverages",
+      "unitLong": "bottle",
+      "amount": 1.0,
+      "unitShort": "bottle",
+      "metaInformation": [],
+      "unit": "bottle",
+      "originalString": "1 bottle Irish Ale",
+      "name": "ale"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "grams",
+      "amount": 60.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "grams",
+      "originalString": "60 grams butter",
+      "name": "butter"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "tablespoons",
+      "amount": 4.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "4 tablespoons of cream",
+      "name": "cream"
+    },
+    {
+      "aisle": "Seafood",
+      "unitLong": "",
+      "amount": 40.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "40 mussels",
+      "name": "mussels"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 medium onion, finely chopped",
+      "name": "onion"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "",
+      "amount": 5.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "pieces",
+      "originalString": "5 pieces of pancetta, sliced into pieces",
+      "name": "pancetta"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 4.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Salt and freshly ground black pepper, to taste",
+      "name": "salt and pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 3.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "3 whole cloves garlic (chopped)",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "¼ cup freshly chopped parsley",
+      "name": "fresh parsley"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/mussels-in-irish-ale-652760",
+  "weightWatcherSmartPoints": 10,
+  "id": 652760,
+  "image": "https://spoonacular.com/recipeImages/Mussels-in-Irish-Ale-652760.jpg",
+  "servings": 4,
+  "whole30": false,
+  "lowFodmap": false
+}

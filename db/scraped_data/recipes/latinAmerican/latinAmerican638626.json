@@ -1,0 +1,179 @@
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Chimichurri Skirt Steak with Grilled Asparagus",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/3VXHGQB6/chimichurri-skirt-steak-with-grilled-asparagus",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Place all chimichurri sauce ingredients except for the olive oil in a food processor &amp; pulse until well chopped. While the food processor is going, slowly pour the olive oil into the mixture until blended.  Reserve half of the sauce to serve on the side with the meal.</li><li>Season skirt steaks with salt &amp; pepper on bother sides.  Spoon the remaining chimichurri sauce over the steaks &amp; let marinate for 30 minutes up to overnight.</li><li>Pre-heat the grill to 350 to 400 F.</li><li>In a plastic resealable bag, add asparagus, olive oil, garlic, salt &amp; pepper.  Shake to coat &amp; place in a grill basket.</li><li>Place the steak &amp; grill basket of asparagus directly over a hot grill.  Gently toss the asparagus for even grilling &amp; baste with garlic, olive oil mixture  10 minutes.</li><li>Grill the skirt steak to desired temperature  5 to 8 minutes per side.</li><li>Remove from grill &amp; let steak rest for 10 minutes before slice long strips.  Spoon reserved chimichurri sauce over steak &amp; serve with asparagus on the side.</li></ol>",
+  "aggregateLikes": 7,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1 pound green or white asparagus, woody ends snapped off & discarded",
+      "name": "asparagus"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon chili pepper flakes",
+      "name": "chili flakes"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 4.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Freshly cracked black pepper",
+      "name": "cracked pepper"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup flat leaf parsley, lightly packed & rough chopped",
+      "name": "flat leaf parsley"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "¼ cup fresh mint leaves",
+      "name": "fresh mint leaves"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "¼ cup fresh oregano leaves",
+      "name": "fresh oregano leaves"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 3.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "3 to 5 garlic cloves, rough chopped",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 4.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "4 garlic cloves, peeled",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 4.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Kosher salt",
+      "name": "kosher salt"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoons",
+      "amount": 3.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "3 tablespoons lemon juice",
+      "name": "lemon juice"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup of extra-virgin olive oil",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon freshly ground pepper",
+      "name": "pepper"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons Red wine vinegar",
+      "name": "red wine vinegar"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons shallot, chopped",
+      "name": "shallot"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 skirt steaks",
+      "name": "steaks"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/chimichurri-skirt-steak-with-grilled-asparagus-638626",
+  "weightWatcherSmartPoints": 11,
+  "id": 638626,
+  "image": "https://spoonacular.com/recipeImages/Chimichurri-Skirt-Steak-with-Grilled-Asparagus-638626.jpg",
+  "servings": 4,
+  "whole30": true,
+  "lowFodmap": false
+}

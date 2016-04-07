@@ -1,0 +1,179 @@
+{
+  "vegetarian": true,
+  "glutenFree": true,
+  "title": "Colorful Red Quinoa Not So Tabbouleh Salad",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/BZ5TWVLJ/colorful-red-quinoa-not-so-tabbouleh-salad",
+  "sourceName": "Foodista",
+  "vegan": true,
+  "sustainable": false,
+  "instructions": "<ol><li>Wash the 1 cup of quinoa in a colander for several seconds. Add quinoa, water and salt to a small pot and boil for 15 minutes. You will know it is cooked when it becomes soft and you see little white antennas pop from the grain.</li><li>Meanwhile, wash all your veggies well and chop and dice them accordingly.</li><li>Add all the veggies to a medium glass bowl and toss. In a small bowl mix the red wine vinegar, olive oil and all the spices and blend well. Add the vinagrette to the salad and enjoy.</li></ol>",
+  "aggregateLikes": 2,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 avocado, diced",
+      "name": "avocado"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon cayenne pepper",
+      "name": "cayenne pepper"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon cumin",
+      "name": "cumin"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup English cucumber, diced",
+      "name": "english cucumber"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons extra-virgin olive oil",
+      "name": "extra-virgin olive oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 5.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "5 green onions, chopped",
+      "name": "green onions"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup parsley, chopped",
+      "name": "parsley"
+    },
+    {
+      "aisle": "Health Foods",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup red quinoa",
+      "name": "quinoa"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 5.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "5 red radishes, diced",
+      "name": "radishes"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 3.5,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "3 1/2 tablespoons red wine vinegar",
+      "name": "red wine vinegar"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 teaspoons salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 tomato",
+      "name": "tomato"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon tumeric",
+      "name": "tumeric"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup water",
+      "name": "water"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup yellow pepper,diced",
+      "name": "yellow pepper"
+    }
+  ],
+  "readyInMinutes": 30,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/colorful-red-quinoa-not-so-tabbouleh-salad-639950",
+  "weightWatcherSmartPoints": 8,
+  "id": 639950,
+  "image": "https://spoonacular.com/recipeImages/Colorful-Red-Quinoa-Not-So-Tabbouleh-Salad-639950.jpg",
+  "servings": 4,
+  "whole30": false,
+  "lowFodmap": false
+}

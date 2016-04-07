@@ -1,1 +1,109 @@
-{"vegetarian": false, "glutenFree": true, "title": "Potatoes With Sauerkraut and Crunchy Smoked Ham", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/5B4XKB4B/potatoes-with-sauerkraut-and-crunched-smoked-turkey-ham", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Directions:</li><li>Into a big enough pot, put potatoes, salt, and black pepper. Cover with water and bring to a boil over high heat. Add sauerkraut with pickling liquid, bring to a boil again, lower heat to medium, and cook until potatoes are soft, approximately 15 minutes. Drain the liquid, cover the pot, and set aside.</li><li>Into a hot skillet over medium heat, pour olive oil and add cubed smoked turkey ham. Cook until ham becomes browned and crunchy. Don't forget to add garlic to ham 2-3 minutes before ham is done.</li><li>Onto each plate arrange 6 potato halves, half of the sauerkraut, and pour over hot olive oil with crunched turkey ham. For those who are not meat fans, just olive oil and garlic will give the same delicious tasty results!</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.125, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/8 teaspoon Black Pepper", "name": "black pepper"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 garlic clove, finely chopped", "name": "garlic clove"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Olive oil", "name": "olive oil"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 Large Potatoes, Diced", "name": "potatoes"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon Salt", "name": "salt"}, {"aisle": "Canned and Jarred", "unitLong": "cups", "amount": 2.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "2 cups 14 oz. sauerkraut with pickling liquid, about", "name": "sauerkraut"}, {"aisle": "Meat", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup cubed smoked ham", "name": "smoked ham"}, {"aisle": "Beverages", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "water, enough to cover the potatoes in the pot", "name": "water"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/potatoes-with-sauerkraut-and-crunchy-smoked-ham-657037", "weightWatcherSmartPoints": 9, "id": 657037, "image": "https://spoonacular.com/recipeImages/Potatoes-With-Sauerkraut-and-Crunched-Smoked-Turkey-Ham-657037.jpg", "servings": 2, "whole30": true, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Potatoes With Sauerkraut and Crunchy Smoked Ham",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/5B4XKB4B/potatoes-with-sauerkraut-and-crunched-smoked-turkey-ham",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Directions:</li><li>Into a big enough pot, put potatoes, salt, and black pepper. Cover with water and bring to a boil over high heat. Add sauerkraut with pickling liquid, bring to a boil again, lower heat to medium, and cook until potatoes are soft, approximately 15 minutes. Drain the liquid, cover the pot, and set aside.</li><li>Into a hot skillet over medium heat, pour olive oil and add cubed smoked turkey ham. Cook until ham becomes browned and crunchy. Don't forget to add garlic to ham 2-3 minutes before ham is done.</li><li>Onto each plate arrange 6 potato halves, half of the sauerkraut, and pour over hot olive oil with crunched turkey ham. For those who are not meat fans, just olive oil and garlic will give the same delicious tasty results!</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.125,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/8 teaspoon Black Pepper",
+      "name": "black pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "clove",
+      "amount": 1.0,
+      "unitShort": "clove",
+      "metaInformation": [],
+      "unit": "clove",
+      "originalString": "1 garlic clove, finely chopped",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Olive oil",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 Large Potatoes, Diced",
+      "name": "potatoes"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon Salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 cups 14 oz. sauerkraut with pickling liquid, about",
+      "name": "sauerkraut"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup cubed smoked ham",
+      "name": "smoked ham"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "water, enough to cover the potatoes in the pot",
+      "name": "water"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/potatoes-with-sauerkraut-and-crunchy-smoked-ham-657037",
+  "weightWatcherSmartPoints": 9,
+  "id": 657037,
+  "image": "https://spoonacular.com/recipeImages/Potatoes-With-Sauerkraut-and-Crunched-Smoked-Turkey-Ham-657037.jpg",
+  "servings": 2,
+  "whole30": true,
+  "lowFodmap": false
+}

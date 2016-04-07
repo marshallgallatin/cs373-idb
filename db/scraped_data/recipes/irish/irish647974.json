@@ -1,1 +1,109 @@
-{"vegetarian": false, "glutenFree": true, "title": "Irish Colcannon", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/ZGGG65BK/irish-colcannon", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Chop the cabbage and steam, using minimal water, until quite well done.</li><li>Boil potatoes. Clean and chop the leeks, including the first couple of inches of green, put into a saucepan with the milk and simmer until tender.</li><li>If using bacon, saute until crisp. When cool enough to handle, break into bite size pieces.</li><li>Drain potatoes and mash.</li><li>Stir in milk with leeks, cabbage, mace, garlic, and bacon. Gently mix to combine all ingredients, but take care not to over mash the potatoes.</li></ol>", "aggregateLikes": 5, "dairyFree": false, "extendedIngredients": [{"aisle": "Meat", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2-3 rashers bacon (optional)", "name": "bacon rashers"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 To 3 cloves garlic, minced", "name": "garlic cloves"}, {"aisle": "Produce", "unitLong": "pound", "amount": 1.0, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1 pound green cabbage (kale can also be used)", "name": "green cabbage"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 mediums leeks, split lengthwise and rinsed well", "name": "leeks"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.25, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/4 teaspoon mace", "name": "mace"}, {"aisle": "Produce", "unitLong": "pounds", "amount": 2.0, "unitShort": "lb", "metaInformation": [], "unit": "pounds", "originalString": "2 pounds yellow or red potatoes, scrubbed and cubed but not peeled", "name": "potatoes"}, {"aisle": "Spices and Seasonings", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 Salt to taste", "name": "salt"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup whole milk", "name": "whole milk"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/irish-colcannon-647974", "weightWatcherSmartPoints": 6, "id": 647974, "image": "https://spoonacular.com/recipeImages/Irish-Colcannon-647974.jpg", "servings": 4, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Irish Colcannon",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/ZGGG65BK/irish-colcannon",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Chop the cabbage and steam, using minimal water, until quite well done.</li><li>Boil potatoes. Clean and chop the leeks, including the first couple of inches of green, put into a saucepan with the milk and simmer until tender.</li><li>If using bacon, saute until crisp. When cool enough to handle, break into bite size pieces.</li><li>Drain potatoes and mash.</li><li>Stir in milk with leeks, cabbage, mace, garlic, and bacon. Gently mix to combine all ingredients, but take care not to over mash the potatoes.</li></ol>",
+  "aggregateLikes": 5,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Meat",
+      "unitLong": "slices",
+      "amount": 2.0,
+      "unitShort": "slices",
+      "metaInformation": [],
+      "unit": "slices",
+      "originalString": "2-3 rashers bacon (optional)",
+      "name": "bacon"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 2.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "2 To 3 cloves garlic, minced",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1 pound green cabbage (kale can also be used)",
+      "name": "cabbage"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 medium leeks, split lengthwise and rinsed well",
+      "name": "leek"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.25,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/4 teaspoon mace",
+      "name": "mace"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "pounds",
+      "amount": 2.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pounds",
+      "originalString": "2 pounds yellow or red potatoes, scrubbed and cubed but not peeled",
+      "name": "potato"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "Salt to taste",
+      "name": "salt"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup whole milk",
+      "name": "milk"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/irish-colcannon-647974",
+  "weightWatcherSmartPoints": 6,
+  "id": 647974,
+  "image": "https://spoonacular.com/recipeImages/Irish-Colcannon-647974.jpg",
+  "servings": 4,
+  "whole30": false,
+  "lowFodmap": false
+}

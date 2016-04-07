@@ -1,0 +1,209 @@
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Carne Asada Burritos",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/Z4QSMKMH/carne-asada-burritos",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>In a medium sized bowl combine beef, cumin, paprika, pepper, salt and lime juice. Toss to combine and coat meat. Cover and place in refrigerator for at least 30 minutes.</li><li>Prepare pico de gallo in a small bowl. Cover and let sit until ready to assemble burritos.</li><li>Prepare avocado slices and drizzle with fresh lime juice to keep them from browning.</li><li>In a large skillet heat olive oil over medium-high heat. Add onion and garlic to pan and cook just until garlic is fragrant. Add beef to pan and cook for 3-5 minutes.</li><li>Warm tortillas in a large pan over medium heat.</li><li>Place  cup meat, 2 tablespoons of pico de gallo, and a double layer of spinach leaves in the center of each tortilla. Fold sides over filling, then roll one edge over filling and roll until filling is completely covered. Place seam side down on plate.</li><li>Serve with lime wedge and sliced avocado.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 avocado, peeled, pitted and sliced",
+      "name": "avocado"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 cups fresh baby spinach",
+      "name": "baby spinach"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1 tsp black pepper",
+      "name": "black pepper"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "",
+      "amount": 6.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "6 burrito size tortillas",
+      "name": "tortillas"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "½ cup fresh cilantro, chopped",
+      "name": "fresh cilantro"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 2.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "2 garlic cloves, pressed",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1 tsp ground cumin",
+      "name": "ground cumin"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 jalapeño, seeded and diced",
+      "name": "jalapeno"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 fresh lime, juiced",
+      "name": "lime"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "½ tsp kosher salt",
+      "name": "kosher salt"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 fresh lime, cut into wedges",
+      "name": "lime"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "½ cup fresh lime juice",
+      "name": "lime juice"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "Tbsp",
+      "amount": 1.0,
+      "unitShort": "Tbsp",
+      "metaInformation": [],
+      "unit": "Tbsp",
+      "originalString": "1 Tbsp Olive oil",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "½ cup onion, diced",
+      "name": "onion"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 small onion, diced",
+      "name": "onion"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "½ tsp paprika",
+      "name": "paprika"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 Roma tomatoes, diced",
+      "name": "roma tomatoes"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "lb",
+      "originalString": "1 lb sirloin, trimmed and diced (1/2 inch)",
+      "name": "bison sirloin"
+    }
+  ],
+  "readyInMinutes": 30,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/carne-asada-burritos-637133",
+  "weightWatcherSmartPoints": 10,
+  "id": 637133,
+  "image": "https://spoonacular.com/recipeImages/Carne-Asada-Burritos-637133.jpg",
+  "servings": 6,
+  "whole30": false,
+  "lowFodmap": false
+}

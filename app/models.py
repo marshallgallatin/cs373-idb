@@ -1,11 +1,12 @@
 from sqlalchemy import Column, ForeignKey, Integer, Float, String, Table, Interval, Enum, Boolean, CheckConstraint
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
-from enums import enumToTuple, Continent, Cuisine
+from enums import enumToTuple, Origin, Cuisine
 from constraints import isPercentage, isNonnegative, isNotNull
 from utility import getColumnNamesInDeclarationOrder, renameKeyInDict
 
 Base = declarative_base()
+
 
 class Recipe(Base):
     """The Recipe Table
@@ -42,14 +43,14 @@ class Recipe(Base):
     id = Column(Integer, primary_key=True)
     title = Column(String, nullable=False)
 
-    ingredients = relationship('IngredientsInRecipes', back_populates ='recipe')
+    ingredients = relationship('IngredientsInRecipes', back_populates='recipe')
 
     image_uri    = Column(String, nullable=True)
     instructions = Column(String, nullable=True) #@TODO: Make this cleaner/formatted
     cuisine      = Column(Enum(*enumToTuple(Cuisine), name='Cuisine'), nullable=True)
 
-    ready_in_minutes    = Column(Integer, nullable=True) # Add constaint
-    servings            = Column(Integer, nullable=True) # Add constaint
+    ready_in_minutes = Column(Integer, nullable=True)  # Add constraint
+    servings         = Column(Integer, nullable=True)  # Add constraint
 
     vegetarian  = Column(Boolean, nullable=True)
     vegan       = Column(Boolean, nullable=True)
@@ -96,6 +97,7 @@ class Recipe(Base):
         returnDict['ingredients'] = [massageIngredientInRecipeDict(ingredientInRecipe) for ingredientInRecipe in sortedIngredientsInRecipes]
         return returnDict
 
+
 class Ingredient(Base):
     """The Ingredient Table
     The Ingredient table has entries for an ingredient.
@@ -107,12 +109,13 @@ class Ingredient(Base):
         recipes (IngredientsInRecipes): A list of IngredientsInRecipes objects that apply to this ingredient.
             The relevant information for this object is everything but 'ingredient', since 'ingredient' will refer
             to this object.
-        nutrional_content(NutrionalContent): The nutrional content object that describes the nutrional content of the ingredient.
+        nutritional_content(NutritionalContent): The nutritional content object that describes the nutritional content of the ingredient.
 
     Optional Attributes:
+        image_uri (str): The URI of the image for this ingredient.
         scientific_name (str): The scientific name of the ingredient.
-        continent_of_origin (Continent): The continent that the ingredient originates from.
-            Valid values are Africa, Antartica, Asia, Australia, Europe, NorthAmerica, and SouthAmerica.
+        origin (Origin): The continent that the ingredient originates from.
+            Valid values are Africa, Asia, Europe, NorthAmerica, Oceania, SouthAmerica, and Worldwide.
 
     Single Column Constraints:
         - An ingredient's name must be unique
@@ -125,11 +128,13 @@ class Ingredient(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=False, unique=True)
 
-    recipes = relationship('IngredientsInRecipes', back_populates ='ingredient')
+    recipes = relationship('IngredientsInRecipes', back_populates='ingredient')
     nutritional_content = relationship("NutritionalContent", uselist=False, back_populates="ingredient")
 
+    image_uri = Column(String, nullable=True)
     scientific_name = Column(String, nullable=True)
-    continent_of_origin = Column(Enum(*enumToTuple(Continent), name=Continent), nullable=True)
+    origin = Column(Enum(*enumToTuple(Origin), name=Origin), nullable=True)
+
 
     def summaryDict(self):
         """ A helper function that returns a dictionary representation of an Ingredient, but only with a subset of information.
@@ -155,7 +160,7 @@ class Ingredient(Base):
 
 class NutritionalContent(Base):
     """The NutritionalContent Table
-    The NutritionalContent table has entries that describe the nutrional information of ingredients.
+    The NutritionalContent table has entries that describe the nutritional information of ingredients.
 
     Required Attributes:
         calories (int): The number of Calories in one serving.
@@ -169,18 +174,18 @@ class NutritionalContent(Base):
 
     Single Column Constraints:
         - 'calories' is non-negative
-        - 'total_fat_in_grams' is non-negative
-        - 'saturated_fat_in_grams' is non-negative
-        - 'cholesterol_in_milligrams' is non-negative
-        - 'sodium_in_milligrams' is non-negative
-        - 'total_carbohydrates_in_grams' is non-negative
-        - 'dietary_fiber_in_grams' is non-negative
-        - 'sugar_in_grams' is non-negative
-        - 'protein_in_grams' is non-negative
-        - 'vitamin_a_in_iu' is non-negative
-        - 'vitamin_c_in_milligrams' is non-negative
-        - 'calcium_in_milligrams' is non-negative
-        - 'iron_in_milligrams' is non-negative
+        - 'total_fat_g' is non-negative
+        - 'saturated_fat_g' is non-negative
+        - 'cholesterol_mg' is non-negative
+        - 'sodium_mg' is non-negative
+        - 'total_carbohydrates_g' is non-negative
+        - 'dietary_fiber_g' is non-negative
+        - 'sugar_g' is non-negative
+        - 'protein_g' is non-negative
+        - 'vitamin_a_iu' is non-negative
+        - 'vitamin_c_mg' is non-negative
+        - 'calcium_mg' is non-negative
+        - 'iron_mg' is non-negative
 
     Table Constraints:
         None.
@@ -191,19 +196,20 @@ class NutritionalContent(Base):
     ingredient_id = Column(Integer, ForeignKey('Ingredient.id'))
     ingredient = relationship("Ingredient", back_populates="nutritional_content")
 
-    calories                     = Column(Integer, isNonnegative('calories')                    , nullable=False)
-    total_fat_in_grams           = Column(Integer, isNonnegative('total_fat_in_grams')          , nullable=False)
-    saturated_fat_in_grams       = Column(Integer, isNonnegative('saturated_fat_in_grams')      , nullable=False)
-    cholesterol_in_milligrams    = Column(Integer, isNonnegative('cholesterol_in_milligrams')   , nullable=False)
-    sodium_in_milligrams         = Column(Integer, isNonnegative('sodium_in_milligrams')        , nullable=False)
-    total_carbohydrates_in_grams = Column(Integer, isNonnegative('total_carbohydrates_in_grams'), nullable=False)
-    dietary_fiber_in_grams       = Column(Float,   isNonnegative('dietary_fiber_in_grams')      , nullable=False)
-    sugar_in_grams               = Column(Float,   isNonnegative('sugar_in_grams')              , nullable=False)
-    protein_in_grams             = Column(Float,   isNonnegative('protein_in_grams')            , nullable=False)
-    vitamin_a_in_iu              = Column(Integer, isNonnegative('vitamin_a_in_iu')             , nullable=False)
-    vitamin_c_in_milligrams      = Column(Integer, isNonnegative('vitamin_c_in_milligrams')     , nullable=False)
-    calcium_in_milligrams        = Column(Integer, isNonnegative('calcium_in_milligrams')       , nullable=False)
-    iron_in_milligrams           = Column(Integer, isNonnegative('iron_in_milligrams')          , nullable=False)
+    calories              = Column(Integer, isNonnegative('calories'), nullable=False)
+    total_fat_g           = Column(Integer, isNonnegative('total_fat_g'), nullable=False)
+    saturated_fat_g       = Column(Integer, isNonnegative('saturated_fat_g'), nullable=False)
+    cholesterol_mg        = Column(Integer, isNonnegative('cholesterol_mg'), nullable=False)
+    sodium_mg             = Column(Integer, isNonnegative('sodium_mg'), nullable=False)
+    total_carbohydrates_g = Column(Integer, isNonnegative('total_carbohydrates_g'), nullable=False)
+    dietary_fiber_g       = Column(Float, isNonnegative('dietary_fiber_g'), nullable=False)
+    sugar_g               = Column(Float, isNonnegative('sugar_g'), nullable=False)
+    protein_g             = Column(Float, isNonnegative('protein_g'), nullable=False)
+    vitamin_a_iu          = Column(Integer, isNonnegative('vitamin_a_iu'), nullable=False)
+    vitamin_c_mg          = Column(Integer, isNonnegative('vitamin_c_mg'), nullable=False)
+    calcium_mg            = Column(Integer, isNonnegative('calcium_mg'), nullable=False)
+    iron_mg               = Column(Integer, isNonnegative('iron_mg'), nullable=False)
+
 
     def fullDict(self):
         """ A helper function that returns a dictionary representation of a NutritionalContent.

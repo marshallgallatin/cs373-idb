@@ -1,1 +1,139 @@
-{"vegetarian": true, "glutenFree": false, "title": "Banana Sponge Cake", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/DX63FRWB/banana-sponge-cake", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>In mixing bowl, whisk mashed banana, sugar, eggs, milk and SP at high speed till thick.</li><li>Lower speed add in banana essence and vanilla essence, then slowly add in plain flour.</li><li>Stop machine and use hand whisk to mix well.</li><li>Lastly pour in corn oil in 3 batches and mix well again.</li><li>Pour batter into a 9\" (lined) square cake tin.</li><li>Bake in preheated oven at 170C for about one hour.</li><li>Place cake tin at the lowest rack of the oven and cover cake with foil if the topping is too brown after 40 mins of baking.</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Baking", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon Baking powder", "name": "baking powder"}, {"aisle": "Baking", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon Baking soda", "name": "baking soda"}, {"aisle": "Produce", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon Banana essence", "name": "banana"}, {"aisle": "Produce", "unitLong": "grams", "amount": 200.0, "unitShort": "g", "metaInformation": [], "unit": "grams", "originalString": "200 grams Riped Banana~ mash banana with a fork", "name": "banana"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "grams", "amount": 100.0, "unitShort": "g", "metaInformation": [], "unit": "grams", "originalString": "100 grams Corn oil", "name": "corn oil"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 eggs", "name": "eggs"}, {"aisle": "Baking", "unitLong": "grams", "amount": 160.0, "unitShort": "g", "metaInformation": [], "unit": "grams", "originalString": "160 grams Plain Flour- sift together with baking powder and baking sod", "name": "flour"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup milk", "name": "milk"}, {"aisle": "Baking", "unitLong": "cups", "amount": 0.6666666666666666, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "2/3 cup sugar", "name": "sugar"}, {"aisle": "Baking", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon Vanilla essence", "name": "vanilla essence"}, {"aisle": "?", "unitLong": "tablespoons", "amount": 0.5, "unitShort": "T", "metaInformation": ["(cake stabilizer)"], "unit": "tablespoon", "originalString": "1/2 tablespoon SP (cake stabilizer)", "name": "sp"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/banana-sponge-cake-634190", "weightWatcherSmartPoints": 82, "id": 634190, "image": "https://spoonacular.com/recipeImages/Banana-Sponge-Cake-634190.jpg", "servings": 1, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": false,
+  "title": "Banana Sponge Cake",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/DX63FRWB/banana-sponge-cake",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>In mixing bowl, whisk mashed banana, sugar, eggs, milk and SP at high speed till thick.</li><li>Lower speed add in banana essence and vanilla essence, then slowly add in plain flour.</li><li>Stop machine and use hand whisk to mix well.</li><li>Lastly pour in corn oil in 3 batches and mix well again.</li><li>Pour batter into a 9\" (lined) square cake tin.</li><li>Bake in preheated oven at 170C for about one hour.</li><li>Place cake tin at the lowest rack of the oven and cover cake with foil if the topping is too brown after 40 mins of baking.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Baking",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon Baking powder",
+      "name": "baking powder"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon Baking soda",
+      "name": "baking soda"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon Banana extract",
+      "name": "banana extract"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "grams",
+      "amount": 200.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "grams",
+      "originalString": "200 grams Riped Banana~ mash banana with a fork",
+      "name": "banana"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "grams",
+      "amount": 100.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "grams",
+      "originalString": "100 grams Corn oil",
+      "name": "corn oil"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 eggs",
+      "name": "eggs"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "grams",
+      "amount": 160.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "grams",
+      "originalString": "160 grams Plain Flour- sift together with baking powder and baking sod",
+      "name": "flour"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup milk",
+      "name": "milk"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 0.6666666666666666,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "2/3 cup sugar",
+      "name": "sugar"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon Vanilla extract",
+      "name": "vanilla extract"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "tablespoons",
+      "amount": 0.5,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1/2 tablespoon sponge cake emulsifier",
+      "name": "sponge cake emulsifier"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/banana-sponge-cake-634190",
+  "weightWatcherSmartPoints": 82,
+  "id": 634190,
+  "image": "https://spoonacular.com/recipeImages/Banana-Sponge-Cake-634190.jpg",
+  "servings": 1,
+  "whole30": false,
+  "lowFodmap": false
+}
