@@ -6,51 +6,6 @@
 		cursor: pointer;
 	}
 	</style>
-	<script type="text/javascript" ng:autobind src="http://code.angularjs.org/0.10.5/angular-0.10.5.js"></script>
-	<script>
-		function sort() {
-			var table = this;
-			
-			// data
-			table.head = {
-				a:"ID",
-				b:"Title",
-				e:"Image",
-				f:"Cuisine type",
-				g:"Ready in # minutes",
-				h:"Servings",
-				i:"Vegetarian",
-				j:"Vegan",
-				k:"Gluten-free",
-				l:"Dairy-free"
-			};
-			table.body = [
-				{link:"http://swedishchef.me/1.html",a:"1",b:"Jambalaya",e:"https://spoonacular.com/recipeImages/Jambalaya-648427.jpg",f:"cajun",g:"45",h:"10",i:"false",j:"false",k:"true",l:"true"},
-				{link:"http://swedishchef.me/1.html",a:"2",b:"Spanakopita (Greek Spinach Pie)",e:"https://spoonacular.com/recipeImages/Spanakopita-(Greek-Spinach-Pie)-660843.jpg",f:"greek",g:"45",h:"8",i:"true",j:"false",k:"false",l:"false"},
-				{link:"http://swedishchef.me/1.html",a:"3",b:"Grilled Chicken Banh Mi",e:"https://spoonacular.com/recipeImages/Grilled-Chicken-Banh-Mi-645634.jpg",f:"vietnamese",g:"110",h:"6",i:"false",j:"false",k:"false",l:"true"},
-				{link:"http://swedishchef.me/1.html",a:"4",b:"Simple Garlic Shrimp",d:"1. Heat olive oil in a heavy skillet over high heat until it just begins to smoke. Place shrimp in an even layer on the bottom of the pan and cook for 1 minute without stirring.  2. Season shrimp with salt; cook and stir until shrimp begin to turn pink, about 1 minute.  3. Stir in garlic and red pepper flakes; cook and stir 1 minute. Stir in lemon juice, caper brine, 1 1/2 teaspoon cold butter, and half the parsley.  4. Cook until butter has melted, about 1 minute, then turn heat to low and stir in 1 1/2 tablespoon cold butter. Cook and stir until all butter has melted to form a thick sauce and shrimp are pink and opaque, about 2 to 3 minutes.  5. Remove shrimp with a slotted spoon and transfer to a bowl; continue to cook butter sauce, adding water 1 teaspoon at a time if too thick, about 2 minutes. Season with salt to taste.  6. Serve shrimp topped with the pan sauce. Garnish with remaining flat-leaf parsley.",e:"http://images.media-allrecipes.com/userphotos/720x405/1330843.jpg",f:"italian",g:"25",h:"4",i:"false",j:"false",k:"true",l:"false"}
-			];
-
-			table.sort = {
-				column: 'b',
-				descending: false
-			};
-
-			table.selectedCls = function(column) {
-				return column == table.sort.column && 'sort-' + table.sort.descending;
-			};
-
-			table.changeSorting = function(column) {
-				var sort = table.sort;
-				if (sort.column == column) {
-					sort.descending = !sort.descending;
-				} else {
-					sort.column = column;
-					sort.descending = false;
-				}
-			};
-		}
-	</script>
 {% endblock scripts %}
 
 {% block title %}
@@ -58,27 +13,16 @@
 {% endblock title %}
 
 {% block content %}
-	<div class="table-responsive">
-		<table ng:controller="sort" class="table table-default table-hover">
-			<thead>
-				<tr>
-					<th ng:repeat="(i,th) in head" ng:class="selectedCls(i)" ng:click="changeSorting(i)">{{ '{{th}}' }}</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr ng:repeat="row in body.$orderBy(sort.column, sort.descending)">
-					<td>{{ '{{row.a}}' }}</td>
-					<td style="cursor: hand;cursor: pointer;" ><a ng-href="/{{ '{{row.a}}' }}">{{ '{{row.b}}' }}</a></td>
-					<td><img class="img-responsive img-thumbnail" width="100px" src="{{ '{{row.e}}' }}"/></td>
-					<td>{{ '{{row.f}}' }}</td>
-					<td>{{ '{{row.g}}' }}</td>
-					<td>{{ '{{row.h}}' }}</td>
-					<td>{{ '{{row.i}}' }}</td>
-					<td>{{ '{{row.j}}' }}</td>
-					<td>{{ '{{row.k}}' }}</td>
-					<td>{{ '{{row.l}}' }}</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
+<div ng-app="mbApp" ng-controller="mbCtrl">
+	<table>
+		<tr>
+			<th ng-click="orderByMe('id')">ID</th>
+			<th ng-click="orderByMe('title')">Title</th>
+		</tr>
+	<tr ng-repeat="x in names | orderBy:mbOrderBy:mbReverse">
+		<td>{{ '{{x.id}}' }}</td>
+		<td>{{ '{{x.title}}' }}</td>
+	</tr>
+	</table>
+</div>
 {% endblock content %}
