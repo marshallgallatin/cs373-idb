@@ -4,18 +4,24 @@ import re
 from flask import Flask, jsonify, request, render_template
 from flask_restful import reqparse, abort, Api, Resource
 import RecipeQueries
+import IngredientQueries
 
 app = Flask(__name__)
+
+# ============================
+# BEGIN RESTful API Implementation
+# Uses flask_restful
 api = Api(app)
 
 list_recipe_parser = reqparse.RequestParser()
 list_recipe_parser.add_argument('limit', type=int, help='The number of recipes to return. ERROR: {error_msg}')
 list_recipe_parser.add_argument('cuisine', type=str, help='The Cuisine to filter by. ERROR: {error_msg}')
 list_recipe_parser.add_argument('diet', type=str, help='The dietary restriction to filter by. ERROR: {error_msg}')
+list_recipe_parser.add_argument('page', type=int, help='Which page of recipes to return. ERROR: {error_msg}')
 
 class ListRecipes(Resource):
     """
-    Implements the Recipe Collection [/recipes{?limit,cuisine,diet] RESTful API entry point.
+    Implements the Recipe Collection [/recipes{?page,limit,cuisine,diet] RESTful API entry point.
     """
     def get(self):
         parsed_args = list_recipe_parser.parse_args()
@@ -28,9 +34,68 @@ class RecipeByID(Resource):
     """
     def get(self, rec_id):
         return jsonify(**(RecipeQueries.getRecipeByID(rec_id)))
+    
+search_recipe_parser = reqparse.RequestParser()
+search_recipe_parser.add_argument('ingredients', type=str, required=True, help='A list of ingredients that a recipe must contain. ERROR: {error_msg}')
+
+class SearchRecipesByIngredients(Resource):    
+    """
+    Search Recipes by Ingredients [/recipes/ingredientSearch{?ingredients}]
+    """
+    def get(self):
+        return jsonify(recipes = [recipe for recipe in RecipeQueries.getRecipesByIngredients(search_recipe_parser.parse_args()['ingredients'].split(sep=','))])
+
+list_ingredient_parser = reqparse.RequestParser()
+list_ingredient_parser.add_argument('limit', type=int, help='The number of ingredients to return. ERROR: {error_msg}')
+list_ingredient_parser.add_argument('page', type=int, help='Which page of ingredients to return. ERROR: {error_msg}')
+
+class ListIngredients(Resource):
+    """
+    Ingredient Collection [/ingredients{?page,limit}]
+    """
+    def get(self):
+        parsed_args = list_ingredient_parser.parse_args()
+        filtered_args = {k : parsed_args[k] for k in parsed_args if parsed_args[k] is not None }
+        return jsonify(ingredients = [ingredient for ingredient in IngredientQueries.getAllIngredients(**filtered_args)])
+
+
+class IngredientByID(Resource):
+    """
+    Ingredient [/ingredients/{id}]
+    """
+    def get(self, ingred_id):
+        return jsonify(**(IngredientQueries.getIngredientByID(ingred_id)))
+
+class NutritionInformationByIngredientID(Resource):
+    """
+    Nutrition Information [/ingredients/{id}/nutrition]
+    """
+    def get(self, ingred_id):
+        return jsonify(**(IngredientQueries.getNutritionalInformationFromIngredientByID(ingred_id)))
+
+recipes_by_ingredient_id_parser = reqparse.RequestParser()
+recipes_by_ingredient_id_parser.add_argument('limit', type=int, help='The number of recipes to return. ERROR: {error_msg}')
+recipes_by_ingredient_id_parser.add_argument('page', type=int, help='Which page of recipes to return. ERROR: {error_msg}')
+
+class LookupRecipesByIngredientID(Resource):
+    """
+    Recipes ingredient is in [/ingredients/{id}/recipes{?page,limit}]
+    """
+    def get(self, ingred_id):
+        parsed_args = recipes_by_ingredient_id_parser.parse_args()
+        filtered_args = {k : parsed_args[k] for k in parsed_args if parsed_args[k] is not None }
+        return jsonify(recipes = [ingredient for ingredient in IngredientQueries.getRecipesUsingIngredientById(ingred_id, **filtered_args)])
 
 api.add_resource(ListRecipes, '/recipes')
 api.add_resource(RecipeByID, '/recipes/<int:rec_id>')
+api.add_resource(SearchRecipesByIngredients, '/recipes/ingredientSearch')
+api.add_resource(ListIngredients, '/ingredients')
+api.add_resource(IngredientByID, '/ingredients/<int:ingred_id>')
+api.add_resource(NutritionInformationByIngredientID, '/ingredients/<int:ingred_id>/nutrition')
+api.add_resource(LookupRecipesByIngredientID, '/ingredients/<int:ingred_id>/recipes')
+
+# END RESTful API Implementation
+# ============================
 
 @app.route("/")
 def splash():
