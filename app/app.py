@@ -58,26 +58,29 @@ def dump_database():
         rlist.append(dict({"id": r.id, "title": r.title, "image_uri":r.image_uri, "cuisine": r.cuisine, "ready_in_minutes": r.ready_in_minutes, "servings": r.servings}))
     return jsonify({"recipes": rlist})
 
-@app.route("/test/recipes")
+@app.route("/r")
+@app.route("/recipestest\?limit=2&page=1")
 def test_recipes():
-    testdict = { "recipes": [
-        {
-            "id": 1,
-            "title": "Jambalaya",
-            "image_uri": "https://spoonacular.com/recipeImages/Jambalaya-648427.jpg",
-            "cuisine": "cajun",
-            "ready_in_minutes": 45,
-            "servings": 10
-        },
-        {
-            "id": 2,
-            "title": "Second Recipe",
-            "image_uri": "https://spoonacular.com/recipeImages/Jambalaya-648427.jpg",
-            "cuisine": "italian",
-            "ready_in_minutes": 25,
-            "servings": 11
-        }
-    ]}
+    testdict = {
+  "recipes": [
+    {
+      "cuisine": "african",
+      "id": 1,
+      "image_uri": "https://spoonacular.com/recipeImages/African-Bean-Soup-632003.jpg",
+      "ready_in_minutes": 45,
+      "servings": 4,
+      "title": "African Bean Soup"
+    },
+    {
+      "cuisine": "african",
+      "id": 2,
+      "image_uri": "https://spoonacular.com/recipeImages/Ethiopian-Lentil-Curry-642468.jpg",
+      "ready_in_minutes": 75,
+      "servings": 6,
+      "title": "Ethiopian Lentil Curry"
+    }
+  ]
+}
     return jsonify(testdict)
 
 """
