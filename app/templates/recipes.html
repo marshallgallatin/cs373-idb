@@ -45,7 +45,7 @@
 			<th ng-click="orderByMe('id')">ID</th>
 			<th ng-click="orderByMe('title')">Title</th>
 		</tr>
-	<tr ng-repeat="x in names | orderBy:mbOrderBy:mbReverse">
+	<tr ng-repeat="x in data.recipes | orderBy:mbOrderBy:mbReverse">
 		<td>{{ '{{x.id}}' }}</td>
 		<td>{{ '{{x.title}}' }}</td>
 	</tr>
