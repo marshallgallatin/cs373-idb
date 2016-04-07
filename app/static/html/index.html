@@ -8,47 +8,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<style>
-	body {
-		background-color: grey
-	}
-	.glyphicon-ok {
-		color: green;
-	}
-	tr {
-		cursor: hand;
-		cursor: pointer;
-	}
 	a {
 		color: black;
 	}
+	.img-thumbnail {
+		max-height: 200px;
+	}
 	</style>
-	<script src="http://maps.googleapis.com/maps/api/js"></script>
-	<script>
-		function initialize() {
-		  var mapProp = {
-			center:new google.maps.LatLng(30.2849185,-97.73624),
-			zoom:17,
-			mapTypeId:google.maps.MapTypeId.ROADMAP
-		  };
-		  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
-		}
-		google.maps.event.addDomListener(window, 'load', initialize);
-		//start http://stackoverflow.com/questions/14735274/bootstrap-css-hides-portion-of-container-below-navbar-navbar-fixed-top
-		var onResize = function() {
-			// apply dynamic padding at the top of the body according to the fixed navbar height
-			$("body").css("padding-top", $(".navbar-fixed-top").height() + 10);
-			initialize();
-		}
-
-		// attach the function to the window resize event
-		$(window).resize(onResize);
-
-		// call it also when the page is ready after load or reload
-		$(function() {
-			onResize();
-		});
-		//end http://stackoverflow.com/questions/14735274/bootstrap-css-hides-portion-of-container-below-navbar-navbar-fixed-top
-	</script>
 </head>
 
 <body>
@@ -77,7 +43,7 @@
 
 <div style="background-color:white" class="container">
 	<div class="jumbotron">
-		<h1>Welcome to IRDb!</h1>
+		<h1>Welcome to IRDb!</h1>
 		<p><b>I</b>nternet <b>R</b>ecipe <b>D</b>ata<b>b</b>ase</p>
 		<p>We provide recipes for your delight.</p>
 	</div>
@@ -106,18 +72,24 @@
 	<div class="row">
 		<a href="/1145.html">
 		<div class="col-xs-4">
+			<center>
 			<img class="img-responsive img-thumbnail" src="http://blog.freshharvestga.com/wp-content/uploads/2014/09/Butter.jpg"></src>
 			<div>Butter without Salt!</div>
+			</center>
 		</div></a>
 		<a href="/2044.html">
 		<div class="col-xs-4">
+			<center>
 			<img class="img-responsive img-thumbnail" src="http://www.essentialoilspedia.com/wp-content/uploads/basil_plant.jpg"></src>
 			<div>Fresh Basil!</div>
+			</center>
 		</div></a>
 		<a href="/15270.html">
 		<div class="col-xs-4">
+			<center>
 			<img class="img-responsive img-thumbnail" src="http://www.weissmeats.com/image/cache/data/raw-shrimp-500x500.png"></src>
 			<div>Raw Shrimp!</div>
+			</center>
 		</div></a>
 		<p style="padding-right:5px" class="text-right"><a class="btn btn-default" href="/ingredients.html">More</a></span></p>
 	</div>
