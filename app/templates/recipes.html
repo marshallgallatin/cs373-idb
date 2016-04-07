@@ -24,7 +24,6 @@
 			$scope.getData = function () {
 				$http.get("r").then(function (transmit) {
 					$scope.data = transmit.data;
-					alert($scope.data.recipes[0].cuisine);
 				});
 			}
 			$(function() {
