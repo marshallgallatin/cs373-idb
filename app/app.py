@@ -38,11 +38,11 @@ def splash():
 
 @app.route('/about.html')
 def about():
-	return render_template('about.html', title="About")
+	return render_template('about.html', title="About", aboutlit="active")
 
 @app.route('/recipes.html')
 def recipes():
-	return render_template('recipes.html', title="Recipes")
+	return render_template('recipes.html', title="Recipes", recipeslit="active")
 
 @app.route("/<path:path>")
 def static_html(path):
@@ -179,11 +179,10 @@ def recipe(r_id=None):
 	"test_ingred":"1 teaspoon <a href=\"/2044.html\">basil</a>",
 	"ingred":4,
 	"title":"Jamba",
-	"recipeslit":"active",
 	"img_uri":"https://webknox.com/recipeImages/648427-556x370.jpg"}
 	split_ingredients(store)
 	split_instructions(store)
-	return render_template('recipe.html', **store)
+	return render_template('recipe.html', **store, recipeslit="active")
 
 def split_ingredients(d):
 	l = d["ingredients"]
@@ -200,7 +199,6 @@ def split_instructions(d):
 def ingredient(i_id=None):
 	store = {"id":"1",
 	"title":"Fresh Basil",
-	"ingredientslit":"active",
 	"size":"1 egg",
 	"calories":"171",
 	"total_fat":"11.88g",
@@ -217,7 +215,7 @@ def ingredient(i_id=None):
 	"iron":"4.1%",
 	"place":"30.2849185,-97.73624",
 	"img_uri":"http://www.essentialoilspedia.com/wp-content/uploads/basil_plant.jpg"}
-	return render_template('ingredient.html', i_id=i_id, **store)
+	return render_template('ingredient.html', i_id=i_id, **store, ingredientslit="active")
 
 ############ END WEBSITE TEST ENTRY POINTS ###########
 
