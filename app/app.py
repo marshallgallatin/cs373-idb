@@ -154,6 +154,65 @@ def test_recipes():
 }
     return jsonify(testdict)
 
+@app.route('/test/r')
+def test_r():
+	return jsonify({
+  "cuisine": "african",
+  "dairy_free": True,
+  "gluten_free": True,
+  "image_uri": "https://spoonacular.com/recipeImages/African-Bean-Soup-632003.jpg",
+  "ingredients": [
+    {
+      "amount": 2.0,
+      "id": 1,
+      "original_string": "2 cups dried black-eyed peas",
+      "unit": "cups"
+    },
+    {
+      "amount": 2.0,
+      "id": 2,
+      "original_string": "2 cups sliced carrots",
+      "unit": "cups"
+    },
+    {
+      "amount": 1.0,
+      "id": 3,
+      "original_string": "1 cup green pepper, diced",
+      "unit": "cup"
+    },
+    {
+      "amount": 1.0,
+      "id": 4,
+      "original_string": "1 large chopped onion",
+      "unit": "cup"
+    },
+    {
+      "amount": 4.0,
+      "id": 5,
+      "original_string": "peanut butter",
+      "unit": "tablespoon"
+    },
+    {
+      "amount": 0.75,
+      "id": 6,
+      "original_string": "3/4 teaspoon salt",
+      "unit": "teaspoon"
+    },
+    {
+      "amount": 6.0,
+      "id": 7,
+      "original_string": "6 cups water",
+      "unit": "cups"
+    }
+  ],
+  "instructions": "<ol><li>Saute onions in large pot until soft. Add all ingredients except for peanut butter and simmer for 1 1/2 hours. </li><li>Stir a spoonful of peanut butter into each serving.</li></ol>",
+  "ready_in_minutes": 45,
+  "servings": 4,
+  "title": "African Bean Soup",
+  "vegan": True,
+  "vegetarian": True
+})
+
 @app.route('/recipe.html')
 @app.route('/recipe_<r_id>.html')
 def recipe(r_id=None):
