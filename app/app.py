@@ -40,6 +40,10 @@ def splash():
 def about():
 	return render_template('about.html', title="About")
 
+@app.route('/recipes.html')
+def recipes():
+	return render_template('recipes.html', title="Recipes")
+
 @app.route("/<path:path>")
 def static_html(path):
     return app.send_static_file('html/{}'.format(path))
