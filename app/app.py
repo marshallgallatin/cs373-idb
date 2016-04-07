@@ -154,7 +154,7 @@ def test_recipes():
 }
     return jsonify(testdict)
 
-@app.route('/test/r')
+@app.route('/recipes/test')
 def test_r():
 	return jsonify({
   "cuisine": "african",
@@ -215,17 +215,8 @@ def test_r():
 
 @app.route('/recipe.html')
 @app.route('/recipe_<r_id>.html')
-def recipe(r_id=None):
-	store = {"id":"1",
-	"instructions":"<ol><li>Saute onions in large pot until soft. Add all ingredients except for peanut butter and simmer for 1 1/2 hours. </li><li>Stir a spoonful of peanut butter into each serving.</li></ol>",
-	"ingredients":["a","<b>b</b>"],
-	"test_ingred":"1 teaspoon <a href=\"/2044.html\">basil</a>",
-	"ingred":4,
-	"title":"Jamba",
-	"img_uri":"https://webknox.com/recipeImages/648427-556x370.jpg"}
-	split_ingredients(store)
-	split_instructions(store)
-	return render_template('recipe.html', recipeslit="active", **store)
+def recipe(r_id="test"):
+	return render_template('recipe.html', rec_id=r_id, recipeslit="active")
 
 def split_ingredients(d):
 	l = d["ingredients"]
