@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>About</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	
+	<style>
+	body {
+		background-color: grey
+	}
+	div {
+		background-color: white
+	}
+	.glyphicon-ok {
+		color: green;
+	}
+	td {
+		padding-left: 5px
+	}
+	.img-responsive {
+		max-height: 300px
+	}
+	.panel-code {
+		font-family: Menlo, Monaco, Consolas, "Courier New" , monospace;
+		background-color: #f9f2f4;
+		text-align: left;
+		white-space: pre;
+		overflow: scroll;
+	}
+	</style>
+	<script>
+		//start http://stackoverflow.com/questions/14735274/bootstrap-css-hides-portion-of-container-below-navbar-navbar-fixed-top
+		var onResize = function() {
+			// apply dynamic padding at the top of the body according to the fixed navbar height
+			$("body").css("padding-top", $(".navbar-fixed-top").height() + 10);
+		}
+
+		// attach the function to the window resize event
+		$(window).resize(onResize);
+
+		// call it also when the page is ready after load or reload
+		$(function() {
+			onResize();
+		});
+		//end http://stackoverflow.com/questions/14735274/bootstrap-css-hides-portion-of-container-below-navbar-navbar-fixed-top
+		function runTests() {
+			$http.get("unittest").then(function (transmit) {
+				$scope.unitoutput = transmit.data;
+			});
+		}
+	</script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+		    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+			<a class="navbar-brand" href="/index.html">IRDb</a>
+		</div>
+        <div id="navbar" class="navbar-collapse collapse" ng-controller="HeaderController">
+		<ul class="nav navbar-nav">
+			<li><a href="/index.html">Home</a></li>
+			<li><a href="/recipes.html">Recipes</a></li>
+			<li><a href="/ingredients.html">Ingredients</a></li>
+			<li class="active"><a href="/about.html">About</a></li>
+		</ul>
+        </div><!--/.nav-collapse -->
+	</div>
+</nav>
+
+<div class="container">
+	<h1>SWEdish Chefs</h1>
+	<div class="page-header">
+	<h2>Group Members</h2>
+	<p>Min Bi, Joshua Cannon, Marshall Gallatin, K.C. Hawes-Domingue, Victor Yap</p>
+	</div>
+	<div class="page-header">
+	<h3>Min Bi</h3>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-4">
+			<img class="img-responsive" src="http://minbi.github.io/cs373-blog/me.png"></img>
+		</div>
+		<div class="col-xs-12 col-sm-8">
+			<p>I'm in my final semester at the University of Texas at Austin in pursuit of my Bachelor's in Computer Science. I love back-end work, but I seem to falling into the plight of front-end these days. I'm interested in machine learning, back-end, and all things intelligent. I program to make my life easier, so I have in my arsenal various code snippets that do mortgage calculations and others that write code for me.</p>
+			<p>Previously employed at the University of Texas Medical Branch at Galveston writing programs for one of the top traumatic brain injury research groups to facilitate their search for genetic therapies. I will be employed after I graduate at company X ;) shhh its a secret.</p>
+			<b>Major responsibilities: </b>Front End<br />
+			Commits		<span class="label label-success">21</span><br />
+			Issues		<span class="label label-danger">0</span><br />
+			Unit tests	<span class="label label-info">0</span>
+		</div>
+	</div>
+	<div class="page-header">
+	<h3>Joshua Cannon</h3>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-4">
+			<img class="img-responsive" src="/static/img/jc-headshot.jpg"></img>
+		</div>
+		<div class="col-xs-12 col-sm-8">
+			<p>I am a senior getting my BS in CS at UT. I am very passionate about computer science, and love back-end work. My favorite languages are C++ and python, and I believe you can never have too many monitors.
+I am currently employed at National Instruments and have been working there for almost 2 years. I love a good coding challenge, and write apps in spare time (if I have any).</p>
+			<b>Major responsibilities: </b>Database, unit tests, and some API work<br />
+			Commits		<span class="label label-success">15</span><br />
+			Issues		<span class="label label-danger">0</span><br />
+			Unit tests	<span class="label label-info">14</span>
+		</div>
+	</div>
+	<div class="page-header">
+	<h3>Marshall Gallatin</h3>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-4">
+			<img class="img-responsive" src="/static/img/mg-headshot.jpg"></img>
+		</div>
+		<div class="col-xs-12 col-sm-8">
+			<p>By day, I'm a Senior Software Technician at National Instruments.  By night, I'm a Senior at the University of Texas at Austin working towards a B.S. in Computer Science.  I am interested in C++, python, and driver development.</p>
+			<b>Major responsibilities: </b>Back end setup, Docker/Carina deployment, some front-end development<br />
+			Commits		<span class="label label-success">26</span><br />
+			Issues		<span class="label label-danger">4</span><br />
+			Unit tests	<span class="label label-info">0</span>
+		</div>
+	</div>
+	<div class="page-header">
+	<h3>K.C. Hawes-Domingue</h3>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-4">
+			<img class="img-responsive" src="/static/img/kchd-headshot.jpg"></img>
+		</div>
+		<div class="col-xs-12 col-sm-8">
+			<p> I'm a senior UT Computer Science undergrad, National Instruments intern, and keyboard player in a <a href="https://www.facebook.com/TheReturnersVGM">video game music cover band</a>. I love all things computer-related, and in my time off I enjoy playing video games, cooking, and exploring the outdoors.</p>
+			<b>Major responsibilities: </b>Data analyst and API co-designer<br />
+			Commits		<span class="label label-success">19</span><br />
+			Issues		<span class="label label-danger">12</span><br />
+			Unit tests	<span class="label label-info">0</span>
+		</div>
+	</div>
+	<div class="page-header">
+	<h3>Victor Yap</h3>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-4">
+			<img class="img-responsive" src="http://vicyap.github.io/images/headshot.jpg"></img>
+		</div>
+		<div class="col-xs-12 col-sm-8">
+			<p>I am a 4th-year student at the University of Texas - Austin studying Computer Science and Electrical Engineering. My interests in these fields include software engineering, signal processing, and statistical inference. A couple of topics I still wish to learn more about or become more acquainted with are computer networking, databases, and mobile app development. I am planned to graduate in December 2016, so hopefully I still have time to learn more about those topics.</p>
+			<p>On the side I am an avid listener to most music, especially electronic music. Right now my favorites artists include Skrillex, Porter Robinson, Tchami, Major Lazer,  Disclosure, Odesza, Flume, etc. The list could go on and on for a while. My interest in music and music production is also what drives my interest in signal processing and its applications to music production.</p><br /><br />
+			<b>Major responsibilities: </b>Apiary, API Design, Wiki Design Page<br />
+			Commits		<span class="label label-success">5</span><br />
+			Issues		<span class="label label-danger">0</span><br />
+			Unit tests	<span class="label label-info">0</span>
+		</div>
+	</div>
+	<div class="page-header">
+	<h2>Total Stats</h2>
+	</div>
+	Commits		<span class="label label-success">110</span><br />
+	Issues		<span class="label label-danger">16</span><br />
+	Unit tests	<span class="label label-info">014</span><br />
+	<div class="page-header">
+	<h2>Links</h2>
+	</div>
+	<a class="btn btn-info" href="https://app.apiary.io/restipe/">Apiary API</a>
+	<a class="btn btn-danger" href="https://github.com/marshallgallatin/cs373-idb/issues">GitHub Issue Tracker</a>
+	<a class="btn btn-success" href="https://github.com/marshallgallatin/cs373-idb">GitHub Repo</a>
+	<a class="btn btn-primary" href="https://github.com/marshallgallatin/cs373-idb/wiki">GitHub Wiki</a>
+	<div class="page-header">
+	<h2>Data</h2>
+	</div>
+	<h3>Spoonacular</h3>
+	<p>Our recipe data was scraped programmatically from Spoonacular's <a href="https://spoonacular.com/food-api">Food API</a> using Python scripts. The <a href="http://python-requests.org/">requests</a> package allowed us to send GET requests and parse the responses in JSON format. Here is an example of such a request using a Python script:</p>
+	<pre>#!/usr/bin/env python3
+import requests
+payload = {'Accept': 'application/json', 'X-Mashape-Key': <redacted>}
+response = requests.get('https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/search?cuisine=cajun&diet=pescetarian', headers=payload)
+data = response.json()
+for item in data['results']:
+	print(item['title'])
+	</pre>
+	
+	<h3>USDA</h3>
+	<p>The US Department of Agriculture maintains an enormous <a href="https://ndb.nal.usda.gov/">Nutrient Database</a> that is open to the public and even provides a RESTful API to programmatically lookup data. For instance, the following GET invocation will return foods and ingredients that contain the word "butter" in their database:</p>
+	<pre>http://api.nal.usda.gov/ndb/search/?format=json&q=butter&sort=n&max=25&offset=0&api_key=DEMO_KEY</pre>
+	
+	<div class="page-header">
+	<h2>Tools</h2>
+	</div>
+	<ul class="list-group">
+		<li class="list-group-item">Apiary</li>
+		<li class="list-group-item">AngularJS</li>
+		<li class="list-group-item">Bootstrap</li>
+		<li class="list-group-item">Carina</li>
+		<li class="list-group-item">Docker</li>
+		<li class="list-group-item">Flask</li>
+		<li class="list-group-item">jQuery</li>
+		<li class="list-group-item">Github</li>
+		<li class="list-group-item">Github Issue Tracker</li>
+		<li class="list-group-item">Github Wiki</li>
+		<li class="list-group-item">Google Maps</li>
+		<li class="list-group-item">Rackspace</li>
+		<li class="list-group-item">Slack</li>
+		<li class="list-group-item">SQLAlchemy</li>
+		<li class="list-group-item">Travis CI</li>
+	</ul>
+	
+	<div class="page-header">
+	<h2>Tools</h2>
+	</div>
+	<a class="btn btn-default" onclick="runTests()">Run unit tests</a>
+	<pre id="unittests">{{unitoutput}}</pre>
+</div>
+</body>
+</html>
