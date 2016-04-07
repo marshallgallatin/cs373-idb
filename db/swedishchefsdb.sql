@@ -181,31 +181,31 @@ CREATE TABLE "Nutritional Content" (
   id                    INTEGER          NOT NULL,
   ingredient_id         INTEGER,
   calories              INTEGER          NOT NULL,
-  total_fat_g           INTEGER          NOT NULL,
-  saturated_fat_g       INTEGER          NOT NULL,
+  total_fat_g           DOUBLE PRECISION NOT NULL,
+  saturated_fat_g       DOUBLE PRECISION NOT NULL,
   cholesterol_mg        INTEGER          NOT NULL,
   sodium_mg             INTEGER          NOT NULL,
-  total_carbohydrates_g INTEGER          NOT NULL,
+  total_carbohydrates_g DOUBLE PRECISION NOT NULL,
   dietary_fiber_g       DOUBLE PRECISION NOT NULL,
   sugar_g               DOUBLE PRECISION NOT NULL,
   protein_g             DOUBLE PRECISION NOT NULL,
   vitamin_a_iu          INTEGER          NOT NULL,
-  vitamin_c_mg          INTEGER          NOT NULL,
+  vitamin_c_mg          DOUBLE PRECISION NOT NULL,
   calcium_mg            INTEGER          NOT NULL,
-  iron_mg               INTEGER          NOT NULL,
+  iron_mg               DOUBLE PRECISION NOT NULL,
   CONSTRAINT "Nutritional Content_calcium_mg_check" CHECK ((calcium_mg >= 0)),
   CONSTRAINT "Nutritional Content_calories_check" CHECK ((calories >= 0)),
   CONSTRAINT "Nutritional Content_cholesterol_mg_check" CHECK ((cholesterol_mg >= 0)),
   CONSTRAINT "Nutritional Content_dietary_fiber_g_check" CHECK ((dietary_fiber_g >= (0) :: DOUBLE PRECISION)),
-  CONSTRAINT "Nutritional Content_iron_mg_check" CHECK ((iron_mg >= 0)),
+  CONSTRAINT "Nutritional Content_iron_mg_check" CHECK ((iron_mg >= (0) :: DOUBLE PRECISION)),
   CONSTRAINT "Nutritional Content_protein_g_check" CHECK ((protein_g >= (0) :: DOUBLE PRECISION)),
-  CONSTRAINT "Nutritional Content_saturated_fat_g_check" CHECK ((saturated_fat_g >= 0)),
+  CONSTRAINT "Nutritional Content_saturated_fat_g_check" CHECK ((saturated_fat_g >= (0) :: DOUBLE PRECISION)),
   CONSTRAINT "Nutritional Content_sodium_mg_check" CHECK ((sodium_mg >= 0)),
   CONSTRAINT "Nutritional Content_sugar_g_check" CHECK ((sugar_g >= (0) :: DOUBLE PRECISION)),
-  CONSTRAINT "Nutritional Content_total_carbohydrates_g_check" CHECK ((total_carbohydrates_g >= 0)),
-  CONSTRAINT "Nutritional Content_total_fat_g_check" CHECK ((total_fat_g >= 0)),
+  CONSTRAINT "Nutritional Content_total_carbohydrates_g_check" CHECK ((total_carbohydrates_g >= (0) :: DOUBLE PRECISION)),
+  CONSTRAINT "Nutritional Content_total_fat_g_check" CHECK ((total_fat_g >= (0) :: DOUBLE PRECISION)),
   CONSTRAINT "Nutritional Content_vitamin_a_iu_check" CHECK ((vitamin_a_iu >= 0)),
-  CONSTRAINT "Nutritional Content_vitamin_c_mg_check" CHECK ((vitamin_c_mg >= 0))
+  CONSTRAINT "Nutritional Content_vitamin_c_mg_check" CHECK ((vitamin_c_mg >= (0) :: DOUBLE PRECISION))
 );
 
 --
@@ -298,7 +298,7 @@ ALTER TABLE ONLY "Recipe"
 --
 
 COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
-1	black-eyed pea	https://upload.wikimedia.org/wikipedia/commons/d/d0/BlackEyedPeas.JPG Vigna unguiculata subsp. unguiculata	Africa
+1	black-eyed pea	https://upload.wikimedia.org/wikipedia/commons/d/d0/BlackEyedPeas.JPG  Vigna unguiculata subsp. unguiculata	Africa
 2	carrot	https://upload.wikimedia.org/wikipedia/commons/b/bd/13-08-31-wien-redaktionstreffen-EuT-by-Bi-frie-037.jpg	Daucus carota	Asia
 3	green bell pepper	https://upload.wikimedia.org/wikipedia/commons/5/59/Capsicum3.JPG	Capsicum annuum	NorthAmerica
 4	onion	https://upload.wikimedia.org/wikipedia/commons/6/6a/White_onion_cross_section.jpg	Allium cepa	Africa
