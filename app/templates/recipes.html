@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+{% block scripts %}
+	<style>
+	th {
+		cursor: hand;
+		cursor: pointer;
+		border-left: 3px solid orange
+	}
+	img {
+		height: 100px;
+	}
+	</style>
+	<script>
+		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
+			$scope.page = 1;
+			$scope.names = [
+				{id:'1',title:'Jamba'},
+				{id:'2',title:'Shrimp'},
+			];
+			$scope.mbReverse = false;
+			$scope.orderByMe = function(x) {
+				if ($scope.mbOrderBy == x) {
+					$scope.mbReverse = !$scope.mbReverse;
+				} else {
+					$scope.mbReverse = false;
+				}
+				$scope.mbOrderBy = x;
+			}
+			$scope.getData = function () {
+				//$http.get("recipestest?limit=10&page=" + $scope.page).then(function (transmit) {
+				$http.get("r").then(function (transmit) {
+					$scope.data = transmit.data;
+				});
+			}
+			$(function() {
+				$scope.getData();
+			});
+		});
+	</script>
+{% endblock scripts %}
+
+{% block title %}
+{{ title }}
+{% endblock title %}
+
+{% block content %}
+<div ng-app="mbApp" ng-controller="mbCtrl">
+	<div class="table-responsive">
+		<table class="table table-default table-hover">
+			<tr>
+				<th ng-click="orderByMe('id')">ID</th>
+				<th ng-click="orderByMe('title')">Title</th>
+				<th ng-click="orderByMe('image_uri')">Image</th>
+				<th ng-click="orderByMe('ready_in_minutes')">Prep Time</th>
+				<th ng-click="orderByMe('servings')">Serves</th>
+				<th ng-click="orderByMe('cuisine')">Cuisine</th>
+			</tr>
+		<tr ng-repeat="x in data.recipes | orderBy:mbOrderBy:mbReverse">
+			<td>{{ '{{x.id}}' }}</td>
+			<td>{{ '{{x.title}}' }}</td>
+			<td><img ng-src="{{ '{{x.image_uri}}' }}"></img></td>
+			<td>{{ '{{x.ready_in_minutes}}' }}</td>
+			<td>{{ '{{x.servings}}' }}</td>
+			<td>{{ '{{x.cuisine}}' }}</td>
+		</tr>
+		</table>
+	</div>
+	<center>
+		<ul class="pagination">
+			<li><a href="#">First</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">Last</a></li>
+		</ul>
+	</center>
+</div>
+{% endblock content %}
