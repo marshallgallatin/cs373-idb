@@ -25,7 +25,6 @@ services:
     environment:
       # Environment variables to configure the app on startup.
       - POSTGRES_DB=postgres
-      - POSTGRES_HOST=cs373idb_db
 
   db:
     # The database container. Built from the db/Dockerfile.
@@ -35,16 +34,6 @@ services:
     networks:
       - backend
     environment:
-      # Environment variables to configure MySQL on startup.
+      # Environment variables to configure postgres on startup.
       - POSTGRES_DB=postgres_default
 
-  data:
-    container_name: cs373idb_db_data
-    # The Data Volume Container used to mount a volume to store our persistent data
-    # https://getcarina.com/docs/tutorials/data-volume-containers/
-    image: cirros
-    volumes:
-      # Mount this path as a volume to store our PostGres files
-      - /var/lib/postgresql
-    command: /bin/true
-      # Run a trivial command to exit quickly. Volumes don't need a running container.
