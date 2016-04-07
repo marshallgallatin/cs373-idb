@@ -104,7 +104,11 @@ def splash():
 
 @app.route('/about.html')
 def about():
-	return render_template('about.html', title="About")
+	return render_template('about.html', title="About", aboutlit="active")
+
+@app.route('/recipes.html')
+def recipes():
+	return render_template('recipes.html', title="Recipes", recipeslit="active")
 
 @app.route("/<path:path>")
 def static_html(path):
@@ -125,26 +129,29 @@ def dump_database():
         rlist.append(dict({"id": r.id, "title": r.title, "image_uri":r.image_uri, "cuisine": r.cuisine, "ready_in_minutes": r.ready_in_minutes, "servings": r.servings}))
     return jsonify({"recipes": rlist})
 
-@app.route("/test/recipes")
+@app.route("/r")
+@app.route("/recipestest\?limit=2&page=1")
 def test_recipes():
-    testdict = { "recipes": [
-        {
-            "id": 1,
-            "title": "Jambalaya",
-            "image_uri": "https://spoonacular.com/recipeImages/Jambalaya-648427.jpg",
-            "cuisine": "cajun",
-            "ready_in_minutes": 45,
-            "servings": 10
-        },
-        {
-            "id": 2,
-            "title": "Second Recipe",
-            "image_uri": "https://spoonacular.com/recipeImages/Jambalaya-648427.jpg",
-            "cuisine": "italian",
-            "ready_in_minutes": 25,
-            "servings": 11
-        }
-    ]}
+    testdict = {
+  "recipes": [
+    {
+      "cuisine": "african",
+      "id": 1,
+      "image_uri": "https://spoonacular.com/recipeImages/African-Bean-Soup-632003.jpg",
+      "ready_in_minutes": 45,
+      "servings": 4,
+      "title": "African Bean Soup"
+    },
+    {
+      "cuisine": "african",
+      "id": 2,
+      "image_uri": "https://spoonacular.com/recipeImages/Ethiopian-Lentil-Curry-642468.jpg",
+      "ready_in_minutes": 75,
+      "servings": 6,
+      "title": "Ethiopian Lentil Curry"
+    }
+  ]
+}
     return jsonify(testdict)
 
 """
@@ -246,11 +253,10 @@ def recipe(r_id=None):
 	"test_ingred":"1 teaspoon <a href=\"/2044.html\">basil</a>",
 	"ingred":4,
 	"title":"Jamba",
-	"recipeslit":"active",
 	"img_uri":"https://webknox.com/recipeImages/648427-556x370.jpg"}
 	split_ingredients(store)
 	split_instructions(store)
-	return render_template('recipe.html', **store)
+	return render_template('recipe.html', **store, recipeslit="active")
 
 def split_ingredients(d):
 	l = d["ingredients"]
@@ -267,7 +273,6 @@ def split_instructions(d):
 def ingredient(i_id=None):
 	store = {"id":"1",
 	"title":"Fresh Basil",
-	"ingredientslit":"active",
 	"size":"1 egg",
 	"calories":"171",
 	"total_fat":"11.88g",
@@ -284,7 +289,7 @@ def ingredient(i_id=None):
 	"iron":"4.1%",
 	"place":"30.2849185,-97.73624",
 	"img_uri":"http://www.essentialoilspedia.com/wp-content/uploads/basil_plant.jpg"}
-	return render_template('ingredient.html', i_id=i_id, **store)
+	return render_template('ingredient.html', i_id=i_id, **store, ingredientslit="active")
 
 ############ END WEBSITE TEST ENTRY POINTS ###########
 
