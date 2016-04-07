@@ -13,10 +13,6 @@
 	<script>
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
 			$scope.page = 1;
-			$scope.names = [
-				{id:'1',title:'Jamba'},
-				{id:'2',title:'Shrimp'},
-			];
 			$scope.mbReverse = false;
 			$scope.orderByMe = function(x) {
 				if ($scope.mbOrderBy == x) {
