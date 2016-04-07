@@ -48,6 +48,9 @@
 			onResize();
 		});
 		//end http://stackoverflow.com/questions/14735274/bootstrap-css-hides-portion-of-container-below-navbar-navbar-fixed-top
+		function runTests() {
+			alert(1);
+		}
 	</script>
 </head>
 
@@ -214,7 +217,7 @@ for item in data['results']:
 	<div class="page-header">
 	<h2>Tools</h2>
 	</div>
-	<a class="btn btn-default">Run unit tests</a>
+	<a class="btn btn-default" onclick="runTests()">Run unit tests</a>
 	<pre id="unittests"></pre>
 </div>
 </body>
