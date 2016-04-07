@@ -227,6 +227,39 @@ def test_ing():
   "scientific_name": "Vigna unguiculata subsp. unguiculata"
 })
 
+@app.route('/ingredients/test/recipes')
+def test_ing():
+	return jsonify({
+  "recipes": [
+    {
+      "cuisine": "african",
+      "id": 1,
+      "image_uri": "https://spoonacular.com/recipeImages/African-Bean-Soup-632003.jpg",
+      "ready_in_minutes": 45,
+      "servings": 4,
+      "title": "African Bean Soup"
+    }
+  ]
+})
+
+@app.route('/ingredients/test/nutrition')
+def test_ing():
+	return jsonify({
+  "calcium_mg": 110,
+  "calories": 336,
+  "cholesterol_mg": 0,
+  "dietary_fiber_g": 10.6,
+  "iron_mg": 8.27,
+  "protein_g": 23.52,
+  "saturated_fat_g": 0.331,
+  "sodium_mg": 16,
+  "sugar_g": 6.9,
+  "total_carbohydrates_g": 60.03,
+  "total_fat_g": 1.26,
+  "vitamin_a_iu": 50,
+  "vitamin_c_mg": 1.5
+})
+
 @app.route('/ingredient.html')
 @app.route('/ingredient_<i_id>.html')
 def ingredient(i_id="test"):
