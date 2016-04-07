@@ -69,6 +69,7 @@
 		<div class="col-xs-12 col-sm-6 col-lg-6">
 			<h1>{{ '{{data.title}}' }}</h1>
 			<img ng-show="data.gluten_free" style="max-height:30px;" src="https://www.moxiemultisportatx.com/wp-content/uploads/2015/06/GLUTEN-FREE-STAMP_18338414_xxl1.jpg"></img>
+			<img ng-show="data.dairy_free" style="max-height:30px;" src="https://www.nuggetmarket.com/img/special-diets/USDDF.png"></img>
 			{{ '{{data}}' }}
 		</div>
 		<div style="padding-top:10px" class="col-xs-12 col-sm-6 col-lg-6">
@@ -81,9 +82,6 @@
 	</div>
 	<div class="row">
 		<div class="col-xs-12 col-sm-6 col-lg-4">
-			<div class="checkbox">
-				<label><input type="checkbox" value="">{{test_ingred | safe}}</label>
-			</div>
 			<div class="checkbox" ng-repeat="x in data.ingredients">
 				<label><input type="checkbox" value=""><a ng-href="/ingredient_{{ '{{x.id}}' }}.html">{{ '{{x.original_string}}' }}</a></label>
 			</div>
