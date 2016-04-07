@@ -16,9 +16,6 @@
 	}
 	</style>
 	<script>
-	
-	
-	
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
 			$scope.runTests = function () {
 				$http.get("unittest").then(function (transmit) {
@@ -26,9 +23,6 @@
 				});
 			}
 		});
-		
-		
-		
 	</script>
 {% endblock scripts %}
 
