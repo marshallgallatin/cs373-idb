@@ -43,6 +43,22 @@
 			});
 		});
 		
+		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
+			$scope.getInstructions = function () {
+				$http.get("test/r").then(function (transmit) {
+					$scope.data = transmit.data;
+				});
+			}
+			$scope.getData = function () {
+				$http.get("test/r").then(function (transmit) {
+					$scope.data = transmit.data;
+					$scope.data.instructions = $scope.data.instructions.replace("<ol><li>", "").replace("</li></ol>", "").split("</li><li>");
+				});
+			}
+			$(function() {
+				$scope.getData();
+			});
+		});
 	</script>
 {% endblock scripts %}
 
@@ -51,11 +67,13 @@
 {% endblock title %}
 
 {% block content %}
+<div ng-app="mbApp" ng-controller="mbCtrl">
 	<div class="col-xs-12 col-sm-6 col-lg-6">
-		<h1>{{ title }}</h1>
+		<h1>{{ '{{data.title}}' }}</h1>
+		{{ '{{data}}' }}
 	</div>
 	<div style="padding-top:10px" class="col-xs-12 col-sm-6 col-lg-6">
-		<img class="img-responsive" src={{ img_uri }}></img>
+		<img class="img-responsive" src={{ '{{data.image_uri}}' }}></img>
 	</div>
 	
 	<div class="page-header">
@@ -86,12 +104,11 @@
 	</div>
 	<div>
 		<table class="table table-default">
-		{% for step in instructions %}
-		<tr>
-		<td class="fit"><span class="glyphicon glyphicon-minus"></span></td>
-		<td class={% if loop.first %}info{% endif %}>{{ step }}</td>
+		<tr ng-repeat="x in data.instructions">
+			<td class="fit"><span class="glyphicon glyphicon-minus"></span></td>
+			<td ng-class='{info:$first}'>{{ '{{x}}' }}</td>
 		</tr>
-		{% endfor %}		
 		</table>
 	</div>
+</div>
 {% endblock content %}
