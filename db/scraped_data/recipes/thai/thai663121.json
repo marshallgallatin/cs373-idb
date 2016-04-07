@@ -1,1 +1,219 @@
-{"vegetarian": false, "glutenFree": true, "title": "Thai Massaman Curry", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/2THPNQYQ/thai-massaman-curry", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>In the heated oil, fry curry paste till aromatic and oil splits.</li><li>Add bay leaves and lamb.</li><li>Pour 1/2 liter of water (more if you like)</li><li>Stir and simmer till lamb is half cooked.</li><li>Add potatoes and season with salt.</li><li>Continue to simmer till potatoes and lamb are tender and soft.</li><li>Pour in fish sauce, lime juice and coconut milk.</li><li>Gently stir and remove from heat.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Spices and Seasonings", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 bay leaves", "name": "bay leaves"}, {"aisle": "Seafood", "unitLong": "inches", "amount": 0.5, "unitShort": "inch", "metaInformation": [], "unit": "inch", "originalString": "1/2 inch roasted belacan", "name": "belacan"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "1 tsp black peppercorns", "name": "black peppercorns"}, {"aisle": "Canned and Jarred", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup coconut milk", "name": "coconut milk"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "1 tsp cumin seeds", "name": "cumin seeds"}, {"aisle": "Spices and Seasonings", "unitLong": "sprigs", "amount": 2.0, "unitShort": "sprigs", "metaInformation": [], "unit": "sprigs", "originalString": "2-3 sprigs coriander leaves (cut off roots and include the stems)", "name": "dried coriander leaves"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoons", "amount": 3.0, "unitShort": "T", "metaInformation": [], "unit": "tbsp", "originalString": "3 tbsp Fish Sauce", "name": "fish sauce"}, {"aisle": "Produce", "unitLong": "inches", "amount": 0.5, "unitShort": "inch", "metaInformation": [], "unit": "inch", "originalString": "1/2 inch galangal", "name": "galangal"}, {"aisle": "Produce", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 teaspoons minced garlic", "name": "garlic"}, {"aisle": "Spices and Seasonings", "unitLong": "", "amount": 3.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "3 cardamoms (only the seeds)", "name": "green cardamoms"}, {"aisle": "Meat", "unitLong": "grams", "amount": 500.0, "unitShort": "g", "metaInformation": [], "unit": "g", "originalString": "500g lamb (or beef)", "name": "lamb"}, {"aisle": "Ethnic Foods", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 lemongrass", "name": "lemongrass"}, {"aisle": "Produce", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons lemon or lime juice", "name": "lime juice"}, {"aisle": "Produce", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "1/2 tsp lime rind", "name": "lime rind"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup oil", "name": "oil"}, {"aisle": "Produce", "unitLong": "", "amount": 5.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "5-6 dried red chilies", "name": "red chilies"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 potatoes - remove skin and cut into chunks (optional)", "name": "red skin potatoes"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 5.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Salt for taste (only if need or use sparingly as fish sauce is salty)", "name": "salt"}, {"aisle": "Produce", "unitLong": "slices", "amount": 2.0, "unitShort": "slices", "metaInformation": [], "unit": "slices", "originalString": "2-3 Shallots, sliced.", "name": "shallots"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/thai-massaman-curry-663121", "weightWatcherSmartPoints": 19, "id": 663121, "image": "https://spoonacular.com/recipeImages/Thai-Massaman-Curry-663121.jpg", "servings": 5, "whole30": true, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Thai Massaman Curry",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/2THPNQYQ/thai-massaman-curry",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>In the heated oil, fry curry paste till aromatic and oil splits.</li><li>Add bay leaves and lamb.</li><li>Pour 1/2 liter of water (more if you like)</li><li>Stir and simmer till lamb is half cooked.</li><li>Add potatoes and season with salt.</li><li>Continue to simmer till potatoes and lamb are tender and soft.</li><li>Pour in fish sauce, lime juice and coconut milk.</li><li>Gently stir and remove from heat.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 bay leaves",
+      "name": "bay leaf"
+    },
+    {
+      "aisle": "Seafood",
+      "unitLong": "inches",
+      "amount": 0.5,
+      "unitShort": "inch",
+      "metaInformation": [],
+      "unit": "inch",
+      "originalString": "1/2 inch roasted belacan",
+      "name": "belacan"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1 tsp black peppercorns",
+      "name": "black peppercorns"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup coconut milk",
+      "name": "coconut milk"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1 tsp cumin seeds",
+      "name": "cumin seeds"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "sprigs",
+      "amount": 2.0,
+      "unitShort": "sprigs",
+      "metaInformation": [],
+      "unit": "sprigs",
+      "originalString": "2-3 sprigs coriander leaves (cut off roots and include the stems)",
+      "name": "dried coriander leaves"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoons",
+      "amount": 3.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tbsp",
+      "originalString": "3 tbsp Fish Sauce",
+      "name": "fish sauce"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "inches",
+      "amount": 0.5,
+      "unitShort": "inch",
+      "metaInformation": [],
+      "unit": "inch",
+      "originalString": "1/2 inch galangal",
+      "name": "galangal"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 teaspoons minced garlic",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "",
+      "amount": 3.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "3 cardamoms (only the seeds)",
+      "name": "green cardamoms"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "grams",
+      "amount": 500.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "g",
+      "originalString": "500g lamb (or beef)",
+      "name": "lamb"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 lemongrass",
+      "name": "lemongrass"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons lemon or lime juice",
+      "name": "lime juice"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1/2 tsp lime rind",
+      "name": "lime rind"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup oil",
+      "name": "oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 5.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "5-6 dried red chilies",
+      "name": "red chilies"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 potatoes - remove skin and cut into chunks (optional)",
+      "name": "red skin potatoes"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 5.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Salt for taste (only if need or use sparingly as fish sauce is salty)",
+      "name": "salt"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "slices",
+      "amount": 2.0,
+      "unitShort": "slices",
+      "metaInformation": [],
+      "unit": "slices",
+      "originalString": "2-3 Shallots, sliced.",
+      "name": "shallots"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/thai-massaman-curry-663121",
+  "weightWatcherSmartPoints": 19,
+  "id": 663121,
+  "image": "https://spoonacular.com/recipeImages/Thai-Massaman-Curry-663121.jpg",
+  "servings": 5,
+  "whole30": true,
+  "lowFodmap": false
+}

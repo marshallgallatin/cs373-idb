@@ -1,1 +1,169 @@
-{"vegetarian": false, "glutenFree": false, "title": "Pineapple and Noodle Kugel", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/HTFV4L38/noodle-kugel-with-pineapple-gluten-free-dairy-free", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Preheat the oven temperature to 350 degrees F</li><li>Fill a medium stockpot with water set over high heat.  When water boils add 2 tablespoons kosher salt, then add pasta, stir well to prevent sticking.</li><li>Stir occasionally, cook for 8-10 minutes.</li><li>Let it sit in the water for a few minutes before transferring to a large glass, or heatproof bowl.</li><li>Meanwhile prepare other ingredients.</li><li>Pasta should cool off a bit during your preparation of the other ingredients.</li><li>Add coconut milk, creamer, pineapple, sugar, xylitol, cinnamon, nutmeg, oil, combine well.</li><li>Add egg yolks, stir to combine well.</li><li>Prepare the crumble.</li><li>Line 2 cupcake pans with cupcake liners.</li><li>Add noodle mixture into the cupcake liners with a dry 1/4 cup measuring spoon, filling it over the top.  Add any remaining liquid to each kugel that may look dry.</li><li>With your fingers, sprinkle  crumble over each (about 1/2 teaspoon for each).</li><li>Bake for 40-45 minutes.</li><li>Cool for 10 minutes before removing from cupcake pans.</li><li>Remove liners before serving if you like.  Serve hot or warm.</li></ol>", "aggregateLikes": 3, "dairyFree": true, "extendedIngredients": [{"aisle": "Baking", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1/2 brown rice flour (I use Bob's Red Mill)", "name": "brown rice flour"}, {"aisle": "Baking", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons evaporated cane sugar", "name": "cane sugar"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon Cinnamon", "name": "cinnamon"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup coconut creamer (I use So Delicious brand)", "name": "coconut creamer"}, {"aisle": "Canned and Jarred", "unitLong": "cups", "amount": 1.5, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "1 1/2 cups vanilla coconut milk or unsweetened (I use So Delicious brand)", "name": "coconut milk"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 10.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "10 egg yolks, beaten", "name": "egg yolks"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 1.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "1 1/2 teaspoons ground cinnamon", "name": "ground cinnamon"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon ground nutmeg", "name": "ground nutmeg"}, {"aisle": "Spices and Seasonings", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons kosher salt, boiling pasta", "name": "kosher salt"}, {"aisle": "Canned and Jarred", "unitLong": "can", "amount": 1.0, "unitShort": "can", "metaInformation": [], "unit": "can", "originalString": "1 can pineapple chunks, drained", "name": "pineapple chunks"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "tablespoons", "amount": 0.5, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1/2 tablespoon Earth Balance Soy Free Margarine", "name": "soy margarine"}, {"aisle": "Pasta and Rice", "unitLong": "ounces", "amount": 16.0, "unitShort": "oz", "metaInformation": [], "unit": "ounce", "originalString": "1 16 ounce package spiral gluten free rice pasta", "name": "spiral pasta"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoons", "amount": 4.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "4 tablespoons sunflower oil", "name": "sunflower oil"}, {"aisle": "Baking", "unitLong": "cups", "amount": 0.125, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/8 cup xylitol", "name": "xylitol"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/pineapple-and-noodle-kugel-653234", "weightWatcherSmartPoints": 5, "id": 653234, "image": "https://spoonacular.com/recipeImages/Noodle-Kugel-with-Pineapple-Gluten-free--Dairy-Free-653234.jpg", "servings": 24, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Pineapple and Noodle Kugel",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/HTFV4L38/noodle-kugel-with-pineapple-gluten-free-dairy-free",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Preheat the oven temperature to 350 degrees F</li><li>Fill a medium stockpot with water set over high heat.  When water boils add 2 tablespoons kosher salt, then add pasta, stir well to prevent sticking.</li><li>Stir occasionally, cook for 8-10 minutes.</li><li>Let it sit in the water for a few minutes before transferring to a large glass, or heatproof bowl.</li><li>Meanwhile prepare other ingredients.</li><li>Pasta should cool off a bit during your preparation of the other ingredients.</li><li>Add coconut milk, creamer, pineapple, sugar, xylitol, cinnamon, nutmeg, oil, combine well.</li><li>Add egg yolks, stir to combine well.</li><li>Prepare the crumble.</li><li>Line 2 cupcake pans with cupcake liners.</li><li>Add noodle mixture into the cupcake liners with a dry 1/4 cup measuring spoon, filling it over the top.  Add any remaining liquid to each kugel that may look dry.</li><li>With your fingers, sprinkle  crumble over each (about 1/2 teaspoon for each).</li><li>Bake for 40-45 minutes.</li><li>Cool for 10 minutes before removing from cupcake pans.</li><li>Remove liners before serving if you like.  Serve hot or warm.</li></ol>",
+  "aggregateLikes": 3,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Baking",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 brown rice flour (I use Bob's Red Mill)",
+      "name": "brown rice flour"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons evaporated cane sugar",
+      "name": "cane sugar"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon Cinnamon",
+      "name": "cinnamon"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup coconut creamer (I use So Delicious brand)",
+      "name": "coconut creamer"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "cups",
+      "amount": 1.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "1 1/2 cups vanilla coconut milk or unsweetened (I use So Delicious brand)",
+      "name": "coconut milk"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 10.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "10 egg yolks, beaten",
+      "name": "egg yolks"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 1.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "1 1/2 teaspoons ground cinnamon",
+      "name": "ground cinnamon"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon ground nutmeg",
+      "name": "nutmeg"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons kosher salt, boiling pasta",
+      "name": "kosher salt"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "can",
+      "amount": 1.0,
+      "unitShort": "can",
+      "metaInformation": [],
+      "unit": "can",
+      "originalString": "1 can pineapple chunks, drained",
+      "name": "pineapple chunks"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "tablespoons",
+      "amount": 0.5,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1/2 tablespoon Earth Balance Soy Free Margarine",
+      "name": "soy margarine"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "ounces",
+      "amount": 16.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounce",
+      "originalString": "1 16 ounce package spiral gluten free rice pasta",
+      "name": "spiral pasta"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 4.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "4 tablespoons sunflower oil",
+      "name": "sunflower oil"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 0.125,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/8 cup xylitol",
+      "name": "xylitol"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/pineapple-and-noodle-kugel-653234",
+  "weightWatcherSmartPoints": 5,
+  "id": 653234,
+  "image": "https://spoonacular.com/recipeImages/Noodle-Kugel-with-Pineapple-Gluten-free--Dairy-Free-653234.jpg",
+  "servings": 24,
+  "whole30": false,
+  "lowFodmap": false
+}

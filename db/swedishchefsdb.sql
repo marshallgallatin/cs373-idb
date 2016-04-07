@@ -298,7 +298,7 @@ ALTER TABLE ONLY "Recipe"
 --
 
 COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
-1	black-eyed pea	https://upload.wikimedia.org/wikipedia/commons/d/d0/BlackEyedPeas.JPG  Vigna unguiculata subsp. unguiculata	Africa
+1	black-eyed pea	https://upload.wikimedia.org/wikipedia/commons/d/d0/BlackEyedPeas.JPG Vigna unguiculata subsp. unguiculata	Africa
 2	carrot	https://upload.wikimedia.org/wikipedia/commons/b/bd/13-08-31-wien-redaktionstreffen-EuT-by-Bi-frie-037.jpg	Daucus carota	Asia
 3	green bell pepper	https://upload.wikimedia.org/wikipedia/commons/5/59/Capsicum3.JPG	Capsicum annuum	NorthAmerica
 4	onion	https://upload.wikimedia.org/wikipedia/commons/6/6a/White_onion_cross_section.jpg	Allium cepa	Africa

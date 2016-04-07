@@ -1,1 +1,189 @@
-{"vegetarian": false, "glutenFree": false, "title": "Grilled Chicken Banh Mi", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/2Q34KBV6/grilled-chicken-banh-mi", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Mix the first six ingredients in a baking dish. Add the chicken breasts to the dish, cover, and refrigerate at least 1 hour. </li><li>Stir the hot tap water and sugar in a medium bowl, until the sugar dissolves. Add the vinegar, salt, red pepper, sliced carrots and radishes. Cover and refrigerate for at least 30 minutes.</li><li>Heat the grill to medium. Grill the chicken breasts for 5 minutes per side. Remove from heat and cover them with foil to rest for 5 minutes.</li><li>Open the sub rolls and grill the insides for about 1-3 minute until toasted.</li><li>Drain the pickled veggies. Slice the chicken into thin pieces.</li><li>Spread mayo over in the sub rolls. Layer the cucumbers, chicken, pickled veggies, cilantro leaves and jalapenos in the rolls.</li><li>Serve immediately! </li></ol>", "aggregateLikes": 43, "dairyFree": true, "extendedIngredients": [{"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 carrots, sliced thin on the bias", "name": "carrots"}, {"aisle": "Meat", "unitLong": "", "amount": 4.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "4 large chicken breasts", "name": "chicken breasts"}, {"aisle": "Produce", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup cilantro leaves (or mint)", "name": "cilantro leaves"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.25, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/4 teaspoon crushed red pepper", "name": "crushed red pepper"}, {"aisle": "Produce", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1/2 cucumber, sliced thin", "name": "cucumber"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 daikon radishes, sliced thin on the bias", "name": "daikon"}, {"aisle": "Ethnic Foods", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup fish sauce", "name": "fish sauce"}, {"aisle": "Produce", "unitLong": "clove", "amount": 1.0, "unitShort": "clove", "metaInformation": [], "unit": "clove", "originalString": "1 clove garlic, minced", "name": "garlic"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 sliced jalapeno for extra heat", "name": "jalapeno"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup lime juice", "name": "lime juice"}, {"aisle": "Condiments", "unitLong": "cups", "amount": 0.3333333333333333, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/3 cup mayonnaise", "name": "mayonnaise"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup rice vinegar", "name": "rice vinegar"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.25, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/4 teaspoon salt", "name": "salt"}, {"aisle": "Bakery/Bread", "unitLong": "", "amount": 6.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "6 soft sub bun", "name": "sub bun"}, {"aisle": "Baking", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup sugar", "name": "sugar"}, {"aisle": "Beverages", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup hot tap water", "name": "water"}], "readyInMinutes": 110, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/grilled-chicken-banh-mi-645634", "weightWatcherSmartPoints": 6, "id": 645634, "image": "https://spoonacular.com/recipeImages/Grilled-Chicken-Banh-Mi-645634.jpg", "servings": 6, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Grilled Chicken Banh Mi",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/2Q34KBV6/grilled-chicken-banh-mi",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Mix the first six ingredients in a baking dish. Add the chicken breasts to the dish, cover, and refrigerate at least 1 hour. </li><li>Stir the hot tap water and sugar in a medium bowl, until the sugar dissolves. Add the vinegar, salt, red pepper, sliced carrots and radishes. Cover and refrigerate for at least 30 minutes.</li><li>Heat the grill to medium. Grill the chicken breasts for 5 minutes per side. Remove from heat and cover them with foil to rest for 5 minutes.</li><li>Open the sub rolls and grill the insides for about 1-3 minute until toasted.</li><li>Drain the pickled veggies. Slice the chicken into thin pieces.</li><li>Spread mayo over in the sub rolls. Layer the cucumbers, chicken, pickled veggies, cilantro leaves and jalapenos in the rolls.</li><li>Serve immediately! </li></ol>",
+  "aggregateLikes": 43,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 carrots, sliced thin on the bias",
+      "name": "carrot"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "",
+      "amount": 4.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "4 large chicken breasts",
+      "name": "chicken breasts"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup cilantro leaves (or mint)",
+      "name": "cilantro leaves"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.25,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/4 teaspoon crushed red pepper",
+      "name": "crushed red pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 cucumber, sliced thin",
+      "name": "cucumber"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 daikon radishes, sliced thin on the bias",
+      "name": "daikon"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup fish sauce",
+      "name": "fish sauce"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "clove",
+      "amount": 1.0,
+      "unitShort": "clove",
+      "metaInformation": [],
+      "unit": "clove",
+      "originalString": "1 clove garlic, minced",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 sliced jalapeno for extra heat",
+      "name": "jalapeno"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup lime juice",
+      "name": "lime juice"
+    },
+    {
+      "aisle": "Condiments",
+      "unitLong": "cups",
+      "amount": 0.3333333333333333,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/3 cup mayonnaise",
+      "name": "mayonnaise"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup rice vinegar",
+      "name": "rice vinegar"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.25,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/4 teaspoon salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Bakery/Bread",
+      "unitLong": "",
+      "amount": 6.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "6 soft sub bun",
+      "name": "sub bun"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup sugar",
+      "name": "sugar"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup hot tap water",
+      "name": "water"
+    }
+  ],
+  "readyInMinutes": 110,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/grilled-chicken-banh-mi-645634",
+  "weightWatcherSmartPoints": 6,
+  "id": 645634,
+  "image": "https://spoonacular.com/recipeImages/Grilled-Chicken-Banh-Mi-645634.jpg",
+  "servings": 6,
+  "whole30": false,
+  "lowFodmap": false
+}
