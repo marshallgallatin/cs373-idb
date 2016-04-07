@@ -106,7 +106,7 @@ def splash():
 def static_html(path):
     return app.send_static_file('html/{}'.format(path))
 
-@app.route("unittest")
+@app.route("/unittest")
 def unittest():
     out = subprocess.getoutput('python3 tests.py -v')
     return out
