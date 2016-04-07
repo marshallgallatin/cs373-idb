@@ -218,19 +218,18 @@ def test_r():
 def recipe(r_id="test"):
 	return render_template('recipe.html', rec_id=r_id, recipeslit="active")
 
-def split_ingredients(d):
-	l = d["ingredients"]
-	halfI = (len(l) + 1) // 2
-	d["ingredients1"] = l[0:halfI]
-	d["ingredients2"] = l[halfI:len(l)]
-
-def split_instructions(d):
-	s = d["instructions"].replace("<ol><li>", "").replace("</li></ol>", "")
-	d["instructions"] = re.compile("\s?</li><li>").split(s)
+@app.route('/ingredients/test')
+def test_ing():
+	return jsonify({
+  "image_uri": "https://upload.wikimedia.org/wikipedia/commons/d/d0/BlackEyedPeas.JPG",
+  "name": "black-eyed pea",
+  "origin": "Africa",
+  "scientific_name": "Vigna unguiculata subsp. unguiculata"
+})
 
 @app.route('/ingredient.html')
 @app.route('/ingredient_<i_id>.html')
-def ingredient(i_id=None):
+def ingredient(i_id="test"):
 	store = {"id":"1",
 	"title":"Fresh Basil",
 	"size":"1 egg",
