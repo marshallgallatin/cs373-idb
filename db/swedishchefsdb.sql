@@ -450,7 +450,7 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 -- Name: Ingredient_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('"Ingredient_id_seq"', 28, TRUE);
+SELECT pg_catalog.setval('"Ingredient_id_seq"', 144, TRUE);
 
 --
 -- TOC entry 2051 (class 0 OID 16717)
@@ -604,14 +604,14 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 15	7	1/2 cup water	0.5	cup	c	24
 15	139	2 teaspoons Worcestershire Sauce	2.0	teaspoons	t	25
 15	99	2 large yellow onions, diced	2.0	\N	\N	26
-16	51	� cup brown sugar	0.5	cup	c	1
+16	51	1/2 cup brown sugar	0.5	cup	c	1
 16	101	3/4 cup cider vinegar	0.75	cup	c	4
 16	49	2 teaspoons cumin	2.0	teaspoons	t	5
 16	87	2 teaspoons dried thyme	2.0	teaspoons	t	7
 16	23	1 Clove Garlic, Minced	1.0	Clove	Clove	8
 16	49	2 teaspoons ground cumin	2.0	teaspoons	t	10
 16	41	2 teaspoons paprika	2.0	teaspoons	t	15
-16	6	� tsp. salt	0.5	tsp	t	17
+16	6	1/2 tsp. salt	0.5	tsp	t	17
 16	75	1/2 cup soy sauce	0.5	cup	c	18
 17	10	1/2 cup butter, cut into cubes	0.5	cup	c	1
 17	14	3 eggs	3.0	\N	\N	3
