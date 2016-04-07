@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "ml",
       "originalString": "1 tsp. (5ml) of organic apple cider vinegar",
-      "name": "apple cider vinegar"
+      "name": "cider vinegar"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "1/2 green cabbage",
-      "name": "green cabbage"
+      "name": "cabbage"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "bunches",
       "originalString": "2 bunches romaine lettuce hearts",
-      "name": "romaine hearts"
+      "name": "romaine lettuce"
     },
     {
       "aisle": "Produce",
@@ -170,7 +170,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "6-8 fresh satsuma mandarins",
-      "name": "tangerines"
+      "name": "tangerine"
     }
   ],
   "readyInMinutes": 45,

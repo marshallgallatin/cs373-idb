@@ -159,7 +159,7 @@
       "unitShort": "lb",
       "metaInformation": [],
       "unit": "pound",
-      "originalString": "1 pound + ½ Ground Beef or Ground Turkey",
+      "originalString": "1 pound + 1/2 Ground Beef or Ground Turkey",
       "name": "ground turkey"
     },
     {
@@ -280,7 +280,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 large yellow onions, diced",
-      "name": "yellow onion"
+      "name": "onion"
     }
   ],
   "readyInMinutes": 45,

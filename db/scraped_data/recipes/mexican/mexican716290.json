@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "leaves",
       "originalString": "A few scent leaves or mint leaves",
-      "name": "mint leaves"
+      "name": "mint"
     },
     {
       "aisle": "Produce",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "handfuls",
       "originalString": "2 handfuls of chopped red onions",
-      "name": "red onion"
+      "name": "onion"
     },
     {
       "aisle": "Baking",

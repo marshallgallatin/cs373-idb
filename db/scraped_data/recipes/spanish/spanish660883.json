@@ -19,7 +19,7 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "¼ cup smoked almonds, toasted & rough chopped",
+      "originalString": "1/4 cup smoked almonds, toasted & rough chopped",
       "name": "almonds"
     },
     {
@@ -29,7 +29,7 @@
       "unitShort": "t",
       "metaInformation": [],
       "unit": "teaspoon",
-      "originalString": "½ teaspoon chili powder",
+      "originalString": "1/2 teaspoon chili powder",
       "name": "chili powder"
     },
     {
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons fresh oregano",
-      "name": "fresh oregano"
+      "name": "oregano"
     },
     {
       "aisle": "Produce",

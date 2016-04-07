@@ -1,1 +1,119 @@
-{"vegetarian": false, "glutenFree": false, "title": "Greek Shrimp Orzo", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/G6CTD8KH/greek-shrimp-orzo", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Combine lemon juice and 1/2 cup olive oil.</li><li>Bring large pot of salted water to a boil over high heat.</li><li>Pour in orzo and cook until al dente.</li><li>Drain the pasta, pour into a large serving bowl, and immediately add lemon juice/olive oil mixture.  Stir well.</li><li>Heat a large skillet over medium-high heat and add 1 tbsp olive oil.  Add shrimp, salt and pepper, and cook for about 2 minutes, or until the shrimp are just done.</li><li>Add the shrimp, green onions, parsley, and feta to the orzo mixture.  Stir well.</li><li>Let the orzo sit for 1 hour.  If you make it earlier in the day, cover and refrigerate.  Bring to room temperature before serving.</li><li>Just before serving, add the basil and gently mix.  If desired, serve over a bed of spinach or lettuce.</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Produce", "unitLong": "leaves", "amount": 5.0, "unitShort": "leaves", "metaInformation": [], "unit": "leaves", "originalString": "5 large leaves of basil, chiffonaded", "name": "basil"}, {"aisle": "Cheese", "unitLong": "pounds", "amount": 0.5, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1/2 pound Feta cheese, 1 lb", "name": "feta cheese"}, {"aisle": "Produce", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup chopped green onions (green and white parts)", "name": "green onion"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup freshly-squeezed lemon juice", "name": "lemon juice"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup + 1 tbsp extra-virgin olive oil, divided", "name": "olive oil"}, {"aisle": "Pasta and Rice", "unitLong": "ounces", "amount": 12.0, "unitShort": "oz", "metaInformation": [], "unit": "oz", "originalString": "3/4 pound (12 oz.) orzo (rice-shaped pasta)", "name": "orzo"}, {"aisle": "Spices and Seasonings", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup chopped Italian parsley", "name": "parsley"}, {"aisle": "Seafood", "unitLong": "pound", "amount": 1.0, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1 pound raw large shrimp, peeled and deveined", "name": "raw shrimp"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 6.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Salt and pepper", "name": "salt and pepper"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/greek-shrimp-orzo-645354", "weightWatcherSmartPoints": 16, "id": 645354, "image": "https://spoonacular.com/recipeImages/Greek-Shrimp-Orzo-645354.jpg", "servings": 6, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Greek Shrimp Orzo",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/G6CTD8KH/greek-shrimp-orzo",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Combine lemon juice and 1/2 cup olive oil.</li><li>Bring large pot of salted water to a boil over high heat.</li><li>Pour in orzo and cook until al dente.</li><li>Drain the pasta, pour into a large serving bowl, and immediately add lemon juice/olive oil mixture.  Stir well.</li><li>Heat a large skillet over medium-high heat and add 1 tbsp olive oil.  Add shrimp, salt and pepper, and cook for about 2 minutes, or until the shrimp are just done.</li><li>Add the shrimp, green onions, parsley, and feta to the orzo mixture.  Stir well.</li><li>Let the orzo sit for 1 hour.  If you make it earlier in the day, cover and refrigerate.  Bring to room temperature before serving.</li><li>Just before serving, add the basil and gently mix.  If desired, serve over a bed of spinach or lettuce.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "leaves",
+      "amount": 5.0,
+      "unitShort": "leaves",
+      "metaInformation": [],
+      "unit": "leaves",
+      "originalString": "5 large leaves of basil, chiffonaded",
+      "name": "basil"
+    },
+    {
+      "aisle": "Cheese",
+      "unitLong": "pounds",
+      "amount": 0.5,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1/2 pound Feta cheese, 1 lb",
+      "name": "feta cheese"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup chopped green onions (green and white parts)",
+      "name": "green onion"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup freshly-squeezed lemon juice",
+      "name": "lemon juice"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup + 1 tbsp extra-virgin olive oil, divided",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "ounces",
+      "amount": 12.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "oz",
+      "originalString": "3/4 pound (12 oz.) orzo (rice-shaped pasta)",
+      "name": "orzo"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup chopped Italian parsley",
+      "name": "parsley"
+    },
+    {
+      "aisle": "Seafood",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1 pound raw large shrimp, peeled and deveined",
+      "name": "shrimp"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 6.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Salt and pepper",
+      "name": "salt and pepper"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/greek-shrimp-orzo-645354",
+  "weightWatcherSmartPoints": 16,
+  "id": 645354,
+  "image": "https://spoonacular.com/recipeImages/Greek-Shrimp-Orzo-645354.jpg",
+  "servings": 6,
+  "whole30": false,
+  "lowFodmap": false
+}

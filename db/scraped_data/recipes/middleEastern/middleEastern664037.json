@@ -69,7 +69,7 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "½ cup nonfat greek yogurt",
+      "originalString": "1/2 cup nonfat greek yogurt",
       "name": "greek yogurt"
     },
     {
@@ -89,7 +89,7 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "¼ cup hummus",
+      "originalString": "1/4 cup hummus",
       "name": "hummus"
     },
     {
@@ -99,7 +99,7 @@
       "unitShort": "",
       "metaInformation": [],
       "unit": "",
-      "originalString": "½ lemon, juiced",
+      "originalString": "1/2 lemon, juiced",
       "name": "lemon juice"
     },
     {
@@ -119,7 +119,7 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "¼ cup parsley, chopped",
+      "originalString": "1/4 cup parsley, chopped",
       "name": "parsley"
     },
     {
@@ -149,8 +149,8 @@
       "unitShort": "",
       "metaInformation": [],
       "unit": "",
-      "originalString": "¼ Red Onion, thinly sliced",
-      "name": "red onion"
+      "originalString": "1/4 Red Onion, thinly sliced",
+      "name": "onion"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -169,7 +169,7 @@
       "unitShort": "",
       "metaInformation": [],
       "unit": "",
-      "originalString": "1 tomato, cut into ¼ inch slices, then halved",
+      "originalString": "1 tomato, cut into 1/4 inch slices, then halved",
       "name": "tomato"
     },
     {
@@ -189,8 +189,8 @@
       "unitShort": "",
       "metaInformation": [],
       "unit": "",
-      "originalString": "½ yellow onion, finely chopped",
-      "name": "yellow onion"
+      "originalString": "1/2 yellow onion, finely chopped",
+      "name": "onion"
     }
   ],
   "readyInMinutes": 45,

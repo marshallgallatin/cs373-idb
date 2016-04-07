@@ -49,7 +49,7 @@
       "unitShort": "inch",
       "metaInformation": [],
       "unit": "inch",
-      "originalString": "½ inch of ginger, skinned and coarse grated (optional for garlic flavoring)",
+      "originalString": "1/2 inch of ginger, skinned and coarse grated (optional for garlic flavoring)",
       "name": "ginger"
     },
     {
@@ -59,7 +59,7 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "½ C of parsnips, skinned and coarse grated",
+      "originalString": "1/2 C of parsnips, skinned and coarse grated",
       "name": "parsnips"
     },
     {
@@ -109,7 +109,7 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "½ C of yams, skinned and coarse grated",
+      "originalString": "1/2 C of yams, skinned and coarse grated",
       "name": "yams"
     },
     {
@@ -119,8 +119,8 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "½ C of red or other onion, skinned and coarse grated",
-      "name": "red onion"
+      "originalString": "1/2 C of red or other onion, skinned and coarse grated",
+      "name": "onion"
     }
   ],
   "readyInMinutes": 45,

@@ -29,7 +29,7 @@
       "unitShort": "lb",
       "metaInformation": [],
       "unit": "pound",
-      "originalString": "1/2 pound boned skinned chicken breast rinsed and cut into ¼\" strips",
+      "originalString": "1/2 pound boned skinned chicken breast rinsed and cut into 1/4\" strips",
       "name": "chicken breast"
     },
     {
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons minced fresh ginger",
-      "name": "fresh ginger"
+      "name": "ginger"
     },
     {
       "aisle": "Produce",

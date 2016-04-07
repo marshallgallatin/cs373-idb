@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "4 cups baby bok choy leaves",
-      "name": "baby bok choy"
+      "name": "bok choy"
     },
     {
       "aisle": "Produce",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "inch",
       "originalString": "1 (3-inch) piece peeled fresh ginger, thinly sliced",
-      "name": "fresh ginger"
+      "name": "ginger"
     },
     {
       "aisle": "Produce",
@@ -104,13 +104,13 @@
     },
     {
       "aisle": "Produce",
-      "unitLong": "",
+      "unitLong": "wedges",
       "amount": 4.0,
-      "unitShort": "",
+      "unitShort": "wedges",
       "metaInformation": [],
-      "unit": "",
+      "unit": "wedges",
       "originalString": "4 lime wedges",
-      "name": "lime wedges"
+      "name": "lime"
     },
     {
       "aisle": "Ethnic Foods",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons shredded fresh mint leaves",
-      "name": "mint leaves"
+      "name": "mint"
     },
     {
       "aisle": "Ethnic Foods",
@@ -200,7 +200,7 @@
       "metaInformation": [],
       "unit": "inch",
       "originalString": "1 inch small fresh Thai chile, thinly sliced into rings (no thai chilies town anywhere!",
-      "name": "thai chile"
+      "name": "bird's eye chili"
     },
     {
       "aisle": "Beverages",
@@ -220,7 +220,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "1 1/2 cups thinly sliced yellow onion",
-      "name": "yellow onion"
+      "name": "onion"
     }
   ],
   "readyInMinutes": 45,

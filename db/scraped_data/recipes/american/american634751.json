@@ -119,7 +119,7 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "¼ cup honey",
+      "originalString": "1/4 cup honey",
       "name": "honey"
     },
     {
@@ -129,7 +129,7 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "1 ½ cup ketchup",
+      "originalString": "1 1/2 cup ketchup",
       "name": "ketchup"
     },
     {
@@ -169,7 +169,7 @@
       "unitShort": "t",
       "metaInformation": [],
       "unit": "tsp",
-      "originalString": "½ tsp fresh cracked black peppers",
+      "originalString": "1/2 tsp fresh cracked black peppers",
       "name": "black pepper"
     },
     {
@@ -179,7 +179,7 @@
       "unitShort": "t",
       "metaInformation": [],
       "unit": "tsp",
-      "originalString": "¼ tsp red pepper flakes",
+      "originalString": "1/4 tsp red pepper flakes",
       "name": "crushed red pepper"
     },
     {
