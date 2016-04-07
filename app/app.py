@@ -26,7 +26,7 @@ class ListRecipes(Resource):
     def get(self):
         parsed_args = list_recipe_parser.parse_args()
         filtered_args = {k : parsed_args[k] for k in parsed_args if parsed_args[k] is not None }
-        return jsonify(recipes = [recipe for recipe in RecipeQueries.getAllRecipes(**filtered_args)])
+        return jsonify(recipes = RecipeQueries.getAllRecipes(**filtered_args))
 
 class RecipeByID(Resource):
     """
@@ -43,7 +43,7 @@ class SearchRecipesByIngredients(Resource):
     Search Recipes by Ingredients [/recipes/ingredientSearch{?ingredients}]
     """
     def get(self):
-        return jsonify(recipes = [recipe for recipe in RecipeQueries.getRecipesByIngredients(search_recipe_parser.parse_args()['ingredients'].split(sep=','))])
+        return jsonify(recipes = RecipeQueries.getRecipesByIngredients(search_recipe_parser.parse_args()['ingredients'].split(sep=',')))
 
 list_ingredient_parser = reqparse.RequestParser()
 list_ingredient_parser.add_argument('limit', type=int, help='The number of ingredients to return. ERROR: {error_msg}')
@@ -56,7 +56,7 @@ class ListIngredients(Resource):
     def get(self):
         parsed_args = list_ingredient_parser.parse_args()
         filtered_args = {k : parsed_args[k] for k in parsed_args if parsed_args[k] is not None }
-        return jsonify(ingredients = [ingredient for ingredient in IngredientQueries.getAllIngredients(**filtered_args)])
+        return jsonify(ingredients = IngredientQueries.getAllIngredients(**filtered_args))
 
 
 class IngredientByID(Resource):
@@ -84,7 +84,7 @@ class LookupRecipesByIngredientID(Resource):
     def get(self, ingred_id):
         parsed_args = recipes_by_ingredient_id_parser.parse_args()
         filtered_args = {k : parsed_args[k] for k in parsed_args if parsed_args[k] is not None }
-        return jsonify(recipes = [ingredient for ingredient in IngredientQueries.getRecipesUsingIngredientById(ingred_id, **filtered_args)])
+        return jsonify(recipes = IngredientQueries.getRecipesUsingIngredientById(ingred_id, **filtered_args))
 
 api.add_resource(ListRecipes, '/recipes')
 api.add_resource(RecipeByID, '/recipes/<int:rec_id>')
