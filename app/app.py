@@ -36,6 +36,10 @@ api.add_resource(RecipeByID, '/recipes/<int:rec_id>')
 def splash():
     return app.send_static_file('html/index.html')
 
+@app.route('/about.html')
+def about():
+	return render_template('about.html', title="About")
+
 @app.route("/<path:path>")
 def static_html(path):
     return app.send_static_file('html/{}'.format(path))
