@@ -49,10 +49,13 @@
 			$scope.getData = function () {
 				$http.get("ingredients?limit=10&page=" + $scope.page).then(function (transmit) {
 				//$http.get("i" + $scope.page).then(function (transmit) {
-					$scope.ing = transmit.data.ing;
+					$scope.ing = transmit.data.ingredients;
+					alert(transmit.data);
 					for (var i = 0; i < $scope.ing.length; ++i) {
 						$http.get("ingredients/" + $scope.ing[i].id + "/nutrition").then(function (transmit_nuts) {
+						//$http.get("ingredients/test/nutrition").then(function (transmit_nuts) {
 							var more = transmit_nuts.data;
+							alert(more.calories);
 							for (var attrname in more) {
 								$scope.ing[i][attrname] = more[attrname];
 							}
