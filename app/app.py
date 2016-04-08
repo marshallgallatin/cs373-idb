@@ -122,6 +122,16 @@ def splash():
 def about():
 	return render_template('about.html', title="About", aboutlit="active")
 
+@app.route('/recipe.html')
+@app.route('/recipe_<r_id>.html')
+def recipe(r_id="test"):
+	return render_template('recipe.html', rec_id=r_id, recipeslit="active")
+
+@app.route('/ingredient.html')
+@app.route('/ingredient_<i_id>.html')
+def ingredient(i_id="test"):
+	return render_template('ingredient.html', i_id=i_id, ingredientslit="active")
+
 @app.route('/recipes.html')
 def recipes():
 	return render_template('recipes.html', title="Recipes", recipeslit="active")
@@ -140,170 +150,162 @@ def unittest():
     return out
 
 ############  WEBSITE TEST ENTRY POINTS ###########
-# These are temporary and just so that web development can begin
-# while we nail down getting the database working and api implemented
-@app.route("/dbdump")
-def dump_database():
-    rlist = []
-    for r in RecipeQueries.getAllRecipes():
-        rlist.append(dict({"id": r.id, "title": r.title, "image_uri":r.image_uri, "cuisine": r.cuisine, "ready_in_minutes": r.ready_in_minutes, "servings": r.servings}))
-    return jsonify({"recipes": rlist})
-
+# These will be used as unit tests run locally
+###################################################
 @app.route("/r")
-@app.route("/r<page>")
-@app.route("/recipestest\?limit=2&page=1")
+@app.route("/r<int:page>")
 def test_recipes(page=0):
-    testdict = {
-  "recipes": [
-    {
-      "cuisine": "african",
-      "id": 1+page,
-      "image_uri": "https://spoonacular.com/recipeImages/African-Bean-Soup-632003.jpg",
-      "ready_in_minutes": 45,
-      "servings": 4,
-      "title": "African Bean Soup"
-    },
-    {
-      "cuisine": "african",
-      "id": 2,
-      "image_uri": "https://spoonacular.com/recipeImages/Ethiopian-Lentil-Curry-642468.jpg",
-      "ready_in_minutes": 75,
-      "servings": 6,
-      "title": "Ethiopian Lentil Curry"
-    }
-  ]
-}
-    return jsonify(testdict)
+	"""
+	Taken on 4/8/16 from http://swedishchef.me/recipes?limit=2
+	
+	Used for templates/recipes.html
+	"""
+    return jsonify(
+	{
+		"recipes": [
+			{
+				"cuisine": "african",
+				"id": 1+page,
+				"image_uri": "https://spoonacular.com/recipeImages/African-Bean-Soup-632003.jpg",
+				"ready_in_minutes": 45,
+				"servings": 4,
+				"title": "African Bean Soup"
+			},
+			{
+				"cuisine": "african",
+				"id": 2,
+				"image_uri": "https://spoonacular.com/recipeImages/Ethiopian-Lentil-Curry-642468.jpg",
+				"ready_in_minutes": 75,
+				"servings": 6,
+				"title": "Ethiopian Lentil Curry"
+			}
+		]
+	}
 
 @app.route('/recipes/test')
-def test_r():
-	return jsonify({
-  "cuisine": "african",
-  "dairy_free": True,
-  "gluten_free": True,
-  "image_uri": "https://spoonacular.com/recipeImages/African-Bean-Soup-632003.jpg",
-  "ingredients": [
-    {
-      "amount": 2.0,
-      "id": 0,
-      "original_string": "2 cups dried black-eyed peas",
-      "unit": "cups"
-    },
-    {
-      "amount": 2.0,
-      "id": 2,
-      "original_string": "2 cups sliced carrots",
-      "unit": "cups"
-    },
-    {
-      "amount": 1.0,
-      "id": 3,
-      "original_string": "1 cup green pepper, diced",
-      "unit": "cup"
-    },
-    {
-      "amount": 1.0,
-      "id": 4,
-      "original_string": "1 large chopped onion",
-      "unit": "cup"
-    },
-    {
-      "amount": 4.0,
-      "id": 5,
-      "original_string": "peanut butter",
-      "unit": "tablespoon"
-    },
-    {
-      "amount": 0.75,
-      "id": 6,
-      "original_string": "3/4 teaspoon salt",
-      "unit": "teaspoon"
-    },
-    {
-      "amount": 6.0,
-      "id": 7,
-      "original_string": "6 cups water",
-      "unit": "cups"
-    }
-  ],
-  "instructions": "<ol><li>Saute onions in large pot until soft. Add all ingredients except for peanut butter and simmer for 1 1/2 hours. </li><li>Stir a spoonful of peanut butter into each serving.</li></ol>",
-  "ready_in_minutes": 45,
-  "servings": 4,
-  "title": "African Bean Soup",
-  "vegan": True,
-  "vegetarian": True
-})
-
-@app.route('/recipe.html')
-@app.route('/recipe_<r_id>.html')
-def recipe(r_id="test"):
-	return render_template('recipe.html', rec_id=r_id, recipeslit="active")
+def test_recipe_query():
+	"""
+	Taken on 4/8/16 from http://swedishchef.me/recipes/1
+	
+	Used for /recipe.html
+	"""
+	return jsonify(
+	{
+		"cuisine": "african",
+		"dairy_free": True,
+		"gluten_free": True,
+		"image_uri": "https://spoonacular.com/recipeImages/African-Bean-Soup-632003.jpg",
+		"ingredients": [
+			{
+			"amount": 2.0,
+			"id": 0,
+			"original_string": "2 cups dried black-eyed peas",
+			"unit": "cups"
+			},
+			{
+			"amount": 2.0,
+			"id": 2,
+			"original_string": "2 cups sliced carrots",
+			"unit": "cups"
+			},
+			{
+			"amount": 1.0,
+			"id": 3,
+			"original_string": "1 cup green pepper, diced",
+			"unit": "cup"
+			}
+		],
+		"instructions": "<ol><li>Saute onions in large pot until soft. Add all ingredients except for peanut butter and simmer for 1 1/2 hours. </li><li>Stir a spoonful of peanut butter into each serving.</li></ol>",
+		"ready_in_minutes": 45,
+		"servings": 4,
+		"title": "African Bean Soup",
+		"vegan": True,
+		"vegetarian": True
+	})
 
 @app.route('/ingredients/test')
-def test_ing():
-	return jsonify({
-  "image_uri": "https://upload.wikimedia.org/wikipedia/commons/d/d0/BlackEyedPeas.JPG",
-  "name": "black-eyed pea",
-  "origin": "Africa",
-  "scientific_name": "Vigna unguiculata subsp. unguiculata"
-})
+def test_ingredient_query():
+	"""
+	Taken on 4/8/16 from http://swedishchef.me/ingredients/1
+	
+	Used for /ingredient.html
+	"""
+	return jsonify(
+	{
+		"image_uri": "https://upload.wikimedia.org/wikipedia/commons/d/d0/BlackEyedPeas.JPG",
+		"name": "black-eyed pea",
+		"origin": "Africa",
+		"scientific_name": "Vigna unguiculata subsp. unguiculata"
+	})
 
 @app.route('/ingredients/list')
-def test_inglist():
+def test_ingredient_list_query():
+	"""
+	Taken on 4/8/16 from http://swedishchef.me/ingredients?limit=3
+	
+	Used for /ingredients.html
+	"""
 	return jsonify(
-        {
-            "ingredients": [
-            {
-              "id": 1,
-              "name": "black-eyed pea"
-            },
-            {
-              "id": 2,
-              "name": "carrot"
-            },
-            {
-              "id": 3,
-              "name": "green bell pepper"
-            }]
-        })
+	{
+		"ingredients": [
+			{
+				"id": 1,
+				"name": "black-eyed pea"
+			},
+			{
+				"id": 2,
+				"name": "carrot"
+			},
+			{
+				"id": 3,
+				"name": "green bell pepper"
+			}]
+	})
 
 @app.route('/ingredients/test/recipes')
-def test_ingr():
-	return jsonify({
-  "recipes": [
-    {
-      "cuisine": "african",
-      "id": 1,
-      "image_uri": "https://spoonacular.com/recipeImages/African-Bean-Soup-632003.jpg",
-      "ready_in_minutes": 45,
-      "servings": 4,
-      "title": "African Bean Soup"
-    }
-  ]
-})
+def test_ingredient_recipes_query():
+	"""
+	Taken on 4/8/16 from http://swedishchef.me/ingredients/1/recipes
+	
+	Used for /ingredients.html
+	"""
+	return jsonify(
+	{
+		"recipes": [
+			{
+				"cuisine": "african",
+				"id": 1,
+				"image_uri": "https://spoonacular.com/recipeImages/African-Bean-Soup-632003.jpg",
+				"ready_in_minutes": 45,
+				"servings": 4,
+				"title": "African Bean Soup"
+			}
+		]
+	})
 
 @app.route('/ingredients/test/nutrition')
-def test_ingnut():
-	return jsonify({
-  "calcium_mg": 110,
-  "calories": 336,
-  "cholesterol_mg": 0,
-  "dietary_fiber_g": 10.6,
-  "iron_mg": 8.27,
-  "protein_g": 23.52,
-  "saturated_fat_g": 0.331,
-  "sodium_mg": 16,
-  "sugar_g": 6.9,
-  "total_carbohydrates_g": 60.03,
-  "total_fat_g": 1.26,
-  "vitamin_a_iu": 50,
-  "vitamin_c_mg": 1.5
-})
-
-@app.route('/ingredient.html')
-@app.route('/ingredient_<i_id>.html')
-def ingredient(i_id="test"):
-	return render_template('ingredient.html', i_id=i_id, ingredientslit="active")
+def test_ingredient_nutrition_query():
+	"""
+	Taken on 4/8/16 from http://swedishchef.me/ingredients/1/nutrition
+	
+	Used for /ingredients.html
+	"""
+	return jsonify(
+	{
+		"calcium_mg": 110,
+		"calories": 336,
+		"cholesterol_mg": 0,
+		"dietary_fiber_g": 10.6,
+		"iron_mg": 8.27,
+		"protein_g": 23.52,
+		"saturated_fat_g": 0.331,
+		"sodium_mg": 16,
+		"sugar_g": 6.9,
+		"total_carbohydrates_g": 60.03,
+		"total_fat_g": 1.26,
+		"vitamin_a_iu": 50,
+		"vitamin_c_mg": 1.5
+	})
 
 ############ END WEBSITE TEST ENTRY POINTS ###########
 
