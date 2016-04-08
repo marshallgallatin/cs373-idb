@@ -57,6 +57,8 @@
 							var more = transmit_nuts.data;
 							jQuery.extend($scope.ing[i], more);
 							$scope.ing[i].calories = more.calories;
+							$scope.ing[i].total_fat_g = more.total_fat_g;
+							$scope.ing[i].total_carbohydrates_g = more.total_carbohydrates_g;
 							alert(more.calories + "->" + $scope.ing[i].calories);
 						});
 					}
@@ -97,7 +99,7 @@
 			</tr>
 		<tr ng-repeat="x in ing | orderBy:mbOrderBy:mbReverse">
 			<td>{{ '{{x.id}}' }}</td>
-			<td>{{ '{{x.name}}' }}</td>
+			<td><a ng-href="/ingredient_{{ '{{x.id}}' }}.html">{{ '{{x.name}}' }}</a></td>
 			<td>{{ '{{x.calories}}' }}</td>
 			<td>{{ '{{x.protein_g}}' }}</td>
 			<td>{{ '{{x.total_fat_g}}' }}</td>
