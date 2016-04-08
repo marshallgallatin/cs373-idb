@@ -1,1 +1,199 @@
-{"vegetarian": false, "glutenFree": false, "title": "Grilled Chicken Gyros With Tzatziki", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/8KQH5NQ3/grilled-chicken-gyros-with-tzatziki", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Whisk together the garlic, lemon juice, vinegar, oil, yogurt, and oregano in a bowl. Add the chicken and rub the marinade in. Cover and refrigerate for at least an hour.</li><li>Preheat the grill to medium heat (or broiler, or pan on the stove).  Sprinkle the chicken with salt and pepper on both sides, and then grill until cooked through, about 5 minutes per side, depending  what size/type chicken you are using. Allow the chicken to rest for a few minutes before slicing into strips.</li><li>Meanwhile, heat your pitas in a fry pan, in the toaster or spray with a bit of oil and place right on a gas burner. Top the pita with the chicken, tzatziki, tomatoes and onions.</li><li>For the Tzatziki: Shred the cucumbers and then wrap in a towel and squeeze to remove as much moisture as possible. Don't skip this step!</li><li>Mix together the strained yogurt, shredded cucumbers, garlic, vinegar and lemon juice. Add salt and pepper to taste. Its best to refrigerate for 30 minutes or more before serving, so flavors can meld.</li><li>Drizzle a little olive oil over the top.</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 cucumber", "name": "cucumber"}, {"aisle": "Spices and Seasonings", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon Dried Oregano", "name": "dried oregano"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons extra-virgin olive oil", "name": "extra-virgin olive oil"}, {"aisle": "Produce", "unitLong": "cloves", "amount": 2.0, "unitShort": "cloves", "metaInformation": [], "unit": "cloves", "originalString": "2 cloves Garlic, smashed", "name": "garlic"}, {"aisle": "Produce", "unitLong": "cloves", "amount": 3.0, "unitShort": "cloves", "metaInformation": [], "unit": "cloves", "originalString": "3 cloves garlic, minced", "name": "garlic"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 Juice of Lemon", "name": "lemon juice"}, {"aisle": "Produce", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "tablespoon of fresh lemon juice", "name": "lemon juice"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "pepper", "name": "pepper"}, {"aisle": "Bakery/Bread", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Pita Bread", "name": "pita bread"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons heaping Plain or Greek Yogurt", "name": "plain greek yogurt"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "ounces", "amount": 16.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "16 ounces plain Greek yogurt", "name": "plain greek yogurt"}, {"aisle": "Produce", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "sliced red onions", "name": "red onions"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 teaspoons Red Wine Vinegar", "name": "red wine vinegar"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Salt", "name": "salt"}, {"aisle": "Meat", "unitLong": "pound", "amount": 1.0, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1 pound boneless, skinless chicken breasts", "name": "skinless boneless chicken breasts"}, {"aisle": "Produce", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "sliced tomatoes", "name": "tomatoes"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon white wine vinegar", "name": "white wine vinegar"}], "readyInMinutes": 75, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/grilled-chicken-gyros-with-tzatziki-645646", "weightWatcherSmartPoints": 15, "id": 645646, "image": "https://spoonacular.com/recipeImages/Grilled-Chicken-Gyros-With-Tzatziki-645646.jpg", "servings": 2, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Grilled Chicken Gyros With Tzatziki",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/8KQH5NQ3/grilled-chicken-gyros-with-tzatziki",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Whisk together the garlic, lemon juice, vinegar, oil, yogurt, and oregano in a bowl. Add the chicken and rub the marinade in. Cover and refrigerate for at least an hour.</li><li>Preheat the grill to medium heat (or broiler, or pan on the stove).  Sprinkle the chicken with salt and pepper on both sides, and then grill until cooked through, about 5 minutes per side, depending  what size/type chicken you are using. Allow the chicken to rest for a few minutes before slicing into strips.</li><li>Meanwhile, heat your pitas in a fry pan, in the toaster or spray with a bit of oil and place right on a gas burner. Top the pita with the chicken, tzatziki, tomatoes and onions.</li><li>For the Tzatziki: Shred the cucumbers and then wrap in a towel and squeeze to remove as much moisture as possible. Don't skip this step!</li><li>Mix together the strained yogurt, shredded cucumbers, garlic, vinegar and lemon juice. Add salt and pepper to taste. Its best to refrigerate for 30 minutes or more before serving, so flavors can meld.</li><li>Drizzle a little olive oil over the top.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 cucumber",
+      "name": "cucumber"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon Dried Oregano",
+      "name": "oregano"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons extra-virgin olive oil",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 2.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "2 cloves Garlic, smashed",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 3.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "3 cloves garlic, minced",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 Juice of Lemon",
+      "name": "lemon juice"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "tablespoon of fresh lemon juice",
+      "name": "lemon juice"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "pepper",
+      "name": "black pepper"
+    },
+    {
+      "aisle": "Bakery/Bread",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Pita Bread",
+      "name": "pita bread"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons heaping Plain or Greek Yogurt",
+      "name": "plain greek yogurt"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "ounces",
+      "amount": 16.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "16 ounces plain Greek yogurt",
+      "name": "plain greek yogurt"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "sliced red onions",
+      "name": "onion"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 teaspoons Red Wine Vinegar",
+      "name": "red wine vinegar"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1 pound boneless, skinless chicken breasts",
+      "name": "skinless boneless chicken breasts"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "sliced tomatoes",
+      "name": "tomato"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon white wine vinegar",
+      "name": "white wine vinegar"
+    }
+  ],
+  "readyInMinutes": 75,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/grilled-chicken-gyros-with-tzatziki-645646",
+  "weightWatcherSmartPoints": 15,
+  "id": 645646,
+  "image": "https://spoonacular.com/recipeImages/Grilled-Chicken-Gyros-With-Tzatziki-645646.jpg",
+  "servings": 2,
+  "whole30": false,
+  "lowFodmap": false
+}

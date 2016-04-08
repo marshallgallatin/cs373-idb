@@ -1,1 +1,139 @@
-{"vegetarian": true, "glutenFree": false, "title": "North African Chickpea Soup", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/FW478NZC/north-african-chickpea-soup", "sourceName": "Foodista", "vegan": true, "sustainable": false, "instructions": "<ol><li>In a large soup pot add the oil, onions and celery.  Cook over medium low heat until translucent.  Add the garlic and saute until fragrant.   Add the tomato paste and harissa.  Cook a minute then add the water or stock slowly while stirring to combine the flavor paste in the pot with the liquids.  Throw in the chickpeas and bring to a boil.  As soon as it reaches a boil, reduce heat to a simmer.</li><li>Add the pasta and cook according to the package directions.  My suggestion is that if you are using fresh pasta, give it a rinse under tap water to remove the starch before adding it to the soup.  It might make the broth cloudy.  If using rice noodles add them right before serving to prevent overcooked mushy noodles.  To cook rice noodles place them in a shallow dish and cover with hot water for 10-15 minutes to soften.</li><li>Just before serving taste for seasoning, adjust to your taste.  Adding too much salt earlier on could make things too salty because some of the ingredients can bring a lot of salt to the pot.  Then add the spinach, it will only take a minute to shrink into nearly nothing, but it is sure a powerhouse vegetable that amps up the nutrition in this meal quickly and without fuss.  A squeeze of fresh lemon juice after it has been taken off the heat will add a nice bright flavor to perk up those dreary dark days of winter.  Enjoy with some crusty bread.  A meal you can feel good about, filling yet light.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Canned and Jarred", "unitLong": "ounces", "amount": 14.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "14 ounces can chickpeas (garbanzo beans), drained and rinsed", "name": "canned chickpeas"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon grapeseed or canola oil", "name": "canola oil"}, {"aisle": "Produce", "unitLong": "tablespoons", "amount": 3.0, "unitShort": "T", "metaInformation": [], "unit": "tbsp", "originalString": "10 Cloves garlic, (3 tbsp.) minced", "name": "garlic"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons harissa", "name": "harissa"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 leek, finely chopped", "name": "leek"}, {"aisle": "Produce", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "A tablespoon of lemon juice", "name": "lemon juice"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 small Onion, minced", "name": "onion"}, {"aisle": "Gluten Free", "unitLong": "package", "amount": 1.0, "unitShort": "pkg", "metaInformation": [], "unit": "package", "originalString": "1 package fresh pasta or a large handful of rice noodles", "name": "rice noodles"}, {"aisle": "Produce", "unitLong": "packages", "amount": 0.5, "unitShort": "pkg", "metaInformation": [], "unit": "package", "originalString": "1/2 package of fresh spinach leaves or 3 good handfuls", "name": "spinach leaves"}, {"aisle": "Pasta and Rice", "unitLong": "tablespoons", "amount": 3.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "3 tablespoons tomato paste or ketchup (yep, ketchup works great!)", "name": "tomato paste"}, {"aisle": "Beverages", "unitLong": "cups", "amount": 4.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "1 liter (4 cups) water, chicken broth, vegetable broth", "name": "water"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/north-african-chickpea-soup-653275", "weightWatcherSmartPoints": 10, "id": 653275, "image": "https://spoonacular.com/recipeImages/North-African-Chickpea-Soup-653275.jpg", "servings": 4, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": false,
+  "title": "North African Chickpea Soup",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/FW478NZC/north-african-chickpea-soup",
+  "sourceName": "Foodista",
+  "vegan": true,
+  "sustainable": false,
+  "instructions": "<ol><li>In a large soup pot add the oil, onions and celery.  Cook over medium low heat until translucent.  Add the garlic and saute until fragrant.   Add the tomato paste and harissa.  Cook a minute then add the water or stock slowly while stirring to combine the flavor paste in the pot with the liquids.  Throw in the chickpeas and bring to a boil.  As soon as it reaches a boil, reduce heat to a simmer.</li><li>Add the pasta and cook according to the package directions.  My suggestion is that if you are using fresh pasta, give it a rinse under tap water to remove the starch before adding it to the soup.  It might make the broth cloudy.  If using rice noodles add them right before serving to prevent overcooked mushy noodles.  To cook rice noodles place them in a shallow dish and cover with hot water for 10-15 minutes to soften.</li><li>Just before serving taste for seasoning, adjust to your taste.  Adding too much salt earlier on could make things too salty because some of the ingredients can bring a lot of salt to the pot.  Then add the spinach, it will only take a minute to shrink into nearly nothing, but it is sure a powerhouse vegetable that amps up the nutrition in this meal quickly and without fuss.  A squeeze of fresh lemon juice after it has been taken off the heat will add a nice bright flavor to perk up those dreary dark days of winter.  Enjoy with some crusty bread.  A meal you can feel good about, filling yet light.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "ounces",
+      "amount": 14.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "14 ounces can chickpeas (garbanzo beans), drained and rinsed",
+      "name": "canned chickpeas"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon grapeseed or canola oil",
+      "name": "grapeseed oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoons",
+      "amount": 3.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tbsp",
+      "originalString": "10 Cloves garlic, (3 tbsp.) minced",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons harissa",
+      "name": "harissa"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 leek, finely chopped",
+      "name": "leek"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "A tablespoon of lemon juice",
+      "name": "lemon juice"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 small Onion, minced",
+      "name": "onion"
+    },
+    {
+      "aisle": "Gluten Free",
+      "unitLong": "package",
+      "amount": 1.0,
+      "unitShort": "pkg",
+      "metaInformation": [],
+      "unit": "package",
+      "originalString": "1 package fresh pasta or a large handful of rice noodles",
+      "name": "rice noodles"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "packages",
+      "amount": 0.5,
+      "unitShort": "pkg",
+      "metaInformation": [],
+      "unit": "package",
+      "originalString": "1/2 package of fresh spinach leaves or 3 good handfuls",
+      "name": "spinach"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "tablespoons",
+      "amount": 3.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "3 tablespoons tomato paste or ketchup (yep, ketchup works great!)",
+      "name": "tomato paste"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "cups",
+      "amount": 4.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "1 liter (4 cups) water, chicken broth, vegetable broth",
+      "name": "water"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/north-african-chickpea-soup-653275",
+  "weightWatcherSmartPoints": 10,
+  "id": 653275,
+  "image": "https://spoonacular.com/recipeImages/North-African-Chickpea-Soup-653275.jpg",
+  "servings": 4,
+  "whole30": false,
+  "lowFodmap": false
+}

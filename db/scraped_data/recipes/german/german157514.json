@@ -1,1 +1,99 @@
-{"vegetarian": true, "glutenFree": false, "title": "Nutella Banana Pancakes German Style", "veryPopular": false, "gaps": "no", "sourceUrl": "http://spoonacular.com/-1385818319464", "sourceName": "spoonacular", "vegan": false, "sustainable": false, "instructions": "<ol><li>Separate the egg whites from the yolks.</li><li>Beat the egg whites until they are stiff.</li><li>Mix egg yolks, flour, water, and milk in a big bowl until smooth.</li><li>Gently fold the stiff egg whites in.</li><li>Heat a large pan to medium to high heat with 1 tablespoon of oil per pancake. Distribute about 1 ladle of the batter in the pan and fry for about 2 minutes per side.</li><li>If you don't want to eat-cook-eat-cook, you could pre-heat the oven and make all the pancakes, keeping them warm in the oven until all are prepared before you dig in.</li></ol>", "aggregateLikes": 0, "dairyFree": false, "extendedIngredients": [{"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 banana", "name": "banana"}, {"aisle": "Beverages", "unitLong": "milliliters", "amount": 120.0, "unitShort": "ml", "metaInformation": [], "unit": "ml", "originalString": "120ml carbonated water", "name": "carbonated water"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 4.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "4 eggs", "name": "eggs"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "milliliters", "amount": 400.0, "unitShort": "ml", "metaInformation": [], "unit": "ml", "originalString": "400ml milk", "name": "milk"}, {"aisle": "Nut butters, Jams, and Honey", "unitLong": "tablespoons", "amount": 4.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "4 tablespoons nutella", "name": "nutella"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoons", "amount": 6.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "6 tablespoons oil", "name": "oil"}, {"aisle": "Baking", "unitLong": "grams", "amount": 400.0, "unitShort": "g", "metaInformation": [], "unit": "g", "originalString": "400g white flour", "name": "white flour"}], "readyInMinutes": 20, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "spoonacular", "license": "spoonacular's terms", "spoonacularSourceUrl": "https://spoonacular.com/nutella-banana-pancakes-german-style-157514", "weightWatcherSmartPoints": 52, "id": 157514, "image": "https://spoonacular.com/recipeImages/Nutella-Banana-Pancakes-German-Style-157514.jpg", "servings": 2, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": false,
+  "title": "Nutella Banana Pancakes German Style",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://spoonacular.com/-1385818319464",
+  "sourceName": "spoonacular",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Separate the egg whites from the yolks.</li><li>Beat the egg whites until they are stiff.</li><li>Mix egg yolks, flour, water, and milk in a big bowl until smooth.</li><li>Gently fold the stiff egg whites in.</li><li>Heat a large pan to medium to high heat with 1 tablespoon of oil per pancake. Distribute about 1 ladle of the batter in the pan and fry for about 2 minutes per side.</li><li>If you don't want to eat-cook-eat-cook, you could pre-heat the oven and make all the pancakes, keeping them warm in the oven until all are prepared before you dig in.</li></ol>",
+  "aggregateLikes": 0,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 banana",
+      "name": "banana"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "milliliters",
+      "amount": 120.0,
+      "unitShort": "ml",
+      "metaInformation": [],
+      "unit": "ml",
+      "originalString": "120ml carbonated water",
+      "name": "carbonated water"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 4.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "4 eggs",
+      "name": "egg"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "milliliters",
+      "amount": 400.0,
+      "unitShort": "ml",
+      "metaInformation": [],
+      "unit": "ml",
+      "originalString": "400ml milk",
+      "name": "milk"
+    },
+    {
+      "aisle": "Nut butters, Jams, and Honey",
+      "unitLong": "tablespoons",
+      "amount": 4.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "4 tablespoons nutella",
+      "name": "nutella"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 6.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "6 tablespoons oil",
+      "name": "vegetable oil"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "grams",
+      "amount": 400.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "g",
+      "originalString": "400g white flour",
+      "name": "flour"
+    }
+  ],
+  "readyInMinutes": 20,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "spoonacular",
+  "license": "spoonacular's terms",
+  "spoonacularSourceUrl": "https://spoonacular.com/nutella-banana-pancakes-german-style-157514",
+  "weightWatcherSmartPoints": 52,
+  "id": 157514,
+  "image": "https://spoonacular.com/recipeImages/Nutella-Banana-Pancakes-German-Style-157514.jpg",
+  "servings": 2,
+  "whole30": false,
+  "lowFodmap": false
+}

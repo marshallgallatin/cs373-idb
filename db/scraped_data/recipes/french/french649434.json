@@ -1,1 +1,139 @@
-{"vegetarian": false, "glutenFree": false, "title": "Leek and Gruyere Quiche", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/H6NG7DZ3/leek-and-gruyere-quiche", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Make crust in a food processor. Place flour and salt in work bowl. Add butter pieces and sour cream. Pulse to combine. With machine running, drizzle in ice water until a ball forms. Flour a work surface and roll out into a 12 inch round. Quickly foldinto quarters and gently lay in an 11 inch shallow, tin fluted tart pan; press into pan. Place in freezer 15 minutes (can be left frozen for up to a month). Preheat oven to 400 degrees. Place a layer of foil on top of crust and fill with dried beans. Prebake 15 minutes to 18 minutes, until just pale golden. Red</li><li>Place leeks and 1/4 cup water in a large skillet. Heat over medium-high heat and cook a few minutes to sweat (not brown them) until water evaporates and leeks are tender. Set aside to cool.</li><li>In a mixing bowl, combine milk, cream, eggs and seasoning. Beat with a whisk to combine. Add cheese. Place cooked leeks into prebaked shell and gently pour in custard. Immediately place in oven and bake 20 minutes to 25 minutes until puffed, brown and set. Cool 10 minutes and serve hot, or cool to room temperature.</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Milk, Eggs, Other Dairy", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon butter", "name": "butter"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 4.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "4 lrg eggs", "name": "eggs"}, {"aisle": "Cheese", "unitLong": "cups", "amount": 1.5, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "1 1/2 cups shredded gruyere cheese", "name": "gruyere cheese"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cups", "amount": 3.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "3 cups heavy cream", "name": "heavy cream"}, {"aisle": "Frozen", "unitLong": "tablespoons", "amount": 3.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "3 tablespoons ice water", "name": "ice"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 leeks", "name": "leeks"}, {"aisle": "Baking", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup flour, plain", "name": "plain flour"}, {"aisle": "Spices and Seasonings", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "salt", "name": "salt"}, {"aisle": "Spices and Seasonings", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "salt and pepper to taste", "name": "salt and pepper"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon sour cream", "name": "sour cream"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cups", "amount": 3.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "3 cups whole milk", "name": "whole milk"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/leek-and-gruyere-quiche-649434", "weightWatcherSmartPoints": 192, "id": 649434, "image": "https://spoonacular.com/recipeImages/Leek-and-Gruyere-Quiche-649434.jpg", "servings": 1, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Leek and Gruyere Quiche",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/H6NG7DZ3/leek-and-gruyere-quiche",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Make crust in a food processor. Place flour and salt in work bowl. Add butter pieces and sour cream. Pulse to combine. With machine running, drizzle in ice water until a ball forms. Flour a work surface and roll out into a 12 inch round. Quickly foldinto quarters and gently lay in an 11 inch shallow, tin fluted tart pan; press into pan. Place in freezer 15 minutes (can be left frozen for up to a month). Preheat oven to 400 degrees. Place a layer of foil on top of crust and fill with dried beans. Prebake 15 minutes to 18 minutes, until just pale golden. Red</li><li>Place leeks and 1/4 cup water in a large skillet. Heat over medium-high heat and cook a few minutes to sweat (not brown them) until water evaporates and leeks are tender. Set aside to cool.</li><li>In a mixing bowl, combine milk, cream, eggs and seasoning. Beat with a whisk to combine. Add cheese. Place cooked leeks into prebaked shell and gently pour in custard. Immediately place in oven and bake 20 minutes to 25 minutes until puffed, brown and set. Cool 10 minutes and serve hot, or cool to room temperature.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon butter",
+      "name": "butter"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 4.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "4 lrg eggs",
+      "name": "egg"
+    },
+    {
+      "aisle": "Cheese",
+      "unitLong": "cups",
+      "amount": 1.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "1 1/2 cups shredded gruyere cheese",
+      "name": "gruyere cheese"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cups",
+      "amount": 3.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "3 cups heavy cream",
+      "name": "heavy cream"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "tablespoons",
+      "amount": 3.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "3 tablespoons ice water",
+      "name": "water"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 leeks",
+      "name": "leek"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup flour, plain",
+      "name": "flour"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "salt and pepper to taste",
+      "name": "salt and pepper"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon sour cream",
+      "name": "sour cream"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cups",
+      "amount": 3.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "3 cups whole milk",
+      "name": "milk"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/leek-and-gruyere-quiche-649434",
+  "weightWatcherSmartPoints": 192,
+  "id": 649434,
+  "image": "https://spoonacular.com/recipeImages/Leek-and-Gruyere-Quiche-649434.jpg",
+  "servings": 1,
+  "whole30": false,
+  "lowFodmap": false
+}

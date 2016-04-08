@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons hot chili peppers (optional)",
-      "name": "chili peppers"
+      "name": "red pepper"
     },
     {
       "aisle": "Ethnic Foods",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon Hot chili sauce",
-      "name": "chili sauce"
+      "name": "hot sauce"
     },
     {
       "aisle": "Produce",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "1 Cinnamon stick",
-      "name": "cinnamon stick"
+      "name": "cinnamon"
     },
     {
       "aisle": "Produce",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups Fresh bean sprouts",
-      "name": "fresh bean sprouts"
+      "name": "bean sprout"
     },
     {
       "aisle": "Produce",
@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 Limes cut in wedges",
-      "name": "limes"
+      "name": "lime"
     },
     {
       "aisle": "Produce",
@@ -150,7 +150,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 large Onions, unpeeled, halved, and studded with 8 cloves",
-      "name": "onions"
+      "name": "onion"
     },
     {
       "aisle": "Produce",
@@ -160,7 +160,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 mediums Onions, thinly sliced",
-      "name": "onions"
+      "name": "onion"
     },
     {
       "aisle": "Meat",
@@ -179,7 +179,7 @@
       "unitShort": "lb",
       "metaInformation": [],
       "unit": "pound",
-      "originalString": "1 pound Rice noodles ¼-inch wide (or banh pho)",
+      "originalString": "1 pound Rice noodles 1/4-inch wide (or banh pho)",
       "name": "rice noodles"
     },
     {
@@ -200,7 +200,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 Scallions, thinly sliced",
-      "name": "scallions"
+      "name": "green onion"
     },
     {
       "aisle": "Produce",
@@ -210,7 +210,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "3 Shallots, unpeeled",
-      "name": "shallots"
+      "name": "shallot"
     },
     {
       "aisle": "Spices and Seasonings",

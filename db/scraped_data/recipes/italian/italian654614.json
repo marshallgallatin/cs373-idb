@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "handful",
       "originalString": "Generous handful basil leaves, torn",
-      "name": "basil leaves"
+      "name": "basil"
     },
     {
       "aisle": "Bakery/Bread",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "extra-virgin olive oil to drizzle",
-      "name": "extra-virgin olive oil"
+      "name": "olive oil"
     },
     {
       "aisle": "Produce",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "3 leeks, finely chopped",
-      "name": "leeks"
+      "name": "leek"
     },
     {
       "aisle": "Canned and Jarred",

@@ -14,6 +14,8 @@
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
 			$scope.page = 1;
 			$scope.pages = [0, 1, 2, 3, 4];
+			$scope.ing;
+			$scope.nuts = [];
 			$scope.mbReverse = false;
 			$scope.orderByMe = function(x) {
 				if ($scope.mbOrderBy == x) {
@@ -43,14 +45,20 @@
 						}
 					}
 				}
-				alert($scope.page);
 				$scope.getData();
 			}
 			$scope.getData = function () {
-				//$http.get("ingredients?limit=10&page=" + $scope.page).then(function (transmit) {
-				$http.get("i" + $scope.page).then(function (transmit) {
-					$scope.ingredients = transmit.data.ingredients;
-					for (var i = 0; i < 
+				$http.get("ingredients?limit=10&page=" + $scope.page).then(function (transmit) {
+				//$http.get("total" + $scope.page).then(function (transmit) {
+					$scope.ing = transmit.data.ingredients;
+					$scope.nuts = [];
+					for (var i = 0; i < $scope.ing.length; ++i) {
+						$http.get("ingredients/" + $scope.ing[i].id + "/nutrition").then(function (transmit_nuts) {
+						//$http.get("ingredients/test/nutrition").then(function (transmit_nuts) {
+							$scope.nuts.push(transmit_nuts.data);
+						});
+					}
+					$scope.$apply();
 				});
 			}
 			$(function() {
@@ -85,21 +93,22 @@
 				<th ng-click="orderByMe('saturated_fat_g')">Saturated Fat(g)</th>
 				<th ng-click="orderByMe('cholesterol_mg')">Cholesterol(g)</th>
 			</tr>
-		<tr ng-repeat="x in ingredients | orderBy:mbOrderBy:mbReverse">
+		<tr ng-repeat="x in ing | orderBy:mbOrderBy:mbReverse">
 			<td>{{ '{{x.id}}' }}</td>
-			<td>{{ '{{x.name}}' }}</td>
-			<td>{{ '{{x.protein_g}}' }}</td>
-			<td>{{ '{{x.total_fat_g}}' }}</td>
-			<td>{{ '{{x.total_carbohydrates_g}}' }}</td>
-			<td>{{ '{{x.dietary_fiber_g}}' }}</td>
-			<td>{{ '{{x.sugar_g}}' }}</td>
-			<td>{{ '{{x.calcium_mg}}' }}</td>
-			<td>{{ '{{x.iron_mg}}' }}</td>
-			<td>{{ '{{x.sodium_mg}}' }}</td>
-			<td>{{ '{{x.vitamin_c_mg}}' }}</td>
-			<td>{{ '{{x.vitamin_a_iu}}' }}</td>
-			<td>{{ '{{x.saturated_fat_g}}' }}</td>
-			<td>{{ '{{x.cholesterol_mg}}' }}</td>
+			<td><a ng-href="/ingredient_{{ '{{x.id}}' }}.html">{{ '{{x.name}}' }}</a></td>
+			<td>{{ '{{nuts[$index].calories}}' }}</td>
+			<td>{{ '{{nuts[$index].protein_g}}' }}</td>
+			<td>{{ '{{nuts[$index].total_fat_g}}' }}</td>
+			<td>{{ '{{nuts[$index].total_carbohydrates_g}}' }}</td>
+			<td>{{ '{{nuts[$index].dietary_fiber_g}}' }}</td>
+			<td>{{ '{{nuts[$index].sugar_g}}' }}</td>
+			<td>{{ '{{nuts[$index].calcium_mg}}' }}</td>
+			<td>{{ '{{nuts[$index].iron_mg}}' }}</td>
+			<td>{{ '{{nuts[$index].sodium_mg}}' }}</td>
+			<td>{{ '{{nuts[$index].vitamin_c_mg}}' }}</td>
+			<td>{{ '{{nuts[$index].vitamin_a_iu}}' }}</td>
+			<td>{{ '{{nuts[$index].saturated_fat_g}}' }}</td>
+			<td>{{ '{{nuts[$index].cholesterol_mg}}' }}</td>
 		</tr>
 		</table>
 	</div>

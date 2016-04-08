@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "oz",
       "originalString": "1 can chipotle chile, packed in adobo sauce, minced",
-      "name": "chipotle peppers"
+      "name": "chipotle peppers in adobo sauce"
     },
     {
       "aisle": "Produce",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "1 1/2 tablespoons extra-virgin olive oil",
-      "name": "extra-virgin olive oil"
+      "name": "olive oil"
     },
     {
       "aisle": "Produce",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "1 1/2 tablespoons Worcestershire sauce",
-      "name": "worcestershire sauce"
+      "name": "Worcestershire sauce"
     }
   ],
   "readyInMinutes": 45,

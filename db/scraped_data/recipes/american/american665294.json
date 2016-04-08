@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "1 red onion, cubed",
-      "name": "red onion"
+      "name": "onion"
     },
     {
       "aisle": "Produce",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 medium sweet potatoes, peeled and cubed",
-      "name": "sweet potatoes"
+      "name": "sweet potato"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup whole wheat flour",
-      "name": "whole wheat flour"
+      "name": "whole-wheat flour"
     }
   ],
   "readyInMinutes": 45,

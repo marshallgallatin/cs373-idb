@@ -1,1 +1,139 @@
-{"vegetarian": false, "glutenFree": true, "title": "Leek Flan", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/N3Y7KXJC/leek-flan", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Butter 6 (4-ounce) ramekins and place in the refrigerator. When the butter hardens, add a second coating of butter to the ramekins. Set aside. Heat the oven to 350 degrees.</li><li>Heat the olive oil in a medium skillet over low heat. Add the leeks, shallots and salt and cook until the leeks are translucent but still retain a bite, about 10 minutes. Drain.</li><li>Place the whipping cream and half-and-half in a medium saucepan and bring to a boil. Turn off the heat and cool.</li><li>Put the leek mixture in the blender along with the cream mixture and the egg whites. Blend until smooth, about 30 seconds.</li><li>Spoon the mixture into the prepared ramekins. Place the ramekins in a large baking pan. Pour boiling water into the pan until it reaches halfway up the sides of the ramekins. Place the pan in the oven. Bake until the flans are set, about 35 to 40 minutes.</li><li>To serve, unmold the flans and garnish with 2 (3-inch) pieces of chives crossed over the top.</li><li>This recipe yields 6 servings.</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Milk, Eggs, Other Dairy", "unitLong": "ounce", "amount": 1.0, "unitShort": "oz", "metaInformation": [], "unit": "ounce", "originalString": "1 ounce Butter", "name": "butter"}, {"aisle": "Produce", "unitLong": "servings", "amount": 6.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Chives for garnish", "name": "chives"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 3.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "3 egg whites", "name": "egg whites"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup half-and-half plus", "name": "half n half"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons half-and-half", "name": "half n half"}, {"aisle": "Produce", "unitLong": "pound", "amount": 1.0, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1 pound Leeks", "name": "leeks"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoons", "amount": 1.5, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "1 1/2 tablespoons olive oil", "name": "olive oil"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon salt", "name": "salt"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 1/2 shallots chopped fine", "name": "shallots"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup whipping cream plus", "name": "whipping cream"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons whipping cream", "name": "whipping cream"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/leek-flan-649441", "weightWatcherSmartPoints": 8, "id": 649441, "image": "https://spoonacular.com/recipeImages/Leek-Flan-649441.jpg", "servings": 6, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Leek Flan",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/N3Y7KXJC/leek-flan",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Butter 6 (4-ounce) ramekins and place in the refrigerator. When the butter hardens, add a second coating of butter to the ramekins. Set aside. Heat the oven to 350 degrees.</li><li>Heat the olive oil in a medium skillet over low heat. Add the leeks, shallots and salt and cook until the leeks are translucent but still retain a bite, about 10 minutes. Drain.</li><li>Place the whipping cream and half-and-half in a medium saucepan and bring to a boil. Turn off the heat and cool.</li><li>Put the leek mixture in the blender along with the cream mixture and the egg whites. Blend until smooth, about 30 seconds.</li><li>Spoon the mixture into the prepared ramekins. Place the ramekins in a large baking pan. Pour boiling water into the pan until it reaches halfway up the sides of the ramekins. Place the pan in the oven. Bake until the flans are set, about 35 to 40 minutes.</li><li>To serve, unmold the flans and garnish with 2 (3-inch) pieces of chives crossed over the top.</li><li>This recipe yields 6 servings.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "ounce",
+      "amount": 1.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounce",
+      "originalString": "1 ounce Butter",
+      "name": "butter"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "servings",
+      "amount": 6.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Chives for garnish",
+      "name": "chives"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 3.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "3 egg whites",
+      "name": "egg white"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup half-and-half plus",
+      "name": "half and half"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons half-and-half",
+      "name": "half and half"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1 pound Leeks",
+      "name": "leek"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 1.5,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "1 1/2 tablespoons olive oil",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 1/2 shallots chopped fine",
+      "name": "shallot"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup whipping cream plus",
+      "name": "whipping cream"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons whipping cream",
+      "name": "whipping cream"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/leek-flan-649441",
+  "weightWatcherSmartPoints": 8,
+  "id": 649441,
+  "image": "https://spoonacular.com/recipeImages/Leek-Flan-649441.jpg",
+  "servings": 6,
+  "whole30": false,
+  "lowFodmap": false
+}

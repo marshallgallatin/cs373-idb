@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup bell pepper, diced",
-      "name": "bell pepper"
+      "name": "green bell pepper"
     },
     {
       "aisle": "Produce",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon ginger root, freshly grated",
-      "name": "ginger root"
+      "name": "ginger"
     },
     {
       "aisle": "Produce",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 green onions, sliced",
-      "name": "green onions"
+      "name": "green onion"
     },
     {
       "aisle": "Ethnic Foods",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups torn spinach leaves or other greens of your choosing",
-      "name": "spinach leaves"
+      "name": "spinach"
     }
   ],
   "readyInMinutes": 30,

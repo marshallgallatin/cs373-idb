@@ -1,1 +1,139 @@
-{"vegetarian": false, "glutenFree": true, "title": "Hokkaido Pomegranate Risotto", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/T6FCNZ2M/hokkaido-pomegranate-risotto", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Method</li><li>Cut the top of the hokkaido squash horizontally, scoop out the seeds and then scrape off the flesh from the squash. (I got 1 cup of flesh from a small hokkaido)</li><li>Heat oil in a pan, add the garlic, onions and the rice and saute for  a couple of minutes, stirring continously, on high flame.</li><li>Add salt, pepper and the finely chopped hokkaido squash and mix well.</li><li>Reduce the heat to low and keep adding water little by little, as it is absorbed.</li><li>When the rice is cooked, add the chives, the parmesan and the pomegranate seeds, and mix well.</li><li>Spoon the risotto into the hokkaido shell and garnish it with pomegranate seeds, chives and parmesan crisps and serve hot.</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Pasta and Rice", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup arborio rice", "name": "arborio rice"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup chives, finely chopped+ to garnish", "name": "chives"}, {"aisle": "Produce", "unitLong": "cloves", "amount": 3.0, "unitShort": "cloves", "metaInformation": [], "unit": "cloves", "originalString": "3 cloves of garlic, finely chopped", "name": "garlic"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 hokkaido squash, small size", "name": "hokkaido squash"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoons", "amount": 3.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "3 tablespoons olive oil", "name": "olive oil"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 onion, medium size, finely chopped", "name": "onion"}, {"aisle": "Cheese", "unitLong": "grams", "amount": 20.0, "unitShort": "g", "metaInformation": [], "unit": "grams", "originalString": "20 grams parmesan cheese, grated, (to make crisps, see the recipe here)", "name": "parmesan cheese"}, {"aisle": "Cheese", "unitLong": "grams", "amount": 40.0, "unitShort": "g", "metaInformation": [], "unit": "grams", "originalString": "40 grams parmigiano reggiano (parmesan), grated", "name": "parmigiano reggiano"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup pomegranate seeds+ to garnish", "name": "pomegranate seeds"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "salt and pepper to taste", "name": "salt and pepper"}, {"aisle": "Beverages", "unitLong": "milliliters", "amount": 400.0, "unitShort": "ml", "metaInformation": [], "unit": "milliliters", "originalString": "400 milliliters water (more or less)", "name": "water"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/hokkaido-pomegranate-risotto-646817", "weightWatcherSmartPoints": 22, "id": 646817, "image": "https://spoonacular.com/recipeImages/Hokkaido-Pomegranate-Risotto-646817.jpg", "servings": 2, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Hokkaido Pomegranate Risotto",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/T6FCNZ2M/hokkaido-pomegranate-risotto",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Method</li><li>Cut the top of the hokkaido squash horizontally, scoop out the seeds and then scrape off the flesh from the squash. (I got 1 cup of flesh from a small hokkaido)</li><li>Heat oil in a pan, add the garlic, onions and the rice and saute for  a couple of minutes, stirring continously, on high flame.</li><li>Add salt, pepper and the finely chopped hokkaido squash and mix well.</li><li>Reduce the heat to low and keep adding water little by little, as it is absorbed.</li><li>When the rice is cooked, add the chives, the parmesan and the pomegranate seeds, and mix well.</li><li>Spoon the risotto into the hokkaido shell and garnish it with pomegranate seeds, chives and parmesan crisps and serve hot.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup arborio rice",
+      "name": "short-grain rice"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup chives, finely chopped+ to garnish",
+      "name": "chives"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 3.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "3 cloves of garlic, finely chopped",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 hokkaido squash, small size",
+      "name": "hokkaido squash"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 3.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "3 tablespoons olive oil",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 onion, medium size, finely chopped",
+      "name": "onion"
+    },
+    {
+      "aisle": "Cheese",
+      "unitLong": "grams",
+      "amount": 20.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "grams",
+      "originalString": "20 grams parmesan cheese, grated, (to make crisps, see the recipe here)",
+      "name": "parmesan cheese"
+    },
+    {
+      "aisle": "Cheese",
+      "unitLong": "grams",
+      "amount": 40.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "grams",
+      "originalString": "40 grams parmigiano reggiano (parmesan), grated",
+      "name": "parmigiano reggiano"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup pomegranate seeds+ to garnish",
+      "name": "pomegranate seeds"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "salt and pepper to taste",
+      "name": "salt and pepper"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "milliliters",
+      "amount": 400.0,
+      "unitShort": "ml",
+      "metaInformation": [],
+      "unit": "milliliters",
+      "originalString": "400 milliliters water (more or less)",
+      "name": "water"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/hokkaido-pomegranate-risotto-646817",
+  "weightWatcherSmartPoints": 22,
+  "id": 646817,
+  "image": "https://spoonacular.com/recipeImages/Hokkaido-Pomegranate-Risotto-646817.jpg",
+  "servings": 2,
+  "whole30": false,
+  "lowFodmap": false
+}

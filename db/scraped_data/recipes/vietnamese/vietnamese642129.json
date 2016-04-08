@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "head",
       "originalString": "small head of Boston lettuce, roughly chopped",
-      "name": "boston lettuce"
+      "name": "lettuce"
     },
     {
       "aisle": "Produce",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup coriander (cilantro) leaves",
-      "name": "dried coriander leaves"
+      "name": "dried coriander"
     },
     {
       "aisle": "Ethnic Foods",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup mint leaves",
-      "name": "mint leaves"
+      "name": "mint"
     },
     {
       "aisle": "Produce",

@@ -1,1 +1,89 @@
-{"vegetarian": false, "glutenFree": false, "title": "Southern Fried Catfish", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/BGDTGWD7/southern-fried-catfish", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Combine flour, cornmeal, garlic powder and salt. Coat catfish with mixture, shaking off excess. Fill deep pot or 12-inch skillet half full with oil. Heat to 350 degrees. Add catfish in a single layer, and fry until golden brown, 5 to 6 minutes, depending on size. Remove and drain on paper towels.</li></ol>", "aggregateLikes": 39, "dairyFree": true, "extendedIngredients": [{"aisle": "Seafood", "unitLong": "", "amount": 4.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "4 catfish fillets or whole dressed catfish", "name": "catfish"}, {"aisle": "Baking", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup flour", "name": "flour"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.125, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/8 teaspoon Garlic Powder", "name": "garlic powder"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 2.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 1/2 teaspoons Salt", "name": "salt"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "servings", "amount": 6.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Vegetable oil", "name": "vegetable oil"}, {"aisle": "Ethnic Foods", "unitLong": "cups", "amount": 0.75, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "3/4 cup yellow cornmeal", "name": "yellow cornmeal"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/southern-fried-catfish-660697", "weightWatcherSmartPoints": 18, "id": 660697, "image": "https://spoonacular.com/recipeImages/Southern-Fried-Catfish-660697.jpg", "servings": 6, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Southern Fried Catfish",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/BGDTGWD7/southern-fried-catfish",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Combine flour, cornmeal, garlic powder and salt. Coat catfish with mixture, shaking off excess. Fill deep pot or 12-inch skillet half full with oil. Heat to 350 degrees. Add catfish in a single layer, and fry until golden brown, 5 to 6 minutes, depending on size. Remove and drain on paper towels.</li></ol>",
+  "aggregateLikes": 39,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Seafood",
+      "unitLong": "",
+      "amount": 4.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "4 catfish fillets or whole dressed catfish",
+      "name": "catfish"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup flour",
+      "name": "flour"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.125,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/8 teaspoon Garlic Powder",
+      "name": "garlic powder"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 2.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 1/2 teaspoons Salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "servings",
+      "amount": 6.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Vegetable oil",
+      "name": "vegetable oil"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 0.75,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "3/4 cup yellow cornmeal",
+      "name": "cornmeal"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/southern-fried-catfish-660697",
+  "weightWatcherSmartPoints": 18,
+  "id": 660697,
+  "image": "https://spoonacular.com/recipeImages/Southern-Fried-Catfish-660697.jpg",
+  "servings": 6,
+  "whole30": false,
+  "lowFodmap": false
+}

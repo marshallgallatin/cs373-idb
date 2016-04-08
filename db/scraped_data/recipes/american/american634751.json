@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "tbs",
       "originalString": "1 tbs Chilis in Adobo sauce",
-      "name": "adobo sauce"
+      "name": "chipotle peppers in adobo sauce"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons apple cider vinegar",
-      "name": "apple cider vinegar"
+      "name": "cider vinegar"
     },
     {
       "aisle": "Meat",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "Tb",
       "originalString": "1 Tbs fresh cracked black pepper",
-      "name": "cracked pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Condiments",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "Tb",
       "originalString": "1 Tbs ground cumin",
-      "name": "ground cumin"
+      "name": "cumin"
     },
     {
       "aisle": "Nut butters, Jams, and Honey",
@@ -119,7 +119,7 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "¼ cup honey",
+      "originalString": "1/4 cup honey",
       "name": "honey"
     },
     {
@@ -129,7 +129,7 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "1 ½ cup ketchup",
+      "originalString": "1 1/2 cup ketchup",
       "name": "ketchup"
     },
     {
@@ -160,7 +160,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup chopped onions",
-      "name": "onions"
+      "name": "onion"
     },
     {
       "aisle": "Produce",
@@ -169,8 +169,8 @@
       "unitShort": "t",
       "metaInformation": [],
       "unit": "tsp",
-      "originalString": "½ tsp fresh cracked black peppers",
-      "name": "peppers"
+      "originalString": "1/2 tsp fresh cracked black peppers",
+      "name": "black pepper"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -179,8 +179,8 @@
       "unitShort": "t",
       "metaInformation": [],
       "unit": "tsp",
-      "originalString": "¼ tsp red pepper flakes",
-      "name": "red pepper flakes"
+      "originalString": "1/4 tsp red pepper flakes",
+      "name": "crushed red pepper"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -200,7 +200,7 @@
       "metaInformation": [],
       "unit": "tbsp",
       "originalString": "1 tbsp smoked paprika",
-      "name": "smoked paprika"
+      "name": "paprika"
     },
     {
       "aisle": "Produce",
@@ -210,7 +210,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 large sweet onions – slice very thin",
-      "name": "sweet onions"
+      "name": "sweet onion"
     }
   ],
   "readyInMinutes": 45,

@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "bunch",
       "originalString": "1 bunch Boston bibb lettuce",
-      "name": "boston bibb lettuce"
+      "name": "lettuce"
     },
     {
       "aisle": "Baking",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "tsp",
       "originalString": "1 tsp red pepper flakes",
-      "name": "red pepper flakes"
+      "name": "crushed red pepper"
     },
     {
       "aisle": "Produce",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "scallions",
-      "name": "scallions"
+      "name": "green onion"
     },
     {
       "aisle": "Ethnic Foods",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "tsp",
       "originalString": "1 tsp sesame seeds (garnish)",
-      "name": "sesame seeds"
+      "name": "sesame seed"
     },
     {
       "aisle": "Ethnic Foods",

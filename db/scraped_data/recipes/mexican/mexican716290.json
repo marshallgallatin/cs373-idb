@@ -1,1 +1,109 @@
-{"vegetarian": true, "glutenFree": true, "title": "Mango Salsa", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.afrolems.com/2014/03/21/mango-salsa/", "sourceName": "Afrolems", "vegan": true, "sustainable": false, "instructions": "Peel and chop your mango into small cubesCube your bell peppers and onions as well and mix in with the mangoes. Add the cherry tomatoes and mix in.sprinkle your sugar and lime juice over it.Chop your scent/mint leaves and mix in and refrigerate.Serve cool as a side dish or if you want something refreshing on a hot day.", "aggregateLikes": 14, "dairyFree": true, "extendedIngredients": [{"aisle": "Produce", "unitLong": "handful", "amount": 1.0, "unitShort": "handful", "metaInformation": [], "unit": "handful", "originalString": "a handful of cherry tomatoes", "name": "cherry tomatoes"}, {"aisle": "Produce", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1/2 green bell pepper", "name": "green bell pepper"}, {"aisle": "Produce", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon of lime juice", "name": "lime juice"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 Large Mangoes", "name": "mangoes"}, {"aisle": "Produce", "unitLong": "leaves", "amount": 3.0, "unitShort": "leaves", "metaInformation": [], "unit": "leaves", "originalString": "A few scent leaves or mint leaves", "name": "mint leaves"}, {"aisle": "Produce", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1/2 red bell pepper", "name": "red bell pepper"}, {"aisle": "Produce", "unitLong": "handfuls", "amount": 2.0, "unitShort": "handfuls", "metaInformation": [], "unit": "handfuls", "originalString": "2 handfuls of chopped red onions", "name": "red onions"}, {"aisle": "Baking", "unitLong": "pinch", "amount": 1.0, "unitShort": "pinch", "metaInformation": [], "unit": "pinch", "originalString": "A pinch of sugar", "name": "sugar"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Afrolems", "license": "CC BY 4.0", "spoonacularSourceUrl": "https://spoonacular.com/mango-salsa-716290", "weightWatcherSmartPoints": 0, "id": 716290, "image": "https://spoonacular.com/recipeImages/mango-salsa-716290.jpg", "servings": 1, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": true,
+  "title": "Mango Salsa",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.afrolems.com/2014/03/21/mango-salsa/",
+  "sourceName": "Afrolems",
+  "vegan": true,
+  "sustainable": false,
+  "instructions": "Peel and chop your mango into small cubesCube your bell peppers and onions as well and mix in with the mangoes. Add the cherry tomatoes and mix in.sprinkle your sugar and lime juice over it.Chop your scent/mint leaves and mix in and refrigerate.Serve cool as a side dish or if you want something refreshing on a hot day.",
+  "aggregateLikes": 14,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "handful",
+      "amount": 1.0,
+      "unitShort": "handful",
+      "metaInformation": [],
+      "unit": "handful",
+      "originalString": "a handful of cherry tomatoes",
+      "name": "cherry tomatoes"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 green bell pepper",
+      "name": "green bell pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon of lime juice",
+      "name": "lime juice"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 Large Mangoes",
+      "name": "mango"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "leaves",
+      "amount": 3.0,
+      "unitShort": "leaves",
+      "metaInformation": [],
+      "unit": "leaves",
+      "originalString": "A few scent leaves or mint leaves",
+      "name": "mint"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 red bell pepper",
+      "name": "red bell pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "handfuls",
+      "amount": 2.0,
+      "unitShort": "handfuls",
+      "metaInformation": [],
+      "unit": "handfuls",
+      "originalString": "2 handfuls of chopped red onions",
+      "name": "onion"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "pinch",
+      "amount": 1.0,
+      "unitShort": "pinch",
+      "metaInformation": [],
+      "unit": "pinch",
+      "originalString": "A pinch of sugar",
+      "name": "sugar"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Afrolems",
+  "license": "CC BY 4.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/mango-salsa-716290",
+  "weightWatcherSmartPoints": 0,
+  "id": 716290,
+  "image": "https://spoonacular.com/recipeImages/mango-salsa-716290.jpg",
+  "servings": 1,
+  "whole30": false,
+  "lowFodmap": false
+}
