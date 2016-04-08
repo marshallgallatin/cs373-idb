@@ -1,1 +1,209 @@
-{"vegetarian": false, "glutenFree": true, "title": "Bangers and Mash", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/78FLMC4R/bangers-and-mash", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": null, "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 Sweet apple, peeled, cored, and sliced", "name": "apple"}, {"aisle": "Produce", "unitLong": "", "amount": 4.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "4 Sweet apples, whole, cored, peel intact", "name": "apples"}, {"aisle": "Baking", "unitLong": "Tbsp", "amount": 1.0, "unitShort": "Tbsp", "metaInformation": [], "unit": "Tbsp", "originalString": "1 Tbsp Arrowroot mixed with 2tbsp de-alcoholised, (slurry) red wine", "name": "arrowroot"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "1 tsp Caraway seed", "name": "caraway seed"}, {"aisle": "meat", "unitLong": "", "amount": 3.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "3 Lower fat smoked chicken-apple sausages", "name": "chicken fat"}, {"aisle": "Produce", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "1 tsp Dill seed", "name": "dill"}, {"aisle": "Spices and Seasonings", "unitLong": "Tbsps", "amount": 2.0, "unitShort": "Tbsps", "metaInformation": [], "unit": "Tbsps", "originalString": "2 Tbsps Chopped fresh parsley", "name": "fresh parsley"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "1 tsp Light olive oil with a dash of toasted sesame oil", "name": "light olive oil"}, {"aisle": "Canned and Jarred", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup Low sodium chicken stock", "name": "low sodium chicken stock"}, {"aisle": "Condiments", "unitLong": "teaspoons", "amount": 4.0, "unitShort": "t", "metaInformation": [], "unit": "tsps", "originalString": "4 tsps Dry English mustard mixed with 4tsp", "name": "mustard"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.125, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "1/8 tsp Grated nutmeg", "name": "nutmeg"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 medium Onions, peeled and sliced thin", "name": "onions"}, {"aisle": "Produce", "unitLong": "", "amount": 4.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "4 lrg Russet potatoes, peeled and quartered", "name": "russet potatoes"}, {"aisle": "Produce", "unitLong": "", "amount": 4.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "4 medium Rutabagas, peeled and quartered", "name": "rutabagas"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "1/2 tsp Finely ground sea salt", "name": "sea salt"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.125, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "1/8 tsp Freshly ground white pepper", "name": "white pepper"}, {"aisle": "Alcoholic Beverages", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup De-alcoholised dry red wine", "name": "wine"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "1 tsp Yellow mustard seed", "name": "yellow mustard seed"}], "readyInMinutes": 134, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/bangers-and-mash-44789", "weightWatcherSmartPoints": 34, "id": 44789, "image": "https://spoonacular.com/recipeImages/bangers_and_mash-44789.jpg", "servings": 1, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Bangers and Mash",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/78FLMC4R/bangers-and-mash",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": null,
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 Sweet apple, peeled, cored, and sliced",
+      "name": "apple"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 4.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "4 Sweet apples, whole, cored, peel intact",
+      "name": "apple"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "Tbsp",
+      "amount": 1.0,
+      "unitShort": "Tbsp",
+      "metaInformation": [],
+      "unit": "Tbsp",
+      "originalString": "1 Tbsp Arrowroot mixed with 2tbsp de-alcoholised, (slurry) red wine",
+      "name": "arrowroot"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1 tsp Caraway seed",
+      "name": "caraway seed"
+    },
+    {
+      "aisle": "meat",
+      "unitLong": "",
+      "amount": 3.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "3 Lower fat smoked chicken-apple sausages",
+      "name": "chicken fat"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1 tsp Dill seed",
+      "name": "dill seed"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "Tbsps",
+      "amount": 2.0,
+      "unitShort": "Tbsps",
+      "metaInformation": [],
+      "unit": "Tbsps",
+      "originalString": "2 Tbsps Chopped fresh parsley",
+      "name": "parsley"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1 tsp Light olive oil with a dash of toasted sesame oil",
+      "name": "light olive oil"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup Low sodium chicken stock",
+      "name": "low sodium chicken stock"
+    },
+    {
+      "aisle": "Condiments",
+      "unitLong": "teaspoons",
+      "amount": 4.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsps",
+      "originalString": "4 tsps Dry English mustard mixed with 4tsp",
+      "name": "dry mustard"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.125,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1/8 tsp Grated nutmeg",
+      "name": "nutmeg"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 medium Onions, peeled and sliced thin",
+      "name": "onion"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 4.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "4 lrg Russet potatoes, peeled and quartered",
+      "name": "Russet potato"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 4.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "4 medium Rutabagas, peeled and quartered",
+      "name": "rutabaga"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1/2 tsp Finely ground sea salt",
+      "name": "sea salt"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.125,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1/8 tsp Freshly ground white pepper",
+      "name": "white pepper"
+    },
+    {
+      "aisle": "Alcoholic Beverages",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup De-alcoholised dry red wine",
+      "name": "wine"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1 tsp Yellow mustard seed",
+      "name": "yellow mustard seed"
+    }
+  ],
+  "readyInMinutes": 134,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/bangers-and-mash-44789",
+  "weightWatcherSmartPoints": 34,
+  "id": 44789,
+  "image": "https://spoonacular.com/recipeImages/bangers_and_mash-44789.jpg",
+  "servings": 1,
+  "whole30": false,
+  "lowFodmap": false
+}

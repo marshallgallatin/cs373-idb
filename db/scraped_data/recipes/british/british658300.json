@@ -1,1 +1,159 @@
-{"vegetarian": false, "glutenFree": false, "title": "Rich Jelly Scones", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/5GK2BSP6/rich-jelly-scones", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Pre-heat oven to 400 degrees.</li><li>Mix dry ingredients together.</li><li>Cut butter into the dry ingredients using a fork or hand-held pastry blender. When well blended, the mixture will have the look of crumbly sand.</li><li>Add the vanilla, eggs, and milk, mixing only long enough to blend the ingredients. *You do not want to begin to melt the butter into the flour mixture by over-mixing.</li><li>Turn the dough onto a lightly floured counter top or pastry board. Shape it into a round disc 8 inches across, slightly thicker in the center.</li><li>Using a long knife, cut the dough into eight even pie-shaped portions.</li><li>Place scones on a lightly greased baking sheet. Using a spoon, press a well into the wide end of each triangle, and fill the well with a spoonful of fruit jam. Brush the exposed surface of each scone with the milk/egg mixture,</li><li>Bake for twenty-five minutes, until scones are a beautiful golden brown.</li></ol>", "aggregateLikes": 2, "dairyFree": false, "extendedIngredients": [{"aisle": "Baking", "unitLong": "cups", "amount": 2.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "2 cups all purpose flour", "name": "all purpose flour"}, {"aisle": "Baking", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 teaspoons baking powder", "name": "baking powder"}, {"aisle": "Baking", "unitLong": "teaspoons", "amount": 0.25, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/4 teaspoon baking soda", "name": "baking soda"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon Butter", "name": "butter"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 large egg, beaten well", "name": "egg"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "servings", "amount": 4.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Egg mixture to brush on the top of the scones", "name": "egg"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 eggs", "name": "eggs"}, {"aisle": "Produce", "unitLong": "servings", "amount": 4.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Thick jam or fruit preserves", "name": "fruit"}, {"aisle": "Baking", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup granulated white sugar", "name": "granulated sugar"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "cup milk", "name": "milk"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon milk", "name": "milk"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 4.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Salt , to taste", "name": "salt"}, {"aisle": "Baking", "unitLong": "teaspoons", "amount": 1.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "1 1/2 teaspoons pure vanilla extract", "name": "vanilla extract"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/rich-jelly-scones-658300", "weightWatcherSmartPoints": 15, "id": 658300, "image": "https://spoonacular.com/recipeImages/Rich-Jelly-Scones-658300.jpg", "servings": 4, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Rich Jelly Scones",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/5GK2BSP6/rich-jelly-scones",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Pre-heat oven to 400 degrees.</li><li>Mix dry ingredients together.</li><li>Cut butter into the dry ingredients using a fork or hand-held pastry blender. When well blended, the mixture will have the look of crumbly sand.</li><li>Add the vanilla, eggs, and milk, mixing only long enough to blend the ingredients. *You do not want to begin to melt the butter into the flour mixture by over-mixing.</li><li>Turn the dough onto a lightly floured counter top or pastry board. Shape it into a round disc 8 inches across, slightly thicker in the center.</li><li>Using a long knife, cut the dough into eight even pie-shaped portions.</li><li>Place scones on a lightly greased baking sheet. Using a spoon, press a well into the wide end of each triangle, and fill the well with a spoonful of fruit jam. Brush the exposed surface of each scone with the milk/egg mixture,</li><li>Bake for twenty-five minutes, until scones are a beautiful golden brown.</li></ol>",
+  "aggregateLikes": 2,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 cups all purpose flour",
+      "name": "flour"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 teaspoons baking powder",
+      "name": "baking powder"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "teaspoons",
+      "amount": 0.25,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/4 teaspoon baking soda",
+      "name": "baking soda"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon Butter",
+      "name": "butter"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 large egg, beaten well",
+      "name": "egg"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "servings",
+      "amount": 4.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Egg mixture to brush on the top of the scones",
+      "name": "egg"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 eggs",
+      "name": "egg"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "servings",
+      "amount": 4.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Thick jam or fruit preserves",
+      "name": "jam"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup granulated white sugar",
+      "name": "sugar"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "cup milk",
+      "name": "milk"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon milk",
+      "name": "milk"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 4.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Salt , to taste",
+      "name": "salt"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "teaspoons",
+      "amount": 1.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "1 1/2 teaspoons pure vanilla extract",
+      "name": "vanilla extract"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/rich-jelly-scones-658300",
+  "weightWatcherSmartPoints": 15,
+  "id": 658300,
+  "image": "https://spoonacular.com/recipeImages/Rich-Jelly-Scones-658300.jpg",
+  "servings": 4,
+  "whole30": false,
+  "lowFodmap": false
+}

@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1/2 teaspoon grated fresh ginger",
-      "name": "fresh ginger"
+      "name": "ginger"
     },
     {
       "aisle": "Produce",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "3 tablespoons light soy sauce",
-      "name": "light soy sauce"
+      "name": "soy sauce"
     },
     {
       "aisle": "Ethnic Foods",
@@ -149,7 +149,7 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cups",
-      "originalString": "3 cups romaine lettuce, cut ¼ inch",
+      "originalString": "3 cups romaine lettuce, cut 1/4 inch",
       "name": "romaine lettuce"
     },
     {

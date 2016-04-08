@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "some bean sprouts",
-      "name": "bean sprouts"
+      "name": "bean sprout"
     },
     {
       "aisle": "Produce",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 red birdeye chilies, sliced",
-      "name": "chilies"
+      "name": "bird's eye chili"
     },
     {
       "aisle": "Ethnic Foods",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "some Thai basil",
-      "name": "thai basil"
+      "name": "basil"
     },
     {
       "aisle": "Seafood",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "12 tiger prawns (peeled, deveined)",
-      "name": "tiger prawns"
+      "name": "shrimp"
     }
   ],
   "readyInMinutes": 45,

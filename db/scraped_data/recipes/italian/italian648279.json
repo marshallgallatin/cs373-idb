@@ -1,1 +1,109 @@
-{"vegetarian": false, "glutenFree": false, "title": "Italian Tuna Pasta", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/4QNQXMDZ/italian-tuna-pasta", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Once pasta is cooked, drain and leave to cool for a minute.</li><li>Place small skillet on medium fire, drizzle olive oil, add in red pepper and stir-fry for 1-2 minutes. Put aside.</li><li>Toss pasta shells, red pepper, tuna, parsley, garlic, chilies and lemon juice. Season with ground black pepper to taste, spoon into serving bowls. Stir through ricotta and serve immediately.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 fresh chilies", "name": "chilies"}, {"aisle": "Produce", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon minced garlic", "name": "garlic"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 3.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Ground black pepper", "name": "ground pepper"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 lemons, juiced", "name": "lemon juice"}, {"aisle": "Spices and Seasonings", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup of chopped parsley leaves", "name": "parsley leaves"}, {"aisle": "Pasta and Rice", "unitLong": "grams", "amount": 250.0, "unitShort": "g", "metaInformation": [], "unit": "grams", "originalString": "250 grams of pasta shells (cook pasta according to packet's instructions)", "name": "pasta shells"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 red pepper", "name": "red bell pepper"}, {"aisle": "Canned and Jarred", "unitLong": "grams", "amount": 400.0, "unitShort": "g", "metaInformation": [], "unit": "grams", "originalString": "400 grams of tuna, drained and flaked", "name": "tuna"}], "readyInMinutes": 20, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/italian-tuna-pasta-648279", "weightWatcherSmartPoints": 13, "id": 648279, "image": "https://spoonacular.com/recipeImages/Italian-Tuna-Pasta-648279.jpg", "servings": 3, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Italian Tuna Pasta",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/4QNQXMDZ/italian-tuna-pasta",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Once pasta is cooked, drain and leave to cool for a minute.</li><li>Place small skillet on medium fire, drizzle olive oil, add in red pepper and stir-fry for 1-2 minutes. Put aside.</li><li>Toss pasta shells, red pepper, tuna, parsley, garlic, chilies and lemon juice. Season with ground black pepper to taste, spoon into serving bowls. Stir through ricotta and serve immediately.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 fresh chilies",
+      "name": "chilies"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon minced garlic",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 3.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Ground black pepper",
+      "name": "black pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 lemons, juiced",
+      "name": "lemon juice"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup of chopped parsley leaves",
+      "name": "parsley"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "grams",
+      "amount": 250.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "grams",
+      "originalString": "250 grams of pasta shells (cook pasta according to packet's instructions)",
+      "name": "pasta shells"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 red pepper",
+      "name": "red bell pepper"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "grams",
+      "amount": 400.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "grams",
+      "originalString": "400 grams of tuna, drained and flaked",
+      "name": "canned tuna"
+    }
+  ],
+  "readyInMinutes": 20,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/italian-tuna-pasta-648279",
+  "weightWatcherSmartPoints": 13,
+  "id": 648279,
+  "image": "https://spoonacular.com/recipeImages/Italian-Tuna-Pasta-648279.jpg",
+  "servings": 3,
+  "whole30": false,
+  "lowFodmap": false
+}

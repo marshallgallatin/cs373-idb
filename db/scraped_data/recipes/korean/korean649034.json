@@ -1,1 +1,129 @@
-{"vegetarian": false, "glutenFree": true, "title": "Korean Bulgogi", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/BNNPL4CG/korean-bulgogi", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Season the beef with salt and pepper. In a mixing bowl, combine the oil, soy sauce, garlic and ginger. Season with crushed red pepper to taste.</li><li>Place the meat in a shallow bowl. Pour the marinade over the meat. Cover and refrigerate for at least 1 hour or overnight. Remove and bring to room temperature. Preheat the hibachi. Remove the meat from the pan, reserving the marinade. Place the marinade in a saucepan, over medium heat. Bring to a boil and cook for 6 to 8 minutes or until the mixture reduces by 3/4. Remove, set aside, and keep warm. Grill the meat for a couple of minutes on each side, for medium rare. To serve, spoon the rice in the center of each plate. Lay the strips of meat around the rice. Drizzle the sauce over the </li><li>Yield: 4 servings</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Meat", "unitLong": "pound", "amount": 1.0, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1 pound Beef flank steak, sliced into \u00bd-inch slices", "name": "beef steak"}, {"aisle": "Spices and Seasonings", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "Freshly ground black pepper", "name": "black pepper"}, {"aisle": "Produce", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon Snipped chives", "name": "chives"}, {"aisle": "Spices and Seasonings", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "Crushed red pepper, to taste", "name": "crushed red pepper"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon Chopped fresh ginger", "name": "fresh ginger"}, {"aisle": "Produce", "unitLong": "cloves", "amount": 2.0, "unitShort": "cloves", "metaInformation": [], "unit": "cloves", "originalString": "2 cloves garlic (finely chopped)", "name": "garlic"}, {"aisle": "Pasta and Rice", "unitLong": "cups", "amount": 2.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "2 cups Cooked white long grain rice", "name": "long grain rice"}, {"aisle": "Spices and Seasonings", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "Salt", "name": "salt"}, {"aisle": "Ethnic Foods", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup sesame oil", "name": "sesame oil"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon soy sauce", "name": "soy sauce"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/korean-bulgogi-649034", "weightWatcherSmartPoints": 83, "id": 649034, "image": "https://spoonacular.com/recipeImages/Korean-Bulgogi-649034.jpg", "servings": 1, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Korean Bulgogi",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/BNNPL4CG/korean-bulgogi",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Season the beef with salt and pepper. In a mixing bowl, combine the oil, soy sauce, garlic and ginger. Season with crushed red pepper to taste.</li><li>Place the meat in a shallow bowl. Pour the marinade over the meat. Cover and refrigerate for at least 1 hour or overnight. Remove and bring to room temperature. Preheat the hibachi. Remove the meat from the pan, reserving the marinade. Place the marinade in a saucepan, over medium heat. Bring to a boil and cook for 6 to 8 minutes or until the mixture reduces by 3/4. Remove, set aside, and keep warm. Grill the meat for a couple of minutes on each side, for medium rare. To serve, spoon the rice in the center of each plate. Lay the strips of meat around the rice. Drizzle the sauce over the </li><li>Yield: 4 servings</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Meat",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1 pound Beef flank steak, sliced into ½-inch slices",
+      "name": "beef steak"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "Freshly ground black pepper",
+      "name": "black pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon Snipped chives",
+      "name": "chives"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "Crushed red pepper, to taste",
+      "name": "crushed red pepper"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon Chopped fresh ginger",
+      "name": "ginger"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 2.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "2 cloves garlic (finely chopped)",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 cups Cooked white long grain rice",
+      "name": "rice"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "Salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup sesame oil",
+      "name": "sesame oil"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon soy sauce",
+      "name": "soy sauce"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/korean-bulgogi-649034",
+  "weightWatcherSmartPoints": 83,
+  "id": 649034,
+  "image": "https://spoonacular.com/recipeImages/Korean-Bulgogi-649034.jpg",
+  "servings": 1,
+  "whole30": false,
+  "lowFodmap": false
+}

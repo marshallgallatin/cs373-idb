@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup brown lentils",
-      "name": "brown lentils"
+      "name": "lentil"
     },
     {
       "aisle": "Canned and Jarred",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "can",
       "originalString": "1 can crushed tomatoes",
-      "name": "canned tomatoes"
+      "name": "canned crushed tomatoes"
     },
     {
       "aisle": "Produce",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups frozen peas",
-      "name": "peas"
+      "name": "frozen peas"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup plain yogurt (optional)",
-      "name": "plain yogurt"
+      "name": "yogurt"
     },
     {
       "aisle": "Pasta and Rice",

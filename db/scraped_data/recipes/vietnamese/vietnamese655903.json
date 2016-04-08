@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup If non-vegetarian: add cooked baby shrimp",
-      "name": "baby shrimp"
+      "name": "cooked shrimp"
     },
     {
       "aisle": "Produce",
@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups approx. bean sprouts",
-      "name": "bean sprouts"
+      "name": "bean sprout"
     },
     {
       "aisle": "Produce",
@@ -59,7 +59,7 @@
       "unitShort": "t",
       "metaInformation": [],
       "unit": "teaspoon",
-      "originalString": "1 teaspoon 1 red chili, minced, OR ½ to cayenne pepper (omit if you prefer very mild",
+      "originalString": "1 teaspoon 1 red chili, minced, OR 1/2 to cayenne pepper (omit if you prefer very mild",
       "name": "cayenne pepper"
     },
     {
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup fresh basil, roughly chopped",
-      "name": "fresh basil"
+      "name": "basil"
     },
     {
       "aisle": "Produce",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup fresh coriander, roughly chopped",
-      "name": "fresh coriander"
+      "name": "cilantro"
     },
     {
       "aisle": "Produce",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 green onions, sliced into matchstick pieces",
-      "name": "green onions"
+      "name": "green onion"
     },
     {
       "aisle": "Produce",
@@ -160,7 +160,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "6 shiitake mushrooms, cut into matchstick pieces",
-      "name": "shiitake mushrooms"
+      "name": "shiitake mushroom"
     },
     {
       "aisle": "Ethnic Foods",

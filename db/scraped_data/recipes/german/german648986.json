@@ -1,1 +1,159 @@
-{"vegetarian": false, "glutenFree": false, "title": "Knockwurst with sauerkraut", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/3WSSNN3W/knockwurst-with-sauerkraut", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Butter a medium fry pan and heat the wurst until brown, about 10-12 minutes.</li><li>Drain the sauerkraut, rinse, and drain well.</li><li>In a large pot cook onion until onion is tender but not brown. Stir in beer.</li><li>In a 2-cup glass measure combine the water, cornstarch, brown mustard, molasses, caraway seed, allspice, and pepper; stir into onion mixture.</li><li>Cook and stir until thickened and bubbly. Add rutabaga; cover and cook 15 minutes.</li><li>Stir in the knockwurst, apple wedges, and sauerkraut. Cook, covered, 15 to 20 minutes more or until apples are tender.</li></ol>", "aggregateLikes": 2, "dairyFree": true, "extendedIngredients": [{"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 medium cooking apples, cored and cut into 8 wedges each", "name": "apples"}, {"aisle": "Alcoholic Beverages", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup beer", "name": "beer"}, {"aisle": "Spices and Seasonings", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons coarse-grain brown mustard", "name": "brown mustard seed"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 teaspoons caraway seed", "name": "caraway seed"}, {"aisle": "Baking", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon cornstarch", "name": "cornstarch"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon ground allspice", "name": "ground allspice"}, {"aisle": "Meat", "unitLong": "pound", "amount": 1.0, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1 pound fully cooked knockwurst, bias-sliced into 2- to 2-1/2-inch pieces", "name": "knockwurst"}, {"aisle": "Baking", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons molasses", "name": "molasses"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.3333333333333333, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/3 cup chopped onion", "name": "onion"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.25, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/4 teaspoon pepper", "name": "pepper"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 large rutabaga, peeled & cut into 1\" cubes", "name": "rutabaga"}, {"aisle": "Canned and Jarred", "unitLong": "ounces", "amount": 16.0, "unitShort": "oz", "metaInformation": [], "unit": "ounce", "originalString": "1 16-ounce can sauerkraut, drained and rinsed", "name": "sauerkraut"}, {"aisle": "Beverages", "unitLong": "cups", "amount": 4.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "4 cups Water, boiling", "name": "water"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/knockwurst-with-sauerkraut-648986", "weightWatcherSmartPoints": 16, "id": 648986, "image": "https://spoonacular.com/recipeImages/Knockwurst-with-sauerkraut-648986.jpg", "servings": 4, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Knockwurst with sauerkraut",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/3WSSNN3W/knockwurst-with-sauerkraut",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Butter a medium fry pan and heat the wurst until brown, about 10-12 minutes.</li><li>Drain the sauerkraut, rinse, and drain well.</li><li>In a large pot cook onion until onion is tender but not brown. Stir in beer.</li><li>In a 2-cup glass measure combine the water, cornstarch, brown mustard, molasses, caraway seed, allspice, and pepper; stir into onion mixture.</li><li>Cook and stir until thickened and bubbly. Add rutabaga; cover and cook 15 minutes.</li><li>Stir in the knockwurst, apple wedges, and sauerkraut. Cook, covered, 15 to 20 minutes more or until apples are tender.</li></ol>",
+  "aggregateLikes": 2,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 medium cooking apples, cored and cut into 8 wedges each",
+      "name": "apple"
+    },
+    {
+      "aisle": "Alcoholic Beverages",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup beer",
+      "name": "beer"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons coarse-grain brown mustard",
+      "name": "brown mustard seed"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 teaspoons caraway seed",
+      "name": "caraway seed"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon cornstarch",
+      "name": "corn starch"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon ground allspice",
+      "name": "allspice"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1 pound fully cooked knockwurst, bias-sliced into 2- to 2-1/2-inch pieces",
+      "name": "knockwurst"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons molasses",
+      "name": "molasses"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.3333333333333333,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/3 cup chopped onion",
+      "name": "onion"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.25,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/4 teaspoon pepper",
+      "name": "pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 large rutabaga, peeled & cut into 1\" cubes",
+      "name": "rutabaga"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "ounces",
+      "amount": 16.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounce",
+      "originalString": "1 16-ounce can sauerkraut, drained and rinsed",
+      "name": "sauerkraut"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "cups",
+      "amount": 4.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "4 cups Water, boiling",
+      "name": "water"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/knockwurst-with-sauerkraut-648986",
+  "weightWatcherSmartPoints": 16,
+  "id": 648986,
+  "image": "https://spoonacular.com/recipeImages/Knockwurst-with-sauerkraut-648986.jpg",
+  "servings": 4,
+  "whole30": false,
+  "lowFodmap": false
+}

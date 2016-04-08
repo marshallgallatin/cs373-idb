@@ -19,8 +19,18 @@
       "unitShort": "t",
       "metaInformation": [],
       "unit": "teaspoon",
-      "originalString": "1 teaspoon EACH DRIED BASIL& OREGANO",
-      "name": "basil"
+      "originalString": "1 teaspoon DRIED BASIL",
+      "name": "dried basil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon OREGANO",
+      "name": "oregano"
     },
     {
       "aisle": "Produce",
@@ -30,7 +40,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "12 LARGE BASIL LEAVES",
-      "name": "basil leaves"
+      "name": "basil"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -40,7 +50,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "3/4 teaspoon CRACKED BLACK PEPPER",
-      "name": "cracked pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Produce",
@@ -50,7 +60,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon FRESH MINCED CHIVES",
-      "name": "fresh chives"
+      "name": "chives"
     },
     {
       "aisle": "Produce",
@@ -60,7 +70,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon FRESH MINCED OREGANO",
-      "name": "fresh oregano"
+      "name": "oregano"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -70,7 +80,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons FRESH MINCED PARSLEY",
-      "name": "fresh parsley"
+      "name": "parsley"
     },
     {
       "aisle": "Produce",
@@ -80,7 +90,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "10 FRESH SAGE LEAVES- CUT INTO CHIFFONADE",
-      "name": "fresh sage leaves"
+      "name": "sage"
     },
     {
       "aisle": "Produce",
@@ -140,7 +150,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "4 MUSHROOMS DICED",
-      "name": "mushrooms"
+      "name": "mushroom"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -180,7 +190,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1/2 teaspoon RED PEPPER FLAKES",
-      "name": "red pepper flakes"
+      "name": "crushed red pepper"
     },
     {
       "aisle": "Cheese",
@@ -210,7 +220,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "28 OZ CAN WHOLE SAN MARZANO TOMATOES",
-      "name": "tomatoes"
+      "name": "tomato"
     },
     {
       "aisle": "Produce",

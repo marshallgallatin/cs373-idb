@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "extra-virgin olive oil",
-      "name": "extra-virgin olive oil"
+      "name": "olive oil"
     },
     {
       "aisle": "Meat",
@@ -59,7 +59,7 @@
       "unitShort": "",
       "metaInformation": [],
       "unit": "",
-      "originalString": "½ large jalapeno, seeded and minced ( whole 1 if brave)",
+      "originalString": "1/2 large jalapeno, seeded and minced ( whole 1 if brave)",
       "name": "jalapeno"
     },
     {
@@ -79,7 +79,7 @@
       "unitShort": "",
       "metaInformation": [],
       "unit": "",
-      "originalString": "Juice of large ½ lime",
+      "originalString": "Juice of large 1/2 lime",
       "name": "lime juice"
     },
     {
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "4 scallions, white only finely chopped",
-      "name": "scallions"
+      "name": "green onion"
     },
     {
       "aisle": "Produce",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 medium tomatoes, finely chopped",
-      "name": "tomatoes"
+      "name": "tomato"
     }
   ],
   "readyInMinutes": 45,

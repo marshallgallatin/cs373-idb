@@ -8,7 +8,7 @@
   "sourceName": "Foodista",
   "vegan": false,
   "sustainable": false,
-  "instructions": "<ol><li>Heat the oven to 175 degrees Celsius or 350 degrees Fahrenheit.</li><li>Make the sauce first. Melt the butter in a small saucepan. Stir in the tomato paste, then add the tomatoes and water or stock. Season with salt and pepper. Bring the mixture to a boil. Let simmer, stirring occasionally, while you make the kfte so that the tomatoes boil down.</li><li>Combine the ground lamb or beef, onion, garlic, eggs, paprika, cumin and parsley in a large bowl. Season with salt and pepper. With moistened hands, mix the ingredients for about 2 minutes. Keep a bowl of warm water nearby to wet your hands while working. Shape the meat mixture into 20-25 oval balls.</li><li>Heat the oil in a large skillet over high heat, add the kfte and lightly brown the meat all over (about 5 minutes). Place the kfte in an ovenproof dish and set them aside.</li><li>Pour the tomato sauce over the kfte. Arrange the green peppers on top. Cover the dish and bake for 40 minutes. To check for doneness, cut one kfte open; it should be brown, not pink.</li><li>Serve with fried potatoes or rice and salad.</li></ol>",
+  "instructions": "<ol><li>Heat the oven to 175 degrees Celsius or 350 degrees Fahrenheit.</li><li>Make the sauce first. Melt the butter in a small saucepan. Stir in the tomato paste, then add the tomatoes and water or stock. Season with salt and pepper. Bring the mixture to a boil. Let simmer, stirring occasionally, while you make the köfte so that the tomatoes boil down.</li><li>Combine the ground lamb or beef, onion, garlic, eggs, paprika, cumin and parsley in a large bowl. Season with salt and pepper. With moistened hands, mix the ingredients for about 2 minutes. Keep a bowl of warm water nearby to wet your hands while working. Shape the meat mixture into 20-25 oval balls.</li><li>Heat the oil in a large skillet over high heat, add the köfte and lightly brown the meat all over (about 5 minutes). Place the kfte in an ovenproof dish and set them aside.</li><li>Pour the tomato sauce over the kfte. Arrange the green peppers on top. Cover the dish and bake for 40 minutes. To check for doneness, cut one köfte open; it should be brown, not pink.</li><li>Serve with fried potatoes or rice and salad.</li></ol>",
   "aggregateLikes": 1,
   "dairyFree": false,
   "extendedIngredients": [
@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 Eggs",
-      "name": "eggs"
+      "name": "egg"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "3 tablespoons minced fresh parsley",
-      "name": "fresh parsley"
+      "name": "parsley"
     },
     {
       "aisle": "Produce",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon ground cumin",
-      "name": "ground cumin"
+      "name": "cumin"
     },
     {
       "aisle": "Produce",
@@ -94,13 +94,13 @@
     },
     {
       "aisle": "Produce",
-      "unitLong": "slices",
+      "unitLong": "",
       "amount": 2.0,
-      "unitShort": "slices",
+      "unitShort": "",
       "metaInformation": [],
-      "unit": "slices",
-      "originalString": "2 mediums green peppers, seeded and cut diagonally into slices",
-      "name": "peppers"
+      "unit": "",
+      "originalString": "2 medium green peppers, seeded and cut diagonally into slices",
+      "name": "green chili pepper"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "3 large tomatoes, diced",
-      "name": "tomatoes"
+      "name": "tomato"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons unsalted butter",
-      "name": "unsalted butter"
+      "name": "butter"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -150,7 +150,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup virgin olive oil",
-      "name": "virgin olive oil"
+      "name": "olive oil"
     }
   ],
   "readyInMinutes": 45,

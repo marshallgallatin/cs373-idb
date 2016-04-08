@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup raw black eyed beans",
-      "name": "black eyed peas"
+      "name": "black-eyed pea"
     },
     {
       "aisle": "Produce",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "teaspoons",
       "originalString": "2 teaspoons cumin seeds",
-      "name": "cumin seeds"
+      "name": "cumin seed"
     },
     {
       "aisle": "Canned and Jarred",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup raw garbanzo beans/ chickpeas",
-      "name": "garbanzo beans"
+      "name": "chickpea"
     },
     {
       "aisle": "Produce",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup onions - finely chopped",
-      "name": "onions"
+      "name": "onion"
     },
     {
       "aisle": "Spices and Seasonings",

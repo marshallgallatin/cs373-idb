@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "Chopped parsley (fresh is best)",
-      "name": "fresh parsley"
+      "name": "parsley"
     },
     {
       "aisle": "Produce",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "g",
       "originalString": "500g long grain rice",
-      "name": "long-grain rice"
+      "name": "rice"
     },
     {
       "aisle": "Seafood",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "g",
       "originalString": "200g deep red tomatoes",
-      "name": "tomatoes"
+      "name": "tomato"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup Unsalted butter",
-      "name": "unsalted butter"
+      "name": "butter"
     },
     {
       "aisle": "Beverages",

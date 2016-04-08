@@ -1,1 +1,109 @@
-{"vegetarian": false, "glutenFree": true, "title": "BBQ Pork Steak", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/ZWWD5DZQ/bbq-pork-steak", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Marinate pork steak for 24 hours in meat marinate mix and Italian dressing. Remove from marinate and brown on grill for about 20 minutes. After preparing barbeque sauce, use liberally on grilling pork steak.</li><li>Sauce preparation: Mix sauce in small saucepan and cook to blend. Add corn syrup to taste.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Milk, Eggs, Other Dairy", "unitLong": "tablespoons", "amount": 3.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "3 tablespoons butter, divided", "name": "butter"}, {"aisle": "Baking", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "White corn syrup, to taste", "name": "corn syrup"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "ounces", "amount": 18.0, "unitShort": "oz", "metaInformation": [], "unit": "oz", "originalString": "1 (18 oz.) reg. flavor Open Bit", "name": "egg flavor"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "ounces", "amount": 8.0, "unitShort": "oz", "metaInformation": [], "unit": "oz", "originalString": "1 (8 oz.) bottle Italian dressing", "name": "italian dressing"}, {"aisle": "Meat", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 env. meat marinade", "name": "meat"}, {"aisle": "Produce", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1/2 onion, finely chopped", "name": "onion"}, {"aisle": "Meat", "unitLong": "", "amount": 6.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "6 pork chops", "name": "pork chops"}, {"aisle": "Condiments", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon Worcestershire", "name": "worcestershire"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/bbq-pork-steak-634509", "weightWatcherSmartPoints": 81, "id": 634509, "image": "https://spoonacular.com/recipeImages/Bbq-Pork-Steak-634509.jpg", "servings": 2, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "BBQ Pork Steak",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/ZWWD5DZQ/bbq-pork-steak",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Marinate pork steak for 24 hours in meat marinate mix and Italian dressing. Remove from marinate and brown on grill for about 20 minutes. After preparing barbeque sauce, use liberally on grilling pork steak.</li><li>Sauce preparation: Mix sauce in small saucepan and cook to blend. Add corn syrup to taste.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "tablespoons",
+      "amount": 3.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "3 tablespoons butter, divided",
+      "name": "butter"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "White corn syrup, to taste",
+      "name": "corn syrup"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "ounces",
+      "amount": 18.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "oz",
+      "originalString": "1 (18 oz.) reg. flavor Open Pit",
+      "name": "barbecue sauce"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "ounces",
+      "amount": 8.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "oz",
+      "originalString": "1 (8 oz.) bottle Italian dressing",
+      "name": "italian dressing"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 env. meat marinade",
+      "name": "meat marinade"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 onion, finely chopped",
+      "name": "onion"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "",
+      "amount": 6.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "6 pork chops",
+      "name": "pork chops"
+    },
+    {
+      "aisle": "Condiments",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon Worcestershire",
+      "name": "Worcestershire sauce"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/bbq-pork-steak-634509",
+  "weightWatcherSmartPoints": 81,
+  "id": 634509,
+  "image": "https://spoonacular.com/recipeImages/Bbq-Pork-Steak-634509.jpg",
+  "servings": 2,
+  "whole30": false,
+  "lowFodmap": false
+}

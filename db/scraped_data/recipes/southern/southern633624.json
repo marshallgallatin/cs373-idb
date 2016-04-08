@@ -33,16 +33,6 @@
       "name": "cauliflower"
     },
     {
-      "aisle": "Produce",
-      "unitLong": "servings",
-      "amount": 6.0,
-      "unitShort": "servings",
-      "metaInformation": [],
-      "unit": "servings",
-      "originalString": "Cauliflower Mash",
-      "name": "cauliflower"
-    },
-    {
       "aisle": "Spices and Seasonings",
       "unitLong": "teaspoons",
       "amount": 0.5,
@@ -51,16 +41,6 @@
       "unit": "teaspoon",
       "originalString": "1/2 teaspoon cayenne pepper",
       "name": "cayenne pepper"
-    },
-    {
-      "aisle": "Meat",
-      "unitLong": "servings",
-      "amount": 6.0,
-      "unitShort": "servings",
-      "metaInformation": [],
-      "unit": "servings",
-      "originalString": "Chicken (Baked chicken recipe adapted from Epicurious.com)",
-      "name": "chicken"
     },
     {
       "aisle": "Condiments",

@@ -1,1 +1,149 @@
-{"vegetarian": true, "glutenFree": true, "title": "How Sweet It Is Sweet Potato Lasagne", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/LYPLYH8P/how-sweet-it-is-sweet-potato-lasagne", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Slice the Sweet Potato into 1/4 inch thick slices. Boil until semi-cooked (about 10 min). Rub the slices with a dry curry powder & olive oil (1cup) mixture. Set aside and let marinate for at least 10 min.</li><li>Slice Eggplants into 1/4 inch thick slices and rub all over with an olive oil (1 cup)/dried basil/salt & pepper mix. Set aside and let marinate for at least 15 min.</li><li>Pour canola or vegetable cooking oil into a pan. Saute spinach and mushrooms for about 3-5 min, add in jalapenos and salt & pepper to taste.</li><li>Turn the heat down and add in some heavy cream and about 1/2 of the mexican cheeses until mixture is creamy, but not watery.</li><li>Start layering the lasagne in this order: Sweet Potatoes, Spinach/Mushroom Mix, Eggplants, Marinara Sauce, Sweet Potatoes, Spinach/Mushrom Mix, Eggplants, Then finally sprinkle the remaining Monterey Jack/Cheddar Cheese Blend on top.</li><li>Bake at 350-375 for about 35-45 min, depending on how your oven works. You'll know it's ready when you can pass through a fork easily through all the layers.</li><li>Devour with Passion</li></ol>", "aggregateLikes": 2, "dairyFree": false, "extendedIngredients": [{"aisle": "Spices and Seasonings", "unitLong": "tablespoons", "amount": 3.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "3 tablespoons Dry Curry Powder", "name": "curry powder"}, {"aisle": "Spices and Seasonings", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons Dried Basil Leaves", "name": "dried basil leaves"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 Eggplants", "name": "eggplants"}, {"aisle": "Frozen", "unitLong": "ounces", "amount": 10.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "10 ounces Frozen chopped Spinach, with excess water squeezed out", "name": "frozen spinach"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup Half & Half or Heavy Cream", "name": "heavy cream"}, {"aisle": "Cheese", "unitLong": "ounces", "amount": 12.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "12 ounces Montery Jack & Cheddar Cheese Mix", "name": "jack cheese"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 Jalapenos, finely chopped", "name": "jalapenos"}, {"aisle": "Pasta and Rice", "unitLong": "cups", "amount": 3.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "3 cups Marinara Sauce (home made or a jar of 24 oz store bought)", "name": "marinara sauce"}, {"aisle": "Produce", "unitLong": "", "amount": 12.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "12 Baby Portabella Mushrooms, sliced", "name": "baby bella mushrooms"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 6.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Salt & Pepper, to taste", "name": "salt and pepper"}, {"aisle": "Produce", "unitLong": "", "amount": 4.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "4 Sweet Potatoes", "name": "sweet potatoes"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon Canola or Vegetable Cooking Oil", "name": "vegetable oil cooking spray"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/how-sweet-it-is-sweet-potato-lasagne-647563", "weightWatcherSmartPoints": 16, "id": 647563, "image": "https://spoonacular.com/recipeImages/How-Sweet-It-Is-Sweet-Potato-Lasagne-647563.jpg", "servings": 6, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": true,
+  "title": "How Sweet It Is Sweet Potato Lasagne",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/LYPLYH8P/how-sweet-it-is-sweet-potato-lasagne",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Slice the Sweet Potato into 1/4 inch thick slices. Boil until semi-cooked (about 10 min). Rub the slices with a dry curry powder & olive oil (1cup) mixture. Set aside and let marinate for at least 10 min.</li><li>Slice Eggplants into 1/4 inch thick slices and rub all over with an olive oil (1 cup)/dried basil/salt & pepper mix. Set aside and let marinate for at least 15 min.</li><li>Pour canola or vegetable cooking oil into a pan. Saute spinach and mushrooms for about 3-5 min, add in jalapenos and salt & pepper to taste.</li><li>Turn the heat down and add in some heavy cream and about 1/2 of the mexican cheeses until mixture is creamy, but not watery.</li><li>Start layering the lasagne in this order: Sweet Potatoes, Spinach/Mushroom Mix, Eggplants, Marinara Sauce, Sweet Potatoes, Spinach/Mushrom Mix, Eggplants, Then finally sprinkle the remaining Monterey Jack/Cheddar Cheese Blend on top.</li><li>Bake at 350-375 for about 35-45 min, depending on how your oven works. You'll know it's ready when you can pass through a fork easily through all the layers.</li><li>Devour with Passion</li></ol>",
+  "aggregateLikes": 2,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoons",
+      "amount": 3.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "3 tablespoons Dry Curry Powder",
+      "name": "curry"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons Dried Basil Leaves",
+      "name": "dried basil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 Eggplants",
+      "name": "eggplant"
+    },
+    {
+      "aisle": "Frozen",
+      "unitLong": "ounces",
+      "amount": 10.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "10 ounces Frozen chopped Spinach, with excess water squeezed out",
+      "name": "frozen spinach"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup Half & Half or Heavy Cream",
+      "name": "heavy cream"
+    },
+    {
+      "aisle": "Cheese",
+      "unitLong": "ounces",
+      "amount": 12.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "12 ounces Montery Jack & Cheddar Cheese Mix",
+      "name": "jack cheese"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 Jalapenos, finely chopped",
+      "name": "jalapeno"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "cups",
+      "amount": 3.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "3 cups Marinara Sauce (home made or a jar of 24 oz store bought)",
+      "name": "marinara sauce"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 12.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "12 Baby Portabella Mushrooms, sliced",
+      "name": "cremini mushroom"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 6.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Salt & Pepper, to taste",
+      "name": "salt and pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 4.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "4 Sweet Potatoes",
+      "name": "sweet potato"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon Canola or Vegetable Cooking Oil",
+      "name": "canola oil"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/how-sweet-it-is-sweet-potato-lasagne-647563",
+  "weightWatcherSmartPoints": 16,
+  "id": 647563,
+  "image": "https://spoonacular.com/recipeImages/How-Sweet-It-Is-Sweet-Potato-Lasagne-647563.jpg",
+  "servings": 6,
+  "whole30": false,
+  "lowFodmap": false
+}

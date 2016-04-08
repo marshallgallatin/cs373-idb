@@ -1,1 +1,209 @@
-{"vegetarian": false, "glutenFree": true, "title": "Slow Cooker Lamb Curry", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/Z5MXNR2V/slow-cooker-lamb-curry", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Pull out your slow cooker and add everything into the pot with the exception of the yogurt.</li><li>Now turn on your pot, setting it on low for the next 4-6 hours or high for the next 3-5.</li><li>When the time is up, open up your slow cooker, grab your yogurt and stir it into the curry.</li><li>Serve over rice.</li></ol>", "aggregateLikes": 19, "dairyFree": false, "extendedIngredients": [{"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 baking Potatoes", "name": "baking potatoes"}, {"aisle": "Canned and Jarred", "unitLong": "cups", "amount": 2.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "2 cups of beef broth", "name": "beef broth"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons of Butter", "name": "butter"}, {"aisle": "Produce", "unitLong": "bunch", "amount": 1.0, "unitShort": "bunch", "metaInformation": [], "unit": "bunch", "originalString": "1 bunch of Cilantro, Chopped", "name": "cilantro"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons of Curry", "name": "curry paste"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon of fennel powder", "name": "fennel powder"}, {"aisle": "Ethnic Foods", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon of Garam Masala", "name": "garam masala"}, {"aisle": "Produce", "unitLong": "cloves", "amount": 3.0, "unitShort": "cloves", "metaInformation": [], "unit": "cloves", "originalString": "3 cloves of Garlic, Minced", "name": "garlic"}, {"aisle": "Ethnic Foods", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon of Ginger", "name": "ginger"}, {"aisle": "Meat", "unitLong": "pounds", "amount": 5.5, "unitShort": "lb", "metaInformation": [], "unit": "pounds", "originalString": "5 1/2 pounds of Cooked Lamb stew meat", "name": "lamb stew meat"}, {"aisle": "Produce", "unitLong": "ounces", "amount": 6.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "6 ounces of Mushrooms, Chopped", "name": "mushrooms"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons of Olive Oil", "name": "olive oil"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 Onion, Diced", "name": "onion"}, {"aisle": "Spices and Seasonings", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon of Oregano", "name": "oregano"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup of Plain Yogurt", "name": "plain yogurt"}, {"aisle": "Spices and Seasonings", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon of Rosemary", "name": "rosemary"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon of Salt", "name": "salt"}, {"aisle": "Pasta and Rice", "unitLong": "can", "amount": 1.0, "unitShort": "can", "metaInformation": [], "unit": "can", "originalString": "1 can of Tomato Paste", "name": "tomato paste"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/slow-cooker-lamb-curry-660290", "weightWatcherSmartPoints": 13, "id": 660290, "image": "https://spoonacular.com/recipeImages/Slow-Cooker-Lamb-Curry-660290.jpg", "servings": 8, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Slow Cooker Lamb Curry",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/Z5MXNR2V/slow-cooker-lamb-curry",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Pull out your slow cooker and add everything into the pot with the exception of the yogurt.</li><li>Now turn on your pot, setting it on low for the next 4-6 hours or high for the next 3-5.</li><li>When the time is up, open up your slow cooker, grab your yogurt and stir it into the curry.</li><li>Serve over rice.</li></ol>",
+  "aggregateLikes": 19,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 baking Potatoes",
+      "name": "baking potatoes"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 cups of beef broth",
+      "name": "beef broth"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons of Butter",
+      "name": "butter"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "bunch",
+      "amount": 1.0,
+      "unitShort": "bunch",
+      "metaInformation": [],
+      "unit": "bunch",
+      "originalString": "1 bunch of Cilantro, Chopped",
+      "name": "cilantro"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons of Curry",
+      "name": "curry"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon of fennel powder",
+      "name": "fennel powder"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon of Garam Masala",
+      "name": "garam masala"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 3.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "3 cloves of Garlic, Minced",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon of Ginger",
+      "name": "ginger"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pounds",
+      "amount": 5.5,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pounds",
+      "originalString": "5 1/2 pounds of Cooked Lamb stew meat",
+      "name": "lamb stew meat"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "ounces",
+      "amount": 6.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "6 ounces of Mushrooms, Chopped",
+      "name": "mushroom"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons of Olive Oil",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 Onion, Diced",
+      "name": "onion"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon of Oregano",
+      "name": "oregano"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup of Plain Yogurt",
+      "name": "yogurt"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon of Rosemary",
+      "name": "rosemary"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon of Salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "can",
+      "amount": 1.0,
+      "unitShort": "can",
+      "metaInformation": [],
+      "unit": "can",
+      "originalString": "1 can of Tomato Paste",
+      "name": "tomato paste"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/slow-cooker-lamb-curry-660290",
+  "weightWatcherSmartPoints": 13,
+  "id": 660290,
+  "image": "https://spoonacular.com/recipeImages/Slow-Cooker-Lamb-Curry-660290.jpg",
+  "servings": 8,
+  "whole30": false,
+  "lowFodmap": false
+}
