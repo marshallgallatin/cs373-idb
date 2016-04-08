@@ -31,7 +31,7 @@ class DatabaseTest(TestCase):
 #-------------------------------------
 class ConstantsTest(TestCase):
     def test_databaseName(self):
-        self.assertEqual(databaseName, 'postgresql+psycopg2://postgres:SWEdishchefs@localhost:5432/postgres')
+        self.assertEqual(databaseName, 'postgresql+psycopg2://postgres:SWEdishchefs@db:5432/postgres')
 
 class UtilityTest(TestCase):
     def test_renameKeyInDict(self):
