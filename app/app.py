@@ -263,25 +263,7 @@ def test_ing():
 @app.route('/ingredient.html')
 @app.route('/ingredient_<i_id>.html')
 def ingredient(i_id="test"):
-	store = {"id":"1",
-	"title":"Fresh Basil",
-	"size":"1 egg",
-	"calories":"171",
-	"total_fat":"11.88g",
-	"sat_fat":"3.632",
-	"cholesterol":"933",
-	"sodium":"151mg",
-	"total_carb":"1.15",
-	"fiber":"0g",
-	"sugar":"NA",
-	"protein":"13.68g",
-	"vit_a":"554 IU",
-	"vit_c":"0%",
-	"calcium":"99%",
-	"iron":"4.1%",
-	"place":"30.2849185,-97.73624",
-	"img_uri":"http://www.essentialoilspedia.com/wp-content/uploads/basil_plant.jpg"}
-	return render_template('ingredient.html', i_id=i_id, ingredientslit="active", **store)
+	return render_template('ingredient.html', i_id=i_id, ingredientslit="active")
 
 ############ END WEBSITE TEST ENTRY POINTS ###########
 
