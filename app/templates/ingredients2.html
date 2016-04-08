@@ -14,6 +14,7 @@
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
 			$scope.page = 1;
 			$scope.pages = [0, 1, 2, 3, 4];
+			$scope.ing;
 			$scope.mbReverse = false;
 			$scope.orderByMe = function(x) {
 				if ($scope.mbOrderBy == x) {
@@ -47,21 +48,18 @@
 				$scope.getData();
 			}
 			$scope.getData = function () {
-				$scope.a = {a:1};
-				$scope.b = {b:2};
-				jQuery.extend($scope.a, $scope.b);
 				$http.get("ingredients?limit=10&page=" + $scope.page).then(function (transmit) {
 				//$http.get("i" + $scope.page).then(function (transmit) {
-					$scope.temp = transmit.data.ingredients;
-					for (var i = 0; i < $scope.temp.length; ++i) {
-						$http.get("ingredients/" + $scope.temp[i].id + "/nutrition").then(function (transmit_nuts) {
+					$scope.ing = transmit.data.ingredients;
+					for (var i = 0; i < $scope.ing.length; ++i) {
+						$http.get("ingredients/" + $scope.ing[i].id + "/nutrition").then(function (transmit_nuts) {
 						//$http.get("ingredients/test/nutrition").then(function (transmit_nuts) {
 							var more = transmit_nuts.data;
-							$scope.temp.calories = more.calories;
-							alert(more.calories + "->" + $scope.temp[i].calories);
+							jQuery.extend($scope.ing[i], more);
+							$scope.ing[i].calories = more.calories;
+							alert(more.calories + "->" + $scope.ing[i].calories);
 						});
 					}
-					$scope.ing = $scope.temp;
 					$scope.$apply();
 				});
 			}
@@ -78,8 +76,6 @@
 
 {% block content %}
 <div ng-app="mbApp" ng-controller="mbCtrl">
-	{{ '{{ing}}' }}
-	{{ '{{a}}' }}
 	<div class="table-responsive">
 		<table class="table table-default table-hover">
 			<tr>
