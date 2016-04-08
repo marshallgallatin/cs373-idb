@@ -29,6 +29,13 @@ class ListRecipes(Resource):
         filtered_args = {k : parsed_args[k] for k in parsed_args if parsed_args[k] is not None }
         return jsonify(recipes = RecipeQueries.getAllRecipes(**filtered_args))
 
+class ListRecipes(Resource):
+    """
+    Count of Recipes [/recipes/count]
+    """
+    def get(self):
+        return jsonify(**(RecipeQueries.getNumberOfRecipes()))
+
 class RecipeByID(Resource):
     """
     Recipe [/recipes/{id}]
@@ -59,6 +66,12 @@ class ListIngredients(Resource):
         filtered_args = {k : parsed_args[k] for k in parsed_args if parsed_args[k] is not None }
         return jsonify(ingredients = IngredientQueries.getAllIngredients(**filtered_args))
 
+class CountIngredients(Resource):
+    """
+    Count of Ingredients [ingredients/count]
+    """
+    def get(self):
+        return jsonify(**(IngredientQueries.getNumberOfIngredients()))
 
 class IngredientByID(Resource):
     """
@@ -88,9 +101,11 @@ class LookupRecipesByIngredientID(Resource):
         return jsonify(recipes = IngredientQueries.getRecipesUsingIngredientById(ingred_id, **filtered_args))
 
 api.add_resource(ListRecipes, '/recipes')
+api.add_resource(CountRecipes, '/recipes/count')
 api.add_resource(RecipeByID, '/recipes/<int:rec_id>')
 api.add_resource(SearchRecipesByIngredients, '/recipes/ingredientSearch')
 api.add_resource(ListIngredients, '/ingredients')
+api.add_resource(CountIngredients, '/ingredients/count')
 api.add_resource(IngredientByID, '/ingredients/<int:ingred_id>')
 api.add_resource(NutritionInformationByIngredientID, '/ingredients/<int:ingred_id>/nutrition')
 api.add_resource(LookupRecipesByIngredientID, '/ingredients/<int:ingred_id>/recipes')
