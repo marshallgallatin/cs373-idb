@@ -110,6 +110,10 @@ def about():
 def recipes():
 	return render_template('recipes.html', title="Recipes", recipeslit="active")
 
+@app.route('/ingredients.html')
+def ingredients():
+	return render_template('ingredients.html', title="Ingredients", ingredientslit="active")
+
 @app.route("/<path:path>")
 def static_html(path):
     return app.send_static_file('html/{}'.format(path))
@@ -226,6 +230,25 @@ def test_ing():
   "origin": "Africa",
   "scientific_name": "Vigna unguiculata subsp. unguiculata"
 })
+
+@app.route('/ingredients/list')
+def test_inglist():
+	return jsonify(
+        {
+            "ingredients": [
+            {
+              "id": 1,
+              "name": "black-eyed pea"
+            },
+            {
+              "id": 2,
+              "name": "carrot"
+            },
+            {
+              "id": 3,
+              "name": "green bell pepper"
+            }]
+        })
 
 @app.route('/ingredients/test/recipes')
 def test_ingr():
