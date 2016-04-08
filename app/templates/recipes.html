@@ -55,7 +55,7 @@
 					$scope.data = transmit.data;
 				});
 				$http.get("recipes/count").then(function (transmit) {
-					$scope.maxPage = transmit.data;
+					$scope.maxPage = transmit.data.count;
 				});
 			}
 			$(function() {
