@@ -29,7 +29,7 @@ class ListRecipes(Resource):
         filtered_args = {k : parsed_args[k] for k in parsed_args if parsed_args[k] is not None }
         return jsonify(recipes = RecipeQueries.getAllRecipes(**filtered_args))
 
-class ListRecipes(Resource):
+class CountRecipes(Resource):
     """
     Count of Recipes [/recipes/count]
     """
