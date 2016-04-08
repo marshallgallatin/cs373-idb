@@ -228,7 +228,7 @@ def test_ing():
 })
 
 @app.route('/ingredients/test/recipes')
-def test_ing():
+def test_ingr():
 	return jsonify({
   "recipes": [
     {
@@ -243,7 +243,7 @@ def test_ing():
 })
 
 @app.route('/ingredients/test/nutrition')
-def test_ing():
+def test_ingnut():
 	return jsonify({
   "calcium_mg": 110,
   "calories": 336,
