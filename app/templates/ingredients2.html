@@ -56,9 +56,7 @@
 						//$http.get("ingredients/test/nutrition").then(function (transmit_nuts) {
 							var more = transmit_nuts.data;
 							alert(more.calories);
-							for (var attrname in more) {
-								$scope.ing[i][attrname] = more[attrname];
-							}
+							jQuery.extend($scope.ing[i], more);
 						});
 					}
 				});
