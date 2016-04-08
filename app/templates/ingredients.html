@@ -62,7 +62,7 @@
 					$scope.$apply();
 				});
 				$http.get("ingredients/count").then(function (transmit) {
-					$scope.maxPage = transmit.data.count / $scope.perPage;
+					$scope.maxPage = Math.ceil(transmit.data.count / $scope.perPage);
 				});
 			}
 			$(function() {
