@@ -134,13 +134,14 @@ def dump_database():
     return jsonify({"recipes": rlist})
 
 @app.route("/r")
+@app.route("/r<page>")
 @app.route("/recipestest\?limit=2&page=1")
-def test_recipes():
+def test_recipes(page=0):
     testdict = {
   "recipes": [
     {
       "cuisine": "african",
-      "id": 1,
+      "id": 1+page,
       "image_uri": "https://spoonacular.com/recipeImages/African-Bean-Soup-632003.jpg",
       "ready_in_minutes": 45,
       "servings": 4,
