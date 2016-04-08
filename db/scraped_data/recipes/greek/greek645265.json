@@ -1,1 +1,109 @@
-{"vegetarian": true, "glutenFree": true, "title": "Great Greek Salad", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/GPCD3SV6/great-greek-salad", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>In a large salad bowl, toss together the cucumbers, olives, roma tomatoes, sun-dried tomatoes, 2 tablespoons reserved sun-dried tomato oil, red onion, vinegar, and seasoning.</li><li>Chill until serving.</li><li>Right before serving toss in the feta and stir to combine.</li></ol>", "aggregateLikes": 13, "dairyFree": false, "extendedIngredients": [{"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 cucumbers, seeded and sliced", "name": "cucumbers"}, {"aisle": "Cheese", "unitLong": "cups", "amount": 1.5, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "1 1/2 cups crumbled feta cheese", "name": "feta cheese"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "1/2 tsp Greek Seasoning", "name": "greek seasoning"}, {"aisle": "Canned and Jarred", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup Kalamata olives, pitted and sliced", "name": "kalamata olives"}, {"aisle": "Canned and Jarred", "unitLong": "cups", "amount": 0.3333333333333333, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/3 cup diced oil packed sun-dried tomatoes, drained, oil reserved", "name": "oil packed sun dried tomatoes"}, {"aisle": "Produce", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1/2 red onion, sliced", "name": "red onion"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "Tbsp", "amount": 1.0, "unitShort": "Tbsp", "metaInformation": [], "unit": "Tbsp", "originalString": "1 Tbsp rice vinegar (I had to use apple cider, but I think rice would be better)", "name": "rice vinegar"}, {"aisle": "Produce", "unitLong": "cups", "amount": 3.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "3 cups diced roma tomatoes", "name": "roma tomatoes"}], "readyInMinutes": 15, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/great-greek-salad-645265", "weightWatcherSmartPoints": 8, "id": 645265, "image": "https://spoonacular.com/recipeImages/Great-Greek-Salad-645265.jpg", "servings": 4, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": true,
+  "title": "Great Greek Salad",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/GPCD3SV6/great-greek-salad",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>In a large salad bowl, toss together the cucumbers, olives, roma tomatoes, sun-dried tomatoes, 2 tablespoons reserved sun-dried tomato oil, red onion, vinegar, and seasoning.</li><li>Chill until serving.</li><li>Right before serving toss in the feta and stir to combine.</li></ol>",
+  "aggregateLikes": 13,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 cucumbers, seeded and sliced",
+      "name": "cucumber"
+    },
+    {
+      "aisle": "Cheese",
+      "unitLong": "cups",
+      "amount": 1.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "1 1/2 cups crumbled feta cheese",
+      "name": "feta cheese"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1/2 tsp Greek Seasoning",
+      "name": "Greek seasoning"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup Kalamata olives, pitted and sliced",
+      "name": "kalamata olives"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "cups",
+      "amount": 0.3333333333333333,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/3 cup diced oil packed sun-dried tomatoes, drained, oil reserved",
+      "name": "sun-dried tomatoes"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 red onion, sliced",
+      "name": "onion"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "Tbsp",
+      "amount": 1.0,
+      "unitShort": "Tbsp",
+      "metaInformation": [],
+      "unit": "Tbsp",
+      "originalString": "1 Tbsp rice vinegar (I had to use apple cider, but I think rice would be better)",
+      "name": "rice vinegar"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 3.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "3 cups diced roma tomatoes",
+      "name": "tomato"
+    }
+  ],
+  "readyInMinutes": 15,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/great-greek-salad-645265",
+  "weightWatcherSmartPoints": 8,
+  "id": 645265,
+  "image": "https://spoonacular.com/recipeImages/Great-Greek-Salad-645265.jpg",
+  "servings": 4,
+  "whole30": false,
+  "lowFodmap": false
+}

@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "8 larges egg yolks",
-      "name": "egg yolks"
+      "name": "egg yolk"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon white sugar for each mould",
-      "name": "white sugar"
+      "name": "sugar"
     }
   ],
   "readyInMinutes": 45,

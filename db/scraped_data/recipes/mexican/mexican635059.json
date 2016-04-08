@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "can",
       "originalString": "1 can black beans, rinsed, drained and mashed",
-      "name": "canned black beans"
+      "name": "canned black turtle beans"
     },
     {
       "aisle": "Canned and Jarred",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon fresh parsley, chopped",
-      "name": "fresh parsley"
+      "name": "parsley"
     },
     {
       "aisle": "Produce",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 green onions, diced",
-      "name": "green onions"
+      "name": "green onion"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon ground red pepper (more or less to taste)",
-      "name": "ground pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon ground black pepper (more or less to taste)",
-      "name": "ground pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Produce",
@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "1/2-1 jalapeño pepper, seeded and diced",
-      "name": "jalapeno pepper"
+      "name": "jalapeno"
     },
     {
       "aisle": "Produce",
@@ -180,7 +180,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup panko breadcrumbs",
-      "name": "panko breadcrumbs"
+      "name": "bread crumbs"
     },
     {
       "aisle": "Produce",
@@ -220,7 +220,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "3 medium-sized tomatoes, diced",
-      "name": "tomatoes"
+      "name": "tomato"
     }
   ],
   "readyInMinutes": 45,

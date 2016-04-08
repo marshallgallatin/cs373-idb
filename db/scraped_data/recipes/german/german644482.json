@@ -1,1 +1,139 @@
-{"vegetarian": false, "glutenFree": false, "title": "German Meatloaf Falscher Hase", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/74WFPHJV/german-meatloaf-falscher-hase", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Thoroughly mix ground meats, onion, bread crumbs, cold water, and eggs.</li><li>Season the mixture with salt, paprika, mustard, and parsley. Blend ingredients thoroughly and shape into a loaf.</li><li>Place the loaf in a baking pan and bake in a preheated oven for about 45 minutes. While meat is baking, gradually pour hot beef broth over the top of the meatloaf and basting occasionally. Serve with German bread dumplings.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Canned and Jarred", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup Beef broth", "name": "beef broth"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoons", "amount": 3.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "3 tablespoons Bread crumbs", "name": "bread crumbs"}, {"aisle": "Condiments", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon Dijon mustard, hot", "name": "dijon mustard"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 eggs, well-beaten", "name": "eggs"}, {"aisle": "Meat", "unitLong": "pounds", "amount": 0.5, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1/2 pound Lean ground pork, shoulder", "name": "ground pork"}, {"aisle": "Meat", "unitLong": "pound", "amount": 1.0, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1 pound Lean ground beef", "name": "lean ground beef"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 small onion, grated", "name": "onion"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 teaspoons paprika", "name": "paprika"}, {"aisle": "Spices and Seasonings", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons Parsley, chopped", "name": "parsley"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 4.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "to taste salt", "name": "salt"}, {"aisle": "Beverages", "unitLong": "tablespoons", "amount": 3.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "3 tablespoons Cold water", "name": "water"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/german-meatloaf-falscher-hase-644482", "weightWatcherSmartPoints": 10, "id": 644482, "image": "https://spoonacular.com/recipeImages/German-Meatloaf-Falscher-Hase-644482.jpg", "servings": 4, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "German Meatloaf Falscher Hase",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/74WFPHJV/german-meatloaf-falscher-hase",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Thoroughly mix ground meats, onion, bread crumbs, cold water, and eggs.</li><li>Season the mixture with salt, paprika, mustard, and parsley. Blend ingredients thoroughly and shape into a loaf.</li><li>Place the loaf in a baking pan and bake in a preheated oven for about 45 minutes. While meat is baking, gradually pour hot beef broth over the top of the meatloaf and basting occasionally. Serve with German bread dumplings.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup Beef broth",
+      "name": "beef broth"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 3.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "3 tablespoons Bread crumbs",
+      "name": "bread crumbs"
+    },
+    {
+      "aisle": "Condiments",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon Dijon mustard, hot",
+      "name": "dijon mustard"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 eggs, well-beaten",
+      "name": "egg"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pounds",
+      "amount": 0.5,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1/2 pound Lean ground pork, shoulder",
+      "name": "ground pork"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1 pound Lean ground beef",
+      "name": "lean ground beef"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 small onion, grated",
+      "name": "onion"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 teaspoons paprika",
+      "name": "paprika"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons Parsley, chopped",
+      "name": "parsley"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 4.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "to taste salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "tablespoons",
+      "amount": 3.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "3 tablespoons Cold water",
+      "name": "water"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/german-meatloaf-falscher-hase-644482",
+  "weightWatcherSmartPoints": 10,
+  "id": 644482,
+  "image": "https://spoonacular.com/recipeImages/German-Meatloaf-Falscher-Hase-644482.jpg",
+  "servings": 4,
+  "whole30": false,
+  "lowFodmap": false
+}

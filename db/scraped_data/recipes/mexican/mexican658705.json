@@ -1,1 +1,219 @@
-{"vegetarian": true, "glutenFree": false, "title": "Roasted Veggie Burrito", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/6Z3VBYMW/roasted-veggie-burrito", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Preheat oven to 425 degrees. Slice veggies into  inch bite sizes pieces, and onion into small slices. Place on baking sheet, add 1 tbsp olive oil, pepper to taste, garlic powder, onion powder and chili powder. Toss together until evenly distributed.Bake until veggies begin to caramelize, about 25 minutes.</li><li>Heat 1 tbsp olive oil in a large frying pan over medium high heat. Add beans and spices. Stir and cook until beans are heated through, about 5 minutes. Add veggies and mix together. Let everything heat together for about 2 minutes. Remove from heat.</li><li>Assemble Burrito: On a flour burrito tortilla, place about  cup veggie and black bean mixture per burrito. Add  of the cheese to each burrito. Add 1 TBSP sour cream, salsa on top on each burrito. Add 2 TBSP of guacamole and corn to each burrito. Fold the edges in and roll along the long edge of the tortilla.If desired, place on foil and roll so that foil is wrapped around the burrito.</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 whole Bell Pepper", "name": "bell pepper"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 4.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "black pepper", "name": "black pepper"}, {"aisle": "Canned and Jarred", "unitLong": "can", "amount": 1.0, "unitShort": "can", "metaInformation": [], "unit": "can", "originalString": "1 can 14.5-oz. Black Beans", "name": "canned black beans"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 whole Carrot", "name": "carrot"}, {"aisle": "Spices and Seasonings", "unitLong": "Tablespoon", "amount": 1.0, "unitShort": "Tablespoon", "metaInformation": [], "unit": "Tablespoon", "originalString": "1 Tablespoon Chili Powder", "name": "chili powder"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon Chili Powder", "name": "chili powder"}, {"aisle": "Produce", "unitLong": "Tablespoons", "amount": 8.0, "unitShort": "Tablespoons", "metaInformation": [], "unit": "Tablespoons", "originalString": "8 Tablespoons Corn", "name": "corn"}, {"aisle": "Pasta and Rice", "unitLong": "", "amount": 4.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "4 whole Flour Burrito Tortillas", "name": "flour tortillas"}, {"aisle": "Spices and Seasonings", "unitLong": "Tablespoon", "amount": 1.0, "unitShort": "Tablespoon", "metaInformation": [], "unit": "Tablespoon", "originalString": "1 Tablespoon Garlic Powder", "name": "garlic powder"}, {"aisle": "Refrigerated", "unitLong": "Tablespoons", "amount": 8.0, "unitShort": "Tablespoons", "metaInformation": [], "unit": "Tablespoons", "originalString": "8 Tablespoons Guacamole", "name": "guacamole"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "Tablespoons", "amount": 2.0, "unitShort": "Tablespoons", "metaInformation": [], "unit": "Tablespoons", "originalString": "2 Tablespoons Olive Oil", "name": "olive oil"}, {"aisle": "Produce", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1/2 whole Onion", "name": "onion"}, {"aisle": "Spices and Seasonings", "unitLong": "Tablespoon", "amount": 1.0, "unitShort": "Tablespoon", "metaInformation": [], "unit": "Tablespoon", "originalString": "1 Tablespoon Onion Powder", "name": "onion powder"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon Onion Powder", "name": "onion powder"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 whole Pasilla Chile", "name": "pasilla chile"}, {"aisle": "Ethnic Foods", "unitLong": "Tablespoons", "amount": 4.0, "unitShort": "Tablespoons", "metaInformation": [], "unit": "Tablespoons", "originalString": "4 Tablespoons Your Favorite Salsa", "name": "salsa"}, {"aisle": "Cheese", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "\u00bd cups Shredded Cheddar Cheese, Divided", "name": "shredded cheddar cheese"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "Tablespoons", "amount": 4.0, "unitShort": "Tablespoons", "metaInformation": [], "unit": "Tablespoons", "originalString": "4 Tablespoons Light Sour Cream", "name": "sour cream"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 whole Zucchini", "name": "zucchini"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/roasted-veggie-burrito-658705", "weightWatcherSmartPoints": 11, "id": 658705, "image": "https://spoonacular.com/recipeImages/Roasted-Veggie-Burrito-658705.jpg", "servings": 4, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": false,
+  "title": "Roasted Veggie Burrito",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/6Z3VBYMW/roasted-veggie-burrito",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Preheat oven to 425 degrees. Slice veggies into  inch bite sizes pieces, and onion into small slices. Place on baking sheet, add 1 tbsp olive oil, pepper to taste, garlic powder, onion powder and chili powder. Toss together until evenly distributed.Bake until veggies begin to caramelize, about 25 minutes.</li><li>Heat 1 tbsp olive oil in a large frying pan over medium high heat. Add beans and spices. Stir and cook until beans are heated through, about 5 minutes. Add veggies and mix together. Let everything heat together for about 2 minutes. Remove from heat.</li><li>Assemble Burrito: On a flour burrito tortilla, place about  cup veggie and black bean mixture per burrito. Add  of the cheese to each burrito. Add 1 TBSP sour cream, salsa on top on each burrito. Add 2 TBSP of guacamole and corn to each burrito. Fold the edges in and roll along the long edge of the tortilla.If desired, place on foil and roll so that foil is wrapped around the burrito.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 whole Bell Pepper",
+      "name": "green bell pepper"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 4.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "black pepper",
+      "name": "black pepper"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "can",
+      "amount": 1.0,
+      "unitShort": "can",
+      "metaInformation": [],
+      "unit": "can",
+      "originalString": "1 can 14.5-oz. Black Beans",
+      "name": "canned black turtle beans"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 whole Carrot",
+      "name": "carrot"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "Tablespoon",
+      "amount": 1.0,
+      "unitShort": "Tablespoon",
+      "metaInformation": [],
+      "unit": "Tablespoon",
+      "originalString": "1 Tablespoon Chili Powder",
+      "name": "chili powder"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon Chili Powder",
+      "name": "chili powder"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "Tablespoons",
+      "amount": 8.0,
+      "unitShort": "Tablespoons",
+      "metaInformation": [],
+      "unit": "Tablespoons",
+      "originalString": "8 Tablespoons Corn",
+      "name": "corn"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "",
+      "amount": 4.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "4 whole Flour Burrito Tortillas",
+      "name": "tortilla"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "Tablespoon",
+      "amount": 1.0,
+      "unitShort": "Tablespoon",
+      "metaInformation": [],
+      "unit": "Tablespoon",
+      "originalString": "1 Tablespoon Garlic Powder",
+      "name": "garlic powder"
+    },
+    {
+      "aisle": "Refrigerated",
+      "unitLong": "Tablespoons",
+      "amount": 8.0,
+      "unitShort": "Tablespoons",
+      "metaInformation": [],
+      "unit": "Tablespoons",
+      "originalString": "8 Tablespoons Guacamole",
+      "name": "guacamole"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "Tablespoons",
+      "amount": 2.0,
+      "unitShort": "Tablespoons",
+      "metaInformation": [],
+      "unit": "Tablespoons",
+      "originalString": "2 Tablespoons Olive Oil",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 whole Onion",
+      "name": "onion"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "Tablespoon",
+      "amount": 1.0,
+      "unitShort": "Tablespoon",
+      "metaInformation": [],
+      "unit": "Tablespoon",
+      "originalString": "1 Tablespoon Onion Powder",
+      "name": "onion powder"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon Onion Powder",
+      "name": "onion powder"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 whole Pasilla Chile",
+      "name": "pasilla"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "Tablespoons",
+      "amount": 4.0,
+      "unitShort": "Tablespoons",
+      "metaInformation": [],
+      "unit": "Tablespoons",
+      "originalString": "4 Tablespoons Your Favorite Salsa",
+      "name": "salsa"
+    },
+    {
+      "aisle": "Cheese",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "1/2 cups Shredded Cheddar Cheese, Divided",
+      "name": "cheddar cheese"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "Tablespoons",
+      "amount": 4.0,
+      "unitShort": "Tablespoons",
+      "metaInformation": [],
+      "unit": "Tablespoons",
+      "originalString": "4 Tablespoons Light Sour Cream",
+      "name": "sour cream"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 whole Zucchini",
+      "name": "zucchini"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/roasted-veggie-burrito-658705",
+  "weightWatcherSmartPoints": 11,
+  "id": 658705,
+  "image": "https://spoonacular.com/recipeImages/Roasted-Veggie-Burrito-658705.jpg",
+  "servings": 4,
+  "whole30": false,
+  "lowFodmap": false
+}

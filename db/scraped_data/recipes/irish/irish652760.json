@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "40 mussels",
-      "name": "mussels"
+      "name": "mussel"
     },
     {
       "aisle": "Produce",
@@ -99,8 +99,8 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "¼ cup freshly chopped parsley",
-      "name": "fresh parsley"
+      "originalString": "1/4 cup freshly chopped parsley",
+      "name": "parsley"
     }
   ],
   "readyInMinutes": 45,

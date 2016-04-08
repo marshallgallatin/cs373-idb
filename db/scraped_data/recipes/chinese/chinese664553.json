@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cup Basmati Rice",
-      "name": "basmati rice"
+      "name": "rice"
     },
     {
       "aisle": "Pasta and Rice",
@@ -29,7 +29,7 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "½ cup Beans",
+      "originalString": "1/2 cup Beans",
       "name": "beans"
     },
     {
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "Bell peppers - I used half of red and yellow colour",
-      "name": "bell pepper"
+      "name": "green bell pepper"
     },
     {
       "aisle": "Produce",
@@ -49,7 +49,7 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "¼ cup Cabbage - finely grated",
+      "originalString": "1/4 cup Cabbage - finely grated",
       "name": "cabbage"
     },
     {
@@ -59,7 +59,7 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "¼ cup minced carrot",
+      "originalString": "1/4 cup minced carrot",
       "name": "carrot"
     },
     {
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "Cashews and raisins",
-      "name": "raisins"
+      "name": "raisin"
     },
     {
       "aisle": "Produce",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "Green chilies - 2 to 3 depending on your taste",
-      "name": "green chilies"
+      "name": "jalapeno"
     },
     {
       "aisle": "Produce",
@@ -89,7 +89,7 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "¼ cup Corn",
+      "originalString": "1/4 cup Corn",
       "name": "corn"
     },
     {
@@ -119,8 +119,8 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "¼ cup Green peas",
-      "name": "peas"
+      "originalString": "1/4 cup Green peas",
+      "name": "pea"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -160,7 +160,7 @@
       "metaInformation": [],
       "unit": "tbsp",
       "originalString": "Oil - 3 tablespoons",
-      "name": "oil"
+      "name": "vegetable oil"
     }
   ],
   "readyInMinutes": 45,

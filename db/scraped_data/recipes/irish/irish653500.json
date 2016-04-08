@@ -1,1 +1,159 @@
-{"vegetarian": false, "glutenFree": false, "title": "Oatmeal, Apricot, Walnut Soda Bread", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/WT3FB3SD/oatmeal-apricot-walnut-soda-bread", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>In a medium bowl, combine 2 c. oats and buttermilk. Let sit for 1 hour.</li><li>Adjust oven rack to the upper-middle position and preheat to 400 degrees f. In a large bowl, combine flours, remaining 1/2 c. oats, brown sugar, baking soda, cream of tartar and salt. Add in the 2 T. softened butter and using your fingertips, rub the butter into the flour until the texture resembles coarse crumbs.</li><li>After the oats have soaked for an hour add the egg and mix well. Add this mix into the flour mixture along with the walnuts and apricots. Mix with a fork until it starts to come together (it still is going to be very loose). Turn the mix out onto a floured surface and knead a few times (around 12-14 times or so) to get everything to come together. Don't overdo it with the kneading or the bread will be tough.</li><li>Shape the dough into a round shape that is 6-inches in diameter and 2-inches high. Place on a large parchment-lined (or greased) baking sheet. Using a serrated knife, make a large X in the top of the loaf. Bake for 45- 50 minutes, until a skewer inserted in the center comes out clean. As soon as it is out of the oven, brush the crust with the melted butter. Let cool to room temperature before slicing.</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Baking", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon baking soda", "name": "baking soda"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "grams", "amount": 75.0, "unitShort": "g", "metaInformation": [], "unit": "g", "originalString": "75g butter", "name": "butter"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cups", "amount": 1.75, "unitShort": "c", "metaInformation": [], "unit": "c", "originalString": "1 3/4 c. buttermilk", "name": "buttermilk"}, {"aisle": "Baking", "unitLong": "ounces", "amount": 2.0, "unitShort": "oz", "metaInformation": [], "unit": "oz", "originalString": "1/2 c. (2 oz.) plain cake flour", "name": "cake flour"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 1.5, "unitShort": "t", "metaInformation": [], "unit": "t", "originalString": "1 1/2 t. cream of tartar", "name": "cream of tartar"}, {"aisle": "Baking", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup dark brown sugar", "name": "dark brown sugar"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "c", "originalString": "1/2 c. dried apricots, chopped", "name": "dried apricots"}, {"aisle": "Cereal", "unitLong": "ounces", "amount": 7.5, "unitShort": "oz", "metaInformation": [], "unit": "oz", "originalString": "2 1/2 c. (7 1/2 oz.) old-fashioned oatmeal", "name": "oatmeal"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.25, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/4 teaspoon salt", "name": "salt"}, {"aisle": "Baking", "unitLong": "cups", "amount": 0.75, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "3/4 cup unbleached all-purpose flour", "name": "unbleached flour"}, {"aisle": "Nuts", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup coarsely chopped walnuts or almonds (2 ounces/60 grams)", "name": "walnuts"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 whole egg", "name": "whole egg"}, {"aisle": "Baking", "unitLong": "ounces", "amount": 5.5, "unitShort": "oz", "metaInformation": [], "unit": "oz", "originalString": "1 c. (5 1/2 oz.) whole-wheat flour", "name": "whole-wheat flour"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/oatmeal-apricot-walnut-soda-bread-653500", "weightWatcherSmartPoints": 13, "id": 653500, "image": "https://spoonacular.com/recipeImages/Oatmeal--Apricot--Walnut-Soda-Bread-653500.jpg", "servings": 8, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Oatmeal, Apricot, Walnut Soda Bread",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/WT3FB3SD/oatmeal-apricot-walnut-soda-bread",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>In a medium bowl, combine 2 c. oats and buttermilk. Let sit for 1 hour.</li><li>Adjust oven rack to the upper-middle position and preheat to 400 degrees f. In a large bowl, combine flours, remaining 1/2 c. oats, brown sugar, baking soda, cream of tartar and salt. Add in the 2 T. softened butter and using your fingertips, rub the butter into the flour until the texture resembles coarse crumbs.</li><li>After the oats have soaked for an hour add the egg and mix well. Add this mix into the flour mixture along with the walnuts and apricots. Mix with a fork until it starts to come together (it still is going to be very loose). Turn the mix out onto a floured surface and knead a few times (around 12-14 times or so) to get everything to come together. Don't overdo it with the kneading or the bread will be tough.</li><li>Shape the dough into a round shape that is 6-inches in diameter and 2-inches high. Place on a large parchment-lined (or greased) baking sheet. Using a serrated knife, make a large X in the top of the loaf. Bake for 45- 50 minutes, until a skewer inserted in the center comes out clean. As soon as it is out of the oven, brush the crust with the melted butter. Let cool to room temperature before slicing.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Baking",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon baking soda",
+      "name": "baking soda"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "grams",
+      "amount": 75.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "g",
+      "originalString": "75g butter",
+      "name": "butter"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cups",
+      "amount": 1.75,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "c",
+      "originalString": "1 3/4 c. buttermilk",
+      "name": "buttermilk"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "ounces",
+      "amount": 2.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "oz",
+      "originalString": "1/2 c. (2 oz.) plain cake flour",
+      "name": "cake flour"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 1.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "t",
+      "originalString": "1 1/2 t. cream of tartar",
+      "name": "cream of tartar"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup dark brown sugar",
+      "name": "brown sugar"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "c",
+      "originalString": "1/2 c. dried apricots, chopped",
+      "name": "dried apricots"
+    },
+    {
+      "aisle": "Cereal",
+      "unitLong": "ounces",
+      "amount": 7.5,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "oz",
+      "originalString": "2 1/2 c. (7 1/2 oz.) old-fashioned oatmeal",
+      "name": "oatmeal"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.25,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/4 teaspoon salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 0.75,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "3/4 cup unbleached all-purpose flour",
+      "name": "flour"
+    },
+    {
+      "aisle": "Nuts",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup coarsely chopped walnuts or almonds (2 ounces/60 grams)",
+      "name": "walnut"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 whole egg",
+      "name": "egg"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "ounces",
+      "amount": 5.5,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "oz",
+      "originalString": "1 c. (5 1/2 oz.) whole-wheat flour",
+      "name": "whole-wheat flour"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/oatmeal-apricot-walnut-soda-bread-653500",
+  "weightWatcherSmartPoints": 13,
+  "id": 653500,
+  "image": "https://spoonacular.com/recipeImages/Oatmeal--Apricot--Walnut-Soda-Bread-653500.jpg",
+  "servings": 8,
+  "whole30": false,
+  "lowFodmap": false
+}

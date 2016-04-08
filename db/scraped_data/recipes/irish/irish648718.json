@@ -1,1 +1,99 @@
-{"vegetarian": false, "glutenFree": true, "title": "Kale Colcannon", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/BQF863JS/kale-colcannon", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Cook potatoes in a pot of boiling water until tender; drain, reserving water.</li><li>Place potatoes in a large bowl and mash potatoes with a hand masher or put through a ricer. Add 2 tablespoons butter, milk, salt and pepper to potatoes and gently mix until combined.</li><li>Add chopped kale to the reserved potato water. Cook 6-8 minutes or until tender. Drain well and chop.</li><li>Meanwhile, saut chopped onions in 2 tablespoons butter on medium-high until slightly brown. Add to potato mixture and combine.</li><li>Serve hot.</li></ol>", "aggregateLikes": 2, "dairyFree": false, "extendedIngredients": [{"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup butter", "name": "butter"}, {"aisle": "Produce", "unitLong": "ounces", "amount": 5.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "5 ounces frozen kale cooked, squeezed dry", "name": "kale"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "tablespoons", "amount": 3.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "3 tablespoons milk", "name": "milk"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup chopped onions", "name": "onions"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.125, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/8 teaspoon pepper", "name": "pepper"}, {"aisle": "Produce", "unitLong": "", "amount": 4.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "4 mediums potatoes, peeled and quartered", "name": "potatoes"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon salt", "name": "salt"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/kale-colcannon-648718", "weightWatcherSmartPoints": 8, "id": 648718, "image": "https://spoonacular.com/recipeImages/Kale-Colcannon-648718.jpg", "servings": 4, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Kale Colcannon",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/BQF863JS/kale-colcannon",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Cook potatoes in a pot of boiling water until tender; drain, reserving water.</li><li>Place potatoes in a large bowl and mash potatoes with a hand masher or put through a ricer. Add 2 tablespoons butter, milk, salt and pepper to potatoes and gently mix until combined.</li><li>Add chopped kale to the reserved potato water. Cook 6-8 minutes or until tender. Drain well and chop.</li><li>Meanwhile, saut chopped onions in 2 tablespoons butter on medium-high until slightly brown. Add to potato mixture and combine.</li><li>Serve hot.</li></ol>",
+  "aggregateLikes": 2,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup butter",
+      "name": "butter"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "ounces",
+      "amount": 5.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "5 ounces frozen kale cooked, squeezed dry",
+      "name": "kale"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "tablespoons",
+      "amount": 3.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "3 tablespoons milk",
+      "name": "milk"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup chopped onions",
+      "name": "onion"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.125,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/8 teaspoon pepper",
+      "name": "black pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 4.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "4 mediums potatoes, peeled and quartered",
+      "name": "potato"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon salt",
+      "name": "salt"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/kale-colcannon-648718",
+  "weightWatcherSmartPoints": 8,
+  "id": 648718,
+  "image": "https://spoonacular.com/recipeImages/Kale-Colcannon-648718.jpg",
+  "servings": 4,
+  "whole30": false,
+  "lowFodmap": false
+}

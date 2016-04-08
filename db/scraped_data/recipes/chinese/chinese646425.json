@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "3 eggs, beaten",
-      "name": "eggs"
+      "name": "egg"
     },
     {
       "aisle": "Ethnic Foods",
@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "slices",
       "originalString": "2 slices fresh ginger",
-      "name": "fresh ginger"
+      "name": "ginger"
     },
     {
       "aisle": "Produce",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "TBSP",
       "originalString": "1 TBSP Ground Pepper",
-      "name": "ground pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Ethnic Foods",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup long grain rice",
-      "name": "long grain rice"
+      "name": "rice"
     },
     {
       "aisle": "Ethnic Foods",
@@ -150,7 +150,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup frozen peas and carrots, thawed",
-      "name": "peas and carrots"
+      "name": "frozen peas and carrots"
     },
     {
       "aisle": "Meat",

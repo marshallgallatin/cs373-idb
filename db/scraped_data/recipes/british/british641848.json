@@ -1,1 +1,109 @@
-{"vegetarian": false, "glutenFree": false, "title": "Easy Beef Wellington", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/6GFWDDYY/easy-beef-wellington", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Pre-heat the oven to 200c.</li><li>Heat some oil in a large pan and quickly fry the seasoned beef all over until its brown. Remove and allow to cool. The point of this is simply to sear the beef and seal all those juices in, you dont want to cook the meat at this stage. Allow to cool and brush generously with the mustard.</li><li>Roughly chop the mushrooms and blend in a food processor to form a puree. Scrape the mixture into a hot, dry pan and allow the water to evaporate. When sufficiently dry (the mixture should be sticking together easily), set aside and cool.</li><li>Roll out a generous length of cling wrap, lay out the four slices of proscuitto, each one slightly overlapping the last.  Spread the mushroom mixture evenly over the ham.</li><li>Place the beef fillet in the middle and keeping a tight hold of the cling film from the outside edge, neatly roll the parma ham and mushrooms over the beef into a tight barrel shape. Twist the ends to secure the clingfilm. Refrigerate for 10 -15 minutes, this allows the Wellington to set and helps keep the shape.</li><li>Roll out the pastry quite thinly to a size which will cover your beef. Unwrap the meat from the cling film. Egg wash the edge of the pastry and place the beef in the middle.</li><li>Roll up the pastry, cut any excess off the ends and fold neatly to the underside. Turnover and egg wash over the top. Chill again to let the pastry cool, approximately 5 minutes. Egg wash again before baking at 200c for 35  40 minutes. Rest 8 -10 minutes before slicing.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Meat", "unitLong": "grams", "amount": 400.0, "unitShort": "g", "metaInformation": [], "unit": "grams", "originalString": "400 grams beef tenderloin", "name": "beef tenderloin"}, {"aisle": "Condiments", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Dijon mustard for brushing meat or if you can find English mustard, even better.", "name": "dijon mustard"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 Egg yolks", "name": "egg yolks"}, {"aisle": "Produce", "unitLong": "grams", "amount": 400.0, "unitShort": "g", "metaInformation": [], "unit": "grams", "originalString": "400 grams mushrooms", "name": "mushrooms"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Olive oil", "name": "olive oil"}, {"aisle": "Meat", "unitLong": "slices", "amount": 4.0, "unitShort": "slices", "metaInformation": [], "unit": "slices", "originalString": "4 slices proscuitto", "name": "proscuitto"}, {"aisle": "Frozen", "unitLong": "grams", "amount": 200.0, "unitShort": "g", "metaInformation": [], "unit": "grams", "originalString": "200 grams puff pastry", "name": "puff pastry"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Salt and pepper", "name": "salt and pepper"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/easy-beef-wellington-641848", "weightWatcherSmartPoints": 46, "id": 641848, "image": "https://spoonacular.com/recipeImages/Easy-Beef-Wellington-641848.jpg", "servings": 2, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Easy Beef Wellington",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/6GFWDDYY/easy-beef-wellington",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Pre-heat the oven to 200c.</li><li>Heat some oil in a large pan and quickly fry the seasoned beef all over until its brown. Remove and allow to cool. The point of this is simply to sear the beef and seal all those juices in, you dont want to cook the meat at this stage. Allow to cool and brush generously with the mustard.</li><li>Roughly chop the mushrooms and blend in a food processor to form a puree. Scrape the mixture into a hot, dry pan and allow the water to evaporate. When sufficiently dry (the mixture should be sticking together easily), set aside and cool.</li><li>Roll out a generous length of cling wrap, lay out the four slices of proscuitto, each one slightly overlapping the last.  Spread the mushroom mixture evenly over the ham.</li><li>Place the beef fillet in the middle and keeping a tight hold of the cling film from the outside edge, neatly roll the parma ham and mushrooms over the beef into a tight barrel shape. Twist the ends to secure the clingfilm. Refrigerate for 10 -15 minutes, this allows the Wellington to set and helps keep the shape.</li><li>Roll out the pastry quite thinly to a size which will cover your beef. Unwrap the meat from the cling film. Egg wash the edge of the pastry and place the beef in the middle.</li><li>Roll up the pastry, cut any excess off the ends and fold neatly to the underside. Turnover and egg wash over the top. Chill again to let the pastry cool, approximately 5 minutes. Egg wash again before baking at 200c for 35  40 minutes. Rest 8 -10 minutes before slicing.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Meat",
+      "unitLong": "grams",
+      "amount": 400.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "grams",
+      "originalString": "400 grams beef tenderloin",
+      "name": "beef tenderloin"
+    },
+    {
+      "aisle": "Condiments",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Dijon mustard for brushing meat or if you can find English mustard, even better.",
+      "name": "dijon mustard"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 Egg yolks",
+      "name": "egg yolk"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "grams",
+      "amount": 400.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "grams",
+      "originalString": "400 grams mushrooms",
+      "name": "mushroom"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Olive oil",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "slices",
+      "amount": 4.0,
+      "unitShort": "slices",
+      "metaInformation": [],
+      "unit": "slices",
+      "originalString": "4 slices proscuitto",
+      "name": "proscuitto"
+    },
+    {
+      "aisle": "Frozen",
+      "unitLong": "grams",
+      "amount": 200.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "grams",
+      "originalString": "200 grams puff pastry",
+      "name": "puff pastry"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Salt and pepper",
+      "name": "salt and pepper"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/easy-beef-wellington-641848",
+  "weightWatcherSmartPoints": 46,
+  "id": 641848,
+  "image": "https://spoonacular.com/recipeImages/Easy-Beef-Wellington-641848.jpg",
+  "servings": 2,
+  "whole30": false,
+  "lowFodmap": false
+}

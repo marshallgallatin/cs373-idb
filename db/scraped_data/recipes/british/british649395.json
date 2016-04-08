@@ -1,1 +1,99 @@
-{"vegetarian": false, "glutenFree": true, "title": "Lean Shepherd's Pie", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/L64TMDV2/lean-shepherds-pie", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Brown ground beef with onion</li><li>Cook potatoes in water till soft, drain</li><li>Mash potatoes, add chicken broth as needed to make smooth mashed potatoes</li><li>Spread browned ground beef in bottom of 8x11 Pyrex dish</li><li>Spread mashed potatoes over beef layer</li><li>Spead corn kernels over mashed potato layer</li><li>Sprinkle grated cheese over corn layer</li><li>Bake at 350 for 25-30 minutes or until heated through and cheese is melted</li><li>When the pie comes out of the oven, lightly dust the top with a little pepper if desired.</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Canned and Jarred", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup chicken broth", "name": "chicken broth"}, {"aisle": "Produce", "unitLong": "cups", "amount": 2.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "2 cups corn kernels", "name": "corn kernels"}, {"aisle": "Meat", "unitLong": "pound", "amount": 1.0, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1 pound lean ground beef", "name": "lean ground beef"}, {"aisle": "Produce", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons chopped onion", "name": "onion"}, {"aisle": "Produce", "unitLong": "", "amount": 4.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "4 mediums potatoes, peeled and quartered", "name": "potatoes"}, {"aisle": "Cheese", "unitLong": "ounces", "amount": 8.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "8 ounces reduced fat cheddar cheese, grated", "name": "reduced fat shredded cheddar cheese"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 4.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Salt to taste", "name": "salt"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/lean-shepherds-pie-649395", "weightWatcherSmartPoints": 10, "id": 649395, "image": "https://spoonacular.com/recipeImages/Lean-Shepherds-Pie-649395.jpg", "servings": 4, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Lean Shepherd's Pie",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/L64TMDV2/lean-shepherds-pie",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Brown ground beef with onion</li><li>Cook potatoes in water till soft, drain</li><li>Mash potatoes, add chicken broth as needed to make smooth mashed potatoes</li><li>Spread browned ground beef in bottom of 8x11 Pyrex dish</li><li>Spread mashed potatoes over beef layer</li><li>Spead corn kernels over mashed potato layer</li><li>Sprinkle grated cheese over corn layer</li><li>Bake at 350 for 25-30 minutes or until heated through and cheese is melted</li><li>When the pie comes out of the oven, lightly dust the top with a little pepper if desired.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup chicken broth",
+      "name": "chicken broth"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 cups corn kernels",
+      "name": "corn kernels"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1 pound lean ground beef",
+      "name": "lean ground beef"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons chopped onion",
+      "name": "onion"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 4.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "4 mediums potatoes, peeled and quartered",
+      "name": "potato"
+    },
+    {
+      "aisle": "Cheese",
+      "unitLong": "ounces",
+      "amount": 8.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "8 ounces reduced fat cheddar cheese, grated",
+      "name": "reduced fat cheddar cheese"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 4.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Salt to taste",
+      "name": "salt"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/lean-shepherds-pie-649395",
+  "weightWatcherSmartPoints": 10,
+  "id": 649395,
+  "image": "https://spoonacular.com/recipeImages/Lean-Shepherds-Pie-649395.jpg",
+  "servings": 4,
+  "whole30": false,
+  "lowFodmap": false
+}

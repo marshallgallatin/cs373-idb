@@ -1,1 +1,109 @@
-{"vegetarian": true, "glutenFree": false, "title": "Muesli-Coated German Toast", "veryPopular": false, "gaps": "no", "sourceUrl": "http://spoonacular.com/-1379197315756", "sourceName": "spoonacular", "vegan": false, "sustainable": false, "instructions": "<p>I don't know why French toast is called French toast to begin with, but since I'm living in Germany I'm calling this variation German Toast. Start by pre-heating your over to 375 degrees F (about 190 degrees C).</p><p>1. whisk together the eggs and soy milk. Add cinnamon and nutmeg if desired.</p><p>2. dip the toasted bread into the egg/soy milk mixture and let soak for 30 seconds per side</p><p>4. dip the soaked bread into the muesli and press gently to coat</p><p>5. fry the slices in oil or butter in a hot skillet until golden brown, 2-3 minutes per side</p><p>6. place the finished German toasts in the oven for 5 minutes</p><p>Serve with maple syrup, honey, or Nutella and a fresh fruit salad.</p>", "aggregateLikes": 0, "dairyFree": true, "extendedIngredients": [{"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "cinnamon, optional", "name": "cinnamon"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 4.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "4 eggs", "name": "eggs"}, {"aisle": "Cereal", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Maple syrup", "name": "maple syrup"}, {"aisle": "Produce", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Mixed fresh fruit", "name": "mixed fruit"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "nutmeg, optional", "name": "nutmeg"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "olive oil or butter for frying", "name": "olive oil"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup milk or soy milk", "name": "soy milk"}, {"aisle": "Bakery/Bread", "unitLong": "slices", "amount": 6.0, "unitShort": "slices", "metaInformation": [], "unit": "slices", "originalString": "6 slices toast", "name": "toast"}], "readyInMinutes": 25, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "spoonacular", "license": "spoonacular's terms", "spoonacularSourceUrl": "https://spoonacular.com/muesli-coated-german-toast-149663", "weightWatcherSmartPoints": 14, "id": 149663, "image": "https://spoonacular.com/recipeImages/muesli-coated-german-toast-149663.jpg", "servings": 2, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": false,
+  "title": "Muesli-Coated German Toast",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://spoonacular.com/-1379197315756",
+  "sourceName": "spoonacular",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<p>I don't know why French toast is called French toast to begin with, but since I'm living in Germany I'm calling this variation German Toast. Start by pre-heating your over to 375 degrees F (about 190 degrees C).</p><p>1. whisk together the eggs and soy milk. Add cinnamon and nutmeg if desired.</p><p>2. dip the toasted bread into the egg/soy milk mixture and let soak for 30 seconds per side</p><p>4. dip the soaked bread into the muesli and press gently to coat</p><p>5. fry the slices in oil or butter in a hot skillet until golden brown, 2-3 minutes per side</p><p>6. place the finished German toasts in the oven for 5 minutes</p><p>Serve with maple syrup, honey, or Nutella and a fresh fruit salad.</p>",
+  "aggregateLikes": 0,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "cinnamon, optional",
+      "name": "cinnamon"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 4.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "4 eggs",
+      "name": "egg"
+    },
+    {
+      "aisle": "Cereal",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Maple syrup",
+      "name": "maple syrup"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Mixed fresh fruit",
+      "name": "mixed fruit"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "nutmeg, optional",
+      "name": "nutmeg"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "olive oil or butter for frying",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup milk or soy milk",
+      "name": "soy milk"
+    },
+    {
+      "aisle": "Bakery/Bread",
+      "unitLong": "slices",
+      "amount": 6.0,
+      "unitShort": "slices",
+      "metaInformation": [],
+      "unit": "slices",
+      "originalString": "6 slices toast",
+      "name": "toasted bread"
+    }
+  ],
+  "readyInMinutes": 25,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "spoonacular",
+  "license": "spoonacular's terms",
+  "spoonacularSourceUrl": "https://spoonacular.com/muesli-coated-german-toast-149663",
+  "weightWatcherSmartPoints": 14,
+  "id": 149663,
+  "image": "https://spoonacular.com/recipeImages/muesli-coated-german-toast-149663.jpg",
+  "servings": 2,
+  "whole30": false,
+  "lowFodmap": false
+}

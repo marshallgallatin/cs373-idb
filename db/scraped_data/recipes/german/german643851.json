@@ -1,1 +1,119 @@
-{"vegetarian": false, "glutenFree": false, "title": "Frikadellen German Meat Patties", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/WNJZYWJ3/frikadellen-german-meat-patties", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Peel and dice the onions, then saute in oil until transparent. Add sauteed onions to ground meat in a mixing bowl. Stir together breadcrumbs and milk and add to meat mixture.</li><li>Add egg, basil, salt and pepper and mix well. Dampen hands and form meat mixture into palm-sized patties.</li><li>Preheat non-stick skillet with a little oil. Pan-fry the meat patties over medium high heat until browned on both sides. Serve them with salad, fries and tzatziki. Alternatively they can be served with German dumplings and black pepper sauce.</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Produce", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon Basil, dried(or marjoram)", "name": "basil"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "cups", "amount": 0.3333333333333333, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/3 cup breadcrumbs", "name": "breadcrumbs"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 extra large egg", "name": "egg"}, {"aisle": "Meat", "unitLong": "grams", "amount": 500.0, "unitShort": "g", "metaInformation": [], "unit": "grams", "originalString": "500 grams Ground meat (a mix of pork and beef)", "name": "ground meat"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "milliliters", "amount": 1800.0, "unitShort": "ml", "metaInformation": [], "unit": "ml", "originalString": "30 60ml milk", "name": "milk"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoons", "amount": 0.5, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1/2 tablespoon Oil", "name": "oil"}, {"aisle": "Produce", "unitLong": "grams", "amount": 70.0, "unitShort": "g", "metaInformation": [], "unit": "grams", "originalString": "70 grams Onions", "name": "onions"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon salt", "name": "salt"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon White pepper", "name": "white pepper"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/frikadellen-german-meat-patties-643851", "weightWatcherSmartPoints": 5, "id": 643851, "image": "https://spoonacular.com/recipeImages/Frikadellen-German-Meat-Patties-643851.jpg", "servings": 18, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Frikadellen German Meat Patties",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/WNJZYWJ3/frikadellen-german-meat-patties",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Peel and dice the onions, then saute in oil until transparent. Add sauteed onions to ground meat in a mixing bowl. Stir together breadcrumbs and milk and add to meat mixture.</li><li>Add egg, basil, salt and pepper and mix well. Dampen hands and form meat mixture into palm-sized patties.</li><li>Preheat non-stick skillet with a little oil. Pan-fry the meat patties over medium high heat until browned on both sides. Serve them with salad, fries and tzatziki. Alternatively they can be served with German dumplings and black pepper sauce.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon Basil, dried(or marjoram)",
+      "name": "basil"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "cups",
+      "amount": 0.3333333333333333,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/3 cup breadcrumbs",
+      "name": "bread crumbs"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 extra large egg",
+      "name": "egg"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "grams",
+      "amount": 500.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "grams",
+      "originalString": "500 grams Ground meat (a mix of pork and beef)",
+      "name": "ground pork"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "milliliters",
+      "amount": 1800.0,
+      "unitShort": "ml",
+      "metaInformation": [],
+      "unit": "ml",
+      "originalString": "30 60ml milk",
+      "name": "milk"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 0.5,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1/2 tablespoon Oil",
+      "name": "vegetable oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "grams",
+      "amount": 70.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "grams",
+      "originalString": "70 grams Onions",
+      "name": "onion"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon White pepper",
+      "name": "white pepper"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/frikadellen-german-meat-patties-643851",
+  "weightWatcherSmartPoints": 5,
+  "id": 643851,
+  "image": "https://spoonacular.com/recipeImages/Frikadellen-German-Meat-Patties-643851.jpg",
+  "servings": 18,
+  "whole30": false,
+  "lowFodmap": false
+}

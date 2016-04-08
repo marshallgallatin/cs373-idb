@@ -1,1 +1,119 @@
-{"vegetarian": true, "glutenFree": false, "title": "Peanut Butter Banana Muffins", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/B4THR7MX/peanut-butter-banana-muffins", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>A real kid pleaser and a healthy snack, this moist muffin is prefect for peanut butter fans. Preheat the oven to 375F. In a large bowl, mix together the flour, brown sugar, baking powder, and salt. In a separate bowl, beat together the peanut butter, oil, eggs, milk and bananas. Stir the wet ingredients into the dry ingredients just until moistened.</li><li>Spoon the batter into 12 well-greased muffin cups. Bake for 20 to 25 minutes, or until a toothpick inserted in the centre of a muffin comes out clean.</li><li>MAKES: 12 MUFFINS</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Baking", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon Baking powder", "name": "baking powder"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 Bananas,ripe, mashed", "name": "bananas"}, {"aisle": "Baking", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup packed brown sugar", "name": "brown sugar"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 Eggs", "name": "eggs"}, {"aisle": "Baking", "unitLong": "cups", "amount": 1.75, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "1 3/4 cups flour", "name": "flour"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup Milk", "name": "milk"}, {"aisle": "Nut butters, Jams, and Honey", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup peanut butter", "name": "peanut butter"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon salt", "name": "salt"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons Vegetable oil", "name": "vegetable oil"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/peanut-butter-banana-muffins-655241", "weightWatcherSmartPoints": 91, "id": 655241, "image": "https://spoonacular.com/recipeImages/Peanut-Butter-Banana-Muffins-655241.jpg", "servings": 1, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": false,
+  "title": "Peanut Butter Banana Muffins",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/B4THR7MX/peanut-butter-banana-muffins",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>A real kid pleaser and a healthy snack, this moist muffin is prefect for peanut butter fans. Preheat the oven to 375F. In a large bowl, mix together the flour, brown sugar, baking powder, and salt. In a separate bowl, beat together the peanut butter, oil, eggs, milk and bananas. Stir the wet ingredients into the dry ingredients just until moistened.</li><li>Spoon the batter into 12 well-greased muffin cups. Bake for 20 to 25 minutes, or until a toothpick inserted in the centre of a muffin comes out clean.</li><li>MAKES: 12 MUFFINS</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Baking",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon Baking powder",
+      "name": "baking powder"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 Bananas,ripe, mashed",
+      "name": "banana"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup packed brown sugar",
+      "name": "brown sugar"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 Eggs",
+      "name": "egg"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 1.75,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "1 3/4 cups flour",
+      "name": "flour"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup Milk",
+      "name": "milk"
+    },
+    {
+      "aisle": "Nut butters, Jams, and Honey",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup peanut butter",
+      "name": "peanut butter"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons Vegetable oil",
+      "name": "vegetable oil"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/peanut-butter-banana-muffins-655241",
+  "weightWatcherSmartPoints": 91,
+  "id": 655241,
+  "image": "https://spoonacular.com/recipeImages/Peanut-Butter-Banana-Muffins-655241.jpg",
+  "servings": 1,
+  "whole30": false,
+  "lowFodmap": false
+}

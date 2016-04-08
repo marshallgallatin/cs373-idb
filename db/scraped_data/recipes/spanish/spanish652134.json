@@ -1,1 +1,209 @@
-{"vegetarian": false, "glutenFree": true, "title": "Mixed Paella", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/W5RRXF6W/mixed-paella", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>I a very large non-stick skillet or paella pan preheated over medium-high heat, add 2 teaspoons of your oil (you will need more oil if you're not using non-stick), garlic, red pepper flakes and rice. Saute for about 3 minutes. Add saffron, thyme, bay leaf and broth and bring to a boil. Cover and reduce heat to a simmer. Leave covered, do not stir.</li><li>In another non-stick skillet, heat to medium-high. Add chorizo and crumble as you saute. When the sausage is cooked through, add red pepper and onion. Salt and pepper to taste if needed. Saute until the onion is tender and remove from heat, set aside.</li><li>When the rice is nearly done (about 15 minutes) add fish and shrimp and press into rice. Add mussels, peas and sprinkle with lemon zest. Cover and continue to simmer until the rice is done and the mussels have opened. Discard any that do not.</li><li>Top with chorizo mixture and parsley. Serve with lemon wedges and a crusty bread.</li></ol>", "aggregateLikes": 2, "dairyFree": true, "extendedIngredients": [{"aisle": "Spices and Seasonings", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 bay leaf", "name": "bay leaf"}, {"aisle": "Canned and Jarred", "unitLong": "quart", "amount": 1.0, "unitShort": "quart", "metaInformation": [], "unit": "quart", "originalString": "1 quart fish stock or chicken broth", "name": "chicken broth"}, {"aisle": "Meat", "unitLong": "pound", "amount": 1.0, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1 pound chorizo sausage, casing removed", "name": "chorizo sausage"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 teaspoons extra-virgin olive oil", "name": "extra-virgin olive oil"}, {"aisle": "Produce", "unitLong": "cloves", "amount": 6.0, "unitShort": "cloves", "metaInformation": [], "unit": "cloves", "originalString": "6 cloves garlic, minced", "name": "garlic"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 lemon, cut into wedges", "name": "lemon"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 lemon, zested", "name": "lemon zest"}, {"aisle": "Seafood", "unitLong": "", "amount": 24.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "24 mediums mussels, cleaned", "name": "mussels"}, {"aisle": "Spices and Seasonings", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup parsley, chopped", "name": "parsley"}, {"aisle": "Produce", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup peas", "name": "peas"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 red bell pepper, chopped", "name": "red bell pepper"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon crushed red pepper flakes", "name": "red pepper flakes"}, {"aisle": "Pasta and Rice", "unitLong": "cups", "amount": 2.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "2 cups dry rice", "name": "rice"}, {"aisle": "Ethnic Foods", "unitLong": "teaspoons", "amount": 0.25, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/4 teaspoon saffron threads", "name": "saffron threads"}, {"aisle": "Seafood", "unitLong": "pounds", "amount": 0.75, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "3/4 pound peeled and deveined shrimp", "name": "shrimp"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 Spanish onion, chopped", "name": "spanish onion"}, {"aisle": "Spices and Seasonings", "unitLong": "sprigs", "amount": 6.0, "unitShort": "sprigs", "metaInformation": [], "unit": "sprigs", "originalString": "6 sprigs thyme", "name": "thyme"}, {"aisle": "Seafood", "unitLong": "pounds", "amount": 0.5, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1/2 pound firm white fish, cut into bite-size pieces", "name": "white fish"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/mixed-paella-652134", "weightWatcherSmartPoints": 15, "id": 652134, "image": "https://spoonacular.com/recipeImages/Mixed-Paella-652134.jpg", "servings": 8, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Mixed Paella",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/W5RRXF6W/mixed-paella",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>I a very large non-stick skillet or paella pan preheated over medium-high heat, add 2 teaspoons of your oil (you will need more oil if you're not using non-stick), garlic, red pepper flakes and rice. Saute for about 3 minutes. Add saffron, thyme, bay leaf and broth and bring to a boil. Cover and reduce heat to a simmer. Leave covered, do not stir.</li><li>In another non-stick skillet, heat to medium-high. Add chorizo and crumble as you saute. When the sausage is cooked through, add red pepper and onion. Salt and pepper to taste if needed. Saute until the onion is tender and remove from heat, set aside.</li><li>When the rice is nearly done (about 15 minutes) add fish and shrimp and press into rice. Add mussels, peas and sprinkle with lemon zest. Cover and continue to simmer until the rice is done and the mussels have opened. Discard any that do not.</li><li>Top with chorizo mixture and parsley. Serve with lemon wedges and a crusty bread.</li></ol>",
+  "aggregateLikes": 2,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 bay leaf",
+      "name": "bay leaf"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "quart",
+      "amount": 1.0,
+      "unitShort": "quart",
+      "metaInformation": [],
+      "unit": "quart",
+      "originalString": "1 quart fish stock or chicken broth",
+      "name": "chicken broth"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1 pound chorizo sausage, casing removed",
+      "name": "chorizo sausage"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 teaspoons extra-virgin olive oil",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 6.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "6 cloves garlic, minced",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 lemon, cut into wedges",
+      "name": "lemon"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 lemon, zested",
+      "name": "lemon zest"
+    },
+    {
+      "aisle": "Seafood",
+      "unitLong": "",
+      "amount": 24.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "24 mediums mussels, cleaned",
+      "name": "mussel"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup parsley, chopped",
+      "name": "parsley"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup peas",
+      "name": "pea"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 red bell pepper, chopped",
+      "name": "red bell pepper"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon crushed red pepper flakes",
+      "name": "crushed red pepper"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 cups dry rice",
+      "name": "rice"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "teaspoons",
+      "amount": 0.25,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/4 teaspoon saffron threads",
+      "name": "saffron threads"
+    },
+    {
+      "aisle": "Seafood",
+      "unitLong": "pounds",
+      "amount": 0.75,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "3/4 pound peeled and deveined shrimp",
+      "name": "shrimp"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 Spanish onion, chopped",
+      "name": "onion"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "sprigs",
+      "amount": 6.0,
+      "unitShort": "sprigs",
+      "metaInformation": [],
+      "unit": "sprigs",
+      "originalString": "6 sprigs thyme",
+      "name": "thyme"
+    },
+    {
+      "aisle": "Seafood",
+      "unitLong": "pounds",
+      "amount": 0.5,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1/2 pound firm white fish, cut into bite-size pieces",
+      "name": "white fish"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/mixed-paella-652134",
+  "weightWatcherSmartPoints": 15,
+  "id": 652134,
+  "image": "https://spoonacular.com/recipeImages/Mixed-Paella-652134.jpg",
+  "servings": 8,
+  "whole30": false,
+  "lowFodmap": false
+}

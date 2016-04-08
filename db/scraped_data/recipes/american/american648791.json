@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "1 medium bell pepper, chopped",
-      "name": "bell pepper"
+      "name": "green bell pepper"
     },
     {
       "aisle": "Canned and Jarred",
@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "oz",
       "originalString": "1 (14 oz) can black eyed peas, drained",
-      "name": "canned black eyed peas"
+      "name": "canned black-eyed peas"
     },
     {
       "aisle": "Produce",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup (1 small to medium) yellow or purple onion, chopped (the purple is sweeter)",
-      "name": "purple onion"
+      "name": "onion"
     },
     {
       "aisle": "Produce",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 mediums tomatoes, chopped",
-      "name": "tomatoes"
+      "name": "tomato"
     }
   ],
   "readyInMinutes": 45,

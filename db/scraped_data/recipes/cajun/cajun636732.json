@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "1 Bell Pepper, any Color, Chopped",
-      "name": "bell pepper"
+      "name": "green bell pepper"
     },
     {
       "aisle": "Canned and Jarred",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon of Cajun Spice",
-      "name": "cajun spice"
+      "name": "cajun seasoning"
     },
     {
       "aisle": "Produce",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "3 Green Onions, Chopped",
-      "name": "green onions"
+      "name": "green onion"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",

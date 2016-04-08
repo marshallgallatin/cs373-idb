@@ -1,1 +1,149 @@
-{"vegetarian": true, "glutenFree": true, "title": "Thai Coconut Curry Lentil Soup", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/CG86LZ6W/thai-coconut-curry-lentil-soup", "sourceName": "Foodista", "vegan": true, "sustainable": false, "instructions": "<ol><li>Heat olive oil in a medium saucepan. Add the onions, ginger and garlic. Cook over medium heat until softened, about 3-4 minutes. Stir in Thai red curry paste, and cook several minutes or until fragrant. Add water, lentils, sweet potatoes and turmeric. Bring to a boil, then reduce heat to medium-low, cover and cook about 20-25 minutes or until lentils and sweet potatoes are soft. Add salt and stir in coconut milk. Cook five more minutes. Garnish with fresh cilantro.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Produce", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup fresh cilantro, chopped", "name": "fresh cilantro"}, {"aisle": "Produce", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon minced garlic", "name": "garlic"}, {"aisle": "Ethnic Foods", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon minced ginger", "name": "ginger"}, {"aisle": "Canned and Jarred", "unitLong": "can", "amount": 1.0, "unitShort": "can", "metaInformation": [], "unit": "can", "originalString": "1 can coconut milk (I don't recommend using light)", "name": "light coconut milk"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon olive oil", "name": "olive oil"}, {"aisle": "Produce", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup finely chopped onion", "name": "onion"}, {"aisle": "Canned and Jarred", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup red lentils, picked through for stones, and rinsed well", "name": "red lentils"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon salt, or more to taste", "name": "salt"}, {"aisle": "Produce", "unitLong": "inch", "amount": 1.0, "unitShort": "inch", "metaInformation": [], "unit": "inch", "originalString": "1 inch medium sweet potato, cut into \u00bd pieces", "name": "sweet potato"}, {"aisle": "Ethnic Foods", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 teaspoons Thai red curry paste (if you like it spicy, use the full 2 teaspoons)", "name": "thai red curry paste"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.25, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/4 teaspoon turmeric", "name": "turmeric"}, {"aisle": "Beverages", "unitLong": "cups", "amount": 6.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "6 cups water", "name": "water"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/thai-coconut-curry-lentil-soup-663090", "weightWatcherSmartPoints": 4, "id": 663090, "image": "https://spoonacular.com/recipeImages/Thai-Coconut-Curry-Lentil-Soup-663090.jpg", "servings": 5, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": true,
+  "title": "Thai Coconut Curry Lentil Soup",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/CG86LZ6W/thai-coconut-curry-lentil-soup",
+  "sourceName": "Foodista",
+  "vegan": true,
+  "sustainable": false,
+  "instructions": "<ol><li>Heat olive oil in a medium saucepan. Add the onions, ginger and garlic. Cook over medium heat until softened, about 3-4 minutes. Stir in Thai red curry paste, and cook several minutes or until fragrant. Add water, lentils, sweet potatoes and turmeric. Bring to a boil, then reduce heat to medium-low, cover and cook about 20-25 minutes or until lentils and sweet potatoes are soft. Add salt and stir in coconut milk. Cook five more minutes. Garnish with fresh cilantro.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup fresh cilantro, chopped",
+      "name": "cilantro"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon minced garlic",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon minced ginger",
+      "name": "ginger"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "can",
+      "amount": 1.0,
+      "unitShort": "can",
+      "metaInformation": [],
+      "unit": "can",
+      "originalString": "1 can coconut milk (I don't recommend using light)",
+      "name": "light coconut milk"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon olive oil",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup finely chopped onion",
+      "name": "onion"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup red lentils, picked through for stones, and rinsed well",
+      "name": "red lentil"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon salt, or more to taste",
+      "name": "salt"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "inch",
+      "amount": 1.0,
+      "unitShort": "inch",
+      "metaInformation": [],
+      "unit": "inch",
+      "originalString": "1 inch medium sweet potato, cut into 1/2 pieces",
+      "name": "sweet potato"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 teaspoons Thai red curry paste (if you like it spicy, use the full 2 teaspoons)",
+      "name": "curry paste"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.25,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/4 teaspoon turmeric",
+      "name": "turmeric"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "cups",
+      "amount": 6.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "6 cups water",
+      "name": "water"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/thai-coconut-curry-lentil-soup-663090",
+  "weightWatcherSmartPoints": 4,
+  "id": 663090,
+  "image": "https://spoonacular.com/recipeImages/Thai-Coconut-Curry-Lentil-Soup-663090.jpg",
+  "servings": 5,
+  "whole30": false,
+  "lowFodmap": false
+}

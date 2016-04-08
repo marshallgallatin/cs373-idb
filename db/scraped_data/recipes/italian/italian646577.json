@@ -1,1 +1,199 @@
-{"vegetarian": false, "glutenFree": false, "title": "Hearty Minestrone Soup", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/G3S5N6TV/hearty-minestrone-soup", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Start by simmering your chicken stock on the stove. While it is simmering dice your onions, slice your carrots, crush your garlic, and add them to the pot. Then add the half can of tomato sauce and let the mixture cook on low to medium heat. Next add your diced tomatoes, potatoes, spinach, and beans. Keep the mixture on medium heat until your potatoes start to soften. Then you can turn the heat low and let it cook for as long as you would like. I seasoned the soup with Kosher salt, fresh cracked pepper, red pepper flakes,</li><li>A touch of paprika and a touch of Madras curry powder. You can season with whatever you would like to cater to your taste. When you are ready to eat the soup turn the heat back up and bring it to a low boil adding the pasta. You can turn it back down to low when the pasta is starting to get to al dente status. Then continue to cook on low until the pasta is cooked to your liking. We topped our individual bowls of the minestrone with a little shredded parmesan cheese! Hope you enjoy!</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Canned and Jarred", "unitLong": "can", "amount": 1.0, "unitShort": "can", "metaInformation": [], "unit": "can", "originalString": "1 can of Cannellini beans- Rinsed and drained", "name": "canned cannellini beans"}, {"aisle": "Pasta and Rice", "unitLong": "ounce", "amount": 1.0, "unitShort": "oz", "metaInformation": [], "unit": "ounce", "originalString": "1 ounce of 15 can of tomato sauce", "name": "canned tomato sauce"}, {"aisle": "Canned and Jarred", "unitLong": "can", "amount": 1.0, "unitShort": "can", "metaInformation": [], "unit": "can", "originalString": "1 can of diced tomatoes (no salt added)", "name": "canned tomatoes"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 carrots thinly sliced", "name": "carrot"}, {"aisle": "Canned and Jarred", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "Chicken Base to create the stock.)", "name": "chicken base"}, {"aisle": "Canned and Jarred", "unitLong": "cups", "amount": 7.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "7 cups of chicken stock", "name": "chicken stock"}, {"aisle": "Spices and Seasonings", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "Fresh cracked black pepper", "name": "cracked pepper"}, {"aisle": "Pasta and Rice", "unitLong": "boxs", "amount": 0.5, "unitShort": "box", "metaInformation": [], "unit": "box", "originalString": "1/2 box (maybe a little less than \u00bd) of Ditalini pasta", "name": "ditalini pasta"}, {"aisle": "Produce", "unitLong": "cloves", "amount": 6.0, "unitShort": "cloves", "metaInformation": [], "unit": "cloves", "originalString": "6 cloves garlic, chopped", "name": "garlic"}, {"aisle": "Spices and Seasonings", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "Kosher salt", "name": "kosher salt"}, {"aisle": "Spices and Seasonings", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "Madras curry powder", "name": "madras curry powder"}, {"aisle": "Spices and Seasonings", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "Paprika", "name": "paprika"}, {"aisle": "Canned and Jarred", "unitLong": "can", "amount": 1.0, "unitShort": "can", "metaInformation": [], "unit": "can", "originalString": "1 can of Dark Red Kidney beans- Rinsed and drained", "name": "red kidney beans"}, {"aisle": "Spices and Seasonings", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "Red pepper flakes", "name": "red pepper flakes"}, {"aisle": "Produce", "unitLong": "cups", "amount": 3.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "3 cups red potatoes, cubed", "name": "red potatoes"}, {"aisle": "Produce", "unitLong": "cups", "amount": 3.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "3 cups of uncooked Spinach", "name": "spinach"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 sweet onion", "name": "sweet onion"}, {"aisle": "Produce", "unitLong": "", "amount": 4.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "4 vine ripe tomatoes", "name": "vine ripened tomatoes"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/hearty-minestrone-soup-646577", "weightWatcherSmartPoints": 76, "id": 646577, "image": "https://spoonacular.com/recipeImages/Hearty-Minestrone-Soup-646577.jpg", "servings": 1, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Hearty Minestrone Soup",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/G3S5N6TV/hearty-minestrone-soup",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Start by simmering your chicken stock on the stove. While it is simmering dice your onions, slice your carrots, crush your garlic, and add them to the pot. Then add the half can of tomato sauce and let the mixture cook on low to medium heat. Next add your diced tomatoes, potatoes, spinach, and beans. Keep the mixture on medium heat until your potatoes start to soften. Then you can turn the heat low and let it cook for as long as you would like. I seasoned the soup with Kosher salt, fresh cracked pepper, red pepper flakes,</li><li>A touch of paprika and a touch of Madras curry powder. You can season with whatever you would like to cater to your taste. When you are ready to eat the soup turn the heat back up and bring it to a low boil adding the pasta. You can turn it back down to low when the pasta is starting to get to al dente status. Then continue to cook on low until the pasta is cooked to your liking. We topped our individual bowls of the minestrone with a little shredded parmesan cheese! Hope you enjoy!</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "can",
+      "amount": 1.0,
+      "unitShort": "can",
+      "metaInformation": [],
+      "unit": "can",
+      "originalString": "1 can of Cannellini beans- Rinsed and drained",
+      "name": "canned cannellini beans"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "ounce",
+      "amount": 1.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounce",
+      "originalString": "1 ounce of 15 can of tomato sauce",
+      "name": "canned tomato sauce"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "can",
+      "amount": 1.0,
+      "unitShort": "can",
+      "metaInformation": [],
+      "unit": "can",
+      "originalString": "1 can of diced tomatoes (no salt added)",
+      "name": "canned tomatoes"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 carrots thinly sliced",
+      "name": "carrot"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "cups",
+      "amount": 7.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "7 cups of chicken stock",
+      "name": "chicken stock"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "Fresh cracked black pepper",
+      "name": "cracked pepper"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "boxs",
+      "amount": 0.5,
+      "unitShort": "box",
+      "metaInformation": [],
+      "unit": "box",
+      "originalString": "1/2 box (maybe a little less than 1/2) of Ditalini pasta",
+      "name": "ditalini pasta"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 6.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "6 cloves garlic, chopped",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "Kosher salt",
+      "name": "kosher salt"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "Madras curry powder",
+      "name": "curry"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "Paprika",
+      "name": "paprika"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "can",
+      "amount": 1.0,
+      "unitShort": "can",
+      "metaInformation": [],
+      "unit": "can",
+      "originalString": "1 can of Dark Red Kidney beans- Rinsed and drained",
+      "name": "red kidney beans"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "Red pepper flakes",
+      "name": "crushed red pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 3.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "3 cups red potatoes, cubed",
+      "name": "red potato"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 3.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "3 cups of uncooked Spinach",
+      "name": "spinach"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 sweet onion",
+      "name": "sweet onion"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 4.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "4 vine ripe tomatoes",
+      "name": "tomato"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/hearty-minestrone-soup-646577",
+  "weightWatcherSmartPoints": 76,
+  "id": 646577,
+  "image": "https://spoonacular.com/recipeImages/Hearty-Minestrone-Soup-646577.jpg",
+  "servings": 1,
+  "whole30": false,
+  "lowFodmap": false
+}

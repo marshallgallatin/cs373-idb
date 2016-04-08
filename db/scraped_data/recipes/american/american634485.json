@@ -39,8 +39,8 @@
       "unitShort": "oz",
       "metaInformation": [],
       "unit": "ounce",
-      "originalString": "1 package (¼ ounce) dry yeast",
-      "name": "dry yeast"
+      "originalString": "1 package (1/4 ounce) dry yeast",
+      "name": "yeast"
     },
     {
       "aisle": "Baking",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon granulated sugar or honey",
-      "name": "granulated sugar"
+      "name": "sugar"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "3 cups whole wheat flour",
-      "name": "whole wheat flour"
+      "name": "whole-wheat flour"
     }
   ],
   "readyInMinutes": 45,

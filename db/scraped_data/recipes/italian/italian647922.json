@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup Shredded fresh basil leaves",
-      "name": "basil leaves"
+      "name": "basil"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "6 tablespoons extra-virgin olive oil",
-      "name": "extra-virgin olive oil"
+      "name": "olive oil"
     },
     {
       "aisle": "Cheese",
@@ -49,7 +49,7 @@
       "unitShort": "lb",
       "metaInformation": [],
       "unit": "pound",
-      "originalString": "1 pound fresh mozzarella cheese sliced ¼\" thick",
+      "originalString": "1 pound fresh mozzarella cheese sliced 1/4\" thick",
       "name": "mozzarella cheese"
     },
     {
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "4 ripe tomatoes sliced 1/4\" inch thick",
-      "name": "tomatoes"
+      "name": "tomato"
     }
   ],
   "readyInMinutes": 45,

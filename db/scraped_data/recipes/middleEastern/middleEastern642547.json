@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons all purpose flour",
-      "name": "all-purpose flour"
+      "name": "flour"
     },
     {
       "aisle": "Baking",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup raw black eyed beans",
-      "name": "black eyed peas"
+      "name": "black-eyed pea"
     },
     {
       "aisle": "Produce",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons coriander leaves/cilantro - chopped",
-      "name": "cilantro leaves"
+      "name": "cilantro"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "teaspoons",
       "originalString": "2 teaspoons coriander powder",
-      "name": "coriander powder"
+      "name": "coriander seed"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "teaspoons",
       "originalString": "2 teaspoons cumin seeds",
-      "name": "cumin seeds"
+      "name": "cumin seed"
     },
     {
       "aisle": "Canned and Jarred",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup raw garbanzo beans/ chickpeas",
-      "name": "garbanzo beans"
+      "name": "chickpea"
     },
     {
       "aisle": "Produce",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup onions - finely chopped",
-      "name": "onions"
+      "name": "onion"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "pepper",
-      "name": "pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Spices and Seasonings",

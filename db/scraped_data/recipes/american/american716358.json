@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup of all purpose flour",
-      "name": "all purpose flour"
+      "name": "flour"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups of breadcrumbs",
-      "name": "breadcrumbs"
+      "name": "bread crumbs"
     },
     {
       "aisle": "Meat",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 eggs",
-      "name": "eggs"
+      "name": "egg"
     },
     {
       "aisle": "Produce",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1/4 teaspoon of ginger powder",
-      "name": "ginger powder"
+      "name": "ground ginger"
     },
     {
       "aisle": "Canned and Jarred",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "Oil for deep frying",
-      "name": "oil"
+      "name": "vegetable oil"
     },
     {
       "aisle": "Spices and Seasonings",

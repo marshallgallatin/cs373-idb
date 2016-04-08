@@ -64,13 +64,13 @@
     },
     {
       "aisle": "Produce",
-      "unitLong": "",
+      "unitLong": "stalks",
       "amount": 3.0,
-      "unitShort": "",
+      "unitShort": "stalks",
       "metaInformation": [],
-      "unit": "",
+      "unit": "stalks",
       "originalString": "3 celery stalks, cut into chunks",
-      "name": "celery stalks"
+      "name": "celery"
     },
     {
       "aisle": "Alcoholic Beverages",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "handful",
       "originalString": "1 handful fresh flat-leaf parsley leaves",
-      "name": "flat leaf parsley leaves"
+      "name": "parsley"
     },
     {
       "aisle": "Produce",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "sprigs",
       "originalString": "4 sprigs fresh rosemary, needles striped from the stem and chopped",
-      "name": "fresh rosemary"
+      "name": "rosemary"
     },
     {
       "aisle": "Produce",
@@ -150,7 +150,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "4 large red onions, halved",
-      "name": "red onions"
+      "name": "onion"
     }
   ],
   "readyInMinutes": 45,

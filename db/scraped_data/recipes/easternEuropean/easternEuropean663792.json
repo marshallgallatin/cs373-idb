@@ -29,7 +29,7 @@
       "unitShort": "t",
       "metaInformation": [],
       "unit": "teaspoons",
-      "originalString": "1-½ teaspoons caraway seeds",
+      "originalString": "1-1/2 teaspoons caraway seeds",
       "name": "caraway seeds"
     },
     {
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons sweet Hungarian paprika",
-      "name": "hungarian sweet paprika"
+      "name": "paprika"
     },
     {
       "aisle": "Produce",
@@ -129,7 +129,7 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "½ cup sour cream",
+      "originalString": "1/2 cup sour cream",
       "name": "sour cream"
     },
     {
@@ -139,7 +139,7 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "¼ cup tomato puree or plain tomato sauce",
+      "originalString": "1/4 cup tomato puree or plain tomato sauce",
       "name": "tomato sauce"
     }
   ],

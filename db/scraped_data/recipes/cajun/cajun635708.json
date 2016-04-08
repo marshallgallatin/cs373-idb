@@ -1,1 +1,169 @@
-{"vegetarian": false, "glutenFree": true, "title": "Boudin Sausage", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/GFBZBQDC/boudin-sausage", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>In a large sauce pan, combine the pork butt, pork liver, water, onions, garlic, bell peppers, celery, 1 teaspoon salt, 1/4 teaspoon cayenne, and 1/4 teaspoon black pepper. Bring the liquid up to a boil and reduce to a simmer. Simmer for 1 1/12 hours, or until the pork and liver are tender. Remove from the heat and drain, reserving 1 1/2 cups of the broth.</li><li>Using a meat grinder with a 1/4-inch die, grind the pork mixture. 1/2 cup of the parsley, and 1/2 cup of the green onions, together. Turn the mixture into a mixing bowl. Stir in the rice, remaining salt, cayenne, black pepper, parsley, and green onions. Add the broth, 1/2 cup at a time, and mix thoroughly. Either using a feeding tube or a funnel, stuff the sausage into the casings and make 3-inch links.</li><li>Bring 1 gallon of salted water up to a boil. Poach the sausage for about 5 minutes, or until the sausage is firm to the touch and plump. Remove from the water and allow to cool.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 1.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "1 1/2 teaspoons freshly-ground black pepper", "name": "black pepper"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 2.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 1/2 teaspoons cayenne", "name": "cayenne"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup chopped celery", "name": "celery"}, {"aisle": "Pasta and Rice", "unitLong": "cups", "amount": 6.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "6 cups cooked medium-grain rice", "name": "cooked rice"}, {"aisle": "Produce", "unitLong": "cloves", "amount": 4.0, "unitShort": "cloves", "metaInformation": [], "unit": "cloves", "originalString": "4 cloves garlic finely chopped", "name": "garlic"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup chopped green bell peppers", "name": "green bell peppers"}, {"aisle": "Produce", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup chopped onions", "name": "onions"}, {"aisle": "Produce", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup chopped green onions tops (green part only)", "name": "onions"}, {"aisle": "Spices and Seasonings", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup finely-chopped parsley", "name": "parsley"}, {"aisle": "Meat", "unitLong": "pounds", "amount": 2.5, "unitShort": "lb", "metaInformation": [], "unit": "pounds", "originalString": "2 1/2 pounds pork butt, cut into 1\" cubes", "name": "pork butt"}, {"aisle": "Meat", "unitLong": "pound", "amount": 1.0, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1 pound pork liver, rinsed in cool water", "name": "pork liver"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 teaspoons salt", "name": "salt"}, {"aisle": "Meat", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "sausage casings, 1 1/2\" diameter, about 4 feet in length", "name": "sausage"}, {"aisle": "Beverages", "unitLong": "quarts", "amount": 2.0, "unitShort": "quarts", "metaInformation": [], "unit": "quarts", "originalString": "2 quarts water", "name": "water"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/boudin-sausage-635708", "weightWatcherSmartPoints": 83, "id": 635708, "image": "https://spoonacular.com/recipeImages/Boudin-Sausage-635708.jpg", "servings": 1, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Boudin Sausage",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/GFBZBQDC/boudin-sausage",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>In a large sauce pan, combine the pork butt, pork liver, water, onions, garlic, bell peppers, celery, 1 teaspoon salt, 1/4 teaspoon cayenne, and 1/4 teaspoon black pepper. Bring the liquid up to a boil and reduce to a simmer. Simmer for 1 1/12 hours, or until the pork and liver are tender. Remove from the heat and drain, reserving 1 1/2 cups of the broth.</li><li>Using a meat grinder with a 1/4-inch die, grind the pork mixture. 1/2 cup of the parsley, and 1/2 cup of the green onions, together. Turn the mixture into a mixing bowl. Stir in the rice, remaining salt, cayenne, black pepper, parsley, and green onions. Add the broth, 1/2 cup at a time, and mix thoroughly. Either using a feeding tube or a funnel, stuff the sausage into the casings and make 3-inch links.</li><li>Bring 1 gallon of salted water up to a boil. Poach the sausage for about 5 minutes, or until the sausage is firm to the touch and plump. Remove from the water and allow to cool.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 1.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "1 1/2 teaspoons freshly-ground black pepper",
+      "name": "black pepper"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 2.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 1/2 teaspoons cayenne",
+      "name": "cayenne pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup chopped celery",
+      "name": "celery"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "cups",
+      "amount": 6.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "6 cups cooked medium-grain rice",
+      "name": "cooked rice"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 4.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "4 cloves garlic finely chopped",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup chopped green bell peppers",
+      "name": "green bell pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup chopped onions",
+      "name": "onion"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup chopped green onions tops (green part only)",
+      "name": "green onion"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup finely-chopped parsley",
+      "name": "parsley"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pounds",
+      "amount": 2.5,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pounds",
+      "originalString": "2 1/2 pounds pork butt, cut into 1\" cubes",
+      "name": "pork butt"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1 pound pork liver, rinsed in cool water",
+      "name": "pork liver"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 teaspoons salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "sausage casings, 1 1/2\" diameter, about 4 feet in length",
+      "name": "sausage"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "quarts",
+      "amount": 2.0,
+      "unitShort": "quarts",
+      "metaInformation": [],
+      "unit": "quarts",
+      "originalString": "2 quarts water",
+      "name": "water"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/boudin-sausage-635708",
+  "weightWatcherSmartPoints": 83,
+  "id": 635708,
+  "image": "https://spoonacular.com/recipeImages/Boudin-Sausage-635708.jpg",
+  "servings": 1,
+  "whole30": false,
+  "lowFodmap": false
+}

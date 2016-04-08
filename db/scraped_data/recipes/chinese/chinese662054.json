@@ -1,1 +1,189 @@
-{"vegetarian": false, "glutenFree": false, "title": "Stuffed mushrooms and Chow Mein noodles", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/JFLYX2JY/stuffed-mushrooms-and-chow-mein-noodles", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Blanch the spinach in a very little water in the microwave oven for 3 minutes on MAX. Drain and coarsely chop. Chop mushroom stems in a blender.</li><li>Melt the butter over low heat, add the onion and cook for 1 minute. Add chopped mushroom stems, and saut for 4-5 minutes, stirring often.</li><li>Add chopped spinach; stir well and saut 2 more minutes. Remove from the heat.</li><li>Mix and combine with a fork in a separate bowl ricotta, blue cheese, chives and pepper into a fine mixture, almost a paste.</li><li>Add chopped stalks and spinach mixture, stir and combine thoroughly.</li><li>Using a small teaspoon, place mounds of filling on the top of each mushroom cap, pressing slightly to get it down into the cavity.</li><li>Mix breadcrumbs and grated Parmesan cheese, sprinkle evenly over each mushroom. Drizzle each filled cap with olive oil.</li><li>Place the mushroom caps on a baking sheet lined with parchment paper or silicon sheet, and bake in the oven at 180C for 20 minutes or until the cheese browns a little. Allow to cool for 5 minutes or so before serving.</li><li>Meanwhile cook the Chow Mein or rice noodles as directed on the package; drain.</li><li>Mix and combine garlic, sour cream and salt and stir into the cooked pasta.</li><li>Sprinkle with chopped parsley and served with stuffed mushrooms.</li></ol>", "aggregateLikes": 8, "dairyFree": false, "extendedIngredients": [{"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Black pepper", "name": "black pepper"}, {"aisle": "Cheese", "unitLong": "grams", "amount": 50.0, "unitShort": "g", "metaInformation": [], "unit": "g", "originalString": "50 g blue cheese of your choice", "name": "blue cheese"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup breadcrumbs", "name": "breadcrumbs"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "tbs", "amount": 0.5, "unitShort": "tbs", "metaInformation": [], "unit": "tbs", "originalString": "\u00bd tbs butter", "name": "butter"}, {"aisle": "Produce", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Fresh chives, chopped", "name": "fresh chives"}, {"aisle": "Produce", "unitLong": "cloves", "amount": 2.0, "unitShort": "cloves", "metaInformation": [], "unit": "cloves", "originalString": "2 cloves garlic, minced", "name": "garlic"}, {"aisle": "Produce", "unitLong": "grams", "amount": 400.0, "unitShort": "g", "metaInformation": [], "unit": "g", "originalString": "4 large mushrooms (about 400g), stems separated from caps", "name": "mushrooms"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon olive oil", "name": "olive oil"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 small Onion, halved lengthwise & cut crosswise into fine half rings", "name": "onion"}, {"aisle": "Cheese", "unitLong": "tbs", "amount": 2.0, "unitShort": "tbs", "metaInformation": [], "unit": "tbs", "originalString": "2 tbs Parmesan cheese, grated", "name": "parmesan cheese"}, {"aisle": "Spices and Seasonings", "unitLong": "tablespoons", "amount": 3.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "3 tablespoons chopped parsley", "name": "parsley"}, {"aisle": "Pasta and Rice", "unitLong": "grams", "amount": 400.0, "unitShort": "g", "metaInformation": [], "unit": "g", "originalString": "400g Chow Mein Noodles or rice pasta", "name": "rice"}, {"aisle": "Cheese", "unitLong": "grams", "amount": 250.0, "unitShort": "g", "metaInformation": [], "unit": "g", "originalString": "250g ricotta cheese", "name": "ricotta cheese"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.25, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "\u00bc tsp sea salt", "name": "sea salt"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "tbs", "amount": 2.0, "unitShort": "tbs", "metaInformation": [], "unit": "tbs", "originalString": "2 tbs sour cream", "name": "sour cream"}, {"aisle": "Produce", "unitLong": "cups", "amount": 1.5, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "1 1/2 cups fresh spinach, finely chopped", "name": "spinach"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/stuffed-mushrooms-and-chow-mein-noodles-662054", "weightWatcherSmartPoints": 41, "id": 662054, "image": "https://spoonacular.com/recipeImages/Stuffed-mushrooms-and-Chow-Mein-noodles-662054.jpg", "servings": 2, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Stuffed mushrooms and Chow Mein noodles",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/JFLYX2JY/stuffed-mushrooms-and-chow-mein-noodles",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Blanch the spinach in a very little water in the microwave oven for 3 minutes on MAX. Drain and coarsely chop. Chop mushroom stems in a blender.</li><li>Melt the butter over low heat, add the onion and cook for 1 minute. Add chopped mushroom stems, and saut for 4-5 minutes, stirring often.</li><li>Add chopped spinach; stir well and saut 2 more minutes. Remove from the heat.</li><li>Mix and combine with a fork in a separate bowl ricotta, blue cheese, chives and pepper into a fine mixture, almost a paste.</li><li>Add chopped stalks and spinach mixture, stir and combine thoroughly.</li><li>Using a small teaspoon, place mounds of filling on the top of each mushroom cap, pressing slightly to get it down into the cavity.</li><li>Mix breadcrumbs and grated Parmesan cheese, sprinkle evenly over each mushroom. Drizzle each filled cap with olive oil.</li><li>Place the mushroom caps on a baking sheet lined with parchment paper or silicon sheet, and bake in the oven at 180C for 20 minutes or until the cheese browns a little. Allow to cool for 5 minutes or so before serving.</li><li>Meanwhile cook the Chow Mein or rice noodles as directed on the package; drain.</li><li>Mix and combine garlic, sour cream and salt and stir into the cooked pasta.</li><li>Sprinkle with chopped parsley and served with stuffed mushrooms.</li></ol>",
+  "aggregateLikes": 8,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Black pepper",
+      "name": "black pepper"
+    },
+    {
+      "aisle": "Cheese",
+      "unitLong": "grams",
+      "amount": 50.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "g",
+      "originalString": "50 g blue cheese of your choice",
+      "name": "blue cheese"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup breadcrumbs",
+      "name": "bread crumbs"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "tbs",
+      "amount": 0.5,
+      "unitShort": "tbs",
+      "metaInformation": [],
+      "unit": "tbs",
+      "originalString": "1/2 tbs butter",
+      "name": "butter"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Fresh chives, chopped",
+      "name": "chives"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 2.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "2 cloves garlic, minced",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "grams",
+      "amount": 400.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "g",
+      "originalString": "4 large mushrooms (about 400g), stems separated from caps",
+      "name": "mushroom"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon olive oil",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 small Onion, halved lengthwise & cut crosswise into fine half rings",
+      "name": "onion"
+    },
+    {
+      "aisle": "Cheese",
+      "unitLong": "tbs",
+      "amount": 2.0,
+      "unitShort": "tbs",
+      "metaInformation": [],
+      "unit": "tbs",
+      "originalString": "2 tbs Parmesan cheese, grated",
+      "name": "parmesan cheese"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoons",
+      "amount": 3.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "3 tablespoons chopped parsley",
+      "name": "parsley"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "grams",
+      "amount": 400.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "g",
+      "originalString": "400g Chow Mein Noodles or rice pasta",
+      "name": "Chow Mein Noodles"
+    },
+    {
+      "aisle": "Cheese",
+      "unitLong": "grams",
+      "amount": 250.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "g",
+      "originalString": "250g ricotta cheese",
+      "name": "ricotta cheese"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.25,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1/4 tsp sea salt",
+      "name": "sea salt"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "tbs",
+      "amount": 2.0,
+      "unitShort": "tbs",
+      "metaInformation": [],
+      "unit": "tbs",
+      "originalString": "2 tbs sour cream",
+      "name": "sour cream"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 1.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "1 1/2 cups fresh spinach, finely chopped",
+      "name": "spinach"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/stuffed-mushrooms-and-chow-mein-noodles-662054",
+  "weightWatcherSmartPoints": 41,
+  "id": 662054,
+  "image": "https://spoonacular.com/recipeImages/Stuffed-mushrooms-and-Chow-Mein-noodles-662054.jpg",
+  "servings": 2,
+  "whole30": false,
+  "lowFodmap": false
+}

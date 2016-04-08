@@ -1,1 +1,139 @@
-{"vegetarian": false, "glutenFree": false, "title": "Soba Noodle In Kombu Dashi With Teriyaki Salmon", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/W7PR76HM/soba-noodle-in-kombu-dashi-with-teriyaki-salmon", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>To make kombu dashi, soak the dried kelp/seaweed in water for 2 hours. Put the kombu and water in a cooking pot. Put on medium heat. Turn off the heat when the water comes to a boil. Then, remove the kombu with a strainer. The remaining liquid is your kombu dashi. You can leave some kombu in the soup.</li><li>Cook the soba noodles according to the packet. Drain and set aside.</li><li>To make teriyaki salmon, marinate salmon filet/loin with sake, soya sauce, mirin, and sugar.</li><li>Heat up a pan with oil. Put the skin side down and cook for 3 minutes or until crispy. Turn and cook the other side for another 2-3 minutes. Pour any remaining sauce.</li><li>Remove from heat. Drizzle any remaining sauce from the frying pan.</li><li>To serve the soba, heat up the broth. In a bowl, serve good portion of Soba noodles. Lardle good amount of kombu dashi over the noodles. Garnish with goji berries if desired. Place the teriyaki salmon on top of the noodles. Sprinkle with some toasted sesame seeds.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Health Foods", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Goji berries, some", "name": "goji berries"}, {"aisle": "Health Foods", "unitLong": "grams", "amount": 7.0, "unitShort": "g", "metaInformation": [], "unit": "g", "originalString": "Dried kombu (seaweed/kelp), 7g", "name": "kombu"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "tablespoon Mirin, 4", "name": "mirin"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "tablespoon Sake, 1", "name": "sake"}, {"aisle": "Seafood", "unitLong": "grams", "amount": 250.0, "unitShort": "g", "metaInformation": [], "unit": "g", "originalString": "Salmon filet/loin, 250-300g", "name": "salmon filet"}, {"aisle": "Ethnic Foods", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "teaspoon Sesame seeds, 1-2", "name": "sesame seeds"}, {"aisle": "Pasta and Rice", "unitLong": "grams", "amount": 200.0, "unitShort": "g", "metaInformation": [], "unit": "g", "originalString": "200g Soba (buckwheat noodles)", "name": "soba noodles"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "tablespoon Soya sauce, 4", "name": "soy sauce"}, {"aisle": "Baking", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "tablespoon Sugar, 2", "name": "sugar"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "tablespoon Vegetable oil, 1", "name": "vegetable oil"}, {"aisle": "Beverages", "unitLong": "cups", "amount": 5.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "5 cups Water", "name": "water"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/soba-noodle-in-kombu-dashi-with-teriyaki-salmon-660493", "weightWatcherSmartPoints": 18, "id": 660493, "image": "https://spoonacular.com/recipeImages/Soba-Noodle-In-Kombu-Dashi-With-Teriyaki-Salmon-660493.jpg", "servings": 2, "whole30": false, "lowFodmap": true}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Soba Noodle In Kombu Dashi With Teriyaki Salmon",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/W7PR76HM/soba-noodle-in-kombu-dashi-with-teriyaki-salmon",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>To make kombu dashi, soak the dried kelp/seaweed in water for 2 hours. Put the kombu and water in a cooking pot. Put on medium heat. Turn off the heat when the water comes to a boil. Then, remove the kombu with a strainer. The remaining liquid is your kombu dashi. You can leave some kombu in the soup.</li><li>Cook the soba noodles according to the packet. Drain and set aside.</li><li>To make teriyaki salmon, marinate salmon filet/loin with sake, soya sauce, mirin, and sugar.</li><li>Heat up a pan with oil. Put the skin side down and cook for 3 minutes or until crispy. Turn and cook the other side for another 2-3 minutes. Pour any remaining sauce.</li><li>Remove from heat. Drizzle any remaining sauce from the frying pan.</li><li>To serve the soba, heat up the broth. In a bowl, serve good portion of Soba noodles. Lardle good amount of kombu dashi over the noodles. Garnish with goji berries if desired. Place the teriyaki salmon on top of the noodles. Sprinkle with some toasted sesame seeds.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Health Foods",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Goji berries, some",
+      "name": "goji berries"
+    },
+    {
+      "aisle": "Health Foods",
+      "unitLong": "grams",
+      "amount": 7.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "g",
+      "originalString": "Dried kombu (seaweed/kelp), 7g",
+      "name": "kombu"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "tablespoon Mirin, 4",
+      "name": "mirin"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "tablespoon Sake, 1",
+      "name": "sake"
+    },
+    {
+      "aisle": "Seafood",
+      "unitLong": "grams",
+      "amount": 250.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "g",
+      "originalString": "Salmon filet/loin, 250-300g",
+      "name": "salmon filet"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "teaspoon Sesame seeds, 1-2",
+      "name": "sesame seed"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "grams",
+      "amount": 200.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "g",
+      "originalString": "200g Soba (buckwheat noodles)",
+      "name": "soba noodles"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "tablespoon Soya sauce, 4",
+      "name": "soy sauce"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "tablespoon Sugar, 2",
+      "name": "sugar"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "tablespoon Vegetable oil, 1",
+      "name": "vegetable oil"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "cups",
+      "amount": 5.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "5 cups Water",
+      "name": "water"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/soba-noodle-in-kombu-dashi-with-teriyaki-salmon-660493",
+  "weightWatcherSmartPoints": 18,
+  "id": 660493,
+  "image": "https://spoonacular.com/recipeImages/Soba-Noodle-In-Kombu-Dashi-With-Teriyaki-Salmon-660493.jpg",
+  "servings": 2,
+  "whole30": false,
+  "lowFodmap": true
+}

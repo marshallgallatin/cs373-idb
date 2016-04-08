@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1/2 teaspoon chili pepper flakes",
-      "name": "chili flakes"
+      "name": "crushed red pepper"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup flat leaf parsley, lightly packed & rough chopped",
-      "name": "flat leaf parsley"
+      "name": "parsley"
     },
     {
       "aisle": "Produce",
@@ -59,8 +59,8 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "¼ cup fresh mint leaves",
-      "name": "fresh mint leaves"
+      "originalString": "1/4 cup fresh mint leaves",
+      "name": "mint"
     },
     {
       "aisle": "Produce",
@@ -69,8 +69,8 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "¼ cup fresh oregano leaves",
-      "name": "fresh oregano leaves"
+      "originalString": "1/4 cup fresh oregano leaves",
+      "name": "oregano"
     },
     {
       "aisle": "Produce",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon freshly ground pepper",
-      "name": "pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -160,7 +160,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 skirt steaks",
-      "name": "steaks"
+      "name": "skirt steaks"
     }
   ],
   "readyInMinutes": 45,

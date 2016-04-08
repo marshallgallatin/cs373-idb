@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons fresh ground black pepper",
-      "name": "ground pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Produce",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon of sesame seed oil",
-      "name": "sesame seed oil"
+      "name": "sesame oil"
     },
     {
       "aisle": "Bakery/Bread",
@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "6 sub rolls",
-      "name": "sub rolls"
+      "name": "hoagie roll"
     },
     {
       "aisle": "Baking",

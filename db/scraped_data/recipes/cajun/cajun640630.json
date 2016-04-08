@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon chopped fresh parsley",
-      "name": "fresh parsley"
+      "name": "parsley"
     },
     {
       "aisle": "Produce",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "bunch",
       "originalString": "1 bunch green onions, finely chopped",
-      "name": "green onions"
+      "name": "green onion"
     },
     {
       "aisle": "Pasta and Rice",
@@ -170,7 +170,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1/4 teaspoon pepper",
-      "name": "pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Spices and Seasonings",

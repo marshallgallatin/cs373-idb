@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup of chopped pineapples",
-      "name": "pineapples"
+      "name": "pineapple"
     },
     {
       "aisle": "Pasta and Rice",
@@ -130,17 +130,17 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "1.5 cups of blended tomatoes, bell pepper and scotch bonnet pepper mix",
-      "name": "tomatoes"
+      "name": "tomato"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
-      "unitLong": "",
+      "unitLong": "tablespoons",
       "amount": 1.5,
-      "unitShort": "",
+      "unitShort": "T",
       "metaInformation": [],
-      "unit": "",
+      "unit": "tablespoons",
       "originalString": "1.5 cooking spoons of vegetable oil",
-      "name": "vegetable oil cooking spray"
+      "name": "vegetable oil"
     }
   ],
   "readyInMinutes": 45,

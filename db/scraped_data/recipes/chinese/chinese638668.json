@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "4 baby bok choy",
-      "name": "baby bok choy"
+      "name": "bok choy"
     },
     {
       "aisle": "Meat",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "Chile-garlic paste",
-      "name": "chile paste"
+      "name": "chili-garlic paste"
     },
     {
       "aisle": "Ethnic Foods",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "slices",
       "originalString": "5 slices of fresh ginger",
-      "name": "fresh ginger"
+      "name": "ginger"
     },
     {
       "aisle": "Produce",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "3/4 cup green onions, diced",
-      "name": "green onions"
+      "name": "green onion"
     },
     {
       "aisle": "Produce",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup mung bean sprouts",
-      "name": "mung bean sprouts"
+      "name": "bean sprout"
     },
     {
       "aisle": "Produce",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "ounces",
       "originalString": "8 ounces mushrooms, any variety",
-      "name": "mushrooms"
+      "name": "mushroom"
     },
     {
       "aisle": "Gluten Free",

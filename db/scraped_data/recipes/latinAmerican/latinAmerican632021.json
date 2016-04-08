@@ -1,1 +1,109 @@
-{"vegetarian": false, "glutenFree": true, "title": "Ahi Tuna Ceviche", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/7FBJ3QLN/ahi-tuna-ceviche", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>In medium bowl mix soy sauce, toasted sesame oil, rice vinegar, Serrano pepper, lime juice, mint, and sesame seeds. Then add diced tuna and toss to coat.</li><li>The tuna is ready to eat as soon as it's tossed and coated but you can marinate it for a few minutes if desired. The tuna will start to turn white almost immediately, a sign that it is cooking from the acidity of the lime juice. It is not necessary to cook the tuna. In fact, it is best served immediately while it is melt-in-your-mouth tender and moist.</li><li>Serve immediately by mounding atop crackers, chips, micro-greens, or even roasted sweet potato slices.</li></ol>", "aggregateLikes": 3, "dairyFree": true, "extendedIngredients": [{"aisle": "Seafood", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 ahi tuna steak (approx. less than a 1 lb.)", "name": "ahi tuna steak"}, {"aisle": "Produce", "unitLong": "leaves", "amount": 5.0, "unitShort": "leaves", "metaInformation": [], "unit": "leaves", "originalString": "5 small leaves of fresh mint", "name": "fresh mint"}, {"aisle": "Produce", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1/2 tablespoon rice vinegar (recommended: O Yuzu Rice Vinegar by O 1/2 of a Serrano pepper, very thinly sliced1 Juice of lime5 small leaves of fresh mintsprinkle of black sesame seeds (optional)", "name": "juice of lime"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 Juice of lime", "name": "juice of lime"}, {"aisle": "Produce", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1/2 of a Serrano pepper, very thinly sliced", "name": "serrano pepper"}, {"aisle": "Ethnic Foods", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "1 tsp. sesame oil", "name": "sesame oil"}, {"aisle": "Ethnic Foods", "unitLong": "servings", "amount": 3.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "1In medium bowl mix soy sauce, toasted sesame oil, rice vinegar, Serrano pepper, lime juice, mint, and sesame seeds. Then add diced tuna and toss to coat.", "name": "soy sauce"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoons", "amount": 5.0, "unitShort": "T", "metaInformation": [], "unit": "tbsp", "originalString": "5 tbsp. soy sauce", "name": "soy sauce"}, {"aisle": "Produce", "unitLong": "slicesslice", "amount": 1.0, "unitShort": "slicesslices", "metaInformation": [], "unit": "slicesslices", "originalString": "3Serve immediately by mounding atop crackers, chips, micro-greens, or even roasted sweet potato slices.", "name": "sweet potato"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/ahi-tuna-ceviche-632021", "weightWatcherSmartPoints": 2, "id": 632021, "image": "https://spoonacular.com/recipeImages/Ahi-Tuna-Ceviche-632021.jpg", "servings": 3, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Ahi Tuna Ceviche",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/7FBJ3QLN/ahi-tuna-ceviche",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>In medium bowl mix soy sauce, toasted sesame oil, rice vinegar, Serrano pepper, lime juice, mint, and sesame seeds. Then add diced tuna and toss to coat.</li><li>The tuna is ready to eat as soon as it's tossed and coated but you can marinate it for a few minutes if desired. The tuna will start to turn white almost immediately, a sign that it is cooking from the acidity of the lime juice. It is not necessary to cook the tuna. In fact, it is best served immediately while it is melt-in-your-mouth tender and moist.</li><li>Serve immediately by mounding atop crackers, chips, micro-greens, or even roasted sweet potato slices.</li></ol>",
+  "aggregateLikes": 3,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Seafood",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 ahi tuna steak (approx. less than a 1 lb.)",
+      "name": "ahi tuna steak"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "leaves",
+      "amount": 5.0,
+      "unitShort": "leaves",
+      "metaInformation": [],
+      "unit": "leaves",
+      "originalString": "5 small leaves of fresh mint",
+      "name": "mint"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 tablespoon rice vinegar (recommended: O Yuzu Rice Vinegar)",
+      "name": "rice vinegar"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 Juice of lime",
+      "name": "lime juice"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 of a Serrano pepper, very thinly sliced",
+      "name": "serrano pepper"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1 tsp. sesame oil",
+      "name": "sesame oil"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoons",
+      "amount": 5.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tbsp",
+      "originalString": "5 tbsp. soy sauce",
+      "name": "soy sauce"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "slicesslice",
+      "amount": 1.0,
+      "unitShort": "slicesslices",
+      "metaInformation": [],
+      "unit": "slicesslices",
+      "originalString": "3Serve immediately by mounding atop crackers, chips, micro-greens, or even roasted sweet potato slices.",
+      "name": "sweet potato"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/ahi-tuna-ceviche-632021",
+  "weightWatcherSmartPoints": 2,
+  "id": 632021,
+  "image": "https://spoonacular.com/recipeImages/Ahi-Tuna-Ceviche-632021.jpg",
+  "servings": 3,
+  "whole30": false,
+  "lowFodmap": false
+}

@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "head",
       "originalString": "small head of Boston lettuce, roughly chopped",
-      "name": "boston lettuce"
+      "name": "lettuce"
     },
     {
       "aisle": "Produce",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "small chili pepper, finely chopped",
-      "name": "chili pepper"
+      "name": "red pepper"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup coriander (cilantro) leaves",
-      "name": "dried coriander leaves"
+      "name": "dried coriander"
     },
     {
       "aisle": "Ethnic Foods",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup mint leaves",
-      "name": "mint leaves"
+      "name": "mint"
     },
     {
       "aisle": "Produce",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "8 large cooked shrimp, slice in half lengthways",
-      "name": "shrimp"
+      "name": "cooked shrimp"
     },
     {
       "aisle": "Ethnic Foods",

@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "Slices",
       "originalString": "8 Slices - French Bread (1 inch)",
-      "name": "french bread"
+      "name": "baguette"
     },
     {
       "aisle": "Produce",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "serving",
       "originalString": "Pepper to taste",
-      "name": "pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Cheese",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup - Shredded Mozzarella Cheese",
-      "name": "shredded mozzarella cheese"
+      "name": "mozzarella cheese"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "Tb",
       "originalString": "2 Tbs. - Oil",
-      "name": "oil"
+      "name": "vegetable oil"
     }
   ],
   "readyInMinutes": 45,

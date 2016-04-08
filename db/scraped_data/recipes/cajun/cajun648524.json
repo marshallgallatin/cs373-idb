@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "1 pound andouille, turkey, kielbasa or smoked sausage, cubed",
-      "name": "andouille"
+      "name": "andouille sausage"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "1 dozen fresh or frozen blue crabs, cleaned and shells removed (substitute: 2 pounds fresh crabmeat, crawfish, oyster, or turtle)",
-      "name": "raw blue crabs"
+      "name": "blue crab"
     },
     {
       "aisle": "Canned and Jarred",
@@ -79,7 +79,7 @@
       "unitShort": "t",
       "metaInformation": [],
       "unit": "teaspoon",
-      "originalString": "½ teaspoon dried thyme",
+      "originalString": "1/2 teaspoon dried thyme",
       "name": "dried thyme"
     },
     {
@@ -99,7 +99,7 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "½ cup flour",
+      "originalString": "1/2 cup flour",
       "name": "flour"
     },
     {
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup chopped green onions",
-      "name": "green onions"
+      "name": "green onion"
     },
     {
       "aisle": "Produce",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 green peppers, chopped",
-      "name": "green bell peppers"
+      "name": "green bell pepper"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "teaspoons",
       "originalString": "2 teaspoons ground black pepper",
-      "name": "ground pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Produce",
@@ -169,7 +169,7 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "½ cup chopped parsley",
+      "originalString": "1/2 cup chopped parsley",
       "name": "parsley"
     },
     {
@@ -210,7 +210,7 @@
       "metaInformation": [],
       "unit": "can",
       "originalString": "All the Tabasco sauce you can handle",
-      "name": "tabasco sauce"
+      "name": "Tabasco sauce"
     },
     {
       "aisle": "Pasta and Rice",
@@ -240,7 +240,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon Worcestershire sauce",
-      "name": "worcestershire sauce"
+      "name": "Worcestershire sauce"
     }
   ],
   "readyInMinutes": 45,

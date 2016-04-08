@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "4 smalls hot chilies seeded",
-      "name": "chilies"
+      "name": "red pepper"
     },
     {
       "aisle": "Meat",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "teaspoon cumin seeds",
-      "name": "cumin seeds"
+      "name": "cumin seed"
     },
     {
       "aisle": "Produce",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "cup granulated sugar",
-      "name": "granulated sugar"
+      "name": "sugar"
     },
     {
       "aisle": "Produce",

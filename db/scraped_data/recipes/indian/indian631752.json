@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "Teaspoons",
       "originalString": "2 Teaspoons Coriander Seeds or 1 Teaspoon Powder",
-      "name": "coriander seeds"
+      "name": "coriander seed"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "Teaspoon",
       "originalString": "1 Teaspoon Cumin Seeds",
-      "name": "cumin seeds"
+      "name": "cumin seed"
     },
     {
       "aisle": "Beverages",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "Teaspoons",
       "originalString": "2 Teaspoons Fresh organic Ginger",
-      "name": "fresh ginger"
+      "name": "ginger"
     },
     {
       "aisle": "Ethnic Foods",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "Cups",
       "originalString": "3 Cups organic Red Lentils",
-      "name": "red lentils"
+      "name": "red lentil"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2-4 Serrano peppers",
-      "name": "serrano peppers"
+      "name": "serrano pepper"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 Vegetable Bouillon Cube",
-      "name": "vegetable bouillon cube"
+      "name": "vegetable bouillon"
     },
     {
       "aisle": "Produce",
@@ -150,7 +150,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "1/2 organic White Onion",
-      "name": "white onion"
+      "name": "onion"
     }
   ],
   "readyInMinutes": 45,

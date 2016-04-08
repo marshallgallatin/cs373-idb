@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "3 tablespoons dark brown sugar",
-      "name": "dark brown sugar"
+      "name": "brown sugar"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "Extra oil for cooking",
-      "name": "extra-virgin olive oil"
+      "name": "olive oil"
     },
     {
       "aisle": "Ethnic Foods",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon ground coriander",
-      "name": "ground coriander"
+      "name": "dried coriander"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon ground cumin",
-      "name": "ground cumin"
+      "name": "cumin"
     },
     {
       "aisle": "Produce",
@@ -150,7 +150,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon light soya sauce",
-      "name": "light soy sauce"
+      "name": "soy sauce"
     },
     {
       "aisle": "Nut butters, Jams, and Honey",
@@ -170,7 +170,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons red curry paste",
-      "name": "red curry paste"
+      "name": "curry paste"
     },
     {
       "aisle": "Savory Snacks",
@@ -190,7 +190,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "Spanish onion, cut into wedges",
-      "name": "spanish onion"
+      "name": "onion"
     },
     {
       "aisle": "Spices and Seasonings",

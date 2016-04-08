@@ -1,1 +1,169 @@
-{"vegetarian": true, "glutenFree": true, "title": "Party Jollof Rice", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.afrolems.com/2012/11/23/how-to-make-party-jollof-rice/", "sourceName": "Afrolems", "vegan": true, "sustainable": false, "instructions": "Wash rice by rubbing the rice between your palms in a bowl of water and draining the water till clear. Blend tomatoes, pepper and garlic and bring to boil till the excess water dries up. Chop Onions. Heat up vegetable oil and pour in chopped onions and fry. Pour in the can of tomato puree and fry.Pour in blended tomato and pepper mix into the pot and stir in. Pour in salt, dry pepper, curry, thyme, bay leaves and maggi cubes. Allow it to simmer on low heat for 3 minutes. Reduce the heat to the lowest level and pour in the washed rice. Pour in the water and stir and leave on low heat for 20 minutes or till the rice is soft. Tip: To get the party rice flavor, increase the heat on the rice and burn the bottom of the pot with the pot covered and stir the rice after 3 minutes of burning. Stir the rice and serve with any protein of your choice.", "aggregateLikes": 347, "dairyFree": true, "extendedIngredients": [{"aisle": "Spices and Seasonings", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 Bay leaves", "name": "bay leaf"}, {"aisle": "Spices and Seasonings", "unitLong": "Teaspoon", "amount": 1.0, "unitShort": "Teaspoon", "metaInformation": [], "unit": "Teaspoon", "originalString": "1 Teaspoon of curry powder", "name": "curry powder"}, {"aisle": "Produce", "unitLong": "Clove", "amount": 1.0, "unitShort": "Clove", "metaInformation": [], "unit": "Clove", "originalString": "1 Clove of garlic", "name": "garlic"}, {"aisle": "Frozen", "unitLong": "", "amount": 3.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "3 Cubes of Maggi", "name": "ice cubes"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 Small bulb of Onion", "name": "onion"}, {"aisle": "Spices and Seasonings", "unitLong": "Teaspoon", "amount": 1.0, "unitShort": "Teaspoon", "metaInformation": [], "unit": "Teaspoon", "originalString": "1 Teaspoon of dry pepper", "name": "pepper"}, {"aisle": "Pasta and Rice", "unitLong": "Cups", "amount": 2.0, "unitShort": "Cups", "metaInformation": [], "unit": "Cups", "originalString": "2 Cups of Rice", "name": "rice"}, {"aisle": "Produce", "unitLong": "", "amount": 7.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "7 Medium sized Roma Tomatoes", "name": "roma tomatoes"}, {"aisle": "Spices and Seasonings", "unitLong": "Teaspoons", "amount": 2.0, "unitShort": "Teaspoons", "metaInformation": [], "unit": "Teaspoons", "originalString": "2 Teaspoons of Salt", "name": "salt"}, {"aisle": "Produce", "unitLong": "", "amount": 3.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "3 Scotch Bonnet Peppers", "name": "scotch bonnet chili peppers"}, {"aisle": "Spices and Seasonings", "unitLong": "pinch", "amount": 1.0, "unitShort": "pinch", "metaInformation": [], "unit": "pinch", "originalString": "A pinch of Thyme", "name": "thyme"}, {"aisle": "Canned and Jarred", "unitLong": "can", "amount": 1.0, "unitShort": "can", "metaInformation": [], "unit": "can", "originalString": "1 Small can of Tomato puree", "name": "tomato puree"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 Cooking spoons of Vegetable Oil", "name": "vegetable oil cooking spray"}, {"aisle": "Beverages", "unitLong": "Cups", "amount": 3.0, "unitShort": "Cups", "metaInformation": [], "unit": "Cups", "originalString": "3 Cups of water", "name": "water"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Afrolems", "license": "CC BY 4.0", "spoonacularSourceUrl": "https://spoonacular.com/how-to-make-party-jollof-rice-716298", "weightWatcherSmartPoints": 14, "id": 716298, "image": "https://spoonacular.com/recipeImages/how-to-make-party-jollof-rice-716298.jpg", "servings": 3, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": true,
+  "title": "Party Jollof Rice",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.afrolems.com/2012/11/23/how-to-make-party-jollof-rice/",
+  "sourceName": "Afrolems",
+  "vegan": true,
+  "sustainable": false,
+  "instructions": "Wash rice by rubbing the rice between your palms in a bowl of water and draining the water till clear. Blend tomatoes, pepper and garlic and bring to boil till the excess water dries up. Chop Onions. Heat up vegetable oil and pour in chopped onions and fry. Pour in the can of tomato puree and fry.Pour in blended tomato and pepper mix into the pot and stir in. Pour in salt, dry pepper, curry, thyme, bay leaves and maggi cubes. Allow it to simmer on low heat for 3 minutes. Reduce the heat to the lowest level and pour in the washed rice. Pour in the water and stir and leave on low heat for 20 minutes or till the rice is soft. Tip: To get the party rice flavor, increase the heat on the rice and burn the bottom of the pot with the pot covered and stir the rice after 3 minutes of burning. Stir the rice and serve with any protein of your choice.",
+  "aggregateLikes": 347,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 Bay leaves",
+      "name": "bay leaf"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "Teaspoon",
+      "amount": 1.0,
+      "unitShort": "Teaspoon",
+      "metaInformation": [],
+      "unit": "Teaspoon",
+      "originalString": "1 Teaspoon of curry powder",
+      "name": "curry"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "Clove",
+      "amount": 1.0,
+      "unitShort": "Clove",
+      "metaInformation": [],
+      "unit": "Clove",
+      "originalString": "1 Clove of garlic",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Frozen",
+      "unitLong": "",
+      "amount": 3.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "3 Cubes of Maggi",
+      "name": "bouillon cube"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 Small bulb of Onion",
+      "name": "onion"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "Teaspoon",
+      "amount": 1.0,
+      "unitShort": "Teaspoon",
+      "metaInformation": [],
+      "unit": "Teaspoon",
+      "originalString": "1 Teaspoon of dry pepper",
+      "name": "black pepper"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "Cups",
+      "amount": 2.0,
+      "unitShort": "Cups",
+      "metaInformation": [],
+      "unit": "Cups",
+      "originalString": "2 Cups of Rice",
+      "name": "rice"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 7.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "7 Medium sized Roma Tomatoes",
+      "name": "tomato"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "Teaspoons",
+      "amount": 2.0,
+      "unitShort": "Teaspoons",
+      "metaInformation": [],
+      "unit": "Teaspoons",
+      "originalString": "2 Teaspoons of Salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 3.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "3 Scotch Bonnet Peppers",
+      "name": "scotch bonnet pepper"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "pinch",
+      "amount": 1.0,
+      "unitShort": "pinch",
+      "metaInformation": [],
+      "unit": "pinch",
+      "originalString": "A pinch of Thyme",
+      "name": "thyme"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "can",
+      "amount": 1.0,
+      "unitShort": "can",
+      "metaInformation": [],
+      "unit": "can",
+      "originalString": "1 Small can of Tomato puree",
+      "name": "tomato puree"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 Cooking spoons of Vegetable Oil",
+      "name": "vegetable oil"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "Cups",
+      "amount": 3.0,
+      "unitShort": "Cups",
+      "metaInformation": [],
+      "unit": "Cups",
+      "originalString": "3 Cups of water",
+      "name": "water"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Afrolems",
+  "license": "CC BY 4.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/how-to-make-party-jollof-rice-716298",
+  "weightWatcherSmartPoints": 14,
+  "id": 716298,
+  "image": "https://spoonacular.com/recipeImages/how-to-make-party-jollof-rice-716298.jpg",
+  "servings": 3,
+  "whole30": false,
+  "lowFodmap": false
+}

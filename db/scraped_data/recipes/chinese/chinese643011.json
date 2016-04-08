@@ -1,1 +1,209 @@
-{"vegetarian": false, "glutenFree": true, "title": "Five Spice Chinese Pork Stew", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/LNTFHNH5/five-spice-chinese-pork-stew", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>In a large pot, add the pork with the rest of the ingredients for boiling. Add water, enough the cover by pork by 1/2 inch.</li><li>Boil on medium heat until the pork is fork tender. Once done, remove the pork from the pot.</li><li>Reserve the stock and run it through a fine sieve to strain the impurities.</li><li>In a wok or large pan, heat the oil and add the garlic. Allow to toast but be careful not to burn it.</li><li>Add the shallots and the white onion and saute until it sweats and goes slightly limp. Add the ginger and fry until very fragrant. Remove around 1/4 of the onion and ginger and reserve for garnish.</li><li>Add the pork and mix everything well until the pork is lightly toasted, around 2-3 minutes. Add the pork stock (the water used to boil the pork), followed the the soy sauce.</li><li>Add in the remaining ingredients and mix well. Cover the pot and allow the stew to reduce for 2  3 minutes. Add the mushrooms and cook for another minute. Remove from pan and serve hot, garnished with the sauteed onions and ginger, and with a heaping scoop of rice. Enjoy!</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Spices and Seasonings", "unitLong": "tablespoons", "amount": 0.5, "unitShort": "T", "metaInformation": [], "unit": "tbsp", "originalString": "1/2 tbsp anise seed", "name": "anise seed"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tbsp", "originalString": "2 tbsp apple cider vinegar", "name": "apple cider vinegar"}, {"aisle": "Spices and Seasonings", "unitLong": "", "amount": 3.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "3-5 bay leaves", "name": "bay leaf"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2-4 celery stalks", "name": "celery stalks"}, {"aisle": "Spices and Seasonings", "unitLong": "tablespoons", "amount": 0.5, "unitShort": "T", "metaInformation": [], "unit": "tbsp", "originalString": "1/2 tbsp cracked pepper", "name": "cracked pepper"}, {"aisle": "Spices and Seasonings", "unitLong": "tablespoons", "amount": 12.0, "unitShort": "T", "metaInformation": [], "unit": "tbsp", "originalString": "1 /2 tbsp cracked pepper", "name": "cracked pepper"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "1/2 tsp Chinese five spice powder", "name": "five spice powder"}, {"aisle": "Produce", "unitLong": "head", "amount": 1.0, "unitShort": "head", "metaInformation": [], "unit": "head", "originalString": "1 head of garlic, minced", "name": "garlic"}, {"aisle": "Ethnic Foods", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 ginger, two inches in length, sliced into 1/4 inch slices", "name": "ginger"}, {"aisle": "Nut butters, Jams, and Honey", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tbsp", "originalString": "1 tbsp honey", "name": "honey"}, {"aisle": "Spices and Seasonings", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tbsp", "originalString": "1 tbsp iodized salt", "name": "iodized salt"}, {"aisle": "Ethnic Foods", "unitLong": "cups", "amount": 0.75, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "3/4 cup light soy sauce", "name": "light soy sauce"}, {"aisle": "Produce", "unitLong": "can", "amount": 1.0, "unitShort": "can", "metaInformation": [], "unit": "can", "originalString": "1 can whole mushrooms, sliced in half (it's chunkier that way)", "name": "mushrooms"}, {"aisle": "Meat", "unitLong": "kilograms", "amount": 1.5, "unitShort": "kilogram", "metaInformation": [], "unit": "kilogram", "originalString": "1 1/2 kilogram pork spareribs", "name": "pork spareribs"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 medium-sized shallots", "name": "shallots"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tbsp", "originalString": "2 tbsp vegetable oil", "name": "vegetable oil"}, {"aisle": "Beverages", "unitLong": "cups", "amount": 3.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "3 cups water", "name": "water"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 large white onion, sliced", "name": "white onion"}], "readyInMinutes": 45, "ketogenic": true, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/five-spice-chinese-pork-stew-643011", "weightWatcherSmartPoints": 27, "id": 643011, "image": "https://spoonacular.com/recipeImages/Five-Spice-Chinese-Pork-Stew-643011.jpg", "servings": 6, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Five Spice Chinese Pork Stew",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/LNTFHNH5/five-spice-chinese-pork-stew",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>In a large pot, add the pork with the rest of the ingredients for boiling. Add water, enough the cover by pork by 1/2 inch.</li><li>Boil on medium heat until the pork is fork tender. Once done, remove the pork from the pot.</li><li>Reserve the stock and run it through a fine sieve to strain the impurities.</li><li>In a wok or large pan, heat the oil and add the garlic. Allow to toast but be careful not to burn it.</li><li>Add the shallots and the white onion and saute until it sweats and goes slightly limp. Add the ginger and fry until very fragrant. Remove around 1/4 of the onion and ginger and reserve for garnish.</li><li>Add the pork and mix everything well until the pork is lightly toasted, around 2-3 minutes. Add the pork stock (the water used to boil the pork), followed the the soy sauce.</li><li>Add in the remaining ingredients and mix well. Cover the pot and allow the stew to reduce for 2  3 minutes. Add the mushrooms and cook for another minute. Remove from pan and serve hot, garnished with the sauteed onions and ginger, and with a heaping scoop of rice. Enjoy!</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoons",
+      "amount": 0.5,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tbsp",
+      "originalString": "1/2 tbsp anise seed",
+      "name": "anise seed"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tbsp",
+      "originalString": "2 tbsp apple cider vinegar",
+      "name": "cider vinegar"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "",
+      "amount": 3.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "3-5 bay leaves",
+      "name": "bay leaf"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "stalks",
+      "amount": 2.0,
+      "unitShort": "stalks",
+      "metaInformation": [],
+      "unit": "stalks",
+      "originalString": "2-4 celery stalks",
+      "name": "celery"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoons",
+      "amount": 0.5,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tbsp",
+      "originalString": "1/2 tbsp cracked pepper",
+      "name": "cracked pepper"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoons",
+      "amount": 12.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tbsp",
+      "originalString": "1 /2 tbsp cracked pepper",
+      "name": "cracked pepper"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1/2 tsp Chinese five spice powder",
+      "name": "five-spice powder"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "head",
+      "amount": 1.0,
+      "unitShort": "head",
+      "metaInformation": [],
+      "unit": "head",
+      "originalString": "1 head of garlic, minced",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 ginger, two inches in length, sliced into 1/4 inch slices",
+      "name": "ginger"
+    },
+    {
+      "aisle": "Nut butters, Jams, and Honey",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tbsp",
+      "originalString": "1 tbsp honey",
+      "name": "honey"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tbsp",
+      "originalString": "1 tbsp iodized salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "cups",
+      "amount": 0.75,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "3/4 cup light soy sauce",
+      "name": "soy sauce"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "can",
+      "amount": 1.0,
+      "unitShort": "can",
+      "metaInformation": [],
+      "unit": "can",
+      "originalString": "1 can whole mushrooms, sliced in half (it's chunkier that way)",
+      "name": "mushroom"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "kilograms",
+      "amount": 1.5,
+      "unitShort": "kilogram",
+      "metaInformation": [],
+      "unit": "kilogram",
+      "originalString": "1 1/2 kilogram pork spareribs",
+      "name": "pork spareribs"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 medium-sized shallots",
+      "name": "shallot"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tbsp",
+      "originalString": "2 tbsp vegetable oil",
+      "name": "vegetable oil"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "cups",
+      "amount": 3.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "3 cups water",
+      "name": "water"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 large white onion, sliced",
+      "name": "onion"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": true,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/five-spice-chinese-pork-stew-643011",
+  "weightWatcherSmartPoints": 27,
+  "id": 643011,
+  "image": "https://spoonacular.com/recipeImages/Five-Spice-Chinese-Pork-Stew-643011.jpg",
+  "servings": 6,
+  "whole30": false,
+  "lowFodmap": false
+}

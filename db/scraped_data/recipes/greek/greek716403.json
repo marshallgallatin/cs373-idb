@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "serving",
       "originalString": "extra-virgin olive oil, for serving",
-      "name": "extra-virgin olive oil"
+      "name": "olive oil"
     },
     {
       "aisle": "Cheese",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/3 cup plain Greek yogurt",
-      "name": "greek yogurt"
+      "name": "Greek yogurt"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "pinch",
       "originalString": "pinch of red pepper flakes",
-      "name": "red pepper flakes"
+      "name": "crushed red pepper"
     }
   ],
   "readyInMinutes": 45,

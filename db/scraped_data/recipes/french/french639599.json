@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "sprigs",
       "originalString": "3 sprigs fresh parsley",
-      "name": "fresh parsley"
+      "name": "parsley"
     },
     {
       "aisle": "Produce",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "pounds",
       "originalString": "2 pounds mussels, cleaned",
-      "name": "mussels"
+      "name": "mussel"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 shallots, finely chopped",
-      "name": "shallots"
+      "name": "shallot"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "4 tablespoons unsalted light butter, cut into pieces",
-      "name": "unsalted butter"
+      "name": "butter"
     }
   ],
   "readyInMinutes": 45,

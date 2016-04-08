@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "oz",
       "originalString": "6 cups baby spinach leaves (about 6 oz) rinsed, drained",
-      "name": "baby spinach leaves"
+      "name": "spinach"
     },
     {
       "aisle": "Meat",
@@ -29,7 +29,7 @@
       "unitShort": "lb",
       "metaInformation": [],
       "unit": "pound",
-      "originalString": "1/2 pound boned skinned chicken breast rinsed and cut into ¼\" strips",
+      "originalString": "1/2 pound boned skinned chicken breast rinsed and cut into 1/4\" strips",
       "name": "chicken breast"
     },
     {
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "5 large eggs (yolks and whites separated)",
-      "name": "eggs"
+      "name": "egg"
     },
     {
       "aisle": "Canned and Jarred",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons minced fresh ginger",
-      "name": "fresh ginger"
+      "name": "ginger"
     },
     {
       "aisle": "Produce",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup diced Roma tomato",
-      "name": "roma tomato"
+      "name": "tomato"
     },
     {
       "aisle": "Ethnic Foods",

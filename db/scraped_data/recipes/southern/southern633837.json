@@ -1,1 +1,69 @@
-{"vegetarian": false, "glutenFree": true, "title": "Baked Sweet Potato Fries", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/HDVQBNZX/baked-sweet-potato-fries", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Spray a 15 x 10 x 1 inch baking pan with nonstick coating. Scrub potatoes; cut lengthwise into quarters, then cut each quarter into 2 wedges. Arrange potatoes in a single layer in pan.</li><li>Combine margarine or butter, salt, and nutmeg. Brush onto potatoes. Bake in a 450 oven 20 minutes or until brown and tender.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Milk, Eggs, Other Dairy", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "T", "originalString": "1 -T margarine or butter, melted", "name": "margarine"}, {"aisle": "Spices and Seasonings", "unitLong": "dash", "amount": 1.0, "unitShort": "dash", "metaInformation": [], "unit": "dash", "originalString": "dash nutmeg", "name": "nutmeg"}, {"aisle": "Spices and Seasonings", "unitLong": "", "amount": 0.25, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1/4 -t seasoned salt", "name": "seasoned salt"}, {"aisle": "Produce", "unitLong": "pound", "amount": 1.0, "unitShort": "lb", "metaInformation": [], "unit": "lb", "originalString": "4 smalls sweet potatoes (about 1 lb)", "name": "sweet potatoes"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/baked-sweet-potato-fries-633837", "weightWatcherSmartPoints": 17, "id": 633837, "image": "https://spoonacular.com/recipeImages/Baked-Sweet-Potato-Fries-633837.jpg", "servings": 1, "whole30": true, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Baked Sweet Potato Fries",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/HDVQBNZX/baked-sweet-potato-fries",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Spray a 15 x 10 x 1 inch baking pan with nonstick coating. Scrub potatoes; cut lengthwise into quarters, then cut each quarter into 2 wedges. Arrange potatoes in a single layer in pan.</li><li>Combine margarine or butter, salt, and nutmeg. Brush onto potatoes. Bake in a 450 oven 20 minutes or until brown and tender.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "T",
+      "originalString": "1 -T margarine or butter, melted",
+      "name": "margarine"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "dash",
+      "amount": 1.0,
+      "unitShort": "dash",
+      "metaInformation": [],
+      "unit": "dash",
+      "originalString": "dash nutmeg",
+      "name": "nutmeg"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "",
+      "amount": 0.25,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/4 -t seasoned salt",
+      "name": "seasoned salt"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "lb",
+      "originalString": "4 smalls sweet potatoes (about 1 lb)",
+      "name": "sweet potato"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/baked-sweet-potato-fries-633837",
+  "weightWatcherSmartPoints": 17,
+  "id": 633837,
+  "image": "https://spoonacular.com/recipeImages/Baked-Sweet-Potato-Fries-633837.jpg",
+  "servings": 1,
+  "whole30": true,
+  "lowFodmap": false
+}

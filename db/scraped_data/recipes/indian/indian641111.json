@@ -1,1 +1,129 @@
-{"vegetarian": false, "glutenFree": false, "title": "Curry Beef Over Rice Noodles", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/PXR8MYRD/curry-beef-over-rice-noodles", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>In nonstick skillet, add oil and saut beef over medium-high heat for 3-4 min. Add red onions, garlic, saut for about 4 minutes. Add fresh ginger, sambal oelek, curry powder; cook, stirring, until fragrant, about 45 seconds.</li><li>Add soy sauce, lime juice and peanuts.  Saut another 30 seconds.  Server over rice noodles.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 teaspoons Curry Powder", "name": "curry powder"}, {"aisle": "Ethnic Foods", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon fresh ginger", "name": "fresh ginger"}, {"aisle": "Produce", "unitLong": "cloves", "amount": 2.0, "unitShort": "cloves", "metaInformation": [], "unit": "cloves", "originalString": "2 cloves of garlic", "name": "garlic"}, {"aisle": "Produce", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 teaspoons Lime juice", "name": "lime juice"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup red onions", "name": "red onions"}, {"aisle": "Gluten Free", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "rice noodles", "name": "rice noodles"}, {"aisle": "Savory Snacks", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup Natural roasted peanuts", "name": "roasted peanuts"}, {"aisle": "Meat", "unitLong": "pound", "amount": 1.0, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1 pound Black Angus Inside Round Steak (cut in thin slices)", "name": "round steak"}, {"aisle": "Ethnic Foods", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon Sambal Oelek", "name": "sambal oelek"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons Soy sauce", "name": "soy sauce"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/curry-beef-over-rice-noodles-641111", "weightWatcherSmartPoints": 15, "id": 641111, "image": "https://spoonacular.com/recipeImages/Curry-Beef-Over-Rice-Noodles-641111.jpg", "servings": 2, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Curry Beef Over Rice Noodles",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/PXR8MYRD/curry-beef-over-rice-noodles",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>In nonstick skillet, add oil and saut beef over medium-high heat for 3-4 min. Add red onions, garlic, saut for about 4 minutes. Add fresh ginger, sambal oelek, curry powder; cook, stirring, until fragrant, about 45 seconds.</li><li>Add soy sauce, lime juice and peanuts.  Saut another 30 seconds.  Server over rice noodles.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 teaspoons Curry Powder",
+      "name": "curry"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon fresh ginger",
+      "name": "ginger"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 2.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "2 cloves of garlic",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 teaspoons Lime juice",
+      "name": "lime juice"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup red onions",
+      "name": "onion"
+    },
+    {
+      "aisle": "Gluten Free",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "rice noodles",
+      "name": "rice noodles"
+    },
+    {
+      "aisle": "Savory Snacks",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup Natural roasted peanuts",
+      "name": "roasted peanuts"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1 pound Black Angus Inside Round Steak (cut in thin slices)",
+      "name": "round steak"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon Sambal Oelek",
+      "name": "sambal oelek"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons Soy sauce",
+      "name": "soy sauce"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/curry-beef-over-rice-noodles-641111",
+  "weightWatcherSmartPoints": 15,
+  "id": 641111,
+  "image": "https://spoonacular.com/recipeImages/Curry-Beef-Over-Rice-Noodles-641111.jpg",
+  "servings": 2,
+  "whole30": false,
+  "lowFodmap": false
+}

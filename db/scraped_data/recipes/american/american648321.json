@@ -1,1 +1,179 @@
-{"vegetarian": true, "glutenFree": false, "title": "Jade's New York Style Pizza", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/NYD7K84Z/jades-new-york-style-pizza", "sourceName": "Foodista", "vegan": true, "sustainable": false, "instructions": "<ol><li>Prepare your toppings to taste.</li><li>The sauce:</li><li>Saute the onions and garlic in olive oil until soft.   Add the tomatoes, wine, herbs, salt and sugar. Bring to a boil, lower heat and simmer for 2 hours, stirring occasionally,  or until sauce is very thick.</li><li>The crust:</li><li>Mix together the flour and salt.  Dissolve the yeast in the water and add the pinch of sugar. When the yeast starts to clump and rise to the surface of the water, stir and add to the flour.  Blend well.</li><li>Knead the dough with the kitchen aid dough hook for 5 minutes or by hand for an agonizing 10 minutes. Divide the dough in half and form two balls.  Oil two bowls with the olive oil and put the dough balls inside, turning to coat with oil.   Cover and let rise for 1 1/2 hour.   Punch the balls flat, then form into balls again and wrap with saran wrap.   Allow to rise again for 1 hour.   Spray Pam or spread olive oil onto (2)  12 inch pizza pans.  Flatten each dough ball onto the center of the pan and press the dough outward until it covers the pan.</li><li>Preheat oven to 400 degrees.   Cover the pizza crusts first with sauce, then cheese, then any vegetable toppings, then cheese again and lastly any meat toppings.  Bake for 15 to 20 minutes.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Baking", "unitLong": "cups", "amount": 4.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "4 cups of all purpose flour", "name": "all purpose flour"}, {"aisle": "Canned and Jarred", "unitLong": "cans", "amount": 2.0, "unitShort": "cans", "metaInformation": [], "unit": "cans", "originalString": "2 large cans of peeled tomatoes", "name": "canned tomatoes"}, {"aisle": "Baking", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 teaspoons dry yeast", "name": "dry yeast"}, {"aisle": "Produce", "unitLong": "cloves", "amount": 4.0, "unitShort": "cloves", "metaInformation": [], "unit": "cloves", "originalString": "4 cloves large of garlic, chopped", "name": "garlic"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons Olive oil", "name": "olive oil"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 large onions, chopped", "name": "onions"}, {"aisle": "Alcoholic Beverages", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup of red wine", "name": "red wine"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon each rosemary, thyme, basil, oregano", "name": "rosemary"}, {"aisle": "Baking", "unitLong": "cups", "amount": 6.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "6 cups Sugar", "name": "sugar"}, {"aisle": "Beverages", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "cups of warm water", "name": "water"}, {"aisle": "Spices and Seasonings", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "Salt, white pepper", "name": "white salt"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/jades-new-york-style-pizza-648321", "weightWatcherSmartPoints": 353, "id": 648321, "image": "https://spoonacular.com/recipeImages/Jades-New-York-Style-Pizza-648321.jpg", "servings": 1, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": false,
+  "title": "Jade's New York Style Pizza",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/NYD7K84Z/jades-new-york-style-pizza",
+  "sourceName": "Foodista",
+  "vegan": true,
+  "sustainable": false,
+  "instructions": "<ol><li>Prepare your toppings to taste.</li><li>The sauce:</li><li>Saute the onions and garlic in olive oil until soft.   Add the tomatoes, wine, herbs, salt and sugar. Bring to a boil, lower heat and simmer for 2 hours, stirring occasionally,  or until sauce is very thick.</li><li>The crust:</li><li>Mix together the flour and salt.  Dissolve the yeast in the water and add the pinch of sugar. When the yeast starts to clump and rise to the surface of the water, stir and add to the flour.  Blend well.</li><li>Knead the dough with the kitchen aid dough hook for 5 minutes or by hand for an agonizing 10 minutes. Divide the dough in half and form two balls.  Oil two bowls with the olive oil and put the dough balls inside, turning to coat with oil.   Cover and let rise for 1 1/2 hour.   Punch the balls flat, then form into balls again and wrap with saran wrap.   Allow to rise again for 1 hour.   Spray Pam or spread olive oil onto (2)  12 inch pizza pans.  Flatten each dough ball onto the center of the pan and press the dough outward until it covers the pan.</li><li>Preheat oven to 400 degrees.   Cover the pizza crusts first with sauce, then cheese, then any vegetable toppings, then cheese again and lastly any meat toppings.  Bake for 15 to 20 minutes.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 4.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "4 cups of all purpose flour",
+      "name": "flour"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "cans",
+      "amount": 2.0,
+      "unitShort": "cans",
+      "metaInformation": [],
+      "unit": "cans",
+      "originalString": "2 large cans of peeled tomatoes",
+      "name": "canned tomatoes"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 teaspoons dry yeast",
+      "name": "yeast"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 4.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "4 cloves large of garlic, chopped",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons Olive oil",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 large onions, chopped",
+      "name": "onion"
+    },
+    {
+      "aisle": "Alcoholic Beverages",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup of red wine",
+      "name": "red wine"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon rosemary",
+      "name": "rosemary"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon thyme",
+      "name": "thyme"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon basil",
+      "name": "basil"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon oregano",
+      "name": "oregano"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 6.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "6 cups Sugar",
+      "name": "sugar"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "cups of warm water",
+      "name": "water"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "Salt, white pepper",
+      "name": "salt"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "white pepper",
+      "name": "white pepper"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/jades-new-york-style-pizza-648321",
+  "weightWatcherSmartPoints": 353,
+  "id": 648321,
+  "image": "https://spoonacular.com/recipeImages/Jades-New-York-Style-Pizza-648321.jpg",
+  "servings": 1,
+  "whole30": false,
+  "lowFodmap": false
+}

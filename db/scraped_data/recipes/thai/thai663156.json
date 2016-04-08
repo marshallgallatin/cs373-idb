@@ -1,1 +1,119 @@
-{"vegetarian": false, "glutenFree": true, "title": "Thai Stir-Fry Chicken With Cashew Nuts", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/5QBGSZJN/thai-stir-fry-chicken-with-cashew-nuts", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>On medium flame, fry the garlic until fragrant and not brown.</li><li>Add in the chicken and cook until nearly done. Then, add in Thai chili paste and stir well. Add a bit less than recommended if you cant take spiciness.</li><li>Add in the onion, cashew nuts, dry chilies and spring onion. Give it a good mix and cook for  about 2 minutes.</li><li>Then, season with soya sauce. Add in dark soya sauce to sweeten the dish and give it a little bit of colour. Serve warm.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Nuts", "unitLong": "handful", "amount": 1.0, "unitShort": "handful", "metaInformation": [], "unit": "handful", "originalString": "A handful of cashew nuts", "name": "cashew nuts"}, {"aisle": "Meat", "unitLong": "pounds", "amount": 0.75, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "300-350g Chicken breast or thighs (about 3/4 pound)", "name": "chicken breast"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon chili paste", "name": "chili paste"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoons", "amount": 0.5, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1/2 tablespoon Dark soy sauce", "name": "dark soy sauce"}, {"aisle": "Produce", "unitLong": "servings", "amount": 3.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Dried chilies", "name": "dried chilies"}, {"aisle": "Produce", "unitLong": "cloves", "amount": 2.0, "unitShort": "cloves", "metaInformation": [], "unit": "cloves", "originalString": "2 cloves garlic, minced", "name": "garlic"}, {"aisle": "Produce", "unitLong": "stalk", "amount": 1.0, "unitShort": "stalk", "metaInformation": [], "unit": "stalk", "originalString": "1 stalk green onion", "name": "green onion"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 onion (cut into wedges)", "name": "onion"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon soy sauce", "name": "soy sauce"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/thai-stir-fry-chicken-with-cashew-nuts-663156", "weightWatcherSmartPoints": 4, "id": 663156, "image": "https://spoonacular.com/recipeImages/Thai-Stir-Fry-Chicken-With-Cashew-Nuts-663156.jpg", "servings": 3, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Thai Stir-Fry Chicken With Cashew Nuts",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/5QBGSZJN/thai-stir-fry-chicken-with-cashew-nuts",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>On medium flame, fry the garlic until fragrant and not brown.</li><li>Add in the chicken and cook until nearly done. Then, add in Thai chili paste and stir well. Add a bit less than recommended if you cant take spiciness.</li><li>Add in the onion, cashew nuts, dry chilies and spring onion. Give it a good mix and cook for  about 2 minutes.</li><li>Then, season with soya sauce. Add in dark soya sauce to sweeten the dish and give it a little bit of colour. Serve warm.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Nuts",
+      "unitLong": "handful",
+      "amount": 1.0,
+      "unitShort": "handful",
+      "metaInformation": [],
+      "unit": "handful",
+      "originalString": "A handful of cashew nuts",
+      "name": "cashew"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pounds",
+      "amount": 0.75,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "300-350g Chicken breast or thighs (about 3/4 pound)",
+      "name": "chicken breast"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon chili paste",
+      "name": "chili paste"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoons",
+      "amount": 0.5,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1/2 tablespoon Dark soy sauce",
+      "name": "soy sauce"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "servings",
+      "amount": 3.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Dried chilies",
+      "name": "dried chili peppers"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 2.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "2 cloves garlic, minced",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "stalk",
+      "amount": 1.0,
+      "unitShort": "stalk",
+      "metaInformation": [],
+      "unit": "stalk",
+      "originalString": "1 stalk green onion",
+      "name": "green onion"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 onion (cut into wedges)",
+      "name": "onion"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon soy sauce",
+      "name": "soy sauce"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/thai-stir-fry-chicken-with-cashew-nuts-663156",
+  "weightWatcherSmartPoints": 4,
+  "id": 663156,
+  "image": "https://spoonacular.com/recipeImages/Thai-Stir-Fry-Chicken-With-Cashew-Nuts-663156.jpg",
+  "servings": 3,
+  "whole30": false,
+  "lowFodmap": false
+}

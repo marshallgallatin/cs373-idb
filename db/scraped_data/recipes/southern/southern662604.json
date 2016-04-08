@@ -1,1 +1,129 @@
-{"vegetarian": true, "glutenFree": true, "title": "Sweet Potato, Kale and White Bean Soup", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/ZDB48SVB/sweet-potato-kale-white-bean-soup", "sourceName": "Foodista", "vegan": true, "sustainable": false, "instructions": "<ol><li>In a large pot, heat the grapeseed oil over medium high and add the sweet potato. Saut the sweet potato, stirring consistently about 5 minutes before adding the onion. Saut about 8 minutes then add a splash of chicken broth to help steam the sweet potato and onion (the chicken broth should sizzle when it hits the pot). Continue cooking until sweet potato is softened but still al dente, another 5 minutes or so.</li><li>Add all of the chicken broth, white wine, cannellini beans and the oregano and thyme. Stir well and bring to a boil. Reduce heat to medium low and simmer covered about 10 minutes. Add the chopped kale leaves, stir, cover again and cook another 5 minutes until kale leaves are softened. Taste the soup and add salt and ground black pepper to taste.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Canned and Jarred", "unitLong": "ounces", "amount": 15.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "1 can cannellini beans (15 ounces)", "name": "canned cannellini beans"}, {"aisle": "Canned and Jarred", "unitLong": "quart", "amount": 1.0, "unitShort": "quart", "metaInformation": [], "unit": "quart", "originalString": "1 quart chicken broth (or vegetable broth)", "name": "chicken broth"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon dried Oregano", "name": "dried oregano"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon grapeseed oil", "name": "grapeseed oil"}, {"aisle": "Produce", "unitLong": "head", "amount": 1.0, "unitShort": "head", "metaInformation": [], "unit": "head", "originalString": "1 head red kale, stems removed, leaves chopped", "name": "kale"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 4.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Salt & ground black pepper", "name": "ground pepper"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 medium sweet potato, peel on, chopped into \u00bd\u201d cubes", "name": "sweet potato"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.25, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "\u00bc teaspoon Thyme", "name": "thyme"}, {"aisle": "Alcoholic Beverages", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "\u00bd cup white wine (I used chardonnay)", "name": "white wine"}, {"aisle": "Produce", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1/2 yellow onion, chopped up", "name": "yellow onion"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/sweet-potato-kale-white-bean-soup-662604", "weightWatcherSmartPoints": 6, "id": 662604, "image": "https://spoonacular.com/recipeImages/Sweet-Potato--Kale---White-Bean-Soup-662604.jpg", "servings": 4, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": true,
+  "title": "Sweet Potato, Kale and White Bean Soup",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/ZDB48SVB/sweet-potato-kale-white-bean-soup",
+  "sourceName": "Foodista",
+  "vegan": true,
+  "sustainable": false,
+  "instructions": "<ol><li>In a large pot, heat the grapeseed oil over medium high and add the sweet potato. Saut the sweet potato, stirring consistently about 5 minutes before adding the onion. Saut about 8 minutes then add a splash of chicken broth to help steam the sweet potato and onion (the chicken broth should sizzle when it hits the pot). Continue cooking until sweet potato is softened but still al dente, another 5 minutes or so.</li><li>Add all of the chicken broth, white wine, cannellini beans and the oregano and thyme. Stir well and bring to a boil. Reduce heat to medium low and simmer covered about 10 minutes. Add the chopped kale leaves, stir, cover again and cook another 5 minutes until kale leaves are softened. Taste the soup and add salt and ground black pepper to taste.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "ounces",
+      "amount": 15.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "1 can cannellini beans (15 ounces)",
+      "name": "canned cannellini beans"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "quart",
+      "amount": 1.0,
+      "unitShort": "quart",
+      "metaInformation": [],
+      "unit": "quart",
+      "originalString": "1 quart chicken broth (or vegetable broth)",
+      "name": "chicken broth"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon dried Oregano",
+      "name": "oregano"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon grapeseed oil",
+      "name": "grapeseed oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "head",
+      "amount": 1.0,
+      "unitShort": "head",
+      "metaInformation": [],
+      "unit": "head",
+      "originalString": "1 head red kale, stems removed, leaves chopped",
+      "name": "kale"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 4.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Salt & ground black pepper",
+      "name": "black pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 medium sweet potato, peel on, chopped into 1/2” cubes",
+      "name": "sweet potato"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.25,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/4 teaspoon Thyme",
+      "name": "thyme"
+    },
+    {
+      "aisle": "Alcoholic Beverages",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup white wine (I used chardonnay)",
+      "name": "white wine"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 yellow onion, chopped up",
+      "name": "onion"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/sweet-potato-kale-white-bean-soup-662604",
+  "weightWatcherSmartPoints": 6,
+  "id": 662604,
+  "image": "https://spoonacular.com/recipeImages/Sweet-Potato--Kale---White-Bean-Soup-662604.jpg",
+  "servings": 4,
+  "whole30": false,
+  "lowFodmap": false
+}

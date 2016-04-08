@@ -1,1 +1,209 @@
-{"vegetarian": false, "glutenFree": false, "title": "Cajun Seafood and Andouille Sausage Gumbo", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/SQBW5QGT/cajun-seafood-and-andouille-sausage-gumbo", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>1. In a small bowl, combine the seasoning ingredients and set aside.</li><li>2. In a medium bowl, combine the onions, peppers and celeryand set aside.</li><li>3. In a lightly oiled 5  quart Dutch oven, brown the sausage rounds over medium high heat and set aside.</li><li>4. Add the  C oil and when it starts to smoke, slowly combine the flour and cook while whisking until the roux reaches a dark reddish brown color.</li><li>5. Immediately add half of the vegetables and stir in for 1 minute. Then add the remaining vegetables, mix thoroughly and cook for 2 more minutes.</li><li>6. Add the seasoning mix, stir in well and cook 2 more minutes or so. Then add the garlic, stir in and cook for another minute.</li><li>7. Add the fish stock or clam juice and, mix well, bring to a boil and reduce to a simmer; then simmer this for about 30 minutes covered.</li><li>8. Add the reserved browned sausage rounds, the crab, shrimps and oysters with their liquid and cook over medium heat for about 10 minutes stirring occasionally.</li></ol>", "aggregateLikes": 5, "dairyFree": true, "extendedIngredients": [{"aisle": "Meat", "unitLong": "ounces", "amount": 9.0, "unitShort": "oz", "metaInformation": [], "unit": "oz", "originalString": "9 oz andouille sausage, cut into \u00bd inch rounds", "name": "andouille sausage"}, {"aisle": "Spices and Seasonings", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 bay leaves, left whole", "name": "bay leaf"}, {"aisle": "Produce", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "t", "originalString": "\u00bd t white pepper", "name": "bell pepper"}, {"aisle": "Spices and Seasonings", "unitLong": "Tablespoon", "amount": 1.0, "unitShort": "Tablespoon", "metaInformation": [], "unit": "Tablespoon", "originalString": "1 Tablespoon Black Pepper", "name": "black pepper"}, {"aisle": "Spices and Seasonings", "unitLong": "Tablespoon", "amount": 1.0, "unitShort": "Tablespoon", "metaInformation": [], "unit": "Tablespoon", "originalString": "1 Tablespoon Cayenne Pepper", "name": "cayenne pepper"}, {"aisle": "Produce", "unitLong": "stalks", "amount": 3.0, "unitShort": "stalks", "metaInformation": [], "unit": "stalks", "originalString": "3 stalks celery, cut into 1 inch pieces", "name": "celery"}, {"aisle": "Canned and Jarred", "unitLong": "Cs", "amount": 3.0, "unitShort": "C", "metaInformation": [], "unit": "C", "originalString": "3 C fish stock or clam juice", "name": "clam juice"}, {"aisle": "Pasta and Rice", "unitLong": "Cs", "amount": 2.0, "unitShort": "C", "metaInformation": [], "unit": "C", "originalString": "2 C white rice, cooked, washed and drained", "name": "cooked white rice"}, {"aisle": "Seafood", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "\u00bd # canned or fresh crab meat", "name": "crab meat"}, {"aisle": "Spices and Seasonings", "unitLong": "Tablespoon", "amount": 1.0, "unitShort": "Tablespoon", "metaInformation": [], "unit": "Tablespoon", "originalString": "1 Tablespoon Dried Oregano", "name": "dried oregano"}, {"aisle": "Spices and Seasonings", "unitLong": "Tablespoon", "amount": 1.0, "unitShort": "Tablespoon", "metaInformation": [], "unit": "Tablespoon", "originalString": "1 Tablespoon Dried Thyme", "name": "dried thyme"}, {"aisle": "Produce", "unitLong": "cloves", "amount": 3.0, "unitShort": "cloves", "metaInformation": [], "unit": "cloves", "originalString": "3 large cloves of garlic, chopped", "name": "garlic"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 jalapeno pepper, seeded", "name": "jalapeno pepper"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 red or orange Bell pepper, chopped coarse", "name": "orange bell pepper"}, {"aisle": "Seafood", "unitLong": "ounces", "amount": 10.0, "unitShort": "oz", "metaInformation": [], "unit": "oz", "originalString": "1 10 oz jar of oysters or 8-10 oysters with their juices", "name": "oysters"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "Cs", "amount": 0.5, "unitShort": "C", "metaInformation": [], "unit": "C", "originalString": "\u00bd C peanut oil", "name": "peanut oil"}, {"aisle": "Seafood", "unitLong": "pound", "amount": 1.0, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1 pound shrimp", "name": "shrimp"}, {"aisle": "Baking", "unitLong": "Cs", "amount": 0.5, "unitShort": "C", "metaInformation": [], "unit": "C", "originalString": "\u00bd C white flour", "name": "white flour"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/cajun-seafood-and-andouille-sausage-gumbo-636736", "weightWatcherSmartPoints": 25, "id": 636736, "image": "https://spoonacular.com/recipeImages/Cajun-Seafood-and-Andouille-Sausage-Gumbo-636736.jpg", "servings": 4, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Cajun Seafood and Andouille Sausage Gumbo",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/SQBW5QGT/cajun-seafood-and-andouille-sausage-gumbo",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>1. In a small bowl, combine the seasoning ingredients and set aside.</li><li>2. In a medium bowl, combine the onions, peppers and celeryand set aside.</li><li>3. In a lightly oiled 5  quart Dutch oven, brown the sausage rounds over medium high heat and set aside.</li><li>4. Add the  C oil and when it starts to smoke, slowly combine the flour and cook while whisking until the roux reaches a dark reddish brown color.</li><li>5. Immediately add half of the vegetables and stir in for 1 minute. Then add the remaining vegetables, mix thoroughly and cook for 2 more minutes.</li><li>6. Add the seasoning mix, stir in well and cook 2 more minutes or so. Then add the garlic, stir in and cook for another minute.</li><li>7. Add the fish stock or clam juice and, mix well, bring to a boil and reduce to a simmer; then simmer this for about 30 minutes covered.</li><li>8. Add the reserved browned sausage rounds, the crab, shrimps and oysters with their liquid and cook over medium heat for about 10 minutes stirring occasionally.</li></ol>",
+  "aggregateLikes": 5,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Meat",
+      "unitLong": "ounces",
+      "amount": 9.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "oz",
+      "originalString": "9 oz andouille sausage, cut into 1/2 inch rounds",
+      "name": "andouille sausage"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 bay leaves, left whole",
+      "name": "bay leaf"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "t",
+      "originalString": "1/2 t white pepper",
+      "name": "green bell pepper"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "Tablespoon",
+      "amount": 1.0,
+      "unitShort": "Tablespoon",
+      "metaInformation": [],
+      "unit": "Tablespoon",
+      "originalString": "1 Tablespoon Black Pepper",
+      "name": "black pepper"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "Tablespoon",
+      "amount": 1.0,
+      "unitShort": "Tablespoon",
+      "metaInformation": [],
+      "unit": "Tablespoon",
+      "originalString": "1 Tablespoon Cayenne Pepper",
+      "name": "cayenne pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "stalks",
+      "amount": 3.0,
+      "unitShort": "stalks",
+      "metaInformation": [],
+      "unit": "stalks",
+      "originalString": "3 stalks celery, cut into 1 inch pieces",
+      "name": "celery"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "Cs",
+      "amount": 3.0,
+      "unitShort": "C",
+      "metaInformation": [],
+      "unit": "C",
+      "originalString": "3 C fish stock or clam juice",
+      "name": "clam juice"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "Cs",
+      "amount": 2.0,
+      "unitShort": "C",
+      "metaInformation": [],
+      "unit": "C",
+      "originalString": "2 C white rice, cooked, washed and drained",
+      "name": "cooked rice"
+    },
+    {
+      "aisle": "Seafood",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 # canned or fresh crab meat",
+      "name": "crab meat"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "Tablespoon",
+      "amount": 1.0,
+      "unitShort": "Tablespoon",
+      "metaInformation": [],
+      "unit": "Tablespoon",
+      "originalString": "1 Tablespoon Dried Oregano",
+      "name": "oregano"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "Tablespoon",
+      "amount": 1.0,
+      "unitShort": "Tablespoon",
+      "metaInformation": [],
+      "unit": "Tablespoon",
+      "originalString": "1 Tablespoon Dried Thyme",
+      "name": "dried thyme"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 3.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "3 large cloves of garlic, chopped",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 jalapeno pepper, seeded",
+      "name": "jalapeno"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 red or orange Bell pepper, chopped coarse",
+      "name": "orange bell pepper"
+    },
+    {
+      "aisle": "Seafood",
+      "unitLong": "ounces",
+      "amount": 10.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "oz",
+      "originalString": "1 10 oz jar of oysters or 8-10 oysters with their juices",
+      "name": "canned oysters"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "Cs",
+      "amount": 0.5,
+      "unitShort": "C",
+      "metaInformation": [],
+      "unit": "C",
+      "originalString": "1/2 C peanut oil",
+      "name": "peanut oil"
+    },
+    {
+      "aisle": "Seafood",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1 pound shrimp",
+      "name": "shrimp"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "Cs",
+      "amount": 0.5,
+      "unitShort": "C",
+      "metaInformation": [],
+      "unit": "C",
+      "originalString": "1/2 C white flour",
+      "name": "flour"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/cajun-seafood-and-andouille-sausage-gumbo-636736",
+  "weightWatcherSmartPoints": 25,
+  "id": 636736,
+  "image": "https://spoonacular.com/recipeImages/Cajun-Seafood-and-Andouille-Sausage-Gumbo-636736.jpg",
+  "servings": 4,
+  "whole30": false,
+  "lowFodmap": false
+}

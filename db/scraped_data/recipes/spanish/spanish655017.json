@@ -1,1 +1,239 @@
-{"vegetarian": false, "glutenFree": true, "title": "Patti's Paella", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/5K5DD5FJ/pattis-paella", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Mix together paprika, cumin, rosemary, thyme, salt, and pepper and sprinkle on the chicken chunks.  Marinate in the refrigerator for at least 1 hour.</li><li>Heat oil in a large Dutch oven or deep pot on a medium high heat.  Add chorizo,chicken and the remaining spice mixture and cook until browned.  Drain excess oil.</li><li>Add onion, red and green pepper, garlic.  Cook on medium heat, stirring until softened.</li><li>Add rice, saffron, tomato, and bay leaf.  Stir to combine and coat the rice.</li><li>Add chicken stock and white wine, and bring to a boil.  Stir to blend flavors. Cover.  Cook on low for approximately 20 minutes.</li><li>In the remaining 10 minutes, add the peas, shrimp and all other seafood.  Bury the seafood deep into the rice and stir.  Cover.</li><li>When the rice is tender, let the dish sit for a minute in the pot before serving. Garnish on a platter with lemon wedges.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Spices and Seasonings", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 bay leaf", "name": "bay leaf"}, {"aisle": "Meat", "unitLong": "pounds", "amount": 1.5, "unitShort": "lb", "metaInformation": [], "unit": "pounds", "originalString": "1 1/2 pounds chicken breasts cut into chunks or whole chic", "name": "chicken breasts"}, {"aisle": "Canned and Jarred", "unitLong": "cups", "amount": 3.5, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "3 1/2 cups chicken stock", "name": "chicken stock"}, {"aisle": "Meat", "unitLong": "ounces", "amount": 14.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "14 ounces chorizo", "name": "chorizo"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 6.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "coarse salt and pepper", "name": "coarse salt"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon cumin", "name": "cumin"}, {"aisle": "Produce", "unitLong": "cloves", "amount": 2.0, "unitShort": "cloves", "metaInformation": [], "unit": "cloves", "originalString": "2 cloves garlic, chopped", "name": "garlic"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 green pepper, chopped", "name": "green bell pepper"}, {"aisle": "Produce", "unitLong": "servings", "amount": 6.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "lemon wedges", "name": "lemon wedges"}, {"aisle": "Pasta and Rice", "unitLong": "cups", "amount": 2.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "2 cups short or medium grain rice", "name": "long-grain rice"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup olive oil", "name": "olive oil"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 medium onion, chopped", "name": "onion"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon paprika or pimenton", "name": "paprika"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup frozen peas", "name": "peas"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 red pepper, chopped", "name": "red bell pepper"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon rosemary", "name": "rosemary"}, {"aisle": "Ethnic Foods", "unitLong": "pinch", "amount": 1.0, "unitShort": "pinch", "metaInformation": [], "unit": "pinch", "originalString": "1 pinch saffron threads", "name": "saffron threads"}, {"aisle": "Seafood", "unitLong": "pound", "amount": 1.0, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1 pound shrimp with tails on", "name": "shrimp"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon thyme", "name": "thyme"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 tomato, chopped", "name": "tomato"}, {"aisle": "Alcoholic Beverages", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup white wine", "name": "white wine"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/pattis-paella-655017", "weightWatcherSmartPoints": 27, "id": 655017, "image": "https://spoonacular.com/recipeImages/Pattis-Paella-655017.jpg", "servings": 6, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Patti's Paella",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/5K5DD5FJ/pattis-paella",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Mix together paprika, cumin, rosemary, thyme, salt, and pepper and sprinkle on the chicken chunks.  Marinate in the refrigerator for at least 1 hour.</li><li>Heat oil in a large Dutch oven or deep pot on a medium high heat.  Add chorizo,chicken and the remaining spice mixture and cook until browned.  Drain excess oil.</li><li>Add onion, red and green pepper, garlic.  Cook on medium heat, stirring until softened.</li><li>Add rice, saffron, tomato, and bay leaf.  Stir to combine and coat the rice.</li><li>Add chicken stock and white wine, and bring to a boil.  Stir to blend flavors. Cover.  Cook on low for approximately 20 minutes.</li><li>In the remaining 10 minutes, add the peas, shrimp and all other seafood.  Bury the seafood deep into the rice and stir.  Cover.</li><li>When the rice is tender, let the dish sit for a minute in the pot before serving. Garnish on a platter with lemon wedges.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 bay leaf",
+      "name": "bay leaf"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pounds",
+      "amount": 1.5,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pounds",
+      "originalString": "1 1/2 pounds chicken breasts cut into chunks or whole chic",
+      "name": "chicken breasts"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "cups",
+      "amount": 3.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "3 1/2 cups chicken stock",
+      "name": "chicken stock"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "ounces",
+      "amount": 14.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "14 ounces chorizo",
+      "name": "chorizo"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 6.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "coarse salt and pepper",
+      "name": "kosher salt"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon cumin",
+      "name": "cumin"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 2.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "2 cloves garlic, chopped",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 green pepper, chopped",
+      "name": "green bell pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "servings",
+      "amount": 6.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "lemon wedges",
+      "name": "lemon"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 cups short or medium grain rice",
+      "name": "short-grain rice"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup olive oil",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 medium onion, chopped",
+      "name": "onion"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon paprika or pimenton",
+      "name": "paprika"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup frozen peas",
+      "name": "frozen peas"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 red pepper, chopped",
+      "name": "red bell pepper"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon rosemary",
+      "name": "rosemary"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "pinch",
+      "amount": 1.0,
+      "unitShort": "pinch",
+      "metaInformation": [],
+      "unit": "pinch",
+      "originalString": "1 pinch saffron threads",
+      "name": "saffron threads"
+    },
+    {
+      "aisle": "Seafood",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1 pound shrimp with tails on",
+      "name": "shrimp"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon thyme",
+      "name": "thyme"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 tomato, chopped",
+      "name": "tomato"
+    },
+    {
+      "aisle": "Alcoholic Beverages",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup white wine",
+      "name": "white wine"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/pattis-paella-655017",
+  "weightWatcherSmartPoints": 27,
+  "id": 655017,
+  "image": "https://spoonacular.com/recipeImages/Pattis-Paella-655017.jpg",
+  "servings": 6,
+  "whole30": false,
+  "lowFodmap": false
+}

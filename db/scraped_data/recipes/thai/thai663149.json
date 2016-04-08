@@ -1,1 +1,139 @@
-{"vegetarian": false, "glutenFree": true, "title": "Thai Sausage Salad", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/L22RPP5R/thai-sausage-salad", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>In a small bowl, combine the dressing ingredients and stir until the sugar has dissolved. Taste and adjust with more sugar or fish sauce if needed (some limes are more tart than others). Set aside.</li><li>Slice the sausage thinly on the diagonal. Place in a non stick skillet over medium heat and saut until the edges are slightly browned and sausage is cooked thru, about 5 minutes. Dont over cook. Set aside to cool</li><li>Peel the cucumbers, slice thinly and place in a large bowl. Thinly slice the green onions on the diagonal and add to the bowl. Add the bean sprouts, cooked sausage and the dressing. Lightly toss and serve on plates with jasmine rice on the same plate. Garnish with a few slivers of sliced hot chili pepper, if desired, and a few leaves of fresh parsley or cilantro.</li><li>Serves 2 as a main course salad.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Pasta and Rice", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Cooked jasmine rice", "name": "cooked jasmine rice"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 large cucumbers", "name": "cucumbers"}, {"aisle": "Meat", "unitLong": "", "amount": 6.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "6 Chinese sausages", "name": "elk sausages"}, {"aisle": "Produce", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup fresh bean sprouts", "name": "fresh bean sprouts"}, {"aisle": "Produce", "unitLong": "leave", "amount": 1.0, "unitShort": "leaves", "metaInformation": [], "unit": "leaves", "originalString": "Fresh flat leaf parsley or cilantro leaves for garnish", "name": "fresh cilantro leaves"}, {"aisle": "Baking", "unitLong": "teaspoons", "amount": 3.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "3 teaspoons granulated sugar", "name": "granulated sugar"}, {"aisle": "Produce", "unitLong": "", "amount": 4.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "4 green onions", "name": "green onions"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup fresh lime juice", "name": "lime juice"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 thinly sliced hot, fresh red chili pepper (optional)", "name": "red chili pepper"}, {"aisle": "Ethnic Foods", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 teaspoons soy sauce", "name": "soy sauce"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons Thai fish sauce", "name": "thai fish sauce"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/thai-sausage-salad-663149", "weightWatcherSmartPoints": 6, "id": 663149, "image": "https://spoonacular.com/recipeImages/Thai-Sausage-Salad-663149.jpg", "servings": 2, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Thai Sausage Salad",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/L22RPP5R/thai-sausage-salad",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>In a small bowl, combine the dressing ingredients and stir until the sugar has dissolved. Taste and adjust with more sugar or fish sauce if needed (some limes are more tart than others). Set aside.</li><li>Slice the sausage thinly on the diagonal. Place in a non stick skillet over medium heat and saut until the edges are slightly browned and sausage is cooked thru, about 5 minutes. Dont over cook. Set aside to cool</li><li>Peel the cucumbers, slice thinly and place in a large bowl. Thinly slice the green onions on the diagonal and add to the bowl. Add the bean sprouts, cooked sausage and the dressing. Lightly toss and serve on plates with jasmine rice on the same plate. Garnish with a few slivers of sliced hot chili pepper, if desired, and a few leaves of fresh parsley or cilantro.</li><li>Serves 2 as a main course salad.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Cooked jasmine rice",
+      "name": "cooked rice"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 large cucumbers",
+      "name": "cucumber"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "",
+      "amount": 6.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "6 Chinese sausages",
+      "name": "Chinese sausages"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup fresh bean sprouts",
+      "name": "bean sprout"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "leave",
+      "amount": 1.0,
+      "unitShort": "leaves",
+      "metaInformation": [],
+      "unit": "leaves",
+      "originalString": "Fresh flat leaf parsley or cilantro leaves for garnish",
+      "name": "cilantro"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "teaspoons",
+      "amount": 3.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "3 teaspoons granulated sugar",
+      "name": "sugar"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 4.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "4 green onions",
+      "name": "green onion"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup fresh lime juice",
+      "name": "lime juice"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 thinly sliced hot, fresh red chili pepper (optional)",
+      "name": "red pepper"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 teaspoons soy sauce",
+      "name": "soy sauce"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons Thai fish sauce",
+      "name": "fish sauce"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/thai-sausage-salad-663149",
+  "weightWatcherSmartPoints": 6,
+  "id": 663149,
+  "image": "https://spoonacular.com/recipeImages/Thai-Sausage-Salad-663149.jpg",
+  "servings": 2,
+  "whole30": false,
+  "lowFodmap": false
+}

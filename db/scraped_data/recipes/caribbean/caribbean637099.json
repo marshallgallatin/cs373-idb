@@ -1,1 +1,159 @@
-{"vegetarian": true, "glutenFree": true, "title": "Caribbean black bean and sweet potato soup", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/4YVH7XVD/caribbean-black-bean-and-sweet-potato-soup", "sourceName": "Foodista", "vegan": true, "sustainable": false, "instructions": "<ol><li>Rinse beans and place in a large bowl. Cover beans with   4 inches of water and soak overnight (or 8 hours). Strain and rinse black beans.</li><li>In a large soup pot, heat the oil over medium heat. Add onion and jalapeno and saut for 10 minutes, until soft.</li><li>Add beans and vegetable broth or water. Stir in ginger, allspice, thyme and salt. Bring to a boil, then reduce heat and simmer for 1 hour 30 minutes.</li><li>Add sweet potatoes and brown sugar and simmer for an additional 30 minutes, until beans and sweet potatoes are soft.</li><li>Puree 1 cup of the soup in a blender and then add it back into the soup pot. Stir in cilantro and green onion. Salt and pepper to taste.</li></ol>", "aggregateLikes": 3, "dairyFree": true, "extendedIngredients": [{"aisle": "Pasta and Rice", "unitLong": "pound", "amount": 1.0, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1 pound dry organic black turtle beans", "name": "beans"}, {"aisle": "Baking", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon Brown sugar", "name": "brown sugar"}, {"aisle": "Baking", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons organic coconut oil (or olive oil)", "name": "coconut oil"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup fresh cilantro, chopped", "name": "fresh cilantro"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 green onions, roughly chopped", "name": "green onions"}, {"aisle": "Spices and Seasonings", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon Ground Allspice", "name": "ground allspice"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "2 tsp ground ginger", "name": "ground ginger"}, {"aisle": "Produce", "unitLong": "", "amount": 4.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "4 jalapenos, seeded and chopped", "name": "jalapenos"}, {"aisle": "Produce", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "\u00bd onion, roughly chopped", "name": "onion"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "2 tsp course sea salt", "name": "sea salt"}, {"aisle": "Produce", "unitLong": "cups", "amount": 4.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "4 cups local or organic sweet potatoes peeled and chopped into 1/2 inch cubes", "name": "sweet potatoes"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "1/2 tsp thyme", "name": "thyme"}, {"aisle": "Canned and Jarred", "unitLong": "cups", "amount": 8.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "8 cups of vegetable broth or water", "name": "vegetable broth"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/caribbean-black-bean-and-sweet-potato-soup-637099", "weightWatcherSmartPoints": 12, "id": 637099, "image": "https://spoonacular.com/recipeImages/Caribbean-black-bean-and-sweet-potato-soup-637099.jpg", "servings": 6, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": true,
+  "title": "Caribbean black bean and sweet potato soup",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/4YVH7XVD/caribbean-black-bean-and-sweet-potato-soup",
+  "sourceName": "Foodista",
+  "vegan": true,
+  "sustainable": false,
+  "instructions": "<ol><li>Rinse beans and place in a large bowl. Cover beans with   4 inches of water and soak overnight (or 8 hours). Strain and rinse black beans.</li><li>In a large soup pot, heat the oil over medium heat. Add onion and jalapeno and saut for 10 minutes, until soft.</li><li>Add beans and vegetable broth or water. Stir in ginger, allspice, thyme and salt. Bring to a boil, then reduce heat and simmer for 1 hour 30 minutes.</li><li>Add sweet potatoes and brown sugar and simmer for an additional 30 minutes, until beans and sweet potatoes are soft.</li><li>Puree 1 cup of the soup in a blender and then add it back into the soup pot. Stir in cilantro and green onion. Salt and pepper to taste.</li></ol>",
+  "aggregateLikes": 3,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1 pound dry organic black turtle beans",
+      "name": "black turtle beans"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon Brown sugar",
+      "name": "brown sugar"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons organic coconut oil (or olive oil)",
+      "name": "coconut oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup fresh cilantro, chopped",
+      "name": "cilantro"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 green onions, roughly chopped",
+      "name": "green onion"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon Ground Allspice",
+      "name": "allspice"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "2 tsp ground ginger",
+      "name": "ground ginger"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 4.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "4 jalapenos, seeded and chopped",
+      "name": "jalapeno"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 onion, roughly chopped",
+      "name": "onion"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "2 tsp course sea salt",
+      "name": "sea salt"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 4.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "4 cups local or organic sweet potatoes peeled and chopped into 1/2 inch cubes",
+      "name": "sweet potato"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1/2 tsp thyme",
+      "name": "thyme"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "cups",
+      "amount": 8.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "8 cups of vegetable broth or water",
+      "name": "vegetable broth"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/caribbean-black-bean-and-sweet-potato-soup-637099",
+  "weightWatcherSmartPoints": 12,
+  "id": 637099,
+  "image": "https://spoonacular.com/recipeImages/Caribbean-black-bean-and-sweet-potato-soup-637099.jpg",
+  "servings": 6,
+  "whole30": false,
+  "lowFodmap": false
+}

@@ -1,1 +1,139 @@
-{"vegetarian": false, "glutenFree": true, "title": "Japanese Style Curry", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/H2B6Q8QW/japanese-style-curry", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Whisk the curry powder into 1 cup cold water in a small bowl and set aside.</li><li>Heat the oil in a large pot over medium-high heat. Add the onions and salt and saute, stirring occasionally, until the onions are translucent, about 8 minutes.</li><li>Add the mushrooms and saute until they begin to soften, about 2 minutes. Stir in the potatoes and saute for 1 minute more. Add 4 cups cold water and the curry mixture and bring to a boil. Reduce the heat to low, cover and simmer, stirring occasionally, until the potatoes can easily be pierced with a fork, about 20 minutes.</li><li>Whisk the cornstarch or potato starch with the tamari and 2 tablespoons cold water in a small bowl. Add to the curry and stir gently until the sauce thickens.</li><li>Gently stir in the tofu, if using, and the peas and cook until heated through, 5 to 10 minutes. Taste and adjust the seasonings with additional curry powder, salt and-or tamari, if desired. If you like, serve with small bowls of raisins and walnuts on the side.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoons", "amount": 3.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "3 tablespoons canola or corn oil", "name": "corn oil"}, {"aisle": "Spices and Seasonings", "unitLong": "tablespoons", "amount": 2.5, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 1/2 tablespoons curry powder, plus more to taste", "name": "curry powder"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 mediums onions, halved vertically and thinly sliced", "name": "onions"}, {"aisle": "Produce", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup frozen peas", "name": "peas"}, {"aisle": "Produce", "unitLong": "pound", "amount": 1.0, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1 pound portobello mushrooms (stems and caps), cut into 1 inch cubes, or 1", "name": "portobello mushrooms"}, {"aisle": "Baking", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup plus 1 tablespoon cornstarch or potato starch", "name": "potato starch"}, {"aisle": "Produce", "unitLong": "pounds", "amount": 1.5, "unitShort": "lb", "metaInformation": [], "unit": "pounds", "originalString": "1 1/2 pounds potatoes, cut into 1- to 1 \u00bd inch cubes", "name": "potatoes"}, {"aisle": "Bakery/Bread", "unitLong": "pound", "amount": 1.0, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "pound", "name": "pound cake"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon sea salt, plus more to taste", "name": "sea salt"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoons", "amount": 2.5, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 1/2 tablespoons tamari, plus more to taste", "name": "tamari"}, {"aisle": "Produce", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "tofu, cut", "name": "tofu"}, {"aisle": "Produce", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "white mushrooms, halved or quartered (depending on size)", "name": "white mushrooms"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/japanese-style-curry-648504", "weightWatcherSmartPoints": 95, "id": 648504, "image": "https://spoonacular.com/recipeImages/Japanese-Style-Curry-648504.jpg", "servings": 1, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Japanese Style Curry",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/H2B6Q8QW/japanese-style-curry",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Whisk the curry powder into 1 cup cold water in a small bowl and set aside.</li><li>Heat the oil in a large pot over medium-high heat. Add the onions and salt and saute, stirring occasionally, until the onions are translucent, about 8 minutes.</li><li>Add the mushrooms and saute until they begin to soften, about 2 minutes. Stir in the potatoes and saute for 1 minute more. Add 4 cups cold water and the curry mixture and bring to a boil. Reduce the heat to low, cover and simmer, stirring occasionally, until the potatoes can easily be pierced with a fork, about 20 minutes.</li><li>Whisk the cornstarch or potato starch with the tamari and 2 tablespoons cold water in a small bowl. Add to the curry and stir gently until the sauce thickens.</li><li>Gently stir in the tofu, if using, and the peas and cook until heated through, 5 to 10 minutes. Taste and adjust the seasonings with additional curry powder, salt and-or tamari, if desired. If you like, serve with small bowls of raisins and walnuts on the side.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 3.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "3 tablespoons canola or corn oil",
+      "name": "corn oil"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoons",
+      "amount": 2.5,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 1/2 tablespoons curry powder, plus more to taste",
+      "name": "curry"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 mediums onions, halved vertically and thinly sliced",
+      "name": "onion"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup frozen peas",
+      "name": "frozen peas"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "pound",
+      "amount": 1.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1 pound portobello mushrooms (stems and caps), cut into 1 inch cubes, or 1",
+      "name": "portobello mushroom"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup plus 1 tablespoon cornstarch or potato starch",
+      "name": "corn starch"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "pounds",
+      "amount": 1.5,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pounds",
+      "originalString": "1 1/2 pounds potatoes, cut into 1- to 1 1/2 inch cubes",
+      "name": "potato"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon sea salt, plus more to taste",
+      "name": "sea salt"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoons",
+      "amount": 2.5,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 1/2 tablespoons tamari, plus more to taste",
+      "name": "tamari"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "tofu, cut",
+      "name": "tofu"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "white mushrooms, halved or quartered (depending on size)",
+      "name": "mushroom"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/japanese-style-curry-648504",
+  "weightWatcherSmartPoints": 95,
+  "id": 648504,
+  "image": "https://spoonacular.com/recipeImages/Japanese-Style-Curry-648504.jpg",
+  "servings": 1,
+  "whole30": false,
+  "lowFodmap": false
+}

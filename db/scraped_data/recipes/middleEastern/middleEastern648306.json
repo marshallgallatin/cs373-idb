@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 Eggs",
-      "name": "eggs"
+      "name": "egg"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "3 tablespoons minced fresh parsley",
-      "name": "fresh parsley"
+      "name": "parsley"
     },
     {
       "aisle": "Produce",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon ground cumin",
-      "name": "ground cumin"
+      "name": "cumin"
     },
     {
       "aisle": "Produce",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "slices",
       "originalString": "2 mediums green peppers, seeded and cut diagonally into slices",
-      "name": "peppers"
+      "name": "green bell pepper"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "3 large tomatoes, diced",
-      "name": "tomatoes"
+      "name": "tomato"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons unsalted butter",
-      "name": "unsalted butter"
+      "name": "butter"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -150,7 +150,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup virgin olive oil",
-      "name": "virgin olive oil"
+      "name": "olive oil"
     }
   ],
   "readyInMinutes": 45,

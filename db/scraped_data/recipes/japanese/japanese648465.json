@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "3 green onions thinly sliced",
-      "name": "green onions"
+      "name": "green onion"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon pepper",
-      "name": "pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Pasta and Rice",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons sesame seeds",
-      "name": "sesame seeds"
+      "name": "sesame seed"
     },
     {
       "aisle": "Baking",
@@ -89,7 +89,7 @@
       "unitShort": "T",
       "metaInformation": [],
       "unit": "tablespoons",
-      "originalString": "8 tablespoons slivered almonds (2 ¼ oz. pkg.)",
+      "originalString": "8 tablespoons slivered almonds (2 1/4 oz. pkg.)",
       "name": "slivered almonds"
     },
     {

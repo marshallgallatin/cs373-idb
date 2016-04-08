@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "4 eggs",
-      "name": "eggs"
+      "name": "egg"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1/4 teaspoon ground pepper",
-      "name": "ground pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Produce",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "1 pound white or baby portobello mushrooms, sliced",
-      "name": "baby bella mushrooms"
+      "name": "portobello mushroom"
     },
     {
       "aisle": "Produce",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "3 red potatoes, boiled and sliced",
-      "name": "red potatoes"
+      "name": "red potato"
     },
     {
       "aisle": "Spices and Seasonings",

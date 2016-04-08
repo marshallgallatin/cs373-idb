@@ -1,1 +1,139 @@
-{"vegetarian": true, "glutenFree": false, "title": "Irish Whiskey Pie", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/K7SR4SYV/irish-whiskey-pie", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>For the crust:</li><li>Sift flour and salt together into a large bowl.</li><li>Using a food processor, a pastry blender or two knives and a good amount of patience, cut the butter into the flour.</li><li>Add water and vodka stirring after each addition until the dough comes together.</li><li>Form into a ball and cut it in half.</li><li>Flatten each half into a disc, wrap them in wax paper and refrigerate for at least half an hour before baking.</li><li>You will only need one half for this recipe, so feel free to freeze the other half for future pie emergencies.</li><li>When ready to bake, preheat oven to 375</li><li>Place pastry on a well-floured surface and using a well-floured rolling pin, roll out the pastry to fit a 9-inch pie plate.</li><li>Place pastry into the pie plate and trim and crimp the edges.</li><li>Prick the dough several times with a fork.</li><li>Wrap tin foil around the pastry and fill the center with pie weights or dried beans.</li><li>Place in the center of the oven and bake for 25 minutes.</li><li>Remove weights and tin foil and bake for an additional nine minutes or until golden brown.</li><li>Remove from the oven and let cool.</li><li>For the Filling:</li><li>In a medium sized bowl whisk together condensed milk, cornstarch and salt.</li><li>Add egg yolks one at a time, whisking until combined after each addition.  Set aside.</li><li>In a medium sized saucepan melt butter over moderate heat.</li><li>Add brown sugar and allow to bubble slightly.</li><li>Slowly whisk in milk.</li><li>Add egg mixture slowly, whisking constantly.</li><li>Bring back to a boil while whisking the mixture.</li><li>Once the mixture is boiling, let it cook while stirring for approximately one minute or until thick.</li><li>Remove from heat and stir in whiskey.</li><li>Pour into a cooled pie shell and cover with plastic wrap.</li><li>Place in the fridge and let set for four hours.</li><li>You may serve the pie with whipped cream if you wish, but I find it so rich that I like to eat it au naturale.</li></ol>", "aggregateLikes": 2, "dairyFree": false, "extendedIngredients": [{"aisle": "Baking", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "\u00bd cup condensed milk", "name": "condensed skim milk"}, {"aisle": "Baking", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "\u00bc cup cornstarch", "name": "cornstarch"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 5.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "5 egg yolks", "name": "egg yolks"}, {"aisle": "Alcoholic Beverages", "unitLong": "ounce", "amount": 1.0, "unitShort": "oz", "metaInformation": [], "unit": "oz", "originalString": "1 oz Irish Whiskey", "name": "irish whiskey"}, {"aisle": "Baking", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup light brown sugar", "name": "light brown sugar"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cups", "amount": 2.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "2 cups homogenized milk", "name": "milk"}, {"aisle": "Baking", "unitLong": "cups", "amount": 2.5, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "2 \u00bd cups pastry flour (all-purpose is fine)", "name": "pastry flour"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 10.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "salt", "name": "salt"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "tablespoons", "amount": 6.0, "unitShort": "T", "metaInformation": [], "unit": "tbsp", "originalString": "6 tbsp unsalted butter", "name": "unsalted butter"}, {"aisle": "Alcoholic Beverages", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "\u00bc cup cold vodka", "name": "vodka"}, {"aisle": "Beverages", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "\u00bc cup cold water", "name": "water"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/irish-whiskey-pie-648010", "weightWatcherSmartPoints": 16, "id": 648010, "image": "https://spoonacular.com/recipeImages/Irish-Whiskey-Pie-648010.png", "servings": 10, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": false,
+  "title": "Irish Whiskey Pie",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/K7SR4SYV/irish-whiskey-pie",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>For the crust:</li><li>Sift flour and salt together into a large bowl.</li><li>Using a food processor, a pastry blender or two knives and a good amount of patience, cut the butter into the flour.</li><li>Add water and vodka stirring after each addition until the dough comes together.</li><li>Form into a ball and cut it in half.</li><li>Flatten each half into a disc, wrap them in wax paper and refrigerate for at least half an hour before baking.</li><li>You will only need one half for this recipe, so feel free to freeze the other half for future pie emergencies.</li><li>When ready to bake, preheat oven to 375</li><li>Place pastry on a well-floured surface and using a well-floured rolling pin, roll out the pastry to fit a 9-inch pie plate.</li><li>Place pastry into the pie plate and trim and crimp the edges.</li><li>Prick the dough several times with a fork.</li><li>Wrap tin foil around the pastry and fill the center with pie weights or dried beans.</li><li>Place in the center of the oven and bake for 25 minutes.</li><li>Remove weights and tin foil and bake for an additional nine minutes or until golden brown.</li><li>Remove from the oven and let cool.</li><li>For the Filling:</li><li>In a medium sized bowl whisk together condensed milk, cornstarch and salt.</li><li>Add egg yolks one at a time, whisking until combined after each addition.  Set aside.</li><li>In a medium sized saucepan melt butter over moderate heat.</li><li>Add brown sugar and allow to bubble slightly.</li><li>Slowly whisk in milk.</li><li>Add egg mixture slowly, whisking constantly.</li><li>Bring back to a boil while whisking the mixture.</li><li>Once the mixture is boiling, let it cook while stirring for approximately one minute or until thick.</li><li>Remove from heat and stir in whiskey.</li><li>Pour into a cooled pie shell and cover with plastic wrap.</li><li>Place in the fridge and let set for four hours.</li><li>You may serve the pie with whipped cream if you wish, but I find it so rich that I like to eat it au naturale.</li></ol>",
+  "aggregateLikes": 2,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup condensed milk",
+      "name": "condensed milk"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup cornstarch",
+      "name": "corn starch"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 5.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "5 egg yolks",
+      "name": "egg yolk"
+    },
+    {
+      "aisle": "Alcoholic Beverages",
+      "unitLong": "ounce",
+      "amount": 1.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "oz",
+      "originalString": "1 oz Irish Whiskey",
+      "name": "irish whiskey"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup light brown sugar",
+      "name": "brown sugar"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 cups homogenized milk",
+      "name": "milk"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 2.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 1/2 cups pastry flour (all-purpose is fine)",
+      "name": "pastry flour"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 10.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "tablespoons",
+      "amount": 6.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tbsp",
+      "originalString": "6 tbsp unsalted butter",
+      "name": "butter"
+    },
+    {
+      "aisle": "Alcoholic Beverages",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup cold vodka",
+      "name": "vodka"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup cold water",
+      "name": "water"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/irish-whiskey-pie-648010",
+  "weightWatcherSmartPoints": 16,
+  "id": 648010,
+  "image": "https://spoonacular.com/recipeImages/Irish-Whiskey-Pie-648010.png",
+  "servings": 10,
+  "whole30": false,
+  "lowFodmap": false
+}

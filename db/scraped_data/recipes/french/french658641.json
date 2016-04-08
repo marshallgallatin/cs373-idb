@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup sliced crimini mushrooms (about 5 medium)",
-      "name": "crimini mushrooms"
+      "name": "portabello mushroom"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon dry bread crumbs",
-      "name": "dry bread crumbs"
+      "name": "bread crumbs"
     },
     {
       "aisle": "Alcoholic Beverages",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup chopped fresh basil for garnish",
-      "name": "fresh basil"
+      "name": "basil"
     },
     {
       "aisle": "Produce",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon chopped fresh rosemary",
-      "name": "fresh rosemary"
+      "name": "rosemary"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon chopped fresh thyme",
-      "name": "fresh thyme"
+      "name": "thyme"
     },
     {
       "aisle": "Produce",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "Dash",
       "originalString": "Dash black pepper",
-      "name": "pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Produce",

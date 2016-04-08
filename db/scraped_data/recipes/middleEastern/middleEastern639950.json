@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup English cucumber, diced",
-      "name": "english cucumber"
+      "name": "cucumber"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons extra-virgin olive oil",
-      "name": "extra-virgin olive oil"
+      "name": "olive oil"
     },
     {
       "aisle": "Produce",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "5 green onions, chopped",
-      "name": "green onions"
+      "name": "green onion"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "5 red radishes, diced",
-      "name": "radishes"
+      "name": "radish"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon tumeric",
-      "name": "tumeric"
+      "name": "turmeric"
     },
     {
       "aisle": "Beverages",
@@ -160,7 +160,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup yellow pepper,diced",
-      "name": "yellow pepper"
+      "name": "yellow bell pepper"
     }
   ],
   "readyInMinutes": 30,

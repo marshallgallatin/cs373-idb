@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 eggs",
-      "name": "eggs"
+      "name": "egg"
     },
     {
       "aisle": "Produce",
@@ -49,8 +49,8 @@
       "unitShort": "serving",
       "metaInformation": [],
       "unit": "serving",
-      "originalString": "• Oil for fry",
-      "name": "oil"
+      "originalString": "Oil for fry",
+      "name": "vegetable oil"
     },
     {
       "aisle": "Produce",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "serving",
       "originalString": "Pepper to taste",
-      "name": "pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Meat",
@@ -99,7 +99,7 @@
       "unitShort": "serving",
       "metaInformation": [],
       "unit": "serving",
-      "originalString": "• Salt to taste",
+      "originalString": "Salt to taste",
       "name": "salt"
     },
     {

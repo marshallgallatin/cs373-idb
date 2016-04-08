@@ -1,1 +1,149 @@
-{"vegetarian": false, "glutenFree": true, "title": "Coconut Chicken Curry with Snow Peas and Rice", "veryPopular": false, "gaps": "no", "sourceUrl": "http://spoonacular.com/-1383869026440", "sourceName": "spoonacular", "vegan": false, "sustainable": false, "instructions": "<p>1. Heat coconut oil in a pan over medium-high heat. Pre-heat the oven to 190 C or 375 F. Start cooking the brown rice.</p><p>2. Add the cubed chicken breast to the pan for a couple minutes until browned. Transfer the chicken from the pan into a casserole dish.</p><p>3. Fry the garlic and ginger in the pan, adding more coconut oil if necessary. Add the spices until fragrant.</p><p>4. Add the coconut milk and tomato paste to the pan.</p><p>5. Start steaming the frozen snow peas, giving the flavors in the sauce some time to meld.</p><p>6. Pour the sauce over the chicken breast cubes.</p><p>7. Put the casserole dish in the oven for about 25 minutes, adding the snow peas for the last 10 minutes or so. Once the chicken is cooked through, stir in the lemon grass paste.</p><p>8. Serve the chicken curry over brown rice.</p><p><span></span></p>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Pasta and Rice", "unitLong": "grams", "amount": 200.0, "unitShort": "g", "metaInformation": [], "unit": "g", "originalString": "200 g brown rice", "name": "brown rice"}, {"aisle": "Canned and Jarred", "unitLong": "milliliters", "amount": 400.0, "unitShort": "ml", "metaInformation": [], "unit": "ml", "originalString": "1 can (400 ml) coconut milk", "name": "canned coconut milk"}, {"aisle": "Meat", "unitLong": "grams", "amount": 400.0, "unitShort": "g", "metaInformation": [], "unit": "g", "originalString": "400 g chicken breast, cubed", "name": "chicken breast"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "chili flakes, to taste", "name": "chili flakes"}, {"aisle": "Baking", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon coconut oil", "name": "coconut oil"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 teaspoons curry powder", "name": "curry powder"}, {"aisle": "Ethnic Foods", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 teaspoons garam masala", "name": "garam masala"}, {"aisle": "Produce", "unitLong": "cloves", "amount": 2.0, "unitShort": "cloves", "metaInformation": [], "unit": "cloves", "originalString": "2 cloves garlic", "name": "garlic"}, {"aisle": "Ethnic Foods", "unitLong": "inch", "amount": 1.0, "unitShort": "inch", "metaInformation": [], "unit": "inch", "originalString": "1 inch ginger", "name": "ginger"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon lemon grass paste", "name": "lemon grass"}, {"aisle": "Produce", "unitLong": "grams", "amount": 200.0, "unitShort": "g", "metaInformation": [], "unit": "g", "originalString": "200 g snow peas, frozen", "name": "snow pea"}, {"aisle": "Pasta and Rice", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon tomato paste", "name": "tomato paste"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "spoonacular", "license": "spoonacular's terms", "spoonacularSourceUrl": "https://spoonacular.com/coconut-chicken-curry-with-snow-peas-and-rice-157311", "weightWatcherSmartPoints": 43, "id": 157311, "image": "https://spoonacular.com/recipeImages/Coconut-Chicken-Curry-with-Snow-Peas-and-Rice-157311.jpg", "servings": 2, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Coconut Chicken Curry with Snow Peas and Rice",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://spoonacular.com/-1383869026440",
+  "sourceName": "spoonacular",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<p>1. Heat coconut oil in a pan over medium-high heat. Pre-heat the oven to 190 C or 375 F. Start cooking the brown rice.</p><p>2. Add the cubed chicken breast to the pan for a couple minutes until browned. Transfer the chicken from the pan into a casserole dish.</p><p>3. Fry the garlic and ginger in the pan, adding more coconut oil if necessary. Add the spices until fragrant.</p><p>4. Add the coconut milk and tomato paste to the pan.</p><p>5. Start steaming the frozen snow peas, giving the flavors in the sauce some time to meld.</p><p>6. Pour the sauce over the chicken breast cubes.</p><p>7. Put the casserole dish in the oven for about 25 minutes, adding the snow peas for the last 10 minutes or so. Once the chicken is cooked through, stir in the lemon grass paste.</p><p>8. Serve the chicken curry over brown rice.</p><p><span></span></p>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "grams",
+      "amount": 200.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "g",
+      "originalString": "200 g brown rice",
+      "name": "brown rice"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "milliliters",
+      "amount": 400.0,
+      "unitShort": "ml",
+      "metaInformation": [],
+      "unit": "ml",
+      "originalString": "1 can (400 ml) coconut milk",
+      "name": "canned coconut milk"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "grams",
+      "amount": 400.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "g",
+      "originalString": "400 g chicken breast, cubed",
+      "name": "chicken breast"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "chili flakes, to taste",
+      "name": "crushed red pepper"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon coconut oil",
+      "name": "coconut oil"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 teaspoons curry powder",
+      "name": "curry"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 teaspoons garam masala",
+      "name": "garam masala"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 2.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "2 cloves garlic",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "inch",
+      "amount": 1.0,
+      "unitShort": "inch",
+      "metaInformation": [],
+      "unit": "inch",
+      "originalString": "1 inch ginger",
+      "name": "ginger"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon lemon grass paste",
+      "name": "lemon grass"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "grams",
+      "amount": 200.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "g",
+      "originalString": "200 g snow peas, frozen",
+      "name": "snow pea"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon tomato paste",
+      "name": "tomato paste"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "spoonacular",
+  "license": "spoonacular's terms",
+  "spoonacularSourceUrl": "https://spoonacular.com/coconut-chicken-curry-with-snow-peas-and-rice-157311",
+  "weightWatcherSmartPoints": 43,
+  "id": 157311,
+  "image": "https://spoonacular.com/recipeImages/Coconut-Chicken-Curry-with-Snow-Peas-and-Rice-157311.jpg",
+  "servings": 2,
+  "whole30": false,
+  "lowFodmap": false
+}

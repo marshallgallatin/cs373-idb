@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "3 hot green chilies, minced (more or less if you prefer)",
-      "name": "chilies"
+      "name": "jalapeno"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon coriander powder",
-      "name": "coriander powder"
+      "name": "coriander seed"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons single cream (optional)",
-      "name": "cream"
+      "name": "single cream"
     },
     {
       "aisle": "Produce",
@@ -170,7 +170,7 @@
       "metaInformation": [],
       "unit": "kilogram",
       "originalString": "1 kilogram tomatoes, Sliced into Quarters",
-      "name": "tomatoes"
+      "name": "tomato"
     },
     {
       "aisle": "Spices and Seasonings",

@@ -49,7 +49,7 @@
       "unitShort": "t",
       "metaInformation": [],
       "unit": "teaspoon",
-      "originalString": "½ teaspoon baking soda",
+      "originalString": "1/2 teaspoon baking soda",
       "name": "baking soda"
     },
     {
@@ -109,8 +109,8 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "¼ cup plain yogurt",
-      "name": "plain yogurt"
+      "originalString": "1/4 cup plain yogurt",
+      "name": "yogurt"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -119,7 +119,7 @@
       "unitShort": "t",
       "metaInformation": [],
       "unit": "teaspoon",
-      "originalString": "½ teaspoon salt",
+      "originalString": "1/2 teaspoon salt",
       "name": "salt"
     },
     {
@@ -139,8 +139,8 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "½ cup walnuts, chopped",
-      "name": "walnuts"
+      "originalString": "1/2 cup walnuts, chopped",
+      "name": "walnut"
     }
   ],
   "readyInMinutes": 45,

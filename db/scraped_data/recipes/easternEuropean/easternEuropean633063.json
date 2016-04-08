@@ -49,7 +49,7 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "½ cup beef or chicken stock (or water)",
+      "originalString": "1/2 cup beef or chicken stock (or water)",
       "name": "chicken stock"
     },
     {
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "tsp",
       "originalString": "2 tsp. Hungarian Hot Paprika",
-      "name": "hungarian paprika"
+      "name": "paprika"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 large onions, sliced thin",
-      "name": "onions"
+      "name": "onion"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -160,7 +160,7 @@
       "metaInformation": [],
       "unit": "Tbsp",
       "originalString": "1/2 Tbsp pepper",
-      "name": "ground pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Pasta and Rice",

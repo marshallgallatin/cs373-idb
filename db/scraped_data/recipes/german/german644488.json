@@ -1,1 +1,139 @@
-{"vegetarian": false, "glutenFree": false, "title": "German Rhubarb Cake with Meringue", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/68PX6QXK/german-rhubarb-cake-with-meringue", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Preheat the oven to 350F Convection. Grease a round 26 cm Spring pan (9 1/2 inch).</li><li>Wash, dry and peel the rhubarb. Cut it in little pieces, mix with 2 tablespoon of sugar and let sit for at least 1/2 hour. It will extract a lot of water that needs to be drained. Pat rhubarb dry for further use.</li><li>In a kitchen machine beat together butter, sugar and vanilla extract until the butter is fluffy and the sugar is dissolved. Put in the eggs, one at a time and mix well.</li><li>In a separate bowl sift together flour, ground almonds, salt and baking powder, add slowly to the egg mixture. Dont over mix.</li><li>Fill dough into the spring pan, top with dried rhubarb and bake for 25 min.</li><li>In the mean time prepare the meringue/ baiser topping. Beat egg whites until stiff peaks form. Slowly add the sugar until meringue is firm and shiny.</li><li>Spread the meringue evenly over the rhubarb and decorate with almond slices. Return to the oven for another 15 min. Cover the cake with aluminum foil after 5 min. in case the meringue does turn too dark.</li><li>Cool completely before removing the cake from the pan.</li></ol>", "aggregateLikes": 15, "dairyFree": true, "extendedIngredients": [{"aisle": "Nuts", "unitLong": "servings", "amount": 12.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "sliced almonds for topping", "name": "almonds"}, {"aisle": "Baking", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 teaspoons baking powder", "name": "baking powder"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "grams", "amount": 100.0, "unitShort": "g", "metaInformation": [], "unit": "g", "originalString": "1/3 cup 1 1/2 Tablespoon (100 g) butter, unsalted and at room temp.", "name": "butter"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 3.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "3 egg whites", "name": "egg whites"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 large eggs", "name": "eggs"}, {"aisle": "Baking", "unitLong": "grams", "amount": 150.0, "unitShort": "g", "metaInformation": [], "unit": "g", "originalString": "1 1/4 cup (150 g) flour", "name": "flour"}, {"aisle": "Produce", "unitLong": "grams", "amount": 600.0, "unitShort": "g", "metaInformation": [], "unit": "g", "originalString": "21 ounces (600 g) rhubarb, peeled and cubed", "name": "rhubarb"}, {"aisle": "Nuts", "unitLong": "grams", "amount": 50.0, "unitShort": "g", "metaInformation": [], "unit": "g", "originalString": "1 3/4 ounces (50 g) roasted almonds, ground", "name": "roasted almonds"}, {"aisle": "Spices and Seasonings", "unitLong": "cups", "amount": 1.75, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "1 3/4 cups Salt (sack salt, not Iodized)", "name": "salt"}, {"aisle": "Baking", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup SUGAR, BROWN, 2 LB", "name": "sugar"}, {"aisle": "Baking", "unitLong": "milliliters", "amount": 5.0, "unitShort": "ml", "metaInformation": [], "unit": "ml", "originalString": "1 teaspoon (5 ml) vanilla extract", "name": "vanilla extract"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/german-rhubarb-cake-with-meringue-644488", "weightWatcherSmartPoints": 14, "id": 644488, "image": "https://spoonacular.com/recipeImages/German-Rhubarb-Cake-with-Meringue-644488.jpg", "servings": 12, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "German Rhubarb Cake with Meringue",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/68PX6QXK/german-rhubarb-cake-with-meringue",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Preheat the oven to 350F Convection. Grease a round 26 cm Spring pan (9 1/2 inch).</li><li>Wash, dry and peel the rhubarb. Cut it in little pieces, mix with 2 tablespoon of sugar and let sit for at least 1/2 hour. It will extract a lot of water that needs to be drained. Pat rhubarb dry for further use.</li><li>In a kitchen machine beat together butter, sugar and vanilla extract until the butter is fluffy and the sugar is dissolved. Put in the eggs, one at a time and mix well.</li><li>In a separate bowl sift together flour, ground almonds, salt and baking powder, add slowly to the egg mixture. Dont over mix.</li><li>Fill dough into the spring pan, top with dried rhubarb and bake for 25 min.</li><li>In the mean time prepare the meringue/ baiser topping. Beat egg whites until stiff peaks form. Slowly add the sugar until meringue is firm and shiny.</li><li>Spread the meringue evenly over the rhubarb and decorate with almond slices. Return to the oven for another 15 min. Cover the cake with aluminum foil after 5 min. in case the meringue does turn too dark.</li><li>Cool completely before removing the cake from the pan.</li></ol>",
+  "aggregateLikes": 15,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Nuts",
+      "unitLong": "servings",
+      "amount": 12.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "sliced almonds for topping",
+      "name": "almond"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 teaspoons baking powder",
+      "name": "baking powder"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "grams",
+      "amount": 100.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "g",
+      "originalString": "1/3 cup 1 1/2 Tablespoon (100 g) butter, unsalted and at room temp.",
+      "name": "butter"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 3.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "3 egg whites",
+      "name": "egg white"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 large eggs",
+      "name": "egg"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "grams",
+      "amount": 150.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "g",
+      "originalString": "1 1/4 cup (150 g) flour",
+      "name": "flour"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "grams",
+      "amount": 600.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "g",
+      "originalString": "21 ounces (600 g) rhubarb, peeled and cubed",
+      "name": "rhubarb"
+    },
+    {
+      "aisle": "Nuts",
+      "unitLong": "grams",
+      "amount": 50.0,
+      "unitShort": "g",
+      "metaInformation": [],
+      "unit": "g",
+      "originalString": "1 3/4 ounces (50 g) roasted almonds, ground",
+      "name": "roasted almonds"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "cups",
+      "amount": 1.75,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "1 3/4 cups Salt (sack salt, not Iodized)",
+      "name": "salt"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup SUGAR, BROWN, 2 LB",
+      "name": "sugar"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "milliliters",
+      "amount": 5.0,
+      "unitShort": "ml",
+      "metaInformation": [],
+      "unit": "ml",
+      "originalString": "1 teaspoon (5 ml) vanilla extract",
+      "name": "vanilla extract"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/german-rhubarb-cake-with-meringue-644488",
+  "weightWatcherSmartPoints": 14,
+  "id": 644488,
+  "image": "https://spoonacular.com/recipeImages/German-Rhubarb-Cake-with-Meringue-644488.jpg",
+  "servings": 12,
+  "whole30": false,
+  "lowFodmap": false
+}
