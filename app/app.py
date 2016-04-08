@@ -34,7 +34,7 @@ class CountRecipes(Resource):
     Count of Recipes [/recipes/count]
     """
     def get(self):
-        return jsonify(**(RecipeQueries.getNumberOfRecipes()))
+        return jsonify(count = RecipeQueries.getNumberOfRecipes())
 
 class RecipeByID(Resource):
     """
@@ -71,7 +71,7 @@ class CountIngredients(Resource):
     Count of Ingredients [ingredients/count]
     """
     def get(self):
-        return jsonify(**(IngredientQueries.getNumberOfIngredients()))
+        return jsonify(count = IngredientQueries.getNumberOfIngredients())
 
 class IngredientByID(Resource):
     """
