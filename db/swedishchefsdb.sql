@@ -5727,7 +5727,7 @@ ALTER TABLE ONLY "Ingredient"
 --
 
 ALTER TABLE ONLY "IngredientsInRecipes"
-  ADD CONSTRAINT "IngredientsInRecipes_pkey" PRIMARY KEY (recipe_id, ingredient_id);
+  ADD CONSTRAINT "IngredientsInRecipes_pkey" PRIMARY KEY (recipe_id, ingredient_id, ingredient_index);
 
 --
 -- TOC entry 1930 (class 2606 OID 16711)
