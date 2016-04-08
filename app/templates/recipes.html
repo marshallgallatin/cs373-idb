@@ -53,7 +53,7 @@
 			</tr>
 		<tr ng-repeat="x in data.recipes | orderBy:mbOrderBy:mbReverse">
 			<td>{{ '{{x.id}}' }}</td>
-			<td>{{ '{{x.title}}' }}</td>
+			<a ng-href="/recipe_{{ '{{x.id}}' }}"><td>{{ '{{x.title}}' }}</td></a>
 			<td><img ng-src="{{ '{{x.image_uri}}' }}"></img></td>
 			<td>{{ '{{x.ready_in_minutes}}' }}</td>
 			<td>{{ '{{x.servings}}' }}</td>
