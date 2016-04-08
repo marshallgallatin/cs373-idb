@@ -14,6 +14,7 @@
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
 			$scope.firstNumber = 1;
 			$scope.page = 1;
+			$scope.perPage = 10;
 			$scope.maxPage = 18;
 			$scope.pages = [1, 2, 3, 4, 5];
 			$scope.ing;
@@ -50,7 +51,7 @@
 				$scope.getData();
 			}
 			$scope.getData = function () {
-				$http.get("ingredients?limit=10&page=" + $scope.page).then(function (transmit) {
+				$http.get("ingredients?limit=" + $scope.perPage + "&page=" + $scope.page).then(function (transmit) {
 					$scope.ing = transmit.data.ingredients;
 					$scope.nuts = [];
 					for (var i = 0; i < $scope.ing.length; ++i) {
@@ -61,7 +62,7 @@
 					$scope.$apply();
 				});
 				$http.get("ingredients/count").then(function (transmit) {
-					$scope.maxPage = transmit.data.count;
+					$scope.maxPage = transmit.data.count / $scope.perPage;
 				});
 			}
 			$(function() {
