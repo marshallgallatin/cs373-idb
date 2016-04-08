@@ -21,7 +21,7 @@ def getAllIngredients(limit=10, page=1):
     QueryHelpers.ensureIsNonNegative(limit)
     QueryHelpers.ensureIsPositive(page)
     with sessionInstance() as session:
-        return [ingredient.summaryDict() for ingredient in session.query(models.Ingredient).slice(limit * (page - 1), limit * page).all()]
+        return [ingredient.summaryDict() for ingredient in session.query(models.Ingredient).slice(limit * (page - 1) + 1, limit * page + 1).all()]
 
 def getIngredientByID(id):
     """Gets the single ingredient from the database, whose id matches the given id.
