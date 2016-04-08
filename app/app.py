@@ -116,19 +116,19 @@ api.add_resource(LookupRecipesByIngredientID, '/ingredients/<int:ingred_id>/reci
 @app.route("/")
 @app.route("/index.html")
 def splash():
-    return render_template('index.html', title="Home", indexlit="active")
+	return render_template('index.html', title="Home", indexlit="active")
 
 @app.route('/about.html')
 def about():
 	return render_template('about.html', title="About", aboutlit="active")
 
 @app.route('/recipe.html')
-@app.route('/recipe_<r_id>.html')
+@app.route('/recipe_<int:r_id>.html')
 def recipe(r_id="test"):
 	return render_template('recipe.html', rec_id=r_id, recipeslit="active")
 
 @app.route('/ingredient.html')
-@app.route('/ingredient_<i_id>.html')
+@app.route('/ingredient_<int:i_id>.html')
 def ingredient(i_id="test"):
 	return render_template('ingredient.html', i_id=i_id, ingredientslit="active")
 
@@ -142,12 +142,11 @@ def ingredients():
 
 @app.route("/<path:path>")
 def static_html(path):
-    return app.send_static_file('html/{}'.format(path))
+	return app.send_static_file('html/{}'.format(path))
 
 @app.route("/unittest")
 def unittest():
-    out = subprocess.getoutput('python3 tests.py -v')
-    return out
+	return subprocess.getoutput('python3 tests.py -v')
 
 ############  WEBSITE TEST ENTRY POINTS ###########
 # These will be used as unit tests run locally
@@ -160,7 +159,7 @@ def test_recipes(page=0):
 	
 	Used for templates/recipes.html
 	"""
-    return jsonify(
+	return jsonify(
 	{
 		"recipes": [
 			{
@@ -317,7 +316,6 @@ def favicon():
 @app.errorhandler(404)
 def page_not_found(error):
 	return render_template('404.html', error=error)
-
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
