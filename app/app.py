@@ -114,6 +114,7 @@ api.add_resource(LookupRecipesByIngredientID, '/ingredients/<int:ingred_id>/reci
 # ============================
 
 @app.route("/")
+@app.route("/index.html")
 def splash():
     return render_template('index.html', title="Home", indexlit="active")
 
