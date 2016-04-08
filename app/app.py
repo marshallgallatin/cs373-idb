@@ -164,7 +164,7 @@ def test_r():
   "ingredients": [
     {
       "amount": 2.0,
-      "id": 1,
+      "id": 0,
       "original_string": "2 cups dried black-eyed peas",
       "unit": "cups"
     },
