@@ -143,7 +143,7 @@ CREATE TABLE "Ingredient" (
 --
 
 CREATE SEQUENCE "Ingredient_id_seq"
-START WITH 1
+START WITH 0
 INCREMENT BY 1
 NO MINVALUE
 NO MAXVALUE
@@ -214,7 +214,7 @@ CREATE TABLE "Nutritional Content" (
 --
 
 CREATE SEQUENCE "Nutritional Content_id_seq"
-START WITH 1
+START WITH 0
 INCREMENT BY 1
 NO MINVALUE
 NO MAXVALUE
@@ -298,6 +298,7 @@ ALTER TABLE ONLY "Recipe"
 --
 
 COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
+0	ingredient_name	ingredient_img	ingredient_sci_name	ingredient_origin
 1	black-eyed pea	https://upload.wikimedia.org/wikipedia/commons/d/d0/BlackEyedPeas.JPG	Vigna unguiculata subsp. unguiculata	Africa
 2	carrot	https://upload.wikimedia.org/wikipedia/commons/b/bd/13-08-31-wien-redaktionstreffen-EuT-by-Bi-frie-037.jpg	Daucus carota	Asia
 3	green bell pepper	https://upload.wikimedia.org/wikipedia/commons/5/59/Capsicum3.JPG	Capsicum annuum	NorthAmerica
@@ -457,7 +458,7 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 157	romaine lettuce	\N	Lactuca sativa var. logifolia	\N
 158	iceberg lettuce	\N	Lactuca sativa var. capitata	\N
 159	harissa	https://upload.wikimedia.org/wikipedia/commons/8/86/Harissa-1.jpg	\N	Africa
-160	serrano peppers	https://upload.wikimedia.org/wikipedia/commons/1/15/Serranochilis.jpg	Capsicum anuum	NorthAmerica
+160	serrano pepper	https://upload.wikimedia.org/wikipedia/commons/1/15/Serranochilis.jpg	Capsicum anuum	NorthAmerica
 161	Greek yogurt	\N	\N	\N
 162	turmeric	\N	Curcuma longa L.	\N
 163	fish sauce	\N	\N	\N
@@ -466,6 +467,12 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 166	onion powder	\N	Allium cepa	\N
 167	pasilla	https://upload.wikimedia.org/wikipedia/commons/d/d5/Pasillachiles.jpg	Capsicum anuum	NorthAmerica
 168	cheddar cheese	\N	\N	\N
+169	green bean	\N	Phaseolus vulgaris	\N
+170	canned peas	\N	\N	\N
+171	barbecued chicked breast	\N	\N	\N
+172	mozzarella cheese	\N	\N	\N
+173	salted butter	\N	\N	\N
+174	rice	https://upload.wikimedia.org/wikipedia/commons/c/c9/Frozen_rice_-_jules.jpg	\N	Asia
 \.
 
 
@@ -475,7 +482,7 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 -- Name: Ingredient_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('"Ingredient_id_seq"', 169, TRUE);
+SELECT pg_catalog.setval('"Ingredient_id_seq"', 175, TRUE);
 
 --
 -- TOC entry 2051 (class 0 OID 16717)
@@ -491,61 +498,78 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 1	5	peanut butter	4.0	tablespoon	T	4
 1	6	3/4 teaspoon salt	0.75	teaspoon	t	5
 1	7	6 cups water	6.0	cups	c	6
-2	66	1 cup brown lentils	1.0	cup	c	1
-2	69	1 can crushed tomatoes	1.0	can	can	2
-2	70	1 cauliflower head, cut into bite size pieces	1.0	\N	\N	3
+2	0	1 tablespoon amchar masala	1.0	tablespoon	T	0
+2	65	1 cup brown lentils	1.0	cup	c	1
+2	68	1 can crushed tomatoes	1.0	can	can	2
+2	69	1 cauliflower head, cut into bite size pieces	1.0			3
+2	0	2 tablespoons masala molida, also known as berbere	2.0	tablespoons	T	4
 2	23	2 garlic cloves, minced	2.0	cloves	cloves	5
-2	4	1 onion, diced	1.0	\N	\N	6
+2	4	1 onion, diced	1.0			6
 2	38	2 cups frozen peas	2.0	cups	c	7
-2	71	1 can tomato paste	1.0	can	can	9
-2	72	2 tablespoons vegetable oil	2.0	tablespoons	T	10
+2	39	1/4 cup plain yogurt (optional)	0.25	cup	c	8
+2	70	1 can tomato paste	1.0	can	can	9
+2	71	2 tablespoons vegetable oil	2.0	tablespoons	T	10
 3	37	14 ounces can chickpeas (garbanzo beans), drained and rinsed	14.0	ounces	oz	0
-3	143	1 tablespoon grapeseed or canola oil	1.0	tablespoon	T	1
+3	140	1 tablespoon grapeseed or canola oil	1.0	tablespoon	T	1
 3	23	10 Cloves garlic, (3 tbsp.) minced	3.0	tbsp	T	2
-3	25	1 leek, finely chopped	1.0	\N	\N	4
+3	159	2 tablespoons harissa	2.0	tablespoons	T	3
+3	25	1 leek, finely chopped	1.0			4
 3	18	A tablespoon of lemon juice	1.0	tablespoon	T	5
-3	4	1 small Onion, minced	1.0	\N	\N	6
-3	71	3 tablespoons tomato paste or ketchup (yep, ketchup works great!)	3.0	tablespoons	T	9
+3	4	1 small Onion, minced	1.0			6
+3	0	1 package fresh pasta or a large handful of rice noodles	1.0	package	pkg	7
+3	164	1/2 package of fresh spinach leaves or 3 good handfuls	0.5	package	pkg	8
+3	70	3 tablespoons tomato paste or ketchup (yep, ketchup works great!)	3.0	tablespoons	T	9
 3	7	1 liter (4 cups) water, chicken broth, vegetable broth	4.0	cups	c	10
 4	3	Bell Peppers for garnishing	1.0	serving	serving	0
-4	81	1 teaspoon of Curry	1.0	teaspoon	t	3
+4	0	1.5 Cups of Chopped Chicken	1.5	Cups	Cups	1
+4	71	2.5 Cooking spoons of oil	2.5	tablespoons	T	2
+4	80	1 teaspoon of Curry	1.0	teaspoon	t	3
 4	23	2 garlic cloves	2.0	cloves	cloves	4
+4	141	Small piece of Chopped ginger	1.0	piece		5
 4	4	2 handfuls of Chopped onions	2.0	handfuls	handfuls	6
-4	59	Pepper	1.0	serving	serving	7
+4	58	Pepper	1.0	serving	serving	7
 4	6	Salt	1.0	serving	serving	8
-4	86	Pinch of thyme	1.0	pinch	pinch	10
-4	48	1 Chopped small tomato	1.0	\N	\N	11
-4	80	1.5 cups of Blended tomato	1.5	cups	c	12
+4	154	1/2 small sweet potato (Chopped)	0.5			9
+4	85	Pinch of thyme	1.0	pinch	pinch	10
+4	47	1 Chopped small tomato	1.0			11
+4	79	1.5 cups of Blended tomato	1.5	cups	c	12
 4	5	1 cup of groundnut (Blended) or peanut Butter	1.0	cup	c	13
-5	81	1 Teaspoon of curry powder	1.0	Teaspoon	Teaspoon	1
+5	0	2 Bay leaves	2.0			0
+5	80	1 Teaspoon of curry powder	1.0	Teaspoon	Teaspoon	1
 5	23	1 Clove of garlic	1.0	Clove	Clove	2
-5	106	3 Cubes of Maggi	3.0	\N	\N	3
-5	4	1 Small bulb of Onion	1.0	\N	\N	4
-5	59	1 Teaspoon of dry pepper	1.0	Teaspoon	Teaspoon	5
-5	48	7 Medium sized Roma Tomatoes	7.0	\N	\N	7
+5	104	3 Cubes of Maggi	3.0			3
+5	4	1 Small bulb of Onion	1.0			4
+5	58	1 Teaspoon of dry pepper	1.0	Teaspoon	Teaspoon	5
+5	174	2 Cups of Rice	2.0	Cups	Cups	6
+5	47	7 Medium sized Roma Tomatoes	7.0			7
 5	6	2 Teaspoons of Salt	2.0	Teaspoons	Teaspoons	8
-5	109	3 Scotch Bonnet Peppers	3.0	\N	\N	9
-5	86	A pinch of Thyme	1.0	pinch	pinch	10
-5	72	2 Cooking spoons of Vegetable Oil	2.0	tablespoons	T	12
+5	107	3 Scotch Bonnet Peppers	3.0			9
+5	85	A pinch of Thyme	1.0	pinch	pinch	10
+5	0	1 Small can of Tomato puree	1.0	can	can	11
+5	71	2 Cooking spoons of Vegetable Oil	2.0	tablespoons	T	12
 5	7	3 Cups of water	3.0	Cups	Cups	13
-6	81	1 teaspoon of curry	1.0	teaspoon	t	0
+6	80	1 teaspoon of curry	1.0	teaspoon	t	0
 6	23	2 garlic cloves	2.0	cloves	cloves	1
-6	106	Seasoning cubes	2.0	cubes	cubes	3
-6	113	1/2 cup of chopped vegetables (optional)	0.5	cup	c	4
-6	4	1 small onion (chopped)	1.0	\N	\N	5
-6	114	1/2 cup of chopped pineapples	0.5	cup	c	6
-6	86	1/4 teaspoon of thyme	0.25	teaspoon	t	9
-6	71	2 tablespoons of tomato paste	2.0	tablespoons	T	10
-6	3	bell pepper	1.0	\N	\N	12
-6	109	scotch bonnet pepper	1.0	\N	\N	13
-6	72	1.5 cooking spoons of vegetable oil	1.5	tablespoons	T	14
+6	141	1 teaspoon of grated ginger	1.0	teaspoon	t	2
+6	104	Seasoning cubes	2.0	cubes	cubes	3
+6	111	1/2 cup of chopped vegetables (optional)	0.5	cup	c	4
+6	4	1 small onion (chopped)	1.0			5
+6	112	1/2 cup of chopped pineapples	0.5	cup	c	6
+6	174	1 cup of parboiled rice	1.0	cup	c	7
+6	0	1/2 cup of stock juice	0.5	cup	c	8
+6	85	1/4 teaspoon of thyme	0.25	teaspoon	t	9
+6	70	2 tablespoons of tomato paste	2.0	tablespoons	T	10
+6	0	1.5 cups of blended tomatoes	1.5	cups	c	11
+6	3	bell pepper	1.0			12
+6	107	scotch bonnet pepper	1.0			13
+6	71	1.5 cooking spoons of vegetable oil	1.5	tablespoons	T	14
 7	8	5 1/2 teaspoons baking powder	5.5	teaspoons	t	0
-7	9	2 ripe but firm bananas, sliced thin	2.0	\N	\N	1
+7	9	2 ripe but firm bananas, sliced thin	2.0			1
 7	10	1/2 cup butter or margarine - (1/4 lb)	0.5	cup	c	2
 7	11	4 t. canola (or vegetable) oil	4.0	t	t	3
 7	12	1/2 t. cinnamon	0.5	t	t	4
 7	13	8 ounces cream cheese	8.0	ounces	oz	5
-7	14	3 eggs	3.0	\N	\N	6
+7	14	3 eggs	3.0			6
 7	15	10 1/2 cups all-purpose flour	10.5	cups	c	7
 7	16	dash of fresh ground nutmeg	1.0	dash	dash	8
 7	17	1 T. honey	1.0	T	T	9
@@ -554,2588 +578,4536 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 7	20	1 c. milk	1.0	c	c	12
 7	6	1/2 teaspoon salt	0.5	teaspoon	t	13
 7	21	8 slices of good quality white sandwich bread	8.0	slices	slices	14
-8	9	2 medium bananas	2.0	\N	\N	1
+8	0	1/2 teaspoon baking soda	0.5	teaspoon	t	0
+8	9	2 medium bananas	2.0			1
+8	0	1 1/2 cups organic evaporated cane sugar	1.5	cups	c	2
+8	0	Extra Chocolate Chips for decoration, optional	8.0	servings	servings	3
+8	0	1 10 oz bag chocolate chips	10.0	oz	oz	4
 8	5	1 3/4 cups organic creamy peanut butter	1.75	cups	c	5
-8	14	3 Eggs	3.0	\N	\N	6
-8	98	1 1/2 teaspoons Kosher Salt	1.5	teaspoons	t	9
-8	51	1/2 cup organic light brown sugar, packed	0.5	cup	c	10
-8	136	1 teaspoon vanilla extract	1.0	teaspoon	t	15
-9	126	1/2 cup barbecue sauce	0.5	cup	c	0
-9	4	6 Sliced rings of red onion (up to 8)	6.0	\N	\N	2
+8	14	3 Eggs	3.0			6
+8	0	7 oz margarine spread, room temperature (leave out for an hour)	7.0	oz	oz	7
+8	0	Frosting	8.0	servings	servings	8
+8	97	1 1/2 teaspoons Kosher Salt	1.5	teaspoons	t	9
+8	50	1/2 cup organic light brown sugar, packed	0.5	cup	c	10
+8	0	1 cup potato starch (I use Bob's Red Mill flours)	1.0	cup	c	11
+8	0	1 1/2 cups organic powdered sugar	1.5	cups	c	12
+8	0	1 cup sorghum flour	1.0	cup	c	13
+8	0	1/2 cup tapioca starch	0.5	cup	c	14
+8	134	1 teaspoon vanilla extract	1.0	teaspoon	t	15
+8	0	1 cup vegan sour cream ( I use Way Fare)	1.0	cup	c	16
+8	0	1 1/2 cup white rice flour	1.5	cup	c	17
+9	124	1/2 cup barbecue sauce	0.5	cup	c	0
+9	0	4 ounces Cooked & chopped barbecue meat (pork, chicken)	4.0	ounces	oz	1
+9	4	6 Sliced rings of red onion (up to 8)	6.0			2
+9	0	1 12" Pizza Crust	1.0			3
+9	172	2 cups Shredded mozzarella cheese	2.0	cups	c	4
+9	0	cup Pizza sauce or meatless spaghetti	1.0	cup	c	5
+10	168	shredded cheddar or mozzerella, to taste	6.0	servings	servings	0
+10	0	sliced chicken, to taste	6.0	servings	servings	1
 10	4	chopped onions, to taste	6.0	servings	servings	2
-10	77	chopped red peppers, to taste	6.0	servings	servings	3
+10	76	chopped red peppers, to taste	6.0	servings	servings	3
+10	0	1 package (1/4 ounce) dry yeast	0.25	ounce	oz	4
 10	15	1 1/4 cups all-purpose flour	1.25	cups	c	5
-10	116	1 tablespoon granulated sugar or honey	1.0	tablespoon	T	6
-10	73	1/4 cup olive oil	0.25	cup	c	7
+10	114	1 tablespoon granulated sugar or honey	1.0	tablespoon	T	6
+10	72	1/4 cup olive oil	0.25	cup	c	7
 10	6	1 teaspoon of salt	1.0	teaspoon	t	8
 10	7	1 1/4 cups warm water	1.25	cups	c	9
 10	15	1 1/4 cups all-purpose flour	1.25	cups	c	10
 11	10	3 tablespoons butter, divided	3.0	tablespoons	T	0
-11	4	1/2 onion, finely chopped	0.5	\N	\N	5
-11	139	1 teaspoon Worcestershire	1.0	teaspoon	t	7
-12	120	1 tbs Chilis in Adobo sauce	1.0	tbs	tbs	0
-12	101	2 tablespoons apple cider vinegar	2.0	tablespoons	T	1
-12	51	1/3 cup brown sugar	0.3333333333333333	cup	c	4
-12	124	1 cayenne pepper	1.0	\N	\N	5
-12	59	1 Tbs fresh cracked black pepper	1.0	Tb	Tb	6
+11	0	White corn syrup, to taste	2.0	servings	servings	1
+11	124	1 (18 oz.) reg. flavor Open Pit	18.0	oz	oz	2
+11	0	1 (8 oz.) bottle Italian dressing	8.0	oz	oz	3
+11	0	1 env. meat marinade	1.0			4
+11	4	1/2 onion, finely chopped	0.5			5
+11	0	6 pork chops	6.0			6
+11	137	1 teaspoon Worcestershire	1.0	teaspoon	t	7
+12	118	1 tbs Chilis in Adobo sauce	1.0	tbs	tbs	0
+12	99	2 tablespoons apple cider vinegar	2.0	tablespoons	T	1
+12	0	2 Tbs pan drippings from the Brisket (can use olive oil if making separately)	2.0	Tb	Tb	2
+12	0	1 4-6lb beef brisket	4.0	lb	lb	3
+12	50	1/3 cup brown sugar	0.3333333333333333	cup	c	4
+12	122	1 cayenne pepper	1.0			5
+12	58	1 Tbs fresh cracked black pepper	1.0	Tb	Tb	6
+12	0	2 Tsp dark Dijon mustard (go for the good stuff)	2.0	Tsp	Tsp	7
 12	23	1 clove clove garlic, minced	1.0	clove	clove	8
-12	49	1 Tbs ground cumin	1.0	Tb	Tb	9
+12	48	1 Tbs ground cumin	1.0	Tb	Tb	9
 12	17	1/4 cup honey	0.25	cup	c	10
-12	98	2 Tbs kosher salt – plus any additional to taste at end	2.0	Tb	Tb	12
+12	0	1 1/2 cup ketchup	1.5	cup	c	11
+12	97	2 Tbs kosher salt – plus any additional to taste at end	2.0	Tb	Tb	12
+12	0	1 Cup Lager	1.0	Cup	Cup	13
 12	4	1 cup chopped onions	1.0	cup	c	14
-12	59	1/2 tsp fresh cracked black peppers	0.5	tsp	t	15
-12	62	1/4 tsp red pepper flakes	0.25	tsp	t	16
+12	58	1/2 tsp fresh cracked black peppers	0.5	tsp	t	15
+12	61	1/4 tsp red pepper flakes	0.25	tsp	t	16
 12	6	2 teaspoons salt	2.0	teaspoons	t	17
 12	41	1 tbsp smoked paprika	1.0	tbsp	T	18
-12	125	2 large sweet onions – slice very thin	2.0	\N	\N	19
+12	123	2 large sweet onions – slice very thin	2.0			19
+13	0	2 avocados, peeled, cored, sliced and diced	2.0			0
 13	35	2 cans (15 ounce) black beans, rinsed and drained	15.0	ounce	oz	1
-13	93	1 bunch of fresh cilantro, stems removed, leaves finely chopped	1.0	bunch	bunch	3
+13	0	1 can corn	1.0	can	can	2
+13	92	1 bunch of fresh cilantro, stems removed, leaves finely chopped	1.0	bunch	bunch	3
 13	23	4 tablespoons minced garlic	4.0	tablespoons	T	4
-13	3	1 green bell pepper, cored, seeded, and diced	1.0	\N	\N	5
-13	95	1 bunch green onions, sliced	1.0	bunch	bunch	6
-13	134	1/4 teaspoon hot sauce, or to taste	0.25	teaspoon	t	7
-13	142	1/4 juice of lime	0.25	\N	\N	8
-13	82	1 orange bell pepper, cored, seeded, and diced	1.0	\N	\N	9
-13	4	1/2 of a medium red onion, finely chopped	0.5	\N	\N	10
-13	48	2 cans Rotel tomatoes	2.0	cans	cans	12
-13	83	1 yellow bell pepper, cored, seeded, and diced	1.0	\N	\N	13
-14	103	1 ounce quality balsamic vinegar	1.0	ounce	oz	0
+13	3	1 green bell pepper, cored, seeded, and diced	1.0			5
+13	94	1 bunch green onions, sliced	1.0	bunch	bunch	6
+13	132	1/4 teaspoon hot sauce, or to taste	0.25	teaspoon	t	7
+13	139	1/4 juice of lime	0.25			8
+13	81	1 orange bell pepper, cored, seeded, and diced	1.0			9
+13	4	1/2 of a medium red onion, finely chopped	0.5			10
+13	0	Salt and pepper to taste	4.0	servings	servings	11
+13	47	2 cans Rotel tomatoes	2.0	cans	cans	12
+13	82	1 yellow bell pepper, cored, seeded, and diced	1.0			13
+14	101	1 ounce quality balsamic vinegar	1.0	ounce	oz	0
 14	35	1 can (15 oz) black beans, drained	15.0	oz	oz	1
+14	0	1 can (15 oz) blackeyed peas, drained	15.0	oz	oz	2
+14	0	1 can canned corn	1.0	can	can	3
 14	45	1 teaspoon dried oregano	1.0	teaspoon	t	4
-14	93	1/2 bunch fresh cilantro, leaves only	0.5	bunch	bunch	5
+14	92	1/2 bunch fresh cilantro, leaves only	0.5	bunch	bunch	5
 14	23	2 cloves garlic	2.0	cloves	cloves	6
-14	3	1 green bell pepper, fine-chopped	1.0	\N	\N	8
-14	49	1 teaspoon ground cumin	1.0	teaspoon	t	9
-14	73	1 ounce extra-virgin olive oil	1.0	ounce	oz	12
-14	102	2 oz red wine vinegar	2.0	oz	oz	13
+14	0	1 pint super-sweet grape tomatoes, quartered	1.0	pint	pt	7
+14	3	1 green bell pepper, fine-chopped	1.0			8
+14	48	1 teaspoon ground cumin	1.0	teaspoon	t	9
+14	0	3 jalapeño chilies, minced	3.0			10
+14	0	1 ounce light olive oil	1.0	ounce	oz	11
+14	72	1 ounce extra-virgin olive oil	1.0	ounce	oz	12
+14	100	2 oz red wine vinegar	2.0	oz	oz	13
 14	6	1/2 teaspoon each salt, ground black pepper, and garlic powder	0.5	teaspoon	t	14
-14	95	1 bunch scallions, including light green tops, sliced across into angled rings	1.0	bunch	bunch	15
-14	4	1/2 large yellow onion, nicely chopped	0.5	\N	\N	16
+14	94	1 bunch scallions, including light green tops, sliced across into angled rings	1.0	bunch	bunch	15
+14	4	1/2 large yellow onion, nicely chopped	0.5			16
 15	8	1 tablespoon Baking Powder	1.0	tablespoon	T	0
 15	10	3 tablespoons Butter, melted	3.0	tablespoons	T	1
+15	0	14 ounces can Cannellini Beans	14.0	ounces	oz	2
+15	0	14 ounces can Diced Tomatoes	14.0	ounces	oz	3
+15	0	1 tablespoon Chile Powder, plus more for sprinkling over top	1.0	tablespoon	T	4
 15	12	Pinch of Cinnamon	1.0	pinch	pinch	5
-15	49	1/2 teaspoon Cumin	0.5	teaspoon	t	7
-15	14	2 Eggs	2.0	\N	\N	8
+15	0	1 cup Cornmeal	1.0	cup	c	6
+15	48	1/2 teaspoon Cumin	0.5	teaspoon	t	7
+15	14	2 Eggs	2.0			8
+15	0	3 cups (12 ounces) Extra Sharp Cheddar Cheese, shredded	12.0	ounces	oz	9
 15	15	1 cup all-purpose Flour	1.0	cup	c	10
+15	0	1 cup Corn, frozen or canned (drained)	1.0	cup	c	11
 15	23	5 cloves Garlic, minced	5.0	cloves	cloves	12
-15	98	Sea or Kosher salt and Fresh Black Pepper	8.0	servings	servings	15
+15	0	4 ounces can Green Chiles, diced	4.0	ounces	oz	13
+15	0	1 pound + 1/2 Ground Beef or Ground Turkey	1.0	pound	lb	14
+15	97	Sea or Kosher salt and Fresh Black Pepper	8.0	servings	servings	15
 15	20	1 cup Milk	1.0	cup	c	16
 15	16	Pinch of Nutmeg	1.0	pinch	pinch	17
-15	73	Olive oil for sauteing	8.0	servings	servings	18
+15	72	Olive oil for sauteing	8.0	servings	servings	18
 15	45	1 teaspoon Oregano	1.0	teaspoon	t	19
-15	62	Red Pepper, optional	8.0	servings	servings	20
+15	61	Red Pepper, optional	8.0	servings	servings	20
 15	41	1/2 teaspoon Paprika, smoked or regular	0.5	teaspoon	t	21
-15	128	1/2 cup Sour Cream, plus more for serving	0.5	cup	c	22
+15	126	1/2 cup Sour Cream, plus more for serving	0.5	cup	c	22
+15	0	1/2 teaspoon Table Salt or 1 teaspoon Sea/Kosher Salt	0.5	teaspoon	t	23
 15	7	1/2 cup water	0.5	cup	c	24
-15	139	2 teaspoons Worcestershire Sauce	2.0	teaspoons	t	25
-15	4	2 large yellow onions, diced	2.0	\N	\N	26
-16	51	� cup brown sugar	0.5	cup	c	1
-16	101	3/4 cup cider vinegar	0.75	cup	c	4
-16	49	2 teaspoons cumin	2.0	teaspoons	t	5
-16	87	2 teaspoons dried thyme	2.0	teaspoons	t	7
+15	137	2 teaspoons Worcestershire Sauce	2.0	teaspoons	t	25
+15	4	2 large yellow onions, diced	2.0			26
+16	0	4 pounds baby back ribs	4.0	pounds	lb	0
+16	50	� cup brown sugar	0.5	cup	c	1
+16	0	1/2 teaspoon cayenne	0.5	teaspoon	t	2
+16	0	4 teaspoons chile powder	4.0	teaspoons	t	3
+16	99	3/4 cup cider vinegar	0.75	cup	c	4
+16	48	2 teaspoons cumin	2.0	teaspoons	t	5
+16	0	2 tablespoons Dijon mustard	2.0	tablespoons	T	6
+16	86	2 teaspoons dried thyme	2.0	teaspoons	t	7
 16	23	1 Clove Garlic, Minced	1.0	Clove	Clove	8
-16	49	2 teaspoons ground cumin	2.0	teaspoons	t	10
+16	143	2 teaspoons garlic powder	2.0	teaspoons	t	9
+16	48	2 teaspoons ground cumin	2.0	teaspoons	t	10
+16	0	2 teaspoons instant coffee granules	2.0	teaspoons	t	11
+16	0	1 teaspoon liquid smoke	1.0	teaspoon	t	12
+16	0	3 tablespoons molasses	3.0	tablespoons	T	13
+16	71	1 tablespoon oil	1.0	tablespoon	T	14
 16	41	2 teaspoons paprika	2.0	teaspoons	t	15
+16	0	1 teaspoon pepper	1.0	teaspoon	t	16
 16	6	� tsp. salt	0.5	tsp	t	17
-16	75	1/2 cup soy sauce	0.5	cup	c	18
+16	74	1/2 cup soy sauce	0.5	cup	c	18
+16	0	28 ounces can tomato puree	28.0	ounces	oz	19
+17	0	1/4 teaspoon baking soda	0.25	teaspoon	t	0
 17	10	1/2 cup butter, cut into cubes	0.5	cup	c	1
-17	14	3 eggs	3.0	\N	\N	3
+17	0	dulce de leche	24.0	servings	servings	2
+17	14	3 eggs	3.0			3
 17	15	1 1/4 cups flour	1.25	cups	c	4
-17	116	1/2 cup sugar	0.5	cup	c	7
-17	136	1 tablespoon vanilla extract	1.0	tablespoon	T	8
-18	59	to taste Freshly-ground black pepper	4.0	servings	servings	1
-18	73	extra-virgin olive oil	4.0	servings	servings	7
-18	88	handful fresh basil, torn	1.0	handful	handful	8
+17	0	1 tablespoon instant espresso powder	1.0	tablespoon	T	5
+17	0	1 1/4 cups semisweet chocolate chip	1.25	cups	c	6
+17	114	1/2 cup sugar	0.5	cup	c	7
+17	134	1 tablespoon vanilla extract	1.0	tablespoon	T	8
+18	0	1 package active dry yeast	1.0	package	pkg	0
+18	58	to taste Freshly-ground black pepper	4.0	servings	servings	1
+18	0	fresh buffalo mozzarella, cut into bite sized pieces	1.0	oz	oz	2
+18	0	coarse grey salt	4.0	servings	servings	3
+18	0	1 cup cornmeal, fine grind	1.0	cup	c	4
+18	0	coarse grind cornmeal for baking sheets	4.0	servings	servings	5
+18	0	2 ears corn, freshly shucked	2.0			6
+18	72	extra-virgin olive oil	4.0	servings	servings	7
+18	87	handful fresh basil, torn	1.0	handful	handful	8
 18	23	pickled garlic (from your favorite olive bar)	4.0	servings	servings	9
 18	23	6 cloves garlic chopped	6.0	cloves	cloves	10
 18	17	1 tbsp wild honey	1.0	tbsp	T	11
 18	17	2 tablespoons Honey	2.0	tablespoons	T	12
-18	62	dried red pepper flakes	4.0	servings	servings	14
-18	97	pinch sea salt	1.0	pinch	pinch	15
+18	0	24 italian tomatoes, cut in half lengthwise	24.0			13
+18	61	dried red pepper flakes	4.0	servings	servings	14
+18	96	pinch sea salt	1.0	pinch	pinch	15
 18	7	1 cup warm water	1.0	cup	c	16
+18	0	1 1/2 cups white whole wheat flour	1.5	cups	c	17
+19	0	2 tablespoons light caesar dressing	2.0	tablespoons	T	0
 19	18	2 tablespoons freshly squeezed lemon juice	2.0	tablespoons	T	1
-19	73	1 tablespoon Olive oil	1.0	tablespoon	T	2
+19	72	1 tablespoon Olive oil	1.0	tablespoon	T	2
 19	41	1/4 teaspoon paprika	0.25	teaspoon	t	3
+19	0	8 tablespoons Parmesan cheese, shredded	8.0	tablespoons	T	4
+19	0	add black pepper to taste	2.0	servings	servings	5
+19	157	1 8 oz head of Romaine	8.0	oz	oz	6
+19	0	6 ounces Salmon fillet	6.0	ounces	oz	7
 19	6	1/4 teaspoon salt	0.25	teaspoon	t	8
+19	0	1 tablespoon slivered almonds	1.0	tablespoon	T	9
 20	37	29 oz. can chick peas – drained	29.0	oz	oz	0
+20	0	Slices of deli ham	1.0	Slices	Slices	1
 20	23	3 cloves Garlic Crushed	3.0	cloves	cloves	2
-20	49	1/2 teaspoon ground cumin	0.5	teaspoon	t	3
-20	137	1 marinated jalapeño – with seeds	1.0	\N	\N	4
-20	142	1 Zest of lime – plus juice of lime	1.0	\N	\N	5
-20	73	3 tablespoons of olive oil	3.0	tablespoons	T	6
+20	48	1/2 teaspoon ground cumin	0.5	teaspoon	t	3
+20	135	1 marinated jalapeño – with seeds	1.0			4
+20	139	1 Zest of lime – plus juice of lime	1.0			5
+20	72	3 tablespoons of olive oil	3.0	tablespoons	T	6
 20	4	Red onion- grilled	1.0	serving	serving	7
+20	168	Shredded cheddar cheese	1.0	serving	serving	8
+20	0	Your favorite tortillas	1.0	serving	serving	9
 21	15	4 cups of all purpose flour	4.0	cups	c	0
-21	68	2 large cans of peeled tomatoes	2.0	cans	cans	1
+21	67	2 large cans of peeled tomatoes	2.0	cans	cans	1
+21	0	2 teaspoons dry yeast	2.0	teaspoons	t	2
 21	23	4 cloves large of garlic, chopped	4.0	cloves	cloves	3
-21	73	2 tablespoons Olive oil	2.0	tablespoons	T	4
-21	4	2 large onions, chopped	2.0	\N	\N	5
-21	85	1 teaspoon rosemary	1.0	teaspoon	t	7
-21	87	1 teaspoon thyme	1.0	teaspoon	t	8
-21	89	1 teaspoon basil	1.0	teaspoon	t	9
+21	72	2 tablespoons Olive oil	2.0	tablespoons	T	4
+21	4	2 large onions, chopped	2.0			5
+21	0	1/2 cup of red wine	0.5	cup	c	6
+21	84	1 teaspoon rosemary	1.0	teaspoon	t	7
+21	86	1 teaspoon thyme	1.0	teaspoon	t	8
+21	88	1 teaspoon basil	1.0	teaspoon	t	9
 21	45	1 teaspoon oregano	1.0	teaspoon	t	10
-21	116	6 cups Sugar	6.0	cups	c	11
+21	114	6 cups Sugar	6.0	cups	c	11
 21	7	cups of warm water	1.0	cups	c	12
 21	6	salt	1.0	serving	serving	13
-21	61	white pepper	1.0	serving	serving	14
-22	3	1 medium bell pepper, chopped	1.0	\N	\N	0
-22	92	chopped chives or green onions, to taste	8.0	servings	servings	2
-22	93	finely chopped cilantro, to taste***	8.0	servings	servings	3
+21	60	white pepper	1.0	serving	serving	14
+22	3	1 medium bell pepper, chopped	1.0			0
+22	0	1 (14 oz) can black eyed peas, drained	14.0	oz	oz	1
+22	91	chopped chives or green onions, to taste	8.0	servings	servings	2
+22	92	finely chopped cilantro, to taste***	8.0	servings	servings	3
 22	23	2 garlic cloves, minced	2.0	cloves	cloves	4
+22	0	1 cup picante sauce	1.0	cup	c	5
 22	4	1/2 cup (1 small to medium) yellow or purple onion, chopped (the purple is sweeter)	0.5	cup	c	6
-22	48	2 mediums tomatoes, chopped	2.0	\N	\N	8
-23	138	10 ounces baby bella mushrooms, thickly sliced	10.0	ounces	oz	0
-23	87	1 teaspoon dried thyme	1.0	teaspoon	t	3
-23	14	1 large egg and 1 egg white, lightly beaten	1.0	\N	\N	4
-23	73	1/4 cup olive oil	0.25	cup	c	6
-23	59	teaspoon salt and fresh ground pepper to taste (I used about 1/2 each)	1.0	teaspoon	t	7
-23	125	1 medium sweet onion, diced	1.0	\N	\N	9
+22	0	1 (15 oz) can white hominy or sweet corn, drained	15.0	oz	oz	7
+22	47	2 mediums tomatoes, chopped	2.0			8
+23	136	10 ounces baby bella mushrooms, thickly sliced	10.0	ounces	oz	0
+23	0	1 cup fresh whole wheat bread crumbs (I used a food processor to turn 3 pieces of high-fiber 1/4 cup parsley, chopped	1.0	cup	c	1
+23	0	1 tablespoon Dijon mustard	1.0	tablespoon	T	2
+23	86	1 teaspoon dried thyme	1.0	teaspoon	t	3
+23	14	1 large egg and 1 egg white, lightly beaten	1.0			4
+23	0	1 1/2 pounds lean ground beef (93 percent lean or better)	1.5	pounds	lb	5
+23	72	1/4 cup olive oil	0.25	cup	c	6
+23	58	teaspoon salt and fresh ground pepper to taste (I used about 1/2 each)	1.0	teaspoon	t	7
+23	0	12 ounces bottle of stout beer (I used Dark Horse Brewing Company'	12.0	ounces	oz	8
+23	123	1 medium sweet onion, diced	1.0			9
+23	0	3 ounces low-fat Swiss cheese, shredded	3.0	ounces	oz	10
+24	0	4 cups Cheerios	4.0	cups	c	0
 24	5	1 cup Creamy peanut butter, (up to 1-1/2)	1.0	cup	c	1
-24	116	3/4 cup sugar	0.75	cup	c	6
-24	136	1/4 teaspoon vanilla extract	0.25	teaspoon	t	7
-26	9	2 bananas, smashed (I used frozen)	2.0	\N	\N	1
+24	0	2 cups Crisp rice cereal	2.0	cups	c	2
+24	0	2 cups Dry roasted peanuts	2.0	cups	c	3
+24	0	1 cup Light corn syrup	1.0	cup	c	4
+24	0	2 cups M&M's	2.0	cups	c	5
+24	114	3/4 cup sugar	0.75	cup	c	6
+24	134	1/4 teaspoon vanilla extract	0.25	teaspoon	t	7
+25	0	1 teaspoon agave	1.0	teaspoon	t	0
+25	0	1 tablespoon organic crunchy peanut butter	1.0	tablespoon	T	1
+25	0	1/2 cup non-fat milk	0.5	cup	c	2
+25	0	cup quick cooking oats	1.0	cup	c	3
+25	0	1 teaspoon unsweetened cocoa	1.0	teaspoon	t	4
+26	0	1 cup almond milk or other non-dairy milk (see my almond milk recipe)	1.0	cup	c	0
+26	9	2 bananas, smashed (I used frozen)	2.0			1
 26	5	1/2 cup peanut butter	0.5	cup	c	2
+26	0	� cup strawberries (about 3 strawberries) or 1 Tbsp strawberry jam	0.5	cup	c	3
 27	8	1 tablespoon Baking powder	1.0	tablespoon	T	0
-27	9	2 Bananas,ripe, mashed	2.0	\N	\N	1
-27	51	1/2 cup packed brown sugar	0.5	cup	c	2
-27	14	2 Eggs	2.0	\N	\N	3
+27	9	2 Bananas,ripe, mashed	2.0			1
+27	50	1/2 cup packed brown sugar	0.5	cup	c	2
+27	14	2 Eggs	2.0			3
 27	15	1 3/4 cups flour	1.75	cups	c	4
 27	20	1/4 cup Milk	0.25	cup	c	5
 27	5	1/2 cup peanut butter	0.5	cup	c	6
 27	6	1/2 teaspoon salt	0.5	teaspoon	t	7
-27	72	2 tablespoons Vegetable oil	2.0	tablespoons	T	8
+27	71	2 tablespoons Vegetable oil	2.0	tablespoons	T	8
 28	10	3/4 cup butter or margarine melted	0.75	cup	c	0
+28	0	18 ounces Chocolate chips	18.0	ounces	oz	1
+28	0	tablespoon cup plus 2 sweetened condensed milk	1.0	tablespoon	T	2
 28	13	1/2 cup cream cheese	0.5	cup	c	3
+28	0	12 double graham crackers (5 x 2 �- inches)	12.0			4
+28	0	1 3/4 cups heavy cream, divided	1.75	cups	c	5
 28	5	1 cup natural peanut butter	1.0	cup	c	6
 28	6	1/4 teaspoon salt	0.25	teaspoon	t	7
+29	0	1/4 cup peppermint flavored candies, crushed	0.25	cup	c	0
+29	0	1/2 tsp peppermint extract	0.5	tsp	t	1
+29	0	6-8 drops Red food coloring	6.0	drops	drops	2
+29	0	1 Container vanilla frosting (12 ounce)	12.0	ounce	oz	3
+29	0	2 Cups white chocolate chips	2.0	Cups	Cups	4
 30	8	1 tablespoon baking powder	1.0	tablespoon	T	0
 30	10	2 tablespoons Butter or margarine	2.0	tablespoons	T	1
-30	14	4 large eggs, room temperature	4.0	\N	\N	2
+30	14	4 large eggs, room temperature	4.0			2
 30	15	2 1/2 cups sifted all-purpose flour	2.5	cups	c	3
+30	0	1 cup (1/2 pint) heavy cream	1.0	cup	c	4
+30	145	1 lemon	1.0			5
+30	0	1 1/2 cups lemon curd, homemade or store-bought	1.5	cups	c	6
 30	20	1 cup milk	1.0	cup	c	7
+30	0	cup poppy seeds, plus more for sprinkling	1.0	cup	c	8
 30	6	Pinch of salt	1.0	pinch	pinch	9
-30	116	1 1/4 cups sugar	1.25	cups	c	10
-30	136	1 tablespoon vanilla extract	1.0	tablespoon	T	11
-31	101	1/4 cup apple cider vinegar	0.25	cup	c	0
-31	50	1/2 teaspoon cumin seeds	0.5	teaspoon	t	1
-31	51	2 tablespoons dark brown sugar	2.0	tablespoons	T	2
-31	98	Kosher salt	4.0	servings	servings	5
-31	142	1/2 cup fresh lime juice	0.5	cup	c	6
-31	4	1 onion, finely minced	1.0	\N	\N	9
+30	114	1 1/4 cups sugar	1.25	cups	c	10
+30	134	1 tablespoon vanilla extract	1.0	tablespoon	T	11
+31	99	1/4 cup apple cider vinegar	0.25	cup	c	0
+31	49	1/2 teaspoon cumin seeds	0.5	teaspoon	t	1
+31	50	2 tablespoons dark brown sugar	2.0	tablespoons	T	2
+31	0	1/2 teaspoon fennel seeds	0.5	teaspoon	t	3
+31	141	2 tablespoons minced ginger	2.0	tablespoons	T	4
+31	97	Kosher salt	4.0	servings	servings	5
+31	139	1/2 cup fresh lime juice	0.5	cup	c	6
+31	0	2 cups mango puree	2.0	cups	c	7
+31	0	2 tablespoons molasses	2.0	tablespoons	T	8
+31	4	1 onion, finely minced	1.0			9
 31	41	1 tablespoon paprika	1.0	tablespoon	T	10
-31	72	1/4 cup vegetable oil	0.25	cup	c	14
-31	139	1/4 cup Worcestershire sauce	0.25	cup	c	15
-32	126	2 teaspoons barbecue sauce	2.0	teaspoons	t	0
+31	0	3 pounds 1 boneless pork shoulder (Boston butt), about, excess fat removed, cut into chun	3.0	pounds	lb	11
+31	0	Brioche rolls, split	4.0	servings	servings	12
+31	160	1 serrano pepper, thinly sliced (seeds discarded if you don't like it spicy)	1.0			13
+31	71	1/4 cup vegetable oil	0.25	cup	c	14
+31	137	1/4 cup Worcestershire sauce	0.25	cup	c	15
+32	124	2 teaspoons barbecue sauce	2.0	teaspoons	t	0
+32	0	2 tablespoons Barbecue seasoning	2.0	tablespoons	T	1
 32	30	1 teaspoon hoisin sauce	1.0	teaspoon	t	2
 32	17	2 teaspoons honey	2.0	teaspoons	t	3
-32	97	Kosher salt or sea salt	2.0	servings	servings	6
+32	145	1 lemon	1.0			4
+32	0	2 6-ounce salmon fillets, patted dry	12.0	ounce	oz	5
+32	96	Kosher salt or sea salt	2.0	servings	servings	6
 33	8	1 tablespoon baking powder	1.0	tablespoon	T	0
 33	23	Bulb of garlic	1.0	lb	lb	1
-33	73	1 Tablespoon olive oil	1.0	Tablespoon	Tablespoon	2
-33	4	1 red onion, cubed	1.0	\N	\N	3
-33	84	1 tsp rosemary	1.0	tsp	t	5
+33	72	1 Tablespoon olive oil	1.0	Tablespoon	Tablespoon	2
+33	4	1 red onion, cubed	1.0			3
+33	0	1 roasted bulb of garlic	1.0			4
+33	83	1 tsp rosemary	1.0	tsp	t	5
 33	6	1/2 teaspoon salt	0.5	teaspoon	t	6
-33	86	1 tsp thyme	1.0	tsp	t	10
+33	0	1 cup shredded mozzarella	1.0	cup	c	7
+33	0	1/2 cup skim milk	0.5	cup	c	8
+33	154	2 medium sweet potatoes, peeled and cubed	2.0			9
+33	85	1 tsp thyme	1.0	tsp	t	10
 33	7	4 cups of water	4.0	cups	c	11
-33	112	1 cup whole wheat flour	1.0	cup	c	12
+33	110	1 cup whole wheat flour	1.0	cup	c	12
 34	15	1 cup of all purpose flour	1.0	cup	c	0
-34	59	1 teaspoon of black pepper	1.0	teaspoon	t	1
-34	96	1 teaspoon of chili powder	1.0	teaspoon	t	4
-34	14	2 eggs	2.0	\N	\N	5
+34	58	1 teaspoon of black pepper	1.0	teaspoon	t	1
+34	0	2 cups of breadcrumbs	2.0	cups	c	2
+34	0	1 cup of chopped chicken breast	1.0	cup	c	3
+34	95	1 teaspoon of chili powder	1.0	teaspoon	t	4
+34	14	2 eggs	2.0			5
 34	23	1 garlic clove	1.0	clove	clove	6
+34	0	1/4 teaspoon of ginger powder	0.25	teaspoon	t	7
+34	0	2 seasoning cubes	2.0			8
+34	71	Oil for deep frying	2.0	servings	servings	9
 34	6	Pinch of Salt	1.0	pinch	pinch	10
-35	132	1 Sweet apple, peeled, cored, and sliced	1.0	\N	\N	0
-35	132	4 Sweet apples, whole, cored, peel intact	4.0	\N	\N	1
+35	130	1 Sweet apple, peeled, cored, and sliced	1.0			0
+35	130	4 Sweet apples, whole, cored, peel intact	4.0			1
+35	0	1 Tbsp Arrowroot mixed with 2tbsp de-alcoholised, (slurry) red wine	1.0	Tbsp	Tbsp	2
+35	0	1 tsp Caraway seed	1.0	tsp	t	3
+35	0	3 Lower fat smoked chicken-apple sausages	3.0			4
+35	0	1 tsp Dill seed	1.0	tsp	t	5
 35	43	2 Tbsps Chopped fresh parsley	2.0	Tbsps	Tbsps	6
+35	0	1 tsp Light olive oil with a dash of toasted sesame oil	1.0	tsp	t	7
+35	0	1 cup Low sodium chicken stock	1.0	cup	c	8
+35	0	4 tsps Dry English mustard mixed with 4tsp	4.0	tsps	t	9
 35	16	1/8 tsp Grated nutmeg	0.125	tsp	t	10
-35	4	2 medium Onions, peeled and sliced thin	2.0	\N	\N	11
-35	97	1/2 tsp Finely ground sea salt	0.5	tsp	t	14
-35	61	1/8 tsp Freshly ground white pepper	0.125	tsp	t	15
+35	4	2 medium Onions, peeled and sliced thin	2.0			11
+35	0	4 lrg Russet potatoes, peeled and quartered	4.0			12
+35	0	4 medium Rutabagas, peeled and quartered	4.0			13
+35	96	1/2 tsp Finely ground sea salt	0.5	tsp	t	14
+35	60	1/8 tsp Freshly ground white pepper	0.125	tsp	t	15
+35	0	1 cup De-alcoholised dry red wine	1.0	cup	c	16
+35	0	1 tsp Yellow mustard seed	1.0	tsp	t	17
 36	10	75 grams butter	75.0	grams	g	0
-36	111	1 free-range egg yolk	1.0	\N	\N	1
+36	109	1 free-range egg yolk	1.0			1
+36	0	600 grams minced lamb	600.0	grams	g	2
+36	0	100 milliliters chicken, beef or lamb stock	100.0	milliliters	ml	3
 36	20	55 milliliters milk	55.0	milliliters	ml	4
-36	73	2 tablespoons olive oil	2.0	tablespoons	T	5
-36	4	2 onions, finely chopped	2.0	\N	\N	6
+36	72	2 tablespoons olive oil	2.0	tablespoons	T	5
+36	4	2 onions, finely chopped	2.0			6
 36	15	2 tablespoons plain flour	2.0	tablespoons	T	7
 36	27	700 grams potatoes	700.0	grams	g	8
-36	84	rosemary	4.0	servings	servings	9
-36	86	thyme	4.0	servings	servings	11
-36	68	1 small tin chopped tomatoes	1.0	\N	\N	12
+36	83	rosemary	4.0	servings	servings	9
+36	0	salt and freshly ground black pepper	4.0	servings	servings	10
+36	85	thyme	4.0	servings	servings	11
+36	67	1 small tin chopped tomatoes	1.0			12
 37	10	1 cup butter	1.0	cup	c	0
-37	14	1 large egg, lightly beaten	1.0	\N	\N	2
-37	14	4 medium eggs	4.0	\N	\N	3
+37	0	10 ounces golden syrup	10.0	ounces	oz	1
+37	14	1 large egg, lightly beaten	1.0			2
+37	14	4 medium eggs	4.0			3
 37	15	1 3/4 cups all-purpose flour	1.75	cups	c	4
-37	18	1 Zest and juice of lemon	1.0	\N	\N	6
+37	0	1 ounce fresh bread crumbs	1.0	ounce	oz	5
+37	18	1 Zest and juice of lemon	1.0			6
+37	0	1 tablespoon molasses	1.0	tablespoon	T	7
 37	6	1/2 teaspoon salt	0.5	teaspoon	t	8
-37	116	1/4 cup confectioner's sugar	0.25	cup	c	9
+37	114	1/4 cup confectioner's sugar	0.25	cup	c	9
+38	0	1 teaspoon Almond extract	1.0	teaspoon	t	0
+38	0	Fresh Berries	10.0	servings	servings	1
+38	0	1/2 cup Mrs Richardson's Butterscotch Caramel sauce	0.5	cup	c	2
+38	0	1 large box instant vanilla pudding	1.0	box	box	3
 38	20	3 cups milk	3.0	cups	c	4
+38	0	1 tub Cool Whip	1.0	tub	tub	5
+38	0	1 pound cake	1.0			6
 39	8	4 teaspoons baking powder	4.0	teaspoons	t	0
 39	10	1 stick butter, melted	1.0	stick	stick	1
+39	168	1/2 pound Cheddar cheese, grated	0.5	pound	lb	2
 39	15	1 1/4 cups all-purpose flour	1.25	cups	c	3
 39	20	1/2 cup milk	0.5	cup	c	4
+39	0	1 teaspoon poppy seeds	1.0	teaspoon	t	5
+39	0	2/3 cup instant mashed potato flakes	0.6666666666666666	cup	c	6
 39	6	1/2 teaspoon salt	0.5	teaspoon	t	7
 39	7	2/3 cup water	0.6666666666666666	cup	c	8
+39	0	1/2 cup yellow cornmeal	0.5	cup	c	9
 40	10	4 tablespoons (1/2 stick) butter, softened	4.0	tablespoons	T	0
 40	2	1 pound carrots, peeled and sliced	1.0	pound	lb	1
+40	0	4 celery stalks, chopped	4.0	stalks	stalks	2
+40	0	6 cups chicken stock	6.0	cups	c	3
 40	15	1/2 cup flour	0.5	cup	c	4
-40	134	A few dashes of hot sauce	3.0	dashes	dashes	6
-40	98	Kosher salt and freshly ground black pepper	6.0	servings	servings	7
-40	73	2 tablespoons olive oil)	2.0	tablespoons	T	8
+40	0	2 pounds ground chicken	2.0	pounds	lb	5
+40	132	A few dashes of hot sauce	3.0	dashes	dashes	6
+40	97	Kosher salt and freshly ground black pepper	6.0	servings	servings	7
+40	72	2 tablespoons olive oil)	2.0	tablespoons	T	8
 40	38	1 (10-ounce) package frozen peas	10.0	ounce	oz	9
-40	131	2 1/2 pounds russet potatoes, peeled and cubed	2.5	pounds	lb	11
-40	125	1 sweet yellow onion, peeled and diced	1.0	\N	\N	13
+40	0	2 teaspoons poultry seasoning	2.0	teaspoons	t	10
+40	129	2 1/2 pounds russet potatoes, peeled and cubed	2.5	pounds	lb	11
+40	0	2 cups shredded sharp cheddar cheese	2.0	cups	c	12
+40	123	1 sweet yellow onion, peeled and diced	1.0			13
 41	20	3/4 cup milk	0.75	cup	c	0
+41	0	2 cups self raising flour	2.0	cups	c	1
+41	0	strawberry jam and cream, for serving	4.0	servings	servings	2
 41	10	50g unsalted butter, softened	50.0	g	g	3
-42	111	2 Egg yolks	2.0	\N	\N	2
-42	56	400 grams mushrooms	400.0	grams	g	3
-42	73	Olive oil	2.0	servings	servings	4
+42	0	400 grams beef tenderloin	400.0	grams	g	0
+42	0	Dijon mustard for brushing meat or if you can find English mustard, even better.	2.0	servings	servings	1
+42	109	2 Egg yolks	2.0			2
+42	55	400 grams mushrooms	400.0	grams	g	3
+42	72	Olive oil	2.0	servings	servings	4
+42	0	4 slices proscuitto	4.0	slices	slices	5
+42	0	200 grams puff pastry	200.0	grams	g	6
+42	0	Salt and pepper	2.0	servings	servings	7
+43	0	1 cup beef stock or broth	1.0	cup	c	0
 43	10	2 tablespoons butter	2.0	tablespoons	T	1
-43	2	1 carrot, peeled and finely chopped	1.0	\N	\N	2
+43	2	1 carrot, peeled and finely chopped	1.0			2
 43	13	2 tablespoons cream cheese (or sour cream)	2.0	tablespoons	T	3
-43	111	1 large egg yolk	1.0	\N	\N	4
+43	109	1 large egg yolk	1.0			4
 43	15	2 tablespoons all-purpose flour	2.0	tablespoons	T	5
 43	43	2 tablespoons chopped fresh parsley leaves, for garnish	2.0	tablespoons	T	6
-43	86	2 teaspoons thyme (fresh or dried)	2.0	teaspoons	t	7
+43	85	2 teaspoons thyme (fresh or dried)	2.0	teaspoons	t	7
+43	0	1 3/4 pounds ground beef or ground lamb*	1.75	pounds	lb	8
 43	20	1/2 cup 1% milk (or heavy cream for richer flavor)	0.5	cup	c	9
-43	73	1 tablespoon extra-virgin olive oil, 1 turn of the pan	1.0	tablespoon	T	10
-43	4	1 onion, chopped	1.0	\N	\N	11
+43	72	1 tablespoon extra-virgin olive oil, 1 turn of the pan	1.0	tablespoon	T	10
+43	4	1 onion, chopped	1.0			11
 43	38	1/2 cup to 1 frozen peas, a couple of handfuls	0.5	cup	c	12
-43	131	2 pounds potatoes, such as russet, peeled and cubed	2.0	pounds	lb	13
+43	129	2 pounds potatoes, such as russet, peeled and cubed	2.0	pounds	lb	13
+43	0	Salt and freshly ground black pepper	6.0	servings	servings	14
 43	41	1 teaspoon sweet paprika	1.0	teaspoon	t	15
-43	71	2 tablespoons tomato paste	2.0	tablespoons	T	16
-43	139	2 teaspoons Worcestershire, eyeball it	2.0	teaspoons	t	17
+43	70	2 tablespoons tomato paste	2.0	tablespoons	T	16
+43	137	2 teaspoons Worcestershire, eyeball it	2.0	teaspoons	t	17
+44	0	1/3 cup agave nectar (or 1/3 cup sugar)	0.3333333333333333	cup	c	0
+44	0	3/4 cup unsweetened applesauce	0.75	cup	c	1
 44	8	2 teaspoons baking powder	2.0	teaspoons	t	2
+44	0	1/2 teaspoon baking soda	0.5	teaspoon	t	3
+44	0	1 cup Fresh Cherries, pitted and frozen	1.0	cup	c	4
+44	0	1 cup Fine Grind Cornmeal (Bob's Red Mill)	1.0	cup	c	5
+44	142	2 teaspoons ground ginger	2.0	teaspoons	t	6
 44	16	1 teaspoon ground nutmeg	1.0	teaspoon	t	7
+44	0	2-1/2 cups Oat Flour (Bob's Red Mill)	2.0	cups	c	8
+44	39	1/4 cup plain yogurt	0.25	cup	c	9
 44	6	1/2 teaspoon salt	0.5	teaspoon	t	10
-44	136	2 teaspoons vanilla extract	2.0	teaspoons	t	11
+44	134	2 teaspoons vanilla extract	2.0	teaspoons	t	11
+44	0	1/2 cup walnuts, chopped	0.5	cup	c	12
 45	10	1 teaspoon butter	1.0	teaspoon	t	0
-45	70	1 head cauliflower	1.0	head	head	1
+45	69	1 head cauliflower	1.0	head	head	1
+45	0	2 chicken sausage	2.0			2
 45	13	1 tablespoon fat-free cream cheese	1.0	tablespoon	T	3
 45	15	1 teaspoon flour	1.0	teaspoon	t	4
 45	20	1/4 cup milk	0.25	cup	c	5
-45	56	1 cup mushrooms, sliced	1.0	cup	c	6
-45	4	1/2 yellow onion	0.5	\N	\N	10
+45	55	1 cup mushrooms, sliced	1.0	cup	c	6
+45	0	1 tablespoon red wine	1.0	tablespoon	T	7
+45	0	3/4 cup reduced sodium chicken broth	0.75	cup	c	8
+45	0	salt and pepper to taste	2.0	servings	servings	9
+45	4	1/2 yellow onion	0.5			10
 46	8	1 1/2 teaspoons baking powder	1.5	teaspoons	t	0
-46	14	1 egg, slightly beaten	1.0	\N	\N	2
+46	0	3 tablespoons caster sugar	3.0	tablespoons	T	1
+46	14	1 egg, slightly beaten	1.0			2
 46	18	tablespoon of lemon juice	1.0	tablespoon	T	3
 46	20	175 milliliters milk	175.0	milliliters	ml	4
 46	6	1/4 teaspoon salt	0.25	teaspoon	t	5
+46	0	350 grams Self Raising Flour	350.0	grams	g	6
 46	10	1 stick unsalted butter, softened at room temperature	1.0	stick	stick	7
-46	136	1/2 teaspoon vanilla extract	0.5	teaspoon	t	8
+46	134	1/2 teaspoon vanilla extract	0.5	teaspoon	t	8
+46	0	1 1/2 dried culinary lavender	1.5			9
+47	0	1 cup chicken broth	1.0	cup	c	0
+47	0	2 cups corn kernels	2.0	cups	c	1
+47	0	1 pound lean ground beef	1.0	pound	lb	2
 47	4	2 tablespoons chopped onion	2.0	tablespoons	T	3
-47	27	4 mediums potatoes, peeled and quartered	4.0	\N	\N	4
+47	27	4 mediums potatoes, peeled and quartered	4.0			4
+47	0	8 ounces reduced fat cheddar cheese, grated	8.0	ounces	oz	5
 47	6	Salt to taste	4.0	servings	servings	6
 48	15	2 cups all purpose flour	2.0	cups	c	0
 48	8	2 teaspoons baking powder	2.0	teaspoons	t	1
+48	0	1/4 teaspoon baking soda	0.25	teaspoon	t	2
 48	10	1 tablespoon Butter	1.0	tablespoon	T	3
-48	14	1 large egg, beaten well	1.0	\N	\N	4
+48	14	1 large egg, beaten well	1.0			4
 48	14	Egg mixture to brush on the top of the scones	4.0	servings	servings	5
-48	14	2 eggs	2.0	\N	\N	6
-48	90	Thick jam or fruit preserves	4.0	servings	servings	7
-48	116	1/4 cup granulated white sugar	0.25	cup	c	8
+48	14	2 eggs	2.0			6
+48	89	Thick jam or fruit preserves	4.0	servings	servings	7
+48	114	1/4 cup granulated white sugar	0.25	cup	c	8
 48	20	cup milk	1.0	cup	c	9
 48	20	1 tablespoon milk	1.0	tablespoon	T	10
 48	6	Salt , to taste	4.0	servings	servings	11
-48	136	1 1/2 teaspoons pure vanilla extract	1.5	teaspoons	t	12
+48	134	1 1/2 teaspoons pure vanilla extract	1.5	teaspoons	t	12
 49	8	1 teaspoon baking powder	1.0	teaspoon	t	0
-49	51	milk to brush and brown sugar to top	4.0	servings	servings	2
+49	0	1 teaspoon Baking soda	1.0	teaspoon	t	1
+49	50	milk to brush and brown sugar to top	4.0	servings	servings	2
 49	10	1 pound Butter or margarine	1.0	pound	lb	3
+49	0	60 milliliters (2 fl oz or � cup) buttermilk	60.0	milliliters	ml	4
+49	0	40 grams (1.3 oz or � cup) chocolate chips	40.0	grams	g	5
 49	15	4 cups Flour	4.0	cups	c	6
 49	6	1 pinch salt	1.0	pinch	pinch	7
-49	116	1 cup sugar	1.0	cup	c	9
-49	136	2 milliliters (�) tsp vanilla extract	2.0	milliliters	ml	10
+49	0	70 grams (3 oz) whole milk ricotta cheese	3.0	oz	oz	8
+49	114	1 cup sugar	1.0	cup	c	9
+49	134	2 milliliters (�) tsp vanilla extract	2.0	milliliters	ml	10
 50	8	2 1/4 teaspoon baking powder	2.25	teaspoon	t	0
 50	10	2 tablespoons Butter	2.0	tablespoons	T	1
 50	12	1/4 teaspoon cinnamon	0.25	teaspoon	t	2
-50	14	1 egg lightly beaten mixed with a tablespoon of water for egg wash	1.0	\N	\N	3
+50	14	1 egg lightly beaten mixed with a tablespoon of water for egg wash	1.0			3
 50	15	2 cup flour	2.0	cup	c	4
-50	116	1/3 cup granulated white sugar	0.3333333333333333	cup	c	5
+50	114	1/3 cup granulated white sugar	0.3333333333333333	cup	c	5
+50	0	1/2 cup heavy cream	0.5	cup	c	6
+50	145	1 lemon	1.0			7
 50	20	2-3 tablespoon milk	2.0	tablespoon	T	8
+50	0	powdered sugar	8.0	servings	servings	9
 50	6	3/4 teaspoon salt	0.75	teaspoon	t	10
+50	0	1 pint strawberries	1.0	pint	pt	11
+51	0	2 tablespoons of caster sugar	2.0	tablespoons	T	0
+51	0	300 milliliters cream	300.0	milliliters	ml	1
+51	0	3 tablespoons of custard powder	3.0	tablespoons	T	2
+51	0	a packet of Cottee's cold jelly- as per packet instruction	1.0	packet	packet	3
 51	20	500 milliliters milk	500.0	milliliters	ml	4
-51	116	2 tablespoons of sugar (add more if you want to have the sweet custard)	2.0	tablespoons	T	6
-52	2	1 carrot	1.0	\N	\N	0
-52	14	2 eggs ( or egg substitutes for vegans, you can also add 3-4 tbsp dry yeast flakes)	2.0	\N	\N	2
-52	59	1/2 tsp ground pepper	0.5	tsp	t	3
-52	56	1 kg mushrooms	1.0	kg	kg	4
-52	4	2 onions, diced	2.0	\N	\N	5
+51	0	strawberries- washed and hulled	1.0	serving	serving	5
+51	114	2 tablespoons of sugar (add more if you want to have the sweet custard)	2.0	tablespoons	T	6
+52	2	1 carrot	1.0			0
+52	0	1 bunch of dill, chopped	1.0	bunch	bunch	1
+52	14	2 eggs ( or egg substitutes for vegans, you can also add 3-4 tbsp dry yeast flakes)	2.0			2
+52	58	1/2 tsp ground pepper	0.5	tsp	t	3
+52	55	1 kg mushrooms	1.0	kg	kg	4
+52	4	2 onions, diced	2.0			5
 52	43	1 bunch of parsley, chopped	1.0	bunch	bunch	6
-52	77	1 red bell pepper	1.0	\N	\N	7
-52	97	sea salt, to taste	12.0	servings	servings	9
-52	86	1 tbsp dry thyme	1.0	tbsp	T	13
-53	14	1 egg, separated	1.0	\N	\N	2
+52	76	1 red bell pepper	1.0			7
+52	128	1 kg red skin potatoes	1.0	kg	kg	8
+52	96	sea salt, to taste	12.0	servings	servings	9
+52	0	2 tbsp unrefined sunflower oil	2.0	tbsp	T	10
+52	0	1 tsp sweet paprika	1.0	tsp	t	11
+52	0	100g textured vegetable protein	100.0	g	g	12
+52	85	1 tbsp dry thyme	1.0	tbsp	T	13
+53	0	1/2 tsp dried thyme leaves	0.5	tsp	t	0
+53	0	1/2 lb goose or duck, liver pate or 17 oz. can liver pate	0.5	lb	lb	1
+53	14	1 egg, separated	1.0			2
 53	20	2 tsps milk	2.0	tsps	t	3
-53	56	1 8 oz. pkg. mushrooms, finely chopped	8.0	oz	oz	4
-53	4	1 med. sized onion, minced	1.0	\N	\N	5
+53	55	1 8 oz. pkg. mushrooms, finely chopped	8.0	oz	oz	4
+53	4	1 med. sized onion, minced	1.0			5
+53	0	1/4 tsp pepper	0.25	tsp	t	6
+53	0	1 17 � oz. pkg. frozen puff pastry	17.25	oz	oz	7
+53	0	2 Tbsps red wine	2.0	Tbsps	Tbsps	8
+53	0	1 6 lb. whole beef tenderloin roast	6.0	lb	lb	9
 53	6	1/2 tsp salt	0.5	tsp	t	10
+54	0	4 individual portion size fillets tenderloin beef	4.0	fillet	fillet	0
+54	0	2 Tbsps brandy (optional)	2.0	Tbsps	Tbsps	1
 54	10	3 Tbsps butter	3.0	Tbsps	Tbsps	2
-54	14	1 beaten egg	1.0	\N	\N	3
+54	14	1 beaten egg	1.0			3
 54	23	1 clove garlic, cut before using	1.0	clove	clove	4
-54	56	1 cup finely chopped mushrooms	1.0	cup	c	7
-55	93	1 teaspoon freshly chopped cilantro- optional	1.0	teaspoon	t	1
-55	73	1 teaspoon extra-virgin olive oil	1.0	teaspoon	t	3
+54	0	1 can liver pate	1.0	can	can	5
+54	0	1 Tbsp mixed herbs	1.0	Tbsp	Tbsp	6
+54	55	1 cup finely chopped mushrooms	1.0	cup	c	7
+55	0	1 medium avocado, mashed to a paste	1.0			0
+55	92	1 teaspoon freshly chopped cilantro- optional	1.0	teaspoon	t	1
+55	0	1/2 cup cook and peeled crayfish tails	0.5	cup	c	2
+55	72	1 teaspoon extra-virgin olive oil	1.0	teaspoon	t	3
 55	6	salt, to taste	4.0	servings	servings	4
-55	48	1 tomato	1.0	\N	\N	6
-56	9	8 bananas	8.0	\N	\N	0
-56	51	1/2 cup Brown sugar	0.5	cup	c	1
+55	0	2 teaspoons sherry vinegar	2.0	teaspoons	t	5
+55	47	1 tomato	1.0			6
+56	9	8 bananas	8.0			0
+56	50	1/2 cup Brown sugar	0.5	cup	c	1
 56	10	1/2 cup butter	0.5	cup	c	2
 56	12	1 teaspoon cinnamon	1.0	teaspoon	t	3
-56	14	10 Eggs	10.0	\N	\N	4
-56	117	1/4 cup Half& Half	0.25	cup	c	5
+56	14	10 Eggs	10.0			4
+56	115	1/4 cup Half& Half	0.25	cup	c	5
+56	0	1 loaf Hawaiian Bread (challah works well)	1.0	loaf	loaf	6
+56	0	2 cups heavy cream	2.0	cups	c	7
 56	19	1/4 cup Maple Syrup	0.25	cup	c	8
 56	6	1/2 teaspoon Salt	0.5	teaspoon	t	9
-56	116	1/4 cup Sugar	0.25	cup	c	10
+56	114	1/4 cup Sugar	0.25	cup	c	10
+56	0	1 teaspoon Vanilla	1.0	teaspoon	t	11
 57	9	1 cup Bananas (mashed)	1.0	cup	c	0
 57	10	1/2 cup butter	0.5	cup	c	1
-57	111	4 egg yolks	4.0	\N	\N	2
-57	116	1/2 cup granulated sugar, divided	0.5	cup	c	3
-57	98	1/8 teaspoon kosher salt	0.125	teaspoon	t	5
-57	51	1/4 cup light brown sugar	0.25	cup	c	6
+57	109	4 egg yolks	4.0			2
+57	114	1/2 cup granulated sugar, divided	0.5	cup	c	3
+57	0	2 cups heavy cream	2.0	cups	c	4
+57	97	1/8 teaspoon kosher salt	0.125	teaspoon	t	5
+57	50	1/4 cup light brown sugar	0.25	cup	c	6
+57	0	1 tablespoon rum	1.0	tablespoon	T	7
+57	0	1 vanilla bean	1.0			8
 57	20	1 1/4 cups whole milk	1.25	cups	c	9
-58	95	2 bunches green onions, chopped	2.0	bunches	bunches	1
-58	4	1 large onion, chopped	1.0	\N	\N	2
+58	0	6 cups cooked rice	6.0	cups	c	0
+58	94	2 bunches green onions, chopped	2.0	bunches	bunches	1
+58	4	1 large onion, chopped	1.0			2
 58	43	1 bunch parsley, chopped	1.0	bunch	bunch	3
+58	0	pepper to taste	6.0	servings	servings	4
+58	0	2 pounds pork meat	2.0	pounds	lb	5
+58	0	1 1/2 pounds pork liver	1.5	pounds	lb	6
 58	6	5 teaspoons salt	5.0	teaspoons	t	7
-59	59	1 1/2 teaspoons freshly-ground black pepper	1.5	teaspoons	t	0
+58	0	Sausage casings, soaked in cold water	6.0	servings	servings	8
+59	58	1 1/2 teaspoons freshly-ground black pepper	1.5	teaspoons	t	0
+59	0	2 1/2 teaspoons cayenne	2.5	teaspoons	t	1
+59	0	1/2 cup chopped celery	0.5	cup	c	2
+59	0	6 cups cooked medium-grain rice	6.0	cups	c	3
 59	23	4 cloves garlic finely chopped	4.0	cloves	cloves	4
 59	3	1/2 cup chopped green bell peppers	0.5	cup	c	5
 59	4	1 cup chopped onions	1.0	cup	c	6
 59	4	1 cup chopped green onions tops (green part only)	1.0	cup	c	7
 59	43	1 cup finely-chopped parsley	1.0	cup	c	8
+59	0	2 1/2 pounds pork butt, cut into 1" cubes	2.5	pounds	lb	9
+59	0	1 pound pork liver, rinsed in cool water	1.0	pound	lb	10
 59	6	2 teaspoons salt	2.0	teaspoons	t	11
+59	0	sausage casings, 1 1/2" diameter, about 4 feet in length	1.0			12
 59	7	2 quarts water	2.0	quarts	quarts	13
-60	59	1 tsp black pepper	1.0	tsp	t	0
-60	68	1 14.5 oz can petite diced tomatoes	14.5	oz	oz	3
-60	2	2 carrots, diced	2.0	\N	\N	4
+60	58	1 tsp black pepper	1.0	tsp	t	0
+60	104	1/2 vegan Bouillon cube	0.5			1
+60	0	1 15oz can kidney beans	15.0	oz	oz	2
+60	67	1 14.5 oz can petite diced tomatoes	14.5	oz	oz	3
+60	2	2 carrots, diced	2.0			4
+60	0	1 celery stalk, diced	1.0	stalk	stalk	5
+60	0	2 tsp Tony Chachere's Creole Seasoning	2.0	tsp	t	6
 60	23	3 garlic cloves, minced	3.0	cloves	cloves	7
-60	95	1/2 cup green onions, chopped	0.5	cup	c	8
-60	4	1 onion, diced	1.0	\N	\N	11
+60	94	1/2 cup green onions, chopped	0.5	cup	c	8
+60	0	3 tsp Tony Chachere's Instant Roux	3.0	tsp	t	9
+60	174	2 cups whole grain rice	2.0	cups	c	10
+60	4	1 onion, diced	1.0			11
 60	43	1/3 cup parsley, chopped	0.3333333333333333	cup	c	12
 60	6	1 tsp salt	1.0	tsp	t	13
-60	71	2 Tbsp tomato paste	2.0	Tbsp	Tbsp	14
+60	70	2 Tbsp tomato paste	2.0	Tbsp	Tbsp	14
+60	0	2 veggie sausage links	2.0			15
 60	7	3/4 cup water	0.75	cup	c	16
 60	7	3 1/2 cups water	3.5	cups	c	17
 61	22	3 strips of Bacon	3.0	strips	strips	0
-61	3	1 Bell Pepper, any Color, Chopped	1.0	\N	\N	1
+61	3	1 Bell Pepper, any Color, Chopped	1.0			1
+61	0	3/4 cup Chicken, Seafood, or Veggie Broth	0.75	cup	c	2
+61	0	1 teaspoon of Cajun Spice	1.0	teaspoon	t	3
 61	23	3 cloves of Garlic, Minced	3.0	cloves	cloves	4
-61	95	3 Green Onions, Chopped	3.0	\N	\N	6
+61	143	1/2 teaspoon of Garlic Powder	0.5	teaspoon	t	5
+61	94	3 Green Onions, Chopped	3.0			6
+61	0	1/4 cup of Heavy Cream	0.25	cup	c	7
+61	0	1/2 teaspoon of Lemon Pepper	0.5	teaspoon	t	8
+61	0	1 pd of Lobster	1.0	pound	lb	9
+61	0	1 teaspoon of Old Bay Seasoning	1.0	teaspoon	t	10
+61	166	1/2 teaspoon of Onion Powder	0.5	teaspoon	t	11
 61	45	1/2 teaspoon of Oregano	0.5	teaspoon	t	12
-61	59	Pepper to taste	1.0	serving	serving	13
+61	58	Pepper to taste	1.0	serving	serving	13
 61	6	1/4 tsp salt	0.25	tsp	t	14
-62	124	1 tsp cayenne pepper	1.0	tsp	t	0
-62	73	3 tbsp olive oil	3.0	tbsp	T	3
+62	122	1 tsp cayenne pepper	1.0	tsp	t	0
+62	143	1 tsp garlic powder	1.0	tsp	t	1
+62	0	1 tsp italian seasoning	1.0	tsp	t	2
+62	72	3 tbsp olive oil	3.0	tbsp	T	3
+62	166	1 tsp onion powder	1.0	tsp	t	4
 62	41	2 tsp paprika	2.0	tsp	t	5
-62	59	1/2 tsp pepper	0.5	tsp	t	6
-62	131	2 large russet potatoes	2.0	\N	\N	7
+62	58	1/2 tsp pepper	0.5	tsp	t	6
+62	129	2 large russet potatoes	2.0			7
 62	6	¾ tsp salt	0.75	tsp	t	8
-63	61	1/2 t white pepper	0.5	t	t	2
-63	59	1 Tablespoon Black Pepper	1.0	Tablespoon	Tablespoon	3
-63	124	1 Tablespoon Cayenne Pepper	1.0	Tablespoon	Tablespoon	4
+63	0	9 oz andouille sausage, cut into 1/2 inch rounds	9.0	oz	oz	0
+63	0	2 bay leaves, left whole	2.0			1
+63	60	1/2 t white pepper	0.5	t	t	2
+63	58	1 Tablespoon Black Pepper	1.0	Tablespoon	Tablespoon	3
+63	122	1 Tablespoon Cayenne Pepper	1.0	Tablespoon	Tablespoon	4
+63	0	3 stalks celery, cut into 1 inch pieces	3.0	stalks	stalks	5
+63	0	3 C fish stock or clam juice	3.0	C	C	6
+63	0	2 C white rice, cooked, washed and drained	2.0	C	C	7
+63	0	1/2 # canned or fresh crab meat	0.5			8
 63	45	1 Tablespoon Dried Oregano	1.0	Tablespoon	Tablespoon	9
-63	87	1 Tablespoon Dried Thyme	1.0	Tablespoon	Tablespoon	10
+63	86	1 Tablespoon Dried Thyme	1.0	Tablespoon	Tablespoon	10
 63	23	3 large cloves of garlic, chopped	3.0	cloves	cloves	11
-63	137	1 jalapeno pepper, seeded	1.0	\N	\N	12
-63	77	1 red or orange Bell pepper, chopped coarse	1.0	\N	\N	13
-63	53	1 pound shrimp	1.0	pound	lb	16
+63	135	1 jalapeno pepper, seeded	1.0			12
+63	76	1 red or orange Bell pepper, chopped coarse	1.0			13
+63	0	1 10 oz jar of oysters or 8-10 oysters with their juices	10.0	oz	oz	14
+63	0	1/2 C peanut oil	0.5	C	C	15
+63	52	1 pound shrimp	1.0	pound	lb	16
 63	15	1/2 C white flour	0.5	C	C	17
+64	0	8 ounces of Asparagus Spears, Cut into Thirds	8.0	ounces	oz	0
 64	22	3 slices of Bacon	3.0	slices	slices	1
+64	0	2 cups seafood broth	2.0	cups	c	2
+64	0	1 tablespoon of Cajun Spice	1.0	tablespoon	T	3
+64	0	1 cup of Corn	1.0	cup	c	4
 64	23	3 cloves of garlic, crushed	3.0	cloves	cloves	5
-64	4	1 Small Onion, Chopped	1.0	\N	\N	9
-64	53	1 pound Peeled and Cooked Shrimp	1.0	pound	lb	11
-64	48	14 1/2 Oz. Can of Diced Tomatoes	14.0	\N	\N	12
-65	102	2 tablespoons white wine vinegar (red wine vinegar also works well)	2.0	tablespoons	T	3
-65	53	8 ounces large uncooked shrimp, peeled with tails on (about 20), thawed	8.0	ounces	oz	5
+64	0	1/2 cup of Heavy Cream	0.5	cup	c	6
+64	0	1 teaspoon of Lemon Pepper	1.0	teaspoon	t	7
+64	0	1/2 teaspoon of Old Bay Seasoning	0.5	teaspoon	t	8
+64	4	1 Small Onion, Chopped	1.0			9
+64	0	Salt and Pepper to Taste	8.0	servings	servings	10
+64	52	1 pound Peeled and Cooked Shrimp	1.0	pound	lb	11
+64	47	14 1/2 Oz. Can of Diced Tomatoes	14.0			12
+65	0	1 teaspoon Cajun or creole seasoning (like Tony Chachere's), divided	1.0	teaspoon	t	0
+65	0	1 whole English cucumber, sliced thinly	1.0			1
+65	0	1/4 cup prepared pico de gallo	0.25	cup	c	2
+65	100	2 tablespoons white wine vinegar (red wine vinegar also works well)	2.0	tablespoons	T	3
+65	0	salt and pepper to taste	2.0	servings	servings	4
+65	52	8 ounces large uncooked shrimp, peeled with tails on (about 20), thawed	8.0	ounces	oz	5
+65	0	1 tablespoon freshly squeezed lemon juice or white/white wine vinegar	1.0	tablespoon	T	6
 66	10	2 tablespoons butter, divided	2.0	tablespoons	T	0
-66	68	1 cup canned chopped tomatoes	1.0	cup	c	1
+66	67	1 cup canned chopped tomatoes	1.0	cup	c	1
+66	0	2 celery ribs, minced	2.0	rib	rib	2
+66	0	1 chicken bouillon cube	1.0			3
+66	0	1 package (2-pound) frozen crawfish tails, thawed*	2.0	pound	lb	4
+66	0	1 tablespoon Creole seasoning	1.0	tablespoon	T	5
 66	15	cup all-purpose flour	1.0	cup	c	6
 66	43	1 tablespoon chopped fresh parsley	1.0	tablespoon	T	7
 66	23	2 garlic cloves minced	2.0	cloves	cloves	8
-66	3	1/2 green bell pepper, minced	0.5	\N	\N	9
-66	95	1 bunch green onions, finely chopped	1.0	bunch	bunch	10
+66	3	1/2 green bell pepper, minced	0.5			9
+66	94	1 bunch green onions, finely chopped	1.0	bunch	bunch	10
+66	0	1 package (8-ounce) linguine	8.0	ounce	oz	11
 66	4	2 tablespoons onion, finely chopped	2.0	tablespoons	T	12
+66	0	Shredded Parmesan cheese	8.0	servings	servings	13
 66	43	Garnish: chopped fresh parsley	8.0	servings	servings	14
+66	0	1/4 teaspoon pepper	0.25	teaspoon	t	15
 66	6	salt	8.0	servings	servings	16
-67	88	1 teaspoon basil	1.0	teaspoon	t	0
-67	80	8 ounces can tomato sauce	8.0	ounces	oz	2
-67	68	1 14.5-oz. can fire-roasted diced tomatoes, no salt added	14.5	oz	oz	3
+66	0	1 pint whipping cream	1.0	pint	pt	17
+67	87	1 teaspoon basil	1.0	teaspoon	t	0
+67	0	1 Bay leaf	1.0			1
+67	79	8 ounces can tomato sauce	8.0	ounces	oz	2
+67	67	1 14.5-oz. can fire-roasted diced tomatoes, no salt added	14.5	oz	oz	3
+67	0	5 celery stalks	5.0			4
+67	0	2 cups chicken stock	2.0	cups	c	5
+67	0	2 pounds grouper or a white fish	2.0	pounds	lb	6
 67	23	20 grams garlic finely chopped	20.0	grams	g	7
-67	3	1 green pepper	1.0	\N	\N	8
+67	3	1 green pepper	1.0			8
+67	0	okra	10.0	servings	servings	9
 67	4	3/4 cup onion, chopped	0.75	cup	c	10
 67	41	paprika, to taste	10.0	servings	servings	11
-67	86	1/2 teaspoon thyme	0.5	teaspoon	t	14
-68	68	1 14.5-oz. can fire-roasted diced tomatoes, no salt added	14.5	oz	oz	1
-68	124	1/2 teaspoon cayenne pepper	0.5	teaspoon	t	2
-68	87	1/4 tsp. dried thyme	0.25	tsp	t	8
+67	0	alt and pepper, to taste	10.0	servings	servings	12
+67	0	2 links hot sausage	2.0	links	links	13
+67	85	1/2 teaspoon thyme	0.5	teaspoon	t	14
+68	0	3 ounces fully cooked andouille or	3.0	ounces	oz	0
+68	67	1 14.5-oz. can fire-roasted diced tomatoes, no salt added	14.5	oz	oz	1
+68	122	1/2 teaspoon cayenne pepper	0.5	teaspoon	t	2
+68	0	1 cup thinly-sliced celery	1.0	cup	c	3
+68	0	3 ounces can chicken broth - (14 1/2 ea)	3.0	ounces	oz	4
+68	0	8 chicken drumsticks skinned	8.0			5
+68	0	chorizo sausage diced	8.0	servings	servings	6
+68	0	1 teaspoon dried marjoram	1.0	teaspoon	t	7
+68	86	1/4 tsp. dried thyme	0.25	tsp	t	8
 68	23	4 garlic cloves crushed	4.0	cloves	cloves	9
+68	0	2/3 cup long-grain brown rice	0.6666666666666666	cup	c	10
+68	0	1/2 pound fresh okra cut 1/2" slices	0.5	pound	lb	11
 68	4	3/4 cup onion, chopped	0.75	cup	c	12
-68	77	1 red bell pepper diced	1.0	\N	\N	13
-68	53	1/2 pound medium shrimp peeled, deveined	0.5	pound	lb	14
-69	68	1 14.5-oz. can fire-roasted diced tomatoes, no salt added	14.5	oz	oz	2
+68	76	1 red bell pepper diced	1.0			13
+68	52	1/2 pound medium shrimp peeled, deveined	0.5	pound	lb	14
+69	0	1/2 cup uncooked brown rice	0.5	cup	c	0
+69	0	1 tsp. cajun seasoning	1.0	tsp	t	1
+69	67	1 14.5-oz. can fire-roasted diced tomatoes, no salt added	14.5	oz	oz	2
+69	0	1 cup celery, chopped	1.0	cup	c	3
+69	0	2 fully cooked chicken sausage Links (about 6 oz) sliced into coins � I used Trader Joe's Sweet Italian Chicken Sausage	6.0	oz	oz	4
 69	45	1/4 tsp. dried oregano	0.25	tsp	t	5
-69	87	1/4 tsp. dried thyme	0.25	tsp	t	6
-69	23	16 Garlic , peeled	16.0	\N	\N	7
-69	134	1/2 tsp. hot sauce, or more to taste	0.5	tsp	t	8
+69	86	1/4 tsp. dried thyme	0.25	tsp	t	6
+69	23	16 Garlic , peeled	16.0			7
+69	132	1/2 tsp. hot sauce, or more to taste	0.5	tsp	t	8
+69	0	1 cup low-sodium chicken broth	1.0	cup	c	9
 69	4	3/4 cup onion, chopped	0.75	cup	c	10
-69	83	1 large green bell pepper, seeded, chopped � I used yellow	1.0	\N	\N	12
-70	68	1 can whole peeled tomatoes, chopped	1.0	can	can	3
-70	87	1/2 teaspoon dried thyme	0.5	teaspoon	t	6
+69	0	6 oz. raw shrimp, tails removed, deveined, chopped	6.0	oz	oz	11
+69	82	1 large green bell pepper, seeded, chopped � I used yellow	1.0			12
+70	0	1 pound andouille, turkey, kielbasa or smoked sausage, cubed	1.0	pound	lb	0
+70	0	3 bay leaves	3.0			1
+70	0	1 dozen fresh or frozen blue crabs, cleaned and shells removed (substitute: 2 pounds fresh crabmeat, crawfish, oyster, or turtle)	12.0			2
+70	67	1 can whole peeled tomatoes, chopped	1.0	can	can	3
+70	0	4 stalks celery, chopped	4.0	stalks	stalks	4
+70	0	Creole seasoning to taste	9.0	servings	servings	5
+70	86	1/2 teaspoon dried thyme	0.5	teaspoon	t	6
+70	0	2 tablespoons filé powder	2.0	tablespoons	T	7
 70	15	1/2 cup flour	0.5	cup	c	8
 70	23	3 cloves of garlic, minced	3.0	cloves	cloves	9
-70	95	1 cup chopped green onions	1.0	cup	c	10
-70	3	2 green peppers, chopped	2.0	\N	\N	11
-70	59	2 teaspoons ground black pepper	2.0	teaspoons	t	12
-70	4	1 large onion, chopped	1.0	\N	\N	14
+70	94	1 cup chopped green onions	1.0	cup	c	10
+70	3	2 green peppers, chopped	2.0			11
+70	58	2 teaspoons ground black pepper	2.0	teaspoons	t	12
+70	0	1 pound fresh or frozen sliced okra	1.0	pound	lb	13
+70	4	1 large onion, chopped	1.0			14
 70	43	1/2 cup chopped parsley	0.5	cup	c	15
+70	174	1 bag Louisiana rice (or white rice)	1.0	bag	bag	16
 70	6	salt, to taste	9.0	servings	servings	17
-70	53	2 pounds fresh or frozen medium-size shrimp, in shells if possible, for stock	2.0	pounds	lb	18
-70	71	1 ounce tomato paste	1.0	ounce	oz	20
-70	72	4 teaspoons vegetable oil or shortening	4.0	teaspoons	t	21
-70	139	1 teaspoon Worcestershire sauce	1.0	teaspoon	t	22
+70	52	2 pounds fresh or frozen medium-size shrimp, in shells if possible, for stock	2.0	pounds	lb	18
+70	0	All the Tabasco sauce you can handle	1.0	can	can	19
+70	70	1 ounce tomato paste	1.0	ounce	oz	20
+70	71	4 teaspoons vegetable oil or shortening	4.0	teaspoons	t	21
+70	137	1 teaspoon Worcestershire sauce	1.0	teaspoon	t	22
+71	0	5Stuff "baby" or "surprise" into dough, from the bottom or under side after baking.	1.0	serving	serving	0
 71	10	2 1/2 tablespoons Butter	2.5	tablespoons	T	1
 71	12	2 tablespoons powdered cinnamon	2.0	tablespoons	T	2
-71	14	2 eggs, beaten	2.0	\N	\N	3
+71	14	2 eggs, beaten	2.0			3
 71	15	5 cups all-purpose flour	5.0	cups	c	4
 71	20	3/4 cup milk	0.75	cup	c	5
+71	0	1/2 teaspoon powdered ginger	0.5	teaspoon	t	6
+71	0	1/2 cup powdered sugar	0.5	cup	c	7
 71	6	salt	1.0	serving	serving	8
-71	116	1/2 cup sugar	0.5	cup	c	10
-71	116	cup sugar	1.0	cup	c	11
-71	136	1/2 teaspoon almond or vanilla extract (optional)	0.5	teaspoon	t	12
+71	0	Shortening (butter Crisco)	1.0	serving	serving	9
+71	114	1/2 cup sugar	0.5	cup	c	10
+71	114	cup sugar	1.0	cup	c	11
+71	134	1/2 teaspoon almond or vanilla extract (optional)	0.5	teaspoon	t	12
 71	7	1 1/2 teaspoons warm water (powdered sugar and 1 pkg. colored decorating sugar	1.5	teaspoons	t	13
-72	3	1 bell pepper, chopped	1.0	\N	\N	2
+72	0	1 1/2 pounds smoked Andouille sausage, sliced	1.5	pounds	lb	0
+72	0	2 bay leaves	2.0			1
+72	3	1 bell pepper, chopped	1.0			2
 72	11	1 tablespoon Canola oil	1.0	tablespoon	T	3
-72	87	1 teaspoon dried thyme leaves	1.0	teaspoon	t	6
+72	0	5 stalks celery, diced	5.0	stalks	stalks	4
+72	0	Creole seasoning to taste	6.0	servings	servings	5
+72	86	1 teaspoon dried thyme leaves	1.0	teaspoon	t	6
 72	23	1 clove garlic chopped	1.0	clove	clove	7
-72	4	1 large onion, chopped	1.0	\N	\N	9
-72	135	Tabasco sauce to taste	6.0	servings	servings	13
-72	139	Few dashes of Worcestershire sauce to taste	3.0	dashes	dashes	14
+72	174	White long grain rice	6.0	servings	servings	8
+72	4	1 large onion, chopped	1.0			9
+72	0	1 pound dried red kidney beans	1.0	pound	lb	10
+72	0	Salt and pepper to taste	6.0	servings	servings	11
+72	0	1 large smoked ham hock	1.0			12
+72	133	Tabasco sauce to taste	6.0	servings	servings	13
+72	137	Few dashes of Worcestershire sauce to taste	3.0	dashes	dashes	14
+73	0	2 bay leaves	2.0			0
+73	0	3 ribs celery, finely diced	3.0	ribs	ribs	1
+73	86	1 teaspoon dried thyme leaves	1.0	teaspoon	t	2
+73	0	1 tablespoon filé powder	1.0	tablespoon	T	3
+73	0	4 quarts shrimp stock, crab stock or fish stock	4.0	quarts	quarts	4
 73	15	1/2 cup flour	0.5	cup	c	5
 73	23	6 cloves garlic, minced	6.0	cloves	cloves	6
-73	3	2 green bell peppers, diced	2.0	\N	\N	7
-73	4	2 medium onions, diced	2.0	\N	\N	12
-73	53	2 pounds medium shrimp, peeled and deveined	2.0	pounds	lb	16
-73	48	4 tomatoes, seeded and diced	4.0	\N	\N	18
+73	3	2 green bell peppers, diced	2.0			7
+73	174	8 cups cooked long-grain white rice	8.0	cups	c	8
+73	0	1 pound fresh lump crab meat, picked over for shells and cartilage	1.0	pound	lb	9
+73	71	1/2 cup oil	0.5	cup	c	10
+73	0	2 pounds okra, chopped	2.0	pounds	lb	11
+73	4	2 medium onions, diced	2.0			12
+73	0	2 dozen oysters, freshly shucked, liquor reserved	24.0			13
+73	0	Salt and freshly ground black pepper to taste	12.0	servings	servings	14
+73	0	1 tablespoon Creole seasoning blend	1.0	tablespoon	T	15
+73	52	2 pounds medium shrimp, peeled and deveined	2.0	pounds	lb	16
+73	0	1 cup tomato purée	1.0	cup	c	17
+73	47	4 tomatoes, seeded and diced	4.0			18
 74	34	1tsp. allspice	1.0	tsp	t	0
-74	81	6 tbsp. curry powder	6.0	tbsp	T	2
+74	0	1 tbsp. coconut oil	1.0	tbsp	T	1
+74	80	6 tbsp. curry powder	6.0	tbsp	T	2
 74	23	1 tablespoon Garlic, granulated	1.0	tablespoon	T	3
-74	3	1 large green pepper (chopped)	1.0	\N	\N	4
-74	4	1/2 medium Onion, chopped	0.5	\N	\N	5
+74	3	1 large green pepper (chopped)	1.0			4
+74	4	1/2 medium Onion, chopped	0.5			5
+74	0	2 tsp. black pepper pepper	2.0	tsp	t	6
 74	6	1 1/2 teaspoons salt	1.5	teaspoons	t	7
-74	95	3 scallions (chopped)	3.0	\N	\N	8
-74	109	1 scotch bonnet pepper or habanero (seeded and minced)	1.0	\N	\N	9
-74	86	1tbsp. thyme	1.0	tbsp	T	12
+74	94	3 scallions (chopped)	3.0			8
+74	107	1 scotch bonnet pepper or habanero (seeded and minced)	1.0			9
+74	0	3lb of chicken thighs, legs or breast (skinless)	3.0	lb	lb	10
+74	154	2 sweet potatoes (chopped)	2.0			11
+74	85	1tbsp. thyme	1.0	tbsp	T	12
 74	7	2 cups water	2.0	cups	c	13
 75	33	1 pound dry organic black turtle beans	1.0	pound	lb	0
-75	51	1 tablespoon Brown sugar	1.0	tablespoon	T	1
-75	93	1/2 cup fresh cilantro, chopped	0.5	cup	c	3
-75	95	2 green onions, roughly chopped	2.0	\N	\N	4
+75	50	1 tablespoon Brown sugar	1.0	tablespoon	T	1
+75	0	2 tablespoons organic coconut oil (or olive oil)	2.0	tablespoons	T	2
+75	92	1/2 cup fresh cilantro, chopped	0.5	cup	c	3
+75	94	2 green onions, roughly chopped	2.0			4
 75	34	1 tablespoon Ground Allspice	1.0	tablespoon	T	5
-75	4	1/2 onion, roughly chopped	0.5	\N	\N	8
-75	97	2 tsp course sea salt	2.0	tsp	t	9
-75	86	1/2 tsp thyme	0.5	tsp	t	11
-75	107	8 cups of vegetable broth or water	8.0	cups	c	12
+75	142	2 tsp ground ginger	2.0	tsp	t	6
+75	0	4 jalapenos, seeded and chopped	4.0			7
+75	4	1/2 onion, roughly chopped	0.5			8
+75	96	2 tsp course sea salt	2.0	tsp	t	9
+75	154	4 cups local or organic sweet potatoes peeled and chopped into 1/2 inch cubes	4.0	cups	c	10
+75	85	1/2 tsp thyme	0.5	tsp	t	11
+75	105	8 cups of vegetable broth or water	8.0	cups	c	12
 76	34	1 tsp allspice	1.0	tsp	t	0
-76	51	2 tbsp brown sugar	2.0	tbsp	T	2
+76	0	4 bone in chicken thighs	4.0			1
+76	50	2 tbsp brown sugar	2.0	tbsp	T	2
 76	12	1 tsp cinnamon	1.0	tsp	t	3
 76	23	3 cloves garlic, roughly chopped	3.0	cloves	cloves	4
-76	95	2 green onions, roughly chopped	2.0	\N	\N	5
-76	137	1 jalapeno, roughly chopped	1.0	\N	\N	8
-76	142	3 limes, juiced	3.0	\N	\N	9
-76	4	� onion, roughly chopped	0.5	\N	\N	10
+76	94	2 green onions, roughly chopped	2.0			5
+76	142	1 tsp ground ginger	1.0	tsp	t	6
+76	0	1 tsp italian seasoning	1.0	tsp	t	7
+76	135	1 jalapeno, roughly chopped	1.0			8
+76	139	3 limes, juiced	3.0			9
+76	4	� onion, roughly chopped	0.5			10
+76	0	1 tsp pepper	1.0	tsp	t	11
+76	0	6 oz. pineapple juice	6.0	oz	oz	12
 76	6	1 tbsp salt	1.0	tbsp	T	13
+77	0	1/4 cup coconut	0.25	cup	c	0
+77	0	2 tablespoons coconut	2.0	tablespoons	T	1
 77	13	1 package (8 ounce) cream cheese, softened	8.0	ounce	oz	2
-77	111	2 egg yolks	2.0	\N	\N	3
+77	109	2 egg yolks	2.0			3
 77	15	1/4 cup all-purpose flour	0.25	cup	c	4
-77	141	lime slices	1.0	slicesslices	slicesslices	7
-77	142	3 tablespoons lime juice	3.0	tablespoons	T	8
-77	128	6 tablespoons sour cream	6.0	tablespoons	T	11
-77	116	1/4 cup sugar	0.25	cup	c	12
-77	116	1/2 cup sugar	0.5	cup	c	13
+77	0	1/2 cup heavy whipping cream	0.5	cup	c	5
+77	0	1 package (2.9 ounce) lemon pudding mix	2.9	ounce	oz	6
+77	138	lime slices	1.0	slicesslices	slicesslices	7
+77	139	3 tablespoons lime juice	3.0	tablespoons	T	8
+77	0	1 teaspoon grated lime peel	1.0	teaspoon	t	9
+77	0	1 (15 ounce) refrigerated pie crust	15.0	ounce	oz	10
+77	126	6 tablespoons sour cream	6.0	tablespoons	T	11
+77	114	1/4 cup sugar	0.25	cup	c	12
+77	114	1/2 cup sugar	0.5	cup	c	13
 77	10	4 teaspoons unsalted butter	4.0	teaspoons	t	14
 77	7	2 cups water	2.0	cups	c	15
-78	86	1 tsp. fresh thyme	1.0	tsp	t	6
+77	0	1 cup white chocolate chips	1.0	cup	c	16
+78	0	8 ounces fresh callaloo leaves, Swiss chard, or baby spinach leaves	8.0	ounces	oz	0
+78	0	2 cups chicken stock	2.0	cups	c	1
+78	0	2 cups coconut milk	2.0	cups	c	2
+78	0	2 tbsp. coconut oil	2.0	tbsp	T	3
+78	0	cooked long grain rice or prepared foo-foo (plantain)	4.0	servings	servings	4
+78	0	6 ounces fresh crab meat, picked over for shell bits	6.0	ounces	oz	5
+78	85	1 tsp. fresh thyme	1.0	tsp	t	6
 78	23	2 Cloves garlic, chopped	2.0	Cloves	Cloves	7
-78	110	1 fresh habanero chile, seeds removed and chopped	1.0	\N	\N	8
+78	108	1 fresh habanero chile, seeds removed and chopped	1.0			8
+78	0	10 fresh okra, chopped	10.0			9
 78	4	1/2 cup chopped onion	0.5	cup	c	10
-78	95	1 cup chopped scallions	1.0	cup	c	13
+78	0	salt and pepper to taste	4.0	servings	servings	11
+78	147	1 1/2 ounces salt pork or bacon, chopped	1.5	ounces	oz	12
+78	94	1 cup chopped scallions	1.0	cup	c	13
+79	0	2 cups of coconut milk	2.0	cups	c	0
 79	40	1 tablespoon of corn starch	1.0	tablespoon	T	1
-79	81	2 tablespoons of curry powder	2.0	tablespoons	T	2
+79	80	2 tablespoons of curry powder	2.0	tablespoons	T	2
 79	23	1 clove of garlic (chopped)	1.0	clove	clove	3
-79	4	1/2 bulb of onion	0.5	\N	\N	6
+79	0	Seasoning cubes	1.0	cubes	cubes	4
+79	0	1 medium piece of Mackerel (chopped in 4 pieces)	1.0	piece		5
+79	4	1/2 bulb of onion	0.5			6
+79	0	1/2 cup of red kidney beans	0.5	cup	c	7
+79	174	1 cup of Rice	1.0	cup	c	8
+79	0	3 scotch bonnet peppers	3.0			9
+80	0	1 (8 -10 lb.) Duck	8.0	lb	lb	0
+80	0	1/4 teaspoon five spice powder	0.25	teaspoon	t	1
 80	30	Hoisin sauce	12.0	servings	servings	2
 80	17	1 teaspoon honey	1.0	teaspoon	t	3
+80	0	1 teaspoon light corn syrup	1.0	teaspoon	t	4
+80	0	1 teaspoon rice wine vinegar	1.0	teaspoon	t	5
 80	6	2 teaspoons salt	2.0	teaspoons	t	6
-80	95	Scallions	12.0	servings	servings	7
+80	94	Scallions	12.0	servings	servings	7
 80	7	1 gallon boiling water	1.0	gallon	gallon	8
-80	61	1/4 teaspoon white pepper	0.25	teaspoon	t	9
+80	60	1/4 teaspoon white pepper	0.25	teaspoon	t	9
+81	0	1 tablespoon smooth almond butter	1.0	tablespoon	T	0
 81	11	1/2 cup canola oil	0.5	cup	c	1
-81	2	2 carrots, shredded	2.0	\N	\N	2
-81	120	1 teaspoon adobo chipotle pepper puree	1.0	teaspoon	t	4
-81	93	1/4 cup coarsely chopped fresh cilantro leaves	0.25	cup	c	5
-81	95	1/4 cup thinly sliced green onion	0.25	cup	c	8
+81	2	2 carrots, shredded	2.0			2
+81	0	Chili oil, optional	4.0	servings	servings	3
+81	118	1 teaspoon adobo chipotle pepper puree	1.0	teaspoon	t	4
+81	92	1/4 cup coarsely chopped fresh cilantro leaves	0.25	cup	c	5
+81	141	1 tablespoon chopped fresh ginger	1.0	tablespoon	T	6
+81	0	1/4 cup chopped fresh mint leaves	0.25	cup	c	7
+81	94	1/4 cup thinly sliced green onion	0.25	cup	c	8
 81	17	2 tablespoons honey	2.0	tablespoons	T	9
-81	141	lime halves, for garnish	1.0	halves	halves	10
+81	138	lime halves, for garnish	1.0	halves	halves	10
+81	148	1/2 head Napa cabbage, shredded	0.5	head	head	11
+81	0	1/4 cup rice wine vinegar	0.25	cup	c	12
+81	0	1/2 cup chopped roasted peanuts	0.5	cup	c	13
+81	157	1/2 head romaine lettuce, shredded	0.5	head	head	14
+81	0	2 cups shredded rotisserie chicken	2.0	cups	c	15
+81	0	Salt and freshly ground pepper	4.0	servings	servings	16
 81	28	2 teaspoons toasted sesame oil	2.0	teaspoons	t	17
 81	5	1 tablespoon smooth peanut butter	1.0	tablespoon	T	18
 81	31	1/2 cup snow peas, cut in half lengthwise on a diagonal	0.5	cup	c	19
-81	75	1 tablespoon soy sauce	1.0	tablespoon	T	20
+81	74	1 tablespoon soy sauce	1.0	tablespoon	T	20
 82	3	1/4 cup bell pepper, diced	0.25	cup	c	0
 82	2	1/4 cup carrot, slivered	0.25	cup	c	1
-82	95	2 green onions, sliced	2.0	\N	\N	4
+82	0	1/4 cup fat-free mayonnaise	0.25	cup	c	2
+82	141	1 teaspoon ginger root, freshly grated	1.0	teaspoon	t	3
+82	94	2 green onions, sliced	2.0			4
+82	0	1/2 tablespoon low-sodium soy sauce	0.5	tablespoon	T	5
+82	0	8 ounces cooked boneless, skinless chicken breast, thinly sliced or shredded (about 3 cups) or 1 can Kirkland	3.0	cups	c	6
 82	31	1/2 cup snow peas, cut in half lengthwise on a diagonal	0.5	cup	c	7
+82	164	2 cups torn spinach leaves or other greens of your choosing	2.0	cups	c	8
 83	11	2 tablespoons canola oil	2.0	tablespoons	T	0
-83	12	2 cinnamon sticks	2.0	\N	\N	1
-83	75	1/2 cup dark soy sauce	0.5	cup	c	2
+83	12	2 cinnamon sticks	2.0			1
+83	74	1/2 cup dark soy sauce	0.5	cup	c	2
 83	23	4 cloves garlic	4.0	cloves	cloves	3
+83	141	2 large ginger slices	2.0	slices	slices	4
 83	12	1 teaspoon ground cinnamon	1.0	teaspoon	t	5
-83	137	1 jalapeno, chopped	1.0	\N	\N	8
-83	75	1/4 cup light soy sauce	0.25	cup	c	9
+83	0	1 teaspoon ground cloves	1.0	teaspoon	t	6
+83	142	1 teaspoon ground ginger	1.0	teaspoon	t	7
+83	135	1 jalapeno, chopped	1.0			8
+83	74	1/4 cup light soy sauce	0.25	cup	c	9
+83	0	1 lotus root	1.0			10
+83	0	1 pound pork belly	1.0	pound	lb	11
+83	0	1/2 cup ShaoHsing Rice Cooking wine	0.5	cup	c	12
 83	6	salt to taste	2.0	servings	servings	13
 83	28	1 teaspoon sesame oil	1.0	teaspoon	t	14
-83	116	1/2 cup rock sugar (yellow or white)	0.5	cup	c	17
+83	0	1 shallot, chopped	1.0			15
+83	0	2 tablespoons star anise	2.0	tablespoons	T	16
+83	114	1/2 cup rock sugar (yellow or white)	0.5	cup	c	17
 83	7	4 cups water	4.0	cups	c	18
-84	79	Chile-garlic paste	6.0	servings	servings	3
+83	0	1 yucca, steamed	1.0			19
+84	151	4 baby bok choy	4.0			0
+84	0	1 pound boneless chicken thighs, thinly sliced	1.0	pound	lb	1
+84	0	6 cups chicken stock	6.0	cups	c	2
+84	78	Chile-garlic paste	6.0	servings	servings	3
+84	141	5 slices of fresh ginger	5.0	slices	slices	4
 84	23	5 garlic cloves, cracked	5.0	cloves	cloves	5
-84	95	3/4 cup green onions, diced	0.75	cup	c	6
-84	52	1 cup mung bean sprouts	1.0	cup	c	7
-84	56	8 ounces mushrooms, any variety	8.0	ounces	oz	8
+84	94	3/4 cup green onions, diced	0.75	cup	c	6
+84	51	1 cup mung bean sprouts	1.0	cup	c	7
+84	55	8 ounces mushrooms, any variety	8.0	ounces	oz	8
+84	0	5 ounces bean thread noodles, or rice stick noodles	5.0	ounces	oz	9
+84	0	1/2 cup rice vinegar	0.5	cup	c	10
 84	28	1 tablespoon of sesame oil	1.0	tablespoon	T	11
-84	75	1/3 cup soy sauce	0.3333333333333333	cup	c	12
+84	74	1/3 cup soy sauce	0.3333333333333333	cup	c	12
 84	7	6 cups water	6.0	cups	c	13
-85	101	2 tbsp apple cider vinegar	2.0	tbsp	T	1
+85	0	1/2 tbsp anise seed	0.5	tbsp	T	0
+85	99	2 tbsp apple cider vinegar	2.0	tbsp	T	1
+85	0	3-5 bay leaves	3.0			2
+85	0	2-4 celery stalks	2.0			3
+85	0	1/2 tbsp cracked pepper	0.5	tbsp	T	4
+85	0	1 /2 tbsp cracked pepper	12.0	tbsp	T	5
+85	0	1/2 tsp Chinese five spice powder	0.5	tsp	t	6
 85	23	1 head of garlic, minced	1.0	head	head	7
+85	141	1 ginger, two inches in length, sliced into 1/4 inch slices	1.0			8
 85	17	1 tbsp honey	1.0	tbsp	T	9
-85	75	3/4 cup light soy sauce	0.75	cup	c	11
-85	56	1 can whole mushrooms, sliced in half (it's chunkier that way)	1.0	can	can	12
-85	72	2 tbsp vegetable oil	2.0	tbsp	T	15
+85	0	1 tbsp iodized salt	1.0	tbsp	T	10
+85	74	3/4 cup light soy sauce	0.75	cup	c	11
+85	55	1 can whole mushrooms, sliced in half (it's chunkier that way)	1.0	can	can	12
+85	0	1 1/2 kilogram pork spareribs	1.5	kilogram	kilogram	13
+85	0	2 medium-sized shallots	2.0			14
+85	71	2 tbsp vegetable oil	2.0	tbsp	T	15
 85	7	3 cups water	3.0	cups	c	16
-85	4	1 large white onion, sliced	1.0	\N	\N	17
+85	4	1 large white onion, sliced	1.0			17
 86	24	2 cups cabbage, chopped	2.0	cups	c	0
+86	0	1/2 pound ground beef/pork	0.5	pound	lb	1
 86	6	1 pinch of salt	1.0	pinch	pinch	2
-86	72	Vegetable oil enough to cover the wonton in the pan	1.0	serving	serving	3
-87	101	1 tsp. (5ml) of organic apple cider vinegar	5.0	ml	ml	0
-87	59	1 teaspoon crushed black pepper	1.0	teaspoon	t	1
-87	2	3 carrots	3.0	\N	\N	3
-87	73	1/4 C extra-virgin olive oil + 7-8 Tbsp for frying	0.25	C	C	4
-87	24	1/2 green cabbage	0.5	\N	\N	5
-87	98	1/2 teaspoon kosher salt	0.5	teaspoon	t	6
-87	95	6 scallions	6.0	\N	\N	10
+86	71	Vegetable oil enough to cover the wonton in the pan	1.0	serving	serving	3
+86	0	2 cups chopped water chestnuts	2.0	cups	c	4
+86	0	12 sheets wonton wrappers	12.0	sheets	sheets	5
+87	99	1 tsp. (5ml) of organic apple cider vinegar	5.0	ml	ml	0
+87	58	1 teaspoon crushed black pepper	1.0	teaspoon	t	1
+87	0	1 1/2 tablespoons black sesame seeds	1.5	tablespoons	T	2
+87	2	3 carrots	3.0			3
+87	72	1/4 C extra-virgin olive oil + 7-8 Tbsp for frying	0.25	C	C	4
+87	24	1/2 green cabbage	0.5			5
+87	97	1/2 teaspoon kosher salt	0.5	teaspoon	t	6
+87	149	1/2 red cabbage	0.5			7
+87	0	3 chicken breasts (bone in, preferably organic) roasted and shredded	3.0			8
+87	157	2 bunches romaine lettuce hearts	2.0	bunches	bunches	9
+87	94	6 scallions	6.0			10
 87	28	3 tablespoons sesame oil	3.0	tablespoons	T	11
-88	14	3 eggs, beaten	3.0	\N	\N	0
+87	0	juice of 1 mandarin (cut crosswise then tablespoon into jar over a strainer)	1.0			12
+87	0	3 tablespoons white sesame seeds	3.0	tablespoons	T	13
+87	0	1 1/2 tablespoons xylitol (I use Epic Dental brand)	1.5	tablespoons	T	14
+87	0	6-8 fresh satsuma mandarins	6.0			15
+88	14	3 eggs, beaten	3.0			0
+88	141	2 slices fresh ginger	2.0	slices	slices	1
 88	23	4 Garlic Cloves, minced	4.0	cloves	cloves	2
-88	95	6 Green Onion, thinly sliced	6.0	\N	\N	5
-88	59	1 TBSP Ground Pepper	1.0	TBSP	TBSP	7
+88	143	1 TBSP Garlic Powder	1.0	TBSP	TBSP	3
+88	141	3 TBSP Ginger, minced	3.0	TBSP	TBSP	4
+88	94	6 Green Onion, thinly sliced	6.0			5
+88	142	1 TBSP Ground Ginger	1.0	TBSP	TBSP	6
+88	58	1 TBSP Ground Pepper	1.0	TBSP	TBSP	7
 88	30	3 TBSP Hoisin	3.0	TBSP	TBSP	8
-88	73	1 TBSP Olive Oil	1.0	TBSP	TBSP	11
+88	174	1 cup long grain rice	1.0	cup	c	9
+88	0	4 TBSP Low Sodium Soy Sauce	4.0	TBSP	TBSP	10
+88	72	1 TBSP Olive Oil	1.0	TBSP	TBSP	11
+88	166	1 TBSP Onion Powder	1.0	TBSP	TBSP	12
+88	0	1 cup frozen peas and carrots, thawed	1.0	cup	c	13
+88	0	6 oz pork tenderloin	6.0	oz	oz	14
 88	6	1 TBSP Salt	1.0	TBSP	TBSP	15
 89	23	4 garlic cloves, finely chopped	4.0	cloves	cloves	0
-89	55	8 fresh shitake mushrooms, sliced	8.0	\N	\N	2
+89	0	5 stalks of asian kale	5.0	stalks	stalks	1
+89	54	8 fresh shitake mushrooms, sliced	8.0			2
+89	0	350 grams fresh hokkien noodles (blanch as per packet instructions)	350.0	grams	g	3
+89	0	3 tablespoons oyster sauce (to taste)	3.0	tablespoons	T	4
+89	0	2 shallots, thinly sliced	2.0			5
+89	0	2 tablespoons sweet soy sauce/ ketjap manis	2.0	tablespoons	T	6
 90	15	3 cups of all purpose flour	3.0	cups	c	0
-90	92	1 bunch of chinese chives, chopped	1.0	bunch	bunch	1
+90	91	1 bunch of chinese chives, chopped	1.0	bunch	bunch	1
 90	40	corn starch (if needed)	1.0	serving	serving	2
+90	0	2 pounds of lean ground pork	2.0	pounds	lb	3
 90	6	4 teaspoons of salt (or 3 1/2 tsp. if you use the dried shrimp)	4.0	teaspoons	t	4
 90	28	3 tablespoons of sesame oil	3.0	tablespoons	T	5
 90	7	1 cup of cold water	1.0	cup	c	6
-90	91	1 teaspoon tsp. of dried shrimp (optional) soaked in 2 of water or shao	1.0	teaspoon	t	7
-91	14	4 large eggs, lightly beaten	4.0	\N	\N	1
-91	95	2/3 cup green onions, finely sliced at an angle	0.6666666666666666	cup	c	3
+90	90	1 teaspoon tsp. of dried shrimp (optional) soaked in 2 of water or shao	1.0	teaspoon	t	7
+91	0	4 cups steamed rice	4.0	cups	c	0
+91	14	4 large eggs, lightly beaten	4.0			1
+91	141	1 piece of ginger, roughly half a thumbsize	1.0	piece		2
+91	94	2/3 cup green onions, finely sliced at an angle	0.6666666666666666	cup	c	3
 91	30	2 tablespoons hoisin sauce	2.0	tablespoons	T	4
-91	75	4 tablespoons Light soy sauce	4.0	tablespoons	T	5
-91	4	1 small red onion, finely diced	1.0	\N	\N	7
+91	74	4 tablespoons Light soy sauce	4.0	tablespoons	T	5
+91	0	1 500 gram pork loin with skin	500.0	gram	g	6
+91	4	1 small red onion, finely diced	1.0			7
 91	28	2 teaspoons Sesame oil	2.0	teaspoons	t	8
-91	72	1/4 cup vegetable oil	0.25	cup	c	9
-91	116	2 teaspoons white sugar	2.0	teaspoons	t	10
-91	100	1 tablespoon white vinegar	1.0	tablespoon	T	11
-92	3	1 small size bell pepper, chopped in small pieces	1.0	\N	\N	1
-92	59	Black pepper to taste	2.0	servings	servings	2
-92	2	1 med size carrot, chopped in small pieces	1.0	\N	\N	3
+91	71	1/4 cup vegetable oil	0.25	cup	c	9
+91	114	2 teaspoons white sugar	2.0	teaspoons	t	10
+91	98	1 tablespoon white vinegar	1.0	tablespoon	T	11
+92	0	6-7 baby corns, cut in round disks	6.0			0
+92	3	1 small size bell pepper, chopped in small pieces	1.0			1
+92	58	Black pepper to taste	2.0	servings	servings	2
+92	2	1 med size carrot, chopped in small pieces	1.0			3
 92	23	3 cloves of garlic, minced	3.0	cloves	cloves	4
-92	56	1 cup mushrooms, chopped	1.0	cup	c	7
-92	95	1/4 cup green onions white part, chopped (Keep the chopped green part of green onions for garnishing)	0.25	cup	c	8
+92	141	1 tsp ginger, minced	1.0	tsp	t	5
+92	0	1 Tbsp low sodium soy sauce	1.0	Tbsp	Tbsp	6
+92	55	1 cup mushrooms, chopped	1.0	cup	c	7
+92	94	1/4 cup green onions white part, chopped (Keep the chopped green part of green onions for garnishing)	0.25	cup	c	8
 92	6	Salt to taste	2.0	servings	servings	9
 92	28	2 teaspoons toasted sesame oil	2.0	teaspoons	t	10
 92	46	1 tsp sesame seeds	1.0	tsp	t	11
-93	59	Black pepper	2.0	servings	servings	0
+93	58	Black pepper	2.0	servings	servings	0
+93	0	50 g blue cheese of your choice	50.0	g	g	1
+93	0	1/4 cup breadcrumbs	0.25	cup	c	2
 93	10	� tbs butter	0.5	tbs	tbs	3
+93	0	Fresh chives, chopped	2.0	servings	servings	4
 93	23	2 cloves garlic, minced	2.0	cloves	cloves	5
-93	56	4 large mushrooms (about 400g), stems separated from caps	400.0	g	g	6
-93	73	1 tablespoon olive oil	1.0	tablespoon	T	7
-93	4	1 small Onion, halved lengthwise & cut crosswise into fine half rings	1.0	\N	\N	8
+93	55	4 large mushrooms (about 400g), stems separated from caps	400.0	g	g	6
+93	72	1 tablespoon olive oil	1.0	tablespoon	T	7
+93	4	1 small Onion, halved lengthwise & cut crosswise into fine half rings	1.0			8
+93	0	2 tbs Parmesan cheese, grated	2.0	tbs	tbs	9
 93	43	3 tablespoons chopped parsley	3.0	tablespoons	T	10
-93	97	� tsp sea salt	0.25	tsp	t	13
-93	128	2 tbs sour cream	2.0	tbs	tbs	14
-94	77	Bell peppers - I used half of red and yellow colour	1.0	servings	servings	2
+93	174	400g Chow Mein Noodles or rice pasta	400.0	g	g	11
+93	0	250g ricotta cheese	250.0	g	g	12
+93	96	� tsp sea salt	0.25	tsp	t	13
+93	126	2 tbs sour cream	2.0	tbs	tbs	14
+93	164	1 1/2 cups fresh spinach, finely chopped	1.5	cups	c	15
+94	0	2 cup Basmati Rice	2.0	cups	c	0
+94	0	1/2 cup Beans	0.5	cup	c	1
+94	76	Bell peppers - I used half of red and yellow colour	1.0	servings	servings	2
 94	24	1/4 cup Cabbage - finely grated	0.25	cup	c	3
 94	2	1/4 cup minced carrot	0.25	cup	c	4
-94	4	1 small Onion - finely sliced	1.0	\N	\N	9
-94	63	1/4 cup Green peas	0.25	cup	c	10
-94	75	Soya sauce - 1 tbspn	1.0	tbsp	T	12
-95	51	1 teaspoon brown sugar	1.0	teaspoon	t	0
-95	93	Cilantro (or parsley) for garnish	4.0	servings	servings	1
-95	14	3 eggs, well beaten	3.0	\N	\N	2
+94	0	Cashews and raisins	2.0	servings	servings	5
+94	0	Green chilies - 2 to 3 depending on your taste	2.0			6
+94	0	1/4 cup Corn	0.25	cup	c	7
+94	0	Ginger garlic paste - 1 tbspn	1.0	tbsp	T	8
+94	4	1 small Onion - finely sliced	1.0			9
+94	62	1/4 cup Green peas	0.25	cup	c	10
+94	0	Salt and pepper to taste	2.0	servings	servings	11
+94	74	Soya sauce - 1 tbspn	1.0	tbsp	T	12
+94	0	chili sauce/tomato sauce - 1 tbspn	1.0	tbsp	T	13
+94	71	Oil - 3 tablespoons	3.0	tbsp	T	14
+95	50	1 teaspoon brown sugar	1.0	teaspoon	t	0
+95	92	Cilantro (or parsley) for garnish	4.0	servings	servings	1
+95	14	3 eggs, well beaten	3.0			2
 95	23	2 cloves garlic, minced	2.0	cloves	cloves	3
-95	95	2 green onions, thinly sliced, including the greens	2.0	\N	\N	5
-95	73	1 Tbsp olive oil	1.0	Tbsp	Tbsp	6
-95	77	2/3 cup diced red bell pepper	0.6666666666666666	cup	c	8
+95	141	1-inch piece of ginger, grated	1.0	inch	inch	4
+95	94	2 green onions, thinly sliced, including the greens	2.0			5
+95	72	1 Tbsp olive oil	1.0	Tbsp	Tbsp	6
+95	0	1 cup frozen peas, thawed	1.0	cup	c	7
+95	76	2/3 cup diced red bell pepper	0.6666666666666666	cup	c	8
 95	4	2/3 cup diced red onion	0.6666666666666666	cup	c	9
-95	75	3 Tbsp soy sauce	3.0	Tbsp	Tbsp	12
-96	113	1 cup of chopped vegetables	1.0	cup	c	3
-96	109	1 scotch bonnet pepper	1.0	\N	\N	5
-97	70	head of cauliflower, raw	1.0	head	head	1
+95	174	4 cups day old cooked white rice (from about 2 cups of raw rice)	4.0	cups	c	10
+95	0	2 cups cooked salmon in large chunks	2.0	cups	c	11
+95	74	3 Tbsp soy sauce	3.0	Tbsp	Tbsp	12
+96	0	2 cups of chicken stock	2.0	cups	c	0
+96	0	Seasoning cubes	1.0	cubes	cubes	1
+96	0	3 slices of mango cubed	3.0	slices	slices	2
+96	111	1 cup of chopped vegetables	1.0	cup	c	3
+96	174	1 cup of rice	1.0	cup	c	4
+96	107	1 scotch bonnet pepper	1.0			5
+97	0	2 cups cooked broccoli, chopped small	2.0	cups	c	0
+97	69	head of cauliflower, raw	1.0	head	head	1
+97	0	1 + 1 T coconut oil or butter	1.0			2
+97	0	3 cups of cooked brown rice, cold	3.0	cups	c	3
 97	23	5 cloves of garlic, chopped	5.0	cloves	cloves	4
-97	143	1 + 1 T grapeseed oil	1.0	\N	\N	5
+97	140	1 + 1 T grapeseed oil	1.0			5
+97	0	3T reduced-sodium soy sauce	3.0	T	T	6
+97	0	1 cup frozen peas	1.0	cup	c	7
 97	6	salt, to taste	2.0	servings	servings	8
-97	95	additional chopped scallion tops for garnish	2.0	servings	servings	9
-97	95	7 scallions, chopped (keep white/light green ends separate from dark green tops)	7.0	\N	\N	10
+97	94	additional chopped scallion tops for garnish	2.0	servings	servings	9
+97	94	7 scallions, chopped (keep white/light green ends separate from dark green tops)	7.0			10
 97	28	2t toasted sesame oil	2.0	t	t	11
 97	46	toasted sesame seeds, optional	2.0	servings	servings	12
-98	80	1 large can tomato sauce (approx 4 cups)	1.0	can	can	1
+98	0	4-5 pounds stew cut meat*, cut into bite-sized chunks	4.0	pounds	lb	0
+98	79	1 large can tomato sauce (approx 4 cups)	1.0	can	can	1
+98	0	1 Tbsp. caraway seeds	1.0	Tbsp	Tbsp	2
+98	0	1/2 cup beef or chicken stock (or water)	0.5	cup	c	3
 98	15	flour for searing meat	12.0	servings	servings	4
 98	23	2 garlic cloves, sliced thin	2.0	cloves	cloves	5
-98	98	kosher salt & pepper to taste	12.0	servings	servings	7
-98	73	olive oil for searing	12.0	servings	servings	9
-98	4	2 large onions, sliced thin	2.0	\N	\N	10
+98	0	2 tsp. Hungarian Hot Paprika	2.0	tsp	t	6
+98	97	kosher salt & pepper to taste	12.0	servings	servings	7
+98	146	zest of 1 small lemon	1.0			8
+98	72	olive oil for searing	12.0	servings	servings	9
+98	4	2 large onions, sliced thin	2.0			10
 98	41	1 Tbsp. mild paprika	1.0	Tbsp	T	11
 98	15	flour seasoned with Kosher salt & cracked pepper-- about 1 cup flour, 1 Tbsp salt & pepper	1.0	cup	c	12
-98	98	1/2 Tbsp salt	0.5	Tbsp	T	13
-98	59	1/2 Tbsp pepper	0.5	Tbsp	T	14
-98	71	2 Tbsp. tomato paste	2.0	Tbsp	T	15
-99	138	8 oz fresh Bella mushrooms (crimini or regular okay)	8.0	oz	oz	0
+98	97	1/2 Tbsp salt	0.5	Tbsp	T	13
+98	58	1/2 Tbsp pepper	0.5	Tbsp	T	14
+98	70	2 Tbsp. tomato paste	2.0	Tbsp	T	15
+99	136	8 oz fresh Bella mushrooms (crimini or regular okay)	8.0	oz	oz	0
+99	0	1 packet beef stroganoff powder (McCormick)	1.0	packet	packet	1
 99	23	1 small garlic clove, finely chopped	1.0	clove	clove	2
-99	4	2 onions peeled, sliced	2.0	\N	\N	3
+99	4	2 onions peeled, sliced	2.0			3
 99	44	parsley flakes (garnish)	4.0	servings	servings	4
-99	128	1 cup sour cream	1.0	cup	c	6
+99	0	salt and pepper to taste	4.0	servings	servings	5
+99	126	1 cup sour cream	1.0	cup	c	6
 99	10	unsalted butter for rubbing squash, plus 1 tbsp	4.0	servings	servings	7
-99	139	2 tablespoons Worcestershire sauce	2.0	tablespoons	T	9
+99	0	4 cups wide egg noodles	4.0	cups	c	8
+99	137	2 tablespoons Worcestershire sauce	2.0	tablespoons	T	9
+100	0	1 � pkgs teaspoon active dry yeast	1.5	pkgs	pkgs	0
+100	0	1/2 cup Buckwheat flour	0.5	cup	c	1
 100	10	Melted butter	1.0	serving	serving	2
-100	14	6 lrgs eggs separated	6.0	\N	\N	5
+100	0	1 pch coarse salt	1.0			3
+100	0	1 teaspoon coarse salt plus	1.0	teaspoon	t	4
+100	14	6 lrgs eggs separated	6.0			5
 100	15	2 cups All-purpose flour	2.0	cups	c	6
 100	20	1 cup warm milk (105 to 115 degrees)	1.0	cup	c	7
-100	116	1 pch sugar	1.0	\N	\N	8
-100	116	1 tablespoon sugar plus	1.0	tablespoon	T	9
-100	72	Vegetable oil for cooking	1.0	serving	serving	10
+100	114	1 pch sugar	1.0			8
+100	114	1 tablespoon sugar plus	1.0	tablespoon	T	9
+100	71	Vegetable oil for cooking	1.0	serving	serving	10
+100	0	1/3 cup wheat beer	0.3333333333333333	cup	c	11
+100	0	1 ounce fresh yeast or	1.0	ounce	oz	12
+101	0	3/4 gram jar caviar	0.75	gram	g	0
 101	10	large knob of butter	2.0	servings	servings	1
-101	128	2 tblsp sour cream	2.0	tb	tb	2
+101	126	2 tblsp sour cream	2.0	tb	tb	2
+101	0	4 duck eggs	4.0			3
+101	0	salt & freshly ground black pepper	2.0	servings	servings	4
 101	7	2 tblsp water	2.0	tb	tb	5
+102	170	1 can peas or 1 Cup of frozen peas	1.0	can	can	0
+102	0	1 Can cream of mushroom soup	1.0	Can	Can	1
+102	0	3 Cups egg noodles	3.0	Cups	Cups	2
+102	0	4 oz fresh mushrooms � sliced	4.0	oz	oz	3
 102	20	� cup milk	0.5	cup	c	4
-102	4	1 medium onion	1.0	\N	\N	5
+102	4	1 medium onion	1.0			5
+102	0	� tsp pepper	0.5	tsp	t	6
 102	6	1/2 teaspoon salt	0.5	teaspoon	t	7
+102	0	1.25 lbs beef flank or sirloin steak � cut across the grain, thin sliced	1.25	lbs	lb	8
+102	0	8 oz. velveeta	8.0	oz	oz	9
 102	7	1 cup water	1.0	cup	c	10
+103	0	2 beef bouillon cubes	2.0			0
+103	0	2 1/2 lb.s top round beef roast	2.5	lb	lb	1
 103	15	2 tbsp.s flour	2.0	tbsp	T	2
-103	59	1/2 tsp. ground pepper	0.5	tsp	t	3
-103	4	1 lg. onion, sliced	1.0	\N	\N	5
+103	58	1/2 tsp. ground pepper	0.5	tsp	t	3
+103	71	3 tbsp.s oil	3.0	tbsp	T	4
+103	4	1 lg. onion, sliced	1.0			5
 103	41	3 tbsp.s paprika	3.0	tbsp	T	6
+103	0	8 oz.s tomato sauce	8.0	oz	oz	7
 103	7	4 c.s water, to cover meat	4.0	c	c	8
-104	68	1 x 14 ounce can chunky tomatoes with garlic	14.0	oz	oz	3
-104	71	1 x 6 ounce can tomato paste	6.0	oz	oz	4
+104	0	1 ounce x 9 package frozen artichoke hearts thawed	1.0	ounce	oz	0
+104	0	1 1/2 pounds beef stew meat cut into 1 inch cubes	1.5	pounds	lb	1
+104	0	1 (14 1/2 oz.) can beef broth	14.5	oz	oz	2
+104	67	1 x 14 ounce can chunky tomatoes with garlic	14.0	oz	oz	3
+104	70	1 x 6 ounce can tomato paste	6.0	oz	oz	4
+104	0	3 cups hot cooked noodles	3.0	cups	c	5
+104	0	cup dairy sour cream	1.0	cup	c	6
+104	0	1 teaspoon caraway seed or fennel seed	1.0	teaspoon	t	7
 104	23	1 Clove garlic, minced	1.0	Clove	Clove	8
-104	4	2 mediums onions, chopped	2.0	\N	\N	9
-104	27	3 mediums potatoes cut into 1 inch cubes	3.0	\N	\N	10
+104	4	2 mediums onions, chopped	2.0			9
+104	27	3 mediums potatoes cut into 1 inch cubes	3.0			10
 104	6	1 teaspoon Salt	1.0	teaspoon	t	11
 105	10	1 ounce butter	1.0	ounce	oz	0
-105	68	16 ozs canned tomatoes	16.0	ozs	oz	1
-105	2	1 piece sm. carrot, sliced	1.0	piece	\N	2
-105	4	2 onions, peeled and chopped	2.0	\N	\N	6
+105	67	16 ozs canned tomatoes	16.0	ozs	oz	1
+105	2	1 piece sm. carrot, sliced	1.0	piece		2
+105	0	4 ounces chuck steak, cubed	4.0	ounces	oz	3
+105	0	Pinch of garlic salt	1.0	pinch	pinch	4
+105	0	1 piece green pepper, seeded and sliced	1.0	piece		5
+105	4	2 onions, peeled and chopped	2.0			6
 105	41	1 1/2 teaspoons Paprika	1.5	teaspoons	t	7
+105	0	1/4 teaspoon Pepper	0.25	teaspoon	t	8
+105	0	5 ounces lean pork, cubed	5.0	ounces	oz	9
 105	6	1 teaspoon Salt (celery and the vinegar are naturally salty)	1.0	teaspoon	t	10
-105	128	1/2 pint of sour cream	0.5	pint	pt	11
+105	126	1/2 pint of sour cream	0.5	pint	pt	11
 106	12	1 tsp cinnamon	1.0	tsp	t	0
-106	14	2 eggs (or egg substitutes for vegans; you can also add 1-2 tbsp of dry yeast flakes)	2.0	\N	\N	1
-106	136	1 tsp vanilla extract	1.0	tsp	t	8
-106	112	250 g whole wheat flour ( you can also use different flours like soy/almonds/rye flour)	250.0	g	g	9
-107	14	6 raw eggs	6.0	\N	\N	2
-107	4	2 onions, peeled and chopped	2.0	\N	\N	4
+106	14	2 eggs (or egg substitutes for vegans; you can also add 1-2 tbsp of dry yeast flakes)	2.0			1
+106	0	150 g gluten-free bread crumbs	150.0	g	g	2
+106	0	25 plums, pitted	25.0			3
+106	128	1 kg mashed red skin potatoes (red potatoes have a higher amount of starch so the dough is stickier)	1.0	kg	kg	4
+106	0	� tsp rum extract	0.5	tsp	t	5
+106	0	3-4 tbsp sucanat	3.0	tbsp	T	6
+106	0	2 tbsp unrefined sunflower oil	2.0	tbsp	T	7
+106	134	1 tsp vanilla extract	1.0	tsp	t	8
+106	110	250 g whole wheat flour ( you can also use different flours like soy/almonds/rye flour)	250.0	g	g	9
+107	0	4 Bay leaves	4.0			0
+107	0	2 stalk celery	2.0	stalk	stalk	1
+107	14	6 raw eggs	6.0			2
+107	71	3 tablespoons oil, (I use corn or peanu	3.0	tablespoons	T	3
+107	4	2 onions, peeled and chopped	2.0			4
 107	43	2 tablespoons chopped parsley leaves	2.0	tablespoons	T	5
-107	59	1/4 teaspoon black pepper corns	0.25	teaspoon	t	6
-107	27	5 mediums potatoes, peeled and cut in small cubes	5.0	\N	\N	8
+107	58	1/4 teaspoon black pepper corns	0.25	teaspoon	t	6
+107	0	1 mild pepperoni sausage cut into 2 inch chunks (p	1.0			7
+107	27	5 mediums potatoes, peeled and cut in small cubes	5.0			8
 107	6	2 tablespoons salt	2.0	tablespoons	T	9
-107	128	8 ounces sour cream	8.0	ounces	oz	10
+107	126	8 ounces sour cream	8.0	ounces	oz	10
 107	7	3 quarts ,Water	3.0	quarts	quarts	11
-107	100	3 tablespoons of good white vinegar	3.0	tablespoons	T	12
-108	2	4 Carrots	4.0	\N	\N	1
+107	98	3 tablespoons of good white vinegar	3.0	tablespoons	T	12
+108	0	1 Bay leaf	1.0			0
+108	2	4 Carrots	4.0			1
 108	23	2 Cloves garlic, crushed.	2.0	Cloves	Cloves	2
-108	4	1 medium onion sliced	1.0	\N	\N	3
+108	4	1 medium onion sliced	1.0			3
+108	0	1/2 teaspoon Onion salt	0.5	teaspoon	t	4
 108	41	3 teaspoons paprika	3.0	teaspoons	t	5
+108	0	1/4 teaspoon pepper to taste	0.25	teaspoon	t	6
+108	0	1 Lean, (3-4 lb) chuck or rump roast	3.0	lb	lb	7
 108	6	salt to taste	1.0	serving	serving	8
-108	128	8 ounces sour cream	8.0	ounces	oz	9
-108	72	2 tablespoons Vegetable oil	2.0	tablespoons	T	11
+108	126	8 ounces sour cream	8.0	ounces	oz	9
+108	0	2 can (8 oz) Hunt's tomato sauce with Mushrooms	8.0	oz	oz	10
+108	71	2 tablespoons Vegetable oil	2.0	tablespoons	T	11
 108	7	3 quarts ,Water	3.0	quarts	quarts	12
-109	73	extra-virgin olive oil, kosher salt, and freshly-ground blac	4.0	servings	servings	3
+109	0	1 1/2 pounds brussels sprouts	1.5	pounds	lb	0
+109	0	1 can white kidney beans	1.0	can	can	1
+109	0	2 tablespoons coarse mustard	2.0	tablespoons	T	2
+109	72	extra-virgin olive oil, kosher salt, and freshly-ground blac	4.0	servings	servings	3
 109	23	4 large cloves garlic	4.0	cloves	cloves	4
-110	59	freshly ground black pepper	4.0	servings	servings	2
-110	73	6 tbsp extra-virgin olive oil	6.0	tbsp	T	4
+109	0	1/4 cup heavy cream	0.25	cup	c	5
+109	0	1 pound pork kielbasa	1.0	pound	lb	6
+109	0	1 medium shallot	1.0			7
+110	0	12 cooked baby beets	12.0			0
+110	0	1 bay leaf	1.0			1
+110	58	freshly ground black pepper	4.0	servings	servings	2
+110	0	4 teaspoons Ar�nkha MSC caviar	4.0	teaspoons	t	3
+110	72	6 tbsp extra-virgin olive oil	6.0	tbsp	T	4
+110	0	1 head fennel, outside leaves discarded, finely sliced	1.0	head	head	5
 110	18	2 tbsp lemon juice	2.0	tbsp	T	6
+110	0	4 110g (4oz) skinless salmon fillets	16.0	oz	oz	7
+110	0	tarragon stalks	1.0	stalks	stalks	8
+110	0	few tarragon leaves	3.0	leaves	leaves	9
+110	0	1 bunch watercress, picked over, washed & dried	1.0	bunch	bunch	10
+110	0	1 tablespoon white wine	1.0	tablespoon	T	11
 111	10	2 tablespoons butter	2.0	tablespoons	T	0
+111	0	1-1/2 teaspoons caraway seeds	1.0	teaspoons	t	1
+111	0	3 cups chicken broth	3.0	cups	c	2
 111	15	1 cup All-purpose Flour	1.0	cup	c	3
 111	23	1 large garlic clove, miced	1.0	clove	clove	4
+111	0	2 cups • heavy cream, for whipping	2.0	cups	c	5
+111	0	2 tablespoons sweet Hungarian paprika	2.0	tablespoons	T	6
 111	4	1 cup onion, finely chopped	1.0	cup	c	7
+111	0	4 pounds boneless pork shoulder, cut in 2-inch cubes	4.0	pounds	lb	8
 111	6	1/4 teaspoon • Salt	0.25	teaspoon	t	9
-111	128	1/2 cup sour cream	0.5	cup	c	11
-112	3	1 Pepper, Chopped	1.0	\N	\N	0
-112	49	1 teaspoon of Cumin	1.0	teaspoon	t	4
-112	81	1/2 teaspoon of Curry	0.5	teaspoon	t	5
+111	0	1 pound (drained weight) sauerkraut	1.0	pound	lb	10
+111	126	1/2 cup sour cream	0.5	cup	c	11
+111	0	1/4 cup tomato puree or plain tomato sauce	0.25	cup	c	12
+112	3	1 Pepper, Chopped	1.0			0
+112	0	1 can of Diced Tomatoes	1.0	can	can	1
+112	0	6 ounces of Egg Noodles, Cooked	6.0	ounces	oz	2
+112	0	1 teaspoon of Coriander	1.0	teaspoon	t	3
+112	48	1 teaspoon of Cumin	1.0	teaspoon	t	4
+112	80	1/2 teaspoon of Curry	0.5	teaspoon	t	5
+112	0	1 teaspoon of Garam Masala*	1.0	teaspoon	t	6
 112	23	3 cloves of Garlic	3.0	cloves	cloves	7
-112	4	1 Onion, Chopped	1.0	\N	\N	10
+112	141	1/2 teaspoon of Ginger	0.5	teaspoon	t	8
+112	0	1 pound of Ground Turkey or 3 cups Leftover Turkey, chopped	1.0	pound	lb	9
+112	4	1 Onion, Chopped	1.0			10
 112	41	1 teaspoon of Paprika	1.0	teaspoon	t	11
-112	128	1 cup of Sour Cream	1.0	cup	c	12
+112	126	1 cup of Sour Cream	1.0	cup	c	12
+112	164	10 bags Oz. of Frozen Spinach or 1 of Fresh	10.0	bags	bags	13
+112	0	1 cup of Chicken or Turkey Broth	1.0	cup	c	14
 113	10	40g Butter	40.0	g	g	0
-113	111	2 Egg yolks	2.0	\N	\N	2
-113	14	1 Eggs	1.0	\N	\N	3
-113	116	20g Granulated sugar	20.0	g	g	4
+113	0	150g Good-quality dark chocolate	150.0	g	g	1
+113	109	2 Egg yolks	2.0			2
+113	14	1 Eggs	1.0			3
+113	114	20g Granulated sugar	20.0	g	g	4
+113	0	200g Nutella	200.0	g	g	5
 113	6	1 pinch Salt	1.0	pinch	pinch	6
+113	0	50cl Skimmed milk	50.0	cl	cl	7
 113	15	250g Wheat flour	250.0	g	g	8
-114	88	1/2 cup chopped fresh basil	0.5	cup	c	2
+114	0	1 lrg eggplant unpeeled, diced	1.0			0
+114	0	4 ounces diced feta cheese (optional)	4.0	ounces	oz	1
+114	87	1/2 cup chopped fresh basil	0.5	cup	c	2
 114	23	5 garlic cloves chopped	5.0	cloves	cloves	3
-114	3	2 green bell peppers diced	2.0	\N	\N	4
-114	73	3 tablespoons Olive Oil	3.0	tablespoons	T	5
-114	4	1 onion cut 1" pieces	1.0	\N	\N	6
-114	102	2 tablespoons red wine vinegar	2.0	tablespoons	T	7
-114	48	2 lrg tomatoes chopped	2.0	\N	\N	8
+114	3	2 green bell peppers diced	2.0			4
+114	72	3 tablespoons Olive Oil	3.0	tablespoons	T	5
+114	4	1 onion cut 1" pieces	1.0			6
+114	100	2 tablespoons red wine vinegar	2.0	tablespoons	T	7
+114	47	2 lrg tomatoes chopped	2.0			8
+114	0	1 lrg zucchini cut 1/2" pieces	1.0			9
 115	15	1 cup all purpose flour (sifted)	1.0	cup	c	0
-115	9	4 ripe bananas (works great with freckled ones) peeled, sliced lengthwise and quartered.	4.0	\N	\N	1
-115	51	1/2 cup brown sugar	0.5	cup	c	2
+115	9	4 ripe bananas (works great with freckled ones) peeled, sliced lengthwise and quartered.	4.0			1
+115	50	1/2 cup brown sugar	0.5	cup	c	2
 115	12	1 pinch cinnamon	1.0	pinch	pinch	3
-115	14	1 egg	1.0	\N	\N	5
+115	0	Optional fresh whip cream cream	1.0	serving	serving	4
+115	14	1 egg	1.0			5
 115	20	1 cup milk	1.0	cup	c	6
 115	16	1 pinch nutmeg	1.0	pinch	pinch	7
 115	6	1 pinch salt	1.0	pinch	pinch	8
-115	116	2 teaspoons sugar	2.0	teaspoons	t	9
+115	114	2 teaspoons sugar	2.0	teaspoons	t	9
 115	10	1 teaspoon melted butter, plus 1/2 c. butter for greasing 1 stick of butter, cubed- (use unsalted butter to cont	1.0	teaspoon	t	10
-116	22	2 smalls bacon rasher, sliced to strips	2.0	\N	\N	0
-116	56	200 grams of button mushrooms	200.0	grams	g	3
+116	22	2 smalls bacon rasher, sliced to strips	2.0			0
+116	0	500 grams of gravy beef, trimmed and cut into 2cm pieces, coated in pl	500.0	grams	g	1
+116	0	200 ml of beef stock	200.0	ml	ml	2
+116	55	200 grams of button mushrooms	200.0	grams	g	3
+116	0	2 tablespoons of cream	2.0	tablespoons	T	4
+116	0	80 ml of dry red wine	80.0	ml	ml	5
 116	43	1/4 cup of finely chopped fresh flat leaf parsley	0.25	cup	c	6
-116	86	1 teaspoon of fresh thyme leaves	1.0	teaspoon	t	7
-116	63	2 cups of green peas thawed	2.0	cups	c	8
+116	85	1 teaspoon of fresh thyme leaves	1.0	teaspoon	t	7
+116	62	2 cups of green peas thawed	2.0	cups	c	8
 116	4	1 teaspoon of olive oil 2 tablespoons of finely chopped brown onion	2.0	tablespoons	T	9
-116	73	2 teaspoons of olive oil	2.0	teaspoons	t	10
-116	4	4 pickling onions, peeled and halved	4.0	\N	\N	11
-116	71	2 teaspoons of tomato paste	2.0	teaspoons	t	14
+116	72	2 teaspoons of olive oil	2.0	teaspoons	t	10
+116	4	4 pickling onions, peeled and halved	4.0			11
+116	0	1 sheet of ready rolled butter puff pastry	1.0	sheet	sheet	12
+116	0	A pinch of salt and pepper	1.0	pinch	pinch	13
+116	70	2 teaspoons of tomato paste	2.0	teaspoons	t	14
+116	0	2 tablespoons of vegetable stock	2.0	tablespoons	T	15
+117	0	1 pkt active dry yeast	1.0			0
 117	10	1 stick of butter	1.0	stick	stick	1
-117	111	2 lrg egg yolks	2.0	\N	\N	2
-117	14	3 lrg eggs	3.0	\N	\N	3
+117	109	2 lrg egg yolks	2.0			2
+117	14	3 lrg eggs	3.0			3
 117	15	cups all-purpose flour	1.0	cups	c	4
 117	15	5 1/2 cups flour	5.5	cups	c	5
 117	6	1/2 teaspoon salt	0.5	teaspoon	t	6
-117	116	1/2 cup sugar	0.5	cup	c	7
+117	114	1/2 cup sugar	0.5	cup	c	7
 117	7	cup water	1.0	cup	c	8
+118	0	1/2 cup dry white wine	0.5	cup	c	0
 118	43	3 sprigs fresh parsley	3.0	sprigs	sprigs	1
 118	23	4 garlic cloves, finely chopped	4.0	cloves	cloves	2
-118	98	Kosher salt	2.0	servings	servings	3
-118	73	1 tbs olive oil	1.0	tbs	tbs	6
+118	97	Kosher salt	2.0	servings	servings	3
+118	0	1/2 cup low-fat buttermilk	0.5	cup	c	4
+118	0	2 pounds mussels, cleaned	2.0	pounds	lb	5
+118	72	1 tbs olive oil	1.0	tbs	tbs	6
+118	0	2 shallots, finely chopped	2.0			7
 118	10	4 tablespoons unsalted light butter, cut into pieces	4.0	tablespoons	T	8
-119	59	1/2 teaspoon black pepper	0.5	teaspoon	t	0
-119	89	1 teaspoon dried basil	1.0	teaspoon	t	2
+119	58	1/2 teaspoon black pepper	0.5	teaspoon	t	0
+119	0	cooked penne	2.0	servings	servings	1
+119	88	1 teaspoon dried basil	1.0	teaspoon	t	2
 119	45	1 teaspoon dried oregano	1.0	teaspoon	t	3
+119	0	1 cup diced eggplant	1.0	cup	c	4
 119	23	2 cloves garlic, minced	2.0	cloves	cloves	5
-119	73	1 tablespoon olive oil	1.0	tablespoon	T	7
+119	0	1 tablespoon mascarpone cheese	1.0	tablespoon	T	6
+119	72	1 tablespoon olive oil	1.0	tablespoon	T	7
 119	4	1/4 cup diced onion	0.25	cup	c	8
-119	77	1 cup diced red bell pepper	1.0	cup	c	9
+119	76	1 cup diced red bell pepper	1.0	cup	c	9
 119	6	Pinch salt	1.0	pinch	pinch	10
 119	7	1/4 cup water	0.25	cup	c	11
-119	80	1 cup tomato sauce, or ground peeled tomatoes	1.0	cup	c	13
+119	0	1 cup diced zucchini	1.0	cup	c	12
+119	79	1 cup tomato sauce, or ground peeled tomatoes	1.0	cup	c	13
+120	0	4 lbs chuck roast	4.0	lbs	lb	0
 120	23	7 cloves garlic,peeled	7.0	cloves	cloves	1
-120	4	1 onion, cut into quarters	1.0	\N	\N	5
-121	111	5 large egg yolks	5.0	\N	\N	2
-121	116	1/2 cup sugar	0.5	cup	c	3
+120	0	1 TBSP Ground Mustard	1.0	TBSP	TBSP	2
+120	0	1 TBSP Italian Seasoning	1.0	TBSP	TBSP	3
+120	0	32 oz low sodium beef broth	32.0	oz	oz	4
+120	4	1 onion, cut into quarters	1.0			5
+120	0	1 TBSP Pepper	1.0	TBSP	TBSP	6
+120	0	4 rolls ( I used mini ciabatta rolls)	4.0			7
+121	0	2 cups cream	2.0	cups	c	0
+121	0	dulce de leche	1.0	serving	serving	1
+121	109	5 large egg yolks	5.0			2
+121	114	1/2 cup sugar	0.5	cup	c	3
+122	0	4 cups - Beef Stock	4.0	cups	c	0
 122	10	8 Tbs. - Butter	8.0	Tb	Tb	1
+122	0	4 cups - Chicken Stock	4.0	cups	c	2
+122	0	1 cup - Shredded Colby & Monterey Jack Cheese	1.0	cup	c	3
 122	40	Corn Starch to thicken soup	1.0	serving	serving	4
+122	0	8 Slices - French Bread (1 inch)	8.0	Slices	Slices	5
 122	23	2 Tbs. - Johnny's Garlic Seasoning	2.0	Tb	Tb	6
-122	4	1 Large Onion (diced)	1.0	\N	\N	8
+122	0	1 Tbs. - Montreal Steak Seasoning	1.0	Tb	Tb	7
+122	4	1 Large Onion (diced)	1.0			8
+122	58	Pepper to taste	1.0	serving	serving	9
+122	172	1 cup - Shredded Mozzarella Cheese	1.0	cup	c	10
+122	71	2 Tbs. - Oil	2.0	Tb	Tb	11
 123	15	1 1/2 tablespoons all purpose flour	1.5	tablespoons	T	0
-123	56	2 pints button mushrooms (about 20 mushrooms), rinsed, stems removed, cut in half	2.0	pints	pt	3
+123	0	2 cups beef broth	2.0	cups	c	1
+123	0	1 pound beef chuck (stewing beef)	1.0	pound	lb	2
+123	55	2 pints button mushrooms (about 20 mushrooms), rinsed, stems removed, cut in half	2.0	pints	pt	3
 123	2	Carrots	4.0	servings	servings	4
-123	124	1/4 teaspoon cayenne pepper	0.25	teaspoon	t	5
-123	85	1/2 teaspoon dried rosemary	0.5	teaspoon	t	6
-123	87	1/2 teaspoon dried thyme	0.5	teaspoon	t	7
-123	73	2 tablespoons extra-virgin olive oil	2.0	tablespoons	T	8
+123	122	1/4 teaspoon cayenne pepper	0.25	teaspoon	t	5
+123	84	1/2 teaspoon dried rosemary	0.5	teaspoon	t	6
+123	86	1/2 teaspoon dried thyme	0.5	teaspoon	t	7
+123	72	2 tablespoons extra-virgin olive oil	2.0	tablespoons	T	8
 123	4	1/2 cup chopped onion	0.5	cup	c	9
+123	0	1 cup red wine	1.0	cup	c	10
 124	10	1 tablespoon butter	1.0	tablespoon	T	0
-124	14	4 lrg eggs	4.0	\N	\N	1
+124	14	4 lrg eggs	4.0			1
+124	0	1 1/2 cups shredded gruyere cheese	1.5	cups	c	2
+124	0	3 cups heavy cream	3.0	cups	c	3
 124	7	3 tablespoons ice water	3.0	tablespoons	T	4
-124	25	2 leeks	2.0	\N	\N	5
+124	25	2 leeks	2.0			5
 124	15	1 cup flour, plain	1.0	cup	c	6
 124	6	salt	1.0	serving	serving	7
-124	128	1 tablespoon sour cream	1.0	tablespoon	T	9
+124	0	salt and pepper to taste	1.0	serving	serving	8
+124	126	1 tablespoon sour cream	1.0	tablespoon	T	9
 124	20	3 cups whole milk	3.0	cups	c	10
 125	15	1 1/4 cups all-purpose flour	1.25	cups	c	0
 125	22	6 slices bacon	6.0	slices	slices	1
 125	10	3 tablespoons Butter	3.0	tablespoons	T	2
-125	14	4 eggs	4.0	\N	\N	3
-125	59	1/4 teaspoon ground pepper	0.25	teaspoon	t	4
-125	25	2 Leek, chopped	2.0	\N	\N	5
+125	14	4 eggs	4.0			3
+125	58	1/4 teaspoon ground pepper	0.25	teaspoon	t	4
+125	25	2 Leek, chopped	2.0			5
 125	20	2/3 cup milk	0.6666666666666666	cup	c	6
-125	138	1 pound white or baby portobello mushrooms, sliced	1.0	pound	lb	7
-125	130	3 red potatoes, boiled and sliced	3.0	\N	\N	8
+125	136	1 pound white or baby portobello mushrooms, sliced	1.0	pound	lb	7
+125	128	3 red potatoes, boiled and sliced	3.0			8
 125	6	pinch of salt	1.0	pinch	pinch	9
-125	116	1/4 cup sugar	0.25	cup	c	10
+125	114	1/4 cup sugar	0.25	cup	c	10
 125	7	4 cups of water	4.0	cups	c	11
-126	14	2 eggs, beaten	2.0	\N	\N	4
-126	25	1 Leek cleaned and thinly sliced	1.0	\N	\N	6
+126	0	75 grams Asparagus spears, blanched	75.0	grams	g	0
+126	0	8 Black olives, pitted and quartered	8.0			1
+126	0	75 grams Broccoli florets, blanched	75.0	grams	g	2
+126	168	50 grams Cheddar cheese, grated	50.0	grams	g	3
+126	14	2 eggs, beaten	2.0			4
+126	0	50 grams Feta cheese, crumbled	50.0	grams	g	5
+126	25	1 Leek cleaned and thinly sliced	1.0			6
 126	20	Milk	4.0	servings	servings	7
+126	172	75 grams Mozzarella, thinly sliced	75.0	grams	g	8
 126	4	2 tablespoons Minced onion	2.0	tablespoons	T	9
-126	95	4 Spring onions, chopped	4.0	\N	\N	16
-126	48	4 Fresh tomatoes, skinned, de-seeded, chopped	4.0	\N	\N	18
-127	73	extra-virgin olive oil, for serving	4.0	servings	servings	3
+126	0	1 teaspoon Pesto	1.0	teaspoon	t	10
+126	0	418 grams Canned Alaska salmon (red or pink)	418.0	grams	g	11
+126	0	Salt and black pepper	4.0	servings	servings	12
+126	0	550 grams Ready-made shortcrust pastry	550.0	grams	g	13
+126	0	300 ml Single cream	300.0	ml	ml	14
+126	0	50 grams Smoked salmon	50.0	grams	g	15
+126	94	4 Spring onions, chopped	4.0			16
+126	0	50 grams Stilton cheese, crumbled	50.0	grams	g	17
+126	47	4 Fresh tomatoes, skinned, de-seeded, chopped	4.0			18
+127	0	14 ounces can of Artichokes, rinsed, chopped into bite size pieces	14.0	ounces	oz	0
+127	0	14 ounces can Diced Tomatoes	14.0	ounces	oz	1
+127	0	1 small eggplant	1.0			2
+127	72	extra-virgin olive oil, for serving	4.0	servings	servings	3
 127	23	4 cloves Garlic, minced	4.0	cloves	cloves	4
-127	73	4 oz. olive oil (for saut�ing and garnishing)	4.0	oz	oz	6
-127	97	Sea salt and fresh pepper	4.0	servings	servings	8
-127	4	1 large Yellow Onion, diced	1.0	\N	\N	10
-128	73	1/2 cup extra-virgin olive oil	0.5	cup	c	2
-128	48	2 ripe plum tomatoes	2.0	\N	\N	3
-128	86	1 tsp. thyme (chopped)	1.0	tsp	t	4
-129	68	1 cup (28-ounce) can good-quality plum tomatoes, chopped, with their juices to make 2	28.0	ounce	oz	0
-129	138	1 cup sliced cremini mushrooms (about 5 medium)	1.0	cup	c	1
-129	88	1/2 cup chopped fresh basil for garnish	0.5	cup	c	5
-129	84	1 tablespoon chopped fresh rosemary	1.0	tablespoon	T	6
-129	86	1 tablespoon chopped fresh thyme	1.0	tablespoon	T	7
-129	25	1 leek, white part only, thinly sliced	1.0	\N	\N	8
-129	73	Olive oil	4.0	servings	servings	9
-129	77	1/2 red pepper	0.5	\N	\N	12
-129	97	1 teaspoon sea salt	1.0	teaspoon	t	13
+127	0	1 teaspoon Italian Seasoning	1.0	teaspoon	t	5
+127	72	4 oz. olive oil (for saut�ing and garnishing)	4.0	oz	oz	6
+127	0	Fresh grated Parmesan or Romano, for serving	4.0	servings	servings	7
+127	96	Sea salt and fresh pepper	4.0	servings	servings	8
+127	0	8 ounces Spaghetti (like Barila Whole Grain)	8.0	ounces	oz	9
+127	4	1 large Yellow Onion, diced	1.0			10
+127	0	1 zucchini	1.0			11
+128	0	1 Brie Log such as Alouette	1.0			0
+128	0	1 small eggplant	1.0			1
+128	72	1/2 cup extra-virgin olive oil	0.5	cup	c	2
+128	47	2 ripe plum tomatoes	2.0			3
+128	85	1 tsp. thyme (chopped)	1.0	tsp	t	4
+128	0	2 medium-sized yellow squash, sliced	2.0			5
+128	0	2 medium-sized zucchini, sliced	2.0			6
+129	67	1 cup (28-ounce) can good-quality plum tomatoes, chopped, with their juices to make 2	28.0	ounce	oz	0
+129	136	1 cup sliced cremini mushrooms (about 5 medium)	1.0	cup	c	1
+129	0	1 tablespoon dry bread crumbs	1.0	tablespoon	T	2
+129	0	1/2 cup dry white wine (sauvignon blanc is nice)	0.5	cup	c	3
+129	0	1 medium eggplant (about 1 pound), cut into 1-inch cubes	1.0	pound	lb	4
+129	87	1/2 cup chopped fresh basil for garnish	0.5	cup	c	5
+129	83	1 tablespoon chopped fresh rosemary	1.0	tablespoon	T	6
+129	85	1 tablespoon chopped fresh thyme	1.0	tablespoon	T	7
+129	25	1 leek, white part only, thinly sliced	1.0			8
+129	72	Olive oil	4.0	servings	servings	9
+129	0	1 cup freshly grated Parmesan cheese	1.0	cup	c	10
+129	0	Dash black pepper	1.0	Dash	Dash	11
+129	76	1/2 red pepper	0.5			12
+129	96	1 teaspoon sea salt	1.0	teaspoon	t	13
+129	0	1 large shallot, finely chopped	1.0			14
+129	0	1 cup thinly sliced zucchini (about 1 medium)	1.0	cup	c	15
+130	0	2 cups broccoli florets, cut into small pieces	2.0	cups	c	0
 130	10	1 tablespoon butter	1.0	tablespoon	T	1
-130	14	1 large egg white	1.0	\N	\N	3
+130	0	2 teaspoons dijon mustard	2.0	teaspoons	t	2
+130	14	1 large egg white	1.0			3
 130	18	2 tablespoons lemon juice	2.0	tablespoons	T	4
-130	129	4 tablespoons reduced fat sour cream	4.0	tablespoons	T	8
+130	0	1 tablespoon lemon thyme, fresh finely chopped	1.0	tablespoon	T	5
+130	146	1 tablespoon lemon zest	1.0	tablespoon	T	6
+130	0	1/4 cup low-fat milk	0.25	cup	c	7
+130	127	4 tablespoons reduced fat sour cream	4.0	tablespoons	T	8
+130	0	8 ounces wild Alaskan Salmon filets, cooked and flaked into pieces	8.0	ounces	oz	9
 130	6	1 pinch salt	1.0	pinch	pinch	10
+130	0	2 tablespoons shallot, finely minced	2.0	tablespoons	T	11
 130	7	1/4 cup water	0.25	cup	c	12
+130	0	1/2 cup whole wheat pastry flour	0.5	cup	c	13
 131	45	� tsp dried oregano	0.25	tsp	t	0
-131	73	2 Tbsp extra-virgin olive oil	2.0	Tbsp	Tbsp	2
-131	88	2 Tbsp chopped fresh basil	2.0	Tbsp	Tbsp	3
+131	0	1 eggplant (aubergine) or 4 cups chopped	1.0			1
+131	72	2 Tbsp extra-virgin olive oil	2.0	Tbsp	Tbsp	2
+131	87	2 Tbsp chopped fresh basil	2.0	Tbsp	Tbsp	3
 131	23	1 tablespoon minced garlic	1.0	tablespoon	T	4
-131	4	1 large onion, peeled & finely cut up	1.0	\N	\N	5
-131	82	� orange bell pepper chopped	0.5	\N	\N	6
-131	77	1 medium red bell ( sweet ) pepper, washed, cleaned, pits & white bits removed, cut into little pieces	1.0	\N	\N	7
-131	97	1 tsp sea salt	1.0	tsp	t	8
-131	86	2 sprigs of thyme	2.0	sprigs	sprigs	9
-131	48	2 tomato peeled and chopped	2.0	\N	\N	10
-132	88	1/2 teaspoon basil	0.5	teaspoon	t	0
+131	4	1 large onion, peeled & finely cut up	1.0			5
+131	81	� orange bell pepper chopped	0.5			6
+131	76	1 medium red bell ( sweet ) pepper, washed, cleaned, pits & white bits removed, cut into little pieces	1.0			7
+131	96	1 tsp sea salt	1.0	tsp	t	8
+131	85	2 sprigs of thyme	2.0	sprigs	sprigs	9
+131	47	2 tomato peeled and chopped	2.0			10
+131	0	1 yellow squash chopped	1.0			11
+131	0	1 zucchini (courgette) chopped	1.0			12
+132	87	1/2 teaspoon basil	0.5	teaspoon	t	0
+132	0	1 cup Bisquick	1.0	cup	c	1
 132	11	1/2 cup vegetable or canola oil	0.5	cup	c	2
-132	14	3 Eggs	3.0	\N	\N	3
+132	14	3 Eggs	3.0			3
 132	23	1 garlic clove, minced	1.0	clove	clove	4
 132	4	1/2 cup finely chopped onion	0.5	cup	c	5
 132	45	1/2 teaspoon oregano	0.5	teaspoon	t	6
+132	0	1/4 cup shredded Parmesan cheese	0.25	cup	c	7
 132	43	2 tablespoons fresh Italian Parsley	2.0	tablespoons	T	8
+132	0	1/2 teaspoon pepper	0.5	teaspoon	t	9
 132	6	1/8 teaspoon salt	0.125	teaspoon	t	10
+132	0	1 zucchini, chopped into bite sized pieces	1.0			11
+133	0	blueberries	1.0	serving	serving	0
+133	0	your favorite cr�pes (here's my	1.0	serving	serving	1
+133	0	crumbled feta cheese	1.0	serving	serving	2
+133	0	raspberry fruit spread or jam	1.0	serving	serving	3
+133	0	raspberries	1.0	serving	serving	4
 134	12	cinnamon, optional	2.0	servings	servings	0
-134	14	4 eggs	4.0	\N	\N	1
+134	14	4 eggs	4.0			1
 134	19	Maple syrup	2.0	servings	servings	2
+134	0	Mixed fresh fruit	2.0	servings	servings	3
 134	16	nutmeg, optional	2.0	servings	servings	4
-134	73	olive oil or butter for frying	2.0	servings	servings	5
-135	9	1 banana	1.0	\N	\N	0
-135	14	4 eggs	4.0	\N	\N	2
+134	72	olive oil or butter for frying	2.0	servings	servings	5
+134	0	1/2 cup milk or soy milk	0.5	cup	c	6
+134	0	6 slices toast	6.0	slices	slices	7
+135	9	1 banana	1.0			0
+135	0	120ml carbonated water	120.0	ml	ml	1
+135	14	4 eggs	4.0			2
 135	20	400ml milk	400.0	ml	ml	3
+135	0	4 tablespoons nutella	4.0	tablespoons	T	4
+135	71	6 tablespoons oil	6.0	tablespoons	T	5
 135	15	400g white flour	400.0	g	g	6
+136	0	1 bunch broccoli rabe, chopped	1.0	bunch	bunch	0
 136	10	cup butter	1.0	cup	c	1
-136	14	3 hard cooked eggs, diced	3.0	\N	\N	2
+136	14	3 hard cooked eggs, diced	3.0			2
 136	15	cups all-purpose flour	1.0	cups	c	3
 136	23	1/2 clove garlic, minced	0.5	clove	clove	4
 136	20	cup whole milk	1.0	cup	c	5
-136	4	1 large onion quartered	1.0	\N	\N	6
+136	4	1 large onion quartered	1.0			6
+136	0	Garnish: Parmesan cheese, lemon juice	3.0	servings	servings	7
 136	43	1/4 cup parsley, minced	0.25	cup	c	8
+136	0	1/8 teaspoon pepper	0.125	teaspoon	t	9
+136	0	1/4 cup pine nuts	0.25	cup	c	10
+136	0	1/4 pound sliced prosciutto, chopped	0.25	pound	lb	11
 136	6	1/2 teaspoon salt	0.5	teaspoon	t	12
-137	88	1 teaspoon Basil, dried(or marjoram)	1.0	teaspoon	t	0
-137	14	1 extra large egg	1.0	\N	\N	2
+137	87	1 teaspoon Basil, dried(or marjoram)	1.0	teaspoon	t	0
+137	0	1/3 cup breadcrumbs	0.3333333333333333	cup	c	1
+137	14	1 extra large egg	1.0			2
+137	0	500 grams Ground meat (a mix of pork and beef)	500.0	grams	g	3
 137	20	30 60ml milk	1800.0	ml	ml	4
+137	71	1/2 tablespoon Oil	0.5	tablespoon	T	5
 137	4	70 grams Onions	70.0	grams	g	6
 137	6	1 teaspoon salt	1.0	teaspoon	t	7
-137	61	1 teaspoon White pepper	1.0	teaspoon	t	8
+137	60	1 teaspoon White pepper	1.0	teaspoon	t	8
 138	8	2 teaspoons baking powder	2.0	teaspoons	t	0
 138	10	1/2 pound butter	0.5	pound	lb	1
-138	14	6 eggs	6.0	\N	\N	3
+138	0	175 grams Cranberries, dried	175.0	grams	g	2
+138	14	6 eggs	6.0			3
 138	15	375 grams German#405 flour, sifted	375.0	grams	g	4
+138	145	3 Lemons	3.0			5
+138	0	150 grams Powdered sugar	150.0	grams	g	6
 138	6	1/2 teaspoon Salt, optional	0.5	teaspoon	t	7
-138	116	1/2 pound sugar	0.5	pound	lb	8
-139	14	2 eggs, well-beaten	2.0	\N	\N	3
-139	4	1 small onion, grated	1.0	\N	\N	6
+138	114	1/2 pound sugar	0.5	pound	lb	8
+138	0	75 ml Whipping cream	75.0	ml	ml	9
+139	0	1 cup Beef broth	1.0	cup	c	0
+139	0	3 tablespoons Bread crumbs	3.0	tablespoons	T	1
+139	0	1 teaspoon Dijon mustard, hot	1.0	teaspoon	t	2
+139	14	2 eggs, well-beaten	2.0			3
+139	0	1/2 pound Lean ground pork, shoulder	0.5	pound	lb	4
+139	0	1 pound Lean ground beef	1.0	pound	lb	5
+139	4	1 small onion, grated	1.0			6
 139	41	2 teaspoons paprika	2.0	teaspoons	t	7
 139	43	2 tablespoons Parsley, chopped	2.0	tablespoons	T	8
 139	6	to taste salt	4.0	servings	servings	9
 139	7	3 tablespoons Cold water	3.0	tablespoons	T	10
+140	0	sliced almonds for topping	12.0	servings	servings	0
 140	8	2 teaspoons baking powder	2.0	teaspoons	t	1
 140	10	1/3 cup 1 1/2 Tablespoon (100 g) butter, unsalted and at room temp.	100.0	g	g	2
-140	118	3 egg whites	3.0	\N	\N	3
-140	14	2 large eggs	2.0	\N	\N	4
+140	116	3 egg whites	3.0			3
+140	14	2 large eggs	2.0			4
 140	15	1 1/4 cup (150 g) flour	150.0	g	g	5
+140	0	21 ounces (600 g) rhubarb, peeled and cubed	600.0	g	g	6
+140	0	1 3/4 ounces (50 g) roasted almonds, ground	50.0	g	g	7
 140	6	1 3/4 cups Salt (sack salt, not Iodized)	1.75	cups	c	8
-140	116	1 cup SUGAR, BROWN, 2 LB	1.0	cup	c	9
-140	136	1 teaspoon (5 ml) vanilla extract	5.0	ml	ml	10
+140	114	1 cup SUGAR, BROWN, 2 LB	1.0	cup	c	9
+140	134	1 teaspoon (5 ml) vanilla extract	5.0	ml	ml	10
+141	0	1 teaspoon Baking soda	1.0	teaspoon	t	0
 141	10	1/4 cup Butter	0.25	cup	c	1
-141	111	3 lrg Egg yolks	3.0	\N	\N	3
-141	14	4 lrg Eggs, separated	4.0	\N	\N	4
-141	116	1/4 cup Sugar	0.25	cup	c	9
-141	136	1 teaspoon Vanilla extract	1.0	teaspoon	t	11
-142	132	2 medium cooking apples, cored and cut into 8 wedges each	2.0	\N	\N	0
+141	0	1 tablespoon Cake flour	1.0	tablespoon	T	2
+141	109	3 lrg Egg yolks	3.0			3
+141	14	4 lrg Eggs, separated	4.0			4
+141	0	1 cup Evaporated milk	1.0	cup	c	5
+141	0	Frosting	6.0	servings	servings	6
+141	0	1 cup Low-fat buttermilk	1.0	cup	c	7
+141	0	1 cup Chopped pecans	1.0	cup	c	8
+141	114	1/4 cup Sugar	0.25	cup	c	9
+141	0	1 cup Shredded unsweetened coconut	1.0	cup	c	10
+141	134	1 teaspoon Vanilla extract	1.0	teaspoon	t	11
+141	0	4 ounces White chocolate, melted in � c boiling wat	4.0	ounces	oz	12
+142	130	2 medium cooking apples, cored and cut into 8 wedges each	2.0			0
+142	0	1 cup beer	1.0	cup	c	1
+142	0	2 tablespoons coarse-grain brown mustard	2.0	tablespoons	T	2
+142	0	2 teaspoons caraway seed	2.0	teaspoons	t	3
 142	40	1 tablespoon cornstarch	1.0	tablespoon	T	4
 142	34	1/2 teaspoon ground allspice	0.5	teaspoon	t	5
+142	0	1 pound fully cooked knockwurst, bias-sliced into 2- to 2-1/2-inch pieces	1.0	pound	lb	6
+142	0	2 tablespoons molasses	2.0	tablespoons	T	7
 142	4	1/3 cup chopped onion	0.3333333333333333	cup	c	8
+142	0	1/4 teaspoon pepper	0.25	teaspoon	t	9
+142	0	1 large rutabaga, peeled & cut into 1" cubes	1.0			10
+142	0	1 16-ounce can sauerkraut, drained and rinsed	16.0	ounce	oz	11
 142	7	4 cups Water, boiling	4.0	cups	c	12
+143	0	70g homemade breadcrumbs	70.0	g	g	0
 143	40	50g cornflour, seasoned with salt and black pepper	50.0	g	g	1
-143	14	1 Egg, lightly beaten	1.0	\N	\N	2
-143	73	3 tablespoons olive oil	3.0	tablespoons	T	5
-144	59	1/2 tsp black pepper	0.5	tsp	t	0
+143	14	1 Egg, lightly beaten	1.0			2
+143	0	2 Green Apple, cored, halved and thinly sliced	2.0			3
+143	0	4 tablespoons Mayonnaise	4.0	tablespoons	T	4
+143	72	3 tablespoons olive oil	3.0	tablespoons	T	5
+143	0	4 Pork Sirloin Chops, fat trimmed	4.0			6
+143	0	1 package salad greens	1.0	package	pkg	7
+143	0	4 tablespoons Wholegrain Mustard	4.0	tablespoons	T	8
+143	0	1/2 Tablespoon Cooking Wine	0.5	Tablespoon	Tablespoon	9
+144	58	1/2 tsp black pepper	0.5	tsp	t	0
+144	0	70g homemade breadcrumbs	70.0	g	g	1
 144	40	50g cornflour, seasoned with salt and black pepper	50.0	g	g	2
-144	14	2 eggs, lightly beaten	2.0	\N	\N	4
-145	59	1/8 teaspoon Black Pepper	0.125	teaspoon	t	0
+144	0	¾ cup double cream	0.75	cup	c	3
+144	14	2 eggs, lightly beaten	2.0			4
+144	0	50g parmesan cheese, grated	50.0	g	g	5
+144	0	2 pork escalopes (about 125g each)	250.0	g	g	6
+144	0	4 tbs sunflower oil, for shallow frying	4.0	tbs	tbs	7
+144	0	1 tsp tarragon, dry, finely chopped leaves only	1.0	tsp	t	8
+144	0	¾ cup vegetable stock from 1/2 cube	0.75	cup	c	9
+144	0	1/4 cup white wine	0.25	cup	c	10
+145	58	1/8 teaspoon Black Pepper	0.125	teaspoon	t	0
 145	23	1 garlic clove, finely chopped	1.0	clove	clove	1
-145	73	Olive oil	2.0	servings	servings	2
-145	27	2 Large Potatoes, Diced	2.0	\N	\N	3
+145	72	Olive oil	2.0	servings	servings	2
+145	27	2 Large Potatoes, Diced	2.0			3
 145	6	1/2 teaspoon Salt	0.5	teaspoon	t	4
+145	0	2 cups 14 oz. sauerkraut with pickling liquid, about	2.0	cups	c	5
+145	0	1 cup cubed smoked ham	1.0	cup	c	6
 145	7	water, enough to cover the potatoes in the pot	2.0	servings	servings	7
 146	22	4 slices bacon	4.0	slices	slices	0
 146	13	8 ounces cream cheese at room temperature	8.0	ounces	oz	1
+146	0	1 teaspoon garlic paste	1.0	teaspoon	t	2
+146	0	1/2 cup mayonnaise	0.5	cup	c	3
+146	0	salt and pepper to taste	6.0	servings	servings	4
+146	0	32 oz sauerkraut	32.0	oz	oz	5
+146	0	1/4 cup chopped shallot	0.25	cup	c	6
+147	0	50g homemade bread crumbs	50.0	g	g	0
 147	10	50 g butter	50.0	g	g	1
-147	68	480g chopped tomatoes from a can	480.0	g	g	2
-147	111	3 egg yolks	3.0	\N	\N	3
+147	67	480g chopped tomatoes from a can	480.0	g	g	2
+147	109	3 egg yolks	3.0			3
+147	0	2-4 eggplants, thinly sliced	2.0			4
+147	0	230g feta cheese, grated	230.0	g	g	5
 147	15	50 g flour	50.0	g	g	6
 147	23	4 cloves garlic, finely chopped	4.0	cloves	cloves	7
 147	34	1/4 tsp ground allspice	0.25	tsp	t	8
 147	12	1/4 tsp ground cinnamon	0.25	tsp	t	9
 147	16	1/2 tsp ground nutmeg	0.5	tsp	t	10
+147	0	400 g lean ground beef	400.0	g	g	11
 147	20	250 ml warm milk	250.0	ml	ml	12
-147	73	1 tbs olive oil	1.0	tbs	tbs	13
-147	73	Olive oil	4.0	servings	servings	14
-147	4	2 onions, finely chopped	2.0	\N	\N	15
-147	59	Salt and ground white pepper	4.0	servings	servings	16
-147	97	Sea salt	4.0	servings	servings	17
-147	71	2 tbs tomato paste	2.0	tbs	tbs	18
-148	14	1 egg, lightly beaten	1.0	\N	\N	1
+147	72	1 tbs olive oil	1.0	tbs	tbs	13
+147	72	Olive oil	4.0	servings	servings	14
+147	4	2 onions, finely chopped	2.0			15
+147	58	Salt and ground white pepper	4.0	servings	servings	16
+147	96	Sea salt	4.0	servings	servings	17
+147	70	2 tbs tomato paste	2.0	tbs	tbs	18
+148	0	1 cup bread crumbs	1.0	cup	c	0
+148	14	1 egg, lightly beaten	1.0			1
+148	0	1/2 eggplants, cut into strips	0.5			2
+148	143	garlic powder	2.0	servings	servings	3
+148	0	Italian seasoning	2.0	servings	servings	4
+148	0	1/4 cup plain, low-fat yogurt	0.25	cup	c	5
 148	41	paprika	2.0	servings	servings	6
 148	6	salt	2.0	servings	servings	7
+148	0	tzatziki	2.0	servings	servings	8
 149	37	1 can chickpeas (15 ounces), drained except for about 1 tablespoon of the liquid	15.0	ounces	oz	0
 149	23	2 cloves garlic, roasted	2.0	cloves	cloves	1
-149	137	1 jalape�o, roasted	1.0	\N	\N	4
+149	143	2 tablespoons garlic powder	2.0	tablespoons	T	2
+149	0	1 large golden beet	1.0			3
+149	135	1 jalape�o, roasted	1.0			4
 149	18	1 tablespoon lemon juice	1.0	tablespoon	T	5
-149	73	� cup olive oil	0.25	cup	c	6
+149	72	� cup olive oil	0.25	cup	c	6
 149	6	Salt to taste	4.0	servings	servings	7
-150	4	1/2 red onion, sliced	0.5	\N	\N	5
-150	48	3 cups diced roma tomatoes	3.0	cups	c	7
-151	73	high-quality extra-virgin olive oil	4.0	servings	servings	1
-151	4	1 large red onion, sliced thinly	1.0	\N	\N	4
-151	48	5 large ripe tomatoes	5.0	\N	\N	5
-152	88	5 large leaves of basil, chiffonaded	5.0	leaves	leaves	0
-152	95	1 cup chopped green onions (green and white parts)	1.0	cup	c	2
+149	0	� cup tahini (sesame paste)	0.25	cup	c	8
+149	162	Turmeric, paprika and olive oil for sprinkling on top	4.0	servings	servings	9
+149	0	1 large turnip	1.0			10
+150	0	2 cucumbers, seeded and sliced	2.0			0
+150	0	1 1/2 cups crumbled feta cheese	1.5	cups	c	1
+150	0	1/2 tsp Greek Seasoning	0.5	tsp	t	2
+150	0	1 cup Kalamata olives, pitted and sliced	1.0	cup	c	3
+150	0	1/3 cup diced oil packed sun-dried tomatoes, drained, oil reserved	0.3333333333333333	cup	c	4
+150	4	1/2 red onion, sliced	0.5			5
+150	0	1 Tbsp rice vinegar (I had to use apple cider, but I think rice would be better)	1.0	Tbsp	Tbsp	6
+150	47	3 cups diced roma tomatoes	3.0	cups	c	7
+151	0	1 large cucumber	1.0			0
+151	72	high-quality extra-virgin olive oil	4.0	servings	servings	1
+151	0	1/4 pound greek feta	0.25	pound	lb	2
+151	0	1 dozen Kalamata olives	12.0			3
+151	4	1 large red onion, sliced thinly	1.0			4
+151	47	5 large ripe tomatoes	5.0			5
+152	87	5 large leaves of basil, chiffonaded	5.0	leaves	leaves	0
+152	0	1/2 pound Feta cheese, 1 lb	0.5	pound	lb	1
+152	94	1 cup chopped green onions (green and white parts)	1.0	cup	c	2
 152	18	1/2 cup freshly-squeezed lemon juice	0.5	cup	c	3
-152	73	1/2 cup + 1 tbsp extra-virgin olive oil, divided	0.5	cup	c	4
+152	72	1/2 cup + 1 tbsp extra-virgin olive oil, divided	0.5	cup	c	4
+152	0	3/4 pound (12 oz.) orzo (rice-shaped pasta)	12.0	oz	oz	5
 152	43	1 cup chopped Italian parsley	1.0	cup	c	6
-152	53	1 pound raw large shrimp, peeled and deveined	1.0	pound	lb	7
+152	52	1 pound raw large shrimp, peeled and deveined	1.0	pound	lb	7
+152	0	Salt and pepper	6.0	servings	servings	8
+153	0	1 cucumber	1.0			0
 153	45	1 tablespoon Dried Oregano	1.0	tablespoon	T	1
-153	73	2 tablespoons extra-virgin olive oil	2.0	tablespoons	T	2
+153	72	2 tablespoons extra-virgin olive oil	2.0	tablespoons	T	2
 153	23	2 cloves Garlic, smashed	2.0	cloves	cloves	3
 153	23	3 cloves garlic, minced	3.0	cloves	cloves	4
-153	18	1 Juice of Lemon	1.0	\N	\N	5
+153	18	1 Juice of Lemon	1.0			5
 153	18	tablespoon of fresh lemon juice	1.0	tablespoon	T	6
-153	59	pepper	2.0	servings	servings	7
+153	58	pepper	2.0	servings	servings	7
+153	0	Pita Bread	2.0	servings	servings	8
+153	0	2 tablespoons heaping Plain or Greek Yogurt	2.0	tablespoons	T	9
+153	0	16 ounces plain Greek yogurt	16.0	ounces	oz	10
 153	4	sliced red onions	2.0	servings	servings	11
-153	102	2 teaspoons Red Wine Vinegar	2.0	teaspoons	t	12
+153	100	2 teaspoons Red Wine Vinegar	2.0	teaspoons	t	12
 153	6	Salt	2.0	servings	servings	13
-153	48	sliced tomatoes	2.0	servings	servings	15
+153	0	1 pound boneless, skinless chicken breasts	1.0	pound	lb	14
+153	47	sliced tomatoes	2.0	servings	servings	15
+153	0	1/2 teaspoon white wine vinegar	0.5	teaspoon	t	16
 154	36	200 g boiled chickpeas. Can also use canned chickpeas	200.0	g	g	0
 154	41	1 tsp red paprika / red chili powder	1.0	tsp	t	1
 154	23	2 cloves garlic (optional) – roughly chopped	2.0	cloves	cloves	2
 154	18	1 tablespoon lemon juice	1.0	tablespoon	T	3
-154	73	2 tsp cooking oil / olive oil – for tempering bell peppers	2.0	tsp	t	4
-154	82	1 cup orange bell peppers – roughly chopped	1.0	cup	c	5
-154	59	Pepper to taste	2.0	servings	servings	6
+154	72	2 tsp cooking oil / olive oil – for tempering bell peppers	2.0	tsp	t	4
+154	81	1 cup orange bell peppers – roughly chopped	1.0	cup	c	5
+154	58	Pepper to taste	2.0	servings	servings	6
 154	6	1/2 teaspoon salt	0.5	teaspoon	t	7
 154	46	2 tsp roasted sesame seeds or 1 tablespoon tahini paste	2.0	tsp	t	8
-154	116	1/2 tsp sugar	0.5	tsp	t	9
-154	100	1 tsp white vinegar	1.0	tsp	t	10
-155	49	1 teaspoon Cumin	1.0	teaspoon	t	1
+154	114	1/2 tsp sugar	0.5	tsp	t	9
+154	98	1 tsp white vinegar	1.0	tsp	t	10
+155	0	1 can Chickpeas- any brand- Drain and wash	1.0	can	can	0
+155	48	1 teaspoon Cumin	1.0	teaspoon	t	1
 155	23	Couple of crushed garlic cloves	2.0	cloves	cloves	2
 155	18	1 tablespoon lemon juice	1.0	tablespoon	T	3
+155	0	Parsley, Paprika or Sumac and Olive	2.0	servings	servings	4
 155	6	1/2 teaspoon salt	0.5	teaspoon	t	5
+155	0	1/2 cup Tahini sauce	0.5	cup	c	6
+156	0	1/4 cup black olives	0.25	cup	c	0
 156	37	1 15-oz can garbanzo beans	15.0	oz	oz	1
 156	2	1/2 cup shredded carrots	0.5	cup	c	2
+156	0	1/2 cup julienned cucumber	0.5	cup	c	3
 156	23	1 garlic clove	1.0	clove	clove	4
+156	0	2 tablespoons hummus	2.0	tablespoons	T	5
 156	18	1 tablespoon lemon juice	1.0	tablespoon	T	6
+156	156	1/2 cup shredded lettuce	0.5	cup	c	7
 156	6	1/2 teaspoon salt	0.5	teaspoon	t	8
+156	0	1 1/2 tablespoons Tahini paste	1.5	tablespoons	T	9
+156	0	1 10-inch tortilla	1.0	10-inch	10-inch	10
+157	0	4 oz. baby spinach	4.0	oz	oz	0
+157	0	3 tablespoons cooking oil	3.0	tablespoons	T	1
 157	23	1 tablespoon garlic (chopped)	1.0	tablespoon	T	2
-157	73	2 tablespoons olive oil	2.0	tablespoons	T	5
-158	14	1 egg	1.0	\N	\N	1
-158	73	2 tablespoons extra-virgin olive oil	2.0	tablespoons	T	2
+157	0	1 (4 oz.) fresh goat cheese, Chavrie log	4.0	oz	oz	3
+157	0	8 2-ounce lamb loins	16.0	ounce	oz	4
+157	72	2 tablespoons olive oil	2.0	tablespoons	T	5
+157	0	salt and pepper to season	6.0	servings	servings	6
+158	0	1 cucumber, seeded and diced	1.0			0
+158	14	1 egg	1.0			1
+158	72	2 tablespoons extra-virgin olive oil	2.0	tablespoons	T	2
 158	43	1/4 cup chopped flat leaf parsley	0.25	cup	c	3
+158	0	1 handful of minced fresh dill	1.0	handful	handful	4
 158	23	12 Cloves garlic, peeled and cut in ha	12.0	Cloves	Cloves	5
-158	18	juice of 2 lemons	2.0	\N	\N	9
-158	98	Kosher salt & pepper to taste	4.0	servings	servings	10
+158	0	1 pint Greek yogurt	1.0	pint	pt	6
+158	0	1 pound ground lamb	1.0	pound	lb	7
+158	0	4 hamburger buns	4.0			8
+158	18	juice of 2 lemons	2.0			9
+158	97	Kosher salt & pepper to taste	4.0	servings	servings	10
 159	15	1/2 cup all purpose flour	0.5	cup	c	0
-159	126	White Sauce	12.0	servings	servings	1
-159	68	1 can diced tomatoes, undrained	1.0	can	can	2
-159	14	4 egg, beaten	4.0	\N	\N	5
+159	124	White Sauce	12.0	servings	servings	1
+159	67	1 can diced tomatoes, undrained	1.0	can	can	2
+159	0	cup margarine	1.0	cup	c	3
+159	0	1/2 cup dry red wine, optional	0.5	cup	c	4
+159	14	4 egg, beaten	4.0			5
+159	0	2 1/2 pounds eggplant, (3 large)	2.5	pounds	lb	6
+159	0	3 cups lactose free mozzarella cheese, shredded	3.0	cups	c	7
+159	0	4 cups Natrel Lactose Free Milk	4.0	cups	c	8
 159	43	1/2 cup chopped fresh parsley	0.5	cup	c	9
-159	23	2 clv garlic, chopped	2.0	\N	\N	10
-159	73	5 tablespoons extra-virgin olive oil	5.0	tablespoons	T	12
-159	4	2 mediums Onion, chopped	2.0	\N	\N	13
+159	23	2 clv garlic, chopped	2.0			10
+159	0	2 pounds ground lamb	2.0	pounds	lb	11
+159	72	5 tablespoons extra-virgin olive oil	5.0	tablespoons	T	12
+159	4	2 mediums Onion, chopped	2.0			13
 159	45	1 tablespoon dried oregano leaves	1.0	tablespoon	T	14
 159	6	1 teaspoon salt	1.0	teaspoon	t	15
-159	71	1 can Tomato paste	1.0	can	can	17
-160	59	1/8 teaspoon black pepper	0.125	teaspoon	t	0
-160	66	1 pound brown lentils	1.0	pound	lb	1
-160	68	28 ounces can whole tomatoes	28.0	ounces	oz	2
+159	0	Salt and pepper to taste	12.0	servings	servings	16
+159	70	1 can Tomato paste	1.0	can	can	17
+159	0	3 zucchini, sliced, 1/4 inch thick	3.0			18
+160	58	1/8 teaspoon black pepper	0.125	teaspoon	t	0
+160	65	1 pound brown lentils	1.0	pound	lb	1
+160	67	28 ounces can whole tomatoes	28.0	ounces	oz	2
 160	2	12 ounces scrubbed and chopped carrots	12.0	ounces	oz	3
-160	89	2 teaspoons dried basil	2.0	teaspoons	t	4
+160	88	2 teaspoons dried basil	2.0	teaspoons	t	4
 160	45	1 teaspoon dried oregano	1.0	teaspoon	t	5
-160	87	1 teaspoon dried thyme	1.0	teaspoon	t	6
-160	86	2 teaspoons fresh thyme (if none available, use 1 more tsp dried)	2.0	teaspoons	t	7
+160	86	1 teaspoon dried thyme	1.0	teaspoon	t	6
+160	85	2 teaspoons fresh thyme (if none available, use 1 more tsp dried)	2.0	teaspoons	t	7
 160	23	2 cloves garlic, chopped	2.0	cloves	cloves	8
 160	18	2 tablespoons lemon juice, from 1 lemon	2.0	tablespoons	T	9
-160	73	1 tablespoon olive oil	1.0	tablespoon	T	10
+160	72	1 tablespoon olive oil	1.0	tablespoon	T	10
 160	4	1/2 medium onion, chopped (about ¾ cup)	0.75	cup	c	11
 160	6	1/4 teaspoon salt	0.25	teaspoon	t	12
 160	7	3 quarts cold water	3.0	quarts	quarts	13
-161	80	1 large can tomato sauce	1.0	can	can	1
-161	68	1 can diced tomatoes	1.0	can	can	2
-161	88	Fresh basil	8.0	servings	servings	3
+161	0	1 pack package Angel hair spaghetti 12	1.0			0
+161	79	1 large can tomato sauce	1.0	can	can	1
+161	67	1 can diced tomatoes	1.0	can	can	2
+161	87	Fresh basil	8.0	servings	servings	3
 161	23	teaspoon � minced garlic	1.0	teaspoon	t	4
+161	0	cup � green Greek olives (pitted)	1.0	cup	c	5
+161	0	1 teaspoon Italian seasoning	1.0	teaspoon	t	6
+161	0	1 pound of lean ground beef	1.0	pound	lb	7
 161	18	1 tablespoon lemon juice	1.0	tablespoon	T	8
-161	113	1 pound of vegetables (seasoned, roasted with olive oil)	1.0	pound	lb	9
-161	56	1 cup sliced mushrooms (seasoned & roasted)	1.0	cup	c	10
+161	111	1 pound of vegetables (seasoned, roasted with olive oil)	1.0	pound	lb	9
+161	55	1 cup sliced mushrooms (seasoned & roasted)	1.0	cup	c	10
 161	4	2 teaspoons Onion, minced	2.0	teaspoons	t	11
 161	45	teaspoon � oregano	1.0	teaspoon	t	12
+161	0	cup � parmesan cheese	1.0	cup	c	13
+161	0	teaspoon � black pepper	1.0	teaspoon	t	14
+161	0	cup � of sun dried tomatoes, chopped	1.0	cup	c	15
 162	37	1 15.5oz can chickpeas (garbanzo beans), drained and rinsed	15.5	oz	oz	0
-162	73	1/4 cup extra-virgin olive oil, divided	0.25	cup	c	2
+162	0	3 pounds eggplant (about 3 medium)	3.0	pounds	lb	1
+162	72	1/4 cup extra-virgin olive oil, divided	0.25	cup	c	2
 162	23	1 garlic clove	1.0	clove	clove	3
 162	18	2 tablespoons fresh lemon juice	2.0	tablespoons	T	4
-162	59	Freshly ground pepper to taste	6.0	servings	servings	5
+162	58	Freshly ground pepper to taste	6.0	servings	servings	5
 162	6	1/2 teaspoon salt	0.5	teaspoon	t	6
-163	14	3 extra-large eggs, lightly beaten	3.0	\N	\N	0
+162	0	2 tablespoons tahini	2.0	tablespoons	T	7
+163	14	3 extra-large eggs, lightly beaten	3.0			0
+163	0	1 1/2 lbs. Feta cheese	1.5	lbs	lb	1
 163	15	2 tablespoons all-purpose flour	2.0	tablespoons	T	2
-163	73	1/2 cup (120 ml) olive oil	120.0	ml	ml	5
-163	4	2 large onions, chopped	2.0	\N	\N	6
-163	72	1/2 cup vegetable oil	0.5	cup	c	9
-164	73	extra-virgin olive oil, for serving	1.0	serving	serving	0
+163	0	2 tablespoons chopped fresh dill	2.0	tablespoons	T	3
+163	165	4 boxes frozen spinach	4.0	boxes	boxes	4
+163	72	1/2 cup (120 ml) olive oil	120.0	ml	ml	5
+163	4	2 large onions, chopped	2.0			6
+163	0	1 box Filo or Phyllo dough (purchase in freezer sectio	1.0	box	box	7
+163	0	salt and pepper to taste	8.0	servings	servings	8
+163	71	1/2 cup vegetable oil	0.5	cup	c	9
+164	72	extra-virgin olive oil, for serving	1.0	serving	serving	0
+164	0	6 ounces feta cheese	6.0	ounces	oz	1
 164	23	1 garlic clove	1.0	clove	clove	2
 164	18	2 Tablespoons lemon juice	2.0	Tablespoons	Tablespoons	3
-164	62	pinch of red pepper flakes	1.0	pinch	pinch	6
-165	62	chili flakes, to taste	2.0	servings	servings	3
-165	81	2 teaspoons curry powder	2.0	teaspoons	t	5
+164	146	zest of 1 lemon, a pinch of zest reserved for garnish	1.0			4
+164	0	1/3 cup plain Greek yogurt	0.3333333333333333	cup	c	5
+164	61	pinch of red pepper flakes	1.0	pinch	pinch	6
+165	0	200 g brown rice	200.0	g	g	0
+165	0	1 can (400 ml) coconut milk	400.0	ml	ml	1
+165	0	400 g chicken breast, cubed	400.0	g	g	2
+165	61	chili flakes, to taste	2.0	servings	servings	3
+165	0	1 tablespoon coconut oil	1.0	tablespoon	T	4
+165	80	2 teaspoons curry powder	2.0	teaspoons	t	5
+165	0	2 teaspoons garam masala	2.0	teaspoons	t	6
 165	23	2 cloves garlic	2.0	cloves	cloves	7
+165	141	1 inch ginger	1.0	inch	inch	8
+165	0	1 tablespoon lemon grass paste	1.0	tablespoon	T	9
 165	31	200 g snow peas, frozen	200.0	g	g	10
-165	71	1 tablespoon tomato paste	1.0	tablespoon	T	11
-166	68	1 Cup canned crushed tomatoes	1.0	Cup	Cup	0
-166	50	1 Teaspoon Cumin Seeds	1.0	Teaspoon	Teaspoon	2
+165	70	1 tablespoon tomato paste	1.0	tablespoon	T	11
+166	67	1 Cup canned crushed tomatoes	1.0	Cup	Cup	0
+166	0	2 Teaspoons Coriander Seeds or 1 Teaspoon Powder	2.0	Teaspoons	Teaspoons	1
+166	49	1 Teaspoon Cumin Seeds	1.0	Teaspoon	Teaspoon	2
 166	7	12 Cups Filtered Water	12.0	Cups	Cups	3
+166	141	2 Teaspoons Fresh organic Ginger	2.0	Teaspoons	Teaspoons	4
+166	0	1 Tablespoon Garam Masala	1.0	Tablespoon	Tablespoon	5
 166	23	2-3 organic Garlic Cloves	2.0	cloves	cloves	6
-166	143	1/4 Cup Expeller Pressed Grapeseed Oil	0.25	Cup	Cup	7
-166	67	3 Cups organic Red Lentils	3.0	Cups	Cups	8
-166	97	1 Tablespoon + 1 Teaspoon Sea Salt or to taste	1.0	Tablespoon	Tablespoon	9
-166	4	1/2 organic White Onion	0.5	\N	\N	13
-167	81	2 teaspoons Curry powder	2.0	teaspoons	t	2
-167	133	2 inches Granny Smith apples (cut wedges)	2.0	inches	inches	4
-167	25	2 Leeks (chopped and washed)	2.0	\N	\N	5
-167	72	2 ounces Vegetable oil	2.0	ounces	oz	7
-167	56	1 cup Sliced white mushrooms	1.0	cup	c	8
-168	64	2 tbsp Gram (chickpea) flour	2.0	tbsp	T	0
+166	140	1/4 Cup Expeller Pressed Grapeseed Oil	0.25	Cup	Cup	7
+166	66	3 Cups organic Red Lentils	3.0	Cups	Cups	8
+166	96	1 Tablespoon + 1 Teaspoon Sea Salt or to taste	1.0	Tablespoon	Tablespoon	9
+166	0	2-4 Serrano peppers	2.0			10
+166	162	3 Tablespoons Turmeric	3.0	Tablespoons	Tablespoons	11
+166	0	2 Vegetable Bouillon Cube	2.0			12
+166	4	1/2 organic White Onion	0.5			13
+167	0	24 ounces Apple cider or juice	24.0	ounces	oz	0
+167	0	7 ounces Coconut milk	7.0	ounces	oz	1
+167	80	2 teaspoons Curry powder	2.0	teaspoons	t	2
+167	0	2 packages Chavrie fresh goat cheese (reserve 1 pkg. for garnishing)	2.0	packages	packages	3
+167	131	2 inches Granny Smith apples (cut wedges)	2.0	inches	inches	4
+167	25	2 Leeks (chopped and washed)	2.0			5
+167	162	1/2 teaspoon Turmeric	0.5	teaspoon	t	6
+167	71	2 ounces Vegetable oil	2.0	ounces	oz	7
+167	55	1 cup Sliced white mushrooms	1.0	cup	c	8
+168	63	2 tbsp Gram (chickpea) flour	2.0	tbsp	T	0
 168	37	2 cans chickpeas drained and rinsed	2.0	cans	cans	1
-168	96	8 tablespoons chili powder (or to taste)	8.0	tablespoons	T	2
-168	93	Handful of fresh coriander (cilantro) chopped	1.0	Handful	Handful	3
-168	49	2 tsp cumin powder	2.0	tsp	t	4
-168	50	1.5 tsp black cumin seeds	1.5	tsp	t	5
-168	93	Small handful of fresh coriander (cilantro)	1.0	handful	handful	6
+168	95	8 tablespoons chili powder (or to taste)	8.0	tablespoons	T	2
+168	92	Handful of fresh coriander (cilantro) chopped	1.0	Handful	Handful	3
+168	48	2 tsp cumin powder	2.0	tsp	t	4
+168	49	1.5 tsp black cumin seeds	1.5	tsp	t	5
+168	92	Small handful of fresh coriander (cilantro)	1.0	handful	handful	6
+168	0	1 tsp garam masala	1.0	tsp	t	7
 168	23	3 cloves garlic finely chopped	3.0	cloves	cloves	8
+168	0	1 hot green chili finely sliced	1.0			9
+168	0	2 hot green chilis finely chopped	2.0			10
 168	18	1 tbsp lemon juice	1.0	tbsp	T	11
-168	4	1 small onion, chopped	1.0	\N	\N	13
-168	3	3 green peppers (capsicum) roughly chopped into big chunks	3.0	\N	\N	16
+168	0	1 tbsp mustard seeds	1.0	tbsp	T	12
+168	4	1 small onion, chopped	1.0			13
+168	0	3 cups passata (pureed tomato)	3.0	cups	c	14
+168	0	1 cup frozen peas (take them out the freezer before you start cooking)	1.0	cup	c	15
+168	3	3 green peppers (capsicum) roughly chopped into big chunks	3.0			16
+168	0	2 tsp Tamarind	2.0	tsp	t	17
+168	162	1 tsp Turmeric	1.0	tsp	t	18
+169	0	6 Bay leaves	6.0			0
+169	0	1 pound Chicken breast (boneless)	1.0	pound	lb	1
 169	10	Butter as needed( I used oil+butter)	2.0	servings	servings	2
-169	96	1 tablespoon chili powder	1.0	tablespoon	T	3
-169	142	1 tablespoon Lime juice	1.0	tablespoon	T	10
-169	4	1 Big Onion Chopped	1.0	\N	\N	12
+169	95	1 tablespoon chili powder	1.0	tablespoon	T	3
+169	0	4 Green chilies	4.0			4
+169	0	Cilantro leaves	1.0	leaves	leaves	5
+169	0	1/4 cup Fresh Cream	0.25	cup	c	6
+169	0	1/2 teaspoon Fennel seeds	0.5	teaspoon	t	7
+169	0	1 teaspoon garam masala	1.0	teaspoon	t	8
+169	0	1 teaspoon Ketchup	1.0	teaspoon	t	9
+169	139	1 tablespoon Lime juice	1.0	tablespoon	T	10
+169	0	A few nuts n raisins	9.0	servings	servings	11
+169	4	1 Big Onion Chopped	1.0			12
+169	0	1/2 teaspoon Pepper Powder	0.5	teaspoon	t	13
 169	6	1/4 teaspoon salt	0.25	teaspoon	t	14
-169	116	Sugar	2.0	servings	servings	15
-169	48	1 medium sized tomato blanched n Pureed	1.0	\N	\N	16
-170	68	1 16 oz. can tomatoes, cut up	16.0	oz	oz	2
-170	81	1 t curry powder	1.0	t	t	3
-170	81	2 t mild curry powder	2.0	t	t	4
+169	114	Sugar	2.0	servings	servings	15
+169	47	1 medium sized tomato blanched n Pureed	1.0			16
+169	39	1 tablespoon Yogurt	1.0	tablespoon	T	17
+170	0	1 bay leaf	1.0			0
+170	0	5 pounds Beef Chuck Roast	5.0	pounds	lb	1
+170	67	1 16 oz. can tomatoes, cut up	16.0	oz	oz	2
+170	80	1 t curry powder	1.0	t	t	3
+170	80	2 t mild curry powder	2.0	t	t	4
 170	23	3 cloves garlic, minced	3.0	cloves	cloves	5
-170	73	Olive oil	4.0	servings	servings	7
-170	125	1/2 large sweet onion	0.5	\N	\N	11
-170	71	1 T tomato paste	1.0	T	T	12
-171	59	Freshly-ground black pepper to taste	1.0	serving	serving	1
-171	50	teaspoon cumin seeds	1.0	teaspoon	t	6
+170	141	1 slice of ginger, 1/2" wide	1.0	slice	slice	6
+170	72	Olive oil	4.0	servings	servings	7
+170	0	1 cup quinoa	1.0	cup	c	8
+170	0	1/2 hot red chile, seeded and finely diced	0.5			9
+170	0	1/4 cup red wine	0.25	cup	c	10
+170	123	1/2 large sweet onion	0.5			11
+170	70	1 T tomato paste	1.0	T	T	12
+171	0	2 bay leaves	2.0			0
+171	58	Freshly-ground black pepper to taste	1.0	serving	serving	1
+171	0	4 smalls hot chilies seeded	4.0			2
+171	0	2 pounds chuck steak cut 1" cubes	2.0	pounds	lb	3
+171	0	Clarified butter as needed	1.0	serving	serving	4
+171	0	6 whl cloves	6.0			5
+171	49	teaspoon cumin seeds	1.0	teaspoon	t	6
 171	23	14 garlic cloves	14.0	cloves	cloves	7
-171	116	cup granulated sugar	1.0	cup	c	8
-171	4	1 small onion finely sliced	1.0	\N	\N	11
+171	114	cup granulated sugar	1.0	cup	c	8
+171	145	1 lemon juiced, pith removed, rind chopped, membranes removed, and pulp chopped	1.0			9
+171	0	1 teaspoon English mustard	1.0	teaspoon	t	10
+171	4	1 small onion finely sliced	1.0			11
+171	0	3 tablespoons poppy seeds	3.0	tablespoons	T	12
+171	142	teaspoon powdered ginger	1.0	teaspoon	t	13
 171	6	salt (taste),	1.0	serving	serving	14
 171	6	teaspoon salt	1.0	teaspoon	t	15
-171	71	cup tomato paste	1.0	cup	c	16
-171	102	cup red wine vinegar	1.0	cup	c	18
-172	101	2 teaspoons apple cider vinegar	2.0	teaspoons	t	0
-172	70	1 head of cauliflower-cut into florets	1.0	head	head	2
+171	70	cup tomato paste	1.0	cup	c	16
+171	162	teaspoon turmeric	1.0	teaspoon	t	17
+171	100	cup red wine vinegar	1.0	cup	c	18
+172	99	2 teaspoons apple cider vinegar	2.0	teaspoons	t	0
+172	0	brown rice	8.0	servings	servings	1
+172	69	1 head of cauliflower-cut into florets	1.0	head	head	2
 172	37	1 15 oz can of chickpeas-drained and rinsed	15.0	oz	oz	3
-172	50	1 teaspoon cumin seeds- toasted and crushed	1.0	teaspoon	t	4
-172	81	1 tablespoon curry powder	1.0	tablespoon	T	5
-172	49	1 tablespoon ground cumin	1.0	tablespoon	T	8
+172	49	1 teaspoon cumin seeds- toasted and crushed	1.0	teaspoon	t	4
+172	80	1 tablespoon curry powder	1.0	tablespoon	T	5
+172	0	1 teaspoon fenugreek- toasted and crushed	1.0	teaspoon	t	6
+172	141	3 tablespoons fresh ginger-minced	3.0	tablespoons	T	7
+172	48	1 tablespoon ground cumin	1.0	tablespoon	T	8
 172	23	3 cloves garlic-minced	3.0	cloves	cloves	9
-172	4	1 onion-sliced thinly	1.0	\N	\N	10
+172	4	1 onion-sliced thinly	1.0			10
 172	41	2 teaspoons paprika	2.0	teaspoons	t	11
-172	27	2 potatoes-peeled and chopped	2.0	\N	\N	12
-172	97	sea salt	8.0	servings	servings	13
-172	116	1 pinch sugar	1.0	pinch	pinch	14
+172	27	2 potatoes-peeled and chopped	2.0			12
+172	96	sea salt	8.0	servings	servings	13
+172	114	1 pinch sugar	1.0	pinch	pinch	14
+172	0	2 tablespoons sunflower oil	2.0	tablespoons	T	15
+172	0	1 teaspoon tumeric	1.0	teaspoon	t	16
 172	7	water-to cover	8.0	servings	servings	17
-173	81	2 teaspoons Curry Powder	2.0	teaspoons	t	0
+173	80	2 teaspoons Curry Powder	2.0	teaspoons	t	0
+173	141	1 teaspoon fresh ginger	1.0	teaspoon	t	1
 173	23	2 cloves of garlic	2.0	cloves	cloves	2
-173	142	2 teaspoons Lime juice	2.0	teaspoons	t	3
+173	139	2 teaspoons Lime juice	2.0	teaspoons	t	3
 173	4	1/4 cup red onions	0.25	cup	c	4
-173	75	2 tablespoons Soy sauce	2.0	tablespoons	T	9
-174	81	tablespoon Curry powder, 1	1.0	tablespoon	T	1
-174	73	tablespoon Olive oil, 1	1.0	tablespoon	T	4
-174	4	Onion (chopped), 1	1.0	\N	\N	5
+173	0	rice noodles	2.0	servings	servings	5
+173	0	1/4 cup Natural roasted peanuts	0.25	cup	c	6
+173	0	1 pound Black Angus Inside Round Steak (cut in thin slices)	1.0	pound	lb	7
+173	0	1 teaspoon Sambal Oelek	1.0	teaspoon	t	8
+173	74	2 tablespoons Soy sauce	2.0	tablespoons	T	9
+174	0	Cr�me fraiche, 150ml	150.0	ml	ml	0
+174	80	tablespoon Curry powder, 1	1.0	tablespoon	T	1
+174	0	Dry white wine, 150ml	150.0	ml	ml	2
+174	0	Mussels, 2kg	2.0	kg	kg	3
+174	72	tablespoon Olive oil, 1	1.0	tablespoon	T	4
+174	4	Onion (chopped), 1	1.0			5
 174	43	tablespoon Parsley (chopped), 1	1.0	tablespoon	T	6
-175	96	2 teaspoons red chili powder [optional]	2.0	teaspoons	t	4
-175	50	1 tablespoon Cumin seeds,	1.0	tablespoon	T	8
-175	26	2 blades mace [javitri]	2.0	\N	\N	11
+174	0	Salt and pepper to taste.	4.0	servings	servings	7
+175	0	1 pound mutton [boneless and cut into 1" cubes]	1.0	pound	lb	0
+175	0	1 1/4 cups basmati rice	1.25	cups	c	1
+175	0	3 bay leaves	3.0			2
+175	0	2 pods green cardamom	2.0			3
+175	95	2 teaspoons red chili powder [optional]	2.0	teaspoons	t	4
+175	0	8 wholes dry red chilies [adjust to taste]	8.0			5
+175	0	1 teaspoon dry coriander powder	1.0	teaspoon	t	6
+175	0	1 teaspoon coriander seeds	1.0	teaspoon	t	7
+175	49	1 tablespoon Cumin seeds,	1.0	tablespoon	T	8
+175	0	Fresh Cilantro leaves	1.0	leaves	leaves	9
+175	0	Fried onions [optional]	3.0	servings	servings	10
+175	26	2 blades mace [javitri]	2.0			11
+175	0	1/4 tablespoon saffron [kesar] soaked in 2 cups milk [optional]	0.25	tablespoon	T	12
 175	16	1/2 teaspoon nutmeg, grated	0.5	teaspoon	t	13
-175	4	1 large onion, thinly sliced	1.0	\N	\N	14
+175	4	1 large onion, thinly sliced	1.0			14
+175	0	10 whole black peppercorns	10.0			15
 175	6	1/2 teaspoon salt	0.5	teaspoon	t	16
+175	0	4 tablespoons oil [I used mustard, canola or sunflower can be used]	4.0	tablespoons	T	17
 175	7	4 pints Water	4.0	pints	pt	18
+175	0	Almonds/Raisins [optional]	3.0	servings	servings	19
 176	8	1 small pinch baking powder	1.0	pinch	pinch	0
-176	50	2 teaspoons cumin seeds	2.0	teaspoons	t	4
+176	0	2 mediums hot chilies, minced	2.0			1
+176	0	1 teaspoon cinnamon powder	1.0	teaspoon	t	2
+176	0	1/4 cup chopped coriander	0.25	cup	c	3
+176	49	2 teaspoons cumin seeds	2.0	teaspoons	t	4
+176	0	6 curry leaves	6.0			5
 176	23	1 tablespoon garlic, minced	1.0	tablespoon	T	6
 176	18	1 tablespoon lemon juice or to taste	1.0	tablespoon	T	7
+176	0	1 1/2 cups mung beans	1.5	cups	c	8
+176	0	1 teaspoon mustard seeds	1.0	teaspoon	t	9
 176	6	Salt to taste	4.0	servings	servings	10
-176	116	Sugar to taste	4.0	servings	servings	11
-176	48	1 medium tomato, chopped	1.0	\N	\N	13
-177	81	3 tablespoons curry powder	3.0	tablespoons	T	0
-177	93	2 tablespoons chopped fresh coriander (or parsley)	2.0	tablespoons	T	1
+176	114	Sugar to taste	4.0	servings	servings	11
+176	0	1 tablespoon sunflower oil	1.0	tablespoon	T	12
+176	47	1 medium tomato, chopped	1.0			13
+176	162	1/2 teaspoon turmeric	0.5	teaspoon	t	14
+177	80	3 tablespoons curry powder	3.0	tablespoons	T	0
+177	92	2 tablespoons chopped fresh coriander (or parsley)	2.0	tablespoons	T	1
 177	23	2 cloves garlic, crushed	2.0	cloves	cloves	2
-177	4	1 chopped med. onion	1.0	\N	\N	4
+177	0	1 pound ground lamb (or beef)	1.0	pound	lb	3
+177	4	1 chopped med. onion	1.0			4
+177	0	3 tablespoons peanut, corn oil, but	3.0	tablespoons	T	5
 177	38	10 ounces frozen peas	10.0	ounces	oz	6
-177	48	8 ripe plum tomatoes (or canned)	8.0	\N	\N	7
+177	47	8 ripe plum tomatoes (or canned)	8.0			7
 177	6	1/2 teaspoon salt	0.5	teaspoon	t	8
-178	8	1 tiny pinch of baking powder	1.0	\N	\N	0
-178	49	1 teaspoon cumin powder	1.0	teaspoon	t	5
+178	8	1 tiny pinch of baking powder	1.0			0
+178	0	Pinch of cardamom powder (Cardamom powder is very strong so add only a pinch)	1.0	pinch	pinch	1
+178	0	3 hot green chilies, minced (more or less if you prefer)	3.0			2
+178	0	1/4 teaspoon cinnamon powder	0.25	teaspoon	t	3
+178	0	1 teaspoon coriander powder	1.0	teaspoon	t	4
+178	48	1 teaspoon cumin powder	1.0	teaspoon	t	5
+178	0	1/4 teaspoon fennel powder	0.25	teaspoon	t	6
 178	23	4 mediums cloves garlic, minced	4.0	cloves	cloves	7
-178	4	1 Large Onion, Chopped	1.0	\N	\N	9
+178	141	1 tablespoon ginger, minced	1.0	tablespoon	T	8
+178	4	1 Large Onion, Chopped	1.0			9
+178	0	1 cup paneer (or tofu for vegans), lightly grilled	1.0	cup	c	10
 178	6	1/2 teaspoon Salt	0.5	teaspoon	t	11
-178	48	1 kilogram tomatoes, Sliced into Quarters	1.0	kilogram	kilogram	15
+178	0	2 tablespoons single cream (optional)	2.0	tablespoons	T	12
+178	164	10 cups fresh spinach, chopped	10.0	cups	c	13
+178	0	2 tablespoons sunflower oil	2.0	tablespoons	T	14
+178	47	1 kilogram tomatoes, Sliced into Quarters	1.0	kilogram	kilogram	15
+178	162	1/2 teaspoon turmeric	0.5	teaspoon	t	16
 178	7	1 cup water	1.0	cup	c	17
-179	96	1/2 teaspoon Red chili powder	0.5	teaspoon	t	1
+179	0	1/8 cup cashews	0.125	cup	c	0
+179	95	1/2 teaspoon Red chili powder	0.5	teaspoon	t	1
+179	0	1 teaspoon Coriander powder	1.0	teaspoon	t	2
 179	40	1/4 cup corn starch	0.25	cup	c	3
-179	49	1 teaspoon cumin powder	1.0	teaspoon	t	4
-179	50	1 teaspoon cumin seeds	1.0	teaspoon	t	5
-179	93	1/4 cup Fresh Cilantro, finely chopped	0.25	cup	c	6
-179	65	2% Milk, as needed	4.0	servings	servings	13
-179	4	3 mediums Onions,	3.0	\N	\N	14
-179	27	5 mediums Potatoes, boiled-peeled-grated	5.0	\N	\N	17
+179	48	1 teaspoon cumin powder	1.0	teaspoon	t	4
+179	49	1 teaspoon cumin seeds	1.0	teaspoon	t	5
+179	92	1/4 cup Fresh Cilantro, finely chopped	0.25	cup	c	6
+179	0	1 teaspoon Garam Masala	1.0	teaspoon	t	7
+179	0	1 Tbsp, Garlic Paste	1.0	Tbsp	Tbsp	8
+179	0	1 Tbsp, Ginger paste	1.0	Tbsp	Tbsp	9
+179	0	1/8 cup Golden Raisins	0.125	cup	c	10
+179	0	2 Green Chilies, finely chopped	2.0			11
+179	0	1/2 cup Fresh Cream / Half & Half	0.5	cup	c	12
+179	64	2% Milk, as needed	4.0	servings	servings	13
+179	4	3 mediums Onions,	3.0			14
+179	0	1/4 cup Paneer, grated (cottage cheese)	0.25	cup	c	15
+179	0	1/2 cup peas and carrots	0.5	cup	c	16
+179	27	5 mediums Potatoes, boiled-peeled-grated	5.0			17
 179	6	Salt to taste	4.0	servings	servings	18
-180	48	1 beefsteak tomato- diced	1.0	\N	\N	2
-180	74	handful cashew nuts- chopped a bit	1.0	handful	handful	3
-180	123	5 tablespoons hefty Biryani paste (I use Patak's Brand)	5.0	tablespoons	T	4
-180	96	1 tablespoon chili powder (it should be spicy!)	1.0	tablespoon	T	5
-180	93	handful chopped cilantro	1.0	handful	handful	6
-180	59	coarse black pepper	4.0	servings	servings	7
-180	108	PAM original flavor	4.0	servings	servings	8
+179	0	1 cup Tomato puree	1.0	cup	c	19
+179	0	1/4 teaspoon Turmeric powder	0.25	teaspoon	t	20
+180	0	4 acorn squashes cut in half, gutted	4.0			0
+180	0	1/2 cup basmati rice soaked in water	0.5	cup	c	1
+180	47	1 beefsteak tomato- diced	1.0			2
+180	73	handful cashew nuts- chopped a bit	1.0	handful	handful	3
+180	121	5 tablespoons hefty Biryani paste (I use Patak's Brand)	5.0	tablespoons	T	4
+180	95	1 tablespoon chili powder (it should be spicy!)	1.0	tablespoon	T	5
+180	92	handful chopped cilantro	1.0	handful	handful	6
+180	58	coarse black pepper	4.0	servings	servings	7
+180	106	PAM original flavor	4.0	servings	servings	8
+180	0	3 tablespoons garam masala	3.0	tablespoons	T	9
 180	23	4 cloves garlic- crushed and minced	4.0	cloves	cloves	10
-180	4	1 medium onion- cut into thick slices (garnishing)	1.0	\N	\N	12
-180	4	1 medium red onion- diced	1.0	\N	\N	13
+180	141	2 tablespoons ginger- freshly grated	2.0	tablespoons	T	11
+180	4	1 medium onion- cut into thick slices (garnishing)	1.0			12
+180	4	1 medium red onion- diced	1.0			13
+180	0	of saffron	4.0	servings	servings	14
 180	6	salt to taste	4.0	servings	servings	15
-180	77	4 small sweet peppers- diced	4.0	\N	\N	16
-180	72	1/2 tablespoon vegetable oil	0.5	tablespoon	T	17
+180	76	4 small sweet peppers- diced	4.0			16
+180	71	1/2 tablespoon vegetable oil	0.5	tablespoon	T	17
 180	7	1 cup water	1.0	cup	c	18
-180	4	1 medium white onion- diced	1.0	\N	\N	19
+180	4	1 medium white onion- diced	1.0			19
+181	0	2 baking Potatoes	2.0			0
+181	0	2 cups of beef broth	2.0	cups	c	1
 181	10	2 tablespoons of Butter	2.0	tablespoons	T	2
-181	93	1 bunch of Cilantro, Chopped	1.0	bunch	bunch	3
-181	81	2 tablespoons of Curry	2.0	tablespoons	T	4
+181	92	1 bunch of Cilantro, Chopped	1.0	bunch	bunch	3
+181	80	2 tablespoons of Curry	2.0	tablespoons	T	4
+181	0	1/2 teaspoon of fennel powder	0.5	teaspoon	t	5
+181	0	1/2 teaspoon of Garam Masala	0.5	teaspoon	t	6
 181	23	3 cloves of Garlic, Minced	3.0	cloves	cloves	7
-181	56	6 ounces of Mushrooms, Chopped	6.0	ounces	oz	10
-181	73	2 tablespoons of Olive Oil	2.0	tablespoons	T	11
-181	4	1 Onion, Diced	1.0	\N	\N	12
+181	141	1 teaspoon of Ginger	1.0	teaspoon	t	8
+181	0	5 1/2 pounds of Cooked Lamb stew meat	5.5	pounds	lb	9
+181	55	6 ounces of Mushrooms, Chopped	6.0	ounces	oz	10
+181	72	2 tablespoons of Olive Oil	2.0	tablespoons	T	11
+181	4	1 Onion, Diced	1.0			12
 181	45	1 tablespoon of Oregano	1.0	tablespoon	T	13
-181	84	1 tablespoon of Rosemary	1.0	tablespoon	T	15
+181	39	1/2 cup of Plain Yogurt	0.5	cup	c	14
+181	83	1 tablespoon of Rosemary	1.0	tablespoon	T	15
 181	6	1/2 teaspoon of Salt	0.5	teaspoon	t	16
-181	71	1 can of Tomato Paste	1.0	can	can	17
+181	70	1 can of Tomato Paste	1.0	can	can	17
+182	0	1 1/2 lb. beef chuck meat, well-trimmed and cut into 1/2 inch pieces	1.5	lb	lb	0
 182	10	1/2 cup butter	0.5	cup	c	1
-182	2	2 med carrots, peeled and chopped small	2.0	\N	\N	3
-182	124	dash of cayenne pepper	1.0	dash	dash	4
-182	14	1 Egg	1.0	\N	\N	7
+182	0	1 (15 oz.) can of low-sodium beef broth	15.0	oz	oz	2
+182	2	2 med carrots, peeled and chopped small	2.0			3
+182	122	dash of cayenne pepper	1.0	dash	dash	4
+182	0	1 1/2 t. Dijon mustard	1.5	t	t	5
+182	0	1 t. dry mustard	1.0	t	t	6
+182	14	1 Egg	1.0			7
 182	15	3 T. flour	3.0	T	T	8
+182	0	1 t. minced fresh marjoram	1.0	t	t	9
 182	43	2 T. chopped fresh parsley	2.0	T	T	10
-182	86	1 t. minced fresh thyme	1.0	t	t	11
+182	85	1 t. minced fresh thyme	1.0	t	t	11
 182	23	1 clove minced garlic	1.0	clove	clove	12
 182	7	1/3 c. ice water, plus more if needed	0.3333333333333333	c	c	13
-182	4	1 med. onion	1.0	\N	\N	14
+182	4	1 med. onion	1.0			14
 182	6	1 teaspoon salt	1.0	teaspoon	t	15
-182	116	1 teaspoon sugar	1.0	teaspoon	t	18
-182	72	1/4 cup vegetable oil	0.25	cup	c	19
+182	0	1 salt & pepper	1.0			16
+182	0	8 oz. Irish cheddar, or sharp cheddar cheese, shredded	8.0	oz	oz	17
+182	114	1 teaspoon sugar	1.0	teaspoon	t	18
+182	71	1/4 cup vegetable oil	0.25	cup	c	19
 182	7	2 cups hot water	2.0	cups	c	20
 183	22	Optional: 2 rashers bacon, cooked until crisp and broken into pieces	1.0	rashers	rashers	0
 183	10	Butter	8.0	servings	servings	1
-183	24	1 med. cabbage	1.0	\N	\N	2
+183	24	1 med. cabbage	1.0			2
 183	20	1 cup milk	1.0	cup	c	3
-183	95	6 stems green onions, green and white parts, chopped	6.0	\N	\N	4
+183	94	6 stems green onions, green and white parts, chopped	6.0			4
 183	43	1 tablespoon parsley, chopped	1.0	tablespoon	T	5
+183	0	1/2 tsp pepper	0.5	tsp	t	6
 183	27	1 1/2 pounds potatoes, peeled	1.5	pounds	lb	7
 183	6	1 tablespoon Salt	1.0	tablespoon	T	8
+184	0	2 Bay Leaves	2.0			0
 184	10	1 tbsp. butter, melted	1.0	tbsp	T	1
 184	24	1 (2 lb.) cabbage, cut into wedges	2.0	lb	lb	2
-184	2	8 mediums Carrots, Pared	8.0	\N	\N	3
+184	2	8 mediums Carrots, Pared	8.0			3
+184	0	5 pounds Corned-Beef brisket	5.0	pounds	lb	4
 184	23	1 Clove Garlic	1.0	Clove	Clove	5
-184	4	8 mediums yellow onions, peeled	8.0	\N	\N	6
+184	4	8 mediums yellow onions, peeled	8.0			6
 184	43	Chopped parsley	6.0	servings	servings	7
-184	27	8 mediums Potatoes, pared	8.0	\N	\N	9
+184	0	10 Whole black Peppers	10.0			8
+184	27	8 mediums Potatoes, pared	8.0			9
+185	0	1 bay leaf	1.0			0
 185	10	1 tbsp. butter, melted	1.0	tbsp	T	1
 185	24	1 (2 lb.) cabbage, cut into wedges	2.0	lb	lb	2
-185	2	1 lg. carrot, scraped and sliced	1.0	\N	\N	3
-185	101	1/4 c. cider vinegar (good quality)	0.25	c	c	4
+185	2	1 lg. carrot, scraped and sliced	1.0			3
+185	99	1/4 c. cider vinegar (good quality)	0.25	c	c	4
+185	0	1 (4 lb.) corned beef brisket	4.0	lb	lb	5
 185	40	1 tbsp. cornstarch	1.0	tbsp	T	6
-185	111	2 egg yolks, beaten	2.0	\N	\N	8
+185	0	1 tsp. dry mustard	1.0	tsp	t	7
+185	109	2 egg yolks, beaten	2.0			8
 185	43	1 bunch fresh parsley	1.0	bunch	bunch	9
-185	4	3 medium onions	3.0	\N	\N	12
+185	0	1 tsp. horseradish	1.0	tsp	t	10
+185	0	2 lbs. sm. new potatoes, peeled	2.0	lbs	lb	11
+185	4	3 medium onions	3.0			12
+185	0	1/4 teaspoon pepper	0.25	teaspoon	t	13
 185	6	1/2 tsp. salt	0.5	tsp	t	14
-185	116	2 tsp. sugar	2.0	tsp	t	15
+185	114	2 tsp. sugar	2.0	tsp	t	15
 185	7	1 c. water	1.0	c	c	16
-186	51	1 tablespoon brown sugar	1.0	tablespoon	T	2
+186	0	1 bay leaf	1.0			0
+186	0	2 cups beef broth	2.0	cups	c	1
+186	50	1 tablespoon brown sugar	1.0	tablespoon	T	2
 186	2	1/4 cup carrots, finely grated	0.25	cup	c	3
+186	0	2 pounds corned beef brisket	2.0	pounds	lb	4
 186	23	2 cloves garlic, minced	2.0	cloves	cloves	5
+186	0	2 cups Guinness	2.0	cups	c	6
+186	0	3 spicy honey mustard	3.0			7
+186	0	1 pound parsnips, roughly chopped	1.0	pound	lb	8
 186	27	2 cups potatoes, boiled and mashed roughly (try to use the floury kind of potato)	2.0	cups	c	9
+186	0	2 tablespoons pickling spice	2.0	tablespoons	T	10
 187	22	2-3 rashers bacon (optional)	2.0	slices	slices	0
 187	23	2 To 3 cloves garlic, minced	2.0	cloves	cloves	1
 187	24	1 pound green cabbage (kale can also be used)	1.0	pound	lb	2
-187	25	2 medium leeks, split lengthwise and rinsed well	2.0	\N	\N	3
+187	25	2 medium leeks, split lengthwise and rinsed well	2.0			3
 187	26	1/4 teaspoon mace	0.25	teaspoon	t	4
 187	27	2 pounds yellow or red potatoes, scrubbed and cubed but not peeled	2.0	pounds	lb	5
-187	6	Salt to taste	1.0	\N	\N	6
+187	6	Salt to taste	1.0			6
 187	20	1 cup whole milk	1.0	cup	c	7
 188	15	1/4 cup all purpose flour	0.25	cup	c	0
 188	8	1 1/2 teaspoons baking powder	1.5	teaspoons	t	1
+188	0	1 teaspoon Baking Soda	1.0	teaspoon	t	2
 188	10	1/4 cup Butter	0.25	cup	c	3
+188	0	1 1/2 cups Buttermilk	1.5	cups	c	4
+188	0	2/3 cup raisins	0.6666666666666666	cup	c	5
 188	6	1/2 teaspoon Salt	0.5	teaspoon	t	6
-188	116	5 tablespoons sugar, divided	5.0	tablespoons	T	7
-189	14	1 Egg	1.0	\N	\N	3
+188	114	5 tablespoons sugar, divided	5.0	tablespoons	T	7
+189	0	1 teaspoon Baking Soda	1.0	teaspoon	t	0
+189	0	1 1/2 cups Buttermilk	1.5	cups	c	1
+189	0	1 teaspoon Caraway Seeds	1.0	teaspoon	t	2
+189	14	1 Egg	1.0			3
 189	15	4 3/4 cups Flour	4.75	cups	c	4
 189	17	3 tablespoons Honey	3.0	tablespoons	T	5
 189	6	� tsp salt	0.5	tsp	t	6
 189	10	6 tbsp unsalted butter	6.0	tbsp	T	7
+190	0	� cup condensed milk	0.5	cup	c	0
 190	40	� cup cornstarch	0.25	cup	c	1
-190	111	5 egg yolks	5.0	\N	\N	2
-190	51	1 cup light brown sugar	1.0	cup	c	4
+190	109	5 egg yolks	5.0			2
+190	0	1 oz Irish Whiskey	1.0	oz	oz	3
+190	50	1 cup light brown sugar	1.0	cup	c	4
 190	20	2 cups homogenized milk	2.0	cups	c	5
+190	0	2 � cups pastry flour (all-purpose is fine)	2.5	cups	c	6
 190	6	salt	10.0	servings	servings	7
 190	10	6 tbsp unsalted butter	6.0	tbsp	T	8
+190	0	� cup cold vodka	0.25	cup	c	9
 190	7	� cup cold water	0.25	cup	c	10
 191	10	1/4 cup butter	0.25	cup	c	0
+191	0	5 ounces frozen kale cooked, squeezed dry	5.0	ounces	oz	1
 191	20	3 tablespoons milk	3.0	tablespoons	T	2
 191	4	1/4 cup chopped onions	0.25	cup	c	3
-191	27	4 mediums potatoes, peeled and quartered	4.0	\N	\N	5
+191	0	1/8 teaspoon pepper	0.125	teaspoon	t	4
+191	27	4 mediums potatoes, peeled and quartered	4.0			5
 191	6	1 teaspoon salt	1.0	teaspoon	t	6
+192	0	1 bottle Irish Ale	1.0	bottle	bottle	0
 192	10	60 grams butter	60.0	grams	g	1
-192	4	1 medium onion, finely chopped	1.0	\N	\N	4
+192	0	4 tablespoons of cream	4.0	tablespoons	T	2
+192	0	40 mussels	40.0			3
+192	4	1 medium onion, finely chopped	1.0			4
+192	0	5 pieces of pancetta, sliced into pieces	5.0	pieces		5
+192	0	Salt and freshly ground black pepper, to taste	4.0	servings	servings	6
 192	23	3 whole cloves garlic (chopped)	3.0	cloves	cloves	7
 192	43	1/4 cup freshly chopped parsley	0.25	cup	c	8
+193	0	1/2 teaspoon baking soda	0.5	teaspoon	t	0
 193	10	75g butter	75.0	g	g	1
-193	51	1/2 cup dark brown sugar	0.5	cup	c	5
+193	0	1 3/4 c. buttermilk	1.75	c	c	2
+193	0	1/2 c. (2 oz.) plain cake flour	2.0	oz	oz	3
+193	0	1 1/2 t. cream of tartar	1.5	t	t	4
+193	50	1/2 cup dark brown sugar	0.5	cup	c	5
+193	0	1/2 c. dried apricots, chopped	0.5	c	c	6
+193	0	2 1/2 c. (7 1/2 oz.) old-fashioned oatmeal	7.5	oz	oz	7
 193	6	1/4 teaspoon salt	0.25	teaspoon	t	8
-193	14	1 whole egg	1.0	\N	\N	11
-193	112	1 c. (5 1/2 oz.) whole-wheat flour	5.5	oz	oz	12
+193	0	3/4 cup unbleached all-purpose flour	0.75	cup	c	9
+193	0	1/2 cup coarsely chopped walnuts or almonds (2 ounces/60 grams)	0.5	cup	c	10
+193	14	1 whole egg	1.0			11
+193	110	1 c. (5 1/2 oz.) whole-wheat flour	5.5	oz	oz	12
 194	8	1 tsp Baking powder	1.0	tsp	t	0
-194	14	3 eggs	3.0	\N	\N	2
-194	117	3 tablespoons of milk or half in half if the batter is too think	3.0	tablespoons	T	3
+194	0	1 teaspoon baking soda	1.0	teaspoon	t	1
+194	14	3 eggs	3.0			2
+194	115	3 tablespoons of milk or half in half if the batter is too think	3.0	tablespoons	T	3
 194	15	120g Plain flour	120.0	g	g	4
+194	0	4 ounces frozen raspberries	4.0	ounces	oz	5
 194	6	1/8 tsp pinch of salt	0.125	tsp	t	6
-194	128	1 pint sour cream	1.0	pint	pt	7
-194	116	1 cup white sugar	1.0	cup	c	8
-195	84	1 1/2 tablespoons chopped fresh rosemary	1.5	tablespoons	T	3
+194	126	1 pint sour cream	1.0	pint	pt	7
+194	114	1 cup white sugar	1.0	cup	c	8
+195	0	3/4 teaspoon aniseed	0.75	teaspoon	t	0
+195	0	2 teaspoons baking soda	2.0	teaspoons	t	1
+195	0	1/3 cup dark rum	0.3333333333333333	cup	c	2
+195	83	1 1/2 tablespoons chopped fresh rosemary	1.5	tablespoons	T	3
 195	17	1 tablespoon honey	1.0	tablespoon	T	4
 195	20	1 tablespoon milk	1.0	tablespoon	T	5
+195	0	1/2 cup pecans, toasted and roughly chopped	0.5	cup	c	6
+195	39	1 1/2 cups plain yogurt	1.5	cups	c	7
+195	0	1/2 cup raisins	0.5	cup	c	8
 195	6	2 teaspoons salt, divided	2.0	teaspoons	t	9
-195	112	2 cups whole wheat flour	2.0	cups	c	10
+195	110	2 cups whole wheat flour	2.0	cups	c	10
+196	0	Bouquet Garni: 2 bay leaves, 2 sprigs of thyme, 5 garlic cloves, 10 black peppercorns	2.0			0
+196	0	1 corned beef or beef brisket (about 3 pounds)	3.0	pounds	lb	1
+196	0	3 1/2 cups Swanson® Beef Broth or Swanson® Beef Stock	3.5	cups	c	2
 196	2	Diced carrots	10.0	servings	servings	3
-196	101	1/4 cup cider vinegar	0.25	cup	c	4
+196	99	1/4 cup cider vinegar	0.25	cup	c	4
 196	24	1 head green cabbage, trimmed and cut into 6 wedges (about 2 pounds)	1.0	head	head	5
-196	4	2 medium onions, cut into quarters	2.0	\N	\N	6
-196	27	5 diced potatoes	5.0	\N	\N	7
-197	59	1 teaspoon freshly ground black pepper	1.0	teaspoon	t	0
-197	73	2 tablespoons extra-virgin olive oil	2.0	tablespoons	T	2
+196	4	2 medium onions, cut into quarters	2.0			6
+196	27	5 diced potatoes	5.0			7
+197	58	1 teaspoon freshly ground black pepper	1.0	teaspoon	t	0
+197	0	2 stalks celery, finely chopped	2.0	stalks	stalks	1
+197	72	2 tablespoons extra-virgin olive oil	2.0	tablespoons	T	2
 197	23	5 cloves garlic, minced	5.0	cloves	cloves	3
-197	18	Juice of 1 lemon	1.0	\N	\N	4
-197	98	2 teaspoons kosher salt	2.0	teaspoons	t	6
-197	25	2 medium leeks, tough green outer leaves removed, washed well (see Kitchen Tip), and thinly sliced	2.0	\N	\N	7
-197	131	3 large russet potatoes, peeled and cut into cubes (about 2 cups)	3.0	\N	\N	8
-197	107	8 cups Roasted Vegetable Stock or store-bought low-sodium vegetable broth	8.0	cups	c	10
+197	18	Juice of 1 lemon	1.0			4
+197	0	1 head kale, stemmed and roughly chopped (about 8 cups)	8.0	cups	c	5
+197	97	2 teaspoons kosher salt	2.0	teaspoons	t	6
+197	25	2 medium leeks, tough green outer leaves removed, washed well (see Kitchen Tip), and thinly sliced	2.0			7
+197	129	3 large russet potatoes, peeled and cut into cubes (about 2 cups)	3.0			8
+197	150	1/4 head savoy cabbage, roughly chopped (3 cups)	3.0	cups	c	9
+197	105	8 cups Roasted Vegetable Stock or store-bought low-sodium vegetable broth	8.0	cups	c	10
+198	0	1/2 cup baileys Irish Cream Syrup	0.5	cup	c	0
+198	0	1 chunk Xocai Healthy Chocolate Nugget, grated	1.0			1
+198	0	2 Xocai Healthy Chocolate Nuggets	2.0			2
+198	0	4 tbsps Irish Whiskey	4.0	tbsps	T	3
+198	0	1 Dollop of Whipped Cream	1.0			4
+199	0	1 1/2 cups uncooked arborio rice	1.5	cups	c	0
+199	0	1 1/2 pounds asparagus cut (sliced into 1 inch pieces)	1.5	pounds	lb	1
+199	0	1/2 cup dry white wine	0.5	cup	c	2
 199	43	1/4 cup chopped fresh parsley	0.25	cup	c	3
 199	23	2 cloves minced garlic	2.0	cloves	cloves	4
 199	18	1 tablespoon fresh lemon juice	1.0	tablespoon	T	5
-199	73	1 tablespoon olive oil	1.0	tablespoon	T	7
+199	0	1 teaspoon grated lemon rind	1.0	teaspoon	t	6
+199	72	1 tablespoon olive oil	1.0	tablespoon	T	7
 199	4	1/2 cup onion, chopped	0.5	cup	c	8
-199	107	2 14.5 oz cans vegetable broth	29.0	oz	oz	13
+199	0	1/4 cup grated fresh parmesan cheese	0.25	cup	c	9
+199	0	1/2 cup frozen peas (don't thaw)	0.5	cup	c	10
+199	0	1/4 teaspoon pepper	0.25	teaspoon	t	11
+199	0	or other short-grain rice	4.0	servings	servings	12
+199	105	2 14.5 oz cans vegetable broth	29.0	oz	oz	13
 199	7	Water	4.0	servings	servings	14
-200	68	14.5 oz. can diced tomatoes	14.5	oz	oz	0
-200	70	1 head of cauliflower, cut into bite-sized pieces (no larger that 1-inch)	1.0	head	head	1
-200	14	2 eggs, well beaten	2.0	\N	\N	2
+200	67	14.5 oz. can diced tomatoes	14.5	oz	oz	0
+200	69	1 head of cauliflower, cut into bite-sized pieces (no larger that 1-inch)	1.0	head	head	1
+200	14	2 eggs, well beaten	2.0			2
 200	15	1 cup All-purpose flour	1.0	cup	c	3
-200	88	3-4 T. chopped fresh basil	3.0	T	T	4
+200	87	3-4 T. chopped fresh basil	3.0	T	T	4
 200	23	1 teaspoon minced garlic	1.0	teaspoon	t	5
-200	59	1/8 t. fresh ground black pepper	0.125	t	t	7
-200	73	2 tablespoons Olive oil	2.0	tablespoons	T	8
-200	62	pinch of crushed red pepper flakes	1.0	pinch	pinch	11
+200	143	3/4 t. garlic powder	0.75	t	t	6
+200	58	1/8 t. fresh ground black pepper	0.125	t	t	7
+200	72	2 tablespoons Olive oil	2.0	tablespoons	T	8
+200	0	2 c. panko bread crumbs	2.0	c	c	9
+200	0	3/4 c. fresh grated Parmesan cheese	0.75	c	c	10
+200	61	pinch of crushed red pepper flakes	1.0	pinch	pinch	11
 200	6	Salt to taste	4.0	servings	servings	12
 200	7	1 T. water	1.0	T	T	13
-201	88	pinch of basil	1.0	pinch	pinch	1
+201	0	2 1/4 cup baking mix (like Bisquick or Jiffy)	2.25	cup	c	0
+201	87	pinch of basil	1.0	pinch	pinch	1
+201	0	Herbed Parmesan Drop Biscuits	6.0	servings	servings	2
 201	42	1 lb ground beef or equivalent amount of a ground beef/bulk Italian sausage mix	1.0	lb	lb	3
+201	0	1 tsp Italian seasoning	1.0	tsp	t	4
 201	20	1 cup milk	1.0	cup	c	5
 201	45	pinch of oregano	1.0	pinch	pinch	6
-201	62	1/8 - 1/2 tsp crushed red pepper flakes	0.125	tsp	t	12
+201	0	1/4 cup grated Parmesan cheese	0.25	cup	c	7
+201	0	Additional Parmesan cheese for topping	6.0	servings	servings	8
+201	0	1 - 26 oz jar of pasta sauce or 1 can pizza sauce	26.0	oz	oz	9
+201	0	Pepperoni slices (I used 1/2 of a package of Hormel brand)	0.5			10
+201	0	1/2 cup shredded aged Provolone	0.5	cup	c	11
+201	61	1/8 - 1/2 tsp crushed red pepper flakes	0.125	tsp	t	12
+201	0	1/2 cup ricotta	0.5	cup	c	13
+201	0	2 cups shredded mozzarella	2.0	cups	c	14
+202	0	2 handfuls of baby spinach (how much you prefer/have room for, it wilts down a lot)	2.0	handfuls	handfuls	0
 202	23	2-4 garlic cloves, minced	2.0	cloves	cloves	1
-202	56	4-6 oz mushrooms, sliced	4.0	oz	oz	2
-202	73	1 tablespoon olive oil	1.0	tablespoon	T	3
-202	125	1 sweet onion, diced	1.0	\N	\N	9
-203	80	1 ounce of 15 can of tomato sauce	1.0	ounce	oz	1
-203	68	1 can of diced tomatoes (no salt added)	1.0	can	can	2
-203	2	2 carrots thinly sliced	2.0	\N	\N	3
-203	59	Fresh cracked black pepper	1.0	serving	serving	5
+202	55	4-6 oz mushrooms, sliced	4.0	oz	oz	2
+202	72	1 tablespoon olive oil	1.0	tablespoon	T	3
+202	0	3 tablespoons parmesan cheese, sprinkled on top (optional)	3.0	tablespoons	T	4
+202	0	1/2 c. part-skim ricotta	0.5	c	c	5
+202	0	Pasta sauce: red jarred sauce, homemade or your favorite (Amount varies on your preference, I used maybe 1/3 of a jar)	0.3333333333333333			6
+202	0	Salt and pepper to taste	4.0	servings	servings	7
+202	0	4 oz 2% milk mozzarella cheese	4.0	oz	oz	8
+202	123	1 sweet onion, diced	1.0			9
+202	0	6 whole wheat lasagna noodles, broken into thirds	6.0			10
+202	0	1 yellow squash, sliced and chopped	1.0			11
+202	0	1 medium zucchini, shredded	1.0			12
+203	0	1 can of Cannellini beans- Rinsed and drained	1.0	can	can	0
+203	79	1 ounce of 15 can of tomato sauce	1.0	ounce	oz	1
+203	67	1 can of diced tomatoes (no salt added)	1.0	can	can	2
+203	2	2 carrots thinly sliced	2.0			3
+203	0	7 cups of chicken stock	7.0	cups	c	4
+203	58	Fresh cracked black pepper	1.0	serving	serving	5
+203	0	1/2 box (maybe a little less than 1/2) of Ditalini pasta	0.5	box	box	6
 203	23	6 cloves garlic, chopped	6.0	cloves	cloves	7
-203	98	Kosher salt	1.0	serving	serving	8
-203	81	Madras curry powder	1.0	serving	serving	9
+203	97	Kosher salt	1.0	serving	serving	8
+203	80	Madras curry powder	1.0	serving	serving	9
 203	41	Paprika	1.0	serving	serving	10
-203	62	Red pepper flakes	1.0	serving	serving	12
-203	130	3 cups red potatoes, cubed	3.0	cups	c	13
-203	125	1 sweet onion	1.0	\N	\N	15
-203	48	4 vine ripe tomatoes	4.0	\N	\N	16
-204	103	2 tablespoons balsamic vinegar	2.0	tablespoons	T	0
-204	88	1/4 cup Shredded fresh basil leaves	0.25	cup	c	1
-204	73	6 tablespoons extra-virgin olive oil	6.0	tablespoons	T	2
-204	48	4 ripe tomatoes sliced 1/4" inch thick	4.0	\N	\N	6
-205	68	14 ounces can diced tomatoes	14.0	ounces	oz	2
-205	2	3 carrots	3.0	\N	\N	3
-205	73	1 tablespoon olive oil	1.0	tablespoon	T	7
-205	4	1 onion	1.0	\N	\N	8
-205	62	1/4 teaspoon red pepper flakes	0.25	teaspoon	t	9
-206	68	28 ounces can of whole tomatoes	28.0	ounces	oz	1
+203	0	1 can of Dark Red Kidney beans- Rinsed and drained	1.0	can	can	11
+203	61	Red pepper flakes	1.0	serving	serving	12
+203	128	3 cups red potatoes, cubed	3.0	cups	c	13
+203	164	3 cups of uncooked Spinach	3.0	cups	c	14
+203	123	1 sweet onion	1.0			15
+203	47	4 vine ripe tomatoes	4.0			16
+204	101	2 tablespoons balsamic vinegar	2.0	tablespoons	T	0
+204	87	1/4 cup Shredded fresh basil leaves	0.25	cup	c	1
+204	72	6 tablespoons extra-virgin olive oil	6.0	tablespoons	T	2
+204	172	1 pound fresh mozzarella cheese sliced 1/4" thick	1.0	pound	lb	3
+204	0	3 tablespoons Parmesan cheese, grated	3.0	tablespoons	T	4
+204	0	1 salt and freshly ground pepper to taste	1.0			5
+204	47	4 ripe tomatoes sliced 1/4" inch thick	4.0			6
+205	0	1 bay leaf	1.0			0
+205	0	1 can cannellini beans	1.0	can	can	1
+205	67	14 ounces can diced tomatoes	14.0	ounces	oz	2
+205	2	3 carrots	3.0			3
+205	0	32 ounces container chicken stock	32.0	ounces	oz	4
+205	0	4 spicy Italian sausages	4.0			5
+205	0	2 teaspoons Italian seasoning	2.0	teaspoons	t	6
+205	72	1 tablespoon olive oil	1.0	tablespoon	T	7
+205	4	1 onion	1.0			8
+205	61	1/4 teaspoon red pepper flakes	0.25	teaspoon	t	9
+205	0	Salt and Pepper	6.0	servings	servings	10
+205	164	1 bag fresh spinach	1.0	bag	bag	11
+206	0	2 bay leaves	2.0			0
+206	67	28 ounces can of whole tomatoes	28.0	ounces	oz	1
+206	0	1/2 cup of club soda	0.5	cup	c	2
+206	0	5 cups of seafood stock/ fish stock (sub with chicken stock)	5.0	cups	c	3
 206	43	Fresh parsley, chopped	3.0	servings	servings	4
 206	23	4 cloves garlic	4.0	cloves	cloves	5
-206	4	1 onion, chopped	1.0	\N	\N	7
-206	138	20 Baby Portobello mushrooms, sliced in half	20.0	\N	\N	8
+206	0	20 Mussels, fresh preferably, I used the frozen packs	20.0			6
+206	4	1 onion, chopped	1.0			7
+206	136	20 Baby Portobello mushrooms, sliced in half	20.0			8
 206	6	2 teaspoons of salt	2.0	teaspoons	t	9
-206	53	1 Shrimps, peeled and devined	1.0	\N	\N	11
-206	48	1 fresh tomato (optional)	1.0	\N	\N	13
-206	71	4 ounces can of tomato paste	4.0	ounces	oz	14
-207	89	1/2 tsp dried basil	0.5	tsp	t	3
+206	0	tablespoon Italian seasoning, 2	1.0	tablespoon	T	10
+206	52	1 Shrimps, peeled and devined	1.0			11
+206	0	Tilapia, cut into 1.5 chunks	3.0	servings	servings	12
+206	47	1 fresh tomato (optional)	1.0			13
+206	70	4 ounces can of tomato paste	4.0	ounces	oz	14
+207	0	1 large artichoke (1 pound)	1.0	pound	lb	0
+207	0	1 Bay Leaf	1.0			1
+207	0	1/4 tsp coriander seeds	0.25	tsp	t	2
+207	88	1/2 tsp dried basil	0.5	tsp	t	3
 207	45	1/2 tsp dried oregano	0.5	tsp	t	4
 207	23	1 Garlic Clove, sliced thin	1.0	clove	clove	5
+208	0	2 fresh chilies	2.0			0
 208	23	1 tablespoon minced garlic	1.0	tablespoon	T	1
-208	59	Ground black pepper	3.0	servings	servings	2
-208	18	2 lemons, juiced	2.0	\N	\N	3
+208	58	Ground black pepper	3.0	servings	servings	2
+208	18	2 lemons, juiced	2.0			3
 208	43	1/2 cup of chopped parsley leaves	0.5	cup	c	4
-208	77	1 red pepper	1.0	\N	\N	6
-208	104	400 grams of tuna, drained and flaked	400.0	grams	g	7
-209	88	Generous handful basil leaves, torn	1.0	handful	handful	0
-209	73	extra-virgin olive oil to drizzle	4.0	servings	servings	2
+208	0	250 grams of pasta shells (cook pasta according to packet's instructions)	250.0	grams	g	5
+208	76	1 red pepper	1.0			6
+208	102	400 grams of tuna, drained and flaked	400.0	grams	g	7
+209	87	Generous handful basil leaves, torn	1.0	handful	handful	0
+209	0	500 grams day-old country bread (preferably unsalted), thickly sliced	500.0	grams	g	1
+209	72	extra-virgin olive oil to drizzle	4.0	servings	servings	2
 209	23	4 garlic cloves minced	4.0	cloves	cloves	3
-209	25	3 leeks, finely chopped	3.0	\N	\N	4
-209	73	1/4 cup olive oil	0.25	cup	c	6
-209	97	Sea salt and freshly ground black pepper	4.0	servings	servings	7
-209	68	2 liters puréed canned Italian tomatoes	2.0	liters	l	8
-210	103	1 tablespoon balsamic vinegar	1.0	tablespoon	T	0
-210	73	5 tablespoons extra-virgin olive oil	5.0	tablespoons	T	2
+209	25	3 leeks, finely chopped	3.0			4
+209	0	1 liter meat stock (made with beef and chicken)	1.0	liter	l	5
+209	72	1/4 cup olive oil	0.25	cup	c	6
+209	96	Sea salt and freshly ground black pepper	4.0	servings	servings	7
+209	67	2 liters puréed canned Italian tomatoes	2.0	liters	l	8
+210	101	1 tablespoon balsamic vinegar	1.0	tablespoon	T	0
+210	0	1 1/2 pounds Brussels sprouts, cleaned and halved	1.5	pounds	lb	1
+210	72	5 tablespoons extra-virgin olive oil	5.0	tablespoons	T	2
 210	23	1 clove of garlic chopped	1.0	clove	clove	3
-210	98	Kosher salt and freshly ground black pepper to taste	4.0	servings	servings	4
+210	97	Kosher salt and freshly ground black pepper to taste	4.0	servings	servings	4
 211	23	5 Garlic Cloves (finely chopped)	5.0	cloves	cloves	0
-211	73	1/4 teaspoon olive oil	0.25	teaspoon	t	2
-211	4	1 onion, chopped	1.0	\N	\N	3
+211	0	8 Leaves of Kale (stems removed and cut into ribbons)	8.0	Leaves	Leaves	1
+211	72	1/4 teaspoon olive oil	0.25	teaspoon	t	2
+211	4	1 onion, chopped	1.0			3
+211	0	Pepper	4.0	servings	servings	4
+211	0	1 cup Quinoa	1.0	cup	c	5
+211	0	10 ounces Poached Salmon (flaked)*	10.0	ounces	oz	6
 211	6	salt, dry mustard and Worcestershire sauce to taste	4.0	servings	servings	7
-212	2	4 carrots	4.0	\N	\N	2
-212	89	1 1/2 tsp Dried Basil	1.5	tsp	t	3
-212	59	1 tsp Ground Pepper	1.0	tsp	t	5
-212	73	2 tsps olive oil	2.0	tsps	t	6
-212	4	1 onion	1.0	\N	\N	7
+211	0	32 ounces Organic Vegetable Stock	32.0	ounces	oz	8
+212	0	1 bay leaf	1.0			0
+212	0	1 14 oz can cannellini beans	14.0	oz	oz	1
+212	2	4 carrots	4.0			2
+212	88	1 1/2 tsp Dried Basil	1.5	tsp	t	3
+212	0	1 1/2 cups (6 oz) elbow macaroni	6.0	oz	oz	4
+212	58	1 tsp Ground Pepper	1.0	tsp	t	5
+212	72	2 tsps olive oil	2.0	tsps	t	6
+212	4	1 onion	1.0			7
+212	0	1 tsp Grated Parmesan Cheese	1.0	tsp	t	8
 212	6	1 1/2 tsp salt	1.5	tsp	t	9
-212	48	2 14 oz cans diced tomato	28.0	oz	oz	10
-213	89	1 teaspoon DRIED BASIL	1.0	teaspoon	t	0
+212	47	2 14 oz cans diced tomato	28.0	oz	oz	10
+212	0	2 zucchini	2.0			11
+213	88	1 teaspoon DRIED BASIL	1.0	teaspoon	t	0
 213	45	1 teaspoon OREGANO	1.0	teaspoon	t	1
-213	88	12 LARGE BASIL LEAVES	12.0	\N	\N	2
-213	59	3/4 teaspoon CRACKED BLACK PEPPER	0.75	teaspoon	t	3
+213	87	12 LARGE BASIL LEAVES	12.0			2
+213	58	3/4 teaspoon CRACKED BLACK PEPPER	0.75	teaspoon	t	3
+213	0	1 teaspoon FRESH MINCED CHIVES	1.0	teaspoon	t	4
 213	45	1 teaspoon FRESH MINCED OREGANO	1.0	teaspoon	t	5
 213	43	2 tablespoons FRESH MINCED PARSLEY	2.0	tablespoons	T	6
+213	144	10 FRESH SAGE LEAVES- CUT INTO CHIFFONADE	10.0			7
 213	23	4 MINCED GARLIC CLOVES	4.0	cloves	cloves	8
+213	0	3/4 teaspoon GARLIC SALT	0.75	teaspoon	t	9
 213	16	1/2 teaspoon GROUND NUTMEG	0.5	teaspoon	t	10
-213	56	4 MUSHROOMS DICED	4.0	\N	\N	13
-213	73	4 tablespoons OLIVE OIL	4.0	tablespoons	T	14
-213	62	1/2 teaspoon RED PEPPER FLAKES	0.5	teaspoon	t	17
-213	48	28 OZ CAN WHOLE SAN MARZANO TOMATOES	28.0	\N	\N	20
-214	2	2 lg. carrots, cut into pieces	2.0	\N	\N	1
-214	54	3/4 cup sliced daikon radish	0.75	cup	c	2
-214	95	1/2 cup chopped green onion	0.5	cup	c	3
-214	55	3/4 sliced shiitake mushrooms	0.75	\N	\N	4
+213	0	8 sheets OF LASAGNA	8.0	sheets	sheets	11
+213	0	16 ounces LOW FAT RICOTTA CHEESE	16.0	ounces	oz	12
+213	55	4 MUSHROOMS DICED	4.0			13
+213	72	4 tablespoons OLIVE OIL	4.0	tablespoons	T	14
+213	0	1/4 cup SHREDDED OR GRATED PARMESAN	0.25	cup	c	15
+213	0	1/2 cup CUBE DICED PECORINO CHEESE	0.5	cup	c	16
+213	61	1/2 teaspoon RED PEPPER FLAKES	0.5	teaspoon	t	17
+213	0	1/4 cup SHREDDED MOZZARELLA	0.25	cup	c	18
+213	164	1 cup SPINACH- WASHED	1.0	cup	c	19
+213	47	28 OZ CAN WHOLE SAN MARZANO TOMATOES	28.0			20
+213	0	1 SMALL ZUCCHINI SHREDDED	1.0			21
+214	0	8 tsps brown rice miso	8.0	tsps	t	0
+214	2	2 lg. carrots, cut into pieces	2.0			1
+214	53	3/4 cup sliced daikon radish	0.75	cup	c	2
+214	94	1/2 cup chopped green onion	0.5	cup	c	3
+214	54	3/4 sliced shiitake mushrooms	0.75			4
+214	148	1 1/2 cups sliced napa cabbage	1.5	cups	c	5
 214	28	2 Tbsps toasted sesame oil	2.0	Tbsps	Tbsps	6
 214	31	1/2 cup snow peas	0.5	cup	c	7
 214	7	8 cups water	8.0	cups	c	8
-215	2	1 Carrot thinly sliced	1.0	\N	\N	0
-215	75	2 tsps Light soy sauce	2.0	tsps	t	2
+214	0	2 cups chopped yams (with peels)	2.0	cups	c	9
+214	0	1 cup zucchini, cut into pieces	1.0	cup	c	10
+215	2	1 Carrot thinly sliced	1.0			0
+215	158	1/2 Iceberg lettuce head torn	0.5			1
+215	74	2 tsps Light soy sauce	2.0	tsps	t	2
+215	0	3 Tbsps Mirin (Japanese rice wine)	3.0	Tbsps	Tbsps	3
+215	0	3/4 cup Red miso (soybean paste)	0.75	cup	c	4
 215	28	1/4 tsp Sesame oil	0.25	tsp	t	5
 215	46	1 Tbsp Toasted sesame seeds	1.0	Tbsp	Tbsp	6
-215	116	3 Tbsps Sugar	3.0	Tbsps	Tbsps	7
+215	114	3 Tbsps Sugar	3.0	Tbsps	Tbsps	7
 215	7	2 Tbsps Hot water	2.0	Tbsps	Tbsps	8
+216	0	6 chicken drumsticks	6.0			0
 216	23	2 cloves of garlic diced	2.0	cloves	cloves	1
+216	141	1 tablespoon of shredded ginger	1.0	tablespoon	T	2
 216	17	1 teaspoon of honey	1.0	teaspoon	t	3
-216	4	1 onion, sliced	1.0	\N	\N	4
+216	4	1 onion, sliced	1.0			4
 216	6	Salt, pepper, garlic,	1.0	serving	serving	5
-216	72	1 teaspoon of vegetable oil	1.0	teaspoon	t	7
-217	51	1 tablespoon brown sugar	1.0	tablespoon	T	1
+216	0	1 cup of teriyaki sauce	1.0	cup	c	6
+216	71	1 teaspoon of vegetable oil	1.0	teaspoon	t	7
+217	0	2 cups broccoli florets	2.0	cups	c	0
+217	50	1 tablespoon brown sugar	1.0	tablespoon	T	1
 217	40	1 tablespoon cornstarch	1.0	tablespoon	T	2
 217	28	1 teaspoon dark sesame oil	1.0	teaspoon	t	3
+217	0	1/2 pound beef sirloin or flank steak, cut into 1/2" strips	0.5	pound	lb	4
 217	23	1 teaspoon garlic, minced	1.0	teaspoon	t	5
-217	56	1 cup chopped mushrooms	1.0	cup	c	7
-217	77	1 cup sliced red bell pepper	1.0	cup	c	9
-217	95	2 tablespoons chopped scallions	2.0	tablespoons	T	10
+217	141	1 tablespoon ginger, peeled and minced	1.0	tablespoon	T	6
+217	55	1 cup chopped mushrooms	1.0	cup	c	7
+217	71	6 teaspoons Oil	6.0	teaspoons	t	8
+217	76	1 cup sliced red bell pepper	1.0	cup	c	9
+217	94	2 tablespoons chopped scallions	2.0	tablespoons	T	10
 217	46	2 teaspoons sesame seeds, toasted	2.0	teaspoons	t	11
-217	75	1/4 cup soy sauce	0.25	cup	c	12
-218	51	2 TBSP Brown Sugar	2.0	TBSP	TBSP	0
+217	74	1/4 cup soy sauce	0.25	cup	c	12
+218	50	2 TBSP Brown Sugar	2.0	TBSP	TBSP	0
 218	40	1/2 TBSP cornstarch	0.5	TBSP	TBSP	1
 218	23	2 TBSP Garlic, minced	2.0	TBSP	TBSP	2
-218	95	1 Green onion, sliced	1.0	\N	\N	4
+218	141	2 TBSP Ginger, minced	2.0	TBSP	TBSP	3
+218	94	1 Green onion, sliced	1.0			4
 218	18	2 TBSP Lemon Juice	2.0	TBSP	TBSP	5
+218	0	1/2 cup low sodium soy sauce	0.5	cup	c	6
+218	0	2 TBSP Mirin	2.0	TBSP	TBSP	7
 218	28	1 TBSP sesame oil	1.0	TBSP	TBSP	8
 218	46	2 TBSP sesame seeds	2.0	TBSP	TBSP	9
-218	55	6 oz shiitake mushrooms	6.0	oz	oz	10
+218	54	6 oz shiitake mushrooms	6.0	oz	oz	10
+218	0	2 Boneless Skinless Chicken Breasts	2.0			11
+218	0	6 oz soba noodles	6.0	oz	oz	12
 218	32	2 TBSP Sriracha	2.0	TBSP	TBSP	13
-219	92	1/4 cup chives, finely chopped+ to garnish	0.25	cup	c	1
+219	0	1 cup arborio rice	1.0	cup	c	0
+219	91	1/4 cup chives, finely chopped+ to garnish	0.25	cup	c	1
 219	23	3 cloves of garlic, finely chopped	3.0	cloves	cloves	2
-219	73	3 tablespoons olive oil	3.0	tablespoons	T	4
-219	4	1 onion, medium size, finely chopped	1.0	\N	\N	5
+219	0	1 hokkaido squash, small size	1.0			3
+219	72	3 tablespoons olive oil	3.0	tablespoons	T	4
+219	4	1 onion, medium size, finely chopped	1.0			5
+219	0	20 grams parmesan cheese, grated, (to make crisps, see the recipe here)	20.0	grams	g	6
+219	0	40 grams parmigiano reggiano (parmesan), grated	40.0	grams	g	7
+219	0	1/4 cup pomegranate seeds+ to garnish	0.25	cup	c	8
+219	0	salt and pepper to taste	2.0	servings	servings	9
 219	7	400 milliliters water (more or less)	400.0	milliliters	ml	10
-220	14	5 large eggs (yolks and whites separated)	5.0	\N	\N	3
+220	0	6 cups baby spinach leaves (about 6 oz) rinsed, drained	6.0	oz	oz	0
+220	0	1/2 pound boned skinned chicken breast rinsed and cut into 1/4" strips	0.5	pound	lb	1
+220	0	6 cups cooked rice	6.0	cups	c	2
+220	14	5 large eggs (yolks and whites separated)	5.0			3
+220	0	1 cup fat-skimmed chicken broth	1.0	cup	c	4
+220	141	2 tablespoons minced fresh ginger	2.0	tablespoons	T	5
 220	4	1 onion - (6 oz) peeled, and	6.0	oz	oz	6
-220	48	1/4 cup diced Roma tomato	0.25	cup	c	7
-220	75	2 tablespoons Soy sauce	2.0	tablespoons	T	8
-220	116	4 tablespoons sugar	4.0	tablespoons	T	9
-220	72	1 cup salad oil	1.0	cup	c	10
-221	2	1/2 Carrot -- shredded	0.5	\N	\N	0
-221	95	1 Green onion -- finely	1.0	\N	\N	3
-221	56	4 Mushrooms -- thinly sliced	4.0	\N	\N	5
-221	75	2 tablespoons Soy sauce	2.0	tablespoons	T	6
+220	47	1/4 cup diced Roma tomato	0.25	cup	c	7
+220	74	2 tablespoons Soy sauce	2.0	tablespoons	T	8
+220	114	4 tablespoons sugar	4.0	tablespoons	T	9
+220	71	1 cup salad oil	1.0	cup	c	10
+221	2	1/2 Carrot -- shredded	0.5			0
+221	0	4 cups Homemade chicken stock	4.0	cups	c	1
+221	0	4 tablespoons Dry sherry	4.0	tablespoons	T	2
+221	94	1 Green onion -- finely	1.0			3
+221	145	1/2 Lemon -- thinly sliced	0.5			4
+221	55	4 Mushrooms -- thinly sliced	4.0			5
+221	74	2 tablespoons Soy sauce	2.0	tablespoons	T	6
+221	0	1 Block Firm Tofu	1.0			7
+221	0	Tofu -- 5 cubes per serving	5.0	cubes	cubes	8
 222	24	1 lg. head cabbage (slawed)	1.0	head	head	0
-222	95	3 green onions thinly sliced	3.0	\N	\N	1
+222	94	3 green onions thinly sliced	3.0			1
+222	0	1 teaspoon pepper	1.0	teaspoon	t	2
+222	0	2 pkgs. Ramen Pride (oriental) noodles (do not cook or use broth)	2.0	pkgs	pkgs	3
+222	0	6 tablespoons rice vinegar	6.0	tablespoons	T	4
 222	6	2 teaspoons salt	2.0	teaspoons	t	5
 222	46	2 tablespoons sesame seeds	2.0	tablespoons	T	6
-222	116	4 tablespoons sugar	4.0	tablespoons	T	8
-222	72	1 cup salad oil	1.0	cup	c	9
-223	2	3 small carrots, chop bite size	3.0	\N	\N	0
-223	81	1/2 package Japanese curry, such as S&B Golden Curry (look for this in the Asian section of supermarkets or on Amazon.com)	0.5	package	pkg	1
-223	4	1 medium size onion, finely chopped	1.0	\N	\N	3
-223	27	2 potatoes, chopped bite size	2.0	\N	\N	4
+222	0	8 tablespoons slivered almonds (2 1/4 oz. pkg.)	8.0	tablespoons	T	7
+222	114	4 tablespoons sugar	4.0	tablespoons	T	8
+222	71	1 cup salad oil	1.0	cup	c	9
+223	2	3 small carrots, chop bite size	3.0			0
+223	80	1/2 package Japanese curry, such as S&B Golden Curry (look for this in the Asian section of supermarkets or on Amazon.com)	0.5	package	pkg	1
+223	71	1 tablespoon neutral oil	1.0	tablespoon	T	2
+223	4	1 medium size onion, finely chopped	1.0			3
+223	27	2 potatoes, chopped bite size	2.0			4
+223	0	1 package puff pastry dough sheets	1.0	packagesheet	packagesheet	5
 223	7	2 tablespoons Water	2.0	tablespoons	T	6
-224	126	1 tablespoon tonkatsu sauce (vegetable and fruit sauce. I use Bull-Dog)	1.0	tablespoon	T	0
-224	59	1/4 teaspoon Black pepper	0.25	teaspoon	t	1
-224	2	1 small carrot, finely chopped	1.0	\N	\N	3
-224	14	2 eggs	2.0	\N	\N	4
+224	124	1 tablespoon tonkatsu sauce (vegetable and fruit sauce. I use Bull-Dog)	1.0	tablespoon	T	0
+224	58	1/4 teaspoon Black pepper	0.25	teaspoon	t	1
+224	0	1/4 pound boneless chicken breast, cut into small cubes	0.25	pound	lb	2
+224	2	1 small carrot, finely chopped	1.0			3
+224	14	2 eggs	2.0			4
 224	23	2 garlic cloves, finely chopped	2.0	cloves	cloves	5
-224	98	1/4 teaspoon kosher salt	0.25	teaspoon	t	6
-224	75	2 tablespoons soy sauce	2.0	tablespoons	T	10
-225	2	2 carrots, thinly sliced	2.0	\N	\N	0
-225	95	2 scallions, minced	2.0	\N	\N	7
-225	75	1/2 cup soy sauce	0.5	cup	c	8
-225	116	1 tablespoon sugar	1.0	tablespoon	T	10
+224	97	1/4 teaspoon kosher salt	0.25	teaspoon	t	6
+224	71	2 tablespoons neutral oil (canola, grapeseed)	2.0	tablespoons	T	7
+224	0	1 cup frozen green peas (thawed)	1.0	cup	c	8
+224	174	3 cups cooked Japanese rice	3.0	cups	c	9
+224	74	2 tablespoons soy sauce	2.0	tablespoons	T	10
+225	2	2 carrots, thinly sliced	2.0			0
+225	0	3 teaspoons Hon Dashi	3.0	teaspoons	t	1
+225	141	1 tablespoon fresh ginger, minced	1.0	tablespoon	T	2
+225	0	6 inches length of kombu, wiped with damp cloth	6.0	inches	inches	3
+225	0	3 tablespoons mirin	3.0	tablespoons	T	4
+225	0	3 tablespoons miso	3.0	tablespoons	T	5
+225	0	package fresh Udon or fresh rice noodles	1.0	package	pkg	6
+225	94	2 scallions, minced	2.0			7
+225	74	1/2 cup soy sauce	0.5	cup	c	8
+225	164	1/2 pound fresh spinach	0.5	pound	lb	9
+225	114	1 tablespoon sugar	1.0	tablespoon	T	10
+225	0	8 ounces firm tofu (preferably silken), cut in �" cubes	8.0	ounces	oz	11
 225	7	130 ml water	130.0	ml	ml	12
 226	23	1/2 teaspoon Minced Garlic	0.5	teaspoon	t	0
-226	95	1/2 cup green onion thinly sliced	0.5	cup	c	4
+226	141	1 1/2 teaspoons ginger root	1.5	teaspoons	t	1
+226	0	1/2 cup Mirin	0.5	cup	c	2
+226	0	4 ounces Udon noodles uncooked or vermicelli	4.0	oz	oz	3
+226	94	1/2 cup green onion thinly sliced	0.5	cup	c	4
+226	0	1 tablespoon low sodium soy sauce	1.0	tablespoon	T	5
 226	28	1 tablespoon Oriental sesame oil	1.0	tablespoon	T	6
-226	55	8 ounces shiitake mushrooms dried or fresh if dried, rehydrate before using stems disca	8.0	ounces	oz	8
+226	0	2 can reduced sodium beef broth (14.5 oz)	14.5	oz	oz	7
+226	54	8 ounces shiitake mushrooms dried or fresh if dried, rehydrate before using stems disca	8.0	ounces	oz	8
+226	0	1 1/2 teaspoons hot chile oil or 2 tsp vegetable oil plus 1/2 crushed red pepper flakes	1.5	teaspoons	t	9
+227	0	1 hot chili pepper, seeded and finely minced	1.0			0
 227	17	1 teaspoon honey	1.0	teaspoon	t	1
-227	95	2 scallions, green part only, thinly sliced	2.0	\N	\N	3
+227	0	12 slices salmon, about 2 to 3 ounces	12.0	slices	slices	2
+227	94	2 scallions, green part only, thinly sliced	2.0			3
 227	28	2 teaspoons sesame oil divided	2.0	teaspoons	t	4
 227	46	1 tablespoon sesame seeds	1.0	tablespoon	T	5
-227	75	1/2 cup to mari soy sauce	0.5	cup	c	6
-227	100	1 teaspoon vinegar	1.0	teaspoon	t	7
+227	74	1/2 cup to mari soy sauce	0.5	cup	c	6
+227	98	1 teaspoon vinegar	1.0	teaspoon	t	7
+228	0	1 pound well-trimmed beef top sirloin 3 cups sliced napa cabbage	1.0	pound	lb	0
 228	2	1/2 cup thin diagonally sliced carrots	0.5	cup	c	1
-228	31	24 pea pods, blanched	24.0	\N	\N	3
-228	95	1 green onion, sliced diagonally (not to be cooked)	1.0	\N	\N	7
+228	0	1 cup cooked rice	1.0	cup	c	2
+228	31	24 pea pods, blanched	24.0			3
+228	0	1/2 cup thin sliced cucumber	0.5	cup	c	4
+228	0	3 tablespoons dry sherry	3.0	tablespoons	T	5
+228	141	1/2 teaspoon grated fresh ginger	0.5	teaspoon	t	6
+228	94	1 green onion, sliced diagonally (not to be cooked)	1.0			7
 228	30	2 tablespoons hoisin sauce	2.0	tablespoons	T	8
-228	75	3 tablespoons light soy sauce	3.0	tablespoons	T	9
+228	74	3 tablespoons light soy sauce	3.0	tablespoons	T	9
 228	28	1 tablespoon Oriental dark roasted sesame oil	1.0	tablespoon	T	10
 228	29	1/2 cup thin sliced radishes	0.5	cup	c	11
-228	116	1 tablespoon sugar	1.0	tablespoon	T	14
+228	0	3 tablespoons rice wine vinegar	3.0	tablespoons	T	12
+228	157	3 cups romaine lettuce, cut 1/4 inch	3.0	cups	c	13
+228	114	1 tablespoon sugar	1.0	tablespoon	T	14
 228	7	3 tablespoons water	3.0	tablespoons	T	15
 229	10	1 cup butter	1.0	cup	c	0
+229	0	25 grams Caster Sugar	25.0	grams	g	1
 229	13	125 grams cream cheese at room temperature	125.0	grams	g	2
+229	0	1/4 teaspoon cream of tartar	0.25	teaspoon	t	3
 229	20	40 mls milk	40.0	mls	mls	4
+229	0	1 tablespoon scant orange juice	1.0	tablespoon	T	5
+229	0	1 tablespoon orange zest	1.0	tablespoon	T	6
 229	6	1 teaspoon salt	1.0	teaspoon	t	7
+229	0	40 grams self raising flour ( or cake flour)	40.0	grams	g	8
+229	0	3 large eggs, white and yolk seperated	3.0			9
 230	11	3 tablespoons canola or corn oil	3.0	tablespoons	T	0
-230	81	2 1/2 tablespoons curry powder, plus more to taste	2.5	tablespoons	T	1
-230	4	2 mediums onions, halved vertically and thinly sliced	2.0	\N	\N	2
+230	80	2 1/2 tablespoons curry powder, plus more to taste	2.5	tablespoons	T	1
+230	4	2 mediums onions, halved vertically and thinly sliced	2.0			2
 230	38	1 cup frozen peas	1.0	cup	c	3
+230	0	1 pound portobello mushrooms (stems and caps), cut into 1 inch cubes, or 1	1.0	pound	lb	4
+230	0	1/4 cup plus 1 tablespoon cornstarch or potato starch	0.25	cup	c	5
 230	27	1 1/2 pounds potatoes, cut into 1- to 1 1/2 inch cubes	1.5	pounds	lb	6
-230	97	1 teaspoon sea salt, plus more to taste	1.0	teaspoon	t	7
-230	127	2 1/2 tablespoons tamari, plus more to taste	2.5	tablespoons	T	8
-230	56	white mushrooms, halved or quartered (depending on size)	1.0	serving	serving	10
-231	53	Cooked prawns	1.0	serving	serving	2
-231	55	Shiitake mushrooms	1.0	serving	serving	6
-231	105	Raw tuna	1.0	serving	serving	8
-232	78	Dried red chili peppers, optional	4.0	servings	servings	0
+230	96	1 teaspoon sea salt, plus more to taste	1.0	teaspoon	t	7
+230	125	2 1/2 tablespoons tamari, plus more to taste	2.5	tablespoons	T	8
+230	0	tofu, cut	1.0	serving	serving	9
+230	55	white mushrooms, halved or quartered (depending on size)	1.0	serving	serving	10
+231	0	Asparagus	1.0	serving	serving	0
+231	0	Cooked octopus	1.0	serving	serving	1
+231	52	Cooked prawns	1.0	serving	serving	2
+231	0	Salmon	1.0	serving	serving	3
+231	0	Salmon caviar	1.0	serving	serving	4
+231	0	Lava seaweed	1.0	serving	serving	5
+231	54	Shiitake mushrooms	1.0	serving	serving	6
+231	0	Japanese sticky rice	1.0	serving	serving	7
+231	103	Raw tuna	1.0	serving	serving	8
+231	0	Wasabi	1.0	serving	serving	9
+232	77	Dried red chili peppers, optional	4.0	servings	servings	0
+232	0	3 to 4 Japanese cucumbers	3.0			1
+232	0	1 tablespoon rice vinegar	1.0	tablespoon	T	2
 232	28	1 teaspoon sesame oil	1.0	teaspoon	t	3
-232	75	2 tablespoons soy sauce	2.0	tablespoons	T	4
-233	92	2 smalls chives, cut into squares	2.0	\N	\N	1
-233	56	8 shitaki mushrooms, cut up lengthwise	8.0	\N	\N	4
-233	62	pinch of red pepper flakes-taste as you go to adjust flavors	1.0	pinch	pinch	6
+232	74	2 tablespoons soy sauce	2.0	tablespoons	T	4
+233	0	6 baby carrots, cut up	6.0			0
+233	91	2 smalls chives, cut into squares	2.0			1
+233	141	1 ginger	1.0			2
+233	0	pinch of ginger powder-taste as you go to adjust flavors	1.0	pinch	pinch	3
+233	55	8 shitaki mushrooms, cut up lengthwise	8.0			4
+233	0	1 parsnip, cut up	1.0			5
+233	61	pinch of red pepper flakes-taste as you go to adjust flavors	1.0	pinch	pinch	6
+233	0	1/2 package of a of Thai Kitchen Thin Rice Noodles	0.5	package	pkg	7
+233	164	bunch of fresh spinach	1.0	bunch	bunch	8
+233	0	1/2 of a block of firm tofu	0.5			9
 233	7	2 cups of water	2.0	cups	c	10
-233	4	1 yellow onion, chopped up	1.0	\N	\N	11
+233	4	1 yellow onion, chopped up	1.0			11
+233	0	1 zucchini, cut up	1.0			12
 234	40	2-3 tbsp. corn starch	2.0	tbsp	T	0
-234	118	2 egg whites, whisked	2.0	\N	\N	3
+234	0	1/2 cup dry red wine	0.5	cup	c	1
+234	0	4-5 oz. Kataifi pastry (shredded phyllo)	4.0	oz	oz	2
+234	116	2 egg whites, whisked	2.0			3
+234	0	2 filet mignon steaks, about 1 " thick	2.0			4
+234	141	1 tsp. finely chopped fresh ginger	1.0	tsp	t	5
 234	23	1 Clove garlic, finely chopped	1.0	Clove	Clove	6
-234	62	1 tsp. hot pepper flakes (optional)	1.0	tsp	t	9
-234	75	2 tbsp. each: Light soy sauce, Raw Honey, Hoisin Sauce	2.0	tbsp	T	11
-234	7	4 sweet water shrimp with tails on (available at most Asian markets)	4.0	\N	\N	12
+234	71	Oil for frying, brushing and grilling (a neutral oil such as Safflower is best)	2.0	servings	servings	7
+234	0	1 cup panko (Oriental bread bread crumbs)	1.0	cup	c	8
+234	61	1 tsp. hot pepper flakes (optional)	1.0	tsp	t	9
+234	0	1 tbsp. rice vinegar	1.0	tbsp	T	10
+234	74	2 tbsp. each: Light soy sauce, Raw Honey, Hoisin Sauce	2.0	tbsp	T	11
+234	7	4 sweet water shrimp with tails on (available at most Asian markets)	4.0			12
+235	0	Goji berries, some	2.0	servings	servings	0
+235	0	Dried kombu (seaweed/kelp), 7g	7.0	g	g	1
+235	0	tablespoon Mirin, 4	1.0	tablespoon	T	2
+235	0	tablespoon Sake, 1	1.0	tablespoon	T	3
+235	0	Salmon filet/loin, 250-300g	250.0	g	g	4
 235	46	teaspoon Sesame seeds, 1-2	1.0	teaspoon	t	5
-235	75	tablespoon Soya sauce, 4	1.0	tablespoon	T	7
-235	116	tablespoon Sugar, 2	1.0	tablespoon	T	8
-235	72	tablespoon Vegetable oil, 1	1.0	tablespoon	T	9
+235	0	200g Soba (buckwheat noodles)	200.0	g	g	6
+235	74	tablespoon Soya sauce, 4	1.0	tablespoon	T	7
+235	114	tablespoon Sugar, 2	1.0	tablespoon	T	8
+235	71	tablespoon Vegetable oil, 1	1.0	tablespoon	T	9
 235	7	5 cups Water	5.0	cups	c	10
-236	59	Freshly-ground black pepper to taste	6.0	servings	servings	0
-236	2	2 large carrots, sliced	2.0	\N	\N	1
-236	14	3 Eggs	3.0	\N	\N	5
-236	4	1 onion, quartered	1.0	\N	\N	8
+236	58	Freshly-ground black pepper to taste	6.0	servings	servings	0
+236	2	2 large carrots, sliced	2.0			1
+236	0	2 large celery stalks with leaves on, chopped	2.0			2
+236	0	1 5-6 pound chicken	5.0	pound	lb	3
+236	0	Optional: fresh dill or parsley for garnish	6.0	servings	servings	4
+236	14	3 Eggs	3.0			5
+236	0	3 sprigs fresh dill	3.0	sprigs	sprigs	6
+236	0	1 cup matzo meal	1.0	cup	c	7
+236	4	1 onion, quartered	1.0			8
 236	43	3 sprigs parsley	3.0	sprigs	sprigs	9
 236	6	1/4 teaspoon Salt	0.25	teaspoon	t	10
-236	72	4 tablespoons chicken fat or vegetable oil	4.0	tablespoons	T	13
+236	0	Salt and pepper, to taste	6.0	servings	servings	11
+236	0	1/4 cup seltzer water	0.25	cup	c	12
+236	71	4 tablespoons chicken fat or vegetable oil	4.0	tablespoons	T	13
 237	8	4 tsp.s baking powder	4.0	tsp	t	0
 237	12	2 tsp.s cinnamon	2.0	tsp	t	1
-237	14	6 eggs	6.0	\N	\N	2
+237	14	6 eggs	6.0			2
 237	15	6 c.s unsifted all-purpose flour	6.0	c	c	3
-237	116	c. sugar	1.0	c	c	7
-237	72	1 c. salad oil	1.0	cup	c	8
-238	14	2 large eggs	2.0	\N	\N	1
-238	4	2 onions grated	2.0	\N	\N	4
-238	27	3 large potatoes peeled and grated	3.0	\N	\N	5
-239	129	applesauce and low-fat sour cream for serving	2.0	servings	servings	0
-239	14	1 Egg, beaten	1.0	\N	\N	1
+237	0	1 c. golden raisins	1.0	c	c	4
+237	0	1 can (6 oz.) pecans or walnuts, chopped (2 c.)	6.0	oz	oz	5
+237	0	1 jar (18 oz.) strawberry or cherry	18.0	oz	oz	6
+237	114	c. sugar	1.0	c	c	7
+237	71	1 c. salad oil	1.0	cup	c	8
+238	0	1/2 teaspoon cayenne	0.5	teaspoon	t	0
+238	14	2 large eggs	2.0			1
+238	143	1 teaspoon garlic powder	1.0	teaspoon	t	2
+238	166	1 teaspoon onion powder	1.0	teaspoon	t	3
+238	4	2 onions grated	2.0			4
+238	27	3 large potatoes peeled and grated	3.0			5
+238	0	2/3 cup rice flour	0.6666666666666666	cup	c	6
+238	0	salt and pepper	16.0	servings	servings	7
+239	127	applesauce and low-fat sour cream for serving	2.0	servings	servings	0
+239	14	1 Egg, beaten	1.0			1
 239	23	3 cloves of garlic, skinned and coarse grated	3.0	cloves	cloves	2
-239	131	1 C of Yukon Gold or russet potatoes, skinned and coarse grated	1.0	cup	c	6
+239	141	1/2 inch of ginger, skinned and coarse grated (optional for garlic flavoring)	0.5	inch	inch	3
+239	0	1/2 C of parsnips, skinned and coarse grated	0.5	cup	c	4
+239	0	peanut or other high temperature cooking oil	2.0	servings	servings	5
+239	129	1 C of Yukon Gold or russet potatoes, skinned and coarse grated	1.0	cup	c	6
+239	0	salt and pepper to taste	2.0	servings	servings	7
 239	15	1 oz white flour	1.0	oz	oz	8
+239	0	1/2 C of yams, skinned and coarse grated	0.5	cup	c	9
 239	4	1/2 C of red or other onion, skinned and coarse grated	0.5	cup	c	10
-240	51	� cup brown sugar	0.25	cup	c	1
-240	14	2 eggs	2.0	\N	\N	2
+240	0	7 cups bread flour	7.0	cups	c	0
+240	50	� cup brown sugar	0.25	cup	c	1
+240	14	2 eggs	2.0			2
 240	6	1/4 teaspoon salt	0.25	teaspoon	t	3
-240	72	1/2 cup vegetable oil	0.5	cup	c	4
+240	71	1/2 cup vegetable oil	0.5	cup	c	4
 240	7	3 tbsp. water	3.0	tbsp	T	5
+240	0	2 packages regular yeast	2.0	packages	packages	6
+241	0	1/2 brown rice flour (I use Bob's Red Mill)	0.5			0
+241	0	2 tablespoons evaporated cane sugar	2.0	tablespoons	T	1
 241	12	1 teaspoon Cinnamon	1.0	teaspoon	t	2
-241	111	10 egg yolks, beaten	10.0	\N	\N	5
+241	0	1/2 cup coconut creamer (I use So Delicious brand)	0.5	cup	c	3
+241	0	1 1/2 cups vanilla coconut milk or unsweetened (I use So Delicious brand)	1.5	cups	c	4
+241	109	10 egg yolks, beaten	10.0			5
 241	12	1 1/2 teaspoons ground cinnamon	1.5	teaspoons	t	6
 241	16	1/2 teaspoon ground nutmeg	0.5	teaspoon	t	7
-241	98	2 tablespoons kosher salt, boiling pasta	2.0	tablespoons	T	8
-242	59	Freshly ground black pepper	10.0	servings	servings	2
-242	68	1 16 oz. can of chopped tomatoes	16.0	oz	oz	3
-242	2	2 carrots, coarsely chopped	2.0	\N	\N	4
+241	97	2 tablespoons kosher salt, boiling pasta	2.0	tablespoons	T	8
+241	0	1 can pineapple chunks, drained	1.0	can	can	9
+241	0	1/2 tablespoon Earth Balance Soy Free Margarine	0.5	tablespoon	T	10
+241	0	1 16 ounce package spiral gluten free rice pasta	16.0	ounce	oz	11
+241	0	4 tablespoons sunflower oil	4.0	tablespoons	T	12
+241	0	1/8 cup xylitol	0.125	cup	c	13
+242	0	3 bay leaves	3.0			0
+242	0	1 (4 pound) beef brisket	4.0	pound	lb	1
+242	58	Freshly ground black pepper	10.0	servings	servings	2
+242	67	1 16 oz. can of chopped tomatoes	16.0	oz	oz	3
+242	2	2 carrots, coarsely chopped	2.0			4
+242	0	3 celery stalks, cut into chunks	3.0	stalks	stalks	5
+242	0	2 cups dry red wine	2.0	cups	c	6
 242	43	1 handful fresh flat-leaf parsley leaves	1.0	handful	handful	7
-242	84	4 sprigs fresh rosemary, needles striped from the stem and chopped	4.0	sprigs	sprigs	8
+242	83	4 sprigs fresh rosemary, needles striped from the stem and chopped	4.0	sprigs	sprigs	8
 242	23	6 garlic cloves, pressed	6.0	cloves	cloves	9
-242	98	1/2 teaspoon kosher salt	0.5	teaspoon	t	10
-242	73	Olive oil	10.0	servings	servings	11
+242	97	1/2 teaspoon kosher salt	0.5	teaspoon	t	10
+242	72	Olive oil	10.0	servings	servings	11
 242	15	2 teaspoons plain flour	2.0	teaspoons	t	12
-242	4	4 large red onions, halved	4.0	\N	\N	13
-243	2	2 carrots, julienned	2.0	\N	\N	1
+242	4	4 large red onions, halved	4.0			13
+243	0	1/2 pound baby spinach, parboiled	0.5	pound	lb	0
+243	2	2 carrots, julienned	2.0			1
 243	23	2 cloves garlic, finely chopped	2.0	cloves	cloves	2
-243	56	5 mushrooms, sliced (I like to use criminis)	5.0	\N	\N	3
-243	73	2 tablespoons olive oil	2.0	tablespoons	T	4
+243	55	5 mushrooms, sliced (I like to use criminis)	5.0			3
+243	72	2 tablespoons olive oil	2.0	tablespoons	T	4
 243	6	Salt to taste	4.0	servings	servings	5
-243	95	3 scallions, chopped	3.0	\N	\N	6
+243	94	3 scallions, chopped	3.0			6
 243	28	2 tablespoons sesame oil	2.0	tablespoons	T	7
 243	46	Sesame seeds	4.0	servings	servings	8
-243	75	3 tablespoons soy sauce	3.0	tablespoons	T	9
-243	116	1 teaspoon sugar	1.0	teaspoon	t	10
-243	125	1 sweet onion, sliced into thin strips	1.0	\N	\N	11
-244	132	1/2 apple or pear	0.5	\N	\N	0
-244	51	1 tbsp brown sugar	1.0	tbsp	T	2
+243	74	3 tablespoons soy sauce	3.0	tablespoons	T	9
+243	114	1 teaspoon sugar	1.0	teaspoon	t	10
+243	123	1 sweet onion, sliced into thin strips	1.0			11
+243	154	8 ounces sweet potato vermicelli noodles	8.0	ounces	oz	12
+243	0	1/2 cup zucchini, sliced into half-moons	0.5	cup	c	13
+244	130	1/2 apple or pear	0.5			0
+244	156	1 bunch Boston bibb lettuce	1.0	bunch	bunch	1
+244	50	1 tbsp brown sugar	1.0	tbsp	T	2
+244	0	2 lbs chicken thighs	2.0	lbs	lb	3
 244	23	3 garlic cloves	3.0	cloves	cloves	4
-244	62	1 tsp red pepper flakes	1.0	tsp	t	6
-244	95	scallions	4.0	servings	servings	7
+244	141	1 tsp ginger	1.0	tsp	t	5
+244	61	1 tsp red pepper flakes	1.0	tsp	t	6
+244	94	scallions	4.0	servings	servings	7
 244	28	1 tsp sesame oil	1.0	tsp	t	8
 244	46	1 tsp sesame seeds (garnish)	1.0	tsp	t	9
-244	75	1/2 cup soy sauce	0.5	cup	c	10
-245	52	1 1/2 cups bean sprouts	1.5	cups	c	1
+244	74	1/2 cup soy sauce	0.5	cup	c	10
+245	0	3 cups fresh baby spinach	3.0	cups	c	0
+245	51	1 1/2 cups bean sprouts	1.5	cups	c	1
+245	0	3/4 pound thin strips sirloin, rib eye or bulgogi beef	0.75	pound	lb	2
 245	2	1 cup carrots, julienned	1.0	cup	c	3
-245	111	4 egg yolks	4.0	\N	\N	4
+245	109	4 egg yolks	4.0			4
+245	0	1 cup fresh shiitake mushrooms, thinly sliced	1.0	cup	c	5
 245	23	1 garlic clove, minced	1.0	clove	clove	6
-245	95	1 cup green onions, chopped	1.0	cup	c	8
+245	0	1/4 cup gochujang	0.25	cup	c	7
+245	94	1 cup green onions, chopped	1.0	cup	c	8
+245	0	10 ounces kimchi	10.0	ounces	oz	9
+245	0	1 cup Korean barbecue bulgogi marinade	1.0	cup	c	10
 245	6	Pinch of salt	1.0	pinch	pinch	11
 245	28	1/4 cup sesame oil	0.25	cup	c	12
 245	46	2 teaspoons toasted sesame seeds	2.0	teaspoons	t	13
-245	116	Pinch of sugar	1.0	pinch	pinch	15
-246	14	2 egg strips (optional; garnish)	2.0	\N	\N	1
+245	0	4 cups short grain white rice, cooked	4.0	cups	c	14
+245	114	Pinch of sugar	1.0	pinch	pinch	15
+245	0	3 cups high grade Korean sushi rice	3.0	cups	c	16
+245	0	3/4 cup firm tofu, rinsed and cut into 1-inch cubes	0.75	cup	c	17
+245	0	1 cup zucchini, julienned	1.0	cup	c	18
+246	0	2 lb beef short ribs	2.0	lb	lb	0
+246	14	2 egg strips (optional; garnish)	2.0			1
 246	23	4 cloves garlic minced	4.0	cloves	cloves	2
-246	59	1 tsp ground pepper	1.0	tsp	t	4
-246	29	1/2 large Korea radish, cut into 1 inch slices	0.5	\N	\N	5
-246	95	2 scallions, sliced into 1 inch pieces	2.0	\N	\N	6
-246	97	2 tsp sea salt (Kosher okay too)	2.0	tsp	t	7
+246	0	4 oz sweet potato or glass noodles (dangmyun)	4.0	oz	oz	3
+246	58	1 tsp ground pepper	1.0	tsp	t	4
+246	29	1/2 large Korea radish, cut into 1 inch slices	0.5			5
+246	94	2 scallions, sliced into 1 inch pieces	2.0			6
+246	96	2 tsp sea salt (Kosher okay too)	2.0	tsp	t	7
 246	28	2 tsp sesame oil	2.0	tsp	t	8
 246	46	1/2 tsp toasted sesame seeds (optional; garnish)	0.5	tsp	t	9
-246	75	3 tbsp soy sauce	3.0	tbsp	T	10
+246	74	3 tbsp soy sauce	3.0	tbsp	T	10
 247	23	5 garlic cloves (minced)	5.0	cloves	cloves	0
-247	96	4 tablespoons dried ground chili pepper	4.0	tablespoons	T	2
+247	141	1 tablespoon ginger root minced or 2 tsp. ginger powder	1.0	tablespoon	T	1
+247	95	4 tablespoons dried ground chili pepper	4.0	tablespoons	T	2
+247	148	6 pounds Napa cabbage	6.0	pounds	lb	3
 247	6	Salt (if needed)	6.0	servings	servings	4
-247	95	2 cups sliced scallions	2.0	cups	c	5
-247	116	1 tablespoon sugar;	1.0	tablespoon	T	6
-248	51	1 cup brown sugar, packed	1.0	cup	c	0
-248	97	4 cups coarse sea salt	4.0	cups	c	1
+247	94	2 cups sliced scallions	2.0	cups	c	5
+247	114	1 tablespoon sugar;	1.0	tablespoon	T	6
+248	50	1 cup brown sugar, packed	1.0	cup	c	0
+248	96	4 cups coarse sea salt	4.0	cups	c	1
+248	163	1/2 cup fish sauce	0.5	cup	c	2
 248	23	12 garlic cloves	12.0	cloves	cloves	3
-248	95	3 green onions, cut into 2-inch pieces	3.0	\N	\N	6
+248	141	2 tbsp minced ginger	2.0	tbsp	T	4
+248	0	4 cups gochugaru (Korean red chili flakes)	4.0	cups	c	5
+248	94	3 green onions, cut into 2-inch pieces	3.0			6
+248	148	3 Napa cabbages	3.0			7
 248	29	2 cups radish (1/2 Korean radish), cut into matchstick pieces	2.0	cups	c	8
-248	4	1 yellow onion	1.0	\N	\N	10
+248	0	3 tbsp sweet rice flour (simmered with 3 cups water)	3.0	tbsp	T	9
+248	4	1 yellow onion	1.0			10
+248	0	4 tbsp saewujeot (salted shrimp)	4.0	tbsp	T	11
+249	0	1/2 lb sirloin or tender cut beef, cut into thin strips	0.5	lb	lb	0
 249	10	1 tablespoon Butter or margarine	1.0	tablespoon	T	1
-249	95	2 green onions, thinly sliced diagonally	2.0	\N	\N	4
-249	73	1 tablespoon Olive oil	1.0	tablespoon	T	6
+249	0	8 (10-inch) flour tortillas	8.0	10-inch	10-inch	2
+249	143	1 tsp garlic powder	1.0	tsp	t	3
+249	94	2 green onions, thinly sliced diagonally	2.0			4
+249	0	2 cups kimchi, drained and chopped	2.0	cups	c	5
+249	72	1 tablespoon Olive oil	1.0	tablespoon	T	6
+249	0	Salt & freshly ground pepper	4.0	servings	servings	7
 249	46	2 tbsp sesame seeds, toasted	2.0	tbsp	T	8
+249	0	1, 2 cup shredded Sharp Cheddar	2.0	cup	c	9
+250	0	2 pounds Beef sirloin tips cut into pieces	2.0	pounds	lb	0
 250	23	1 Clove minced garlic, or crushed	1.0	Clove	Clove	1
-250	95	10 green onions, minced	10.0	\N	\N	2
+250	94	10 green onions, minced	10.0			2
 250	28	3 tablespoons sesame oil	3.0	tablespoons	T	3
 250	46	3 tablespoons toasted sesame seeds	3.0	tablespoons	T	4
-250	75	1/4 cup soy sauce	0.25	cup	c	5
-250	116	2 tablespoons sugar	2.0	tablespoons	T	6
-251	59	Freshly ground black pepper	1.0	serving	serving	1
-251	92	1 tablespoon Snipped chives	1.0	tablespoon	T	2
-251	62	Crushed red pepper, to taste	1.0	serving	serving	3
+250	74	1/4 cup soy sauce	0.25	cup	c	5
+250	114	2 tablespoons sugar	2.0	tablespoons	T	6
+251	0	1 pound Beef flank steak, sliced into ½-inch slices	1.0	pound	lb	0
+251	58	Freshly ground black pepper	1.0	serving	serving	1
+251	91	1 tablespoon Snipped chives	1.0	tablespoon	T	2
+251	61	Crushed red pepper, to taste	1.0	serving	serving	3
+251	141	1 tablespoon Chopped fresh ginger	1.0	tablespoon	T	4
 251	23	2 cloves garlic (finely chopped)	2.0	cloves	cloves	5
+251	174	2 cups Cooked white long grain rice	2.0	cups	c	6
 251	6	Salt	1.0	serving	serving	7
 251	28	1/4 cup sesame oil	0.25	cup	c	8
-251	75	1 tablespoon soy sauce	1.0	tablespoon	T	9
-252	52	1 1/2 cups bean sprouts	1.5	cups	c	1
+251	74	1 tablespoon soy sauce	1.0	tablespoon	T	9
+252	0	4 cups fresh baby spinach	4.0	cups	c	0
+252	51	1 1/2 cups bean sprouts	1.5	cups	c	1
 252	24	10 ounces cabbage kimchi	10.0	ounces	oz	2
 252	2	1 cup carrots, julienned	1.0	cup	c	3
-252	55	1 cup fresh shiitake mushrooms, thinly sliced	1.0	cup	c	4
+252	54	1 cup fresh shiitake mushrooms, thinly sliced	1.0	cup	c	4
 252	23	2 garlic cloves, minced	2.0	cloves	cloves	5
-252	95	1 cup green onions, chopped	1.0	cup	c	7
+252	0	1/4 cup gochujang	0.25	cup	c	6
+252	94	1 cup green onions, chopped	1.0	cup	c	7
+252	0	1/2 cup Korean barbecue bulgogi marinade	0.5	cup	c	8
 252	6	1 teaspoon Salt	1.0	teaspoon	t	9
 252	28	1/4 cup sesame oil	0.25	cup	c	10
 252	46	2 teaspoons toasted sesame seeds	2.0	teaspoons	t	11
-252	116	Pinch of sugar	1.0	pinch	pinch	13
-253	79	3 tablespoons chilly paste (reduce for less spicy)/ korean gochujang paste	3.0	tablespoons	T	1
-253	23	1 whole garlic bulb, skinned	1.0	\N	\N	3
-253	62	15 grams chilly flakes	15.0	grams	g	5
+252	0	4 cups short-grain white rice, cooked	4.0	cups	c	12
+252	114	Pinch of sugar	1.0	pinch	pinch	13
+252	0	1 cup firm tofu, rinsed and cut into 1-inch cubes	1.0	cup	c	14
+252	0	1 cup zucchini, julienned	1.0	cup	c	15
+253	0	Brine solution (3- 4 liters water+ 1 1/2 cups coarse salt)	3.0	liters	l	0
+253	78	3 tablespoons chilly paste (reduce for less spicy)/ korean gochujang paste	3.0	tablespoons	T	1
+253	163	1/8 cup fish sauce	0.125	cup	c	2
+253	23	1 whole garlic bulb, skinned	1.0			3
+253	148	1 small napa cabbage, (abt 1/2 kg) quartered lengthways with stems attached and washed	1.0			4
+253	61	15 grams chilly flakes	15.0	grams	g	5
 253	29	150 grams radish, julienned	150.0	grams	g	6
-253	53	2 tablespoons fermented baby shrimps/ cincalok (you can even use brined fish/anchovies)	2.0	tablespoons	T	8
-253	95	40 grams spring onions, cut into abt 2" lengths	40.0	grams	g	9
-253	116	1/2 teaspoon sugar	0.5	teaspoon	t	10
-254	2	1 medium organic carrot, thinly sliced	1.0	\N	\N	0
+253	174	1/4 bowl cooked rice	0.25			7
+253	52	2 tablespoons fermented baby shrimps/ cincalok (you can even use brined fish/anchovies)	2.0	tablespoons	T	8
+253	94	40 grams spring onions, cut into abt 2" lengths	40.0	grams	g	9
+253	114	1/2 teaspoon sugar	0.5	teaspoon	t	10
+254	2	1 medium organic carrot, thinly sliced	1.0			0
+254	0	2 organic cucumbers, sliced	2.0			1
+254	163	1 tablespoon of fish sauce (can find at grocery store in Asian section)	1.0	tablespoon	T	2
 254	23	2 cloves organic garlic, minced	2.0	cloves	cloves	3
+254	141	1/2 inch of grated organic ginger	0.5	inch	inch	4
 254	17	1 tablespoon of honey	1.0	tablespoon	T	5
-254	18	1/2 Juice of a lemon	0.5	\N	\N	6
+254	18	1/2 Juice of a lemon	0.5			6
+254	0	cup of red pepper powder (can find at Korean market), plus more to taste	1.0	cup	c	7
 254	6	3 tablespoons of salt	3.0	tablespoons	T	8
-254	95	3 organic scallions, sliced, include green and white parts	3.0	\N	\N	9
+254	94	3 organic scallions, sliced, include green and white parts	3.0			9
 254	28	1 teaspoon of toasted sesame oil	1.0	teaspoon	t	10
-255	142	1/2 tablespoon rice vinegar (recommended: O Yuzu Rice Vinegar by O 1/2 of a Serrano pepper, very thinly sliced1 Juice of lime5 small leaves of fresh mintsprinkle of black sesame seeds (optional)	0.5	\N	\N	2
-255	142	1 Juice of lime	1.0	\N	\N	3
+255	0	1 ahi tuna steak (approx. less than a 1 lb.)	1.0			0
+255	0	5 small leaves of fresh mint	5.0	leaves	leaves	1
+255	139	1/2 tablespoon rice vinegar (recommended: O Yuzu Rice Vinegar by O 1/2 of a Serrano pepper, very thinly sliced1 Juice of lime5 small leaves of fresh mintsprinkle of black sesame seeds (optional)	0.5			2
+255	139	1 Juice of lime	1.0			3
+255	160	1/2 of a Serrano pepper, very thinly sliced	0.5			4
 255	28	1 tsp. sesame oil	1.0	tsp	t	5
-255	75	1In medium bowl mix soy sauce, toasted sesame oil, rice vinegar, Serrano pepper, lime juice, mint, and sesame seeds. Then add diced tuna and toss to coat.	3.0	servings	servings	6
-255	75	5 tbsp. soy sauce	5.0	tbsp	T	7
-256	59	1 tsp black pepper	1.0	tsp	t	2
-256	93	1/2 cup fresh cilantro, chopped	0.5	cup	c	4
+255	74	1In medium bowl mix soy sauce, toasted sesame oil, rice vinegar, Serrano pepper, lime juice, mint, and sesame seeds. Then add diced tuna and toss to coat.	3.0	servings	servings	6
+255	74	5 tbsp. soy sauce	5.0	tbsp	T	7
+255	154	3Serve immediately by mounding atop crackers, chips, micro-greens, or even roasted sweet potato slices.	1.0	slicesslices	slicesslices	8
+256	0	1 avocado, peeled, pitted and sliced	1.0			0
+256	0	2 cups fresh baby spinach	2.0	cups	c	1
+256	58	1 tsp black pepper	1.0	tsp	t	2
+256	0	6 burrito size tortillas	6.0			3
+256	92	1/2 cup fresh cilantro, chopped	0.5	cup	c	4
 256	23	2 garlic cloves, pressed	2.0	cloves	cloves	5
-256	49	1 tsp ground cumin	1.0	tsp	t	6
-256	137	1 jalapeño, seeded and diced	1.0	\N	\N	7
-256	141	1 fresh lime, juiced	1.0	\N	\N	8
-256	98	1/2 tsp kosher salt	0.5	tsp	t	9
-256	141	1 fresh lime, cut into wedges	1.0	\N	\N	10
-256	142	1/2 cup fresh lime juice	0.5	cup	c	11
-256	73	1 Tbsp Olive oil	1.0	Tbsp	Tbsp	12
+256	48	1 tsp ground cumin	1.0	tsp	t	6
+256	135	1 jalapeño, seeded and diced	1.0			7
+256	138	1 fresh lime, juiced	1.0			8
+256	97	1/2 tsp kosher salt	0.5	tsp	t	9
+256	138	1 fresh lime, cut into wedges	1.0			10
+256	139	1/2 cup fresh lime juice	0.5	cup	c	11
+256	72	1 Tbsp Olive oil	1.0	Tbsp	Tbsp	12
 256	4	1/2 cup onion, diced	0.5	cup	c	13
-256	4	1 small onion, diced	1.0	\N	\N	14
+256	4	1 small onion, diced	1.0			14
 256	41	1/2 tsp paprika	0.5	tsp	t	15
-256	48	2 Roma tomatoes, diced	2.0	\N	\N	16
-257	93	1 Bunch Cilantro Chopped	1.0	\N	\N	1
+256	47	2 Roma tomatoes, diced	2.0			16
+256	0	1 lb sirloin, trimmed and diced (1/2 inch)	1.0	lb	lb	17
+257	0	3 Tbs. - Capers Chopped (I left these out)	3.0	Tb	Tb	0
+257	92	1 Bunch Cilantro Chopped	1.0			1
 257	23	2 garlic cloves, finely minced	2.0	cloves	cloves	2
-257	59	1/2 Tsp. - Fresh Ground Black Pepper	0.5	Tsp	Tsp	3
-257	73	2 tablespoons olive oil	2.0	tablespoons	T	4
-257	43	1 Bunch Parsley Chopped	1.0	\N	\N	5
-257	62	1/2 Tsp. - Red Pepper Flakes	0.5	Tsp	Tsp	6
-257	102	3 tablespoons red wine vinegar	3.0	tablespoons	T	7
+257	58	1/2 Tsp. - Fresh Ground Black Pepper	0.5	Tsp	Tsp	3
+257	72	2 tablespoons olive oil	2.0	tablespoons	T	4
+257	43	1 Bunch Parsley Chopped	1.0			5
+257	61	1/2 Tsp. - Red Pepper Flakes	0.5	Tsp	Tsp	6
+257	100	3 tablespoons red wine vinegar	3.0	tablespoons	T	7
 257	6	1 1/2 Tsp. - Salt	1.5	Tsp	Tsp	8
-258	62	1/2 teaspoon chili pepper flakes	0.5	teaspoon	t	1
+258	0	1 pound green or white asparagus, woody ends snapped off & discarded	1.0	pound	lb	0
+258	61	1/2 teaspoon chili pepper flakes	0.5	teaspoon	t	1
+258	0	Freshly cracked black pepper	4.0	servings	servings	2
 258	43	1 cup flat leaf parsley, lightly packed & rough chopped	1.0	cup	c	3
+258	0	1/4 cup fresh mint leaves	0.25	cup	c	4
+258	0	1/4 cup fresh oregano leaves	0.25	cup	c	5
 258	23	3 to 5 garlic cloves, rough chopped	3.0	cloves	cloves	6
 258	23	4 garlic cloves, peeled	4.0	cloves	cloves	7
-258	98	Kosher salt	4.0	servings	servings	8
+258	97	Kosher salt	4.0	servings	servings	8
 258	18	3 tablespoons lemon juice	3.0	tablespoons	T	9
-258	73	1/4 cup of extra-virgin olive oil	0.25	cup	c	10
-258	102	2 tablespoons Red wine vinegar	2.0	tablespoons	T	12
+258	72	1/4 cup of extra-virgin olive oil	0.25	cup	c	10
+258	0	1 teaspoon freshly ground pepper	1.0	teaspoon	t	11
+258	100	2 tablespoons Red wine vinegar	2.0	tablespoons	T	12
+258	0	2 tablespoons shallot, chopped	2.0	tablespoons	T	13
+258	0	2 skirt steaks	2.0			14
+259	0	1/4 teaspoon baking soda	0.25	teaspoon	t	0
 259	6	1/4 teaspoon salt	0.25	teaspoon	t	1
-259	116	1 cup sugar	1.0	cup	c	2
+259	114	1 cup sugar	1.0	cup	c	2
+259	0	1 vanilla bean, split and seeds scraped	1.0			3
 259	20	1 quart whole milk	1.0	quart	quart	4
-260	119	150 grams Almond cookies, crumbed	150.0	grams	g	0
+260	117	150 grams Almond cookies, crumbed	150.0	grams	g	0
 260	40	1 tablespoon Cornstarch	1.0	tablespoon	T	1
 260	13	450 grams Philiadelphia 13% balance cream cheese	450.0	grams	g	2
-260	14	2 Eggs	2.0	\N	\N	4
-260	18	Juice and zest of 1 lemon	1.0	\N	\N	5
+260	0	240 ml Dulce de leche	240.0	ml	ml	3
+260	14	2 Eggs	2.0			4
+260	18	Juice and zest of 1 lemon	1.0			5
 260	6	Pinch of salt	1.0	pinch	pinch	6
-260	116	1/2 cup organic sugar	0.5	cup	c	7
+260	114	1/2 cup organic sugar	0.5	cup	c	7
 260	10	1 1/2 sticks cold butter cut into small pieces (if you use unsalted butter add a little 2 cups organic flour1/2 cup organic sugar1 teaspoon vanilla	1.5	sticks	sticks	8
+260	39	150 grams 3. 5% yogurt	150.0	grams	g	9
 261	15	2 cups organic flour	2.0	cups	c	0
-261	116	1/2 cup organic sugar	0.5	cup	c	1
-263	73	1/2 cup extra-virgin olive oil	0.5	cup	c	0
+261	114	1/2 cup organic sugar	0.5	cup	c	1
+261	173	1 1/2 sticks cold salted butter cut into small pieces	1.5	sticks	sticks	2
+261	0	1 teaspoon vanilla	1.0	teaspoon	t	3
+262	0	2 tablespoons of amaretto cream (keep cold)	2.0	tablespoons	T	0
+262	0	2 tablespoons of dulce de leche, or caramel, or 3 caramel squares	2.0	tablespoons	T	1
+262	0	1 tub of vanilla Balkan style yogurt, 650g	1.0	tub	tub	2
+263	72	1/2 cup extra-virgin olive oil	0.5	cup	c	0
+263	0	1 1/2 pounds flank steak	1.5	pounds	lb	1
 263	23	3 cloves garlic, peeled	3.0	cloves	cloves	2
 263	45	2 tablespoons oregano	2.0	tablespoons	T	3
 263	43	1 bunch parsley	1.0	bunch	bunch	4
-263	102	1/4 cup red wine vinegar	0.25	cup	c	5
-264	79	1/4 teaspoon chile-garlic paste	0.25	teaspoon	t	1
-264	93	1 Tb. chopped cilantro	1.0	Tb	Tb	2
-264	142	2 limes, juiced	2.0	\N	\N	4
-264	73	Olive oil	4.0	servings	servings	5
-264	48	1 medium tomato, seeded and finely chopped	1.0	\N	\N	8
+263	100	1/4 cup red wine vinegar	0.25	cup	c	5
+264	0	1 avocado, diced	1.0			0
+264	78	1/4 teaspoon chile-garlic paste	0.25	teaspoon	t	1
+264	92	1 Tb. chopped cilantro	1.0	Tb	Tb	2
+264	0	3 Swai fillets, diced (about 1 lb.)	1.0	lb	lb	3
+264	139	2 limes, juiced	2.0			4
+264	72	Olive oil	4.0	servings	servings	5
+264	0	Salt and pepper	4.0	servings	servings	6
+264	0	1 cup shallot, diced (or 1/4 red onion)	1.0	cup	c	7
+264	47	1 medium tomato, seeded and finely chopped	1.0			8
 265	8	2 teaspoons baking powder	2.0	teaspoons	t	0
 265	10	3 teaspoons butter	3.0	teaspoons	t	1
 265	12	1 tablespoon Cinnamon	1.0	tablespoon	T	2
-265	14	3 Eggs	3.0	\N	\N	4
-265	117	1/2 cup half-and-half	0.5	cup	c	6
+265	0	1/2 teaspoon cream of tartar	0.5	teaspoon	t	3
+265	14	3 Eggs	3.0			4
+265	0	12 ounces can evaporated milk	12.0	ounces	oz	5
+265	115	1/2 cup half-and-half	0.5	cup	c	6
+265	0	1/2 cup masa harina	0.5	cup	c	7
 265	20	1/4 cup milk	0.25	cup	c	8
+265	152	mint leaves	10.0	leaves	leaves	9
+265	0	Sliced strawberries	10.0	servings	servings	10
+265	0	1 teaspoon orange zest	1.0	teaspoon	t	11
 265	6	1 teaspoon salt	1.0	teaspoon	t	12
-265	116	1 teaspoon sugar	1.0	teaspoon	t	14
-265	136	1 teaspoon vanilla	1.0	teaspoon	t	16
-265	136	1 teaspoon vanilla extract	1.0	teaspoon	t	17
-266	93	1/4 cup cilantro, freshly chopped for garnishment	0.25	cup	c	1
-266	49	1 teaspoon Cumin	1.0	teaspoon	t	3
+265	0	1/2 cup sorghum flour	0.5	cup	c	13
+265	114	1 teaspoon sugar	1.0	teaspoon	t	14
+265	0	14 ounces can sweetened condensed milk	14.0	ounces	oz	15
+265	134	1 teaspoon vanilla	1.0	teaspoon	t	16
+265	134	1 teaspoon vanilla extract	1.0	teaspoon	t	17
+265	0	1 cup whipping cream	1.0	cup	c	18
+265	0	1 teaspoon xanthan gum	1.0	teaspoon	t	19
+266	0	2 pounds beef tenderloin, cut into 1 inch chunks or strips	2.0	pounds	lb	0
+266	92	1/4 cup cilantro, freshly chopped for garnishment	0.25	cup	c	1
+266	0	1 teaspoon Complete seasoning	1.0	teaspoon	t	2
+266	48	1 teaspoon Cumin	1.0	teaspoon	t	3
+266	0	1 bag of frozen french fries	1.0	bag	bag	4
 266	23	3 garlic cloves, minced	3.0	cloves	cloves	5
-266	3	1 green bell pepper, julienned	1.0	\N	\N	6
-266	137	1 jalapeno pepper, seeded and chopped finely	1.0	\N	\N	7
-266	48	8 inches plum tomatoes, halved and cut into 1 chunks	8.0	inches	inches	8
-266	77	1 red bell pepper, julienned	1.0	\N	\N	9
-266	102	1 teaspoon red wine vinegar	1.0	teaspoon	t	10
-266	75	Soy sauce	4.0	servings	servings	11
-266	4	1 yellow onion, chopped finely	1.0	\N	\N	12
-267	3	2 bell peppers	2.0	\N	\N	1
-267	93	2 sprigs of cilantro	2.0	sprigs	sprigs	3
+266	3	1 green bell pepper, julienned	1.0			6
+266	135	1 jalapeno pepper, seeded and chopped finely	1.0			7
+266	47	8 inches plum tomatoes, halved and cut into 1 chunks	8.0	inches	inches	8
+266	76	1 red bell pepper, julienned	1.0			9
+266	100	1 teaspoon red wine vinegar	1.0	teaspoon	t	10
+266	74	Soy sauce	4.0	servings	servings	11
+266	4	1 yellow onion, chopped finely	1.0			12
+267	0	3 ripe avocados	3.0			0
+267	3	2 bell peppers	2.0			1
+267	0	6 cherry tomatoes	6.0			2
+267	92	2 sprigs of cilantro	2.0	sprigs	sprigs	3
+267	0	4 tilapia fish fillets (about 650g)	650.0	g	g	4
 267	23	2 cloves garlic	2.0	cloves	cloves	5
-267	4	1/2 onion	0.5	\N	\N	6
-267	59	pepper	2.0	servings	servings	7
+267	4	1/2 onion	0.5			6
+267	58	pepper	2.0	servings	servings	7
 267	6	salt	2.0	servings	servings	8
-267	135	tabasco sauce	2.0	servings	servings	9
-268	3	1 large bell pepper, diced	1.0	\N	\N	0
+267	133	tabasco sauce	2.0	servings	servings	9
+267	0	60g tortilla chips	60.0	g	g	10
+268	3	1 large bell pepper, diced	1.0			0
 268	35	1 (14 ounce) can black beans, rinsed and drained	14.0	ounce	oz	1
-268	68	1 28-ounce can crushed or puréed tomatoes	28.0	ounce	oz	2
-268	96	2 teaspoons chili powder	2.0	teaspoons	t	3
+268	67	1 28-ounce can crushed or puréed tomatoes	28.0	ounce	oz	2
+268	95	2 teaspoons chili powder	2.0	teaspoons	t	3
 268	45	1 teaspoon dried oregano	1.0	teaspoon	t	4
-268	49	1/2 teaspoon ground cumin	0.5	teaspoon	t	6
+268	143	1 teaspoon garlic powder	1.0	teaspoon	t	5
+268	48	1/2 teaspoon ground cumin	0.5	teaspoon	t	6
+268	0	1 1/2 tablespoons light or extra-virgin olive oil	1.5	tablespoons	T	7
 268	4	1 cup chopped onion	1.0	cup	c	8
 268	41	1 teaspoon paprika	1.0	teaspoon	t	9
 269	35	1 can black beans, rinsed, drained and mashed	1.0	can	can	0
-269	2	1 carrot, peeled and diced	1.0	\N	\N	2
+269	0	2 cups canned corn	2.0	cups	c	1
+269	2	1 carrot, peeled and diced	1.0			2
+269	0	1/2 cup celery, diced	0.5	cup	c	3
+269	0	1 teaspoon Creole seasoning (more or less to taste)	1.0	teaspoon	t	4
 269	15	1/2 cup all-purpose flour	0.5	cup	c	5
 269	43	1 teaspoon fresh parsley, chopped	1.0	teaspoon	t	6
 269	23	1-2 cloves garlic, minced	1.0	cloves	cloves	7
 269	23	2 garlic cloves, minced	2.0	cloves	cloves	8
-269	95	2 green onions, diced	2.0	\N	\N	9
-269	60	1 teaspoon ground red pepper (more or less to taste)	1.0	teaspoon	t	10
-269	59	1 teaspoon ground black pepper (more or less to taste)	1.0	teaspoon	t	11
-269	137	1/2-1 jalapeño pepper, seeded and diced	0.5	\N	\N	12
-269	142	Juice of 1 lime	1.0	\N	\N	13
+269	94	2 green onions, diced	2.0			9
+269	59	1 teaspoon ground red pepper (more or less to taste)	1.0	teaspoon	t	10
+269	58	1 teaspoon ground black pepper (more or less to taste)	1.0	teaspoon	t	11
+269	135	1/2-1 jalapeño pepper, seeded and diced	0.5			12
+269	139	Juice of 1 lime	1.0			13
+269	0	1/4 cup oatmeal (I used a bit more)	0.25	cup	c	14
 269	4	1 cup chopped onion	1.0	cup	c	15
-269	77	1/2 cup red pepper, seeded and diced	0.5	cup	c	17
+269	0	1 cup panko breadcrumbs	1.0	cup	c	16
+269	76	1/2 cup red pepper, seeded and diced	0.5	cup	c	17
+269	0	1 cup salsa	1.0	cup	c	18
 269	6	1/2 teaspoon salt	0.5	teaspoon	t	19
-269	48	3 medium-sized tomatoes, diced	3.0	\N	\N	20
-270	62	1/2 teaspoon red chili pepper flakes	0.5	teaspoon	t	2
-270	59	fresh cracked black pepper, to taste	4.0	servings	servings	3
-270	94	1/4 cup coriander leaves, chopped	0.25	cup	c	5
-270	143	1/4 cup grape seed, rice bran or extra light	0.25	cup	c	6
-270	95	4 green onions, cut into 1-inch pieces	4.0	\N	\N	7
-270	141	1/2 lime	0.5	\N	\N	8
-270	53	8 prawns (about 1/2 lb), peeled	0.5	lb	lb	12
-270	73	1 1/2 tablespoons extra light olive oil or rice bran oil (for cooking prawns)	1.5	tablespoons	T	13
-270	97	unrefined sea salt, taste	4.0	servings	servings	16
+269	47	3 medium-sized tomatoes, diced	3.0			20
+270	0	4 ripe avocados	4.0			0
+270	0	8 black olives, sliced	8.0			1
+270	61	1/2 teaspoon red chili pepper flakes	0.5	teaspoon	t	2
+270	58	fresh cracked black pepper, to taste	4.0	servings	servings	3
+270	0	1 large cucumber, peeled and ciced	1.0			4
+270	93	1/4 cup coriander leaves, chopped	0.25	cup	c	5
+270	140	1/4 cup grape seed, rice bran or extra light	0.25	cup	c	6
+270	94	4 green onions, cut into 1-inch pieces	4.0			7
+270	138	1/2 lime	0.5			8
+270	0	zest of 2 limes	2.0			9
+270	0	3 tablespoons unpasteurized shiro miso	3.0	tablespoons	T	10
+270	0	1 Mandarin or Satsuma orange, peeled and segmented	1.0			11
+270	52	8 prawns (about 1/2 lb), peeled	0.5	lb	lb	12
+270	72	1 1/2 tablespoons extra light olive oil or rice bran oil (for cooking prawns)	1.5	tablespoons	T	13
+270	0	12 smalls scallops or 4 large scallops, cleaned	12.0			14
+270	0	1 shallot, minced	1.0			15
+270	96	unrefined sea salt, taste	4.0	servings	servings	16
 270	7	1 cup water	1.0	cup	c	17
-271	103	1 teaspoon Balsamic vinegar	1.0	teaspoon	t	1
-271	49	1 teaspoon Cumin	1.0	teaspoon	t	2
+271	0	1 Avocado	1.0			0
+271	101	1 teaspoon Balsamic vinegar	1.0	teaspoon	t	1
+271	48	1 teaspoon Cumin	1.0	teaspoon	t	2
+271	0	3/4 cup Corn, freshly hulled (You can also use frozen corn, thawed)	0.75	cup	c	3
 271	23	1 clove garlic	1.0	clove	clove	4
-271	77	1/2 medium Red Pepper	0.5	\N	\N	5
-272	93	1 cup cilantro, finely chopped	1.0	cup	c	0
-272	73	extra-virgin olive oil	4.0	servings	servings	1
+271	76	1/2 medium Red Pepper	0.5			5
+272	92	1 cup cilantro, finely chopped	1.0	cup	c	0
+272	72	extra-virgin olive oil	4.0	servings	servings	1
+272	0	1 1 pound flank steak	1.0	pound	lb	2
 272	23	3 garlic clove, minced	3.0	clove	clove	3
-272	137	1/2 large jalapeno, seeded and minced ( whole 1 if brave)	0.5	\N	\N	4
-272	18	1/2 Lemon, juice of	0.5	\N	\N	5
-272	142	Juice of large 1/2 lime	0.5	\N	\N	6
-272	95	4 scallions, white only finely chopped	4.0	\N	\N	8
-272	48	2 medium tomatoes, finely chopped	2.0	\N	\N	9
-273	23	3 clv garlic, chopped	3.0	\N	\N	1
-273	95	3 green onions, sliced	3.0	\N	\N	2
+272	135	1/2 large jalapeno, seeded and minced ( whole 1 if brave)	0.5			4
+272	18	1/2 Lemon, juice of	0.5			5
+272	139	Juice of large 1/2 lime	0.5			6
+272	0	Salt and pepper	4.0	servings	servings	7
+272	94	4 scallions, white only finely chopped	4.0			8
+272	47	2 medium tomatoes, finely chopped	2.0			9
+273	0	Cooked rice	1.0	serving	serving	0
+273	23	3 clv garlic, chopped	3.0			1
+273	94	3 green onions, sliced	3.0			2
 273	17	1 tablespoon (15 ml) honey	15.0	ml	ml	3
-273	137	1 jalapeno pepper (seeded), 1/4 inch chunks	1.0	\N	\N	4
-273	142	2 tablespoons (30 ml) lime juice	30.0	ml	ml	5
-273	115	1 fresh pineapple, 1/2 inch chunks	1.0	\N	\N	7
-273	77	1 sweet red pepper, 1/4 inch chunks	1.0	\N	\N	8
-274	93	2 tablespoons fresh cilantro, minced	2.0	tablespoons	T	3
-274	137	1 small jalapeno, seeded and finely minced (use more or less based on personal preference)	1.0	\N	\N	5
-274	142	1 tablespoon fresh lime juice	1.0	tablespoon	T	7
-274	73	2 tablespoons olive oil	2.0	tablespoons	T	9
+273	135	1 jalapeno pepper (seeded), 1/4 inch chunks	1.0			4
+273	139	2 tablespoons (30 ml) lime juice	30.0	ml	ml	5
+273	0	1 mango (seeded), 1/2 inch chunks	1.0			6
+273	113	1 fresh pineapple, 1/2 inch chunks	1.0			7
+273	76	1 sweet red pepper, 1/4 inch chunks	1.0			8
+273	0	4 boneless, skinless chicken breasts	4.0			9
+274	0	1 ripe avocado, pitted and scooped from skin	1.0			0
+274	0	2 pounds white flaky fish (halibut, cod, etc.)	2.0	pounds	lb	1
+274	0	8 soft taco flour tortillas	8.0			2
+274	92	2 tablespoons fresh cilantro, minced	2.0	tablespoons	T	3
+274	0	1/4 cup nonfat Greek yogurt	0.25	cup	c	4
+274	135	1 small jalapeno, seeded and finely minced (use more or less based on personal preference)	1.0			5
+274	156	1 cup shredded lettuce	1.0	cup	c	6
+274	139	1 tablespoon fresh lime juice	1.0	tablespoon	T	7
+274	0	1 tablespoon lime zest	1.0	tablespoon	T	8
+274	72	2 tablespoons olive oil	2.0	tablespoons	T	9
 274	4	2 tablespoons onion, finely diced	2.0	tablespoons	T	10
-274	48	3 tomatoes seeded, diced fine	3.0	\N	\N	13
-275	88	2 tablespoons chopped fresh basil	2.0	tablespoons	T	2
+274	0	Salt and pepper, to taste	4.0	servings	servings	11
+274	0	1 tablespoon clear tequila	1.0	tablespoon	T	12
+274	47	3 tomatoes seeded, diced fine	3.0			13
+275	0	1/2 cup Anaheim peppers, seeded, diced	0.5	cup	c	0
+275	0	1 1/2 cups cherries, pitted, diced	1.5	cups	c	1
+275	87	2 tablespoons chopped fresh basil	2.0	tablespoons	T	2
+275	0	1 teaspoon fresh mint, chiffonade	1.0	teaspoon	t	3
 275	23	1 clove garlic, minced	1.0	clove	clove	4
-275	73	2 small 1 tablespoones olive oil	2.0	tablespoon	T	7
-275	115	1 cup fresh pineapple, diced	1.0	cup	c	9
-276	93	1/4 cup chopped cilantro	0.25	cup	c	0
-276	142	juice of half a lime	4.0	\N	\N	3
-276	115	1 cup finely-chopped fresh pineapple	1.0	cup	c	4
+275	0	1 lime, zested and juiced (keep zest and juice)	1.0			5
+275	0	1 mango, diced	1.0			6
+275	72	2 small 1 tablespoones olive oil	2.0	tablespoon	T	7
+275	0	1 peach, peeled and diced	1.0			8
+275	113	1 cup fresh pineapple, diced	1.0	cup	c	9
+275	0	12 ounces salmon fillet	12.0	ounces	oz	10
+275	0	salt and pepper to taste	2.0	servings	servings	11
+275	0	2 teaspoons minced shallot	2.0	teaspoons	t	12
+276	92	1/4 cup chopped cilantro	0.25	cup	c	0
+276	0	1/4 cup finely-chopped red onion	0.25	cup	c	1
+276	0	2 cups finely-diced ripe mango	2.0	cups	c	2
+276	139	juice of half a lime	4.0			3
+276	113	1 cup finely-chopped fresh pineapple	1.0	cup	c	4
+276	0	2 pounds skin-on salmon fillet cut in 4 pieces	2.0	pounds	lb	5
 276	6	Salt	4.0	servings	servings	6
-277	59	black pepper	2.0	servings	servings	1
-277	93	1 bunch cilantro	1.0	bunch	bunch	4
+277	0	2 ripe avocados	2.0			0
+277	58	black pepper	2.0	servings	servings	1
+277	0	1 can pinto beans	1.0	can	can	2
+277	0	2 cups chicken stock	2.0	cups	c	3
+277	92	1 bunch cilantro	1.0	bunch	bunch	4
+277	0	12 10-inch corn tortillas	12.0	10-inch	10-inch	5
 277	23	4 cloves garlic	4.0	cloves	cloves	6
-277	49	ground cumin	2.0	servings	servings	7
-277	137	1 small jalapeno	1.0	\N	\N	8
-277	141	1 lime	1.0	\N	\N	9
+277	48	ground cumin	2.0	servings	servings	7
+277	135	1 small jalapeno	1.0			8
+277	138	1 lime	1.0			9
+277	0	shredded monterey jack cheese	2.0	servings	servings	10
+277	0	1 navel orange	1.0			11
+277	71	oil for frying	2.0	servings	servings	12
+277	0	2 lbs boneless pork shoulder	2.0	lbs	lb	13
 277	4	2 cups red onion	2.0	cups	c	14
-277	97	sea salt	2.0	servings	servings	15
-277	128	sour cream	2.0	servings	servings	16
-277	48	some fresh tomatoes	2.0	servings	servings	17
-277	100	1 dash white vinegar	1.0	dash	dash	18
-278	3	20 mini bell peppers (you can buy in a large bag)	20.0	\N	\N	0
+277	96	sea salt	2.0	servings	servings	15
+277	126	sour cream	2.0	servings	servings	16
+277	47	some fresh tomatoes	2.0	servings	servings	17
+277	98	1 dash white vinegar	1.0	dash	dash	18
+278	3	20 mini bell peppers (you can buy in a large bag)	20.0			0
 278	35	7 oz canned black beans ( about 1/2 a can)	7.0	oz	oz	1
-278	96	1 TBSP Chili Powder	1.0	TBSP	TBSP	2
-278	120	3 oz chipotles in adobo ( about 1/2 a can)	3.0	oz	oz	3
+278	95	1 TBSP Chili Powder	1.0	TBSP	TBSP	2
+278	118	3 oz chipotles in adobo ( about 1/2 a can)	3.0	oz	oz	3
+278	0	7 oz canned fire roasted tomatoes ( about 1/2 a can)	7.0	oz	oz	4
 278	23	1 tablespoon minced garlic	1.0	tablespoon	T	5
-278	121	4 oz can green chilies	4.0	oz	oz	6
-278	94	1 TSP Ground Coriander	1.0	\N	\N	7
-278	49	1 TBSP Ground Cumin	1.0	TBSP	TBSP	8
+278	119	4 oz can green chilies	4.0	oz	oz	6
+278	93	1 TSP Ground Coriander	1.0			7
+278	48	1 TBSP Ground Cumin	1.0	TBSP	TBSP	8
+278	0	10 oz lean ground turkey	10.0	oz	oz	9
 278	41	1 TBSP Paprika	1.0	TBSP	TBSP	10
-278	4	1/2 yellow onion	0.5	\N	\N	12
+278	0	3 tomatillos	3.0			11
+278	4	1/2 yellow onion	0.5			12
 279	10	2 tablespoons of Butter	2.0	tablespoons	T	0
-279	96	1/2 teaspoon Chili Powder	0.5	teaspoon	t	3
-279	93	1 bunch Small of Cilantro	1.0	bunch	bunch	4
-279	49	1/2 teaspoon of Cumin	0.5	teaspoon	t	5
+279	0	1 1/2 cups grated cheese	1.5	cups	c	1
+279	0	4 Oz. Can of Green Chiles	4.0	oz	oz	2
+279	95	1/2 teaspoon Chili Powder	0.5	teaspoon	t	3
+279	92	1 bunch Small of Cilantro	1.0	bunch	bunch	4
+279	48	1/2 teaspoon of Cumin	0.5	teaspoon	t	5
 279	15	3 tablespoons of Flour	3.0	tablespoons	T	6
 279	20	1 cup of Milk	1.0	cup	c	7
+279	0	1 cup salsa	1.0	cup	c	8
+279	0	2 cups Tortilla Chips	2.0	cups	c	9
+280	0	1 avocado, cubed	1.0			0
 280	35	15 oz can of black beans, rinsed and drained	15.0	oz	oz	1
-280	73	1 teaspoon olive oil	1.0	teaspoon	t	4
+280	0	4 large flour tortillas	4.0			2
+280	0	1 small mango, cubed	1.0			3
+280	72	1 teaspoon olive oil	1.0	teaspoon	t	4
 280	4	1 1/2 cups of onion, diced	1.5	cups	c	5
 280	45	1 teaspoon oregano	1.0	teaspoon	t	6
-281	101	1/4 cup apple cider vinegar	0.25	cup	c	0
-281	2	1 carrot, grated	1.0	\N	\N	1
-281	120	1/2 can chipotle chilies in adobo sauce (3-4 peppers chopped)	0.5	can	can	2
+280	0	1 poblano (aka pasilla) pepper, seeded and chopped	1.0			7
+280	0	salt and pepper to taste	2.0	servings	servings	8
+280	0	1/2 cup sharp cheddar cheese	0.5	cup	c	9
+281	99	1/4 cup apple cider vinegar	0.25	cup	c	0
+281	2	1 carrot, grated	1.0			1
+281	118	1/2 can chipotle chilies in adobo sauce (3-4 peppers chopped)	0.5	can	can	2
 281	23	2 Cloves garlic, minced	2.0	Cloves	Cloves	3
-281	142	Juice of 1 lime	1.0	\N	\N	5
-281	56	2 cups chopped mushrooms	2.0	cups	c	6
-281	73	3 tablespoons olive oil	3.0	tablespoons	T	7
-281	4	1 green onion stalk	1.0	\N	\N	8
+281	0	1 cup Greek yogurt	1.0	cup	c	4
+281	139	Juice of 1 lime	1.0			5
+281	55	2 cups chopped mushrooms	2.0	cups	c	6
+281	72	3 tablespoons olive oil	3.0	tablespoons	T	7
+281	4	1 green onion stalk	1.0			8
+281	0	1 5-lb pork shoulder roast	5.0	lb	lb	9
+281	149	1 head purple cabbage	1.0	head	head	10
+281	0	1/2 cup red wine	0.5	cup	c	11
 281	6	2 tablespoons salt	2.0	tablespoons	T	12
-281	107	1 cup vegetable broth	1.0	cup	c	14
-281	4	1 yellow onion	1.0	\N	\N	15
-282	59	Freshly-ground black pepper to taste	4.0	servings	servings	1
-282	124	Pinch of Cayenne pepper	1.0	pinch	pinch	2
-282	93	1 tablespoon cilantro, chopped fine	1.0	tablespoon	T	3
+281	0	Salt pepper to taste	12.0	servings	servings	13
+281	105	1 cup vegetable broth	1.0	cup	c	14
+281	4	1 yellow onion	1.0			15
+282	0	2 teaspoons dried ancho chili powder	2.0	teaspoons	t	0
+282	58	Freshly-ground black pepper to taste	4.0	servings	servings	1
+282	122	Pinch of Cayenne pepper	1.0	pinch	pinch	2
+282	92	1 tablespoon cilantro, chopped fine	1.0	tablespoon	T	3
+282	141	1/2 tablespoon fresh ginger, minced	0.5	tablespoon	T	4
 282	23	1 clove garlic, minced	1.0	clove	clove	5
-282	49	1 teaspoon ground cumin	1.0	teaspoon	t	7
-282	137	1/2 jalapeno, minced	0.5	\N	\N	8
-282	142	Juice of 1 lime	1.0	\N	\N	9
-282	98	1/2 teaspoon Kosher salt	0.5	teaspoon	t	11
-282	73	2 tablespoons olive oil	2.0	tablespoons	T	13
-282	4	1 red onion – sliced	1.0	\N	\N	15
+282	143	1 teaspoon garlic powder	1.0	teaspoon	t	6
+282	48	1 teaspoon ground cumin	1.0	teaspoon	t	7
+282	135	1/2 jalapeno, minced	0.5			8
+282	139	Juice of 1 lime	1.0			9
+282	0	2 kiwis, peeled and and diced	2.0			10
+282	97	1/2 teaspoon Kosher salt	0.5	teaspoon	t	11
+282	0	2 Mangos, peeled and diced	2.0			12
+282	72	2 tablespoons olive oil	2.0	tablespoons	T	13
+282	0	1 3 pound Pork Tenderloin	3.0	pound	lb	14
+282	4	1 red onion – sliced	1.0			15
 282	6	Salt to taste	4.0	servings	servings	16
+282	0	salt and pepper to taste	4.0	servings	servings	17
+282	0	2 cups tomatillos, diced	2.0	cups	c	18
+283	0	2 avocados, sliced	2.0			0
 283	35	1 can black beans, rinsed and drained	1.0	can	can	1
-283	142	juice of 1 lime	1.0	\N	\N	4
-283	73	1 tbsp olive oil	1.0	tbsp	T	5
-283	4	1 small onion, diced	1.0	\N	\N	6
-283	77	2 red bell peppers, diced	2.0	\N	\N	7
-284	68	1 can (28oz) whole tomatoes with juice	28.0	oz	oz	0
-284	93	1/2 cup fresh cilantro (large stems removed)	0.5	cup	c	1
+283	0	1 1/2 cup corn	1.5	cup	c	2
+283	143	2 tsp garlic powder	2.0	tsp	t	3
+283	139	juice of 1 lime	1.0			4
+283	72	1 tbsp olive oil	1.0	tbsp	T	5
+283	4	1 small onion, diced	1.0			6
+283	76	2 red bell peppers, diced	2.0			7
+283	0	salt & pepper	4.0	servings	servings	8
+283	0	1 lb sharp cheddar, grated	1.0	lb	lb	9
+283	0	4 tortilla wraps	4.0			10
+284	67	1 can (28oz) whole tomatoes with juice	28.0	oz	oz	0
+284	92	1/2 cup fresh cilantro (large stems removed)	0.5	cup	c	1
 284	23	1 clove garlic, minced	1.0	clove	clove	2
-284	49	1/4 - 1/2 t. ground cumin	0.25	t	t	3
-284	137	1 whole jalapeno, quartered, seeds removed, sliced thin.	1.0	\N	\N	4
-284	142	juice from 1/2 a lime	2.0	\N	\N	5
-284	4	1/4 of an onion chopped (approximately 1/4 cup)	0.25	\N	\N	6
+284	48	1/4 - 1/2 t. ground cumin	0.25	t	t	3
+284	135	1 whole jalapeno, quartered, seeds removed, sliced thin.	1.0			4
+284	139	juice from 1/2 a lime	2.0			5
+284	4	1/4 of an onion chopped (approximately 1/4 cup)	0.25			6
 284	6	Salt to taste	4.0	servings	servings	7
-284	116	1/4 t. sugar	0.25	t	t	9
-284	48	2 cans (10oz) Rotel tomatoes (or the store brand of diced tomatoes and green chilies)	10.0	oz	oz	10
-285	3	1 whole Bell Pepper	1.0	\N	\N	0
-285	59	black pepper	4.0	servings	servings	1
+284	0	1/4 t. Penzey's Southwest seasoning (or another brand)	0.25	t	t	8
+284	114	1/4 t. sugar	0.25	t	t	9
+284	47	2 cans (10oz) Rotel tomatoes (or the store brand of diced tomatoes and green chilies)	10.0	oz	oz	10
+285	3	1 whole Bell Pepper	1.0			0
+285	58	black pepper	4.0	servings	servings	1
 285	35	1 can 14.5-oz. Black Beans	1.0	can	can	2
-285	2	1 whole Carrot	1.0	\N	\N	3
-285	96	1 Tablespoon Chili Powder	1.0	Tablespoon	Tablespoon	4
-285	96	1 teaspoon Chili Powder	1.0	teaspoon	t	5
-285	73	2 Tablespoons Olive Oil	2.0	Tablespoons	Tablespoons	10
-285	4	1/2 whole Onion	0.5	\N	\N	11
-285	128	4 Tablespoons Light Sour Cream	4.0	Tablespoons	Tablespoons	17
-286	14	6 eggs	6.0	\N	\N	1
-286	141	3 limes	3.0	\N	\N	2
-286	116	3/4 cup sugar	0.75	cup	c	3
+285	2	1 whole Carrot	1.0			3
+285	95	1 Tablespoon Chili Powder	1.0	Tablespoon	Tablespoon	4
+285	95	1 teaspoon Chili Powder	1.0	teaspoon	t	5
+285	0	8 Tablespoons Corn	8.0	Tablespoons	Tablespoons	6
+285	0	4 whole Flour Burrito Tortillas	4.0			7
+285	143	1 Tablespoon Garlic Powder	1.0	Tablespoon	Tablespoon	8
+285	0	8 Tablespoons Guacamole	8.0	Tablespoons	Tablespoons	9
+285	72	2 Tablespoons Olive Oil	2.0	Tablespoons	Tablespoons	10
+285	4	1/2 whole Onion	0.5			11
+285	166	1 Tablespoon Onion Powder	1.0	Tablespoon	Tablespoon	12
+285	166	1 teaspoon Onion Powder	1.0	teaspoon	t	13
+285	167	1 whole Pasilla Chile	1.0			14
+285	0	4 Tablespoons Your Favorite Salsa	4.0	Tablespoons	Tablespoons	15
+285	168	1/2 cups Shredded Cheddar Cheese, Divided	0.5	cups	c	16
+285	126	4 Tablespoons Light Sour Cream	4.0	Tablespoons	Tablespoons	17
+285	0	2 whole Zucchini	2.0			18
+286	0	2 cups of condensed milk	2.0	cups	c	0
+286	14	6 eggs	6.0			1
+286	138	3 limes	3.0			2
+286	114	3/4 cup sugar	0.75	cup	c	3
+286	0	1 vanilla pod, sliced in half lengthwise	1.0			4
 286	7	3 tablespoons water	3.0	tablespoons	T	5
 286	20	2 cups whole milk	2.0	cups	c	6
 287	8	1 teaspoon of Baking Powder	1.0	teaspoon	t	0
+287	0	5 1/4 cups of Veggie Broth	5.25	cups	c	1
 287	10	1 stick of Butter	1.0	stick	stick	2
-287	96	2 teaspoons of Chili Powder	2.0	teaspoons	t	3
-287	93	1 bunch Large of Chopped Cilantro	1.0	bunch	bunch	4
-287	49	2 teaspoons of Cumin	2.0	teaspoons	t	6
+287	95	2 teaspoons of Chili Powder	2.0	teaspoons	t	3
+287	92	1 bunch Large of Chopped Cilantro	1.0	bunch	bunch	4
+287	0	1 package of Corn Husks	1.0	package	pkg	5
+287	48	2 teaspoons of Cumin	2.0	teaspoons	t	6
 287	23	1 clove Garlic minced	1.0	clove	clove	7
-287	95	3 Green Onions, Chopped	3.0	\N	\N	8
-287	142	1/2 of a Lime, Juiced	0.5	\N	\N	9
-287	48	2 Roma Tomatoes, Chopped	2.0	\N	\N	12
+287	94	3 Green Onions, Chopped	3.0			8
+287	139	1/2 of a Lime, Juiced	0.5			9
+287	0	2 cups of Masa	2.0	cups	c	10
+287	71	Oil for deep frying	1.0	serving	serving	11
+287	47	2 Roma Tomatoes, Chopped	2.0			12
 287	6	Salt	1.0	serving	serving	13
-288	3	1/2 green bell pepper	0.5	\N	\N	1
-288	142	1 tablespoon of lime juice	1.0	tablespoon	T	2
-288	77	1/2 red bell pepper	0.5	\N	\N	5
+287	168	1/2 cup of Shredded Cheddar Cheese	0.5	cup	c	14
+287	0	1 Zucchini, Chopped	1.0			15
+288	0	a handful of cherry tomatoes	1.0	handful	handful	0
+288	3	1/2 green bell pepper	0.5			1
+288	139	1 tablespoon of lime juice	1.0	tablespoon	T	2
+288	0	2 Large Mangoes	2.0			3
+288	152	A few scent leaves or mint leaves	3.0	leaves	leaves	4
+288	76	1/2 red bell pepper	0.5			5
 288	4	2 handfuls of chopped red onions	2.0	handfuls	handfuls	6
-288	116	A pinch of sugar	1.0	pinch	pinch	7
+288	114	A pinch of sugar	1.0	pinch	pinch	7
+289	0	2 cups Bulgur wheat	2.0	cups	c	0
+289	0	11 ounces Chavrie� Goat Log	11.0	ounces	oz	1
 289	18	1 ounce Lemon juice	1.0	ounce	oz	2
-289	73	Olive oil	10.0	servings	servings	4
+289	152	1 teaspoon Chopped mint	1.0	teaspoon	t	3
+289	72	Olive oil	10.0	servings	servings	4
 289	43	1/2 cup parsley, chopped	0.5	cup	c	5
 289	4	1 cup Red onion (minced)	1.0	cup	c	6
-289	48	1 ea. Tomato diced	1.0	\N	\N	8
+289	0	Salt and Pepper to taste	10.0	servings	servings	7
+289	47	1 ea. Tomato diced	1.0			8
 289	7	8 ounces water	8.0	ounces	oz	9
-290	2	8 small carrots	8.0	\N	\N	0
-290	49	1 tbsp cumin	1.0	tbsp	T	2
+290	2	8 small carrots	8.0			0
+290	0	16 cherry tomatoes, halved	16.0			1
+290	48	1 tbsp cumin	1.0	tbsp	T	2
+290	0	2 tbsp fresh dill	2.0	tbsp	T	3
 290	23	4 cloves garlic, minced	4.0	cloves	cloves	4
-290	59	1 tbsp ground pepper	1.0	tbsp	T	7
-290	18	juice of 1 lemon	1.0	\N	\N	9
-290	73	1/2 tbsp olive oil	0.5	tbsp	T	12
-290	73	1 tbsp olive oil	1.0	tbsp	T	13
-290	4	1/2 onion, minced	0.5	\N	\N	14
+290	143	1 tbsp garlic powder	1.0	tbsp	T	5
+290	0	1/2 cup greek yogurt	0.5	cup	c	6
+290	58	1 tbsp ground pepper	1.0	tbsp	T	7
+290	0	1/2 cup hummus	0.5	cup	c	8
+290	18	juice of 1 lemon	1.0			9
+290	174	1 cup long grain rice	1.0	cup	c	10
+290	0	2 cups low sodium chicken broth	2.0	cups	c	11
+290	72	1/2 tbsp olive oil	0.5	tbsp	T	12
+290	72	1 tbsp olive oil	1.0	tbsp	T	13
+290	4	1/2 onion, minced	0.5			14
+290	166	1 tbsp onion powder	1.0	tbsp	T	15
 290	43	1/2 cup parsley, roughly chopped	0.5	cup	c	16
+290	0	1 tbsp pepper	1.0	tbsp	T	17
+290	0	pita	4.0	servings	servings	18
 290	6	1 tbsp salt	1.0	tbsp	T	19
-291	124	1 teaspoon cayenne pepper	1.0	teaspoon	t	1
-291	49	1/2 teaspoon cumin	0.5	teaspoon	t	2
-291	73	2 tablespoons extra-virgin olive oil	2.0	tablespoons	T	4
-291	95	5 green onions, chopped	5.0	\N	\N	5
+290	0	3 boneless skinless chicken breasts	3.0			20
+290	162	2 tbsp turmeric	2.0	tbsp	T	21
+290	0	1 tsp turmeric powder	1.0	tsp	t	22
+291	0	1/2 avocado, diced	0.5			0
+291	122	1 teaspoon cayenne pepper	1.0	teaspoon	t	1
+291	48	1/2 teaspoon cumin	0.5	teaspoon	t	2
+291	0	1/2 cup English cucumber, diced	0.5	cup	c	3
+291	72	2 tablespoons extra-virgin olive oil	2.0	tablespoons	T	4
+291	94	5 green onions, chopped	5.0			5
 291	43	1/2 cup parsley, chopped	0.5	cup	c	6
-291	29	5 red radishes, diced	5.0	\N	\N	8
-291	102	3 1/2 tablespoons red wine vinegar	3.5	tablespoons	T	9
+291	0	1 cup red quinoa	1.0	cup	c	7
+291	29	5 red radishes, diced	5.0			8
+291	100	3 1/2 tablespoons red wine vinegar	3.5	tablespoons	T	9
 291	6	2 teaspoons salt	2.0	teaspoons	t	10
-291	48	1/2 tomato	0.5	\N	\N	11
+291	47	1/2 tomato	0.5			11
+291	0	1 teaspoon tumeric	1.0	teaspoon	t	12
 291	7	1 cup water	1.0	cup	c	13
-291	83	1/2 cup yellow pepper,diced	0.5	cup	c	14
+291	82	1/2 cup yellow pepper,diced	0.5	cup	c	14
+292	0	1/2 cup bulgur	0.5	cup	c	0
+292	0	2 smalls cucumbers	2.0			1
 292	43	1 bunch of flat leaf parsley	1.0	bunch	bunch	2
-292	18	1/2 lemon juice from a lemon	0.5	\N	\N	3
-292	73	3 tablespoons of olive oil	3.0	tablespoons	T	4
+292	18	1/2 lemon juice from a lemon	0.5			3
+292	72	3 tablespoons of olive oil	3.0	tablespoons	T	4
 292	6	Salt	1.0	serving	serving	5
-292	48	2 medium sized tomatoes	2.0	\N	\N	6
+292	47	2 medium sized tomatoes	2.0			6
 293	37	540 ml can of chickpeas, drained and rinsed	540.0	ml	ml	0
+293	0	8 slices of cucumber	8.0	slices	slices	1
 293	43	1 large handful parsley, chopped	1.0	handful	handful	2
 293	23	2 cloves garlic, grated or finely chopped	2.0	cloves	cloves	3
-293	4	1 small red onion, chopped	1.0	\N	\N	6
+293	0	4 hamburger buns (I used President's Choice multi-grain thins)	4.0			4
+293	0	4 tbsp peanut oil	4.0	tbsp	T	5
+293	4	1 small red onion, chopped	1.0			6
 293	32	� tsp sriracha sauce	0.5	tsp	t	7
-293	48	8 slices of tomato	8.0	slices	slices	9
+293	0	2 tsp tahini	2.0	tsp	t	8
+293	47	8 slices of tomato	8.0	slices	slices	9
+293	0	Tzatziki for topping	4.0	servings	servings	10
 294	37	2 cans garbanzo beans (chickpeas), drained and rinsed	2.0	cans	cans	0
-294	96	1 tablespoon chili powder	1.0	tablespoon	T	1
-294	49	1 tablespoon cumin	1.0	tablespoon	T	3
+294	95	1 tablespoon chili powder	1.0	tablespoon	T	1
+294	0	1 tablespoon coriander	1.0	tablespoon	T	2
+294	48	1 tablespoon cumin	1.0	tablespoon	T	3
 294	15	4 tablespoons flour	4.0	tablespoons	T	4
 294	43	1 large handful parsley, chopped	1.0	handful	handful	5
 294	23	2 cloves garlic, grated or finely chopped	2.0	cloves	cloves	6
-294	18	juice of 2 lemons	2.0	\N	\N	8
-294	4	1 small red onion, chopped	1.0	\N	\N	10
-294	72	1/4 cup vegetable oil	0.25	cup	c	14
+294	146	Zest of 2 lemons	2.0			7
+294	18	juice of 2 lemons	2.0			8
+294	0	4 pita pockets	4.0			9
+294	4	1 small red onion, chopped	1.0			10
+294	0	Salt and pepper, to taste	4.0	servings	servings	11
+294	0	1/2 cup tahini	0.5	cup	c	12
+294	162	1 1/2 teaspoons turmeric	1.5	teaspoons	t	13
+294	71	1/4 cup vegetable oil	0.25	cup	c	14
 294	7	3 tablespoons water	3.0	tablespoons	T	15
+295	0	2 tablespoons all purpose flour	2.0	tablespoons	T	0
 295	8	1 teaspoon baking powder	1.0	teaspoon	t	1
 295	1	1 cup raw black eyed beans	1.0	cup	c	2
-295	50	2 teaspoons cumin seeds	2.0	teaspoons	t	5
+295	0	2 tablespoons coriander leaves/cilantro - chopped	2.0	tablespoons	T	3
+295	0	2 teaspoons coriander powder	2.0	teaspoons	t	4
+295	49	2 teaspoons cumin seeds	2.0	teaspoons	t	5
 295	36	1 cup raw garbanzo beans/ chickpeas	1.0	cup	c	6
 295	23	4 garlic cloves - chopped	4.0	cloves	cloves	7
 295	4	1/2 cup onions - finely chopped	0.5	cup	c	8
 295	43	1 tablespoon parsley - chopped	1.0	tablespoon	T	9
+295	0	pepper	12.0	servings	servings	10
 295	6	Salt	12.0	servings	servings	11
-295	72	1 cup vegetable oil, for frying	1.0	cup	c	12
-296	49	1 teaspoon cumin	1.0	teaspoon	t	1
-296	95	3/4 cup green onions, chopped	0.75	cup	c	4
-296	73	1/4 cup olive oil	0.25	cup	c	7
+295	71	1 cup vegetable oil, for frying	1.0	cup	c	12
+296	0	1 1/2 cups cucumber	1.5	cups	c	0
+296	48	1 teaspoon cumin	1.0	teaspoon	t	1
+296	0	3/4 cup crumbled feta cheese	0.75	cup	c	2
+296	0	1/2 cup fresh chopped mint	0.5	cup	c	3
+296	94	3/4 cup green onions, chopped	0.75	cup	c	4
+296	0	1 cup kalamata olives	1.0	cup	c	5
+296	145	1 lemon	1.0			6
+296	72	1/4 cup olive oil	0.25	cup	c	7
 296	43	1/4 cup chopped parsley	0.25	cup	c	8
-296	77	2 red bell peppers	2.0	\N	\N	10
-296	48	1 large tomato, chopped	1.0	\N	\N	12
-297	14	2 Eggs	2.0	\N	\N	1
+296	0	3 pita breads	3.0			9
+296	76	2 red bell peppers	2.0			10
+296	0	Salt and Pepper	6.0	servings	servings	11
+296	47	1 large tomato, chopped	1.0			12
+296	0	4 Zucchini	4.0			13
+297	0	2 cups water or lamb/beef stock	2.0	cups	c	0
+297	14	2 Eggs	2.0			1
 297	43	3 tablespoons minced fresh parsley	3.0	tablespoons	T	2
 297	23	2 garlic cloves, minced	2.0	cloves	cloves	3
-297	42	1 kilo lean ground beef or lamb	1.0	\N	\N	4
-297	49	1 tablespoon ground cumin	1.0	tablespoon	T	5
-297	4	1 small Onion, chopped finely	1.0	\N	\N	6
+297	42	1 kilo lean ground beef or lamb	1.0			4
+297	48	1 tablespoon ground cumin	1.0	tablespoon	T	5
+297	4	1 small Onion, chopped finely	1.0			6
 297	41	1 teaspoon paprika	1.0	teaspoon	t	7
-297	76	2 medium green peppers, seeded and cut diagonally into slices	2.0	\N	\N	8
-297	71	1 tablespoon tomato paste	1.0	tablespoon	T	10
-297	48	3 large tomatoes, diced	3.0	\N	\N	11
+297	75	2 medium green peppers, seeded and cut diagonally into slices	2.0			8
+297	0	salt and pepper	6.0	servings	servings	9
+297	70	1 tablespoon tomato paste	1.0	tablespoon	T	10
+297	47	3 large tomatoes, diced	3.0			11
 297	10	2 tablespoons unsalted butter	2.0	tablespoons	T	12
-297	73	1/4 cup virgin olive oil	0.25	cup	c	13
+297	72	1/4 cup virgin olive oil	0.25	cup	c	13
+298	0	6 loaves Arabic Flat Bread	6.0			0
+298	0	2 Kilos LARGE CUT UP PEACES OF LAMB (WITH BONES) or Lamb Shanks	2.0			1
 298	7	2 Liters WATER TO BOIL MEAT	2.0	liters	l	2
-298	4	2 Larges ONION	2.0	\N	\N	3
+298	4	2 Larges ONION	2.0			3
+298	0	1/2 cup FRIED PINE NUTS	0.5	cup	c	4
+298	174	3 cups RICE ( Short grain or any of your choice)	3.0	cups	c	5
 298	10	1 1/2 cups BUTTER	1.5	cups	c	6
+298	39	1 Kilo CONTAINER PLAIN whole milk YOGURT (Or you can just use JAMEED)	1.0	kilogram	kg	7
 298	6	Salt	6.0	serving	serving	8
-298	49	1 teaspoon Cumin, Turmeric, and any other spices if desired for	1.0	teaspoon	tsp	9
+298	48	1 teaspoon Cumin, Turmeric, and any other spices if desired for	1.0	teaspoon	tsp	9
+298	0	1/2 cup SLIVERED ALMONDS	0.5	cup	c	10
+299	0	3 tablespoons agave nectar	3.0	tablespoons	T	0
 299	12	1/2 teaspoon cinnamon	0.5	teaspoon	t	1
-299	116	cup sugar	1.0	cup	c	5
-299	136	1/2 teaspoon vanilla extract	0.5	teaspoon	t	6
+299	0	cup Earth Balance, melted	1.0	cup	c	2
+299	0	1/4 teaspoon lime zest	0.25	teaspoon	t	3
+299	0	1/4 of a package of phyllo dough	0.25			4
+299	114	cup sugar	1.0	cup	c	5
+299	134	1/2 teaspoon vanilla extract	0.5	teaspoon	t	6
+299	0	5 oz chopped walnuts	5.0	oz	oz	7
 299	7	cup water	1.0	cup	c	8
-300	68	1 400 gram can peeled tomatoes, (chopped)	400.0	gram	g	0
-300	81	1 tablespoon curry powder, (1 to 2)	1.0	tablespoon	T	1
-300	14	1 egg, lightly beaten	1.0	\N	\N	2
+300	67	1 400 gram can peeled tomatoes, (chopped)	400.0	gram	g	0
+300	80	1 tablespoon curry powder, (1 to 2)	1.0	tablespoon	T	1
+300	14	1 egg, lightly beaten	1.0			2
+300	0	1 cup fresh breadcrumbs	1.0	cup	c	3
+300	0	2 teaspoons garam masala	2.0	teaspoons	t	4
 300	23	5 cloves garlic	5.0	cloves	cloves	5
+300	141	1 teaspoon ginger	1.0	teaspoon	t	6
+300	0	500 grams trim lamb mince	500.0	grams	g	7
+300	71	1 tablespoon oil	1.0	tablespoon	T	8
 301	37	16 oz can chickpeas, drained and rinsed	16.0	oz	oz	0
+301	0	1/2 cucumber, halved and sliced	0.5			1
+301	0	1/2 cup feta cheese, crumbled	0.5	cup	c	2
 301	43	2 tablespoons fresh parsley	2.0	tablespoons	T	3
 301	23	1 garlic clove, minced	1.0	clove	clove	4
 301	23	4 garlic cloves, minced	4.0	cloves	cloves	5
-301	94	1 teaspoon ground coriander	1.0	teaspoon	t	6
-301	49	1 tablespoon ground cumin	1.0	tablespoon	T	7
+301	93	1 teaspoon ground coriander	1.0	teaspoon	t	6
+301	48	1 tablespoon ground cumin	1.0	tablespoon	T	7
+301	145	2 juice from lemons	2.0			8
 301	41	1/2 teaspoon paprika	0.5	teaspoon	t	9
-301	4	1/2 red onion, finely sliced	0.5	\N	\N	11
-301	48	1 tomato, diced	1.0	\N	\N	14
-301	112	2 tablespoons whole wheat flour	2.0	tablespoons	T	17
-301	4	1/2 yellow onion, chopped	0.5	\N	\N	18
+301	0	4 pitas	4.0			10
+301	4	1/2 red onion, finely sliced	0.5			11
+301	157	1 cup green leaf or romaine lettuce, shredded	1.0	cup	c	12
+301	0	1 tablespoon of tahini	1.0	tablespoon	T	13
+301	47	1 tomato, diced	1.0			14
+301	0	1/4 cup tzatziki (optional)	0.25	cup	c	15
+301	0	2 tablespoons cooked bulgar wheat	2.0	tablespoons	T	16
+301	110	2 tablespoons whole wheat flour	2.0	tablespoons	T	17
+301	4	1/2 yellow onion, chopped	0.5			18
+301	0	1/2 cup tabouleh	0.5	cup	c	19
+302	0	3 tablespoons cooked bulgur wheat	3.0	tablespoons	T	0
 302	43	3 cups flat leaf parsley, about one bushel	3.0	cups	c	1
-302	95	3 tablespoons green onions, finely chopped	3.0	tablespoons	T	3
-302	18	1 Juice from lemon	1.0	\N	\N	4
-302	73	2 tablespoons olive oil	2.0	tablespoons	T	5
-302	48	1/4 cup roma tomatoes, finely chopped	0.25	cup	c	6
-303	73	extra light olive oil	2.0	servings	servings	2
-303	3	1 green pepper cut into strips	1.0	\N	\N	3
-303	4	1/2 small onion thinly sliced	0.5	\N	\N	6
+302	0	1 tablespoon fresh mint	1.0	tablespoon	T	2
+302	94	3 tablespoons green onions, finely chopped	3.0	tablespoons	T	3
+302	18	1 Juice from lemon	1.0			4
+302	72	2 tablespoons olive oil	2.0	tablespoons	T	5
+302	47	1/4 cup roma tomatoes, finely chopped	0.25	cup	c	6
+303	0	6 chicken cutlets/4 chicken breasts	6.0			0
+303	0	2 pickle cucumbers halved and cut into half moons	2.0			1
+303	72	extra light olive oil	2.0	servings	servings	2
+303	3	1 green pepper cut into strips	1.0			3
+303	145	1/2 lemon	0.5			4
+303	152	chopped mint	2.0	servings	servings	5
+303	4	1/2 small onion thinly sliced	0.5			6
 303	43	chopped parsley	2.0	servings	servings	7
-303	48	2 plum tomatoes cut into strips	2.0	\N	\N	9
+303	0	3 whole-wheat pitas	3.0			8
+303	47	2 plum tomatoes cut into strips	2.0			9
 303	29	1 bunch of radishes sliced	1.0	bunch	bunch	10
-304	78	10-12 dried red chili peppers	10.0	\N	\N	3
+303	0	Salt and pepper to taste	2.0	servings	servings	11
+303	0	if you have sumac, add a bit to the dressing	2.0	servings	servings	12
+304	0	600g minced beef	600.0	g	g	0
+304	0	1 tsp ground caraway seeds	1.0	tsp	t	1
+304	0	400ml chicken stock	400.0	ml	ml	2
+304	77	10-12 dried red chili peppers	10.0			3
 304	12	1/2 teaspoon Cinnamon	0.5	teaspoon	t	4
-304	49	1/2 tsp cumin	0.5	tsp	t	5
-304	93	Coriander leaves, half chopped, half whole or	8.0	servings	servings	6
-304	14	1 egg	1.0	\N	\N	7
+304	48	1/2 tsp cumin	0.5	tsp	t	5
+304	92	Coriander leaves, half chopped, half whole or	8.0	servings	servings	6
+304	14	1 egg	1.0			7
 304	23	1 teaspoon Minced garlic	1.0	teaspoon	t	8
-304	94	1 tsp ground coriander	1.0	tsp	t	10
-304	49	1 tsp ground cumin	1.0	tsp	t	11
-304	73	1/4 cup olive oil (or vegetable oil)	0.25	cup	c	13
-304	4	1 onion, finely chopped	1.0	\N	\N	14
-304	60	1 red chili, finely chopped	1.0	\N	\N	15
+304	0	1 tsp ground cloves	1.0	tsp	t	9
+304	93	1 tsp ground coriander	1.0	tsp	t	10
+304	48	1 tsp ground cumin	1.0	tsp	t	11
+304	159	2 tbs harissa*	2.0	tbs	tbs	12
+304	72	1/4 cup olive oil (or vegetable oil)	0.25	cup	c	13
+304	4	1 onion, finely chopped	1.0			14
+304	59	1 red chili, finely chopped	1.0			15
 304	6	1 teaspoon Salt	1.0	teaspoon	t	16
-304	97	1/2 tsp sea salt	0.5	tsp	t	18
-304	48	480g chopped tomato	480.0	g	g	19
+304	0	250g good quality sausage, chopped	250.0	g	g	17
+304	96	1/2 tsp sea salt	0.5	tsp	t	18
+304	47	480g chopped tomato	480.0	g	g	19
+305	0	Freshly cracked black pepper, to taste	8.0	servings	servings	0
+305	0	1/2 large cucumber, diced	0.5			1
+305	0	2 tablespoons Fresh mint	2.0	tablespoons	T	2
 305	43	1/2 cup chopped fresh parsley	0.5	cup	c	3
-305	95	2 green onions	2.0	\N	\N	5
+305	143	1 teaspoon garlic powder	1.0	teaspoon	t	4
+305	94	2 green onions	2.0			5
 305	18	1/2 cup lemon juice	0.5	cup	c	6
-305	73	3 tablespoons olive oil	3.0	tablespoons	T	7
-305	48	1 tomato, diced	1.0	\N	\N	9
+305	72	3 tablespoons olive oil	3.0	tablespoons	T	7
+305	0	1 cup Quinoa	1.0	cup	c	8
+305	47	1 tomato, diced	1.0			9
 305	7	2 cups water	2.0	cups	c	10
-306	49	1 tsp Cumin	1.0	tsp	t	1
-306	14	1 egg	1.0	\N	\N	3
+306	0	1 tsp Coriander	1.0	tsp	t	0
+306	48	1 tsp Cumin	1.0	tsp	t	1
+306	0	2 tsp Dill, Finely Chopped	2.0	tsp	t	2
+306	14	1 egg	1.0			3
 306	23	3 cloves garlic, minced	3.0	cloves	cloves	4
-306	18	1/2 lemon, juiced	0.5	\N	\N	8
-306	73	2 tbsp Olive OIl	2.0	tbsp	T	9
+306	0	1/2 cup nonfat greek yogurt	0.5	cup	c	5
+306	0	2 lbs ground turkey	2.0	lbs	lb	6
+306	0	1/4 cup hummus	0.25	cup	c	7
+306	18	1/2 lemon, juiced	0.5			8
+306	72	2 tbsp Olive OIl	2.0	tbsp	T	9
 306	43	1/4 cup parsley, chopped	0.25	cup	c	10
-306	4	1/4 Red Onion, thinly sliced	0.25	\N	\N	13
+306	0	2 tsp Pepper	2.0	tsp	t	11
+306	0	4 whole-wheat pitas	4.0			12
+306	4	1/4 Red Onion, thinly sliced	0.25			13
 306	6	1 tsp Salt	1.0	tsp	t	14
-306	48	1 tomato, cut into 1/4 inch slices, then halved	1.0	\N	\N	15
-306	4	1/2 yellow onion, finely chopped	0.5	\N	\N	17
+306	47	1 tomato, cut into 1/4 inch slices, then halved	1.0			15
+306	162	1 tsp Turmeric	1.0	tsp	t	16
+306	4	1/2 yellow onion, finely chopped	0.5			17
+307	0	1 teaspoon agave nectar	1.0	teaspoon	t	0
+307	0	1/4 cup feta cheese (optional)	0.25	cup	c	1
 307	43	1/2 cup flat leaf parsley leaves (or a mix of parsley and mint)	0.5	cup	c	2
 307	23	2 cloves garlic, minced	2.0	cloves	cloves	3
-307	98	1 teaspoon kosher salt	1.0	teaspoon	t	4
+307	97	1 teaspoon kosher salt	1.0	teaspoon	t	4
+307	0	4 fresh Lacinato kale leaves	4.0			5
 307	18	2 tablespoons lemon juice	2.0	tablespoons	T	6
-307	66	11/2 cups cooked lentils (many markets carry vacuum-packed, precooked lentils, or boil 1 cup dried brown lentils in 2 cups salted water until tender, then drain)	1.5	cups	c	7
-307	73	3 tablespoons olive oil	3.0	tablespoons	T	8
-307	4	1 small onion, coarsely chopped	1.0	\N	\N	9
+307	65	11/2 cups cooked lentils (many markets carry vacuum-packed, precooked lentils, or boil 1 cup dried brown lentils in 2 cups salted water until tender, then drain)	1.5	cups	c	7
+307	72	3 tablespoons olive oil	3.0	tablespoons	T	8
+307	4	1 small onion, coarsely chopped	1.0			9
 307	43	1 tablespoon minced parsley	1.0	tablespoon	T	10
+307	0	1 large organic English or Persian cucumber with skin (about 1 cup shredded)	1.0			11
+307	0	2 large pita breads	2.0			12
 307	29	1 small bunch red radishes or other varietals such as watermelon or daikon (about 1/2 cup, shredded)	1.0	bunch	bunch	13
+307	0	Salt and freshly ground black pepper to taste	6.0	servings	servings	14
+307	150	1 small head savoy cabbage (about 2 heaping cups, shredded)	1.0	head	head	15
+307	0	1 tablespoon za'atar	1.0	tablespoon	T	16
+307	0	1/2 teaspoon ground sumac	0.5	teaspoon	t	17
 308	10	1 1/2 cups melted butter	1.5	cups	c	0
+308	0	1 cup heavy cream or light cream	1.0	cup	c	1
 308	18	1 tsp lemon juice	1.0	tsp	t	2
-308	116	1 Tbsp sugar	1.0	Tbsp	Tbsp	5
+308	0	1 1/2 pkgs. phyllo pastry dough	1.5	pkgs	pkgs	3
+308	0	1 cup (� lb.) walnuts or pistachios or combination	0.5	lb	lb	4
+308	114	1 Tbsp sugar	1.0	Tbsp	Tbsp	5
 308	7	2 cups water	2.0	cups	c	6
+309	0	2 packages organic baby spinach	2.0	packages	packages	0
 309	10	4 tablespoons butter	4.0	tablespoons	T	1
-309	88	12 large fresh basil leaves	12.0	\N	\N	2
+309	87	12 large fresh basil leaves	12.0			2
 309	23	1 clove garlic	1.0	clove	clove	3
-309	18	1/2 Juice of lemon	0.5	\N	\N	5
-309	73	1 tablespoon olive oil	1.0	tablespoon	T	7
+309	0	1 tablespoon Herbs de Provence	1.0	tablespoon	T	4
+309	18	1/2 Juice of lemon	0.5			5
+309	172	1 cup grated mozzarella cheese	1.0	cup	c	6
+309	72	1 tablespoon olive oil	1.0	tablespoon	T	7
+309	166	1 teaspoon onion powder	1.0	teaspoon	t	8
+309	0	cups quick cooking grits (NOT instant)	1.0	cups	c	9
 309	6	Salt	4.0	servings	servings	10
-309	53	1 pound shrimp	1.0	pound	lb	11
-309	125	1 sweet onion finely chopped	1.0	\N	\N	13
+309	52	1 pound shrimp	1.0	pound	lb	11
+309	0	2 sun dried tomatoes packed in olive oil	2.0			12
+309	123	1 sweet onion finely chopped	1.0			13
 309	7	cups boiling water	1.0	cups	c	14
+310	0	1 teaspoon Almond extract	1.0	teaspoon	t	0
 310	8	1/4 teaspoon Baking powder	0.25	teaspoon	t	1
+310	0	1/2 teaspoon Baking soda	0.5	teaspoon	t	2
 310	10	1 cup Butter or margarine, softened	1.0	cup	c	3
 310	15	1 3/4 cups All-purpose flour	1.75	cups	c	4
 310	6	1/4 teaspoon Salt	0.25	teaspoon	t	5
-310	116	1 cup Sugar	1.0	cup	c	7
-311	14	1 Egg, beaten	1.0	\N	\N	2
+310	0	1/2 cup Slivered almonds	0.5	cup	c	6
+310	114	1 cup Sugar	1.0	cup	c	7
+311	0	1 teaspoon Almond extract	1.0	teaspoon	t	0
+311	0	1/2 cup Confectioners sugar	0.5	cup	c	1
+311	14	1 Egg, beaten	1.0			2
 311	15	1 1/2 cups Unsifted flour	1.5	cups	c	3
-312	73	2 tablespoons of olive oil	2.0	tablespoons	T	4
-312	4	1 finely diced onion	1.0	\N	\N	5
-312	62	1 teaspoon of red pepper flakes (or to your taste)	1.0	teaspoon	t	6
+311	0	3/4 cup Cold margarine, or butter	0.75	cup	c	4
+311	0	6 Milk chocolate covered 1 cup Slivered almonds	6.0			5
+311	0	14 ounces Sweetened condensed milk	14.0	ounces	oz	6
+312	0	1 bunch each of the following: Collar Greens, Kale, Mustard Greens <	1.0	bunch	bunch	0
+312	0	3 bunchs of either fresh Collar Greens or	3.0			1
+312	0	All seasonings can be adjusted to your taste!	1.0	can	can	2
+312	0	3 bunchs of Kale or	3.0			3
+312	72	2 tablespoons of olive oil	2.0	tablespoons	T	4
+312	4	1 finely diced onion	1.0			5
+312	61	1 teaspoon of red pepper flakes (or to your taste)	1.0	teaspoon	t	6
+312	0	1 teaspoon of seasoned salt (or to your taste)	1.0	teaspoon	t	7
 312	7	1 cup of water	1.0	cup	c	8
-313	70	2 heads of cauliflower	2.0	heads	heads	1
-313	124	1/2 teaspoon cayenne pepper	0.5	teaspoon	t	2
+313	0	1/4 cup buttermilk	0.25	cup	c	0
+313	69	2 heads of cauliflower	2.0	heads	heads	1
+313	122	1/2 teaspoon cayenne pepper	0.5	teaspoon	t	2
+313	0	3 tablespoons Dijon mustard	3.0	tablespoons	T	3
+313	0	1 1/2 teaspoons dry mustard	1.5	teaspoons	t	4
 313	15	3 tablespoons Flour	3.0	tablespoons	T	5
 313	23	2 garlic cloves, pressed	2.0	cloves	cloves	6
 313	18	2 tablespoons fresh lemon juice	2.0	tablespoons	T	7
-313	129	1/4 cup low-fat sour cream	0.25	cup	c	9
+313	146	2 teaspoons lemon peel	2.0	teaspoons	t	8
+313	127	1/4 cup low-fat sour cream	0.25	cup	c	9
+313	0	1 1/2 cups whole wheat panko	1.5	cups	c	10
 313	41	1 teaspoon paprika	1.0	teaspoon	t	11
-313	86	1 tablespoon minced thyme	1.0	tablespoon	T	16
+313	0	150 grams grated Parmesan cheese	150.0	grams	g	12
+313	0	1/4 cup low-fat ricotta	0.25	cup	c	13
+313	0	Salt and pepper	6.0	servings	servings	14
+313	0	2 pounds boneless, skinless chicken breast	2.0	pounds	lb	15
+313	85	1 tablespoon minced thyme	1.0	tablespoon	T	16
+314	0	1 -T margarine or butter, melted	1.0	T	T	0
 314	16	dash nutmeg	1.0	dash	dash	1
+314	0	1/4 -t seasoned salt	0.25			2
+314	154	4 smalls sweet potatoes (about 1 lb)	1.0	lb	lb	3
 315	8	1/2 teaspoon Baking powder	0.5	teaspoon	t	0
+315	0	1/2 teaspoon Baking soda	0.5	teaspoon	t	1
+315	0	1/2 teaspoon Banana extract	0.5	teaspoon	t	2
 315	9	200 grams Riped Banana~ mash banana with a fork	200.0	grams	g	3
-315	14	2 eggs	2.0	\N	\N	5
+315	0	100 grams Corn oil	100.0	grams	g	4
+315	14	2 eggs	2.0			5
 315	15	160 grams Plain Flour- sift together with baking powder and baking sod	160.0	grams	g	6
 315	20	1/4 cup milk	0.25	cup	c	7
-315	116	2/3 cup sugar	0.6666666666666666	cup	c	8
-315	136	1/2 teaspoon Vanilla extract	0.5	teaspoon	t	9
-316	126	1 1/2 cups smokey barbecue sauce	1.5	cups	c	0
-316	51	3 tablespoons brown sugar	3.0	tablespoons	T	2
-316	124	1/4 tsp cayenne pepper (use 1/2 tsp for more heat)	0.25	tsp	t	3
+315	114	2/3 cup sugar	0.6666666666666666	cup	c	8
+315	134	1/2 teaspoon Vanilla extract	0.5	teaspoon	t	9
+315	0	1/2 tablespoon sponge cake emulsifier	0.5	tablespoon	T	10
+316	124	1 1/2 cups smokey barbecue sauce	1.5	cups	c	0
+316	0	1 brisket, 5 lbs., first cut	1.0			1
+316	50	3 tablespoons brown sugar	3.0	tablespoons	T	2
+316	122	1/4 tsp cayenne pepper (use 1/2 tsp for more heat)	0.25	tsp	t	3
 316	40	1/2 tbsp cornstarch	0.5	tbsp	T	4
-316	49	1/2 tsp cumin	0.5	tsp	t	5
+316	48	1/2 tsp cumin	0.5	tsp	t	5
+316	143	4 ounces garlic powder	4.0	ounces	oz	6
+316	71	2 tbs. oil for searing	2.0	tbs	tbs	7
+316	166	4 ounces onion powder	4.0	ounces	oz	8
+316	0	Salt and pepper	8.0	servings	servings	9
 316	41	1/2 tsp smoked paprika (optional)	0.5	tsp	t	10
+317	0	1/4 cup beer or white wine	0.25	cup	c	0
+317	0	12 ounces can of your favorite beer (I sugggest Hefeweizen's complementary fruity flavor)	12.0	ounces	oz	1
+317	0	Large head broccoli	1.0	head	head	2
+317	0	1 1/2 cups slow cook brown rice	1.5	cups	c	3
+317	0	12 cherry tomatoes	12.0			4
+317	0	3/4 cup Dijon mustard	0.75	cup	c	5
+317	141	1 tablespoon fresh ginger or 1 tbsp wet ginger from a jar (no powder!)	1.0	tablespoon	T	6
 317	23	1 tablespoon clove fresh garlic (minced) or 1 wet garlic from a jar (no powder!)	1.0	tablespoon	T	7
-317	3	1 green pepper	1.0	\N	\N	8
-317	59	2 tablespoons fresh ground pepper	2.0	tablespoons	T	9
-317	56	12 bite sized mushrooms	12.0	\N	\N	13
-317	73	1/4 cup olive oil	0.25	cup	c	14
-317	59	1/2 teaspoon pepper	0.5	teaspoon	t	16
-317	77	1 red pepper	1.0	\N	\N	17
-317	4	1 red onion	1.0	\N	\N	18
+317	3	1 green pepper	1.0			8
+317	58	2 tablespoons fresh ground pepper	2.0	tablespoons	T	9
+317	145	1 juicy lemon	1.0			10
+317	0	1/4 cup low sodium soy sauce	0.25	cup	c	11
+317	0	2 tablespoons molasses	2.0	tablespoons	T	12
+317	55	12 bite sized mushrooms	12.0			13
+317	72	1/4 cup olive oil	0.25	cup	c	14
+317	0	1/2 cup orange juice (or tablespoon/mash another orange	0.5	cup	c	15
+317	58	1/2 teaspoon pepper	0.5	teaspoon	t	16
+317	76	1 red pepper	1.0			17
+317	4	1 red onion	1.0			18
+317	0	1/2 cup Newman's Own Low-Fat Italian Salad Dressing	0.5	cup	c	19
 317	6	1 tablespoon salt	1.0	tablespoon	T	20
 317	32	2 tablespoons Sriracha or Tabasco sauce	2.0	tablespoons	T	21
 317	7	3 1/2 cups water	3.5	cups	c	22
-318	111	4 Egg yolks	4.0	\N	\N	1
-318	14	4 eggs	4.0	\N	\N	2
+317	0	1 whole chicken (about 3 lbs)	3.0	lbs	lb	23
+317	0	1 large orange	1.0			24
+318	0	30 mls Brandy	30.0	mls	mls	0
+318	109	4 Egg yolks	4.0			1
+318	14	4 eggs	4.0			2
+318	0	8 French bread slices, stale	8.0	slices	slices	3
 318	20	4 cups milk	4.0	cups	c	4
-318	116	cup Sugar	1.0	cup	c	6
+318	0	1/2 cup Raisins	0.5	cup	c	5
+318	114	cup Sugar	1.0	cup	c	6
 318	10	125 grams Unsalted Butter	125.0	grams	g	7
-318	136	1 teaspoon Vanilla extract	1.0	teaspoon	t	8
-319	62	� teaspoon crushed red pepper	0.25	teaspoon	t	1
-319	14	2 eggs	2.0	\N	\N	2
+318	134	1 teaspoon Vanilla extract	1.0	teaspoon	t	8
+319	0	32 ounces (2 bags) frozen chopped collard greens (or spinach)	32.0	ounces	oz	0
+319	61	� teaspoon crushed red pepper	0.25	teaspoon	t	1
+319	14	2 eggs	2.0			2
 319	23	6 cloves garlic, roasted and finely chopped	6.0	cloves	cloves	3
-319	143	3 tablespoons grapeseed oil	3.0	tablespoons	T	4
-319	77	� red bell pepper, roasted and chopped	0.5	\N	\N	6
+319	140	3 tablespoons grapeseed oil	3.0	tablespoons	T	4
+319	0	2 jalape�os, roasted, seeded and finely chopped	2.0			5
+319	76	� red bell pepper, roasted and chopped	0.5			6
 319	6	1/4 teaspoon salt	0.25	teaspoon	t	7
-320	73	1/4 cup olive oil (60 mL)	60.0	mL	mL	2
+320	0	1 medium head of broccoli, cut into florets	1.0	head	head	0
+320	0	1 x pack Maggi So Juicy Mixed Herbs	1.0			1
+320	72	1/4 cup olive oil (60 mL)	60.0	mL	mL	2
+320	0	1 large Russet potato, peeled and diced	1.0			3
+320	0	Freshly ground black pepper and salt	4.0	servings	servings	4
+320	0	1 1/2 pounds of boneless, skinless chicken breasts	1.5	pounds	lb	5
+320	154	3 large sweet potatoes, peeled and diced	3.0			6
 320	10	2 tablespoons Chilled unsalted butter	2.0	tablespoons	T	7
-321	81	3 tablespoons Dry Curry Powder	3.0	tablespoons	T	0
-321	89	2 tablespoons Dried Basil Leaves	2.0	tablespoons	T	1
-321	137	2 Jalapenos, finely chopped	2.0	\N	\N	6
-321	138	12 Baby Portabella Mushrooms, sliced	12.0	\N	\N	8
+321	80	3 tablespoons Dry Curry Powder	3.0	tablespoons	T	0
+321	88	2 tablespoons Dried Basil Leaves	2.0	tablespoons	T	1
+321	0	1 Eggplants	1.0			2
+321	165	10 ounces Frozen chopped Spinach, with excess water squeezed out	10.0	ounces	oz	3
+321	0	1/2 cup Half & Half or Heavy Cream	0.5	cup	c	4
+321	0	12 ounces Montery Jack & Cheddar Cheese Mix	12.0	ounces	oz	5
+321	135	2 Jalapenos, finely chopped	2.0			6
+321	0	3 cups Marinara Sauce (home made or a jar of 24 oz store bought)	3.0	cups	c	7
+321	136	12 Baby Portabella Mushrooms, sliced	12.0			8
+321	0	Salt & Pepper, to taste	6.0	servings	servings	9
+321	154	4 Sweet Potatoes	4.0			10
 321	11	1 tablespoon Canola or Vegetable Cooking Oil	1.0	tablespoon	T	11
-322	59	black pepper	4.0	servings	servings	0
-322	62	1/4 teaspoon chili flakes	0.25	teaspoon	t	3
-322	87	1/2 teaspoon dried thyme	0.5	teaspoon	t	4
+322	58	black pepper	4.0	servings	servings	0
+322	0	6 ounces (about 3 links) chicken sausage, sliced	6.0	ounces	oz	1
+322	0	6 cups chicken stock	6.0	cups	c	2
+322	61	1/4 teaspoon chili flakes	0.25	teaspoon	t	3
+322	86	1/2 teaspoon dried thyme	0.5	teaspoon	t	4
 322	23	1 clove garlic, thinly sliced	1.0	clove	clove	5
-322	94	1/2 teaspoon ground coriander	0.5	teaspoon	t	6
-322	56	1/3 cup mushrooms, sliced	0.3333333333333333	cup	c	8
-322	73	olive oil	4.0	servings	servings	9
-322	97	sea salt	4.0	servings	servings	10
-322	4	1 medium yellow onion, thinly sliced	1.0	\N	\N	12
-323	12	1/2 Cinnamon stick	0.5	\N	\N	0
+322	93	1/2 teaspoon ground coriander	0.5	teaspoon	t	6
+322	0	4 cups chopped kale, steamed until just wilted	4.0	cups	c	7
+322	55	1/3 cup mushrooms, sliced	0.3333333333333333	cup	c	8
+322	72	olive oil	4.0	servings	servings	9
+322	96	sea salt	4.0	servings	servings	10
+322	154	3 medium sweet potatoes, coarsely cubed	3.0			11
+322	4	1 medium yellow onion, thinly sliced	1.0			12
+323	12	1/2 Cinnamon stick	0.5			0
 323	15	1 1/2 tablespoons All-purpose flour	1.5	tablespoons	T	1
 323	23	1 Garlic clove, minced	1.0	clove	clove	2
-323	73	2 tablespoons extra-virgin olive oil	2.0	tablespoons	T	4
+323	0	750 grams lamb shoulder, cut into 4 cm cubes	750.0	grams	g	3
+323	72	2 tablespoons extra-virgin olive oil	2.0	tablespoons	T	4
+323	0	1/4 cup Red wine	0.25	cup	c	5
 323	7	1 cup Water	1.0	cup	c	6
+323	154	A (1/2-pound) sweet potato, peeled and cut into 1-inch pieces	0.5	pound	lb	7
+324	0	8 whole bay leaves	8.0			0
 324	2	bunch of carrots, cut up	1.0	bunch	bunch	1
-324	49	pinch of cumin	1.0	pinch	pinch	2
-324	81	pinch of curry	1.0	pinch	pinch	3
+324	48	pinch of cumin	1.0	pinch	pinch	2
+324	80	pinch of curry	1.0	pinch	pinch	3
 324	23	1 clove garlic	1.0	clove	clove	4
-324	66	2 cups of dry lentils	2.0	cups	c	5
-324	59	pinch of pepper	1.0	pinch	pinch	6
-324	97	pinch of sea salt	1.0	pinch	pinch	7
+324	65	2 cups of dry lentils	2.0	cups	c	5
+324	58	pinch of pepper	1.0	pinch	pinch	6
+324	96	pinch of sea salt	1.0	pinch	pinch	7
 324	5	1 tablespoon of smooth organic peanut butter (optional)	1.0	tablespoon	T	8
+324	164	bunch of spinach	1.0	bunch	bunch	9
+324	154	1 whole sweet potato, chopped up	1.0			10
 324	7	2 cups water	2.0	cups	c	11
-324	4	1 yellow onion, chopped up	1.0	\N	\N	12
-325	132	2 apples, cored, peeled and sliced*	2.0	slices	slices	0
+324	4	1 yellow onion, chopped up	1.0			12
+325	130	2 apples, cored, peeled and sliced*	2.0	slices	slices	0
 325	10	2 tablespoons butter or margarine	2.0	tablespoons	T	1
-325	93	1/4 cup cilantro, chopped	0.25	cup	c	2
-325	49	1 teaspoon cumin	1.0	teaspoon	t	4
-325	143	2 tablespoons grapeseed oil, divided	2.0	tablespoons	T	5
+325	92	1/4 cup cilantro, chopped	0.25	cup	c	2
+325	0	4 ounces Cotija cheese	4.0	ounces	oz	3
+325	48	1 teaspoon cumin	1.0	teaspoon	t	4
+325	140	2 tablespoons grapeseed oil, divided	2.0	tablespoons	T	5
 325	17	2 tablespoons honey	2.0	tablespoons	T	6
-325	142	Juice and zest of 1 lime	1.0	\N	\N	7
-325	4	1 red onion, sliced	1.0	\N	\N	8
-325	62	1/2 teaspoon red pepper flakes	0.5	teaspoon	t	9
-326	103	2 tablespoons balsamic vinegar	2.0	tablespoons	T	0
-326	88	3 leaves of basil, finely diced	3.0	leaves	leaves	1
-326	48	1 large tomato, chopped	1.0	\N	\N	4
+325	139	Juice and zest of 1 lime	1.0			7
+325	4	1 red onion, sliced	1.0			8
+325	61	1/2 teaspoon red pepper flakes	0.5	teaspoon	t	9
+325	154	5 pounds sweet potatoes	5.0	pounds	lb	10
+325	0	6 tortillas (corn or flour)	6.0			11
+326	101	2 tablespoons balsamic vinegar	2.0	tablespoons	T	0
+326	87	3 leaves of basil, finely diced	3.0	leaves	leaves	1
+326	0	10-15 two-inch long okra pods	10.0			2
+326	0	Salt and Pepper to taste	1.0	serving	serving	3
+326	47	1 large tomato, chopped	1.0			4
 327	33	1 pound Dried Black Beans	1.0	pound	lb	0
-327	120	3 tablespoons Chipotle chilies	3.0	tablespoons	T	2
-327	49	2 tablespoons Ground Cumin	2.0	tablespoons	T	3
-327	73	2 tablespoons olive oil	2.0	tablespoons	T	5
-327	4	1 Onion – Chopped	1.0	\N	\N	6
+327	0	6 cups Chicken Broth or Water	6.0	cups	c	1
+327	118	3 tablespoons Chipotle chilies	3.0	tablespoons	T	2
+327	48	2 tablespoons Ground Cumin	2.0	tablespoons	T	3
+327	0	1 bunch kale	1.0	bunch	bunch	4
+327	72	2 tablespoons olive oil	2.0	tablespoons	T	5
+327	4	1 Onion – Chopped	1.0			6
+327	0	Salt & Pepper	6.0	servings	servings	7
+327	154	3 lbs sweet potatoes	3.0	lbs	lb	8
+328	0	4 catfish fillets or whole dressed catfish	4.0			0
 328	15	1/4 cup flour	0.25	cup	c	1
+328	143	1/8 teaspoon Garlic Powder	0.125	teaspoon	t	2
 328	6	2 1/2 teaspoons Salt	2.5	teaspoons	t	3
-328	72	Vegetable oil	6.0	servings	servings	4
-329	68	1 can (28- ounces) crushed tomatoes	28.0	ounces	oz	0
-329	101	1 1/2 tablespoons cider vinegar	1.5	tablespoons	T	1
-329	120	1 can chipotle chile, packed in adobo sauce, minced	7.0	oz	oz	3
+328	71	Vegetable oil	6.0	servings	servings	4
+328	0	3/4 cup yellow cornmeal	0.75	cup	c	5
+329	67	1 can (28- ounces) crushed tomatoes	28.0	ounces	oz	0
+329	99	1 1/2 tablespoons cider vinegar	1.5	tablespoons	T	1
+329	0	Coarse salt and freshly ground black pepper	1.0	serving	serving	2
+329	118	1 can chipotle chile, packed in adobo sauce, minced	7.0	oz	oz	3
 329	23	3 garlic cloves, minced	3.0	cloves	cloves	4
-329	18	1/2 Juice of lemon	0.5	\N	\N	5
-329	73	1 1/2 tablespoons extra-virgin olive oil	1.5	tablespoons	T	6
-329	4	1 medium onion diced	1.0	\N	\N	7
-329	139	1 1/2 tablespoons Worcestershire sauce	1.5	tablespoons	T	9
+329	18	1/2 Juice of lemon	0.5			5
+329	72	1 1/2 tablespoons extra-virgin olive oil	1.5	tablespoons	T	6
+329	4	1 medium onion diced	1.0			7
+329	0	1/4 cup unsulfured molasses	0.25	cup	c	8
+329	137	1 1/2 tablespoons Worcestershire sauce	1.5	tablespoons	T	9
 330	1	15 ounces black eyed peas, drained and rinsed	15.0	ounces	oz	0
-330	93	1/2 cup chopped cilantro	0.5	cup	c	1
+330	92	1/2 cup chopped cilantro	0.5	cup	c	1
 330	23	1/2 teaspoon minced garlic	0.5	teaspoon	t	2
-330	134	3 drops hot sauce	3.0	drops	drops	3
-330	142	1 The juice of lime	1.0	\N	\N	4
-330	48	1 ripe roma tomato, chopped	1.0	\N	\N	5
-331	126	1/4 cup barbecue sauce	0.25	cup	c	0
+330	132	3 drops hot sauce	3.0	drops	drops	3
+330	139	1 The juice of lime	1.0			4
+330	47	1 ripe roma tomato, chopped	1.0			5
+330	0	3 tablespoons of good quality salsa verde	3.0	tablespoons	T	6
+331	124	1/4 cup barbecue sauce	0.25	cup	c	0
 331	10	1 Tbsp. butter	1.0	Tbsp	Tbsp	1
-331	51	2 Tbsp. dark brown sugar	2.0	Tbsp	Tbsp	2
-331	4	2 onions, diced	2.0	\N	\N	6
-331	100	1/2 cup white vinegar	0.5	cup	c	9
-331	139	2 Tbsp. Worcestershire sauce	2.0	Tbsp	Tbsp	10
+331	50	2 Tbsp. dark brown sugar	2.0	Tbsp	Tbsp	2
+331	143	1 Tsp. garlic powder	1.0	Tsp	Tsp	3
+331	0	¾ cup ketchup	0.75	cup	c	4
+331	0	1/2 Tsp. dry mustard powder	0.5	Tsp	Tsp	5
+331	4	2 onions, diced	2.0			6
+331	0	2 lbs. pork spare ribs	2.0	lbs	lb	7
+331	0	salt and pepper, to taste	2.0	servings	servings	8
+331	98	1/2 cup white vinegar	0.5	cup	c	9
+331	137	2 Tbsp. Worcestershire sauce	2.0	Tbsp	Tbsp	10
+332	0	1 can cannellini beans (15 ounces)	15.0	ounces	oz	0
+332	0	1 quart chicken broth (or vegetable broth)	1.0	quart	quart	1
 332	45	1 teaspoon dried Oregano	1.0	teaspoon	t	2
-332	143	1 tablespoon grapeseed oil	1.0	tablespoon	T	3
-332	59	Salt & ground black pepper	4.0	servings	servings	5
-332	86	� teaspoon Thyme	0.25	teaspoon	t	7
-332	4	1/2 yellow onion, chopped up	0.5	\N	\N	9
-333	68	1 can (14 1/2 oz.) diced tomatoes	14.5	oz	oz	2
-333	73	extra-virgin olive oil	6.0	servings	servings	5
+332	140	1 tablespoon grapeseed oil	1.0	tablespoon	T	3
+332	0	1 head red kale, stems removed, leaves chopped	1.0	head	head	4
+332	58	Salt & ground black pepper	4.0	servings	servings	5
+332	154	1 medium sweet potato, peel on, chopped into �� cubes	1.0			6
+332	85	� teaspoon Thyme	0.25	teaspoon	t	7
+332	0	� cup white wine (I used chardonnay)	0.5	cup	c	8
+332	4	1/2 yellow onion, chopped up	0.5			9
+333	0	2 c. Valencia or Arborio rice	2.0	c	c	0
+333	0	3/4 c. frozen artichoke hearts	0.75	c	c	1
+333	67	1 can (14 1/2 oz.) diced tomatoes	14.5	oz	oz	2
+333	0	8 oz. chorizo sausage	8.0	oz	oz	3
+333	0	1/3 c. dry white wine	0.3333333333333333	c	c	4
+333	72	extra-virgin olive oil	6.0	servings	servings	5
 333	43	chopped fresh flat-leaf parsely	1.0	leaf	leaf	6
 333	23	8-9 med garlic cloves, minced	8.0	cloves	cloves	7
-333	4	1 onion	1.0	\N	\N	10
+333	0	lemon wedges	6.0	servings	servings	8
+333	0	3 c. low-sodium chicken broth	3.0	c	c	9
+333	4	1 onion	1.0			10
 333	38	1/2 c. frozen peas	0.5	c	c	11
-333	77	1 red bell pepper	1.0	\N	\N	12
-333	53	1 lb. large shrimp	1.0	lb	lb	15
+333	76	1 red bell pepper	1.0			12
+333	0	1/2 t. saffron threads	0.5	t	t	13
+333	0	salt and pepper	6.0	servings	servings	14
+333	52	1 lb. large shrimp	1.0	lb	lb	15
+333	0	1 lb. boneless, skinless chicken thighs	1.0	lb	lb	16
+334	0	5 artichoke hearts, unmarinated	5.0			0
+334	0	1 cup uncooked basmati rice	1.0	cup	c	1
+334	0	1 cup boned and skinned white meat of chicken, sliced	1.0	cup	c	2
+334	0	2 cups hot, defatted chicken stock	2.0	cups	c	3
+334	0	6 clams in their shells (scrub outside of shells)	6.0			4
+334	0	1 cup peas, fresh or frozen	1.0	cup	c	5
 334	23	2 cloves garlic, minced	2.0	cloves	cloves	6
-334	73	1 teaspoon olive oil	1.0	teaspoon	t	7
+334	72	1 teaspoon olive oil	1.0	teaspoon	t	7
 334	4	1/2 cup chopped onion	0.5	cup	c	8
 334	45	3/4 teaspoon oregano	0.75	teaspoon	t	9
-334	53	6 lg. prawns, shelled and deveined	6.0	\N	\N	10
-334	77	1/2 cup each sliced red bell pepper and sliced	0.5	cup	c	11
+334	52	6 lg. prawns, shelled and deveined	6.0			10
+334	76	1/2 cup each sliced red bell pepper and sliced	0.5	cup	c	11
+334	0	1 red snapper fillet, cut into 1 inch pieces	1.0	fillet	fillet	12
+334	0	2 teaspoons safflower oil	2.0	teaspoons	t	13
+334	0	1 teaspoon saffron threads	1.0	teaspoon	t	14
 334	6	1 tablespoon herbal salt substitute	1.0	tablespoon	T	15
-334	48	1/2 cup diced tomato	0.5	cup	c	16
+334	47	1/2 cup diced tomato	0.5	cup	c	16
 334	7	2 cups boiling water	2.0	cups	c	17
+335	0	1 Bay Leaf	1.0			0
+335	0	1/2 pound Spanish Chorizo	0.5	pound	lb	1
+335	0	1 pound red Fingerling Potatoes	1.0	pound	lb	2
 335	23	2 cloves garlic	2.0	cloves	cloves	3
-335	73	1 tablespoon Olive Oil	1.0	tablespoon	T	5
+335	0	2 pounds Manila Clams	2.0	pounds	lb	4
+335	72	1 tablespoon Olive Oil	1.0	tablespoon	T	5
 335	43	1 tablespoon Chopped Parsley	1.0	tablespoon	T	6
-336	59	freshly ground black pepper	4.0	servings	servings	0
-336	14	4 eggs, well beaten	4.0	\N	\N	2
-336	98	kosher salt	4.0	servings	servings	4
+335	0	2 cups White Wine	2.0	cups	c	7
+336	58	freshly ground black pepper	4.0	servings	servings	0
+336	0	2 cups corn kernels, from 2 large or 4 small ears of corn	2.0	cups	c	1
+336	14	4 eggs, well beaten	4.0			2
+336	0	1/4 cup fresh ricotta	0.25	cup	c	3
+336	97	kosher salt	4.0	servings	servings	4
+336	0	2 tablespoons grated Pecorino Romano cheese	2.0	tablespoons	T	5
 336	20	1 cup whole milk	1.0	cup	c	6
-337	53	3/4 pound small frozen peeled, deveined, cooked shrimp, thawed	0.75	pound	lb	5
-337	72	1 tablespoon vegetable oil	1.0	tablespoon	T	7
-338	14	1 Large Egg	1.0	\N	\N	0
+337	0	1 package (about 10 ounces) refrigerated fully-cooked chicken breast strips (about 1 3/4 cups)	10.0	ounces	oz	0
+337	0	4 cups Swanson® Chicken Broth or Swanson® Chicken Stock, heated	4.0	cups	c	1
+337	162	1 teaspoon ground turmeric	1.0	teaspoon	t	2
+337	174	2 cups uncooked regular long-grain white rice	2.0	cups	c	3
+337	0	1 cup Pace® Picante Sauce	1.0	cup	c	4
+337	52	3/4 pound small frozen peeled, deveined, cooked shrimp, thawed	0.75	pound	lb	5
+337	0	1 package (16 ounces) turkey kielbasa, sliced	16.0	ounces	oz	6
+337	71	1 tablespoon vegetable oil	1.0	tablespoon	T	7
+338	14	1 Large Egg	1.0			0
+338	0	1 (3 oz.) pkg. vanilla instant pudding	3.0	oz	oz	1
+338	0	1 kiwi fruit, peeled	1.0			2
+338	0	1 c. light cream	1.0	c	c	3
 338	20	60ml Milk	60.0	ml	ml	4
-339	111	8 larges egg yolks	8.0	\N	\N	0
-339	136	1 teaspoon vanilla extract	1.0	teaspoon	t	3
-339	116	1 tablespoon white sugar for each mould	1.0	tablespoon	T	4
+338	0	1 1/2 cups strawberries (about � pint)	1.5	cups	c	5
+338	0	1 (9 oz.) pkg. white or yellow cake mix	9.0	oz	oz	6
+339	109	8 larges egg yolks	8.0			0
+339	0	1 tall can Full Cream Evaporated Milk	1.0			1
+339	0	1/2 can Sweetened Condense Milk	0.5	can	can	2
+339	134	1 teaspoon vanilla extract	1.0	teaspoon	t	3
+339	114	1 tablespoon white sugar for each mould	1.0	tablespoon	T	4
 340	10	1 ounce Butter	1.0	ounce	oz	0
-340	92	Chives for garnish	6.0	servings	servings	1
-340	118	3 egg whites	3.0	\N	\N	2
-340	117	1/2 cup half-and-half plus	0.5	cup	c	3
-340	117	2 tablespoons half-and-half	2.0	tablespoons	T	4
+340	91	Chives for garnish	6.0	servings	servings	1
+340	116	3 egg whites	3.0			2
+340	115	1/2 cup half-and-half plus	0.5	cup	c	3
+340	115	2 tablespoons half-and-half	2.0	tablespoons	T	4
 340	25	1 pound Leeks	1.0	pound	lb	5
-340	73	1 1/2 tablespoons olive oil	1.5	tablespoons	T	6
+340	72	1 1/2 tablespoons olive oil	1.5	tablespoons	T	6
 340	6	1/2 teaspoon salt	0.5	teaspoon	t	7
-341	73	2 teaspoons extra-virgin olive oil	2.0	teaspoons	t	3
+340	0	1 1/2 shallots chopped fine	1.0			8
+340	0	1/2 cup whipping cream plus	0.5	cup	c	9
+340	0	2 tablespoons whipping cream	2.0	tablespoons	T	10
+341	0	1 bay leaf	1.0			0
+341	0	1 quart fish stock or chicken broth	1.0	quart	quart	1
+341	0	1 pound chorizo sausage, casing removed	1.0	pound	lb	2
+341	72	2 teaspoons extra-virgin olive oil	2.0	teaspoons	t	3
 341	23	6 cloves garlic, minced	6.0	cloves	cloves	4
+341	145	1 lemon, cut into wedges	1.0			5
+341	146	1 lemon, zested	1.0			6
+341	0	24 mediums mussels, cleaned	24.0			7
 341	43	1/4 cup parsley, chopped	0.25	cup	c	8
-341	77	1 red bell pepper, chopped	1.0	\N	\N	10
-341	62	1/2 teaspoon crushed red pepper flakes	0.5	teaspoon	t	11
-341	53	3/4 pound peeled and deveined shrimp	0.75	pound	lb	14
-341	86	6 sprigs thyme	6.0	sprigs	sprigs	16
-342	51	1 cup brown sugar	1.0	cup	c	0
-342	111	10 egg yolk	10.0	\N	\N	1
+341	0	1 cup peas	1.0	cup	c	9
+341	76	1 red bell pepper, chopped	1.0			10
+341	61	1/2 teaspoon crushed red pepper flakes	0.5	teaspoon	t	11
+341	174	2 cups dry rice	2.0	cups	c	12
+341	0	1/4 teaspoon saffron threads	0.25	teaspoon	t	13
+341	52	3/4 pound peeled and deveined shrimp	0.75	pound	lb	14
+341	0	1 Spanish onion, chopped	1.0			15
+341	85	6 sprigs thyme	6.0	sprigs	sprigs	16
+341	0	1/2 pound firm white fish, cut into bite-size pieces	0.5	pound	lb	17
+342	50	1 cup brown sugar	1.0	cup	c	0
+342	109	10 egg yolk	10.0			1
+342	0	1 can evaporated milk	1.0	can	can	2
 342	18	1/4 teaspoon lemon juice	0.25	teaspoon	t	3
+342	0	14 ounces Sweetened condensed MILK	14.0	ounces	oz	4
+342	0	1 teaspoon vanilla essence	1.0	teaspoon	t	5
 342	7	1 cup water	1.0	cup	c	6
-343	73	1 teaspoon olive oil	1.0	teaspoon	t	2
-343	77	2 pounds x red bell peppers - (1 � total)	2.0	pounds	lb	4
-343	53	1 1/2 pounds Shrimp, shelled and Deveined	1.5	pounds	lb	7
-344	59	a pinch of freshly ground black pepper	1.0	pinch	pinch	0
+343	0	1 cup cubed (�") cooked ham or Canadian bacon (4	1.0	cup	c	0
+343	0	1 1/2 quarts fat-skimmed chicken broth	1.5	quarts	quarts	1
+343	72	1 teaspoon olive oil	1.0	teaspoon	t	2
+343	0	1 cup frozen petite peas	1.0	cup	c	3
+343	76	2 pounds x red bell peppers - (1 � total)	2.0	pounds	lb	4
+343	0	1/4 teaspoon saffron threads (optional)	0.25	teaspoon	t	5
+343	0	2 ounces pkt Spanish-style seasoned rice mix - (5 to 6 e	2.0	ounces	oz	6
+343	52	1 1/2 pounds Shrimp, shelled and Deveined	1.5	pounds	lb	7
+344	58	a pinch of freshly ground black pepper	1.0	pinch	pinch	0
+344	0	8 pieces chicken wings	8.0	pieces		1
+344	0	6-8 oz solid chorizo sausage, cut into 1/4 inch rounds	6.0	oz	oz	2
 344	45	2 t dried oregano	2.0	t	t	3
-344	73	1/4 C extra-virgin olive oil	0.25	C	C	4
+344	72	1/4 C extra-virgin olive oil	0.25	C	C	4
 344	23	1 Clove Garlic, mashed	1.0	Clove	Clove	5
-344	98	a pinch of Kosher salt	1.0	pinch	pinch	7
+344	0	4 oz shelled green peas for garnish	4.0	oz	oz	6
+344	97	a pinch of Kosher salt	1.0	pinch	pinch	7
+344	0	4-8 lemon wedges for serving	4.0			8
+344	0	36 littleneck clams	36.0			9
 344	41	1 T smoky paprika	1.0	T	T	10
 344	43	1/4 C Italian parsley leaves, chopped	0.25	C	C	11
-344	53	1 1/2 pounds Shrimp, shelled and Deveined	1.5	pounds	lb	15
-344	48	1 can of 14.5 oz whole tomatoes, drained, crushed and chopped coarse	1.0	\N	\N	16
+344	0	1 teaspoon Saffron, crumbled	1.0	teaspoon	t	12
+344	0	salt and pepper to taste	4.0	servings	servings	13
+344	0	1 C short-grain Spanish rice (we used La Bomba but Arborio can be substituted)	1.0	C	C	14
+344	52	1 1/2 pounds Shrimp, shelled and Deveined	1.5	pounds	lb	15
+344	47	1 can of 14.5 oz whole tomatoes, drained, crushed and chopped coarse	1.0			16
 344	7	2 C hot water	2.0	C	C	17
-344	4	1 white onion, skinned and diced	1.0	\N	\N	18
-345	77	1 lrg red bell pepper cut wide strips	1.0	\N	\N	2
+344	4	1 white onion, skinned and diced	1.0			18
+345	0	1 bay leaf	1.0			0
+345	169	pound fresh green beans diced, or	1.0	pound	lb	1
+345	170	canned peas, carrots, or chick (depending on your taste)	1.0	serving	serving	2
+345	76	1 lrg red bell pepper cut wide strips	1.0			3
+345	0	pound calamari cleaned, skinned,	1.0	pound	lb	4
 345	43	Chopped parsley (fresh is best)	1.0	serving	serving	5
-345	23	1 full head of garlic	1.0	\N	\N	6
+345	23	1 full head of garlic	1.0			6
 345	23	Minced garlic as much as you like	1.0	serving	serving	7
-345	3	1 green pepper diced	1.0	\N	\N	8
-345	73	Olive oil as needed	1.0	serving	serving	11
-345	4	1 medium onion	1.0	\N	\N	12
-345	48	3 Roma plum tomatoes - (to 4) minced	3.0	\N	\N	13
+345	3	1 green pepper diced	1.0			8
+345	0	12 Clams, littleneck Or mussels or both	12.0			9
+345	72	Olive oil as needed	1.0	serving	serving	10
+345	4	1 medium onion	1.0			11
+345	47	3 Roma plum tomatoes - (to 4) minced	3.0			12
+345	0	1 teaspoon Saffron, crumbled	1.0	teaspoon	t	13
+345	52	pound medium shrimp in shells heads off	1.0	pound	lb	14
+345	174	2 cups raw white rice	2.0	cups	c	15
+346	0	8 chicken drumsticks or thighs	8.0			0
+346	0	3 Chorizo, sliced 1/2" Thick (or Portuguese or Ita	3.0			1
+346	0	Freshly cracked black pepper	10.0	servings	servings	2
 346	43	Chopped parsley (fresh is best)	10.0	servings	servings	3
 346	23	2 garlic cloves minced	2.0	cloves	cloves	4
-346	73	15 milliliters olive oil	15.0	milliliters	ml	7
-346	4	1 medium onion	1.0	\N	\N	8
-346	48	200g deep red tomatoes	200.0	g	g	10
+346	174	500g long grain rice	500.0	g	g	5
+346	0	12 Clams, littleneck Or mussels or both	12.0			6
+346	72	15 milliliters olive oil	15.0	milliliters	ml	7
+346	4	1 medium onion	1.0			8
+346	0	500g fillet of pork, diced into small pieces	500.0	g	g	9
+346	47	200g deep red tomatoes	200.0	g	g	10
 346	10	1/4 cup Unsalted butter	0.25	cup	c	11
 346	7	1.5L water	1.0	liter	l	12
-346	53	8 large crevettes	8.0	\N	\N	13
-347	49	1 teaspoon cumin	1.0	teaspoon	t	5
+346	52	8 large crevettes	8.0			13
+346	0	50g jambon, smoked (pieces)	50.0	g	g	14
+346	0	200g petit pois	200.0	g	g	15
+347	0	1 bay leaf	1.0			0
+347	0	1 1/2 pounds chicken breasts cut into chunks or whole chic	1.5	pounds	lb	1
+347	0	3 1/2 cups chicken stock	3.5	cups	c	2
+347	0	14 ounces chorizo	14.0	ounces	oz	3
+347	0	coarse salt and pepper	6.0	servings	servings	4
+347	48	1 teaspoon cumin	1.0	teaspoon	t	5
 347	23	2 cloves garlic, chopped	2.0	cloves	cloves	6
-347	3	1 green pepper, chopped	1.0	\N	\N	7
-347	73	1/2 cup olive oil	0.5	cup	c	10
-347	4	1 medium onion, chopped	1.0	\N	\N	11
+347	3	1 green pepper, chopped	1.0			7
+347	145	lemon wedges	6.0	servings	servings	8
+347	0	2 cups short or medium grain rice	2.0	cups	c	9
+347	72	1/2 cup olive oil	0.5	cup	c	10
+347	4	1 medium onion, chopped	1.0			11
 347	41	1 teaspoon paprika or pimenton	1.0	teaspoon	t	12
-347	77	1 red pepper, chopped	1.0	\N	\N	14
-347	84	1 teaspoon rosemary	1.0	teaspoon	t	15
-347	53	1 pound shrimp with tails on	1.0	pound	lb	17
-347	86	1 teaspoon thyme	1.0	teaspoon	t	18
-347	48	1 tomato, chopped	1.0	\N	\N	19
+347	38	1/2 cup frozen peas	0.5	cup	c	13
+347	76	1 red pepper, chopped	1.0			14
+347	83	1 teaspoon rosemary	1.0	teaspoon	t	15
+347	0	1 pinch saffron threads	1.0	pinch	pinch	16
+347	52	1 pound shrimp with tails on	1.0	pound	lb	17
+347	85	1 teaspoon thyme	1.0	teaspoon	t	18
+347	47	1 tomato, chopped	1.0			19
+347	0	1 cup white wine	1.0	cup	c	20
 348	8	2 teaspoons baking powder	2.0	teaspoons	t	0
 348	10	2 tablespoons butter	2.0	tablespoons	T	1
-348	51	3/4 cup dark brown sugar, packed firmly	0.75	cup	c	3
-348	14	2 eggs	2.0	\N	\N	4
+348	0	1 cup organic canned pumpkin, NOT pie filling	1.0	cup	c	2
+348	50	3/4 cup dark brown sugar, packed firmly	0.75	cup	c	3
+348	14	2 eggs	2.0			4
 348	15	3 cups flour	3.0	cups	c	5
 348	12	1 teaspoon ground cinnamon	1.0	teaspoon	t	6
+348	0	1/8 teaspoon ground cloves	0.125	teaspoon	t	7
 348	16	1/8 teaspoon ground nutmeg	0.125	teaspoon	t	8
 348	20	1/2 cup milk	0.5	cup	c	9
 348	6	1/2 teaspoon salt	0.5	teaspoon	t	10
-348	116	2 tablespoons sugar	2.0	tablespoons	T	12
-349	101	3 tablespoons apple cider vinegar	3.0	tablespoons	T	0
+348	0	1/2 cup shortening	0.5	cup	c	11
+348	114	2 tablespoons sugar	2.0	tablespoons	T	12
+349	99	3 tablespoons apple cider vinegar	3.0	tablespoons	T	0
+349	0	3/4 of an English cucumber, peeled and seeded	0.75			1
 349	44	2 teaspoons dried parsley	2.0	teaspoons	t	2
-349	73	4 tablespoons extra-virgin olive oil	4.0	tablespoons	T	3
+349	72	4 tablespoons extra-virgin olive oil	4.0	tablespoons	T	3
 349	23	3 garlic cloves	3.0	cloves	cloves	4
-349	82	1/4 orange bell pepper, diced	0.25	\N	\N	6
-349	4	1/2 red onion, diced	0.5	\N	\N	8
+349	0	1 1/2 cups grape tomatoes	1.5	cups	c	5
+349	81	1/4 orange bell pepper, diced	0.25			6
+349	0	4 tablespoons Panko bread crumbs	4.0	tablespoons	T	7
+349	4	1/2 red onion, diced	0.5			8
+349	0	2 slices rye bread	2.0	slices	slices	9
 349	6	1/8 teaspoon salt	0.125	teaspoon	t	10
-349	97	2 teaspoons fine sea salt	2.0	teaspoons	t	11
-349	48	3 ripe on the vine tomatoes, cored	3.0	\N	\N	13
+349	96	2 teaspoons fine sea salt	2.0	teaspoons	t	11
+349	0	1/2 cup Daiya vegan cheddar crumbles	0.5	cup	c	12
+349	47	3 ripe on the vine tomatoes, cored	3.0			13
 349	7	1/4 cup water	0.25	cup	c	14
+350	0	1 bay leaf	1.0			0
 350	23	2 cloves of garlic, finely chopped	2.0	cloves	cloves	1
 350	42	1 pound Ground beef	1.0	pound	lb	2
-350	73	1 cup olive oil	1.0	cup	c	3
-350	73	2 tablespoons of olive oil	2.0	tablespoons	T	4
+350	72	1 cup olive oil	1.0	cup	c	3
+350	72	2 tablespoons of olive oil	2.0	tablespoons	T	4
 350	4	1/2 cup onion, chopped	0.5	cup	c	5
 350	4	Half an onion, finely chopped	20.0	servings	servings	6
 350	43	2 tablespoons of chopped parsley	2.0	tablespoons	T	7
-350	116	1 teaspoon of sugar	1.0	teaspoon	t	9
+350	0	Salt and pepper to taste	20.0	servings	servings	8
+350	114	1 teaspoon of sugar	1.0	teaspoon	t	9
 350	41	pinch of Pimenton de la Vera (Dulce) or Spanish sweet paprika	1.0	pinch	pinch	10
-350	48	600g tomatoes	600.0	g	g	11
+350	47	600g tomatoes	600.0	g	g	11
 350	21	4 slices of sandwich bread, only the white part, diced	4.0	slices	slices	12
-350	14	1 large egg, whole	1.0	\N	\N	13
-351	96	1/2 teaspoon chili powder	0.5	teaspoon	t	1
+350	14	1 large egg, whole	1.0			13
+351	0	1/4 cup smoked almonds, toasted & rough chopped	0.25	cup	c	0
+351	95	1/2 teaspoon chili powder	0.5	teaspoon	t	1
+351	0	1 (15 ounce) can Fire Roasted Diced Tomatoes, drained	15.0	ounce	oz	2
 351	43	2 tablespoons fresh flat-leaf parsley	2.0	tablespoons	T	3
 351	45	2 tablespoons fresh oregano	2.0	tablespoons	T	4
-351	84	1 teaspoon fresh rosemary	1.0	teaspoon	t	5
+351	83	1 teaspoon fresh rosemary	1.0	teaspoon	t	5
 351	23	3 cloves of garlic, peeled & rough chopped	3.0	cloves	cloves	6
-351	98	Kosher salt & freshly cracked black pepper	8.0	servings	servings	7
-351	73	2 tablespoons olive oil	2.0	tablespoons	T	8
-351	77	2 red bell peppers	2.0	\N	\N	9
-351	102	2 tablespoons red wine vinegar	2.0	tablespoons	T	10
+351	97	Kosher salt & freshly cracked black pepper	8.0	servings	servings	7
+351	72	2 tablespoons olive oil	2.0	tablespoons	T	8
+351	76	2 red bell peppers	2.0			9
+351	100	2 tablespoons red wine vinegar	2.0	tablespoons	T	10
 351	41	1 teaspoon smoked paprika	1.0	teaspoon	t	11
-351	116	1 tablespoon sugar	1.0	tablespoon	T	12
-352	62	1/4 teaspoon crushed red pepper (or more, to taste)	0.25	teaspoon	t	0
+351	114	1 tablespoon sugar	1.0	tablespoon	T	12
+352	61	1/4 teaspoon crushed red pepper (or more, to taste)	0.25	teaspoon	t	0
 352	23	2 cloves garlic, minced	2.0	cloves	cloves	1
-352	102	2 tablespoons red wine vinegar, according to desired consistency	2.0	tablespoons	T	4
-352	119	1/4 cup roasted almonds	0.25	cup	c	5
-352	77	1 whole 12 oz. jar roasted red peppers (or about 2- 3 fresh red bell peppers, roasted)	12.0	oz	oz	6
+352	0	1/4 cup hazelnuts	0.25	cup	c	2
+352	0	cup freshly grated Parmesan cheese	1.0	cup	c	3
+352	100	2 tablespoons red wine vinegar, according to desired consistency	2.0	tablespoons	T	4
+352	117	1/4 cup roasted almonds	0.25	cup	c	5
+352	76	1 whole 12 oz. jar roasted red peppers (or about 2- 3 fresh red bell peppers, roasted)	12.0	oz	oz	6
 352	6	1 teaspoon salt - (about)	1.0	teaspoon	t	7
-353	2	1/4 carrot, sliced thinly	0.25	\N	\N	1
+352	0	1/4 tablespoon c. sun-dried tomatoes, packed in oil (or 1/4 c. soft sun-dried	0.25	tablespoon	T	8
+353	0	1 bunch fresh asparagus, sliced into 2 inch length	1.0	bunch	bunch	0
+353	2	1/4 carrot, sliced thinly	0.25			1
+353	0	2 tablespoons cooking oil	2.0	tablespoons	T	2
+353	163	1 1/2 tablespoons fish sauce (Nam Pla) (to your taste)	1.5	tablespoons	T	3
 353	23	3 cloves garlic, chopped coarsely	3.0	cloves	cloves	4
-353	116	1 teaspoon sugar	1.0	teaspoon	t	5
+353	114	1 teaspoon sugar	1.0	teaspoon	t	5
 353	7	3 tablespoons of water	3.0	tablespoons	T	6
-354	59	1 teaspoon black pepper	1.0	teaspoon	t	0
-354	51	3 tablespoons brown sugar	3.0	tablespoons	T	1
-354	51	3 tablespoons dark brown sugar	3.0	tablespoons	T	4
-354	73	Extra oil for cooking	30.0	servings	servings	5
+353	0	6 small squids (clean and cut into bite size)	6.0			7
+354	58	1 teaspoon black pepper	1.0	teaspoon	t	0
+354	50	3 tablespoons brown sugar	3.0	tablespoons	T	1
+354	0	500 grams chicken thigh or breast meat, cut into cubes	500.0	grams	g	2
+354	0	Cucumber, cut int wedges	30.0	servings	servings	3
+354	50	3 tablespoons dark brown sugar	3.0	tablespoons	T	4
+354	72	Extra oil for cooking	30.0	servings	servings	5
+354	163	1 teaspoon fish sauce	1.0	teaspoon	t	6
+354	163	3 teaspoons fish sauce	3.0	teaspoons	t	7
 354	23	1 clove garlic, chopped	1.0	clove	clove	8
-354	94	1 teaspoon ground coriander	1.0	teaspoon	t	9
-354	49	1 teaspoon ground cumin	1.0	teaspoon	t	10
+354	93	1 teaspoon ground coriander	1.0	teaspoon	t	9
+354	48	1 teaspoon ground cumin	1.0	teaspoon	t	10
 354	18	1 tablespoon lemon juice	1.0	tablespoon	T	11
 354	18	3 tablespoons lemon juice	3.0	tablespoons	T	12
-354	75	1 tablespoon light soya sauce	1.0	tablespoon	T	13
+354	74	1 tablespoon light soya sauce	1.0	tablespoon	T	13
 354	5	Peanut butter, to taste	30.0	servings	servings	14
-354	123	2 tablespoons red curry paste	2.0	tablespoons	T	15
-354	72	1 tablespoon vegetable oil	1.0	tablespoon	T	20
-355	88	1/2 cup packed holy basil leaves & flowers	0.5	cup	c	0
+354	121	2 tablespoons red curry paste	2.0	tablespoons	T	15
+354	0	1 cup of coarse roasted peanuts	1.0	cup	c	16
+354	0	Spanish onion, cut into wedges	1.0			17
+354	162	1 teaspoon turmeric	1.0	teaspoon	t	18
+354	0	4 cups unsweetened coconut milk	4.0	cups	c	19
+354	71	1 tablespoon vegetable oil	1.0	tablespoon	T	20
+355	87	1/2 cup packed holy basil leaves & flowers	0.5	cup	c	0
+355	0	1 1/2 tablespoons oyster sauce	1.5	tablespoons	T	1
+355	0	1 teaspoon Braggs Amino Acids	1.0	teaspoon	t	2
+355	0	1 cup broccoli florets	1.0	cup	c	3
 355	11	2 tablespoons canola oil	2.0	tablespoons	T	4
-355	2	1 carrot, sliced	1.0	\N	\N	5
-355	122	1 sliced orange chili (about 1 tablespoon)	1.0	tablespoon	T	6
-355	122	1 tablespoon smashed small Thai chilies	1.0	tablespoon	T	7
-355	23	3 garlic, minced	3.0	\N	\N	8
-355	59	2 tablespoons fresh peppercorns	2.0	tablespoons	T	10
-355	75	1 tablespoon fish sauce or white soy sauce (or more to taste)	1.0	tablespoon	T	12
-355	127	1 1/2 teaspoon Tamari	1.5	teaspoon	t	14
-355	100	1/4 teaspoon vinegar	0.25	teaspoon	t	16
+355	2	1 carrot, sliced	1.0			5
+355	120	1 sliced orange chili (about 1 tablespoon)	1.0	tablespoon	T	6
+355	120	1 tablespoon smashed small Thai chilies	1.0	tablespoon	T	7
+355	23	3 garlic, minced	3.0			8
+355	0	1/2 cup Japanese eggplant, sliced	0.5	cup	c	9
+355	58	2 tablespoons fresh peppercorns	2.0	tablespoons	T	10
+355	0	1 1/4 cup (1/2 lb) fresh wide rice noodles [or, 1/4 lb. + 1/4 lb. Yam-cake, or Shirataki noodles]	0.5	lb	lb	11
+355	74	1 tablespoon fish sauce or white soy sauce (or more to taste)	1.0	tablespoon	T	12
+355	0	1/4 teaspoon Stevia	0.25	teaspoon	t	13
+355	125	1 1/2 teaspoon Tamari	1.5	teaspoon	t	14
+355	0	1/2 cup firm tofu, patted dry and cut into bit-sized pieces (or 1/2 cup seafood such as squid & shrimp, or chicken)	0.5	cup	c	15
+355	98	1/4 teaspoon vinegar	0.25	teaspoon	t	16
 355	7	3/4 cup of water	0.75	cup	c	17
-356	142	1 whole lime, juiced	1.0	\N	\N	2
-356	116	1 tablespoon sugar	1.0	tablespoon	T	5
-356	48	2 whole tomatoes, diced	2.0	\N	\N	6
+355	0	1/2 cup zucchini (1 medium), sliced	0.5	cup	c	18
+356	0	2 chilies	2.0			0
+356	163	3 tablespoons fish sauce	3.0	tablespoons	T	1
+356	139	1 whole lime, juiced	1.0			2
+356	156	lettuce	2.0	servings	servings	3
+356	0	2 whole green mango. peeled and julienned	2.0			4
+356	114	1 tablespoon sugar	1.0	tablespoon	T	5
+356	47	2 whole tomatoes, diced	2.0			6
+357	0	5 small dried chile de arbols, or other red chilies (check the produce section or Hispanic foods aisle)	5.0			0
+357	163	1/3 c. fish sauce	0.3333333333333333	c	c	1
 357	23	3 large cloves garlic, coarsely chopped	3.0	cloves	cloves	2
-357	142	1/4 c. lime juice	0.25	c	c	4
+357	0	12 cherry or grape tomatoes, halved	12.0			3
+357	139	1/4 c. lime juice	0.25	c	c	4
 357	4	1/2 c. very coarsely chopped onion	0.5	c	c	5
-357	77	1 red bell pepper, coarsely chopped	1.0	\N	\N	6
-357	116	1 pinch of sugar	1.0	pinch	pinch	7
-358	88	1/2 cup (s) of fresh basil, chopped	0.5	cup	c	0
-358	59	1 pinch of ground black pepper	1.0	pinch	pinch	3
-358	52	3/4 cup (s) of mung bean sprouts	0.75	cup	c	4
+357	76	1 red bell pepper, coarsely chopped	1.0			6
+357	114	1 pinch of sugar	1.0	pinch	pinch	7
+358	87	1/2 cup (s) of fresh basil, chopped	0.5	cup	c	0
+358	0	1 cup (s) of broccoli slaw mix (containing broccoli, carrots&	1.0	cup	c	1
+358	0	1 1/2 cups (s) of chicken strips	1.5	cups	c	2
+358	58	1 pinch of ground black pepper	1.0	pinch	pinch	3
+358	51	3/4 cup (s) of mung bean sprouts	0.75	cup	c	4
 358	5	1/4 cup (s) of natural peanut butter, creamy (no sugar!)	0.25	cup	c	5
-358	97	1 teaspoon of sea salt	1.0	teaspoon	t	10
+358	0	cup (s) of peanuts, crushed	1.0	cup	c	6
+358	0	1 tablespoon of rice wine vinegar	1.0	tablespoon	T	7
+358	0	2 tablespoons of rice wine vinegar	2.0	tablespoons	T	8
+358	157	6 large romaine lettuce leaves	6.0			9
+358	96	1 teaspoon of sea salt	1.0	teaspoon	t	10
 358	28	1 tablespoon of sesame oil	1.0	tablespoon	T	11
 358	28	2 tablespoons of sesame oil	2.0	tablespoons	T	12
 358	46	1 tablespoon of sesame seeds	1.0	tablespoon	T	13
-358	75	2 tablespoons of shoyu or soy sauce	2.0	tablespoons	T	14
-358	116	1 1/2 tablespoons of sugar	1.5	tablespoons	T	15
-359	93	1/4 cup fresh cilantro, chopped	0.25	cup	c	0
+358	74	2 tablespoons of shoyu or soy sauce	2.0	tablespoons	T	14
+358	114	1 1/2 tablespoons of sugar	1.5	tablespoons	T	15
+359	92	1/4 cup fresh cilantro, chopped	0.25	cup	c	0
 359	23	1 teaspoon minced garlic	1.0	teaspoon	t	1
-359	73	1 tablespoon olive oil	1.0	tablespoon	T	4
+359	141	1 teaspoon minced ginger	1.0	teaspoon	t	2
+359	0	1 can coconut milk (I don't recommend using light)	1.0	can	can	3
+359	72	1 tablespoon olive oil	1.0	tablespoon	T	4
 359	4	1 cup finely chopped onion	1.0	cup	c	5
-359	67	1 cup red lentils, picked through for stones, and rinsed well	1.0	cup	c	6
+359	66	1 cup red lentils, picked through for stones, and rinsed well	1.0	cup	c	6
 359	6	1/2 teaspoon salt, or more to taste	0.5	teaspoon	t	7
+359	154	1 inch medium sweet potato, cut into 1/2 pieces	1.0	inch	inch	8
+359	0	2 teaspoons Thai red curry paste (if you like it spicy, use the full 2 teaspoons)	2.0	teaspoons	t	9
+359	162	1/4 teaspoon turmeric	0.25	teaspoon	t	10
 359	7	6 cups water	6.0	cups	c	11
-360	14	2 eggs	2.0	\N	\N	0
+360	14	2 eggs	2.0			0
 360	23	clove garlic, minced fine	1.0	clove	clove	1
-360	3	1/2 green pepper, chopped	0.5	\N	\N	2
-360	4	1 big onion, sliced	1.0	\N	\N	4
+360	3	1/2 green pepper, chopped	0.5			2
+360	71	• Oil for fry	1.0	serving	serving	3
+360	4	1 big onion, sliced	1.0			4
+360	0	Pepper to taste	1.0	serving	serving	5
+360	0	1 pound lean pork, sliced	1.0	pound	lb	6
+360	174	2 cups rice	2.0	cups	c	7
 360	6	• Salt to taste	1.0	serving	serving	8
-360	75	2 1/2 tablespoons soy sauce	2.5	tablespoons	T	9
-360	116	2 teaspoons sugar	2.0	teaspoons	t	10
-360	48	1 tomato, diced	1.0	\N	\N	11
+360	74	2 1/2 tablespoons soy sauce	2.5	tablespoons	T	9
+360	114	2 teaspoons sugar	2.0	teaspoons	t	10
+360	47	1 tomato, diced	1.0			11
 360	7	4 cups water	4.0	cups	c	12
-361	93	1/4 cup of coriander leaves- chopped	0.25	cup	c	1
-361	14	1 Egg, Lightly Beaten	1.0	\N	\N	2
-361	60	1 -2 Red chili	1.0	\N	\N	6
-361	123	2 tbsp Red Curry Paste	2.0	tbsp	T	7
+361	0	2 tbsp Corn Flour	2.0	tbsp	T	0
+361	92	1/4 cup of coriander leaves- chopped	0.25	cup	c	1
+361	14	1 Egg, Lightly Beaten	1.0			2
+361	163	1 1/2 tablespoons fish sauce	1.5	tablespoons	T	3
+361	0	200 g green beans	200.0	g	g	4
+361	71	Oil for fry	2.0	servings	servings	5
+361	59	1 -2 Red chili	1.0			6
+361	121	2 tbsp Red Curry Paste	2.0	tbsp	T	7
 361	6	salt	2.0	servings	servings	8
-361	95	2 Spring Onion, Chopped	2.0	\N	\N	9
+361	94	2 Spring Onion, Chopped	2.0			9
+361	0	300 g White Fish Fillets, Uncooked	300.0	g	g	10
 362	2	1 cup carrot, shredded	1.0	cup	c	0
-362	122	2 to 3 chili padis	2.0	\N	\N	1
+362	120	2 to 3 chili padis	2.0			1
+362	163	Fish sauce, to taste	6.0	servings	servings	2
 362	23	1 clove of garlic, mashed	1.0	clove	clove	3
-362	141	4 limes	4.0	\N	\N	4
-362	53	1 tablespoon of dried shrimps, washed	1.0	tablespoon	T	9
-362	48	1 tomato, cut into wedges	1.0	\N	\N	10
-363	59	1 tsp black peppercorns	1.0	tsp	t	2
-363	50	1 tsp cumin seeds	1.0	tsp	t	4
-363	94	2-3 sprigs coriander leaves (cut off roots and include the stems)	2.0	sprigs	sprigs	5
+362	138	4 limes	4.0			4
+362	0	3 cups raw green mangoes, shredded	3.0	cups	c	5
+362	0	Thai palm sugar, to taste	6.0	servings	servings	6
+362	0	4 tablespoons roasted coarse peanuts	4.0	tablespoons	T	7
+362	0	2 shallots, mashed	2.0			8
+362	52	1 tablespoon of dried shrimps, washed	1.0	tablespoon	T	9
+362	47	1 tomato, cut into wedges	1.0			10
+362	0	2 inches long beans cut into 1 pieces	2.0	inches	inches	11
+363	0	2 bay leaves	2.0			0
+363	0	1/2 inch roasted belacan	0.5	inch	inch	1
+363	58	1 tsp black peppercorns	1.0	tsp	t	2
+363	0	1/2 cup coconut milk	0.5	cup	c	3
+363	49	1 tsp cumin seeds	1.0	tsp	t	4
+363	93	2-3 sprigs coriander leaves (cut off roots and include the stems)	2.0	sprigs	sprigs	5
+363	163	3 tbsp Fish Sauce	3.0	tbsp	T	6
+363	0	1/2 inch galangal	0.5	inch	inch	7
 363	23	2 teaspoons minced garlic	2.0	teaspoons	t	8
-363	142	2 tablespoons lemon or lime juice	2.0	tablespoons	T	12
-363	78	5-6 dried red chilies	5.0	\N	\N	15
+363	0	3 cardamoms (only the seeds)	3.0			9
+363	0	500g lamb (or beef)	500.0	g	g	10
+363	0	1 lemongrass	1.0			11
+363	139	2 tablespoons lemon or lime juice	2.0	tablespoons	T	12
+363	0	1/2 tsp lime rind	0.5	tsp	t	13
+363	71	1/2 cup oil	0.5	cup	c	14
+363	77	5-6 dried red chilies	5.0			15
+363	128	2 potatoes - remove skin and cut into chunks (optional)	2.0			16
 363	6	Salt for taste (only if need or use sparingly as fish sauce is salty)	5.0	servings	servings	17
-364	93	1/2 cup – 1 cilantro leaves, chopped	0.5	cup	c	2
+363	0	2-3 Shallots, sliced.	2.0	slices	slices	18
+364	0	2 cups broccoli, cut into mini florets	2.0	cups	c	0
+364	0	1 teaspoon hot chili sauce	1.0	teaspoon	t	1
+364	92	1/2 cup – 1 cilantro leaves, chopped	0.5	cup	c	2
+364	163	1 tablespoon fish sauce	1.0	tablespoon	T	3
 364	23	2 cloves garlic, minced	2.0	cloves	cloves	4
 364	30	2 tablespoons hoisin sauce	2.0	tablespoons	T	5
 364	18	2 tablespoons lemon juice	2.0	tablespoons	T	6
-364	73	2 tablespoons olive oil	2.0	tablespoons	T	7
+364	72	2 tablespoons olive oil	2.0	tablespoons	T	7
 364	4	1 cup onions, diced	1.0	cup	c	8
-364	75	2 tablespoons soy sauce	2.0	tablespoons	T	10
-364	77	1 cup sweet peppers, diced	1.0	cup	c	11
-365	51	� cup brown sugar	0.25	cup	c	1
-365	4	2 onions, slice	2.0	\N	\N	5
-365	77	1/2 cup red bell pepper (julienne)	0.5	cup	c	7
+364	0	Salt and pepper	2.0	servings	servings	9
+364	74	2 tablespoons soy sauce	2.0	tablespoons	T	10
+364	76	1 cup sweet peppers, diced	1.0	cup	c	11
+364	0	6 ounces whole wheat spaghetti	6.0	ounces	oz	12
+365	0	8 oz bamboo shoots (sliced and drained)	8.0	oz	oz	0
+365	50	� cup brown sugar	0.25	cup	c	1
+365	0	1 lb chicken breast	1.0	lb	lb	2
+365	0	13.5 oz coconut milk	13.5	oz	oz	3
+365	163	1 teaspoon fish sauce (nam pla)	1.0	teaspoon	t	4
+365	4	2 onions, slice	2.0			5
+365	0	14 oz pineapple chunks (drained)	14.0	oz	oz	6
+365	76	1/2 cup red bell pepper (julienne)	0.5	cup	c	7
+365	0	1 tablespoon red curry paste	1.0	tablespoon	T	8
 365	31	250 grams snow peas, trimmed	250.0	grams	g	9
-366	52	1 cup fresh bean sprouts	1.0	cup	c	3
-366	93	Fresh flat leaf parsley or cilantro leaves for garnish	1.0	leaves	leaves	4
-366	116	3 teaspoons granulated sugar	3.0	teaspoons	t	5
-366	95	4 green onions	4.0	\N	\N	6
-366	142	1/2 cup fresh lime juice	0.5	cup	c	7
-366	75	2 teaspoons soy sauce	2.0	teaspoons	t	9
-367	75	4 tablespoons Nama Shoyu (soy sauce) or Bragg liquid Aminos	4.0	tablespoons	T	2
+366	0	Cooked jasmine rice	2.0	servings	servings	0
+366	0	2 large cucumbers	2.0			1
+366	0	6 Chinese sausages	6.0			2
+366	51	1 cup fresh bean sprouts	1.0	cup	c	3
+366	92	Fresh flat leaf parsley or cilantro leaves for garnish	1.0	leaves	leaves	4
+366	114	3 teaspoons granulated sugar	3.0	teaspoons	t	5
+366	94	4 green onions	4.0			6
+366	139	1/2 cup fresh lime juice	0.5	cup	c	7
+366	0	1 thinly sliced hot, fresh red chili pepper (optional)	1.0			8
+366	74	2 teaspoons soy sauce	2.0	teaspoons	t	9
+366	0	2 tablespoons Thai fish sauce	2.0	tablespoons	T	10
+367	0	2 tablespoons apple cider vinegar (or rice vinegar)	2.0	tablespoons	T	0
+367	151	8 ounces baby bok choy or regular bok choy (shredded	8.0	ounces	oz	1
+367	74	4 tablespoons Nama Shoyu (soy sauce) or Bragg liquid Aminos	4.0	tablespoons	T	2
+367	0	1 cup uncooked brown rice (make recipe below)	1.0	cup	c	3
+367	0	1 cup raw cashew nuts	1.0	cup	c	4
+367	0	1 1/4 cups dry unsweetened shredded coconut, lightly toasted	1.25	cups	c	5
+367	0	1 flax egg (made with 1 Tbsp. ground flax seed & 3 Tbsp. water)	1.0	tablespoon	T	6
+367	0	2 tablespoons extra-virgin olive oil	2.0	tablespoons	T	7
 367	23	4 garlic cloves, minced	4.0	cloves	cloves	8
-368	88	1 bunch basil leaves, 2 c. leaves	1.0	bunch	bunch	0
-368	95	4 green onions	4.0	\N	\N	4
-368	60	3 hot red or green chilies	3.0	\N	\N	6
-368	53	8 ounces shrimp, cooked, peeled, and deveined, 51 – 60 per pound	8.0	ounces	oz	7
-368	75	2 teaspoons soy sauce	2.0	teaspoons	t	8
-368	116	1 teaspoon sugar	1.0	teaspoon	t	9
-369	74	A handful of cashew nuts	1.0	handful	handful	0
-369	79	1 tablespoon chili paste	1.0	tablespoon	T	2
-369	75	1/2 tablespoon Dark soy sauce	0.5	tablespoon	T	3
-369	78	Dried chilies	3.0	servings	servings	4
+367	0	2 1/2 cups fresh green beans, cut in half	2.5	cups	c	9
+367	0	lime wedges for serving	4.0	servings	servings	10
+367	0	1/2 teaspoon stevia powder (or sweetener of choice)	0.5	teaspoon	t	11
+368	87	1 bunch basil leaves, 2 c. leaves	1.0	bunch	bunch	0
+368	0	8 cups chicken stock	8.0	cups	c	1
+368	0	Hot cooked rice	4.0	servings	servings	2
+368	163	2 tablespoons fish sauce	2.0	tablespoons	T	3
+368	94	4 green onions	4.0			4
+368	0	1 teaspoon organic peanut oil	1.0	teaspoon	t	5
+368	59	3 hot red or green chilies	3.0			6
+368	52	8 ounces shrimp, cooked, peeled, and deveined, 51 – 60 per pound	8.0	ounces	oz	7
+368	74	2 teaspoons soy sauce	2.0	teaspoons	t	8
+368	114	1 teaspoon sugar	1.0	teaspoon	t	9
+369	73	A handful of cashew nuts	1.0	handful	handful	0
+369	0	300-350g Chicken breast or thighs (about 3/4 pound)	0.75	pound	lb	1
+369	78	1 tablespoon chili paste	1.0	tablespoon	T	2
+369	74	1/2 tablespoon Dark soy sauce	0.5	tablespoon	T	3
+369	77	Dried chilies	3.0	servings	servings	4
 369	23	2 cloves garlic, minced	2.0	cloves	cloves	5
-369	95	1 stalk green onion	1.0	stalk	stalk	6
-369	4	1 onion (cut into wedges)	1.0	\N	\N	7
-369	75	1 tablespoon soy sauce	1.0	tablespoon	T	8
-370	51	1/4 cup Brown Sugar	0.25	cup	c	0
-370	141	1 Lime	1.0	\N	\N	5
-371	51	2 teaspoons brown sugar	2.0	teaspoons	t	1
+369	94	1 stalk green onion	1.0	stalk	stalk	6
+369	4	1 onion (cut into wedges)	1.0			7
+369	74	1 tablespoon soy sauce	1.0	tablespoon	T	8
+370	50	1/4 cup Brown Sugar	0.25	cup	c	0
+370	0	1 teaspoon Hot Chili Sauce	1.0	teaspoon	t	1
+370	163	2 tablespoons Fish Sauce	2.0	tablespoons	T	2
+370	141	2 tablespoons Minced Fresh Ginger	2.0	tablespoons	T	3
+370	162	1 tablespoon ground Dried Turmeric	1.0	tablespoon	T	4
+370	138	1 Lime	1.0			5
+370	0	1 bunch Yu Choy	1.0	bunch	bunch	6
+370	0	1 1/2 pounds Salmon Fillet	1.5	pounds	lb	7
+371	151	1 large head bok choy, chopped	1.0	head	head	0
+371	50	2 teaspoons brown sugar	2.0	teaspoons	t	1
 371	2	1 c. julienned carrots	1.0	c	c	2
-371	79	2 teaspoons hot chili paste (depending on how spicy you prefer your dish- start with 1 tsp and taste test it)	2.0	teaspoons	t	3
+371	78	2 teaspoons hot chili paste (depending on how spicy you prefer your dish- start with 1 tsp and taste test it)	2.0	teaspoons	t	3
 371	40	1 teaspoon corn starch dissolved in 1 tablespoon cold water	1.0	teaspoon	t	4
+371	0	1 12 ounce block extra firm tofu, drained and pressed to remove water	12.0	ounce	oz	5
+371	163	1 T. fish sauce	1.0	T	T	6
+371	0	3 tablespoons oyster sauce	3.0	tablespoons	T	7
 371	28	2 tablespoons Sesame oil	2.0	tablespoons	T	8
-371	75	2 tablespoons soy sauce	2.0	tablespoons	T	9
+371	74	2 tablespoons soy sauce	2.0	tablespoons	T	9
 372	11	1/2 c. canola oil, divided	0.5	c	c	0
 372	2	1 c. julienned carrots	1.0	c	c	1
-372	93	1/2 c. cilantro leaves	0.5	c	c	3
+372	0	pinch of cayenne	1.0	pinch	pinch	2
+372	92	1/2 c. cilantro leaves	0.5	c	c	3
+372	163	1 T. fish sauce	1.0	T	T	4
 372	23	1 garlic clove, finely minced	1.0	clove	clove	5
-372	51	2 t. light brown sugar	2.0	t	t	7
-372	142	3 T. fresh lime juice	3.0	T	T	8
-372	95	1 c. thinly sliced scallion	1.0	c	c	11
+372	141	1 teaspoon Minced ginger	1.0	teaspoon	t	6
+372	50	2 t. light brown sugar	2.0	t	t	7
+372	139	3 T. fresh lime juice	3.0	T	T	8
+372	148	1 small head of napa cabbage, shredded (about 3 c.)	3.0	c	c	9
+372	149	1/2 head red cabbage	0.5	head	head	10
+372	94	1 c. thinly sliced scallion	1.0	c	c	11
 372	31	6 oz. snow peas, trimmed, sliced on the diagonal about 1/2-inch thick	6.0	oz	oz	12
+372	0	1/2 t. Chinese five spice	0.5	t	t	13
 372	32	1 t. sriracha	1.0	t	t	14
-372	83	1 yellow bell pepper, thinly sliced	1.0	\N	\N	17
-373	88	20 grams pack basil, leaves picked	20.0	grams	g	1
-373	51	1 teaspoon brown sugar	1.0	teaspoon	t	2
-373	93	20 grams stalks from pack coriander	20.0	grams	g	5
+372	0	1 c. unsalted peanuts, divided	1.0	c	c	15
+372	0	12 square wonton wrappers	12.0	square	square	16
+372	82	1 yellow bell pepper, thinly sliced	1.0			17
+373	0	1 small aubergine, chopped into chunks	1.0			0
+373	87	20 grams pack basil, leaves picked	20.0	grams	g	1
+373	50	1 teaspoon brown sugar	1.0	teaspoon	t	2
+373	0	400 milliliters can reduced-fat coconut milk	400.0	milliliters	ml	3
+373	0	3 red chilies	3.0			4
+373	92	20 grams stalks from pack coriander	20.0	grams	g	5
+373	0	1 courgette, chopped into chunks	1.0			6
 373	23	2 garlic cloves	2.0	cloves	cloves	7
-373	94	1 teaspoon ground coriander	1.0	teaspoon	t	9
-373	142	3 juice limes	3.0	\N	\N	13
-373	56	140 grams mushrooms, halved	140.0	grams	g	14
-373	59	1 teaspoon freshly ground pepper	1.0	teaspoon	t	15
-373	77	1/2 red pepper, deseeded and roughly chopped	0.5	\N	\N	16
-373	75	5 tablespoons soy sauce	5.0	tablespoons	T	18
-373	72	2 tablespoons vegetable oil	2.0	tablespoons	T	21
-374	88	1/2 cup Thai basil or you can use regular basil	0.5	cup	c	0
-374	94	1/2 cup coriander (cilantro) leaves	0.5	cup	c	3
+373	141	thumb-size piece ginger, grated	1.0	piece		8
+373	93	1 teaspoon ground coriander	1.0	teaspoon	t	9
+373	0	jasmine rice, to serve	4.0	servings	servings	10
+373	0	1 lemongrass, roughly chopped	1.0			11
+373	0	1 zest lime	1.0			12
+373	139	3 juice limes	3.0			13
+373	55	140 grams mushrooms, halved	140.0	grams	g	14
+373	58	1 teaspoon freshly ground pepper	1.0	teaspoon	t	15
+373	76	1/2 red pepper, deseeded and roughly chopped	0.5			16
+373	0	3 shallots, roughly chopped	3.0			17
+373	74	5 tablespoons soy sauce	5.0	tablespoons	T	18
+373	0	140 grams sugar snap peas	140.0	grams	g	19
+373	0	200 grams firm tofu, cubed	200.0	grams	g	20
+373	71	2 tablespoons vegetable oil	2.0	tablespoons	T	21
+374	87	1/2 cup Thai basil or you can use regular basil	0.5	cup	c	0
+374	156	small head of Boston lettuce, roughly chopped	1.0	head	head	1
+374	0	small chili pepper, finely chopped	4.0	servings	servings	2
+374	93	1/2 cup coriander (cilantro) leaves	0.5	cup	c	3
+374	163	1/4 cup fish sauce	0.25	cup	c	4
 374	23	1 clove garlic	1.0	clove	clove	5
-374	142	2 tablespoons fresh lime juice	2.0	tablespoons	T	6
-374	77	red bell pepper, thinly sliced	4.0	servings	servings	8
-374	53	8 large cooked shrimp, slice in half lengthways	8.0	\N	\N	10
-374	116	1 tablespoon sugar	1.0	tablespoon	T	12
+374	139	2 tablespoons fresh lime juice	2.0	tablespoons	T	6
+374	152	1/2 cup mint leaves	0.5	cup	c	7
+374	76	red bell pepper, thinly sliced	4.0	servings	servings	8
+374	0	1/4 cup rice vinegar	0.25	cup	c	9
+374	52	8 large cooked shrimp, slice in half lengthways	8.0			10
+374	0	8 large (8-inch) spring roll wrappers	8.0			11
+374	114	1 tablespoon sugar	1.0	tablespoon	T	12
 374	7	1/4 cup water	0.25	cup	c	13
+374	0	Nuoc Cham (dipping sauce)	4.0	servings	servings	14
 375	24	1 1/4 cups shredded cabbage	1.25	cups	c	0
 375	2	1 1/4 cups shredded carrots	1.25	cups	c	1
-375	79	1 teaspoon chili paste	1.0	teaspoon	t	2
+375	78	1 teaspoon chili paste	1.0	teaspoon	t	2
+375	0	1 tablespoon coconut milk	1.0	tablespoon	T	3
 375	5	1/2 cup Creamy Peanut Butter	0.5	cup	c	4
-375	88	15 fresh basil leaves, chopped	15.0	\N	\N	5
-375	93	2 tablespoons fresh cilantro, chopped	2.0	tablespoons	T	6
+375	87	15 fresh basil leaves, chopped	15.0			5
+375	92	2 tablespoons fresh cilantro, chopped	2.0	tablespoons	T	6
+375	141	1 tablespoon fresh ginger, grated	1.0	tablespoon	T	7
+375	0	15 fresh mint leaves, chopped	15.0			8
 375	23	1 Tbs.minced garlic	1.0	Tb	Tb	9
-375	142	1 tablespoon fresh lime juice	1.0	tablespoon	T	10
-375	95	2 scallions	2.0	\N	\N	13
+375	139	1 tablespoon fresh lime juice	1.0	tablespoon	T	10
+375	0	1/4 cup peanuts, crushed	0.25	cup	c	11
+375	0	1 1/4 ounces rice vermicelli	1.25	ounces	oz	12
+375	94	2 scallions	2.0			13
 375	28	1 teaspoon toasted (dark) sesame seed oil	1.0	teaspoon	t	14
-375	75	1 1/2 tablespoons gluten free soy sauce (Tamari)	1.5	tablespoons	T	15
-375	116	1/2 tablespoon sugar	0.5	tablespoon	T	17
+375	74	1 1/2 tablespoons gluten free soy sauce (Tamari)	1.5	tablespoons	T	15
+375	0	15 gluten free spring roll wrappers	15.0			16
+375	114	1/2 tablespoon sugar	0.5	tablespoon	T	17
 375	7	1/2 cup warm water	0.5	cup	c	18
-376	2	2 carrots, sliced thin on the bias	2.0	\N	\N	0
-376	62	1/4 teaspoon crushed red pepper	0.25	teaspoon	t	3
-376	54	2 daikon radishes, sliced thin on the bias	2.0	\N	\N	5
+376	2	2 carrots, sliced thin on the bias	2.0			0
+376	0	4 large chicken breasts	4.0			1
+376	0	1 cup cilantro leaves (or mint)	1.0	cup	c	2
+376	61	1/4 teaspoon crushed red pepper	0.25	teaspoon	t	3
+376	0	1/2 cucumber, sliced thin	0.5			4
+376	53	2 daikon radishes, sliced thin on the bias	2.0			5
+376	163	1/2 cup fish sauce	0.5	cup	c	6
 376	23	1 clove garlic, minced	1.0	clove	clove	7
-376	137	1 sliced jalapeno for extra heat	1.0	\N	\N	8
-376	142	1/2 cup lime juice	0.5	cup	c	9
+376	135	1 sliced jalapeno for extra heat	1.0			8
+376	139	1/2 cup lime juice	0.5	cup	c	9
+376	0	1/3 cup mayonnaise	0.3333333333333333	cup	c	10
+376	0	1/4 cup rice vinegar	0.25	cup	c	11
 376	6	1/4 teaspoon salt	0.25	teaspoon	t	12
-376	116	1/4 cup sugar	0.25	cup	c	14
+376	0	6 soft sub bun	6.0			13
+376	114	1/4 cup sugar	0.25	cup	c	14
 376	7	1/4 cup hot tap water	0.25	cup	c	15
-377	58	1/2 cup If non-vegetarian: add cooked baby shrimp	0.5	cup	c	0
-377	52	2 cups approx. bean sprouts	2.0	cups	c	1
+377	57	1/2 cup If non-vegetarian: add cooked baby shrimp	0.5	cup	c	0
+377	51	2 cups approx. bean sprouts	2.0	cups	c	1
 377	24	1/2 cup shredded or finely chopped cabbage	0.5	cup	c	2
 377	2	1 cup shredded carrots	1.0	cup	c	3
-377	124	1 teaspoon 1 red chili, minced, OR 1/2 to cayenne pepper (omit if you prefer very mild	1.0	teaspoon	t	4
-377	92	1/2 cup chives	0.5	cup	c	5
-377	88	1/2 cup fresh basil, roughly chopped	0.5	cup	c	7
-377	93	1/2 cup fresh coriander, roughly chopped	0.5	cup	c	8
+377	122	1 teaspoon 1 red chili, minced, OR 1/2 to cayenne pepper (omit if you prefer very mild	1.0	teaspoon	t	4
+377	91	1/2 cup chives	0.5	cup	c	5
+377	163	2 tablespoons fish sauce OR vegetarian stir-fry sauce	2.0	tablespoons	T	6
+377	87	1/2 cup fresh basil, roughly chopped	0.5	cup	c	7
+377	92	1/2 cup fresh coriander, roughly chopped	0.5	cup	c	8
+377	0	1 thumb-size piece galangal OR ginger, grated	1.0			9
 377	23	3 cloves garlic, minced	3.0	cloves	cloves	10
-377	95	2 green onions, sliced into matchstick pieces	2.0	\N	\N	11
-377	142	2 tablespoons lime juice	2.0	tablespoons	T	12
-377	55	6 shiitake mushrooms, cut into matchstick pieces	6.0	\N	\N	14
-377	75	2 tablespoons regular soy sauce	2.0	tablespoons	T	15
-377	116	1/4 teaspoon sugar	0.25	teaspoon	t	16
-378	2	2 carrots, julienned	2.0	\N	\N	0
+377	94	2 green onions, sliced into matchstick pieces	2.0			11
+377	139	2 tablespoons lime juice	2.0	tablespoons	T	12
+377	0	1 16 oz package phyllo dough	16.0	oz	oz	13
+377	54	6 shiitake mushrooms, cut into matchstick pieces	6.0			14
+377	74	2 tablespoons regular soy sauce	2.0	tablespoons	T	15
+377	114	1/4 teaspoon sugar	0.25	teaspoon	t	16
+377	0	1/2 cup medium to firm tofu, sliced into matchstick pieces	0.5	cup	c	17
+378	2	2 carrots, julienned	2.0			0
 378	23	1 1/2 garlic clove	1.5	cloves	cloves	1
+378	141	1/2 teaspoon ginger	0.5	teaspoon	t	2
 378	30	3/4 cup hoisin sauce	0.75	cup	c	3
 378	30	Garlic Lime Hoisin Sauce	10.0	servings	servings	4
-378	142	2 tablespoons lime	2.0	tablespoons	T	7
-378	77	1 red bell pepper	1.0	\N	\N	8
-378	88	12 leaves of Thai basil	12.0	leaves	leaves	11
-378	83	1 yellow bell pepper	1.0	\N	\N	12
+378	0	1 jicama	1.0			5
+378	156	1 head of butter leaf lettuce	1.0	head	head	6
+378	139	2 tablespoons lime	2.0	tablespoons	T	7
+378	76	1 red bell pepper	1.0			8
+378	0	12 rice paper sheets	12.0	sheet	sheet	9
+378	0	Vegetarian Spring Roll	10.0	servings	servings	10
+378	87	12 leaves of Thai basil	12.0	leaves	leaves	11
+378	82	1 yellow bell pepper	1.0			12
 378	32	1 teaspoon Sriracha (or to taste)	1.0	teaspoon	t	13
-379	93	cilantro sprigs	1.0	sprigs	sprigs	0
+379	92	cilantro sprigs	1.0	sprigs	sprigs	0
+379	0	1 cucumber, peeled in stripes, and sliced thinly	1.0			1
+379	163	2 tablespoons of fish sauce	2.0	tablespoons	T	2
 379	23	1 tablespoon minced garlic	1.0	tablespoon	T	3
-379	59	2 tablespoons fresh ground black pepper	2.0	tablespoons	T	4
-379	137	jalapeno	6.0	servings	servings	5
+379	58	2 tablespoons fresh ground black pepper	2.0	tablespoons	T	4
+379	135	jalapeno	6.0	servings	servings	5
+379	0	1 pound of pork chops, shoulder or loin. Sliced thinly	1.0	pound	lb	6
+379	0	mayo	6.0	servings	servings	7
 379	4	2 tablespoons of finely chopped onion	2.0	tablespoons	T	8
+379	0	pate	6.0	servings	servings	9
+379	0	pickled carrot and daikon	6.0	servings	servings	10
 379	28	1 teaspoon of sesame seed oil	1.0	teaspoon	t	11
-379	116	2 1/2 tablespoons sugar	2.5	tablespoons	T	13
-379	72	1/4 cup vegetable oil	0.25	cup	c	14
-380	88	2 tablespoons shredded fresh basil leaves	2.0	tablespoons	T	1
-380	51	1 teaspoon brown sugar	1.0	teaspoon	t	2
-380	52	1 cup fresh bean sprouts	1.0	cup	c	5
+379	0	6 sub rolls	6.0			12
+379	114	2 1/2 tablespoons sugar	2.5	tablespoons	T	13
+379	71	1/4 cup vegetable oil	0.25	cup	c	14
+380	151	4 cups baby bok choy leaves	4.0	cups	c	0
+380	87	2 tablespoons shredded fresh basil leaves	2.0	tablespoons	T	1
+380	50	1 teaspoon brown sugar	1.0	teaspoon	t	2
+380	0	2 cardamom pods	2.0			3
+380	163	3 tablespoons fish sauce	3.0	tablespoons	T	4
+380	51	1 cup fresh bean sprouts	1.0	cup	c	5
+380	141	1 (3-inch) piece peeled fresh ginger, thinly sliced	3.0	inch	inch	6
 380	23	2 garlic cloves, halved	2.0	cloves	cloves	7
-380	141	4 lime wedges	4.0	wedges	wedges	9
+380	0	4 cups fat-free, less-sodium beef broth	4.0	cups	c	8
+380	138	4 lime wedges	4.0	wedges	wedges	9
+380	0	1 tablespoon less-sodium soy sauce	1.0	tablespoon	T	10
+380	152	2 tablespoons shredded fresh mint leaves	2.0	tablespoons	T	11
+380	0	2 tablespoons light miso	2.0	tablespoons	T	12
+380	0	4 ounces uncooked wide (maifun) thin rice stick noodles	4.0	ounces	oz	13
 380	28	1 teaspoon sesame oil	1.0	teaspoon	t	14
+380	0	1 (8-ounce) sirloin steak	8.0	ounce	oz	15
 380	31	1 cup snow peas, trimmed	1.0	cup	c	16
-380	122	1 inch small fresh Thai chile, thinly sliced into rings (no thai chilies town anywhere!	1.0	inch	inch	18
+380	0	1 star anise	1.0			17
+380	120	1 inch small fresh Thai chile, thinly sliced into rings (no thai chilies town anywhere!	1.0	inch	inch	18
 380	7	1 cup water	1.0	cup	c	19
 380	4	1 1/2 cups thinly sliced yellow onion	1.5	cups	c	20
-381	88	1 bunch Thai basil or regular basil	1.0	bunch	bunch	0
-381	60	2 tablespoons hot chili peppers (optional)	2.0	tablespoons	T	3
-381	134	1 teaspoon Hot chili sauce	1.0	teaspoon	t	4
-381	93	1 tablespoon Cilantro, chopped	1.0	tablespoon	T	5
-381	12	1 Cinnamon stick	1.0	\N	\N	6
-381	54	4 mediums daikon cut in 2-inch chunks	4.0	\N	\N	7
-381	52	2 cups Fresh bean sprouts	2.0	cups	c	9
-381	141	2 Limes cut in wedges	2.0	\N	\N	12
-381	4	2 large Onions, unpeeled, halved, and studded with 8 cloves	2.0	\N	\N	13
-381	4	2 mediums Onions, thinly sliced	2.0	\N	\N	14
-381	95	2 Scallions, thinly sliced	2.0	\N	\N	18
-381	116	3 tablespoons sugar	3.0	tablespoons	T	21
+381	87	1 bunch Thai basil or regular basil	1.0	bunch	bunch	0
+381	0	5 pounds Beef bones with marrow	5.0	pounds	lb	1
+381	0	1 pound Beef sirloin	1.0	pound	lb	2
+381	59	2 tablespoons hot chili peppers (optional)	2.0	tablespoons	T	3
+381	132	1 teaspoon Hot chili sauce	1.0	teaspoon	t	4
+381	92	1 tablespoon Cilantro, chopped	1.0	tablespoon	T	5
+381	12	1 Cinnamon stick	1.0			6
+381	53	4 mediums daikon cut in 2-inch chunks	4.0			7
+381	0	1 pound Flank steak	1.0	pound	lb	8
+381	51	2 cups Fresh bean sprouts	2.0	cups	c	9
+381	0	1 bunch Fresh mint	1.0	bunch	bunch	10
+381	141	2 ounces Piece ginger, unpeeled	2.0	ounces	oz	11
+381	138	2 Limes cut in wedges	2.0			12
+381	4	2 large Onions, unpeeled, halved, and studded with 8 cloves	2.0			13
+381	4	2 mediums Onions, thinly sliced	2.0			14
+381	0	5 pounds Oxtails	5.0	pounds	lb	15
+381	0	1 pound Rice noodles 1/4-inch wide (or banh pho)	1.0	pound	lb	16
+381	0	Black pepper and salt to taste	42.0	servings	servings	17
+381	94	2 Scallions, thinly sliced	2.0			18
+381	0	3 Shallots, unpeeled	3.0			19
+381	0	8 Star anise	8.0			20
+381	114	3 tablespoons sugar	3.0	tablespoons	T	21
+381	0	1 Tablespoon Nuoc mam (Vietnamese fish sauce)	1.0	Tablespoon	Tablespoon	22
 382	30	2 teaspoons hoison sauce	2.0	teaspoons	t	0
-382	93	Cilantro for garnish	1.0	serving	serving	1
+382	92	Cilantro for garnish	1.0	serving	serving	1
+382	0	1 cucumber, cut into thin, long strips	1.0			2
 382	23	2 cloves garlic, minced	2.0	cloves	cloves	3
-382	73	1 teaspoon olive oil	1.0	teaspoon	t	6
+382	156	1 head of green lettuce, any kind	1.0	head	head	4
+382	152	1 bunch mint	1.0	bunch	bunch	5
+382	72	1 teaspoon olive oil	1.0	teaspoon	t	6
 382	5	1/4 cup organic peanut butter	0.25	cup	c	7
-382	77	1 red pepper, cut into thin long strips	1.0	\N	\N	8
-382	53	1 pound fresh shrimp	1.0	pound	lb	11
+382	76	1 red pepper, cut into thin long strips	1.0			8
+382	0	Rice vermicelli noodles	1.0	serving	serving	9
+382	0	Rice paper	1.0	serving	serving	10
+382	52	1 pound fresh shrimp	1.0	pound	lb	11
 382	7	1/4 cup water (more if needed)	0.25	cup	c	12
-383	52	some bean sprouts	4.0	servings	servings	0
+383	51	some bean sprouts	4.0	servings	servings	0
 383	2	carrots (finely julienned)	4.0	servings	servings	1
-383	122	2 red birdeye chilies, sliced	2.0	\N	\N	3
+383	0	2 tablespoons caster sugar	2.0	tablespoons	T	2
+383	120	2 red birdeye chilies, sliced	2.0			3
+383	163	3 tablespoons fish sauce	3.0	tablespoons	T	4
 383	23	2 cloves garlic, minced	2.0	cloves	cloves	5
-383	142	2 tablespoons lime juice	2.0	tablespoons	T	6
-383	88	some Thai basil	4.0	servings	servings	10
-383	53	12 tiger prawns (peeled, deveined)	12.0	\N	\N	11
+383	139	2 tablespoons lime juice	2.0	tablespoons	T	6
+383	174	4 rice wrappers	4.0			7
+383	0	30 grams rice vermicelli	30.0	grams	g	8
+383	0	3 tablespoons rice vinegar	3.0	tablespoons	T	9
+383	87	some Thai basil	4.0	servings	servings	10
+383	52	12 tiger prawns (peeled, deveined)	12.0			11
 384	8	1 tbsp double action baking powder	1.0	tbsp	T	0
+384	0	Pau flour is low protein flour, if you can't find in your area, just use low protein flour or super fine flour and can also try cake flour to replace it.	1.0	can	can	1
+384	0	1 tbsp. dry yeast	1.0	tbsp	T	2
 384	15	400g Pau flour, sifted (Note*)	400.0	g	g	3
 384	6	1/2 teaspoon salt	0.5	teaspoon	t	4
-384	116	1 tablespoon sugar	1.0	tablespoon	T	6
+384	0	3 tbsp. Shortening	3.0	tbsp	T	5
+384	114	1 tablespoon sugar	1.0	tablespoon	T	6
 384	7	250g water	250.0	g	g	7
+384	0	100g wholemeal flour	100.0	g	g	8
 \.
 
 
@@ -3146,6 +5118,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 --
 
 COPY "Nutritional Content" (id, ingredient_id, calories, total_fat_g, saturated_fat_g, cholesterol_mg, sodium_mg, total_carbohydrates_g, dietary_fiber_g, sugar_g, protein_g, vitamin_a_iu, vitamin_c_mg, calcium_mg, iron_mg) FROM STDIN;
+0 0 0 0 0	0	0	0	0	0	0	0	0	0	0
 1	1	336	1.26	0.331	0	16	60.03	10.6	6.9	23.52	50	1.5	110	8.27
 2	2	41	0.24	0.037	0	69	9.58	2.8	4.74	0.93	16706	5.9	33	0.3
 3	3	20	0.17	0.058	0	3	4.64	1.7	2.4	0.86	370	80.4	10	0.34
@@ -3249,11 +5222,11 @@ COPY "Nutritional Content" (id, ingredient_id, calories, total_fat_g, saturated_
 101	101	88	0	0	0	23	17.03	0	14.95	0.49	0	0	27	0.72
 102	102	198	8.21	1.534	18	416	0	0	0	29.13	77	0	13	1.39
 103	103	144	4.9	1.257	38	39	0	0	0	23.33	2183	0	8	1.02
-104	104	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A
+104	104	300	20	10	0	16800	20	0	0	0	200	0	0	0
 105	105	5	0.07	0.028	0	296	0.93	0	0.55	0.24	238	0.4	3	0.06
 106	106	300	20	10	0	16800	20	0	0	0	200	0	0	0
-107	107	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A
-108	108	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A
+107	107	30	1.1	0	0	1.1	5.6	3.3	3.3	1.1	800	66	11	0.4
+108	108	30	1.1	0	0	1.1	5.6	3.3	3.3	1.1	800	66	11	0.4
 109	109	30	1.1	0	0	1.1	5.6	3.3	3.3	1.1	800	66	11	0.4
 110	110	30	1.1	0	0	1.1	5.6	3.3	3.3	1.1	800	66	11	0.4
 111	111	72	0.52	0.098	0	47	13.47	4	0	3.33	5078	10.4	25	0.95
@@ -3314,6 +5287,12 @@ COPY "Nutritional Content" (id, ingredient_id, calories, total_fat_g, saturated_
 166	166	341	1.04	0.219	0	73	79.12	15.2	6.63	10.41	0	23.4	384	3.9
 167	167	345	15.85	0	0	89	51.13	26.8	0	12.35	35760	6.4	97	9.83
 168	168	404	33.31	18.867	99	653	3.09	0	0.48	22.87	1242	0	710	0.14
+169	169	31	0.22	0.05	0	6	6.97	2.7	3.26	1.83	690	12.2	37	1.03
+170	170	58	0.48	0.086	0	185	10.6	3.3	3.2	3.01	1529	7.8	20	1.29
+171	171	144	3.57	0.863	86	328	0	0	0	28.04	17	0	13	0.46
+172	172	300	22.35	13.152	79	627	2.19	0	1.03	22.17	676	0	505	0.44
+173	173	717	81.11	51.368	215	643	0.06	0	0.06	0.85	2499	0	24	0.02
+174	174	365	0.66	0.18	0	5	79.95	1.3	0.12	7.13	0	0	28	4.31
 \.
 
 
@@ -3323,7 +5302,7 @@ COPY "Nutritional Content" (id, ingredient_id, calories, total_fat_g, saturated_
 -- Name: Nutritional Content_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('"Nutritional Content_id_seq"', 169, FALSE);
+SELECT pg_catalog.setval('"Nutritional Content_id_seq"', 175, FALSE);
 
 --
 -- TOC entry 2048 (class 0 OID 16682)

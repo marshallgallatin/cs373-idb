@@ -1,1 +1,109 @@
-{"vegetarian": false, "glutenFree": true, "title": "Easy Chicken, Kielbasa and Shrimp Paella", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/JYKRF2ZZ/easy-chicken-kielbasa-and-shrimp-paella", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Heat the oil in a 12-inch skillet over medium heat. Add the rice and cook for 30 seconds, stirring constantly. Stir the broth, picante sauce and turmeric in the skillet and heat to a boil. Reduce the heat to low. Cover and cook for 15 minutes.</li><li>Stir the kielbasa, shrimp and chicken in the skillet. Cover and cook for 5 minutes or until the rice is tender.</li></ol>", "aggregateLikes": 19, "dairyFree": true, "extendedIngredients": [{"aisle": "Meat", "unitLong": "ounces", "amount": 10.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "1 package (about 10 ounces) refrigerated fully-cooked chicken breast strips (about 1 3/4 cups)", "name": "chicken breast strips"}, {"aisle": "Canned and Jarred", "unitLong": "cups", "amount": 4.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "4 cups Swanson\u00ae Chicken Broth or Swanson\u00ae Chicken Stock, heated", "name": "chicken stock"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon ground turmeric", "name": "ground turmeric"}, {"aisle": "Pasta and Rice", "unitLong": "cups", "amount": 2.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "2 cups uncooked regular long-grain white rice", "name": "long-grain rice"}, {"aisle": "Pasta and Rice", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup Pace\u00ae Picante Sauce", "name": "picante sauce"}, {"aisle": "Seafood", "unitLong": "pounds", "amount": 0.75, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "3/4 pound small frozen peeled, deveined, cooked shrimp, thawed", "name": "shrimp"}, {"aisle": "Meat", "unitLong": "ounces", "amount": 16.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "1 package (16 ounces) turkey kielbasa, sliced", "name": "turkey kielbasa"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon vegetable oil", "name": "vegetable oil"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/easy-chicken-kielbasa-and-shrimp-paella-641911", "weightWatcherSmartPoints": 10, "id": 641911, "image": "https://spoonacular.com/recipeImages/Easy-Chicken--Kielbasa-and-Shrimp-Paella-641911.jpg", "servings": 8, "whole30": false, "lowFodmap": true}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Easy Chicken, Kielbasa and Shrimp Paella",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/JYKRF2ZZ/easy-chicken-kielbasa-and-shrimp-paella",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Heat the oil in a 12-inch skillet over medium heat. Add the rice and cook for 30 seconds, stirring constantly. Stir the broth, picante sauce and turmeric in the skillet and heat to a boil. Reduce the heat to low. Cover and cook for 15 minutes.</li><li>Stir the kielbasa, shrimp and chicken in the skillet. Cover and cook for 5 minutes or until the rice is tender.</li></ol>",
+  "aggregateLikes": 19,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Meat",
+      "unitLong": "ounces",
+      "amount": 10.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "1 package (about 10 ounces) refrigerated fully-cooked chicken breast strips (about 1 3/4 cups)",
+      "name": "chicken breast strips"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "cups",
+      "amount": 4.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "4 cups Swanson® Chicken Broth or Swanson® Chicken Stock, heated",
+      "name": "chicken stock"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon ground turmeric",
+      "name": "turmeric"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 cups uncooked regular long-grain white rice",
+      "name": "rice"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup Pace® Picante Sauce",
+      "name": "picante sauce"
+    },
+    {
+      "aisle": "Seafood",
+      "unitLong": "pounds",
+      "amount": 0.75,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "3/4 pound small frozen peeled, deveined, cooked shrimp, thawed",
+      "name": "shrimp"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "ounces",
+      "amount": 16.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "1 package (16 ounces) turkey kielbasa, sliced",
+      "name": "turkey kielbasa"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon vegetable oil",
+      "name": "vegetable oil"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/easy-chicken-kielbasa-and-shrimp-paella-641911",
+  "weightWatcherSmartPoints": 10,
+  "id": 641911,
+  "image": "https://spoonacular.com/recipeImages/Easy-Chicken--Kielbasa-and-Shrimp-Paella-641911.jpg",
+  "servings": 8,
+  "whole30": false,
+  "lowFodmap": true
+}

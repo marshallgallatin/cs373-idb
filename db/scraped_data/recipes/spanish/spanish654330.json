@@ -23,14 +23,24 @@
       "name": "bay leaf"
     },
     {
-      "aisle": "Pasta and Rice",
+      "aisle": "Produce",
       "unitLong": "pound",
       "amount": 1.0,
       "unitShort": "lb",
       "metaInformation": [],
       "unit": "pound",
       "originalString": "pound fresh green beans diced, or",
-      "name": "beans"
+      "name": "green bean"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "canned peas, carrots, or chick (depending on your taste)",
+      "name": "canned peas"
     },
     {
       "aisle": "Produce",
@@ -51,16 +61,6 @@
       "unit": "pound",
       "originalString": "pound calamari cleaned, skinned,",
       "name": "calamari"
-    },
-    {
-      "aisle": "Canned and Jarred",
-      "unitLong": "serving",
-      "amount": 1.0,
-      "unitShort": "serving",
-      "metaInformation": [],
-      "unit": "serving",
-      "originalString": "canned peas, carrots, or chick (depending on your taste)",
-      "name": "canned peas"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -101,16 +101,6 @@
       "unit": "",
       "originalString": "1 green pepper diced",
       "name": "green bell pepper"
-    },
-    {
-      "aisle": "Meat",
-      "unitLong": "chunk",
-      "amount": 1.0,
-      "unitShort": "chunks",
-      "metaInformation": [],
-      "unit": "chunks",
-      "originalString": "Meat chunks see * Note",
-      "name": "meat"
     },
     {
       "aisle": "Seafood",
@@ -170,7 +160,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "pound medium shrimp in shells heads off",
-      "name": "shells"
+      "name": "shrimp"
     },
     {
       "aisle": "Pasta and Rice",
@@ -180,7 +170,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups raw white rice",
-      "name": "white rice"
+      "name": "rice"
     }
   ],
   "readyInMinutes": 45,
