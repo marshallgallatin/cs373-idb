@@ -110,6 +110,10 @@ def about():
 def recipes():
 	return render_template('recipes.html', title="Recipes", recipeslit="active")
 
+@app.route('/ingredients.html')
+def ingredients():
+	return render_template('ingredients.html', title="Ingredients", ingredientslit="active")
+
 @app.route("/<path:path>")
 def static_html(path):
     return app.send_static_file('html/{}'.format(path))
@@ -154,52 +158,135 @@ def test_recipes():
 }
     return jsonify(testdict)
 
+@app.route('/recipes/test')
+def test_r():
+	return jsonify({
+  "cuisine": "african",
+  "dairy_free": True,
+  "gluten_free": True,
+  "image_uri": "https://spoonacular.com/recipeImages/African-Bean-Soup-632003.jpg",
+  "ingredients": [
+    {
+      "amount": 2.0,
+      "id": 0,
+      "original_string": "2 cups dried black-eyed peas",
+      "unit": "cups"
+    },
+    {
+      "amount": 2.0,
+      "id": 2,
+      "original_string": "2 cups sliced carrots",
+      "unit": "cups"
+    },
+    {
+      "amount": 1.0,
+      "id": 3,
+      "original_string": "1 cup green pepper, diced",
+      "unit": "cup"
+    },
+    {
+      "amount": 1.0,
+      "id": 4,
+      "original_string": "1 large chopped onion",
+      "unit": "cup"
+    },
+    {
+      "amount": 4.0,
+      "id": 5,
+      "original_string": "peanut butter",
+      "unit": "tablespoon"
+    },
+    {
+      "amount": 0.75,
+      "id": 6,
+      "original_string": "3/4 teaspoon salt",
+      "unit": "teaspoon"
+    },
+    {
+      "amount": 6.0,
+      "id": 7,
+      "original_string": "6 cups water",
+      "unit": "cups"
+    }
+  ],
+  "instructions": "<ol><li>Saute onions in large pot until soft. Add all ingredients except for peanut butter and simmer for 1 1/2 hours. </li><li>Stir a spoonful of peanut butter into each serving.</li></ol>",
+  "ready_in_minutes": 45,
+  "servings": 4,
+  "title": "African Bean Soup",
+  "vegan": True,
+  "vegetarian": True
+})
+
 @app.route('/recipe.html')
 @app.route('/recipe_<r_id>.html')
-def recipe(r_id=None):
-	store = {"id":"1",
-	"instructions":"<ol><li>Saute onions in large pot until soft. Add all ingredients except for peanut butter and simmer for 1 1/2 hours. </li><li>Stir a spoonful of peanut butter into each serving.</li></ol>",
-	"ingredients":["a","<b>b</b>"],
-	"test_ingred":"1 teaspoon <a href=\"/2044.html\">basil</a>",
-	"ingred":4,
-	"title":"Jamba",
-	"img_uri":"https://webknox.com/recipeImages/648427-556x370.jpg"}
-	split_ingredients(store)
-	split_instructions(store)
-	return render_template('recipe.html', **store, recipeslit="active")
+def recipe(r_id="test"):
+	return render_template('recipe.html', rec_id=r_id, recipeslit="active")
 
-def split_ingredients(d):
-	l = d["ingredients"]
-	halfI = (len(l) + 1) // 2
-	d["ingredients1"] = l[0:halfI]
-	d["ingredients2"] = l[halfI:len(l)]
+@app.route('/ingredients/test')
+def test_ing():
+	return jsonify({
+  "image_uri": "https://upload.wikimedia.org/wikipedia/commons/d/d0/BlackEyedPeas.JPG",
+  "name": "black-eyed pea",
+  "origin": "Africa",
+  "scientific_name": "Vigna unguiculata subsp. unguiculata"
+})
 
-def split_instructions(d):
-	s = d["instructions"].replace("<ol><li>", "").replace("</li></ol>", "")
-	d["instructions"] = re.compile("\s?</li><li>").split(s)
+@app.route('/ingredients/list')
+def test_inglist():
+	return jsonify(
+        {
+            "ingredients": [
+            {
+              "id": 1,
+              "name": "black-eyed pea"
+            },
+            {
+              "id": 2,
+              "name": "carrot"
+            },
+            {
+              "id": 3,
+              "name": "green bell pepper"
+            }]
+        })
+
+@app.route('/ingredients/test/recipes')
+def test_ingr():
+	return jsonify({
+  "recipes": [
+    {
+      "cuisine": "african",
+      "id": 1,
+      "image_uri": "https://spoonacular.com/recipeImages/African-Bean-Soup-632003.jpg",
+      "ready_in_minutes": 45,
+      "servings": 4,
+      "title": "African Bean Soup"
+    }
+  ]
+})
+
+@app.route('/ingredients/test/nutrition')
+def test_ingnut():
+	return jsonify({
+  "calcium_mg": 110,
+  "calories": 336,
+  "cholesterol_mg": 0,
+  "dietary_fiber_g": 10.6,
+  "iron_mg": 8.27,
+  "protein_g": 23.52,
+  "saturated_fat_g": 0.331,
+  "sodium_mg": 16,
+  "sugar_g": 6.9,
+  "total_carbohydrates_g": 60.03,
+  "total_fat_g": 1.26,
+  "vitamin_a_iu": 50,
+  "vitamin_c_mg": 1.5
+})
 
 @app.route('/ingredient.html')
 @app.route('/ingredient_<i_id>.html')
-def ingredient(i_id=None):
-	store = {"id":"1",
-	"title":"Fresh Basil",
-	"size":"1 egg",
-	"calories":"171",
-	"total_fat":"11.88g",
-	"sat_fat":"3.632",
-	"cholesterol":"933",
-	"sodium":"151mg",
-	"total_carb":"1.15",
-	"fiber":"0g",
-	"sugar":"NA",
-	"protein":"13.68g",
-	"vit_a":"554 IU",
-	"vit_c":"0%",
-	"calcium":"99%",
-	"iron":"4.1%",
-	"place":"30.2849185,-97.73624",
-	"img_uri":"http://www.essentialoilspedia.com/wp-content/uploads/basil_plant.jpg"}
-	return render_template('ingredient.html', i_id=i_id, **store, ingredientslit="active")
+def ingredient(i_id="test"):
+	return render_template('ingredient.html', i_id=i_id, ingredientslit="active")
 
 ############ END WEBSITE TEST ENTRY POINTS ###########
 

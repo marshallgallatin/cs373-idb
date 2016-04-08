@@ -13,10 +13,6 @@
 	<script>
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
 			$scope.page = 1;
-			$scope.names = [
-				{id:'1',title:'Jamba'},
-				{id:'2',title:'Shrimp'},
-			];
 			$scope.mbReverse = false;
 			$scope.orderByMe = function(x) {
 				if ($scope.mbOrderBy == x) {
@@ -27,7 +23,7 @@
 				$scope.mbOrderBy = x;
 			}
 			$scope.getData = function () {
-				//$http.get("recipestest?limit=10&page=" + $scope.page).then(function (transmit) {
+				//$http.get("recipes?limit=10&page=" + $scope.page).then(function (transmit) {
 				$http.get("r").then(function (transmit) {
 					$scope.data = transmit.data;
 				});
@@ -57,7 +53,7 @@
 			</tr>
 		<tr ng-repeat="x in data.recipes | orderBy:mbOrderBy:mbReverse">
 			<td>{{ '{{x.id}}' }}</td>
-			<td>{{ '{{x.title}}' }}</td>
+			<td><a ng-href="/recipe_{{ '{{x.id}}' }}.html">{{ '{{x.title}}' }}</a></td>
 			<td><img ng-src="{{ '{{x.image_uri}}' }}"></img></td>
 			<td>{{ '{{x.ready_in_minutes}}' }}</td>
 			<td>{{ '{{x.servings}}' }}</td>

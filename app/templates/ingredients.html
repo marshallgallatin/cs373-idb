@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+{% block scripts %}
+	<style>
+	th {
+		cursor: hand;
+		cursor: pointer;
+		border-left: 3px solid orange
+	}
+	img {
+		height: 100px;
+	}
+	</style>
+	<script>
+		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
+			$scope.page = 1;
+			$scope.mbReverse = false;
+			$scope.orderByMe = function(x) {
+				if ($scope.mbOrderBy == x) {
+					$scope.mbReverse = !$scope.mbReverse;
+				} else {
+					$scope.mbReverse = false;
+				}
+				$scope.mbOrderBy = x;
+			}
+			$scope.getData = function () {
+				$http.get("ingredients?limit=10&page=" + $scope.page).then(function (transmit) {
+//				$http.get("ingredients/list").then(function (transmit) {
+					var nutArray = new Array();
+					for (x in transmit.data) {
+	                    $http.get("ingredients/" + x.id + "/nutrition").then(function (transmit) {
+//	                    $http.get("ingredients/test/nutrition").then(function (transmit) {
+                            nutArray[0] = transmit.data;
+                        });
+					}
+					$scope.data = transmit.data;
+					$scope.nutArray = nutArray;
+				});
+			}
+			$(function() {
+				$scope.getData();
+			});
+		});
+	</script>
+{% endblock scripts %}
+
+{% block title %}
+{{ title }}
+{% endblock title %}
+
+{% block content %}
+<div ng-app="mbApp" ng-controller="mbCtrl">
+	<div class="table-responsive">
+		<table class="table table-default table-hover">
+			<tr>
+				<th ng-click="orderByMe('id')">ID</th>
+				<th ng-click="orderByMe('name')">Description</th>
+				<th ng-click="orderByMe('calories')">Calories</th>
+				<th ng-click="orderByMe('protein_g')">Protein(g)</th>
+				<th ng-click="orderByMe('total_fat_g')">Fat(g)</th>
+				<th ng-click="orderByMe('total_carbohydrates_g')">Carbs(g)</th>
+				<th ng-click="orderByMe('dietary_fiber_g')">Fiber(g)</th>
+				<th ng-click="orderByMe('sugar_g')">Sugar(g)</th>
+				<th ng-click="orderByMe('calcium_mg')">Calcium(g)</th>
+				<th ng-click="orderByMe('iron_mg')">Iron(mg)</th>
+				<th ng-click="orderByMe('sodium_mg')">Sodium(mg)</th>
+				<th ng-click="orderByMe('vitamin_c_mg')">Vit C(mg)</th>
+				<th ng-click="orderByMe('vitamin_a_iu')">Vit A(IU)</th>
+				<th ng-click="orderByMe('saturated_fat_g')">Saturated Fat(g)</th>
+				<th ng-click="orderByMe('cholesterol_mg')">Cholesterol(g)</th>
+			</tr>
+		<tr ng-repeat="x in data.ingredients | orderBy:mbOrderBy:mbReverse">
+			<td>{{ '{{x.id}}' }}</td>
+			<td>{{ '{{x.name}}' }}</td>
+			<td>{{ '{{nutArray[x.id].protein_g}}' }}</td>
+			<td>{{ '{{nutArray[x.id].total_fat_g}}' }}</td>
+			<td>{{ '{{nutArray[x.id].total_carbohydrates_g}}' }}</td>
+			<td>{{ '{{nutArray[x.id].dietary_fiber_g}}' }}</td>
+			<td>{{ '{{nutArray[x.id].sugar_g}}' }}</td>
+			<td>{{ '{{nutArray[x.id].calcium_mg}}' }}</td>
+			<td>{{ '{{nutArray[x.id].iron_mg}}' }}</td>
+			<td>{{ '{{nutArray[x.id].sodium_mg}}' }}</td>
+			<td>{{ '{{nutArray[x.id].vitamin_c_mg}}' }}</td>
+			<td>{{ '{{nutArray[x.id].vitamin_a_iu}}' }}</td>
+			<td>{{ '{{nutArray[x.id].saturated_fat_g}}' }}</td>
+			<td>{{ '{{nutArray[x.id].cholesterol_mg}}' }}</td>
+		</tr>
+		</table>
+	</div>
+	<center>
+		<ul class="pagination">
+			<li><a href="#">First</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">Last</a></li>
+		</ul>
+	</center>
+</div>
+{% endblock content %}
