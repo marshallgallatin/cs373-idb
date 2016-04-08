@@ -47,6 +47,9 @@
 				$scope.getData();
 			}
 			$scope.getData = function () {
+				$scope.a = {a:1};
+				$scope.b = {b:2};
+				jQuery.extend($scope.a, $scope.b);
 				$http.get("ingredients?limit=10&page=" + $scope.page).then(function (transmit) {
 				//$http.get("i" + $scope.page).then(function (transmit) {
 					$scope.ing = transmit.data.ingredients;
@@ -56,9 +59,7 @@
 						//$http.get("ingredients/test/nutrition").then(function (transmit_nuts) {
 							var more = transmit_nuts.data;
 							alert(more.calories);
-							for (var attrname in more) {
-								$scope.ing[i][attrname] = more[attrname];
-							}
+							jQuery.extend($scope.ing[i], more);
 						});
 					}
 				});
@@ -77,6 +78,7 @@
 {% block content %}
 <div ng-app="mbApp" ng-controller="mbCtrl">
 	{{ '{{ing}}' }}
+	{{ '{{a}}' }}
 	<div class="table-responsive">
 		<table class="table table-default table-hover">
 			<tr>
