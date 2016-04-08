@@ -53,12 +53,11 @@
 				$http.get("ingredients?limit=10&page=" + $scope.page).then(function (transmit) {
 				//$http.get("i" + $scope.page).then(function (transmit) {
 					$scope.temp = transmit.data.ingredients;
-					alert(transmit.data);
 					for (var i = 0; i < $scope.temp.length; ++i) {
 						$http.get("ingredients/" + $scope.temp[i].id + "/nutrition").then(function (transmit_nuts) {
 						//$http.get("ingredients/test/nutrition").then(function (transmit_nuts) {
 							var more = transmit_nuts.data;
-							jQuery.extend($scope.temp[i], more);
+							$scope.temp.calories = more.calories;
 							alert(more.calories + "->" + $scope.temp[i].calories);
 						});
 					}
@@ -103,6 +102,7 @@
 		<tr ng-repeat="x in ing | orderBy:mbOrderBy:mbReverse">
 			<td>{{ '{{x.id}}' }}</td>
 			<td>{{ '{{x.name}}' }}</td>
+			<td>{{ '{{x.calories}}' }}</td>
 			<td>{{ '{{x.protein_g}}' }}</td>
 			<td>{{ '{{x.total_fat_g}}' }}</td>
 			<td>{{ '{{x.total_carbohydrates_g}}' }}</td>
