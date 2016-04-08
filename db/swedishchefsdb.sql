@@ -180,18 +180,18 @@ CREATE TABLE "IngredientsInRecipes" (
 CREATE TABLE "Nutritional Content" (
   id                    INTEGER          NOT NULL,
   ingredient_id         INTEGER,
-  calories              INTEGER          NOT NULL,
+  calories              DOUBLE PRECISION NOT NULL,
   total_fat_g           DOUBLE PRECISION NOT NULL,
   saturated_fat_g       DOUBLE PRECISION NOT NULL,
-  cholesterol_mg        INTEGER          NOT NULL,
-  sodium_mg             INTEGER          NOT NULL,
+  cholesterol_mg        DOUBLE PRECISION NOT NULL,
+  sodium_mg             DOUBLE PRECISION NOT NULL,
   total_carbohydrates_g DOUBLE PRECISION NOT NULL,
   dietary_fiber_g       DOUBLE PRECISION NOT NULL,
   sugar_g               DOUBLE PRECISION NOT NULL,
   protein_g             DOUBLE PRECISION NOT NULL,
-  vitamin_a_iu          INTEGER          NOT NULL,
+  vitamin_a_iu          DOUBLE PRECISION NOT NULL,
   vitamin_c_mg          DOUBLE PRECISION NOT NULL,
-  calcium_mg            INTEGER          NOT NULL,
+  calcium_mg            DOUBLE PRECISION NOT NULL,
   iron_mg               DOUBLE PRECISION NOT NULL,
   CONSTRAINT "Nutritional Content_calcium_mg_check" CHECK ((calcium_mg >= 0)),
   CONSTRAINT "Nutritional Content_calories_check" CHECK ((calories >= 0)),
@@ -5227,8 +5227,8 @@ COPY "Nutritional Content" (id, ingredient_id, calories, total_fat_g, saturated_
 106	106	300	20	10	0	16800	20	0	0	0	200	0	0	0
 107	107	30	1.1	0	0	1.1	5.6	3.3	3.3	1.1	800	66	11	0.4
 108	108	30	1.1	0	0	1.1	5.6	3.3	3.3	1.1	800	66	11	0.4
-109	109	30	1.1	0	0	1.1	5.6	3.3	3.3	1.1	800	66	11	0.4
-110	110	30	1.1	0	0	1.1	5.6	3.3	3.3	1.1	800	66	11	0.4
+109	109	322	26.54	9.551	1085	48	3.59	0	0.56	15.86	1442	0	129	2.73
+110	110	340	2.5	0.43	0	2	71.97	10.7	0.41	13.21	9	0	34	3.6
 111	111	72	0.52	0.098	0	47	13.47	4	0	3.33	5078	10.4	25	0.95
 112	112	32	0.09	0.006	0	1	8.3	0.8	7.5	0.43	38	7.7	15	0.4
 113	113	50	0.12	0.009	0	1	13.12	1.4	9.85	0.54	58	47.8	13	0.29
