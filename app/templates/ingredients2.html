@@ -52,16 +52,17 @@
 				jQuery.extend($scope.a, $scope.b);
 				$http.get("ingredients?limit=10&page=" + $scope.page).then(function (transmit) {
 				//$http.get("i" + $scope.page).then(function (transmit) {
-					$scope.ing = transmit.data.ingredients;
+					$scope.temp = transmit.data.ingredients;
 					alert(transmit.data);
-					for (var i = 0; i < $scope.ing.length; ++i) {
-						$http.get("ingredients/" + $scope.ing[i].id + "/nutrition").then(function (transmit_nuts) {
+					for (var i = 0; i < $scope.temp.length; ++i) {
+						$http.get("ingredients/" + $scope.temp[i].id + "/nutrition").then(function (transmit_nuts) {
 						//$http.get("ingredients/test/nutrition").then(function (transmit_nuts) {
 							var more = transmit_nuts.data;
-							alert(more.calories);
-							jQuery.extend($scope.ing[i], more);
+							jQuery.extend($scope.temp[i], more);
+							alert(more.calories + "->" + $scope.temp[i].calories);
 						});
 					}
+					$scope.ing = $scope.temp;
 					$scope.$apply();
 				});
 			}
