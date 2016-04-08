@@ -76,7 +76,7 @@ SET search_path = public, pg_catalog;
 -- Name: <enum 'Origin'>; Type: TYPE; Schema: public; Owner: -
 --
 
-CREATE TYPE "<enum 'Origin'>" AS ENUM (
+CREATE TYPE "Origin" AS ENUM (
   'Africa',
   'Asia',
   'Australia',
@@ -126,7 +126,7 @@ SET default_with_oids = FALSE;
 
 --
 -- TOC entry 173 (class 1259 OID 16669)
--- Name: Ingredient; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: Ingredient; Type: TABLE; Schema: public; Owner: -; Tablespace:
 --
 
 CREATE TABLE "Ingredient" (
@@ -134,7 +134,7 @@ CREATE TABLE "Ingredient" (
   name            CHARACTER VARYING NOT NULL,
   image_uri       CHARACTER VARYING,
   scientific_name CHARACTER VARYING,
-  origin          "<enum 'Origin'>"
+  origin          "Origin"
 );
 
 --
@@ -143,9 +143,9 @@ CREATE TABLE "Ingredient" (
 --
 
 CREATE SEQUENCE "Ingredient_id_seq"
-START WITH 1
+START WITH 0
 INCREMENT BY 1
-NO MINVALUE
+MINVALUE 0
 NO MAXVALUE
 CACHE 1;
 
@@ -159,7 +159,7 @@ ALTER SEQUENCE "Ingredient_id_seq" OWNED BY "Ingredient".id;
 
 --
 -- TOC entry 178 (class 1259 OID 16717)
--- Name: IngredientsInRecipes; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: IngredientsInRecipes; Type: TABLE; Schema: public; Owner: -; Tablespace:
 --
 
 CREATE TABLE "IngredientsInRecipes" (
@@ -174,24 +174,24 @@ CREATE TABLE "IngredientsInRecipes" (
 
 --
 -- TOC entry 177 (class 1259 OID 16693)
--- Name: Nutritional Content; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: Nutritional Content; Type: TABLE; Schema: public; Owner: -; Tablespace:
 --
 
 CREATE TABLE "Nutritional Content" (
   id                    INTEGER          NOT NULL,
   ingredient_id         INTEGER,
-  calories              INTEGER          NOT NULL,
+  calories              DOUBLE PRECISION NOT NULL,
   total_fat_g           DOUBLE PRECISION NOT NULL,
   saturated_fat_g       DOUBLE PRECISION NOT NULL,
-  cholesterol_mg        INTEGER          NOT NULL,
-  sodium_mg             INTEGER          NOT NULL,
+  cholesterol_mg        DOUBLE PRECISION NOT NULL,
+  sodium_mg             DOUBLE PRECISION NOT NULL,
   total_carbohydrates_g DOUBLE PRECISION NOT NULL,
   dietary_fiber_g       DOUBLE PRECISION NOT NULL,
   sugar_g               DOUBLE PRECISION NOT NULL,
   protein_g             DOUBLE PRECISION NOT NULL,
-  vitamin_a_iu          INTEGER          NOT NULL,
+  vitamin_a_iu          DOUBLE PRECISION NOT NULL,
   vitamin_c_mg          DOUBLE PRECISION NOT NULL,
-  calcium_mg            INTEGER          NOT NULL,
+  calcium_mg            DOUBLE PRECISION NOT NULL,
   iron_mg               DOUBLE PRECISION NOT NULL,
   CONSTRAINT "Nutritional Content_calcium_mg_check" CHECK ((calcium_mg >= 0)),
   CONSTRAINT "Nutritional Content_calories_check" CHECK ((calories >= 0)),
@@ -214,9 +214,9 @@ CREATE TABLE "Nutritional Content" (
 --
 
 CREATE SEQUENCE "Nutritional Content_id_seq"
-START WITH 1
+START WITH 0
 INCREMENT BY 1
-NO MINVALUE
+MINVALUE 0
 NO MAXVALUE
 CACHE 1;
 
@@ -230,7 +230,7 @@ ALTER SEQUENCE "Nutritional Content_id_seq" OWNED BY "Nutritional Content".id;
 
 --
 -- TOC entry 175 (class 1259 OID 16682)
--- Name: Recipe; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: Recipe; Type: TABLE; Schema: public; Owner: -; Tablespace:
 --
 
 CREATE TABLE "Recipe" (
@@ -298,33 +298,181 @@ ALTER TABLE ONLY "Recipe"
 --
 
 COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
+0	NULLNAME	ingredient_img	ingredient_sci_name	Africa
 1	black-eyed pea	https://upload.wikimedia.org/wikipedia/commons/d/d0/BlackEyedPeas.JPG	Vigna unguiculata subsp. unguiculata	Africa
 2	carrot	https://upload.wikimedia.org/wikipedia/commons/b/bd/13-08-31-wien-redaktionstreffen-EuT-by-Bi-frie-037.jpg	Daucus carota	Asia
 3	green bell pepper	https://upload.wikimedia.org/wikipedia/commons/5/59/Capsicum3.JPG	Capsicum annuum	NorthAmerica
-4	onion	https://upload.wikimedia.org/wikipedia/commons/6/6a/White_onion_cross_section.jpg	Allium cepa	Africa
+4	onion	https://upload.wikimedia.org/wikipedia/commons/a/a2/Mixed_onions.jpg	Allium cepa	Africa
 5	peanut butter	https://commons.wikimedia.org/wiki/File:96_-_IMG_20150804_111725.jpg	\N	NorthAmerica
 6	salt	https://upload.wikimedia.org/wikipedia/commons/7/78/Salt_shaker_on_white_background.jpg	Sodium chloride	Worldwide
-7	water	\N	Dihydrogen oxide	Worldwide
-8	baking powder	\N	Sodium aluminum sulfate	\N
-9	banana	\N	Musa acuminata Colla	\N
-10	butter	https://upload.wikimedia.org/wikipedia/commons/f/fd/Western-pack-butter.jpg	\N	\N
-11	canola oil	\N	\N	\N
-12	cinnamon	\N	Cinnamomum aromaticum	\N
-13	cream cheese	\N	\N	\N
-14	egg	\N	\N	\N
-15	flour	\N	\N	\N
-16	nutmeg	\N	Myristica fragrans	\N
-17	honey	\N	\N	\N
-18	lemon juice	\N	\N	\N
-19	maple syrup	\N	\N	\N
-20	milk	\N	\N	\N
-21	white bread	\N	\N	\N
-22	bacon	\N	\N	\N
-23	garlic	\N	Allium sativum	\N
-24	cabbage	\N	Brassica oleracea (Capitata Group)	\N
-25	leek	\N	Allium ampeloprasum	\N
-26	mace	\N	Myristica fragrans	\N
-27	potato	\N	Solanum tuberosum	\N
+7	water	https://upload.wikimedia.org/wikipedia/commons/1/18/Water_drop_impact_on_a_water-surface_-_%285%29.jpg	Dihydrogen oxide	Worldwide
+8	baking powder	https://upload.wikimedia.org/wikipedia/commons/2/2d/BakingPowder.jpg	Sodium aluminum sulfate	Europe
+9	banana	https://upload.wikimedia.org/wikipedia/commons/4/44/Bananas_white_background_DS.jpg	Musa acuminata Colla	Oceania
+10	butter	https://upload.wikimedia.org/wikipedia/commons/f/fd/Western-pack-butter.jpg	\N	Worldwide
+11	canola oil	https://upload.wikimedia.org/wikipedia/commons/e/eb/CanolaOil_bottle.jpg	Brassicaceae family	Asia
+12	cinnamon	https://upload.wikimedia.org/wikipedia/commons/d/de/Cinnamomum_verum_spices.jpg	Cinnamomum aromaticum	Asia
+13	cream cheese	https://upload.wikimedia.org/wikipedia/commons/f/f7/Philly_cream_cheese.jpg	\N	Europe
+14	egg	https://upload.wikimedia.org/wikipedia/commons/e/ee/Egg_colours.jpg	\N	Worldwide
+15	flour	https://upload.wikimedia.org/wikipedia/commons/6/64/All-Purpose_Flour_%284107895947%29.jpg	\N	Asia
+16	nutmeg	https://upload.wikimedia.org/wikipedia/commons/3/3b/Muscade.jpg	Myristica fragrans	Asia
+17	honey	https://static.pexels.com/photos/8257/spoon-honey-jar.jpg	Fructose, glocuse	Worldwide
+18	lemon juice	https://upload.wikimedia.org/wikipedia/commons/b/b0/Jif_Lemon.jpg	Citrus limon	Asia
+19	maple syrup	https://upload.wikimedia.org/wikipedia/commons/1/18/Maple_syrup.jpg	\N	NorthAmerica
+20	milk	https://upload.wikimedia.org/wikipedia/commons/0/0e/Milk_glass.jpg	\N	Worldwide
+21	white bread	https://upload.wikimedia.org/wikipedia/commons/2/2c/Wei%C3%9Fbrot-1.jpg	\N	Worldwide
+22	bacon	https://upload.wikimedia.org/wikipedia/commons/e/e8/RawBacon.JPG	\N	Worldwide
+23	garlic	https://upload.wikimedia.org/wikipedia/commons/4/49/Opened_garlic_bulb_with_garlic_clove.jpg	Allium sativum	Worldwide
+24	cabbage	https://upload.wikimedia.org/wikipedia/commons/f/fa/Cabbages_Green_and_Purple_2120px.jpg	Brassica oleracea (Capitata Group)	Europe
+25	leek	https://upload.wikimedia.org/wikipedia/commons/4/43/Leek.jpg	Allium ampeloprasum	Europe
+26	mace	https://upload.wikimedia.org/wikipedia/commons/3/3e/Mace_%28%E0%A6%9C%E0%A6%AF%E0%A6%BC%E0%A6%BF%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%BF%29.JPG	Myristica fragrans	Asia
+27	potato	https://upload.wikimedia.org/wikipedia/commons/4/47/Russet_potato_cultivar_with_sprouts.jpg	Solanum tuberosum	SouthAmerica
+28	sesame oil	https://upload.wikimedia.org/wikipedia/commons/0/0a/Sesame_oil.jpg	\N	Asia
+29	radish	https://upload.wikimedia.org/wikipedia/commons/4/49/Remscheid_L%C3%BCttringhausen_-_Bauernmarkt_18_ies.jpg	Raphanus sativus	Europe
+30	hoisin sauce	https://upload.wikimedia.org/wikipedia/commons/3/3f/Hoisin_sauce.jpg	\N	Asia
+31	snow pea	https://upload.wikimedia.org/wikipedia/commons/0/07/Peas_-_Studio_-_2011.jpg	Pisum sativum	Europe
+32	sriracha sauce	https://upload.wikimedia.org/wikipedia/commons/6/62/Sriracha_Hot_Sauce_Bottles_Freshii_Restaurant_Family_Dinner_Downtown_Grand_Rapids_June_27,_2014_1_%2814552677466%29.jpg	\N	Asia
+33	black turtle bean	\N	Phaseolus vulgaris	\N
+34	allspice	\N	Pimenta dioica	\N
+35	canned black turtle beans	\N	\N	\N
+36	chickpea	\N	Cicer arietinum	\N
+37	canned chickpeas	\N	\N	\N
+38	frozen peas	https://upload.wikimedia.org/wikipedia/commons/e/e3/Frozen_peas.JPG	\N	Europe
+39	yogurt	\N	\N	Europe
+40	corn starch	\N	\N	\N
+41	paprika	https://upload.wikimedia.org/wikipedia/commons/9/97/Spanishsmokedpaprika.jpg	Capsicum annuum	NorthAmerica
+42	ground beef	https://upload.wikimedia.org/wikipedia/commons/d/d1/Hackfleisch-1.jpg	Bos taurus	Asia
+43	parsley	https://upload.wikimedia.org/wikipedia/commons/9/97/Parsley.jpg	Petroselinum crispum	Europe
+44	dried parsley	https://upload.wikimedia.org/wikipedia/commons/8/8c/Parsley_Dried.JPG	Petroselinum crispum	Europe
+45	oregano	https://pixabay.com/static/uploads/photo/2014/04/10/15/39/oregano-321037_960_720.jpg	Origanum vulgare	Europe
+46	sesame seed	https://upload.wikimedia.org/wikipedia/commons/3/38/Sesame_seeds.JPG	Sesamum indicum	Africa
+47	tomato	https://upload.wikimedia.org/wikipedia/commons/8/88/Bright_red_tomato_and_cross_section02.jpg	Solanum lycopersicum	SouthAmerica
+48	cumin	https://upload.wikimedia.org/wikipedia/commons/9/9d/4622_-_Cumino_al_mercato_di_Ortigia%2C_Siracusa_-_Foto_Giovanni_Dall'Orto%2C_20_marzo_2014.jpg	Cuminum cyminum	Africa
+49	cumin seed	https://upload.wikimedia.org/wikipedia/commons/6/64/Cumin_seed_whole.JPG	Cuminum cyminum	Africa
+50	brown sugar	\N	\N	\N
+51	bean sprout	https://upload.wikimedia.org/wikipedia/commons/7/73/Moyashi.jpg	Vigna radiata	Asia
+52	shrimp	https://upload.wikimedia.org/wikipedia/commons/1/11/Shrimp_Shell_%2811833859924%29.jpg	Penaeidae and Pandalidae	Worldwide
+53	daikon	https://upload.wikimedia.org/wikipedia/commons/c/cb/Daikon.Japan.jpg	Raphanus sativus (Longipinratus Group)	Asia
+54	shiitake mushroom	\N	Lentinus edodes	\N
+55	mushroom	\N	Agaricus bisporus	\N
+56	portabello mushroom	\N	Agaricus bisporus	\N
+57	cooked shrimp	\N	\N	\N
+58	black pepper	\N	Piper nigrum	\N
+59	red pepper	https://upload.wikimedia.org/wikipedia/commons/9/91/Capsicum_frutescens.jpg	Capsicum frutescens or Capsicum annuum	NorthAmerica
+60	white pepper	\N	Piper nigrum	\N
+61	crushed red pepper	https://upload.wikimedia.org/wikipedia/commons/5/5b/Red_pepper_flakes.jpg	Capsicum annuum	NorthAmerica
+62	pea	https://upload.wikimedia.org/wikipedia/commons/b/b2/1-Green_peas.jpg	Pisum sativum	Europe
+63	chickpea flour	https://upload.wikimedia.org/wikipedia/commons/5/5e/Gram_flour_AvL.jpg	\N	\N
+64	reduced fat milk	\N	\N	\N
+65	lentil	https://upload.wikimedia.org/wikipedia/commons/8/81/Green_lentils.jpg	Lens culinaris	Asia
+66	red lentil	https://upload.wikimedia.org/wikipedia/commons/a/a5/Red_lentils_-_jules.jpg	Lens culinaris	Asia
+67	canned tomatoes	\N	\N	\N
+68	canned crushed tomatoes	\N	\N	\N
+69	cauliflower	\N	Brassica oleracea (Botrytis Group)	\N
+70	tomato paste	https://upload.wikimedia.org/wikipedia/commons/e/e8/Tomato_paste_on_spoon.jpg	\N	\N
+71	vegetable oil	https://c2.staticflickr.com/6/5589/14937958628_8f6fedc5a3_b.jpg	\N	\N
+72	olive oil	https://pixabay.com/static/uploads/photo/2015/10/02/15/59/olive-oil-968657_960_720.jpg	\N	\N
+73	cashew	https://upload.wikimedia.org/wikipedia/commons/f/fd/Cashews_1314.jpg	Anacardium occidentale	\N
+74	soy sauce	https://upload.wikimedia.org/wikipedia/commons/a/a1/Kikkoman_Soy_Sauce%2C_Perspective-view%2C_jp-type%2C.jpg	\N	Asia
+75	green chili pepper	\N	Capsicum frutescens	\N
+76	red bell pepper	https://upload.wikimedia.org/wikipedia/commons/5/5c/Red_bell_pepper.jpg	Capsicum annuum	NorthAmerica
+77	dried chili peppers	https://upload.wikimedia.org/wikipedia/commons/c/c4/Dry_Chili_pepper.jpg	Capsicum frutescens	Asia
+78	chili paste	https://c2.staticflickr.com/6/5062/5662993808_68c2d841fa_b.jpg	Capsicum frutescens	Asia
+79	canned tomato sauce	https://upload.wikimedia.org/wikipedia/commons/0/0f/Tomate_natural_triturado.jpg	\N	\N
+80	curry	\N	\N	\N
+81	orange bell pepper	https://upload.wikimedia.org/wikipedia/commons/0/08/Orange_bell-peppers_Rouffignac.jpg	Capsicum annuum	NorthAmerica
+82	yellow bell pepper	https://upload.wikimedia.org/wikipedia/commons/f/f6/Yellow_Bell_Pepper_group_store.jpg	Capsicum annuum	NorthAmerica
+83	rosemary	\N	Rosmarinus officinalis	\N
+84	dried rosemary	\N	Rosmarinus officinalis	\N
+85	thyme	\N	Thymus vulgaris	\N
+86	dried thyme	\N	Thymus vulgaris	\N
+87	basil	https://upload.wikimedia.org/wikipedia/commons/9/90/Basil-Basilico-Ocimum_basilicum-albahaca.jpg	Ocimum basilicum	Asia
+88	dried basil	https://upload.wikimedia.org/wikipedia/commons/7/72/Basilic-spice.jpg	Ocimum basilicum	Asia
+89	jam	\N	\N	\N
+90	dried shrimp	https://upload.wikimedia.org/wikipedia/commons/a/a3/Dried_shrimp_Indonesia_udang_kering.JPG	\N	\N
+91	chives	https://upload.wikimedia.org/wikipedia/commons/6/64/Chives_144211774.jpg	Allium schoenoprasum	\N
+92	cilantro	\N	Coriandrum sativum	\N
+93	dried coriander	\N	Coriandrum sativum	\N
+94	green onion	\N	Allium cepa or Allium fistulosum	\N
+95	chili powder	\N	\N	\N
+96	sea salt	https://upload.wikimedia.org/wikipedia/commons/d/d8/Saltmill.jpg	Sodium chloride	\N
+97	kosher salt	https://upload.wikimedia.org/wikipedia/commons/7/78/Kosher_Salt.JPG	Sodium chloride	\N
+98	vinegar	\N	\N	\N
+99	cider vinegar	\N	\N	\N
+100	red wine vinegar	\N	\N	\N
+101	balsamic vinegar	\N	\N	\N
+102	canned tuna	\N	\N	\N
+103	tuna	\N	Thunnus thynnus (L.)	\N
+104	vegetable bouillon	\N	\N	\N
+105	vegetable broth	\N	\N	\N
+106	cooking spray	\N	\N	\N
+107	scotch bonnet pepper	https://upload.wikimedia.org/wikipedia/commons/9/96/HotPeppersinMarket.jpg	Capsicum chinense	SouthAmerica
+108	habanero	https://upload.wikimedia.org/wikipedia/commons/8/86/Habanero_closeup_edit2.jpg	Capsicum chinense	SouthAmerica
+109	egg yolk	\N	\N	\N
+110	whole-wheat flour	https://upload.wikimedia.org/wikipedia/commons/6/66/Whole_wheat_grain_flour_being_scooped.jpg	\N	\N
+111	mixed vegetables	\N	\N	\N
+112	canned pineapple	\N	\N	\N
+113	pineapple	\N	\N	\N
+114	sugar	https://upload.wikimedia.org/wikipedia/commons/a/a1/Raw_cane_sugar_light.JPG	Sucrose	Worldwide
+115	half and half	\N	\N	\N
+116	egg white	\N	\N	\N
+117	almond	https://upload.wikimedia.org/wikipedia/commons/4/46/Almonds_macro_3.jpg	Prunus dulcis	Asia
+118	chipotle peppers in adobo sauce	http://www.finecooking.com/CMS/uploadedImages/Images/Cooking/Articles/Issues_81-90/fc82kt080-03_xlg.jpg	\N	NorthAmerica
+119	canned green chili peppers	\N	\N	NorthAmerica
+120	bird's eye chili	https://upload.wikimedia.org/wikipedia/commons/3/35/Phrik_khi_nu.jpg	Capsicum annuum	Asia
+121	curry paste	https://upload.wikimedia.org/wikipedia/commons/f/fe/Curry_pastes_Thailand.JPG	\N	Asia
+122	cayenne pepper	http://www.dekookbijbel.be/images/ingredienten/Pepers/cayenne.jpg	Capsicum frutescens or Capsicum annuum	NorthAmerica
+123	sweet onion	https://upload.wikimedia.org/wikipedia/commons/2/25/Sweet_onions_1.jpg	Allium cepa	NorthAmerica
+124	barbecue sauce	\N	\N	\N
+125	tamari	\N	\N	\N
+126	sour cream	\N	\N	\N
+127	low-fat sour cream	\N	\N	\N
+128	red potato	\N	Solanum tuberosum	\N
+129	Russet potato	\N	\N	\N
+130	apple	https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg	Malus domestica	Europe
+131	Granny Smith apple	https://upload.wikimedia.org/wikipedia/commons/d/d7/Granny_smith_and_cross_section.jpg	Malus domestica	Oceania
+132	hot sauce	\N	\N	\N
+133	Tabasco sauce	\N	\N	\N
+134	vanilla extract	\N	\N	\N
+135	jalapeno	https://upload.wikimedia.org/wikipedia/commons/d/d6/Immature_jalapeno_capsicum_annuum_var_annuum.jpeg	Capsicum anuum	NorthAmerica
+136	cremini mushroom	\N	Agaricus bisporus	\N
+137	Worcestershire sauce	https://upload.wikimedia.org/wikipedia/commons/d/d9/Lea_%26_Perrins_worcestershire_sauce_150ml.jpg	\N	Europe
+138	lime	https://upload.wikimedia.org/wikipedia/commons/6/68/Lime-Whole-Split.jpg	Citrus latifolia	Asia
+139	lime juice	https://upload.wikimedia.org/wikipedia/commons/6/68/Lime-Whole-Split.jpg	Citrus latifolia	Asia
+140	grapeseed oil	https://upload.wikimedia.org/wikipedia/commons/2/2a/Grapeseed-oil.jpg	\N	\N
+141	ginger	https://pixabay.com/static/uploads/photo/2014/07/11/14/41/ginger-389906_960_720.jpg	Zingiber officinale	\N
+142	ground ginger	https://upload.wikimedia.org/wikipedia/commons/c/c4/Ginger_powder.JPG	Zingiber officinale	\N
+143	garlic powder	https://upload.wikimedia.org/wikipedia/commons/e/ef/Garlic_Powder%2C_Penzeys_Spices%2C_Arlington_Heights_MA.jpg	Allium sativum	\N
+144	sage	https://pixabay.com/static/uploads/photo/2013/01/08/01/23/sage-74325_960_720.jpg	Salvia officinalis	\N
+145	lemon	https://upload.wikimedia.org/wikipedia/commons/c/c7/Lemon-Whole-Split.jpg	Citrus limon	Asia
+146	lemon zest	https://upload.wikimedia.org/wikipedia/commons/7/77/Baking_%289682271210%29.jpg	Citrus limon	Asia
+147	salt pork	https://upload.wikimedia.org/wikipedia/en/9/92/Streakolean.jpg	\N	NorthAmerica
+148	napa cabbage	https://upload.wikimedia.org/wikipedia/commons/d/d9/NAPA_cabbage_at_Asian_supermarket_in_New_Jersey.jpg	Brassica rapa subsp. pekinensis	Europe
+149	red cabbage	https://upload.wikimedia.org/wikipedia/commons/9/98/Rotkohl_%28Brassica_oleracea_convar%29.JPG	Brassica oleracea (Capitata Group)	Europe
+150	savoy cabbage	https://upload.wikimedia.org/wikipedia/commons/a/a8/Wirsingkohl.jpg	Brassica oleracea (Capitata Group)	Europe
+151	bok choy	https://upload.wikimedia.org/wikipedia/commons/e/e3/Baby_Pak_Choi_%2801%29.JPG	Brassica rapa (Chinensis Group)	Europe
+152	mint	https://upload.wikimedia.org/wikipedia/commons/a/a1/FreshMint.jpg	Mentha spicata	Europe
+153	dried mint	https://upload.wikimedia.org/wikipedia/commons/a/a1/FreshMint.jpg	Mentha spicata	Europe
+154	sweet potato	https://upload.wikimedia.org/wikipedia/commons/3/38/5aday_sweet_potato.jpg	Ipomoea batatas	SouthAmerica
+155	yam	https://upload.wikimedia.org/wikipedia/commons/e/eb/YamsatBrixtonMarket.jpg	Dioscorea spp.	Africa
+156	lettuce	\N	Lactuca sativa var. capitata	\N
+157	romaine lettuce	\N	Lactuca sativa var. logifolia	\N
+158	iceberg lettuce	\N	Lactuca sativa var. capitata	\N
+159	harissa	https://upload.wikimedia.org/wikipedia/commons/8/86/Harissa-1.jpg	\N	Africa
+160	serrano pepper	https://upload.wikimedia.org/wikipedia/commons/1/15/Serranochilis.jpg	Capsicum anuum	NorthAmerica
+161	Greek yogurt	\N	\N	\N
+162	turmeric	\N	Curcuma longa L.	\N
+163	fish sauce	\N	\N	\N
+164	spinach	\N	Spinacia oleracea	\N
+165	frozen spinach	\N	\N	\N
+166	onion powder	\N	Allium cepa	\N
+167	pasilla	https://upload.wikimedia.org/wikipedia/commons/d/d5/Pasillachiles.jpg	Capsicum anuum	NorthAmerica
+168	cheddar cheese	\N	\N	\N
+169	green bean	\N	Phaseolus vulgaris	\N
+170	canned peas	\N	\N	\N
+171	barbecued chicked breast	\N	\N	\N
+172	mozzarella cheese	\N	\N	\N
+173	salted butter	\N	\N	\N
+174	rice	https://upload.wikimedia.org/wikipedia/commons/c/c9/Frozen_rice_-_jules.jpg	\N	Asia
 \.
 
 
@@ -334,7 +482,7 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 -- Name: Ingredient_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('"Ingredient_id_seq"', 28, TRUE);
+SELECT pg_catalog.setval('"Ingredient_id_seq"', 175, TRUE);
 
 --
 -- TOC entry 2051 (class 0 OID 16717)
@@ -343,36 +491,4623 @@ SELECT pg_catalog.setval('"Ingredient_id_seq"', 28, TRUE);
 --
 
 COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, unit, unit_short, ingredient_index) FROM STDIN;
-1	1	2 cups dried black-eyed peas	2	cups	c	0
-1	2	2 cups sliced carrots	2	cups	c	1
-1	3	1 cup green pepper, diced	1	cup	c	2
-1	4	1 large chopped onion	1	cup	c	3
-1	5	peanut butter	4	tablespoon	T	4
+1	1	2 cups dried black-eyed peas	2.0	cups	c	0
+1	2	2 cups sliced carrots	2.0	cups	c	1
+1	3	1 cup green pepper, diced	1.0	cup	c	2
+1	4	1 large chopped onion	1.0	cup	c	3
+1	5	peanut butter	4.0	tablespoon	T	4
 1	6	3/4 teaspoon salt	0.75	teaspoon	t	5
-1	7	6 cups water	6	cups	c	6
+1	7	6 cups water	6.0	cups	c	6
+2	0	1 tablespoon amchar masala	1.0	tablespoon	T	0
+2	65	1 cup brown lentils	1.0	cup	c	1
+2	68	1 can crushed tomatoes	1.0	can	can	2
+2	69	1 cauliflower head, cut into bite size pieces	1.0			3
+2	0	2 tablespoons masala molida, also known as berbere	2.0	tablespoons	T	4
+2	23	2 garlic cloves, minced	2.0	cloves	cloves	5
+2	4	1 onion, diced	1.0			6
+2	38	2 cups frozen peas	2.0	cups	c	7
+2	39	1/4 cup plain yogurt (optional)	0.25	cup	c	8
+2	70	1 can tomato paste	1.0	can	can	9
+2	71	2 tablespoons vegetable oil	2.0	tablespoons	T	10
+3	37	14 ounces can chickpeas (garbanzo beans), drained and rinsed	14.0	ounces	oz	0
+3	140	1 tablespoon grapeseed or canola oil	1.0	tablespoon	T	1
+3	23	10 Cloves garlic, (3 tbsp.) minced	3.0	tbsp	T	2
+3	159	2 tablespoons harissa	2.0	tablespoons	T	3
+3	25	1 leek, finely chopped	1.0			4
+3	18	A tablespoon of lemon juice	1.0	tablespoon	T	5
+3	4	1 small Onion, minced	1.0			6
+3	0	1 package fresh pasta or a large handful of rice noodles	1.0	package	pkg	7
+3	164	1/2 package of fresh spinach leaves or 3 good handfuls	0.5	package	pkg	8
+3	70	3 tablespoons tomato paste or ketchup (yep, ketchup works great!)	3.0	tablespoons	T	9
+3	7	1 liter (4 cups) water, chicken broth, vegetable broth	4.0	cups	c	10
+4	3	Bell Peppers for garnishing	1.0	serving	serving	0
+4	0	1.5 Cups of Chopped Chicken	1.5	Cups	Cups	1
+4	71	2.5 Cooking spoons of oil	2.5	tablespoons	T	2
+4	80	1 teaspoon of Curry	1.0	teaspoon	t	3
+4	23	2 garlic cloves	2.0	cloves	cloves	4
+4	141	Small piece of Chopped ginger	1.0	piece		5
+4	4	2 handfuls of Chopped onions	2.0	handfuls	handfuls	6
+4	58	Pepper	1.0	serving	serving	7
+4	6	Salt	1.0	serving	serving	8
+4	154	1/2 small sweet potato (Chopped)	0.5			9
+4	85	Pinch of thyme	1.0	pinch	pinch	10
+4	47	1 Chopped small tomato	1.0			11
+4	79	1.5 cups of Blended tomato	1.5	cups	c	12
+4	5	1 cup of groundnut (Blended) or peanut Butter	1.0	cup	c	13
+5	0	2 Bay leaves	2.0			0
+5	80	1 Teaspoon of curry powder	1.0	Teaspoon	Teaspoon	1
+5	23	1 Clove of garlic	1.0	Clove	Clove	2
+5	104	3 Cubes of Maggi	3.0			3
+5	4	1 Small bulb of Onion	1.0			4
+5	58	1 Teaspoon of dry pepper	1.0	Teaspoon	Teaspoon	5
+5	174	2 Cups of Rice	2.0	Cups	Cups	6
+5	47	7 Medium sized Roma Tomatoes	7.0			7
+5	6	2 Teaspoons of Salt	2.0	Teaspoons	Teaspoons	8
+5	107	3 Scotch Bonnet Peppers	3.0			9
+5	85	A pinch of Thyme	1.0	pinch	pinch	10
+5	0	1 Small can of Tomato puree	1.0	can	can	11
+5	71	2 Cooking spoons of Vegetable Oil	2.0	tablespoons	T	12
+5	7	3 Cups of water	3.0	Cups	Cups	13
+6	80	1 teaspoon of curry	1.0	teaspoon	t	0
+6	23	2 garlic cloves	2.0	cloves	cloves	1
+6	141	1 teaspoon of grated ginger	1.0	teaspoon	t	2
+6	104	Seasoning cubes	2.0	cubes	cubes	3
+6	111	1/2 cup of chopped vegetables (optional)	0.5	cup	c	4
+6	4	1 small onion (chopped)	1.0			5
+6	112	1/2 cup of chopped pineapples	0.5	cup	c	6
+6	174	1 cup of parboiled rice	1.0	cup	c	7
+6	0	1/2 cup of stock juice	0.5	cup	c	8
+6	85	1/4 teaspoon of thyme	0.25	teaspoon	t	9
+6	70	2 tablespoons of tomato paste	2.0	tablespoons	T	10
+6	0	1.5 cups of blended tomatoes	1.5	cups	c	11
+6	3	bell pepper	1.0			12
+6	107	scotch bonnet pepper	1.0			13
+6	71	1.5 cooking spoons of vegetable oil	1.5	tablespoons	T	14
 7	8	5 1/2 teaspoons baking powder	5.5	teaspoons	t	0
-7	9	2 ripe but firm bananas, sliced thin	2	\N	\N	1
-7	10	1/2 cup butter or margarine - (¼ lb)	0.25	lb	lb	2
-7	11	4 t. canola (or vegetable) oil	4	t	t	3
+7	9	2 ripe but firm bananas, sliced thin	2.0			1
+7	10	1/2 cup butter or margarine - (1/4 lb)	0.5	cup	c	2
+7	11	4 t. canola (or vegetable) oil	4.0	t	t	3
 7	12	1/2 t. cinnamon	0.5	t	t	4
-7	13	8 ounces cream cheese	8	ounces	oz	5
-7	14	3 eggs	3	\N	\N	6
+7	13	8 ounces cream cheese	8.0	ounces	oz	5
+7	14	3 eggs	3.0			6
 7	15	10 1/2 cups all-purpose flour	10.5	cups	c	7
-7	16	dash of fresh ground nutmeg	1	dash	dash	8
-7	17	1 T. honey	1	T	T	9
+7	16	dash of fresh ground nutmeg	1.0	dash	dash	8
+7	17	1 T. honey	1.0	T	T	9
 7	18	1/2 t. lemon juice	0.5	t	t	10
-7	19	maple syrup, for serving	4	servings	servings	11
-7	20	1 c. milk	1	c	c	12
+7	19	maple syrup, for serving	4.0	servings	servings	11
+7	20	1 c. milk	1.0	c	c	12
 7	6	1/2 teaspoon salt	0.5	teaspoon	t	13
-7	21	8 slices of good quality white sandwich bread	8	slices	slices	14
-188	22	2-3 rashers bacon (optional)	2	slices	slices	0
-188	23	2 To 3 cloves garlic, minced	2	cloves	cloves	1
-188	24	1 pound green cabbage (kale can also be used)	1	pound	lb	2
-188	25	2 medium leeks, split lengthwise and rinsed well	2	\N	\N	3
-188	26	1/4 teaspoon mace	0.25	teaspoon	t	4
-188	27	2 pounds yellow or red potatoes, scrubbed and cubed but not peeled	2	pounds	lb	5
-188	6	Salt to taste	1	\N	\N	6
-188	20	1 cup whole milk	1	cup	c	7
+7	21	8 slices of good quality white sandwich bread	8.0	slices	slices	14
+8	0	1/2 teaspoon baking soda	0.5	teaspoon	t	0
+8	9	2 medium bananas	2.0			1
+8	0	1 1/2 cups organic evaporated cane sugar	1.5	cups	c	2
+8	0	Extra Chocolate Chips for decoration, optional	8.0	servings	servings	3
+8	0	1 10 oz bag chocolate chips	10.0	oz	oz	4
+8	5	1 3/4 cups organic creamy peanut butter	1.75	cups	c	5
+8	14	3 Eggs	3.0			6
+8	0	7 oz margarine spread, room temperature (leave out for an hour)	7.0	oz	oz	7
+8	0	Frosting	8.0	servings	servings	8
+8	97	1 1/2 teaspoons Kosher Salt	1.5	teaspoons	t	9
+8	50	1/2 cup organic light brown sugar, packed	0.5	cup	c	10
+8	0	1 cup potato starch (I use Bob's Red Mill flours)	1.0	cup	c	11
+8	0	1 1/2 cups organic powdered sugar	1.5	cups	c	12
+8	0	1 cup sorghum flour	1.0	cup	c	13
+8	0	1/2 cup tapioca starch	0.5	cup	c	14
+8	134	1 teaspoon vanilla extract	1.0	teaspoon	t	15
+8	0	1 cup vegan sour cream ( I use Way Fare)	1.0	cup	c	16
+8	0	1 1/2 cup white rice flour	1.5	cup	c	17
+9	124	1/2 cup barbecue sauce	0.5	cup	c	0
+9	0	4 ounces Cooked & chopped barbecue meat (pork, chicken)	4.0	ounces	oz	1
+9	4	6 Sliced rings of red onion (up to 8)	6.0			2
+9	0	1 12" Pizza Crust	1.0			3
+9	172	2 cups Shredded mozzarella cheese	2.0	cups	c	4
+9	0	cup Pizza sauce or meatless spaghetti	1.0	cup	c	5
+10	168	shredded cheddar or mozzerella, to taste	6.0	servings	servings	0
+10	0	sliced chicken, to taste	6.0	servings	servings	1
+10	4	chopped onions, to taste	6.0	servings	servings	2
+10	76	chopped red peppers, to taste	6.0	servings	servings	3
+10	0	1 package (1/4 ounce) dry yeast	0.25	ounce	oz	4
+10	15	1 1/4 cups all-purpose flour	1.25	cups	c	5
+10	114	1 tablespoon granulated sugar or honey	1.0	tablespoon	T	6
+10	72	1/4 cup olive oil	0.25	cup	c	7
+10	6	1 teaspoon of salt	1.0	teaspoon	t	8
+10	7	1 1/4 cups warm water	1.25	cups	c	9
+10	15	1 1/4 cups all-purpose flour	1.25	cups	c	10
+11	10	3 tablespoons butter, divided	3.0	tablespoons	T	0
+11	0	White corn syrup, to taste	2.0	servings	servings	1
+11	124	1 (18 oz.) reg. flavor Open Pit	18.0	oz	oz	2
+11	0	1 (8 oz.) bottle Italian dressing	8.0	oz	oz	3
+11	0	1 env. meat marinade	1.0			4
+11	4	1/2 onion, finely chopped	0.5			5
+11	0	6 pork chops	6.0			6
+11	137	1 teaspoon Worcestershire	1.0	teaspoon	t	7
+12	118	1 tbs Chilis in Adobo sauce	1.0	tbs	tbs	0
+12	99	2 tablespoons apple cider vinegar	2.0	tablespoons	T	1
+12	0	2 Tbs pan drippings from the Brisket (can use olive oil if making separately)	2.0	Tb	Tb	2
+12	0	1 4-6lb beef brisket	4.0	lb	lb	3
+12	50	1/3 cup brown sugar	0.3333333333333333	cup	c	4
+12	122	1 cayenne pepper	1.0			5
+12	58	1 Tbs fresh cracked black pepper	1.0	Tb	Tb	6
+12	0	2 Tsp dark Dijon mustard (go for the good stuff)	2.0	Tsp	Tsp	7
+12	23	1 clove clove garlic, minced	1.0	clove	clove	8
+12	48	1 Tbs ground cumin	1.0	Tb	Tb	9
+12	17	1/4 cup honey	0.25	cup	c	10
+12	0	1 1/2 cup ketchup	1.5	cup	c	11
+12	97	2 Tbs kosher salt – plus any additional to taste at end	2.0	Tb	Tb	12
+12	0	1 Cup Lager	1.0	Cup	Cup	13
+12	4	1 cup chopped onions	1.0	cup	c	14
+12	58	1/2 tsp fresh cracked black peppers	0.5	tsp	t	15
+12	61	1/4 tsp red pepper flakes	0.25	tsp	t	16
+12	6	2 teaspoons salt	2.0	teaspoons	t	17
+12	41	1 tbsp smoked paprika	1.0	tbsp	T	18
+12	123	2 large sweet onions – slice very thin	2.0			19
+13	0	2 avocados, peeled, cored, sliced and diced	2.0			0
+13	35	2 cans (15 ounce) black beans, rinsed and drained	15.0	ounce	oz	1
+13	0	1 can corn	1.0	can	can	2
+13	92	1 bunch of fresh cilantro, stems removed, leaves finely chopped	1.0	bunch	bunch	3
+13	23	4 tablespoons minced garlic	4.0	tablespoons	T	4
+13	3	1 green bell pepper, cored, seeded, and diced	1.0			5
+13	94	1 bunch green onions, sliced	1.0	bunch	bunch	6
+13	132	1/4 teaspoon hot sauce, or to taste	0.25	teaspoon	t	7
+13	139	1/4 juice of lime	0.25			8
+13	81	1 orange bell pepper, cored, seeded, and diced	1.0			9
+13	4	1/2 of a medium red onion, finely chopped	0.5			10
+13	0	Salt and pepper to taste	4.0	servings	servings	11
+13	47	2 cans Rotel tomatoes	2.0	cans	cans	12
+13	82	1 yellow bell pepper, cored, seeded, and diced	1.0			13
+14	101	1 ounce quality balsamic vinegar	1.0	ounce	oz	0
+14	35	1 can (15 oz) black beans, drained	15.0	oz	oz	1
+14	0	1 can (15 oz) blackeyed peas, drained	15.0	oz	oz	2
+14	0	1 can canned corn	1.0	can	can	3
+14	45	1 teaspoon dried oregano	1.0	teaspoon	t	4
+14	92	1/2 bunch fresh cilantro, leaves only	0.5	bunch	bunch	5
+14	23	2 cloves garlic	2.0	cloves	cloves	6
+14	0	1 pint super-sweet grape tomatoes, quartered	1.0	pint	pt	7
+14	3	1 green bell pepper, fine-chopped	1.0			8
+14	48	1 teaspoon ground cumin	1.0	teaspoon	t	9
+14	0	3 jalapeño chilies, minced	3.0			10
+14	0	1 ounce light olive oil	1.0	ounce	oz	11
+14	72	1 ounce extra-virgin olive oil	1.0	ounce	oz	12
+14	100	2 oz red wine vinegar	2.0	oz	oz	13
+14	6	1/2 teaspoon each salt, ground black pepper, and garlic powder	0.5	teaspoon	t	14
+14	94	1 bunch scallions, including light green tops, sliced across into angled rings	1.0	bunch	bunch	15
+14	4	1/2 large yellow onion, nicely chopped	0.5			16
+15	8	1 tablespoon Baking Powder	1.0	tablespoon	T	0
+15	10	3 tablespoons Butter, melted	3.0	tablespoons	T	1
+15	0	14 ounces can Cannellini Beans	14.0	ounces	oz	2
+15	0	14 ounces can Diced Tomatoes	14.0	ounces	oz	3
+15	0	1 tablespoon Chile Powder, plus more for sprinkling over top	1.0	tablespoon	T	4
+15	12	Pinch of Cinnamon	1.0	pinch	pinch	5
+15	0	1 cup Cornmeal	1.0	cup	c	6
+15	48	1/2 teaspoon Cumin	0.5	teaspoon	t	7
+15	14	2 Eggs	2.0			8
+15	0	3 cups (12 ounces) Extra Sharp Cheddar Cheese, shredded	12.0	ounces	oz	9
+15	15	1 cup all-purpose Flour	1.0	cup	c	10
+15	0	1 cup Corn, frozen or canned (drained)	1.0	cup	c	11
+15	23	5 cloves Garlic, minced	5.0	cloves	cloves	12
+15	0	4 ounces can Green Chiles, diced	4.0	ounces	oz	13
+15	0	1 pound + 1/2 Ground Beef or Ground Turkey	1.0	pound	lb	14
+15	97	Sea or Kosher salt and Fresh Black Pepper	8.0	servings	servings	15
+15	20	1 cup Milk	1.0	cup	c	16
+15	16	Pinch of Nutmeg	1.0	pinch	pinch	17
+15	72	Olive oil for sauteing	8.0	servings	servings	18
+15	45	1 teaspoon Oregano	1.0	teaspoon	t	19
+15	61	Red Pepper, optional	8.0	servings	servings	20
+15	41	1/2 teaspoon Paprika, smoked or regular	0.5	teaspoon	t	21
+15	126	1/2 cup Sour Cream, plus more for serving	0.5	cup	c	22
+15	0	1/2 teaspoon Table Salt or 1 teaspoon Sea/Kosher Salt	0.5	teaspoon	t	23
+15	7	1/2 cup water	0.5	cup	c	24
+15	137	2 teaspoons Worcestershire Sauce	2.0	teaspoons	t	25
+15	4	2 large yellow onions, diced	2.0			26
+16	0	4 pounds baby back ribs	4.0	pounds	lb	0
+16	50	� cup brown sugar	0.5	cup	c	1
+16	0	1/2 teaspoon cayenne	0.5	teaspoon	t	2
+16	0	4 teaspoons chile powder	4.0	teaspoons	t	3
+16	99	3/4 cup cider vinegar	0.75	cup	c	4
+16	48	2 teaspoons cumin	2.0	teaspoons	t	5
+16	0	2 tablespoons Dijon mustard	2.0	tablespoons	T	6
+16	86	2 teaspoons dried thyme	2.0	teaspoons	t	7
+16	23	1 Clove Garlic, Minced	1.0	Clove	Clove	8
+16	143	2 teaspoons garlic powder	2.0	teaspoons	t	9
+16	48	2 teaspoons ground cumin	2.0	teaspoons	t	10
+16	0	2 teaspoons instant coffee granules	2.0	teaspoons	t	11
+16	0	1 teaspoon liquid smoke	1.0	teaspoon	t	12
+16	0	3 tablespoons molasses	3.0	tablespoons	T	13
+16	71	1 tablespoon oil	1.0	tablespoon	T	14
+16	41	2 teaspoons paprika	2.0	teaspoons	t	15
+16	0	1 teaspoon pepper	1.0	teaspoon	t	16
+16	6	� tsp. salt	0.5	tsp	t	17
+16	74	1/2 cup soy sauce	0.5	cup	c	18
+16	0	28 ounces can tomato puree	28.0	ounces	oz	19
+17	0	1/4 teaspoon baking soda	0.25	teaspoon	t	0
+17	10	1/2 cup butter, cut into cubes	0.5	cup	c	1
+17	0	dulce de leche	24.0	servings	servings	2
+17	14	3 eggs	3.0			3
+17	15	1 1/4 cups flour	1.25	cups	c	4
+17	0	1 tablespoon instant espresso powder	1.0	tablespoon	T	5
+17	0	1 1/4 cups semisweet chocolate chip	1.25	cups	c	6
+17	114	1/2 cup sugar	0.5	cup	c	7
+17	134	1 tablespoon vanilla extract	1.0	tablespoon	T	8
+18	0	1 package active dry yeast	1.0	package	pkg	0
+18	58	to taste Freshly-ground black pepper	4.0	servings	servings	1
+18	0	fresh buffalo mozzarella, cut into bite sized pieces	1.0	oz	oz	2
+18	0	coarse grey salt	4.0	servings	servings	3
+18	0	1 cup cornmeal, fine grind	1.0	cup	c	4
+18	0	coarse grind cornmeal for baking sheets	4.0	servings	servings	5
+18	0	2 ears corn, freshly shucked	2.0			6
+18	72	extra-virgin olive oil	4.0	servings	servings	7
+18	87	handful fresh basil, torn	1.0	handful	handful	8
+18	23	pickled garlic (from your favorite olive bar)	4.0	servings	servings	9
+18	23	6 cloves garlic chopped	6.0	cloves	cloves	10
+18	17	1 tbsp wild honey	1.0	tbsp	T	11
+18	17	2 tablespoons Honey	2.0	tablespoons	T	12
+18	0	24 italian tomatoes, cut in half lengthwise	24.0			13
+18	61	dried red pepper flakes	4.0	servings	servings	14
+18	96	pinch sea salt	1.0	pinch	pinch	15
+18	7	1 cup warm water	1.0	cup	c	16
+18	0	1 1/2 cups white whole wheat flour	1.5	cups	c	17
+19	0	2 tablespoons light caesar dressing	2.0	tablespoons	T	0
+19	18	2 tablespoons freshly squeezed lemon juice	2.0	tablespoons	T	1
+19	72	1 tablespoon Olive oil	1.0	tablespoon	T	2
+19	41	1/4 teaspoon paprika	0.25	teaspoon	t	3
+19	0	8 tablespoons Parmesan cheese, shredded	8.0	tablespoons	T	4
+19	0	add black pepper to taste	2.0	servings	servings	5
+19	157	1 8 oz head of Romaine	8.0	oz	oz	6
+19	0	6 ounces Salmon fillet	6.0	ounces	oz	7
+19	6	1/4 teaspoon salt	0.25	teaspoon	t	8
+19	0	1 tablespoon slivered almonds	1.0	tablespoon	T	9
+20	37	29 oz. can chick peas – drained	29.0	oz	oz	0
+20	0	Slices of deli ham	1.0	Slices	Slices	1
+20	23	3 cloves Garlic Crushed	3.0	cloves	cloves	2
+20	48	1/2 teaspoon ground cumin	0.5	teaspoon	t	3
+20	135	1 marinated jalapeño – with seeds	1.0			4
+20	139	1 Zest of lime – plus juice of lime	1.0			5
+20	72	3 tablespoons of olive oil	3.0	tablespoons	T	6
+20	4	Red onion- grilled	1.0	serving	serving	7
+20	168	Shredded cheddar cheese	1.0	serving	serving	8
+20	0	Your favorite tortillas	1.0	serving	serving	9
+21	15	4 cups of all purpose flour	4.0	cups	c	0
+21	67	2 large cans of peeled tomatoes	2.0	cans	cans	1
+21	0	2 teaspoons dry yeast	2.0	teaspoons	t	2
+21	23	4 cloves large of garlic, chopped	4.0	cloves	cloves	3
+21	72	2 tablespoons Olive oil	2.0	tablespoons	T	4
+21	4	2 large onions, chopped	2.0			5
+21	0	1/2 cup of red wine	0.5	cup	c	6
+21	84	1 teaspoon rosemary	1.0	teaspoon	t	7
+21	86	1 teaspoon thyme	1.0	teaspoon	t	8
+21	88	1 teaspoon basil	1.0	teaspoon	t	9
+21	45	1 teaspoon oregano	1.0	teaspoon	t	10
+21	114	6 cups Sugar	6.0	cups	c	11
+21	7	cups of warm water	1.0	cups	c	12
+21	6	salt	1.0	serving	serving	13
+21	60	white pepper	1.0	serving	serving	14
+22	3	1 medium bell pepper, chopped	1.0			0
+22	0	1 (14 oz) can black eyed peas, drained	14.0	oz	oz	1
+22	91	chopped chives or green onions, to taste	8.0	servings	servings	2
+22	92	finely chopped cilantro, to taste***	8.0	servings	servings	3
+22	23	2 garlic cloves, minced	2.0	cloves	cloves	4
+22	0	1 cup picante sauce	1.0	cup	c	5
+22	4	1/2 cup (1 small to medium) yellow or purple onion, chopped (the purple is sweeter)	0.5	cup	c	6
+22	0	1 (15 oz) can white hominy or sweet corn, drained	15.0	oz	oz	7
+22	47	2 mediums tomatoes, chopped	2.0			8
+23	136	10 ounces baby bella mushrooms, thickly sliced	10.0	ounces	oz	0
+23	0	1 cup fresh whole wheat bread crumbs (I used a food processor to turn 3 pieces of high-fiber 1/4 cup parsley, chopped	1.0	cup	c	1
+23	0	1 tablespoon Dijon mustard	1.0	tablespoon	T	2
+23	86	1 teaspoon dried thyme	1.0	teaspoon	t	3
+23	14	1 large egg and 1 egg white, lightly beaten	1.0			4
+23	0	1 1/2 pounds lean ground beef (93 percent lean or better)	1.5	pounds	lb	5
+23	72	1/4 cup olive oil	0.25	cup	c	6
+23	58	teaspoon salt and fresh ground pepper to taste (I used about 1/2 each)	1.0	teaspoon	t	7
+23	0	12 ounces bottle of stout beer (I used Dark Horse Brewing Company'	12.0	ounces	oz	8
+23	123	1 medium sweet onion, diced	1.0			9
+23	0	3 ounces low-fat Swiss cheese, shredded	3.0	ounces	oz	10
+24	0	4 cups Cheerios	4.0	cups	c	0
+24	5	1 cup Creamy peanut butter, (up to 1-1/2)	1.0	cup	c	1
+24	0	2 cups Crisp rice cereal	2.0	cups	c	2
+24	0	2 cups Dry roasted peanuts	2.0	cups	c	3
+24	0	1 cup Light corn syrup	1.0	cup	c	4
+24	0	2 cups M&M's	2.0	cups	c	5
+24	114	3/4 cup sugar	0.75	cup	c	6
+24	134	1/4 teaspoon vanilla extract	0.25	teaspoon	t	7
+25	0	1 teaspoon agave	1.0	teaspoon	t	0
+25	0	1 tablespoon organic crunchy peanut butter	1.0	tablespoon	T	1
+25	0	1/2 cup non-fat milk	0.5	cup	c	2
+25	0	cup quick cooking oats	1.0	cup	c	3
+25	0	1 teaspoon unsweetened cocoa	1.0	teaspoon	t	4
+26	0	1 cup almond milk or other non-dairy milk (see my almond milk recipe)	1.0	cup	c	0
+26	9	2 bananas, smashed (I used frozen)	2.0			1
+26	5	1/2 cup peanut butter	0.5	cup	c	2
+26	0	� cup strawberries (about 3 strawberries) or 1 Tbsp strawberry jam	0.5	cup	c	3
+27	8	1 tablespoon Baking powder	1.0	tablespoon	T	0
+27	9	2 Bananas,ripe, mashed	2.0			1
+27	50	1/2 cup packed brown sugar	0.5	cup	c	2
+27	14	2 Eggs	2.0			3
+27	15	1 3/4 cups flour	1.75	cups	c	4
+27	20	1/4 cup Milk	0.25	cup	c	5
+27	5	1/2 cup peanut butter	0.5	cup	c	6
+27	6	1/2 teaspoon salt	0.5	teaspoon	t	7
+27	71	2 tablespoons Vegetable oil	2.0	tablespoons	T	8
+28	10	3/4 cup butter or margarine melted	0.75	cup	c	0
+28	0	18 ounces Chocolate chips	18.0	ounces	oz	1
+28	0	tablespoon cup plus 2 sweetened condensed milk	1.0	tablespoon	T	2
+28	13	1/2 cup cream cheese	0.5	cup	c	3
+28	0	12 double graham crackers (5 x 2 �- inches)	12.0			4
+28	0	1 3/4 cups heavy cream, divided	1.75	cups	c	5
+28	5	1 cup natural peanut butter	1.0	cup	c	6
+28	6	1/4 teaspoon salt	0.25	teaspoon	t	7
+29	0	1/4 cup peppermint flavored candies, crushed	0.25	cup	c	0
+29	0	1/2 tsp peppermint extract	0.5	tsp	t	1
+29	0	6-8 drops Red food coloring	6.0	drops	drops	2
+29	0	1 Container vanilla frosting (12 ounce)	12.0	ounce	oz	3
+29	0	2 Cups white chocolate chips	2.0	Cups	Cups	4
+30	8	1 tablespoon baking powder	1.0	tablespoon	T	0
+30	10	2 tablespoons Butter or margarine	2.0	tablespoons	T	1
+30	14	4 large eggs, room temperature	4.0			2
+30	15	2 1/2 cups sifted all-purpose flour	2.5	cups	c	3
+30	0	1 cup (1/2 pint) heavy cream	1.0	cup	c	4
+30	145	1 lemon	1.0			5
+30	0	1 1/2 cups lemon curd, homemade or store-bought	1.5	cups	c	6
+30	20	1 cup milk	1.0	cup	c	7
+30	0	cup poppy seeds, plus more for sprinkling	1.0	cup	c	8
+30	6	Pinch of salt	1.0	pinch	pinch	9
+30	114	1 1/4 cups sugar	1.25	cups	c	10
+30	134	1 tablespoon vanilla extract	1.0	tablespoon	T	11
+31	99	1/4 cup apple cider vinegar	0.25	cup	c	0
+31	49	1/2 teaspoon cumin seeds	0.5	teaspoon	t	1
+31	50	2 tablespoons dark brown sugar	2.0	tablespoons	T	2
+31	0	1/2 teaspoon fennel seeds	0.5	teaspoon	t	3
+31	141	2 tablespoons minced ginger	2.0	tablespoons	T	4
+31	97	Kosher salt	4.0	servings	servings	5
+31	139	1/2 cup fresh lime juice	0.5	cup	c	6
+31	0	2 cups mango puree	2.0	cups	c	7
+31	0	2 tablespoons molasses	2.0	tablespoons	T	8
+31	4	1 onion, finely minced	1.0			9
+31	41	1 tablespoon paprika	1.0	tablespoon	T	10
+31	0	3 pounds 1 boneless pork shoulder (Boston butt), about, excess fat removed, cut into chun	3.0	pounds	lb	11
+31	0	Brioche rolls, split	4.0	servings	servings	12
+31	160	1 serrano pepper, thinly sliced (seeds discarded if you don't like it spicy)	1.0			13
+31	71	1/4 cup vegetable oil	0.25	cup	c	14
+31	137	1/4 cup Worcestershire sauce	0.25	cup	c	15
+32	124	2 teaspoons barbecue sauce	2.0	teaspoons	t	0
+32	0	2 tablespoons Barbecue seasoning	2.0	tablespoons	T	1
+32	30	1 teaspoon hoisin sauce	1.0	teaspoon	t	2
+32	17	2 teaspoons honey	2.0	teaspoons	t	3
+32	145	1 lemon	1.0			4
+32	0	2 6-ounce salmon fillets, patted dry	12.0	ounce	oz	5
+32	96	Kosher salt or sea salt	2.0	servings	servings	6
+33	8	1 tablespoon baking powder	1.0	tablespoon	T	0
+33	23	Bulb of garlic	1.0	lb	lb	1
+33	72	1 Tablespoon olive oil	1.0	Tablespoon	Tablespoon	2
+33	4	1 red onion, cubed	1.0			3
+33	0	1 roasted bulb of garlic	1.0			4
+33	83	1 tsp rosemary	1.0	tsp	t	5
+33	6	1/2 teaspoon salt	0.5	teaspoon	t	6
+33	0	1 cup shredded mozzarella	1.0	cup	c	7
+33	0	1/2 cup skim milk	0.5	cup	c	8
+33	154	2 medium sweet potatoes, peeled and cubed	2.0			9
+33	85	1 tsp thyme	1.0	tsp	t	10
+33	7	4 cups of water	4.0	cups	c	11
+33	110	1 cup whole wheat flour	1.0	cup	c	12
+34	15	1 cup of all purpose flour	1.0	cup	c	0
+34	58	1 teaspoon of black pepper	1.0	teaspoon	t	1
+34	0	2 cups of breadcrumbs	2.0	cups	c	2
+34	0	1 cup of chopped chicken breast	1.0	cup	c	3
+34	95	1 teaspoon of chili powder	1.0	teaspoon	t	4
+34	14	2 eggs	2.0			5
+34	23	1 garlic clove	1.0	clove	clove	6
+34	0	1/4 teaspoon of ginger powder	0.25	teaspoon	t	7
+34	0	2 seasoning cubes	2.0			8
+34	71	Oil for deep frying	2.0	servings	servings	9
+34	6	Pinch of Salt	1.0	pinch	pinch	10
+35	130	1 Sweet apple, peeled, cored, and sliced	1.0			0
+35	130	4 Sweet apples, whole, cored, peel intact	4.0			1
+35	0	1 Tbsp Arrowroot mixed with 2tbsp de-alcoholised, (slurry) red wine	1.0	Tbsp	Tbsp	2
+35	0	1 tsp Caraway seed	1.0	tsp	t	3
+35	0	3 Lower fat smoked chicken-apple sausages	3.0			4
+35	0	1 tsp Dill seed	1.0	tsp	t	5
+35	43	2 Tbsps Chopped fresh parsley	2.0	Tbsps	Tbsps	6
+35	0	1 tsp Light olive oil with a dash of toasted sesame oil	1.0	tsp	t	7
+35	0	1 cup Low sodium chicken stock	1.0	cup	c	8
+35	0	4 tsps Dry English mustard mixed with 4tsp	4.0	tsps	t	9
+35	16	1/8 tsp Grated nutmeg	0.125	tsp	t	10
+35	4	2 medium Onions, peeled and sliced thin	2.0			11
+35	0	4 lrg Russet potatoes, peeled and quartered	4.0			12
+35	0	4 medium Rutabagas, peeled and quartered	4.0			13
+35	96	1/2 tsp Finely ground sea salt	0.5	tsp	t	14
+35	60	1/8 tsp Freshly ground white pepper	0.125	tsp	t	15
+35	0	1 cup De-alcoholised dry red wine	1.0	cup	c	16
+35	0	1 tsp Yellow mustard seed	1.0	tsp	t	17
+36	10	75 grams butter	75.0	grams	g	0
+36	109	1 free-range egg yolk	1.0			1
+36	0	600 grams minced lamb	600.0	grams	g	2
+36	0	100 milliliters chicken, beef or lamb stock	100.0	milliliters	ml	3
+36	20	55 milliliters milk	55.0	milliliters	ml	4
+36	72	2 tablespoons olive oil	2.0	tablespoons	T	5
+36	4	2 onions, finely chopped	2.0			6
+36	15	2 tablespoons plain flour	2.0	tablespoons	T	7
+36	27	700 grams potatoes	700.0	grams	g	8
+36	83	rosemary	4.0	servings	servings	9
+36	0	salt and freshly ground black pepper	4.0	servings	servings	10
+36	85	thyme	4.0	servings	servings	11
+36	67	1 small tin chopped tomatoes	1.0			12
+37	10	1 cup butter	1.0	cup	c	0
+37	0	10 ounces golden syrup	10.0	ounces	oz	1
+37	14	1 large egg, lightly beaten	1.0			2
+37	14	4 medium eggs	4.0			3
+37	15	1 3/4 cups all-purpose flour	1.75	cups	c	4
+37	0	1 ounce fresh bread crumbs	1.0	ounce	oz	5
+37	18	1 Zest and juice of lemon	1.0			6
+37	0	1 tablespoon molasses	1.0	tablespoon	T	7
+37	6	1/2 teaspoon salt	0.5	teaspoon	t	8
+37	114	1/4 cup confectioner's sugar	0.25	cup	c	9
+38	0	1 teaspoon Almond extract	1.0	teaspoon	t	0
+38	0	Fresh Berries	10.0	servings	servings	1
+38	0	1/2 cup Mrs Richardson's Butterscotch Caramel sauce	0.5	cup	c	2
+38	0	1 large box instant vanilla pudding	1.0	box	box	3
+38	20	3 cups milk	3.0	cups	c	4
+38	0	1 tub Cool Whip	1.0	tub	tub	5
+38	0	1 pound cake	1.0			6
+39	8	4 teaspoons baking powder	4.0	teaspoons	t	0
+39	10	1 stick butter, melted	1.0	stick	stick	1
+39	168	1/2 pound Cheddar cheese, grated	0.5	pound	lb	2
+39	15	1 1/4 cups all-purpose flour	1.25	cups	c	3
+39	20	1/2 cup milk	0.5	cup	c	4
+39	0	1 teaspoon poppy seeds	1.0	teaspoon	t	5
+39	0	2/3 cup instant mashed potato flakes	0.6666666666666666	cup	c	6
+39	6	1/2 teaspoon salt	0.5	teaspoon	t	7
+39	7	2/3 cup water	0.6666666666666666	cup	c	8
+39	0	1/2 cup yellow cornmeal	0.5	cup	c	9
+40	10	4 tablespoons (1/2 stick) butter, softened	4.0	tablespoons	T	0
+40	2	1 pound carrots, peeled and sliced	1.0	pound	lb	1
+40	0	4 celery stalks, chopped	4.0	stalks	stalks	2
+40	0	6 cups chicken stock	6.0	cups	c	3
+40	15	1/2 cup flour	0.5	cup	c	4
+40	0	2 pounds ground chicken	2.0	pounds	lb	5
+40	132	A few dashes of hot sauce	3.0	dashes	dashes	6
+40	97	Kosher salt and freshly ground black pepper	6.0	servings	servings	7
+40	72	2 tablespoons olive oil)	2.0	tablespoons	T	8
+40	38	1 (10-ounce) package frozen peas	10.0	ounce	oz	9
+40	0	2 teaspoons poultry seasoning	2.0	teaspoons	t	10
+40	129	2 1/2 pounds russet potatoes, peeled and cubed	2.5	pounds	lb	11
+40	0	2 cups shredded sharp cheddar cheese	2.0	cups	c	12
+40	123	1 sweet yellow onion, peeled and diced	1.0			13
+41	20	3/4 cup milk	0.75	cup	c	0
+41	0	2 cups self raising flour	2.0	cups	c	1
+41	0	strawberry jam and cream, for serving	4.0	servings	servings	2
+41	10	50g unsalted butter, softened	50.0	g	g	3
+42	0	400 grams beef tenderloin	400.0	grams	g	0
+42	0	Dijon mustard for brushing meat or if you can find English mustard, even better.	2.0	servings	servings	1
+42	109	2 Egg yolks	2.0			2
+42	55	400 grams mushrooms	400.0	grams	g	3
+42	72	Olive oil	2.0	servings	servings	4
+42	0	4 slices proscuitto	4.0	slices	slices	5
+42	0	200 grams puff pastry	200.0	grams	g	6
+42	0	Salt and pepper	2.0	servings	servings	7
+43	0	1 cup beef stock or broth	1.0	cup	c	0
+43	10	2 tablespoons butter	2.0	tablespoons	T	1
+43	2	1 carrot, peeled and finely chopped	1.0			2
+43	13	2 tablespoons cream cheese (or sour cream)	2.0	tablespoons	T	3
+43	109	1 large egg yolk	1.0			4
+43	15	2 tablespoons all-purpose flour	2.0	tablespoons	T	5
+43	43	2 tablespoons chopped fresh parsley leaves, for garnish	2.0	tablespoons	T	6
+43	85	2 teaspoons thyme (fresh or dried)	2.0	teaspoons	t	7
+43	0	1 3/4 pounds ground beef or ground lamb*	1.75	pounds	lb	8
+43	20	1/2 cup 1% milk (or heavy cream for richer flavor)	0.5	cup	c	9
+43	72	1 tablespoon extra-virgin olive oil, 1 turn of the pan	1.0	tablespoon	T	10
+43	4	1 onion, chopped	1.0			11
+43	38	1/2 cup to 1 frozen peas, a couple of handfuls	0.5	cup	c	12
+43	129	2 pounds potatoes, such as russet, peeled and cubed	2.0	pounds	lb	13
+43	0	Salt and freshly ground black pepper	6.0	servings	servings	14
+43	41	1 teaspoon sweet paprika	1.0	teaspoon	t	15
+43	70	2 tablespoons tomato paste	2.0	tablespoons	T	16
+43	137	2 teaspoons Worcestershire, eyeball it	2.0	teaspoons	t	17
+44	0	1/3 cup agave nectar (or 1/3 cup sugar)	0.3333333333333333	cup	c	0
+44	0	3/4 cup unsweetened applesauce	0.75	cup	c	1
+44	8	2 teaspoons baking powder	2.0	teaspoons	t	2
+44	0	1/2 teaspoon baking soda	0.5	teaspoon	t	3
+44	0	1 cup Fresh Cherries, pitted and frozen	1.0	cup	c	4
+44	0	1 cup Fine Grind Cornmeal (Bob's Red Mill)	1.0	cup	c	5
+44	142	2 teaspoons ground ginger	2.0	teaspoons	t	6
+44	16	1 teaspoon ground nutmeg	1.0	teaspoon	t	7
+44	0	2-1/2 cups Oat Flour (Bob's Red Mill)	2.0	cups	c	8
+44	39	1/4 cup plain yogurt	0.25	cup	c	9
+44	6	1/2 teaspoon salt	0.5	teaspoon	t	10
+44	134	2 teaspoons vanilla extract	2.0	teaspoons	t	11
+44	0	1/2 cup walnuts, chopped	0.5	cup	c	12
+45	10	1 teaspoon butter	1.0	teaspoon	t	0
+45	69	1 head cauliflower	1.0	head	head	1
+45	0	2 chicken sausage	2.0			2
+45	13	1 tablespoon fat-free cream cheese	1.0	tablespoon	T	3
+45	15	1 teaspoon flour	1.0	teaspoon	t	4
+45	20	1/4 cup milk	0.25	cup	c	5
+45	55	1 cup mushrooms, sliced	1.0	cup	c	6
+45	0	1 tablespoon red wine	1.0	tablespoon	T	7
+45	0	3/4 cup reduced sodium chicken broth	0.75	cup	c	8
+45	0	salt and pepper to taste	2.0	servings	servings	9
+45	4	1/2 yellow onion	0.5			10
+46	8	1 1/2 teaspoons baking powder	1.5	teaspoons	t	0
+46	0	3 tablespoons caster sugar	3.0	tablespoons	T	1
+46	14	1 egg, slightly beaten	1.0			2
+46	18	tablespoon of lemon juice	1.0	tablespoon	T	3
+46	20	175 milliliters milk	175.0	milliliters	ml	4
+46	6	1/4 teaspoon salt	0.25	teaspoon	t	5
+46	0	350 grams Self Raising Flour	350.0	grams	g	6
+46	10	1 stick unsalted butter, softened at room temperature	1.0	stick	stick	7
+46	134	1/2 teaspoon vanilla extract	0.5	teaspoon	t	8
+46	0	1 1/2 dried culinary lavender	1.5			9
+47	0	1 cup chicken broth	1.0	cup	c	0
+47	0	2 cups corn kernels	2.0	cups	c	1
+47	0	1 pound lean ground beef	1.0	pound	lb	2
+47	4	2 tablespoons chopped onion	2.0	tablespoons	T	3
+47	27	4 mediums potatoes, peeled and quartered	4.0			4
+47	0	8 ounces reduced fat cheddar cheese, grated	8.0	ounces	oz	5
+47	6	Salt to taste	4.0	servings	servings	6
+48	15	2 cups all purpose flour	2.0	cups	c	0
+48	8	2 teaspoons baking powder	2.0	teaspoons	t	1
+48	0	1/4 teaspoon baking soda	0.25	teaspoon	t	2
+48	10	1 tablespoon Butter	1.0	tablespoon	T	3
+48	14	1 large egg, beaten well	1.0			4
+48	14	Egg mixture to brush on the top of the scones	4.0	servings	servings	5
+48	14	2 eggs	2.0			6
+48	89	Thick jam or fruit preserves	4.0	servings	servings	7
+48	114	1/4 cup granulated white sugar	0.25	cup	c	8
+48	20	cup milk	1.0	cup	c	9
+48	20	1 tablespoon milk	1.0	tablespoon	T	10
+48	6	Salt , to taste	4.0	servings	servings	11
+48	134	1 1/2 teaspoons pure vanilla extract	1.5	teaspoons	t	12
+49	8	1 teaspoon baking powder	1.0	teaspoon	t	0
+49	0	1 teaspoon Baking soda	1.0	teaspoon	t	1
+49	50	milk to brush and brown sugar to top	4.0	servings	servings	2
+49	10	1 pound Butter or margarine	1.0	pound	lb	3
+49	0	60 milliliters (2 fl oz or � cup) buttermilk	60.0	milliliters	ml	4
+49	0	40 grams (1.3 oz or � cup) chocolate chips	40.0	grams	g	5
+49	15	4 cups Flour	4.0	cups	c	6
+49	6	1 pinch salt	1.0	pinch	pinch	7
+49	0	70 grams (3 oz) whole milk ricotta cheese	3.0	oz	oz	8
+49	114	1 cup sugar	1.0	cup	c	9
+49	134	2 milliliters (�) tsp vanilla extract	2.0	milliliters	ml	10
+50	8	2 1/4 teaspoon baking powder	2.25	teaspoon	t	0
+50	10	2 tablespoons Butter	2.0	tablespoons	T	1
+50	12	1/4 teaspoon cinnamon	0.25	teaspoon	t	2
+50	14	1 egg lightly beaten mixed with a tablespoon of water for egg wash	1.0			3
+50	15	2 cup flour	2.0	cup	c	4
+50	114	1/3 cup granulated white sugar	0.3333333333333333	cup	c	5
+50	0	1/2 cup heavy cream	0.5	cup	c	6
+50	145	1 lemon	1.0			7
+50	20	2-3 tablespoon milk	2.0	tablespoon	T	8
+50	0	powdered sugar	8.0	servings	servings	9
+50	6	3/4 teaspoon salt	0.75	teaspoon	t	10
+50	0	1 pint strawberries	1.0	pint	pt	11
+51	0	2 tablespoons of caster sugar	2.0	tablespoons	T	0
+51	0	300 milliliters cream	300.0	milliliters	ml	1
+51	0	3 tablespoons of custard powder	3.0	tablespoons	T	2
+51	0	a packet of Cottee's cold jelly- as per packet instruction	1.0	packet	packet	3
+51	20	500 milliliters milk	500.0	milliliters	ml	4
+51	0	strawberries- washed and hulled	1.0	serving	serving	5
+51	114	2 tablespoons of sugar (add more if you want to have the sweet custard)	2.0	tablespoons	T	6
+52	2	1 carrot	1.0			0
+52	0	1 bunch of dill, chopped	1.0	bunch	bunch	1
+52	14	2 eggs ( or egg substitutes for vegans, you can also add 3-4 tbsp dry yeast flakes)	2.0			2
+52	58	1/2 tsp ground pepper	0.5	tsp	t	3
+52	55	1 kg mushrooms	1.0	kg	kg	4
+52	4	2 onions, diced	2.0			5
+52	43	1 bunch of parsley, chopped	1.0	bunch	bunch	6
+52	76	1 red bell pepper	1.0			7
+52	128	1 kg red skin potatoes	1.0	kg	kg	8
+52	96	sea salt, to taste	12.0	servings	servings	9
+52	0	2 tbsp unrefined sunflower oil	2.0	tbsp	T	10
+52	0	1 tsp sweet paprika	1.0	tsp	t	11
+52	0	100g textured vegetable protein	100.0	g	g	12
+52	85	1 tbsp dry thyme	1.0	tbsp	T	13
+53	0	1/2 tsp dried thyme leaves	0.5	tsp	t	0
+53	0	1/2 lb goose or duck, liver pate or 17 oz. can liver pate	0.5	lb	lb	1
+53	14	1 egg, separated	1.0			2
+53	20	2 tsps milk	2.0	tsps	t	3
+53	55	1 8 oz. pkg. mushrooms, finely chopped	8.0	oz	oz	4
+53	4	1 med. sized onion, minced	1.0			5
+53	0	1/4 tsp pepper	0.25	tsp	t	6
+53	0	1 17 � oz. pkg. frozen puff pastry	17.25	oz	oz	7
+53	0	2 Tbsps red wine	2.0	Tbsps	Tbsps	8
+53	0	1 6 lb. whole beef tenderloin roast	6.0	lb	lb	9
+53	6	1/2 tsp salt	0.5	tsp	t	10
+54	0	4 individual portion size fillets tenderloin beef	4.0	fillet	fillet	0
+54	0	2 Tbsps brandy (optional)	2.0	Tbsps	Tbsps	1
+54	10	3 Tbsps butter	3.0	Tbsps	Tbsps	2
+54	14	1 beaten egg	1.0			3
+54	23	1 clove garlic, cut before using	1.0	clove	clove	4
+54	0	1 can liver pate	1.0	can	can	5
+54	0	1 Tbsp mixed herbs	1.0	Tbsp	Tbsp	6
+54	55	1 cup finely chopped mushrooms	1.0	cup	c	7
+55	0	1 medium avocado, mashed to a paste	1.0			0
+55	92	1 teaspoon freshly chopped cilantro- optional	1.0	teaspoon	t	1
+55	0	1/2 cup cook and peeled crayfish tails	0.5	cup	c	2
+55	72	1 teaspoon extra-virgin olive oil	1.0	teaspoon	t	3
+55	6	salt, to taste	4.0	servings	servings	4
+55	0	2 teaspoons sherry vinegar	2.0	teaspoons	t	5
+55	47	1 tomato	1.0			6
+56	9	8 bananas	8.0			0
+56	50	1/2 cup Brown sugar	0.5	cup	c	1
+56	10	1/2 cup butter	0.5	cup	c	2
+56	12	1 teaspoon cinnamon	1.0	teaspoon	t	3
+56	14	10 Eggs	10.0			4
+56	115	1/4 cup Half& Half	0.25	cup	c	5
+56	0	1 loaf Hawaiian Bread (challah works well)	1.0	loaf	loaf	6
+56	0	2 cups heavy cream	2.0	cups	c	7
+56	19	1/4 cup Maple Syrup	0.25	cup	c	8
+56	6	1/2 teaspoon Salt	0.5	teaspoon	t	9
+56	114	1/4 cup Sugar	0.25	cup	c	10
+56	0	1 teaspoon Vanilla	1.0	teaspoon	t	11
+57	9	1 cup Bananas (mashed)	1.0	cup	c	0
+57	10	1/2 cup butter	0.5	cup	c	1
+57	109	4 egg yolks	4.0			2
+57	114	1/2 cup granulated sugar, divided	0.5	cup	c	3
+57	0	2 cups heavy cream	2.0	cups	c	4
+57	97	1/8 teaspoon kosher salt	0.125	teaspoon	t	5
+57	50	1/4 cup light brown sugar	0.25	cup	c	6
+57	0	1 tablespoon rum	1.0	tablespoon	T	7
+57	0	1 vanilla bean	1.0			8
+57	20	1 1/4 cups whole milk	1.25	cups	c	9
+58	0	6 cups cooked rice	6.0	cups	c	0
+58	94	2 bunches green onions, chopped	2.0	bunches	bunches	1
+58	4	1 large onion, chopped	1.0			2
+58	43	1 bunch parsley, chopped	1.0	bunch	bunch	3
+58	0	pepper to taste	6.0	servings	servings	4
+58	0	2 pounds pork meat	2.0	pounds	lb	5
+58	0	1 1/2 pounds pork liver	1.5	pounds	lb	6
+58	6	5 teaspoons salt	5.0	teaspoons	t	7
+58	0	Sausage casings, soaked in cold water	6.0	servings	servings	8
+59	58	1 1/2 teaspoons freshly-ground black pepper	1.5	teaspoons	t	0
+59	0	2 1/2 teaspoons cayenne	2.5	teaspoons	t	1
+59	0	1/2 cup chopped celery	0.5	cup	c	2
+59	0	6 cups cooked medium-grain rice	6.0	cups	c	3
+59	23	4 cloves garlic finely chopped	4.0	cloves	cloves	4
+59	3	1/2 cup chopped green bell peppers	0.5	cup	c	5
+59	4	1 cup chopped onions	1.0	cup	c	6
+59	4	1 cup chopped green onions tops (green part only)	1.0	cup	c	7
+59	43	1 cup finely-chopped parsley	1.0	cup	c	8
+59	0	2 1/2 pounds pork butt, cut into 1" cubes	2.5	pounds	lb	9
+59	0	1 pound pork liver, rinsed in cool water	1.0	pound	lb	10
+59	6	2 teaspoons salt	2.0	teaspoons	t	11
+59	0	sausage casings, 1 1/2" diameter, about 4 feet in length	1.0			12
+59	7	2 quarts water	2.0	quarts	quarts	13
+60	58	1 tsp black pepper	1.0	tsp	t	0
+60	104	1/2 vegan Bouillon cube	0.5			1
+60	0	1 15oz can kidney beans	15.0	oz	oz	2
+60	67	1 14.5 oz can petite diced tomatoes	14.5	oz	oz	3
+60	2	2 carrots, diced	2.0			4
+60	0	1 celery stalk, diced	1.0	stalk	stalk	5
+60	0	2 tsp Tony Chachere's Creole Seasoning	2.0	tsp	t	6
+60	23	3 garlic cloves, minced	3.0	cloves	cloves	7
+60	94	1/2 cup green onions, chopped	0.5	cup	c	8
+60	0	3 tsp Tony Chachere's Instant Roux	3.0	tsp	t	9
+60	174	2 cups whole grain rice	2.0	cups	c	10
+60	4	1 onion, diced	1.0			11
+60	43	1/3 cup parsley, chopped	0.3333333333333333	cup	c	12
+60	6	1 tsp salt	1.0	tsp	t	13
+60	70	2 Tbsp tomato paste	2.0	Tbsp	Tbsp	14
+60	0	2 veggie sausage links	2.0			15
+60	7	3/4 cup water	0.75	cup	c	16
+60	7	3 1/2 cups water	3.5	cups	c	17
+61	22	3 strips of Bacon	3.0	strips	strips	0
+61	3	1 Bell Pepper, any Color, Chopped	1.0			1
+61	0	3/4 cup Chicken, Seafood, or Veggie Broth	0.75	cup	c	2
+61	0	1 teaspoon of Cajun Spice	1.0	teaspoon	t	3
+61	23	3 cloves of Garlic, Minced	3.0	cloves	cloves	4
+61	143	1/2 teaspoon of Garlic Powder	0.5	teaspoon	t	5
+61	94	3 Green Onions, Chopped	3.0			6
+61	0	1/4 cup of Heavy Cream	0.25	cup	c	7
+61	0	1/2 teaspoon of Lemon Pepper	0.5	teaspoon	t	8
+61	0	1 pd of Lobster	1.0	pound	lb	9
+61	0	1 teaspoon of Old Bay Seasoning	1.0	teaspoon	t	10
+61	166	1/2 teaspoon of Onion Powder	0.5	teaspoon	t	11
+61	45	1/2 teaspoon of Oregano	0.5	teaspoon	t	12
+61	58	Pepper to taste	1.0	serving	serving	13
+61	6	1/4 tsp salt	0.25	tsp	t	14
+62	122	1 tsp cayenne pepper	1.0	tsp	t	0
+62	143	1 tsp garlic powder	1.0	tsp	t	1
+62	0	1 tsp italian seasoning	1.0	tsp	t	2
+62	72	3 tbsp olive oil	3.0	tbsp	T	3
+62	166	1 tsp onion powder	1.0	tsp	t	4
+62	41	2 tsp paprika	2.0	tsp	t	5
+62	58	1/2 tsp pepper	0.5	tsp	t	6
+62	129	2 large russet potatoes	2.0			7
+62	6	¾ tsp salt	0.75	tsp	t	8
+63	0	9 oz andouille sausage, cut into 1/2 inch rounds	9.0	oz	oz	0
+63	0	2 bay leaves, left whole	2.0			1
+63	60	1/2 t white pepper	0.5	t	t	2
+63	58	1 Tablespoon Black Pepper	1.0	Tablespoon	Tablespoon	3
+63	122	1 Tablespoon Cayenne Pepper	1.0	Tablespoon	Tablespoon	4
+63	0	3 stalks celery, cut into 1 inch pieces	3.0	stalks	stalks	5
+63	0	3 C fish stock or clam juice	3.0	C	C	6
+63	0	2 C white rice, cooked, washed and drained	2.0	C	C	7
+63	0	1/2 # canned or fresh crab meat	0.5			8
+63	45	1 Tablespoon Dried Oregano	1.0	Tablespoon	Tablespoon	9
+63	86	1 Tablespoon Dried Thyme	1.0	Tablespoon	Tablespoon	10
+63	23	3 large cloves of garlic, chopped	3.0	cloves	cloves	11
+63	135	1 jalapeno pepper, seeded	1.0			12
+63	76	1 red or orange Bell pepper, chopped coarse	1.0			13
+63	0	1 10 oz jar of oysters or 8-10 oysters with their juices	10.0	oz	oz	14
+63	0	1/2 C peanut oil	0.5	C	C	15
+63	52	1 pound shrimp	1.0	pound	lb	16
+63	15	1/2 C white flour	0.5	C	C	17
+64	0	8 ounces of Asparagus Spears, Cut into Thirds	8.0	ounces	oz	0
+64	22	3 slices of Bacon	3.0	slices	slices	1
+64	0	2 cups seafood broth	2.0	cups	c	2
+64	0	1 tablespoon of Cajun Spice	1.0	tablespoon	T	3
+64	0	1 cup of Corn	1.0	cup	c	4
+64	23	3 cloves of garlic, crushed	3.0	cloves	cloves	5
+64	0	1/2 cup of Heavy Cream	0.5	cup	c	6
+64	0	1 teaspoon of Lemon Pepper	1.0	teaspoon	t	7
+64	0	1/2 teaspoon of Old Bay Seasoning	0.5	teaspoon	t	8
+64	4	1 Small Onion, Chopped	1.0			9
+64	0	Salt and Pepper to Taste	8.0	servings	servings	10
+64	52	1 pound Peeled and Cooked Shrimp	1.0	pound	lb	11
+64	47	14 1/2 Oz. Can of Diced Tomatoes	14.0			12
+65	0	1 teaspoon Cajun or creole seasoning (like Tony Chachere's), divided	1.0	teaspoon	t	0
+65	0	1 whole English cucumber, sliced thinly	1.0			1
+65	0	1/4 cup prepared pico de gallo	0.25	cup	c	2
+65	100	2 tablespoons white wine vinegar (red wine vinegar also works well)	2.0	tablespoons	T	3
+65	0	salt and pepper to taste	2.0	servings	servings	4
+65	52	8 ounces large uncooked shrimp, peeled with tails on (about 20), thawed	8.0	ounces	oz	5
+65	0	1 tablespoon freshly squeezed lemon juice or white/white wine vinegar	1.0	tablespoon	T	6
+66	10	2 tablespoons butter, divided	2.0	tablespoons	T	0
+66	67	1 cup canned chopped tomatoes	1.0	cup	c	1
+66	0	2 celery ribs, minced	2.0	rib	rib	2
+66	0	1 chicken bouillon cube	1.0			3
+66	0	1 package (2-pound) frozen crawfish tails, thawed*	2.0	pound	lb	4
+66	0	1 tablespoon Creole seasoning	1.0	tablespoon	T	5
+66	15	cup all-purpose flour	1.0	cup	c	6
+66	43	1 tablespoon chopped fresh parsley	1.0	tablespoon	T	7
+66	23	2 garlic cloves minced	2.0	cloves	cloves	8
+66	3	1/2 green bell pepper, minced	0.5			9
+66	94	1 bunch green onions, finely chopped	1.0	bunch	bunch	10
+66	0	1 package (8-ounce) linguine	8.0	ounce	oz	11
+66	4	2 tablespoons onion, finely chopped	2.0	tablespoons	T	12
+66	0	Shredded Parmesan cheese	8.0	servings	servings	13
+66	43	Garnish: chopped fresh parsley	8.0	servings	servings	14
+66	0	1/4 teaspoon pepper	0.25	teaspoon	t	15
+66	6	salt	8.0	servings	servings	16
+66	0	1 pint whipping cream	1.0	pint	pt	17
+67	87	1 teaspoon basil	1.0	teaspoon	t	0
+67	0	1 Bay leaf	1.0			1
+67	79	8 ounces can tomato sauce	8.0	ounces	oz	2
+67	67	1 14.5-oz. can fire-roasted diced tomatoes, no salt added	14.5	oz	oz	3
+67	0	5 celery stalks	5.0			4
+67	0	2 cups chicken stock	2.0	cups	c	5
+67	0	2 pounds grouper or a white fish	2.0	pounds	lb	6
+67	23	20 grams garlic finely chopped	20.0	grams	g	7
+67	3	1 green pepper	1.0			8
+67	0	okra	10.0	servings	servings	9
+67	4	3/4 cup onion, chopped	0.75	cup	c	10
+67	41	paprika, to taste	10.0	servings	servings	11
+67	0	alt and pepper, to taste	10.0	servings	servings	12
+67	0	2 links hot sausage	2.0	links	links	13
+67	85	1/2 teaspoon thyme	0.5	teaspoon	t	14
+68	0	3 ounces fully cooked andouille or	3.0	ounces	oz	0
+68	67	1 14.5-oz. can fire-roasted diced tomatoes, no salt added	14.5	oz	oz	1
+68	122	1/2 teaspoon cayenne pepper	0.5	teaspoon	t	2
+68	0	1 cup thinly-sliced celery	1.0	cup	c	3
+68	0	3 ounces can chicken broth - (14 1/2 ea)	3.0	ounces	oz	4
+68	0	8 chicken drumsticks skinned	8.0			5
+68	0	chorizo sausage diced	8.0	servings	servings	6
+68	0	1 teaspoon dried marjoram	1.0	teaspoon	t	7
+68	86	1/4 tsp. dried thyme	0.25	tsp	t	8
+68	23	4 garlic cloves crushed	4.0	cloves	cloves	9
+68	0	2/3 cup long-grain brown rice	0.6666666666666666	cup	c	10
+68	0	1/2 pound fresh okra cut 1/2" slices	0.5	pound	lb	11
+68	4	3/4 cup onion, chopped	0.75	cup	c	12
+68	76	1 red bell pepper diced	1.0			13
+68	52	1/2 pound medium shrimp peeled, deveined	0.5	pound	lb	14
+69	0	1/2 cup uncooked brown rice	0.5	cup	c	0
+69	0	1 tsp. cajun seasoning	1.0	tsp	t	1
+69	67	1 14.5-oz. can fire-roasted diced tomatoes, no salt added	14.5	oz	oz	2
+69	0	1 cup celery, chopped	1.0	cup	c	3
+69	0	2 fully cooked chicken sausage Links (about 6 oz) sliced into coins � I used Trader Joe's Sweet Italian Chicken Sausage	6.0	oz	oz	4
+69	45	1/4 tsp. dried oregano	0.25	tsp	t	5
+69	86	1/4 tsp. dried thyme	0.25	tsp	t	6
+69	23	16 Garlic , peeled	16.0			7
+69	132	1/2 tsp. hot sauce, or more to taste	0.5	tsp	t	8
+69	0	1 cup low-sodium chicken broth	1.0	cup	c	9
+69	4	3/4 cup onion, chopped	0.75	cup	c	10
+69	0	6 oz. raw shrimp, tails removed, deveined, chopped	6.0	oz	oz	11
+69	82	1 large green bell pepper, seeded, chopped � I used yellow	1.0			12
+70	0	1 pound andouille, turkey, kielbasa or smoked sausage, cubed	1.0	pound	lb	0
+70	0	3 bay leaves	3.0			1
+70	0	1 dozen fresh or frozen blue crabs, cleaned and shells removed (substitute: 2 pounds fresh crabmeat, crawfish, oyster, or turtle)	12.0			2
+70	67	1 can whole peeled tomatoes, chopped	1.0	can	can	3
+70	0	4 stalks celery, chopped	4.0	stalks	stalks	4
+70	0	Creole seasoning to taste	9.0	servings	servings	5
+70	86	1/2 teaspoon dried thyme	0.5	teaspoon	t	6
+70	0	2 tablespoons filé powder	2.0	tablespoons	T	7
+70	15	1/2 cup flour	0.5	cup	c	8
+70	23	3 cloves of garlic, minced	3.0	cloves	cloves	9
+70	94	1 cup chopped green onions	1.0	cup	c	10
+70	3	2 green peppers, chopped	2.0			11
+70	58	2 teaspoons ground black pepper	2.0	teaspoons	t	12
+70	0	1 pound fresh or frozen sliced okra	1.0	pound	lb	13
+70	4	1 large onion, chopped	1.0			14
+70	43	1/2 cup chopped parsley	0.5	cup	c	15
+70	174	1 bag Louisiana rice (or white rice)	1.0	bag	bag	16
+70	6	salt, to taste	9.0	servings	servings	17
+70	52	2 pounds fresh or frozen medium-size shrimp, in shells if possible, for stock	2.0	pounds	lb	18
+70	0	All the Tabasco sauce you can handle	1.0	can	can	19
+70	70	1 ounce tomato paste	1.0	ounce	oz	20
+70	71	4 teaspoons vegetable oil or shortening	4.0	teaspoons	t	21
+70	137	1 teaspoon Worcestershire sauce	1.0	teaspoon	t	22
+71	0	5Stuff "baby" or "surprise" into dough, from the bottom or under side after baking.	1.0	serving	serving	0
+71	10	2 1/2 tablespoons Butter	2.5	tablespoons	T	1
+71	12	2 tablespoons powdered cinnamon	2.0	tablespoons	T	2
+71	14	2 eggs, beaten	2.0			3
+71	15	5 cups all-purpose flour	5.0	cups	c	4
+71	20	3/4 cup milk	0.75	cup	c	5
+71	0	1/2 teaspoon powdered ginger	0.5	teaspoon	t	6
+71	0	1/2 cup powdered sugar	0.5	cup	c	7
+71	6	salt	1.0	serving	serving	8
+71	0	Shortening (butter Crisco)	1.0	serving	serving	9
+71	114	1/2 cup sugar	0.5	cup	c	10
+71	114	cup sugar	1.0	cup	c	11
+71	134	1/2 teaspoon almond or vanilla extract (optional)	0.5	teaspoon	t	12
+71	7	1 1/2 teaspoons warm water (powdered sugar and 1 pkg. colored decorating sugar	1.5	teaspoons	t	13
+72	0	1 1/2 pounds smoked Andouille sausage, sliced	1.5	pounds	lb	0
+72	0	2 bay leaves	2.0			1
+72	3	1 bell pepper, chopped	1.0			2
+72	11	1 tablespoon Canola oil	1.0	tablespoon	T	3
+72	0	5 stalks celery, diced	5.0	stalks	stalks	4
+72	0	Creole seasoning to taste	6.0	servings	servings	5
+72	86	1 teaspoon dried thyme leaves	1.0	teaspoon	t	6
+72	23	1 clove garlic chopped	1.0	clove	clove	7
+72	174	White long grain rice	6.0	servings	servings	8
+72	4	1 large onion, chopped	1.0			9
+72	0	1 pound dried red kidney beans	1.0	pound	lb	10
+72	0	Salt and pepper to taste	6.0	servings	servings	11
+72	0	1 large smoked ham hock	1.0			12
+72	133	Tabasco sauce to taste	6.0	servings	servings	13
+72	137	Few dashes of Worcestershire sauce to taste	3.0	dashes	dashes	14
+73	0	2 bay leaves	2.0			0
+73	0	3 ribs celery, finely diced	3.0	ribs	ribs	1
+73	86	1 teaspoon dried thyme leaves	1.0	teaspoon	t	2
+73	0	1 tablespoon filé powder	1.0	tablespoon	T	3
+73	0	4 quarts shrimp stock, crab stock or fish stock	4.0	quarts	quarts	4
+73	15	1/2 cup flour	0.5	cup	c	5
+73	23	6 cloves garlic, minced	6.0	cloves	cloves	6
+73	3	2 green bell peppers, diced	2.0			7
+73	174	8 cups cooked long-grain white rice	8.0	cups	c	8
+73	0	1 pound fresh lump crab meat, picked over for shells and cartilage	1.0	pound	lb	9
+73	71	1/2 cup oil	0.5	cup	c	10
+73	0	2 pounds okra, chopped	2.0	pounds	lb	11
+73	4	2 medium onions, diced	2.0			12
+73	0	2 dozen oysters, freshly shucked, liquor reserved	24.0			13
+73	0	Salt and freshly ground black pepper to taste	12.0	servings	servings	14
+73	0	1 tablespoon Creole seasoning blend	1.0	tablespoon	T	15
+73	52	2 pounds medium shrimp, peeled and deveined	2.0	pounds	lb	16
+73	0	1 cup tomato purée	1.0	cup	c	17
+73	47	4 tomatoes, seeded and diced	4.0			18
+74	34	1tsp. allspice	1.0	tsp	t	0
+74	0	1 tbsp. coconut oil	1.0	tbsp	T	1
+74	80	6 tbsp. curry powder	6.0	tbsp	T	2
+74	23	1 tablespoon Garlic, granulated	1.0	tablespoon	T	3
+74	3	1 large green pepper (chopped)	1.0			4
+74	4	1/2 medium Onion, chopped	0.5			5
+74	0	2 tsp. black pepper pepper	2.0	tsp	t	6
+74	6	1 1/2 teaspoons salt	1.5	teaspoons	t	7
+74	94	3 scallions (chopped)	3.0			8
+74	107	1 scotch bonnet pepper or habanero (seeded and minced)	1.0			9
+74	0	3lb of chicken thighs, legs or breast (skinless)	3.0	lb	lb	10
+74	154	2 sweet potatoes (chopped)	2.0			11
+74	85	1tbsp. thyme	1.0	tbsp	T	12
+74	7	2 cups water	2.0	cups	c	13
+75	33	1 pound dry organic black turtle beans	1.0	pound	lb	0
+75	50	1 tablespoon Brown sugar	1.0	tablespoon	T	1
+75	0	2 tablespoons organic coconut oil (or olive oil)	2.0	tablespoons	T	2
+75	92	1/2 cup fresh cilantro, chopped	0.5	cup	c	3
+75	94	2 green onions, roughly chopped	2.0			4
+75	34	1 tablespoon Ground Allspice	1.0	tablespoon	T	5
+75	142	2 tsp ground ginger	2.0	tsp	t	6
+75	0	4 jalapenos, seeded and chopped	4.0			7
+75	4	1/2 onion, roughly chopped	0.5			8
+75	96	2 tsp course sea salt	2.0	tsp	t	9
+75	154	4 cups local or organic sweet potatoes peeled and chopped into 1/2 inch cubes	4.0	cups	c	10
+75	85	1/2 tsp thyme	0.5	tsp	t	11
+75	105	8 cups of vegetable broth or water	8.0	cups	c	12
+76	34	1 tsp allspice	1.0	tsp	t	0
+76	0	4 bone in chicken thighs	4.0			1
+76	50	2 tbsp brown sugar	2.0	tbsp	T	2
+76	12	1 tsp cinnamon	1.0	tsp	t	3
+76	23	3 cloves garlic, roughly chopped	3.0	cloves	cloves	4
+76	94	2 green onions, roughly chopped	2.0			5
+76	142	1 tsp ground ginger	1.0	tsp	t	6
+76	0	1 tsp italian seasoning	1.0	tsp	t	7
+76	135	1 jalapeno, roughly chopped	1.0			8
+76	139	3 limes, juiced	3.0			9
+76	4	� onion, roughly chopped	0.5			10
+76	0	1 tsp pepper	1.0	tsp	t	11
+76	0	6 oz. pineapple juice	6.0	oz	oz	12
+76	6	1 tbsp salt	1.0	tbsp	T	13
+77	0	1/4 cup coconut	0.25	cup	c	0
+77	0	2 tablespoons coconut	2.0	tablespoons	T	1
+77	13	1 package (8 ounce) cream cheese, softened	8.0	ounce	oz	2
+77	109	2 egg yolks	2.0			3
+77	15	1/4 cup all-purpose flour	0.25	cup	c	4
+77	0	1/2 cup heavy whipping cream	0.5	cup	c	5
+77	0	1 package (2.9 ounce) lemon pudding mix	2.9	ounce	oz	6
+77	138	lime slices	1.0	slicesslices	slicesslices	7
+77	139	3 tablespoons lime juice	3.0	tablespoons	T	8
+77	0	1 teaspoon grated lime peel	1.0	teaspoon	t	9
+77	0	1 (15 ounce) refrigerated pie crust	15.0	ounce	oz	10
+77	126	6 tablespoons sour cream	6.0	tablespoons	T	11
+77	114	1/4 cup sugar	0.25	cup	c	12
+77	114	1/2 cup sugar	0.5	cup	c	13
+77	10	4 teaspoons unsalted butter	4.0	teaspoons	t	14
+77	7	2 cups water	2.0	cups	c	15
+77	0	1 cup white chocolate chips	1.0	cup	c	16
+78	0	8 ounces fresh callaloo leaves, Swiss chard, or baby spinach leaves	8.0	ounces	oz	0
+78	0	2 cups chicken stock	2.0	cups	c	1
+78	0	2 cups coconut milk	2.0	cups	c	2
+78	0	2 tbsp. coconut oil	2.0	tbsp	T	3
+78	0	cooked long grain rice or prepared foo-foo (plantain)	4.0	servings	servings	4
+78	0	6 ounces fresh crab meat, picked over for shell bits	6.0	ounces	oz	5
+78	85	1 tsp. fresh thyme	1.0	tsp	t	6
+78	23	2 Cloves garlic, chopped	2.0	Cloves	Cloves	7
+78	108	1 fresh habanero chile, seeds removed and chopped	1.0			8
+78	0	10 fresh okra, chopped	10.0			9
+78	4	1/2 cup chopped onion	0.5	cup	c	10
+78	0	salt and pepper to taste	4.0	servings	servings	11
+78	147	1 1/2 ounces salt pork or bacon, chopped	1.5	ounces	oz	12
+78	94	1 cup chopped scallions	1.0	cup	c	13
+79	0	2 cups of coconut milk	2.0	cups	c	0
+79	40	1 tablespoon of corn starch	1.0	tablespoon	T	1
+79	80	2 tablespoons of curry powder	2.0	tablespoons	T	2
+79	23	1 clove of garlic (chopped)	1.0	clove	clove	3
+79	0	Seasoning cubes	1.0	cubes	cubes	4
+79	0	1 medium piece of Mackerel (chopped in 4 pieces)	1.0	piece		5
+79	4	1/2 bulb of onion	0.5			6
+79	0	1/2 cup of red kidney beans	0.5	cup	c	7
+79	174	1 cup of Rice	1.0	cup	c	8
+79	0	3 scotch bonnet peppers	3.0			9
+80	0	1 (8 -10 lb.) Duck	8.0	lb	lb	0
+80	0	1/4 teaspoon five spice powder	0.25	teaspoon	t	1
+80	30	Hoisin sauce	12.0	servings	servings	2
+80	17	1 teaspoon honey	1.0	teaspoon	t	3
+80	0	1 teaspoon light corn syrup	1.0	teaspoon	t	4
+80	0	1 teaspoon rice wine vinegar	1.0	teaspoon	t	5
+80	6	2 teaspoons salt	2.0	teaspoons	t	6
+80	94	Scallions	12.0	servings	servings	7
+80	7	1 gallon boiling water	1.0	gallon	gallon	8
+80	60	1/4 teaspoon white pepper	0.25	teaspoon	t	9
+81	0	1 tablespoon smooth almond butter	1.0	tablespoon	T	0
+81	11	1/2 cup canola oil	0.5	cup	c	1
+81	2	2 carrots, shredded	2.0			2
+81	0	Chili oil, optional	4.0	servings	servings	3
+81	118	1 teaspoon adobo chipotle pepper puree	1.0	teaspoon	t	4
+81	92	1/4 cup coarsely chopped fresh cilantro leaves	0.25	cup	c	5
+81	141	1 tablespoon chopped fresh ginger	1.0	tablespoon	T	6
+81	0	1/4 cup chopped fresh mint leaves	0.25	cup	c	7
+81	94	1/4 cup thinly sliced green onion	0.25	cup	c	8
+81	17	2 tablespoons honey	2.0	tablespoons	T	9
+81	138	lime halves, for garnish	1.0	halves	halves	10
+81	148	1/2 head Napa cabbage, shredded	0.5	head	head	11
+81	0	1/4 cup rice wine vinegar	0.25	cup	c	12
+81	0	1/2 cup chopped roasted peanuts	0.5	cup	c	13
+81	157	1/2 head romaine lettuce, shredded	0.5	head	head	14
+81	0	2 cups shredded rotisserie chicken	2.0	cups	c	15
+81	0	Salt and freshly ground pepper	4.0	servings	servings	16
+81	28	2 teaspoons toasted sesame oil	2.0	teaspoons	t	17
+81	5	1 tablespoon smooth peanut butter	1.0	tablespoon	T	18
+81	31	1/2 cup snow peas, cut in half lengthwise on a diagonal	0.5	cup	c	19
+81	74	1 tablespoon soy sauce	1.0	tablespoon	T	20
+82	3	1/4 cup bell pepper, diced	0.25	cup	c	0
+82	2	1/4 cup carrot, slivered	0.25	cup	c	1
+82	0	1/4 cup fat-free mayonnaise	0.25	cup	c	2
+82	141	1 teaspoon ginger root, freshly grated	1.0	teaspoon	t	3
+82	94	2 green onions, sliced	2.0			4
+82	0	1/2 tablespoon low-sodium soy sauce	0.5	tablespoon	T	5
+82	0	8 ounces cooked boneless, skinless chicken breast, thinly sliced or shredded (about 3 cups) or 1 can Kirkland	3.0	cups	c	6
+82	31	1/2 cup snow peas, cut in half lengthwise on a diagonal	0.5	cup	c	7
+82	164	2 cups torn spinach leaves or other greens of your choosing	2.0	cups	c	8
+83	11	2 tablespoons canola oil	2.0	tablespoons	T	0
+83	12	2 cinnamon sticks	2.0			1
+83	74	1/2 cup dark soy sauce	0.5	cup	c	2
+83	23	4 cloves garlic	4.0	cloves	cloves	3
+83	141	2 large ginger slices	2.0	slices	slices	4
+83	12	1 teaspoon ground cinnamon	1.0	teaspoon	t	5
+83	0	1 teaspoon ground cloves	1.0	teaspoon	t	6
+83	142	1 teaspoon ground ginger	1.0	teaspoon	t	7
+83	135	1 jalapeno, chopped	1.0			8
+83	74	1/4 cup light soy sauce	0.25	cup	c	9
+83	0	1 lotus root	1.0			10
+83	0	1 pound pork belly	1.0	pound	lb	11
+83	0	1/2 cup ShaoHsing Rice Cooking wine	0.5	cup	c	12
+83	6	salt to taste	2.0	servings	servings	13
+83	28	1 teaspoon sesame oil	1.0	teaspoon	t	14
+83	0	1 shallot, chopped	1.0			15
+83	0	2 tablespoons star anise	2.0	tablespoons	T	16
+83	114	1/2 cup rock sugar (yellow or white)	0.5	cup	c	17
+83	7	4 cups water	4.0	cups	c	18
+83	0	1 yucca, steamed	1.0			19
+84	151	4 baby bok choy	4.0			0
+84	0	1 pound boneless chicken thighs, thinly sliced	1.0	pound	lb	1
+84	0	6 cups chicken stock	6.0	cups	c	2
+84	78	Chile-garlic paste	6.0	servings	servings	3
+84	141	5 slices of fresh ginger	5.0	slices	slices	4
+84	23	5 garlic cloves, cracked	5.0	cloves	cloves	5
+84	94	3/4 cup green onions, diced	0.75	cup	c	6
+84	51	1 cup mung bean sprouts	1.0	cup	c	7
+84	55	8 ounces mushrooms, any variety	8.0	ounces	oz	8
+84	0	5 ounces bean thread noodles, or rice stick noodles	5.0	ounces	oz	9
+84	0	1/2 cup rice vinegar	0.5	cup	c	10
+84	28	1 tablespoon of sesame oil	1.0	tablespoon	T	11
+84	74	1/3 cup soy sauce	0.3333333333333333	cup	c	12
+84	7	6 cups water	6.0	cups	c	13
+85	0	1/2 tbsp anise seed	0.5	tbsp	T	0
+85	99	2 tbsp apple cider vinegar	2.0	tbsp	T	1
+85	0	3-5 bay leaves	3.0			2
+85	0	2-4 celery stalks	2.0			3
+85	0	1/2 tbsp cracked pepper	0.5	tbsp	T	4
+85	0	1 /2 tbsp cracked pepper	12.0	tbsp	T	5
+85	0	1/2 tsp Chinese five spice powder	0.5	tsp	t	6
+85	23	1 head of garlic, minced	1.0	head	head	7
+85	141	1 ginger, two inches in length, sliced into 1/4 inch slices	1.0			8
+85	17	1 tbsp honey	1.0	tbsp	T	9
+85	0	1 tbsp iodized salt	1.0	tbsp	T	10
+85	74	3/4 cup light soy sauce	0.75	cup	c	11
+85	55	1 can whole mushrooms, sliced in half (it's chunkier that way)	1.0	can	can	12
+85	0	1 1/2 kilogram pork spareribs	1.5	kilogram	kilogram	13
+85	0	2 medium-sized shallots	2.0			14
+85	71	2 tbsp vegetable oil	2.0	tbsp	T	15
+85	7	3 cups water	3.0	cups	c	16
+85	4	1 large white onion, sliced	1.0			17
+86	24	2 cups cabbage, chopped	2.0	cups	c	0
+86	0	1/2 pound ground beef/pork	0.5	pound	lb	1
+86	6	1 pinch of salt	1.0	pinch	pinch	2
+86	71	Vegetable oil enough to cover the wonton in the pan	1.0	serving	serving	3
+86	0	2 cups chopped water chestnuts	2.0	cups	c	4
+86	0	12 sheets wonton wrappers	12.0	sheets	sheets	5
+87	99	1 tsp. (5ml) of organic apple cider vinegar	5.0	ml	ml	0
+87	58	1 teaspoon crushed black pepper	1.0	teaspoon	t	1
+87	0	1 1/2 tablespoons black sesame seeds	1.5	tablespoons	T	2
+87	2	3 carrots	3.0			3
+87	72	1/4 C extra-virgin olive oil + 7-8 Tbsp for frying	0.25	C	C	4
+87	24	1/2 green cabbage	0.5			5
+87	97	1/2 teaspoon kosher salt	0.5	teaspoon	t	6
+87	149	1/2 red cabbage	0.5			7
+87	0	3 chicken breasts (bone in, preferably organic) roasted and shredded	3.0			8
+87	157	2 bunches romaine lettuce hearts	2.0	bunches	bunches	9
+87	94	6 scallions	6.0			10
+87	28	3 tablespoons sesame oil	3.0	tablespoons	T	11
+87	0	juice of 1 mandarin (cut crosswise then tablespoon into jar over a strainer)	1.0			12
+87	0	3 tablespoons white sesame seeds	3.0	tablespoons	T	13
+87	0	1 1/2 tablespoons xylitol (I use Epic Dental brand)	1.5	tablespoons	T	14
+87	0	6-8 fresh satsuma mandarins	6.0			15
+88	14	3 eggs, beaten	3.0			0
+88	141	2 slices fresh ginger	2.0	slices	slices	1
+88	23	4 Garlic Cloves, minced	4.0	cloves	cloves	2
+88	143	1 TBSP Garlic Powder	1.0	TBSP	TBSP	3
+88	141	3 TBSP Ginger, minced	3.0	TBSP	TBSP	4
+88	94	6 Green Onion, thinly sliced	6.0			5
+88	142	1 TBSP Ground Ginger	1.0	TBSP	TBSP	6
+88	58	1 TBSP Ground Pepper	1.0	TBSP	TBSP	7
+88	30	3 TBSP Hoisin	3.0	TBSP	TBSP	8
+88	174	1 cup long grain rice	1.0	cup	c	9
+88	0	4 TBSP Low Sodium Soy Sauce	4.0	TBSP	TBSP	10
+88	72	1 TBSP Olive Oil	1.0	TBSP	TBSP	11
+88	166	1 TBSP Onion Powder	1.0	TBSP	TBSP	12
+88	0	1 cup frozen peas and carrots, thawed	1.0	cup	c	13
+88	0	6 oz pork tenderloin	6.0	oz	oz	14
+88	6	1 TBSP Salt	1.0	TBSP	TBSP	15
+89	23	4 garlic cloves, finely chopped	4.0	cloves	cloves	0
+89	0	5 stalks of asian kale	5.0	stalks	stalks	1
+89	54	8 fresh shitake mushrooms, sliced	8.0			2
+89	0	350 grams fresh hokkien noodles (blanch as per packet instructions)	350.0	grams	g	3
+89	0	3 tablespoons oyster sauce (to taste)	3.0	tablespoons	T	4
+89	0	2 shallots, thinly sliced	2.0			5
+89	0	2 tablespoons sweet soy sauce/ ketjap manis	2.0	tablespoons	T	6
+90	15	3 cups of all purpose flour	3.0	cups	c	0
+90	91	1 bunch of chinese chives, chopped	1.0	bunch	bunch	1
+90	40	corn starch (if needed)	1.0	serving	serving	2
+90	0	2 pounds of lean ground pork	2.0	pounds	lb	3
+90	6	4 teaspoons of salt (or 3 1/2 tsp. if you use the dried shrimp)	4.0	teaspoons	t	4
+90	28	3 tablespoons of sesame oil	3.0	tablespoons	T	5
+90	7	1 cup of cold water	1.0	cup	c	6
+90	90	1 teaspoon tsp. of dried shrimp (optional) soaked in 2 of water or shao	1.0	teaspoon	t	7
+91	0	4 cups steamed rice	4.0	cups	c	0
+91	14	4 large eggs, lightly beaten	4.0			1
+91	141	1 piece of ginger, roughly half a thumbsize	1.0	piece		2
+91	94	2/3 cup green onions, finely sliced at an angle	0.6666666666666666	cup	c	3
+91	30	2 tablespoons hoisin sauce	2.0	tablespoons	T	4
+91	74	4 tablespoons Light soy sauce	4.0	tablespoons	T	5
+91	0	1 500 gram pork loin with skin	500.0	gram	g	6
+91	4	1 small red onion, finely diced	1.0			7
+91	28	2 teaspoons Sesame oil	2.0	teaspoons	t	8
+91	71	1/4 cup vegetable oil	0.25	cup	c	9
+91	114	2 teaspoons white sugar	2.0	teaspoons	t	10
+91	98	1 tablespoon white vinegar	1.0	tablespoon	T	11
+92	0	6-7 baby corns, cut in round disks	6.0			0
+92	3	1 small size bell pepper, chopped in small pieces	1.0			1
+92	58	Black pepper to taste	2.0	servings	servings	2
+92	2	1 med size carrot, chopped in small pieces	1.0			3
+92	23	3 cloves of garlic, minced	3.0	cloves	cloves	4
+92	141	1 tsp ginger, minced	1.0	tsp	t	5
+92	0	1 Tbsp low sodium soy sauce	1.0	Tbsp	Tbsp	6
+92	55	1 cup mushrooms, chopped	1.0	cup	c	7
+92	94	1/4 cup green onions white part, chopped (Keep the chopped green part of green onions for garnishing)	0.25	cup	c	8
+92	6	Salt to taste	2.0	servings	servings	9
+92	28	2 teaspoons toasted sesame oil	2.0	teaspoons	t	10
+92	46	1 tsp sesame seeds	1.0	tsp	t	11
+93	58	Black pepper	2.0	servings	servings	0
+93	0	50 g blue cheese of your choice	50.0	g	g	1
+93	0	1/4 cup breadcrumbs	0.25	cup	c	2
+93	10	� tbs butter	0.5	tbs	tbs	3
+93	0	Fresh chives, chopped	2.0	servings	servings	4
+93	23	2 cloves garlic, minced	2.0	cloves	cloves	5
+93	55	4 large mushrooms (about 400g), stems separated from caps	400.0	g	g	6
+93	72	1 tablespoon olive oil	1.0	tablespoon	T	7
+93	4	1 small Onion, halved lengthwise & cut crosswise into fine half rings	1.0			8
+93	0	2 tbs Parmesan cheese, grated	2.0	tbs	tbs	9
+93	43	3 tablespoons chopped parsley	3.0	tablespoons	T	10
+93	174	400g Chow Mein Noodles or rice pasta	400.0	g	g	11
+93	0	250g ricotta cheese	250.0	g	g	12
+93	96	� tsp sea salt	0.25	tsp	t	13
+93	126	2 tbs sour cream	2.0	tbs	tbs	14
+93	164	1 1/2 cups fresh spinach, finely chopped	1.5	cups	c	15
+94	0	2 cup Basmati Rice	2.0	cups	c	0
+94	0	1/2 cup Beans	0.5	cup	c	1
+94	76	Bell peppers - I used half of red and yellow colour	1.0	servings	servings	2
+94	24	1/4 cup Cabbage - finely grated	0.25	cup	c	3
+94	2	1/4 cup minced carrot	0.25	cup	c	4
+94	0	Cashews and raisins	2.0	servings	servings	5
+94	0	Green chilies - 2 to 3 depending on your taste	2.0			6
+94	0	1/4 cup Corn	0.25	cup	c	7
+94	0	Ginger garlic paste - 1 tbspn	1.0	tbsp	T	8
+94	4	1 small Onion - finely sliced	1.0			9
+94	62	1/4 cup Green peas	0.25	cup	c	10
+94	0	Salt and pepper to taste	2.0	servings	servings	11
+94	74	Soya sauce - 1 tbspn	1.0	tbsp	T	12
+94	0	chili sauce/tomato sauce - 1 tbspn	1.0	tbsp	T	13
+94	71	Oil - 3 tablespoons	3.0	tbsp	T	14
+95	50	1 teaspoon brown sugar	1.0	teaspoon	t	0
+95	92	Cilantro (or parsley) for garnish	4.0	servings	servings	1
+95	14	3 eggs, well beaten	3.0			2
+95	23	2 cloves garlic, minced	2.0	cloves	cloves	3
+95	141	1-inch piece of ginger, grated	1.0	inch	inch	4
+95	94	2 green onions, thinly sliced, including the greens	2.0			5
+95	72	1 Tbsp olive oil	1.0	Tbsp	Tbsp	6
+95	0	1 cup frozen peas, thawed	1.0	cup	c	7
+95	76	2/3 cup diced red bell pepper	0.6666666666666666	cup	c	8
+95	4	2/3 cup diced red onion	0.6666666666666666	cup	c	9
+95	174	4 cups day old cooked white rice (from about 2 cups of raw rice)	4.0	cups	c	10
+95	0	2 cups cooked salmon in large chunks	2.0	cups	c	11
+95	74	3 Tbsp soy sauce	3.0	Tbsp	Tbsp	12
+96	0	2 cups of chicken stock	2.0	cups	c	0
+96	0	Seasoning cubes	1.0	cubes	cubes	1
+96	0	3 slices of mango cubed	3.0	slices	slices	2
+96	111	1 cup of chopped vegetables	1.0	cup	c	3
+96	174	1 cup of rice	1.0	cup	c	4
+96	107	1 scotch bonnet pepper	1.0			5
+97	0	2 cups cooked broccoli, chopped small	2.0	cups	c	0
+97	69	head of cauliflower, raw	1.0	head	head	1
+97	0	1 + 1 T coconut oil or butter	1.0			2
+97	0	3 cups of cooked brown rice, cold	3.0	cups	c	3
+97	23	5 cloves of garlic, chopped	5.0	cloves	cloves	4
+97	140	1 + 1 T grapeseed oil	1.0			5
+97	0	3T reduced-sodium soy sauce	3.0	T	T	6
+97	0	1 cup frozen peas	1.0	cup	c	7
+97	6	salt, to taste	2.0	servings	servings	8
+97	94	additional chopped scallion tops for garnish	2.0	servings	servings	9
+97	94	7 scallions, chopped (keep white/light green ends separate from dark green tops)	7.0			10
+97	28	2t toasted sesame oil	2.0	t	t	11
+97	46	toasted sesame seeds, optional	2.0	servings	servings	12
+98	0	4-5 pounds stew cut meat*, cut into bite-sized chunks	4.0	pounds	lb	0
+98	79	1 large can tomato sauce (approx 4 cups)	1.0	can	can	1
+98	0	1 Tbsp. caraway seeds	1.0	Tbsp	Tbsp	2
+98	0	1/2 cup beef or chicken stock (or water)	0.5	cup	c	3
+98	15	flour for searing meat	12.0	servings	servings	4
+98	23	2 garlic cloves, sliced thin	2.0	cloves	cloves	5
+98	0	2 tsp. Hungarian Hot Paprika	2.0	tsp	t	6
+98	97	kosher salt & pepper to taste	12.0	servings	servings	7
+98	146	zest of 1 small lemon	1.0			8
+98	72	olive oil for searing	12.0	servings	servings	9
+98	4	2 large onions, sliced thin	2.0			10
+98	41	1 Tbsp. mild paprika	1.0	Tbsp	T	11
+98	15	flour seasoned with Kosher salt & cracked pepper-- about 1 cup flour, 1 Tbsp salt & pepper	1.0	cup	c	12
+98	97	1/2 Tbsp salt	0.5	Tbsp	T	13
+98	58	1/2 Tbsp pepper	0.5	Tbsp	T	14
+98	70	2 Tbsp. tomato paste	2.0	Tbsp	T	15
+99	136	8 oz fresh Bella mushrooms (crimini or regular okay)	8.0	oz	oz	0
+99	0	1 packet beef stroganoff powder (McCormick)	1.0	packet	packet	1
+99	23	1 small garlic clove, finely chopped	1.0	clove	clove	2
+99	4	2 onions peeled, sliced	2.0			3
+99	44	parsley flakes (garnish)	4.0	servings	servings	4
+99	0	salt and pepper to taste	4.0	servings	servings	5
+99	126	1 cup sour cream	1.0	cup	c	6
+99	10	unsalted butter for rubbing squash, plus 1 tbsp	4.0	servings	servings	7
+99	0	4 cups wide egg noodles	4.0	cups	c	8
+99	137	2 tablespoons Worcestershire sauce	2.0	tablespoons	T	9
+100	0	1 � pkgs teaspoon active dry yeast	1.5	pkgs	pkgs	0
+100	0	1/2 cup Buckwheat flour	0.5	cup	c	1
+100	10	Melted butter	1.0	serving	serving	2
+100	0	1 pch coarse salt	1.0			3
+100	0	1 teaspoon coarse salt plus	1.0	teaspoon	t	4
+100	14	6 lrgs eggs separated	6.0			5
+100	15	2 cups All-purpose flour	2.0	cups	c	6
+100	20	1 cup warm milk (105 to 115 degrees)	1.0	cup	c	7
+100	114	1 pch sugar	1.0			8
+100	114	1 tablespoon sugar plus	1.0	tablespoon	T	9
+100	71	Vegetable oil for cooking	1.0	serving	serving	10
+100	0	1/3 cup wheat beer	0.3333333333333333	cup	c	11
+100	0	1 ounce fresh yeast or	1.0	ounce	oz	12
+101	0	3/4 gram jar caviar	0.75	gram	g	0
+101	10	large knob of butter	2.0	servings	servings	1
+101	126	2 tblsp sour cream	2.0	tb	tb	2
+101	0	4 duck eggs	4.0			3
+101	0	salt & freshly ground black pepper	2.0	servings	servings	4
+101	7	2 tblsp water	2.0	tb	tb	5
+102	170	1 can peas or 1 Cup of frozen peas	1.0	can	can	0
+102	0	1 Can cream of mushroom soup	1.0	Can	Can	1
+102	0	3 Cups egg noodles	3.0	Cups	Cups	2
+102	0	4 oz fresh mushrooms � sliced	4.0	oz	oz	3
+102	20	� cup milk	0.5	cup	c	4
+102	4	1 medium onion	1.0			5
+102	0	� tsp pepper	0.5	tsp	t	6
+102	6	1/2 teaspoon salt	0.5	teaspoon	t	7
+102	0	1.25 lbs beef flank or sirloin steak � cut across the grain, thin sliced	1.25	lbs	lb	8
+102	0	8 oz. velveeta	8.0	oz	oz	9
+102	7	1 cup water	1.0	cup	c	10
+103	0	2 beef bouillon cubes	2.0			0
+103	0	2 1/2 lb.s top round beef roast	2.5	lb	lb	1
+103	15	2 tbsp.s flour	2.0	tbsp	T	2
+103	58	1/2 tsp. ground pepper	0.5	tsp	t	3
+103	71	3 tbsp.s oil	3.0	tbsp	T	4
+103	4	1 lg. onion, sliced	1.0			5
+103	41	3 tbsp.s paprika	3.0	tbsp	T	6
+103	0	8 oz.s tomato sauce	8.0	oz	oz	7
+103	7	4 c.s water, to cover meat	4.0	c	c	8
+104	0	1 ounce x 9 package frozen artichoke hearts thawed	1.0	ounce	oz	0
+104	0	1 1/2 pounds beef stew meat cut into 1 inch cubes	1.5	pounds	lb	1
+104	0	1 (14 1/2 oz.) can beef broth	14.5	oz	oz	2
+104	67	1 x 14 ounce can chunky tomatoes with garlic	14.0	oz	oz	3
+104	70	1 x 6 ounce can tomato paste	6.0	oz	oz	4
+104	0	3 cups hot cooked noodles	3.0	cups	c	5
+104	0	cup dairy sour cream	1.0	cup	c	6
+104	0	1 teaspoon caraway seed or fennel seed	1.0	teaspoon	t	7
+104	23	1 Clove garlic, minced	1.0	Clove	Clove	8
+104	4	2 mediums onions, chopped	2.0			9
+104	27	3 mediums potatoes cut into 1 inch cubes	3.0			10
+104	6	1 teaspoon Salt	1.0	teaspoon	t	11
+105	10	1 ounce butter	1.0	ounce	oz	0
+105	67	16 ozs canned tomatoes	16.0	ozs	oz	1
+105	2	1 piece sm. carrot, sliced	1.0	piece		2
+105	0	4 ounces chuck steak, cubed	4.0	ounces	oz	3
+105	0	Pinch of garlic salt	1.0	pinch	pinch	4
+105	0	1 piece green pepper, seeded and sliced	1.0	piece		5
+105	4	2 onions, peeled and chopped	2.0			6
+105	41	1 1/2 teaspoons Paprika	1.5	teaspoons	t	7
+105	0	1/4 teaspoon Pepper	0.25	teaspoon	t	8
+105	0	5 ounces lean pork, cubed	5.0	ounces	oz	9
+105	6	1 teaspoon Salt (celery and the vinegar are naturally salty)	1.0	teaspoon	t	10
+105	126	1/2 pint of sour cream	0.5	pint	pt	11
+106	12	1 tsp cinnamon	1.0	tsp	t	0
+106	14	2 eggs (or egg substitutes for vegans; you can also add 1-2 tbsp of dry yeast flakes)	2.0			1
+106	0	150 g gluten-free bread crumbs	150.0	g	g	2
+106	0	25 plums, pitted	25.0			3
+106	128	1 kg mashed red skin potatoes (red potatoes have a higher amount of starch so the dough is stickier)	1.0	kg	kg	4
+106	0	� tsp rum extract	0.5	tsp	t	5
+106	0	3-4 tbsp sucanat	3.0	tbsp	T	6
+106	0	2 tbsp unrefined sunflower oil	2.0	tbsp	T	7
+106	134	1 tsp vanilla extract	1.0	tsp	t	8
+106	110	250 g whole wheat flour ( you can also use different flours like soy/almonds/rye flour)	250.0	g	g	9
+107	0	4 Bay leaves	4.0			0
+107	0	2 stalk celery	2.0	stalk	stalk	1
+107	14	6 raw eggs	6.0			2
+107	71	3 tablespoons oil, (I use corn or peanu	3.0	tablespoons	T	3
+107	4	2 onions, peeled and chopped	2.0			4
+107	43	2 tablespoons chopped parsley leaves	2.0	tablespoons	T	5
+107	58	1/4 teaspoon black pepper corns	0.25	teaspoon	t	6
+107	0	1 mild pepperoni sausage cut into 2 inch chunks (p	1.0			7
+107	27	5 mediums potatoes, peeled and cut in small cubes	5.0			8
+107	6	2 tablespoons salt	2.0	tablespoons	T	9
+107	126	8 ounces sour cream	8.0	ounces	oz	10
+107	7	3 quarts ,Water	3.0	quarts	quarts	11
+107	98	3 tablespoons of good white vinegar	3.0	tablespoons	T	12
+108	0	1 Bay leaf	1.0			0
+108	2	4 Carrots	4.0			1
+108	23	2 Cloves garlic, crushed.	2.0	Cloves	Cloves	2
+108	4	1 medium onion sliced	1.0			3
+108	0	1/2 teaspoon Onion salt	0.5	teaspoon	t	4
+108	41	3 teaspoons paprika	3.0	teaspoons	t	5
+108	0	1/4 teaspoon pepper to taste	0.25	teaspoon	t	6
+108	0	1 Lean, (3-4 lb) chuck or rump roast	3.0	lb	lb	7
+108	6	salt to taste	1.0	serving	serving	8
+108	126	8 ounces sour cream	8.0	ounces	oz	9
+108	0	2 can (8 oz) Hunt's tomato sauce with Mushrooms	8.0	oz	oz	10
+108	71	2 tablespoons Vegetable oil	2.0	tablespoons	T	11
+108	7	3 quarts ,Water	3.0	quarts	quarts	12
+109	0	1 1/2 pounds brussels sprouts	1.5	pounds	lb	0
+109	0	1 can white kidney beans	1.0	can	can	1
+109	0	2 tablespoons coarse mustard	2.0	tablespoons	T	2
+109	72	extra-virgin olive oil, kosher salt, and freshly-ground blac	4.0	servings	servings	3
+109	23	4 large cloves garlic	4.0	cloves	cloves	4
+109	0	1/4 cup heavy cream	0.25	cup	c	5
+109	0	1 pound pork kielbasa	1.0	pound	lb	6
+109	0	1 medium shallot	1.0			7
+110	0	12 cooked baby beets	12.0			0
+110	0	1 bay leaf	1.0			1
+110	58	freshly ground black pepper	4.0	servings	servings	2
+110	0	4 teaspoons Ar�nkha MSC caviar	4.0	teaspoons	t	3
+110	72	6 tbsp extra-virgin olive oil	6.0	tbsp	T	4
+110	0	1 head fennel, outside leaves discarded, finely sliced	1.0	head	head	5
+110	18	2 tbsp lemon juice	2.0	tbsp	T	6
+110	0	4 110g (4oz) skinless salmon fillets	16.0	oz	oz	7
+110	0	tarragon stalks	1.0	stalks	stalks	8
+110	0	few tarragon leaves	3.0	leaves	leaves	9
+110	0	1 bunch watercress, picked over, washed & dried	1.0	bunch	bunch	10
+110	0	1 tablespoon white wine	1.0	tablespoon	T	11
+111	10	2 tablespoons butter	2.0	tablespoons	T	0
+111	0	1-1/2 teaspoons caraway seeds	1.0	teaspoons	t	1
+111	0	3 cups chicken broth	3.0	cups	c	2
+111	15	1 cup All-purpose Flour	1.0	cup	c	3
+111	23	1 large garlic clove, miced	1.0	clove	clove	4
+111	0	2 cups • heavy cream, for whipping	2.0	cups	c	5
+111	0	2 tablespoons sweet Hungarian paprika	2.0	tablespoons	T	6
+111	4	1 cup onion, finely chopped	1.0	cup	c	7
+111	0	4 pounds boneless pork shoulder, cut in 2-inch cubes	4.0	pounds	lb	8
+111	6	1/4 teaspoon • Salt	0.25	teaspoon	t	9
+111	0	1 pound (drained weight) sauerkraut	1.0	pound	lb	10
+111	126	1/2 cup sour cream	0.5	cup	c	11
+111	0	1/4 cup tomato puree or plain tomato sauce	0.25	cup	c	12
+112	3	1 Pepper, Chopped	1.0			0
+112	0	1 can of Diced Tomatoes	1.0	can	can	1
+112	0	6 ounces of Egg Noodles, Cooked	6.0	ounces	oz	2
+112	0	1 teaspoon of Coriander	1.0	teaspoon	t	3
+112	48	1 teaspoon of Cumin	1.0	teaspoon	t	4
+112	80	1/2 teaspoon of Curry	0.5	teaspoon	t	5
+112	0	1 teaspoon of Garam Masala*	1.0	teaspoon	t	6
+112	23	3 cloves of Garlic	3.0	cloves	cloves	7
+112	141	1/2 teaspoon of Ginger	0.5	teaspoon	t	8
+112	0	1 pound of Ground Turkey or 3 cups Leftover Turkey, chopped	1.0	pound	lb	9
+112	4	1 Onion, Chopped	1.0			10
+112	41	1 teaspoon of Paprika	1.0	teaspoon	t	11
+112	126	1 cup of Sour Cream	1.0	cup	c	12
+112	164	10 bags Oz. of Frozen Spinach or 1 of Fresh	10.0	bags	bags	13
+112	0	1 cup of Chicken or Turkey Broth	1.0	cup	c	14
+113	10	40g Butter	40.0	g	g	0
+113	0	150g Good-quality dark chocolate	150.0	g	g	1
+113	109	2 Egg yolks	2.0			2
+113	14	1 Eggs	1.0			3
+113	114	20g Granulated sugar	20.0	g	g	4
+113	0	200g Nutella	200.0	g	g	5
+113	6	1 pinch Salt	1.0	pinch	pinch	6
+113	0	50cl Skimmed milk	50.0	cl	cl	7
+113	15	250g Wheat flour	250.0	g	g	8
+114	0	1 lrg eggplant unpeeled, diced	1.0			0
+114	0	4 ounces diced feta cheese (optional)	4.0	ounces	oz	1
+114	87	1/2 cup chopped fresh basil	0.5	cup	c	2
+114	23	5 garlic cloves chopped	5.0	cloves	cloves	3
+114	3	2 green bell peppers diced	2.0			4
+114	72	3 tablespoons Olive Oil	3.0	tablespoons	T	5
+114	4	1 onion cut 1" pieces	1.0			6
+114	100	2 tablespoons red wine vinegar	2.0	tablespoons	T	7
+114	47	2 lrg tomatoes chopped	2.0			8
+114	0	1 lrg zucchini cut 1/2" pieces	1.0			9
+115	15	1 cup all purpose flour (sifted)	1.0	cup	c	0
+115	9	4 ripe bananas (works great with freckled ones) peeled, sliced lengthwise and quartered.	4.0			1
+115	50	1/2 cup brown sugar	0.5	cup	c	2
+115	12	1 pinch cinnamon	1.0	pinch	pinch	3
+115	0	Optional fresh whip cream cream	1.0	serving	serving	4
+115	14	1 egg	1.0			5
+115	20	1 cup milk	1.0	cup	c	6
+115	16	1 pinch nutmeg	1.0	pinch	pinch	7
+115	6	1 pinch salt	1.0	pinch	pinch	8
+115	114	2 teaspoons sugar	2.0	teaspoons	t	9
+115	10	1 teaspoon melted butter, plus 1/2 c. butter for greasing 1 stick of butter, cubed- (use unsalted butter to cont	1.0	teaspoon	t	10
+116	22	2 smalls bacon rasher, sliced to strips	2.0			0
+116	0	500 grams of gravy beef, trimmed and cut into 2cm pieces, coated in pl	500.0	grams	g	1
+116	0	200 ml of beef stock	200.0	ml	ml	2
+116	55	200 grams of button mushrooms	200.0	grams	g	3
+116	0	2 tablespoons of cream	2.0	tablespoons	T	4
+116	0	80 ml of dry red wine	80.0	ml	ml	5
+116	43	1/4 cup of finely chopped fresh flat leaf parsley	0.25	cup	c	6
+116	85	1 teaspoon of fresh thyme leaves	1.0	teaspoon	t	7
+116	62	2 cups of green peas thawed	2.0	cups	c	8
+116	4	1 teaspoon of olive oil 2 tablespoons of finely chopped brown onion	2.0	tablespoons	T	9
+116	72	2 teaspoons of olive oil	2.0	teaspoons	t	10
+116	4	4 pickling onions, peeled and halved	4.0			11
+116	0	1 sheet of ready rolled butter puff pastry	1.0	sheet	sheet	12
+116	0	A pinch of salt and pepper	1.0	pinch	pinch	13
+116	70	2 teaspoons of tomato paste	2.0	teaspoons	t	14
+116	0	2 tablespoons of vegetable stock	2.0	tablespoons	T	15
+117	0	1 pkt active dry yeast	1.0			0
+117	10	1 stick of butter	1.0	stick	stick	1
+117	109	2 lrg egg yolks	2.0			2
+117	14	3 lrg eggs	3.0			3
+117	15	cups all-purpose flour	1.0	cups	c	4
+117	15	5 1/2 cups flour	5.5	cups	c	5
+117	6	1/2 teaspoon salt	0.5	teaspoon	t	6
+117	114	1/2 cup sugar	0.5	cup	c	7
+117	7	cup water	1.0	cup	c	8
+118	0	1/2 cup dry white wine	0.5	cup	c	0
+118	43	3 sprigs fresh parsley	3.0	sprigs	sprigs	1
+118	23	4 garlic cloves, finely chopped	4.0	cloves	cloves	2
+118	97	Kosher salt	2.0	servings	servings	3
+118	0	1/2 cup low-fat buttermilk	0.5	cup	c	4
+118	0	2 pounds mussels, cleaned	2.0	pounds	lb	5
+118	72	1 tbs olive oil	1.0	tbs	tbs	6
+118	0	2 shallots, finely chopped	2.0			7
+118	10	4 tablespoons unsalted light butter, cut into pieces	4.0	tablespoons	T	8
+119	58	1/2 teaspoon black pepper	0.5	teaspoon	t	0
+119	0	cooked penne	2.0	servings	servings	1
+119	88	1 teaspoon dried basil	1.0	teaspoon	t	2
+119	45	1 teaspoon dried oregano	1.0	teaspoon	t	3
+119	0	1 cup diced eggplant	1.0	cup	c	4
+119	23	2 cloves garlic, minced	2.0	cloves	cloves	5
+119	0	1 tablespoon mascarpone cheese	1.0	tablespoon	T	6
+119	72	1 tablespoon olive oil	1.0	tablespoon	T	7
+119	4	1/4 cup diced onion	0.25	cup	c	8
+119	76	1 cup diced red bell pepper	1.0	cup	c	9
+119	6	Pinch salt	1.0	pinch	pinch	10
+119	7	1/4 cup water	0.25	cup	c	11
+119	0	1 cup diced zucchini	1.0	cup	c	12
+119	79	1 cup tomato sauce, or ground peeled tomatoes	1.0	cup	c	13
+120	0	4 lbs chuck roast	4.0	lbs	lb	0
+120	23	7 cloves garlic,peeled	7.0	cloves	cloves	1
+120	0	1 TBSP Ground Mustard	1.0	TBSP	TBSP	2
+120	0	1 TBSP Italian Seasoning	1.0	TBSP	TBSP	3
+120	0	32 oz low sodium beef broth	32.0	oz	oz	4
+120	4	1 onion, cut into quarters	1.0			5
+120	0	1 TBSP Pepper	1.0	TBSP	TBSP	6
+120	0	4 rolls ( I used mini ciabatta rolls)	4.0			7
+121	0	2 cups cream	2.0	cups	c	0
+121	0	dulce de leche	1.0	serving	serving	1
+121	109	5 large egg yolks	5.0			2
+121	114	1/2 cup sugar	0.5	cup	c	3
+122	0	4 cups - Beef Stock	4.0	cups	c	0
+122	10	8 Tbs. - Butter	8.0	Tb	Tb	1
+122	0	4 cups - Chicken Stock	4.0	cups	c	2
+122	0	1 cup - Shredded Colby & Monterey Jack Cheese	1.0	cup	c	3
+122	40	Corn Starch to thicken soup	1.0	serving	serving	4
+122	0	8 Slices - French Bread (1 inch)	8.0	Slices	Slices	5
+122	23	2 Tbs. - Johnny's Garlic Seasoning	2.0	Tb	Tb	6
+122	0	1 Tbs. - Montreal Steak Seasoning	1.0	Tb	Tb	7
+122	4	1 Large Onion (diced)	1.0			8
+122	58	Pepper to taste	1.0	serving	serving	9
+122	172	1 cup - Shredded Mozzarella Cheese	1.0	cup	c	10
+122	71	2 Tbs. - Oil	2.0	Tb	Tb	11
+123	15	1 1/2 tablespoons all purpose flour	1.5	tablespoons	T	0
+123	0	2 cups beef broth	2.0	cups	c	1
+123	0	1 pound beef chuck (stewing beef)	1.0	pound	lb	2
+123	55	2 pints button mushrooms (about 20 mushrooms), rinsed, stems removed, cut in half	2.0	pints	pt	3
+123	2	Carrots	4.0	servings	servings	4
+123	122	1/4 teaspoon cayenne pepper	0.25	teaspoon	t	5
+123	84	1/2 teaspoon dried rosemary	0.5	teaspoon	t	6
+123	86	1/2 teaspoon dried thyme	0.5	teaspoon	t	7
+123	72	2 tablespoons extra-virgin olive oil	2.0	tablespoons	T	8
+123	4	1/2 cup chopped onion	0.5	cup	c	9
+123	0	1 cup red wine	1.0	cup	c	10
+124	10	1 tablespoon butter	1.0	tablespoon	T	0
+124	14	4 lrg eggs	4.0			1
+124	0	1 1/2 cups shredded gruyere cheese	1.5	cups	c	2
+124	0	3 cups heavy cream	3.0	cups	c	3
+124	7	3 tablespoons ice water	3.0	tablespoons	T	4
+124	25	2 leeks	2.0			5
+124	15	1 cup flour, plain	1.0	cup	c	6
+124	6	salt	1.0	serving	serving	7
+124	0	salt and pepper to taste	1.0	serving	serving	8
+124	126	1 tablespoon sour cream	1.0	tablespoon	T	9
+124	20	3 cups whole milk	3.0	cups	c	10
+125	15	1 1/4 cups all-purpose flour	1.25	cups	c	0
+125	22	6 slices bacon	6.0	slices	slices	1
+125	10	3 tablespoons Butter	3.0	tablespoons	T	2
+125	14	4 eggs	4.0			3
+125	58	1/4 teaspoon ground pepper	0.25	teaspoon	t	4
+125	25	2 Leek, chopped	2.0			5
+125	20	2/3 cup milk	0.6666666666666666	cup	c	6
+125	136	1 pound white or baby portobello mushrooms, sliced	1.0	pound	lb	7
+125	128	3 red potatoes, boiled and sliced	3.0			8
+125	6	pinch of salt	1.0	pinch	pinch	9
+125	114	1/4 cup sugar	0.25	cup	c	10
+125	7	4 cups of water	4.0	cups	c	11
+126	0	75 grams Asparagus spears, blanched	75.0	grams	g	0
+126	0	8 Black olives, pitted and quartered	8.0			1
+126	0	75 grams Broccoli florets, blanched	75.0	grams	g	2
+126	168	50 grams Cheddar cheese, grated	50.0	grams	g	3
+126	14	2 eggs, beaten	2.0			4
+126	0	50 grams Feta cheese, crumbled	50.0	grams	g	5
+126	25	1 Leek cleaned and thinly sliced	1.0			6
+126	20	Milk	4.0	servings	servings	7
+126	172	75 grams Mozzarella, thinly sliced	75.0	grams	g	8
+126	4	2 tablespoons Minced onion	2.0	tablespoons	T	9
+126	0	1 teaspoon Pesto	1.0	teaspoon	t	10
+126	0	418 grams Canned Alaska salmon (red or pink)	418.0	grams	g	11
+126	0	Salt and black pepper	4.0	servings	servings	12
+126	0	550 grams Ready-made shortcrust pastry	550.0	grams	g	13
+126	0	300 ml Single cream	300.0	ml	ml	14
+126	0	50 grams Smoked salmon	50.0	grams	g	15
+126	94	4 Spring onions, chopped	4.0			16
+126	0	50 grams Stilton cheese, crumbled	50.0	grams	g	17
+126	47	4 Fresh tomatoes, skinned, de-seeded, chopped	4.0			18
+127	0	14 ounces can of Artichokes, rinsed, chopped into bite size pieces	14.0	ounces	oz	0
+127	0	14 ounces can Diced Tomatoes	14.0	ounces	oz	1
+127	0	1 small eggplant	1.0			2
+127	72	extra-virgin olive oil, for serving	4.0	servings	servings	3
+127	23	4 cloves Garlic, minced	4.0	cloves	cloves	4
+127	0	1 teaspoon Italian Seasoning	1.0	teaspoon	t	5
+127	72	4 oz. olive oil (for saut�ing and garnishing)	4.0	oz	oz	6
+127	0	Fresh grated Parmesan or Romano, for serving	4.0	servings	servings	7
+127	96	Sea salt and fresh pepper	4.0	servings	servings	8
+127	0	8 ounces Spaghetti (like Barila Whole Grain)	8.0	ounces	oz	9
+127	4	1 large Yellow Onion, diced	1.0			10
+127	0	1 zucchini	1.0			11
+128	0	1 Brie Log such as Alouette	1.0			0
+128	0	1 small eggplant	1.0			1
+128	72	1/2 cup extra-virgin olive oil	0.5	cup	c	2
+128	47	2 ripe plum tomatoes	2.0			3
+128	85	1 tsp. thyme (chopped)	1.0	tsp	t	4
+128	0	2 medium-sized yellow squash, sliced	2.0			5
+128	0	2 medium-sized zucchini, sliced	2.0			6
+129	67	1 cup (28-ounce) can good-quality plum tomatoes, chopped, with their juices to make 2	28.0	ounce	oz	0
+129	136	1 cup sliced cremini mushrooms (about 5 medium)	1.0	cup	c	1
+129	0	1 tablespoon dry bread crumbs	1.0	tablespoon	T	2
+129	0	1/2 cup dry white wine (sauvignon blanc is nice)	0.5	cup	c	3
+129	0	1 medium eggplant (about 1 pound), cut into 1-inch cubes	1.0	pound	lb	4
+129	87	1/2 cup chopped fresh basil for garnish	0.5	cup	c	5
+129	83	1 tablespoon chopped fresh rosemary	1.0	tablespoon	T	6
+129	85	1 tablespoon chopped fresh thyme	1.0	tablespoon	T	7
+129	25	1 leek, white part only, thinly sliced	1.0			8
+129	72	Olive oil	4.0	servings	servings	9
+129	0	1 cup freshly grated Parmesan cheese	1.0	cup	c	10
+129	0	Dash black pepper	1.0	Dash	Dash	11
+129	76	1/2 red pepper	0.5			12
+129	96	1 teaspoon sea salt	1.0	teaspoon	t	13
+129	0	1 large shallot, finely chopped	1.0			14
+129	0	1 cup thinly sliced zucchini (about 1 medium)	1.0	cup	c	15
+130	0	2 cups broccoli florets, cut into small pieces	2.0	cups	c	0
+130	10	1 tablespoon butter	1.0	tablespoon	T	1
+130	0	2 teaspoons dijon mustard	2.0	teaspoons	t	2
+130	14	1 large egg white	1.0			3
+130	18	2 tablespoons lemon juice	2.0	tablespoons	T	4
+130	0	1 tablespoon lemon thyme, fresh finely chopped	1.0	tablespoon	T	5
+130	146	1 tablespoon lemon zest	1.0	tablespoon	T	6
+130	0	1/4 cup low-fat milk	0.25	cup	c	7
+130	127	4 tablespoons reduced fat sour cream	4.0	tablespoons	T	8
+130	0	8 ounces wild Alaskan Salmon filets, cooked and flaked into pieces	8.0	ounces	oz	9
+130	6	1 pinch salt	1.0	pinch	pinch	10
+130	0	2 tablespoons shallot, finely minced	2.0	tablespoons	T	11
+130	7	1/4 cup water	0.25	cup	c	12
+130	0	1/2 cup whole wheat pastry flour	0.5	cup	c	13
+131	45	� tsp dried oregano	0.25	tsp	t	0
+131	0	1 eggplant (aubergine) or 4 cups chopped	1.0			1
+131	72	2 Tbsp extra-virgin olive oil	2.0	Tbsp	Tbsp	2
+131	87	2 Tbsp chopped fresh basil	2.0	Tbsp	Tbsp	3
+131	23	1 tablespoon minced garlic	1.0	tablespoon	T	4
+131	4	1 large onion, peeled & finely cut up	1.0			5
+131	81	� orange bell pepper chopped	0.5			6
+131	76	1 medium red bell ( sweet ) pepper, washed, cleaned, pits & white bits removed, cut into little pieces	1.0			7
+131	96	1 tsp sea salt	1.0	tsp	t	8
+131	85	2 sprigs of thyme	2.0	sprigs	sprigs	9
+131	47	2 tomato peeled and chopped	2.0			10
+131	0	1 yellow squash chopped	1.0			11
+131	0	1 zucchini (courgette) chopped	1.0			12
+132	87	1/2 teaspoon basil	0.5	teaspoon	t	0
+132	0	1 cup Bisquick	1.0	cup	c	1
+132	11	1/2 cup vegetable or canola oil	0.5	cup	c	2
+132	14	3 Eggs	3.0			3
+132	23	1 garlic clove, minced	1.0	clove	clove	4
+132	4	1/2 cup finely chopped onion	0.5	cup	c	5
+132	45	1/2 teaspoon oregano	0.5	teaspoon	t	6
+132	0	1/4 cup shredded Parmesan cheese	0.25	cup	c	7
+132	43	2 tablespoons fresh Italian Parsley	2.0	tablespoons	T	8
+132	0	1/2 teaspoon pepper	0.5	teaspoon	t	9
+132	6	1/8 teaspoon salt	0.125	teaspoon	t	10
+132	0	1 zucchini, chopped into bite sized pieces	1.0			11
+133	0	blueberries	1.0	serving	serving	0
+133	0	your favorite cr�pes (here's my	1.0	serving	serving	1
+133	0	crumbled feta cheese	1.0	serving	serving	2
+133	0	raspberry fruit spread or jam	1.0	serving	serving	3
+133	0	raspberries	1.0	serving	serving	4
+134	12	cinnamon, optional	2.0	servings	servings	0
+134	14	4 eggs	4.0			1
+134	19	Maple syrup	2.0	servings	servings	2
+134	0	Mixed fresh fruit	2.0	servings	servings	3
+134	16	nutmeg, optional	2.0	servings	servings	4
+134	72	olive oil or butter for frying	2.0	servings	servings	5
+134	0	1/2 cup milk or soy milk	0.5	cup	c	6
+134	0	6 slices toast	6.0	slices	slices	7
+135	9	1 banana	1.0			0
+135	0	120ml carbonated water	120.0	ml	ml	1
+135	14	4 eggs	4.0			2
+135	20	400ml milk	400.0	ml	ml	3
+135	0	4 tablespoons nutella	4.0	tablespoons	T	4
+135	71	6 tablespoons oil	6.0	tablespoons	T	5
+135	15	400g white flour	400.0	g	g	6
+136	0	1 bunch broccoli rabe, chopped	1.0	bunch	bunch	0
+136	10	cup butter	1.0	cup	c	1
+136	14	3 hard cooked eggs, diced	3.0			2
+136	15	cups all-purpose flour	1.0	cups	c	3
+136	23	1/2 clove garlic, minced	0.5	clove	clove	4
+136	20	cup whole milk	1.0	cup	c	5
+136	4	1 large onion quartered	1.0			6
+136	0	Garnish: Parmesan cheese, lemon juice	3.0	servings	servings	7
+136	43	1/4 cup parsley, minced	0.25	cup	c	8
+136	0	1/8 teaspoon pepper	0.125	teaspoon	t	9
+136	0	1/4 cup pine nuts	0.25	cup	c	10
+136	0	1/4 pound sliced prosciutto, chopped	0.25	pound	lb	11
+136	6	1/2 teaspoon salt	0.5	teaspoon	t	12
+137	87	1 teaspoon Basil, dried(or marjoram)	1.0	teaspoon	t	0
+137	0	1/3 cup breadcrumbs	0.3333333333333333	cup	c	1
+137	14	1 extra large egg	1.0			2
+137	0	500 grams Ground meat (a mix of pork and beef)	500.0	grams	g	3
+137	20	30 60ml milk	1800.0	ml	ml	4
+137	71	1/2 tablespoon Oil	0.5	tablespoon	T	5
+137	4	70 grams Onions	70.0	grams	g	6
+137	6	1 teaspoon salt	1.0	teaspoon	t	7
+137	60	1 teaspoon White pepper	1.0	teaspoon	t	8
+138	8	2 teaspoons baking powder	2.0	teaspoons	t	0
+138	10	1/2 pound butter	0.5	pound	lb	1
+138	0	175 grams Cranberries, dried	175.0	grams	g	2
+138	14	6 eggs	6.0			3
+138	15	375 grams German#405 flour, sifted	375.0	grams	g	4
+138	145	3 Lemons	3.0			5
+138	0	150 grams Powdered sugar	150.0	grams	g	6
+138	6	1/2 teaspoon Salt, optional	0.5	teaspoon	t	7
+138	114	1/2 pound sugar	0.5	pound	lb	8
+138	0	75 ml Whipping cream	75.0	ml	ml	9
+139	0	1 cup Beef broth	1.0	cup	c	0
+139	0	3 tablespoons Bread crumbs	3.0	tablespoons	T	1
+139	0	1 teaspoon Dijon mustard, hot	1.0	teaspoon	t	2
+139	14	2 eggs, well-beaten	2.0			3
+139	0	1/2 pound Lean ground pork, shoulder	0.5	pound	lb	4
+139	0	1 pound Lean ground beef	1.0	pound	lb	5
+139	4	1 small onion, grated	1.0			6
+139	41	2 teaspoons paprika	2.0	teaspoons	t	7
+139	43	2 tablespoons Parsley, chopped	2.0	tablespoons	T	8
+139	6	to taste salt	4.0	servings	servings	9
+139	7	3 tablespoons Cold water	3.0	tablespoons	T	10
+140	0	sliced almonds for topping	12.0	servings	servings	0
+140	8	2 teaspoons baking powder	2.0	teaspoons	t	1
+140	10	1/3 cup 1 1/2 Tablespoon (100 g) butter, unsalted and at room temp.	100.0	g	g	2
+140	116	3 egg whites	3.0			3
+140	14	2 large eggs	2.0			4
+140	15	1 1/4 cup (150 g) flour	150.0	g	g	5
+140	0	21 ounces (600 g) rhubarb, peeled and cubed	600.0	g	g	6
+140	0	1 3/4 ounces (50 g) roasted almonds, ground	50.0	g	g	7
+140	6	1 3/4 cups Salt (sack salt, not Iodized)	1.75	cups	c	8
+140	114	1 cup SUGAR, BROWN, 2 LB	1.0	cup	c	9
+140	134	1 teaspoon (5 ml) vanilla extract	5.0	ml	ml	10
+141	0	1 teaspoon Baking soda	1.0	teaspoon	t	0
+141	10	1/4 cup Butter	0.25	cup	c	1
+141	0	1 tablespoon Cake flour	1.0	tablespoon	T	2
+141	109	3 lrg Egg yolks	3.0			3
+141	14	4 lrg Eggs, separated	4.0			4
+141	0	1 cup Evaporated milk	1.0	cup	c	5
+141	0	Frosting	6.0	servings	servings	6
+141	0	1 cup Low-fat buttermilk	1.0	cup	c	7
+141	0	1 cup Chopped pecans	1.0	cup	c	8
+141	114	1/4 cup Sugar	0.25	cup	c	9
+141	0	1 cup Shredded unsweetened coconut	1.0	cup	c	10
+141	134	1 teaspoon Vanilla extract	1.0	teaspoon	t	11
+141	0	4 ounces White chocolate, melted in � c boiling wat	4.0	ounces	oz	12
+142	130	2 medium cooking apples, cored and cut into 8 wedges each	2.0			0
+142	0	1 cup beer	1.0	cup	c	1
+142	0	2 tablespoons coarse-grain brown mustard	2.0	tablespoons	T	2
+142	0	2 teaspoons caraway seed	2.0	teaspoons	t	3
+142	40	1 tablespoon cornstarch	1.0	tablespoon	T	4
+142	34	1/2 teaspoon ground allspice	0.5	teaspoon	t	5
+142	0	1 pound fully cooked knockwurst, bias-sliced into 2- to 2-1/2-inch pieces	1.0	pound	lb	6
+142	0	2 tablespoons molasses	2.0	tablespoons	T	7
+142	4	1/3 cup chopped onion	0.3333333333333333	cup	c	8
+142	0	1/4 teaspoon pepper	0.25	teaspoon	t	9
+142	0	1 large rutabaga, peeled & cut into 1" cubes	1.0			10
+142	0	1 16-ounce can sauerkraut, drained and rinsed	16.0	ounce	oz	11
+142	7	4 cups Water, boiling	4.0	cups	c	12
+143	0	70g homemade breadcrumbs	70.0	g	g	0
+143	40	50g cornflour, seasoned with salt and black pepper	50.0	g	g	1
+143	14	1 Egg, lightly beaten	1.0			2
+143	0	2 Green Apple, cored, halved and thinly sliced	2.0			3
+143	0	4 tablespoons Mayonnaise	4.0	tablespoons	T	4
+143	72	3 tablespoons olive oil	3.0	tablespoons	T	5
+143	0	4 Pork Sirloin Chops, fat trimmed	4.0			6
+143	0	1 package salad greens	1.0	package	pkg	7
+143	0	4 tablespoons Wholegrain Mustard	4.0	tablespoons	T	8
+143	0	1/2 Tablespoon Cooking Wine	0.5	Tablespoon	Tablespoon	9
+144	58	1/2 tsp black pepper	0.5	tsp	t	0
+144	0	70g homemade breadcrumbs	70.0	g	g	1
+144	40	50g cornflour, seasoned with salt and black pepper	50.0	g	g	2
+144	0	¾ cup double cream	0.75	cup	c	3
+144	14	2 eggs, lightly beaten	2.0			4
+144	0	50g parmesan cheese, grated	50.0	g	g	5
+144	0	2 pork escalopes (about 125g each)	250.0	g	g	6
+144	0	4 tbs sunflower oil, for shallow frying	4.0	tbs	tbs	7
+144	0	1 tsp tarragon, dry, finely chopped leaves only	1.0	tsp	t	8
+144	0	¾ cup vegetable stock from 1/2 cube	0.75	cup	c	9
+144	0	1/4 cup white wine	0.25	cup	c	10
+145	58	1/8 teaspoon Black Pepper	0.125	teaspoon	t	0
+145	23	1 garlic clove, finely chopped	1.0	clove	clove	1
+145	72	Olive oil	2.0	servings	servings	2
+145	27	2 Large Potatoes, Diced	2.0			3
+145	6	1/2 teaspoon Salt	0.5	teaspoon	t	4
+145	0	2 cups 14 oz. sauerkraut with pickling liquid, about	2.0	cups	c	5
+145	0	1 cup cubed smoked ham	1.0	cup	c	6
+145	7	water, enough to cover the potatoes in the pot	2.0	servings	servings	7
+146	22	4 slices bacon	4.0	slices	slices	0
+146	13	8 ounces cream cheese at room temperature	8.0	ounces	oz	1
+146	0	1 teaspoon garlic paste	1.0	teaspoon	t	2
+146	0	1/2 cup mayonnaise	0.5	cup	c	3
+146	0	salt and pepper to taste	6.0	servings	servings	4
+146	0	32 oz sauerkraut	32.0	oz	oz	5
+146	0	1/4 cup chopped shallot	0.25	cup	c	6
+147	0	50g homemade bread crumbs	50.0	g	g	0
+147	10	50 g butter	50.0	g	g	1
+147	67	480g chopped tomatoes from a can	480.0	g	g	2
+147	109	3 egg yolks	3.0			3
+147	0	2-4 eggplants, thinly sliced	2.0			4
+147	0	230g feta cheese, grated	230.0	g	g	5
+147	15	50 g flour	50.0	g	g	6
+147	23	4 cloves garlic, finely chopped	4.0	cloves	cloves	7
+147	34	1/4 tsp ground allspice	0.25	tsp	t	8
+147	12	1/4 tsp ground cinnamon	0.25	tsp	t	9
+147	16	1/2 tsp ground nutmeg	0.5	tsp	t	10
+147	0	400 g lean ground beef	400.0	g	g	11
+147	20	250 ml warm milk	250.0	ml	ml	12
+147	72	1 tbs olive oil	1.0	tbs	tbs	13
+147	72	Olive oil	4.0	servings	servings	14
+147	4	2 onions, finely chopped	2.0			15
+147	58	Salt and ground white pepper	4.0	servings	servings	16
+147	96	Sea salt	4.0	servings	servings	17
+147	70	2 tbs tomato paste	2.0	tbs	tbs	18
+148	0	1 cup bread crumbs	1.0	cup	c	0
+148	14	1 egg, lightly beaten	1.0			1
+148	0	1/2 eggplants, cut into strips	0.5			2
+148	143	garlic powder	2.0	servings	servings	3
+148	0	Italian seasoning	2.0	servings	servings	4
+148	0	1/4 cup plain, low-fat yogurt	0.25	cup	c	5
+148	41	paprika	2.0	servings	servings	6
+148	6	salt	2.0	servings	servings	7
+148	0	tzatziki	2.0	servings	servings	8
+149	37	1 can chickpeas (15 ounces), drained except for about 1 tablespoon of the liquid	15.0	ounces	oz	0
+149	23	2 cloves garlic, roasted	2.0	cloves	cloves	1
+149	143	2 tablespoons garlic powder	2.0	tablespoons	T	2
+149	0	1 large golden beet	1.0			3
+149	135	1 jalape�o, roasted	1.0			4
+149	18	1 tablespoon lemon juice	1.0	tablespoon	T	5
+149	72	� cup olive oil	0.25	cup	c	6
+149	6	Salt to taste	4.0	servings	servings	7
+149	0	� cup tahini (sesame paste)	0.25	cup	c	8
+149	162	Turmeric, paprika and olive oil for sprinkling on top	4.0	servings	servings	9
+149	0	1 large turnip	1.0			10
+150	0	2 cucumbers, seeded and sliced	2.0			0
+150	0	1 1/2 cups crumbled feta cheese	1.5	cups	c	1
+150	0	1/2 tsp Greek Seasoning	0.5	tsp	t	2
+150	0	1 cup Kalamata olives, pitted and sliced	1.0	cup	c	3
+150	0	1/3 cup diced oil packed sun-dried tomatoes, drained, oil reserved	0.3333333333333333	cup	c	4
+150	4	1/2 red onion, sliced	0.5			5
+150	0	1 Tbsp rice vinegar (I had to use apple cider, but I think rice would be better)	1.0	Tbsp	Tbsp	6
+150	47	3 cups diced roma tomatoes	3.0	cups	c	7
+151	0	1 large cucumber	1.0			0
+151	72	high-quality extra-virgin olive oil	4.0	servings	servings	1
+151	0	1/4 pound greek feta	0.25	pound	lb	2
+151	0	1 dozen Kalamata olives	12.0			3
+151	4	1 large red onion, sliced thinly	1.0			4
+151	47	5 large ripe tomatoes	5.0			5
+152	87	5 large leaves of basil, chiffonaded	5.0	leaves	leaves	0
+152	0	1/2 pound Feta cheese, 1 lb	0.5	pound	lb	1
+152	94	1 cup chopped green onions (green and white parts)	1.0	cup	c	2
+152	18	1/2 cup freshly-squeezed lemon juice	0.5	cup	c	3
+152	72	1/2 cup + 1 tbsp extra-virgin olive oil, divided	0.5	cup	c	4
+152	0	3/4 pound (12 oz.) orzo (rice-shaped pasta)	12.0	oz	oz	5
+152	43	1 cup chopped Italian parsley	1.0	cup	c	6
+152	52	1 pound raw large shrimp, peeled and deveined	1.0	pound	lb	7
+152	0	Salt and pepper	6.0	servings	servings	8
+153	0	1 cucumber	1.0			0
+153	45	1 tablespoon Dried Oregano	1.0	tablespoon	T	1
+153	72	2 tablespoons extra-virgin olive oil	2.0	tablespoons	T	2
+153	23	2 cloves Garlic, smashed	2.0	cloves	cloves	3
+153	23	3 cloves garlic, minced	3.0	cloves	cloves	4
+153	18	1 Juice of Lemon	1.0			5
+153	18	tablespoon of fresh lemon juice	1.0	tablespoon	T	6
+153	58	pepper	2.0	servings	servings	7
+153	0	Pita Bread	2.0	servings	servings	8
+153	0	2 tablespoons heaping Plain or Greek Yogurt	2.0	tablespoons	T	9
+153	0	16 ounces plain Greek yogurt	16.0	ounces	oz	10
+153	4	sliced red onions	2.0	servings	servings	11
+153	100	2 teaspoons Red Wine Vinegar	2.0	teaspoons	t	12
+153	6	Salt	2.0	servings	servings	13
+153	0	1 pound boneless, skinless chicken breasts	1.0	pound	lb	14
+153	47	sliced tomatoes	2.0	servings	servings	15
+153	0	1/2 teaspoon white wine vinegar	0.5	teaspoon	t	16
+154	36	200 g boiled chickpeas. Can also use canned chickpeas	200.0	g	g	0
+154	41	1 tsp red paprika / red chili powder	1.0	tsp	t	1
+154	23	2 cloves garlic (optional) – roughly chopped	2.0	cloves	cloves	2
+154	18	1 tablespoon lemon juice	1.0	tablespoon	T	3
+154	72	2 tsp cooking oil / olive oil – for tempering bell peppers	2.0	tsp	t	4
+154	81	1 cup orange bell peppers – roughly chopped	1.0	cup	c	5
+154	58	Pepper to taste	2.0	servings	servings	6
+154	6	1/2 teaspoon salt	0.5	teaspoon	t	7
+154	46	2 tsp roasted sesame seeds or 1 tablespoon tahini paste	2.0	tsp	t	8
+154	114	1/2 tsp sugar	0.5	tsp	t	9
+154	98	1 tsp white vinegar	1.0	tsp	t	10
+155	0	1 can Chickpeas- any brand- Drain and wash	1.0	can	can	0
+155	48	1 teaspoon Cumin	1.0	teaspoon	t	1
+155	23	Couple of crushed garlic cloves	2.0	cloves	cloves	2
+155	18	1 tablespoon lemon juice	1.0	tablespoon	T	3
+155	0	Parsley, Paprika or Sumac and Olive	2.0	servings	servings	4
+155	6	1/2 teaspoon salt	0.5	teaspoon	t	5
+155	0	1/2 cup Tahini sauce	0.5	cup	c	6
+156	0	1/4 cup black olives	0.25	cup	c	0
+156	37	1 15-oz can garbanzo beans	15.0	oz	oz	1
+156	2	1/2 cup shredded carrots	0.5	cup	c	2
+156	0	1/2 cup julienned cucumber	0.5	cup	c	3
+156	23	1 garlic clove	1.0	clove	clove	4
+156	0	2 tablespoons hummus	2.0	tablespoons	T	5
+156	18	1 tablespoon lemon juice	1.0	tablespoon	T	6
+156	156	1/2 cup shredded lettuce	0.5	cup	c	7
+156	6	1/2 teaspoon salt	0.5	teaspoon	t	8
+156	0	1 1/2 tablespoons Tahini paste	1.5	tablespoons	T	9
+156	0	1 10-inch tortilla	1.0	10-inch	10-inch	10
+157	0	4 oz. baby spinach	4.0	oz	oz	0
+157	0	3 tablespoons cooking oil	3.0	tablespoons	T	1
+157	23	1 tablespoon garlic (chopped)	1.0	tablespoon	T	2
+157	0	1 (4 oz.) fresh goat cheese, Chavrie log	4.0	oz	oz	3
+157	0	8 2-ounce lamb loins	16.0	ounce	oz	4
+157	72	2 tablespoons olive oil	2.0	tablespoons	T	5
+157	0	salt and pepper to season	6.0	servings	servings	6
+158	0	1 cucumber, seeded and diced	1.0			0
+158	14	1 egg	1.0			1
+158	72	2 tablespoons extra-virgin olive oil	2.0	tablespoons	T	2
+158	43	1/4 cup chopped flat leaf parsley	0.25	cup	c	3
+158	0	1 handful of minced fresh dill	1.0	handful	handful	4
+158	23	12 Cloves garlic, peeled and cut in ha	12.0	Cloves	Cloves	5
+158	0	1 pint Greek yogurt	1.0	pint	pt	6
+158	0	1 pound ground lamb	1.0	pound	lb	7
+158	0	4 hamburger buns	4.0			8
+158	18	juice of 2 lemons	2.0			9
+158	97	Kosher salt & pepper to taste	4.0	servings	servings	10
+159	15	1/2 cup all purpose flour	0.5	cup	c	0
+159	124	White Sauce	12.0	servings	servings	1
+159	67	1 can diced tomatoes, undrained	1.0	can	can	2
+159	0	cup margarine	1.0	cup	c	3
+159	0	1/2 cup dry red wine, optional	0.5	cup	c	4
+159	14	4 egg, beaten	4.0			5
+159	0	2 1/2 pounds eggplant, (3 large)	2.5	pounds	lb	6
+159	0	3 cups lactose free mozzarella cheese, shredded	3.0	cups	c	7
+159	0	4 cups Natrel Lactose Free Milk	4.0	cups	c	8
+159	43	1/2 cup chopped fresh parsley	0.5	cup	c	9
+159	23	2 clv garlic, chopped	2.0			10
+159	0	2 pounds ground lamb	2.0	pounds	lb	11
+159	72	5 tablespoons extra-virgin olive oil	5.0	tablespoons	T	12
+159	4	2 mediums Onion, chopped	2.0			13
+159	45	1 tablespoon dried oregano leaves	1.0	tablespoon	T	14
+159	6	1 teaspoon salt	1.0	teaspoon	t	15
+159	0	Salt and pepper to taste	12.0	servings	servings	16
+159	70	1 can Tomato paste	1.0	can	can	17
+159	0	3 zucchini, sliced, 1/4 inch thick	3.0			18
+160	58	1/8 teaspoon black pepper	0.125	teaspoon	t	0
+160	65	1 pound brown lentils	1.0	pound	lb	1
+160	67	28 ounces can whole tomatoes	28.0	ounces	oz	2
+160	2	12 ounces scrubbed and chopped carrots	12.0	ounces	oz	3
+160	88	2 teaspoons dried basil	2.0	teaspoons	t	4
+160	45	1 teaspoon dried oregano	1.0	teaspoon	t	5
+160	86	1 teaspoon dried thyme	1.0	teaspoon	t	6
+160	85	2 teaspoons fresh thyme (if none available, use 1 more tsp dried)	2.0	teaspoons	t	7
+160	23	2 cloves garlic, chopped	2.0	cloves	cloves	8
+160	18	2 tablespoons lemon juice, from 1 lemon	2.0	tablespoons	T	9
+160	72	1 tablespoon olive oil	1.0	tablespoon	T	10
+160	4	1/2 medium onion, chopped (about ¾ cup)	0.75	cup	c	11
+160	6	1/4 teaspoon salt	0.25	teaspoon	t	12
+160	7	3 quarts cold water	3.0	quarts	quarts	13
+161	0	1 pack package Angel hair spaghetti 12	1.0			0
+161	79	1 large can tomato sauce	1.0	can	can	1
+161	67	1 can diced tomatoes	1.0	can	can	2
+161	87	Fresh basil	8.0	servings	servings	3
+161	23	teaspoon � minced garlic	1.0	teaspoon	t	4
+161	0	cup � green Greek olives (pitted)	1.0	cup	c	5
+161	0	1 teaspoon Italian seasoning	1.0	teaspoon	t	6
+161	0	1 pound of lean ground beef	1.0	pound	lb	7
+161	18	1 tablespoon lemon juice	1.0	tablespoon	T	8
+161	111	1 pound of vegetables (seasoned, roasted with olive oil)	1.0	pound	lb	9
+161	55	1 cup sliced mushrooms (seasoned & roasted)	1.0	cup	c	10
+161	4	2 teaspoons Onion, minced	2.0	teaspoons	t	11
+161	45	teaspoon � oregano	1.0	teaspoon	t	12
+161	0	cup � parmesan cheese	1.0	cup	c	13
+161	0	teaspoon � black pepper	1.0	teaspoon	t	14
+161	0	cup � of sun dried tomatoes, chopped	1.0	cup	c	15
+162	37	1 15.5oz can chickpeas (garbanzo beans), drained and rinsed	15.5	oz	oz	0
+162	0	3 pounds eggplant (about 3 medium)	3.0	pounds	lb	1
+162	72	1/4 cup extra-virgin olive oil, divided	0.25	cup	c	2
+162	23	1 garlic clove	1.0	clove	clove	3
+162	18	2 tablespoons fresh lemon juice	2.0	tablespoons	T	4
+162	58	Freshly ground pepper to taste	6.0	servings	servings	5
+162	6	1/2 teaspoon salt	0.5	teaspoon	t	6
+162	0	2 tablespoons tahini	2.0	tablespoons	T	7
+163	14	3 extra-large eggs, lightly beaten	3.0			0
+163	0	1 1/2 lbs. Feta cheese	1.5	lbs	lb	1
+163	15	2 tablespoons all-purpose flour	2.0	tablespoons	T	2
+163	0	2 tablespoons chopped fresh dill	2.0	tablespoons	T	3
+163	165	4 boxes frozen spinach	4.0	boxes	boxes	4
+163	72	1/2 cup (120 ml) olive oil	120.0	ml	ml	5
+163	4	2 large onions, chopped	2.0			6
+163	0	1 box Filo or Phyllo dough (purchase in freezer sectio	1.0	box	box	7
+163	0	salt and pepper to taste	8.0	servings	servings	8
+163	71	1/2 cup vegetable oil	0.5	cup	c	9
+164	72	extra-virgin olive oil, for serving	1.0	serving	serving	0
+164	0	6 ounces feta cheese	6.0	ounces	oz	1
+164	23	1 garlic clove	1.0	clove	clove	2
+164	18	2 Tablespoons lemon juice	2.0	Tablespoons	Tablespoons	3
+164	146	zest of 1 lemon, a pinch of zest reserved for garnish	1.0			4
+164	0	1/3 cup plain Greek yogurt	0.3333333333333333	cup	c	5
+164	61	pinch of red pepper flakes	1.0	pinch	pinch	6
+165	0	200 g brown rice	200.0	g	g	0
+165	0	1 can (400 ml) coconut milk	400.0	ml	ml	1
+165	0	400 g chicken breast, cubed	400.0	g	g	2
+165	61	chili flakes, to taste	2.0	servings	servings	3
+165	0	1 tablespoon coconut oil	1.0	tablespoon	T	4
+165	80	2 teaspoons curry powder	2.0	teaspoons	t	5
+165	0	2 teaspoons garam masala	2.0	teaspoons	t	6
+165	23	2 cloves garlic	2.0	cloves	cloves	7
+165	141	1 inch ginger	1.0	inch	inch	8
+165	0	1 tablespoon lemon grass paste	1.0	tablespoon	T	9
+165	31	200 g snow peas, frozen	200.0	g	g	10
+165	70	1 tablespoon tomato paste	1.0	tablespoon	T	11
+166	67	1 Cup canned crushed tomatoes	1.0	Cup	Cup	0
+166	0	2 Teaspoons Coriander Seeds or 1 Teaspoon Powder	2.0	Teaspoons	Teaspoons	1
+166	49	1 Teaspoon Cumin Seeds	1.0	Teaspoon	Teaspoon	2
+166	7	12 Cups Filtered Water	12.0	Cups	Cups	3
+166	141	2 Teaspoons Fresh organic Ginger	2.0	Teaspoons	Teaspoons	4
+166	0	1 Tablespoon Garam Masala	1.0	Tablespoon	Tablespoon	5
+166	23	2-3 organic Garlic Cloves	2.0	cloves	cloves	6
+166	140	1/4 Cup Expeller Pressed Grapeseed Oil	0.25	Cup	Cup	7
+166	66	3 Cups organic Red Lentils	3.0	Cups	Cups	8
+166	96	1 Tablespoon + 1 Teaspoon Sea Salt or to taste	1.0	Tablespoon	Tablespoon	9
+166	0	2-4 Serrano peppers	2.0			10
+166	162	3 Tablespoons Turmeric	3.0	Tablespoons	Tablespoons	11
+166	0	2 Vegetable Bouillon Cube	2.0			12
+166	4	1/2 organic White Onion	0.5			13
+167	0	24 ounces Apple cider or juice	24.0	ounces	oz	0
+167	0	7 ounces Coconut milk	7.0	ounces	oz	1
+167	80	2 teaspoons Curry powder	2.0	teaspoons	t	2
+167	0	2 packages Chavrie fresh goat cheese (reserve 1 pkg. for garnishing)	2.0	packages	packages	3
+167	131	2 inches Granny Smith apples (cut wedges)	2.0	inches	inches	4
+167	25	2 Leeks (chopped and washed)	2.0			5
+167	162	1/2 teaspoon Turmeric	0.5	teaspoon	t	6
+167	71	2 ounces Vegetable oil	2.0	ounces	oz	7
+167	55	1 cup Sliced white mushrooms	1.0	cup	c	8
+168	63	2 tbsp Gram (chickpea) flour	2.0	tbsp	T	0
+168	37	2 cans chickpeas drained and rinsed	2.0	cans	cans	1
+168	95	8 tablespoons chili powder (or to taste)	8.0	tablespoons	T	2
+168	92	Handful of fresh coriander (cilantro) chopped	1.0	Handful	Handful	3
+168	48	2 tsp cumin powder	2.0	tsp	t	4
+168	49	1.5 tsp black cumin seeds	1.5	tsp	t	5
+168	92	Small handful of fresh coriander (cilantro)	1.0	handful	handful	6
+168	0	1 tsp garam masala	1.0	tsp	t	7
+168	23	3 cloves garlic finely chopped	3.0	cloves	cloves	8
+168	0	1 hot green chili finely sliced	1.0			9
+168	0	2 hot green chilis finely chopped	2.0			10
+168	18	1 tbsp lemon juice	1.0	tbsp	T	11
+168	0	1 tbsp mustard seeds	1.0	tbsp	T	12
+168	4	1 small onion, chopped	1.0			13
+168	0	3 cups passata (pureed tomato)	3.0	cups	c	14
+168	0	1 cup frozen peas (take them out the freezer before you start cooking)	1.0	cup	c	15
+168	3	3 green peppers (capsicum) roughly chopped into big chunks	3.0			16
+168	0	2 tsp Tamarind	2.0	tsp	t	17
+168	162	1 tsp Turmeric	1.0	tsp	t	18
+169	0	6 Bay leaves	6.0			0
+169	0	1 pound Chicken breast (boneless)	1.0	pound	lb	1
+169	10	Butter as needed( I used oil+butter)	2.0	servings	servings	2
+169	95	1 tablespoon chili powder	1.0	tablespoon	T	3
+169	0	4 Green chilies	4.0			4
+169	0	Cilantro leaves	1.0	leaves	leaves	5
+169	0	1/4 cup Fresh Cream	0.25	cup	c	6
+169	0	1/2 teaspoon Fennel seeds	0.5	teaspoon	t	7
+169	0	1 teaspoon garam masala	1.0	teaspoon	t	8
+169	0	1 teaspoon Ketchup	1.0	teaspoon	t	9
+169	139	1 tablespoon Lime juice	1.0	tablespoon	T	10
+169	0	A few nuts n raisins	9.0	servings	servings	11
+169	4	1 Big Onion Chopped	1.0			12
+169	0	1/2 teaspoon Pepper Powder	0.5	teaspoon	t	13
+169	6	1/4 teaspoon salt	0.25	teaspoon	t	14
+169	114	Sugar	2.0	servings	servings	15
+169	47	1 medium sized tomato blanched n Pureed	1.0			16
+169	39	1 tablespoon Yogurt	1.0	tablespoon	T	17
+170	0	1 bay leaf	1.0			0
+170	0	5 pounds Beef Chuck Roast	5.0	pounds	lb	1
+170	67	1 16 oz. can tomatoes, cut up	16.0	oz	oz	2
+170	80	1 t curry powder	1.0	t	t	3
+170	80	2 t mild curry powder	2.0	t	t	4
+170	23	3 cloves garlic, minced	3.0	cloves	cloves	5
+170	141	1 slice of ginger, 1/2" wide	1.0	slice	slice	6
+170	72	Olive oil	4.0	servings	servings	7
+170	0	1 cup quinoa	1.0	cup	c	8
+170	0	1/2 hot red chile, seeded and finely diced	0.5			9
+170	0	1/4 cup red wine	0.25	cup	c	10
+170	123	1/2 large sweet onion	0.5			11
+170	70	1 T tomato paste	1.0	T	T	12
+171	0	2 bay leaves	2.0			0
+171	58	Freshly-ground black pepper to taste	1.0	serving	serving	1
+171	0	4 smalls hot chilies seeded	4.0			2
+171	0	2 pounds chuck steak cut 1" cubes	2.0	pounds	lb	3
+171	0	Clarified butter as needed	1.0	serving	serving	4
+171	0	6 whl cloves	6.0			5
+171	49	teaspoon cumin seeds	1.0	teaspoon	t	6
+171	23	14 garlic cloves	14.0	cloves	cloves	7
+171	114	cup granulated sugar	1.0	cup	c	8
+171	145	1 lemon juiced, pith removed, rind chopped, membranes removed, and pulp chopped	1.0			9
+171	0	1 teaspoon English mustard	1.0	teaspoon	t	10
+171	4	1 small onion finely sliced	1.0			11
+171	0	3 tablespoons poppy seeds	3.0	tablespoons	T	12
+171	142	teaspoon powdered ginger	1.0	teaspoon	t	13
+171	6	salt (taste),	1.0	serving	serving	14
+171	6	teaspoon salt	1.0	teaspoon	t	15
+171	70	cup tomato paste	1.0	cup	c	16
+171	162	teaspoon turmeric	1.0	teaspoon	t	17
+171	100	cup red wine vinegar	1.0	cup	c	18
+172	99	2 teaspoons apple cider vinegar	2.0	teaspoons	t	0
+172	0	brown rice	8.0	servings	servings	1
+172	69	1 head of cauliflower-cut into florets	1.0	head	head	2
+172	37	1 15 oz can of chickpeas-drained and rinsed	15.0	oz	oz	3
+172	49	1 teaspoon cumin seeds- toasted and crushed	1.0	teaspoon	t	4
+172	80	1 tablespoon curry powder	1.0	tablespoon	T	5
+172	0	1 teaspoon fenugreek- toasted and crushed	1.0	teaspoon	t	6
+172	141	3 tablespoons fresh ginger-minced	3.0	tablespoons	T	7
+172	48	1 tablespoon ground cumin	1.0	tablespoon	T	8
+172	23	3 cloves garlic-minced	3.0	cloves	cloves	9
+172	4	1 onion-sliced thinly	1.0			10
+172	41	2 teaspoons paprika	2.0	teaspoons	t	11
+172	27	2 potatoes-peeled and chopped	2.0			12
+172	96	sea salt	8.0	servings	servings	13
+172	114	1 pinch sugar	1.0	pinch	pinch	14
+172	0	2 tablespoons sunflower oil	2.0	tablespoons	T	15
+172	0	1 teaspoon tumeric	1.0	teaspoon	t	16
+172	7	water-to cover	8.0	servings	servings	17
+173	80	2 teaspoons Curry Powder	2.0	teaspoons	t	0
+173	141	1 teaspoon fresh ginger	1.0	teaspoon	t	1
+173	23	2 cloves of garlic	2.0	cloves	cloves	2
+173	139	2 teaspoons Lime juice	2.0	teaspoons	t	3
+173	4	1/4 cup red onions	0.25	cup	c	4
+173	0	rice noodles	2.0	servings	servings	5
+173	0	1/4 cup Natural roasted peanuts	0.25	cup	c	6
+173	0	1 pound Black Angus Inside Round Steak (cut in thin slices)	1.0	pound	lb	7
+173	0	1 teaspoon Sambal Oelek	1.0	teaspoon	t	8
+173	74	2 tablespoons Soy sauce	2.0	tablespoons	T	9
+174	0	Cr�me fraiche, 150ml	150.0	ml	ml	0
+174	80	tablespoon Curry powder, 1	1.0	tablespoon	T	1
+174	0	Dry white wine, 150ml	150.0	ml	ml	2
+174	0	Mussels, 2kg	2.0	kg	kg	3
+174	72	tablespoon Olive oil, 1	1.0	tablespoon	T	4
+174	4	Onion (chopped), 1	1.0			5
+174	43	tablespoon Parsley (chopped), 1	1.0	tablespoon	T	6
+174	0	Salt and pepper to taste.	4.0	servings	servings	7
+175	0	1 pound mutton [boneless and cut into 1" cubes]	1.0	pound	lb	0
+175	0	1 1/4 cups basmati rice	1.25	cups	c	1
+175	0	3 bay leaves	3.0			2
+175	0	2 pods green cardamom	2.0			3
+175	95	2 teaspoons red chili powder [optional]	2.0	teaspoons	t	4
+175	0	8 wholes dry red chilies [adjust to taste]	8.0			5
+175	0	1 teaspoon dry coriander powder	1.0	teaspoon	t	6
+175	0	1 teaspoon coriander seeds	1.0	teaspoon	t	7
+175	49	1 tablespoon Cumin seeds,	1.0	tablespoon	T	8
+175	0	Fresh Cilantro leaves	1.0	leaves	leaves	9
+175	0	Fried onions [optional]	3.0	servings	servings	10
+175	26	2 blades mace [javitri]	2.0			11
+175	0	1/4 tablespoon saffron [kesar] soaked in 2 cups milk [optional]	0.25	tablespoon	T	12
+175	16	1/2 teaspoon nutmeg, grated	0.5	teaspoon	t	13
+175	4	1 large onion, thinly sliced	1.0			14
+175	0	10 whole black peppercorns	10.0			15
+175	6	1/2 teaspoon salt	0.5	teaspoon	t	16
+175	0	4 tablespoons oil [I used mustard, canola or sunflower can be used]	4.0	tablespoons	T	17
+175	7	4 pints Water	4.0	pints	pt	18
+175	0	Almonds/Raisins [optional]	3.0	servings	servings	19
+176	8	1 small pinch baking powder	1.0	pinch	pinch	0
+176	0	2 mediums hot chilies, minced	2.0			1
+176	0	1 teaspoon cinnamon powder	1.0	teaspoon	t	2
+176	0	1/4 cup chopped coriander	0.25	cup	c	3
+176	49	2 teaspoons cumin seeds	2.0	teaspoons	t	4
+176	0	6 curry leaves	6.0			5
+176	23	1 tablespoon garlic, minced	1.0	tablespoon	T	6
+176	18	1 tablespoon lemon juice or to taste	1.0	tablespoon	T	7
+176	0	1 1/2 cups mung beans	1.5	cups	c	8
+176	0	1 teaspoon mustard seeds	1.0	teaspoon	t	9
+176	6	Salt to taste	4.0	servings	servings	10
+176	114	Sugar to taste	4.0	servings	servings	11
+176	0	1 tablespoon sunflower oil	1.0	tablespoon	T	12
+176	47	1 medium tomato, chopped	1.0			13
+176	162	1/2 teaspoon turmeric	0.5	teaspoon	t	14
+177	80	3 tablespoons curry powder	3.0	tablespoons	T	0
+177	92	2 tablespoons chopped fresh coriander (or parsley)	2.0	tablespoons	T	1
+177	23	2 cloves garlic, crushed	2.0	cloves	cloves	2
+177	0	1 pound ground lamb (or beef)	1.0	pound	lb	3
+177	4	1 chopped med. onion	1.0			4
+177	0	3 tablespoons peanut, corn oil, but	3.0	tablespoons	T	5
+177	38	10 ounces frozen peas	10.0	ounces	oz	6
+177	47	8 ripe plum tomatoes (or canned)	8.0			7
+177	6	1/2 teaspoon salt	0.5	teaspoon	t	8
+178	8	1 tiny pinch of baking powder	1.0			0
+178	0	Pinch of cardamom powder (Cardamom powder is very strong so add only a pinch)	1.0	pinch	pinch	1
+178	0	3 hot green chilies, minced (more or less if you prefer)	3.0			2
+178	0	1/4 teaspoon cinnamon powder	0.25	teaspoon	t	3
+178	0	1 teaspoon coriander powder	1.0	teaspoon	t	4
+178	48	1 teaspoon cumin powder	1.0	teaspoon	t	5
+178	0	1/4 teaspoon fennel powder	0.25	teaspoon	t	6
+178	23	4 mediums cloves garlic, minced	4.0	cloves	cloves	7
+178	141	1 tablespoon ginger, minced	1.0	tablespoon	T	8
+178	4	1 Large Onion, Chopped	1.0			9
+178	0	1 cup paneer (or tofu for vegans), lightly grilled	1.0	cup	c	10
+178	6	1/2 teaspoon Salt	0.5	teaspoon	t	11
+178	0	2 tablespoons single cream (optional)	2.0	tablespoons	T	12
+178	164	10 cups fresh spinach, chopped	10.0	cups	c	13
+178	0	2 tablespoons sunflower oil	2.0	tablespoons	T	14
+178	47	1 kilogram tomatoes, Sliced into Quarters	1.0	kilogram	kilogram	15
+178	162	1/2 teaspoon turmeric	0.5	teaspoon	t	16
+178	7	1 cup water	1.0	cup	c	17
+179	0	1/8 cup cashews	0.125	cup	c	0
+179	95	1/2 teaspoon Red chili powder	0.5	teaspoon	t	1
+179	0	1 teaspoon Coriander powder	1.0	teaspoon	t	2
+179	40	1/4 cup corn starch	0.25	cup	c	3
+179	48	1 teaspoon cumin powder	1.0	teaspoon	t	4
+179	49	1 teaspoon cumin seeds	1.0	teaspoon	t	5
+179	92	1/4 cup Fresh Cilantro, finely chopped	0.25	cup	c	6
+179	0	1 teaspoon Garam Masala	1.0	teaspoon	t	7
+179	0	1 Tbsp, Garlic Paste	1.0	Tbsp	Tbsp	8
+179	0	1 Tbsp, Ginger paste	1.0	Tbsp	Tbsp	9
+179	0	1/8 cup Golden Raisins	0.125	cup	c	10
+179	0	2 Green Chilies, finely chopped	2.0			11
+179	0	1/2 cup Fresh Cream / Half & Half	0.5	cup	c	12
+179	64	2% Milk, as needed	4.0	servings	servings	13
+179	4	3 mediums Onions,	3.0			14
+179	0	1/4 cup Paneer, grated (cottage cheese)	0.25	cup	c	15
+179	0	1/2 cup peas and carrots	0.5	cup	c	16
+179	27	5 mediums Potatoes, boiled-peeled-grated	5.0			17
+179	6	Salt to taste	4.0	servings	servings	18
+179	0	1 cup Tomato puree	1.0	cup	c	19
+179	0	1/4 teaspoon Turmeric powder	0.25	teaspoon	t	20
+180	0	4 acorn squashes cut in half, gutted	4.0			0
+180	0	1/2 cup basmati rice soaked in water	0.5	cup	c	1
+180	47	1 beefsteak tomato- diced	1.0			2
+180	73	handful cashew nuts- chopped a bit	1.0	handful	handful	3
+180	121	5 tablespoons hefty Biryani paste (I use Patak's Brand)	5.0	tablespoons	T	4
+180	95	1 tablespoon chili powder (it should be spicy!)	1.0	tablespoon	T	5
+180	92	handful chopped cilantro	1.0	handful	handful	6
+180	58	coarse black pepper	4.0	servings	servings	7
+180	106	PAM original flavor	4.0	servings	servings	8
+180	0	3 tablespoons garam masala	3.0	tablespoons	T	9
+180	23	4 cloves garlic- crushed and minced	4.0	cloves	cloves	10
+180	141	2 tablespoons ginger- freshly grated	2.0	tablespoons	T	11
+180	4	1 medium onion- cut into thick slices (garnishing)	1.0			12
+180	4	1 medium red onion- diced	1.0			13
+180	0	of saffron	4.0	servings	servings	14
+180	6	salt to taste	4.0	servings	servings	15
+180	76	4 small sweet peppers- diced	4.0			16
+180	71	1/2 tablespoon vegetable oil	0.5	tablespoon	T	17
+180	7	1 cup water	1.0	cup	c	18
+180	4	1 medium white onion- diced	1.0			19
+181	0	2 baking Potatoes	2.0			0
+181	0	2 cups of beef broth	2.0	cups	c	1
+181	10	2 tablespoons of Butter	2.0	tablespoons	T	2
+181	92	1 bunch of Cilantro, Chopped	1.0	bunch	bunch	3
+181	80	2 tablespoons of Curry	2.0	tablespoons	T	4
+181	0	1/2 teaspoon of fennel powder	0.5	teaspoon	t	5
+181	0	1/2 teaspoon of Garam Masala	0.5	teaspoon	t	6
+181	23	3 cloves of Garlic, Minced	3.0	cloves	cloves	7
+181	141	1 teaspoon of Ginger	1.0	teaspoon	t	8
+181	0	5 1/2 pounds of Cooked Lamb stew meat	5.5	pounds	lb	9
+181	55	6 ounces of Mushrooms, Chopped	6.0	ounces	oz	10
+181	72	2 tablespoons of Olive Oil	2.0	tablespoons	T	11
+181	4	1 Onion, Diced	1.0			12
+181	45	1 tablespoon of Oregano	1.0	tablespoon	T	13
+181	39	1/2 cup of Plain Yogurt	0.5	cup	c	14
+181	83	1 tablespoon of Rosemary	1.0	tablespoon	T	15
+181	6	1/2 teaspoon of Salt	0.5	teaspoon	t	16
+181	70	1 can of Tomato Paste	1.0	can	can	17
+182	0	1 1/2 lb. beef chuck meat, well-trimmed and cut into 1/2 inch pieces	1.5	lb	lb	0
+182	10	1/2 cup butter	0.5	cup	c	1
+182	0	1 (15 oz.) can of low-sodium beef broth	15.0	oz	oz	2
+182	2	2 med carrots, peeled and chopped small	2.0			3
+182	122	dash of cayenne pepper	1.0	dash	dash	4
+182	0	1 1/2 t. Dijon mustard	1.5	t	t	5
+182	0	1 t. dry mustard	1.0	t	t	6
+182	14	1 Egg	1.0			7
+182	15	3 T. flour	3.0	T	T	8
+182	0	1 t. minced fresh marjoram	1.0	t	t	9
+182	43	2 T. chopped fresh parsley	2.0	T	T	10
+182	85	1 t. minced fresh thyme	1.0	t	t	11
+182	23	1 clove minced garlic	1.0	clove	clove	12
+182	7	1/3 c. ice water, plus more if needed	0.3333333333333333	c	c	13
+182	4	1 med. onion	1.0			14
+182	6	1 teaspoon salt	1.0	teaspoon	t	15
+182	0	1 salt & pepper	1.0			16
+182	0	8 oz. Irish cheddar, or sharp cheddar cheese, shredded	8.0	oz	oz	17
+182	114	1 teaspoon sugar	1.0	teaspoon	t	18
+182	71	1/4 cup vegetable oil	0.25	cup	c	19
+182	7	2 cups hot water	2.0	cups	c	20
+183	22	Optional: 2 rashers bacon, cooked until crisp and broken into pieces	1.0	rashers	rashers	0
+183	10	Butter	8.0	servings	servings	1
+183	24	1 med. cabbage	1.0			2
+183	20	1 cup milk	1.0	cup	c	3
+183	94	6 stems green onions, green and white parts, chopped	6.0			4
+183	43	1 tablespoon parsley, chopped	1.0	tablespoon	T	5
+183	0	1/2 tsp pepper	0.5	tsp	t	6
+183	27	1 1/2 pounds potatoes, peeled	1.5	pounds	lb	7
+183	6	1 tablespoon Salt	1.0	tablespoon	T	8
+184	0	2 Bay Leaves	2.0			0
+184	10	1 tbsp. butter, melted	1.0	tbsp	T	1
+184	24	1 (2 lb.) cabbage, cut into wedges	2.0	lb	lb	2
+184	2	8 mediums Carrots, Pared	8.0			3
+184	0	5 pounds Corned-Beef brisket	5.0	pounds	lb	4
+184	23	1 Clove Garlic	1.0	Clove	Clove	5
+184	4	8 mediums yellow onions, peeled	8.0			6
+184	43	Chopped parsley	6.0	servings	servings	7
+184	0	10 Whole black Peppers	10.0			8
+184	27	8 mediums Potatoes, pared	8.0			9
+185	0	1 bay leaf	1.0			0
+185	10	1 tbsp. butter, melted	1.0	tbsp	T	1
+185	24	1 (2 lb.) cabbage, cut into wedges	2.0	lb	lb	2
+185	2	1 lg. carrot, scraped and sliced	1.0			3
+185	99	1/4 c. cider vinegar (good quality)	0.25	c	c	4
+185	0	1 (4 lb.) corned beef brisket	4.0	lb	lb	5
+185	40	1 tbsp. cornstarch	1.0	tbsp	T	6
+185	0	1 tsp. dry mustard	1.0	tsp	t	7
+185	109	2 egg yolks, beaten	2.0			8
+185	43	1 bunch fresh parsley	1.0	bunch	bunch	9
+185	0	1 tsp. horseradish	1.0	tsp	t	10
+185	0	2 lbs. sm. new potatoes, peeled	2.0	lbs	lb	11
+185	4	3 medium onions	3.0			12
+185	0	1/4 teaspoon pepper	0.25	teaspoon	t	13
+185	6	1/2 tsp. salt	0.5	tsp	t	14
+185	114	2 tsp. sugar	2.0	tsp	t	15
+185	7	1 c. water	1.0	c	c	16
+186	0	1 bay leaf	1.0			0
+186	0	2 cups beef broth	2.0	cups	c	1
+186	50	1 tablespoon brown sugar	1.0	tablespoon	T	2
+186	2	1/4 cup carrots, finely grated	0.25	cup	c	3
+186	0	2 pounds corned beef brisket	2.0	pounds	lb	4
+186	23	2 cloves garlic, minced	2.0	cloves	cloves	5
+186	0	2 cups Guinness	2.0	cups	c	6
+186	0	3 spicy honey mustard	3.0			7
+186	0	1 pound parsnips, roughly chopped	1.0	pound	lb	8
+186	27	2 cups potatoes, boiled and mashed roughly (try to use the floury kind of potato)	2.0	cups	c	9
+186	0	2 tablespoons pickling spice	2.0	tablespoons	T	10
+187	22	2-3 rashers bacon (optional)	2.0	slices	slices	0
+187	23	2 To 3 cloves garlic, minced	2.0	cloves	cloves	1
+187	24	1 pound green cabbage (kale can also be used)	1.0	pound	lb	2
+187	25	2 medium leeks, split lengthwise and rinsed well	2.0			3
+187	26	1/4 teaspoon mace	0.25	teaspoon	t	4
+187	27	2 pounds yellow or red potatoes, scrubbed and cubed but not peeled	2.0	pounds	lb	5
+187	6	Salt to taste	1.0			6
+187	20	1 cup whole milk	1.0	cup	c	7
+188	15	1/4 cup all purpose flour	0.25	cup	c	0
+188	8	1 1/2 teaspoons baking powder	1.5	teaspoons	t	1
+188	0	1 teaspoon Baking Soda	1.0	teaspoon	t	2
+188	10	1/4 cup Butter	0.25	cup	c	3
+188	0	1 1/2 cups Buttermilk	1.5	cups	c	4
+188	0	2/3 cup raisins	0.6666666666666666	cup	c	5
+188	6	1/2 teaspoon Salt	0.5	teaspoon	t	6
+188	114	5 tablespoons sugar, divided	5.0	tablespoons	T	7
+189	0	1 teaspoon Baking Soda	1.0	teaspoon	t	0
+189	0	1 1/2 cups Buttermilk	1.5	cups	c	1
+189	0	1 teaspoon Caraway Seeds	1.0	teaspoon	t	2
+189	14	1 Egg	1.0			3
+189	15	4 3/4 cups Flour	4.75	cups	c	4
+189	17	3 tablespoons Honey	3.0	tablespoons	T	5
+189	6	� tsp salt	0.5	tsp	t	6
+189	10	6 tbsp unsalted butter	6.0	tbsp	T	7
+190	0	� cup condensed milk	0.5	cup	c	0
+190	40	� cup cornstarch	0.25	cup	c	1
+190	109	5 egg yolks	5.0			2
+190	0	1 oz Irish Whiskey	1.0	oz	oz	3
+190	50	1 cup light brown sugar	1.0	cup	c	4
+190	20	2 cups homogenized milk	2.0	cups	c	5
+190	0	2 � cups pastry flour (all-purpose is fine)	2.5	cups	c	6
+190	6	salt	10.0	servings	servings	7
+190	10	6 tbsp unsalted butter	6.0	tbsp	T	8
+190	0	� cup cold vodka	0.25	cup	c	9
+190	7	� cup cold water	0.25	cup	c	10
+191	10	1/4 cup butter	0.25	cup	c	0
+191	0	5 ounces frozen kale cooked, squeezed dry	5.0	ounces	oz	1
+191	20	3 tablespoons milk	3.0	tablespoons	T	2
+191	4	1/4 cup chopped onions	0.25	cup	c	3
+191	0	1/8 teaspoon pepper	0.125	teaspoon	t	4
+191	27	4 mediums potatoes, peeled and quartered	4.0			5
+191	6	1 teaspoon salt	1.0	teaspoon	t	6
+192	0	1 bottle Irish Ale	1.0	bottle	bottle	0
+192	10	60 grams butter	60.0	grams	g	1
+192	0	4 tablespoons of cream	4.0	tablespoons	T	2
+192	0	40 mussels	40.0			3
+192	4	1 medium onion, finely chopped	1.0			4
+192	0	5 pieces of pancetta, sliced into pieces	5.0	pieces		5
+192	0	Salt and freshly ground black pepper, to taste	4.0	servings	servings	6
+192	23	3 whole cloves garlic (chopped)	3.0	cloves	cloves	7
+192	43	1/4 cup freshly chopped parsley	0.25	cup	c	8
+193	0	1/2 teaspoon baking soda	0.5	teaspoon	t	0
+193	10	75g butter	75.0	g	g	1
+193	0	1 3/4 c. buttermilk	1.75	c	c	2
+193	0	1/2 c. (2 oz.) plain cake flour	2.0	oz	oz	3
+193	0	1 1/2 t. cream of tartar	1.5	t	t	4
+193	50	1/2 cup dark brown sugar	0.5	cup	c	5
+193	0	1/2 c. dried apricots, chopped	0.5	c	c	6
+193	0	2 1/2 c. (7 1/2 oz.) old-fashioned oatmeal	7.5	oz	oz	7
+193	6	1/4 teaspoon salt	0.25	teaspoon	t	8
+193	0	3/4 cup unbleached all-purpose flour	0.75	cup	c	9
+193	0	1/2 cup coarsely chopped walnuts or almonds (2 ounces/60 grams)	0.5	cup	c	10
+193	14	1 whole egg	1.0			11
+193	110	1 c. (5 1/2 oz.) whole-wheat flour	5.5	oz	oz	12
+194	8	1 tsp Baking powder	1.0	tsp	t	0
+194	0	1 teaspoon baking soda	1.0	teaspoon	t	1
+194	14	3 eggs	3.0			2
+194	115	3 tablespoons of milk or half in half if the batter is too think	3.0	tablespoons	T	3
+194	15	120g Plain flour	120.0	g	g	4
+194	0	4 ounces frozen raspberries	4.0	ounces	oz	5
+194	6	1/8 tsp pinch of salt	0.125	tsp	t	6
+194	126	1 pint sour cream	1.0	pint	pt	7
+194	114	1 cup white sugar	1.0	cup	c	8
+195	0	3/4 teaspoon aniseed	0.75	teaspoon	t	0
+195	0	2 teaspoons baking soda	2.0	teaspoons	t	1
+195	0	1/3 cup dark rum	0.3333333333333333	cup	c	2
+195	83	1 1/2 tablespoons chopped fresh rosemary	1.5	tablespoons	T	3
+195	17	1 tablespoon honey	1.0	tablespoon	T	4
+195	20	1 tablespoon milk	1.0	tablespoon	T	5
+195	0	1/2 cup pecans, toasted and roughly chopped	0.5	cup	c	6
+195	39	1 1/2 cups plain yogurt	1.5	cups	c	7
+195	0	1/2 cup raisins	0.5	cup	c	8
+195	6	2 teaspoons salt, divided	2.0	teaspoons	t	9
+195	110	2 cups whole wheat flour	2.0	cups	c	10
+196	0	Bouquet Garni: 2 bay leaves, 2 sprigs of thyme, 5 garlic cloves, 10 black peppercorns	2.0			0
+196	0	1 corned beef or beef brisket (about 3 pounds)	3.0	pounds	lb	1
+196	0	3 1/2 cups Swanson® Beef Broth or Swanson® Beef Stock	3.5	cups	c	2
+196	2	Diced carrots	10.0	servings	servings	3
+196	99	1/4 cup cider vinegar	0.25	cup	c	4
+196	24	1 head green cabbage, trimmed and cut into 6 wedges (about 2 pounds)	1.0	head	head	5
+196	4	2 medium onions, cut into quarters	2.0			6
+196	27	5 diced potatoes	5.0			7
+197	58	1 teaspoon freshly ground black pepper	1.0	teaspoon	t	0
+197	0	2 stalks celery, finely chopped	2.0	stalks	stalks	1
+197	72	2 tablespoons extra-virgin olive oil	2.0	tablespoons	T	2
+197	23	5 cloves garlic, minced	5.0	cloves	cloves	3
+197	18	Juice of 1 lemon	1.0			4
+197	0	1 head kale, stemmed and roughly chopped (about 8 cups)	8.0	cups	c	5
+197	97	2 teaspoons kosher salt	2.0	teaspoons	t	6
+197	25	2 medium leeks, tough green outer leaves removed, washed well (see Kitchen Tip), and thinly sliced	2.0			7
+197	129	3 large russet potatoes, peeled and cut into cubes (about 2 cups)	3.0			8
+197	150	1/4 head savoy cabbage, roughly chopped (3 cups)	3.0	cups	c	9
+197	105	8 cups Roasted Vegetable Stock or store-bought low-sodium vegetable broth	8.0	cups	c	10
+198	0	1/2 cup baileys Irish Cream Syrup	0.5	cup	c	0
+198	0	1 chunk Xocai Healthy Chocolate Nugget, grated	1.0			1
+198	0	2 Xocai Healthy Chocolate Nuggets	2.0			2
+198	0	4 tbsps Irish Whiskey	4.0	tbsps	T	3
+198	0	1 Dollop of Whipped Cream	1.0			4
+199	0	1 1/2 cups uncooked arborio rice	1.5	cups	c	0
+199	0	1 1/2 pounds asparagus cut (sliced into 1 inch pieces)	1.5	pounds	lb	1
+199	0	1/2 cup dry white wine	0.5	cup	c	2
+199	43	1/4 cup chopped fresh parsley	0.25	cup	c	3
+199	23	2 cloves minced garlic	2.0	cloves	cloves	4
+199	18	1 tablespoon fresh lemon juice	1.0	tablespoon	T	5
+199	0	1 teaspoon grated lemon rind	1.0	teaspoon	t	6
+199	72	1 tablespoon olive oil	1.0	tablespoon	T	7
+199	4	1/2 cup onion, chopped	0.5	cup	c	8
+199	0	1/4 cup grated fresh parmesan cheese	0.25	cup	c	9
+199	0	1/2 cup frozen peas (don't thaw)	0.5	cup	c	10
+199	0	1/4 teaspoon pepper	0.25	teaspoon	t	11
+199	0	or other short-grain rice	4.0	servings	servings	12
+199	105	2 14.5 oz cans vegetable broth	29.0	oz	oz	13
+199	7	Water	4.0	servings	servings	14
+200	67	14.5 oz. can diced tomatoes	14.5	oz	oz	0
+200	69	1 head of cauliflower, cut into bite-sized pieces (no larger that 1-inch)	1.0	head	head	1
+200	14	2 eggs, well beaten	2.0			2
+200	15	1 cup All-purpose flour	1.0	cup	c	3
+200	87	3-4 T. chopped fresh basil	3.0	T	T	4
+200	23	1 teaspoon minced garlic	1.0	teaspoon	t	5
+200	143	3/4 t. garlic powder	0.75	t	t	6
+200	58	1/8 t. fresh ground black pepper	0.125	t	t	7
+200	72	2 tablespoons Olive oil	2.0	tablespoons	T	8
+200	0	2 c. panko bread crumbs	2.0	c	c	9
+200	0	3/4 c. fresh grated Parmesan cheese	0.75	c	c	10
+200	61	pinch of crushed red pepper flakes	1.0	pinch	pinch	11
+200	6	Salt to taste	4.0	servings	servings	12
+200	7	1 T. water	1.0	T	T	13
+201	0	2 1/4 cup baking mix (like Bisquick or Jiffy)	2.25	cup	c	0
+201	87	pinch of basil	1.0	pinch	pinch	1
+201	0	Herbed Parmesan Drop Biscuits	6.0	servings	servings	2
+201	42	1 lb ground beef or equivalent amount of a ground beef/bulk Italian sausage mix	1.0	lb	lb	3
+201	0	1 tsp Italian seasoning	1.0	tsp	t	4
+201	20	1 cup milk	1.0	cup	c	5
+201	45	pinch of oregano	1.0	pinch	pinch	6
+201	0	1/4 cup grated Parmesan cheese	0.25	cup	c	7
+201	0	Additional Parmesan cheese for topping	6.0	servings	servings	8
+201	0	1 - 26 oz jar of pasta sauce or 1 can pizza sauce	26.0	oz	oz	9
+201	0	Pepperoni slices (I used 1/2 of a package of Hormel brand)	0.5			10
+201	0	1/2 cup shredded aged Provolone	0.5	cup	c	11
+201	61	1/8 - 1/2 tsp crushed red pepper flakes	0.125	tsp	t	12
+201	0	1/2 cup ricotta	0.5	cup	c	13
+201	0	2 cups shredded mozzarella	2.0	cups	c	14
+202	0	2 handfuls of baby spinach (how much you prefer/have room for, it wilts down a lot)	2.0	handfuls	handfuls	0
+202	23	2-4 garlic cloves, minced	2.0	cloves	cloves	1
+202	55	4-6 oz mushrooms, sliced	4.0	oz	oz	2
+202	72	1 tablespoon olive oil	1.0	tablespoon	T	3
+202	0	3 tablespoons parmesan cheese, sprinkled on top (optional)	3.0	tablespoons	T	4
+202	0	1/2 c. part-skim ricotta	0.5	c	c	5
+202	0	Pasta sauce: red jarred sauce, homemade or your favorite (Amount varies on your preference, I used maybe 1/3 of a jar)	0.3333333333333333			6
+202	0	Salt and pepper to taste	4.0	servings	servings	7
+202	0	4 oz 2% milk mozzarella cheese	4.0	oz	oz	8
+202	123	1 sweet onion, diced	1.0			9
+202	0	6 whole wheat lasagna noodles, broken into thirds	6.0			10
+202	0	1 yellow squash, sliced and chopped	1.0			11
+202	0	1 medium zucchini, shredded	1.0			12
+203	0	1 can of Cannellini beans- Rinsed and drained	1.0	can	can	0
+203	79	1 ounce of 15 can of tomato sauce	1.0	ounce	oz	1
+203	67	1 can of diced tomatoes (no salt added)	1.0	can	can	2
+203	2	2 carrots thinly sliced	2.0			3
+203	0	7 cups of chicken stock	7.0	cups	c	4
+203	58	Fresh cracked black pepper	1.0	serving	serving	5
+203	0	1/2 box (maybe a little less than 1/2) of Ditalini pasta	0.5	box	box	6
+203	23	6 cloves garlic, chopped	6.0	cloves	cloves	7
+203	97	Kosher salt	1.0	serving	serving	8
+203	80	Madras curry powder	1.0	serving	serving	9
+203	41	Paprika	1.0	serving	serving	10
+203	0	1 can of Dark Red Kidney beans- Rinsed and drained	1.0	can	can	11
+203	61	Red pepper flakes	1.0	serving	serving	12
+203	128	3 cups red potatoes, cubed	3.0	cups	c	13
+203	164	3 cups of uncooked Spinach	3.0	cups	c	14
+203	123	1 sweet onion	1.0			15
+203	47	4 vine ripe tomatoes	4.0			16
+204	101	2 tablespoons balsamic vinegar	2.0	tablespoons	T	0
+204	87	1/4 cup Shredded fresh basil leaves	0.25	cup	c	1
+204	72	6 tablespoons extra-virgin olive oil	6.0	tablespoons	T	2
+204	172	1 pound fresh mozzarella cheese sliced 1/4" thick	1.0	pound	lb	3
+204	0	3 tablespoons Parmesan cheese, grated	3.0	tablespoons	T	4
+204	0	1 salt and freshly ground pepper to taste	1.0			5
+204	47	4 ripe tomatoes sliced 1/4" inch thick	4.0			6
+205	0	1 bay leaf	1.0			0
+205	0	1 can cannellini beans	1.0	can	can	1
+205	67	14 ounces can diced tomatoes	14.0	ounces	oz	2
+205	2	3 carrots	3.0			3
+205	0	32 ounces container chicken stock	32.0	ounces	oz	4
+205	0	4 spicy Italian sausages	4.0			5
+205	0	2 teaspoons Italian seasoning	2.0	teaspoons	t	6
+205	72	1 tablespoon olive oil	1.0	tablespoon	T	7
+205	4	1 onion	1.0			8
+205	61	1/4 teaspoon red pepper flakes	0.25	teaspoon	t	9
+205	0	Salt and Pepper	6.0	servings	servings	10
+205	164	1 bag fresh spinach	1.0	bag	bag	11
+206	0	2 bay leaves	2.0			0
+206	67	28 ounces can of whole tomatoes	28.0	ounces	oz	1
+206	0	1/2 cup of club soda	0.5	cup	c	2
+206	0	5 cups of seafood stock/ fish stock (sub with chicken stock)	5.0	cups	c	3
+206	43	Fresh parsley, chopped	3.0	servings	servings	4
+206	23	4 cloves garlic	4.0	cloves	cloves	5
+206	0	20 Mussels, fresh preferably, I used the frozen packs	20.0			6
+206	4	1 onion, chopped	1.0			7
+206	136	20 Baby Portobello mushrooms, sliced in half	20.0			8
+206	6	2 teaspoons of salt	2.0	teaspoons	t	9
+206	0	tablespoon Italian seasoning, 2	1.0	tablespoon	T	10
+206	52	1 Shrimps, peeled and devined	1.0			11
+206	0	Tilapia, cut into 1.5 chunks	3.0	servings	servings	12
+206	47	1 fresh tomato (optional)	1.0			13
+206	70	4 ounces can of tomato paste	4.0	ounces	oz	14
+207	0	1 large artichoke (1 pound)	1.0	pound	lb	0
+207	0	1 Bay Leaf	1.0			1
+207	0	1/4 tsp coriander seeds	0.25	tsp	t	2
+207	88	1/2 tsp dried basil	0.5	tsp	t	3
+207	45	1/2 tsp dried oregano	0.5	tsp	t	4
+207	23	1 Garlic Clove, sliced thin	1.0	clove	clove	5
+208	0	2 fresh chilies	2.0			0
+208	23	1 tablespoon minced garlic	1.0	tablespoon	T	1
+208	58	Ground black pepper	3.0	servings	servings	2
+208	18	2 lemons, juiced	2.0			3
+208	43	1/2 cup of chopped parsley leaves	0.5	cup	c	4
+208	0	250 grams of pasta shells (cook pasta according to packet's instructions)	250.0	grams	g	5
+208	76	1 red pepper	1.0			6
+208	102	400 grams of tuna, drained and flaked	400.0	grams	g	7
+209	87	Generous handful basil leaves, torn	1.0	handful	handful	0
+209	0	500 grams day-old country bread (preferably unsalted), thickly sliced	500.0	grams	g	1
+209	72	extra-virgin olive oil to drizzle	4.0	servings	servings	2
+209	23	4 garlic cloves minced	4.0	cloves	cloves	3
+209	25	3 leeks, finely chopped	3.0			4
+209	0	1 liter meat stock (made with beef and chicken)	1.0	liter	l	5
+209	72	1/4 cup olive oil	0.25	cup	c	6
+209	96	Sea salt and freshly ground black pepper	4.0	servings	servings	7
+209	67	2 liters puréed canned Italian tomatoes	2.0	liters	l	8
+210	101	1 tablespoon balsamic vinegar	1.0	tablespoon	T	0
+210	0	1 1/2 pounds Brussels sprouts, cleaned and halved	1.5	pounds	lb	1
+210	72	5 tablespoons extra-virgin olive oil	5.0	tablespoons	T	2
+210	23	1 clove of garlic chopped	1.0	clove	clove	3
+210	97	Kosher salt and freshly ground black pepper to taste	4.0	servings	servings	4
+211	23	5 Garlic Cloves (finely chopped)	5.0	cloves	cloves	0
+211	0	8 Leaves of Kale (stems removed and cut into ribbons)	8.0	Leaves	Leaves	1
+211	72	1/4 teaspoon olive oil	0.25	teaspoon	t	2
+211	4	1 onion, chopped	1.0			3
+211	0	Pepper	4.0	servings	servings	4
+211	0	1 cup Quinoa	1.0	cup	c	5
+211	0	10 ounces Poached Salmon (flaked)*	10.0	ounces	oz	6
+211	6	salt, dry mustard and Worcestershire sauce to taste	4.0	servings	servings	7
+211	0	32 ounces Organic Vegetable Stock	32.0	ounces	oz	8
+212	0	1 bay leaf	1.0			0
+212	0	1 14 oz can cannellini beans	14.0	oz	oz	1
+212	2	4 carrots	4.0			2
+212	88	1 1/2 tsp Dried Basil	1.5	tsp	t	3
+212	0	1 1/2 cups (6 oz) elbow macaroni	6.0	oz	oz	4
+212	58	1 tsp Ground Pepper	1.0	tsp	t	5
+212	72	2 tsps olive oil	2.0	tsps	t	6
+212	4	1 onion	1.0			7
+212	0	1 tsp Grated Parmesan Cheese	1.0	tsp	t	8
+212	6	1 1/2 tsp salt	1.5	tsp	t	9
+212	47	2 14 oz cans diced tomato	28.0	oz	oz	10
+212	0	2 zucchini	2.0			11
+213	88	1 teaspoon DRIED BASIL	1.0	teaspoon	t	0
+213	45	1 teaspoon OREGANO	1.0	teaspoon	t	1
+213	87	12 LARGE BASIL LEAVES	12.0			2
+213	58	3/4 teaspoon CRACKED BLACK PEPPER	0.75	teaspoon	t	3
+213	0	1 teaspoon FRESH MINCED CHIVES	1.0	teaspoon	t	4
+213	45	1 teaspoon FRESH MINCED OREGANO	1.0	teaspoon	t	5
+213	43	2 tablespoons FRESH MINCED PARSLEY	2.0	tablespoons	T	6
+213	144	10 FRESH SAGE LEAVES- CUT INTO CHIFFONADE	10.0			7
+213	23	4 MINCED GARLIC CLOVES	4.0	cloves	cloves	8
+213	0	3/4 teaspoon GARLIC SALT	0.75	teaspoon	t	9
+213	16	1/2 teaspoon GROUND NUTMEG	0.5	teaspoon	t	10
+213	0	8 sheets OF LASAGNA	8.0	sheets	sheets	11
+213	0	16 ounces LOW FAT RICOTTA CHEESE	16.0	ounces	oz	12
+213	55	4 MUSHROOMS DICED	4.0			13
+213	72	4 tablespoons OLIVE OIL	4.0	tablespoons	T	14
+213	0	1/4 cup SHREDDED OR GRATED PARMESAN	0.25	cup	c	15
+213	0	1/2 cup CUBE DICED PECORINO CHEESE	0.5	cup	c	16
+213	61	1/2 teaspoon RED PEPPER FLAKES	0.5	teaspoon	t	17
+213	0	1/4 cup SHREDDED MOZZARELLA	0.25	cup	c	18
+213	164	1 cup SPINACH- WASHED	1.0	cup	c	19
+213	47	28 OZ CAN WHOLE SAN MARZANO TOMATOES	28.0			20
+213	0	1 SMALL ZUCCHINI SHREDDED	1.0			21
+214	0	8 tsps brown rice miso	8.0	tsps	t	0
+214	2	2 lg. carrots, cut into pieces	2.0			1
+214	53	3/4 cup sliced daikon radish	0.75	cup	c	2
+214	94	1/2 cup chopped green onion	0.5	cup	c	3
+214	54	3/4 sliced shiitake mushrooms	0.75			4
+214	148	1 1/2 cups sliced napa cabbage	1.5	cups	c	5
+214	28	2 Tbsps toasted sesame oil	2.0	Tbsps	Tbsps	6
+214	31	1/2 cup snow peas	0.5	cup	c	7
+214	7	8 cups water	8.0	cups	c	8
+214	0	2 cups chopped yams (with peels)	2.0	cups	c	9
+214	0	1 cup zucchini, cut into pieces	1.0	cup	c	10
+215	2	1 Carrot thinly sliced	1.0			0
+215	158	1/2 Iceberg lettuce head torn	0.5			1
+215	74	2 tsps Light soy sauce	2.0	tsps	t	2
+215	0	3 Tbsps Mirin (Japanese rice wine)	3.0	Tbsps	Tbsps	3
+215	0	3/4 cup Red miso (soybean paste)	0.75	cup	c	4
+215	28	1/4 tsp Sesame oil	0.25	tsp	t	5
+215	46	1 Tbsp Toasted sesame seeds	1.0	Tbsp	Tbsp	6
+215	114	3 Tbsps Sugar	3.0	Tbsps	Tbsps	7
+215	7	2 Tbsps Hot water	2.0	Tbsps	Tbsps	8
+216	0	6 chicken drumsticks	6.0			0
+216	23	2 cloves of garlic diced	2.0	cloves	cloves	1
+216	141	1 tablespoon of shredded ginger	1.0	tablespoon	T	2
+216	17	1 teaspoon of honey	1.0	teaspoon	t	3
+216	4	1 onion, sliced	1.0			4
+216	6	Salt, pepper, garlic,	1.0	serving	serving	5
+216	0	1 cup of teriyaki sauce	1.0	cup	c	6
+216	71	1 teaspoon of vegetable oil	1.0	teaspoon	t	7
+217	0	2 cups broccoli florets	2.0	cups	c	0
+217	50	1 tablespoon brown sugar	1.0	tablespoon	T	1
+217	40	1 tablespoon cornstarch	1.0	tablespoon	T	2
+217	28	1 teaspoon dark sesame oil	1.0	teaspoon	t	3
+217	0	1/2 pound beef sirloin or flank steak, cut into 1/2" strips	0.5	pound	lb	4
+217	23	1 teaspoon garlic, minced	1.0	teaspoon	t	5
+217	141	1 tablespoon ginger, peeled and minced	1.0	tablespoon	T	6
+217	55	1 cup chopped mushrooms	1.0	cup	c	7
+217	71	6 teaspoons Oil	6.0	teaspoons	t	8
+217	76	1 cup sliced red bell pepper	1.0	cup	c	9
+217	94	2 tablespoons chopped scallions	2.0	tablespoons	T	10
+217	46	2 teaspoons sesame seeds, toasted	2.0	teaspoons	t	11
+217	74	1/4 cup soy sauce	0.25	cup	c	12
+218	50	2 TBSP Brown Sugar	2.0	TBSP	TBSP	0
+218	40	1/2 TBSP cornstarch	0.5	TBSP	TBSP	1
+218	23	2 TBSP Garlic, minced	2.0	TBSP	TBSP	2
+218	141	2 TBSP Ginger, minced	2.0	TBSP	TBSP	3
+218	94	1 Green onion, sliced	1.0			4
+218	18	2 TBSP Lemon Juice	2.0	TBSP	TBSP	5
+218	0	1/2 cup low sodium soy sauce	0.5	cup	c	6
+218	0	2 TBSP Mirin	2.0	TBSP	TBSP	7
+218	28	1 TBSP sesame oil	1.0	TBSP	TBSP	8
+218	46	2 TBSP sesame seeds	2.0	TBSP	TBSP	9
+218	54	6 oz shiitake mushrooms	6.0	oz	oz	10
+218	0	2 Boneless Skinless Chicken Breasts	2.0			11
+218	0	6 oz soba noodles	6.0	oz	oz	12
+218	32	2 TBSP Sriracha	2.0	TBSP	TBSP	13
+219	0	1 cup arborio rice	1.0	cup	c	0
+219	91	1/4 cup chives, finely chopped+ to garnish	0.25	cup	c	1
+219	23	3 cloves of garlic, finely chopped	3.0	cloves	cloves	2
+219	0	1 hokkaido squash, small size	1.0			3
+219	72	3 tablespoons olive oil	3.0	tablespoons	T	4
+219	4	1 onion, medium size, finely chopped	1.0			5
+219	0	20 grams parmesan cheese, grated, (to make crisps, see the recipe here)	20.0	grams	g	6
+219	0	40 grams parmigiano reggiano (parmesan), grated	40.0	grams	g	7
+219	0	1/4 cup pomegranate seeds+ to garnish	0.25	cup	c	8
+219	0	salt and pepper to taste	2.0	servings	servings	9
+219	7	400 milliliters water (more or less)	400.0	milliliters	ml	10
+220	0	6 cups baby spinach leaves (about 6 oz) rinsed, drained	6.0	oz	oz	0
+220	0	1/2 pound boned skinned chicken breast rinsed and cut into 1/4" strips	0.5	pound	lb	1
+220	0	6 cups cooked rice	6.0	cups	c	2
+220	14	5 large eggs (yolks and whites separated)	5.0			3
+220	0	1 cup fat-skimmed chicken broth	1.0	cup	c	4
+220	141	2 tablespoons minced fresh ginger	2.0	tablespoons	T	5
+220	4	1 onion - (6 oz) peeled, and	6.0	oz	oz	6
+220	47	1/4 cup diced Roma tomato	0.25	cup	c	7
+220	74	2 tablespoons Soy sauce	2.0	tablespoons	T	8
+220	114	4 tablespoons sugar	4.0	tablespoons	T	9
+220	71	1 cup salad oil	1.0	cup	c	10
+221	2	1/2 Carrot -- shredded	0.5			0
+221	0	4 cups Homemade chicken stock	4.0	cups	c	1
+221	0	4 tablespoons Dry sherry	4.0	tablespoons	T	2
+221	94	1 Green onion -- finely	1.0			3
+221	145	1/2 Lemon -- thinly sliced	0.5			4
+221	55	4 Mushrooms -- thinly sliced	4.0			5
+221	74	2 tablespoons Soy sauce	2.0	tablespoons	T	6
+221	0	1 Block Firm Tofu	1.0			7
+221	0	Tofu -- 5 cubes per serving	5.0	cubes	cubes	8
+222	24	1 lg. head cabbage (slawed)	1.0	head	head	0
+222	94	3 green onions thinly sliced	3.0			1
+222	0	1 teaspoon pepper	1.0	teaspoon	t	2
+222	0	2 pkgs. Ramen Pride (oriental) noodles (do not cook or use broth)	2.0	pkgs	pkgs	3
+222	0	6 tablespoons rice vinegar	6.0	tablespoons	T	4
+222	6	2 teaspoons salt	2.0	teaspoons	t	5
+222	46	2 tablespoons sesame seeds	2.0	tablespoons	T	6
+222	0	8 tablespoons slivered almonds (2 1/4 oz. pkg.)	8.0	tablespoons	T	7
+222	114	4 tablespoons sugar	4.0	tablespoons	T	8
+222	71	1 cup salad oil	1.0	cup	c	9
+223	2	3 small carrots, chop bite size	3.0			0
+223	80	1/2 package Japanese curry, such as S&B Golden Curry (look for this in the Asian section of supermarkets or on Amazon.com)	0.5	package	pkg	1
+223	71	1 tablespoon neutral oil	1.0	tablespoon	T	2
+223	4	1 medium size onion, finely chopped	1.0			3
+223	27	2 potatoes, chopped bite size	2.0			4
+223	0	1 package puff pastry dough sheets	1.0	packagesheet	packagesheet	5
+223	7	2 tablespoons Water	2.0	tablespoons	T	6
+224	124	1 tablespoon tonkatsu sauce (vegetable and fruit sauce. I use Bull-Dog)	1.0	tablespoon	T	0
+224	58	1/4 teaspoon Black pepper	0.25	teaspoon	t	1
+224	0	1/4 pound boneless chicken breast, cut into small cubes	0.25	pound	lb	2
+224	2	1 small carrot, finely chopped	1.0			3
+224	14	2 eggs	2.0			4
+224	23	2 garlic cloves, finely chopped	2.0	cloves	cloves	5
+224	97	1/4 teaspoon kosher salt	0.25	teaspoon	t	6
+224	71	2 tablespoons neutral oil (canola, grapeseed)	2.0	tablespoons	T	7
+224	0	1 cup frozen green peas (thawed)	1.0	cup	c	8
+224	174	3 cups cooked Japanese rice	3.0	cups	c	9
+224	74	2 tablespoons soy sauce	2.0	tablespoons	T	10
+225	2	2 carrots, thinly sliced	2.0			0
+225	0	3 teaspoons Hon Dashi	3.0	teaspoons	t	1
+225	141	1 tablespoon fresh ginger, minced	1.0	tablespoon	T	2
+225	0	6 inches length of kombu, wiped with damp cloth	6.0	inches	inches	3
+225	0	3 tablespoons mirin	3.0	tablespoons	T	4
+225	0	3 tablespoons miso	3.0	tablespoons	T	5
+225	0	package fresh Udon or fresh rice noodles	1.0	package	pkg	6
+225	94	2 scallions, minced	2.0			7
+225	74	1/2 cup soy sauce	0.5	cup	c	8
+225	164	1/2 pound fresh spinach	0.5	pound	lb	9
+225	114	1 tablespoon sugar	1.0	tablespoon	T	10
+225	0	8 ounces firm tofu (preferably silken), cut in �" cubes	8.0	ounces	oz	11
+225	7	130 ml water	130.0	ml	ml	12
+226	23	1/2 teaspoon Minced Garlic	0.5	teaspoon	t	0
+226	141	1 1/2 teaspoons ginger root	1.5	teaspoons	t	1
+226	0	1/2 cup Mirin	0.5	cup	c	2
+226	0	4 ounces Udon noodles uncooked or vermicelli	4.0	oz	oz	3
+226	94	1/2 cup green onion thinly sliced	0.5	cup	c	4
+226	0	1 tablespoon low sodium soy sauce	1.0	tablespoon	T	5
+226	28	1 tablespoon Oriental sesame oil	1.0	tablespoon	T	6
+226	0	2 can reduced sodium beef broth (14.5 oz)	14.5	oz	oz	7
+226	54	8 ounces shiitake mushrooms dried or fresh if dried, rehydrate before using stems disca	8.0	ounces	oz	8
+226	0	1 1/2 teaspoons hot chile oil or 2 tsp vegetable oil plus 1/2 crushed red pepper flakes	1.5	teaspoons	t	9
+227	0	1 hot chili pepper, seeded and finely minced	1.0			0
+227	17	1 teaspoon honey	1.0	teaspoon	t	1
+227	0	12 slices salmon, about 2 to 3 ounces	12.0	slices	slices	2
+227	94	2 scallions, green part only, thinly sliced	2.0			3
+227	28	2 teaspoons sesame oil divided	2.0	teaspoons	t	4
+227	46	1 tablespoon sesame seeds	1.0	tablespoon	T	5
+227	74	1/2 cup to mari soy sauce	0.5	cup	c	6
+227	98	1 teaspoon vinegar	1.0	teaspoon	t	7
+228	0	1 pound well-trimmed beef top sirloin 3 cups sliced napa cabbage	1.0	pound	lb	0
+228	2	1/2 cup thin diagonally sliced carrots	0.5	cup	c	1
+228	0	1 cup cooked rice	1.0	cup	c	2
+228	31	24 pea pods, blanched	24.0			3
+228	0	1/2 cup thin sliced cucumber	0.5	cup	c	4
+228	0	3 tablespoons dry sherry	3.0	tablespoons	T	5
+228	141	1/2 teaspoon grated fresh ginger	0.5	teaspoon	t	6
+228	94	1 green onion, sliced diagonally (not to be cooked)	1.0			7
+228	30	2 tablespoons hoisin sauce	2.0	tablespoons	T	8
+228	74	3 tablespoons light soy sauce	3.0	tablespoons	T	9
+228	28	1 tablespoon Oriental dark roasted sesame oil	1.0	tablespoon	T	10
+228	29	1/2 cup thin sliced radishes	0.5	cup	c	11
+228	0	3 tablespoons rice wine vinegar	3.0	tablespoons	T	12
+228	157	3 cups romaine lettuce, cut 1/4 inch	3.0	cups	c	13
+228	114	1 tablespoon sugar	1.0	tablespoon	T	14
+228	7	3 tablespoons water	3.0	tablespoons	T	15
+229	10	1 cup butter	1.0	cup	c	0
+229	0	25 grams Caster Sugar	25.0	grams	g	1
+229	13	125 grams cream cheese at room temperature	125.0	grams	g	2
+229	0	1/4 teaspoon cream of tartar	0.25	teaspoon	t	3
+229	20	40 mls milk	40.0	mls	mls	4
+229	0	1 tablespoon scant orange juice	1.0	tablespoon	T	5
+229	0	1 tablespoon orange zest	1.0	tablespoon	T	6
+229	6	1 teaspoon salt	1.0	teaspoon	t	7
+229	0	40 grams self raising flour ( or cake flour)	40.0	grams	g	8
+229	0	3 large eggs, white and yolk seperated	3.0			9
+230	11	3 tablespoons canola or corn oil	3.0	tablespoons	T	0
+230	80	2 1/2 tablespoons curry powder, plus more to taste	2.5	tablespoons	T	1
+230	4	2 mediums onions, halved vertically and thinly sliced	2.0			2
+230	38	1 cup frozen peas	1.0	cup	c	3
+230	0	1 pound portobello mushrooms (stems and caps), cut into 1 inch cubes, or 1	1.0	pound	lb	4
+230	0	1/4 cup plus 1 tablespoon cornstarch or potato starch	0.25	cup	c	5
+230	27	1 1/2 pounds potatoes, cut into 1- to 1 1/2 inch cubes	1.5	pounds	lb	6
+230	96	1 teaspoon sea salt, plus more to taste	1.0	teaspoon	t	7
+230	125	2 1/2 tablespoons tamari, plus more to taste	2.5	tablespoons	T	8
+230	0	tofu, cut	1.0	serving	serving	9
+230	55	white mushrooms, halved or quartered (depending on size)	1.0	serving	serving	10
+231	0	Asparagus	1.0	serving	serving	0
+231	0	Cooked octopus	1.0	serving	serving	1
+231	52	Cooked prawns	1.0	serving	serving	2
+231	0	Salmon	1.0	serving	serving	3
+231	0	Salmon caviar	1.0	serving	serving	4
+231	0	Lava seaweed	1.0	serving	serving	5
+231	54	Shiitake mushrooms	1.0	serving	serving	6
+231	0	Japanese sticky rice	1.0	serving	serving	7
+231	103	Raw tuna	1.0	serving	serving	8
+231	0	Wasabi	1.0	serving	serving	9
+232	77	Dried red chili peppers, optional	4.0	servings	servings	0
+232	0	3 to 4 Japanese cucumbers	3.0			1
+232	0	1 tablespoon rice vinegar	1.0	tablespoon	T	2
+232	28	1 teaspoon sesame oil	1.0	teaspoon	t	3
+232	74	2 tablespoons soy sauce	2.0	tablespoons	T	4
+233	0	6 baby carrots, cut up	6.0			0
+233	91	2 smalls chives, cut into squares	2.0			1
+233	141	1 ginger	1.0			2
+233	0	pinch of ginger powder-taste as you go to adjust flavors	1.0	pinch	pinch	3
+233	55	8 shitaki mushrooms, cut up lengthwise	8.0			4
+233	0	1 parsnip, cut up	1.0			5
+233	61	pinch of red pepper flakes-taste as you go to adjust flavors	1.0	pinch	pinch	6
+233	0	1/2 package of a of Thai Kitchen Thin Rice Noodles	0.5	package	pkg	7
+233	164	bunch of fresh spinach	1.0	bunch	bunch	8
+233	0	1/2 of a block of firm tofu	0.5			9
+233	7	2 cups of water	2.0	cups	c	10
+233	4	1 yellow onion, chopped up	1.0			11
+233	0	1 zucchini, cut up	1.0			12
+234	40	2-3 tbsp. corn starch	2.0	tbsp	T	0
+234	0	1/2 cup dry red wine	0.5	cup	c	1
+234	0	4-5 oz. Kataifi pastry (shredded phyllo)	4.0	oz	oz	2
+234	116	2 egg whites, whisked	2.0			3
+234	0	2 filet mignon steaks, about 1 " thick	2.0			4
+234	141	1 tsp. finely chopped fresh ginger	1.0	tsp	t	5
+234	23	1 Clove garlic, finely chopped	1.0	Clove	Clove	6
+234	71	Oil for frying, brushing and grilling (a neutral oil such as Safflower is best)	2.0	servings	servings	7
+234	0	1 cup panko (Oriental bread bread crumbs)	1.0	cup	c	8
+234	61	1 tsp. hot pepper flakes (optional)	1.0	tsp	t	9
+234	0	1 tbsp. rice vinegar	1.0	tbsp	T	10
+234	74	2 tbsp. each: Light soy sauce, Raw Honey, Hoisin Sauce	2.0	tbsp	T	11
+234	7	4 sweet water shrimp with tails on (available at most Asian markets)	4.0			12
+235	0	Goji berries, some	2.0	servings	servings	0
+235	0	Dried kombu (seaweed/kelp), 7g	7.0	g	g	1
+235	0	tablespoon Mirin, 4	1.0	tablespoon	T	2
+235	0	tablespoon Sake, 1	1.0	tablespoon	T	3
+235	0	Salmon filet/loin, 250-300g	250.0	g	g	4
+235	46	teaspoon Sesame seeds, 1-2	1.0	teaspoon	t	5
+235	0	200g Soba (buckwheat noodles)	200.0	g	g	6
+235	74	tablespoon Soya sauce, 4	1.0	tablespoon	T	7
+235	114	tablespoon Sugar, 2	1.0	tablespoon	T	8
+235	71	tablespoon Vegetable oil, 1	1.0	tablespoon	T	9
+235	7	5 cups Water	5.0	cups	c	10
+236	58	Freshly-ground black pepper to taste	6.0	servings	servings	0
+236	2	2 large carrots, sliced	2.0			1
+236	0	2 large celery stalks with leaves on, chopped	2.0			2
+236	0	1 5-6 pound chicken	5.0	pound	lb	3
+236	0	Optional: fresh dill or parsley for garnish	6.0	servings	servings	4
+236	14	3 Eggs	3.0			5
+236	0	3 sprigs fresh dill	3.0	sprigs	sprigs	6
+236	0	1 cup matzo meal	1.0	cup	c	7
+236	4	1 onion, quartered	1.0			8
+236	43	3 sprigs parsley	3.0	sprigs	sprigs	9
+236	6	1/4 teaspoon Salt	0.25	teaspoon	t	10
+236	0	Salt and pepper, to taste	6.0	servings	servings	11
+236	0	1/4 cup seltzer water	0.25	cup	c	12
+236	71	4 tablespoons chicken fat or vegetable oil	4.0	tablespoons	T	13
+237	8	4 tsp.s baking powder	4.0	tsp	t	0
+237	12	2 tsp.s cinnamon	2.0	tsp	t	1
+237	14	6 eggs	6.0			2
+237	15	6 c.s unsifted all-purpose flour	6.0	c	c	3
+237	0	1 c. golden raisins	1.0	c	c	4
+237	0	1 can (6 oz.) pecans or walnuts, chopped (2 c.)	6.0	oz	oz	5
+237	0	1 jar (18 oz.) strawberry or cherry	18.0	oz	oz	6
+237	114	c. sugar	1.0	c	c	7
+237	71	1 c. salad oil	1.0	cup	c	8
+238	0	1/2 teaspoon cayenne	0.5	teaspoon	t	0
+238	14	2 large eggs	2.0			1
+238	143	1 teaspoon garlic powder	1.0	teaspoon	t	2
+238	166	1 teaspoon onion powder	1.0	teaspoon	t	3
+238	4	2 onions grated	2.0			4
+238	27	3 large potatoes peeled and grated	3.0			5
+238	0	2/3 cup rice flour	0.6666666666666666	cup	c	6
+238	0	salt and pepper	16.0	servings	servings	7
+239	127	applesauce and low-fat sour cream for serving	2.0	servings	servings	0
+239	14	1 Egg, beaten	1.0			1
+239	23	3 cloves of garlic, skinned and coarse grated	3.0	cloves	cloves	2
+239	141	1/2 inch of ginger, skinned and coarse grated (optional for garlic flavoring)	0.5	inch	inch	3
+239	0	1/2 C of parsnips, skinned and coarse grated	0.5	cup	c	4
+239	0	peanut or other high temperature cooking oil	2.0	servings	servings	5
+239	129	1 C of Yukon Gold or russet potatoes, skinned and coarse grated	1.0	cup	c	6
+239	0	salt and pepper to taste	2.0	servings	servings	7
+239	15	1 oz white flour	1.0	oz	oz	8
+239	0	1/2 C of yams, skinned and coarse grated	0.5	cup	c	9
+239	4	1/2 C of red or other onion, skinned and coarse grated	0.5	cup	c	10
+240	0	7 cups bread flour	7.0	cups	c	0
+240	50	� cup brown sugar	0.25	cup	c	1
+240	14	2 eggs	2.0			2
+240	6	1/4 teaspoon salt	0.25	teaspoon	t	3
+240	71	1/2 cup vegetable oil	0.5	cup	c	4
+240	7	3 tbsp. water	3.0	tbsp	T	5
+240	0	2 packages regular yeast	2.0	packages	packages	6
+241	0	1/2 brown rice flour (I use Bob's Red Mill)	0.5			0
+241	0	2 tablespoons evaporated cane sugar	2.0	tablespoons	T	1
+241	12	1 teaspoon Cinnamon	1.0	teaspoon	t	2
+241	0	1/2 cup coconut creamer (I use So Delicious brand)	0.5	cup	c	3
+241	0	1 1/2 cups vanilla coconut milk or unsweetened (I use So Delicious brand)	1.5	cups	c	4
+241	109	10 egg yolks, beaten	10.0			5
+241	12	1 1/2 teaspoons ground cinnamon	1.5	teaspoons	t	6
+241	16	1/2 teaspoon ground nutmeg	0.5	teaspoon	t	7
+241	97	2 tablespoons kosher salt, boiling pasta	2.0	tablespoons	T	8
+241	0	1 can pineapple chunks, drained	1.0	can	can	9
+241	0	1/2 tablespoon Earth Balance Soy Free Margarine	0.5	tablespoon	T	10
+241	0	1 16 ounce package spiral gluten free rice pasta	16.0	ounce	oz	11
+241	0	4 tablespoons sunflower oil	4.0	tablespoons	T	12
+241	0	1/8 cup xylitol	0.125	cup	c	13
+242	0	3 bay leaves	3.0			0
+242	0	1 (4 pound) beef brisket	4.0	pound	lb	1
+242	58	Freshly ground black pepper	10.0	servings	servings	2
+242	67	1 16 oz. can of chopped tomatoes	16.0	oz	oz	3
+242	2	2 carrots, coarsely chopped	2.0			4
+242	0	3 celery stalks, cut into chunks	3.0	stalks	stalks	5
+242	0	2 cups dry red wine	2.0	cups	c	6
+242	43	1 handful fresh flat-leaf parsley leaves	1.0	handful	handful	7
+242	83	4 sprigs fresh rosemary, needles striped from the stem and chopped	4.0	sprigs	sprigs	8
+242	23	6 garlic cloves, pressed	6.0	cloves	cloves	9
+242	97	1/2 teaspoon kosher salt	0.5	teaspoon	t	10
+242	72	Olive oil	10.0	servings	servings	11
+242	15	2 teaspoons plain flour	2.0	teaspoons	t	12
+242	4	4 large red onions, halved	4.0			13
+243	0	1/2 pound baby spinach, parboiled	0.5	pound	lb	0
+243	2	2 carrots, julienned	2.0			1
+243	23	2 cloves garlic, finely chopped	2.0	cloves	cloves	2
+243	55	5 mushrooms, sliced (I like to use criminis)	5.0			3
+243	72	2 tablespoons olive oil	2.0	tablespoons	T	4
+243	6	Salt to taste	4.0	servings	servings	5
+243	94	3 scallions, chopped	3.0			6
+243	28	2 tablespoons sesame oil	2.0	tablespoons	T	7
+243	46	Sesame seeds	4.0	servings	servings	8
+243	74	3 tablespoons soy sauce	3.0	tablespoons	T	9
+243	114	1 teaspoon sugar	1.0	teaspoon	t	10
+243	123	1 sweet onion, sliced into thin strips	1.0			11
+243	154	8 ounces sweet potato vermicelli noodles	8.0	ounces	oz	12
+243	0	1/2 cup zucchini, sliced into half-moons	0.5	cup	c	13
+244	130	1/2 apple or pear	0.5			0
+244	156	1 bunch Boston bibb lettuce	1.0	bunch	bunch	1
+244	50	1 tbsp brown sugar	1.0	tbsp	T	2
+244	0	2 lbs chicken thighs	2.0	lbs	lb	3
+244	23	3 garlic cloves	3.0	cloves	cloves	4
+244	141	1 tsp ginger	1.0	tsp	t	5
+244	61	1 tsp red pepper flakes	1.0	tsp	t	6
+244	94	scallions	4.0	servings	servings	7
+244	28	1 tsp sesame oil	1.0	tsp	t	8
+244	46	1 tsp sesame seeds (garnish)	1.0	tsp	t	9
+244	74	1/2 cup soy sauce	0.5	cup	c	10
+245	0	3 cups fresh baby spinach	3.0	cups	c	0
+245	51	1 1/2 cups bean sprouts	1.5	cups	c	1
+245	0	3/4 pound thin strips sirloin, rib eye or bulgogi beef	0.75	pound	lb	2
+245	2	1 cup carrots, julienned	1.0	cup	c	3
+245	109	4 egg yolks	4.0			4
+245	0	1 cup fresh shiitake mushrooms, thinly sliced	1.0	cup	c	5
+245	23	1 garlic clove, minced	1.0	clove	clove	6
+245	0	1/4 cup gochujang	0.25	cup	c	7
+245	94	1 cup green onions, chopped	1.0	cup	c	8
+245	0	10 ounces kimchi	10.0	ounces	oz	9
+245	0	1 cup Korean barbecue bulgogi marinade	1.0	cup	c	10
+245	6	Pinch of salt	1.0	pinch	pinch	11
+245	28	1/4 cup sesame oil	0.25	cup	c	12
+245	46	2 teaspoons toasted sesame seeds	2.0	teaspoons	t	13
+245	0	4 cups short grain white rice, cooked	4.0	cups	c	14
+245	114	Pinch of sugar	1.0	pinch	pinch	15
+245	0	3 cups high grade Korean sushi rice	3.0	cups	c	16
+245	0	3/4 cup firm tofu, rinsed and cut into 1-inch cubes	0.75	cup	c	17
+245	0	1 cup zucchini, julienned	1.0	cup	c	18
+246	0	2 lb beef short ribs	2.0	lb	lb	0
+246	14	2 egg strips (optional; garnish)	2.0			1
+246	23	4 cloves garlic minced	4.0	cloves	cloves	2
+246	0	4 oz sweet potato or glass noodles (dangmyun)	4.0	oz	oz	3
+246	58	1 tsp ground pepper	1.0	tsp	t	4
+246	29	1/2 large Korea radish, cut into 1 inch slices	0.5			5
+246	94	2 scallions, sliced into 1 inch pieces	2.0			6
+246	96	2 tsp sea salt (Kosher okay too)	2.0	tsp	t	7
+246	28	2 tsp sesame oil	2.0	tsp	t	8
+246	46	1/2 tsp toasted sesame seeds (optional; garnish)	0.5	tsp	t	9
+246	74	3 tbsp soy sauce	3.0	tbsp	T	10
+247	23	5 garlic cloves (minced)	5.0	cloves	cloves	0
+247	141	1 tablespoon ginger root minced or 2 tsp. ginger powder	1.0	tablespoon	T	1
+247	95	4 tablespoons dried ground chili pepper	4.0	tablespoons	T	2
+247	148	6 pounds Napa cabbage	6.0	pounds	lb	3
+247	6	Salt (if needed)	6.0	servings	servings	4
+247	94	2 cups sliced scallions	2.0	cups	c	5
+247	114	1 tablespoon sugar;	1.0	tablespoon	T	6
+248	50	1 cup brown sugar, packed	1.0	cup	c	0
+248	96	4 cups coarse sea salt	4.0	cups	c	1
+248	163	1/2 cup fish sauce	0.5	cup	c	2
+248	23	12 garlic cloves	12.0	cloves	cloves	3
+248	141	2 tbsp minced ginger	2.0	tbsp	T	4
+248	0	4 cups gochugaru (Korean red chili flakes)	4.0	cups	c	5
+248	94	3 green onions, cut into 2-inch pieces	3.0			6
+248	148	3 Napa cabbages	3.0			7
+248	29	2 cups radish (1/2 Korean radish), cut into matchstick pieces	2.0	cups	c	8
+248	0	3 tbsp sweet rice flour (simmered with 3 cups water)	3.0	tbsp	T	9
+248	4	1 yellow onion	1.0			10
+248	0	4 tbsp saewujeot (salted shrimp)	4.0	tbsp	T	11
+249	0	1/2 lb sirloin or tender cut beef, cut into thin strips	0.5	lb	lb	0
+249	10	1 tablespoon Butter or margarine	1.0	tablespoon	T	1
+249	0	8 (10-inch) flour tortillas	8.0	10-inch	10-inch	2
+249	143	1 tsp garlic powder	1.0	tsp	t	3
+249	94	2 green onions, thinly sliced diagonally	2.0			4
+249	0	2 cups kimchi, drained and chopped	2.0	cups	c	5
+249	72	1 tablespoon Olive oil	1.0	tablespoon	T	6
+249	0	Salt & freshly ground pepper	4.0	servings	servings	7
+249	46	2 tbsp sesame seeds, toasted	2.0	tbsp	T	8
+249	0	1, 2 cup shredded Sharp Cheddar	2.0	cup	c	9
+250	0	2 pounds Beef sirloin tips cut into pieces	2.0	pounds	lb	0
+250	23	1 Clove minced garlic, or crushed	1.0	Clove	Clove	1
+250	94	10 green onions, minced	10.0			2
+250	28	3 tablespoons sesame oil	3.0	tablespoons	T	3
+250	46	3 tablespoons toasted sesame seeds	3.0	tablespoons	T	4
+250	74	1/4 cup soy sauce	0.25	cup	c	5
+250	114	2 tablespoons sugar	2.0	tablespoons	T	6
+251	0	1 pound Beef flank steak, sliced into ½-inch slices	1.0	pound	lb	0
+251	58	Freshly ground black pepper	1.0	serving	serving	1
+251	91	1 tablespoon Snipped chives	1.0	tablespoon	T	2
+251	61	Crushed red pepper, to taste	1.0	serving	serving	3
+251	141	1 tablespoon Chopped fresh ginger	1.0	tablespoon	T	4
+251	23	2 cloves garlic (finely chopped)	2.0	cloves	cloves	5
+251	174	2 cups Cooked white long grain rice	2.0	cups	c	6
+251	6	Salt	1.0	serving	serving	7
+251	28	1/4 cup sesame oil	0.25	cup	c	8
+251	74	1 tablespoon soy sauce	1.0	tablespoon	T	9
+252	0	4 cups fresh baby spinach	4.0	cups	c	0
+252	51	1 1/2 cups bean sprouts	1.5	cups	c	1
+252	24	10 ounces cabbage kimchi	10.0	ounces	oz	2
+252	2	1 cup carrots, julienned	1.0	cup	c	3
+252	54	1 cup fresh shiitake mushrooms, thinly sliced	1.0	cup	c	4
+252	23	2 garlic cloves, minced	2.0	cloves	cloves	5
+252	0	1/4 cup gochujang	0.25	cup	c	6
+252	94	1 cup green onions, chopped	1.0	cup	c	7
+252	0	1/2 cup Korean barbecue bulgogi marinade	0.5	cup	c	8
+252	6	1 teaspoon Salt	1.0	teaspoon	t	9
+252	28	1/4 cup sesame oil	0.25	cup	c	10
+252	46	2 teaspoons toasted sesame seeds	2.0	teaspoons	t	11
+252	0	4 cups short-grain white rice, cooked	4.0	cups	c	12
+252	114	Pinch of sugar	1.0	pinch	pinch	13
+252	0	1 cup firm tofu, rinsed and cut into 1-inch cubes	1.0	cup	c	14
+252	0	1 cup zucchini, julienned	1.0	cup	c	15
+253	0	Brine solution (3- 4 liters water+ 1 1/2 cups coarse salt)	3.0	liters	l	0
+253	78	3 tablespoons chilly paste (reduce for less spicy)/ korean gochujang paste	3.0	tablespoons	T	1
+253	163	1/8 cup fish sauce	0.125	cup	c	2
+253	23	1 whole garlic bulb, skinned	1.0			3
+253	148	1 small napa cabbage, (abt 1/2 kg) quartered lengthways with stems attached and washed	1.0			4
+253	61	15 grams chilly flakes	15.0	grams	g	5
+253	29	150 grams radish, julienned	150.0	grams	g	6
+253	174	1/4 bowl cooked rice	0.25			7
+253	52	2 tablespoons fermented baby shrimps/ cincalok (you can even use brined fish/anchovies)	2.0	tablespoons	T	8
+253	94	40 grams spring onions, cut into abt 2" lengths	40.0	grams	g	9
+253	114	1/2 teaspoon sugar	0.5	teaspoon	t	10
+254	2	1 medium organic carrot, thinly sliced	1.0			0
+254	0	2 organic cucumbers, sliced	2.0			1
+254	163	1 tablespoon of fish sauce (can find at grocery store in Asian section)	1.0	tablespoon	T	2
+254	23	2 cloves organic garlic, minced	2.0	cloves	cloves	3
+254	141	1/2 inch of grated organic ginger	0.5	inch	inch	4
+254	17	1 tablespoon of honey	1.0	tablespoon	T	5
+254	18	1/2 Juice of a lemon	0.5			6
+254	0	cup of red pepper powder (can find at Korean market), plus more to taste	1.0	cup	c	7
+254	6	3 tablespoons of salt	3.0	tablespoons	T	8
+254	94	3 organic scallions, sliced, include green and white parts	3.0			9
+254	28	1 teaspoon of toasted sesame oil	1.0	teaspoon	t	10
+255	0	1 ahi tuna steak (approx. less than a 1 lb.)	1.0			0
+255	0	5 small leaves of fresh mint	5.0	leaves	leaves	1
+255	139	1/2 tablespoon rice vinegar (recommended: O Yuzu Rice Vinegar by O 1/2 of a Serrano pepper, very thinly sliced1 Juice of lime5 small leaves of fresh mintsprinkle of black sesame seeds (optional)	0.5			2
+255	139	1 Juice of lime	1.0			3
+255	160	1/2 of a Serrano pepper, very thinly sliced	0.5			4
+255	28	1 tsp. sesame oil	1.0	tsp	t	5
+255	74	1In medium bowl mix soy sauce, toasted sesame oil, rice vinegar, Serrano pepper, lime juice, mint, and sesame seeds. Then add diced tuna and toss to coat.	3.0	servings	servings	6
+255	74	5 tbsp. soy sauce	5.0	tbsp	T	7
+255	154	3Serve immediately by mounding atop crackers, chips, micro-greens, or even roasted sweet potato slices.	1.0	slicesslices	slicesslices	8
+256	0	1 avocado, peeled, pitted and sliced	1.0			0
+256	0	2 cups fresh baby spinach	2.0	cups	c	1
+256	58	1 tsp black pepper	1.0	tsp	t	2
+256	0	6 burrito size tortillas	6.0			3
+256	92	1/2 cup fresh cilantro, chopped	0.5	cup	c	4
+256	23	2 garlic cloves, pressed	2.0	cloves	cloves	5
+256	48	1 tsp ground cumin	1.0	tsp	t	6
+256	135	1 jalapeño, seeded and diced	1.0			7
+256	138	1 fresh lime, juiced	1.0			8
+256	97	1/2 tsp kosher salt	0.5	tsp	t	9
+256	138	1 fresh lime, cut into wedges	1.0			10
+256	139	1/2 cup fresh lime juice	0.5	cup	c	11
+256	72	1 Tbsp Olive oil	1.0	Tbsp	Tbsp	12
+256	4	1/2 cup onion, diced	0.5	cup	c	13
+256	4	1 small onion, diced	1.0			14
+256	41	1/2 tsp paprika	0.5	tsp	t	15
+256	47	2 Roma tomatoes, diced	2.0			16
+256	0	1 lb sirloin, trimmed and diced (1/2 inch)	1.0	lb	lb	17
+257	0	3 Tbs. - Capers Chopped (I left these out)	3.0	Tb	Tb	0
+257	92	1 Bunch Cilantro Chopped	1.0			1
+257	23	2 garlic cloves, finely minced	2.0	cloves	cloves	2
+257	58	1/2 Tsp. - Fresh Ground Black Pepper	0.5	Tsp	Tsp	3
+257	72	2 tablespoons olive oil	2.0	tablespoons	T	4
+257	43	1 Bunch Parsley Chopped	1.0			5
+257	61	1/2 Tsp. - Red Pepper Flakes	0.5	Tsp	Tsp	6
+257	100	3 tablespoons red wine vinegar	3.0	tablespoons	T	7
+257	6	1 1/2 Tsp. - Salt	1.5	Tsp	Tsp	8
+258	0	1 pound green or white asparagus, woody ends snapped off & discarded	1.0	pound	lb	0
+258	61	1/2 teaspoon chili pepper flakes	0.5	teaspoon	t	1
+258	0	Freshly cracked black pepper	4.0	servings	servings	2
+258	43	1 cup flat leaf parsley, lightly packed & rough chopped	1.0	cup	c	3
+258	0	1/4 cup fresh mint leaves	0.25	cup	c	4
+258	0	1/4 cup fresh oregano leaves	0.25	cup	c	5
+258	23	3 to 5 garlic cloves, rough chopped	3.0	cloves	cloves	6
+258	23	4 garlic cloves, peeled	4.0	cloves	cloves	7
+258	97	Kosher salt	4.0	servings	servings	8
+258	18	3 tablespoons lemon juice	3.0	tablespoons	T	9
+258	72	1/4 cup of extra-virgin olive oil	0.25	cup	c	10
+258	0	1 teaspoon freshly ground pepper	1.0	teaspoon	t	11
+258	100	2 tablespoons Red wine vinegar	2.0	tablespoons	T	12
+258	0	2 tablespoons shallot, chopped	2.0	tablespoons	T	13
+258	0	2 skirt steaks	2.0			14
+259	0	1/4 teaspoon baking soda	0.25	teaspoon	t	0
+259	6	1/4 teaspoon salt	0.25	teaspoon	t	1
+259	114	1 cup sugar	1.0	cup	c	2
+259	0	1 vanilla bean, split and seeds scraped	1.0			3
+259	20	1 quart whole milk	1.0	quart	quart	4
+260	117	150 grams Almond cookies, crumbed	150.0	grams	g	0
+260	40	1 tablespoon Cornstarch	1.0	tablespoon	T	1
+260	13	450 grams Philiadelphia 13% balance cream cheese	450.0	grams	g	2
+260	0	240 ml Dulce de leche	240.0	ml	ml	3
+260	14	2 Eggs	2.0			4
+260	18	Juice and zest of 1 lemon	1.0			5
+260	6	Pinch of salt	1.0	pinch	pinch	6
+260	114	1/2 cup organic sugar	0.5	cup	c	7
+260	10	1 1/2 sticks cold butter cut into small pieces (if you use unsalted butter add a little 2 cups organic flour1/2 cup organic sugar1 teaspoon vanilla	1.5	sticks	sticks	8
+260	39	150 grams 3. 5% yogurt	150.0	grams	g	9
+261	15	2 cups organic flour	2.0	cups	c	0
+261	114	1/2 cup organic sugar	0.5	cup	c	1
+261	173	1 1/2 sticks cold salted butter cut into small pieces	1.5	sticks	sticks	2
+261	0	1 teaspoon vanilla	1.0	teaspoon	t	3
+262	0	2 tablespoons of amaretto cream (keep cold)	2.0	tablespoons	T	0
+262	0	2 tablespoons of dulce de leche, or caramel, or 3 caramel squares	2.0	tablespoons	T	1
+262	0	1 tub of vanilla Balkan style yogurt, 650g	1.0	tub	tub	2
+263	72	1/2 cup extra-virgin olive oil	0.5	cup	c	0
+263	0	1 1/2 pounds flank steak	1.5	pounds	lb	1
+263	23	3 cloves garlic, peeled	3.0	cloves	cloves	2
+263	45	2 tablespoons oregano	2.0	tablespoons	T	3
+263	43	1 bunch parsley	1.0	bunch	bunch	4
+263	100	1/4 cup red wine vinegar	0.25	cup	c	5
+264	0	1 avocado, diced	1.0			0
+264	78	1/4 teaspoon chile-garlic paste	0.25	teaspoon	t	1
+264	92	1 Tb. chopped cilantro	1.0	Tb	Tb	2
+264	0	3 Swai fillets, diced (about 1 lb.)	1.0	lb	lb	3
+264	139	2 limes, juiced	2.0			4
+264	72	Olive oil	4.0	servings	servings	5
+264	0	Salt and pepper	4.0	servings	servings	6
+264	0	1 cup shallot, diced (or 1/4 red onion)	1.0	cup	c	7
+264	47	1 medium tomato, seeded and finely chopped	1.0			8
+265	8	2 teaspoons baking powder	2.0	teaspoons	t	0
+265	10	3 teaspoons butter	3.0	teaspoons	t	1
+265	12	1 tablespoon Cinnamon	1.0	tablespoon	T	2
+265	0	1/2 teaspoon cream of tartar	0.5	teaspoon	t	3
+265	14	3 Eggs	3.0			4
+265	0	12 ounces can evaporated milk	12.0	ounces	oz	5
+265	115	1/2 cup half-and-half	0.5	cup	c	6
+265	0	1/2 cup masa harina	0.5	cup	c	7
+265	20	1/4 cup milk	0.25	cup	c	8
+265	152	mint leaves	10.0	leaves	leaves	9
+265	0	Sliced strawberries	10.0	servings	servings	10
+265	0	1 teaspoon orange zest	1.0	teaspoon	t	11
+265	6	1 teaspoon salt	1.0	teaspoon	t	12
+265	0	1/2 cup sorghum flour	0.5	cup	c	13
+265	114	1 teaspoon sugar	1.0	teaspoon	t	14
+265	0	14 ounces can sweetened condensed milk	14.0	ounces	oz	15
+265	134	1 teaspoon vanilla	1.0	teaspoon	t	16
+265	134	1 teaspoon vanilla extract	1.0	teaspoon	t	17
+265	0	1 cup whipping cream	1.0	cup	c	18
+265	0	1 teaspoon xanthan gum	1.0	teaspoon	t	19
+266	0	2 pounds beef tenderloin, cut into 1 inch chunks or strips	2.0	pounds	lb	0
+266	92	1/4 cup cilantro, freshly chopped for garnishment	0.25	cup	c	1
+266	0	1 teaspoon Complete seasoning	1.0	teaspoon	t	2
+266	48	1 teaspoon Cumin	1.0	teaspoon	t	3
+266	0	1 bag of frozen french fries	1.0	bag	bag	4
+266	23	3 garlic cloves, minced	3.0	cloves	cloves	5
+266	3	1 green bell pepper, julienned	1.0			6
+266	135	1 jalapeno pepper, seeded and chopped finely	1.0			7
+266	47	8 inches plum tomatoes, halved and cut into 1 chunks	8.0	inches	inches	8
+266	76	1 red bell pepper, julienned	1.0			9
+266	100	1 teaspoon red wine vinegar	1.0	teaspoon	t	10
+266	74	Soy sauce	4.0	servings	servings	11
+266	4	1 yellow onion, chopped finely	1.0			12
+267	0	3 ripe avocados	3.0			0
+267	3	2 bell peppers	2.0			1
+267	0	6 cherry tomatoes	6.0			2
+267	92	2 sprigs of cilantro	2.0	sprigs	sprigs	3
+267	0	4 tilapia fish fillets (about 650g)	650.0	g	g	4
+267	23	2 cloves garlic	2.0	cloves	cloves	5
+267	4	1/2 onion	0.5			6
+267	58	pepper	2.0	servings	servings	7
+267	6	salt	2.0	servings	servings	8
+267	133	tabasco sauce	2.0	servings	servings	9
+267	0	60g tortilla chips	60.0	g	g	10
+268	3	1 large bell pepper, diced	1.0			0
+268	35	1 (14 ounce) can black beans, rinsed and drained	14.0	ounce	oz	1
+268	67	1 28-ounce can crushed or puréed tomatoes	28.0	ounce	oz	2
+268	95	2 teaspoons chili powder	2.0	teaspoons	t	3
+268	45	1 teaspoon dried oregano	1.0	teaspoon	t	4
+268	143	1 teaspoon garlic powder	1.0	teaspoon	t	5
+268	48	1/2 teaspoon ground cumin	0.5	teaspoon	t	6
+268	0	1 1/2 tablespoons light or extra-virgin olive oil	1.5	tablespoons	T	7
+268	4	1 cup chopped onion	1.0	cup	c	8
+268	41	1 teaspoon paprika	1.0	teaspoon	t	9
+269	35	1 can black beans, rinsed, drained and mashed	1.0	can	can	0
+269	0	2 cups canned corn	2.0	cups	c	1
+269	2	1 carrot, peeled and diced	1.0			2
+269	0	1/2 cup celery, diced	0.5	cup	c	3
+269	0	1 teaspoon Creole seasoning (more or less to taste)	1.0	teaspoon	t	4
+269	15	1/2 cup all-purpose flour	0.5	cup	c	5
+269	43	1 teaspoon fresh parsley, chopped	1.0	teaspoon	t	6
+269	23	1-2 cloves garlic, minced	1.0	cloves	cloves	7
+269	23	2 garlic cloves, minced	2.0	cloves	cloves	8
+269	94	2 green onions, diced	2.0			9
+269	59	1 teaspoon ground red pepper (more or less to taste)	1.0	teaspoon	t	10
+269	58	1 teaspoon ground black pepper (more or less to taste)	1.0	teaspoon	t	11
+269	135	1/2-1 jalapeño pepper, seeded and diced	0.5			12
+269	139	Juice of 1 lime	1.0			13
+269	0	1/4 cup oatmeal (I used a bit more)	0.25	cup	c	14
+269	4	1 cup chopped onion	1.0	cup	c	15
+269	0	1 cup panko breadcrumbs	1.0	cup	c	16
+269	76	1/2 cup red pepper, seeded and diced	0.5	cup	c	17
+269	0	1 cup salsa	1.0	cup	c	18
+269	6	1/2 teaspoon salt	0.5	teaspoon	t	19
+269	47	3 medium-sized tomatoes, diced	3.0			20
+270	0	4 ripe avocados	4.0			0
+270	0	8 black olives, sliced	8.0			1
+270	61	1/2 teaspoon red chili pepper flakes	0.5	teaspoon	t	2
+270	58	fresh cracked black pepper, to taste	4.0	servings	servings	3
+270	0	1 large cucumber, peeled and ciced	1.0			4
+270	93	1/4 cup coriander leaves, chopped	0.25	cup	c	5
+270	140	1/4 cup grape seed, rice bran or extra light	0.25	cup	c	6
+270	94	4 green onions, cut into 1-inch pieces	4.0			7
+270	138	1/2 lime	0.5			8
+270	0	zest of 2 limes	2.0			9
+270	0	3 tablespoons unpasteurized shiro miso	3.0	tablespoons	T	10
+270	0	1 Mandarin or Satsuma orange, peeled and segmented	1.0			11
+270	52	8 prawns (about 1/2 lb), peeled	0.5	lb	lb	12
+270	72	1 1/2 tablespoons extra light olive oil or rice bran oil (for cooking prawns)	1.5	tablespoons	T	13
+270	0	12 smalls scallops or 4 large scallops, cleaned	12.0			14
+270	0	1 shallot, minced	1.0			15
+270	96	unrefined sea salt, taste	4.0	servings	servings	16
+270	7	1 cup water	1.0	cup	c	17
+271	0	1 Avocado	1.0			0
+271	101	1 teaspoon Balsamic vinegar	1.0	teaspoon	t	1
+271	48	1 teaspoon Cumin	1.0	teaspoon	t	2
+271	0	3/4 cup Corn, freshly hulled (You can also use frozen corn, thawed)	0.75	cup	c	3
+271	23	1 clove garlic	1.0	clove	clove	4
+271	76	1/2 medium Red Pepper	0.5			5
+272	92	1 cup cilantro, finely chopped	1.0	cup	c	0
+272	72	extra-virgin olive oil	4.0	servings	servings	1
+272	0	1 1 pound flank steak	1.0	pound	lb	2
+272	23	3 garlic clove, minced	3.0	clove	clove	3
+272	135	1/2 large jalapeno, seeded and minced ( whole 1 if brave)	0.5			4
+272	18	1/2 Lemon, juice of	0.5			5
+272	139	Juice of large 1/2 lime	0.5			6
+272	0	Salt and pepper	4.0	servings	servings	7
+272	94	4 scallions, white only finely chopped	4.0			8
+272	47	2 medium tomatoes, finely chopped	2.0			9
+273	0	Cooked rice	1.0	serving	serving	0
+273	23	3 clv garlic, chopped	3.0			1
+273	94	3 green onions, sliced	3.0			2
+273	17	1 tablespoon (15 ml) honey	15.0	ml	ml	3
+273	135	1 jalapeno pepper (seeded), 1/4 inch chunks	1.0			4
+273	139	2 tablespoons (30 ml) lime juice	30.0	ml	ml	5
+273	0	1 mango (seeded), 1/2 inch chunks	1.0			6
+273	113	1 fresh pineapple, 1/2 inch chunks	1.0			7
+273	76	1 sweet red pepper, 1/4 inch chunks	1.0			8
+273	0	4 boneless, skinless chicken breasts	4.0			9
+274	0	1 ripe avocado, pitted and scooped from skin	1.0			0
+274	0	2 pounds white flaky fish (halibut, cod, etc.)	2.0	pounds	lb	1
+274	0	8 soft taco flour tortillas	8.0			2
+274	92	2 tablespoons fresh cilantro, minced	2.0	tablespoons	T	3
+274	0	1/4 cup nonfat Greek yogurt	0.25	cup	c	4
+274	135	1 small jalapeno, seeded and finely minced (use more or less based on personal preference)	1.0			5
+274	156	1 cup shredded lettuce	1.0	cup	c	6
+274	139	1 tablespoon fresh lime juice	1.0	tablespoon	T	7
+274	0	1 tablespoon lime zest	1.0	tablespoon	T	8
+274	72	2 tablespoons olive oil	2.0	tablespoons	T	9
+274	4	2 tablespoons onion, finely diced	2.0	tablespoons	T	10
+274	0	Salt and pepper, to taste	4.0	servings	servings	11
+274	0	1 tablespoon clear tequila	1.0	tablespoon	T	12
+274	47	3 tomatoes seeded, diced fine	3.0			13
+275	0	1/2 cup Anaheim peppers, seeded, diced	0.5	cup	c	0
+275	0	1 1/2 cups cherries, pitted, diced	1.5	cups	c	1
+275	87	2 tablespoons chopped fresh basil	2.0	tablespoons	T	2
+275	0	1 teaspoon fresh mint, chiffonade	1.0	teaspoon	t	3
+275	23	1 clove garlic, minced	1.0	clove	clove	4
+275	0	1 lime, zested and juiced (keep zest and juice)	1.0			5
+275	0	1 mango, diced	1.0			6
+275	72	2 small 1 tablespoones olive oil	2.0	tablespoon	T	7
+275	0	1 peach, peeled and diced	1.0			8
+275	113	1 cup fresh pineapple, diced	1.0	cup	c	9
+275	0	12 ounces salmon fillet	12.0	ounces	oz	10
+275	0	salt and pepper to taste	2.0	servings	servings	11
+275	0	2 teaspoons minced shallot	2.0	teaspoons	t	12
+276	92	1/4 cup chopped cilantro	0.25	cup	c	0
+276	0	1/4 cup finely-chopped red onion	0.25	cup	c	1
+276	0	2 cups finely-diced ripe mango	2.0	cups	c	2
+276	139	juice of half a lime	4.0			3
+276	113	1 cup finely-chopped fresh pineapple	1.0	cup	c	4
+276	0	2 pounds skin-on salmon fillet cut in 4 pieces	2.0	pounds	lb	5
+276	6	Salt	4.0	servings	servings	6
+277	0	2 ripe avocados	2.0			0
+277	58	black pepper	2.0	servings	servings	1
+277	0	1 can pinto beans	1.0	can	can	2
+277	0	2 cups chicken stock	2.0	cups	c	3
+277	92	1 bunch cilantro	1.0	bunch	bunch	4
+277	0	12 10-inch corn tortillas	12.0	10-inch	10-inch	5
+277	23	4 cloves garlic	4.0	cloves	cloves	6
+277	48	ground cumin	2.0	servings	servings	7
+277	135	1 small jalapeno	1.0			8
+277	138	1 lime	1.0			9
+277	0	shredded monterey jack cheese	2.0	servings	servings	10
+277	0	1 navel orange	1.0			11
+277	71	oil for frying	2.0	servings	servings	12
+277	0	2 lbs boneless pork shoulder	2.0	lbs	lb	13
+277	4	2 cups red onion	2.0	cups	c	14
+277	96	sea salt	2.0	servings	servings	15
+277	126	sour cream	2.0	servings	servings	16
+277	47	some fresh tomatoes	2.0	servings	servings	17
+277	98	1 dash white vinegar	1.0	dash	dash	18
+278	3	20 mini bell peppers (you can buy in a large bag)	20.0			0
+278	35	7 oz canned black beans ( about 1/2 a can)	7.0	oz	oz	1
+278	95	1 TBSP Chili Powder	1.0	TBSP	TBSP	2
+278	118	3 oz chipotles in adobo ( about 1/2 a can)	3.0	oz	oz	3
+278	0	7 oz canned fire roasted tomatoes ( about 1/2 a can)	7.0	oz	oz	4
+278	23	1 tablespoon minced garlic	1.0	tablespoon	T	5
+278	119	4 oz can green chilies	4.0	oz	oz	6
+278	93	1 TSP Ground Coriander	1.0			7
+278	48	1 TBSP Ground Cumin	1.0	TBSP	TBSP	8
+278	0	10 oz lean ground turkey	10.0	oz	oz	9
+278	41	1 TBSP Paprika	1.0	TBSP	TBSP	10
+278	0	3 tomatillos	3.0			11
+278	4	1/2 yellow onion	0.5			12
+279	10	2 tablespoons of Butter	2.0	tablespoons	T	0
+279	0	1 1/2 cups grated cheese	1.5	cups	c	1
+279	0	4 Oz. Can of Green Chiles	4.0	oz	oz	2
+279	95	1/2 teaspoon Chili Powder	0.5	teaspoon	t	3
+279	92	1 bunch Small of Cilantro	1.0	bunch	bunch	4
+279	48	1/2 teaspoon of Cumin	0.5	teaspoon	t	5
+279	15	3 tablespoons of Flour	3.0	tablespoons	T	6
+279	20	1 cup of Milk	1.0	cup	c	7
+279	0	1 cup salsa	1.0	cup	c	8
+279	0	2 cups Tortilla Chips	2.0	cups	c	9
+280	0	1 avocado, cubed	1.0			0
+280	35	15 oz can of black beans, rinsed and drained	15.0	oz	oz	1
+280	0	4 large flour tortillas	4.0			2
+280	0	1 small mango, cubed	1.0			3
+280	72	1 teaspoon olive oil	1.0	teaspoon	t	4
+280	4	1 1/2 cups of onion, diced	1.5	cups	c	5
+280	45	1 teaspoon oregano	1.0	teaspoon	t	6
+280	0	1 poblano (aka pasilla) pepper, seeded and chopped	1.0			7
+280	0	salt and pepper to taste	2.0	servings	servings	8
+280	0	1/2 cup sharp cheddar cheese	0.5	cup	c	9
+281	99	1/4 cup apple cider vinegar	0.25	cup	c	0
+281	2	1 carrot, grated	1.0			1
+281	118	1/2 can chipotle chilies in adobo sauce (3-4 peppers chopped)	0.5	can	can	2
+281	23	2 Cloves garlic, minced	2.0	Cloves	Cloves	3
+281	0	1 cup Greek yogurt	1.0	cup	c	4
+281	139	Juice of 1 lime	1.0			5
+281	55	2 cups chopped mushrooms	2.0	cups	c	6
+281	72	3 tablespoons olive oil	3.0	tablespoons	T	7
+281	4	1 green onion stalk	1.0			8
+281	0	1 5-lb pork shoulder roast	5.0	lb	lb	9
+281	149	1 head purple cabbage	1.0	head	head	10
+281	0	1/2 cup red wine	0.5	cup	c	11
+281	6	2 tablespoons salt	2.0	tablespoons	T	12
+281	0	Salt pepper to taste	12.0	servings	servings	13
+281	105	1 cup vegetable broth	1.0	cup	c	14
+281	4	1 yellow onion	1.0			15
+282	0	2 teaspoons dried ancho chili powder	2.0	teaspoons	t	0
+282	58	Freshly-ground black pepper to taste	4.0	servings	servings	1
+282	122	Pinch of Cayenne pepper	1.0	pinch	pinch	2
+282	92	1 tablespoon cilantro, chopped fine	1.0	tablespoon	T	3
+282	141	1/2 tablespoon fresh ginger, minced	0.5	tablespoon	T	4
+282	23	1 clove garlic, minced	1.0	clove	clove	5
+282	143	1 teaspoon garlic powder	1.0	teaspoon	t	6
+282	48	1 teaspoon ground cumin	1.0	teaspoon	t	7
+282	135	1/2 jalapeno, minced	0.5			8
+282	139	Juice of 1 lime	1.0			9
+282	0	2 kiwis, peeled and and diced	2.0			10
+282	97	1/2 teaspoon Kosher salt	0.5	teaspoon	t	11
+282	0	2 Mangos, peeled and diced	2.0			12
+282	72	2 tablespoons olive oil	2.0	tablespoons	T	13
+282	0	1 3 pound Pork Tenderloin	3.0	pound	lb	14
+282	4	1 red onion – sliced	1.0			15
+282	6	Salt to taste	4.0	servings	servings	16
+282	0	salt and pepper to taste	4.0	servings	servings	17
+282	0	2 cups tomatillos, diced	2.0	cups	c	18
+283	0	2 avocados, sliced	2.0			0
+283	35	1 can black beans, rinsed and drained	1.0	can	can	1
+283	0	1 1/2 cup corn	1.5	cup	c	2
+283	143	2 tsp garlic powder	2.0	tsp	t	3
+283	139	juice of 1 lime	1.0			4
+283	72	1 tbsp olive oil	1.0	tbsp	T	5
+283	4	1 small onion, diced	1.0			6
+283	76	2 red bell peppers, diced	2.0			7
+283	0	salt & pepper	4.0	servings	servings	8
+283	0	1 lb sharp cheddar, grated	1.0	lb	lb	9
+283	0	4 tortilla wraps	4.0			10
+284	67	1 can (28oz) whole tomatoes with juice	28.0	oz	oz	0
+284	92	1/2 cup fresh cilantro (large stems removed)	0.5	cup	c	1
+284	23	1 clove garlic, minced	1.0	clove	clove	2
+284	48	1/4 - 1/2 t. ground cumin	0.25	t	t	3
+284	135	1 whole jalapeno, quartered, seeds removed, sliced thin.	1.0			4
+284	139	juice from 1/2 a lime	2.0			5
+284	4	1/4 of an onion chopped (approximately 1/4 cup)	0.25			6
+284	6	Salt to taste	4.0	servings	servings	7
+284	0	1/4 t. Penzey's Southwest seasoning (or another brand)	0.25	t	t	8
+284	114	1/4 t. sugar	0.25	t	t	9
+284	47	2 cans (10oz) Rotel tomatoes (or the store brand of diced tomatoes and green chilies)	10.0	oz	oz	10
+285	3	1 whole Bell Pepper	1.0			0
+285	58	black pepper	4.0	servings	servings	1
+285	35	1 can 14.5-oz. Black Beans	1.0	can	can	2
+285	2	1 whole Carrot	1.0			3
+285	95	1 Tablespoon Chili Powder	1.0	Tablespoon	Tablespoon	4
+285	95	1 teaspoon Chili Powder	1.0	teaspoon	t	5
+285	0	8 Tablespoons Corn	8.0	Tablespoons	Tablespoons	6
+285	0	4 whole Flour Burrito Tortillas	4.0			7
+285	143	1 Tablespoon Garlic Powder	1.0	Tablespoon	Tablespoon	8
+285	0	8 Tablespoons Guacamole	8.0	Tablespoons	Tablespoons	9
+285	72	2 Tablespoons Olive Oil	2.0	Tablespoons	Tablespoons	10
+285	4	1/2 whole Onion	0.5			11
+285	166	1 Tablespoon Onion Powder	1.0	Tablespoon	Tablespoon	12
+285	166	1 teaspoon Onion Powder	1.0	teaspoon	t	13
+285	167	1 whole Pasilla Chile	1.0			14
+285	0	4 Tablespoons Your Favorite Salsa	4.0	Tablespoons	Tablespoons	15
+285	168	1/2 cups Shredded Cheddar Cheese, Divided	0.5	cups	c	16
+285	126	4 Tablespoons Light Sour Cream	4.0	Tablespoons	Tablespoons	17
+285	0	2 whole Zucchini	2.0			18
+286	0	2 cups of condensed milk	2.0	cups	c	0
+286	14	6 eggs	6.0			1
+286	138	3 limes	3.0			2
+286	114	3/4 cup sugar	0.75	cup	c	3
+286	0	1 vanilla pod, sliced in half lengthwise	1.0			4
+286	7	3 tablespoons water	3.0	tablespoons	T	5
+286	20	2 cups whole milk	2.0	cups	c	6
+287	8	1 teaspoon of Baking Powder	1.0	teaspoon	t	0
+287	0	5 1/4 cups of Veggie Broth	5.25	cups	c	1
+287	10	1 stick of Butter	1.0	stick	stick	2
+287	95	2 teaspoons of Chili Powder	2.0	teaspoons	t	3
+287	92	1 bunch Large of Chopped Cilantro	1.0	bunch	bunch	4
+287	0	1 package of Corn Husks	1.0	package	pkg	5
+287	48	2 teaspoons of Cumin	2.0	teaspoons	t	6
+287	23	1 clove Garlic minced	1.0	clove	clove	7
+287	94	3 Green Onions, Chopped	3.0			8
+287	139	1/2 of a Lime, Juiced	0.5			9
+287	0	2 cups of Masa	2.0	cups	c	10
+287	71	Oil for deep frying	1.0	serving	serving	11
+287	47	2 Roma Tomatoes, Chopped	2.0			12
+287	6	Salt	1.0	serving	serving	13
+287	168	1/2 cup of Shredded Cheddar Cheese	0.5	cup	c	14
+287	0	1 Zucchini, Chopped	1.0			15
+288	0	a handful of cherry tomatoes	1.0	handful	handful	0
+288	3	1/2 green bell pepper	0.5			1
+288	139	1 tablespoon of lime juice	1.0	tablespoon	T	2
+288	0	2 Large Mangoes	2.0			3
+288	152	A few scent leaves or mint leaves	3.0	leaves	leaves	4
+288	76	1/2 red bell pepper	0.5			5
+288	4	2 handfuls of chopped red onions	2.0	handfuls	handfuls	6
+288	114	A pinch of sugar	1.0	pinch	pinch	7
+289	0	2 cups Bulgur wheat	2.0	cups	c	0
+289	0	11 ounces Chavrie� Goat Log	11.0	ounces	oz	1
+289	18	1 ounce Lemon juice	1.0	ounce	oz	2
+289	152	1 teaspoon Chopped mint	1.0	teaspoon	t	3
+289	72	Olive oil	10.0	servings	servings	4
+289	43	1/2 cup parsley, chopped	0.5	cup	c	5
+289	4	1 cup Red onion (minced)	1.0	cup	c	6
+289	0	Salt and Pepper to taste	10.0	servings	servings	7
+289	47	1 ea. Tomato diced	1.0			8
+289	7	8 ounces water	8.0	ounces	oz	9
+290	2	8 small carrots	8.0			0
+290	0	16 cherry tomatoes, halved	16.0			1
+290	48	1 tbsp cumin	1.0	tbsp	T	2
+290	0	2 tbsp fresh dill	2.0	tbsp	T	3
+290	23	4 cloves garlic, minced	4.0	cloves	cloves	4
+290	143	1 tbsp garlic powder	1.0	tbsp	T	5
+290	0	1/2 cup greek yogurt	0.5	cup	c	6
+290	58	1 tbsp ground pepper	1.0	tbsp	T	7
+290	0	1/2 cup hummus	0.5	cup	c	8
+290	18	juice of 1 lemon	1.0			9
+290	174	1 cup long grain rice	1.0	cup	c	10
+290	0	2 cups low sodium chicken broth	2.0	cups	c	11
+290	72	1/2 tbsp olive oil	0.5	tbsp	T	12
+290	72	1 tbsp olive oil	1.0	tbsp	T	13
+290	4	1/2 onion, minced	0.5			14
+290	166	1 tbsp onion powder	1.0	tbsp	T	15
+290	43	1/2 cup parsley, roughly chopped	0.5	cup	c	16
+290	0	1 tbsp pepper	1.0	tbsp	T	17
+290	0	pita	4.0	servings	servings	18
+290	6	1 tbsp salt	1.0	tbsp	T	19
+290	0	3 boneless skinless chicken breasts	3.0			20
+290	162	2 tbsp turmeric	2.0	tbsp	T	21
+290	0	1 tsp turmeric powder	1.0	tsp	t	22
+291	0	1/2 avocado, diced	0.5			0
+291	122	1 teaspoon cayenne pepper	1.0	teaspoon	t	1
+291	48	1/2 teaspoon cumin	0.5	teaspoon	t	2
+291	0	1/2 cup English cucumber, diced	0.5	cup	c	3
+291	72	2 tablespoons extra-virgin olive oil	2.0	tablespoons	T	4
+291	94	5 green onions, chopped	5.0			5
+291	43	1/2 cup parsley, chopped	0.5	cup	c	6
+291	0	1 cup red quinoa	1.0	cup	c	7
+291	29	5 red radishes, diced	5.0			8
+291	100	3 1/2 tablespoons red wine vinegar	3.5	tablespoons	T	9
+291	6	2 teaspoons salt	2.0	teaspoons	t	10
+291	47	1/2 tomato	0.5			11
+291	0	1 teaspoon tumeric	1.0	teaspoon	t	12
+291	7	1 cup water	1.0	cup	c	13
+291	82	1/2 cup yellow pepper,diced	0.5	cup	c	14
+292	0	1/2 cup bulgur	0.5	cup	c	0
+292	0	2 smalls cucumbers	2.0			1
+292	43	1 bunch of flat leaf parsley	1.0	bunch	bunch	2
+292	18	1/2 lemon juice from a lemon	0.5			3
+292	72	3 tablespoons of olive oil	3.0	tablespoons	T	4
+292	6	Salt	1.0	serving	serving	5
+292	47	2 medium sized tomatoes	2.0			6
+293	37	540 ml can of chickpeas, drained and rinsed	540.0	ml	ml	0
+293	0	8 slices of cucumber	8.0	slices	slices	1
+293	43	1 large handful parsley, chopped	1.0	handful	handful	2
+293	23	2 cloves garlic, grated or finely chopped	2.0	cloves	cloves	3
+293	0	4 hamburger buns (I used President's Choice multi-grain thins)	4.0			4
+293	0	4 tbsp peanut oil	4.0	tbsp	T	5
+293	4	1 small red onion, chopped	1.0			6
+293	32	� tsp sriracha sauce	0.5	tsp	t	7
+293	0	2 tsp tahini	2.0	tsp	t	8
+293	47	8 slices of tomato	8.0	slices	slices	9
+293	0	Tzatziki for topping	4.0	servings	servings	10
+294	37	2 cans garbanzo beans (chickpeas), drained and rinsed	2.0	cans	cans	0
+294	95	1 tablespoon chili powder	1.0	tablespoon	T	1
+294	0	1 tablespoon coriander	1.0	tablespoon	T	2
+294	48	1 tablespoon cumin	1.0	tablespoon	T	3
+294	15	4 tablespoons flour	4.0	tablespoons	T	4
+294	43	1 large handful parsley, chopped	1.0	handful	handful	5
+294	23	2 cloves garlic, grated or finely chopped	2.0	cloves	cloves	6
+294	146	Zest of 2 lemons	2.0			7
+294	18	juice of 2 lemons	2.0			8
+294	0	4 pita pockets	4.0			9
+294	4	1 small red onion, chopped	1.0			10
+294	0	Salt and pepper, to taste	4.0	servings	servings	11
+294	0	1/2 cup tahini	0.5	cup	c	12
+294	162	1 1/2 teaspoons turmeric	1.5	teaspoons	t	13
+294	71	1/4 cup vegetable oil	0.25	cup	c	14
+294	7	3 tablespoons water	3.0	tablespoons	T	15
+295	0	2 tablespoons all purpose flour	2.0	tablespoons	T	0
+295	8	1 teaspoon baking powder	1.0	teaspoon	t	1
+295	1	1 cup raw black eyed beans	1.0	cup	c	2
+295	0	2 tablespoons coriander leaves/cilantro - chopped	2.0	tablespoons	T	3
+295	0	2 teaspoons coriander powder	2.0	teaspoons	t	4
+295	49	2 teaspoons cumin seeds	2.0	teaspoons	t	5
+295	36	1 cup raw garbanzo beans/ chickpeas	1.0	cup	c	6
+295	23	4 garlic cloves - chopped	4.0	cloves	cloves	7
+295	4	1/2 cup onions - finely chopped	0.5	cup	c	8
+295	43	1 tablespoon parsley - chopped	1.0	tablespoon	T	9
+295	0	pepper	12.0	servings	servings	10
+295	6	Salt	12.0	servings	servings	11
+295	71	1 cup vegetable oil, for frying	1.0	cup	c	12
+296	0	1 1/2 cups cucumber	1.5	cups	c	0
+296	48	1 teaspoon cumin	1.0	teaspoon	t	1
+296	0	3/4 cup crumbled feta cheese	0.75	cup	c	2
+296	0	1/2 cup fresh chopped mint	0.5	cup	c	3
+296	94	3/4 cup green onions, chopped	0.75	cup	c	4
+296	0	1 cup kalamata olives	1.0	cup	c	5
+296	145	1 lemon	1.0			6
+296	72	1/4 cup olive oil	0.25	cup	c	7
+296	43	1/4 cup chopped parsley	0.25	cup	c	8
+296	0	3 pita breads	3.0			9
+296	76	2 red bell peppers	2.0			10
+296	0	Salt and Pepper	6.0	servings	servings	11
+296	47	1 large tomato, chopped	1.0			12
+296	0	4 Zucchini	4.0			13
+297	0	2 cups water or lamb/beef stock	2.0	cups	c	0
+297	14	2 Eggs	2.0			1
+297	43	3 tablespoons minced fresh parsley	3.0	tablespoons	T	2
+297	23	2 garlic cloves, minced	2.0	cloves	cloves	3
+297	42	1 kilo lean ground beef or lamb	1.0			4
+297	48	1 tablespoon ground cumin	1.0	tablespoon	T	5
+297	4	1 small Onion, chopped finely	1.0			6
+297	41	1 teaspoon paprika	1.0	teaspoon	t	7
+297	75	2 medium green peppers, seeded and cut diagonally into slices	2.0			8
+297	0	salt and pepper	6.0	servings	servings	9
+297	70	1 tablespoon tomato paste	1.0	tablespoon	T	10
+297	47	3 large tomatoes, diced	3.0			11
+297	10	2 tablespoons unsalted butter	2.0	tablespoons	T	12
+297	72	1/4 cup virgin olive oil	0.25	cup	c	13
+298	0	6 loaves Arabic Flat Bread	6.0			0
+298	0	2 Kilos LARGE CUT UP PEACES OF LAMB (WITH BONES) or Lamb Shanks	2.0			1
+298	7	2 Liters WATER TO BOIL MEAT	2.0	liters	l	2
+298	4	2 Larges ONION	2.0			3
+298	0	1/2 cup FRIED PINE NUTS	0.5	cup	c	4
+298	174	3 cups RICE ( Short grain or any of your choice)	3.0	cups	c	5
+298	10	1 1/2 cups BUTTER	1.5	cups	c	6
+298	39	1 Kilo CONTAINER PLAIN whole milk YOGURT (Or you can just use JAMEED)	1.0	kilogram	kg	7
+298	6	Salt	6.0	serving	serving	8
+298	48	1 teaspoon Cumin, Turmeric, and any other spices if desired for	1.0	teaspoon	tsp	9
+298	0	1/2 cup SLIVERED ALMONDS	0.5	cup	c	10
+299	0	3 tablespoons agave nectar	3.0	tablespoons	T	0
+299	12	1/2 teaspoon cinnamon	0.5	teaspoon	t	1
+299	0	cup Earth Balance, melted	1.0	cup	c	2
+299	0	1/4 teaspoon lime zest	0.25	teaspoon	t	3
+299	0	1/4 of a package of phyllo dough	0.25			4
+299	114	cup sugar	1.0	cup	c	5
+299	134	1/2 teaspoon vanilla extract	0.5	teaspoon	t	6
+299	0	5 oz chopped walnuts	5.0	oz	oz	7
+299	7	cup water	1.0	cup	c	8
+300	67	1 400 gram can peeled tomatoes, (chopped)	400.0	gram	g	0
+300	80	1 tablespoon curry powder, (1 to 2)	1.0	tablespoon	T	1
+300	14	1 egg, lightly beaten	1.0			2
+300	0	1 cup fresh breadcrumbs	1.0	cup	c	3
+300	0	2 teaspoons garam masala	2.0	teaspoons	t	4
+300	23	5 cloves garlic	5.0	cloves	cloves	5
+300	141	1 teaspoon ginger	1.0	teaspoon	t	6
+300	0	500 grams trim lamb mince	500.0	grams	g	7
+300	71	1 tablespoon oil	1.0	tablespoon	T	8
+301	37	16 oz can chickpeas, drained and rinsed	16.0	oz	oz	0
+301	0	1/2 cucumber, halved and sliced	0.5			1
+301	0	1/2 cup feta cheese, crumbled	0.5	cup	c	2
+301	43	2 tablespoons fresh parsley	2.0	tablespoons	T	3
+301	23	1 garlic clove, minced	1.0	clove	clove	4
+301	23	4 garlic cloves, minced	4.0	cloves	cloves	5
+301	93	1 teaspoon ground coriander	1.0	teaspoon	t	6
+301	48	1 tablespoon ground cumin	1.0	tablespoon	T	7
+301	145	2 juice from lemons	2.0			8
+301	41	1/2 teaspoon paprika	0.5	teaspoon	t	9
+301	0	4 pitas	4.0			10
+301	4	1/2 red onion, finely sliced	0.5			11
+301	157	1 cup green leaf or romaine lettuce, shredded	1.0	cup	c	12
+301	0	1 tablespoon of tahini	1.0	tablespoon	T	13
+301	47	1 tomato, diced	1.0			14
+301	0	1/4 cup tzatziki (optional)	0.25	cup	c	15
+301	0	2 tablespoons cooked bulgar wheat	2.0	tablespoons	T	16
+301	110	2 tablespoons whole wheat flour	2.0	tablespoons	T	17
+301	4	1/2 yellow onion, chopped	0.5			18
+301	0	1/2 cup tabouleh	0.5	cup	c	19
+302	0	3 tablespoons cooked bulgur wheat	3.0	tablespoons	T	0
+302	43	3 cups flat leaf parsley, about one bushel	3.0	cups	c	1
+302	0	1 tablespoon fresh mint	1.0	tablespoon	T	2
+302	94	3 tablespoons green onions, finely chopped	3.0	tablespoons	T	3
+302	18	1 Juice from lemon	1.0			4
+302	72	2 tablespoons olive oil	2.0	tablespoons	T	5
+302	47	1/4 cup roma tomatoes, finely chopped	0.25	cup	c	6
+303	0	6 chicken cutlets/4 chicken breasts	6.0			0
+303	0	2 pickle cucumbers halved and cut into half moons	2.0			1
+303	72	extra light olive oil	2.0	servings	servings	2
+303	3	1 green pepper cut into strips	1.0			3
+303	145	1/2 lemon	0.5			4
+303	152	chopped mint	2.0	servings	servings	5
+303	4	1/2 small onion thinly sliced	0.5			6
+303	43	chopped parsley	2.0	servings	servings	7
+303	0	3 whole-wheat pitas	3.0			8
+303	47	2 plum tomatoes cut into strips	2.0			9
+303	29	1 bunch of radishes sliced	1.0	bunch	bunch	10
+303	0	Salt and pepper to taste	2.0	servings	servings	11
+303	0	if you have sumac, add a bit to the dressing	2.0	servings	servings	12
+304	0	600g minced beef	600.0	g	g	0
+304	0	1 tsp ground caraway seeds	1.0	tsp	t	1
+304	0	400ml chicken stock	400.0	ml	ml	2
+304	77	10-12 dried red chili peppers	10.0			3
+304	12	1/2 teaspoon Cinnamon	0.5	teaspoon	t	4
+304	48	1/2 tsp cumin	0.5	tsp	t	5
+304	92	Coriander leaves, half chopped, half whole or	8.0	servings	servings	6
+304	14	1 egg	1.0			7
+304	23	1 teaspoon Minced garlic	1.0	teaspoon	t	8
+304	0	1 tsp ground cloves	1.0	tsp	t	9
+304	93	1 tsp ground coriander	1.0	tsp	t	10
+304	48	1 tsp ground cumin	1.0	tsp	t	11
+304	159	2 tbs harissa*	2.0	tbs	tbs	12
+304	72	1/4 cup olive oil (or vegetable oil)	0.25	cup	c	13
+304	4	1 onion, finely chopped	1.0			14
+304	59	1 red chili, finely chopped	1.0			15
+304	6	1 teaspoon Salt	1.0	teaspoon	t	16
+304	0	250g good quality sausage, chopped	250.0	g	g	17
+304	96	1/2 tsp sea salt	0.5	tsp	t	18
+304	47	480g chopped tomato	480.0	g	g	19
+305	0	Freshly cracked black pepper, to taste	8.0	servings	servings	0
+305	0	1/2 large cucumber, diced	0.5			1
+305	0	2 tablespoons Fresh mint	2.0	tablespoons	T	2
+305	43	1/2 cup chopped fresh parsley	0.5	cup	c	3
+305	143	1 teaspoon garlic powder	1.0	teaspoon	t	4
+305	94	2 green onions	2.0			5
+305	18	1/2 cup lemon juice	0.5	cup	c	6
+305	72	3 tablespoons olive oil	3.0	tablespoons	T	7
+305	0	1 cup Quinoa	1.0	cup	c	8
+305	47	1 tomato, diced	1.0			9
+305	7	2 cups water	2.0	cups	c	10
+306	0	1 tsp Coriander	1.0	tsp	t	0
+306	48	1 tsp Cumin	1.0	tsp	t	1
+306	0	2 tsp Dill, Finely Chopped	2.0	tsp	t	2
+306	14	1 egg	1.0			3
+306	23	3 cloves garlic, minced	3.0	cloves	cloves	4
+306	0	1/2 cup nonfat greek yogurt	0.5	cup	c	5
+306	0	2 lbs ground turkey	2.0	lbs	lb	6
+306	0	1/4 cup hummus	0.25	cup	c	7
+306	18	1/2 lemon, juiced	0.5			8
+306	72	2 tbsp Olive OIl	2.0	tbsp	T	9
+306	43	1/4 cup parsley, chopped	0.25	cup	c	10
+306	0	2 tsp Pepper	2.0	tsp	t	11
+306	0	4 whole-wheat pitas	4.0			12
+306	4	1/4 Red Onion, thinly sliced	0.25			13
+306	6	1 tsp Salt	1.0	tsp	t	14
+306	47	1 tomato, cut into 1/4 inch slices, then halved	1.0			15
+306	162	1 tsp Turmeric	1.0	tsp	t	16
+306	4	1/2 yellow onion, finely chopped	0.5			17
+307	0	1 teaspoon agave nectar	1.0	teaspoon	t	0
+307	0	1/4 cup feta cheese (optional)	0.25	cup	c	1
+307	43	1/2 cup flat leaf parsley leaves (or a mix of parsley and mint)	0.5	cup	c	2
+307	23	2 cloves garlic, minced	2.0	cloves	cloves	3
+307	97	1 teaspoon kosher salt	1.0	teaspoon	t	4
+307	0	4 fresh Lacinato kale leaves	4.0			5
+307	18	2 tablespoons lemon juice	2.0	tablespoons	T	6
+307	65	11/2 cups cooked lentils (many markets carry vacuum-packed, precooked lentils, or boil 1 cup dried brown lentils in 2 cups salted water until tender, then drain)	1.5	cups	c	7
+307	72	3 tablespoons olive oil	3.0	tablespoons	T	8
+307	4	1 small onion, coarsely chopped	1.0			9
+307	43	1 tablespoon minced parsley	1.0	tablespoon	T	10
+307	0	1 large organic English or Persian cucumber with skin (about 1 cup shredded)	1.0			11
+307	0	2 large pita breads	2.0			12
+307	29	1 small bunch red radishes or other varietals such as watermelon or daikon (about 1/2 cup, shredded)	1.0	bunch	bunch	13
+307	0	Salt and freshly ground black pepper to taste	6.0	servings	servings	14
+307	150	1 small head savoy cabbage (about 2 heaping cups, shredded)	1.0	head	head	15
+307	0	1 tablespoon za'atar	1.0	tablespoon	T	16
+307	0	1/2 teaspoon ground sumac	0.5	teaspoon	t	17
+308	10	1 1/2 cups melted butter	1.5	cups	c	0
+308	0	1 cup heavy cream or light cream	1.0	cup	c	1
+308	18	1 tsp lemon juice	1.0	tsp	t	2
+308	0	1 1/2 pkgs. phyllo pastry dough	1.5	pkgs	pkgs	3
+308	0	1 cup (� lb.) walnuts or pistachios or combination	0.5	lb	lb	4
+308	114	1 Tbsp sugar	1.0	Tbsp	Tbsp	5
+308	7	2 cups water	2.0	cups	c	6
+309	0	2 packages organic baby spinach	2.0	packages	packages	0
+309	10	4 tablespoons butter	4.0	tablespoons	T	1
+309	87	12 large fresh basil leaves	12.0			2
+309	23	1 clove garlic	1.0	clove	clove	3
+309	0	1 tablespoon Herbs de Provence	1.0	tablespoon	T	4
+309	18	1/2 Juice of lemon	0.5			5
+309	172	1 cup grated mozzarella cheese	1.0	cup	c	6
+309	72	1 tablespoon olive oil	1.0	tablespoon	T	7
+309	166	1 teaspoon onion powder	1.0	teaspoon	t	8
+309	0	cups quick cooking grits (NOT instant)	1.0	cups	c	9
+309	6	Salt	4.0	servings	servings	10
+309	52	1 pound shrimp	1.0	pound	lb	11
+309	0	2 sun dried tomatoes packed in olive oil	2.0			12
+309	123	1 sweet onion finely chopped	1.0			13
+309	7	cups boiling water	1.0	cups	c	14
+310	0	1 teaspoon Almond extract	1.0	teaspoon	t	0
+310	8	1/4 teaspoon Baking powder	0.25	teaspoon	t	1
+310	0	1/2 teaspoon Baking soda	0.5	teaspoon	t	2
+310	10	1 cup Butter or margarine, softened	1.0	cup	c	3
+310	15	1 3/4 cups All-purpose flour	1.75	cups	c	4
+310	6	1/4 teaspoon Salt	0.25	teaspoon	t	5
+310	0	1/2 cup Slivered almonds	0.5	cup	c	6
+310	114	1 cup Sugar	1.0	cup	c	7
+311	0	1 teaspoon Almond extract	1.0	teaspoon	t	0
+311	0	1/2 cup Confectioners sugar	0.5	cup	c	1
+311	14	1 Egg, beaten	1.0			2
+311	15	1 1/2 cups Unsifted flour	1.5	cups	c	3
+311	0	3/4 cup Cold margarine, or butter	0.75	cup	c	4
+311	0	6 Milk chocolate covered 1 cup Slivered almonds	6.0			5
+311	0	14 ounces Sweetened condensed milk	14.0	ounces	oz	6
+312	0	1 bunch each of the following: Collar Greens, Kale, Mustard Greens <	1.0	bunch	bunch	0
+312	0	3 bunchs of either fresh Collar Greens or	3.0			1
+312	0	All seasonings can be adjusted to your taste!	1.0	can	can	2
+312	0	3 bunchs of Kale or	3.0			3
+312	72	2 tablespoons of olive oil	2.0	tablespoons	T	4
+312	4	1 finely diced onion	1.0			5
+312	61	1 teaspoon of red pepper flakes (or to your taste)	1.0	teaspoon	t	6
+312	0	1 teaspoon of seasoned salt (or to your taste)	1.0	teaspoon	t	7
+312	7	1 cup of water	1.0	cup	c	8
+313	0	1/4 cup buttermilk	0.25	cup	c	0
+313	69	2 heads of cauliflower	2.0	heads	heads	1
+313	122	1/2 teaspoon cayenne pepper	0.5	teaspoon	t	2
+313	0	3 tablespoons Dijon mustard	3.0	tablespoons	T	3
+313	0	1 1/2 teaspoons dry mustard	1.5	teaspoons	t	4
+313	15	3 tablespoons Flour	3.0	tablespoons	T	5
+313	23	2 garlic cloves, pressed	2.0	cloves	cloves	6
+313	18	2 tablespoons fresh lemon juice	2.0	tablespoons	T	7
+313	146	2 teaspoons lemon peel	2.0	teaspoons	t	8
+313	127	1/4 cup low-fat sour cream	0.25	cup	c	9
+313	0	1 1/2 cups whole wheat panko	1.5	cups	c	10
+313	41	1 teaspoon paprika	1.0	teaspoon	t	11
+313	0	150 grams grated Parmesan cheese	150.0	grams	g	12
+313	0	1/4 cup low-fat ricotta	0.25	cup	c	13
+313	0	Salt and pepper	6.0	servings	servings	14
+313	0	2 pounds boneless, skinless chicken breast	2.0	pounds	lb	15
+313	85	1 tablespoon minced thyme	1.0	tablespoon	T	16
+314	0	1 -T margarine or butter, melted	1.0	T	T	0
+314	16	dash nutmeg	1.0	dash	dash	1
+314	0	1/4 -t seasoned salt	0.25			2
+314	154	4 smalls sweet potatoes (about 1 lb)	1.0	lb	lb	3
+315	8	1/2 teaspoon Baking powder	0.5	teaspoon	t	0
+315	0	1/2 teaspoon Baking soda	0.5	teaspoon	t	1
+315	0	1/2 teaspoon Banana extract	0.5	teaspoon	t	2
+315	9	200 grams Riped Banana~ mash banana with a fork	200.0	grams	g	3
+315	0	100 grams Corn oil	100.0	grams	g	4
+315	14	2 eggs	2.0			5
+315	15	160 grams Plain Flour- sift together with baking powder and baking sod	160.0	grams	g	6
+315	20	1/4 cup milk	0.25	cup	c	7
+315	114	2/3 cup sugar	0.6666666666666666	cup	c	8
+315	134	1/2 teaspoon Vanilla extract	0.5	teaspoon	t	9
+315	0	1/2 tablespoon sponge cake emulsifier	0.5	tablespoon	T	10
+316	124	1 1/2 cups smokey barbecue sauce	1.5	cups	c	0
+316	0	1 brisket, 5 lbs., first cut	1.0			1
+316	50	3 tablespoons brown sugar	3.0	tablespoons	T	2
+316	122	1/4 tsp cayenne pepper (use 1/2 tsp for more heat)	0.25	tsp	t	3
+316	40	1/2 tbsp cornstarch	0.5	tbsp	T	4
+316	48	1/2 tsp cumin	0.5	tsp	t	5
+316	143	4 ounces garlic powder	4.0	ounces	oz	6
+316	71	2 tbs. oil for searing	2.0	tbs	tbs	7
+316	166	4 ounces onion powder	4.0	ounces	oz	8
+316	0	Salt and pepper	8.0	servings	servings	9
+316	41	1/2 tsp smoked paprika (optional)	0.5	tsp	t	10
+317	0	1/4 cup beer or white wine	0.25	cup	c	0
+317	0	12 ounces can of your favorite beer (I sugggest Hefeweizen's complementary fruity flavor)	12.0	ounces	oz	1
+317	0	Large head broccoli	1.0	head	head	2
+317	0	1 1/2 cups slow cook brown rice	1.5	cups	c	3
+317	0	12 cherry tomatoes	12.0			4
+317	0	3/4 cup Dijon mustard	0.75	cup	c	5
+317	141	1 tablespoon fresh ginger or 1 tbsp wet ginger from a jar (no powder!)	1.0	tablespoon	T	6
+317	23	1 tablespoon clove fresh garlic (minced) or 1 wet garlic from a jar (no powder!)	1.0	tablespoon	T	7
+317	3	1 green pepper	1.0			8
+317	58	2 tablespoons fresh ground pepper	2.0	tablespoons	T	9
+317	145	1 juicy lemon	1.0			10
+317	0	1/4 cup low sodium soy sauce	0.25	cup	c	11
+317	0	2 tablespoons molasses	2.0	tablespoons	T	12
+317	55	12 bite sized mushrooms	12.0			13
+317	72	1/4 cup olive oil	0.25	cup	c	14
+317	0	1/2 cup orange juice (or tablespoon/mash another orange	0.5	cup	c	15
+317	58	1/2 teaspoon pepper	0.5	teaspoon	t	16
+317	76	1 red pepper	1.0			17
+317	4	1 red onion	1.0			18
+317	0	1/2 cup Newman's Own Low-Fat Italian Salad Dressing	0.5	cup	c	19
+317	6	1 tablespoon salt	1.0	tablespoon	T	20
+317	32	2 tablespoons Sriracha or Tabasco sauce	2.0	tablespoons	T	21
+317	7	3 1/2 cups water	3.5	cups	c	22
+317	0	1 whole chicken (about 3 lbs)	3.0	lbs	lb	23
+317	0	1 large orange	1.0			24
+318	0	30 mls Brandy	30.0	mls	mls	0
+318	109	4 Egg yolks	4.0			1
+318	14	4 eggs	4.0			2
+318	0	8 French bread slices, stale	8.0	slices	slices	3
+318	20	4 cups milk	4.0	cups	c	4
+318	0	1/2 cup Raisins	0.5	cup	c	5
+318	114	cup Sugar	1.0	cup	c	6
+318	10	125 grams Unsalted Butter	125.0	grams	g	7
+318	134	1 teaspoon Vanilla extract	1.0	teaspoon	t	8
+319	0	32 ounces (2 bags) frozen chopped collard greens (or spinach)	32.0	ounces	oz	0
+319	61	� teaspoon crushed red pepper	0.25	teaspoon	t	1
+319	14	2 eggs	2.0			2
+319	23	6 cloves garlic, roasted and finely chopped	6.0	cloves	cloves	3
+319	140	3 tablespoons grapeseed oil	3.0	tablespoons	T	4
+319	0	2 jalape�os, roasted, seeded and finely chopped	2.0			5
+319	76	� red bell pepper, roasted and chopped	0.5			6
+319	6	1/4 teaspoon salt	0.25	teaspoon	t	7
+320	0	1 medium head of broccoli, cut into florets	1.0	head	head	0
+320	0	1 x pack Maggi So Juicy Mixed Herbs	1.0			1
+320	72	1/4 cup olive oil (60 mL)	60.0	mL	mL	2
+320	0	1 large Russet potato, peeled and diced	1.0			3
+320	0	Freshly ground black pepper and salt	4.0	servings	servings	4
+320	0	1 1/2 pounds of boneless, skinless chicken breasts	1.5	pounds	lb	5
+320	154	3 large sweet potatoes, peeled and diced	3.0			6
+320	10	2 tablespoons Chilled unsalted butter	2.0	tablespoons	T	7
+321	80	3 tablespoons Dry Curry Powder	3.0	tablespoons	T	0
+321	88	2 tablespoons Dried Basil Leaves	2.0	tablespoons	T	1
+321	0	1 Eggplants	1.0			2
+321	165	10 ounces Frozen chopped Spinach, with excess water squeezed out	10.0	ounces	oz	3
+321	0	1/2 cup Half & Half or Heavy Cream	0.5	cup	c	4
+321	0	12 ounces Montery Jack & Cheddar Cheese Mix	12.0	ounces	oz	5
+321	135	2 Jalapenos, finely chopped	2.0			6
+321	0	3 cups Marinara Sauce (home made or a jar of 24 oz store bought)	3.0	cups	c	7
+321	136	12 Baby Portabella Mushrooms, sliced	12.0			8
+321	0	Salt & Pepper, to taste	6.0	servings	servings	9
+321	154	4 Sweet Potatoes	4.0			10
+321	11	1 tablespoon Canola or Vegetable Cooking Oil	1.0	tablespoon	T	11
+322	58	black pepper	4.0	servings	servings	0
+322	0	6 ounces (about 3 links) chicken sausage, sliced	6.0	ounces	oz	1
+322	0	6 cups chicken stock	6.0	cups	c	2
+322	61	1/4 teaspoon chili flakes	0.25	teaspoon	t	3
+322	86	1/2 teaspoon dried thyme	0.5	teaspoon	t	4
+322	23	1 clove garlic, thinly sliced	1.0	clove	clove	5
+322	93	1/2 teaspoon ground coriander	0.5	teaspoon	t	6
+322	0	4 cups chopped kale, steamed until just wilted	4.0	cups	c	7
+322	55	1/3 cup mushrooms, sliced	0.3333333333333333	cup	c	8
+322	72	olive oil	4.0	servings	servings	9
+322	96	sea salt	4.0	servings	servings	10
+322	154	3 medium sweet potatoes, coarsely cubed	3.0			11
+322	4	1 medium yellow onion, thinly sliced	1.0			12
+323	12	1/2 Cinnamon stick	0.5			0
+323	15	1 1/2 tablespoons All-purpose flour	1.5	tablespoons	T	1
+323	23	1 Garlic clove, minced	1.0	clove	clove	2
+323	0	750 grams lamb shoulder, cut into 4 cm cubes	750.0	grams	g	3
+323	72	2 tablespoons extra-virgin olive oil	2.0	tablespoons	T	4
+323	0	1/4 cup Red wine	0.25	cup	c	5
+323	7	1 cup Water	1.0	cup	c	6
+323	154	A (1/2-pound) sweet potato, peeled and cut into 1-inch pieces	0.5	pound	lb	7
+324	0	8 whole bay leaves	8.0			0
+324	2	bunch of carrots, cut up	1.0	bunch	bunch	1
+324	48	pinch of cumin	1.0	pinch	pinch	2
+324	80	pinch of curry	1.0	pinch	pinch	3
+324	23	1 clove garlic	1.0	clove	clove	4
+324	65	2 cups of dry lentils	2.0	cups	c	5
+324	58	pinch of pepper	1.0	pinch	pinch	6
+324	96	pinch of sea salt	1.0	pinch	pinch	7
+324	5	1 tablespoon of smooth organic peanut butter (optional)	1.0	tablespoon	T	8
+324	164	bunch of spinach	1.0	bunch	bunch	9
+324	154	1 whole sweet potato, chopped up	1.0			10
+324	7	2 cups water	2.0	cups	c	11
+324	4	1 yellow onion, chopped up	1.0			12
+325	130	2 apples, cored, peeled and sliced*	2.0	slices	slices	0
+325	10	2 tablespoons butter or margarine	2.0	tablespoons	T	1
+325	92	1/4 cup cilantro, chopped	0.25	cup	c	2
+325	0	4 ounces Cotija cheese	4.0	ounces	oz	3
+325	48	1 teaspoon cumin	1.0	teaspoon	t	4
+325	140	2 tablespoons grapeseed oil, divided	2.0	tablespoons	T	5
+325	17	2 tablespoons honey	2.0	tablespoons	T	6
+325	139	Juice and zest of 1 lime	1.0			7
+325	4	1 red onion, sliced	1.0			8
+325	61	1/2 teaspoon red pepper flakes	0.5	teaspoon	t	9
+325	154	5 pounds sweet potatoes	5.0	pounds	lb	10
+325	0	6 tortillas (corn or flour)	6.0			11
+326	101	2 tablespoons balsamic vinegar	2.0	tablespoons	T	0
+326	87	3 leaves of basil, finely diced	3.0	leaves	leaves	1
+326	0	10-15 two-inch long okra pods	10.0			2
+326	0	Salt and Pepper to taste	1.0	serving	serving	3
+326	47	1 large tomato, chopped	1.0			4
+327	33	1 pound Dried Black Beans	1.0	pound	lb	0
+327	0	6 cups Chicken Broth or Water	6.0	cups	c	1
+327	118	3 tablespoons Chipotle chilies	3.0	tablespoons	T	2
+327	48	2 tablespoons Ground Cumin	2.0	tablespoons	T	3
+327	0	1 bunch kale	1.0	bunch	bunch	4
+327	72	2 tablespoons olive oil	2.0	tablespoons	T	5
+327	4	1 Onion – Chopped	1.0			6
+327	0	Salt & Pepper	6.0	servings	servings	7
+327	154	3 lbs sweet potatoes	3.0	lbs	lb	8
+328	0	4 catfish fillets or whole dressed catfish	4.0			0
+328	15	1/4 cup flour	0.25	cup	c	1
+328	143	1/8 teaspoon Garlic Powder	0.125	teaspoon	t	2
+328	6	2 1/2 teaspoons Salt	2.5	teaspoons	t	3
+328	71	Vegetable oil	6.0	servings	servings	4
+328	0	3/4 cup yellow cornmeal	0.75	cup	c	5
+329	67	1 can (28- ounces) crushed tomatoes	28.0	ounces	oz	0
+329	99	1 1/2 tablespoons cider vinegar	1.5	tablespoons	T	1
+329	0	Coarse salt and freshly ground black pepper	1.0	serving	serving	2
+329	118	1 can chipotle chile, packed in adobo sauce, minced	7.0	oz	oz	3
+329	23	3 garlic cloves, minced	3.0	cloves	cloves	4
+329	18	1/2 Juice of lemon	0.5			5
+329	72	1 1/2 tablespoons extra-virgin olive oil	1.5	tablespoons	T	6
+329	4	1 medium onion diced	1.0			7
+329	0	1/4 cup unsulfured molasses	0.25	cup	c	8
+329	137	1 1/2 tablespoons Worcestershire sauce	1.5	tablespoons	T	9
+330	1	15 ounces black eyed peas, drained and rinsed	15.0	ounces	oz	0
+330	92	1/2 cup chopped cilantro	0.5	cup	c	1
+330	23	1/2 teaspoon minced garlic	0.5	teaspoon	t	2
+330	132	3 drops hot sauce	3.0	drops	drops	3
+330	139	1 The juice of lime	1.0			4
+330	47	1 ripe roma tomato, chopped	1.0			5
+330	0	3 tablespoons of good quality salsa verde	3.0	tablespoons	T	6
+331	124	1/4 cup barbecue sauce	0.25	cup	c	0
+331	10	1 Tbsp. butter	1.0	Tbsp	Tbsp	1
+331	50	2 Tbsp. dark brown sugar	2.0	Tbsp	Tbsp	2
+331	143	1 Tsp. garlic powder	1.0	Tsp	Tsp	3
+331	0	¾ cup ketchup	0.75	cup	c	4
+331	0	1/2 Tsp. dry mustard powder	0.5	Tsp	Tsp	5
+331	4	2 onions, diced	2.0			6
+331	0	2 lbs. pork spare ribs	2.0	lbs	lb	7
+331	0	salt and pepper, to taste	2.0	servings	servings	8
+331	98	1/2 cup white vinegar	0.5	cup	c	9
+331	137	2 Tbsp. Worcestershire sauce	2.0	Tbsp	Tbsp	10
+332	0	1 can cannellini beans (15 ounces)	15.0	ounces	oz	0
+332	0	1 quart chicken broth (or vegetable broth)	1.0	quart	quart	1
+332	45	1 teaspoon dried Oregano	1.0	teaspoon	t	2
+332	140	1 tablespoon grapeseed oil	1.0	tablespoon	T	3
+332	0	1 head red kale, stems removed, leaves chopped	1.0	head	head	4
+332	58	Salt & ground black pepper	4.0	servings	servings	5
+332	154	1 medium sweet potato, peel on, chopped into �� cubes	1.0			6
+332	85	� teaspoon Thyme	0.25	teaspoon	t	7
+332	0	� cup white wine (I used chardonnay)	0.5	cup	c	8
+332	4	1/2 yellow onion, chopped up	0.5			9
+333	0	2 c. Valencia or Arborio rice	2.0	c	c	0
+333	0	3/4 c. frozen artichoke hearts	0.75	c	c	1
+333	67	1 can (14 1/2 oz.) diced tomatoes	14.5	oz	oz	2
+333	0	8 oz. chorizo sausage	8.0	oz	oz	3
+333	0	1/3 c. dry white wine	0.3333333333333333	c	c	4
+333	72	extra-virgin olive oil	6.0	servings	servings	5
+333	43	chopped fresh flat-leaf parsely	1.0	leaf	leaf	6
+333	23	8-9 med garlic cloves, minced	8.0	cloves	cloves	7
+333	0	lemon wedges	6.0	servings	servings	8
+333	0	3 c. low-sodium chicken broth	3.0	c	c	9
+333	4	1 onion	1.0			10
+333	38	1/2 c. frozen peas	0.5	c	c	11
+333	76	1 red bell pepper	1.0			12
+333	0	1/2 t. saffron threads	0.5	t	t	13
+333	0	salt and pepper	6.0	servings	servings	14
+333	52	1 lb. large shrimp	1.0	lb	lb	15
+333	0	1 lb. boneless, skinless chicken thighs	1.0	lb	lb	16
+334	0	5 artichoke hearts, unmarinated	5.0			0
+334	0	1 cup uncooked basmati rice	1.0	cup	c	1
+334	0	1 cup boned and skinned white meat of chicken, sliced	1.0	cup	c	2
+334	0	2 cups hot, defatted chicken stock	2.0	cups	c	3
+334	0	6 clams in their shells (scrub outside of shells)	6.0			4
+334	0	1 cup peas, fresh or frozen	1.0	cup	c	5
+334	23	2 cloves garlic, minced	2.0	cloves	cloves	6
+334	72	1 teaspoon olive oil	1.0	teaspoon	t	7
+334	4	1/2 cup chopped onion	0.5	cup	c	8
+334	45	3/4 teaspoon oregano	0.75	teaspoon	t	9
+334	52	6 lg. prawns, shelled and deveined	6.0			10
+334	76	1/2 cup each sliced red bell pepper and sliced	0.5	cup	c	11
+334	0	1 red snapper fillet, cut into 1 inch pieces	1.0	fillet	fillet	12
+334	0	2 teaspoons safflower oil	2.0	teaspoons	t	13
+334	0	1 teaspoon saffron threads	1.0	teaspoon	t	14
+334	6	1 tablespoon herbal salt substitute	1.0	tablespoon	T	15
+334	47	1/2 cup diced tomato	0.5	cup	c	16
+334	7	2 cups boiling water	2.0	cups	c	17
+335	0	1 Bay Leaf	1.0			0
+335	0	1/2 pound Spanish Chorizo	0.5	pound	lb	1
+335	0	1 pound red Fingerling Potatoes	1.0	pound	lb	2
+335	23	2 cloves garlic	2.0	cloves	cloves	3
+335	0	2 pounds Manila Clams	2.0	pounds	lb	4
+335	72	1 tablespoon Olive Oil	1.0	tablespoon	T	5
+335	43	1 tablespoon Chopped Parsley	1.0	tablespoon	T	6
+335	0	2 cups White Wine	2.0	cups	c	7
+336	58	freshly ground black pepper	4.0	servings	servings	0
+336	0	2 cups corn kernels, from 2 large or 4 small ears of corn	2.0	cups	c	1
+336	14	4 eggs, well beaten	4.0			2
+336	0	1/4 cup fresh ricotta	0.25	cup	c	3
+336	97	kosher salt	4.0	servings	servings	4
+336	0	2 tablespoons grated Pecorino Romano cheese	2.0	tablespoons	T	5
+336	20	1 cup whole milk	1.0	cup	c	6
+337	0	1 package (about 10 ounces) refrigerated fully-cooked chicken breast strips (about 1 3/4 cups)	10.0	ounces	oz	0
+337	0	4 cups Swanson® Chicken Broth or Swanson® Chicken Stock, heated	4.0	cups	c	1
+337	162	1 teaspoon ground turmeric	1.0	teaspoon	t	2
+337	174	2 cups uncooked regular long-grain white rice	2.0	cups	c	3
+337	0	1 cup Pace® Picante Sauce	1.0	cup	c	4
+337	52	3/4 pound small frozen peeled, deveined, cooked shrimp, thawed	0.75	pound	lb	5
+337	0	1 package (16 ounces) turkey kielbasa, sliced	16.0	ounces	oz	6
+337	71	1 tablespoon vegetable oil	1.0	tablespoon	T	7
+338	14	1 Large Egg	1.0			0
+338	0	1 (3 oz.) pkg. vanilla instant pudding	3.0	oz	oz	1
+338	0	1 kiwi fruit, peeled	1.0			2
+338	0	1 c. light cream	1.0	c	c	3
+338	20	60ml Milk	60.0	ml	ml	4
+338	0	1 1/2 cups strawberries (about � pint)	1.5	cups	c	5
+338	0	1 (9 oz.) pkg. white or yellow cake mix	9.0	oz	oz	6
+339	109	8 larges egg yolks	8.0			0
+339	0	1 tall can Full Cream Evaporated Milk	1.0			1
+339	0	1/2 can Sweetened Condense Milk	0.5	can	can	2
+339	134	1 teaspoon vanilla extract	1.0	teaspoon	t	3
+339	114	1 tablespoon white sugar for each mould	1.0	tablespoon	T	4
+340	10	1 ounce Butter	1.0	ounce	oz	0
+340	91	Chives for garnish	6.0	servings	servings	1
+340	116	3 egg whites	3.0			2
+340	115	1/2 cup half-and-half plus	0.5	cup	c	3
+340	115	2 tablespoons half-and-half	2.0	tablespoons	T	4
+340	25	1 pound Leeks	1.0	pound	lb	5
+340	72	1 1/2 tablespoons olive oil	1.5	tablespoons	T	6
+340	6	1/2 teaspoon salt	0.5	teaspoon	t	7
+340	0	1 1/2 shallots chopped fine	1.0			8
+340	0	1/2 cup whipping cream plus	0.5	cup	c	9
+340	0	2 tablespoons whipping cream	2.0	tablespoons	T	10
+341	0	1 bay leaf	1.0			0
+341	0	1 quart fish stock or chicken broth	1.0	quart	quart	1
+341	0	1 pound chorizo sausage, casing removed	1.0	pound	lb	2
+341	72	2 teaspoons extra-virgin olive oil	2.0	teaspoons	t	3
+341	23	6 cloves garlic, minced	6.0	cloves	cloves	4
+341	145	1 lemon, cut into wedges	1.0			5
+341	146	1 lemon, zested	1.0			6
+341	0	24 mediums mussels, cleaned	24.0			7
+341	43	1/4 cup parsley, chopped	0.25	cup	c	8
+341	0	1 cup peas	1.0	cup	c	9
+341	76	1 red bell pepper, chopped	1.0			10
+341	61	1/2 teaspoon crushed red pepper flakes	0.5	teaspoon	t	11
+341	174	2 cups dry rice	2.0	cups	c	12
+341	0	1/4 teaspoon saffron threads	0.25	teaspoon	t	13
+341	52	3/4 pound peeled and deveined shrimp	0.75	pound	lb	14
+341	0	1 Spanish onion, chopped	1.0			15
+341	85	6 sprigs thyme	6.0	sprigs	sprigs	16
+341	0	1/2 pound firm white fish, cut into bite-size pieces	0.5	pound	lb	17
+342	50	1 cup brown sugar	1.0	cup	c	0
+342	109	10 egg yolk	10.0			1
+342	0	1 can evaporated milk	1.0	can	can	2
+342	18	1/4 teaspoon lemon juice	0.25	teaspoon	t	3
+342	0	14 ounces Sweetened condensed MILK	14.0	ounces	oz	4
+342	0	1 teaspoon vanilla essence	1.0	teaspoon	t	5
+342	7	1 cup water	1.0	cup	c	6
+343	0	1 cup cubed (�") cooked ham or Canadian bacon (4	1.0	cup	c	0
+343	0	1 1/2 quarts fat-skimmed chicken broth	1.5	quarts	quarts	1
+343	72	1 teaspoon olive oil	1.0	teaspoon	t	2
+343	0	1 cup frozen petite peas	1.0	cup	c	3
+343	76	2 pounds x red bell peppers - (1 � total)	2.0	pounds	lb	4
+343	0	1/4 teaspoon saffron threads (optional)	0.25	teaspoon	t	5
+343	0	2 ounces pkt Spanish-style seasoned rice mix - (5 to 6 e	2.0	ounces	oz	6
+343	52	1 1/2 pounds Shrimp, shelled and Deveined	1.5	pounds	lb	7
+344	58	a pinch of freshly ground black pepper	1.0	pinch	pinch	0
+344	0	8 pieces chicken wings	8.0	pieces		1
+344	0	6-8 oz solid chorizo sausage, cut into 1/4 inch rounds	6.0	oz	oz	2
+344	45	2 t dried oregano	2.0	t	t	3
+344	72	1/4 C extra-virgin olive oil	0.25	C	C	4
+344	23	1 Clove Garlic, mashed	1.0	Clove	Clove	5
+344	0	4 oz shelled green peas for garnish	4.0	oz	oz	6
+344	97	a pinch of Kosher salt	1.0	pinch	pinch	7
+344	0	4-8 lemon wedges for serving	4.0			8
+344	0	36 littleneck clams	36.0			9
+344	41	1 T smoky paprika	1.0	T	T	10
+344	43	1/4 C Italian parsley leaves, chopped	0.25	C	C	11
+344	0	1 teaspoon Saffron, crumbled	1.0	teaspoon	t	12
+344	0	salt and pepper to taste	4.0	servings	servings	13
+344	0	1 C short-grain Spanish rice (we used La Bomba but Arborio can be substituted)	1.0	C	C	14
+344	52	1 1/2 pounds Shrimp, shelled and Deveined	1.5	pounds	lb	15
+344	47	1 can of 14.5 oz whole tomatoes, drained, crushed and chopped coarse	1.0			16
+344	7	2 C hot water	2.0	C	C	17
+344	4	1 white onion, skinned and diced	1.0			18
+345	0	1 bay leaf	1.0			0
+345	169	pound fresh green beans diced, or	1.0	pound	lb	1
+345	170	canned peas, carrots, or chick (depending on your taste)	1.0	serving	serving	2
+345	76	1 lrg red bell pepper cut wide strips	1.0			3
+345	0	pound calamari cleaned, skinned,	1.0	pound	lb	4
+345	43	Chopped parsley (fresh is best)	1.0	serving	serving	5
+345	23	1 full head of garlic	1.0			6
+345	23	Minced garlic as much as you like	1.0	serving	serving	7
+345	3	1 green pepper diced	1.0			8
+345	0	12 Clams, littleneck Or mussels or both	12.0			9
+345	72	Olive oil as needed	1.0	serving	serving	10
+345	4	1 medium onion	1.0			11
+345	47	3 Roma plum tomatoes - (to 4) minced	3.0			12
+345	0	1 teaspoon Saffron, crumbled	1.0	teaspoon	t	13
+345	52	pound medium shrimp in shells heads off	1.0	pound	lb	14
+345	174	2 cups raw white rice	2.0	cups	c	15
+346	0	8 chicken drumsticks or thighs	8.0			0
+346	0	3 Chorizo, sliced 1/2" Thick (or Portuguese or Ita	3.0			1
+346	0	Freshly cracked black pepper	10.0	servings	servings	2
+346	43	Chopped parsley (fresh is best)	10.0	servings	servings	3
+346	23	2 garlic cloves minced	2.0	cloves	cloves	4
+346	174	500g long grain rice	500.0	g	g	5
+346	0	12 Clams, littleneck Or mussels or both	12.0			6
+346	72	15 milliliters olive oil	15.0	milliliters	ml	7
+346	4	1 medium onion	1.0			8
+346	0	500g fillet of pork, diced into small pieces	500.0	g	g	9
+346	47	200g deep red tomatoes	200.0	g	g	10
+346	10	1/4 cup Unsalted butter	0.25	cup	c	11
+346	7	1.5L water	1.0	liter	l	12
+346	52	8 large crevettes	8.0			13
+346	0	50g jambon, smoked (pieces)	50.0	g	g	14
+346	0	200g petit pois	200.0	g	g	15
+347	0	1 bay leaf	1.0			0
+347	0	1 1/2 pounds chicken breasts cut into chunks or whole chic	1.5	pounds	lb	1
+347	0	3 1/2 cups chicken stock	3.5	cups	c	2
+347	0	14 ounces chorizo	14.0	ounces	oz	3
+347	0	coarse salt and pepper	6.0	servings	servings	4
+347	48	1 teaspoon cumin	1.0	teaspoon	t	5
+347	23	2 cloves garlic, chopped	2.0	cloves	cloves	6
+347	3	1 green pepper, chopped	1.0			7
+347	145	lemon wedges	6.0	servings	servings	8
+347	0	2 cups short or medium grain rice	2.0	cups	c	9
+347	72	1/2 cup olive oil	0.5	cup	c	10
+347	4	1 medium onion, chopped	1.0			11
+347	41	1 teaspoon paprika or pimenton	1.0	teaspoon	t	12
+347	38	1/2 cup frozen peas	0.5	cup	c	13
+347	76	1 red pepper, chopped	1.0			14
+347	83	1 teaspoon rosemary	1.0	teaspoon	t	15
+347	0	1 pinch saffron threads	1.0	pinch	pinch	16
+347	52	1 pound shrimp with tails on	1.0	pound	lb	17
+347	85	1 teaspoon thyme	1.0	teaspoon	t	18
+347	47	1 tomato, chopped	1.0			19
+347	0	1 cup white wine	1.0	cup	c	20
+348	8	2 teaspoons baking powder	2.0	teaspoons	t	0
+348	10	2 tablespoons butter	2.0	tablespoons	T	1
+348	0	1 cup organic canned pumpkin, NOT pie filling	1.0	cup	c	2
+348	50	3/4 cup dark brown sugar, packed firmly	0.75	cup	c	3
+348	14	2 eggs	2.0			4
+348	15	3 cups flour	3.0	cups	c	5
+348	12	1 teaspoon ground cinnamon	1.0	teaspoon	t	6
+348	0	1/8 teaspoon ground cloves	0.125	teaspoon	t	7
+348	16	1/8 teaspoon ground nutmeg	0.125	teaspoon	t	8
+348	20	1/2 cup milk	0.5	cup	c	9
+348	6	1/2 teaspoon salt	0.5	teaspoon	t	10
+348	0	1/2 cup shortening	0.5	cup	c	11
+348	114	2 tablespoons sugar	2.0	tablespoons	T	12
+349	99	3 tablespoons apple cider vinegar	3.0	tablespoons	T	0
+349	0	3/4 of an English cucumber, peeled and seeded	0.75			1
+349	44	2 teaspoons dried parsley	2.0	teaspoons	t	2
+349	72	4 tablespoons extra-virgin olive oil	4.0	tablespoons	T	3
+349	23	3 garlic cloves	3.0	cloves	cloves	4
+349	0	1 1/2 cups grape tomatoes	1.5	cups	c	5
+349	81	1/4 orange bell pepper, diced	0.25			6
+349	0	4 tablespoons Panko bread crumbs	4.0	tablespoons	T	7
+349	4	1/2 red onion, diced	0.5			8
+349	0	2 slices rye bread	2.0	slices	slices	9
+349	6	1/8 teaspoon salt	0.125	teaspoon	t	10
+349	96	2 teaspoons fine sea salt	2.0	teaspoons	t	11
+349	0	1/2 cup Daiya vegan cheddar crumbles	0.5	cup	c	12
+349	47	3 ripe on the vine tomatoes, cored	3.0			13
+349	7	1/4 cup water	0.25	cup	c	14
+350	0	1 bay leaf	1.0			0
+350	23	2 cloves of garlic, finely chopped	2.0	cloves	cloves	1
+350	42	1 pound Ground beef	1.0	pound	lb	2
+350	72	1 cup olive oil	1.0	cup	c	3
+350	72	2 tablespoons of olive oil	2.0	tablespoons	T	4
+350	4	1/2 cup onion, chopped	0.5	cup	c	5
+350	4	Half an onion, finely chopped	20.0	servings	servings	6
+350	43	2 tablespoons of chopped parsley	2.0	tablespoons	T	7
+350	0	Salt and pepper to taste	20.0	servings	servings	8
+350	114	1 teaspoon of sugar	1.0	teaspoon	t	9
+350	41	pinch of Pimenton de la Vera (Dulce) or Spanish sweet paprika	1.0	pinch	pinch	10
+350	47	600g tomatoes	600.0	g	g	11
+350	21	4 slices of sandwich bread, only the white part, diced	4.0	slices	slices	12
+350	14	1 large egg, whole	1.0			13
+351	0	1/4 cup smoked almonds, toasted & rough chopped	0.25	cup	c	0
+351	95	1/2 teaspoon chili powder	0.5	teaspoon	t	1
+351	0	1 (15 ounce) can Fire Roasted Diced Tomatoes, drained	15.0	ounce	oz	2
+351	43	2 tablespoons fresh flat-leaf parsley	2.0	tablespoons	T	3
+351	45	2 tablespoons fresh oregano	2.0	tablespoons	T	4
+351	83	1 teaspoon fresh rosemary	1.0	teaspoon	t	5
+351	23	3 cloves of garlic, peeled & rough chopped	3.0	cloves	cloves	6
+351	97	Kosher salt & freshly cracked black pepper	8.0	servings	servings	7
+351	72	2 tablespoons olive oil	2.0	tablespoons	T	8
+351	76	2 red bell peppers	2.0			9
+351	100	2 tablespoons red wine vinegar	2.0	tablespoons	T	10
+351	41	1 teaspoon smoked paprika	1.0	teaspoon	t	11
+351	114	1 tablespoon sugar	1.0	tablespoon	T	12
+352	61	1/4 teaspoon crushed red pepper (or more, to taste)	0.25	teaspoon	t	0
+352	23	2 cloves garlic, minced	2.0	cloves	cloves	1
+352	0	1/4 cup hazelnuts	0.25	cup	c	2
+352	0	cup freshly grated Parmesan cheese	1.0	cup	c	3
+352	100	2 tablespoons red wine vinegar, according to desired consistency	2.0	tablespoons	T	4
+352	117	1/4 cup roasted almonds	0.25	cup	c	5
+352	76	1 whole 12 oz. jar roasted red peppers (or about 2- 3 fresh red bell peppers, roasted)	12.0	oz	oz	6
+352	6	1 teaspoon salt - (about)	1.0	teaspoon	t	7
+352	0	1/4 tablespoon c. sun-dried tomatoes, packed in oil (or 1/4 c. soft sun-dried	0.25	tablespoon	T	8
+353	0	1 bunch fresh asparagus, sliced into 2 inch length	1.0	bunch	bunch	0
+353	2	1/4 carrot, sliced thinly	0.25			1
+353	0	2 tablespoons cooking oil	2.0	tablespoons	T	2
+353	163	1 1/2 tablespoons fish sauce (Nam Pla) (to your taste)	1.5	tablespoons	T	3
+353	23	3 cloves garlic, chopped coarsely	3.0	cloves	cloves	4
+353	114	1 teaspoon sugar	1.0	teaspoon	t	5
+353	7	3 tablespoons of water	3.0	tablespoons	T	6
+353	0	6 small squids (clean and cut into bite size)	6.0			7
+354	58	1 teaspoon black pepper	1.0	teaspoon	t	0
+354	50	3 tablespoons brown sugar	3.0	tablespoons	T	1
+354	0	500 grams chicken thigh or breast meat, cut into cubes	500.0	grams	g	2
+354	0	Cucumber, cut int wedges	30.0	servings	servings	3
+354	50	3 tablespoons dark brown sugar	3.0	tablespoons	T	4
+354	72	Extra oil for cooking	30.0	servings	servings	5
+354	163	1 teaspoon fish sauce	1.0	teaspoon	t	6
+354	163	3 teaspoons fish sauce	3.0	teaspoons	t	7
+354	23	1 clove garlic, chopped	1.0	clove	clove	8
+354	93	1 teaspoon ground coriander	1.0	teaspoon	t	9
+354	48	1 teaspoon ground cumin	1.0	teaspoon	t	10
+354	18	1 tablespoon lemon juice	1.0	tablespoon	T	11
+354	18	3 tablespoons lemon juice	3.0	tablespoons	T	12
+354	74	1 tablespoon light soya sauce	1.0	tablespoon	T	13
+354	5	Peanut butter, to taste	30.0	servings	servings	14
+354	121	2 tablespoons red curry paste	2.0	tablespoons	T	15
+354	0	1 cup of coarse roasted peanuts	1.0	cup	c	16
+354	0	Spanish onion, cut into wedges	1.0			17
+354	162	1 teaspoon turmeric	1.0	teaspoon	t	18
+354	0	4 cups unsweetened coconut milk	4.0	cups	c	19
+354	71	1 tablespoon vegetable oil	1.0	tablespoon	T	20
+355	87	1/2 cup packed holy basil leaves & flowers	0.5	cup	c	0
+355	0	1 1/2 tablespoons oyster sauce	1.5	tablespoons	T	1
+355	0	1 teaspoon Braggs Amino Acids	1.0	teaspoon	t	2
+355	0	1 cup broccoli florets	1.0	cup	c	3
+355	11	2 tablespoons canola oil	2.0	tablespoons	T	4
+355	2	1 carrot, sliced	1.0			5
+355	120	1 sliced orange chili (about 1 tablespoon)	1.0	tablespoon	T	6
+355	120	1 tablespoon smashed small Thai chilies	1.0	tablespoon	T	7
+355	23	3 garlic, minced	3.0			8
+355	0	1/2 cup Japanese eggplant, sliced	0.5	cup	c	9
+355	58	2 tablespoons fresh peppercorns	2.0	tablespoons	T	10
+355	0	1 1/4 cup (1/2 lb) fresh wide rice noodles [or, 1/4 lb. + 1/4 lb. Yam-cake, or Shirataki noodles]	0.5	lb	lb	11
+355	74	1 tablespoon fish sauce or white soy sauce (or more to taste)	1.0	tablespoon	T	12
+355	0	1/4 teaspoon Stevia	0.25	teaspoon	t	13
+355	125	1 1/2 teaspoon Tamari	1.5	teaspoon	t	14
+355	0	1/2 cup firm tofu, patted dry and cut into bit-sized pieces (or 1/2 cup seafood such as squid & shrimp, or chicken)	0.5	cup	c	15
+355	98	1/4 teaspoon vinegar	0.25	teaspoon	t	16
+355	7	3/4 cup of water	0.75	cup	c	17
+355	0	1/2 cup zucchini (1 medium), sliced	0.5	cup	c	18
+356	0	2 chilies	2.0			0
+356	163	3 tablespoons fish sauce	3.0	tablespoons	T	1
+356	139	1 whole lime, juiced	1.0			2
+356	156	lettuce	2.0	servings	servings	3
+356	0	2 whole green mango. peeled and julienned	2.0			4
+356	114	1 tablespoon sugar	1.0	tablespoon	T	5
+356	47	2 whole tomatoes, diced	2.0			6
+357	0	5 small dried chile de arbols, or other red chilies (check the produce section or Hispanic foods aisle)	5.0			0
+357	163	1/3 c. fish sauce	0.3333333333333333	c	c	1
+357	23	3 large cloves garlic, coarsely chopped	3.0	cloves	cloves	2
+357	0	12 cherry or grape tomatoes, halved	12.0			3
+357	139	1/4 c. lime juice	0.25	c	c	4
+357	4	1/2 c. very coarsely chopped onion	0.5	c	c	5
+357	76	1 red bell pepper, coarsely chopped	1.0			6
+357	114	1 pinch of sugar	1.0	pinch	pinch	7
+358	87	1/2 cup (s) of fresh basil, chopped	0.5	cup	c	0
+358	0	1 cup (s) of broccoli slaw mix (containing broccoli, carrots&	1.0	cup	c	1
+358	0	1 1/2 cups (s) of chicken strips	1.5	cups	c	2
+358	58	1 pinch of ground black pepper	1.0	pinch	pinch	3
+358	51	3/4 cup (s) of mung bean sprouts	0.75	cup	c	4
+358	5	1/4 cup (s) of natural peanut butter, creamy (no sugar!)	0.25	cup	c	5
+358	0	cup (s) of peanuts, crushed	1.0	cup	c	6
+358	0	1 tablespoon of rice wine vinegar	1.0	tablespoon	T	7
+358	0	2 tablespoons of rice wine vinegar	2.0	tablespoons	T	8
+358	157	6 large romaine lettuce leaves	6.0			9
+358	96	1 teaspoon of sea salt	1.0	teaspoon	t	10
+358	28	1 tablespoon of sesame oil	1.0	tablespoon	T	11
+358	28	2 tablespoons of sesame oil	2.0	tablespoons	T	12
+358	46	1 tablespoon of sesame seeds	1.0	tablespoon	T	13
+358	74	2 tablespoons of shoyu or soy sauce	2.0	tablespoons	T	14
+358	114	1 1/2 tablespoons of sugar	1.5	tablespoons	T	15
+359	92	1/4 cup fresh cilantro, chopped	0.25	cup	c	0
+359	23	1 teaspoon minced garlic	1.0	teaspoon	t	1
+359	141	1 teaspoon minced ginger	1.0	teaspoon	t	2
+359	0	1 can coconut milk (I don't recommend using light)	1.0	can	can	3
+359	72	1 tablespoon olive oil	1.0	tablespoon	T	4
+359	4	1 cup finely chopped onion	1.0	cup	c	5
+359	66	1 cup red lentils, picked through for stones, and rinsed well	1.0	cup	c	6
+359	6	1/2 teaspoon salt, or more to taste	0.5	teaspoon	t	7
+359	154	1 inch medium sweet potato, cut into 1/2 pieces	1.0	inch	inch	8
+359	0	2 teaspoons Thai red curry paste (if you like it spicy, use the full 2 teaspoons)	2.0	teaspoons	t	9
+359	162	1/4 teaspoon turmeric	0.25	teaspoon	t	10
+359	7	6 cups water	6.0	cups	c	11
+360	14	2 eggs	2.0			0
+360	23	clove garlic, minced fine	1.0	clove	clove	1
+360	3	1/2 green pepper, chopped	0.5			2
+360	71	• Oil for fry	1.0	serving	serving	3
+360	4	1 big onion, sliced	1.0			4
+360	0	Pepper to taste	1.0	serving	serving	5
+360	0	1 pound lean pork, sliced	1.0	pound	lb	6
+360	174	2 cups rice	2.0	cups	c	7
+360	6	• Salt to taste	1.0	serving	serving	8
+360	74	2 1/2 tablespoons soy sauce	2.5	tablespoons	T	9
+360	114	2 teaspoons sugar	2.0	teaspoons	t	10
+360	47	1 tomato, diced	1.0			11
+360	7	4 cups water	4.0	cups	c	12
+361	0	2 tbsp Corn Flour	2.0	tbsp	T	0
+361	92	1/4 cup of coriander leaves- chopped	0.25	cup	c	1
+361	14	1 Egg, Lightly Beaten	1.0			2
+361	163	1 1/2 tablespoons fish sauce	1.5	tablespoons	T	3
+361	0	200 g green beans	200.0	g	g	4
+361	71	Oil for fry	2.0	servings	servings	5
+361	59	1 -2 Red chili	1.0			6
+361	121	2 tbsp Red Curry Paste	2.0	tbsp	T	7
+361	6	salt	2.0	servings	servings	8
+361	94	2 Spring Onion, Chopped	2.0			9
+361	0	300 g White Fish Fillets, Uncooked	300.0	g	g	10
+362	2	1 cup carrot, shredded	1.0	cup	c	0
+362	120	2 to 3 chili padis	2.0			1
+362	163	Fish sauce, to taste	6.0	servings	servings	2
+362	23	1 clove of garlic, mashed	1.0	clove	clove	3
+362	138	4 limes	4.0			4
+362	0	3 cups raw green mangoes, shredded	3.0	cups	c	5
+362	0	Thai palm sugar, to taste	6.0	servings	servings	6
+362	0	4 tablespoons roasted coarse peanuts	4.0	tablespoons	T	7
+362	0	2 shallots, mashed	2.0			8
+362	52	1 tablespoon of dried shrimps, washed	1.0	tablespoon	T	9
+362	47	1 tomato, cut into wedges	1.0			10
+362	0	2 inches long beans cut into 1 pieces	2.0	inches	inches	11
+363	0	2 bay leaves	2.0			0
+363	0	1/2 inch roasted belacan	0.5	inch	inch	1
+363	58	1 tsp black peppercorns	1.0	tsp	t	2
+363	0	1/2 cup coconut milk	0.5	cup	c	3
+363	49	1 tsp cumin seeds	1.0	tsp	t	4
+363	93	2-3 sprigs coriander leaves (cut off roots and include the stems)	2.0	sprigs	sprigs	5
+363	163	3 tbsp Fish Sauce	3.0	tbsp	T	6
+363	0	1/2 inch galangal	0.5	inch	inch	7
+363	23	2 teaspoons minced garlic	2.0	teaspoons	t	8
+363	0	3 cardamoms (only the seeds)	3.0			9
+363	0	500g lamb (or beef)	500.0	g	g	10
+363	0	1 lemongrass	1.0			11
+363	139	2 tablespoons lemon or lime juice	2.0	tablespoons	T	12
+363	0	1/2 tsp lime rind	0.5	tsp	t	13
+363	71	1/2 cup oil	0.5	cup	c	14
+363	77	5-6 dried red chilies	5.0			15
+363	128	2 potatoes - remove skin and cut into chunks (optional)	2.0			16
+363	6	Salt for taste (only if need or use sparingly as fish sauce is salty)	5.0	servings	servings	17
+363	0	2-3 Shallots, sliced.	2.0	slices	slices	18
+364	0	2 cups broccoli, cut into mini florets	2.0	cups	c	0
+364	0	1 teaspoon hot chili sauce	1.0	teaspoon	t	1
+364	92	1/2 cup – 1 cilantro leaves, chopped	0.5	cup	c	2
+364	163	1 tablespoon fish sauce	1.0	tablespoon	T	3
+364	23	2 cloves garlic, minced	2.0	cloves	cloves	4
+364	30	2 tablespoons hoisin sauce	2.0	tablespoons	T	5
+364	18	2 tablespoons lemon juice	2.0	tablespoons	T	6
+364	72	2 tablespoons olive oil	2.0	tablespoons	T	7
+364	4	1 cup onions, diced	1.0	cup	c	8
+364	0	Salt and pepper	2.0	servings	servings	9
+364	74	2 tablespoons soy sauce	2.0	tablespoons	T	10
+364	76	1 cup sweet peppers, diced	1.0	cup	c	11
+364	0	6 ounces whole wheat spaghetti	6.0	ounces	oz	12
+365	0	8 oz bamboo shoots (sliced and drained)	8.0	oz	oz	0
+365	50	� cup brown sugar	0.25	cup	c	1
+365	0	1 lb chicken breast	1.0	lb	lb	2
+365	0	13.5 oz coconut milk	13.5	oz	oz	3
+365	163	1 teaspoon fish sauce (nam pla)	1.0	teaspoon	t	4
+365	4	2 onions, slice	2.0			5
+365	0	14 oz pineapple chunks (drained)	14.0	oz	oz	6
+365	76	1/2 cup red bell pepper (julienne)	0.5	cup	c	7
+365	0	1 tablespoon red curry paste	1.0	tablespoon	T	8
+365	31	250 grams snow peas, trimmed	250.0	grams	g	9
+366	0	Cooked jasmine rice	2.0	servings	servings	0
+366	0	2 large cucumbers	2.0			1
+366	0	6 Chinese sausages	6.0			2
+366	51	1 cup fresh bean sprouts	1.0	cup	c	3
+366	92	Fresh flat leaf parsley or cilantro leaves for garnish	1.0	leaves	leaves	4
+366	114	3 teaspoons granulated sugar	3.0	teaspoons	t	5
+366	94	4 green onions	4.0			6
+366	139	1/2 cup fresh lime juice	0.5	cup	c	7
+366	0	1 thinly sliced hot, fresh red chili pepper (optional)	1.0			8
+366	74	2 teaspoons soy sauce	2.0	teaspoons	t	9
+366	0	2 tablespoons Thai fish sauce	2.0	tablespoons	T	10
+367	0	2 tablespoons apple cider vinegar (or rice vinegar)	2.0	tablespoons	T	0
+367	151	8 ounces baby bok choy or regular bok choy (shredded	8.0	ounces	oz	1
+367	74	4 tablespoons Nama Shoyu (soy sauce) or Bragg liquid Aminos	4.0	tablespoons	T	2
+367	0	1 cup uncooked brown rice (make recipe below)	1.0	cup	c	3
+367	0	1 cup raw cashew nuts	1.0	cup	c	4
+367	0	1 1/4 cups dry unsweetened shredded coconut, lightly toasted	1.25	cups	c	5
+367	0	1 flax egg (made with 1 Tbsp. ground flax seed & 3 Tbsp. water)	1.0	tablespoon	T	6
+367	0	2 tablespoons extra-virgin olive oil	2.0	tablespoons	T	7
+367	23	4 garlic cloves, minced	4.0	cloves	cloves	8
+367	0	2 1/2 cups fresh green beans, cut in half	2.5	cups	c	9
+367	0	lime wedges for serving	4.0	servings	servings	10
+367	0	1/2 teaspoon stevia powder (or sweetener of choice)	0.5	teaspoon	t	11
+368	87	1 bunch basil leaves, 2 c. leaves	1.0	bunch	bunch	0
+368	0	8 cups chicken stock	8.0	cups	c	1
+368	0	Hot cooked rice	4.0	servings	servings	2
+368	163	2 tablespoons fish sauce	2.0	tablespoons	T	3
+368	94	4 green onions	4.0			4
+368	0	1 teaspoon organic peanut oil	1.0	teaspoon	t	5
+368	59	3 hot red or green chilies	3.0			6
+368	52	8 ounces shrimp, cooked, peeled, and deveined, 51 – 60 per pound	8.0	ounces	oz	7
+368	74	2 teaspoons soy sauce	2.0	teaspoons	t	8
+368	114	1 teaspoon sugar	1.0	teaspoon	t	9
+369	73	A handful of cashew nuts	1.0	handful	handful	0
+369	0	300-350g Chicken breast or thighs (about 3/4 pound)	0.75	pound	lb	1
+369	78	1 tablespoon chili paste	1.0	tablespoon	T	2
+369	74	1/2 tablespoon Dark soy sauce	0.5	tablespoon	T	3
+369	77	Dried chilies	3.0	servings	servings	4
+369	23	2 cloves garlic, minced	2.0	cloves	cloves	5
+369	94	1 stalk green onion	1.0	stalk	stalk	6
+369	4	1 onion (cut into wedges)	1.0			7
+369	74	1 tablespoon soy sauce	1.0	tablespoon	T	8
+370	50	1/4 cup Brown Sugar	0.25	cup	c	0
+370	0	1 teaspoon Hot Chili Sauce	1.0	teaspoon	t	1
+370	163	2 tablespoons Fish Sauce	2.0	tablespoons	T	2
+370	141	2 tablespoons Minced Fresh Ginger	2.0	tablespoons	T	3
+370	162	1 tablespoon ground Dried Turmeric	1.0	tablespoon	T	4
+370	138	1 Lime	1.0			5
+370	0	1 bunch Yu Choy	1.0	bunch	bunch	6
+370	0	1 1/2 pounds Salmon Fillet	1.5	pounds	lb	7
+371	151	1 large head bok choy, chopped	1.0	head	head	0
+371	50	2 teaspoons brown sugar	2.0	teaspoons	t	1
+371	2	1 c. julienned carrots	1.0	c	c	2
+371	78	2 teaspoons hot chili paste (depending on how spicy you prefer your dish- start with 1 tsp and taste test it)	2.0	teaspoons	t	3
+371	40	1 teaspoon corn starch dissolved in 1 tablespoon cold water	1.0	teaspoon	t	4
+371	0	1 12 ounce block extra firm tofu, drained and pressed to remove water	12.0	ounce	oz	5
+371	163	1 T. fish sauce	1.0	T	T	6
+371	0	3 tablespoons oyster sauce	3.0	tablespoons	T	7
+371	28	2 tablespoons Sesame oil	2.0	tablespoons	T	8
+371	74	2 tablespoons soy sauce	2.0	tablespoons	T	9
+372	11	1/2 c. canola oil, divided	0.5	c	c	0
+372	2	1 c. julienned carrots	1.0	c	c	1
+372	0	pinch of cayenne	1.0	pinch	pinch	2
+372	92	1/2 c. cilantro leaves	0.5	c	c	3
+372	163	1 T. fish sauce	1.0	T	T	4
+372	23	1 garlic clove, finely minced	1.0	clove	clove	5
+372	141	1 teaspoon Minced ginger	1.0	teaspoon	t	6
+372	50	2 t. light brown sugar	2.0	t	t	7
+372	139	3 T. fresh lime juice	3.0	T	T	8
+372	148	1 small head of napa cabbage, shredded (about 3 c.)	3.0	c	c	9
+372	149	1/2 head red cabbage	0.5	head	head	10
+372	94	1 c. thinly sliced scallion	1.0	c	c	11
+372	31	6 oz. snow peas, trimmed, sliced on the diagonal about 1/2-inch thick	6.0	oz	oz	12
+372	0	1/2 t. Chinese five spice	0.5	t	t	13
+372	32	1 t. sriracha	1.0	t	t	14
+372	0	1 c. unsalted peanuts, divided	1.0	c	c	15
+372	0	12 square wonton wrappers	12.0	square	square	16
+372	82	1 yellow bell pepper, thinly sliced	1.0			17
+373	0	1 small aubergine, chopped into chunks	1.0			0
+373	87	20 grams pack basil, leaves picked	20.0	grams	g	1
+373	50	1 teaspoon brown sugar	1.0	teaspoon	t	2
+373	0	400 milliliters can reduced-fat coconut milk	400.0	milliliters	ml	3
+373	0	3 red chilies	3.0			4
+373	92	20 grams stalks from pack coriander	20.0	grams	g	5
+373	0	1 courgette, chopped into chunks	1.0			6
+373	23	2 garlic cloves	2.0	cloves	cloves	7
+373	141	thumb-size piece ginger, grated	1.0	piece		8
+373	93	1 teaspoon ground coriander	1.0	teaspoon	t	9
+373	0	jasmine rice, to serve	4.0	servings	servings	10
+373	0	1 lemongrass, roughly chopped	1.0			11
+373	0	1 zest lime	1.0			12
+373	139	3 juice limes	3.0			13
+373	55	140 grams mushrooms, halved	140.0	grams	g	14
+373	58	1 teaspoon freshly ground pepper	1.0	teaspoon	t	15
+373	76	1/2 red pepper, deseeded and roughly chopped	0.5			16
+373	0	3 shallots, roughly chopped	3.0			17
+373	74	5 tablespoons soy sauce	5.0	tablespoons	T	18
+373	0	140 grams sugar snap peas	140.0	grams	g	19
+373	0	200 grams firm tofu, cubed	200.0	grams	g	20
+373	71	2 tablespoons vegetable oil	2.0	tablespoons	T	21
+374	87	1/2 cup Thai basil or you can use regular basil	0.5	cup	c	0
+374	156	small head of Boston lettuce, roughly chopped	1.0	head	head	1
+374	0	small chili pepper, finely chopped	4.0	servings	servings	2
+374	93	1/2 cup coriander (cilantro) leaves	0.5	cup	c	3
+374	163	1/4 cup fish sauce	0.25	cup	c	4
+374	23	1 clove garlic	1.0	clove	clove	5
+374	139	2 tablespoons fresh lime juice	2.0	tablespoons	T	6
+374	152	1/2 cup mint leaves	0.5	cup	c	7
+374	76	red bell pepper, thinly sliced	4.0	servings	servings	8
+374	0	1/4 cup rice vinegar	0.25	cup	c	9
+374	52	8 large cooked shrimp, slice in half lengthways	8.0			10
+374	0	8 large (8-inch) spring roll wrappers	8.0			11
+374	114	1 tablespoon sugar	1.0	tablespoon	T	12
+374	7	1/4 cup water	0.25	cup	c	13
+374	0	Nuoc Cham (dipping sauce)	4.0	servings	servings	14
+375	24	1 1/4 cups shredded cabbage	1.25	cups	c	0
+375	2	1 1/4 cups shredded carrots	1.25	cups	c	1
+375	78	1 teaspoon chili paste	1.0	teaspoon	t	2
+375	0	1 tablespoon coconut milk	1.0	tablespoon	T	3
+375	5	1/2 cup Creamy Peanut Butter	0.5	cup	c	4
+375	87	15 fresh basil leaves, chopped	15.0			5
+375	92	2 tablespoons fresh cilantro, chopped	2.0	tablespoons	T	6
+375	141	1 tablespoon fresh ginger, grated	1.0	tablespoon	T	7
+375	0	15 fresh mint leaves, chopped	15.0			8
+375	23	1 Tbs.minced garlic	1.0	Tb	Tb	9
+375	139	1 tablespoon fresh lime juice	1.0	tablespoon	T	10
+375	0	1/4 cup peanuts, crushed	0.25	cup	c	11
+375	0	1 1/4 ounces rice vermicelli	1.25	ounces	oz	12
+375	94	2 scallions	2.0			13
+375	28	1 teaspoon toasted (dark) sesame seed oil	1.0	teaspoon	t	14
+375	74	1 1/2 tablespoons gluten free soy sauce (Tamari)	1.5	tablespoons	T	15
+375	0	15 gluten free spring roll wrappers	15.0			16
+375	114	1/2 tablespoon sugar	0.5	tablespoon	T	17
+375	7	1/2 cup warm water	0.5	cup	c	18
+376	2	2 carrots, sliced thin on the bias	2.0			0
+376	0	4 large chicken breasts	4.0			1
+376	0	1 cup cilantro leaves (or mint)	1.0	cup	c	2
+376	61	1/4 teaspoon crushed red pepper	0.25	teaspoon	t	3
+376	0	1/2 cucumber, sliced thin	0.5			4
+376	53	2 daikon radishes, sliced thin on the bias	2.0			5
+376	163	1/2 cup fish sauce	0.5	cup	c	6
+376	23	1 clove garlic, minced	1.0	clove	clove	7
+376	135	1 sliced jalapeno for extra heat	1.0			8
+376	139	1/2 cup lime juice	0.5	cup	c	9
+376	0	1/3 cup mayonnaise	0.3333333333333333	cup	c	10
+376	0	1/4 cup rice vinegar	0.25	cup	c	11
+376	6	1/4 teaspoon salt	0.25	teaspoon	t	12
+376	0	6 soft sub bun	6.0			13
+376	114	1/4 cup sugar	0.25	cup	c	14
+376	7	1/4 cup hot tap water	0.25	cup	c	15
+377	57	1/2 cup If non-vegetarian: add cooked baby shrimp	0.5	cup	c	0
+377	51	2 cups approx. bean sprouts	2.0	cups	c	1
+377	24	1/2 cup shredded or finely chopped cabbage	0.5	cup	c	2
+377	2	1 cup shredded carrots	1.0	cup	c	3
+377	122	1 teaspoon 1 red chili, minced, OR 1/2 to cayenne pepper (omit if you prefer very mild	1.0	teaspoon	t	4
+377	91	1/2 cup chives	0.5	cup	c	5
+377	163	2 tablespoons fish sauce OR vegetarian stir-fry sauce	2.0	tablespoons	T	6
+377	87	1/2 cup fresh basil, roughly chopped	0.5	cup	c	7
+377	92	1/2 cup fresh coriander, roughly chopped	0.5	cup	c	8
+377	0	1 thumb-size piece galangal OR ginger, grated	1.0			9
+377	23	3 cloves garlic, minced	3.0	cloves	cloves	10
+377	94	2 green onions, sliced into matchstick pieces	2.0			11
+377	139	2 tablespoons lime juice	2.0	tablespoons	T	12
+377	0	1 16 oz package phyllo dough	16.0	oz	oz	13
+377	54	6 shiitake mushrooms, cut into matchstick pieces	6.0			14
+377	74	2 tablespoons regular soy sauce	2.0	tablespoons	T	15
+377	114	1/4 teaspoon sugar	0.25	teaspoon	t	16
+377	0	1/2 cup medium to firm tofu, sliced into matchstick pieces	0.5	cup	c	17
+378	2	2 carrots, julienned	2.0			0
+378	23	1 1/2 garlic clove	1.5	cloves	cloves	1
+378	141	1/2 teaspoon ginger	0.5	teaspoon	t	2
+378	30	3/4 cup hoisin sauce	0.75	cup	c	3
+378	30	Garlic Lime Hoisin Sauce	10.0	servings	servings	4
+378	0	1 jicama	1.0			5
+378	156	1 head of butter leaf lettuce	1.0	head	head	6
+378	139	2 tablespoons lime	2.0	tablespoons	T	7
+378	76	1 red bell pepper	1.0			8
+378	0	12 rice paper sheets	12.0	sheet	sheet	9
+378	0	Vegetarian Spring Roll	10.0	servings	servings	10
+378	87	12 leaves of Thai basil	12.0	leaves	leaves	11
+378	82	1 yellow bell pepper	1.0			12
+378	32	1 teaspoon Sriracha (or to taste)	1.0	teaspoon	t	13
+379	92	cilantro sprigs	1.0	sprigs	sprigs	0
+379	0	1 cucumber, peeled in stripes, and sliced thinly	1.0			1
+379	163	2 tablespoons of fish sauce	2.0	tablespoons	T	2
+379	23	1 tablespoon minced garlic	1.0	tablespoon	T	3
+379	58	2 tablespoons fresh ground black pepper	2.0	tablespoons	T	4
+379	135	jalapeno	6.0	servings	servings	5
+379	0	1 pound of pork chops, shoulder or loin. Sliced thinly	1.0	pound	lb	6
+379	0	mayo	6.0	servings	servings	7
+379	4	2 tablespoons of finely chopped onion	2.0	tablespoons	T	8
+379	0	pate	6.0	servings	servings	9
+379	0	pickled carrot and daikon	6.0	servings	servings	10
+379	28	1 teaspoon of sesame seed oil	1.0	teaspoon	t	11
+379	0	6 sub rolls	6.0			12
+379	114	2 1/2 tablespoons sugar	2.5	tablespoons	T	13
+379	71	1/4 cup vegetable oil	0.25	cup	c	14
+380	151	4 cups baby bok choy leaves	4.0	cups	c	0
+380	87	2 tablespoons shredded fresh basil leaves	2.0	tablespoons	T	1
+380	50	1 teaspoon brown sugar	1.0	teaspoon	t	2
+380	0	2 cardamom pods	2.0			3
+380	163	3 tablespoons fish sauce	3.0	tablespoons	T	4
+380	51	1 cup fresh bean sprouts	1.0	cup	c	5
+380	141	1 (3-inch) piece peeled fresh ginger, thinly sliced	3.0	inch	inch	6
+380	23	2 garlic cloves, halved	2.0	cloves	cloves	7
+380	0	4 cups fat-free, less-sodium beef broth	4.0	cups	c	8
+380	138	4 lime wedges	4.0	wedges	wedges	9
+380	0	1 tablespoon less-sodium soy sauce	1.0	tablespoon	T	10
+380	152	2 tablespoons shredded fresh mint leaves	2.0	tablespoons	T	11
+380	0	2 tablespoons light miso	2.0	tablespoons	T	12
+380	0	4 ounces uncooked wide (maifun) thin rice stick noodles	4.0	ounces	oz	13
+380	28	1 teaspoon sesame oil	1.0	teaspoon	t	14
+380	0	1 (8-ounce) sirloin steak	8.0	ounce	oz	15
+380	31	1 cup snow peas, trimmed	1.0	cup	c	16
+380	0	1 star anise	1.0			17
+380	120	1 inch small fresh Thai chile, thinly sliced into rings (no thai chilies town anywhere!	1.0	inch	inch	18
+380	7	1 cup water	1.0	cup	c	19
+380	4	1 1/2 cups thinly sliced yellow onion	1.5	cups	c	20
+381	87	1 bunch Thai basil or regular basil	1.0	bunch	bunch	0
+381	0	5 pounds Beef bones with marrow	5.0	pounds	lb	1
+381	0	1 pound Beef sirloin	1.0	pound	lb	2
+381	59	2 tablespoons hot chili peppers (optional)	2.0	tablespoons	T	3
+381	132	1 teaspoon Hot chili sauce	1.0	teaspoon	t	4
+381	92	1 tablespoon Cilantro, chopped	1.0	tablespoon	T	5
+381	12	1 Cinnamon stick	1.0			6
+381	53	4 mediums daikon cut in 2-inch chunks	4.0			7
+381	0	1 pound Flank steak	1.0	pound	lb	8
+381	51	2 cups Fresh bean sprouts	2.0	cups	c	9
+381	0	1 bunch Fresh mint	1.0	bunch	bunch	10
+381	141	2 ounces Piece ginger, unpeeled	2.0	ounces	oz	11
+381	138	2 Limes cut in wedges	2.0			12
+381	4	2 large Onions, unpeeled, halved, and studded with 8 cloves	2.0			13
+381	4	2 mediums Onions, thinly sliced	2.0			14
+381	0	5 pounds Oxtails	5.0	pounds	lb	15
+381	0	1 pound Rice noodles 1/4-inch wide (or banh pho)	1.0	pound	lb	16
+381	0	Black pepper and salt to taste	42.0	servings	servings	17
+381	94	2 Scallions, thinly sliced	2.0			18
+381	0	3 Shallots, unpeeled	3.0			19
+381	0	8 Star anise	8.0			20
+381	114	3 tablespoons sugar	3.0	tablespoons	T	21
+381	0	1 Tablespoon Nuoc mam (Vietnamese fish sauce)	1.0	Tablespoon	Tablespoon	22
+382	30	2 teaspoons hoison sauce	2.0	teaspoons	t	0
+382	92	Cilantro for garnish	1.0	serving	serving	1
+382	0	1 cucumber, cut into thin, long strips	1.0			2
+382	23	2 cloves garlic, minced	2.0	cloves	cloves	3
+382	156	1 head of green lettuce, any kind	1.0	head	head	4
+382	152	1 bunch mint	1.0	bunch	bunch	5
+382	72	1 teaspoon olive oil	1.0	teaspoon	t	6
+382	5	1/4 cup organic peanut butter	0.25	cup	c	7
+382	76	1 red pepper, cut into thin long strips	1.0			8
+382	0	Rice vermicelli noodles	1.0	serving	serving	9
+382	0	Rice paper	1.0	serving	serving	10
+382	52	1 pound fresh shrimp	1.0	pound	lb	11
+382	7	1/4 cup water (more if needed)	0.25	cup	c	12
+383	51	some bean sprouts	4.0	servings	servings	0
+383	2	carrots (finely julienned)	4.0	servings	servings	1
+383	0	2 tablespoons caster sugar	2.0	tablespoons	T	2
+383	120	2 red birdeye chilies, sliced	2.0			3
+383	163	3 tablespoons fish sauce	3.0	tablespoons	T	4
+383	23	2 cloves garlic, minced	2.0	cloves	cloves	5
+383	139	2 tablespoons lime juice	2.0	tablespoons	T	6
+383	174	4 rice wrappers	4.0			7
+383	0	30 grams rice vermicelli	30.0	grams	g	8
+383	0	3 tablespoons rice vinegar	3.0	tablespoons	T	9
+383	87	some Thai basil	4.0	servings	servings	10
+383	52	12 tiger prawns (peeled, deveined)	12.0			11
+384	8	1 tbsp double action baking powder	1.0	tbsp	T	0
+384	0	Pau flour is low protein flour, if you can't find in your area, just use low protein flour or super fine flour and can also try cake flour to replace it.	1.0	can	can	1
+384	0	1 tbsp. dry yeast	1.0	tbsp	T	2
+384	15	400g Pau flour, sifted (Note*)	400.0	g	g	3
+384	6	1/2 teaspoon salt	0.5	teaspoon	t	4
+384	0	3 tbsp. Shortening	3.0	tbsp	T	5
+384	114	1 tablespoon sugar	1.0	tablespoon	T	6
+384	7	250g water	250.0	g	g	7
+384	0	100g wholemeal flour	100.0	g	g	8
 \.
 
 
@@ -410,6 +5145,153 @@ COPY "Nutritional Content" (id, ingredient_id, calories, total_fat_g, saturated_
 25	25	61	0.3	0.04	0	20	14.15	1.8	3.9	1.5	1667	12	59	2.1
 26	26	475	32.38	9.51	0	80	50.5	20.2	0	6.71	800	21	252	13.9
 27	27	77	0.09	0.025	0	6	17.49	2.1	0.82	2.05	2	19.7	12	0.81
+28	28	884	100	14.2	0	0	0	0	0	0	0	0	0	0
+29	29	16	0.1	0.032	0	39	3.4	1.6	1.86	0.68	7	14.8	25	0.34
+30	30	220	3.39	0.568	3	1615	44.08	2.8	27.26	3.31	6	0.4	32	1.01
+31	31	42	0.2	0.039	0	4	7.55	2.6	4	2.8	1087	60	43	2.08
+32	32	93	0.93	0	0	2124	19.16	2.2	15.11	1.93	2574	26.9	18	1.64
+33	33	339	0.9	0.232	0	9	63.25	15.5	2.12	21.25	17	0	160	8.7
+34	34	263	8.69	2.55	0	77	72.12	21.6	0	6.09	540	39.2	661	7.06
+35	35	91	0.29	0.075	0	384	16.55	6.9	0.23	6.03	4	2.7	35	1.9
+36	36	378	6.04	0.603	0	24	62.95	12.2	10.7	20.47	67	4	57	4.31
+37	37	88	1.95	0.204	0	278	13.49	4.4	0	4.92	15	0.1	35	1.23
+38	38	77	0.4	0.066	0	108	13.62	4.5	5	5.22	2058	18	22	1.53
+39	39	61	3.25	2.096	13	46	4.66	0	4.66	3.47	99	0.5	121	0.05
+40	40	381	0.05	0.009	0	9	91.27	0.9	0	0.26	0	0	2	0.47
+41	41	282	12.89	2.14	0	68	53.99	34.9	10.34	14.14	49254	0.9	229	21.14
+42	42	198	12.73	5.335	62	68	0	0	0	19.42	0	0	12	1.99
+43	43	36	0.79	0.132	0	56	6.33	3.3	0.85	2.97	8424	133	138	6.2
+44	44	292	5.48	1.378	0	452	50.64	26.7	7.27	26.63	1939	125	1140	22.04
+45	45	265	4.28	1.551	0	25	68.92	42.5	4.09	9	1701	2.3	1597	36.8
+46	46	573	49.67	6.957	0	11	23.45	11.8	0.3	17.73	9	0	975	14.55
+47	47	18	0.2	0.028	0	5	3.89	1.2	2.63	0.88	833	13.7	10	0.27
+48	48	375	22.27	1.535	0	168	44.24	10.5	2.25	17.81	1270	7.7	931	66.36
+49	49	375	22.27	1.535	0	168	44.24	10.5	2.25	17.81	1270	7.7	931	66.36
+50	50	380	0	0	0	28	98.09	0	97.02	0.12	0	0	83	0.71
+51	51	30	0.18	0.046	0	6	5.94	1.8	4.13	3.04	21	13.2	13	0.91
+52	52	71	1.01	0.261	126	566	0.91	0	0	13.61	180	0	54	0.21
+53	53	18	0.1	0.03	0	21	4.1	1.6	2.5	0.6	0	22	27	0.4
+54	54	34	0.49	0	0	9	6.79	2.5	2.38	2.24	0	0	2	0.41
+55	55	22	0.34	0.05	0	5	3.26	1	1.98	3.09	0	2.1	3	0.5
+56	56	22	0.35	0.06	0	9	3.87	1.3	2.5	2.11	0	0	3	0.31
+57	57	119	1.7	0.521	211	947	1.52	0	0	22.78	301	0	91	0.32
+58	58	251	3.26	1.392	0	20	63.95	25.3	0.64	10.39	547	0	443	9.71
+59	59	318	17.27	3.26	0	30	56.63	27.2	10.34	12.01	41610	76.4	148	7.8
+60	60	296	2.12	0.626	0	5	68.61	26.2	0	10.4	0	21	265	14.31
+61	61	318	17.27	3.26	0	30	56.63	27.2	10.34	12.01	41610	76.4	148	7.8
+62	62	81	0.4	0.071	0	5	14.45	5.7	5.67	5.42	765	40	25	1.47
+63	63	387	6.69	0.693	0	64	57.82	10.8	10.85	22.39	41	0	45	4.86
+64	64	50	1.98	1.257	8	47	4.8	0	5.06	3.3	190	0.2	120	0.02
+65	65	352	1.06	0.154	0	6	63.35	10.7	2.03	24.63	39	4.5	35	6.51
+66	66	358	2.17	0.379	0	7	63.1	10.8	0	23.91	58	1.7	48	7.39
+67	67	16	0.25	0.034	0	115	3.47	1.9	2.55	0.79	408	12.6	33	0.57
+68	68	32	0.28	0.04	0	186	7.29	1.9	4.4	1.64	215	9.2	34	1.3
+69	69	25	0.28	0.13	0	30	4.97	2	1.91	1.92	0	48.2	22	0.42
+70	70	82	0.47	0.1	0	59	18.91	4.1	12.18	4.32	1525	21.9	36	2.98
+71	71	884	100	14.9	0	0	0	0	0	0	0	0	0	0
+72	72	884	100	13.808	0	2	0	0	0	0	0	0	1	0.56
+73	73	553	43.85	7.783	0	12	30.19	3.3	5.91	18.22	0	0.5	37	6.68
+74	74	53	0.57	0.073	0	5493	4.93	0.8	0.4	8.14	0	0	33	1.45
+75	75	40	0.2	0.021	0	7	9.46	1.5	5.1	2	1179	242.5	18	1.2
+76	76	31	0.3	0.027	0	4	6.03	2.1	4.2	0.99	3131	127.7	7	0.43
+77	77	324	5.81	0.813	0	91	69.86	28.7	41.06	10.58	26488	31.4	45	6.04
+78	78	40	0.44	0.042	0	9	8.81	1.5	5.3	1.87	952	143.7	14	1.03
+79	79	24	0.3	0.041	0	474	5.31	1.5	3.56	1.2	435	7	14	0.96
+80	80	325	14.01	1.648	0	52	55.83	53.2	2.76	14.29	19	0.7	525	19.1
+81	81	27	0.21	0.031	0	2	6.32	0.9	0	1	200	183.5	11	0.46
+82	82	27	0.21	0.031	0	2	6.32	0.9	0	1	200	183.5	11	0.46
+83	83	131	5.86	2.838	0	26	20.7	14.1	0	3.31	2924	21.8	317	6.65
+84	84	331	15.22	7.371	0	50	64.06	42.6	0	4.88	3128	61.2	1280	29.25
+85	85	101	1.68	0.467	0	9	24.45	14	0	5.56	4751	160.1	405	17.45
+86	86	276	7.43	2.73	0	55	63.94	37	1.71	9.11	3800	50	1890	123.6
+87	87	23	0.64	0.041	0	4	2.65	1.6	0.3	3.15	5275	18	177	3.17
+88	88	233	4.07	2.157	0	76	47.75	37.7	1.71	22.98	744	0.8	2240	89.8
+89	89	278	0.07	0.01	0	32	68.86	1.1	48.5	0.37	0	8.8	20	0.49
+90	90	119	1.7	0.521	211	947	1.52	0	0	22.78	301	0	91	0.32
+91	91	30	0.73	0.146	0	3	4.35	2.5	1.85	3.27	4353	58.1	92	1.6
+92	92	23	0.52	0.014	0	46	3.67	2.8	0.87	2.13	6748	27	67	1.77
+93	93	279	4.78	0.115	0	211	52.1	10.4	7.27	21.93	5850	566.7	1246	42.46
+94	94	32	0.19	0.032	0	16	7.34	2.6	2.33	1.83	997	18.8	72	1.48
+95	95	282	14	2.5	0	1640	50	35	7	13	29650	0.6	330	17.28
+96	96	282	14	2.5	0	1640	50	35	7	13	29650	0.6	330	17.28
+97	97	0	0	0	0	38758	0	0	0	0	0	0	24	0.33
+98	98	18	0	0	0	2	0.04	0	0.04	0	0	0	6	0.03
+99	99	21	0	0	0	5	0.93	0	0.4	0	0	0	7	0.2
+100	100	19	0	0	0	8	0.27	0	0	0.04	0	0.5	6	0.45
+101	101	88	0	0	0	23	17.03	0	14.95	0.49	0	0	27	0.72
+102	102	198	8.21	1.534	18	416	0	0	0	29.13	77	0	13	1.39
+103	103	144	4.9	1.257	38	39	0	0	0	23.33	2183	0	8	1.02
+104	104	300	20	10	0	16800	20	0	0	0	200	0	0	0
+105	105	5	0.07	0.028	0	296	0.93	0	0.55	0.24	238	0.4	3	0.06
+106	106	300	20	10	0	16800	20	0	0	0	200	0	0	0
+107	107	30	1.1	0	0	1.1	5.6	3.3	3.3	1.1	800	66	11	0.4
+108	108	30	1.1	0	0	1.1	5.6	3.3	3.3	1.1	800	66	11	0.4
+109	109	322	26.54	9.551	1085	48	3.59	0	0.56	15.86	1442	0	129	2.73
+110	110	340	2.5	0.43	0	2	71.97	10.7	0.41	13.21	9	0	34	3.6
+111	111	72	0.52	0.098	0	47	13.47	4	0	3.33	5078	10.4	25	0.95
+112	112	32	0.09	0.006	0	1	8.3	0.8	7.5	0.43	38	7.7	15	0.4
+113	113	50	0.12	0.009	0	1	13.12	1.4	9.85	0.54	58	47.8	13	0.29
+114	114	387	0	0	0	1	99.98	0	99.8	0	0	0	1	0.05
+115	115	123	10.39	7.032	35	61	4.73	0	4.13	3.13	354	0.9	107	0.05
+116	116	52	0.17	0	0	166	0.73	0	0.71	10.9	0	0	7	0.08
+117	117	579	49.93	3.802	0	1	21.55	12.5	4.35	21.15	2	0	269	3.71
+118	118	48	1.6	0	0	452	6.5	3.2	1.6	1.6	5000	0	0	2.12
+119	119	21	0.27	0.028	0	397	4.6	1.7	0	0.72	126	34.2	36	1.33
+120	120	48	1.6	0	0	452	6.5	3.2	1.6	1.6	5000	0	0	2.12
+121	121	133	0	0	0	2333	20	6.7	6.7	1	3333	8	133	2.4
+122	122	318	17.27	3.26	0	30	56.63	27.2	10.34	12.01	41610	76.4	148	7.8
+123	123	133	0	0	0	2333	20	6.7	6.7	1	3333	8	133	2.4
+124	124	172	0.63	0.045	0	1027	40.77	0.9	33.24	0.82	224	0.6	33	0.64
+125	125	60	0.1	0.011	0	5586	5.57	0.8	1.7	10.51	0	0	20	2.38
+126	126	198	19.35	10.14	59	31	4.63	0	3.41	2.44	447	0.9	101	0.07
+127	127	135	12	7.47	39	89	4.26	0	0.16	2.94	372	0.9	104	0.07
+128	128	70	0.14	0.035	0	18	15.9	1.7	1.29	1.89	7	8.6	10	0.73
+129	129	97	0.13	0.032	0	14	21.44	2.3	1.08	2.63	10	8.3	18	1.07
+130	130	52	0.17	0.028	0	1	13.81	2.4	10.39	0.26	54	4.6	6	0.12
+131	131	58	0.19	0	0	1	13.61	2.8	9.59	0.44	100	0	5	0.15
+132	132	11	0.37	0.052	0	2643	1.75	0.3	1.26	0.51	162	74.8	8	0.48
+133	133	12	0.76	0.106	0	633	0.8	0.6	0.13	1.29	1640	4.5	12	1.16
+134	134	288	0.06	0.01	0	9	12.65	0	12.65	0.06	0	0	11	0.12
+135	135	29	0.37	0.092	0	3	6.5	2.8	4.12	0.91	1078	118.6	12	0.25
+136	136	22	0.35	0.06	0	9	3.87	1.3	2.5	2.11	0	0	3	0.31
+137	137	78	0	0	0	980	19.46	0	10.03	0	79	13	107	5.3
+138	138	30	0.2	0.022	0	2	10.54	2.8	1.69	0.7	50	29.1	33	0.6
+139	139	25	0.07	0.008	0	2	8.42	0.4	1.69	0.42	50	30	14	0.09
+140	140	884	100	9.6	0	0	0	0	0	0	0	0	0	0
+141	141	80	0.75	0.203	0	13	17.77	2	1.7	1.82	0	5	16	0.6
+142	142	335	4.24	2.599	0	27	71.62	14.1	3.39	8.98	30	0.7	114	19.8
+143	143	331	0.73	0.249	0	60	72.73	9	2.43	16.55	0	1.2	79	5.65
+144	144	315	12.75	7.03	0	11	60.73	40.3	1.71	10.63	5900	32.4	1652	28.12
+145	145	29	0.3	0.039	0	2	9.32	2.8	2.5	1.1	22	53	26	0.6
+146	146	47	0.3	0.039	0	6	16	10.6	4.17	1.5	50	129	134	0.8
+147	147	748	80.5	29.38	86	2684	0	0	0	5.05	0	0	6	0.44
+148	148	12	0.17	0	0	11	2.23	0	0	1.1	263	3.2	29	0.74
+149	149	31	0.16	0.021	0	27	7.37	2.1	3.83	1.43	1116	57	45	0.8
+150	150	27	0.1	0.013	0	28	6.1	3.1	2.27	2	1000	31	35	0.4
+151	151	13	0.2	0.027	0	65	2.18	1	1.18	1.5	4468	45	105	0.8
+152	152	44	0.73	0.191	0	30	8.41	6.8	0	3.29	4054	13.3	199	11.87
+153	153	285	6.03	1.577	0	344	52.04	29.8	0	19.93	10579	0	1488	87.47
+154	154	86	0.05	0.018	0	55	20.12	3	4.18	1.57	14187	2.4	30	0.61
+155	155	118	0.17	0.037	0	9	27.88	4.1	0.5	1.53	138	17.1	17	0.54
+156	156	13	0.22	0.029	0	5	2.23	1.1	0.94	1.35	3312	3.7	35	1.24
+157	157	17	0.3	0.039	0	8	3.29	2.1	1.19	1.23	8710	4	33	0.97
+158	158	14	0.14	0.018	0	10	2.97	1.2	1.97	0.9	502	2.8	18	0.41
+159	159	300	1	0	0	1.1	0	0	0	3	0.3	121	0.1	2
+160	160	32	0.44	0.059	0	10	6.7	3.7	3.83	1.74	937	44.9	11	0.86
+161	161	97	5	2.395	13	35	3.98	0	4	9	15	0	100	0
+162	162	312	3.25	1.838	0	27	67.14	22.7	3.21	9.68	0	0.7	168	55
+163	163	35	0.01	0.003	0	7851	3.64	0	3.64	5.06	12	0.5	43	0.78
+164	164	23	0.39	0.063	0	79	3.63	2.2	0.42	2.86	9377	28.1	99	2.71
+165	165	29	0.57	0.041	0	74	4.21	2.9	0.65	3.63	11726	5.5	129	1.89
+166	166	341	1.04	0.219	0	73	79.12	15.2	6.63	10.41	0	23.4	384	3.9
+167	167	345	15.85	0	0	89	51.13	26.8	0	12.35	35760	6.4	97	9.83
+168	168	404	33.31	18.867	99	653	3.09	0	0.48	22.87	1242	0	710	0.14
+169	169	31	0.22	0.05	0	6	6.97	2.7	3.26	1.83	690	12.2	37	1.03
+170	170	58	0.48	0.086	0	185	10.6	3.3	3.2	3.01	1529	7.8	20	1.29
+171	171	144	3.57	0.863	86	328	0	0	0	28.04	17	0	13	0.46
+172	172	300	22.35	13.152	79	627	2.19	0	1.03	22.17	676	0	505	0.44
+173	173	717	81.11	51.368	215	643	0.06	0	0.06	0.85	2499	0	24	0.02
+174	174	365	0.66	0.18	0	5	79.95	1.3	0.12	7.13	0	0	28	4.31
 \.
 
 
@@ -419,7 +5301,7 @@ COPY "Nutritional Content" (id, ingredient_id, calories, total_fat_g, saturated_
 -- Name: Nutritional Content_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('"Nutritional Content_id_seq"', 28, FALSE);
+SELECT pg_catalog.setval('"Nutritional Content_id_seq"', 175, FALSE);
 
 --
 -- TOC entry 2048 (class 0 OID 16682)
@@ -431,13 +5313,13 @@ COPY "Recipe" (id, title, image_uri, instructions, cuisine, ready_in_minutes, se
 1	African Bean Soup	https://spoonacular.com/recipeImages/African-Bean-Soup-632003.jpg	<ol><li>Saute onions in large pot until soft. Add all ingredients except for peanut butter and simmer for 1 1/2 hours. </li><li>Stir a spoonful of peanut butter into each serving.</li></ol>	african	45	4	t	t	t	t
 2	Ethiopian Lentil Curry	https://spoonacular.com/recipeImages/Ethiopian-Lentil-Curry-642468.jpg	<ol><li>In a large pot heat oil over medium heat. Add onions and saut until translucent. Add minced garlic and continue to saut for another minute.</li><li>Combine cauliflower, peas and lentils in the pot, sprinkle with amchar massala and massala molida and saut for 5 minutes.</li><li>Pour crushed tomatoes and tomato paste into the pot and stir to combine. Add about two cups of water and bring curry to a boil.</li><li>Reduce heat, cover, and simmer on low until lentils are tender; about an hour.</li><li>Mix in plain yogurt and serve immediately.</li></ol>	african	75	6	t	f	t	f
 3	North African Chickpea Soup	https://spoonacular.com/recipeImages/North-African-Chickpea-Soup-653275.jpg	<ol><li>In a large soup pot add the oil, onions and celery.  Cook over medium low heat until translucent.  Add the garlic and saute until fragrant.   Add the tomato paste and harissa.  Cook a minute then add the water or stock slowly while stirring to combine the flavor paste in the pot with the liquids.  Throw in the chickpeas and bring to a boil.  As soon as it reaches a boil, reduce heat to a simmer.</li><li>Add the pasta and cook according to the package directions.  My suggestion is that if you are using fresh pasta, give it a rinse under tap water to remove the starch before adding it to the soup.  It might make the broth cloudy.  If using rice noodles add them right before serving to prevent overcooked mushy noodles.  To cook rice noodles place them in a shallow dish and cover with hot water for 10-15 minutes to soften.</li><li>Just before serving taste for seasoning, adjust to your taste.  Adding too much salt earlier on could make things too salty because some of the ingredients can bring a lot of salt to the pot.  Then add the spinach, it will only take a minute to shrink into nearly nothing, but it is sure a powerhouse vegetable that amps up the nutrition in this meal quickly and without fuss.  A squeeze of fresh lemon juice after it has been taken off the heat will add a nice bright flavor to perk up those dreary dark days of winter.  Enjoy with some crusty bread.  A meal you can feel good about, filling yet light.</li></ol>	african	45	4	t	t	f	t
-4	African Chicken Peanut Stew	https://spoonacular.com/recipeImages/african-chicken-peanut-stew-716268.jpg	Season and Boil the Chicken for 10 minutes with salt, pepper, seasoning, a handful of onions.Once the chicken is ready, in the same stock, Boil the chopped sweet potatoes till its almost cooked. Save the stock in a separate Bowl and the chicken and potatoes in a separate Bowl as well.In a pot, heat up one cooking spoon of oil and fry the chicken till it Browns. Take it out and heat up the other 1.5 cooking spoons of oil and fry the onions, tomatoes Both chopped and Blended, ginger and garlic.Add your seasoning, curry, thyme, parsley, salt and pepper to the pot.Pour in your stock, chicken and potatoes to cook further.Stir in your peanut Butter and allow to cook for 10 minutes on low heat.If your sauce gets too thick, add a little water to it. Serve with white rice or more sweet potatoes.You could also garnish the dish with Bell peppers.   	african	45	1	f	f	t	t
+4	African Chicken Peanut Stew	https://spoonacular.com/recipeImages/african-chicken-peanut-stew-716268.jpg	Season and Boil the Chicken for 10 minutes with salt, pepper, seasoning, a handful of onions.Once the chicken is ready, in the same stock, Boil the chopped sweet potatoes till its almost cooked. Save the stock in a separate Bowl and the chicken and potatoes in a separate Bowl as well.In a pot, heat up one cooking spoon of oil and fry the chicken till it Browns. Take it out and heat up the other 1.5 cooking spoons of oil and fry the onions, tomatoes Both chopped and Blended, ginger and garlic.Add your seasoning, curry, thyme, parsley, salt and pepper to the pot.Pour in your stock, chicken and potatoes to cook further.Stir in your peanut Butter and allow to cook for 10 minutes on low heat.If your sauce gets too thick, add a little water to it. Serve with white rice or more sweet potatoes.You could also garnish the dish with Bell peppers.   	african	45	1	f	f	t	t
 5	Party Jollof Rice	https://spoonacular.com/recipeImages/how-to-make-party-jollof-rice-716298.jpg	Wash rice by rubbing the rice between your palms in a bowl of water and draining the water till clear. Blend tomatoes, pepper and garlic and bring to boil till the excess water dries up. Chop Onions. Heat up vegetable oil and pour in chopped onions and fry. Pour in the can of tomato puree and fry.Pour in blended tomato and pepper mix into the pot and stir in. Pour in salt, dry pepper, curry, thyme, bay leaves and maggi cubes. Allow it to simmer on low heat for 3 minutes. Reduce the heat to the lowest level and pour in the washed rice. Pour in the water and stir and leave on low heat for 20 minutes or till the rice is soft. Tip: To get the party rice flavor, increase the heat on the rice and burn the bottom of the pot with the pot covered and stir the rice after 3 minutes of burning. Stir the rice and serve with any protein of your choice.	african	45	3	t	t	t	t
-6	Pineapple Jollof Rice	https://spoonacular.com/recipeImages/pineapple-jollof-rice-716374.jpg	Heat up your oil, stir fry your pineapples and chopped vegetables for 30 seconds and take out of the oil.In the same oil, toss in your chopped onions, garlic and ginger and fry about a minute or two on medium heat.Stir in your tomato paste and fry for 2-3 minutes on medium heat.Pour in your blended tomato, pepper mix and stir.Season with seasoning cubes, curry, thyme and any other seasoning of your choice.Stir in your rice and reduce the heat to the lowest and allow to steam. Pour in your stock juice so it would cook the rice for the next 20-25 minutes on low heat. Constantly check to make sure the rice is soft and when it is, increase the heat and stir.Toss in the already sautéed pineapple and chopped vegetables and stir in.Serve with any protein of your choice. 	african	45	2	t	t	t	t
+6	Pineapple Jollof Rice	https://spoonacular.com/recipeImages/pineapple-jollof-rice-716374.jpg	Heat up your oil, stir fry your pineapples and chopped vegetables for 30 seconds and take out of the oil.In the same oil, toss in your chopped onions, garlic and ginger and fry about a minute or two on medium heat.Stir in your tomato paste and fry for 2-3 minutes on medium heat.Pour in your blended tomato, pepper mix and stir.Season with seasoning cubes, curry, thyme and any other seasoning of your choice.Stir in your rice and reduce the heat to the lowest and allow to steam. Pour in your stock juice so it would cook the rice for the next 20-25 minutes on low heat. Constantly check to make sure the rice is soft and when it is, increase the heat and stir.Toss in the already sautéed pineapple and chopped vegetables and stir in.Serve with any protein of your choice. 	african	45	2	t	t	t	t
 7	Banana & Cream Cheese Stuffed French Toast	https://spoonacular.com/recipeImages/Banana---Cream-Cheese-Stuffed-French-Toast-633971.jpg	<ol><li>In a small bowl combine the softened cream cheese, honey, cinnamon, nutmeg and lemon juice, set aside while preparing the batter.</li><li>Whisk together all of the batter ingredients until thoroughly mixed. (This is a breeze if you use a blender.) Pour the batter into a wide, shallow dish (like a pie plate).</li><li>Spread the filling mixture equally over 1 side of each slice of bread, divide the sliced bananas between 4 slices of the bread, top with the remaining 4 slices, press lightly.</li><li>Melt 2 t. butter and 2 t. oil in a 12 inch nonstick skillet over medium heat until the butter foams and then subsides. Working with one sandwich at a time dip both sides in the batter and let the excess drip away, add to the hot pan, repeat with a second sandwich. Cook until golden brown on the first side, around 3-5 minutes, flip and repeat on the second side. Repeat this process with the remaining, oil, butter and sandwiches. To serve, cut into triangles and serve with maple syrup.</li></ol>	american	45	4	t	f	f	f
 8	Banana Chocolate Chip Cake With Peanut Butter Frosting	https://spoonacular.com/recipeImages/Banana-Chocolate-Chip-Cake-With-Peanut-Butter-Frosting---gluten-free--dairy-free--soy-free-634040.jpg	<ol><li>Preheat Oven Temperature to 350 degrees F</li><li>For the Cake:</li><li>Line the bottom of the round cake pans with parchment paper (I use precut ones sold at baking stores), grease cake pans, also under parchment paper. Set aside.</li><li>In a medium bowl, whisk flours, baking soda, and salt. Set aside.</li><li>Using an electric mixer or a stand mixer with a paddle attachment on medium high speed, beat sugar, Earth balance, and brown sugar until light and fluffy, about 3 minutes.</li><li>Add eggs one at a time, beating to blend after each egg, then add vanilla.</li><li>Add dry ingredients.</li><li>Mix on low speed, just to blend.</li><li>Add mashed bananas and sour cream; mix until just blended.</li><li>Fold in chocolate chips.</li><li>Divide the batter evenly among the two cake pans. Smooth tops.</li><li>Bake cakes for 35-45 minutes, until toothpick inserted in the center comes out clean.</li><li>Transfer to wire racks.</li><li>Let it cool in the pans for 15-30 minutes.</li><li>Invert cakes onto the wire racks; peel off parchment paper and let it cool completely, about an hour, before frosting.</li><li>For the Frosting:</li><li>Using an electric mixer, or a stand mixer with a paddle attachment, beat peanut butter, powdered sugar, Earth balance, and vanilla extract until light and fluffy, about 4 minutes.</li><li>Place 1 cake on a platter.</li><li>Spread 1 1/4 cups of frosting for the inner layer.</li><li>Place the other cake on top.</li><li>Frost the top and sides with remaining frosting.</li><li>Pipe along the bottom edge with a star tip.</li><li>Chill frosted cake for 2-3 hours to set.</li><li>Garnish with chocolate chips.</li><li>Serve chilled or room temperature. Chilled will result in a firm peanut butter frosting.</li><li>Note: For mess free decorating, put two halved sheets of parchment paper (cut apart) next to each other on the cake platter before putting the cake on it.</li><li>Slowly pull out from opposite ends of the cake when done piping.</li></ol>	american	45	8	f	f	t	f
 9	Barbecue Pizza	https://spoonacular.com/recipeImages/Barbecue-Pizza-634274.jpg	<ol><li>Preheat oven to 400 degrees. Place pizza crust on a baking sheet. Evenly spread pizza sauce on crust. Top with cheese. In a separate bowl mix barbecue meat and sauce. Spread barbecue mixture on toip of cheese. Top with onion rings, as desired. Bake in oven for 10-12 minutes until cheese bubbles.</li></ol>	american	45	1	f	f	f	f
-10	BBQ Chicken Pizza	https://spoonacular.com/recipeImages/Bbq-Chicken-Pizza-634485.jpg	<ol><li>Dissolve sugar in water; add yeast and oil.</li><li>In a separate bowl, combine flours.</li><li>Allow to sit until the yeast foams slightly (about 3 minutes).</li><li>Combine 2  cups of the flour and salt in a food processor. Pulse once or twice. Pour the yeast mixture.</li><li>Process the mixture, gradually adding enough of the remaining flour mixture so that the dough is no longer sticky. Remove from the processor; continue kneading until the dough is smooth and elastic (another 1015 minutes by hand).</li><li>Shape dough into a ball and put in an large oiled bowl, turning the dough to coat it with the oil.</li><li>Allow to rise until doubled in size (45 minutes to 1 hours).</li><li>Punch down the dough and divide into 2 pieces. This will make two 12 inch pizzas.</li><li>Shape each portion into a 12" circle either by hand or with a rolling pin, stretching out as necessary to achieve a thin dough. For a lighter crust, let the dough sit for a half hour after shaping before constructing pizza and baking.</li><li>Spread BBQ sauce over crust and top with chicken, cheese and desired toppings. (I used caramelized onions, roasted red peppers and chopped parsley)</li><li>Allow to rest in a warm location for 15 minutes.</li><li>Bake in a 475 degree oven until crust is golden, about 20 minutes.</li></ol>	american	45	1	f	f	f	f
+10	BBQ Chicken Pizza	https://spoonacular.com/recipeImages/Bbq-Chicken-Pizza-634485.jpg	<ol><li>Dissolve sugar in water; add yeast and oil.</li><li>In a separate bowl, combine flours.</li><li>Allow to sit until the yeast foams slightly (about 3 minutes).</li><li>Combine 2  cups of the flour and salt in a food processor. Pulse once or twice. Pour the yeast mixture.</li><li>Process the mixture, gradually adding enough of the remaining flour mixture so that the dough is no longer sticky. Remove from the processor; continue kneading until the dough is smooth and elastic (another 1015 minutes by hand).</li><li>Shape dough into a ball and put in an large oiled bowl, turning the dough to coat it with the oil.</li><li>Allow to rise until doubled in size (45 minutes to 1 hours).</li><li>Punch down the dough and divide into 2 pieces. This will make two 12 inch pizzas.</li><li>Shape each portion into a 12" circle either by hand or with a rolling pin, stretching out as necessary to achieve a thin dough. For a lighter crust, let the dough sit for a half hour after shaping before constructing pizza and baking.</li><li>Spread BBQ sauce over crust and top with chicken, cheese and desired toppings. (I used caramelized onions, roasted red peppers and chopped parsley)</li><li>Allow to rest in a warm location for 15 minutes.</li><li>Bake in a 475 degree oven until crust is golden, about 20 minutes.</li></ol>	american	45	6	f	f	f	f
 11	BBQ Pork Steak	https://spoonacular.com/recipeImages/Bbq-Pork-Steak-634509.jpg	<ol><li>Marinate pork steak for 24 hours in meat marinate mix and Italian dressing. Remove from marinate and brown on grill for about 20 minutes. After preparing barbeque sauce, use liberally on grilling pork steak.</li><li>Sauce preparation: Mix sauce in small saucepan and cook to blend. Add corn syrup to taste.</li></ol>	american	45	2	f	f	t	t
 12	Beer Braised Brisket with Ding Dang Good Sauce	https://spoonacular.com/recipeImages/Beer-Braised-Brisket-with-Ding-Dang-Good-Sauce-634751.jpg	<ol><li>In a food processor or blender, finely chop garlic. Add brown sugar, honey, mustard, ancho chili in adobo, mustard, oil, black pepper, cumin, paprika, cayenne and 2 tbs salt and process until smooth. Rub all over the brisket making sure to get into the nooks and crannies. Place brisket in a gallon size freezer bag  or if unable to fit into bag  wrap well with plastic wrap and put in the refrigerator x 1-2 days.</li><li>Allow brisket to come to room temp ( about an hour) before preparing. Preheat oven to 325. Separate and scatter onions in a large baking dish or roasting pan. Set brisket (fat side up) on top of the onions. Add beer to pan and any marinade the clings to the plastic wrap. Cover and seal with foil tightly. Braise in the oven until the meat is fall apart tender  about 5 hours. Begin to check after 4 hours. Meat should literally be falling apart when you stick it with a fork. When done, set oven to broil and broil for 5-10 minutes until top develops a crispy crust.</li><li>Allow brisket to cool for at least 10 minutes, remove from the pan and shred or slice. Remove the onions with a slotted spoon and mix into the brisket. Moisten with pan drippings and season with salt if needed.</li><li>For the Sauce</li><li>In a medium sauce pan over medium heat, add the pan drippings or olive oil and saut the onions until soft  5-7 minutes. Add the garlic and cook one minute longer,. Add the beer, bring to a boil and cook until reduced by half  about 10 minutes or so.</li><li>Add in the remaining ingredients and heat through.</li><li>Place sauce in a food processor or blender and puree until smooth. Can use immediately or can be refrigerated until ready to use.</li></ol>	american	45	8	f	f	t	t
 13	Carolina Caviar - Black Bean Salsa	https://spoonacular.com/recipeImages/Carolina-Caviar---Black-Bean-Salsa-637157.jpg	<ol><li>Add all ingredients together in a large bowl; tasting and adjusting as you go!</li><li>Chill in the refrigerator overnight.</li><li>Adjust seasoning to preference levels after the salsa sets overnight and the flavors blend/marry.</li><li>Serve with tortilla chips.</li></ol>	american	45	4	t	t	t	t
@@ -461,7 +5343,7 @@ COPY "Recipe" (id, title, image_uri, instructions, cuisine, ready_in_minutes, se
 31	Pulled Pork Sandwich with Mango BBQ sauce	https://spoonacular.com/recipeImages/Pulled-Pork-Sandwich-with-Mango-BBQ-sauce-657226.jpg	<ol><li>Directions</li><li>Rub: Combine the rub ingredients, in a small bowl and massage it into the pork shoulder until well coated. Set aside while you make BBQ sauce. You could do this a day ahead and keep refrigerated until ready to use.</li><li>BBQ sauce: In a large saucepan, warm the oil, over low heat, until hot and shimmering. Add the cumin and fennel; they should splutter upon contact - be careful! Once the spluttering subsides, add the onions, ginger and serrano and a little salt, to taste. Saute until they soften but don't let them get any color. Add the rest of the sauce ingredients. Simmer about 5 minutes. Taste and season.</li><li>Add the pork shoulder to the saucepan, coating it with the sauce. Cover, and gently simmer until the pork falls apart easily, stirring and turning often, about 3 hours.</li><li>Remove the pork from the saucepan and shred it using 2 forks. Return it to the sauce and stir to coat with the sauce. Put a generous spoonful of the pork inside a brioche bun, top with a few slices of pickle and serve. Aarti's Note: prepare to have your loved one swoon over you!</li></ol>	american	45	4	f	f	f	t
 32	Spice-Rubbed Lemon Barbecue Salmon	https://spoonacular.com/recipeImages/Spice-Rubbed-Lemon-Barbecue-Salmon-660926.jpg	<ol><li>Place the salmon fillets on a greased, foil-lined baking sheet.</li><li>Rub the top of the salmon with the barbecue seasoning. Let sit for 10 minutes while you preheat the broiler.</li><li>Place the baking sheet 4" - 6" from the heating element and broil for 6 - 8 minutes, until cooked through.</li><li>Remove from the broiler and let sit 5 minutes.</li><li>Combine the sauce ingredients (barbecue sauce, hoisin sauce, honey and zest of 1/2 lemon) in a small bowl.</li><li>Spoon the sauce into a small ziplock bag and squeeze down to the corner of the bag. Cut off a very small portion of the corner of the bag and squeeze the sauce generously over the salmon.</li><li>Serve with a lemon wedge from the other half of the lemon.</li></ol>	american	45	2	f	f	t	t
 33	Whole Wheat No-Yeast Pizza with Roasted Garlic, Sweet Potatoes, and Onions	https://spoonacular.com/recipeImages/Whole-Wheat-No-Yeast-Pizza-with-Roasted-Garlic--Sweet-Potatoes--and-Onions-665294.jpg	<ol><li>Roasted Garlic Instructions:</li><li>Preheat oven to 400 degrees F.</li><li>Cut the top off the bulb of garlic, exposing the cloves.</li><li>Place the garlic on a sheet of foil large enough to wrap it up.</li><li>Drizzle olive oil over top of garlic bulb and sprinkle with salt.</li><li>Tightly wrap the garlic in the foil.</li><li>Place foil in the oven and cook for 45 minutes.</li><li>Remove and unwrap garlic. Turn upside down and squeeze the cloves out of the garlic skin</li><li>Whole Wheat Pizza Dough Instructions:</li><li>Place all ingredients (except 2 tbsp olive oil) in a food processor or a stand mixer with dough hook. If using a food processor, process until dough forms into a ball. Add extra water, 1 tbsp at a time if dough is too dry. If using a stand mixer, mix with dough hook until all of the flour is mixed together.</li><li>If you have time, place dough in plastic wrap and refrigerate for 20-30 minutes.</li><li>Lightly flour surface and roll dough out until it is 1/2 inch thick. I chose to use a large bowl and cut out circular pizzas. This required me to roll the dough out three times, making 2 larger pizzas and one smaller one. You could also opt to roll it out until it is a rectangle.</li><li>Place pizza on pizza stone or on greased cookie sheet. Set aside.</li><li>Brush pizza dough lightly with olive oil (no more than 2 tbsp total).</li><li>Pizza Topping Instructions:</li><li>Preheat oven to 400 degrees F.</li><li>Line a baking sheet with foil and spray with non-stick cooking spray.</li><li>Place cubed red onion and sweet potato on the sheet.</li><li>Drizzle with 1-2 tbsp olive oil, and sprinkle with thyme, rosemary, salt and pepper.</li><li>Roast for 25-30 minutes, mixing the vegetables around occasionally. (I roasted my garlic at the same time).</li><li>Remove and set aside.</li><li>Take your freshly roasted bulb of garlic and squeeze the garlic out into a mortar bowl (if you don't have one, use a bowl). Crush the garlic with either a pestle or the bottom of a spoon until it is a paste.</li><li>Spread the roasted garlic paste over the pizza dough.</li><li>Sprinkle/crumble your cheese of choice over the pizza dough.</li><li>Place the vegetables on top of the cheese.</li><li>Cook pizza for approximately 20 minutes (plus or minus a few minutes depending on your oven), waiting for the crust to become golden brown.</li><li>Enjoy!</li></ol>	american	45	3	t	f	f	f
-34	Popcorn Chicken	https://spoonacular.com/recipeImages/popcorn-chicken-716358.jpg	In a bowl, season the chopped chicken breast with one seasoning cube, ginger powder, black pepper, chili powder, and garlic and set aside.Whisk your eggs and set aside.Season your breadcrumbs with the seasoning cubes and divide into 2 equal portions and set aside.In a blender or food processor, pour in your chicken breast, flour, 1 portion of breadcrumbs, and egg and blend till smooth.Scrape into a bowl and mold into little balls using the extra breadcrumbs to properly coat it. The smaller the balls the better as the chicken would cook through better.In a deep fryer or a huge pot of oil on medium heat, allow to heat but not be extra hot and dunk your popcorn chicken to fry till brown.Serve hot.	american	45	2	f	f	f	t
+34	Popcorn Chicken	https://spoonacular.com/recipeImages/popcorn-chicken-716358.jpg	In a bowl, season the chopped chicken breast with one seasoning cube, ginger powder, black pepper, chili powder, and garlic and set aside. Whisk your eggs and set aside.Season your breadcrumbs with the seasoning cubes and divide into 2 equal portions and set aside.In a blender or food processor, pour in your chicken breast, flour, 1 portion of breadcrumbs, and egg and blend till smooth.Scrape into a bowl and mold into little balls using the extra breadcrumbs to properly coat it. The smaller the balls the better as the chicken would cook through better.In a deep fryer or a huge pot of oil on medium heat, allow to heat but not be extra hot and dunk your popcorn chicken to fry till brown.Serve hot.	american	45	2	f	f	f	t
 35	Bangers and Mash	https://spoonacular.com/recipeImages/bangers_and_mash-44789.jpg	None	british	134	1	f	f	t	t
 36	Bridget Jones's Shepherd's Pie	https://spoonacular.com/recipeImages/Bridget-Joness-Shepherds-Pie-636096.jpg	<ol><li>Preheat the oven to 180 C.</li><li>In a large frying pan, heat a little olive oil and fry the chopped onion and garlic.</li><li>Add the mince, stirring, until browned all over.</li><li>While the meat is frying, break up any lumps with the back of the spoon.</li><li>Add the flour (this helps to thicken the juices) and stir.</li><li>Mix well and add the thyme and the rosemary and stir.</li><li>Add the chopped tomatoes and pour the stock mixture.</li><li>Add a pinch of salt and freshly ground black pepper and let it simmer for about 5 minutes.</li><li>For the mash, boil the potatoes, then drain them in a sieve and place into a clean bowl.</li><li>Add the milk, butter and egg yolk, and mash together.</li><li>Season with salt and freshly ground black pepper.</li><li>Pour the meat into an ovenproof dish and spread the mash on top, smooth over and mark with a spatula.</li><li>Put the dish into the oven and cook until the surface is bubbling and golden-brown.</li></ol>	british	45	4	f	f	f	f
 37	British Treacle Tart	https://spoonacular.com/recipeImages/British-Treacle-Tart-636136.jpg	<ol><li>Combine flour, salt and confectioners sugar in a large bowl.  Using tips of fingers, rub butter into flour until it looks mostly like wet sand.  Make a well in the middle, and pour in the egg.  Gradually work the egg into the flour until a moist dough forms, using the heel of your hand to distribute any remaining large pieces of butter. Shape into a 5-inch disk and cover with plastic wrap.  Refrigerate for 1 hour. This can be done in a food processor.</li><li>Roll out dough into a 13-inch circle. Lay dough into an 11-inch tart pan with a removable bottom, and press against the sides to secure dough. Refrigerate for one hour.</li><li>Preheat oven to 325 F.  Dock the bottom of the crust with a fork, lay a large, crumpled piece of parchment on top, and pour in pie weights (or a pound of dried beans). Bake for 25 minutes, until crust is a light golden brown. Set aside.</li><li>Increase the temperature to 350 F</li><li>Mix together the golden syrup and molasses with the lemon juice. Beat the eggs in a bowl and add to the treacle mixture. Finally stir in the bread crumbs.</li><li>Pour the mixture into the prepared tart case.</li><li>Bake for 20  25 minutes until the crust and filling are golden brown and firm to the touch. You may have to cover the crust with aluminum foil to keep it from getting too brown or burning.</li><li>Serve warm with crme fraiche which balances really well with the sweetness of the tart or a good vanilla ice cream.</li></ol>	british	45	1	f	f	f	t
@@ -540,7 +5422,7 @@ COPY "Recipe" (id, title, image_uri, instructions, cuisine, ready_in_minutes, se
 110	Salmon, Watercress, Fennel and Baby Beetroot Salad With Lemony Caviar Dressing	https://spoonacular.com/recipeImages/Salmon--Watercress--Fennel-and-Baby-Beetroot-Salad-With-Lemony-Caviar-Dressing-659143.jpg	<ol><li>Place the salmon in a pan, cover with water, and add the wine, bay and tarragon stalks.  Bring to the boil and then immediately turn off and leave for a couple of minutes to cook in the residual heat. Remove to a plate with a slotted spoon and leave to cool before flaking into large pieces.</li><li>Make the dressing by lightly whisking the olive oil and lemon juice together. Stir in the Arnkha MSC and season with some black pepper.</li><li>Next, arrange the watercress, beets and fennel in 4 shallow salad bowls, then add the salmon and tarragon.  Drizzle over the Arnkha MSC dressing and serve.</li></ol>	easternEuropean	45	4	f	f	t	t
 111	Transylvanian Goulash	https://spoonacular.com/recipeImages/Transylvanian-Goulash-663792.jpg	<ol><li>Wash sauerkraut under cold running water then soak in cold water for 20 minutes to reduce sourness. Strain well, pressing out excess water.</li><li>NOTE: I am a big fan of searing meat, because I think it gives sauces a deeper flavor. While the original recipe didn't say to do this-- I plan to sear the pork in some olive oil and then to continue with cooking the onion and garlic and carrying on with the rest of the steps.</li><li>Melt butter in a 5-quart casserole; add the onions. Cook over medium heat, stirring occasionally until lightly colored, 6 to 8 minutes.</li><li>Add the garlic, season with salt and cook a minute or two longer.</li><li>Stir in paprika, pour in 1/2 cup of broth and bring to boil.</li><li>Add the pork cubes. Spread sauerkraut over pork sprinkle with caraway seeds. Combine tomato puree, tomato paste and reserved broth, in a small bowl. Mix well and pour over sauerkraut. Bring to a boil.</li><li>If using a crock-pot, transfer contents of casserole to crock-pot insert. Cover, and cook on high, for 3 to 3-1/2 hours, or until pork is fork tender but still retains its shape.</li><li>If using a conventional oven, preheat to 250 degrees F. Cover casserole and transfer to the oven. Cook, covered, for 3 to 3-1/2 hours, or until pork cubes are tender but still retain their shape.</li><li>When the pork is tender, transfer meat and sauerkraut to a serving platter with high sides. Tent with foil to keep warm.</li><li>Transfer the sauce to a 2-quart pan. Set over medium heat. Combine flour, heavy cream and sour cream in a small bowl. Whisk until smooth. Stir mixture into sauce and simmer for 10 minutes longer. Do not boil. Season to taste with salt and pepper. Pour over meat and serve. Pass additional sour cream as a side.</li><li>NOTES: I added 2 Tablespoons of tomato paste to this recipe, which we thought gave the sauce deep depth of flavor. We also served this over creamy mashed potatoes. This freezes really well.</li></ol>	easternEuropean	45	8	f	f	f	f
 112	Turkey Goulash	https://spoonacular.com/recipeImages/Turkey-Goulash-By-Mommie-Cooks-664031.jpg	<ol><li>If you're using ground turkey, start out by browning it up, then adding in your garlic, onion, and pepper. Cook it for 3-4 minutes. If you're using leftover cooked turkey, cook up the garlic, onion, and pepper in a tablespoon of oil for 3-4 minutes on medium heat and then add in the turkey.</li><li>Next you'll add in your spices; the garam masala, paprika, cumin, ginger, curry and coriander. Add in your tomatoes and stir it all together.</li><li>Next up you'll add in the stock and let it cook on medium heat for about 5 minutes.</li><li>Add in your spinach and give it a whirl or two until it heat up and wilts down into your meal.</li><li>Now stir in your cup of sour cream.</li><li>The final step is to add in your noodles.</li></ol>	easternEuropean	45	6	f	f	f	f
-113	Chocolate Crepes Cake	https://spoonacular.com/recipeImages/Chocolate-Crepes-Cake-472333.jpg	<p style="margin-left: 120px;"><em><span></span></span></span></span></span></span></span></span>Quick And Easy Desserts</span></em></p><p><u>Making Crepes</u> :</p><div><br><div>Achieve 16 crepes as follows: <br><p>Prepare a hazelnut butter, that is to say, cook the butter in a saucepan over high heat for 1 minute, they will become brown.</p><p>In a bowl, add the flour, salt, sugar and form a fountain. Break the eggs in the center and mix gently pouring the milk gradually. Add the hazelnut butter and mixture together until it smooth dough, then let it sit for about 1 hour.</p><div>In a hot crepe pan (the same diameter as the cake pan used to mounting<br><div> the cake), pour a ladle of batter  into the pan<br><div> and cook for about 2 minutes on each side (by monitoring the color). <br><div>Then let them cool.</div></div></div></div><p><br><u>For Filling</u> :<br><br>Melt the chocolate and butter in a double boiler. When they are still warm, add the sugar. Add Nutella and mix well, then add the egg and egg yolks and mix well again.</p><p><br><u>For the Chocolate Glaze</u> :</p><div>Preheat oven to 180 �C (th. 6-7).<p>If necessary, cut the crepes the same size as the cake pan. butter the sides of the cake pan and put a circle of baking parchment paper on the bottom.</p><p>Start by putting down one crepe, and then cover it with chocolate mixture. Then put again another crepe and chocolate, and so on up the cake pan. Finish with a crepe.</p><div>Bake for 15 minutes, and then cool almost completely before unmolding on a platter.<p>Frost the chocolate cake</p><div>and decorate with the chips chocolate for example.<div>That's all if you want to make a <a href="http://www.qaedesserts.com/"><em>Quick And Easy Desserts</em></a><p>Notes :</p><p><em>"if you want </em><em>stands well </em><em>your cake, make enough pancakes."</em></p><p><em>More Recipes here : </em>http://www.qaedesserts.com</p></div></div></div></div></div></div>	french	120	6	f	f	f	f
+113	Chocolate Crepes Cake	https://spoonacular.com/recipeImages/Chocolate-Crepes-Cake-472333.jpg	<p style="margin-left: 120px;"><em><span></span></span></span></span></span></span></span></span>Quick And Easy Desserts</span></em></p><p><u>Making Crepes</u> :</p><div><br><div>Achieve 16 crepes as follows: <br><p>Prepare a hazelnut butter, that is to say, cook the butter in a saucepan over high heat for 1 minute, they will become brown.</p><p>In a bowl, add the flour, salt, sugar and form a fountain. Break the eggs in the center and mix gently pouring the milk gradually. Add the hazelnut butter and mixture together until it smooth dough, then let it sit for about 1 hour.</p><div>In a hot crepe pan (the same diameter as the cake pan used to mounting<br><div> the cake), pour a ladle of batter  into the pan<br><div> and cook for about 2 minutes on each side (by monitoring the color). <br><div>Then let them cool.</div></div></div></div><p><br><u>For Filling</u> :<br><br>Melt the chocolate and butter in a double boiler. When they are still warm, add the sugar. Add Nutella and mix well, then add the egg and egg yolks and mix well again.</p><p><br><u>For the Chocolate Glaze</u> :</p><div>Preheat oven to 180 °C (th. 6-7).<p>If necessary, cut the crepes the same size as the cake pan. butter the sides of the cake pan and put a circle of baking parchment paper on the bottom.</p><p>Start by putting down one crepe, and then cover it with chocolate mixture. Then put again another crepe and chocolate, and so on up the cake pan. Finish with a crepe.</p><div>Bake for 15 minutes, and then cool almost completely before unmolding on a platter.<p>Frost the chocolate cake</p><div>and decorate with the chips chocolate for example.<div>That's all if you want to make a <a href="http://www.qaedesserts.com/"><em>Quick And Easy Desserts</em></a><p>Notes :</p><p><em>"if you want </em><em>stands well </em><em>your cake, make enough pancakes."</em></p><p><em>More Recipes here : </em>http://www.qaedesserts.com</p></div></div></div></div></div></div>	french	120	6	f	f	f	f
 114	Baked Ratatouille	https://spoonacular.com/recipeImages/Baked-Ratatouille-633754.jpg	<ol><li>Heat oil in a heavy, large Dutch oven over medium heat. Add garlic; stir 1 minute. Add eggplant, green bell peppers, tomatoes, onion, zucchini and basil. Saute for 5 minutes. Cover and simmer until all vegetables are tender, stirring occasionally, about 25 minutes.</li><li>Uncover pot and simmer until juice thickens, stirring occasionally, about 10 minutes. Mix in vinegar; season to taste with salt and pepper.</li><li>Preheat oven to 350 degrees. Spread in 9-inch pie dish. Sprinkle with cheese, if desired. Bake until heated through, about 20 minutes.</li><li>This recipe yields about 3 cups.</li><li>Yield: 3 cups</li></ol>	french	45	1	t	f	t	f
 115	Banana Crepes	https://spoonacular.com/recipeImages/Banana-Crepes-634068.jpg	<ol><li>Make Batter:In a medium mixing bowl, mix the egg, milk and sugar together, set aside. In a small mixing bowl, combine flour, spices and salt. Pour the flour mixture into the egg and milk mixture and whisk rapidly. Pour in melted butter and stir. Set aside.</li><li>Make Crepes:Place 2 teaspoons of butter into a medium non-stick pan over high heat. When butter begins to melt, use a heat resistant spatula to spread it around the saut pan. Pick up the saut pan to guide the melting butter around in a circular motion. When it looks like pan is almost smoking hot, add one ladle of batter, (approximately 4 ounces) and pick up the saut pan to create a circular motion again to coat the pan with batter. Let batter cook for 25-30 seconds and then use spatula to scrape along the edges and underneath the crepe. Flip crepe and cook for another 25 seconds. Crepe should have a golden color, but not too tan. Place crepe onto a 3Make Filling:melt butter and brown sugar in a medium saute pan over medium high heat and stir. Add sliced bananas, stir and coat with brown sugar and butter. Taste for seasoning, may need to add salt. Add optional cream and stir. Keep warm.</li><li>Make Filling:melt butter and brown sugar in a medium saute pan over medium high heat and stir. Add sliced bananas, stir and coat with brown sugar and butter. Taste for seasoning, may need to add salt. Add optional cream and stir. Keep warm.</li><li>Assemble Crepes:Preheat the oven to 300F degreesAdd approximately half cup of filling into each crepe, roll and place in a warm place, or onto a baking sheet to heat all the crepes at one time.  Once all the crepes are  asembled, top with a dollop of whip cream and a sprinkle of powdered sugar, cinnamon and nutmeg.</li></ol>	french	45	1	t	f	f	f
 116	Beef Bourguignon Pie With Mushy Green Pea	https://spoonacular.com/recipeImages/Beef-Bourguignon-Pie-With-Mushy-Green-Pea-634585.jpg	<ol><li>Making beef bourguignon</li><li>Cook bacon on medium heat until crispy. Absorb the excessive fat with paper and rest</li><li>In the same pan, add onions and cook until browned (approx. 3-5 minutes) and remove from pan</li><li>Add olive oil onto the same pan, cook mushrooms until browned and remove from pan</li><li>In the same pan, cook beef until browned. Then add cooked bacon and onions together with thyme and tomato paste. Stir fry until well combined.</li><li>Add wine and stock in and bring it to boil. Reduce to low heat and let it simmer (covered) for 1 hour</li><li>Add cooked mushrooms and continue to let it simmered (uncovered) until beef is tender (approx. 40-45 minutes). Then add in the parsley.</li><li>Making puff pie lid</li><li>Preheat the oven to 200'c (390'f) fan forced</li><li>Cut the puff pastry sheet to fit your baking dishes. Use cookie cutters to make creative shapes to decorate your puff pie lid such as flowers or alphabets or words (e.g. name, love etc). Bake the pastry on oil sprayed tray until light golden browned (5-10 minutes). Your tray must be at the middle of your fan oven.</li><li>Making mushy pea</li><li>On medium heat, cook onion until light golden browned.</li><li>Add cream and stock and bring to boil. Reduce heat to low and let it simmer for a few minutes.</li><li>Turn the heat off and mash it with folk gently. Season with salt and pepper.</li><li>To serve, spoon the beef bourguignon onto a baking dish (microwaved so it is warm). Close with the puff pie lid and serve with mushy green pea in another baking dish.</li></ol>	french	45	2	f	f	f	f
@@ -589,126 +5471,126 @@ COPY "Recipe" (id, title, image_uri, instructions, cuisine, ready_in_minutes, se
 159	Lamb Moussaka	https://spoonacular.com/recipeImages/Lamb-Moussaka-649225.jpg	<ol><li>CUT eggplant into 1/4" (5mm) thick slices. Layer in colander, sprinkling each layer with salt. Let stand 30 minutes.</li><li>RINSE eggplant; pat dry. Place in single layer on baking sheet. Brush with olive oil. Broil, turning once for 4 to 6 minutes on each side, until golden and softened. Set aside. Repeat until all eggplants are cooked.</li><li>SAUTE zucchini in large oiled frying pan until tender-crisp. Set aside.</li><li>Meat Sauce:COOK lamb in large saucepan on high heat, breaking up with spoon, for 5 minutes. Drain off fat. Add onions, garlic and oregano. Cook on medium for 5 minutes. Add tomatoes, tomato paste and wine. Simmer 10 minutes, or until mixture starts to thicken. Stir in parsley, salt and pepper. Set aside.</li><li>White Sauce:MELT margarine in large saucepan. Add flour, mixing until smooth. Gradually add milk. Cook, stirring constantly until mixture comes to a boil and is thickened. Add salt and nutmeg. Add a bit of hot mixture to beaten eggs then return to saucepan and cook 2 minutes longer, stirring occasionally.</li><li>To Assemble:Tips:Place pan on a baking sheet or piece of foil to catch any drips that may boil over.</li><li>MAKE-AHEAD: After assembling, cool completely, uncovered in refrigerator. Cover with plastic wrap and refrigerate for 1 day or overwrap with heavy foil and freeze up to 3 weeks. Thaw in refrigerator 48 hours before baking.</li><li>Replace lamb with beef.</li><li>A thin bottom layer of sauteed sliced potatoes can be added.</li><li>A make-ahead layered Greek casserole that's ideal for potlucks and family reunions.</li></ol>	greek	45	12	f	f	f	f
 160	Lemony Greek Lentil Soup	https://spoonacular.com/recipeImages/Lemony-Greek-Lentil-Soup-649886.jpg	<ol><li>Put the lentils, water, carrot and 1 teaspoon dried thyme into an 8-quart stockpot, cover and set over medium heat.</li><li>After 15 minutes, lower the heat somewhat and gently bring the water to a simmer, which should take another half an hour or so.</li><li>Once the lentils have reached the boiling point, turn off the burner and let them sit for 1 hour.</li><li>After the hour, bring the soup back to a simmer and add the lemon juice, dry basil, fresh thyme, oregano, pepper and salt and simmer for 1 hour.</li><li>Now, slowly saut the onion and garlic in the olive oil until the onion is tender.</li><li>Coarsely chop the tomatoes (I do this with kitchen scissors right in the can), and add them and the onion mixture to the soup. Adjust the salt to taste.</li><li>Bring everything back to the boiling point and simmer for another hour.  After this point, you can turn your burner to its lowest setting, and this soup will happily sit steaming with its lid cocked for several hours until you are ready to enjoy it.  Add more water if necessary.</li><li>Serve with crusty bread and a soft cheese like St. Andre or Cambazola</li></ol>	greek	45	6	f	f	t	t
 161	Pasta With Roasted Vegetables and Greek Olives	https://spoonacular.com/recipeImages/Pasta-With-Roasted-Vegetables---Greek-Olives-654939.jpg	<ol><li>Preparation:</li><li>Cook spaghetti, rinse & drain, set aside </li><li>Sear the meat with onions, set aside (color equal flavor dont make gray and bubbly)</li><li>Roast vegetables with olive oil (sear them dont Cooke them)</li><li>Roast sliced mushrooms</li><li>For the sauce: combine all ingredients bring to boil then simmer on low heat for about 10 minutes</li><li>Serve:</li><li>Lay pasta in the bottom of the plate then the sauce, meat goes on top of sauce</li><li>Then start layering the vegetables the mushrooms, add a the cheese & olives</li><li>Garnish with fresh Basil.</li></ol>	greek	45	8	f	f	f	f
-162	Pork Shoulder Tacos with Chipotle Greek Yogurt and Coleslaw	https://spoonacular.com/recipeImages/Pork-Shoulder-Tacos-with-Chipotle-Greek-Yogurt-and-Coleslaw-656820.jpg	<ol><li>To Make the pork shoulder:</li><li>Place all ingredients in the crock pot.  Cook for 5 hours on low.  Meat should be tender and easily shred when finished cooking.</li><li>To Make the Chipotle Greek Yogurt:</li><li>In a small bowl, add the Greek yogurt.  Crack open your can of chipotle chilies in adobo sauce and remove the seeds from 3 or 4 of the chilies (about half of the can). Finely chop and add to the Greek yogurt. Add about a teaspoon of the adobo sauce.  Stir. For a spicier sauce, add additional chipotle chilies.</li><li>To Make the no-mayo coleslaw:</li><li>Thinly slice the cabbage and chop the green onion.  Peel and julienne the carrot.  Add all veggies to a large mixing bowl.  Mix the lime juice, apple cider vinegar and olive oil together in a small bowl.  Drizzle the liquid over the veggies.  Add salt and pepper to taste and if youre one of those cilantro people, add a handful of chopped cilantro.  Mix thoroughly and serve on your taco.</li><li>To assemble the tacos, simply heat your favorite tortilla on the stove until warm. Spoon desired amount of meat, chipotle Greek yogurt sauce, and coleslaw on the tortilla and enjoy!</li><li>Nutritional information is per taco.</li></ol>	greek	45	12	f	f	t	f
-163	Roasted Eggplant Hummus	https://spoonacular.com/recipeImages/Roasted-Eggplant-Hummus-658573.jpg	<ol><li>Preheat oven to 425 degrees.</li><li>On a large baking sheet toss eggplant, 2 tablespoons olive oil, salt and pepper and spread in a single layer.</li><li>Roast for 18-20 minutes.</li><li>Remove from oven and set aside.</li><li>In food processor combine, chickpeas, tahini, garlic, lemon juice, 2 tablespoons olive oil and pulse 3 or 4 times.</li><li>Add eggplant and blend on highest level until desired consistency.</li><li>Store in air tight containers in the refrigerator.</li></ol>	greek	45	6	t	t	t	t
-164	Spanakopita (Greek Spinach Pie)	https://spoonacular.com/recipeImages/Spanakopita-(Greek-Spinach-Pie)-660843.jpg	<ol><li>Heat vegetable oil in a large saucepan over medium heat. Slowly cook and stir onions until softened. Mix in spinach, dill and flour. Cook approximately 10 minutes, or until most of the moisture has been absorbed. Remove from heat. Mix in feta cheese, eggs, salt and pepper.</li><li>Lay 1 sheet of phyllo dough in prepared baking pan, and brush lightly with olive oil. Lay another sheet of phyllo dough on top, brush with olive oil, and repeat process with 10 more sheets of phyllo. The sheets will overlap the pan.</li><li>Spread spinach and cheese mixture into pan and fold overhanging dough over filling. Brush with oil, then layer remaining sheets of phyllo dough, brushing each with oil. Tuck overhanging dough into pan to seal filling.</li><li>Bake in preheated oven for 30 to 40 minutes, until golden brown. Cut into squares and serve while hot.</li></ol>	greek	45	8	t	f	f	f
-165	Easy Lemon Feta Greek Yogurt Dip	https://spoonacular.com/recipeImages/easy-lemon-feta-greek-yogurt-dip-716403.jpg		greek	45	1	t	f	t	f
-166	Coconut Chicken Curry with Snow Peas and Rice	https://spoonacular.com/recipeImages/Coconut-Chicken-Curry-with-Snow-Peas-and-Rice-157311.jpg	<p>1. Heat coconut oil in a pan over medium-high heat. Pre-heat the oven to 190 C or 375 F. Start cooking the brown rice.</p><p>2. Add the cubed chicken breast to the pan for a couple minutes until browned. Transfer the chicken from the pan into a casserole dish.</p><p>3. Fry the garlic and ginger in the pan, adding more coconut oil if necessary. Add the spices until fragrant.</p><p>4. Add the coconut milk and tomato paste to the pan.</p><p>5. Start steaming the frozen snow peas, giving the flavors in the sauce some time to meld.</p><p>6. Pour the sauce over the chicken breast cubes.</p><p>7. Put the casserole dish in the oven for about 25 minutes, adding the snow peas for the last 10 minutes or so. Once the chicken is cooked through, stir in the lemon grass paste.</p><p>8. Serve the chicken curry over brown rice.</p><p><span></span></p>	indian	45	2	f	f	t	t
-167	Indian Spiced Red Lentil Soup	https://spoonacular.com/recipeImages/Indian-Spiced-Red-Lentil-Soup-631752.jpg	<ol><li>Put Cilantro Stems in Water and bring to a boil then remove Stems (This step is optional)</li><li>Rinse the Lentils and add to Stem Broth</li><li>Bring Lentils to a boil then turn heat down to medium</li><li>Add a bit of Lentil water to the Bullion cubes, mash well then add to Lentils</li><li>In a saut pan add  Grapeseed Oil, Coriander Seeds (you can put the seeds in a coffee grinder if you prefer) Cumin Seeds, Turmeric, Garam Masala.</li><li>Saut on medium heat until fragrant approximately about 5 minutes.</li><li>Mince Serranos, grate Ginger, mince Onions, mince Garlic and add to pan then saut until Onions are soft.</li><li>Add Tomato Sauce and cook on medium low for about 10 minutes then add to cooked Lentils and cook for 20 more minutes on low heat.</li><li>If you like a smooth texture to your soup you can put all of it in a food processor (blender or hand blender) to puree` or only use half for a slightly textured soup or leave it if you like it that way.</li></ol>	indian	45	12	t	t	t	t
-168	Apple Curry Soup	https://spoonacular.com/recipeImages/Apple-Curry-Soup-632528.jpg	<ol><li>Sweat leeks and mushrooms in vegetable oil until tender (without color) in a heavy gauge sauce pot</li><li>Add apples, apple cider, coconut milk, curry powder, turmeric. Bring to boil and simmer for 20 minutes.</li><li>Add the Chavrie and season with salt and pepper</li><li>Pour entire contents in a blender and puree or puree with a hand held mixer</li><li>Strain through a fine chinois. And keep warm</li><li>Serve hot</li><li>Garnish with slices of apple or a dollop of Chavrie</li></ol>	indian	45	1	t	f	t	f
-169	Baked Chickpea and Chili Koftas in a Hot Jalfrezi Curry Sauce	https://spoonacular.com/recipeImages/Baked-Chickpea---Chili-Koftas-in-a-Hot-Jalfrezi-Curry-Sauce-633544.jpg	<ol><li>Preheat oven to 180 degrees celcius (356 Fahrenheit) and line a large baking tray with parchment paper.</li><li>Make the Kofta  Heat 2 tbsp water in a saute pan over a medium heat and add the onion, garlic and chili and cook for 4 minutes, transfer to a food processor (or use a stick blender) add the coriander and the Kofta Spice Mix and pulse until smooth.</li><li>In a large mixing bowl, mash the chickpeas until they are all crushed then add the mixture from step 2 along with the gram flour and mix thoroughly together, if its too wet, add a little more gram flour. Using damp hands take a heaped tablespoon of the kofta mixture and shape into a ball and place on the parchment paper, you should get 18  20 koftas. Cook in the oven for 20  25 minutes, they should firm up quite nicely in the oven.</li><li>Now make the Jalfrezi  Add the onion, ginger, garlic and chili to a food processor and pulse until smooth.</li><li>Heat 2 tbsp of water in a deep sauce pan, add the onion mixture from step 4 along with all the Jalfrezi Spice Mix and cook for 3 minutes to release the flavours before adding in the green peppers, passata, peas and lemon juice, bring to the boil then reduce the heat to medium, cover the pan and cook for 20 minutes and just before serving stir through the coriander. Serve in a bowl with the koftas placed on top!</li></ol>	indian	45	2	t	t	t	t
-170	Balti Butter Chicken	https://spoonacular.com/recipeImages/Balti-Butter-Chicken-633960.jpg	<ol><li>Marinate the cleaned cubed chicken for all the ingredients and keep it in fridge for a minimum of 5 hours or the best overnight.</li><li>Grill it in a Tandoor oven or bake it conventional oven at 400 F for 30-40 minutes,till they are firm n brown.When the juices run out,take it n reserve.</li><li>Take a kadai n melt some butter,add the onion and green chilies and saute till pink.Take it out n blend in a mixer.</li><li>In the same pan,pour butter,splutter fennel seeds and roast the whole spices.</li><li>Now add the nuts and raisins and roast till brown n plump.(you can roast it separately n add to the gravy at last also)</li><li>Now bring back the onion paste and saute till brown.Add the reserved juice too..</li><li>Add the tomato puree and mix.</li><li>Add the chili powder,pepper powder ,salt and half of garam masala.Mix well and simmer for 2 minutes</li><li>Sprinkle the ketchup.</li><li>Now put the roasted chicken in it and cover with the gravy.</li><li>Simmer and cover with a lid for 5-8 minutes.</li><li>Now remove the lid and cook until the desired dryness level is achieved.</li><li>Add the fresh cream n stir in for a minute.</li><li>Sprinkle the Garam masala powder,a tad of sugar and mix well.</li><li>Garnish with cilantro leaves.</li><li>Add a wee bit of butter before serving..:)</li></ol>	indian	45	2	f	f	t	f
-171	Beef and Tomato Curry Over Quinoa	https://spoonacular.com/recipeImages/Beef-and-Tomato-Curry-Over-Quinoa-634579.jpg	<ol><li>Season both sides of the beef with curry powder and set aside.</li><li>Cook the onion in the olive oil over medium heat in a sautee pan.</li><li>Add the garlic, ginger, and chile once the onion becomes translucent.</li><li>Add the curry powder and stir to coat everything in the pan.</li><li>Add the tomato paste and cook until the paste starts to darken, stirring often to prevent burning.</li><li>Deglaze with the wine and stir until the liquid is absorbed.</li><li>Transfer the contents of the pan into a crock pot.</li><li>Sear the beef over high heat on both sides, transfer to crock pot.</li><li>Add the can of tomatoes and bay leaf. If needed, add chicken stock or water so the beef is almost covered. Set your crock pot on low and cook until you can shred the beef with a fork. Check for seasoning and add salt and pepper to taste. (Remove bay leaf and ginger piece.)</li><li>Prepare quinoa according to package directions and serve tomato beef curry over the top.</li></ol>	indian	45	4	f	f	t	t
-172	Beef Vindaloo	https://spoonacular.com/recipeImages/Beef-Vindaloo-634712.jpg	<ol><li>For marinade: Blend together garlic and red wine vinegar. Add chilies, cumin, turmeric, mustard, ginger, salt, sugar, lemon peel, juice, and pulp and blend well.</li><li>Place beef in bowl and pour marinade over it. Stir in poppy seeds and sit for 2 hours.</li><li>Heat clarified butter in pan and add onion. Cook until translucent, then add bay leaves and cloves. With slotted spoon, lift meat from marinade and add to onions. Increase heat to sear meat. Pour in marinade. Cover tightly, reduce heat and cook 1 hour.</li><li>After 1 hour, add tomato paste, stirring thoroughly, and cook another 30 minutes, until meat is tender. Season with salt and pepper.</li><li>This recipe yields 4 servings.</li><li>Comments: A specialty of The Sultan, Surfers' Paradise, Australia.</li></ol>	indian	45	1	f	f	t	f
-173	Channa-Chickpea, Potato and Cauliflower Curry	https://spoonacular.com/recipeImages/Channa-Chickpea--Potato---Cauliflower-Curry-637426.jpg	<ol><li>In a large pot heat oil.</li><li>Add onions saute until very soft.</li><li>Add garlic and ginger, saute for 3-4 minutes.</li><li>Add spices, saute with potatoes until they are covered with the spice mixture.</li><li>Add water to cover.</li><li>Simmer until potatoes are soft.</li><li>Add chickpeas, and cauliflower.</li><li>Simmer with lid on for 20 minutes,stirring occasionally.</li><li>Season with salt,sugar and vinegar. Serve with brown rice</li></ol>	indian	45	8	t	t	t	t
-174	Curry Beef Over Rice Noodles	https://spoonacular.com/recipeImages/Curry-Beef-Over-Rice-Noodles-641111.jpg	<ol><li>In nonstick skillet, add oil and saut beef over medium-high heat for 3-4 min. Add red onions, garlic, saut for about 4 minutes. Add fresh ginger, sambal oelek, curry powder; cook, stirring, until fragrant, about 45 seconds.</li><li>Add soy sauce, lime juice and peanuts.  Saut another 30 seconds.  Server over rice noodles.</li></ol>	indian	45	2	f	f	f	t
-175	Curry Mussels	https://spoonacular.com/recipeImages/Curry-Mussels-641128.jpg	<ol><li>In a big pot or cocotte, put in olive oil and onion. Fry the onions until soft but not brown.</li><li>Then, put in white wine, parseley, salt, pepper, and cayenne pepper.</li><li>Stir for a few minutes before putting the mussels in the pot. Put the lid on and cook the mussels for about 2-3 minutes, shaking the pan occasionally.</li><li>Use tongs to lift out the mussels as they open, putting them into a warm dish. Throw away any mussels that havent opened after 3 minutes.</li><li>Strain the liquid through a fine sieve into a clean saucepan, leaving behind any grit or sand.</li><li>Bring to the boil and  boil for 2 minutes.</li><li>Add the curry powder and crme fraiche, stir. Reheat the sauce without boiling and let the sauce thicken.</li><li>Serve the mussels in individual bowls with the sauce poured over.</li><li>Sprinkle with some parsley.</li></ol>	indian	20	4	f	f	t	f
-176	Dum Mutton Biryani	https://spoonacular.com/recipeImages/Dum-Mutton-Biryani-641739.jpg	<ol><li>N a pressure cooker,on medium high heat add mutton ,dry spices and 1 tsp salt to 2 cups water.Close the lid and let it pressure cook until the meat is 80%% cooked.This can be tested by opening the lid and squeezing the mutton pieces with fingers, it should be just tender & and not falling apart or soft.</li><li>Once cooked, reserve the stock from pressure cooker into a bowl, separate the mutton from spices and set aside the mutton pieces to cool.Throw away the collected spices.</li><li>Meanwhile,wash the rice thoroughly and set aside.</li><li>In a pan , heat the oil till ripples are formed on the surface.Stir-fry the cooled mutton pieces in this oil for about 1-2 minutes.Take the mutton out and in the same oil on medium heat ,add the onions and stir fry them untill golden brown.Once the onions are done, add the cumin seeds, red chili powder[if using] , dry coriander powder and saute for about 2 minutes.</li><li>Next, add the washed rice to the pan and saute for about 3 minutes.This gives the rice a nutty flavor.</li><li>After the rice is sauted, switch off the heat and add the mutton pieces, salt and about 2.5 cups of reserved stock to the pan.Let the rice soak for about 20 minutes.</li><li>To the soaked rice, add the saffron -milk ,cover with lid and let the rice cook on low- medium heat.The amount of rice I used took around 15 minutes to cook at low heat.You can adjust stock/water as per your rice variety.</li><li>While the rice is cooking,let the tava/girdle heat up on high heat.Switch off the heat once the rice is done and transfer the pan to the top of heated tava.Seal the edges of the pan and lid with kneaded dough on all sides so that no steam can escape .This process is called dum cooking wherein the dish is slowly cooked on very low heat, mostly in sealed containers, allowing the meats to cook, as much as possible, in their own juices andso thatthe aromas of spices are absorbed within the dish. You can read more about it here and here.</li><li>After cooking on dum for about 8-10 minutes remove the pan from tava and let it rest for about 10 minutes.</li><li>Thereafter, break the dough seal , transfer to a serving vessel and garnish with cilantro leaves ,fried onions & nuts [if using] .</li><li>Serve with raita and salad.</li><li>Notes:</li><li>Seasoning the water in which the rice will cook is very important else the biryani will be tasteless.</li><li>Be patient while the biryani cooks.Avoid opening the lid again and again and stirring while the rice cooks.</li><li>After dum cooking, it is mandatory to let the biryani rest for some time.Do not skip this step.</li><li>Enjoy!</li></ol>	indian	45	3	f	f	f	f
-177	Gujarati Dry Mung Bean Curry	https://spoonacular.com/recipeImages/Gujarati-Dry-Mung-Bean-Curry-646043.jpg	<ol><li>Wash the mung beans and boil them in plenty of hot water with a pinch of baking powder until al-dente. If you have a pressure cooker thats about 6-7 whistles. Drain and set aside.</li><li>In a large pan heat the oil and add the mustard seeds (wait for them to pop) then add the cumin seeds, asafoetida, curry leaves, garlic and chilies. Saut until aromatic. Obviously dont let it burn.</li><li>Add the tomatoes, turmeric and mung beans and cook for two minutes. Be careful not to mash it up as you stir.</li><li>Add the salt, sugar, lemon juice and cinnamon powder and cook for a further two minutes.</li><li>Throw in the chopped coriander, combine and serve.</li></ol>	indian	45	4	t	t	t	t
-178	Keema Curry	https://spoonacular.com/recipeImages/Keema-Curry-648809.jpg	<ol><li>Saute curry powder in oil over medium heat for 2 to 3 minutes. Add onions and brown. Add garlic and coriander and stir. Add meat and brown. Add salt and tomatoes, if using fresh tomatoes first peel, seed, and slice and cover. Cook over low heat for about 20 to 25 minutes. Add peas, mix in, cover again, and cook for about 5 minutes until peas are done.</li><li>Do not use a black cast iron skillet, the curry powder will get in the pores. Frozen peas work better (and are easier) than fresh.</li></ol>	indian	45	4	f	f	t	t
-179	Luscious Palak Paneer	https://spoonacular.com/recipeImages/Luscious-Palak-Paneer-650484.jpg	<ol><li>Blanch the spinach in hot water with a tiny pinch of baking powder (which keeps it beautifully green!) and drain when wilted. Place in a blender and puree with a cup of water. Set the puree aside.</li><li>In a large pan heat the oil and add the onions, garlic, ginger, chilies and tomatoes. Cook for around 5 minutes on a high heat stirring constantly. Do not let it burn.</li><li>Add the spinach puree, turmeric powder, cumin powder, coriander powder, fennel powder, cinnamon powder, cardamom powder and salt to taste. Simmer on a medium heat until the oil separates from the spinach mixture.</li><li>Add the paneer and single cream if you wish and remove from the heat.</li><li>Serve with naan, rice, paratha or if you cant wait, a spoon.</li></ol>	indian	45	4	t	f	t	f
-180	Mughlai Malai Kofta Curry	https://spoonacular.com/recipeImages/Mughlai-Malai-Kofta-Curry-652542.jpg	<ol><li>Boil the potatoes, cool, peel and grate them.</li><li>Grate paneer.</li><li>Wash all green chilies, deseed and chop them fine.</li><li>Peel carrots,grate them, add peas and some water, boil them in microwave for 10 mins. Once done, remove excess by passing &amp; squeezing it through a muslin cloth.</li><li>Peel onions, cut them into halves and boil with a cup of water for ten minutes. Drain excess water, cool onions and grind them into a smooth paste. Set Aside.</li><li>In a bowl, mix mashed potatoes, paneer, some chopped green chilies, boiled carrot-peas, corn flour and salt. Mix well. Divide into 20-22 equal sized balls. Stuff  raisins &amp; cashew into them. Deep fry in hot oil until slightly golden brown. Drain and keep aside. Fry one kofta and check for binding, if it breaks, add a little more cornflour. Deep fry in hot oil.</li><li>OR BAKE in a 375F pre-heat oven, by arranging &amp; spraying oil on these koftas placing them on a cookie sheet wraped with aluminum foil,for 10 mins. Keep a close watch, with the help of tongs, turn them once they are slight brown on one side.</li><li>On the other side heat oil in a kadai, add shahjeera, boiled onion paste and cook for five minutes. Add ginger &amp; garlic, few chopped green chilies, coriander powder, cumin powder, turmeric powder, and salt. cook for a minute.</li><li>Add tomato puree and red chili powder and cook on medium flame untill oil separates from gravy.</li><li>Add half&amp;half along with some water &amp; bring it to a boil and simmer for ten minutes on a slow flame. Stir occasionally.</li><li>Stir in fresh cream and garam masala powder.</li><li>Gently put all of these kofta's in the gravy when ready to serve. Simmer for another 2 mins and enjoy this rich, creamy gravy with Nan/Roti (Indian Flat Bread.)</li></ol>	indian	45	4	t	f	t	f
-181	Roasted Acorn Squash Stuffed with Spicy Biryani	https://spoonacular.com/recipeImages/Roasted-Acorn-Squash-Stuffed-W-spicy-Biryani-(Veg-vegan)-658482.jpg	<ol><li>Preheat the oven to 400 degrees. On a baking sheet place the squash halves, spray with PAM and sprinkle with 1-2 tbsp garam masala. Place in the oven and BROIL till tender and charred- about 10-15 minutes.</li><li>While the squashes are roasting, in a large skillet, spray with PAM and add vegetable oil and set over medium heat. Add the cashews and saute until fragrant and slightly darkened. Add onions and peppers, sprinkle with black pepper and saute until soft, about 5-7 minutes. Once the onions and peppers are soft, but now brown, add the soaked basmati rice (make sure not to get any water in it!). Saute for 5-7 minutes. You want to toast the the rice.</li><li>Remove the squash from the oven and cool for a few minutes before handling. Score the squash into small cubes, WITHOUT cutting through the skin. Scoop the cubes out into a bowl and set aside. Keep the shell aside, DONT throw out!</li><li>Once the rice is toasted add 1 cup of water, pinch of saffron, cover and cook on medium-low heat, about 15 minutes. You want the rice to be cooked thru, not mushy so dont mix it around too much! Once the rice is cooked, add the cubed squash, tossing gently (you dont want the squash to break and mush around the rice). Add the Biryani paste and toss to coat. Mix in 3/4 of the chopped cilantro. Taste for salt and biryani flavor- it should be strong, spicy and aromatic.</li><li>In a small skillet, spray with PAM and set over medium-high heat. Add onion slices, and saute without breaking up the circles. Cook until brown-ish about 4-5 minutes. Set aside.</li><li>Fill each squash bowl with rice, just coming over the top. Top each one with an onion round and sprinkle with remaining chopped cilantro. Serve with yogurt or raita.</li><li>Biryani paste:</li><li>In a medium skillet, spray with pam, add oil and set over medium-high flame. Add onions and tomatoes, saute until golden-brown about 4-5 minutes. Add garlic, ginger, chili powder and cilantro. Saute until vegetables are soft and fragrant about 4-5 minutes. Add the biryani paste and mix well, making sure all the veggies are coated. Remove from the heat and let cool (10-15 minutes).</li><li>In a grinder/food processor, add the biryani mixture and grind until smooth (slightly chunky is ok). Store in an air tight container. Can be kept in the fridge for 1-2 weeks, or in the freezer- for a while!</li></ol>	indian	45	4	t	f	t	t
-182	Slow Cooker Lamb Curry	https://spoonacular.com/recipeImages/Slow-Cooker-Lamb-Curry-660290.jpg	<ol><li>Pull out your slow cooker and add everything into the pot with the exception of the yogurt.</li><li>Now turn on your pot, setting it on low for the next 4-6 hours or high for the next 3-5.</li><li>When the time is up, open up your slow cooker, grab your yogurt and stir it into the curry.</li><li>Serve over rice.</li></ol>	indian	45	8	f	f	t	f
-183	Beef Pot Pies with Irish Cheddar Crust	https://spoonacular.com/recipeImages/Beef-Pot-Pies-with-Irish-Cheddar-Crust-634660.jpg	<ol><li>Make the pastry: Place the cut up butter pieces in the freezer for 15 minutes to chill. Meanwhile, in the work bowl of a food processor combine flour, sugar, dry mustard, salt and cayenne pepper. Pulse to combine. After the butter has chilled, scatter the pieces over the flour mixture (still in the food processor), along with the cheddar. Pulse about 10 times. Sprinkle half the ice water over the dough, pulse about 3 times, repeat with remaining water, pulsing 3 more times. Pinch the dough to check if it sticks together, if not add a tablespoon or two more ice water, until it comes together. Dump the mix in a large bowl and press it together to form the dough. Divide dough in half, shaping each into a 4-inch disk. Wrap each piece in plastic wrap and refrigerate at least an hour.</li><li>Begin the filling: Pat the meat dry with paper towels and season with salt & pepper. Heat 2 t. oil in a large skillet over medium high heat until just smoking. Add the meat in a single layer and cook, without stirring, until the meat browns well on the underside, anywhere between 5-10 minutes (the meat will give off liquid, just let it evaporate - leave it alone!) Stir the meat and cook another couple minutes, until it looses the raw color. Remove to a plate and set aside.</li><li>Reduce heat to medium, add the remaining 2 t. oil and the onions and carrots. Saute until softened and starting to brown, stirring occasionally, around 5 minutes. Add the garlic, thyme and marjoram, cook until very fragrant, about a minute. Stir in flour, cook and stir about a minute. Slowly add in the beef broth and water, then the meat, along with any juices left on the plate. Bring to a simmer, then reduce the heat to low, to med-low. Cover and cook, (adjusting the heat as necessary to maintain a simmer) stirring occasionally until the meat is just becoming tender, around 45 minutes. Remove from heat, add in the Dijon and parsley. Adjust seasoning with salt & pepper. Set aside to cool.</li><li>Rolling out the crust, filling & baking the pot pies: Remove the dough from the refrigerator 10 minutes before rolling it out. Roll the dough out on a well-floured surface, large enough to cut out 3, 7-inch circles out of each half (save the scraps). Line each cup of a large-sized muffin tin with the dough. (It won't look very pretty, you just kind of have your way with it to get it pressed in there.) Refrigerate the filled tins as well as the dough scraps 15 minutes to firm back up.</li><li>Meanwhile, preheat oven to 400 degrees. After 15 minutes and the filling has cooled down quite a bit. Divide the mixture evenly between crusts. Divide the remaining dough into 6 balls. Roll out each piece wide enough to cover the pot pies. Pinch the top and bottom crust edges together to seal, and finish the edges in whatever decorative way you like. Brush the tops with the beaten egg. Bake 35-40 minutes, rotating the pan after 20 minutes. Remove from oven & let sit 5 minutes before (carefully) removing the pot pies from the tin.</li></ol>	irish	45	6	f	f	f	f
-184	Colcannon	https://spoonacular.com/recipeImages/Colcannon-639900.jpg	<ol><li>Cut into top of cabbage and hollow it out, leaving 3-4 outside leaves intact, reserving the hollowed-out portion. Plunge the hollowed-out head into large amount of boiling water; simmer 5 minutes or until tender-crisp. It must hold its shape. Cool quickly in cold water; invert and drain.</li><li>Chop reserved cabbage pieces, measure 1 1/2 cups. Stir fry in butter along with green onions until tender. Set aside. Boil and mash potatoes adding milk and seasonings. Stir in the sauteed mixture and parsley.</li></ol>	irish	45	8	f	f	t	f
-185	Corned Beef and Cabbage	https://spoonacular.com/recipeImages/Corned-Beef-and-Cabbage-640134.jpg	<ol><li>Wipe corned beef with damp paper towels. Place in large pan, cover with water. Add garlic, cloves, black peppercorns, and bay leaves. Bring to boil. Reduce heat; simmer 5 minutes. Skim surface and cover pan; simmer 3 to 4 hours, or until corned beef is fork-tender. Add carrots, potatoes, and onions during last 25 minutes.    Add cabbage wedges during last 15 minutes. Cook vegetables just till tender. Slice across the grain. Arrange slices on platte</li></ol>	irish	45	6	f	f	t	t
-186	Corned Beef and Cabbage with Irish Mustard Sauce	https://spoonacular.com/recipeImages/Corned-Beef-And-Cabbage-With-Irish-Mustard-Sauce-640136.jpg	<ol><li>Combine corned beef and water to cover in a large Dutch oven; bring to a boil then remove from heat. Drain. Add fresh water to cover. Add onion, carrot, parsley, bay leaf, and pepper. Bring to a boil once again, then reduce to a low simmer. Skim off foam, if necessary. Cover and simmer 4 hours or until tender.</li><li>Remove onion and parsley. Add potatoes to Dutch oven. Simmer 10 minutes. Add cabbage wedges, and simmer 20 minutes or until vegetables are tender. Remove and discard bay leaf.</li><li>To make the Irish Mustard Sauce, combine cornstarch, sugar, dry mustard and salt in a medium saucepan; stir well. Add water and cook over low heat, stirring constantly, until thickened. Remove from heat. Stir in vinegar, butter and horseradish. Gradually stir about 1/4 of hot mixture into yolks; add to remaining hot mixture, stirring constantly. Cook over low heat, stirring constantly, until thickened.</li><li>Transfer corned beef and vegetables to a serving platter. Serve with Irish Mustard Sauce.  </li></ol>	irish	270	6	f	f	t	t
-187	Guinness Braised Corned Beef and Cabbage	https://spoonacular.com/recipeImages/Guinness-Braised-Corned-Beef-and-Cabbage-646034.jpg	<ol><li>Season both sides of the corned beef liberally with pepper. The corning of the beef makes the beef salty enough, so no need to add more.</li><li>Heat 1 TBSP oil in a large, shallow oven-safe pot over medium-high heat. Add beef and sear each side for about 3 minutes, just to develop a nice brown crust. This will seal in the beef's juices.</li><li>Remove beef to a plate. Pour guinness into the pot to deglaze. Scrape up any browned bits. Add beef broth, pickling spice, brown sugar, bay leaf, and minced garlic. Bring mixture up to a simmer.</li><li>Return the beef to the pot with any additional juices that have accumulated on the plate.</li><li>Cover the pot and place on the bottom rack in your oven. Bake for 2 1/2 - 3 hours, or until a fork can easily be inserted into the meat.</li><li>Baste the meat with the surrounding juices every 30 minutes or so.</li><li>After 2 hours, add carrots, parsnips, and potatoes to the pot. They will only take about 25-30 minutes of simmering to cook.</li><li>Remove pot from the oven. Place beef on a cutting board and let it rest for 15 minutes before carving into thin slices (cut against the grain of the meat). Remove vegetables and arrange them on a serving platter. Cover with foil. Place the pot on the burner and bring sauce to a boil. Add cabbage and cook for about 7 minutes, until it has softened. Place the cabbage on the serving platter with the other vegetables.</li><li>Strain the sauce in the pot and stir in 2 or 3 TBSP of spicy honey mustard until dissolved. Place in a small dish or gravy boat with a ladle and serve alongside the beef.</li><li>After slicing the beef and arranging it on the serving platter, ladle the guinness mustard sauce over the top to rehydrate and glaze the beef and vegetables.</li></ol>	irish	45	6	f	f	f	t
-188	Irish Colcannon	https://spoonacular.com/recipeImages/Irish-Colcannon-647974.jpg	<ol><li>Chop the cabbage and steam, using minimal water, until quite well done.</li><li>Boil potatoes. Clean and chop the leeks, including the first couple of inches of green, put into a saucepan with the milk and simmer until tender.</li><li>If using bacon, saute until crisp. When cool enough to handle, break into bite size pieces.</li><li>Drain potatoes and mash.</li><li>Stir in milk with leeks, cabbage, mace, garlic, and bacon. Gently mix to combine all ingredients, but take care not to over mash the potatoes.</li></ol>	irish	45	4	f	f	t	f
-189	Irish Soda Bread with Raisins	https://spoonacular.com/recipeImages/Irish-Soda-Bread-with-Raisins-648004.jpg	<ol><li>Preheat oven to 375F. Spray 8-inch-diameter cake pan with nonstick spray. Whisk flour, 4 tablespoons sugar, baking powder, salt, and baking soda in large bowl to blend. Add butter. Using fingertips, rub in until coarse meal forms. Make well in center of flour mixture. Add buttermilk. Gradually stir dry ingredients into milk to blend. Mix in raisins.</li><li>Using floured hands, shape dough into ball. Transfer to prepared pan and flatten slightly (dough will not come to edges of pan). With a sharp knife, slice a shallow X across the top (optional). Sprinkle dough with remaining 1 tablespoon sugar.</li><li>Bake bread until brown and tester inserted into center comes out clean, about 40 minutes. Cool bread in pan 10 minutes. Transfer to rack. Serve warm or at room temperature.</li></ol>	irish	45	8	f	f	f	f
-190	Irish Soda Bread	https://spoonacular.com/recipeImages/Irish-Soda-Bread-By-Mommie-Cooks-648006.jpg	<ol><li>To a bowl add together your dry ingredients; the flour, salt, and baking soda. Mix well.</li><li>Add in the caraway seed and combine.</li><li>Now add in the honey, egg, and buttermilk. Stir it up until a dough just begins to form.</li><li>Add in the melted butter and knead dough until all ingredients are combined. Don't overknead.</li><li>Form into a ball and cut a few 1" slits at the top.</li><li>Place dough on a baking sheet and place in an oven preheated to 350 degrees for 50 min. to an hour.</li><li>Test with a toothpick in the center to assure loaf is cooked completely.</li></ol>	irish	45	8	t	f	f	f
-191	Irish Whiskey Pie	https://spoonacular.com/recipeImages/Irish-Whiskey-Pie-648010.png	<ol><li>For the crust:</li><li>Sift flour and salt together into a large bowl.</li><li>Using a food processor, a pastry blender or two knives and a good amount of patience, cut the butter into the flour.</li><li>Add water and vodka stirring after each addition until the dough comes together.</li><li>Form into a ball and cut it in half.</li><li>Flatten each half into a disc, wrap them in wax paper and refrigerate for at least half an hour before baking.</li><li>You will only need one half for this recipe, so feel free to freeze the other half for future pie emergencies.</li><li>When ready to bake, preheat oven to 375</li><li>Place pastry on a well-floured surface and using a well-floured rolling pin, roll out the pastry to fit a 9-inch pie plate.</li><li>Place pastry into the pie plate and trim and crimp the edges.</li><li>Prick the dough several times with a fork.</li><li>Wrap tin foil around the pastry and fill the center with pie weights or dried beans.</li><li>Place in the center of the oven and bake for 25 minutes.</li><li>Remove weights and tin foil and bake for an additional nine minutes or until golden brown.</li><li>Remove from the oven and let cool.</li><li>For the Filling:</li><li>In a medium sized bowl whisk together condensed milk, cornstarch and salt.</li><li>Add egg yolks one at a time, whisking until combined after each addition.  Set aside.</li><li>In a medium sized saucepan melt butter over moderate heat.</li><li>Add brown sugar and allow to bubble slightly.</li><li>Slowly whisk in milk.</li><li>Add egg mixture slowly, whisking constantly.</li><li>Bring back to a boil while whisking the mixture.</li><li>Once the mixture is boiling, let it cook while stirring for approximately one minute or until thick.</li><li>Remove from heat and stir in whiskey.</li><li>Pour into a cooled pie shell and cover with plastic wrap.</li><li>Place in the fridge and let set for four hours.</li><li>You may serve the pie with whipped cream if you wish, but I find it so rich that I like to eat it au naturale.</li></ol>	irish	45	10	t	f	f	f
-192	Kale Colcannon	https://spoonacular.com/recipeImages/Kale-Colcannon-648718.jpg	<ol><li>Cook potatoes in a pot of boiling water until tender; drain, reserving water.</li><li>Place potatoes in a large bowl and mash potatoes with a hand masher or put through a ricer. Add 2 tablespoons butter, milk, salt and pepper to potatoes and gently mix until combined.</li><li>Add chopped kale to the reserved potato water. Cook 6-8 minutes or until tender. Drain well and chop.</li><li>Meanwhile, saut chopped onions in 2 tablespoons butter on medium-high until slightly brown. Add to potato mixture and combine.</li><li>Serve hot.</li></ol>	irish	45	4	f	f	t	f
-193	Mussels in Irish Ale	https://spoonacular.com/recipeImages/Mussels-in-Irish-Ale-652760.jpg	<ol><li>Discard any mussels that are open before cooking and any that stay closed after cooking.</li><li>Place a large pot over a high heat and brown the pancetta pieces until just golden and sizzling. Add in a knob of butter, allow it to melt and then add the onion and garlic. Cook gently for three minutes until the onion is soft.</li><li>Add in the cider and allow to bubble away for a few minutes so all the flavours mingle in together. Tumble in the mussels, cover with a lid and allow them to steam for about four minutes until they open, making sure to give the pot a good shake once or twice during the cooking time.</li><li>Remove from the heat and stir in the cream and parsley and season with sea salt and ground black pepper.</li><li>Serve with some crusty bread to mop up the liquid!</li></ol>	irish	45	4	f	f	f	f
-194	Oatmeal, Apricot, Walnut Soda Bread	https://spoonacular.com/recipeImages/Oatmeal--Apricot--Walnut-Soda-Bread-653500.jpg	<ol><li>In a medium bowl, combine 2 c. oats and buttermilk. Let sit for 1 hour.</li><li>Adjust oven rack to the upper-middle position and preheat to 400 degrees f. In a large bowl, combine flours, remaining 1/2 c. oats, brown sugar, baking soda, cream of tartar and salt. Add in the 2 T. softened butter and using your fingertips, rub the butter into the flour until the texture resembles coarse crumbs.</li><li>After the oats have soaked for an hour add the egg and mix well. Add this mix into the flour mixture along with the walnuts and apricots. Mix with a fork until it starts to come together (it still is going to be very loose). Turn the mix out onto a floured surface and knead a few times (around 12-14 times or so) to get everything to come together. Don't overdo it with the kneading or the bread will be tough.</li><li>Shape the dough into a round shape that is 6-inches in diameter and 2-inches high. Place on a large parchment-lined (or greased) baking sheet. Using a serrated knife, make a large X in the top of the loaf. Bake for 45- 50 minutes, until a skewer inserted in the center comes out clean. As soon as it is out of the oven, brush the crust with the melted butter. Let cool to room temperature before slicing.</li></ol>	irish	45	8	f	f	f	f
-195	Raspberry Soda Bread	https://spoonacular.com/recipeImages/Raspberry-Soda-Bread--New-Take-On-An-Irish-Tradition-657898.jpg	<ol><li>Preheat oven to 325 degrees Grease two 8x4 inch loaf pans or muffins tins.</li><li>Mix the flour, sugar, baking soda, baking powder and salt. Add the eggs, sour cream and milk or half and half in necessary and mix until just combined. Gently fold in frozen raspberries. Distribute batter in the greased pans.</li><li>Allow the batter to sit for 20 min before baking.</li><li>Bake at 325 degrees for 1 hour. Muffins may take 10-15 min less.</li><li>Allow the bread rest and cool before serving.</li></ol>	irish	45	2	t	f	f	f
-196	Rosemary Rum Raisin Soda Bread with Pecans	https://spoonacular.com/recipeImages/Rosemary-Rum-Raisin-Soda-Bread-with-Pecans-658803.jpg	<ol><li>Combine the rum and raisins in a small saucepan. Bring to a boil. Simmer for 30 seconds, then remove from heat. Cover and allow the raisins to macerate for at least 4 hours, but preferably overnight.</li><li>When youre ready to bake the bread, preheat the oven to 375F.</li><li>Coat a baking sheet with olive oil and lightly dust it with flour, or line it with parchment paper.</li><li>In a large mixing bowl whisk together the flours, baking soda, salt, and rosemary. Stir in the toasted pecans.</li><li>In a separate bowl combine the raisins with the rum, the yogurt, and honey.</li><li>Add the wet ingredients to the dry. Mix until the dough is too stiff to stir. Use your hands to bring it together in the bowl. Add additional yogurt one teaspoon at a time if its too dry. You want a stiff, slightly tacky ball.</li><li>Turn dough onto a lightly floured board and shape into a round loaf. (Dont over-knead the dough. Too much kneading will produce a tough bread.).</li><li>Transfer the loaf to the prepared baking sheet. Use a sharp knife to make deep slashes across the top of the loaf, 4-6 cuts about half way through. Brush the top with milk. Sprinkle with seeds or oats if using.</li><li>Bake for 40-45 minutes, until a toothpick comes out clean. When you tap the loaf, it will sound hollow.</li><li>Cool on a wire rack. Serve warm or at room temperature with a generous slather of butter.</li></ol>	irish	45	16	t	f	f	f
-197	Slow Cooked Corned Beef and Cabbage	https://spoonacular.com/recipeImages/Slow-Cooked-Corned-Beef-and-Cabbage-660266.jpg	<ol><li>Stir the broth and vinegar into a 6-quart slow cooker. Add the onions, potatoes, carrots, beef and cabbage. Submerge the Bouquet Garni in the broth mixture.</li><li>Cover and cook on LOW for 8 to 9 hours or until the beef is fork-tender. Remove the Bouquet Garni.</li></ol>	irish	45	10	f	f	t	t
-198	Vegan Colcannon Soup	https://spoonacular.com/recipeImages/Vegan-Colcannon-Soup-664419.jpg	<ol><li>Heat the oil in a large stockpot set over medium-high heat, until it shimmers. Add the leeks, garlic, and celery, and cook, stirring frequently, for 3 to 4 minutes, until the edges are golden. Add the parsnips, potatoes, cabbage, kale, stock, salt, and pepper and stir well. Reduce the heat to medium and cover.</li><li>Bring the soup to a boil; then reduce the heat to a low simmer. Cook for 30 to 35 minutes, until the vegetables are tender and soft. Add the lemon juice.</li><li>Using an immersion blender (or working in batches in a blender), pure until completely smooth. Serve immediately or store in an airtight container for up to 3 days.</li></ol>	irish	45	8	t	t	t	t
-199	Xocai Irish Cream with Xocai Healthy Dark Chocolate Nuggets	https://spoonacular.com/recipeImages/Xocai-Irish-Cream-with-Xocai-Healthy-Dark-Chocolate-Nuggets-665480.jpg	<ol><li>Heat Irish cream syrup. Remove from heat and add Nuggets. Stir until melted. Cool. Mix 2 tbsp. of cream mixture with 2 tbsp. of whiskey and add to 1 cup of hot coffee. Repeat with second cup. Garnish with whipped cream and grated Nugget. Serves 2</li></ol>	irish	45	2	f	f	f	f
-200	Asparagus Lemon Risotto	https://spoonacular.com/recipeImages/Asparagus-Lemon-Risotto-632935.jpg	<ol><li>In a large saucepan, combine broth and water. Bring to a simmer. Keep warm over low heat.</li><li>Heat oil in a large Dutch oven over medium heat. Add onion; saute 5 minutes or until tender. Add garlic; saute 30 seconds. Add rice; cook 2 minutes, stirring constantly. Stir in wine; cook 2 minutes or until liquid is nearly absorbed, stirring constantly. Mix in pepper. Add broth mixture, 1/2 cup at a time, stirring constantly, cook until each portion of broth is absorbed before adding the next (about 25 minutes). Add asparagus, and frozen peas,  during the last 10 minutes of cooking. Remove from heat; stir in cheese and remaining ingredients.</li><li>T(Cooking):"0:40"</li><li>NOTES :</li></ol>	italian	45	4	f	f	t	f
-201	Crispy Italian Cauliflower Poppers Appetizer	https://spoonacular.com/recipeImages/Crispy-Italian-Cauliflower-Poppers-with-Marinara-640819.jpg	<ol><li>Preheat oven to 400 f. Brush a large baking sheet with a tablespoon of the olive oil. In a large, shallow dish combine the breadcrumbs, Parmesan, garlic powder, salt, pepper and 2 tablespoons of the olive oil. Toss well with a fork until the oil is completely dispersed into the bread crumbs. Combine the eggs with 1 tablespoon of water in a medium bowl. Place the flour in a large resealable bag.</li><li>Add half of the cauliflower florets to the bag with the flour, seal and shake to coat well. Remove the cauliflower to a fine mesh strainer and shake to remove excess flour. Place the floured cauliflower on a plate. Repeat with the remaining cauliflower.</li><li>Working with a few pieces at a time. Add to the beaten egg. Using a fork, turn and toss the florets in the egg to completely coat. Transfer to the breadcrumb mixture and coat, pressing the crumbs into the florets, the help them adhere. Place on the oiled baking sheet, making sure you leave a little space between each florets so they crisp up really well. Repeat this step with the rest of the cauliflower. Spray the tops of the breaded florets lightly with cooking spray. Bake the cauliflower for 20 minutes, Flip the pieces over and continue baking for about 15 more minutes, until the cauliflower is crunchy on the outside and tender on the inside.</li><li>While the cauliflower is baking, prepare the marinara. Pulse the undrained tomatoes in a food processor a few times until mostly broken down. Heat 1 tablespoon of the oil with the garlic and pepper flakes in a medium saucepan over medium heat until just sizzling. Add the tomatoes and simmer for about 10 minutes until the marinara thickens slightly and the flavors develop. Add 2 tablespoons of the fresh basil, season with salt and pepper if needed.</li><li>When the cauliflower is done baking, transfer to a serving dish and sprinkle with the remaining basil. Serve with the marinara.</li></ol>	italian	45	4	f	f	f	f
-202	Easy Cheesy Pizza Casserole	https://spoonacular.com/recipeImages/Easy-Cheesy-Pizza-Casserole-641893.jpg	<ol><li>Brown ground beef in skillet; drain fat.  Mix in pasta or pizza sauce and pepper flakes; set aside.  Mix ricotta cheese with the herbs and Parmesan in a separate bowl; set aside.</li><li>Mix the dry ingredients for the biscuits.  Add milk and stir until combined.</li><li>Preheat oven to 375 degrees.  Spray a 13 x 9 pan with non-stick spray.  Drop biscuit dough by teaspoons in the bottom of pan, spacing evenly.  It's OK if there is space between the dough--it will expand as it's cooked.  Top with ground beef mixture and dot with the ricotta cheese mixture.  Bake at 375 for about 20 min or until biscuits are puffed and beginning to get golden brown.</li><li>Top with mozzarella and provolone cheeses and distribute pepperoni slices evenly over top, increase oven temperature to 425 degrees.  Return to oven and bake until cheeses are melted and beginning to bubble.  This should take about 10 minutes.</li><li>Remove from oven and let stand 5 minutes before slicing and serving.  May be topped with the additional Parmesan cheese.</li></ol>	italian	45	6	f	f	f	f
-203	Easy Skillet Garden Lasagna	https://spoonacular.com/recipeImages/Easy-Skillet-Garden-Lasagna-642095.jpg	<ol><li>Preheat oven to 425 F.</li><li>Boil water for pasta and cook pasta according to directions, shaving a few minutes off the time.</li><li>Meanwhile water is boiling or pasta is cooking, heat a large oven-safe skillet over medium heat and add olive oil.</li><li>Add in your veggies and garlic, tossing to coat for about 10 minutes or until softened. If using spinach, add it last towards the end since it cooks really fast. Season with salt and pepper.</li><li>Add sauce, mozzarella and cooked lasagna noodles to the skillet with the veggies, gently tossing to distribute.</li><li>Cover with scoops of ricotta and sprinkle with fresh basil if you'd like.</li><li>Bake for 15-20 minutes, or until cheese is golden and bubbly. Serve with extra parmesan if you are a cheese lover like me!</li></ol>	italian	45	4	f	f	f	f
-204	Hearty Minestrone Soup	https://spoonacular.com/recipeImages/Hearty-Minestrone-Soup-646577.jpg	<ol><li>Start by simmering your chicken stock on the stove. While it is simmering dice your onions, slice your carrots, crush your garlic, and add them to the pot. Then add the half can of tomato sauce and let the mixture cook on low to medium heat. Next add your diced tomatoes, potatoes, spinach, and beans. Keep the mixture on medium heat until your potatoes start to soften. Then you can turn the heat low and let it cook for as long as you would like. I seasoned the soup with Kosher salt, fresh cracked pepper, red pepper flakes,</li><li>A touch of paprika and a touch of Madras curry powder. You can season with whatever you would like to cater to your taste. When you are ready to eat the soup turn the heat back up and bring it to a low boil adding the pasta. You can turn it back down to low when the pasta is starting to get to al dente status. Then continue to cook on low until the pasta is cooked to your liking. We topped our individual bowls of the minestrone with a little shredded parmesan cheese! Hope you enjoy!</li></ol>	italian	45	1	f	f	f	t
-205	Insalata Caprese With Pesto Vinaigrette	https://spoonacular.com/recipeImages/Insalata-Caprese-With-Pesto-Vinaigrette-647922.jpg	<ol><li>On a serving plate alternate slices of mozzarella and tomatoes.</li><li>Sprinkle with half of basil.</li><li>In a blender or food processor blend basil and all remaining ingredients together until smooth.</li><li>Drizzle over salad.</li></ol>	italian	45	1	f	f	t	f
-206	Italian Sausage and Vegetable Soup	https://spoonacular.com/recipeImages/Italian-Sausage-and-Vegetable-Soup-648238.jpg	<ol><li>Heat oil in large pot over medium heat and add sausages, without the casings.</li><li>Mix sausage until it is broken up into small pieces and cook until sausages is browned and almost cooked through.</li><li>Add carrots, onions, bay leaf, Italian seasoning, red pepper flakes and salt and pepper. Cook 5-6 minutes longer, until onions start to soften.</li><li>Add chicken stock and diced tomatoes. Bring stock up to a simmer. Once the stock is at a simmer, reduce heat to low and simmer with the top on until vegetables are tender, about 10 minutes longer.</li><li>Turn the heat off and add cannellini beans and spinach and stir in until spinach wilts.</li></ol>	italian	45	6	t	t	t	t
-207	Italian Seafood Stew	https://spoonacular.com/recipeImages/Italian-Seafood-Stew-648247.jpg	<ol><li>Prepare ingredients.</li><li>In a large pot, heat up 3 tbsp of olive oil and add garlic and onion. Sautee over medium heat.</li><li>Add salt, tomato paste, tomatoes with juice, stock, club soda, bay leaves and stir.</li><li>Simmer over medium low heat for 30 min.</li><li>Add mushrooms.</li><li>Add salt to taste.</li><li>Cook mussels according to package directions.</li><li>Add shrimp and fish into stew.</li><li>Add mussels.</li><li>Simmer for a few minutes.</li><li>Ready to serve with some baked bread.</li></ol>	italian	45	3	f	f	t	t
-208	Italian Steamed Artichokes	https://spoonacular.com/recipeImages/Italian-Steamed-Artichokes-648257.jpg	<ol><li>Snip the thorns off the artichoke leaves. Place the garlic slices inside the leaves throughout the artichoke. Put the artichoke into a medium-size saucepan. Add water to come halfway up the artichoke.</li><li>Put the bay leaf in the water.</li><li>Crush the coriander seeds, oregano and basil together; sprinkle on top of the artichoke.</li><li>Cook over medium heat for 30 minutes, or until the leaves pull off easily.</li></ol>	italian	35	1	t	t	t	t
-209	Italian Tuna Pasta	https://spoonacular.com/recipeImages/Italian-Tuna-Pasta-648279.jpg	<ol><li>Once pasta is cooked, drain and leave to cool for a minute.</li><li>Place small skillet on medium fire, drizzle olive oil, add in red pepper and stir-fry for 1-2 minutes. Put aside.</li><li>Toss pasta shells, red pepper, tuna, parsley, garlic, chilies and lemon juice. Season with ground black pepper to taste, spoon into serving bowls. Stir through ricotta and serve immediately.</li></ol>	italian	20	3	f	f	f	t
-210	Pappa Al Pomodoro	https://spoonacular.com/recipeImages/Pappa-Al-Pomodoro-654614.jpg	<ol><li>Warm the olive oil and garlic in a medium cooking pot. When the garlic has coloured slightly, add the leeks. Saute over a low heat for 20 minutes, adding water as necessary to keep the vegetables from turning brown.</li><li>Stir in the stock and pured tomatoes and bring to the boil, then reduce the heat and simmer gently for 20 minutes.</li><li>Turn off the heat and add the bread, pushing it into the liquid with a wooden spoon.</li><li>Stir in the torn basil leaves and season to taste with salt and pepper. Leave to rest for 30 minutes.</li><li>Now whisk the soup energetically until it has a porridge-like consistency. Taste and adjust the seasoning.</li><li>Ladle into bowls, drizzle with extra-virgin olive oil and serve.</li></ol>	italian	45	4	f	f	f	t
-211	Roasted Brussels Sprouts With Garlic	https://spoonacular.com/recipeImages/Roasted-Brussels-Sprouts-With-Garlic-658515.jpg	<ol><li>Heat oven to 450 degrees. Trim bottom of Brussels sprouts and remove any undesirable outer leaves. Slice each sprout in half from top to bottom.</li><li>Heat oil in a large heavy skillet over medium-high heat; put sprouts cut side down in one layer in pan. Add garlic, and sprinkle with salt and pepper.</li><li>Cook, undisturbed, until sprouts begin to brown on bottom, and transfer to oven. Cook, shaking pan occasionally, until sprouts are quite brown and tender, about 1/2 hour.</li><li>Taste, and adjust seasoning if necessary. Stir in balsamic vinegar, and serve hot or warm.</li></ol>	italian	45	4	t	t	t	t
-212	Salmon Quinoa Risotto	https://spoonacular.com/recipeImages/Salmon-Quinoa-Risotto-659109.jpg	<ol><li>In a 4 quart saucepan, heat 2 tablespoons of olive oil over medium high heat.</li><li>When oil is shimmering, add diced onion.</li><li>Saute onion until transparent.  Add quinoa to onion mixture and stir, to toast quinoa, for 2 minutes.</li><li>Add 1 cup of vegetable stock to quinoa and onions.</li><li>Stir until stock is absorbed.  Once stock is absorbed, add 1 cup of stock.</li><li>Continue stirring until stock is absorbed.</li><li>Add remaining stock in 1/2 cup intervals, stirring until all stock is absorbed.</li><li>Remove from heat.</li><li>While preparing the onion quinoa mixture, heat 1 tablespoon of oil in a saute pan with chopped garlic (over medium high heat).</li><li>Once garlic is sizzling, add chopped kale to the pan.</li><li>Turn kale to coat with oil and garlic.</li><li>Turn kale mixture until fragrant (approximately 2 minutes).  Remove kale mixture from heat.</li><li>Once quinoa is complete, add kale and salmon.</li><li>Stir to combine.</li><li>Add salt and pepper to taste.</li></ol>	italian	45	4	f	f	t	t
-213	Vegetable Minestrone Soup	https://spoonacular.com/recipeImages/Vegetable-Minestrone-Soup-664565.jpg	<ol><li>In a deep sauce pan or pot, heat about 2 tsps of oil or butter. Add bay leaf. When the bay leaf begins to splutter, add finely chopped onions and saute for a couple of mins until the onions are translucent.</li><li>In the meanwhile, boil water with a pinch of salt in another pot. Add pasta and cook for about 6 to 7 mins. When done, drain all the water and set the pasta aside.</li><li>Add the chopped zucchini and chopped carrots to the sauteed onions. Now, add salt and ground pepper and saute for a couple of mins. Empty the diced tomato cans into the sauce pan now. Add the remaining spices  red chili powder and dried basil to the tomatoes. Cover and let cook for at least 5 mins.</li><li>Empty the cannellini beans into a bowl. Rinse under running water to drain out all the canned liquid and add the beans to the sauce pan. Also, add the cooked pasta now. Add about 2 cups of water, cover and let cook for about 15 mins. Give a taste test and adjust salt if needed.</li><li>Serve with a hint of grated Parmesan cheese as garnish and some bread to dip into it!</li></ol>	italian	30	4	f	f	f	f
-214	Veggie Lasagna Rolls with Peppery Pecorino Marinara	https://spoonacular.com/recipeImages/Veggie-Lasagna-Rolls-W--Peppery-Pecorino-Marinara-664737.jpg	<ol><li>PREHEAT THE OVEN TO 425*</li><li>COOK THE LASAGNA NOODLES PER PACKAGE</li><li>INSTRUCTIONS. RINSE W/ COOL WATER, DRAIN &amp;</li><li>SET ASIDE.</li><li>COMBINE ALL THE INGREDIENTS FOR THE RICOTTA  FILLING &amp; SET ASIDE.</li><li>BEGIN THE SAUCE. PLACE THE GARLIC &amp; OLIVE OIL IN  A SAUTE PAN, COOK UNTIL THE GARLIC JUST STARTS TO BROWN. ADD THE CANNED TOMATOES ALL AT ONCE AND COOK FOR 1-2 MINUTES. THE TOMATO JUICE WILL START TO CARAMELIZE. CRUSH THE WHOLE TOMATOES WITH THE BACK OF A SPOON. ADD THE DRIED BASIL, OREGANO AND SAGE AND COOK DOWN AT MEDIUM HAT FOR ABOUT 20 MINUTES, UNTIL THE SAUCE IS THICK. ADD THE CHEESE AND COOK FOR ANOTHER MINUTES, STIRRING THE CHEESE INTO THE SAUCE.</li><li>LAY THE LASAGNA NOODLES OUT ON A CUTTING BOARD AND SPREAD WITH THE RICOTTA FILLING. DIVIDE THE SPINACH EQUALLY ON THE NOODLES AND THEN TOP WITH THE BASIL LEAVES.</li><li>SPRINKLE THE MUSHROOMS AND ZUCCHINI ON TOP AND ROLL THE NOODLES MAKING A ROLLED NOODLE.</li><li>PLACE A SMALL SPOONFUL OF MARINARA IN A DISH, PLACE THE LASAGNA ROLLS ON TOP OF THE SAUCE. BAKE ABOUT 15 MINUTES UNTIL THE ROLLS ARE HOT AND THE SPINACH IS JUST WILTED.</li><li>TOP WITH THE MARINARA AND SOME SHAVED PECORINO. SERVE HOT.</li></ol>	italian	45	6	f	f	f	f
-215	Japanese Vegetable Stew	https://spoonacular.com/recipeImages/japanese_vegetable_stew-17913.jpg	None	japanese	45	1	t	t	t	t
-216	Japanese Salad Dressing	https://spoonacular.com/recipeImages/japanese_salad_dressing-37513.jpg	None	japanese	12	1	t	t	t	t
-217	Baked Teriyaki Chicken Drumsticks	https://spoonacular.com/recipeImages/Baked-Teriyaki-Chicken-Drumsticks-633841.jpg	<ol><li>In a large bowl, mix teriyaki sauce, salt vegetable oil, honey, and ginger.  Add the chicken to the marinade.  Let the chicken marinade for about 4-5 hours.</li><li>Preheat oven to 450 degrees.  Add the sliced onions and diced garlic on the baking pan.  Lay the chicken on top of the onions and garlic.  Bake the chicken for 30 minutes turning once until cooked.</li></ol>	japanese	45	1	f	f	t	t
-218	Beef Teriyaki Stir Fry	https://spoonacular.com/recipeImages/Beef-Teriyaki-Stir-Fry-634710.jpg	<ol><li>Whisk ingredients together in a small bowl and refrigerate for at least 30 minutes.</li><li>Heat oil in a large frying pan over medium heat. Add beef and saut for 3-4 minutes just to brown it on all sides.</li><li>Remove from pan and set aside.</li><li>Add vegetables and saut for 5 minutes more, until beginning to soften.</li><li>Stir in teriyaki sauce and allow mixture to come to a simmer.</li><li>Add beef and any drippings that have accumulated on the plate. Cook for 5 minutes, stirring occasionally.</li><li>In a small bowl, combine cornstarch with 2 tsp cold water to dissolve. Stir into the pan of beef and vegetables. Allow the mixture to simmer and thicken for 2 minutes. Toss to evenly coat vegetables and beef in teriyaki sauce. Serve.</li></ol>	japanese	45	2	f	f	t	t
-219	Chicken Teriyaki with Soba Noodles	https://spoonacular.com/recipeImages/Chicken-Teriyaki-with-Soba-Noodles-638382.jpg	<ol><li>1. Preheat oven to 400 degrees Fahrenheit. Slice shiitakes into bite sized pieces. Place chicken breasts in a 9 by 13 glass dish.</li><li>2. Make sauce: In a small bowel, add all the ingredients and whisk together.</li><li>3. Pour sauce over chicken breasts. Place in oven and cook for 20 min. Take out of oven and add shiitakes. Toss shiitakes with the sauce that is around the chicken, flip chicken. Place in oven for 10 minutes more.  Once done,take out of oven.Let rest 5 minutes before slicing chicken into bite sized pieces.</li><li>4. Meanwhile, add water to a medium pot. Once brought to a boil, add soba noodles and cook for 7 minutes till done. Drain and rinse under cold water and add back to pot. Add shitakes and all of sauce to the soba noodles. Toss together.</li><li>5. Add 1/2 the soba noodles and shitakes to each plate. Add 1 sliced chicken breast to each plate. Garnish with green onion and sesame seeds. Serve immediately.</li><li>ENJOY!</li></ol>	japanese	45	2	f	f	f	t
-220	Hokkaido Pomegranate Risotto	https://spoonacular.com/recipeImages/Hokkaido-Pomegranate-Risotto-646817.jpg	<ol><li>Method</li><li>Cut the top of the hokkaido squash horizontally, scoop out the seeds and then scrape off the flesh from the squash. (I got 1 cup of flesh from a small hokkaido)</li><li>Heat oil in a pan, add the garlic, onions and the rice and saute for  a couple of minutes, stirring continously, on high flame.</li><li>Add salt, pepper and the finely chopped hokkaido squash and mix well.</li><li>Reduce the heat to low and keep adding water little by little, as it is absorbed.</li><li>When the rice is cooked, add the chives, the parmesan and the pomegranate seeds, and mix well.</li><li>Spoon the risotto into the hokkaido shell and garnish it with pomegranate seeds, chives and parmesan crisps and serve hot.</li></ol>	japanese	45	2	f	f	t	f
-221	Japanese Chicken Donburi	https://spoonacular.com/recipeImages/Japanese-Chicken-Donburi-648460.jpg	<ol><li>In a deep 10-inch or 12-inch frying pan over high heat, stir oil, onion, and ginger until onion is lightly browned, about 2 minutes.</li><li>Add broth, soy sauce, and sugar. Add chicken to pan. Bring to a boil.</li><li>Add spinach, cover, and cook until wilted, about 1 minute. Meanwhile, in a small bowl, beat eggs to blend.</li><li>Reduce heat to low, evenly distribute mixture in pan, and pour in eggs. With a spatula, push vegetables aside slightly so egg mixture can flow down through sauce. Cover and cook just until eggs are softly set, 2 to 2 1/2 minutes.</li><li>Meanwhile, spoon rice into bowls. Top equally with egg-spinach mixture, including juices. Sprinkle with tomato.</li></ol>	japanese	45	4	f	f	t	t
-222	Japanese Clear Soup	https://spoonacular.com/recipeImages/Japanese-Clear-Soup-648462.jpg	<ol><li>1. In a large saucepan bring chicken stock to a boil. Stir in sherry and soy sauce. Reduce heat and simmer several minutes.</li><li>2. Arrange your choice of garnishes in small bowls to pass at the table.</li><li>Ladle broth into soup bowls and serve. </li><li>Microwave Version: 1. Place chicken stock in a deep 2-quart casserole. Microwave, uncovered, on 100%% power until stock boils, about 5 to 7 minutes.</li><li>2. Stir in sherry and soy sauce. Microwave on 30%% power 2 minutes.</li><li>3. Continue with step 2.</li></ol>	japanese	45	4	t	t	t	t
-223	Japanese Coleslaw	https://spoonacular.com/recipeImages/Japanese-Coleslaw-648465.jpg	<ol><li>Brown almonds and sesame seeds in 1 tbsp. butter. Mix cabbage and onions. Just before serving, add almonds, seeds and crushed noodles to cabbage and mix with dressing.</li></ol>	japanese	45	1	f	f	f	t
-224	Japanese Curry Puffs	https://spoonacular.com/recipeImages/Japanese-Curry-Puffs-648470.jpg	<ol><li>Preheat oven to 350 degrees.</li><li>In a pot over medium/high heat, add oil and onions. Cook for 2 minutes. Add potatoes and carrots, cook for 5 minutes. Add water and bring to the boil. Lower heat and simmer for 15 minutes. Add curry mix and cook for another 10 minutes.</li><li>On a sheet pan, cut puff pastry into squares (1 sheet should give you 4 squares) and with a spoon, fill the middle of 1/2 of the squares you have.</li><li>Bake for 20 minutes or until the crust is a golden brown and serve!</li></ol>	japanese	45	4	t	t	f	t
-225	Japanese Fried Rice	https://spoonacular.com/recipeImages/Japanese-Fried-Rice-648474.jpg	<ol><li>In a pan over medium heat, add oil, garlic and cook for a minute. Add chopped carrots and cook for 2 minutes. Add chicken and cook for 2-3 minutes, until the chicken is cooked through.</li><li>Add rice and peas and mix well. Add soy sauce, tonkatsu sauce, black pepper and salt, and mix well. Push the rice to one side and break the eggs on the clear side. Slowly scramble the eggs and incorporate with the rice. Serve!</li></ol>	japanese	45	2	f	f	t	t
-226	Japanese Noodle Soup	https://spoonacular.com/recipeImages/Japanese-Noodle-Soup-648481.jpg	<ol><li>In a saucepan bring the water to a boil with the kombu</li><li>Simmer the kombu for only 2 minutes, then discard.</li><li>Stir in the bonito flakes or Hon Dashi</li><li>Simmer, stirring for 3 minutes</li><li>Stir in the soy sauce, the mirin, and the sugar</li><li>Simmer the broth for 5 minutes</li><li>In a pot of water, cook the noodles till done, drain.</li><li>Add carrots and ginger to broth and simmer, covered, for 5 minutes</li><li>Stir in the spinach, noodles and tofu and simmer 1 minute</li><li>In small bowl, stir together 1/2 cup broth and miso</li><li>Pour miso back into pan of broth.</li><li>Ladle soup into bowls and sprinkle scallions on top.</li></ol>	japanese	45	1	t	t	f	t
-227	Japanese Mushroom Noodle Soup	https://spoonacular.com/recipeImages/Japanese-Mushroom-Noodle-Soup-648483.jpg	<ol><li>Break noodles in half; cook according to package directions. Meanwhile, in large saucepan, heat chile oil over medium heat. Add mushrooms, garlic and ginger; cook 5 minutes, stirring occasionally. Add broth, mirin and soy sauce; bring to a boil. Simmer, uncovered, 10 minutes, stirring once.</li><li>Drain noodles, stir into soup. Stir in green onions and sesame oil. Ladle into shallow soup bowls.</li></ol>	japanese	45	4	f	f	f	t
-228	Japanese Salmon With Sesame Seeds	https://spoonacular.com/recipeImages/Japanese-Salmon-With-Sesame-Seeds-648493.jpg	<ol><li>Place salmon in marinade made by mixing soy sauce, hot pepper, honey, vinegar, and 1 tbsp. sesame oil and allow to marinate for 2 hours. Lift fish from marinade, and dry well on paper towels.</li><li>Heat remaining sesame oil in skillet. Add salmon scallops and saute quickly, turning once, about 2 minutes on each side. Sprinkle with sesame seeds and scallions.</li></ol>	japanese	45	4	f	f	t	t
-229	Japanese Steak Salad	https://spoonacular.com/recipeImages/Japanese-Steak-Salad-648500.jpg	<ol><li>Prepare Sesame Marinade and Dressing. Place beef top sirloin steak in plastic bag; add reserved marinade, turning to coat. Close bag securely and marinate in refrigerator 2 hours, turning once. Remove from marinade; place on rack in broiler pan so surface of meat is 3 to 4 inches from heat. Broil 14 to 16 minutes to doneness desired (rare to medium-rare), turning once. Let stand 5 minutes. Carve steak into thin slices.</li><li>Meanwhile, combine napa cabbage, romaine, carrots and radishes; place an equal amount of each on 4 individual plates. Arrange an equal number of cucumber slices in circle at top of salad greens on each plate. Mound 1/4 cup rice on each cucumber circle. Fan pea pods around both sides of rice. Arrange steak slices as spokes on salad greens, radiating down from rice. Serve dressing with salad. Makes 4 servings.</li><li>Combine dry sherry, soy sauce, vinegar, hoisin sauce and ginger; mix well. Divide mixture in half; reserve half for steak marinade. To prepare dressing, combine remaining mixture with water, green onion, sugar and oil; mix well. Yield: 1/3 cup marinade; 3/4 cup dressing.</li></ol>	japanese	45	8	f	f	t	t
-230	Japanese Souffle Cheesecake	https://spoonacular.com/recipeImages/Japanese-Souffle-Cheesecake-648501.jpg	<ol><li> Add 500 ml water into a big baking tray ( that the tin you use for the cheesecake can fit in) and place the tray in the oven then preheat the oven to 160c.Line the base and side of a 18-20 cm springform/cake tin with parchment paper. Then use a big piece of foil to wrap the tin around from the bottom upto top of the tin side.</li><li>Place the butter, creamcheese and milk in a bowl set over a saucepan of barely simmering water, being careful not to let the bowl touch the water, then wait until the butter has melted, remove the bowl from the heat and give it a really good stir until the mixture is smooth, set aside and leave to cool at the room temperature.</li><li>Add the orange juice and zest to the creamcheese mixture, stir to blend then add the yolks and mix them until incorperated. Sift the flour and salt into another mixing bowl,pour over the cream cheese and egg mixture in the center of thr flour. Quickly whisk or stir everything until just blended ( don't overmix or the cake will be tough) </li><li>In a seperate mixing bowl , beat the egg white with cream of tartar until foamy, then gradually add the sugar ,few tablespoons at a time, and continue to beat at high speed until reach the soft-medium peak ( more than soft but not hard peak). Gently fold the white into the creamcheese mixture until blended.</li><li>Pour the batter into the prepared tin. Place the tin in the preheated baking tray and bake for 50-60 minutes or until  a toothpick inserted from center comes out clean. Turn the cake out on to a wire rack once taken from the oven ( the cake will shrink if left too long in the tin!). Leave to cool at room temperature, then let it set in the fridge for another hour or so before slicing and serve.</li></ol>	japanese	45	1	f	f	f	f
-231	Japanese Style Curry	https://spoonacular.com/recipeImages/Japanese-Style-Curry-648504.jpg	<ol><li>Whisk the curry powder into 1 cup cold water in a small bowl and set aside.</li><li>Heat the oil in a large pot over medium-high heat. Add the onions and salt and saute, stirring occasionally, until the onions are translucent, about 8 minutes.</li><li>Add the mushrooms and saute until they begin to soften, about 2 minutes. Stir in the potatoes and saute for 1 minute more. Add 4 cups cold water and the curry mixture and bring to a boil. Reduce the heat to low, cover and simmer, stirring occasionally, until the potatoes can easily be pierced with a fork, about 20 minutes.</li><li>Whisk the cornstarch or potato starch with the tamari and 2 tablespoons cold water in a small bowl. Add to the curry and stir gently until the sauce thickens.</li><li>Gently stir in the tofu, if using, and the peas and cook until heated through, 5 to 10 minutes. Taste and adjust the seasonings with additional curry powder, salt and-or tamari, if desired. If you like, serve with small bowls of raisins and walnuts on the side.</li></ol>	japanese	45	1	f	f	t	t
-232	Japanese Sushi	https://spoonacular.com/recipeImages/Japanese-Sushi-648506.jpg	<ol><li>Recipe one: Pour cooked rice into a tray. Finely slice the salmon and the tuna.</li><li>Put the seaweed onto a sushi mat and press rice down onto it.</li><li>Slice the mushrooms and asparagus pieces and lay along the rice. Add the wasabi. Roll the sushi and cut into slices. Serve with salmon caviar, wasabi and soy.</li><li>Recipe two: Squeeze the rice into balls and press the prawns, tuna or salmon into the top.</li></ol>	japanese	45	1	f	f	t	t
-233	Kyuri Tsukemono	https://spoonacular.com/recipeImages/Kyuri-Tsukemono-649137.jpg	<ol><li>Rough chop cucumbers.</li><li>In a medium, securely sealable container, combine soy sauce, rice vinegar, and sesame oil.</li><li>Add cucumbers to the marinade, close container and shake.</li><li>Refrigerate for 1 to 2 hours. Shake cucumbers periodically, or leave overnight to marinate. Note, the longer the cucumbers are left in the marinade the saltier they become. I've left them in the marinade for up to 3 days and the cucumbers were good.</li><li>Serve and enjoy!</li></ol>	japanese	45	4	t	t	t	t
-234	Miso Soup With Thin Noodles	https://spoonacular.com/recipeImages/Miso-Soup-With-Thin-Noodles-652078.jpg	<ol><li>Directions:</li><li>After the miso has been prepared, start adding the "stuff" to the soup pot. It can be your preference, but I opted to start with the onions and chives and then added the zucchini, parsnip, carrots, mushrooms and ginger. Cover the pot and let cook on a low flame for 20-30 minutes, tasting as you go. Add the tofu and pasta, allowing the pasta to cook for 8-10 minutes. Taste the soup, adding red pepper and turn off flame when ready. Place spinach on the bottom of your soup bowl. You can also place the spinach directly in the pot, but since it wilts so quickly I usually do it this way.</li><li>What do you usually add to your Miso Soup?</li><li>Seriously Soupy Serena</li></ol>	japanese	45	8	t	t	f	t
-235	Oriental Filet Mignon on Crisp Kataifi with Shrimp Tempura	https://spoonacular.com/recipeImages/Oriental-Filet-Mignon-on-Crisp-Kataifi-with-Shrimp-Tempura-654072.jpg	<ol><li>Combine the first three ingredients in a shallow dish and add the filet mignon steaks. Spoon the marinade over them until they are well covered, set aside for about 30 minutes, covered with plastic wrap.</li><li>Heat oven to 400o.</li><li>Line a baking sheet with parchment, and divide the kataifi into two neat rounds. Drizzle lightly with a neutral oil, and bake until golden and crisp. Remove from oven and set aside.</li><li>Meanwhile, place the corn starch, whisked egg whites and panko in separate bowls.</li><li>Roll each shrimp first in the corn starch, then in the egg whites and the in the panko. Pat them firmly with your palms to make sure the panko sticks well. Set aside on paper towels on a plate or tray. Repeat with the rest of the shrimp.</li><li>Fill a large deep skillet with oil (such as Safflower or Canola), enough to cover the shrimp when frying.</li><li>Turn BBQ to high. Meanwhile, heat oil in frying pan until very hot, and fry the shrimp, turning once or twice, for about 2 minutes until golden. Place back on paper towels and set aside in a lightly warmed oven.</li><li>When BBQ is very hot, remove steaks from marinade and grill on high for about 3-4 minutes on each side. While the steaks are grilling, add the rice vinegar, garlic, pepper flakes and ginger to the remaining marinade, and warm it up in a small saucepan until boiling, then set aside.</li><li>To serve: On each dinner plate place one mound of kataifi, topped by sliced filet mignon, drizzle with 2 spoonfuls of marinade and top with 2 fried shrimp. Serve with your favorite steamed vegetable(s) or stir fry.</li></ol>	japanese	45	2	f	f	f	t
-236	Soba Noodle In Kombu Dashi With Teriyaki Salmon	https://spoonacular.com/recipeImages/Soba-Noodle-In-Kombu-Dashi-With-Teriyaki-Salmon-660493.jpg	<ol><li>To make kombu dashi, soak the dried kelp/seaweed in water for 2 hours. Put the kombu and water in a cooking pot. Put on medium heat. Turn off the heat when the water comes to a boil. Then, remove the kombu with a strainer. The remaining liquid is your kombu dashi. You can leave some kombu in the soup.</li><li>Cook the soba noodles according to the packet. Drain and set aside.</li><li>To make teriyaki salmon, marinate salmon filet/loin with sake, soya sauce, mirin, and sugar.</li><li>Heat up a pan with oil. Put the skin side down and cook for 3 minutes or until crispy. Turn and cook the other side for another 2-3 minutes. Pour any remaining sauce.</li><li>Remove from heat. Drizzle any remaining sauce from the frying pan.</li><li>To serve the soba, heat up the broth. In a bowl, serve good portion of Soba noodles. Lardle good amount of kombu dashi over the noodles. Garnish with goji berries if desired. Place the teriyaki salmon on top of the noodles. Sprinkle with some toasted sesame seeds.</li></ol>	japanese	45	2	f	f	f	t
-237	Classic Matzo Ball Soup	https://spoonacular.com/recipeImages/Classic-Matzo-Ball-Soup-639616.jpg	<ol><li>Wash the chicken with cold water and place in pot. Cover with water and bring to a simmer (do not boil or your broth won't be clear).</li><li>Skim off bubbling foam as it forms. Add celery, carrots, onion, herbs, salt and pepper and continue to simmer for about 45 minutes.</li><li>Pour soup through strainer and let cool. When broth has completely cooled, remove the chicken meat and skim off the fat and save for the matzo balls.</li><li>In a mixing bowl, mix together 4 eggs and 4 tablespoons chicken fat (or vegetable oil). Stir in the matzo meal and salt. Add 1/4 selter water. Cover and refrigerate for at least 1 hour.</li><li>Form the matzo dough into teaspoon-size balls.</li><li>Bring the chicken broth to a boil. Add the matzo balls, cover, and cook for 20 minutes.</li><li>Serve immediately.</li><li>Garnish with fresh dill or parsley.</li></ol>	jewish	45	6	f	f	t	t
-238	Jewish Mandlebrot	https://spoonacular.com/recipeImages/Jewish-Mandlebrot-648587.jpg	<ol><li>1. In medium bowl, combine eggs and 1 cup each sugar and salad oil. Beat until well combined.</li><li>2. Sift flour with baking powder into very large bowl.</li><li>3. Make a well in the center; pour in egg mixture. Stir around the bowl using a wooden spoon, until well blended.</li><li>4. Turn dough out onto lightly floured pastry cloth. With flour knead until smooth, about 5 minutes.</li><li>5. Preheat oven to 350 degrees. Grease lightly roasting pans or cookie sheets. In small bowl mix together filling (nuts, sugar, cinnamon and raisins).</li><li>6. Divide dough into 5 equal parts.</li><li>7. Roll each into 10x12 rectangle. Roll out on oiled surface.</li><li>8. Brush lightly with tsp. oil. Spread 5 tbsp. preserves; sprinkle 1/2 cup mixture evenly around. From long side, roll as for jelly roll; pinch each end.</li><li>9. Place 5 loaves in pans 1/2 inch apart. Put seam side up. Bake 45-50 minutes or until golden brown.</li><li>10. Remove to wire rack; cool 10 minutes before removing from pan. Cool completely. Cut into 12 diagonal slices. If desired, sprinkle with confectioners' sugar..</li><li>11. Store covered in cool, dry place. Mellows with age.</li></ol>	jewish	45	12	t	f	f	f
-239	Jojo's Potato Pancakes	https://spoonacular.com/recipeImages/Jojos-Potato-Pancakes-648608.jpg	<ol><li>As you grate your potatoes have a large bowl of ice water ready to put then in so that they do not brown.</li><li>Add all other ingredients to another bowl without mixing.  Drain potatoes well and then place on either a thin towel or cheese cloth and squeeze as much of the liquid out as possible, then add to the rest of the ingredients and mix.  Use your hands to bring mixture together and make into small flat pancakes.  If the mixture is too wet and will not form then add a bit more flour.     Add 1 or 2 tablespoons of olive oil to a very hot frying pan and fry one side of the pancake until crispy and brown.  Flip and cook the other side.   Serve these hot with apple sauce or sour cream.</li></ol>	jewish	45	16	t	f	t	t
-240	Latkes	https://spoonacular.com/recipeImages/Latkes--Fried-Vegetable-Pancakes-from-Europe-and-the-Middle-East-649300.jpg	<ol><li>1. Skin the vegetables and in a standard food processor, grate them into a suitable bowl.</li><li>2. Take a handful of the grated vegetables and squeeze as much moisture from it as possible. Then place on a paper towel. Continue until you have squeezed out as much of the moisture as you can.</li><li>3. Clean and dry the original bowl and repeat the process of squeezing the vegetables dry but putting them in the bowl when finished. Then stir them to mix thoroughly.</li><li>4. In a separate bowl, beat the egg with the flour to form a sticky glue that will hold the latkes together.</li><li>5. Mix the sticky egg and flour with the vegetable mixture and form into flat pancakes about 3 to 4 inches in diameter then place on a cutting board.</li><li>6. Heat about 1/8 inch of peanut oil in a 10 inch cast iron skillet over medium high heat until a drop of water sizzles upon contact.</li><li>7. Place three of the pancakes into the skillet, press down with a spatula to thin them and cook until the edges start to turn deep brown. Flip them over carefully and cook for 2 to 3 minutes more.</li><li>8. Remove from pan and place on paper towels to drain excess oil.</li><li>9. Repeat until all are cooked and drained then place in a 175-200*F warming oven until ready to be served.</li></ol>	jewish	45	2	t	f	f	f
-241	Mama's Challah	https://spoonacular.com/recipeImages/Mamas-Challah-650703.jpg	<ol><li>Mix in tall glass: 3 T. flour, 2 T. sugar, both packages of yeast. Stir mixture slightly then add  cup lukewarm water (100-115. measure using liquid thermometer) Let this bubble & rise to brim of glass for about 10 minutes. (NOTE: This should bubble up to the top. If it doesnt start to foam within in a few minutes, try again with warmer water.) In the meantime.</li><li>In medium bowl (bowl A), combine 3 cups flour and 2 tsp. salt</li><li>In larger bowl (bowl B) whisk together brown sugar, oil, 2 eggs</li><li>Pour contents from bowl A into bowl B</li><li>Add contents of glass into bowl B</li><li>Add another 1  cups lukewarm water (110-115 degrees) into bowl B</li><li>Add 4 more cups flour into bowl B</li><li>Mix everything with wooden spoon at quick pace! When its too thick to mix with spoon, transfer dough to floured wooden board or other surface for about 5 minutes.</li><li>Keep hands floured, add small amounts flour by hand when dough gets sticky. It should be smoothnot too loose, not too, firm, not too sticky. Scrap off bits of dough from board, so surface is clean, & smooth. Form into a round.</li><li>Lightly oil another large bowl, place dough in bowl, turn over to coat with oil.Cover bowl with lightly damp towel.</li><li>Have warm oven ready (NOTE: preheat oven to 150 then turn off before putting dough in)</li><li>Place bowl in oven for 45 minutes / 1 hour. At 45 minutes check to see if doubled in size.</li><li>Remove bowl from oven, dip fist into flour, very gently punch 10-12 times to punch out air.</li><li>Knead again on floured board 5 minutes, add a bit of oil to bowl again, make round; return dough to bowl, cover, return to oven, let rise again 30/40ish minutes.</li><li>Punch down again, knead into a round. Gently divide into 2 loaves with sharp knife do not saw. Pre-heat oven to 350.</li><li>Place 1 loaf aside in bowl. With remaining loaf, knead with 1 hand into ball (NOTE: if using raisins, add them here), then divide into 3 pieces, braid on lightly floured board. Roll out, fatter in middle, skinny on ends of each rope. Pinch ends together, tuck under. Repeat with other loaf.</li><li>Place on oiled cookie sheet. Make egg wash  mix 1 egg & a bit of water, brush over loaves. Bake 30 minutes.</li></ol>	jewish	45	16	t	f	f	t
-242	Pineapple and Noodle Kugel	https://spoonacular.com/recipeImages/Noodle-Kugel-with-Pineapple-Gluten-free--Dairy-Free-653234.jpg	<ol><li>Preheat the oven temperature to 350 degrees F</li><li>Fill a medium stockpot with water set over high heat.  When water boils add 2 tablespoons kosher salt, then add pasta, stir well to prevent sticking.</li><li>Stir occasionally, cook for 8-10 minutes.</li><li>Let it sit in the water for a few minutes before transferring to a large glass, or heatproof bowl.</li><li>Meanwhile prepare other ingredients.</li><li>Pasta should cool off a bit during your preparation of the other ingredients.</li><li>Add coconut milk, creamer, pineapple, sugar, xylitol, cinnamon, nutmeg, oil, combine well.</li><li>Add egg yolks, stir to combine well.</li><li>Prepare the crumble.</li><li>Line 2 cupcake pans with cupcake liners.</li><li>Add noodle mixture into the cupcake liners with a dry 1/4 cup measuring spoon, filling it over the top.  Add any remaining liquid to each kugel that may look dry.</li><li>With your fingers, sprinkle  crumble over each (about 1/2 teaspoon for each).</li><li>Bake for 40-45 minutes.</li><li>Cool for 10 minutes before removing from cupcake pans.</li><li>Remove liners before serving if you like.  Serve hot or warm.</li></ol>	jewish	45	24	f	f	f	t
-243	Red Wine Braised Beef Brisket	https://spoonacular.com/recipeImages/Red-Wine-Braised-Beef-Brisket-658125.jpg	<ol><li>Preheat the oven to 325 degrees F.</li><li>On a cutting board, mash the garlic and 1/2 teaspoon of the salt together into a paste. Add the rosemary and continue to mash until incorporated. Put the garlic-rosemary paste in a small bowl and add 2 tablespoons of olive oil; stir to combine.</li><li>Season both sides of the brisket with a fair amount of kosher salt and ground black pepper. Place a large roasting pan or Dutch oven over medium-high flame and coat with the remaining olive oil. Put the brisket in the roasting pan and sear to form a nice brown crust on both sides. Lay the vegetables all around the brisket and pour the rosemary paste over the whole thing. Add the wine and tomatoes; toss in the parsley and bay leaves. Cover the pan tightly with aluminum foil and transfer to the oven. Bake for about 3 to 4 hours, basting every 30 minutes with the pan juices, until the beef is fork tender.</li><li>Remove the brisket to a cutting board and let it rest for 15 minutes. Scoop the vegetables out of the roasting pan and onto a platter, cover to keep warm. Pour out some of the excess fat, and put the roasting pan with the pan juices on the stove over medium-high heat. Boil and stir for 5 minutes until the sauce is reduced by 1/2. (If you want a thicker sauce, mix 1 tablespoon of flour with 2 tablespoons of wine or water and blend into the gravy).</li><li>Slice the brisket across the grain (the muscle lines) at a slight diagonal.</li></ol>	jewish	45	10	f	f	f	t
-244	Chapchae - Korean Stir-Fried Noodles	https://spoonacular.com/recipeImages/Chapchae-(Korean-Stir-Fried-Noodles)-637440.jpg	<ol><li>Cook noodles according to package directions</li><li>In a large pan or wok over medium heat, heat olive oil and 1 Tbsp sesame oil</li><li>Add onion slices and garlic and saut for about 1 min</li><li>Add rest of vegetables and cook for 4-5 min, until the vegetables are half-cooked and still a bit crispy</li><li>Turn heat to low and add cooked noodles, soy sauce, sugar, and the remaining sesame oil</li><li>Mix to combine and cook for another 2 min</li><li>Add salt or more soy sauce if needed (or if you want it a bit sweeter, add a touch more sugar)</li><li>If using sesame seeds, add them at finish</li></ol>	korean	15	4	t	t	t	t
-245	Dak Bulgogi - Korean BBQ Chicken	https://spoonacular.com/recipeImages/Dak-Bulgogi-(Korean-BBQ-Chicken)-641208.jpg	<ol><li>Peel off thigh skins with a paring knife. Trim off excess fat. Cut into one single "steak" piece working around the bone. Save smaller pieces for cooking as well. Set aside in a large mixing bowl.</li><li>Pulse the marinade ingredients in a food processor until smooth.</li><li>Coat the chicken pieces with the marinade. Marinate overnight in the refrigerator or a minimum of 6-12 hours. With a skewer or toothpick, piercing the thighs for extra marinade absorption is optional.</li><li>Preheat a skillet or non stick pan over medium heat. Add the chicken thighs and cook for about 15-20 minutes or until cooked through. To ensure fully cooked thighs, use a meat thermometer and check for a reading of 165-170F.</li><li>Transfer to a serving plate and garnish with scallion. Serve with lettuce leaves. Enjoy!</li></ol>	korean	400	4	f	f	t	t
-246	Dolsot Bibimbap	https://spoonacular.com/recipeImages/Dolsot-Bibimbap-641559.jpg	<ol><li>Marinate beef and tofu overnight in Korean barbecue marinade.</li><li>Cook rice and keep warm.</li><li>In sesame oil and a pinch of salt, saut carrots and zucchini until almost tender. If necessary add a bit more sesame oil and toss in the remaining vegetables, garlic and a pinch of sugar and continue to saut approximately 2 minutes, or until the vegetables are almost done (they will continue to cook in the dolsot or stone bowl)</li><li>Broil or barbecue the beef.</li><li>Pour a 1/2 - 1 teaspoon of sesame oil in the base of each stone bowl. Divide rice between the 4 stone bowls. Arrange all ingredients on top of the rice side by side around the bowl. Put a teaspoon (or more depending on taste) of the Korean chili paste on top of the vegetables and in the middle of the bowl place an egg yolk. Pour a tablespoon of sesame seed oil around the edge of the bowl.</li><li>Place stone bowl on top of stove and on high heat leave for approx 5 minutes or until you can hear the rice popping and crackling.</li><li>Remove from heat and serve. Be very careful as the stone bowl will be extremely hot.</li></ol>	korean	45	4	f	f	t	t
-247	Galbi Tang (Korean Beef Short Ribs Soup)	https://spoonacular.com/recipeImages/Galbi-Tang-(Korean-Beef-Short-Ribs-Soup)-644135.jpg	<ol><li>1.Soak the ribs in a bowl of cold water for about an hour to drain the blood, changing the water if necessary.</li><li>2.Mix sliced radish and add with the seasoning sauce.</li><li>3.After soaking and rinsing the ribs, place in a large pot and cover with water until submerged. Add half onion, few garlic pieces, and a slice of ginger (this step is optional).</li><li>4.Bring to a boil for about 15 minutes, removing any foam or scum that float to the top.</li><li>5.Drain and rinse the ribs under cold water removing any impurities. Add new water just until ribs are submerged (more water can be added if desired).</li><li>6.Bring to a boil, and then simmer over medium heat for 20 minutes.</li><li>7.Add the radish and sauce mixture and cook for an additional 10 minutes.</li><li>8.Lastly, add the vermicelli noodles and scallions and cook for another few minutes.</li><li>9.Garnish with thinly cut egg strips and toasted sesame seeds.</li><li>10.Serve with rice and other banchan (side dishes).</li></ol>	korean	45	4	f	f	f	t
-248	Kimchi	https://spoonacular.com/recipeImages/Kimchi-648910.jpg	<ol><li>Shred cabbage in 2 inch strips. Mix with half the salt. Let stand 30 minutes. Wash and drain.   </li><li>Mix the scallions, garlic, ginger, chili pepper, cabbage and the rest of salt. Pack into a crock or glass jar.</li><li>Put the containers aside for three or four days in a cool location. After that, store it in the refrigerator.</li></ol>	korean	45	6	t	t	t	t
-249	Kimchi (Korean Fermented Spicy Cabbage)	https://spoonacular.com/recipeImages/Kimchi-Kimchee-Gimchi-(Korean-Fermented-Spicy-Cabbage)-648916.jpg	<ol><li>1. Remove discolored, bruised outer leaves of cabbage and rinse well under cold water. Cut cabbage head into desired pieces; smaller 2-inch pieces is recommended for easier access later.  In 3 separate large bowls, prepare one cup sea salt and water mixture for each bowl. Sprinkle remaining 1 cup of sea salt onto the leaves of the cabbages before soaking them in the salt water. Cabbages should be partially submerged in the salt water. Let sit for a minimum 6 hours but 12 hours is preferred.</li><li>2. Once finished soaking, rinse the cabbage leaves thoroughly under cold water several times. Remove water from the cabbage by giving them a squeeze (they should have a rubbery texture by now) to remove excess water. Set in a colander or basket for at least 2 hours so the water will drain out thoroughly. Meanwhile, prepare the red pepper mixture to be mixed with cabbage leaves.</li><li>3. Prepare 3 tbsp of the sweet rice flour with 3 cups of water into a small pot. Bring to a boil and whisk until the mixture turns into a glue-like consistency. Let cool and set aside.</li><li>4. In a food processor, puree onion, garlic, ginger and some water until smooth. Pour gochugaru (chili flakes) in a large mixing bowl, add the garlic mixture puree, cooled rice glue, fish sauce, salted shrimp, sugar, and sesame seeds. Mix well and add the sliced radish and green onions.</li><li>5. Lather each cabbage piece with red pepper mixture by rubbing them well (rubber gloves highly recommended). Continue until all the cabbage leaves are covered in the red pepper mixture. Pack them inside air-tight glass jars/containers.  Set out at room temperature for 2 days for fermentation to take place. After that, place in the refrigerator and serve as needed. The kimchi may keep for 2 or 3 months in the refrigerator.</li><li>*Making kimchi is not easy, but if done right, the rewards are endless. You can take the easy way out and purchase them at your local Korean grocery store and even possibly in the Asian foods section of your local grocery.</li></ol>	korean	45	20	f	f	t	t
-250	Kogi Kimchi Quesadillas	https://spoonacular.com/recipeImages/Kogi-Kimchi-Quesadillas-649002.jpg	<ol><li>1. In a skillet or non-stick frying pan, melt the 2 tbsp butter and add the chopped kimchi, cook over medium heat until caramelized and slightly charred. Remove any excess liquid and set aside. Seasoning with garlic powder is recommended.</li><li>2. In the same pan, saute the thin slices of beef on medium heat until browned. Add salt and pepper for seasoning. Remove any excess liquid and set aside.</li><li>3. On large pan or griddle, heat over medium heat. Brush 1 tsp vegetable or olive oil on pan and coat evenly. Place 1 tortilla on pan and spread ingredients according to preference. Make sure to leave an inch from the edges clear and top with another tortilla. Slightly press down with hand to compress the quesadilla. Drizzle some oil on the top tortilla and brush evenly to coat.</li><li>4. Heat the quesadilla until browned on the bottom, flip carefully and continue cooking until browned and blistered on both sides. When finished, carefully transfer to a cutting board and let cool for a few minutes. Cut into 4 equal pieces and transfer to serving plate. Repeat with remaining ingredients to make 4 quesadillas. Mixing and matching ingredients to your liking is encouraged. ^^</li></ol>	korean	45	4	f	f	f	f
-251	Korean BBQ Beef	https://spoonacular.com/recipeImages/Korean-Bbq-Beef-649024.jpg	<ol><li>(The Meades)</li><li>Mix it all together and marinate at least 2 hours. Can either cook it on the grill as kebabs or stir-fry by itself. Enjoy.</li><li>When I don't have sirloin tips, I use flank steak and it tastes just as good. Also, I substitute hot pepper sesame oil and also add cayenne pepper for more kick. The sugar allows the beef to caramelize a little (I tried using cane sugar once but it didn't caramelize).</li><li>NOTES: Just tried this recipe recently (4 or 5 times) and it is absolutely wonderful - from Omaha Steaks recipe book</li></ol>	korean	45	1	f	f	t	t
-252	Korean Bulgogi	https://spoonacular.com/recipeImages/Korean-Bulgogi-649034.jpg	<ol><li>Season the beef with salt and pepper. In a mixing bowl, combine the oil, soy sauce, garlic and ginger. Season with crushed red pepper to taste.</li><li>Place the meat in a shallow bowl. Pour the marinade over the meat. Cover and refrigerate for at least 1 hour or overnight. Remove and bring to room temperature. Preheat the hibachi. Remove the meat from the pan, reserving the marinade. Place the marinade in a saucepan, over medium heat. Bring to a boil and cook for 6 to 8 minutes or until the mixture reduces by 3/4. Remove, set aside, and keep warm. Grill the meat for a couple of minutes on each side, for medium rare. To serve, spoon the rice in the center of each plate. Lay the strips of meat around the rice. Drizzle the sauce over the </li><li>Yield: 4 servings</li></ol>	korean	45	1	f	f	t	t
-253	Vegetable Bibimbap	https://spoonacular.com/recipeImages/Vegetable-Bibimbap-664523.jpg	<ol><li>Marinate tofu overnight in Korean barbecue marinade.</li><li>Cook rice and keep warm</li><li>In sesame oil and a pinch of salt, saut carrots and zucchini until almost tender. If necessary add a bit more sesame oil and toss in the remaining vegetables, garlic and a pinch of sugar and continue to saut approximately 2 minutes, or until the vegetables are almost done (they will continue to cook in the dolsot or stone bowl)</li><li>Broil or barbecue the beef.</li><li>Pour 1/2 - 1 teaspoon of sesame oil in the base of each stone bowl. Divide rice between the 4 stone bowls. Arrange all ingredients on top of the rice side by side around the bowl. Put a teaspoon (or more depending on taste) of the Korean chili paste on top of the vegetables and in the middle of the bowl place an egg yolk. Pour a tablespoon of sesame seed oil around the edge of the bowl.</li><li>Place stone bowl on top of stove and on high heat leave for approx 5 minutes or until you can hear the rice popping and crackling.</li><li>Remove from heat and serve. Be very careful as the stone bowl will be extremely hot.</li></ol>	korean	45	4	f	f	t	t
-254	Winter Kimchi	https://spoonacular.com/recipeImages/Winter-Kimchi-665379.jpg	<ol><li>Soak the quartered cabbage in the brine solution for 4 hours, weighing the cabbage down with a heavy plate.</li><li>Remove and drain.</li><li>Place garlic cloves, rice, fermented shrimp, fish sauce, sugar, chilly paste and chilly flakes in a food processor and zap to a smooth paste. Stir in spring onions.</li><li>Stuff the cabbage with the paste, making sure to stuff in between the individual leaves and coating every inch of it.</li><li>Place kimchi into an airtight container and leave at room temperature for a day before leaving it to ferment further in the fridge for at least another week before consuming. I left mine for about 3 weeks.</li></ol>	korean	45	1	f	f	t	t
-255	Zomppa's Kimchi	https://spoonacular.com/recipeImages/Zomppas-Kimchi-665680.jpg	<ol><li>Peel skin off of cucumbers.</li><li>Slice the cucumbers in  of inch slices.</li><li>Place cumbers in a bowl with salt.  Let sit for 15 minutes.</li><li>With hands, squeeze liquid out of the cucumbers.</li><li>Place cucumbers back in bowl.  Add the garlic, ginger, red pepper powder, fish sauce, lemon juice, sesame oil and honey.</li><li>With hands, mush all ingredients together.  Taste.</li><li>Add more hot pepper, fish sauce or honey to adjust the taste to your liking.  8. Place in airtight container and let refrigerate for 3 hours before enjoying.</li></ol>	korean	45	1	f	f	t	t
-256	Ahi Tuna Ceviche	https://spoonacular.com/recipeImages/Ahi-Tuna-Ceviche-632021.jpg	<ol><li>In medium bowl mix soy sauce, toasted sesame oil, rice vinegar, Serrano pepper, lime juice, mint, and sesame seeds. Then add diced tuna and toss to coat.</li><li>The tuna is ready to eat as soon as it's tossed and coated but you can marinate it for a few minutes if desired. The tuna will start to turn white almost immediately, a sign that it is cooking from the acidity of the lime juice. It is not necessary to cook the tuna. In fact, it is best served immediately while it is melt-in-your-mouth tender and moist.</li><li>Serve immediately by mounding atop crackers, chips, micro-greens, or even roasted sweet potato slices.</li></ol>	latinAmerican	45	3	f	f	t	t
-257	Carne Asada Burritos	https://spoonacular.com/recipeImages/Carne-Asada-Burritos-637133.jpg	<ol><li>In a medium sized bowl combine beef, cumin, paprika, pepper, salt and lime juice. Toss to combine and coat meat. Cover and place in refrigerator for at least 30 minutes.</li><li>Prepare pico de gallo in a small bowl. Cover and let sit until ready to assemble burritos.</li><li>Prepare avocado slices and drizzle with fresh lime juice to keep them from browning.</li><li>In a large skillet heat olive oil over medium-high heat. Add onion and garlic to pan and cook just until garlic is fragrant. Add beef to pan and cook for 3-5 minutes.</li><li>Warm tortillas in a large pan over medium heat.</li><li>Place  cup meat, 2 tablespoons of pico de gallo, and a double layer of spinach leaves in the center of each tortilla. Fold sides over filling, then roll one edge over filling and roll until filling is completely covered. Place seam side down on plate.</li><li>Serve with lime wedge and sliced avocado.</li></ol>	latinAmerican	30	6	f	f	f	t
-258	Chimichurri	https://spoonacular.com/recipeImages/Chimichurri-638619.jpg	<ol><li>Put the parsley, cilantro and garlic into a medium mixing bowl and toss to combine. Add the vinegar, salt, red and black pepper and stir. Pour in the olive oil and mix well to combine. Allow the mixture to sit for 30 minutes to allow the flavors to blend. This sauce is not only great on steak but I think it would also be wonderful on pork and chicken as well.</li></ol>	latinAmerican	45	4	t	t	t	t
-259	Chimichurri Skirt Steak with Grilled Asparagus	https://spoonacular.com/recipeImages/Chimichurri-Skirt-Steak-with-Grilled-Asparagus-638626.jpg	<ol><li>Place all chimichurri sauce ingredients except for the olive oil in a food processor &amp; pulse until well chopped. While the food processor is going, slowly pour the olive oil into the mixture until blended.  Reserve half of the sauce to serve on the side with the meal.</li><li>Season skirt steaks with salt &amp; pepper on bother sides.  Spoon the remaining chimichurri sauce over the steaks &amp; let marinate for 30 minutes up to overnight.</li><li>Pre-heat the grill to 350 to 400 F.</li><li>In a plastic resealable bag, add asparagus, olive oil, garlic, salt &amp; pepper.  Shake to coat &amp; place in a grill basket.</li><li>Place the steak &amp; grill basket of asparagus directly over a hot grill.  Gently toss the asparagus for even grilling &amp; baste with garlic, olive oil mixture  10 minutes.</li><li>Grill the skirt steak to desired temperature  5 to 8 minutes per side.</li><li>Remove from grill &amp; let steak rest for 10 minutes before slice long strips.  Spoon reserved chimichurri sauce over steak &amp; serve with asparagus on the side.</li></ol>	latinAmerican	45	4	f	f	t	t
-260	Dulce De Leche	https://spoonacular.com/recipeImages/Dulce-De-Leche-641723.jpg	<ol><li>Combine the first four ingredients in in a large saucepan and place over medium heat. Bring to a simmer, stirring occasionally, until the sugar has dissolved.</li><li>Once the sugar has dissolved, add the baking soda and stir to combine. Reduce the heat to low and cook uncovered at a bare simmer. Stir occasionally. Continue to cook for 1 hour.</li><li>Remove the vanilla bean after 1 hour and continue to cook until the mixture is a dark caramel color and has reduced to about 1 cup, approximately 1 1/2 to 2 hours.</li><li>Strain the mixture through a fine mesh strainer.</li></ol>	latinAmerican	45	4	t	f	t	f
-261	Dulce De Leche Cheesecake	https://spoonacular.com/recipeImages/Dulce-De-Leche-Cheesecake-641730.jpg	<ol><li>Toss the cookie crumbs into the melted butter in a mixing bowl. Reserve 1 tablespoon of the mixture for the topping. Press the rest of the mixture onto the bottom and up 3cm high of a greased 24cm spring form pan. Chill until its ready for use.</li><li>Using electric mixer beat balance cream cheese and sugar in a large mixing bowl until smooth. Add yogurt and eggs, beating until just blended. Stir in cornstarch, dulce de leche, lemon juice and zest until blended.</li><li>Pour the mixture into the crust and sprinkle the top with reserved cookie crumbs. Steamed bake the cheesecake at 165C/330F for 65 minutes until almost set. Turn oven off. Leave the cake with the oven door ajar for 1 hour. Cool completely and chill at least 4 hours or overnight until firm.</li></ol>	latinAmerican	45	10	t	f	t	f
-262	Dulce De Leche Shortbread Cookies	https://spoonacular.com/recipeImages/Dulce-De-Leche-Shortbread-Cookies-641731.jpg	<ol><li>Using your fingers, combine all the ingredients to make a uniform dough. If it seems a little dry (like mine was) add in a TSP of cold water until it is the correct dough consistency.</li><li>Roll out to 1/2 inch thickness  I was in a place with no rolling pin when I was making these so I used a wine bottle, it works really well if you are in a pinch!</li><li>Cut them into circles  I used a shot glass and that was actually the perfect size! They were either 1 big bite or 2 little ones, just enough at one time.</li><li>Dont forget to keep using your scraps to make more cookies.</li><li>Bake the cookies at 350 F for 10-15 minutes on a parchment lined cookie sheet.</li><li>When the cookies are cool, spread with 1 TBSP dulce de leche. If you want, sprinkle with either pink himalaya salt or sea salt. Enjoy!</li></ol>	latinAmerican	45	1	f	f	f	f
-263	Dulce De Leche Swirled Amaretto Frozen Yogurt	https://spoonacular.com/recipeImages/Dulce-De-Leche-Swirled-Amaretto-Frozen-Yogurt-641732.jpg	<ol><li>Drained the yogurt overnight</li><li>Mix the amaretto cream into the yogurt & churn in your ice cream maker as according to the manufacturer's instruction.</li><li>Warm the dulce de leche, or caramel in the microwave for 30 seconds. When yogurt is done churning, layer drizzles of dulce de leche into the yogurt and store in the freezer.</li></ol>	latinAmerican	45	4	t	f	t	f
-264	Flank Steak With Chimichurri Sauce	https://spoonacular.com/recipeImages/Flank-Steak-With-Chimichurri-Sauce-643055.jpg	<ol><li>For the Sauce: Mix parsley, oregano, red pepper flakes (if you are using) and garlic in a food processor or blender and mix until combined.  Drizzle in olive oil and red wine vinegar and process until combined. </li><li> Season sauce to taste with salt and pepper.  Let set for at least 1 hour.</li><li>Season steak with salt and pepper.  Grill over medium high heat for 5 minutes on each side for medium rare.  Let rest for 5 minutes.</li></ol>	latinAmerican	75	4	f	f	t	t
-265	Fresh and Simple Swai Ceviche	https://spoonacular.com/recipeImages/Fresh-and-Simple-Swai-Ceviche-643428.jpg	<ol><li>Place the diced fish into  of the lime juice and refrigerate for at least 3 hours. Strain when ready to proceed.</li><li>Mix the veggies with the remaining lime juice.</li><li>Stir in the fish and cilantro. Drizzle with olive oil and add the chile-garlic sauce. Gently toss.</li><li>Salt and pepper to taste. Serve with tortilla chips or a salad.</li></ol>	latinAmerican	45	4	f	f	t	t
-266	Gluten-Free Tres Leches Cake	https://spoonacular.com/recipeImages/Gluten-Free-Tres-Leches-Cake-644907.jpg	<ol><li>Preheat oven to 350 degrees. Generously butter a 13X9 baking dish. In a large bowl, beat  c sugar, egg yolks, and butter until light and fluffy, about 5 minutes. Fold in the vanilla extract, orange zest, cinnamon, sorghum flour, masa harina, baking powder, xanthan gum, and milk.</li><li>In another large bowl, beat egg whites to soft peaks, adding cream of tartar after about 20 seconds. Gradually add the remaining  c sugar and continue beating until egg whites are glossy and firm, but not dry.</li><li>Gently fold the egg whites into the cake mixture. Pour this batter into the baking dish, spreading out evenly.  Bake until the cake is golden and a toothpick inserted in the center comes out clean, about 25 minutes. Pierce cake all over with a toothpick.</li><li>Whisk together the milks, and pour evenly over cake. Allow to cool for a bit, and cover and place in refrigerator for 4 hours, up to overnight.</li><li>Before serving,  place the whipping cream, sugar, and vanilla in a mixer bowl and whisk to stiff peaks, and nice and thick. Spread over cake and top with strawberries and mint leaves.</li><li>Allow to chill in refrigerator until ready to serve.</li></ol>	latinAmerican	45	10	f	f	t	f
-267	Lomo Saltado Beef Stir Fry	https://spoonacular.com/recipeImages/Lizs-Lomo-Saltado-650225.jpg	<ol><li>Prepare the frozen french fries according to directions. Set aside when complete and keep warm.</li><li>Heat a large wok or skillet over medium-high heat. Saute the onions and bell peppers until translucent, about 10 minutes. Add the garlic and jalapeno and cook for an additional minute. Mix everything until combined.</li><li>Add the beef chunks, cumin, complete seasoning, soy sauce and red wine vinegar sauce. Mix well and cook until beef is no longer pink about 5 to 7 minutes.</li><li>Add the tomato chunks and add the cover and cook for additional 5 minutes. When ready to serve, add the french fries and toss everything gently together.</li><li>Serve lomo saltado over a bed of white rice and garnish with freshly chopped cilantro leaves. Enjoy with aji sauce on the side.</li></ol>	latinAmerican	45	4	f	f	t	t
-268	Crispy-Crowned Guacamole Fish Fillets	https://spoonacular.com/recipeImages/Crispy-Crowned-Guacamole-Fish-Fillets-157399.jpg	<ol><li>Prepare the guacamole by dicing the onion, cutting the tomatoes, and crushing the garlic. Mix these ingredients with the ripe avocado and spice with salt, pepper, cilantro, and tabasco.</li><li>Fry the fish for 5 minutes.</li><li>Crush the tortilla chips with your hands.</li><li>Cut the bell peppers in strips.</li><li>Place the fish on a plate, use a fork to distribute the guacamole on the fish and crown the fish with the crispy crushed tortilla chips.</li></ol>	mexican	30	2	f	f	t	t
-269	Black Bean and Peppers Taco Filling	https://spoonacular.com/recipeImages/Black-Bean-and-Peppers-Taco-Filling-635058.jpg	<ol><li>In a skillet add olive oil, onions and bell pepper. Cook until tender, about 3  5 minutes. Add tomatoes and seasonings, saute for 10 minutes. Add black beans and cook until warm.</li><li>Serve with tortillas.</li><li>Additional toppings: Romaine Lettuce, Cheese, jalapenos, salsa, hot sauce, avocado, and greek yogurt</li></ol>	mexican	45	8	t	t	t	t
-270	Black Bean and Veggie Burgers with Corn Salsa	https://spoonacular.com/recipeImages/Black-Bean-and-Veggie-Burgers-with-Corn-Salsa-635059.jpg	<ol><li>Mix all the salsa ingredients together and chill for about an hour before serving.</li><li>Preheat your oven to 425 degrees F. Spray two baking sheets lightly with the nonstick spray and set aside.</li><li>Add the carrot to a bowl with a little water, cover it and microwave for about two minutes. Once cooled, mash them and add them to the mashed black beans. Mix together then add the remaining vegetables and mix well.</li><li>Add the oatmeal, breadcrumbs, seasoning and salsa. Mix together until combined. Add the flour and mix well. If the mixture is too moist, add more flour and adjust the seasoning, as needed.</li><li>Form the mixture into patties and place them on the baking sheets. Bake for about 20 minutes, flipping them halfway through cooking. When the burgers are finished, serve with the Corn Salsa or your favorite topping.</li></ol>	mexican	45	8	t	t	f	t
-271	Chilled Avocado and Cucumber Soup with Prawn and Scallop Salsa	https://spoonacular.com/recipeImages/Chilled-Avocado-and-Cucumber-Soup-With-Prawn-and-Scallop-Salsa-638588.jpg	<ol><li>In a small sauce pot, combine the minced shallots, red chili pepper flakes and oil.</li><li>Heat the oil over very low heat and simmer for about 3 minutes.</li><li>Remove from the heat and let stand for 3 minutes. Stir in the lime zest and the water.</li><li>Let stand for at least an hour, then strain the oil into a small bowl or jar.</li><li>Adding water in the oil with the lime zest dissolves and carries water-soluble flavors.</li><li>Set aside, while you prepare the soup.</li><li>Place the cucumber, avocado and green onion in a blender.</li><li>Squeeze the lime juice and add 2 tablespoon of the miso paste.</li><li>Blend the ingredients adding the water to dilute the mixture until smooth and creamy.</li><li>Season the soup (to taste) with more miso paste and lime juice if necessary.</li><li>Transfer the soup into a large bowl, cover and chill in the refrigerator for at least 2 hours.</li><li>To cook the prawns and scallops, heat a skillet over medium-high heat.</li><li>Then, season the prawns and scallops with salt and pepper on both sides.</li><li>Once the pan is nice and hot, add one tablespoon of the oil.</li><li>Add the prawns and scallops and cooked until they are done. </li><li>Remove and transfer to a bowl. Then, add the orange pieces, black olives and cilantro.</li><li>Cut the prawns into 3 or 4 pieces depending on the size and add these to the bowl.</li><li>Season with a little bit of sea salt and black pepper (if necessary) and drizzle with chili-lime oil.</li><li>Toss gently with a spoon to combine.</li><li>To serve the dish, bring out the four individual bowls and the avocado soup from the fridge.</li><li>Ladle the soup onto the bowls, then garnish with the prawn and scallop salsa and finish with more drizzle of the chili-lime oil.</li></ol>	mexican	45	4	f	f	t	t
-272	Corn Avocado Salsa	https://spoonacular.com/recipeImages/Corn-Avocado-Salsa-640062.jpg	<ol><li>Preheat oven to 375 degrees.</li><li>Spread corn flat on a baking sheet.</li><li>Spray lightly with olive oil spray.</li><li>Roast corn in the oven for about 8-10 minutes. (Be careful not to brown too much or burn.)</li><li>Remove from heat and allow to cool.</li><li>Finely chop red pepper and garlic and mix in a bowl.</li><li>Peel and coarsely chop avocado and add to bowl.</li><li>Add cooled corn.</li><li>Mix in cumin and vinegar and blend well.</li></ol>	mexican	25	2	t	t	t	t
-273	Flank Steak with Herbed Salsa	https://spoonacular.com/recipeImages/Flank-Steak-with-Herbed-Salsa-643061.jpg	<ol><li>Preheat a grill pan or light a grill.</li><li>In a medium bowl, combine the tomatoes with the scallions, cilantro, Jalapeno, garlic and lemon  lime juice. Season the salsa with salt and freshly ground pepper.</li><li>Season with salt and pepper the flank steak.</li><li>Using a grill pan brush a shadow of oil on the bottom of it. Place the pan over high heat and when hot add the flank steak. Cook until nicely charred outside and medium rare inside. About 3 minutes per side.</li><li>Transfer the steak to a carving board and let rest for 5 minutes.</li><li>Thinly slice the steak across the grain and serve with the herbed salsa.</li></ol>	mexican	45	4	f	f	t	t
-274	Grilled Chicken With Pineapple Salsa	https://spoonacular.com/recipeImages/Grilled-Chicken-With-Pineapple-Salsa-645670.jpg	<ol><li>Make marinade of 1/3 cup lime juice, 1/3 cup olive oil, 1 teaspoon salt, and 1/4 teaspoon pepper.</li><li>Marinate chicken overnight. Combine salsa. Saute pineapple, mango, peppers, onions, and garlic. Add lime juice and honey and refrigerate (up to 24 hours).</li><li>Bring to room temperature to serve. Grill chicken breasts and serve with sauce and white rice.</li></ol>	mexican	45	1	f	f	t	t
-275	Grilled Fish Tacos with Spicy Tequila-Lime Guacamole	https://spoonacular.com/recipeImages/Grilled-Fish-Tacos-W--Spicy-Tequila-Lime-Guacamole-645711.jpg	<ol><li>Using a fork or potato masher, mash avocado in a bowl.</li><li>Add yogurt, lime juice, lime zest and tequila; mix well.</li><li>Add jalapeno, onion, salt/pepper and cilantro; stir until all ingredients are incorporated and smooth.</li><li>Adjust seasonings if desired.</li><li>Pour finished guacamole into serving bowl; set aside.</li><li>Preheat a grill pan to med-high heat.</li><li>Drizzle fish on each side with olive oil and season with salt and pepper.</li><li>Grill fish on each side until opaque, about 4 mins.</li><li>Remove fish from grill and flake into large chunks with a fork.</li><li>Heat tortillas on the grill pan until blisters form.</li><li>To assemble tacos, spread a dollop of guacamole onto tortilla, add fish, and top with shredded lettuce and chopped tomatoes (or whatever toppings you prefer).</li><li>Optional: squeeze additional lime juice over the fish.</li><li>Enjoy with a Mexican beer or tasty margarita! :)</li><li>Note: if you have any leftover guacamole, serve it as a dip with tortilla chips!</li></ol>	mexican	45	4	f	f	f	f
-276	Grilled Salmon With Cherry, Pineapple, Mango Salsa	https://spoonacular.com/recipeImages/Grilled-Salmon-With-Cherry--Pineapple--Mango-Salsa-645856.jpg	<ol><li>Combine all the above ingredients except the olive oil and salmon into a mixing bowl. Stir gently. Add one splash of olive oil and taste for seasoning. Cover and refrigerate until ready to use.</li><li>Lightly oil and season a salmon fillet with a splash of olive oil and salt and pepper. Place flesh side down on a cleaned and oiled grill or pan. Cook for 2-4 minutes depending on the thickness. Flip and cook for another 2-4 minutes. Salmon will be cooked when the flesh is no longer opaque. I tend to like it pretty rare, but it's your salmon- cook it how you want it!</li><li>Top salmon with salsa and serve!</li></ol>	mexican	45	2	f	f	t	t
-277	Grilled Salmon With Mango Salsa	https://spoonacular.com/recipeImages/Grilled-Salmon-With-Mango-Salsa-645863.jpg	<ol><li>To make salsa: In bowl, combine mango, pineapple, onion, cilantro and lime juice. Season to taste with salt. Set aside 20 minute to 1 hour, to blend.</li><li>Heat grill to medium-high. Season salmon with salt and pepper. Place fish on hot grill, skin-side down, and cook 5 minutes. Do not worry if skin is blackened. Turn and grill fish until it is no longer raw in center, about 3 minutes, depending on thickness of the fish.</li><li>To serve, place piece of grilled salmon in center of each of 4 dinner plates. Arrange about 1/4 cup salsa along either side of fish.</li><li>This recipe yields 4 servings.</li></ol>	mexican	45	4	f	f	t	t
-278	Homemade Hard Taco Night with Carnitas and Pinto Beans	https://spoonacular.com/recipeImages/Homemade-Hard-Taco-Night-with-Carnitas-and-Pinto-Beans-647015.jpg	<ol><li>Into a hot pan sizzling with a glug or two of vegetable oil I sear my pork, using tongs to turn each piece over until each side of each cube is nicely browned.</li><li>I add 1 cup of red onion and garlic to my sizzling pork pieces, and toss well.  I cook this until the onion softens about 4 minutes.</li><li>Then I add my orange juice and the juice from 1/2 a lime, which I stir in well.   I bring them just to a boil before I add my chicken stock, which covers about 3/4 of my meat.  I set the heat to medium, and bring this to a slow simmer to braise for the next three hours.</li><li>I fried taco shells by adding a few inches of vegetable oil to a deep fry pan and set it to high heat.  When sizzling, using tongs, I floated 1/2 of a 10 corn tortilla on the surface of the blistering oil  about 5 seconds did the trick, or until it set.</li><li>Moving quickly but carefully, I flipped the tortilla over, rolling it in the oil, releasing the tongs from one edge and immediately catching the other edge in their grip.</li><li>Holding the other edge under the hot oil, I fried it until crunchy, then dipped the center fold into the pot to crisp it up last.   Be careful to pour all the oil out when lifting your shells from the fryer.  I sprinkled them with sea salt while hot</li><li>I put my small deep pan, with a few glugs of oil, over the heat for about 10 minutes before adding 1/2 a cup of my diced onion and some minced garlic.  I cook this until just softened and fragrant.  Then I add about a teaspoon of black pepper, a healthy sprinkling of cumin, and a dash of sea salt.  Finally, I add my can of pinto beans, liquid and all.  I cover and bring to a simmer, heating all the beans through.</li><li>I peel and mash the avocados, adding fresh cilantro, a dash of minced garlic, a squeeze of lemon juice, sea salt, cracked black pepper, 1/4 cup diced red onion, and ground cumin to make guacamole.</li><li>In another bowl, Ive mixed my diced tomatoes, 1/4 cup diced red onion, minced garlic, fresh cilantro, the juice of 1/2 a lime, a glug of oil, and a dash of white vinegar together (along with some diced jalapeno, if you want heat), to make a quick fresh delicious pico de gallo.</li><li>Scoop up about 4 tablespoons of the fat from the carnitas and dump it into the beans for flavor.</li><li>After about 15 minutes, and some squishing of beans with my fork, they are thick and syrupy.</li><li>Build tacos as desired using shredded cheese, pork, beans, pico, guacamole, sour cream and cilantro.</li></ol>	mexican	240	2	f	f	t	f
-279	Mini Stuffed Mexican Bell Peppers	https://spoonacular.com/recipeImages/Mini-Stuffed-Mexican-Bell-Peppers-651977.jpg	<ol><li>1. Roast the vegetables:  Preheat oven to 400 degrees.Cut the tomatillos in half, slice the onion into 1/2 in slices and remove garlic from covering. Place on baking sheet. Roast till tomatillos are tender and start to brown, about 20 minutes.</li><li>2. Meanwhile,make the sauce: Add tomatillos, onion, garlic, tomatoes, green chilies, chipotles, chili powder, cumin, paprika, and coriander to blender or food processor. Blend until smooth.</li><li>3. In a large bowel, add the turkey, beans, and sauce, Mix together until everything is evenly distributed.</li><li>4. Cut tops off mini bell peppers and remove any seeds. Stuff turkey mixture into peppers until slightly overflowing. Place in 9 by 13 glass dish. Repeat for all bell peppers.</li><li>5. Cook at 400 for 20 minutes. For the last 5 minutes, turn on the broiler and get some color on the peppers.</li><li>6. Serve with your favorite salsa (used my Pico De Gallo from my tortilla soup), sour cream and avocado.</li><li>ENJOY!</li></ol>	mexican	45	4	f	f	t	t
-280	Nacho Mama's Cheese Nachos	https://spoonacular.com/recipeImages/Nacho-Mamas-Cheese-Nachos-652926.jpg	<ol><li>To get started, grab a pan and melt up your butter. Add in the flour and create a roux. Then add in your milk, put the heat on medium and let the mixture thicken.</li><li>Turn the heat down to low and add in the cheese.</li><li>Once it's melted add in your green chilies, chili powder, cumin, and cilantro. Now add in the salsa.</li><li>Lay your chips in an oven proof bowl and pour the cheese over the top. Now add on your desired toppings.</li><li>Throw them in the oven for about 10 minutes at 350 degrees.</li></ol>	mexican	45	1	f	f	f	f
-281	Poblano, Mango, and Black Bean Quesadilla	https://spoonacular.com/recipeImages/Poblano--Mango--and-Black-Bean-Quesadilla-656519.jpg	<ol><li>Heat olive oil, onions, poblano, oregano, salt and pepper in large pan. Saute for about five minutes.</li><li>Add black beans. Let heat for one minute, stirring occasionally.</li><li>Pull pan off heat. Add mangoes and avocado. Stir.</li><li>In another pan, sprinkle large flour tortilla with cheddar cheese, and fry in butter. *Note: for a lower-fat option, place tortilla on baking sheet, sprinkle tortilla with cheese and place under broiler.</li><li>Place pan under broiler to allow cheese to melt.</li><li>Cover half the tortilla with bean mixture, and fold in half.</li><li>Serve with sour cream, salsa and guacamole.</li></ol>	mexican	45	2	t	f	f	f
+162	Roasted Eggplant Hummus	https://spoonacular.com/recipeImages/Roasted-Eggplant-Hummus-658573.jpg	<ol><li>Preheat oven to 425 degrees.</li><li>On a large baking sheet toss eggplant, 2 tablespoons olive oil, salt and pepper and spread in a single layer.</li><li>Roast for 18-20 minutes.</li><li>Remove from oven and set aside.</li><li>In food processor combine, chickpeas, tahini, garlic, lemon juice, 2 tablespoons olive oil and pulse 3 or 4 times.</li><li>Add eggplant and blend on highest level until desired consistency.</li><li>Store in air tight containers in the refrigerator.</li></ol>	greek	45	6	t	t	t	t
+163	Spanakopita (Greek Spinach Pie)	https://spoonacular.com/recipeImages/Spanakopita-(Greek-Spinach-Pie)-660843.jpg	<ol><li>Heat vegetable oil in a large saucepan over medium heat. Slowly cook and stir onions until softened. Mix in spinach, dill and flour. Cook approximately 10 minutes, or until most of the moisture has been absorbed. Remove from heat. Mix in feta cheese, eggs, salt and pepper.</li><li>Lay 1 sheet of phyllo dough in prepared baking pan, and brush lightly with olive oil. Lay another sheet of phyllo dough on top, brush with olive oil, and repeat process with 10 more sheets of phyllo. The sheets will overlap the pan.</li><li>Spread spinach and cheese mixture into pan and fold overhanging dough over filling. Brush with oil, then layer remaining sheets of phyllo dough, brushing each with oil. Tuck overhanging dough into pan to seal filling.</li><li>Bake in preheated oven for 30 to 40 minutes, until golden brown. Cut into squares and serve while hot.</li></ol>	greek	45	8	t	f	f	f
+164	Easy Lemon Feta Greek Yogurt Dip	https://spoonacular.com/recipeImages/easy-lemon-feta-greek-yogurt-dip-716403.jpg		greek	45	1	t	f	t	f
+165	Coconut Chicken Curry with Snow Peas and Rice	https://spoonacular.com/recipeImages/Coconut-Chicken-Curry-with-Snow-Peas-and-Rice-157311.jpg	<p>1. Heat coconut oil in a pan over medium-high heat. Pre-heat the oven to 190 C or 375 F. Start cooking the brown rice.</p><p>2. Add the cubed chicken breast to the pan for a couple minutes until browned. Transfer the chicken from the pan into a casserole dish.</p><p>3. Fry the garlic and ginger in the pan, adding more coconut oil if necessary. Add the spices until fragrant.</p><p>4. Add the coconut milk and tomato paste to the pan.</p><p>5. Start steaming the frozen snow peas, giving the flavors in the sauce some time to meld.</p><p>6. Pour the sauce over the chicken breast cubes.</p><p>7. Put the casserole dish in the oven for about 25 minutes, adding the snow peas for the last 10 minutes or so. Once the chicken is cooked through, stir in the lemon grass paste.</p><p>8. Serve the chicken curry over brown rice.</p><p><span></span></p>	indian	45	2	f	f	t	t
+166	Indian Spiced Red Lentil Soup	https://spoonacular.com/recipeImages/Indian-Spiced-Red-Lentil-Soup-631752.jpg	<ol><li>Put Cilantro Stems in Water and bring to a boil then remove Stems (This step is optional)</li><li>Rinse the Lentils and add to Stem Broth</li><li>Bring Lentils to a boil then turn heat down to medium</li><li>Add a bit of Lentil water to the Bullion cubes, mash well then add to Lentils</li><li>In a saut pan add  Grapeseed Oil, Coriander Seeds (you can put the seeds in a coffee grinder if you prefer) Cumin Seeds, Turmeric, Garam Masala.</li><li>Saut on medium heat until fragrant approximately about 5 minutes.</li><li>Mince Serranos, grate Ginger, mince Onions, mince Garlic and add to pan then saut until Onions are soft.</li><li>Add Tomato Sauce and cook on medium low for about 10 minutes then add to cooked Lentils and cook for 20 more minutes on low heat.</li><li>If you like a smooth texture to your soup you can put all of it in a food processor (blender or hand blender) to puree` or only use half for a slightly textured soup or leave it if you like it that way.</li></ol>	indian	45	12	t	t	t	t
+167	Apple Curry Soup	https://spoonacular.com/recipeImages/Apple-Curry-Soup-632528.jpg	<ol><li>Sweat leeks and mushrooms in vegetable oil until tender (without color) in a heavy gauge sauce pot</li><li>Add apples, apple cider, coconut milk, curry powder, turmeric. Bring to boil and simmer for 20 minutes.</li><li>Add the Chavrie and season with salt and pepper</li><li>Pour entire contents in a blender and puree or puree with a hand held mixer</li><li>Strain through a fine chinois. And keep warm</li><li>Serve hot</li><li>Garnish with slices of apple or a dollop of Chavrie</li></ol>	indian	45	1	t	f	t	f
+168	Baked Chickpea and Chili Koftas in a Hot Jalfrezi Curry Sauce	https://spoonacular.com/recipeImages/Baked-Chickpea---Chili-Koftas-in-a-Hot-Jalfrezi-Curry-Sauce-633544.jpg	<ol><li>Preheat oven to 180 degrees celcius (356 Fahrenheit) and line a large baking tray with parchment paper.</li><li>Make the Kofta  Heat 2 tbsp water in a saute pan over a medium heat and add the onion, garlic and chili and cook for 4 minutes, transfer to a food processor (or use a stick blender) add the coriander and the Kofta Spice Mix and pulse until smooth.</li><li>In a large mixing bowl, mash the chickpeas until they are all crushed then add the mixture from step 2 along with the gram flour and mix thoroughly together, if its too wet, add a little more gram flour. Using damp hands take a heaped tablespoon of the kofta mixture and shape into a ball and place on the parchment paper, you should get 18  20 koftas. Cook in the oven for 20  25 minutes, they should firm up quite nicely in the oven.</li><li>Now make the Jalfrezi  Add the onion, ginger, garlic and chili to a food processor and pulse until smooth.</li><li>Heat 2 tbsp of water in a deep sauce pan, add the onion mixture from step 4 along with all the Jalfrezi Spice Mix and cook for 3 minutes to release the flavours before adding in the green peppers, passata, peas and lemon juice, bring to the boil then reduce the heat to medium, cover the pan and cook for 20 minutes and just before serving stir through the coriander. Serve in a bowl with the koftas placed on top!</li></ol>	indian	45	2	t	t	t	t
+169	Balti Butter Chicken	https://spoonacular.com/recipeImages/Balti-Butter-Chicken-633960.jpg	<ol><li>Marinate the cleaned cubed chicken for all the ingredients and keep it in fridge for a minimum of 5 hours or the best overnight.</li><li>Grill it in a Tandoor oven or bake it conventional oven at 400 F for 30-40 minutes,till they are firm n brown.When the juices run out,take it n reserve.</li><li>Take a kadai n melt some butter,add the onion and green chilies and saute till pink.Take it out n blend in a mixer.</li><li>In the same pan,pour butter,splutter fennel seeds and roast the whole spices.</li><li>Now add the nuts and raisins and roast till brown n plump.(you can roast it separately n add to the gravy at last also)</li><li>Now bring back the onion paste and saute till brown.Add the reserved juice too..</li><li>Add the tomato puree and mix.</li><li>Add the chili powder,pepper powder ,salt and half of garam masala.Mix well and simmer for 2 minutes</li><li>Sprinkle the ketchup.</li><li>Now put the roasted chicken in it and cover with the gravy.</li><li>Simmer and cover with a lid for 5-8 minutes.</li><li>Now remove the lid and cook until the desired dryness level is achieved.</li><li>Add the fresh cream n stir in for a minute.</li><li>Sprinkle the Garam masala powder,a tad of sugar and mix well.</li><li>Garnish with cilantro leaves.</li><li>Add a wee bit of butter before serving..:)</li></ol>	indian	45	2	f	f	t	f
+170	Beef and Tomato Curry Over Quinoa	https://spoonacular.com/recipeImages/Beef-and-Tomato-Curry-Over-Quinoa-634579.jpg	<ol><li>Season both sides of the beef with curry powder and set aside.</li><li>Cook the onion in the olive oil over medium heat in a sautee pan.</li><li>Add the garlic, ginger, and chile once the onion becomes translucent.</li><li>Add the curry powder and stir to coat everything in the pan.</li><li>Add the tomato paste and cook until the paste starts to darken, stirring often to prevent burning.</li><li>Deglaze with the wine and stir until the liquid is absorbed.</li><li>Transfer the contents of the pan into a crock pot.</li><li>Sear the beef over high heat on both sides, transfer to crock pot.</li><li>Add the can of tomatoes and bay leaf. If needed, add chicken stock or water so the beef is almost covered. Set your crock pot on low and cook until you can shred the beef with a fork. Check for seasoning and add salt and pepper to taste. (Remove bay leaf and ginger piece.)</li><li>Prepare quinoa according to package directions and serve tomato beef curry over the top.</li></ol>	indian	45	4	f	f	t	t
+171	Beef Vindaloo	https://spoonacular.com/recipeImages/Beef-Vindaloo-634712.jpg	<ol><li>For marinade: Blend together garlic and red wine vinegar. Add chilies, cumin, turmeric, mustard, ginger, salt, sugar, lemon peel, juice, and pulp and blend well.</li><li>Place beef in bowl and pour marinade over it. Stir in poppy seeds and sit for 2 hours.</li><li>Heat clarified butter in pan and add onion. Cook until translucent, then add bay leaves and cloves. With slotted spoon, lift meat from marinade and add to onions. Increase heat to sear meat. Pour in marinade. Cover tightly, reduce heat and cook 1 hour.</li><li>After 1 hour, add tomato paste, stirring thoroughly, and cook another 30 minutes, until meat is tender. Season with salt and pepper.</li><li>This recipe yields 4 servings.</li><li>Comments: A specialty of The Sultan, Surfers' Paradise, Australia.</li></ol>	indian	45	1	f	f	t	f
+172	Channa-Chickpea, Potato and Cauliflower Curry	https://spoonacular.com/recipeImages/Channa-Chickpea--Potato---Cauliflower-Curry-637426.jpg	<ol><li>In a large pot heat oil.</li><li>Add onions saute until very soft.</li><li>Add garlic and ginger, saute for 3-4 minutes.</li><li>Add spices, saute with potatoes until they are covered with the spice mixture.</li><li>Add water to cover.</li><li>Simmer until potatoes are soft.</li><li>Add chickpeas, and cauliflower.</li><li>Simmer with lid on for 20 minutes,stirring occasionally.</li><li>Season with salt,sugar and vinegar. Serve with brown rice</li></ol>	indian	45	8	t	t	t	t
+173	Curry Beef Over Rice Noodles	https://spoonacular.com/recipeImages/Curry-Beef-Over-Rice-Noodles-641111.jpg	<ol><li>In nonstick skillet, add oil and saut beef over medium-high heat for 3-4 min. Add red onions, garlic, saut for about 4 minutes. Add fresh ginger, sambal oelek, curry powder; cook, stirring, until fragrant, about 45 seconds.</li><li>Add soy sauce, lime juice and peanuts.  Saut another 30 seconds.  Server over rice noodles.</li></ol>	indian	45	2	f	f	f	t
+174	Curry Mussels	https://spoonacular.com/recipeImages/Curry-Mussels-641128.jpg	<ol><li>In a big pot or cocotte, put in olive oil and onion. Fry the onions until soft but not brown.</li><li>Then, put in white wine, parseley, salt, pepper, and cayenne pepper.</li><li>Stir for a few minutes before putting the mussels in the pot. Put the lid on and cook the mussels for about 2-3 minutes, shaking the pan occasionally.</li><li>Use tongs to lift out the mussels as they open, putting them into a warm dish. Throw away any mussels that havent opened after 3 minutes.</li><li>Strain the liquid through a fine sieve into a clean saucepan, leaving behind any grit or sand.</li><li>Bring to the boil and  boil for 2 minutes.</li><li>Add the curry powder and crme fraiche, stir. Reheat the sauce without boiling and let the sauce thicken.</li><li>Serve the mussels in individual bowls with the sauce poured over.</li><li>Sprinkle with some parsley.</li></ol>	indian	20	4	f	f	t	f
+175	Dum Mutton Biryani	https://spoonacular.com/recipeImages/Dum-Mutton-Biryani-641739.jpg	<ol><li>N a pressure cooker,on medium high heat add mutton ,dry spices and 1 tsp salt to 2 cups water.Close the lid and let it pressure cook until the meat is 80%% cooked.This can be tested by opening the lid and squeezing the mutton pieces with fingers, it should be just tender & and not falling apart or soft.</li><li>Once cooked, reserve the stock from pressure cooker into a bowl, separate the mutton from spices and set aside the mutton pieces to cool.Throw away the collected spices.</li><li>Meanwhile,wash the rice thoroughly and set aside.</li><li>In a pan , heat the oil till ripples are formed on the surface.Stir-fry the cooled mutton pieces in this oil for about 1-2 minutes.Take the mutton out and in the same oil on medium heat ,add the onions and stir fry them untill golden brown.Once the onions are done, add the cumin seeds, red chili powder[if using] , dry coriander powder and saute for about 2 minutes.</li><li>Next, add the washed rice to the pan and saute for about 3 minutes.This gives the rice a nutty flavor.</li><li>After the rice is sauted, switch off the heat and add the mutton pieces, salt and about 2.5 cups of reserved stock to the pan.Let the rice soak for about 20 minutes.</li><li>To the soaked rice, add the saffron -milk ,cover with lid and let the rice cook on low- medium heat.The amount of rice I used took around 15 minutes to cook at low heat.You can adjust stock/water as per your rice variety.</li><li>While the rice is cooking,let the tava/girdle heat up on high heat.Switch off the heat once the rice is done and transfer the pan to the top of heated tava.Seal the edges of the pan and lid with kneaded dough on all sides so that no steam can escape .This process is called dum cooking wherein the dish is slowly cooked on very low heat, mostly in sealed containers, allowing the meats to cook, as much as possible, in their own juices andso thatthe aromas of spices are absorbed within the dish. You can read more about it here and here.</li><li>After cooking on dum for about 8-10 minutes remove the pan from tava and let it rest for about 10 minutes.</li><li>Thereafter, break the dough seal , transfer to a serving vessel and garnish with cilantro leaves ,fried onions & nuts [if using] .</li><li>Serve with raita and salad.</li><li>Notes:</li><li>Seasoning the water in which the rice will cook is very important else the biryani will be tasteless.</li><li>Be patient while the biryani cooks.Avoid opening the lid again and again and stirring while the rice cooks.</li><li>After dum cooking, it is mandatory to let the biryani rest for some time.Do not skip this step.</li><li>Enjoy!</li></ol>	indian	45	3	f	f	f	f
+176	Gujarati Dry Mung Bean Curry	https://spoonacular.com/recipeImages/Gujarati-Dry-Mung-Bean-Curry-646043.jpg	<ol><li>Wash the mung beans and boil them in plenty of hot water with a pinch of baking powder until al-dente. If you have a pressure cooker thats about 6-7 whistles. Drain and set aside.</li><li>In a large pan heat the oil and add the mustard seeds (wait for them to pop) then add the cumin seeds, asafoetida, curry leaves, garlic and chilies. Saut until aromatic. Obviously dont let it burn.</li><li>Add the tomatoes, turmeric and mung beans and cook for two minutes. Be careful not to mash it up as you stir.</li><li>Add the salt, sugar, lemon juice and cinnamon powder and cook for a further two minutes.</li><li>Throw in the chopped coriander, combine and serve.</li></ol>	indian	45	4	t	t	t	t
+177	Keema Curry	https://spoonacular.com/recipeImages/Keema-Curry-648809.jpg	<ol><li>Saute curry powder in oil over medium heat for 2 to 3 minutes. Add onions and brown. Add garlic and coriander and stir. Add meat and brown. Add salt and tomatoes, if using fresh tomatoes first peel, seed, and slice and cover. Cook over low heat for about 20 to 25 minutes. Add peas, mix in, cover again, and cook for about 5 minutes until peas are done.</li><li>Do not use a black cast iron skillet, the curry powder will get in the pores. Frozen peas work better (and are easier) than fresh.</li></ol>	indian	45	4	f	f	t	t
+178	Luscious Palak Paneer	https://spoonacular.com/recipeImages/Luscious-Palak-Paneer-650484.jpg	<ol><li>Blanch the spinach in hot water with a tiny pinch of baking powder (which keeps it beautifully green!) and drain when wilted. Place in a blender and puree with a cup of water. Set the puree aside.</li><li>In a large pan heat the oil and add the onions, garlic, ginger, chilies and tomatoes. Cook for around 5 minutes on a high heat stirring constantly. Do not let it burn.</li><li>Add the spinach puree, turmeric powder, cumin powder, coriander powder, fennel powder, cinnamon powder, cardamom powder and salt to taste. Simmer on a medium heat until the oil separates from the spinach mixture.</li><li>Add the paneer and single cream if you wish and remove from the heat.</li><li>Serve with naan, rice, paratha or if you cant wait, a spoon.</li></ol>	indian	45	4	t	f	t	f
+179	Mughlai Malai Kofta Curry	https://spoonacular.com/recipeImages/Mughlai-Malai-Kofta-Curry-652542.jpg	<ol><li>Boil the potatoes, cool, peel and grate them.</li><li>Grate paneer.</li><li>Wash all green chilies, deseed and chop them fine.</li><li>Peel carrots,grate them, add peas and some water, boil them in microwave for 10 mins. Once done, remove excess by passing &amp; squeezing it through a muslin cloth.</li><li>Peel onions, cut them into halves and boil with a cup of water for ten minutes. Drain excess water, cool onions and grind them into a smooth paste. Set Aside.</li><li>In a bowl, mix mashed potatoes, paneer, some chopped green chilies, boiled carrot-peas, corn flour and salt. Mix well. Divide into 20-22 equal sized balls. Stuff  raisins &amp; cashew into them. Deep fry in hot oil until slightly golden brown. Drain and keep aside. Fry one kofta and check for binding, if it breaks, add a little more cornflour. Deep fry in hot oil.</li><li>OR BAKE in a 375F pre-heat oven, by arranging &amp; spraying oil on these koftas placing them on a cookie sheet wraped with aluminum foil,for 10 mins. Keep a close watch, with the help of tongs, turn them once they are slight brown on one side.</li><li>On the other side heat oil in a kadai, add shahjeera, boiled onion paste and cook for five minutes. Add ginger &amp; garlic, few chopped green chilies, coriander powder, cumin powder, turmeric powder, and salt. cook for a minute.</li><li>Add tomato puree and red chili powder and cook on medium flame untill oil separates from gravy.</li><li>Add half&amp;half along with some water &amp; bring it to a boil and simmer for ten minutes on a slow flame. Stir occasionally.</li><li>Stir in fresh cream and garam masala powder.</li><li>Gently put all of these kofta's in the gravy when ready to serve. Simmer for another 2 mins and enjoy this rich, creamy gravy with Nan/Roti (Indian Flat Bread.)</li></ol>	indian	45	4	t	f	t	f
+180	Roasted Acorn Squash Stuffed with Spicy Biryani	https://spoonacular.com/recipeImages/Roasted-Acorn-Squash-Stuffed-W-spicy-Biryani-(Veg-vegan)-658482.jpg	<ol><li>Preheat the oven to 400 degrees. On a baking sheet place the squash halves, spray with PAM and sprinkle with 1-2 tbsp garam masala. Place in the oven and BROIL till tender and charred- about 10-15 minutes.</li><li>While the squashes are roasting, in a large skillet, spray with PAM and add vegetable oil and set over medium heat. Add the cashews and saute until fragrant and slightly darkened. Add onions and peppers, sprinkle with black pepper and saute until soft, about 5-7 minutes. Once the onions and peppers are soft, but now brown, add the soaked basmati rice (make sure not to get any water in it!). Saute for 5-7 minutes. You want to toast the the rice.</li><li>Remove the squash from the oven and cool for a few minutes before handling. Score the squash into small cubes, WITHOUT cutting through the skin. Scoop the cubes out into a bowl and set aside. Keep the shell aside, DONT throw out!</li><li>Once the rice is toasted add 1 cup of water, pinch of saffron, cover and cook on medium-low heat, about 15 minutes. You want the rice to be cooked thru, not mushy so dont mix it around too much! Once the rice is cooked, add the cubed squash, tossing gently (you dont want the squash to break and mush around the rice). Add the Biryani paste and toss to coat. Mix in 3/4 of the chopped cilantro. Taste for salt and biryani flavor- it should be strong, spicy and aromatic.</li><li>In a small skillet, spray with PAM and set over medium-high heat. Add onion slices, and saute without breaking up the circles. Cook until brown-ish about 4-5 minutes. Set aside.</li><li>Fill each squash bowl with rice, just coming over the top. Top each one with an onion round and sprinkle with remaining chopped cilantro. Serve with yogurt or raita.</li><li>Biryani paste:</li><li>In a medium skillet, spray with pam, add oil and set over medium-high flame. Add onions and tomatoes, saute until golden-brown about 4-5 minutes. Add garlic, ginger, chili powder and cilantro. Saute until vegetables are soft and fragrant about 4-5 minutes. Add the biryani paste and mix well, making sure all the veggies are coated. Remove from the heat and let cool (10-15 minutes).</li><li>In a grinder/food processor, add the biryani mixture and grind until smooth (slightly chunky is ok). Store in an air tight container. Can be kept in the fridge for 1-2 weeks, or in the freezer- for a while!</li></ol>	indian	45	4	t	f	t	t
+181	Slow Cooker Lamb Curry	https://spoonacular.com/recipeImages/Slow-Cooker-Lamb-Curry-660290.jpg	<ol><li>Pull out your slow cooker and add everything into the pot with the exception of the yogurt.</li><li>Now turn on your pot, setting it on low for the next 4-6 hours or high for the next 3-5.</li><li>When the time is up, open up your slow cooker, grab your yogurt and stir it into the curry.</li><li>Serve over rice.</li></ol>	indian	45	8	f	f	t	f
+182	Beef Pot Pies with Irish Cheddar Crust	https://spoonacular.com/recipeImages/Beef-Pot-Pies-with-Irish-Cheddar-Crust-634660.jpg	<ol><li>Make the pastry: Place the cut up butter pieces in the freezer for 15 minutes to chill. Meanwhile, in the work bowl of a food processor combine flour, sugar, dry mustard, salt and cayenne pepper. Pulse to combine. After the butter has chilled, scatter the pieces over the flour mixture (still in the food processor), along with the cheddar. Pulse about 10 times. Sprinkle half the ice water over the dough, pulse about 3 times, repeat with remaining water, pulsing 3 more times. Pinch the dough to check if it sticks together, if not add a tablespoon or two more ice water, until it comes together. Dump the mix in a large bowl and press it together to form the dough. Divide dough in half, shaping each into a 4-inch disk. Wrap each piece in plastic wrap and refrigerate at least an hour.</li><li>Begin the filling: Pat the meat dry with paper towels and season with salt & pepper. Heat 2 t. oil in a large skillet over medium high heat until just smoking. Add the meat in a single layer and cook, without stirring, until the meat browns well on the underside, anywhere between 5-10 minutes (the meat will give off liquid, just let it evaporate - leave it alone!) Stir the meat and cook another couple minutes, until it looses the raw color. Remove to a plate and set aside.</li><li>Reduce heat to medium, add the remaining 2 t. oil and the onions and carrots. Saute until softened and starting to brown, stirring occasionally, around 5 minutes. Add the garlic, thyme and marjoram, cook until very fragrant, about a minute. Stir in flour, cook and stir about a minute. Slowly add in the beef broth and water, then the meat, along with any juices left on the plate. Bring to a simmer, then reduce the heat to low, to med-low. Cover and cook, (adjusting the heat as necessary to maintain a simmer) stirring occasionally until the meat is just becoming tender, around 45 minutes. Remove from heat, add in the Dijon and parsley. Adjust seasoning with salt & pepper. Set aside to cool.</li><li>Rolling out the crust, filling & baking the pot pies: Remove the dough from the refrigerator 10 minutes before rolling it out. Roll the dough out on a well-floured surface, large enough to cut out 3, 7-inch circles out of each half (save the scraps). Line each cup of a large-sized muffin tin with the dough. (It won't look very pretty, you just kind of have your way with it to get it pressed in there.) Refrigerate the filled tins as well as the dough scraps 15 minutes to firm back up.</li><li>Meanwhile, preheat oven to 400 degrees. After 15 minutes and the filling has cooled down quite a bit. Divide the mixture evenly between crusts. Divide the remaining dough into 6 balls. Roll out each piece wide enough to cover the pot pies. Pinch the top and bottom crust edges together to seal, and finish the edges in whatever decorative way you like. Brush the tops with the beaten egg. Bake 35-40 minutes, rotating the pan after 20 minutes. Remove from oven & let sit 5 minutes before (carefully) removing the pot pies from the tin.</li></ol>	irish	45	6	f	f	f	f
+183	Colcannon	https://spoonacular.com/recipeImages/Colcannon-639900.jpg	<ol><li>Cut into top of cabbage and hollow it out, leaving 3-4 outside leaves intact, reserving the hollowed-out portion. Plunge the hollowed-out head into large amount of boiling water; simmer 5 minutes or until tender-crisp. It must hold its shape. Cool quickly in cold water; invert and drain.</li><li>Chop reserved cabbage pieces, measure 1 1/2 cups. Stir fry in butter along with green onions until tender. Set aside. Boil and mash potatoes adding milk and seasonings. Stir in the sauteed mixture and parsley.</li></ol>	irish	45	8	f	f	t	f
+184	Corned Beef and Cabbage	https://spoonacular.com/recipeImages/Corned-Beef-and-Cabbage-640134.jpg	<ol><li>Wipe corned beef with damp paper towels. Place in large pan, cover with water. Add garlic, cloves, black peppercorns, and bay leaves. Bring to boil. Reduce heat; simmer 5 minutes. Skim surface and cover pan; simmer 3 to 4 hours, or until corned beef is fork-tender. Add carrots, potatoes, and onions during last 25 minutes.    Add cabbage wedges during last 15 minutes. Cook vegetables just till tender. Slice across the grain. Arrange slices on platte</li></ol>	irish	45	6	f	f	t	t
+185	Corned Beef and Cabbage with Irish Mustard Sauce	https://spoonacular.com/recipeImages/Corned-Beef-And-Cabbage-With-Irish-Mustard-Sauce-640136.jpg	<ol><li>Combine corned beef and water to cover in a large Dutch oven; bring to a boil then remove from heat. Drain. Add fresh water to cover. Add onion, carrot, parsley, bay leaf, and pepper. Bring to a boil once again, then reduce to a low simmer. Skim off foam, if necessary. Cover and simmer 4 hours or until tender.</li><li>Remove onion and parsley. Add potatoes to Dutch oven. Simmer 10 minutes. Add cabbage wedges, and simmer 20 minutes or until vegetables are tender. Remove and discard bay leaf.</li><li>To make the Irish Mustard Sauce, combine cornstarch, sugar, dry mustard and salt in a medium saucepan; stir well. Add water and cook over low heat, stirring constantly, until thickened. Remove from heat. Stir in vinegar, butter and horseradish. Gradually stir about 1/4 of hot mixture into yolks; add to remaining hot mixture, stirring constantly. Cook over low heat, stirring constantly, until thickened.</li><li>Transfer corned beef and vegetables to a serving platter. Serve with Irish Mustard Sauce.  </li></ol>	irish	270	6	f	f	t	t
+186	Guinness Braised Corned Beef and Cabbage	https://spoonacular.com/recipeImages/Guinness-Braised-Corned-Beef-and-Cabbage-646034.jpg	<ol><li>Season both sides of the corned beef liberally with pepper. The corning of the beef makes the beef salty enough, so no need to add more.</li><li>Heat 1 TBSP oil in a large, shallow oven-safe pot over medium-high heat. Add beef and sear each side for about 3 minutes, just to develop a nice brown crust. This will seal in the beef's juices.</li><li>Remove beef to a plate. Pour guinness into the pot to deglaze. Scrape up any browned bits. Add beef broth, pickling spice, brown sugar, bay leaf, and minced garlic. Bring mixture up to a simmer.</li><li>Return the beef to the pot with any additional juices that have accumulated on the plate.</li><li>Cover the pot and place on the bottom rack in your oven. Bake for 2 1/2 - 3 hours, or until a fork can easily be inserted into the meat.</li><li>Baste the meat with the surrounding juices every 30 minutes or so.</li><li>After 2 hours, add carrots, parsnips, and potatoes to the pot. They will only take about 25-30 minutes of simmering to cook.</li><li>Remove pot from the oven. Place beef on a cutting board and let it rest for 15 minutes before carving into thin slices (cut against the grain of the meat). Remove vegetables and arrange them on a serving platter. Cover with foil. Place the pot on the burner and bring sauce to a boil. Add cabbage and cook for about 7 minutes, until it has softened. Place the cabbage on the serving platter with the other vegetables.</li><li>Strain the sauce in the pot and stir in 2 or 3 TBSP of spicy honey mustard until dissolved. Place in a small dish or gravy boat with a ladle and serve alongside the beef.</li><li>After slicing the beef and arranging it on the serving platter, ladle the guinness mustard sauce over the top to rehydrate and glaze the beef and vegetables.</li></ol>	irish	45	6	f	f	f	t
+187	Irish Colcannon	https://spoonacular.com/recipeImages/Irish-Colcannon-647974.jpg	<ol><li>Chop the cabbage and steam, using minimal water, until quite well done.</li><li>Boil potatoes. Clean and chop the leeks, including the first couple of inches of green, put into a saucepan with the milk and simmer until tender.</li><li>If using bacon, saute until crisp. When cool enough to handle, break into bite size pieces.</li><li>Drain potatoes and mash.</li><li>Stir in milk with leeks, cabbage, mace, garlic, and bacon. Gently mix to combine all ingredients, but take care not to over mash the potatoes.</li></ol>	irish	45	4	f	f	t	f
+188	Irish Soda Bread with Raisins	https://spoonacular.com/recipeImages/Irish-Soda-Bread-with-Raisins-648004.jpg	<ol><li>Preheat oven to 375F. Spray 8-inch-diameter cake pan with nonstick spray. Whisk flour, 4 tablespoons sugar, baking powder, salt, and baking soda in large bowl to blend. Add butter. Using fingertips, rub in until coarse meal forms. Make well in center of flour mixture. Add buttermilk. Gradually stir dry ingredients into milk to blend. Mix in raisins.</li><li>Using floured hands, shape dough into ball. Transfer to prepared pan and flatten slightly (dough will not come to edges of pan). With a sharp knife, slice a shallow X across the top (optional). Sprinkle dough with remaining 1 tablespoon sugar.</li><li>Bake bread until brown and tester inserted into center comes out clean, about 40 minutes. Cool bread in pan 10 minutes. Transfer to rack. Serve warm or at room temperature.</li></ol>	irish	45	8	f	f	f	f
+189	Irish Soda Bread	https://spoonacular.com/recipeImages/Irish-Soda-Bread-By-Mommie-Cooks-648006.jpg	<ol><li>To a bowl add together your dry ingredients; the flour, salt, and baking soda. Mix well.</li><li>Add in the caraway seed and combine.</li><li>Now add in the honey, egg, and buttermilk. Stir it up until a dough just begins to form.</li><li>Add in the melted butter and knead dough until all ingredients are combined. Don't overknead.</li><li>Form into a ball and cut a few 1" slits at the top.</li><li>Place dough on a baking sheet and place in an oven preheated to 350 degrees for 50 min. to an hour.</li><li>Test with a toothpick in the center to assure loaf is cooked completely.</li></ol>	irish	45	8	t	f	f	f
+190	Irish Whiskey Pie	https://spoonacular.com/recipeImages/Irish-Whiskey-Pie-648010.png	<ol><li>For the crust:</li><li>Sift flour and salt together into a large bowl.</li><li>Using a food processor, a pastry blender or two knives and a good amount of patience, cut the butter into the flour.</li><li>Add water and vodka stirring after each addition until the dough comes together.</li><li>Form into a ball and cut it in half.</li><li>Flatten each half into a disc, wrap them in wax paper and refrigerate for at least half an hour before baking.</li><li>You will only need one half for this recipe, so feel free to freeze the other half for future pie emergencies.</li><li>When ready to bake, preheat oven to 375</li><li>Place pastry on a well-floured surface and using a well-floured rolling pin, roll out the pastry to fit a 9-inch pie plate.</li><li>Place pastry into the pie plate and trim and crimp the edges.</li><li>Prick the dough several times with a fork.</li><li>Wrap tin foil around the pastry and fill the center with pie weights or dried beans.</li><li>Place in the center of the oven and bake for 25 minutes.</li><li>Remove weights and tin foil and bake for an additional nine minutes or until golden brown.</li><li>Remove from the oven and let cool.</li><li>For the Filling:</li><li>In a medium sized bowl whisk together condensed milk, cornstarch and salt.</li><li>Add egg yolks one at a time, whisking until combined after each addition.  Set aside.</li><li>In a medium sized saucepan melt butter over moderate heat.</li><li>Add brown sugar and allow to bubble slightly.</li><li>Slowly whisk in milk.</li><li>Add egg mixture slowly, whisking constantly.</li><li>Bring back to a boil while whisking the mixture.</li><li>Once the mixture is boiling, let it cook while stirring for approximately one minute or until thick.</li><li>Remove from heat and stir in whiskey.</li><li>Pour into a cooled pie shell and cover with plastic wrap.</li><li>Place in the fridge and let set for four hours.</li><li>You may serve the pie with whipped cream if you wish, but I find it so rich that I like to eat it au naturale.</li></ol>	irish	45	10	t	f	f	f
+191	Kale Colcannon	https://spoonacular.com/recipeImages/Kale-Colcannon-648718.jpg	<ol><li>Cook potatoes in a pot of boiling water until tender; drain, reserving water.</li><li>Place potatoes in a large bowl and mash potatoes with a hand masher or put through a ricer. Add 2 tablespoons butter, milk, salt and pepper to potatoes and gently mix until combined.</li><li>Add chopped kale to the reserved potato water. Cook 6-8 minutes or until tender. Drain well and chop.</li><li>Meanwhile, saut chopped onions in 2 tablespoons butter on medium-high until slightly brown. Add to potato mixture and combine.</li><li>Serve hot.</li></ol>	irish	45	4	f	f	t	f
+192	Mussels in Irish Ale	https://spoonacular.com/recipeImages/Mussels-in-Irish-Ale-652760.jpg	<ol><li>Discard any mussels that are open before cooking and any that stay closed after cooking.</li><li>Place a large pot over a high heat and brown the pancetta pieces until just golden and sizzling. Add in a knob of butter, allow it to melt and then add the onion and garlic. Cook gently for three minutes until the onion is soft.</li><li>Add in the cider and allow to bubble away for a few minutes so all the flavours mingle in together. Tumble in the mussels, cover with a lid and allow them to steam for about four minutes until they open, making sure to give the pot a good shake once or twice during the cooking time.</li><li>Remove from the heat and stir in the cream and parsley and season with sea salt and ground black pepper.</li><li>Serve with some crusty bread to mop up the liquid!</li></ol>	irish	45	4	f	f	f	f
+193	Oatmeal, Apricot, Walnut Soda Bread	https://spoonacular.com/recipeImages/Oatmeal--Apricot--Walnut-Soda-Bread-653500.jpg	<ol><li>In a medium bowl, combine 2 c. oats and buttermilk. Let sit for 1 hour.</li><li>Adjust oven rack to the upper-middle position and preheat to 400 degrees f. In a large bowl, combine flours, remaining 1/2 c. oats, brown sugar, baking soda, cream of tartar and salt. Add in the 2 T. softened butter and using your fingertips, rub the butter into the flour until the texture resembles coarse crumbs.</li><li>After the oats have soaked for an hour add the egg and mix well. Add this mix into the flour mixture along with the walnuts and apricots. Mix with a fork until it starts to come together (it still is going to be very loose). Turn the mix out onto a floured surface and knead a few times (around 12-14 times or so) to get everything to come together. Don't overdo it with the kneading or the bread will be tough.</li><li>Shape the dough into a round shape that is 6-inches in diameter and 2-inches high. Place on a large parchment-lined (or greased) baking sheet. Using a serrated knife, make a large X in the top of the loaf. Bake for 45- 50 minutes, until a skewer inserted in the center comes out clean. As soon as it is out of the oven, brush the crust with the melted butter. Let cool to room temperature before slicing.</li></ol>	irish	45	8	f	f	f	f
+194	Raspberry Soda Bread	https://spoonacular.com/recipeImages/Raspberry-Soda-Bread--New-Take-On-An-Irish-Tradition-657898.jpg	<ol><li>Preheat oven to 325 degrees Grease two 8x4 inch loaf pans or muffins tins.</li><li>Mix the flour, sugar, baking soda, baking powder and salt. Add the eggs, sour cream and milk or half and half in necessary and mix until just combined. Gently fold in frozen raspberries. Distribute batter in the greased pans.</li><li>Allow the batter to sit for 20 min before baking.</li><li>Bake at 325 degrees for 1 hour. Muffins may take 10-15 min less.</li><li>Allow the bread rest and cool before serving.</li></ol>	irish	45	2	t	f	f	f
+195	Rosemary Rum Raisin Soda Bread with Pecans	https://spoonacular.com/recipeImages/Rosemary-Rum-Raisin-Soda-Bread-with-Pecans-658803.jpg	<ol><li>Combine the rum and raisins in a small saucepan. Bring to a boil. Simmer for 30 seconds, then remove from heat. Cover and allow the raisins to macerate for at least 4 hours, but preferably overnight.</li><li>When youre ready to bake the bread, preheat the oven to 375F.</li><li>Coat a baking sheet with olive oil and lightly dust it with flour, or line it with parchment paper.</li><li>In a large mixing bowl whisk together the flours, baking soda, salt, and rosemary. Stir in the toasted pecans.</li><li>In a separate bowl combine the raisins with the rum, the yogurt, and honey.</li><li>Add the wet ingredients to the dry. Mix until the dough is too stiff to stir. Use your hands to bring it together in the bowl. Add additional yogurt one teaspoon at a time if its too dry. You want a stiff, slightly tacky ball.</li><li>Turn dough onto a lightly floured board and shape into a round loaf. (Dont over-knead the dough. Too much kneading will produce a tough bread.).</li><li>Transfer the loaf to the prepared baking sheet. Use a sharp knife to make deep slashes across the top of the loaf, 4-6 cuts about half way through. Brush the top with milk. Sprinkle with seeds or oats if using.</li><li>Bake for 40-45 minutes, until a toothpick comes out clean. When you tap the loaf, it will sound hollow.</li><li>Cool on a wire rack. Serve warm or at room temperature with a generous slather of butter.</li></ol>	irish	45	16	t	f	f	f
+196	Slow Cooked Corned Beef and Cabbage	https://spoonacular.com/recipeImages/Slow-Cooked-Corned-Beef-and-Cabbage-660266.jpg	<ol><li>Stir the broth and vinegar into a 6-quart slow cooker. Add the onions, potatoes, carrots, beef and cabbage. Submerge the Bouquet Garni in the broth mixture.</li><li>Cover and cook on LOW for 8 to 9 hours or until the beef is fork-tender. Remove the Bouquet Garni.</li></ol>	irish	45	10	f	f	t	t
+197	Vegan Colcannon Soup	https://spoonacular.com/recipeImages/Vegan-Colcannon-Soup-664419.jpg	<ol><li>Heat the oil in a large stockpot set over medium-high heat, until it shimmers. Add the leeks, garlic, and celery, and cook, stirring frequently, for 3 to 4 minutes, until the edges are golden. Add the parsnips, potatoes, cabbage, kale, stock, salt, and pepper and stir well. Reduce the heat to medium and cover.</li><li>Bring the soup to a boil; then reduce the heat to a low simmer. Cook for 30 to 35 minutes, until the vegetables are tender and soft. Add the lemon juice.</li><li>Using an immersion blender (or working in batches in a blender), pure until completely smooth. Serve immediately or store in an airtight container for up to 3 days.</li></ol>	irish	45	8	t	t	t	t
+198	Xocai Irish Cream with Xocai Healthy Dark Chocolate Nuggets	https://spoonacular.com/recipeImages/Xocai-Irish-Cream-with-Xocai-Healthy-Dark-Chocolate-Nuggets-665480.jpg	<ol><li>Heat Irish cream syrup. Remove from heat and add Nuggets. Stir until melted. Cool. Mix 2 tbsp. of cream mixture with 2 tbsp. of whiskey and add to 1 cup of hot coffee. Repeat with second cup. Garnish with whipped cream and grated Nugget. Serves 2</li></ol>	irish	45	2	f	f	f	f
+199	Asparagus Lemon Risotto	https://spoonacular.com/recipeImages/Asparagus-Lemon-Risotto-632935.jpg	<ol><li>In a large saucepan, combine broth and water. Bring to a simmer. Keep warm over low heat.</li><li>Heat oil in a large Dutch oven over medium heat. Add onion; saute 5 minutes or until tender. Add garlic; saute 30 seconds. Add rice; cook 2 minutes, stirring constantly. Stir in wine; cook 2 minutes or until liquid is nearly absorbed, stirring constantly. Mix in pepper. Add broth mixture, 1/2 cup at a time, stirring constantly, cook until each portion of broth is absorbed before adding the next (about 25 minutes). Add asparagus, and frozen peas,  during the last 10 minutes of cooking. Remove from heat; stir in cheese and remaining ingredients.</li><li>T(Cooking):"0:40"</li><li>NOTES :</li></ol>	italian	45	4	f	f	t	f
+200	Crispy Italian Cauliflower Poppers Appetizer	https://spoonacular.com/recipeImages/Crispy-Italian-Cauliflower-Poppers-with-Marinara-640819.jpg	<ol><li>Preheat oven to 400 f. Brush a large baking sheet with a tablespoon of the olive oil. In a large, shallow dish combine the breadcrumbs, Parmesan, garlic powder, salt, pepper and 2 tablespoons of the olive oil. Toss well with a fork until the oil is completely dispersed into the bread crumbs. Combine the eggs with 1 tablespoon of water in a medium bowl. Place the flour in a large resealable bag.</li><li>Add half of the cauliflower florets to the bag with the flour, seal and shake to coat well. Remove the cauliflower to a fine mesh strainer and shake to remove excess flour. Place the floured cauliflower on a plate. Repeat with the remaining cauliflower.</li><li>Working with a few pieces at a time. Add to the beaten egg. Using a fork, turn and toss the florets in the egg to completely coat. Transfer to the breadcrumb mixture and coat, pressing the crumbs into the florets, the help them adhere. Place on the oiled baking sheet, making sure you leave a little space between each florets so they crisp up really well. Repeat this step with the rest of the cauliflower. Spray the tops of the breaded florets lightly with cooking spray. Bake the cauliflower for 20 minutes, Flip the pieces over and continue baking for about 15 more minutes, until the cauliflower is crunchy on the outside and tender on the inside.</li><li>While the cauliflower is baking, prepare the marinara. Pulse the undrained tomatoes in a food processor a few times until mostly broken down. Heat 1 tablespoon of the oil with the garlic and pepper flakes in a medium saucepan over medium heat until just sizzling. Add the tomatoes and simmer for about 10 minutes until the marinara thickens slightly and the flavors develop. Add 2 tablespoons of the fresh basil, season with salt and pepper if needed.</li><li>When the cauliflower is done baking, transfer to a serving dish and sprinkle with the remaining basil. Serve with the marinara.</li></ol>	italian	45	4	f	f	f	f
+201	Easy Cheesy Pizza Casserole	https://spoonacular.com/recipeImages/Easy-Cheesy-Pizza-Casserole-641893.jpg	<ol><li>Brown ground beef in skillet; drain fat.  Mix in pasta or pizza sauce and pepper flakes; set aside.  Mix ricotta cheese with the herbs and Parmesan in a separate bowl; set aside.</li><li>Mix the dry ingredients for the biscuits.  Add milk and stir until combined.</li><li>Preheat oven to 375 degrees.  Spray a 13 x 9 pan with non-stick spray.  Drop biscuit dough by teaspoons in the bottom of pan, spacing evenly.  It's OK if there is space between the dough--it will expand as it's cooked.  Top with ground beef mixture and dot with the ricotta cheese mixture.  Bake at 375 for about 20 min or until biscuits are puffed and beginning to get golden brown.</li><li>Top with mozzarella and provolone cheeses and distribute pepperoni slices evenly over top, increase oven temperature to 425 degrees.  Return to oven and bake until cheeses are melted and beginning to bubble.  This should take about 10 minutes.</li><li>Remove from oven and let stand 5 minutes before slicing and serving.  May be topped with the additional Parmesan cheese.</li></ol>	italian	45	6	f	f	f	f
+202	Easy Skillet Garden Lasagna	https://spoonacular.com/recipeImages/Easy-Skillet-Garden-Lasagna-642095.jpg	<ol><li>Preheat oven to 425 F.</li><li>Boil water for pasta and cook pasta according to directions, shaving a few minutes off the time.</li><li>Meanwhile water is boiling or pasta is cooking, heat a large oven-safe skillet over medium heat and add olive oil.</li><li>Add in your veggies and garlic, tossing to coat for about 10 minutes or until softened. If using spinach, add it last towards the end since it cooks really fast. Season with salt and pepper.</li><li>Add sauce, mozzarella and cooked lasagna noodles to the skillet with the veggies, gently tossing to distribute.</li><li>Cover with scoops of ricotta and sprinkle with fresh basil if you'd like.</li><li>Bake for 15-20 minutes, or until cheese is golden and bubbly. Serve with extra parmesan if you are a cheese lover like me!</li></ol>	italian	45	4	f	f	f	f
+203	Hearty Minestrone Soup	https://spoonacular.com/recipeImages/Hearty-Minestrone-Soup-646577.jpg	<ol><li>Start by simmering your chicken stock on the stove. While it is simmering dice your onions, slice your carrots, crush your garlic, and add them to the pot. Then add the half can of tomato sauce and let the mixture cook on low to medium heat. Next add your diced tomatoes, potatoes, spinach, and beans. Keep the mixture on medium heat until your potatoes start to soften. Then you can turn the heat low and let it cook for as long as you would like. I seasoned the soup with Kosher salt, fresh cracked pepper, red pepper flakes,</li><li>A touch of paprika and a touch of Madras curry powder. You can season with whatever you would like to cater to your taste. When you are ready to eat the soup turn the heat back up and bring it to a low boil adding the pasta. You can turn it back down to low when the pasta is starting to get to al dente status. Then continue to cook on low until the pasta is cooked to your liking. We topped our individual bowls of the minestrone with a little shredded parmesan cheese! Hope you enjoy!</li></ol>	italian	45	1	f	f	f	t
+204	Insalata Caprese With Pesto Vinaigrette	https://spoonacular.com/recipeImages/Insalata-Caprese-With-Pesto-Vinaigrette-647922.jpg	<ol><li>On a serving plate alternate slices of mozzarella and tomatoes.</li><li>Sprinkle with half of basil.</li><li>In a blender or food processor blend basil and all remaining ingredients together until smooth.</li><li>Drizzle over salad.</li></ol>	italian	45	1	f	f	t	f
+205	Italian Sausage and Vegetable Soup	https://spoonacular.com/recipeImages/Italian-Sausage-and-Vegetable-Soup-648238.jpg	<ol><li>Heat oil in large pot over medium heat and add sausages, without the casings.</li><li>Mix sausage until it is broken up into small pieces and cook until sausages is browned and almost cooked through.</li><li>Add carrots, onions, bay leaf, Italian seasoning, red pepper flakes and salt and pepper. Cook 5-6 minutes longer, until onions start to soften.</li><li>Add chicken stock and diced tomatoes. Bring stock up to a simmer. Once the stock is at a simmer, reduce heat to low and simmer with the top on until vegetables are tender, about 10 minutes longer.</li><li>Turn the heat off and add cannellini beans and spinach and stir in until spinach wilts.</li></ol>	italian	45	6	t	t	t	t
+206	Italian Seafood Stew	https://spoonacular.com/recipeImages/Italian-Seafood-Stew-648247.jpg	<ol><li>Prepare ingredients.</li><li>In a large pot, heat up 3 tbsp of olive oil and add garlic and onion. Sautee over medium heat.</li><li>Add salt, tomato paste, tomatoes with juice, stock, club soda, bay leaves and stir.</li><li>Simmer over medium low heat for 30 min.</li><li>Add mushrooms.</li><li>Add salt to taste.</li><li>Cook mussels according to package directions.</li><li>Add shrimp and fish into stew.</li><li>Add mussels.</li><li>Simmer for a few minutes.</li><li>Ready to serve with some baked bread.</li></ol>	italian	45	3	f	f	t	t
+207	Italian Steamed Artichokes	https://spoonacular.com/recipeImages/Italian-Steamed-Artichokes-648257.jpg	<ol><li>Snip the thorns off the artichoke leaves. Place the garlic slices inside the leaves throughout the artichoke. Put the artichoke into a medium-size saucepan. Add water to come halfway up the artichoke.</li><li>Put the bay leaf in the water.</li><li>Crush the coriander seeds, oregano and basil together; sprinkle on top of the artichoke.</li><li>Cook over medium heat for 30 minutes, or until the leaves pull off easily.</li></ol>	italian	35	1	t	t	t	t
+208	Italian Tuna Pasta	https://spoonacular.com/recipeImages/Italian-Tuna-Pasta-648279.jpg	<ol><li>Once pasta is cooked, drain and leave to cool for a minute.</li><li>Place small skillet on medium fire, drizzle olive oil, add in red pepper and stir-fry for 1-2 minutes. Put aside.</li><li>Toss pasta shells, red pepper, tuna, parsley, garlic, chilies and lemon juice. Season with ground black pepper to taste, spoon into serving bowls. Stir through ricotta and serve immediately.</li></ol>	italian	20	3	f	f	f	t
+209	Pappa Al Pomodoro	https://spoonacular.com/recipeImages/Pappa-Al-Pomodoro-654614.jpg	<ol><li>Warm the olive oil and garlic in a medium cooking pot. When the garlic has coloured slightly, add the leeks. Saute over a low heat for 20 minutes, adding water as necessary to keep the vegetables from turning brown.</li><li>Stir in the stock and pured tomatoes and bring to the boil, then reduce the heat and simmer gently for 20 minutes.</li><li>Turn off the heat and add the bread, pushing it into the liquid with a wooden spoon.</li><li>Stir in the torn basil leaves and season to taste with salt and pepper. Leave to rest for 30 minutes.</li><li>Now whisk the soup energetically until it has a porridge-like consistency. Taste and adjust the seasoning.</li><li>Ladle into bowls, drizzle with extra-virgin olive oil and serve.</li></ol>	italian	45	4	f	f	f	t
+210	Roasted Brussels Sprouts With Garlic	https://spoonacular.com/recipeImages/Roasted-Brussels-Sprouts-With-Garlic-658515.jpg	<ol><li>Heat oven to 450 degrees. Trim bottom of Brussels sprouts and remove any undesirable outer leaves. Slice each sprout in half from top to bottom.</li><li>Heat oil in a large heavy skillet over medium-high heat; put sprouts cut side down in one layer in pan. Add garlic, and sprinkle with salt and pepper.</li><li>Cook, undisturbed, until sprouts begin to brown on bottom, and transfer to oven. Cook, shaking pan occasionally, until sprouts are quite brown and tender, about 1/2 hour.</li><li>Taste, and adjust seasoning if necessary. Stir in balsamic vinegar, and serve hot or warm.</li></ol>	italian	45	4	t	t	t	t
+211	Salmon Quinoa Risotto	https://spoonacular.com/recipeImages/Salmon-Quinoa-Risotto-659109.jpg	<ol><li>In a 4 quart saucepan, heat 2 tablespoons of olive oil over medium high heat.</li><li>When oil is shimmering, add diced onion.</li><li>Saute onion until transparent.  Add quinoa to onion mixture and stir, to toast quinoa, for 2 minutes.</li><li>Add 1 cup of vegetable stock to quinoa and onions.</li><li>Stir until stock is absorbed.  Once stock is absorbed, add 1 cup of stock.</li><li>Continue stirring until stock is absorbed.</li><li>Add remaining stock in 1/2 cup intervals, stirring until all stock is absorbed.</li><li>Remove from heat.</li><li>While preparing the onion quinoa mixture, heat 1 tablespoon of oil in a saute pan with chopped garlic (over medium high heat).</li><li>Once garlic is sizzling, add chopped kale to the pan.</li><li>Turn kale to coat with oil and garlic.</li><li>Turn kale mixture until fragrant (approximately 2 minutes).  Remove kale mixture from heat.</li><li>Once quinoa is complete, add kale and salmon.</li><li>Stir to combine.</li><li>Add salt and pepper to taste.</li></ol>	italian	45	4	f	f	t	t
+212	Vegetable Minestrone Soup	https://spoonacular.com/recipeImages/Vegetable-Minestrone-Soup-664565.jpg	<ol><li>In a deep sauce pan or pot, heat about 2 tsps of oil or butter. Add bay leaf. When the bay leaf begins to splutter, add finely chopped onions and saute for a couple of mins until the onions are translucent.</li><li>In the meanwhile, boil water with a pinch of salt in another pot. Add pasta and cook for about 6 to 7 mins. When done, drain all the water and set the pasta aside.</li><li>Add the chopped zucchini and chopped carrots to the sauteed onions. Now, add salt and ground pepper and saute for a couple of mins. Empty the diced tomato cans into the sauce pan now. Add the remaining spices  red chili powder and dried basil to the tomatoes. Cover and let cook for at least 5 mins.</li><li>Empty the cannellini beans into a bowl. Rinse under running water to drain out all the canned liquid and add the beans to the sauce pan. Also, add the cooked pasta now. Add about 2 cups of water, cover and let cook for about 15 mins. Give a taste test and adjust salt if needed.</li><li>Serve with a hint of grated Parmesan cheese as garnish and some bread to dip into it!</li></ol>	italian	30	4	f	f	f	f
+213	Veggie Lasagna Rolls with Peppery Pecorino Marinara	https://spoonacular.com/recipeImages/Veggie-Lasagna-Rolls-W--Peppery-Pecorino-Marinara-664737.jpg	<ol><li>PREHEAT THE OVEN TO 425*</li><li>COOK THE LASAGNA NOODLES PER PACKAGE</li><li>INSTRUCTIONS. RINSE W/ COOL WATER, DRAIN &amp;</li><li>SET ASIDE.</li><li>COMBINE ALL THE INGREDIENTS FOR THE RICOTTA  FILLING &amp; SET ASIDE.</li><li>BEGIN THE SAUCE. PLACE THE GARLIC &amp; OLIVE OIL IN  A SAUTE PAN, COOK UNTIL THE GARLIC JUST STARTS TO BROWN. ADD THE CANNED TOMATOES ALL AT ONCE AND COOK FOR 1-2 MINUTES. THE TOMATO JUICE WILL START TO CARAMELIZE. CRUSH THE WHOLE TOMATOES WITH THE BACK OF A SPOON. ADD THE DRIED BASIL, OREGANO AND SAGE AND COOK DOWN AT MEDIUM HAT FOR ABOUT 20 MINUTES, UNTIL THE SAUCE IS THICK. ADD THE CHEESE AND COOK FOR ANOTHER MINUTES, STIRRING THE CHEESE INTO THE SAUCE.</li><li>LAY THE LASAGNA NOODLES OUT ON A CUTTING BOARD AND SPREAD WITH THE RICOTTA FILLING. DIVIDE THE SPINACH EQUALLY ON THE NOODLES AND THEN TOP WITH THE BASIL LEAVES.</li><li>SPRINKLE THE MUSHROOMS AND ZUCCHINI ON TOP AND ROLL THE NOODLES MAKING A ROLLED NOODLE.</li><li>PLACE A SMALL SPOONFUL OF MARINARA IN A DISH, PLACE THE LASAGNA ROLLS ON TOP OF THE SAUCE. BAKE ABOUT 15 MINUTES UNTIL THE ROLLS ARE HOT AND THE SPINACH IS JUST WILTED.</li><li>TOP WITH THE MARINARA AND SOME SHAVED PECORINO. SERVE HOT.</li></ol>	italian	45	6	f	f	f	f
+214	Japanese Vegetable Stew	https://spoonacular.com/recipeImages/japanese_vegetable_stew-17913.jpg	None	japanese	45	1	t	t	t	t
+215	Japanese Salad Dressing	https://spoonacular.com/recipeImages/japanese_salad_dressing-37513.jpg	None	japanese	12	1	t	t	t	t
+216	Baked Teriyaki Chicken Drumsticks	https://spoonacular.com/recipeImages/Baked-Teriyaki-Chicken-Drumsticks-633841.jpg	<ol><li>In a large bowl, mix teriyaki sauce, salt vegetable oil, honey, and ginger.  Add the chicken to the marinade.  Let the chicken marinade for about 4-5 hours.</li><li>Preheat oven to 450 degrees.  Add the sliced onions and diced garlic on the baking pan.  Lay the chicken on top of the onions and garlic.  Bake the chicken for 30 minutes turning once until cooked.</li></ol>	japanese	45	1	f	f	t	t
+217	Beef Teriyaki Stir Fry	https://spoonacular.com/recipeImages/Beef-Teriyaki-Stir-Fry-634710.jpg	<ol><li>Whisk ingredients together in a small bowl and refrigerate for at least 30 minutes.</li><li>Heat oil in a large frying pan over medium heat. Add beef and saut for 3-4 minutes just to brown it on all sides.</li><li>Remove from pan and set aside.</li><li>Add vegetables and saut for 5 minutes more, until beginning to soften.</li><li>Stir in teriyaki sauce and allow mixture to come to a simmer.</li><li>Add beef and any drippings that have accumulated on the plate. Cook for 5 minutes, stirring occasionally.</li><li>In a small bowl, combine cornstarch with 2 tsp cold water to dissolve. Stir into the pan of beef and vegetables. Allow the mixture to simmer and thicken for 2 minutes. Toss to evenly coat vegetables and beef in teriyaki sauce. Serve.</li></ol>	japanese	45	2	f	f	t	t
+218	Chicken Teriyaki with Soba Noodles	https://spoonacular.com/recipeImages/Chicken-Teriyaki-with-Soba-Noodles-638382.jpg	<ol><li>1. Preheat oven to 400 degrees Fahrenheit. Slice shiitakes into bite sized pieces. Place chicken breasts in a 9 by 13 glass dish.</li><li>2. Make sauce: In a small bowel, add all the ingredients and whisk together.</li><li>3. Pour sauce over chicken breasts. Place in oven and cook for 20 min. Take out of oven and add shiitakes. Toss shiitakes with the sauce that is around the chicken, flip chicken. Place in oven for 10 minutes more.  Once done,take out of oven.Let rest 5 minutes before slicing chicken into bite sized pieces.</li><li>4. Meanwhile, add water to a medium pot. Once brought to a boil, add soba noodles and cook for 7 minutes till done. Drain and rinse under cold water and add back to pot. Add shitakes and all of sauce to the soba noodles. Toss together.</li><li>5. Add 1/2 the soba noodles and shitakes to each plate. Add 1 sliced chicken breast to each plate. Garnish with green onion and sesame seeds. Serve immediately.</li><li>ENJOY!</li></ol>	japanese	45	2	f	f	f	t
+219	Hokkaido Pomegranate Risotto	https://spoonacular.com/recipeImages/Hokkaido-Pomegranate-Risotto-646817.jpg	<ol><li>Method</li><li>Cut the top of the hokkaido squash horizontally, scoop out the seeds and then scrape off the flesh from the squash. (I got 1 cup of flesh from a small hokkaido)</li><li>Heat oil in a pan, add the garlic, onions and the rice and saute for  a couple of minutes, stirring continously, on high flame.</li><li>Add salt, pepper and the finely chopped hokkaido squash and mix well.</li><li>Reduce the heat to low and keep adding water little by little, as it is absorbed.</li><li>When the rice is cooked, add the chives, the parmesan and the pomegranate seeds, and mix well.</li><li>Spoon the risotto into the hokkaido shell and garnish it with pomegranate seeds, chives and parmesan crisps and serve hot.</li></ol>	japanese	45	2	f	f	t	f
+220	Japanese Chicken Donburi	https://spoonacular.com/recipeImages/Japanese-Chicken-Donburi-648460.jpg	<ol><li>In a deep 10-inch or 12-inch frying pan over high heat, stir oil, onion, and ginger until onion is lightly browned, about 2 minutes.</li><li>Add broth, soy sauce, and sugar. Add chicken to pan. Bring to a boil.</li><li>Add spinach, cover, and cook until wilted, about 1 minute. Meanwhile, in a small bowl, beat eggs to blend.</li><li>Reduce heat to low, evenly distribute mixture in pan, and pour in eggs. With a spatula, push vegetables aside slightly so egg mixture can flow down through sauce. Cover and cook just until eggs are softly set, 2 to 2 1/2 minutes.</li><li>Meanwhile, spoon rice into bowls. Top equally with egg-spinach mixture, including juices. Sprinkle with tomato.</li></ol>	japanese	45	4	f	f	t	t
+221	Japanese Clear Soup	https://spoonacular.com/recipeImages/Japanese-Clear-Soup-648462.jpg	<ol><li>1. In a large saucepan bring chicken stock to a boil. Stir in sherry and soy sauce. Reduce heat and simmer several minutes.</li><li>2. Arrange your choice of garnishes in small bowls to pass at the table.</li><li>Ladle broth into soup bowls and serve. </li><li>Microwave Version: 1. Place chicken stock in a deep 2-quart casserole. Microwave, uncovered, on 100%% power until stock boils, about 5 to 7 minutes.</li><li>2. Stir in sherry and soy sauce. Microwave on 30%% power 2 minutes.</li><li>3. Continue with step 2.</li></ol>	japanese	45	4	t	t	t	t
+222	Japanese Coleslaw	https://spoonacular.com/recipeImages/Japanese-Coleslaw-648465.jpg	<ol><li>Brown almonds and sesame seeds in 1 tbsp. butter. Mix cabbage and onions. Just before serving, add almonds, seeds and crushed noodles to cabbage and mix with dressing.</li></ol>	japanese	45	1	f	f	f	t
+223	Japanese Curry Puffs	https://spoonacular.com/recipeImages/Japanese-Curry-Puffs-648470.jpg	<ol><li>Preheat oven to 350 degrees.</li><li>In a pot over medium/high heat, add oil and onions. Cook for 2 minutes. Add potatoes and carrots, cook for 5 minutes. Add water and bring to the boil. Lower heat and simmer for 15 minutes. Add curry mix and cook for another 10 minutes.</li><li>On a sheet pan, cut puff pastry into squares (1 sheet should give you 4 squares) and with a spoon, fill the middle of 1/2 of the squares you have.</li><li>Bake for 20 minutes or until the crust is a golden brown and serve!</li></ol>	japanese	45	4	t	t	f	t
+224	Japanese Fried Rice	https://spoonacular.com/recipeImages/Japanese-Fried-Rice-648474.jpg	<ol><li>In a pan over medium heat, add oil, garlic and cook for a minute. Add chopped carrots and cook for 2 minutes. Add chicken and cook for 2-3 minutes, until the chicken is cooked through.</li><li>Add rice and peas and mix well. Add soy sauce, tonkatsu sauce, black pepper and salt, and mix well. Push the rice to one side and break the eggs on the clear side. Slowly scramble the eggs and incorporate with the rice. Serve!</li></ol>	japanese	45	2	f	f	t	t
+225	Japanese Noodle Soup	https://spoonacular.com/recipeImages/Japanese-Noodle-Soup-648481.jpg	<ol><li>In a saucepan bring the water to a boil with the kombu</li><li>Simmer the kombu for only 2 minutes, then discard.</li><li>Stir in the bonito flakes or Hon Dashi</li><li>Simmer, stirring for 3 minutes</li><li>Stir in the soy sauce, the mirin, and the sugar</li><li>Simmer the broth for 5 minutes</li><li>In a pot of water, cook the noodles till done, drain.</li><li>Add carrots and ginger to broth and simmer, covered, for 5 minutes</li><li>Stir in the spinach, noodles and tofu and simmer 1 minute</li><li>In small bowl, stir together 1/2 cup broth and miso</li><li>Pour miso back into pan of broth.</li><li>Ladle soup into bowls and sprinkle scallions on top.</li></ol>	japanese	45	1	t	t	f	t
+226	Japanese Mushroom Noodle Soup	https://spoonacular.com/recipeImages/Japanese-Mushroom-Noodle-Soup-648483.jpg	<ol><li>Break noodles in half; cook according to package directions. Meanwhile, in large saucepan, heat chile oil over medium heat. Add mushrooms, garlic and ginger; cook 5 minutes, stirring occasionally. Add broth, mirin and soy sauce; bring to a boil. Simmer, uncovered, 10 minutes, stirring once.</li><li>Drain noodles, stir into soup. Stir in green onions and sesame oil. Ladle into shallow soup bowls.</li></ol>	japanese	45	4	f	f	f	t
+227	Japanese Salmon With Sesame Seeds	https://spoonacular.com/recipeImages/Japanese-Salmon-With-Sesame-Seeds-648493.jpg	<ol><li>Place salmon in marinade made by mixing soy sauce, hot pepper, honey, vinegar, and 1 tbsp. sesame oil and allow to marinate for 2 hours. Lift fish from marinade, and dry well on paper towels.</li><li>Heat remaining sesame oil in skillet. Add salmon scallops and saute quickly, turning once, about 2 minutes on each side. Sprinkle with sesame seeds and scallions.</li></ol>	japanese	45	4	f	f	t	t
+228	Japanese Steak Salad	https://spoonacular.com/recipeImages/Japanese-Steak-Salad-648500.jpg	<ol><li>Prepare Sesame Marinade and Dressing. Place beef top sirloin steak in plastic bag; add reserved marinade, turning to coat. Close bag securely and marinate in refrigerator 2 hours, turning once. Remove from marinade; place on rack in broiler pan so surface of meat is 3 to 4 inches from heat. Broil 14 to 16 minutes to doneness desired (rare to medium-rare), turning once. Let stand 5 minutes. Carve steak into thin slices.</li><li>Meanwhile, combine napa cabbage, romaine, carrots and radishes; place an equal amount of each on 4 individual plates. Arrange an equal number of cucumber slices in circle at top of salad greens on each plate. Mound 1/4 cup rice on each cucumber circle. Fan pea pods around both sides of rice. Arrange steak slices as spokes on salad greens, radiating down from rice. Serve dressing with salad. Makes 4 servings.</li><li>Combine dry sherry, soy sauce, vinegar, hoisin sauce and ginger; mix well. Divide mixture in half; reserve half for steak marinade. To prepare dressing, combine remaining mixture with water, green onion, sugar and oil; mix well. Yield: 1/3 cup marinade; 3/4 cup dressing.</li></ol>	japanese	45	8	f	f	t	t
+229	Japanese Souffle Cheesecake	https://spoonacular.com/recipeImages/Japanese-Souffle-Cheesecake-648501.jpg	<ol><li> Add 500 ml water into a big baking tray ( that the tin you use for the cheesecake can fit in) and place the tray in the oven then preheat the oven to 160c.Line the base and side of a 18-20 cm springform/cake tin with parchment paper. Then use a big piece of foil to wrap the tin around from the bottom upto top of the tin side.</li><li>Place the butter, creamcheese and milk in a bowl set over a saucepan of barely simmering water, being careful not to let the bowl touch the water, then wait until the butter has melted, remove the bowl from the heat and give it a really good stir until the mixture is smooth, set aside and leave to cool at the room temperature.</li><li>Add the orange juice and zest to the creamcheese mixture, stir to blend then add the yolks and mix them until incorperated. Sift the flour and salt into another mixing bowl,pour over the cream cheese and egg mixture in the center of thr flour. Quickly whisk or stir everything until just blended ( don't overmix or the cake will be tough) </li><li>In a seperate mixing bowl , beat the egg white with cream of tartar until foamy, then gradually add the sugar ,few tablespoons at a time, and continue to beat at high speed until reach the soft-medium peak ( more than soft but not hard peak). Gently fold the white into the creamcheese mixture until blended.</li><li>Pour the batter into the prepared tin. Place the tin in the preheated baking tray and bake for 50-60 minutes or until  a toothpick inserted from center comes out clean. Turn the cake out on to a wire rack once taken from the oven ( the cake will shrink if left too long in the tin!). Leave to cool at room temperature, then let it set in the fridge for another hour or so before slicing and serve.</li></ol>	japanese	45	1	f	f	f	f
+230	Japanese Style Curry	https://spoonacular.com/recipeImages/Japanese-Style-Curry-648504.jpg	<ol><li>Whisk the curry powder into 1 cup cold water in a small bowl and set aside.</li><li>Heat the oil in a large pot over medium-high heat. Add the onions and salt and saute, stirring occasionally, until the onions are translucent, about 8 minutes.</li><li>Add the mushrooms and saute until they begin to soften, about 2 minutes. Stir in the potatoes and saute for 1 minute more. Add 4 cups cold water and the curry mixture and bring to a boil. Reduce the heat to low, cover and simmer, stirring occasionally, until the potatoes can easily be pierced with a fork, about 20 minutes.</li><li>Whisk the cornstarch or potato starch with the tamari and 2 tablespoons cold water in a small bowl. Add to the curry and stir gently until the sauce thickens.</li><li>Gently stir in the tofu, if using, and the peas and cook until heated through, 5 to 10 minutes. Taste and adjust the seasonings with additional curry powder, salt and-or tamari, if desired. If you like, serve with small bowls of raisins and walnuts on the side.</li></ol>	japanese	45	1	f	f	t	t
+231	Japanese Sushi	https://spoonacular.com/recipeImages/Japanese-Sushi-648506.jpg	<ol><li>Recipe one: Pour cooked rice into a tray. Finely slice the salmon and the tuna.</li><li>Put the seaweed onto a sushi mat and press rice down onto it.</li><li>Slice the mushrooms and asparagus pieces and lay along the rice. Add the wasabi. Roll the sushi and cut into slices. Serve with salmon caviar, wasabi and soy.</li><li>Recipe two: Squeeze the rice into balls and press the prawns, tuna or salmon into the top.</li></ol>	japanese	45	1	f	f	t	t
+232	Kyuri Tsukemono	https://spoonacular.com/recipeImages/Kyuri-Tsukemono-649137.jpg	<ol><li>Rough chop cucumbers.</li><li>In a medium, securely sealable container, combine soy sauce, rice vinegar, and sesame oil.</li><li>Add cucumbers to the marinade, close container and shake.</li><li>Refrigerate for 1 to 2 hours. Shake cucumbers periodically, or leave overnight to marinate. Note, the longer the cucumbers are left in the marinade the saltier they become. I've left them in the marinade for up to 3 days and the cucumbers were good.</li><li>Serve and enjoy!</li></ol>	japanese	45	4	t	t	t	t
+233	Miso Soup With Thin Noodles	https://spoonacular.com/recipeImages/Miso-Soup-With-Thin-Noodles-652078.jpg	<ol><li>Directions:</li><li>After the miso has been prepared, start adding the "stuff" to the soup pot. It can be your preference, but I opted to start with the onions and chives and then added the zucchini, parsnip, carrots, mushrooms and ginger. Cover the pot and let cook on a low flame for 20-30 minutes, tasting as you go. Add the tofu and pasta, allowing the pasta to cook for 8-10 minutes. Taste the soup, adding red pepper and turn off flame when ready. Place spinach on the bottom of your soup bowl. You can also place the spinach directly in the pot, but since it wilts so quickly I usually do it this way.</li><li>What do you usually add to your Miso Soup?</li><li>Seriously Soupy Serena</li></ol>	japanese	45	8	t	t	f	t
+234	Oriental Filet Mignon on Crisp Kataifi with Shrimp Tempura	https://spoonacular.com/recipeImages/Oriental-Filet-Mignon-on-Crisp-Kataifi-with-Shrimp-Tempura-654072.jpg	<ol><li>Combine the first three ingredients in a shallow dish and add the filet mignon steaks. Spoon the marinade over them until they are well covered, set aside for about 30 minutes, covered with plastic wrap.</li><li>Heat oven to 400o.</li><li>Line a baking sheet with parchment, and divide the kataifi into two neat rounds. Drizzle lightly with a neutral oil, and bake until golden and crisp. Remove from oven and set aside.</li><li>Meanwhile, place the corn starch, whisked egg whites and panko in separate bowls.</li><li>Roll each shrimp first in the corn starch, then in the egg whites and the in the panko. Pat them firmly with your palms to make sure the panko sticks well. Set aside on paper towels on a plate or tray. Repeat with the rest of the shrimp.</li><li>Fill a large deep skillet with oil (such as Safflower or Canola), enough to cover the shrimp when frying.</li><li>Turn BBQ to high. Meanwhile, heat oil in frying pan until very hot, and fry the shrimp, turning once or twice, for about 2 minutes until golden. Place back on paper towels and set aside in a lightly warmed oven.</li><li>When BBQ is very hot, remove steaks from marinade and grill on high for about 3-4 minutes on each side. While the steaks are grilling, add the rice vinegar, garlic, pepper flakes and ginger to the remaining marinade, and warm it up in a small saucepan until boiling, then set aside.</li><li>To serve: On each dinner plate place one mound of kataifi, topped by sliced filet mignon, drizzle with 2 spoonfuls of marinade and top with 2 fried shrimp. Serve with your favorite steamed vegetable(s) or stir fry.</li></ol>	japanese	45	2	f	f	f	t
+235	Soba Noodle In Kombu Dashi With Teriyaki Salmon	https://spoonacular.com/recipeImages/Soba-Noodle-In-Kombu-Dashi-With-Teriyaki-Salmon-660493.jpg	<ol><li>To make kombu dashi, soak the dried kelp/seaweed in water for 2 hours. Put the kombu and water in a cooking pot. Put on medium heat. Turn off the heat when the water comes to a boil. Then, remove the kombu with a strainer. The remaining liquid is your kombu dashi. You can leave some kombu in the soup.</li><li>Cook the soba noodles according to the packet. Drain and set aside.</li><li>To make teriyaki salmon, marinate salmon filet/loin with sake, soya sauce, mirin, and sugar.</li><li>Heat up a pan with oil. Put the skin side down and cook for 3 minutes or until crispy. Turn and cook the other side for another 2-3 minutes. Pour any remaining sauce.</li><li>Remove from heat. Drizzle any remaining sauce from the frying pan.</li><li>To serve the soba, heat up the broth. In a bowl, serve good portion of Soba noodles. Lardle good amount of kombu dashi over the noodles. Garnish with goji berries if desired. Place the teriyaki salmon on top of the noodles. Sprinkle with some toasted sesame seeds.</li></ol>	japanese	45	2	f	f	f	t
+236	Classic Matzo Ball Soup	https://spoonacular.com/recipeImages/Classic-Matzo-Ball-Soup-639616.jpg	<ol><li>Wash the chicken with cold water and place in pot. Cover with water and bring to a simmer (do not boil or your broth won't be clear).</li><li>Skim off bubbling foam as it forms. Add celery, carrots, onion, herbs, salt and pepper and continue to simmer for about 45 minutes.</li><li>Pour soup through strainer and let cool. When broth has completely cooled, remove the chicken meat and skim off the fat and save for the matzo balls.</li><li>In a mixing bowl, mix together 4 eggs and 4 tablespoons chicken fat (or vegetable oil). Stir in the matzo meal and salt. Add 1/4 selter water. Cover and refrigerate for at least 1 hour.</li><li>Form the matzo dough into teaspoon-size balls.</li><li>Bring the chicken broth to a boil. Add the matzo balls, cover, and cook for 20 minutes.</li><li>Serve immediately.</li><li>Garnish with fresh dill or parsley.</li></ol>	jewish	45	6	f	f	t	t
+237	Jewish Mandlebrot	https://spoonacular.com/recipeImages/Jewish-Mandlebrot-648587.jpg	<ol><li>1. In medium bowl, combine eggs and 1 cup each sugar and salad oil. Beat until well combined.</li><li>2. Sift flour with baking powder into very large bowl.</li><li>3. Make a well in the center; pour in egg mixture. Stir around the bowl using a wooden spoon, until well blended.</li><li>4. Turn dough out onto lightly floured pastry cloth. With flour knead until smooth, about 5 minutes.</li><li>5. Preheat oven to 350 degrees. Grease lightly roasting pans or cookie sheets. In small bowl mix together filling (nuts, sugar, cinnamon and raisins).</li><li>6. Divide dough into 5 equal parts.</li><li>7. Roll each into 10x12 rectangle. Roll out on oiled surface.</li><li>8. Brush lightly with tsp. oil. Spread 5 tbsp. preserves; sprinkle 1/2 cup mixture evenly around. From long side, roll as for jelly roll; pinch each end.</li><li>9. Place 5 loaves in pans 1/2 inch apart. Put seam side up. Bake 45-50 minutes or until golden brown.</li><li>10. Remove to wire rack; cool 10 minutes before removing from pan. Cool completely. Cut into 12 diagonal slices. If desired, sprinkle with confectioners' sugar..</li><li>11. Store covered in cool, dry place. Mellows with age.</li></ol>	jewish	45	12	t	f	f	f
+238	Jojo's Potato Pancakes	https://spoonacular.com/recipeImages/Jojos-Potato-Pancakes-648608.jpg	<ol><li>As you grate your potatoes have a large bowl of ice water ready to put then in so that they do not brown.</li><li>Add all other ingredients to another bowl without mixing.  Drain potatoes well and then place on either a thin towel or cheese cloth and squeeze as much of the liquid out as possible, then add to the rest of the ingredients and mix.  Use your hands to bring mixture together and make into small flat pancakes.  If the mixture is too wet and will not form then add a bit more flour.     Add 1 or 2 tablespoons of olive oil to a very hot frying pan and fry one side of the pancake until crispy and brown.  Flip and cook the other side.   Serve these hot with apple sauce or sour cream.</li></ol>	jewish	45	16	t	f	t	t
+239	Latkes	https://spoonacular.com/recipeImages/Latkes--Fried-Vegetable-Pancakes-from-Europe-and-the-Middle-East-649300.jpg	<ol><li>1. Skin the vegetables and in a standard food processor, grate them into a suitable bowl.</li><li>2. Take a handful of the grated vegetables and squeeze as much moisture from it as possible. Then place on a paper towel. Continue until you have squeezed out as much of the moisture as you can.</li><li>3. Clean and dry the original bowl and repeat the process of squeezing the vegetables dry but putting them in the bowl when finished. Then stir them to mix thoroughly.</li><li>4. In a separate bowl, beat the egg with the flour to form a sticky glue that will hold the latkes together.</li><li>5. Mix the sticky egg and flour with the vegetable mixture and form into flat pancakes about 3 to 4 inches in diameter then place on a cutting board.</li><li>6. Heat about 1/8 inch of peanut oil in a 10 inch cast iron skillet over medium high heat until a drop of water sizzles upon contact.</li><li>7. Place three of the pancakes into the skillet, press down with a spatula to thin them and cook until the edges start to turn deep brown. Flip them over carefully and cook for 2 to 3 minutes more.</li><li>8. Remove from pan and place on paper towels to drain excess oil.</li><li>9. Repeat until all are cooked and drained then place in a 175-200*F warming oven until ready to be served.</li></ol>	jewish	45	2	t	f	f	f
+240	Mama's Challah	https://spoonacular.com/recipeImages/Mamas-Challah-650703.jpg	<ol><li>Mix in tall glass: 3 T. flour, 2 T. sugar, both packages of yeast. Stir mixture slightly then add  cup lukewarm water (100-115. measure using liquid thermometer) Let this bubble & rise to brim of glass for about 10 minutes. (NOTE: This should bubble up to the top. If it doesnt start to foam within in a few minutes, try again with warmer water.) In the meantime.</li><li>In medium bowl (bowl A), combine 3 cups flour and 2 tsp. salt</li><li>In larger bowl (bowl B) whisk together brown sugar, oil, 2 eggs</li><li>Pour contents from bowl A into bowl B</li><li>Add contents of glass into bowl B</li><li>Add another 1  cups lukewarm water (110-115 degrees) into bowl B</li><li>Add 4 more cups flour into bowl B</li><li>Mix everything with wooden spoon at quick pace! When its too thick to mix with spoon, transfer dough to floured wooden board or other surface for about 5 minutes.</li><li>Keep hands floured, add small amounts flour by hand when dough gets sticky. It should be smoothnot too loose, not too, firm, not too sticky. Scrap off bits of dough from board, so surface is clean, & smooth. Form into a round.</li><li>Lightly oil another large bowl, place dough in bowl, turn over to coat with oil.Cover bowl with lightly damp towel.</li><li>Have warm oven ready (NOTE: preheat oven to 150 then turn off before putting dough in)</li><li>Place bowl in oven for 45 minutes / 1 hour. At 45 minutes check to see if doubled in size.</li><li>Remove bowl from oven, dip fist into flour, very gently punch 10-12 times to punch out air.</li><li>Knead again on floured board 5 minutes, add a bit of oil to bowl again, make round; return dough to bowl, cover, return to oven, let rise again 30/40ish minutes.</li><li>Punch down again, knead into a round. Gently divide into 2 loaves with sharp knife do not saw. Pre-heat oven to 350.</li><li>Place 1 loaf aside in bowl. With remaining loaf, knead with 1 hand into ball (NOTE: if using raisins, add them here), then divide into 3 pieces, braid on lightly floured board. Roll out, fatter in middle, skinny on ends of each rope. Pinch ends together, tuck under. Repeat with other loaf.</li><li>Place on oiled cookie sheet. Make egg wash  mix 1 egg & a bit of water, brush over loaves. Bake 30 minutes.</li></ol>	jewish	45	16	t	f	f	t
+241	Pineapple and Noodle Kugel	https://spoonacular.com/recipeImages/Noodle-Kugel-with-Pineapple-Gluten-free--Dairy-Free-653234.jpg	<ol><li>Preheat the oven temperature to 350 degrees F</li><li>Fill a medium stockpot with water set over high heat.  When water boils add 2 tablespoons kosher salt, then add pasta, stir well to prevent sticking.</li><li>Stir occasionally, cook for 8-10 minutes.</li><li>Let it sit in the water for a few minutes before transferring to a large glass, or heatproof bowl.</li><li>Meanwhile prepare other ingredients.</li><li>Pasta should cool off a bit during your preparation of the other ingredients.</li><li>Add coconut milk, creamer, pineapple, sugar, xylitol, cinnamon, nutmeg, oil, combine well.</li><li>Add egg yolks, stir to combine well.</li><li>Prepare the crumble.</li><li>Line 2 cupcake pans with cupcake liners.</li><li>Add noodle mixture into the cupcake liners with a dry 1/4 cup measuring spoon, filling it over the top.  Add any remaining liquid to each kugel that may look dry.</li><li>With your fingers, sprinkle  crumble over each (about 1/2 teaspoon for each).</li><li>Bake for 40-45 minutes.</li><li>Cool for 10 minutes before removing from cupcake pans.</li><li>Remove liners before serving if you like.  Serve hot or warm.</li></ol>	jewish	45	24	f	f	f	t
+242	Red Wine Braised Beef Brisket	https://spoonacular.com/recipeImages/Red-Wine-Braised-Beef-Brisket-658125.jpg	<ol><li>Preheat the oven to 325 degrees F.</li><li>On a cutting board, mash the garlic and 1/2 teaspoon of the salt together into a paste. Add the rosemary and continue to mash until incorporated. Put the garlic-rosemary paste in a small bowl and add 2 tablespoons of olive oil; stir to combine.</li><li>Season both sides of the brisket with a fair amount of kosher salt and ground black pepper. Place a large roasting pan or Dutch oven over medium-high flame and coat with the remaining olive oil. Put the brisket in the roasting pan and sear to form a nice brown crust on both sides. Lay the vegetables all around the brisket and pour the rosemary paste over the whole thing. Add the wine and tomatoes; toss in the parsley and bay leaves. Cover the pan tightly with aluminum foil and transfer to the oven. Bake for about 3 to 4 hours, basting every 30 minutes with the pan juices, until the beef is fork tender.</li><li>Remove the brisket to a cutting board and let it rest for 15 minutes. Scoop the vegetables out of the roasting pan and onto a platter, cover to keep warm. Pour out some of the excess fat, and put the roasting pan with the pan juices on the stove over medium-high heat. Boil and stir for 5 minutes until the sauce is reduced by 1/2. (If you want a thicker sauce, mix 1 tablespoon of flour with 2 tablespoons of wine or water and blend into the gravy).</li><li>Slice the brisket across the grain (the muscle lines) at a slight diagonal.</li></ol>	jewish	45	10	f	f	f	t
+243	Chapchae - Korean Stir-Fried Noodles	https://spoonacular.com/recipeImages/Chapchae-(Korean-Stir-Fried-Noodles)-637440.jpg	<ol><li>Cook noodles according to package directions</li><li>In a large pan or wok over medium heat, heat olive oil and 1 Tbsp sesame oil</li><li>Add onion slices and garlic and saut for about 1 min</li><li>Add rest of vegetables and cook for 4-5 min, until the vegetables are half-cooked and still a bit crispy</li><li>Turn heat to low and add cooked noodles, soy sauce, sugar, and the remaining sesame oil</li><li>Mix to combine and cook for another 2 min</li><li>Add salt or more soy sauce if needed (or if you want it a bit sweeter, add a touch more sugar)</li><li>If using sesame seeds, add them at finish</li></ol>	korean	15	4	t	t	t	t
+244	Dak Bulgogi - Korean BBQ Chicken	https://spoonacular.com/recipeImages/Dak-Bulgogi-(Korean-BBQ-Chicken)-641208.jpg	<ol><li>Peel off thigh skins with a paring knife. Trim off excess fat. Cut into one single "steak" piece working around the bone. Save smaller pieces for cooking as well. Set aside in a large mixing bowl.</li><li>Pulse the marinade ingredients in a food processor until smooth.</li><li>Coat the chicken pieces with the marinade. Marinate overnight in the refrigerator or a minimum of 6-12 hours. With a skewer or toothpick, piercing the thighs for extra marinade absorption is optional.</li><li>Preheat a skillet or non stick pan over medium heat. Add the chicken thighs and cook for about 15-20 minutes or until cooked through. To ensure fully cooked thighs, use a meat thermometer and check for a reading of 165-170F.</li><li>Transfer to a serving plate and garnish with scallion. Serve with lettuce leaves. Enjoy!</li></ol>	korean	400	4	f	f	t	t
+245	Dolsot Bibimbap	https://spoonacular.com/recipeImages/Dolsot-Bibimbap-641559.jpg	<ol><li>Marinate beef and tofu overnight in Korean barbecue marinade.</li><li>Cook rice and keep warm.</li><li>In sesame oil and a pinch of salt, saut carrots and zucchini until almost tender. If necessary add a bit more sesame oil and toss in the remaining vegetables, garlic and a pinch of sugar and continue to saut approximately 2 minutes, or until the vegetables are almost done (they will continue to cook in the dolsot or stone bowl)</li><li>Broil or barbecue the beef.</li><li>Pour a 1/2 - 1 teaspoon of sesame oil in the base of each stone bowl. Divide rice between the 4 stone bowls. Arrange all ingredients on top of the rice side by side around the bowl. Put a teaspoon (or more depending on taste) of the Korean chili paste on top of the vegetables and in the middle of the bowl place an egg yolk. Pour a tablespoon of sesame seed oil around the edge of the bowl.</li><li>Place stone bowl on top of stove and on high heat leave for approx 5 minutes or until you can hear the rice popping and crackling.</li><li>Remove from heat and serve. Be very careful as the stone bowl will be extremely hot.</li></ol>	korean	45	4	f	f	t	t
+246	Galbi Tang (Korean Beef Short Ribs Soup)	https://spoonacular.com/recipeImages/Galbi-Tang-(Korean-Beef-Short-Ribs-Soup)-644135.jpg	<ol><li>1.Soak the ribs in a bowl of cold water for about an hour to drain the blood, changing the water if necessary.</li><li>2.Mix sliced radish and add with the seasoning sauce.</li><li>3.After soaking and rinsing the ribs, place in a large pot and cover with water until submerged. Add half onion, few garlic pieces, and a slice of ginger (this step is optional).</li><li>4.Bring to a boil for about 15 minutes, removing any foam or scum that float to the top.</li><li>5.Drain and rinse the ribs under cold water removing any impurities. Add new water just until ribs are submerged (more water can be added if desired).</li><li>6.Bring to a boil, and then simmer over medium heat for 20 minutes.</li><li>7.Add the radish and sauce mixture and cook for an additional 10 minutes.</li><li>8.Lastly, add the vermicelli noodles and scallions and cook for another few minutes.</li><li>9.Garnish with thinly cut egg strips and toasted sesame seeds.</li><li>10.Serve with rice and other banchan (side dishes).</li></ol>	korean	45	4	f	f	f	t
+247	Kimchi	https://spoonacular.com/recipeImages/Kimchi-648910.jpg	<ol><li>Shred cabbage in 2 inch strips. Mix with half the salt. Let stand 30 minutes. Wash and drain.   </li><li>Mix the scallions, garlic, ginger, chili pepper, cabbage and the rest of salt. Pack into a crock or glass jar.</li><li>Put the containers aside for three or four days in a cool location. After that, store it in the refrigerator.</li></ol>	korean	45	6	t	t	t	t
+248	Kimchi (Korean Fermented Spicy Cabbage)	https://spoonacular.com/recipeImages/Kimchi-Kimchee-Gimchi-(Korean-Fermented-Spicy-Cabbage)-648916.jpg	<ol><li>1. Remove discolored, bruised outer leaves of cabbage and rinse well under cold water. Cut cabbage head into desired pieces; smaller 2-inch pieces is recommended for easier access later.  In 3 separate large bowls, prepare one cup sea salt and water mixture for each bowl. Sprinkle remaining 1 cup of sea salt onto the leaves of the cabbages before soaking them in the salt water. Cabbages should be partially submerged in the salt water. Let sit for a minimum 6 hours but 12 hours is preferred.</li><li>2. Once finished soaking, rinse the cabbage leaves thoroughly under cold water several times. Remove water from the cabbage by giving them a squeeze (they should have a rubbery texture by now) to remove excess water. Set in a colander or basket for at least 2 hours so the water will drain out thoroughly. Meanwhile, prepare the red pepper mixture to be mixed with cabbage leaves.</li><li>3. Prepare 3 tbsp of the sweet rice flour with 3 cups of water into a small pot. Bring to a boil and whisk until the mixture turns into a glue-like consistency. Let cool and set aside.</li><li>4. In a food processor, puree onion, garlic, ginger and some water until smooth. Pour gochugaru (chili flakes) in a large mixing bowl, add the garlic mixture puree, cooled rice glue, fish sauce, salted shrimp, sugar, and sesame seeds. Mix well and add the sliced radish and green onions.</li><li>5. Lather each cabbage piece with red pepper mixture by rubbing them well (rubber gloves highly recommended). Continue until all the cabbage leaves are covered in the red pepper mixture. Pack them inside air-tight glass jars/containers.  Set out at room temperature for 2 days for fermentation to take place. After that, place in the refrigerator and serve as needed. The kimchi may keep for 2 or 3 months in the refrigerator.</li><li>*Making kimchi is not easy, but if done right, the rewards are endless. You can take the easy way out and purchase them at your local Korean grocery store and even possibly in the Asian foods section of your local grocery.</li></ol>	korean	45	20	f	f	t	t
+249	Kogi Kimchi Quesadillas	https://spoonacular.com/recipeImages/Kogi-Kimchi-Quesadillas-649002.jpg	<ol><li>1. In a skillet or non-stick frying pan, melt the 2 tbsp butter and add the chopped kimchi, cook over medium heat until caramelized and slightly charred. Remove any excess liquid and set aside. Seasoning with garlic powder is recommended.</li><li>2. In the same pan, saute the thin slices of beef on medium heat until browned. Add salt and pepper for seasoning. Remove any excess liquid and set aside.</li><li>3. On large pan or griddle, heat over medium heat. Brush 1 tsp vegetable or olive oil on pan and coat evenly. Place 1 tortilla on pan and spread ingredients according to preference. Make sure to leave an inch from the edges clear and top with another tortilla. Slightly press down with hand to compress the quesadilla. Drizzle some oil on the top tortilla and brush evenly to coat.</li><li>4. Heat the quesadilla until browned on the bottom, flip carefully and continue cooking until browned and blistered on both sides. When finished, carefully transfer to a cutting board and let cool for a few minutes. Cut into 4 equal pieces and transfer to serving plate. Repeat with remaining ingredients to make 4 quesadillas. Mixing and matching ingredients to your liking is encouraged. ^^</li></ol>	korean	45	4	f	f	f	f
+250	Korean BBQ Beef	https://spoonacular.com/recipeImages/Korean-Bbq-Beef-649024.jpg	<ol><li>(The Meades)</li><li>Mix it all together and marinate at least 2 hours. Can either cook it on the grill as kebabs or stir-fry by itself. Enjoy.</li><li>When I don't have sirloin tips, I use flank steak and it tastes just as good. Also, I substitute hot pepper sesame oil and also add cayenne pepper for more kick. The sugar allows the beef to caramelize a little (I tried using cane sugar once but it didn't caramelize).</li><li>NOTES: Just tried this recipe recently (4 or 5 times) and it is absolutely wonderful - from Omaha Steaks recipe book</li></ol>	korean	45	1	f	f	t	t
+251	Korean Bulgogi	https://spoonacular.com/recipeImages/Korean-Bulgogi-649034.jpg	<ol><li>Season the beef with salt and pepper. In a mixing bowl, combine the oil, soy sauce, garlic and ginger. Season with crushed red pepper to taste.</li><li>Place the meat in a shallow bowl. Pour the marinade over the meat. Cover and refrigerate for at least 1 hour or overnight. Remove and bring to room temperature. Preheat the hibachi. Remove the meat from the pan, reserving the marinade. Place the marinade in a saucepan, over medium heat. Bring to a boil and cook for 6 to 8 minutes or until the mixture reduces by 3/4. Remove, set aside, and keep warm. Grill the meat for a couple of minutes on each side, for medium rare. To serve, spoon the rice in the center of each plate. Lay the strips of meat around the rice. Drizzle the sauce over the </li><li>Yield: 4 servings</li></ol>	korean	45	1	f	f	t	t
+252	Vegetable Bibimbap	https://spoonacular.com/recipeImages/Vegetable-Bibimbap-664523.jpg	<ol><li>Marinate tofu overnight in Korean barbecue marinade.</li><li>Cook rice and keep warm</li><li>In sesame oil and a pinch of salt, saut carrots and zucchini until almost tender. If necessary add a bit more sesame oil and toss in the remaining vegetables, garlic and a pinch of sugar and continue to saut approximately 2 minutes, or until the vegetables are almost done (they will continue to cook in the dolsot or stone bowl)</li><li>Broil or barbecue the beef.</li><li>Pour 1/2 - 1 teaspoon of sesame oil in the base of each stone bowl. Divide rice between the 4 stone bowls. Arrange all ingredients on top of the rice side by side around the bowl. Put a teaspoon (or more depending on taste) of the Korean chili paste on top of the vegetables and in the middle of the bowl place an egg yolk. Pour a tablespoon of sesame seed oil around the edge of the bowl.</li><li>Place stone bowl on top of stove and on high heat leave for approx 5 minutes or until you can hear the rice popping and crackling.</li><li>Remove from heat and serve. Be very careful as the stone bowl will be extremely hot.</li></ol>	korean	45	4	f	f	t	t
+253	Winter Kimchi	https://spoonacular.com/recipeImages/Winter-Kimchi-665379.jpg	<ol><li>Soak the quartered cabbage in the brine solution for 4 hours, weighing the cabbage down with a heavy plate.</li><li>Remove and drain.</li><li>Place garlic cloves, rice, fermented shrimp, fish sauce, sugar, chilly paste and chilly flakes in a food processor and zap to a smooth paste. Stir in spring onions.</li><li>Stuff the cabbage with the paste, making sure to stuff in between the individual leaves and coating every inch of it.</li><li>Place kimchi into an airtight container and leave at room temperature for a day before leaving it to ferment further in the fridge for at least another week before consuming. I left mine for about 3 weeks.</li></ol>	korean	45	1	f	f	t	t
+254	Zomppa's Kimchi	https://spoonacular.com/recipeImages/Zomppas-Kimchi-665680.jpg	<ol><li>Peel skin off of cucumbers.</li><li>Slice the cucumbers in  of inch slices.</li><li>Place cumbers in a bowl with salt.  Let sit for 15 minutes.</li><li>With hands, squeeze liquid out of the cucumbers.</li><li>Place cucumbers back in bowl.  Add the garlic, ginger, red pepper powder, fish sauce, lemon juice, sesame oil and honey.</li><li>With hands, mush all ingredients together.  Taste.</li><li>Add more hot pepper, fish sauce or honey to adjust the taste to your liking.  8. Place in airtight container and let refrigerate for 3 hours before enjoying.</li></ol>	korean	45	1	f	f	t	t
+255	Ahi Tuna Ceviche	https://spoonacular.com/recipeImages/Ahi-Tuna-Ceviche-632021.jpg	<ol><li>In medium bowl mix soy sauce, toasted sesame oil, rice vinegar, Serrano pepper, lime juice, mint, and sesame seeds. Then add diced tuna and toss to coat.</li><li>The tuna is ready to eat as soon as it's tossed and coated but you can marinate it for a few minutes if desired. The tuna will start to turn white almost immediately, a sign that it is cooking from the acidity of the lime juice. It is not necessary to cook the tuna. In fact, it is best served immediately while it is melt-in-your-mouth tender and moist.</li><li>Serve immediately by mounding atop crackers, chips, micro-greens, or even roasted sweet potato slices.</li></ol>	latinAmerican	45	3	f	f	t	t
+256	Carne Asada Burritos	https://spoonacular.com/recipeImages/Carne-Asada-Burritos-637133.jpg	<ol><li>In a medium sized bowl combine beef, cumin, paprika, pepper, salt and lime juice. Toss to combine and coat meat. Cover and place in refrigerator for at least 30 minutes.</li><li>Prepare pico de gallo in a small bowl. Cover and let sit until ready to assemble burritos.</li><li>Prepare avocado slices and drizzle with fresh lime juice to keep them from browning.</li><li>In a large skillet heat olive oil over medium-high heat. Add onion and garlic to pan and cook just until garlic is fragrant. Add beef to pan and cook for 3-5 minutes.</li><li>Warm tortillas in a large pan over medium heat.</li><li>Place  cup meat, 2 tablespoons of pico de gallo, and a double layer of spinach leaves in the center of each tortilla. Fold sides over filling, then roll one edge over filling and roll until filling is completely covered. Place seam side down on plate.</li><li>Serve with lime wedge and sliced avocado.</li></ol>	latinAmerican	30	6	f	f	f	t
+257	Chimichurri	https://spoonacular.com/recipeImages/Chimichurri-638619.jpg	<ol><li>Put the parsley, cilantro and garlic into a medium mixing bowl and toss to combine. Add the vinegar, salt, red and black pepper and stir. Pour in the olive oil and mix well to combine. Allow the mixture to sit for 30 minutes to allow the flavors to blend. This sauce is not only great on steak but I think it would also be wonderful on pork and chicken as well.</li></ol>	latinAmerican	45	4	t	t	t	t
+258	Chimichurri Skirt Steak with Grilled Asparagus	https://spoonacular.com/recipeImages/Chimichurri-Skirt-Steak-with-Grilled-Asparagus-638626.jpg	<ol><li>Place all chimichurri sauce ingredients except for the olive oil in a food processor &amp; pulse until well chopped. While the food processor is going, slowly pour the olive oil into the mixture until blended.  Reserve half of the sauce to serve on the side with the meal.</li><li>Season skirt steaks with salt &amp; pepper on bother sides.  Spoon the remaining chimichurri sauce over the steaks &amp; let marinate for 30 minutes up to overnight.</li><li>Pre-heat the grill to 350 to 400 F.</li><li>In a plastic resealable bag, add asparagus, olive oil, garlic, salt &amp; pepper.  Shake to coat &amp; place in a grill basket.</li><li>Place the steak &amp; grill basket of asparagus directly over a hot grill.  Gently toss the asparagus for even grilling &amp; baste with garlic, olive oil mixture  10 minutes.</li><li>Grill the skirt steak to desired temperature  5 to 8 minutes per side.</li><li>Remove from grill &amp; let steak rest for 10 minutes before slice long strips.  Spoon reserved chimichurri sauce over steak &amp; serve with asparagus on the side.</li></ol>	latinAmerican	45	4	f	f	t	t
+259	Dulce De Leche	https://spoonacular.com/recipeImages/Dulce-De-Leche-641723.jpg	<ol><li>Combine the first four ingredients in in a large saucepan and place over medium heat. Bring to a simmer, stirring occasionally, until the sugar has dissolved.</li><li>Once the sugar has dissolved, add the baking soda and stir to combine. Reduce the heat to low and cook uncovered at a bare simmer. Stir occasionally. Continue to cook for 1 hour.</li><li>Remove the vanilla bean after 1 hour and continue to cook until the mixture is a dark caramel color and has reduced to about 1 cup, approximately 1 1/2 to 2 hours.</li><li>Strain the mixture through a fine mesh strainer.</li></ol>	latinAmerican	45	4	t	f	t	f
+260	Dulce De Leche Cheesecake	https://spoonacular.com/recipeImages/Dulce-De-Leche-Cheesecake-641730.jpg	<ol><li>Toss the cookie crumbs into the melted butter in a mixing bowl. Reserve 1 tablespoon of the mixture for the topping. Press the rest of the mixture onto the bottom and up 3cm high of a greased 24cm spring form pan. Chill until its ready for use.</li><li>Using electric mixer beat balance cream cheese and sugar in a large mixing bowl until smooth. Add yogurt and eggs, beating until just blended. Stir in cornstarch, dulce de leche, lemon juice and zest until blended.</li><li>Pour the mixture into the crust and sprinkle the top with reserved cookie crumbs. Steamed bake the cheesecake at 165C/330F for 65 minutes until almost set. Turn oven off. Leave the cake with the oven door ajar for 1 hour. Cool completely and chill at least 4 hours or overnight until firm.</li></ol>	latinAmerican	45	10	t	f	t	f
+261	Dulce De Leche Shortbread Cookies	https://spoonacular.com/recipeImages/Dulce-De-Leche-Shortbread-Cookies-641731.jpg	<ol><li>Using your fingers, combine all the ingredients to make a uniform dough. If it seems a little dry (like mine was) add in a TSP of cold water until it is the correct dough consistency.</li><li>Roll out to 1/2 inch thickness  I was in a place with no rolling pin when I was making these so I used a wine bottle, it works really well if you are in a pinch!</li><li>Cut them into circles  I used a shot glass and that was actually the perfect size! They were either 1 big bite or 2 little ones, just enough at one time.</li><li>Dont forget to keep using your scraps to make more cookies.</li><li>Bake the cookies at 350 F for 10-15 minutes on a parchment lined cookie sheet.</li><li>When the cookies are cool, spread with 1 TBSP dulce de leche. If you want, sprinkle with either pink himalaya salt or sea salt. Enjoy!</li></ol>	latinAmerican	45	1	f	f	f	f
+262	Dulce De Leche Swirled Amaretto Frozen Yogurt	https://spoonacular.com/recipeImages/Dulce-De-Leche-Swirled-Amaretto-Frozen-Yogurt-641732.jpg	<ol><li>Drained the yogurt overnight</li><li>Mix the amaretto cream into the yogurt & churn in your ice cream maker as according to the manufacturer's instruction.</li><li>Warm the dulce de leche, or caramel in the microwave for 30 seconds. When yogurt is done churning, layer drizzles of dulce de leche into the yogurt and store in the freezer.</li></ol>	latinAmerican	45	4	t	f	t	f
+263	Flank Steak With Chimichurri Sauce	https://spoonacular.com/recipeImages/Flank-Steak-With-Chimichurri-Sauce-643055.jpg	<ol><li>For the Sauce: Mix parsley, oregano, red pepper flakes (if you are using) and garlic in a food processor or blender and mix until combined.  Drizzle in olive oil and red wine vinegar and process until combined. </li><li> Season sauce to taste with salt and pepper.  Let set for at least 1 hour.</li><li>Season steak with salt and pepper.  Grill over medium high heat for 5 minutes on each side for medium rare.  Let rest for 5 minutes.</li></ol>	latinAmerican	75	4	f	f	t	t
+264	Fresh and Simple Swai Ceviche	https://spoonacular.com/recipeImages/Fresh-and-Simple-Swai-Ceviche-643428.jpg	<ol><li>Place the diced fish into  of the lime juice and refrigerate for at least 3 hours. Strain when ready to proceed.</li><li>Mix the veggies with the remaining lime juice.</li><li>Stir in the fish and cilantro. Drizzle with olive oil and add the chile-garlic sauce. Gently toss.</li><li>Salt and pepper to taste. Serve with tortilla chips or a salad.</li></ol>	latinAmerican	45	4	f	f	t	t
+265	Gluten-Free Tres Leches Cake	https://spoonacular.com/recipeImages/Gluten-Free-Tres-Leches-Cake-644907.jpg	<ol><li>Preheat oven to 350 degrees. Generously butter a 13X9 baking dish. In a large bowl, beat  c sugar, egg yolks, and butter until light and fluffy, about 5 minutes. Fold in the vanilla extract, orange zest, cinnamon, sorghum flour, masa harina, baking powder, xanthan gum, and milk.</li><li>In another large bowl, beat egg whites to soft peaks, adding cream of tartar after about 20 seconds. Gradually add the remaining  c sugar and continue beating until egg whites are glossy and firm, but not dry.</li><li>Gently fold the egg whites into the cake mixture. Pour this batter into the baking dish, spreading out evenly.  Bake until the cake is golden and a toothpick inserted in the center comes out clean, about 25 minutes. Pierce cake all over with a toothpick.</li><li>Whisk together the milks, and pour evenly over cake. Allow to cool for a bit, and cover and place in refrigerator for 4 hours, up to overnight.</li><li>Before serving,  place the whipping cream, sugar, and vanilla in a mixer bowl and whisk to stiff peaks, and nice and thick. Spread over cake and top with strawberries and mint leaves.</li><li>Allow to chill in refrigerator until ready to serve.</li></ol>	latinAmerican	45	10	f	f	t	f
+266	Lomo Saltado Beef Stir Fry	https://spoonacular.com/recipeImages/Lizs-Lomo-Saltado-650225.jpg	<ol><li>Prepare the frozen french fries according to directions. Set aside when complete and keep warm.</li><li>Heat a large wok or skillet over medium-high heat. Saute the onions and bell peppers until translucent, about 10 minutes. Add the garlic and jalapeno and cook for an additional minute. Mix everything until combined.</li><li>Add the beef chunks, cumin, complete seasoning, soy sauce and red wine vinegar sauce. Mix well and cook until beef is no longer pink about 5 to 7 minutes.</li><li>Add the tomato chunks and add the cover and cook for additional 5 minutes. When ready to serve, add the french fries and toss everything gently together.</li><li>Serve lomo saltado over a bed of white rice and garnish with freshly chopped cilantro leaves. Enjoy with aji sauce on the side.</li></ol>	latinAmerican	45	4	f	f	t	t
+267	Crispy-Crowned Guacamole Fish Fillets	https://spoonacular.com/recipeImages/Crispy-Crowned-Guacamole-Fish-Fillets-157399.jpg	<ol><li>Prepare the guacamole by dicing the onion, cutting the tomatoes, and crushing the garlic. Mix these ingredients with the ripe avocado and spice with salt, pepper, cilantro, and tabasco.</li><li>Fry the fish for 5 minutes.</li><li>Crush the tortilla chips with your hands.</li><li>Cut the bell peppers in strips.</li><li>Place the fish on a plate, use a fork to distribute the guacamole on the fish and crown the fish with the crispy crushed tortilla chips.</li></ol>	mexican	30	2	f	f	t	t
+268	Black Bean and Peppers Taco Filling	https://spoonacular.com/recipeImages/Black-Bean-and-Peppers-Taco-Filling-635058.jpg	<ol><li>In a skillet add olive oil, onions and bell pepper. Cook until tender, about 3  5 minutes. Add tomatoes and seasonings, saute for 10 minutes. Add black beans and cook until warm.</li><li>Serve with tortillas.</li><li>Additional toppings: Romaine Lettuce, Cheese, jalapenos, salsa, hot sauce, avocado, and greek yogurt</li></ol>	mexican	45	8	t	t	t	t
+269	Black Bean and Veggie Burgers with Corn Salsa	https://spoonacular.com/recipeImages/Black-Bean-and-Veggie-Burgers-with-Corn-Salsa-635059.jpg	<ol><li>Mix all the salsa ingredients together and chill for about an hour before serving.</li><li>Preheat your oven to 425 degrees F. Spray two baking sheets lightly with the nonstick spray and set aside.</li><li>Add the carrot to a bowl with a little water, cover it and microwave for about two minutes. Once cooled, mash them and add them to the mashed black beans. Mix together then add the remaining vegetables and mix well.</li><li>Add the oatmeal, breadcrumbs, seasoning and salsa. Mix together until combined. Add the flour and mix well. If the mixture is too moist, add more flour and adjust the seasoning, as needed.</li><li>Form the mixture into patties and place them on the baking sheets. Bake for about 20 minutes, flipping them halfway through cooking. When the burgers are finished, serve with the Corn Salsa or your favorite topping.</li></ol>	mexican	45	8	t	t	f	t
+270	Chilled Avocado and Cucumber Soup with Prawn and Scallop Salsa	https://spoonacular.com/recipeImages/Chilled-Avocado-and-Cucumber-Soup-With-Prawn-and-Scallop-Salsa-638588.jpg	<ol><li>In a small sauce pot, combine the minced shallots, red chili pepper flakes and oil.</li><li>Heat the oil over very low heat and simmer for about 3 minutes.</li><li>Remove from the heat and let stand for 3 minutes. Stir in the lime zest and the water.</li><li>Let stand for at least an hour, then strain the oil into a small bowl or jar.</li><li>Adding water in the oil with the lime zest dissolves and carries water-soluble flavors.</li><li>Set aside, while you prepare the soup.</li><li>Place the cucumber, avocado and green onion in a blender.</li><li>Squeeze the lime juice and add 2 tablespoon of the miso paste.</li><li>Blend the ingredients adding the water to dilute the mixture until smooth and creamy.</li><li>Season the soup (to taste) with more miso paste and lime juice if necessary.</li><li>Transfer the soup into a large bowl, cover and chill in the refrigerator for at least 2 hours.</li><li>To cook the prawns and scallops, heat a skillet over medium-high heat.</li><li>Then, season the prawns and scallops with salt and pepper on both sides.</li><li>Once the pan is nice and hot, add one tablespoon of the oil.</li><li>Add the prawns and scallops and cooked until they are done. </li><li>Remove and transfer to a bowl. Then, add the orange pieces, black olives and cilantro.</li><li>Cut the prawns into 3 or 4 pieces depending on the size and add these to the bowl.</li><li>Season with a little bit of sea salt and black pepper (if necessary) and drizzle with chili-lime oil.</li><li>Toss gently with a spoon to combine.</li><li>To serve the dish, bring out the four individual bowls and the avocado soup from the fridge.</li><li>Ladle the soup onto the bowls, then garnish with the prawn and scallop salsa and finish with more drizzle of the chili-lime oil.</li></ol>	mexican	45	4	f	f	t	t
+271	Corn Avocado Salsa	https://spoonacular.com/recipeImages/Corn-Avocado-Salsa-640062.jpg	<ol><li>Preheat oven to 375 degrees.</li><li>Spread corn flat on a baking sheet.</li><li>Spray lightly with olive oil spray.</li><li>Roast corn in the oven for about 8-10 minutes. (Be careful not to brown too much or burn.)</li><li>Remove from heat and allow to cool.</li><li>Finely chop red pepper and garlic and mix in a bowl.</li><li>Peel and coarsely chop avocado and add to bowl.</li><li>Add cooled corn.</li><li>Mix in cumin and vinegar and blend well.</li></ol>	mexican	25	2	t	t	t	t
+272	Flank Steak with Herbed Salsa	https://spoonacular.com/recipeImages/Flank-Steak-with-Herbed-Salsa-643061.jpg	<ol><li>Preheat a grill pan or light a grill.</li><li>In a medium bowl, combine the tomatoes with the scallions, cilantro, Jalapeno, garlic and lemon  lime juice. Season the salsa with salt and freshly ground pepper.</li><li>Season with salt and pepper the flank steak.</li><li>Using a grill pan brush a shadow of oil on the bottom of it. Place the pan over high heat and when hot add the flank steak. Cook until nicely charred outside and medium rare inside. About 3 minutes per side.</li><li>Transfer the steak to a carving board and let rest for 5 minutes.</li><li>Thinly slice the steak across the grain and serve with the herbed salsa.</li></ol>	mexican	45	4	f	f	t	t
+273	Grilled Chicken With Pineapple Salsa	https://spoonacular.com/recipeImages/Grilled-Chicken-With-Pineapple-Salsa-645670.jpg	<ol><li>Make marinade of 1/3 cup lime juice, 1/3 cup olive oil, 1 teaspoon salt, and 1/4 teaspoon pepper.</li><li>Marinate chicken overnight. Combine salsa. Saute pineapple, mango, peppers, onions, and garlic. Add lime juice and honey and refrigerate (up to 24 hours).</li><li>Bring to room temperature to serve. Grill chicken breasts and serve with sauce and white rice.</li></ol>	mexican	45	1	f	f	t	t
+274	Grilled Fish Tacos with Spicy Tequila-Lime Guacamole	https://spoonacular.com/recipeImages/Grilled-Fish-Tacos-W--Spicy-Tequila-Lime-Guacamole-645711.jpg	<ol><li>Using a fork or potato masher, mash avocado in a bowl.</li><li>Add yogurt, lime juice, lime zest and tequila; mix well.</li><li>Add jalapeno, onion, salt/pepper and cilantro; stir until all ingredients are incorporated and smooth.</li><li>Adjust seasonings if desired.</li><li>Pour finished guacamole into serving bowl; set aside.</li><li>Preheat a grill pan to med-high heat.</li><li>Drizzle fish on each side with olive oil and season with salt and pepper.</li><li>Grill fish on each side until opaque, about 4 mins.</li><li>Remove fish from grill and flake into large chunks with a fork.</li><li>Heat tortillas on the grill pan until blisters form.</li><li>To assemble tacos, spread a dollop of guacamole onto tortilla, add fish, and top with shredded lettuce and chopped tomatoes (or whatever toppings you prefer).</li><li>Optional: squeeze additional lime juice over the fish.</li><li>Enjoy with a Mexican beer or tasty margarita! :)</li><li>Note: if you have any leftover guacamole, serve it as a dip with tortilla chips!</li></ol>	mexican	45	4	f	f	f	f
+275	Grilled Salmon With Cherry, Pineapple, Mango Salsa	https://spoonacular.com/recipeImages/Grilled-Salmon-With-Cherry--Pineapple--Mango-Salsa-645856.jpg	<ol><li>Combine all the above ingredients except the olive oil and salmon into a mixing bowl. Stir gently. Add one splash of olive oil and taste for seasoning. Cover and refrigerate until ready to use.</li><li>Lightly oil and season a salmon fillet with a splash of olive oil and salt and pepper. Place flesh side down on a cleaned and oiled grill or pan. Cook for 2-4 minutes depending on the thickness. Flip and cook for another 2-4 minutes. Salmon will be cooked when the flesh is no longer opaque. I tend to like it pretty rare, but it's your salmon- cook it how you want it!</li><li>Top salmon with salsa and serve!</li></ol>	mexican	45	2	f	f	t	t
+276	Grilled Salmon With Mango Salsa	https://spoonacular.com/recipeImages/Grilled-Salmon-With-Mango-Salsa-645863.jpg	<ol><li>To make salsa: In bowl, combine mango, pineapple, onion, cilantro and lime juice. Season to taste with salt. Set aside 20 minute to 1 hour, to blend.</li><li>Heat grill to medium-high. Season salmon with salt and pepper. Place fish on hot grill, skin-side down, and cook 5 minutes. Do not worry if skin is blackened. Turn and grill fish until it is no longer raw in center, about 3 minutes, depending on thickness of the fish.</li><li>To serve, place piece of grilled salmon in center of each of 4 dinner plates. Arrange about 1/4 cup salsa along either side of fish.</li><li>This recipe yields 4 servings.</li></ol>	mexican	45	4	f	f	t	t
+277	Homemade Hard Taco Night with Carnitas and Pinto Beans	https://spoonacular.com/recipeImages/Homemade-Hard-Taco-Night-with-Carnitas-and-Pinto-Beans-647015.jpg	<ol><li>Into a hot pan sizzling with a glug or two of vegetable oil I sear my pork, using tongs to turn each piece over until each side of each cube is nicely browned.</li><li>I add 1 cup of red onion and garlic to my sizzling pork pieces, and toss well.  I cook this until the onion softens about 4 minutes.</li><li>Then I add my orange juice and the juice from 1/2 a lime, which I stir in well.   I bring them just to a boil before I add my chicken stock, which covers about 3/4 of my meat.  I set the heat to medium, and bring this to a slow simmer to braise for the next three hours.</li><li>I fried taco shells by adding a few inches of vegetable oil to a deep fry pan and set it to high heat.  When sizzling, using tongs, I floated 1/2 of a 10 corn tortilla on the surface of the blistering oil  about 5 seconds did the trick, or until it set.</li><li>Moving quickly but carefully, I flipped the tortilla over, rolling it in the oil, releasing the tongs from one edge and immediately catching the other edge in their grip.</li><li>Holding the other edge under the hot oil, I fried it until crunchy, then dipped the center fold into the pot to crisp it up last.   Be careful to pour all the oil out when lifting your shells from the fryer.  I sprinkled them with sea salt while hot</li><li>I put my small deep pan, with a few glugs of oil, over the heat for about 10 minutes before adding 1/2 a cup of my diced onion and some minced garlic.  I cook this until just softened and fragrant.  Then I add about a teaspoon of black pepper, a healthy sprinkling of cumin, and a dash of sea salt.  Finally, I add my can of pinto beans, liquid and all.  I cover and bring to a simmer, heating all the beans through.</li><li>I peel and mash the avocados, adding fresh cilantro, a dash of minced garlic, a squeeze of lemon juice, sea salt, cracked black pepper, 1/4 cup diced red onion, and ground cumin to make guacamole.</li><li>In another bowl, Ive mixed my diced tomatoes, 1/4 cup diced red onion, minced garlic, fresh cilantro, the juice of 1/2 a lime, a glug of oil, and a dash of white vinegar together (along with some diced jalapeno, if you want heat), to make a quick fresh delicious pico de gallo.</li><li>Scoop up about 4 tablespoons of the fat from the carnitas and dump it into the beans for flavor.</li><li>After about 15 minutes, and some squishing of beans with my fork, they are thick and syrupy.</li><li>Build tacos as desired using shredded cheese, pork, beans, pico, guacamole, sour cream and cilantro.</li></ol>	mexican	240	2	f	f	t	f
+278	Mini Stuffed Mexican Bell Peppers	https://spoonacular.com/recipeImages/Mini-Stuffed-Mexican-Bell-Peppers-651977.jpg	<ol><li>1. Roast the vegetables:  Preheat oven to 400 degrees.Cut the tomatillos in half, slice the onion into 1/2 in slices and remove garlic from covering. Place on baking sheet. Roast till tomatillos are tender and start to brown, about 20 minutes.</li><li>2. Meanwhile,make the sauce: Add tomatillos, onion, garlic, tomatoes, green chilies, chipotles, chili powder, cumin, paprika, and coriander to blender or food processor. Blend until smooth.</li><li>3. In a large bowel, add the turkey, beans, and sauce, Mix together until everything is evenly distributed.</li><li>4. Cut tops off mini bell peppers and remove any seeds. Stuff turkey mixture into peppers until slightly overflowing. Place in 9 by 13 glass dish. Repeat for all bell peppers.</li><li>5. Cook at 400 for 20 minutes. For the last 5 minutes, turn on the broiler and get some color on the peppers.</li><li>6. Serve with your favorite salsa (used my Pico De Gallo from my tortilla soup), sour cream and avocado.</li><li>ENJOY!</li></ol>	mexican	45	4	f	f	t	t
+279	Nacho Mama's Cheese Nachos	https://spoonacular.com/recipeImages/Nacho-Mamas-Cheese-Nachos-652926.jpg	<ol><li>To get started, grab a pan and melt up your butter. Add in the flour and create a roux. Then add in your milk, put the heat on medium and let the mixture thicken.</li><li>Turn the heat down to low and add in the cheese.</li><li>Once it's melted add in your green chilies, chili powder, cumin, and cilantro. Now add in the salsa.</li><li>Lay your chips in an oven proof bowl and pour the cheese over the top. Now add on your desired toppings.</li><li>Throw them in the oven for about 10 minutes at 350 degrees.</li></ol>	mexican	45	1	f	f	f	f
+280	Poblano, Mango, and Black Bean Quesadilla	https://spoonacular.com/recipeImages/Poblano--Mango--and-Black-Bean-Quesadilla-656519.jpg	<ol><li>Heat olive oil, onions, poblano, oregano, salt and pepper in large pan. Saute for about five minutes.</li><li>Add black beans. Let heat for one minute, stirring occasionally.</li><li>Pull pan off heat. Add mangoes and avocado. Stir.</li><li>In another pan, sprinkle large flour tortilla with cheddar cheese, and fry in butter. *Note: for a lower-fat option, place tortilla on baking sheet, sprinkle tortilla with cheese and place under broiler.</li><li>Place pan under broiler to allow cheese to melt.</li><li>Cover half the tortilla with bean mixture, and fold in half.</li><li>Serve with sour cream, salsa and guacamole.</li></ol>	mexican	45	2	t	f	f	f
+281	Pork Shoulder Tacos with Chipotle Greek Yogurt and Coleslaw	https://spoonacular.com/recipeImages/Pork-Shoulder-Tacos-with-Chipotle-Greek-Yogurt-and-Coleslaw-656820.jpg	<ol><li>To Make the pork shoulder:</li><li>Place all ingredients in the crock pot.  Cook for 5 hours on low.  Meat should be tender and easily shred when finished cooking.</li><li>To Make the Chipotle Greek Yogurt:</li><li>In a small bowl, add the Greek yogurt.  Crack open your can of chipotle chilies in adobo sauce and remove the seeds from 3 or 4 of the chilies (about half of the can). Finely chop and add to the Greek yogurt. Add about a teaspoon of the adobo sauce.  Stir. For a spicier sauce, add additional chipotle chilies.</li><li>To Make the no-mayo coleslaw:</li><li>Thinly slice the cabbage and chop the green onion.  Peel and julienne the carrot.  Add all veggies to a large mixing bowl.  Mix the lime juice, apple cider vinegar and olive oil together in a small bowl.  Drizzle the liquid over the veggies.  Add salt and pepper to taste and if youre one of those cilantro people, add a handful of chopped cilantro.  Mix thoroughly and serve on your taco.</li><li>To assemble the tacos, simply heat your favorite tortilla on the stove until warm. Spoon desired amount of meat, chipotle Greek yogurt sauce, and coleslaw on the tortilla and enjoy!</li><li>Nutritional information is per taco.</li></ol>	mexican	45	12	f	f	t	f
 282	Pork Tenderloin With Mango-Kiwi Glaze Served With Tomatillo Salsa	https://spoonacular.com/recipeImages/Pork-Tenderloin-With-Mango-Kiwi-Glaze-Served-With-Tomatillo-Salsa-656839.jpg	<ol><li>Dry Rub the Pork:</li><li>Mix together the spices.</li><li>Rub the pork with the spice mix. Cover and refrigerate for 2 hours.</li><li>Make the Glaze*:</li><li>Saute the onion, garlic, ginger, and jalapeno in 2 teaspoons of olive oil.</li><li>Add the mango, kiwi, salt, pepper, and cayenne. Cook over medium heat for 10 minutes or until mixture thickens slightly.</li><li>Cool.</li><li>Puree in blender or food processor. Strain into a clean bowl.</li><li>Add lime juice and set aside.</li><li>This can be made a day ahead.</li><li>Cook and glaze the pork:</li><li>Preheat oven to 425F.</li><li>Heat 2 teaspoons olive oil in an oven-proof pan. Sear the pork on all sides in the hot pan.</li><li>Place the pork in the oven for 5 minutes. Brush with glaze.</li><li>Cook for another 5 minutes and brush with more glaze. Reserve the remaining glaze to serve alongside the pork.</li><li>Allow to finish cooking for 10 minutes or until the internal temperature reaches 145F.</li><li>Remove from oven and allow to rest for at least 10-15 minutes before slicing.</li><li>Make the Tomatillo Salsa**:</li><li>Mix ingredients together.</li><li>Allow to sit until ready to use.</li><li>Serve with the pork tenderloin.</li><li>Can be made a day ahead.</li><li>Serve it up:</li><li>Slice the pork and serve with the salsa and any remaining glaze.</li></ol>	mexican	45	4	f	f	t	t
 283	Pressed Bean, Veggie and Cheddar Burrito	https://spoonacular.com/recipeImages/Pressed-Bean--Veggie---Cheddar-Burrito-657126.jpg	<ol><li>Get all the ingredients ready first, diced the veggies, shred the cheese, rinse the beans. I leave the avocado slicing until I'm ready to assemble so it does't brown.</li><li>In a large saute pan, over medium high heat, add a few drizzles of olive oil and the corn, bell peppers and onions. Season with salt, pepper and garlic powder. You are looking just to cook until the veggies are just starting to soften. Add in the black beans and the lime juice. Cook for a couple minutes until the beans are warmed through.</li><li>Thats it! Now time to assemble. Lay the tortilla flat, add a line of cheese, the veggies and a few slices of avocado.</li><li>Fold the end over the filling then fold in the sides. Roll until almost at the end then add a little bit more cheese so it gets sealed a bit better.</li><li>Place the burrito onto a panini press set on high, You are looking just to crunch up the outside a bit. Notice mine opened up in the corner, its because I used whole grain tortilla wraps and found that they were more brittle then a regular wrap.</li></ol>	mexican	45	4	t	f	t	f
 284	Restaurant Style Salsa	https://spoonacular.com/recipeImages/Restaurant-Style-Salsa-658180.png	<ol><li>Combine all ingredients in a food processor. Pulse until you get the salsa consistency you like. 10 to 15 pulses. Test seasonings and adjust accordingly.</li><li>Store in a Tupperware container.</li><li>Ready in 5 minutes</li></ol>	mexican	5	4	f	f	t	t
@@ -724,7 +5606,7 @@ COPY "Recipe" (id, title, image_uri, instructions, cuisine, ready_in_minutes, se
 294	Falafel Burgers	https://spoonacular.com/recipeImages/Falafel-Burgers-642540.jpg	<ol><li>Combine the chickpeas, onion, garlic, parsley, flour, spices, and salt, and pulse until the mixture is well combined. Form the mixture into 4 large patties.</li><li>Heat the oil in a large, nonstick skillet set over medium-high heat. Cook for about 3 minutes per side.</li><li>Make the tahini sauce: Whisk the tahini paste with the water, lemon juice and zest, salt, and freshly ground black pepper in a mixing bowl.</li><li>Serve the burgers in pita pockets or on a bun. Top them with tahini sauce, lettuce, and tomato.</li></ol>	middleEastern	45	4	t	t	f	t
 295	Indian-Inspired Falafel Appetizer	https://spoonacular.com/recipeImages/Falafel-With-An-Indian-Twist-642547.jpg	<ol><li>Clean and wash the garbanzo beans, black eyed peas and green gram. Soak the lentils overnight/ 6-8 hours in excess water. Drain and set them aside.</li><li>Grind them to a coarse paste in a grinder without water. Mix in all the ingredients and let the mixture sit for 1-2 hours in refrigerator. Bring them down to room temperature and roll them into small balls using a falafel scoop or a spoon or a small ice cream scoop and place over a baking sheet covered with a parchment paper.</li><li>Heat 3 inches of oil in a deep cooking vessel (375 degrees) . Once the oil gets heated up, first fry 1 ball and if the balls lose shape, add little more flour for maintaining the shape.</li><li>Fry them in batches of 6 at a time for 2-3 minutes on one side or until they turn golden brown. Drain excess oil and serve with a salad/pita bread/tahini sauce.</li></ol>	middleEastern	45	12	t	t	f	t
 296	Grilled Fattoush	https://spoonacular.com/recipeImages/Grilled-Fattoush-645704.jpg	<ol><li>Preheat the grill to high. Halve the zucchinis length-wise and cut the peppers into large chunks and remove seeds.</li><li>Separate the layers of the pitas to make 6 pita circles.</li><li>Drizzle olive oil over the zucchini, peppers, and pitas, and salt and pepper them. Roll them around, to make sure they have a good coat of oil. Grill the veggies for about 2-3 minutes per side, until nice grill marks have formed and the veggies are slightly tender. Then grill the pitas, for 1 minute per side, until toasty.</li><li>In a large serving bowl, add all the other veggies and herbs.</li><li>Once the grilled veggies have cooled, chop them into  inch cubes and add them to the serving bowl.</li><li>Break the pitas into bite-size pieces and add to the mix. Toss the salad and sprinkle the feta over the top.</li><li>Mix  cup of olive oil and the juice of one lemon in a small bowl. Season with cumin, salt and pepper and whisk. Drizzle over the salad when ready to serve!</li></ol>	middleEastern	45	6	t	f	f	f
-297	Izmir Kofte	https://spoonacular.com/recipeImages/Izmir-Kofte-648306.jpg	<ol><li>Heat the oven to 175 degrees Celsius or 350 degrees Fahrenheit.</li><li>Make the sauce first. Melt the butter in a small saucepan. Stir in the tomato paste, then add the tomatoes and water or stock. Season with salt and pepper. Bring the mixture to a boil. Let simmer, stirring occasionally, while you make the kfte so that the tomatoes boil down.</li><li>Combine the ground lamb or beef, onion, garlic, eggs, paprika, cumin and parsley in a large bowl. Season with salt and pepper. With moistened hands, mix the ingredients for about 2 minutes. Keep a bowl of warm water nearby to wet your hands while working. Shape the meat mixture into 20-25 oval balls.</li><li>Heat the oil in a large skillet over high heat, add the kfte and lightly brown the meat all over (about 5 minutes). Place the kfte in an ovenproof dish and set them aside.</li><li>Pour the tomato sauce over the kfte. Arrange the green peppers on top. Cover the dish and bake for 40 minutes. To check for doneness, cut one kfte open; it should be brown, not pink.</li><li>Serve with fried potatoes or rice and salad.</li></ol>	middleEastern	45	6	f	f	t	f
+297	Izmir Kofte	https://spoonacular.com/recipeImages/Izmir-Kofte-648306.jpg	<ol><li>Heat the oven to 175 degrees Celsius or 350 degrees Fahrenheit.</li><li>Make the sauce first. Melt the butter in a small saucepan. Stir in the tomato paste, then add the tomatoes and water or stock. Season with salt and pepper. Bring the mixture to a boil. Let simmer, stirring occasionally, while you make the köfte so that the tomatoes boil down.</li><li>Combine the ground lamb or beef, onion, garlic, eggs, paprika, cumin and parsley in a large bowl. Season with salt and pepper. With moistened hands, mix the ingredients for about 2 minutes. Keep a bowl of warm water nearby to wet your hands while working. Shape the meat mixture into 20-25 oval balls.</li><li>Heat the oil in a large skillet over high heat, add the köfte and lightly brown the meat all over (about 5 minutes). Place the kfte in an ovenproof dish and set them aside.</li><li>Pour the tomato sauce over the kfte. Arrange the green peppers on top. Cover the dish and bake for 40 minutes. To check for doneness, cut one köfte open; it should be brown, not pink.</li><li>Serve with fried potatoes or rice and salad.</li></ol>	middleEastern	45	6	f	f	t	f
 298	Jordanian Mansaf	https://spoonacular.com/recipeImages/Jordanian-Mansaf-648615.jpg	<ol><li>IN A LARGE POT BEFORE TURNING ON HEAT MIX IN ALL YOGuRT</li><li>ON HIGH HEAT BRING YOGuRT (Or Jameed) TO A BOIL. (VERY IMPORTANT) MAKE SURE WHILE BRINGING YOGuRT TO BOIL, YOU ARE CONSTANTLY STIRRING YOGART WITH A WOODEN LADLE ONE WAY ONLY. SO IF YOU STARTED STIRRING TO THE LEFT YOU MUST KEEP STIRRING THAT WAY UNTIL YOGurT STARTS TO BOIL.</li><li>ONCE YOGuRT BOILS TURN HEAT OFF.</li><li>IN ANOTHER POT COVER lamb shanks or CUT UP LAMB (WITH BONES) WITH WATER.</li><li>ADD 1/4 OF AN ONION.</li><li>BOIL UNTIL LAMB IS TENDER.</li><li>REMOVE LAMB AND STRAIN WATER (LAMB BROTH) TO REMOVE ANY SMALL PARTICALS.</li><li>ADD ABOUT 2-3 CUPS OF THE WATER (LAMB BROTH ) TO THE POT OF COOKED YOGART.</li><li>Add salt to taste and if not tart enough you may add juice from about 1/2 a lemon.</li><li>Add lamb meat to the yogart and broth mixture (make sure to remove the onion)and let boil one more time.</li><li>Cook rice with 1 cup of butter</li><li>Brown almonds and pine nuts in remaining butter.</li><li>Once rice is cooked remove it from pot and place it in a large round platter, then spread half of the nuts on top of rice, then place lamb meat over rice and nuts, then spread remaining nuts over entire platter</li><li>Place the cooked yogurt in a large serving bowl</li><li>When serving put Arabic bread and wet it with some yogurt, then add rice and meat in individual plates and spread cooked yogurt and slivered nuts over it.</li><li>Enjoy</li></ol>	middleEastern	45	6	f	f	f	f
 299	Kick Butt Baklava	https://spoonacular.com/recipeImages/Kick-Butt-Baklava-648865.jpg	<ol><li>Do:</li><li>Preheat the oven to 350 degrees.</li><li>Butter your pan... I used my small Mario Batali loaf pan. Note: this recipe makes a very small baklava so keep that in mind when choosing your pan. That or just double/triple it to make it in a bigger pan.</li><li>In a bowl, combine the walnuts and cinnamon and mix together.</li><li>Unroll phyllo dough and cut it to match your pan length. I say this because the Mario Batali pan that I used was long and quite narrow; it's about 2 inches wide.</li><li>Lay two sheets of phyllo into the bottom of your pan. Sprinkle some of your walnut cinnamon mixture on top; just enough to cover the phyllo. Repeat layers until all ingredients are used, finishing with a phyllo dough layer.</li><li>Using a sharp knife, cut the uncooked baklava into 1 1/2 to 2 inch pieces. Again, adapt this depending on what kind of pan you are using.</li><li>Put your pan into your oven and bake for 30-35 minutes, until golden and crispy.</li><li>While your baklava is cooking, prepare your 'sauce'.</li><li>In a pan on the stove, combine sugar and water and bring to a boil.</li><li>Stir in agave nectar, vanilla and lime zest, reduce heat and simmer for about 15 minutes. Note: keep an eye on it and stir continually so you don't get a sticky gross mess in the bottom of your pan.</li><li>When baklava is done in the oven, remove and immediately pour the 'sauce'on top. It will simmer something crazy against the hot baklava pan. That's ok. Pour it on and then leave it alone. That means let it sit until it's cooled.</li></ol>	middleEastern	45	1	f	f	f	t
 300	Lamb Kofta	https://spoonacular.com/recipeImages/Lamb-Kofta-649219.jpg	<ol><li>Combine lamb mince, egg, breadcrumbs and garam masala. Shape into 24 meatballs.</li><li>Heat oil in large pan on high. Fry meatballs 8-10 minutes turning them occasionally. Remove from pan.</li><li>Saute garlic and ginger in pan. Add curry powder and cook 1 minute. Reduce heat to low, then add tomatoes with their liquid. Simmer for 2-3 mins.</li><li>Add meatballs and heat through for about 5 mins.</li><li>Serves 4</li></ol>	middleEastern	45	1	f	f	f	t
@@ -768,7 +5650,7 @@ COPY "Recipe" (id, title, image_uri, instructions, cuisine, ready_in_minutes, se
 338	Kiwi Strawberry Flan	https://spoonacular.com/recipeImages/Kiwi-Strawberry-Flan-648967.jpg	<ol><li>To make shell, prepare cake mix according to package directions and pour batter into flan pan that has been sprayed with Pam. Bake in a preheated 350 degree oven for about 25 minutes. Cool 10 minutes; remove from pan. Using milk and cream, prepare pudding according to package directions. Pour into cooled flan shell. Top with kiwi fruit. Chill until firm. Just prior to serving, top kiwi with strawberries. Garnish with small amount of whipped </li></ol>	spanish	45	1	t	f	f	f
 339	Leche Flan (Caramel Flan)	https://spoonacular.com/recipeImages/Leche-Flan-(Caramel-Flan)-649419.jpg	<ol><li>Making the Caramel Syrup:Simply put 2 tablespoons of white sugar for each mould, and hold the mould over medium heat, allowing the sugar to dissolve. Swirl the mould gently to evenly distribute the caramel to coat the mould. Make sure not to burn the caramel as this would make it bitter. A pale brown color is what you should achieve. Set each aside to cool down.</li><li>Making the Custard:In a mixing bowl, combine all the ingredients namely the egg yolks, vanilla extract, white sugar, condense and evaporated milk. Make sure you include as little egg white as possible to the mixture. This will make your flan creamier and bubble-free.</li><li>Use a whisk to mix the ingredients thoroughly, making sure the sugar has been completely dissolved.</li><li>Pour the mixture in the moulds. Fill each up at least just half high as the mould, because the mixture is expected to expand once it's steamed.</li><li>Cover each mould with an aluminum foil to avoid the moisture from the steam to come in contact with the flan. This will cause it to become watery.</li><li>Steam cook for around an hour at steady heat. It is essential that you do not change the amount of heat as this might cause uneven cooking.</li><li>Check every now and then whether the flan is already ready or not, with the use of a fork. Just gently poke the flan with the fork and you will know it's ready if nothing sticks to the fork as you pull it out.</li><li>Once you achieve this, remove the moulds from the steamer right away and let it cool at room temperature. Avoid overcooking the flan as this will make it hard and dry.</li><li>Once the flans have cooled down, refrigerate for at least an hour before serving.</li><li>Upon Serving:Unmould the Leche Flan by running a knife around the edge of the mould, carefully inverting it onto a serving dish, allowing the caramelized sugar coat the flan. Serve and enjoy!</li></ol>	spanish	45	3	t	f	t	f
 340	Leek Flan	https://spoonacular.com/recipeImages/Leek-Flan-649441.jpg	<ol><li>Butter 6 (4-ounce) ramekins and place in the refrigerator. When the butter hardens, add a second coating of butter to the ramekins. Set aside. Heat the oven to 350 degrees.</li><li>Heat the olive oil in a medium skillet over low heat. Add the leeks, shallots and salt and cook until the leeks are translucent but still retain a bite, about 10 minutes. Drain.</li><li>Place the whipping cream and half-and-half in a medium saucepan and bring to a boil. Turn off the heat and cool.</li><li>Put the leek mixture in the blender along with the cream mixture and the egg whites. Blend until smooth, about 30 seconds.</li><li>Spoon the mixture into the prepared ramekins. Place the ramekins in a large baking pan. Pour boiling water into the pan until it reaches halfway up the sides of the ramekins. Place the pan in the oven. Bake until the flans are set, about 35 to 40 minutes.</li><li>To serve, unmold the flans and garnish with 2 (3-inch) pieces of chives crossed over the top.</li><li>This recipe yields 6 servings.</li></ol>	spanish	45	6	f	f	t	f
-341	Mixed Paella	https://spoonacular.com/recipeImages/Mixed-Paella-652134.jpg	<ol><li>In a very large non-stick skillet or paella pan preheated over medium-high heat, add 2 teaspoons of your oil (you will need more oil if you're not using non-stick), garlic, red pepper flakes and rice. Saute for about 3 minutes. Add saffron, thyme, bay leaf and broth and bring to a boil. Cover and reduce heat to a simmer. Leave covered, do not stir.</li><li>In another non-stick skillet, heat to medium-high. Add chorizo and crumble as you saute. When the sausage is cooked through, add red pepper and onion. Salt and pepper to taste if needed. Saute until the onion is tender and remove from heat, set aside.</li><li>When the rice is nearly done (about 15 minutes) add fish and shrimp and press into rice. Add mussels, peas and sprinkle with lemon zest. Cover and continue to simmer until the rice is done and the mussels have opened. Discard any that do not.</li><li>Top with chorizo mixture and parsley. Serve with lemon wedges and a crusty bread.</li></ol>	spanish	45	8	f	f	t	t
+341	Mixed Paella	https://spoonacular.com/recipeImages/Mixed-Paella-652134.jpg	<ol><li>I a very large non-stick skillet or paella pan preheated over medium-high heat, add 2 teaspoons of your oil (you will need more oil if you're not using non-stick), garlic, red pepper flakes and rice. Saute for about 3 minutes. Add saffron, thyme, bay leaf and broth and bring to a boil. Cover and reduce heat to a simmer. Leave covered, do not stir.</li><li>In another non-stick skillet, heat to medium-high. Add chorizo and crumble as you saute. When the sausage is cooked through, add red pepper and onion. Salt and pepper to taste if needed. Saute until the onion is tender and remove from heat, set aside.</li><li>When the rice is nearly done (about 15 minutes) add fish and shrimp and press into rice. Add mussels, peas and sprinkle with lemon zest. Cover and continue to simmer until the rice is done and the mussels have opened. Discard any that do not.</li><li>Top with chorizo mixture and parsley. Serve with lemon wedges and a crusty bread.</li></ol>	spanish	45	8	f	f	t	t
 342	My Simple Custard Flan (Filipino Leche Flan)	https://spoonacular.com/recipeImages/My-Simple-Custard-Flan-(-Filipino-Leche-Flan)-652885.jpg	<ol><li>In a pan, mix water and sugar until there is no lump.</li><li>Heat and wait until it boils then turn the heat to simmering mode.</li><li>Simmer until the caramel is thick.</li><li>Cool slightly and transfer to aluminum moulds.</li><li>Mix well the egg yolk, condensed milk and evaporated milk by hand.</li><li>Then add vanilla and lemon juice.</li><li>Use wooden spatula and mix gently until well combined.</li><li>Strain the mixture and gently pour on to the prepared moulds with caramel.</li><li>Fill only until  3/4 of the moulder.</li><li>Cover with aluminum foil and place the moulds on a larger baking pan half filled with very hot water.</li><li>Bake at 350 or 180 for 1 hour.</li><li>Cool and then set aside in the fridge.</li><li>To serve: run a thin knife around the edges of the mould to loosen the Leche Flan. Place a platter on top of the mould and quickly turn upside down to position the golden brown caramel on top.</li></ol>	spanish	45	4	t	f	t	f
 343	Paella Soup	https://spoonacular.com/recipeImages/Paella-Soup-654326.jpg	<ol><li>Rinse, stem, seed, and chop bell peppers. In a 5- to 6-quart nonstick pan over high heat, stir 1 1/2 cups chopped red peppers with the oil and ham until peppers are limp, about 5 minutes. Add rice, water (as specified on package), and seasoning packets. Bring to a boil, cover, reduce heat, and simmer until rice is tender to bite, 18 to 20 minutes, stirring occasionally.</li><li>About 8 minutes before rice is done, in a 4- to 5-quart pan over high heat, bring broth and saffron to a boil. Stir in shrimp, cover, and return to a boil. Reduce heat and simmer until shrimp is opaque in center of thickest part (cut to test), about 5 minutes. With a slotted spoon, transfer shrimp to a small bowl. Return broth to a boil over high heat.</li><li>Stir peas into rice mixture and cook until they're hot, about 2 minutes.</li><li>Mound hot rice mixture equally in the center of 6 wide soup bowls, spoon shrimp around rice, sprinkle with remaining chopped red peppers, and ladle broth around rice.</li><li>This recipe yields 6 servings.</li><li>Comments: A flavored rice mix gives this company-worthy soup a head start.</li></ol>	spanish	45	6	f	f	t	t
 344	Paella for Four - A Wonderful Spanish Mixed Seafood Stew	https://spoonacular.com/recipeImages/Paella-for-Four--A-Wonderful-Spanish-Mixed-Seafood-Stew-654327.jpg	<ol><li>1. Use a 12 inch All-Clad stainless steel pan or equivalent. A paella pan is not necessary.</li><li>2. Mix the Spice Mix and rub on the chicken and refrigerate for 1 hour. Let the chicken warm up for 30 minutes before cooking.</li><li>3. Heat half of the oil in the pan to medium high heat and brown the sausage rounds, then reserve.</li><li>4. Add the remaining oil and chicken and brown on all sides, then reserve.</li><li>5. Reduce the heat to medium and add the onions, garlic and parsley to start the sofrito. Cook for 2 to 3 minutes then add the crushed and drained tomatoes and cook for about 3 minutes while flavors meld. This base sauce is the sofrito.</li><li>6. Add the rice and stir to mix thoroughly to coat all the rice; about 2 more minutes.</li><li>7. Add back the sausage and chicken. Pour in the hot water, bring to a gentle simmer and cook for about 5 minutes, stirring occasionally to mix and place the pieces.</li><li>8. Place the clams where you want them in the finished dish and don't stir anymore. Cook for 5 minutes.</li><li>9. Place the shrimp tails up where you want them to appear in the finished dish.</li><li>10. Cook for about 10 minutes or until the clams are open, the shrimp are pink and the rice is fluffy and moist but not dry.</li><li>11. With a fork, feel the bottom of the dish. If it has formed a slight crust, called socarrat, it's ready to be served. If the socarrat has not formed, turn the heat up for 30 to 45 seconds while the crust forms. Then serve immediately.</li></ol>	spanish	45	4	f	f	t	t
@@ -825,7 +5707,7 @@ SELECT pg_catalog.setval('"Recipe_id_seq"', 385, TRUE);
 
 --
 -- TOC entry 1924 (class 2606 OID 16679)
--- Name: Ingredient_name_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: Ingredient_name_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace:
 --
 
 ALTER TABLE ONLY "Ingredient"
@@ -833,7 +5715,7 @@ ALTER TABLE ONLY "Ingredient"
 
 --
 -- TOC entry 1926 (class 2606 OID 16677)
--- Name: Ingredient_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: Ingredient_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace:
 --
 
 ALTER TABLE ONLY "Ingredient"
@@ -841,15 +5723,15 @@ ALTER TABLE ONLY "Ingredient"
 
 --
 -- TOC entry 1932 (class 2606 OID 16724)
--- Name: IngredientsInRecipes_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: IngredientsInRecipes_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace:
 --
 
 ALTER TABLE ONLY "IngredientsInRecipes"
-  ADD CONSTRAINT "IngredientsInRecipes_pkey" PRIMARY KEY (recipe_id, ingredient_id);
+  ADD CONSTRAINT "IngredientsInRecipes_pkey" PRIMARY KEY (recipe_id, ingredient_id, ingredient_index);
 
 --
 -- TOC entry 1930 (class 2606 OID 16711)
--- Name: Nutritional Content_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: Nutritional Content_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace:
 --
 
 ALTER TABLE ONLY "Nutritional Content"
@@ -857,7 +5739,7 @@ ALTER TABLE ONLY "Nutritional Content"
 
 --
 -- TOC entry 1928 (class 2606 OID 16690)
--- Name: Recipe_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: Recipe_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace:
 --
 
 ALTER TABLE ONLY "Recipe"
@@ -892,4 +5774,3 @@ ALTER TABLE ONLY "Nutritional Content"
 --
 -- PostgreSQL database dump complete
 --
-
