@@ -179,7 +179,7 @@ def test_recipes(page=0):
 				"title": "Ethiopian Lentil Curry"
 			}
 		]
-	}
+	})
 
 @app.route('/recipes/test')
 def test_recipe_query():
