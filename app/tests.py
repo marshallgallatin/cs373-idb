@@ -2,6 +2,9 @@
 
 from constants import databaseName
 from models import Base
+from utility import renameKeyInDict
+from QueryExceptions import BadQueryException
+from QueryHelpers import ensureIsNonNegative, ensureIsPositive, ensureDictOnlyContains, ensureDictExactlyContains, ensureListIsntEmpty
 from testModels import *
 from sqlalchemy.engine import create_engine
 from sqlalchemy.orm.session import Session
@@ -26,6 +29,84 @@ class DatabaseTest(TestCase):
 #-------------------------------------
 # Tests
 #-------------------------------------
+class UtilityTest(TestCase):
+    def test_renameKeyInDict(self):
+        aDict = {'keyBefore':'Value'}
+        renameKeyInDict('keyBefore', 'keyAfter', aDict)
+        self.assertEqual(aDict, {'keyAfter':'Value'})
+
+class QueryHelpersTest(TestCase):
+    def test_ensureIsNonNegative1(self):
+        ensureIsNonNegative(1)
+
+    def test_ensureIsNonNegative2(self):
+        ensureIsNonNegative(18237642834)
+
+    def test_ensureIsNonNegative3(self):
+        ensureIsNonNegative(0)
+
+    def test_ensureIsNonNegative3(self):
+        ensureIsNonNegative(0.0)
+
+    def test_ensureIsNonNegative4(self):
+        with self.assertRaises(BadQueryException):
+            ensureIsNonNegative(-1)
+
+    def test_ensureIsNonNegative5(self):
+        with self.assertRaises(BadQueryException):
+            ensureIsNonNegative(-1.0)
+
+    def test_ensureIsPositive1(self):
+        ensureIsPositive(1)
+
+    def test_ensureIsPositive2(self):
+        ensureIsPositive(1.0)
+
+    def test_ensureIsPositive3(self):
+        with self.assertRaises(BadQueryException):
+            ensureIsPositive(0.0)
+
+    def test_ensureDictOnlyContains1(self):
+        ensureDictOnlyContains({}, 1, "bar")
+
+    def test_ensureDictOnlyContains2(self):
+        ensureDictOnlyContains({1:1}, 1, "bar")
+
+    def test_ensureDictOnlyContains3(self):
+        with self.assertRaises(BadQueryException):
+            ensureDictOnlyContains({2:1}, 1, "bar")
+
+    def test_ensureDictOnlyContains4(self):
+        with self.assertRaises(BadQueryException):
+            ensureDictOnlyContains({1:1, "bar":"bar", "extra":1.0}, 1, "bar")
+
+    def test_ensureDictExactlyContains1(self):
+        ensureDictExactlyContains({})
+
+    def test_ensureDictExactlyContains2(self):
+        ensureDictExactlyContains({1:1}, 1)
+
+    def test_ensureDictExactlyContains3(self):
+        ensureDictExactlyContains({1:1, "key1":"Value1"}, 1, "key1")
+
+    def test_ensureDictExactlyContains4(self):
+        with self.assertRaises(BadQueryException):
+            ensureDictExactlyContains({1:1, "key1":"Value1"}, 1, "key1", 2.0)
+
+    def test_ensureDictExactlyContains5(self):
+        with self.assertRaises(BadQueryException):
+            ensureDictExactlyContains({1:1, "key1":"Value1"}, 1)
+
+    def test_ensureListIsntEmpty1(self):
+        ensureListIsntEmpty([1, 2])
+
+    def test_ensureListIsntEmpty2(self):
+        ensureListIsntEmpty(["1", "2"])
+
+    def test_ensureListIsntEmpty3(self):
+        with self.assertRaises(BadQueryException):
+            ensureListIsntEmpty([])
+
 class RecipeTest(DatabaseTest):
     def test_instantiation1(self):
         new_recipe = TestRecipe(title="Ikea's Swedish Meatballs")
