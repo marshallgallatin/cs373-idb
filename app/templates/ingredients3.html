@@ -45,7 +45,6 @@
 						}
 					}
 				}
-				alert($scope.page);
 				$scope.getData();
 			}
 			$scope.getData = function () {
@@ -75,8 +74,6 @@
 
 {% block content %}
 <div ng-app="mbApp" ng-controller="mbCtrl">
-{{ '{{ing}}' }}
-{{ '{{nuts}}' }}
 	<div class="table-responsive">
 		<table class="table table-default table-hover">
 			<tr>
