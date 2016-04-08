@@ -51,7 +51,7 @@
 				//$http.get("i" + $scope.page).then(function (transmit) {
 					$scope.ing = transmit.data.ing;
 					for (var i = 0; i < $scope.ing.length; ++i) {
-						$http.get("i" + $scope.ing[i].id).then(function (transmit_nuts) {
+						$http.get("ingredients/" + $scope.ing[i].id + "/nutrition").then(function (transmit_nuts) {
 							var more = transmit_nuts.data;
 							for (var attrname in more) {
 								$scope.ing[i][attrname] = more[attrname];
