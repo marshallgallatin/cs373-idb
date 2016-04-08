@@ -76,7 +76,7 @@ SET search_path = public, pg_catalog;
 -- Name: <enum 'Origin'>; Type: TYPE; Schema: public; Owner: -
 --
 
-CREATE TYPE "<enum 'Origin'>" AS ENUM (
+CREATE TYPE "Origin" AS ENUM (
   'Africa',
   'Asia',
   'Australia',
@@ -126,7 +126,7 @@ SET default_with_oids = FALSE;
 
 --
 -- TOC entry 173 (class 1259 OID 16669)
--- Name: Ingredient; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: Ingredient; Type: TABLE; Schema: public; Owner: -; Tablespace:
 --
 
 CREATE TABLE "Ingredient" (
@@ -134,7 +134,7 @@ CREATE TABLE "Ingredient" (
   name            CHARACTER VARYING NOT NULL,
   image_uri       CHARACTER VARYING,
   scientific_name CHARACTER VARYING,
-  origin          "<enum 'Origin'>"
+  origin          "Origin"
 );
 
 --
@@ -159,7 +159,7 @@ ALTER SEQUENCE "Ingredient_id_seq" OWNED BY "Ingredient".id;
 
 --
 -- TOC entry 178 (class 1259 OID 16717)
--- Name: IngredientsInRecipes; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: IngredientsInRecipes; Type: TABLE; Schema: public; Owner: -; Tablespace:
 --
 
 CREATE TABLE "IngredientsInRecipes" (
@@ -174,7 +174,7 @@ CREATE TABLE "IngredientsInRecipes" (
 
 --
 -- TOC entry 177 (class 1259 OID 16693)
--- Name: Nutritional Content; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: Nutritional Content; Type: TABLE; Schema: public; Owner: -; Tablespace:
 --
 
 CREATE TABLE "Nutritional Content" (
@@ -230,7 +230,7 @@ ALTER SEQUENCE "Nutritional Content_id_seq" OWNED BY "Nutritional Content".id;
 
 --
 -- TOC entry 175 (class 1259 OID 16682)
--- Name: Recipe; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: Recipe; Type: TABLE; Schema: public; Owner: -; Tablespace:
 --
 
 CREATE TABLE "Recipe" (
@@ -298,7 +298,7 @@ ALTER TABLE ONLY "Recipe"
 --
 
 COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
-0	ingredient_name	ingredient_img	ingredient_sci_name	ingredient_origin
+0	NULLNAME	ingredient_img	ingredient_sci_name	Africa
 1	black-eyed pea	https://upload.wikimedia.org/wikipedia/commons/d/d0/BlackEyedPeas.JPG	Vigna unguiculata subsp. unguiculata	Africa
 2	carrot	https://upload.wikimedia.org/wikipedia/commons/b/bd/13-08-31-wien-redaktionstreffen-EuT-by-Bi-frie-037.jpg	Daucus carota	Asia
 3	green bell pepper	https://upload.wikimedia.org/wikipedia/commons/5/59/Capsicum3.JPG	Capsicum annuum	NorthAmerica
@@ -5118,7 +5118,6 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 --
 
 COPY "Nutritional Content" (id, ingredient_id, calories, total_fat_g, saturated_fat_g, cholesterol_mg, sodium_mg, total_carbohydrates_g, dietary_fiber_g, sugar_g, protein_g, vitamin_a_iu, vitamin_c_mg, calcium_mg, iron_mg) FROM STDIN;
-0 0 0 0 0	0	0	0	0	0	0	0	0	0	0
 1	1	336	1.26	0.331	0	16	60.03	10.6	6.9	23.52	50	1.5	110	8.27
 2	2	41	0.24	0.037	0	69	9.58	2.8	4.74	0.93	16706	5.9	33	0.3
 3	3	20	0.17	0.058	0	3	4.64	1.7	2.4	0.86	370	80.4	10	0.34
@@ -5314,9 +5313,9 @@ COPY "Recipe" (id, title, image_uri, instructions, cuisine, ready_in_minutes, se
 1	African Bean Soup	https://spoonacular.com/recipeImages/African-Bean-Soup-632003.jpg	<ol><li>Saute onions in large pot until soft. Add all ingredients except for peanut butter and simmer for 1 1/2 hours. </li><li>Stir a spoonful of peanut butter into each serving.</li></ol>	african	45	4	t	t	t	t
 2	Ethiopian Lentil Curry	https://spoonacular.com/recipeImages/Ethiopian-Lentil-Curry-642468.jpg	<ol><li>In a large pot heat oil over medium heat. Add onions and saut until translucent. Add minced garlic and continue to saut for another minute.</li><li>Combine cauliflower, peas and lentils in the pot, sprinkle with amchar massala and massala molida and saut for 5 minutes.</li><li>Pour crushed tomatoes and tomato paste into the pot and stir to combine. Add about two cups of water and bring curry to a boil.</li><li>Reduce heat, cover, and simmer on low until lentils are tender; about an hour.</li><li>Mix in plain yogurt and serve immediately.</li></ol>	african	75	6	t	f	t	f
 3	North African Chickpea Soup	https://spoonacular.com/recipeImages/North-African-Chickpea-Soup-653275.jpg	<ol><li>In a large soup pot add the oil, onions and celery.  Cook over medium low heat until translucent.  Add the garlic and saute until fragrant.   Add the tomato paste and harissa.  Cook a minute then add the water or stock slowly while stirring to combine the flavor paste in the pot with the liquids.  Throw in the chickpeas and bring to a boil.  As soon as it reaches a boil, reduce heat to a simmer.</li><li>Add the pasta and cook according to the package directions.  My suggestion is that if you are using fresh pasta, give it a rinse under tap water to remove the starch before adding it to the soup.  It might make the broth cloudy.  If using rice noodles add them right before serving to prevent overcooked mushy noodles.  To cook rice noodles place them in a shallow dish and cover with hot water for 10-15 minutes to soften.</li><li>Just before serving taste for seasoning, adjust to your taste.  Adding too much salt earlier on could make things too salty because some of the ingredients can bring a lot of salt to the pot.  Then add the spinach, it will only take a minute to shrink into nearly nothing, but it is sure a powerhouse vegetable that amps up the nutrition in this meal quickly and without fuss.  A squeeze of fresh lemon juice after it has been taken off the heat will add a nice bright flavor to perk up those dreary dark days of winter.  Enjoy with some crusty bread.  A meal you can feel good about, filling yet light.</li></ol>	african	45	4	t	t	f	t
-4	African Chicken Peanut Stew	https://spoonacular.com/recipeImages/african-chicken-peanut-stew-716268.jpg	Season and Boil the Chicken for 10 minutes with salt, pepper, seasoning, a handful of onions.Once the chicken is ready, in the same stock, Boil the chopped sweet potatoes till its almost cooked. Save the stock in a separate Bowl and the chicken and potatoes in a separate Bowl as well.In a pot, heat up one cooking spoon of oil and fry the chicken till it Browns. Take it out and heat up the other 1.5 cooking spoons of oil and fry the onions, tomatoes Both chopped and Blended, ginger and garlic.Add your seasoning, curry, thyme, parsley, salt and pepper to the pot.Pour in your stock, chicken and potatoes to cook further.Stir in your peanut Butter and allow to cook for 10 minutes on low heat.If your sauce gets too thick, add a little water to it. Serve with white rice or more sweet potatoes.You could also garnish the dish with Bell peppers.   	african	45	1	f	f	t	t
+4	African Chicken Peanut Stew	https://spoonacular.com/recipeImages/african-chicken-peanut-stew-716268.jpg	Season and Boil the Chicken for 10 minutes with salt, pepper, seasoning, a handful of onions.Once the chicken is ready, in the same stock, Boil the chopped sweet potatoes till its almost cooked. Save the stock in a separate Bowl and the chicken and potatoes in a separate Bowl as well.In a pot, heat up one cooking spoon of oil and fry the chicken till it Browns. Take it out and heat up the other 1.5 cooking spoons of oil and fry the onions, tomatoes Both chopped and Blended, ginger and garlic.Add your seasoning, curry, thyme, parsley, salt and pepper to the pot.Pour in your stock, chicken and potatoes to cook further.Stir in your peanut Butter and allow to cook for 10 minutes on low heat.If your sauce gets too thick, add a little water to it. Serve with white rice or more sweet potatoes.You could also garnish the dish with Bell peppers.   	african	45	1	f	f	t	t
 5	Party Jollof Rice	https://spoonacular.com/recipeImages/how-to-make-party-jollof-rice-716298.jpg	Wash rice by rubbing the rice between your palms in a bowl of water and draining the water till clear. Blend tomatoes, pepper and garlic and bring to boil till the excess water dries up. Chop Onions. Heat up vegetable oil and pour in chopped onions and fry. Pour in the can of tomato puree and fry.Pour in blended tomato and pepper mix into the pot and stir in. Pour in salt, dry pepper, curry, thyme, bay leaves and maggi cubes. Allow it to simmer on low heat for 3 minutes. Reduce the heat to the lowest level and pour in the washed rice. Pour in the water and stir and leave on low heat for 20 minutes or till the rice is soft. Tip: To get the party rice flavor, increase the heat on the rice and burn the bottom of the pot with the pot covered and stir the rice after 3 minutes of burning. Stir the rice and serve with any protein of your choice.	african	45	3	t	t	t	t
-6	Pineapple Jollof Rice	https://spoonacular.com/recipeImages/pineapple-jollof-rice-716374.jpg	Heat up your oil, stir fry your pineapples and chopped vegetables for 30 seconds and take out of the oil.In the same oil, toss in your chopped onions, garlic and ginger and fry about a minute or two on medium heat.Stir in your tomato paste and fry for 2-3 minutes on medium heat.Pour in your blended tomato, pepper mix and stir.Season with seasoning cubes, curry, thyme and any other seasoning of your choice.Stir in your rice and reduce the heat to the lowest and allow to steam. Pour in your stock juice so it would cook the rice for the next 20-25 minutes on low heat. Constantly check to make sure the rice is soft and when it is, increase the heat and stir.Toss in the already sautéed pineapple and chopped vegetables and stir in.Serve with any protein of your choice. 	african	45	2	t	t	t	t
+6	Pineapple Jollof Rice	https://spoonacular.com/recipeImages/pineapple-jollof-rice-716374.jpg	Heat up your oil, stir fry your pineapples and chopped vegetables for 30 seconds and take out of the oil.In the same oil, toss in your chopped onions, garlic and ginger and fry about a minute or two on medium heat.Stir in your tomato paste and fry for 2-3 minutes on medium heat.Pour in your blended tomato, pepper mix and stir.Season with seasoning cubes, curry, thyme and any other seasoning of your choice.Stir in your rice and reduce the heat to the lowest and allow to steam. Pour in your stock juice so it would cook the rice for the next 20-25 minutes on low heat. Constantly check to make sure the rice is soft and when it is, increase the heat and stir.Toss in the already sautéed pineapple and chopped vegetables and stir in.Serve with any protein of your choice. 	african	45	2	t	t	t	t
 7	Banana & Cream Cheese Stuffed French Toast	https://spoonacular.com/recipeImages/Banana---Cream-Cheese-Stuffed-French-Toast-633971.jpg	<ol><li>In a small bowl combine the softened cream cheese, honey, cinnamon, nutmeg and lemon juice, set aside while preparing the batter.</li><li>Whisk together all of the batter ingredients until thoroughly mixed. (This is a breeze if you use a blender.) Pour the batter into a wide, shallow dish (like a pie plate).</li><li>Spread the filling mixture equally over 1 side of each slice of bread, divide the sliced bananas between 4 slices of the bread, top with the remaining 4 slices, press lightly.</li><li>Melt 2 t. butter and 2 t. oil in a 12 inch nonstick skillet over medium heat until the butter foams and then subsides. Working with one sandwich at a time dip both sides in the batter and let the excess drip away, add to the hot pan, repeat with a second sandwich. Cook until golden brown on the first side, around 3-5 minutes, flip and repeat on the second side. Repeat this process with the remaining, oil, butter and sandwiches. To serve, cut into triangles and serve with maple syrup.</li></ol>	american	45	4	t	f	f	f
 8	Banana Chocolate Chip Cake With Peanut Butter Frosting	https://spoonacular.com/recipeImages/Banana-Chocolate-Chip-Cake-With-Peanut-Butter-Frosting---gluten-free--dairy-free--soy-free-634040.jpg	<ol><li>Preheat Oven Temperature to 350 degrees F</li><li>For the Cake:</li><li>Line the bottom of the round cake pans with parchment paper (I use precut ones sold at baking stores), grease cake pans, also under parchment paper. Set aside.</li><li>In a medium bowl, whisk flours, baking soda, and salt. Set aside.</li><li>Using an electric mixer or a stand mixer with a paddle attachment on medium high speed, beat sugar, Earth balance, and brown sugar until light and fluffy, about 3 minutes.</li><li>Add eggs one at a time, beating to blend after each egg, then add vanilla.</li><li>Add dry ingredients.</li><li>Mix on low speed, just to blend.</li><li>Add mashed bananas and sour cream; mix until just blended.</li><li>Fold in chocolate chips.</li><li>Divide the batter evenly among the two cake pans. Smooth tops.</li><li>Bake cakes for 35-45 minutes, until toothpick inserted in the center comes out clean.</li><li>Transfer to wire racks.</li><li>Let it cool in the pans for 15-30 minutes.</li><li>Invert cakes onto the wire racks; peel off parchment paper and let it cool completely, about an hour, before frosting.</li><li>For the Frosting:</li><li>Using an electric mixer, or a stand mixer with a paddle attachment, beat peanut butter, powdered sugar, Earth balance, and vanilla extract until light and fluffy, about 4 minutes.</li><li>Place 1 cake on a platter.</li><li>Spread 1 1/4 cups of frosting for the inner layer.</li><li>Place the other cake on top.</li><li>Frost the top and sides with remaining frosting.</li><li>Pipe along the bottom edge with a star tip.</li><li>Chill frosted cake for 2-3 hours to set.</li><li>Garnish with chocolate chips.</li><li>Serve chilled or room temperature. Chilled will result in a firm peanut butter frosting.</li><li>Note: For mess free decorating, put two halved sheets of parchment paper (cut apart) next to each other on the cake platter before putting the cake on it.</li><li>Slowly pull out from opposite ends of the cake when done piping.</li></ol>	american	45	8	f	f	t	f
 9	Barbecue Pizza	https://spoonacular.com/recipeImages/Barbecue-Pizza-634274.jpg	<ol><li>Preheat oven to 400 degrees. Place pizza crust on a baking sheet. Evenly spread pizza sauce on crust. Top with cheese. In a separate bowl mix barbecue meat and sauce. Spread barbecue mixture on toip of cheese. Top with onion rings, as desired. Bake in oven for 10-12 minutes until cheese bubbles.</li></ol>	american	45	1	f	f	f	f
@@ -5708,7 +5707,7 @@ SELECT pg_catalog.setval('"Recipe_id_seq"', 385, TRUE);
 
 --
 -- TOC entry 1924 (class 2606 OID 16679)
--- Name: Ingredient_name_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: Ingredient_name_key; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace:
 --
 
 ALTER TABLE ONLY "Ingredient"
@@ -5716,7 +5715,7 @@ ALTER TABLE ONLY "Ingredient"
 
 --
 -- TOC entry 1926 (class 2606 OID 16677)
--- Name: Ingredient_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: Ingredient_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace:
 --
 
 ALTER TABLE ONLY "Ingredient"
@@ -5724,15 +5723,15 @@ ALTER TABLE ONLY "Ingredient"
 
 --
 -- TOC entry 1932 (class 2606 OID 16724)
--- Name: IngredientsInRecipes_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: IngredientsInRecipes_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace:
 --
 
 ALTER TABLE ONLY "IngredientsInRecipes"
-  ADD CONSTRAINT "IngredientsInRecipes_pkey" PRIMARY KEY (recipe_id, ingredient_id);
+  ADD CONSTRAINT "IngredientsInRecipes_pkey" PRIMARY KEY (recipe_id, ingredient_id, ingredient_index);
 
 --
 -- TOC entry 1930 (class 2606 OID 16711)
--- Name: Nutritional Content_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: Nutritional Content_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace:
 --
 
 ALTER TABLE ONLY "Nutritional Content"
@@ -5740,7 +5739,7 @@ ALTER TABLE ONLY "Nutritional Content"
 
 --
 -- TOC entry 1928 (class 2606 OID 16690)
--- Name: Recipe_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: Recipe_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace:
 --
 
 ALTER TABLE ONLY "Recipe"
@@ -5775,4 +5774,3 @@ ALTER TABLE ONLY "Nutritional Content"
 --
 -- PostgreSQL database dump complete
 --
-
