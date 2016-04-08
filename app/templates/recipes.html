@@ -12,9 +12,12 @@
 	</style>
 	<script>
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
+			$scope.firstNumber = 1;
 			$scope.page = 1;
-			$scope.maxPage = 39;
-			$scope.pages = [0, 1, 2, 3, 4];
+			$scope.maxPage = 18;
+			$scope.pages = [1, 2, 3, 4, 5];
+			$scope.ing;
+			$scope.nuts = [];
 			$scope.mbReverse = false;
 			$scope.orderByMe = function(x) {
 				if ($scope.mbOrderBy == x) {
@@ -27,22 +30,22 @@
 			$scope.changePage = function(x) {
 				if (x == -1) {
 					$scope.page = 1;
+					$scope.firstNumber = 1;
 				} else if (x == -2) {
 					$scope.page = $scope.maxPage;
+					$scope.firstNumber = $scope.page - $scope.pages.length;
 				} else {
-					var incr = 1;
-					if ($scope.page < $scope.pages[3]) {
-						incr = -1;
-					}
-					
 					$scope.page = $scope.pages[x];
-					
-					if ((incr == 1 && $scope.pages[4] < $scope.maxPage)
-						|| (incr == -1 && $scope.pages[0] > 0)) {
-						for (var i = 0; i < $scope.pages.length; ++i) {
-							$scope.pages[i] += incr;
-						}
+					$scope.firstNumber = $scope.page - 2;
+					if ($scope.firstNumber > $scope.maxPage - $scope.pages.length) {
+						$scope.firstNumber = $scope.maxPage - $scope.pages.length;
+					} else if ($scope.firstNumber < 1) {
+						$scope.firstNumber = 1;
 					}
+				}
+				
+				for (var i = 0; i < $scope.pages.length; ++i) {
+					$scope.pages[i] = $scope.firstNumber + i;
 				}
 				$scope.getData();
 			}
@@ -92,6 +95,7 @@
 	<center>
 		<ul class="pagination">
 			<li><a ng-click="changePage(-1)">First</a></li>
+			<li><a ng-click="changePage(0)">{{ '{{pages[0]}}' }}</a></li>
 			<li><a ng-click="changePage(1)">{{ '{{pages[1]}}' }}</a></li>
 			<li><a ng-click="changePage(2)">{{ '{{pages[2]}}' }}</a></li>
 			<li><a ng-click="changePage(3)">{{ '{{pages[3]}}' }}</a></li>
