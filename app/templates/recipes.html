@@ -43,14 +43,12 @@
 						}
 					}
 				}
-				alert($scope.page);
 				$scope.getData();
 			}
 			$scope.getData = function () {
 				$http.get("recipes?limit=10&page=" + $scope.page).then(function (transmit) {
 				//$http.get("r" + $scope.page).then(function (transmit) {
 					$scope.data = transmit.data;
-					alert($scope.data);
 				});
 			}
 			$(function() {
