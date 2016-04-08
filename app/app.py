@@ -112,7 +112,7 @@ def recipes():
 
 @app.route('/ingredients.html')
 def ingredients():
-	return render_template('ingredients3.html', title="Ingredients", ingredientslit="active")
+	return render_template('ingredients.html', title="Ingredients", ingredientslit="active")
 
 @app.route("/<path:path>")
 def static_html(path):
