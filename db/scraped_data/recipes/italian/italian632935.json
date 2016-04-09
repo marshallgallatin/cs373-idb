@@ -133,6 +133,16 @@
       "name": "black pepper"
     },
     {
+      "aisle": "Pasta and Rice",
+      "unitLong": "servings",
+      "amount": 4.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "or other short-grain rice",
+      "name": "short-grain rice"
+    },
+    {
       "aisle": "Canned and Jarred",
       "unitLong": "ounces",
       "amount": 29.0,

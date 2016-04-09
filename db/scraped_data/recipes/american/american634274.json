@@ -29,8 +29,8 @@
       "unitShort": "oz",
       "metaInformation": [],
       "unit": "ounces",
-      "originalString": "4 ounces Cooked & chopped barbecue meat (pork, chicken)",
-      "name": "barbecued chicken breast"
+      "originalString": "4 ounces Cooked & chopped barbecue meat (pork, chicken6 Sliced rings of red onion (up to 8)",
+      "name": "meat"
     },
     {
       "aisle": "Produce",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "cup Pizza sauce or meatless spaghetti",
-      "name": "spaghetti sauce"
+      "name": "spaghetti"
     }
   ],
   "readyInMinutes": 45,

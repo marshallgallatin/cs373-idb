@@ -1,1 +1,189 @@
-{"vegetarian": false, "glutenFree": false, "title": "Pulled Pork Sandwich with Mango BBQ sauce", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/TV32HN3D/pulled-pork-sandwich-with-mango-bbq-sauce", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Directions</li><li>Rub: Combine the rub ingredients, in a small bowl and massage it into the pork shoulder until well coated. Set aside while you make BBQ sauce. You could do this a day ahead and keep refrigerated until ready to use.</li><li>BBQ sauce: In a large saucepan, warm the oil, over low heat, until hot and shimmering. Add the cumin and fennel; they should splutter upon contact - be careful! Once the spluttering subsides, add the onions, ginger and serrano and a little salt, to taste. Saute until they soften but don't let them get any color. Add the rest of the sauce ingredients. Simmer about 5 minutes. Taste and season.</li><li>Add the pork shoulder to the saucepan, coating it with the sauce. Cover, and gently simmer until the pork falls apart easily, stirring and turning often, about 3 hours.</li><li>Remove the pork from the saucepan and shred it using 2 forks. Return it to the sauce and stir to coat with the sauce. Put a generous spoonful of the pork inside a brioche bun, top with a few slices of pickle and serve. Aarti's Note: prepare to have your loved one swoon over you!</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup apple cider vinegar", "name": "cider vinegar"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon cumin seeds", "name": "cumin seed"}, {"aisle": "Baking", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons dark brown sugar", "name": "brown sugar"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon fennel seeds", "name": "fennel seeds"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons minced ginger", "name": "ginger"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 4.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Kosher salt", "name": "kosher salt"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup fresh lime juice", "name": "lime juice"}, {"aisle": "Not in Grocery Store/Homemade", "unitLong": "cups", "amount": 2.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "2 cups mango puree", "name": "mango puree"}, {"aisle": "Baking", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons molasses", "name": "molasses"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 onion, finely minced", "name": "onion"}, {"aisle": "Spices and Seasonings", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon paprika", "name": "paprika"}, {"aisle": "Meat", "unitLong": "pounds", "amount": 3.0, "unitShort": "lb", "metaInformation": [], "unit": "pounds", "originalString": "3 pounds 1 boneless pork shoulder (Boston butt), about, excess fat removed, cut into chun", "name": "pork shoulder"}, {"aisle": "Bakery/Bread", "unitLong": "servings", "amount": 4.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Brioche rolls, split", "name": "rolls"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 serrano pepper, thinly sliced (seeds discarded if you don't like it spicy)", "name": "serrano pepper"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup vegetable oil", "name": "vegetable oil"}, {"aisle": "Condiments", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup Worcestershire sauce", "name": "Worcestershire sauce"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/pulled-pork-sandwich-with-mango-bbq-sauce-657226", "weightWatcherSmartPoints": 27, "id": 657226, "image": "https://spoonacular.com/recipeImages/Pulled-Pork-Sandwich-with-Mango-BBQ-sauce-657226.jpg", "servings": 4, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Pulled Pork Sandwich with Mango BBQ sauce",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/TV32HN3D/pulled-pork-sandwich-with-mango-bbq-sauce",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Directions</li><li>Rub: Combine the rub ingredients, in a small bowl and massage it into the pork shoulder until well coated. Set aside while you make BBQ sauce. You could do this a day ahead and keep refrigerated until ready to use.</li><li>BBQ sauce: In a large saucepan, warm the oil, over low heat, until hot and shimmering. Add the cumin and fennel; they should splutter upon contact - be careful! Once the spluttering subsides, add the onions, ginger and serrano and a little salt, to taste. Saute until they soften but don't let them get any color. Add the rest of the sauce ingredients. Simmer about 5 minutes. Taste and season.</li><li>Add the pork shoulder to the saucepan, coating it with the sauce. Cover, and gently simmer until the pork falls apart easily, stirring and turning often, about 3 hours.</li><li>Remove the pork from the saucepan and shred it using 2 forks. Return it to the sauce and stir to coat with the sauce. Put a generous spoonful of the pork inside a brioche bun, top with a few slices of pickle and serve. Aarti's Note: prepare to have your loved one swoon over you!</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup apple cider vinegar",
+      "name": "cider vinegar"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon cumin seeds",
+      "name": "cumin seed"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons dark brown sugar",
+      "name": "brown sugar"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon fennel seeds",
+      "name": "fennel seed"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons minced ginger",
+      "name": "ginger"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 4.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Kosher salt",
+      "name": "kosher salt"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup fresh lime juice",
+      "name": "lime juice"
+    },
+    {
+      "aisle": "Not in Grocery Store/Homemade",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 cups mango puree",
+      "name": "mango puree"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons molasses",
+      "name": "molasses"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 onion, finely minced",
+      "name": "onion"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon paprika",
+      "name": "paprika"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pounds",
+      "amount": 3.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pounds",
+      "originalString": "3 pounds 1 boneless pork shoulder (Boston butt), about, excess fat removed, cut into chun",
+      "name": "pork shoulder"
+    },
+    {
+      "aisle": "Bakery/Bread",
+      "unitLong": "servings",
+      "amount": 4.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Brioche rolls, split",
+      "name": "brioche"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 serrano pepper, thinly sliced (seeds discarded if you don't like it spicy)",
+      "name": "serrano pepper"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup vegetable oil",
+      "name": "vegetable oil"
+    },
+    {
+      "aisle": "Condiments",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup Worcestershire sauce",
+      "name": "Worcestershire sauce"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/pulled-pork-sandwich-with-mango-bbq-sauce-657226",
+  "weightWatcherSmartPoints": 27,
+  "id": 657226,
+  "image": "https://spoonacular.com/recipeImages/Pulled-Pork-Sandwich-with-Mango-BBQ-sauce-657226.jpg",
+  "servings": 4,
+  "whole30": false,
+  "lowFodmap": false
+}

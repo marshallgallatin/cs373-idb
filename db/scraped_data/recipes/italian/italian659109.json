@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "Pepper",
-      "name": "pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Health Foods",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "ounces",
       "originalString": "32 ounces Organic Vegetable Stock",
-      "name": "vegetable stock"
+      "name": "vegetable broth"
     }
   ],
   "readyInMinutes": 45,

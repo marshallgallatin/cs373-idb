@@ -1,1 +1,169 @@
-{"vegetarian": false, "glutenFree": false, "title": "Crispy Italian Cauliflower Poppers Appetizer", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/ZVNRZZ82/crispy-italian-cauliflower-poppers-with-marinara", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Preheat oven to 400 f. Brush a large baking sheet with a tablespoon of the olive oil. In a large, shallow dish combine the breadcrumbs, Parmesan, garlic powder, salt, pepper and 2 tablespoons of the olive oil. Toss well with a fork until the oil is completely dispersed into the bread crumbs. Combine the eggs with 1 tablespoon of water in a medium bowl. Place the flour in a large resealable bag.</li><li>Add half of the cauliflower florets to the bag with the flour, seal and shake to coat well. Remove the cauliflower to a fine mesh strainer and shake to remove excess flour. Place the floured cauliflower on a plate. Repeat with the remaining cauliflower.</li><li>Working with a few pieces at a time. Add to the beaten egg. Using a fork, turn and toss the florets in the egg to completely coat. Transfer to the breadcrumb mixture and coat, pressing the crumbs into the florets, the help them adhere. Place on the oiled baking sheet, making sure you leave a little space between each florets so they crisp up really well. Repeat this step with the rest of the cauliflower. Spray the tops of the breaded florets lightly with cooking spray. Bake the cauliflower for 20 minutes, Flip the pieces over and continue baking for about 15 more minutes, until the cauliflower is crunchy on the outside and tender on the inside.</li><li>While the cauliflower is baking, prepare the marinara. Pulse the undrained tomatoes in a food processor a few times until mostly broken down. Heat 1 tablespoon of the oil with the garlic and pepper flakes in a medium saucepan over medium heat until just sizzling. Add the tomatoes and simmer for about 10 minutes until the marinara thickens slightly and the flavors develop. Add 2 tablespoons of the fresh basil, season with salt and pepper if needed.</li><li>When the cauliflower is done baking, transfer to a serving dish and sprinkle with the remaining basil. Serve with the marinara.</li></ol>", "aggregateLikes": 84, "dairyFree": false, "extendedIngredients": [{"aisle": "Canned and Jarred", "unitLong": "ounces", "amount": 14.5, "unitShort": "oz", "metaInformation": [], "unit": "oz", "originalString": "14.5 oz. can diced tomatoes", "name": "canned tomatoes"}, {"aisle": "Produce", "unitLong": "head", "amount": 1.0, "unitShort": "head", "metaInformation": [], "unit": "head", "originalString": "1 head of cauliflower, cut into bite-sized pieces (no larger that 1-inch)", "name": "cauliflower"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 eggs, well beaten", "name": "egg"}, {"aisle": "Baking", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup All-purpose flour", "name": "flour"}, {"aisle": "Produce", "unitLong": "tablespoons", "amount": 3.0, "unitShort": "T", "metaInformation": [], "unit": "T", "originalString": "3-4 T. chopped fresh basil", "name": "basil"}, {"aisle": "Produce", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon minced garlic", "name": "garlic"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.75, "unitShort": "t", "metaInformation": [], "unit": "t", "originalString": "3/4 t. garlic powder", "name": "garlic powder"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.125, "unitShort": "t", "metaInformation": [], "unit": "t", "originalString": "1/8 t. fresh ground black pepper", "name": "black pepper"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons Olive oil", "name": "olive oil"}, {"aisle": "Bakery/Bread", "unitLong": "cups", "amount": 2.0, "unitShort": "c", "metaInformation": [], "unit": "c", "originalString": "2 c. panko bread crumbs", "name": "panko bread crumbs"}, {"aisle": "Cheese", "unitLong": "cups", "amount": 0.75, "unitShort": "c", "metaInformation": [], "unit": "c", "originalString": "3/4 c. fresh grated Parmesan cheese", "name": "parmesan cheese"}, {"aisle": "Spices and Seasonings", "unitLong": "pinch", "amount": 1.0, "unitShort": "pinch", "metaInformation": [], "unit": "pinch", "originalString": "pinch of crushed red pepper flakes", "name": "crushed red pepper"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 4.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Salt to taste", "name": "salt"}, {"aisle": "Beverages", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "T", "originalString": "1 T. water", "name": "water"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/crispy-italian-cauliflower-poppers-appetizer-640819", "weightWatcherSmartPoints": 12, "id": 640819, "image": "https://spoonacular.com/recipeImages/Crispy-Italian-Cauliflower-Poppers-with-Marinara-640819.jpg", "servings": 4, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Crispy Italian Cauliflower Poppers Appetizer",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/ZVNRZZ82/crispy-italian-cauliflower-poppers-with-marinara",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Preheat oven to 400 f. Brush a large baking sheet with a tablespoon of the olive oil. In a large, shallow dish combine the breadcrumbs, Parmesan, garlic powder, salt, pepper and 2 tablespoons of the olive oil. Toss well with a fork until the oil is completely dispersed into the bread crumbs. Combine the eggs with 1 tablespoon of water in a medium bowl. Place the flour in a large resealable bag.</li><li>Add half of the cauliflower florets to the bag with the flour, seal and shake to coat well. Remove the cauliflower to a fine mesh strainer and shake to remove excess flour. Place the floured cauliflower on a plate. Repeat with the remaining cauliflower.</li><li>Working with a few pieces at a time. Add to the beaten egg. Using a fork, turn and toss the florets in the egg to completely coat. Transfer to the breadcrumb mixture and coat, pressing the crumbs into the florets, the help them adhere. Place on the oiled baking sheet, making sure you leave a little space between each florets so they crisp up really well. Repeat this step with the rest of the cauliflower. Spray the tops of the breaded florets lightly with cooking spray. Bake the cauliflower for 20 minutes, Flip the pieces over and continue baking for about 15 more minutes, until the cauliflower is crunchy on the outside and tender on the inside.</li><li>While the cauliflower is baking, prepare the marinara. Pulse the undrained tomatoes in a food processor a few times until mostly broken down. Heat 1 tablespoon of the oil with the garlic and pepper flakes in a medium saucepan over medium heat until just sizzling. Add the tomatoes and simmer for about 10 minutes until the marinara thickens slightly and the flavors develop. Add 2 tablespoons of the fresh basil, season with salt and pepper if needed.</li><li>When the cauliflower is done baking, transfer to a serving dish and sprinkle with the remaining basil. Serve with the marinara.</li></ol>",
+  "aggregateLikes": 84,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "ounces",
+      "amount": 14.5,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "oz",
+      "originalString": "14.5 oz. can diced tomatoes",
+      "name": "canned tomatoes"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "head",
+      "amount": 1.0,
+      "unitShort": "head",
+      "metaInformation": [],
+      "unit": "head",
+      "originalString": "1 head of cauliflower, cut into bite-sized pieces (no larger that 1-inch)",
+      "name": "cauliflower"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 eggs, well beaten",
+      "name": "egg"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup All-purpose flour",
+      "name": "flour"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoons",
+      "amount": 3.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "T",
+      "originalString": "3-4 T. chopped fresh basil",
+      "name": "basil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon minced garlic",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.75,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "t",
+      "originalString": "3/4 t. garlic powder",
+      "name": "garlic powder"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.125,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "t",
+      "originalString": "1/8 t. fresh ground black pepper",
+      "name": "black pepper"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons Olive oil",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Bakery/Bread",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "c",
+      "originalString": "2 c. panko bread crumbs",
+      "name": "bread crumbs"
+    },
+    {
+      "aisle": "Cheese",
+      "unitLong": "cups",
+      "amount": 0.75,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "c",
+      "originalString": "3/4 c. fresh grated Parmesan cheese",
+      "name": "parmesan cheese"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "pinch",
+      "amount": 1.0,
+      "unitShort": "pinch",
+      "metaInformation": [],
+      "unit": "pinch",
+      "originalString": "pinch of crushed red pepper flakes",
+      "name": "crushed red pepper"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 4.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Salt to taste",
+      "name": "salt"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "T",
+      "originalString": "1 T. water",
+      "name": "water"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/crispy-italian-cauliflower-poppers-appetizer-640819",
+  "weightWatcherSmartPoints": 12,
+  "id": 640819,
+  "image": "https://spoonacular.com/recipeImages/Crispy-Italian-Cauliflower-Poppers-with-Marinara-640819.jpg",
+  "servings": 4,
+  "whole30": false,
+  "lowFodmap": false
+}

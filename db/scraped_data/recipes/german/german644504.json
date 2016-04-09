@@ -1,1 +1,149 @@
-{"vegetarian": false, "glutenFree": false, "title": "German White Chocolate Cake", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/WZJHSC7P/german-white-chocolate-cake", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>CAKE</li><li>1. Position the racks in the upper and lower thirds and preheat oven to 350 deg F. Lightly butter the bottom and sides of three 8 inch round cake pans. Line the pans with parchment paper. Dust the bottom and sides with flour; tap out the excess.</li><li>2. Into a medium bowl, sift the cake flour and the baking soda. Using an electric mixer set at mdeium speed, cream the butter and the sugar in a large bowl until light and fluffy, about 5 minutes. Beat in one egg yolk at a time, blending well after each addition. Beat in the melted white chocolate mixture and the vanilla. At low speed, blend in the sifted flour mixture alternately with the buttermilk; do not overbeat. Fold in the coconut and pecans.</li><li>3. Beat the egg whites until stiff peaks form. Blend 1/3 of the egg whites into the cake mixture to lighten it; carefully fold in the remaining egg whites. Spoon the batter into the prepared pans.</li><li>4. Bake until the cake springs back when touched in the center and a cake tester inserted in the center of the pans comes out clean, about 35 to 40 minutes. Transfer the cakes in the pans to wire racks and cool 10 minutes. Invert the cakes onto the wire racks, carefully peel off the parchment paper, and cool completely.</li><li>FOR THE FROSTING:5. In a heavy medium saucepan over medium heat, combine the evaporated milk, sugar, butter, and egg yolks. Simmer for 10 minutes, stirring constantly. Do not let mixture boil fast; lower the heat if necessary.</li><li>Remove from heat and stir in the vanilla, pecans, and coconut. Plance the saucepan into a bowl filled with ice and stir constantly until the frosting is cool and slightly thickened.</li><li>6. Place a cake layer on a serving platter. Spread 1/4 of the frosting evenly over the cake layer, making sure to spread it all the way to the edges. Top with the second layer, and spread with 1/4 of the frosting. Top with the third cake layer. Evenly frost the top and sides of the cake with the remaining frosting.</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Baking", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon Baking soda", "name": "baking soda"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup Butter", "name": "butter"}, {"aisle": "Baking", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon Cake flour", "name": "cake flour"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 3.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "3 lrg Egg yolks", "name": "egg yolk"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 4.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "4 lrg Eggs, separated", "name": "egg"}, {"aisle": "Baking", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup Evaporated milk", "name": "evaporated milk"}, {"aisle": "Baking", "unitLong": "servings", "amount": 6.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Frosting", "name": "frosting"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup Low-fat buttermilk", "name": "low-fat buttermilk"}, {"aisle": "Nuts", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup Chopped pecans", "name": "pecans"}, {"aisle": "Baking", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup Sugar", "name": "sugar"}, {"aisle": "Baking", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup Shredded unsweetened coconut", "name": "unsweetened shredded coconut"}, {"aisle": "Baking", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon Vanilla extract", "name": "vanilla extract"}, {"aisle": "Sweet Snacks", "unitLong": "ounces", "amount": 4.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "4 ounces White chocolate, melted in \u00bd c boiling wat", "name": "white chocolate"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/german-white-chocolate-cake-644504", "weightWatcherSmartPoints": 31, "id": 644504, "image": "https://spoonacular.com/recipeImages/German-White-Chocolate-Cake-644504.jpg", "servings": 6, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "German White Chocolate Cake",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/WZJHSC7P/german-white-chocolate-cake",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>CAKE</li><li>1. Position the racks in the upper and lower thirds and preheat oven to 350 deg F. Lightly butter the bottom and sides of three 8 inch round cake pans. Line the pans with parchment paper. Dust the bottom and sides with flour; tap out the excess.</li><li>2. Into a medium bowl, sift the cake flour and the baking soda. Using an electric mixer set at mdeium speed, cream the butter and the sugar in a large bowl until light and fluffy, about 5 minutes. Beat in one egg yolk at a time, blending well after each addition. Beat in the melted white chocolate mixture and the vanilla. At low speed, blend in the sifted flour mixture alternately with the buttermilk; do not overbeat. Fold in the coconut and pecans.</li><li>3. Beat the egg whites until stiff peaks form. Blend 1/3 of the egg whites into the cake mixture to lighten it; carefully fold in the remaining egg whites. Spoon the batter into the prepared pans.</li><li>4. Bake until the cake springs back when touched in the center and a cake tester inserted in the center of the pans comes out clean, about 35 to 40 minutes. Transfer the cakes in the pans to wire racks and cool 10 minutes. Invert the cakes onto the wire racks, carefully peel off the parchment paper, and cool completely.</li><li>FOR THE FROSTING:5. In a heavy medium saucepan over medium heat, combine the evaporated milk, sugar, butter, and egg yolks. Simmer for 10 minutes, stirring constantly. Do not let mixture boil fast; lower the heat if necessary.</li><li>Remove from heat and stir in the vanilla, pecans, and coconut. Plance the saucepan into a bowl filled with ice and stir constantly until the frosting is cool and slightly thickened.</li><li>6. Place a cake layer on a serving platter. Spread 1/4 of the frosting evenly over the cake layer, making sure to spread it all the way to the edges. Top with the second layer, and spread with 1/4 of the frosting. Top with the third cake layer. Evenly frost the top and sides of the cake with the remaining frosting.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Baking",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon Baking soda",
+      "name": "baking soda"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup Butter",
+      "name": "butter"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon Cake flour",
+      "name": "cake flour"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 3.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "3 lrg Egg yolks",
+      "name": "egg yolk"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 4.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "4 lrg Eggs, separated",
+      "name": "egg"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup Evaporated milk",
+      "name": "evaporated milk"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup Low-fat buttermilk",
+      "name": "low-fat buttermilk"
+    },
+    {
+      "aisle": "Nuts",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup Chopped pecans",
+      "name": "pecan"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup Sugar",
+      "name": "sugar"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup Shredded unsweetened coconut",
+      "name": "unsweetened shredded coconut"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon Vanilla extract",
+      "name": "vanilla extract"
+    },
+    {
+      "aisle": "Sweet Snacks",
+      "unitLong": "ounces",
+      "amount": 4.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "4 ounces White chocolate, melted in 1/2 c boiling wat",
+      "name": "white chocolate"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/german-white-chocolate-cake-644504",
+  "weightWatcherSmartPoints": 31,
+  "id": 644504,
+  "image": "https://spoonacular.com/recipeImages/German-White-Chocolate-Cake-644504.jpg",
+  "servings": 6,
+  "whole30": false,
+  "lowFodmap": false
+}

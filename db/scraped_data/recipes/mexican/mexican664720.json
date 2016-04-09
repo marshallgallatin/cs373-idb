@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "5 1/4 cups of Veggie Broth",
-      "name": "broth"
+      "name": "vegetable broth"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups of Masa",
-      "name": "masa flour"
+      "name": "corn flour"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",

@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon coriander",
-      "name": "coriander"
+      "name": "coriander seed"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -89,17 +89,7 @@
       "unitShort": "",
       "metaInformation": [],
       "unit": "",
-      "originalString": "Zest of 2 lemons",
-      "name": "lemon zest"
-    },
-    {
-      "aisle": "Produce",
-      "unitLong": "",
-      "amount": 2.0,
-      "unitShort": "",
-      "metaInformation": [],
-      "unit": "",
-      "originalString": "juice of 2 lemons",
+      "originalString": "2 Zest and juice of lemons",
       "name": "lemon juice"
     },
     {
@@ -110,7 +100,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "4 pita pockets",
-      "name": "pita"
+      "name": "pita bread"
     },
     {
       "aisle": "Produce",

@@ -1,1 +1,209 @@
-{"vegetarian": false, "glutenFree": true, "title": "Basque Paella", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/GB5GNSNC/basque-paella", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Calories per serving: 221. Preparation time: 35 minutes. Cooking time: 45 minutes.</li><li>1. In large, heavy skillet over medium-high heat, combine oils and cook chicken pieces until just opaque. Remove chicken to platter. Reserve skillet.</li><li>2. Soak rice in the boiling water for 10 minutes, then drain.</li><li>3. In reserved skillet saute onion over medium heat until soft (about 5 minutes). Add garlic, bell peppers, and tomato and continue sauteing for 5 more minutes.</li><li>4. Add snapper, soaked rice with water, stock, salt substitute, saffron, and oregano. Bring to a boil, then lower heat to medium. Cover pot and let simmer until rice is tender and has absorbed liquid (about 15 minutes).</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Canned and Jarred", "unitLong": "", "amount": 5.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "5 artichoke hearts, unmarinated", "name": "artichoke hearts"}, {"aisle": "Pasta and Rice", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup uncooked basmati rice", "name": "basmati rice"}, {"aisle": "Meat", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup boned and skinned white meat of chicken, sliced", "name": "chicken meat"}, {"aisle": "Canned and Jarred", "unitLong": "cups", "amount": 2.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "2 cups hot, defatted chicken stock", "name": "chicken stock"}, {"aisle": "Seafood", "unitLong": "", "amount": 6.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "6 clams in their shells (scrub outside of shells)", "name": "clams"}, {"aisle": "Produce", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup peas, fresh or frozen", "name": "fresh peas"}, {"aisle": "Produce", "unitLong": "cloves", "amount": 2.0, "unitShort": "cloves", "metaInformation": [], "unit": "cloves", "originalString": "2 cloves garlic, minced", "name": "garlic"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon olive oil", "name": "olive oil"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup chopped onion", "name": "onion"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.75, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "3/4 teaspoon oregano", "name": "oregano"}, {"aisle": "Seafood", "unitLong": "", "amount": 6.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "6 lg. prawns, shelled and deveined", "name": "shrimp"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup each sliced red bell pepper and sliced", "name": "red bell pepper"}, {"aisle": "Seafood", "unitLong": "fillet", "amount": 1.0, "unitShort": "fillet", "metaInformation": [], "unit": "fillet", "originalString": "1 red snapper fillet, cut into 1 inch pieces", "name": "red snapper"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 teaspoons safflower oil", "name": "safflower oil"}, {"aisle": "Ethnic Foods", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon saffron threads", "name": "saffron threads"}, {"aisle": "Spices and Seasonings", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon herbal salt substitute", "name": "salt"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup diced tomato", "name": "tomato"}, {"aisle": "Beverages", "unitLong": "cups", "amount": 2.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "2 cups boiling water", "name": "water"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/basque-paella-634454", "weightWatcherSmartPoints": 39, "id": 634454, "image": "https://spoonacular.com/recipeImages/Basque-Paella-634454.jpg", "servings": 1, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Basque Paella",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/GB5GNSNC/basque-paella",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Calories per serving: 221. Preparation time: 35 minutes. Cooking time: 45 minutes.</li><li>1. In large, heavy skillet over medium-high heat, combine oils and cook chicken pieces until just opaque. Remove chicken to platter. Reserve skillet.</li><li>2. Soak rice in the boiling water for 10 minutes, then drain.</li><li>3. In reserved skillet saute onion over medium heat until soft (about 5 minutes). Add garlic, bell peppers, and tomato and continue sauteing for 5 more minutes.</li><li>4. Add snapper, soaked rice with water, stock, salt substitute, saffron, and oregano. Bring to a boil, then lower heat to medium. Cover pot and let simmer until rice is tender and has absorbed liquid (about 15 minutes).</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "",
+      "amount": 5.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "5 artichoke hearts, unmarinated",
+      "name": "artichoke hearts"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup uncooked basmati rice",
+      "name": "rice"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup boned and skinned white meat of chicken, sliced",
+      "name": "chicken meat"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 cups hot, defatted chicken stock",
+      "name": "chicken stock"
+    },
+    {
+      "aisle": "Seafood",
+      "unitLong": "",
+      "amount": 6.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "6 clams in their shells (scrub outside of shells)",
+      "name": "clams"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup peas, fresh or frozen",
+      "name": "pea"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 2.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "2 cloves garlic, minced",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon olive oil",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup chopped onion",
+      "name": "onion"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.75,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "3/4 teaspoon oregano",
+      "name": "oregano"
+    },
+    {
+      "aisle": "Seafood",
+      "unitLong": "",
+      "amount": 6.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "6 lg. prawns, shelled and deveined",
+      "name": "shrimp"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup each sliced red bell pepper and sliced",
+      "name": "red bell pepper"
+    },
+    {
+      "aisle": "Seafood",
+      "unitLong": "fillet",
+      "amount": 1.0,
+      "unitShort": "fillet",
+      "metaInformation": [],
+      "unit": "fillet",
+      "originalString": "1 red snapper fillet, cut into 1 inch pieces",
+      "name": "red snapper"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 teaspoons safflower oil",
+      "name": "safflower oil"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon saffron threads",
+      "name": "saffron threads"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon herbal salt substitute",
+      "name": "salt"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup diced tomato",
+      "name": "tomato"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 cups boiling water",
+      "name": "water"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/basque-paella-634454",
+  "weightWatcherSmartPoints": 39,
+  "id": 634454,
+  "image": "https://spoonacular.com/recipeImages/Basque-Paella-634454.jpg",
+  "servings": 1,
+  "whole30": false,
+  "lowFodmap": false
+}

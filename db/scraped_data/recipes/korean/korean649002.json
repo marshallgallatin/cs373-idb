@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "lb",
       "originalString": "1/2 lb sirloin or tender cut beef, cut into thin strips",
-      "name": "beef"
+      "name": "sirloin beef"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "10-inch",
       "originalString": "8 (10-inch) flour tortillas",
-      "name": "flour tortillas"
+      "name": "tortilla"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1, 2 cup shredded Sharp Cheddar",
-      "name": "sharp cheddar"
+      "name": "sharp cheddar cheese"
     }
   ],
   "readyInMinutes": 45,

@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon hot chili sauce",
-      "name": "chili sauce"
+      "name": "hot sauce"
     },
     {
       "aisle": "Produce",
@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "ounces",
       "originalString": "6 ounces whole wheat spaghetti",
-      "name": "whole-wheat spaghetti"
+      "name": "whole wheat spaghetti"
     }
   ],
   "readyInMinutes": 45,

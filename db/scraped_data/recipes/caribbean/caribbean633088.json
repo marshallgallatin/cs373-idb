@@ -1,1 +1,169 @@
-{"vegetarian": false, "glutenFree": true, "title": "Authentic Jamaican Curry Chicken", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/VVMBG4PD/authentic-jamaican-curry-chicken", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Season the chicken with all of the ingredients except for the potatoes and water and marinate up to 2 hours or overnight in the fridge.</li><li>Add the oil to a Dutch oven and on high heat, fry the only the chicken pieces until it is brown and seared on each side for about 10 minutes.</li><li>After the meat is nice and brown on both sides, add the remaining vegetable marinade, scotch bonnet pepper and water to the pot, cover and bring to a boil.</li><li>Add the potatoes and lower to a simmer and stew it for about 1 hour until it has a thick consistency.</li></ol>", "aggregateLikes": 4, "dairyFree": true, "extendedIngredients": [{"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "1tsp. allspice", "name": "allspice"}, {"aisle": "Baking", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tbsp", "originalString": "1 tbsp. coconut oil", "name": "coconut oil"}, {"aisle": "Spices and Seasonings", "unitLong": "tablespoons", "amount": 6.0, "unitShort": "T", "metaInformation": [], "unit": "tbsp", "originalString": "6 tbsp. curry powder", "name": "curry"}, {"aisle": "Produce", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon Garlic, granulated", "name": "garlic"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 large green pepper (chopped)", "name": "green bell pepper"}, {"aisle": "Produce", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1/2 medium Onion, chopped", "name": "onion"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "tsp", "originalString": "2 tsp. black pepper pepper", "name": "pepper"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 1.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "1 1/2 teaspoons salt", "name": "salt"}, {"aisle": "Produce", "unitLong": "", "amount": 3.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "3 scallions (chopped)", "name": "green onion"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 scotch bonnet pepper or habanero (seeded and minced)", "name": "scotch bonnet pepper"}, {"aisle": "Meat", "unitLong": "pounds", "amount": 3.0, "unitShort": "lb", "metaInformation": [], "unit": "lb", "originalString": "3lb of chicken thighs, legs or breast (skinless)", "name": "skinless chicken thighs"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 sweet potatoes (chopped)", "name": "sweet potato"}, {"aisle": "Spices and Seasonings", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tbsp", "originalString": "1tbsp. thyme", "name": "thyme"}, {"aisle": "Beverages", "unitLong": "cups", "amount": 2.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "2 cups water", "name": "water"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/authentic-jamaican-curry-chicken-633088", "weightWatcherSmartPoints": 11, "id": 633088, "image": "https://spoonacular.com/recipeImages/Authentic-Jamaican-Curry-Chicken-633088.jpg", "servings": 4, "whole30": true, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Authentic Jamaican Curry Chicken",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/VVMBG4PD/authentic-jamaican-curry-chicken",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Season the chicken with all of the ingredients except for the potatoes and water and marinate up to 2 hours or overnight in the fridge.</li><li>Add the oil to a Dutch oven and on high heat, fry the only the chicken pieces until it is brown and seared on each side for about 10 minutes.</li><li>After the meat is nice and brown on both sides, add the remaining vegetable marinade, scotch bonnet pepper and water to the pot, cover and bring to a boil.</li><li>Add the potatoes and lower to a simmer and stew it for about 1 hour until it has a thick consistency.</li></ol>",
+  "aggregateLikes": 4,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "1tsp. allspice",
+      "name": "allspice"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tbsp",
+      "originalString": "1 tbsp. coconut oil",
+      "name": "coconut oil"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoons",
+      "amount": 6.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tbsp",
+      "originalString": "6 tbsp. curry powder",
+      "name": "curry"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon Garlic, granulated",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 large green pepper (chopped)",
+      "name": "green bell pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 medium Onion, chopped",
+      "name": "onion"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "tsp",
+      "originalString": "2 tsp. black pepper pepper",
+      "name": "black pepper"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 1.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "1 1/2 teaspoons salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 3.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "3 scallions (chopped)",
+      "name": "green onion"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 scotch bonnet pepper or habanero (seeded and minced)",
+      "name": "scotch bonnet pepper"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pounds",
+      "amount": 3.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "lb",
+      "originalString": "3lb of chicken thighs, legs or breast (skinless)",
+      "name": "skinless chicken thighs"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 sweet potatoes (chopped)",
+      "name": "sweet potato"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tbsp",
+      "originalString": "1tbsp. thyme",
+      "name": "thyme"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 cups water",
+      "name": "water"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/authentic-jamaican-curry-chicken-633088",
+  "weightWatcherSmartPoints": 11,
+  "id": 633088,
+  "image": "https://spoonacular.com/recipeImages/Authentic-Jamaican-Curry-Chicken-633088.jpg",
+  "servings": 4,
+  "whole30": true,
+  "lowFodmap": false
+}

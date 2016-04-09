@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "1 hot green chili finely sliced",
-      "name": "green chili"
+      "name": "jalapeno"
     },
     {
       "aisle": "Produce",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 hot green chilis finely chopped",
-      "name": "green chilis"
+      "name": "jalapeno"
     },
     {
       "aisle": "Produce",
@@ -170,7 +170,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup frozen peas (take them out the freezer before you start cooking)",
-      "name": "peas"
+      "name": "frozen peas"
     },
     {
       "aisle": "Produce",

@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "can",
       "originalString": "1 can pineapple chunks, drained",
-      "name": "pineapple chunks"
+      "name": "canned pineapple"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1/2 tablespoon Earth Balance Soy Free Margarine",
-      "name": "soy margarine"
+      "name": "margarine"
     },
     {
       "aisle": "Pasta and Rice",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "ounce",
       "originalString": "1 16 ounce package spiral gluten free rice pasta",
-      "name": "spiral pasta"
+      "name": "rice pasta"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",

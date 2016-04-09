@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon of dried shrimps, washed",
-      "name": "shrimp"
+      "name": "dried shrimp"
     },
     {
       "aisle": "Produce",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "inches",
       "originalString": "2 inches long beans cut into 1 pieces",
-      "name": "yard long beans"
+      "name": "long beans"
     }
   ],
   "readyInMinutes": 45,

@@ -1,1 +1,149 @@
-{"vegetarian": false, "glutenFree": false, "title": "King Cake", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/SZBF7LXS/king-cake-recipe", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Scald milk. Pour over butter, sugar and salt. Mix together in large mixing bowl. Let cool to lukewarm. In another bowl, sprinkle yeast on 1/4 cup warm water (or use lukewarm water for compressed yeast). Stir softened yeast into milk mixture. Add beaten eggs. Stir a little flour in, beating until smooth. Add sufficient remaining flour to make soft dough, stirring until dough forms ball which leaves side of bowl.</li><li>Turn dough out onto lightly floured board. Press into flattened ball, about 1 1/2 inch thick. Knead until smooth and elastic, adding only enough flour to keep dough from sticking. Grease mixing bowl. Return dough to bowl, turning dough once to grease its surface. Coat top of dough lightly with softened shortening. Cover with folded kitchen towel. Let rise in warm, not hot, place about 50 minutes, or until double in bulk.</li><li>Punch dough down and turn out onto lightly floured board. Roll out into 10x16 inch rectangle to about 1/4 to 1/2 inch thick. Cut lengthwise into 3 strips. Spread each strip with melted butter. Sprinkle each strip with cinnamon, sugar and ginger mixture. (This is easiest if kept away from edges and mixture is \"funneled\" in the middle of the strips.) Fold each strip over on long side. Press to seal each strip. \"Braid\" dough and place on lightly greased baking sheet.</li><li>Cover ring lightly with folded kitchen towel. Let rise in warm place away from draft about 30 minutes or overnight. Bake in preheated 350 degree oven for 24-28 minutes. Drip (drizzle) confectioners' sugar mixture over top of hot bread. Sprinkle with colored \"sanding\" sugar or colored baking sugar.</li><li>Stuff \"baby\" or \"surprise\" into dough, from the bottom or under side after baking.</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Baking", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "5Stuff \"baby\" or \"surprise\" into dough, from the bottom or under side after baking.", "name": "baking mix"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "tablespoons", "amount": 2.5, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 1/2 tablespoons Butter", "name": "butter"}, {"aisle": "Spices and Seasonings", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons powdered cinnamon", "name": "cinnamon"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 eggs, beaten", "name": "egg"}, {"aisle": "Baking", "unitLong": "cups", "amount": 5.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "5 cups all-purpose flour", "name": "flour"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cups", "amount": 0.75, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "3/4 cup milk", "name": "milk"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon powdered ginger", "name": "powdered ginger"}, {"aisle": "Baking", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup powdered sugar", "name": "powdered sugar"}, {"aisle": "Spices and Seasonings", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "salt", "name": "salt"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "Shortening (butter Crisco)", "name": "shortening"}, {"aisle": "Baking", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup sugar", "name": "sugar"}, {"aisle": "Baking", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "cup sugar", "name": "sugar"}, {"aisle": "Baking", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon almond or vanilla extract (optional)", "name": "vanilla extract"}, {"aisle": "Beverages", "unitLong": "teaspoons", "amount": 1.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "1 1/2 teaspoons warm water (powdered sugar and 1 pkg. colored decorating sugar", "name": "water"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/king-cake-648921", "weightWatcherSmartPoints": 177, "id": 648921, "image": "https://spoonacular.com/recipeImages/King-Cake-648921.jpg", "servings": 1, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "King Cake",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/SZBF7LXS/king-cake-recipe",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Scald milk. Pour over butter, sugar and salt. Mix together in large mixing bowl. Let cool to lukewarm. In another bowl, sprinkle yeast on 1/4 cup warm water (or use lukewarm water for compressed yeast). Stir softened yeast into milk mixture. Add beaten eggs. Stir a little flour in, beating until smooth. Add sufficient remaining flour to make soft dough, stirring until dough forms ball which leaves side of bowl.</li><li>Turn dough out onto lightly floured board. Press into flattened ball, about 1 1/2 inch thick. Knead until smooth and elastic, adding only enough flour to keep dough from sticking. Grease mixing bowl. Return dough to bowl, turning dough once to grease its surface. Coat top of dough lightly with softened shortening. Cover with folded kitchen towel. Let rise in warm, not hot, place about 50 minutes, or until double in bulk.</li><li>Punch dough down and turn out onto lightly floured board. Roll out into 10x16 inch rectangle to about 1/4 to 1/2 inch thick. Cut lengthwise into 3 strips. Spread each strip with melted butter. Sprinkle each strip with cinnamon, sugar and ginger mixture. (This is easiest if kept away from edges and mixture is \"funneled\" in the middle of the strips.) Fold each strip over on long side. Press to seal each strip. \"Braid\" dough and place on lightly greased baking sheet.</li><li>Cover ring lightly with folded kitchen towel. Let rise in warm place away from draft about 30 minutes or overnight. Bake in preheated 350 degree oven for 24-28 minutes. Drip (drizzle) confectioners' sugar mixture over top of hot bread. Sprinkle with colored \"sanding\" sugar or colored baking sugar.</li><li>Stuff \"baby\" or \"surprise\" into dough, from the bottom or under side after baking.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "tablespoons",
+      "amount": 2.5,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 1/2 tablespoons Butter",
+      "name": "butter"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons powdered cinnamon",
+      "name": "cinnamon"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 eggs, beaten",
+      "name": "egg"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 5.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "5 cups all-purpose flour",
+      "name": "flour"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cups",
+      "amount": 0.75,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "3/4 cup milk",
+      "name": "milk"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon powdered ginger",
+      "name": "ground ginger"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup powdered sugar",
+      "name": "powdered sugar"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "Shortening (butter Crisco)",
+      "name": "shortening"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup sugar",
+      "name": "sugar"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon almond or vanilla extract (optional)",
+      "name": "vanilla extract"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "teaspoons",
+      "amount": 1.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "1 1/2 teaspoons warm water (powdered sugar and 1 pkg. colored decorating sugar",
+      "name": "water"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/king-cake-648921",
+  "weightWatcherSmartPoints": 177,
+  "id": 648921,
+  "image": "https://spoonacular.com/recipeImages/King-Cake-648921.jpg",
+  "servings": 1,
+  "whole30": false,
+  "lowFodmap": false
+}

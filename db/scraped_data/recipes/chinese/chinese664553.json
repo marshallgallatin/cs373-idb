@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cup Basmati Rice",
-      "name": "basmati rice"
+      "name": "rice"
     },
     {
       "aisle": "Pasta and Rice",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "Bell peppers - I used half of red and yellow colour",
-      "name": "red bell pepper"
+      "name": "green bell pepper"
     },
     {
       "aisle": "Produce",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "Cashews and raisins",
-      "name": "raisins"
+      "name": "raisin"
     },
     {
       "aisle": "Produce",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "Green chilies - 2 to 3 depending on your taste",
-      "name": "green chilies"
+      "name": "jalapeno"
     },
     {
       "aisle": "Produce",

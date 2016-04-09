@@ -303,7 +303,7 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 2	carrot	https://upload.wikimedia.org/wikipedia/commons/b/bd/13-08-31-wien-redaktionstreffen-EuT-by-Bi-frie-037.jpg	Daucus carota	Asia
 3	green bell pepper	https://upload.wikimedia.org/wikipedia/commons/5/59/Capsicum3.JPG	Capsicum annuum	NorthAmerica
 4	onion	https://upload.wikimedia.org/wikipedia/commons/a/a2/Mixed_onions.jpg	Allium cepa	Africa
-5	peanut butter	https://upload.wikimedia.org/wikipedia/commons/b/bb/96_-_IMG_20150804_111725.jpg	\N	NorthAmerica
+5	peanut butter	https://commons.wikimedia.org/wiki/File:96_-_IMG_20150804_111725.jpg	\N	NorthAmerica
 6	salt	https://upload.wikimedia.org/wikipedia/commons/7/78/Salt_shaker_on_white_background.jpg	Sodium chloride	Worldwide
 7	water	https://upload.wikimedia.org/wikipedia/commons/1/18/Water_drop_impact_on_a_water-surface_-_%285%29.jpg	Dihydrogen oxide	Worldwide
 8	baking powder	https://upload.wikimedia.org/wikipedia/commons/2/2d/BakingPowder.jpg	Sodium aluminum sulfate	Europe

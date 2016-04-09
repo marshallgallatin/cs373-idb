@@ -1,1 +1,129 @@
-{"vegetarian": true, "glutenFree": false, "title": "Spanakopita (Greek Spinach Pie)", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/V37QNNDY/spanakopita-greek-spinach-pie", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Heat vegetable oil in a large saucepan over medium heat. Slowly cook and stir onions until softened. Mix in spinach, dill and flour. Cook approximately 10 minutes, or until most of the moisture has been absorbed. Remove from heat. Mix in feta cheese, eggs, salt and pepper.</li><li>Lay 1 sheet of phyllo dough in prepared baking pan, and brush lightly with olive oil. Lay another sheet of phyllo dough on top, brush with olive oil, and repeat process with 10 more sheets of phyllo. The sheets will overlap the pan.</li><li>Spread spinach and cheese mixture into pan and fold overhanging dough over filling. Brush with oil, then layer remaining sheets of phyllo dough, brushing each with oil. Tuck overhanging dough into pan to seal filling.</li><li>Bake in preheated oven for 30 to 40 minutes, until golden brown. Cut into squares and serve while hot.</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 3.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "3 extra-large eggs, lightly beaten", "name": "egg"}, {"aisle": "Cheese", "unitLong": "pounds", "amount": 1.5, "unitShort": "lb", "metaInformation": [], "unit": "lbs", "originalString": "1 1/2 lbs. Feta cheese", "name": "feta cheese"}, {"aisle": "Baking", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons all-purpose flour", "name": "flour"}, {"aisle": "Produce", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons chopped fresh dill", "name": "fresh dill"}, {"aisle": "Frozen", "unitLong": "boxes", "amount": 4.0, "unitShort": "boxes", "metaInformation": [], "unit": "boxes", "originalString": "4 boxes frozen spinach", "name": "frozen spinach"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "milliliters", "amount": 120.0, "unitShort": "ml", "metaInformation": [], "unit": "ml", "originalString": "1/2 cup (120 ml) olive oil", "name": "olive oil"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 large onions, chopped", "name": "onion"}, {"aisle": "Frozen", "unitLong": "box", "amount": 1.0, "unitShort": "box", "metaInformation": [], "unit": "box", "originalString": "1 box Filo or Phyllo dough (purchase in freezer sectio", "name": "phyllo dough"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 8.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "salt and pepper to taste", "name": "salt and pepper"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup vegetable oil", "name": "vegetable oil"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/spanakopita-greek-spinach-pie-660843", "weightWatcherSmartPoints": 26, "id": 660843, "image": "https://spoonacular.com/recipeImages/Spanakopita-(Greek-Spinach-Pie)-660843.jpg", "servings": 8, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": false,
+  "title": "Spanakopita (Greek Spinach Pie)",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/V37QNNDY/spanakopita-greek-spinach-pie",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Heat vegetable oil in a large saucepan over medium heat. Slowly cook and stir onions until softened. Mix in spinach, dill and flour. Cook approximately 10 minutes, or until most of the moisture has been absorbed. Remove from heat. Mix in feta cheese, eggs, salt and pepper.</li><li>Lay 1 sheet of phyllo dough in prepared baking pan, and brush lightly with olive oil. Lay another sheet of phyllo dough on top, brush with olive oil, and repeat process with 10 more sheets of phyllo. The sheets will overlap the pan.</li><li>Spread spinach and cheese mixture into pan and fold overhanging dough over filling. Brush with oil, then layer remaining sheets of phyllo dough, brushing each with oil. Tuck overhanging dough into pan to seal filling.</li><li>Bake in preheated oven for 30 to 40 minutes, until golden brown. Cut into squares and serve while hot.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 3.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "3 extra-large eggs, lightly beaten",
+      "name": "egg"
+    },
+    {
+      "aisle": "Cheese",
+      "unitLong": "pounds",
+      "amount": 1.5,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "lbs",
+      "originalString": "1 1/2 lbs. Feta cheese",
+      "name": "feta cheese"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons all-purpose flour",
+      "name": "flour"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons chopped fresh dill",
+      "name": "dill weed"
+    },
+    {
+      "aisle": "Frozen",
+      "unitLong": "boxes",
+      "amount": 4.0,
+      "unitShort": "boxes",
+      "metaInformation": [],
+      "unit": "boxes",
+      "originalString": "4 boxes frozen spinach",
+      "name": "frozen spinach"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "milliliters",
+      "amount": 120.0,
+      "unitShort": "ml",
+      "metaInformation": [],
+      "unit": "ml",
+      "originalString": "1/2 cup (120 ml) olive oil",
+      "name": "olive oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 large onions, chopped",
+      "name": "onion"
+    },
+    {
+      "aisle": "Frozen",
+      "unitLong": "box",
+      "amount": 1.0,
+      "unitShort": "box",
+      "metaInformation": [],
+      "unit": "box",
+      "originalString": "1 box Filo or Phyllo dough (purchase in freezer sectio",
+      "name": "phyllo dough"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 8.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "salt and pepper to taste",
+      "name": "salt and pepper"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup vegetable oil",
+      "name": "vegetable oil"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/spanakopita-greek-spinach-pie-660843",
+  "weightWatcherSmartPoints": 26,
+  "id": 660843,
+  "image": "https://spoonacular.com/recipeImages/Spanakopita-(Greek-Spinach-Pie)-660843.jpg",
+  "servings": 8,
+  "whole30": false,
+  "lowFodmap": false
+}

@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup basmati rice soaked in water",
-      "name": "basmati rice"
+      "name": "rice"
     },
     {
       "aisle": "Produce",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "1 beefsteak tomato- diced",
-      "name": "tomato"
+      "name": "beefsteak tomato"
     },
     {
       "aisle": "Nuts",
@@ -129,7 +129,7 @@
       "unitShort": "T",
       "metaInformation": [],
       "unit": "tablespoons",
-      "originalString": "2 tablespoons ginger- freshly grated",
+      "originalString": "2 tablespoons ginger- freshly grated ",
       "name": "ginger"
     },
     {

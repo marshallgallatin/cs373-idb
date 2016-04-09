@@ -29,8 +29,8 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "1 cup sliced cremini mushrooms (about 5 medium)",
-      "name": "cremini mushroom"
+      "originalString": "1 cup sliced crimini mushrooms (about 5 medium)",
+      "name": "portabello mushroom"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon dry bread crumbs",
-      "name": "dry bread crumbs"
+      "name": "bread crumbs"
     },
     {
       "aisle": "Alcoholic Beverages",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "Dash",
       "originalString": "Dash black pepper",
-      "name": "pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Produce",

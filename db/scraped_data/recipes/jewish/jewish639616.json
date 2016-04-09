@@ -1,1 +1,169 @@
-{"vegetarian": false, "glutenFree": true, "title": "Classic Matzo Ball Soup", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/7H25S7NF/jewish-penicillin", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Wash the chicken with cold water and place in pot. Cover with water and bring to a simmer (do not boil or your broth won't be clear).</li><li>Skim off bubbling foam as it forms. Add celery, carrots, onion, herbs, salt and pepper and continue to simmer for about 45 minutes.</li><li>Pour soup through strainer and let cool. When broth has completely cooled, remove the chicken meat and skim off the fat and save for the matzo balls.</li><li>In a mixing bowl, mix together 4 eggs and 4 tablespoons chicken fat (or vegetable oil). Stir in the matzo meal and salt. Add 1/4 selter water. Cover and refrigerate for at least 1 hour.</li><li>Form the matzo dough into teaspoon-size balls.</li><li>Bring the chicken broth to a boil. Add the matzo balls, cover, and cook for 20 minutes.</li><li>Serve immediately.</li><li>Garnish with fresh dill or parsley.</li></ol>", "aggregateLikes": 16, "dairyFree": true, "extendedIngredients": [{"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 6.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Freshly-ground black pepper to taste", "name": "black pepper"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 large carrots, sliced", "name": "carrot"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 large celery stalks with leaves on, chopped", "name": "celery stalks"}, {"aisle": "Meat", "unitLong": "pounds", "amount": 5.0, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1 5-6 pound chicken", "name": "chicken"}, {"aisle": "Produce", "unitLong": "servings", "amount": 6.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Optional: fresh dill or parsley for garnish", "name": "dill"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 3.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "3 Eggs", "name": "egg"}, {"aisle": "Produce", "unitLong": "sprigs", "amount": 3.0, "unitShort": "sprigs", "metaInformation": [], "unit": "sprigs", "originalString": "3 sprigs fresh dill", "name": "fresh dill"}, {"aisle": "Ethnic Foods", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup matzo meal", "name": "matzo meal"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 onion, quartered", "name": "onion"}, {"aisle": "Spices and Seasonings", "unitLong": "sprigs", "amount": 3.0, "unitShort": "sprigs", "metaInformation": [], "unit": "sprigs", "originalString": "3 sprigs parsley", "name": "parsley"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.25, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/4 teaspoon Salt", "name": "salt"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 6.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Salt and pepper, to taste", "name": "salt and pepper"}, {"aisle": "Beverages", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup seltzer water", "name": "seltzer water"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoons", "amount": 4.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "4 tablespoons chicken fat or vegetable oil", "name": "vegetable oil"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/classic-matzo-ball-soup-639616", "weightWatcherSmartPoints": 18, "id": 639616, "image": "https://spoonacular.com/recipeImages/Classic-Matzo-Ball-Soup-639616.jpg", "servings": 6, "whole30": true, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Classic Matzo Ball Soup",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/7H25S7NF/jewish-penicillin",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Wash the chicken with cold water and place in pot. Cover with water and bring to a simmer (do not boil or your broth won't be clear).</li><li>Skim off bubbling foam as it forms. Add celery, carrots, onion, herbs, salt and pepper and continue to simmer for about 45 minutes.</li><li>Pour soup through strainer and let cool. When broth has completely cooled, remove the chicken meat and skim off the fat and save for the matzo balls.</li><li>In a mixing bowl, mix together 4 eggs and 4 tablespoons chicken fat (or vegetable oil). Stir in the matzo meal and salt. Add 1/4 selter water. Cover and refrigerate for at least 1 hour.</li><li>Form the matzo dough into teaspoon-size balls.</li><li>Bring the chicken broth to a boil. Add the matzo balls, cover, and cook for 20 minutes.</li><li>Serve immediately.</li><li>Garnish with fresh dill or parsley.</li></ol>",
+  "aggregateLikes": 16,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 6.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Freshly-ground black pepper to taste",
+      "name": "black pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 large carrots, sliced",
+      "name": "carrot"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "stalks",
+      "amount": 2.0,
+      "unitShort": "stalks",
+      "metaInformation": [],
+      "unit": "stalks",
+      "originalString": "2 large celery stalks with leaves on, chopped",
+      "name": "celery"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pounds",
+      "amount": 5.0,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1 5-6 pound chicken",
+      "name": "chicken"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "servings",
+      "amount": 6.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Optional: fresh dill or parsley for garnish",
+      "name": "dill weed"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 3.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "3 Eggs",
+      "name": "egg"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "sprigs",
+      "amount": 3.0,
+      "unitShort": "sprigs",
+      "metaInformation": [],
+      "unit": "sprigs",
+      "originalString": "3 sprigs fresh dill",
+      "name": "dill weed"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup matzo meal",
+      "name": "matzo meal"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 onion, quartered",
+      "name": "onion"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "sprigs",
+      "amount": 3.0,
+      "unitShort": "sprigs",
+      "metaInformation": [],
+      "unit": "sprigs",
+      "originalString": "3 sprigs parsley",
+      "name": "parsley"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.25,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/4 teaspoon Salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 6.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Salt and pepper, to taste",
+      "name": "salt and pepper"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup seltzer water",
+      "name": "seltzer water"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoons",
+      "amount": 4.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "4 tablespoons chicken fat or vegetable oil",
+      "name": "vegetable oil"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/classic-matzo-ball-soup-639616",
+  "weightWatcherSmartPoints": 18,
+  "id": 639616,
+  "image": "https://spoonacular.com/recipeImages/Classic-Matzo-Ball-Soup-639616.jpg",
+  "servings": 6,
+  "whole30": true,
+  "lowFodmap": false
+}

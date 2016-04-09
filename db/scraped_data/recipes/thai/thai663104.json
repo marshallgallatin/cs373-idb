@@ -49,7 +49,7 @@
       "unitShort": "serving",
       "metaInformation": [],
       "unit": "serving",
-      "originalString": "• Oil for fry",
+      "originalString": "Oil for fry",
       "name": "vegetable oil"
     },
     {
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "serving",
       "originalString": "Pepper to taste",
-      "name": "pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Meat",
@@ -99,7 +99,7 @@
       "unitShort": "serving",
       "metaInformation": [],
       "unit": "serving",
-      "originalString": "• Salt to taste",
+      "originalString": "Salt to taste",
       "name": "salt"
     },
     {

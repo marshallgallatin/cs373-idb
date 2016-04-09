@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "Cooked jasmine rice",
-      "name": "cooked jasmine rice"
+      "name": "cooked rice"
     },
     {
       "aisle": "Produce",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "6 Chinese sausages",
-      "name": "Chinese sausage"
+      "name": "Chinese sausages"
     },
     {
       "aisle": "Produce",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "1 thinly sliced hot, fresh red chili pepper (optional)",
-      "name": "red chili pepper"
+      "name": "red pepper"
     },
     {
       "aisle": "Ethnic Foods",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons Thai fish sauce",
-      "name": "thai fish sauce"
+      "name": "fish sauce"
     }
   ],
   "readyInMinutes": 45,

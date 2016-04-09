@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "handful",
       "originalString": "1 handful of minced fresh dill",
-      "name": "dill"
+      "name": "dill weed"
     },
     {
       "aisle": "Produce",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "pint",
       "originalString": "1 pint Greek yogurt",
-      "name": "greek yogurt"
+      "name": "Greek yogurt"
     },
     {
       "aisle": "Meat",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "4 hamburger buns",
-      "name": "hamburger buns"
+      "name": "hamburger bun"
     },
     {
       "aisle": "Produce",

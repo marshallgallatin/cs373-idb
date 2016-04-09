@@ -23,24 +23,14 @@
       "name": "bay leaf"
     },
     {
-      "aisle": "Produce",
+      "aisle": "Pasta and Rice",
       "unitLong": "pound",
       "amount": 1.0,
       "unitShort": "lb",
       "metaInformation": [],
       "unit": "pound",
-      "originalString": "pound fresh green beans diced, or",
+      "originalString": "pound fresh green beans diced",
       "name": "green bean"
-    },
-    {
-      "aisle": "Canned and Jarred",
-      "unitLong": "serving",
-      "amount": 1.0,
-      "unitShort": "serving",
-      "metaInformation": [],
-      "unit": "serving",
-      "originalString": "canned peas, carrots, or chick (depending on your taste)",
-      "name": "canned peas"
     },
     {
       "aisle": "Produce",
@@ -61,6 +51,16 @@
       "unit": "pound",
       "originalString": "pound calamari cleaned, skinned,",
       "name": "calamari"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "canned peas, carrots, or chick (depending on your taste)",
+      "name": "canned peas"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "12 Clams, littleneck Or mussels or both",
-      "name": "mussels"
+      "name": "mussel"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",

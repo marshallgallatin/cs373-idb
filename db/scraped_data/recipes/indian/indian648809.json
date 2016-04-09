@@ -63,13 +63,13 @@
       "name": "onion"
     },
     {
-      "aisle": "Oil, Vinegar, Salad Dressing",
+      "aisle": "Savory Snacks",
       "unitLong": "tablespoons",
       "amount": 3.0,
       "unitShort": "T",
       "metaInformation": [],
       "unit": "tablespoons",
-      "originalString": "3 tablespoons peanut, corn oil, but",
+      "originalString": "3 tablespoons peanut or corn oil",
       "name": "peanut oil"
     },
     {

@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon Basil, dried(or marjoram)",
-      "name": "dried basil"
+      "name": "basil"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "grams",
       "originalString": "500 grams Ground meat (a mix of pork and beef)",
-      "name": "ground beef"
+      "name": "ground pork"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
