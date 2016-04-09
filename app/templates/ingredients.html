@@ -14,7 +14,7 @@
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
 			$scope.firstNumber = 1;
 			$scope.page = 1;
-			$scope.perPage = 10;
+			$scope.perPage = 3;
 			$scope.maxPage = 18;
 			$scope.pages = [1, 2, 3, 4, 5];
 			$scope.ing;
@@ -52,14 +52,14 @@
 				$scope.getData();
 			}
 			$scope.getData = function () {
-				$http.get("ingredients?limit=" + $scope.perPage + "&page=" + $scope.page).then(function (transmit) {
-				//$http.get("/ingredients/list").then(function (transmit) {
+				//$http.get("ingredients?limit=" + $scope.perPage + "&page=" + $scope.page).then(function (transmit) {
+				$http.get("/ingredients/list").then(function (transmit) {
 					$scope.ing = transmit.data.ingredients;
 					$scope.nuts = [];
 					for (var i = 0; i < $scope.ing.length; ++i) {
 						//alert($scope.ing[i].id);
-						$http.get("ingredients/" + $scope.ing[i].id + "/nutrition").then(function (transmit_nuts) {
-						//$http.get("ingredients/test/nutrition"+i).then(function (transmit_nuts) {
+						//$http.get("ingredients/" + $scope.ing[i].id + "/nutrition").then(function (transmit_nuts) {
+						$http.get("ingredients/test/nutrition"+i).then(function (transmit_nuts) {
 							$scope.nuts.push(transmit_nuts.data);
 							//alert("lengggggg" + $scope.nuts.length);
 							if ($scope.nuts.length == $scope.perPage) {
