@@ -12,8 +12,11 @@
 	</style>
 	<script>
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
+			$scope.firstNumber = 1;
 			$scope.page = 1;
-			$scope.pages = [0, 1, 2, 3, 4];
+			$scope.perPage = 10;
+			$scope.maxPage = 18;
+			$scope.pages = [1, 2, 3, 4, 5];
 			$scope.ing;
 			$scope.nuts = [];
 			$scope.mbReverse = false;
@@ -28,37 +31,38 @@
 			$scope.changePage = function(x) {
 				if (x == -1) {
 					$scope.page = 1;
+					$scope.firstNumber = 1;
 				} else if (x == -2) {
-					$scope.page = 39;
+					$scope.page = $scope.maxPage;
+					$scope.firstNumber = $scope.page - $scope.pages.length + 1;
 				} else {
-					var incr = 1;
-					if ($scope.page < $scope.pages[3]) {
-						incr = -1;
-					}
-					
 					$scope.page = $scope.pages[x];
-					
-					if ((incr == 1 && $scope.pages[4] < 39)
-						|| (incr == -1 && $scope.pages[0] > 0)) {
-						for (var i = 0; i < $scope.pages.length; ++i) {
-							$scope.pages[i] += incr;
-						}
+					$scope.firstNumber = $scope.page - 2;
+					if ($scope.firstNumber > $scope.maxPage - $scope.pages.length + 1) {
+						$scope.firstNumber = $scope.maxPage - $scope.pages.length + 1;
+					} else if ($scope.firstNumber < 1) {
+						$scope.firstNumber = 1;
 					}
+				}
+				
+				for (var i = 0; i < $scope.pages.length; ++i) {
+					$scope.pages[i] = $scope.firstNumber + i;
 				}
 				$scope.getData();
 			}
 			$scope.getData = function () {
-				$http.get("ingredients?limit=10&page=" + $scope.page).then(function (transmit) {
-				//$http.get("total" + $scope.page).then(function (transmit) {
+				$http.get("ingredients?limit=" + $scope.perPage + "&page=" + $scope.page).then(function (transmit) {
 					$scope.ing = transmit.data.ingredients;
 					$scope.nuts = [];
 					for (var i = 0; i < $scope.ing.length; ++i) {
 						$http.get("ingredients/" + $scope.ing[i].id + "/nutrition").then(function (transmit_nuts) {
-						//$http.get("ingredients/test/nutrition").then(function (transmit_nuts) {
 							$scope.nuts.push(transmit_nuts.data);
 						});
 					}
 					$scope.$apply();
+				});
+				$http.get("ingredients/count").then(function (transmit) {
+					$scope.maxPage = Math.ceil(transmit.data.count / $scope.perPage);
 				});
 			}
 			$(function() {
@@ -74,24 +78,25 @@
 
 {% block content %}
 <div ng-app="mbApp" ng-controller="mbCtrl">
+<h1>{{ title }}</h1>
 	<div class="table-responsive">
 		<table class="table table-default table-hover">
 			<tr>
 				<th ng-click="orderByMe('id')">ID</th>
 				<th ng-click="orderByMe('name')">Description</th>
 				<th ng-click="orderByMe('calories')">Calories</th>
-				<th ng-click="orderByMe('protein_g')">Protein(g)</th>
-				<th ng-click="orderByMe('total_fat_g')">Fat(g)</th>
-				<th ng-click="orderByMe('total_carbohydrates_g')">Carbs(g)</th>
-				<th ng-click="orderByMe('dietary_fiber_g')">Fiber(g)</th>
-				<th ng-click="orderByMe('sugar_g')">Sugar(g)</th>
-				<th ng-click="orderByMe('calcium_mg')">Calcium(g)</th>
-				<th ng-click="orderByMe('iron_mg')">Iron(mg)</th>
-				<th ng-click="orderByMe('sodium_mg')">Sodium(mg)</th>
-				<th ng-click="orderByMe('vitamin_c_mg')">Vit C(mg)</th>
-				<th ng-click="orderByMe('vitamin_a_iu')">Vit A(IU)</th>
-				<th ng-click="orderByMe('saturated_fat_g')">Saturated Fat(g)</th>
-				<th ng-click="orderByMe('cholesterol_mg')">Cholesterol(g)</th>
+				<th ng-click="orderByMe('protein_g')">Protein (g)</th>
+				<th ng-click="orderByMe('total_fat_g')">Fat (g)</th>
+				<th ng-click="orderByMe('total_carbohydrates_g')">Carbs (g)</th>
+				<th ng-click="orderByMe('dietary_fiber_g')">Fiber (g)</th>
+				<th ng-click="orderByMe('sugar_g')">Sugar (g)</th>
+				<th ng-click="orderByMe('calcium_mg')">Calcium (g)</th>
+				<th ng-click="orderByMe('iron_mg')">Iron (mg)</th>
+				<th ng-click="orderByMe('sodium_mg')">Sodium (mg)</th>
+				<th ng-click="orderByMe('vitamin_c_mg')">Vit C (mg)</th>
+				<th ng-click="orderByMe('vitamin_a_iu')">Vit A (IU)</th>
+				<th ng-click="orderByMe('saturated_fat_g')">Saturated Fat (g)</th>
+				<th ng-click="orderByMe('cholesterol_mg')">Cholesterol (g)</th>
 			</tr>
 		<tr ng-repeat="x in ing | orderBy:mbOrderBy:mbReverse">
 			<td>{{ '{{x.id}}' }}</td>
@@ -115,12 +120,14 @@
 	<center>
 		<ul class="pagination">
 			<li><a ng-click="changePage(-1)">First</a></li>
+			<li><a ng-click="changePage(0)">{{ '{{pages[0]}}' }}</a></li>
 			<li><a ng-click="changePage(1)">{{ '{{pages[1]}}' }}</a></li>
 			<li><a ng-click="changePage(2)">{{ '{{pages[2]}}' }}</a></li>
 			<li><a ng-click="changePage(3)">{{ '{{pages[3]}}' }}</a></li>
 			<li><a ng-click="changePage(4)">{{ '{{pages[4]}}' }}</a></li>
 			<li><a ng-click="changePage(-2)">Last</a></li>
 		</ul>
+		<br />Max Page: {{ '{{maxPage}}' }}
 	</center>
 </div>
 {% endblock content %}
