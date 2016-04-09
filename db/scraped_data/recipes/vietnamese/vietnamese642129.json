@@ -40,11 +40,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "small chili pepper, finely chopped",
-<<<<<<< HEAD
       "name": "red pepper"
-=======
-      "name": "chili pepper"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Spices and Seasonings",
@@ -124,11 +120,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "8 large cooked shrimp, slice in half lengthways",
-<<<<<<< HEAD
       "name": "cooked shrimp"
-=======
-      "name": "shrimp"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Ethnic Foods",

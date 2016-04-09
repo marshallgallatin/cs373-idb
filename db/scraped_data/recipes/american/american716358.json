@@ -40,11 +40,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups of breadcrumbs",
-<<<<<<< HEAD
       "name": "bread crumbs"
-=======
-      "name": "breadcrumbs"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Meat",
@@ -94,11 +90,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1/4 teaspoon of ginger powder",
-<<<<<<< HEAD
       "name": "ground ginger"
-=======
-      "name": "ginger powder"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Canned and Jarred",

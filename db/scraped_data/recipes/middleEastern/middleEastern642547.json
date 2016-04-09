@@ -20,11 +20,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons all purpose flour",
-<<<<<<< HEAD
       "name": "flour"
-=======
-      "name": "all-purpose flour"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Baking",
@@ -54,11 +50,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons coriander leaves/cilantro - chopped",
-<<<<<<< HEAD
       "name": "cilantro"
-=======
-      "name": "cilantro leaves"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Spices and Seasonings",
@@ -68,11 +60,7 @@
       "metaInformation": [],
       "unit": "teaspoons",
       "originalString": "2 teaspoons coriander powder",
-<<<<<<< HEAD
       "name": "coriander seed"
-=======
-      "name": "coriander powder"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Spices and Seasonings",
@@ -132,11 +120,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "pepper",
-<<<<<<< HEAD
       "name": "black pepper"
-=======
-      "name": "pepper"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Spices and Seasonings",

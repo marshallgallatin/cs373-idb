@@ -17,13 +17,7 @@
       "unitLong": "pound",
       "amount": 1.0,
       "unitShort": "lb",
-<<<<<<< HEAD
       "metaInformation": [],
-=======
-      "metaInformation": [
-        "boneless and cut into 1\" cubes]"
-      ],
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
       "unit": "pound",
       "originalString": "1 pound mutton [boneless and cut into 1\" cubes]",
       "name": "mutton"
@@ -36,11 +30,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "1 1/4 cups basmati rice",
-<<<<<<< HEAD
       "name": "rice"
-=======
-      "name": "basmati rice"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Spices and Seasonings",
@@ -60,11 +50,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 pods green cardamom",
-<<<<<<< HEAD
       "name": "cardamom"
-=======
-      "name": "cardamom pods"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Spices and Seasonings",
@@ -84,11 +70,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "8 wholes dry red chilies [adjust to taste]",
-<<<<<<< HEAD
       "name": "dried chili peppers"
-=======
-      "name": "chilies"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Spices and Seasonings",
@@ -98,11 +80,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon dry coriander powder",
-<<<<<<< HEAD
       "name": "coriander seed"
-=======
-      "name": "coriander powder"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Spices and Seasonings",
@@ -112,11 +90,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon coriander seeds",
-<<<<<<< HEAD
       "name": "coriander seed"
-=======
-      "name": "coriander seeds"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Spices and Seasonings",
@@ -136,11 +110,7 @@
       "metaInformation": [],
       "unit": "leaves",
       "originalString": "Fresh Cilantro leaves",
-<<<<<<< HEAD
       "name": "cilantro"
-=======
-      "name": "fresh cilantro leaves"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Canned and Jarred",
@@ -200,11 +170,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "10 whole black peppercorns",
-<<<<<<< HEAD
       "name": "black pepper"
-=======
-      "name": "black peppercorns"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Spices and Seasonings",
@@ -244,11 +210,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "Almonds/Raisins [optional]",
-<<<<<<< HEAD
       "name": "almond"
-=======
-      "name": "almonds"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     }
   ],
   "readyInMinutes": 45,

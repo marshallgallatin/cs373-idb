@@ -40,11 +40,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "3 hot green chilies, minced (more or less if you prefer)",
-<<<<<<< HEAD
       "name": "jalapeno"
-=======
-      "name": "chilies"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Spices and Seasonings",
@@ -64,11 +60,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon coriander powder",
-<<<<<<< HEAD
       "name": "coriander seed"
-=======
-      "name": "coriander powder"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Spices and Seasonings",
@@ -148,11 +140,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons single cream (optional)",
-<<<<<<< HEAD
       "name": "single cream"
-=======
-      "name": "cream"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Produce",

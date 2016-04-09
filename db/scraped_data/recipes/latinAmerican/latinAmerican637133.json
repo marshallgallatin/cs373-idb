@@ -30,11 +30,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups fresh baby spinach",
-<<<<<<< HEAD
       "name": "spinach"
-=======
-      "name": "baby spinach"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Spices and Seasonings",
@@ -54,11 +50,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "6 burrito size tortillas",
-<<<<<<< HEAD
       "name": "tortilla"
-=======
-      "name": "tortillas"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Produce",
@@ -198,11 +190,7 @@
       "metaInformation": [],
       "unit": "lb",
       "originalString": "1 lb sirloin, trimmed and diced (1/2 inch)",
-<<<<<<< HEAD
       "name": "sirloin beef"
-=======
-      "name": "bison sirloin"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     }
   ],
   "readyInMinutes": 30,

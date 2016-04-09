@@ -43,22 +43,14 @@
       "name": "garlic"
     },
     {
-<<<<<<< HEAD
-      "aisle": "Frozen",
-=======
       "aisle": "Canned and Jarred",
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
       "unitLong": "",
       "amount": 3.0,
       "unitShort": "",
       "metaInformation": [],
       "unit": "",
       "originalString": "3 Cubes of Maggi",
-<<<<<<< HEAD
-      "name": "bouillon cube"
-=======
       "name": "vegetable bouillon"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Produce",

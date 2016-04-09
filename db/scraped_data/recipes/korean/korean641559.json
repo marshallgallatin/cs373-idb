@@ -20,11 +20,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "3 cups fresh baby spinach",
-<<<<<<< HEAD
       "name": "spinach"
-=======
-      "name": "baby spinach"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Produce",
@@ -74,11 +70,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup fresh shiitake mushrooms, thinly sliced",
-<<<<<<< HEAD
       "name": "shiitake mushroom"
-=======
-      "name": "fresh shiitake mushrooms"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Produce",
@@ -198,11 +190,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "3/4 cup firm tofu, rinsed and cut into 1-inch cubes",
-<<<<<<< HEAD
       "name": "tofu"
-=======
-      "name": "firm tofu"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Produce",

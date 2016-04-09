@@ -40,11 +40,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons cooking oil",
-<<<<<<< HEAD
       "name": "vegetable oil"
-=======
-      "name": "cooking oil"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Ethnic Foods",
@@ -94,11 +90,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "6 small squids (clean and cut into bite size)",
-<<<<<<< HEAD
       "name": "squid"
-=======
-      "name": "squids"
->>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     }
   ],
   "readyInMinutes": 45,
