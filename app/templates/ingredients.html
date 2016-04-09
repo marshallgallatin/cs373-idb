@@ -26,6 +26,12 @@
 				} else {
 					$scope.mbReverse = false;
 				}
+				
+				function SortByName(a, b) {
+					return ((a.x < b.x) ? -1 : ((a.x > b.x) ? 1 : 0));
+				}
+				$scope.nuts.sort(SortByName);
+				
 				$scope.mbOrderBy = x;
 			}
 			$scope.changePage = function(x) {
@@ -56,9 +62,7 @@
 					$scope.nuts = [];
 					for (var i = 0; i < $scope.ing.length; ++i) {
 						$http.get("ingredients/" + $scope.ing[i].id + "/nutrition").then(function (transmit_nuts) {
-							$scope.nuts.push({x:"min wuz here"});
-							jQuery.extend($scope.nuts[i], $scope.ing[i]);
-							jQuery.extend($scope.nuts[i], transmit_nuts.data);
+							$scope.nuts.push(transmit_nuts.data);
 						});
 					}
 					$scope.$apply();
@@ -100,22 +104,22 @@
 				<th ng-click="orderByMe('saturated_fat_g')">Saturated Fat (g)</th>
 				<th ng-click="orderByMe('cholesterol_mg')">Cholesterol (g)</th>
 			</tr>
-		<tr ng-repeat="x in nuts | orderBy:mbOrderBy:mbReverse">
+		<tr ng-repeat="x in ing | orderBy:mbOrderBy:mbReverse">
 			<td>{{ '{{x.id}}' }}</td>
 			<td><a ng-href="/ingredient_{{ '{{x.id}}' }}.html">{{ '{{x.name}}' }}</a></td>
-			<td>{{ '{{x.calories}}' }}</td>
-			<td>{{ '{{x.protein_g}}' }}</td>
-			<td>{{ '{{x.total_fat_g}}' }}</td>
-			<td>{{ '{{x.total_carbohydrates_g}}' }}</td>
-			<td>{{ '{{x.dietary_fiber_g}}' }}</td>
-			<td>{{ '{{x.sugar_g}}' }}</td>
-			<td>{{ '{{x.calcium_mg}}' }}</td>
-			<td>{{ '{{x.iron_mg}}' }}</td>
-			<td>{{ '{{x.sodium_mg}}' }}</td>
-			<td>{{ '{{x.vitamin_c_mg}}' }}</td>
-			<td>{{ '{{x.vitamin_a_iu}}' }}</td>
-			<td>{{ '{{x.saturated_fat_g}}' }}</td>
-			<td>{{ '{{x.cholesterol_mg}}' }}</td>
+			<td>{{ '{{nuts[$index].calories}}' }}</td>
+			<td>{{ '{{nuts[$index].protein_g}}' }}</td>
+			<td>{{ '{{nuts[$index].total_fat_g}}' }}</td>
+			<td>{{ '{{nuts[$index].total_carbohydrates_g}}' }}</td>
+			<td>{{ '{{nuts[$index].dietary_fiber_g}}' }}</td>
+			<td>{{ '{{nuts[$index].sugar_g}}' }}</td>
+			<td>{{ '{{nuts[$index].calcium_mg}}' }}</td>
+			<td>{{ '{{nuts[$index].iron_mg}}' }}</td>
+			<td>{{ '{{nuts[$index].sodium_mg}}' }}</td>
+			<td>{{ '{{nuts[$index].vitamin_c_mg}}' }}</td>
+			<td>{{ '{{nuts[$index].vitamin_a_iu}}' }}</td>
+			<td>{{ '{{nuts[$index].saturated_fat_g}}' }}</td>
+			<td>{{ '{{nuts[$index].cholesterol_mg}}' }}</td>
 		</tr>
 		</table>
 	</div>
