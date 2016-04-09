@@ -48,7 +48,11 @@
 				$http.get("recipes/{{ rec_id }}").then(function (transmit) {
 				//$http.get("test/r").then(function (transmit) {
 					$scope.data = transmit.data;
-					$scope.data.instructions = $scope.data.instructions.replace("<ol><li>", "").replace("</li></ol>", "").split("</li><li>");
+					if ($scope.data.instructions.contains()) {
+						$scope.data.instructions = $scope.data.instructions.replace("<ol><li>", "").replace("</li></ol>", "").split("</li><li>");
+					} else {
+						$scope.data.instructions = $scope.data.instructions.split(". ");
+					}
 					$scope.halfI = Math.floor($scope.data.ingredients.length / 2);
 				});
 			}
