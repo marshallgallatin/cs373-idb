@@ -26,12 +26,6 @@
 				} else {
 					$scope.mbReverse = false;
 				}
-				
-				function SortByName(a, b) {
-					return ((a.x < b.x) ? -1 : ((a.x > b.x) ? 1 : 0));
-				}
-				$scope.nuts.sort(SortByName);
-				
 				$scope.mbOrderBy = x;
 			}
 			$scope.changePage = function(x) {
