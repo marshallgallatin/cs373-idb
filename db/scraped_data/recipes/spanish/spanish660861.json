@@ -70,7 +70,11 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "1 1/2 cups grape tomatoes",
+<<<<<<< HEAD
       "name": "tomato"
+=======
+      "name": "grape tomatoes"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Produce",
@@ -90,7 +94,11 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "4 tablespoons Panko bread crumbs",
+<<<<<<< HEAD
       "name": "bread crumbs"
+=======
+      "name": "panko bread crumbs"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Produce",

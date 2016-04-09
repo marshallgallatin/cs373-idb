@@ -20,7 +20,11 @@
       "metaInformation": [],
       "unit": "grams",
       "originalString": "75 grams Asparagus spears, blanched",
+<<<<<<< HEAD
       "name": "asparagus"
+=======
+      "name": "asparagus spears"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Canned and Jarred",

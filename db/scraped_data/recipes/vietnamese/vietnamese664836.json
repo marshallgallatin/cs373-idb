@@ -120,7 +120,11 @@
       "metaInformation": [],
       "unit": "bunch",
       "originalString": "1 bunch Fresh mint",
+<<<<<<< HEAD
       "name": "mint"
+=======
+      "name": "fresh mint"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Ethnic Foods",
@@ -170,7 +174,11 @@
       "metaInformation": [],
       "unit": "pounds",
       "originalString": "5 pounds Oxtails",
+<<<<<<< HEAD
       "name": "oxtail"
+=======
+      "name": "oxtails"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Gluten Free",

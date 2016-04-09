@@ -60,7 +60,11 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup FRIED PINE NUTS",
+<<<<<<< HEAD
       "name": "pine nut"
+=======
+      "name": "pine nuts"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Pasta and Rice",

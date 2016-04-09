@@ -110,7 +110,11 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "1 hot green chili finely sliced",
+<<<<<<< HEAD
       "name": "jalapeno"
+=======
+      "name": "green chili"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Produce",
@@ -120,7 +124,11 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 hot green chilis finely chopped",
+<<<<<<< HEAD
       "name": "jalapeno"
+=======
+      "name": "green chilis"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Produce",
@@ -170,7 +178,11 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup frozen peas (take them out the freezer before you start cooking)",
+<<<<<<< HEAD
       "name": "frozen peas"
+=======
+      "name": "peas"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Produce",

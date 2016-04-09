@@ -30,7 +30,11 @@
       "metaInformation": [],
       "unit": "oz",
       "originalString": "1 14.5-oz. can fire-roasted diced tomatoes, no salt added",
+<<<<<<< HEAD
       "name": "canned fire-roasted tomatoes"
+=======
+      "name": "canned tomatoes"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Spices and Seasonings",
@@ -120,7 +124,11 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "2/3 cup long-grain brown rice",
+<<<<<<< HEAD
       "name": "brown rice"
+=======
+      "name": "long grain brown rice"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Produce",

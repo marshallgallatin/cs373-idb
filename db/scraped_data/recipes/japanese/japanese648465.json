@@ -40,7 +40,11 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon pepper",
+<<<<<<< HEAD
       "name": "black pepper"
+=======
+      "name": "pepper"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Pasta and Rice",

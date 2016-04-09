@@ -30,7 +30,11 @@
       "metaInformation": [],
       "unit": "stalks",
       "originalString": "5 stalks of asian kale",
+<<<<<<< HEAD
       "name": "asian kale"
+=======
+      "name": "kale"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Produce",
@@ -50,7 +54,11 @@
       "metaInformation": [],
       "unit": "grams",
       "originalString": "350 grams fresh hokkien noodles (blanch as per packet instructions)",
+<<<<<<< HEAD
       "name": "hokkien noodles"
+=======
+      "name": "noodles"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Ethnic Foods",

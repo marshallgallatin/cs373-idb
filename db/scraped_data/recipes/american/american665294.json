@@ -60,7 +60,11 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "1 roasted bulb of garlic",
+<<<<<<< HEAD
       "name": "garlic"
+=======
+      "name": "roasted garlic"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Spices and Seasonings",
@@ -90,7 +94,11 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup shredded mozzarella",
+<<<<<<< HEAD
       "name": "mozzarella"
+=======
+      "name": "shredded mozzarella"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",

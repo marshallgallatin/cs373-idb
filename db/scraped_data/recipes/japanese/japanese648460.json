@@ -20,7 +20,11 @@
       "metaInformation": [],
       "unit": "oz",
       "originalString": "6 cups baby spinach leaves (about 6 oz) rinsed, drained",
+<<<<<<< HEAD
       "name": "spinach"
+=======
+      "name": "baby spinach leaves"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Meat",

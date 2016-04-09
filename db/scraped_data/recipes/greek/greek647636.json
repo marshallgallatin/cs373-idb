@@ -20,7 +20,11 @@
       "metaInformation": [],
       "unit": "can",
       "originalString": "1 can Chickpeas- any brand- Drain and wash",
+<<<<<<< HEAD
       "name": "chickpea"
+=======
+      "name": "chickpeas"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Spices and Seasonings",

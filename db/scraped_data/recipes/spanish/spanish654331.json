@@ -80,7 +80,11 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "12 Clams, littleneck Or mussels or both",
+<<<<<<< HEAD
       "name": "clam"
+=======
+      "name": "mussels"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -170,7 +174,11 @@
       "metaInformation": [],
       "unit": "g",
       "originalString": "200g petit pois",
+<<<<<<< HEAD
       "name": "pea"
+=======
+      "name": "petit pois"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     }
   ],
   "readyInMinutes": 45,

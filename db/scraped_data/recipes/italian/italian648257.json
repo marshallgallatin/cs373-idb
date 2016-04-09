@@ -40,7 +40,11 @@
       "metaInformation": [],
       "unit": "tsp",
       "originalString": "1/4 tsp coriander seeds",
+<<<<<<< HEAD
       "name": "coriander seed"
+=======
+      "name": "coriander seeds"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Spices and Seasonings",

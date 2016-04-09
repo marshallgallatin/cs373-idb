@@ -80,7 +80,11 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons sweet Hungarian paprika",
+<<<<<<< HEAD
       "name": "paprika"
+=======
+      "name": "hungarian sweet paprika"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Produce",

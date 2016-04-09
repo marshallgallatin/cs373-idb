@@ -24,13 +24,30 @@
     },
     {
       "aisle": "Baking",
+<<<<<<< HEAD
+=======
+      "unitLong": "can",
+      "amount": 1.0,
+      "unitShort": "can",
+      "metaInformation": [],
+      "unit": "can",
+      "originalString": "Pau flour is low protein flour, if you can't find in your area, just use low protein flour or super fine flour and can also try cake flour to replace it.",
+      "name": "cake flour"
+    },
+    {
+      "aisle": "Baking",
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
       "unitLong": "tablespoon",
       "amount": 1.0,
       "unitShort": "T",
       "metaInformation": [],
       "unit": "tbsp",
       "originalString": "1 tbsp. dry yeast",
+<<<<<<< HEAD
       "name": "yeast"
+=======
+      "name": "dry yeast"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Baking",
@@ -39,7 +56,11 @@
       "unitShort": "g",
       "metaInformation": [],
       "unit": "g",
+<<<<<<< HEAD
       "originalString": "400g Pau flour, sifted (or another low protein flour, super fine flour or cake flour)",
+=======
+      "originalString": "400g Pau flour, sifted (Note*)",
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
       "name": "flour"
     },
     {
@@ -90,7 +111,11 @@
       "metaInformation": [],
       "unit": "g",
       "originalString": "100g wholemeal flour",
+<<<<<<< HEAD
       "name": "dark rye flour"
+=======
+      "name": "wholemeal rye flour"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     }
   ],
   "readyInMinutes": 45,

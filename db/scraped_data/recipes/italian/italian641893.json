@@ -20,7 +20,11 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "2 1/4 cup baking mix (like Bisquick or Jiffy)",
+<<<<<<< HEAD
       "name": "biscuit mix"
+=======
+      "name": "baking mix"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Produce",
@@ -60,7 +64,11 @@
       "metaInformation": [],
       "unit": "tsp",
       "originalString": "1 tsp Italian seasoning",
+<<<<<<< HEAD
       "name": "Italian seasoning"
+=======
+      "name": "italian seasoning"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -160,7 +168,11 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups shredded mozzarella",
+<<<<<<< HEAD
       "name": "mozzarella"
+=======
+      "name": "shredded mozzarella"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     }
   ],
   "readyInMinutes": 45,

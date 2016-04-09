@@ -20,7 +20,11 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "4 cups fresh baby spinach",
+<<<<<<< HEAD
       "name": "spinach"
+=======
+      "name": "baby spinach"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Produce",
@@ -40,7 +44,11 @@
       "metaInformation": [],
       "unit": "ounces",
       "originalString": "10 ounces cabbage kimchi",
+<<<<<<< HEAD
       "name": "kimchi cabbage"
+=======
+      "name": "cabbage"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Produce",
@@ -160,7 +168,11 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup firm tofu, rinsed and cut into 1-inch cubes",
+<<<<<<< HEAD
       "name": "tofu"
+=======
+      "name": "firm tofu"
+>>>>>>> e6ba57ad0f0127c099f14a174337b2e8d073fef7
     },
     {
       "aisle": "Produce",
