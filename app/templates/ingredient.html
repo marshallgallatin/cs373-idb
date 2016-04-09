@@ -8,25 +8,41 @@
 	</style>
 	<script src="http://maps.googleapis.com/maps/api/js"></script>
 	<script>
-	/*
-		function initialize() {
-		  var mapProp = {
-			center:new google.maps.LatLng({{ place }}),
-			zoom:17,
-			mapTypeId:google.maps.MapTypeId.ROADMAP
-		  };
-		  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
-		}
-		google.maps.event.addDomListener(window, 'load', initialize);
-		$(function() {
-			initialize();
-		});
-		$(window).resize(initialize);
-	*/	
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
+			$scope.lat = 30.2849231;
+			$scope.lng = -97.7362454;
+			$scope.zoom = 17;
+			$scope.areas = {"Africa":[4.3139505,21.6193857,3],
+							"Asia":[52.1221233,94.6779534,2],
+							"Europe":[48.2501957,14.020635,3],
+							"North America":[48.0005057,-112.2921205,2],
+							"Oceania":[-13.4003707,134.4861927,2],
+							"South America":[-25.9378331,-60.746592,2],
+							"Worldwide":[0,0,0]
+							//More
+							};
+			$scope.drawMap = function () {
+				var mapProp = {
+					center:new google.maps.LatLng($scope.lat, $scope.lng),
+					zoom:$scope.zoom,
+					mapTypeId:google.maps.MapTypeId.ROADMAP
+				};
+				var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+			}
 			$scope.getData = function () {
 				$http.get("ingredients/{{ i_id }}").then(function (transmit) {
 					$scope.basic = transmit.data;
+					if ($scope.areas[$scope.basic.origin] != undefined) {
+						$scope.lat = $scope.areas[$scope.basic.origin][0];
+						$scope.lng = $scope.areas[$scope.basic.origin][1];
+						$scope.zoom = $scope.areas[$scope.basic.origin][2];
+					} else {
+						$scope.lat = 30.2849231;
+						$scope.lng = -97.7362454;
+						$scope.zoom = 17;
+					}
+					$scope.drawMap();
+					$(window).resize($scope.drawMap);
 				});
 				$http.get("ingredients/{{ i_id }}/recipes").then(function (transmit) {
 					$scope.recipes = transmit.data.recipes;
@@ -51,7 +67,7 @@
 	<div class="row" style="padding-bottom:10px">
 		<div class="col-xs-12 col-sm-6 col-lg-6">
 			<h1 style="word-wrap: break-word">{{ '{{ basic.name }}' }}</h1>
-			Scientific name: {{ '{{ basic.scientific_name }}' }}
+			Scientific name: <i>{{ '{{ basic.scientific_name }}' }}</i>
 		</div>
 		<div style="padding-top:10px" class="col-xs-12 col-sm-6 col-lg-6">
 			<img class="img-responsive" ng-src="{{ '{{basic.image_uri}}' }}"></img>
@@ -59,10 +75,8 @@
 	</div>
 	
 	<div class="col-xs-12 col-sm-6">
-		<!--
-		<h3>Produced here:</h3>
+		<h3>Originates from {{ '{{ basic.origin }}' }}</h3>
 		<div id="googleMap" style="height:300px;background-color:transparent"></div>
-		-->
 		<h3>Used in recipes:</h3>
 		<a ng-repeat="x in recipes" ng-href="/recipe_{{ '{{x.id}}' }}.html" class="btn btn-default">{{ '{{x.title}}' }}</a>
 	</div>
@@ -73,7 +87,7 @@
 		<h4>Nutrition Facts</h4>
 		</th>
 		<tr>
-		<td>Serving Size g</td>
+		<td>Serving Size 100g</td>
 		</tr>
 		<tr style="background-color:black">
 		<td></td>

@@ -257,7 +257,7 @@ class IngredientsInRecipes(Base):
     unit            = Column(String, nullable=True)
     unit_short      = Column(String, nullable=True)
 
-    ingredient_index = Column(Integer, nullable=False)
+    ingredient_index = Column(Integer, nullable=False, primary_key=True)
 
     # Relationships
     recipe     = relationship(Recipe,     back_populates="ingredients")
