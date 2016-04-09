@@ -98,6 +98,7 @@
 				$http.get("ingredients/count").then(function (transmit) {
 					$scope.isLoadingCount = true;
 					$scope.maxPage = Math.ceil(transmit.data.count / $scope.perPage);
+					console.log("Check maxPage value immediately before signalling finish:"+$scope.maxPage);
 					$scope.isLoadingCount = false;
 					$scope.computeIsLoading();
 				});
@@ -138,7 +139,7 @@
 				<th ng-click="orderByMe('saturated_fat_g')">Saturated Fat (g)</th>
 				<th ng-click="orderByMe('cholesterol_mg')">Cholesterol (g)</th>
 			</tr>
-		<tr ng-repeat="x in ing | orderBy:mbOrderBy:mbReverse">
+		<tr ng-hide="isLoading" ng-repeat="x in ing | orderBy:mbOrderBy:mbReverse">
 			<td>{{ '{{x.id}}' }}</td>
 			<td><a ng-href="/ingredient_{{ '{{x.id}}' }}.html">{{ '{{x.name}}' }}</a></td>
 			<td>{{ '{{x.calories}}' }}</td>

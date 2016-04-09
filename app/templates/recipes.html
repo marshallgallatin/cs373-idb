@@ -12,6 +12,9 @@
 	</style>
 	<script>
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
+			$scope.isLoading = true;
+			$scope.isLoadingData = true;
+			$scope.isLoadingCount = true;
 			$scope.firstNumber = 1;
 			$scope.page = 1;
 			$scope.perPage = 10;
@@ -50,14 +53,25 @@
 				}
 				$scope.getData();
 			}
+			$scope.computeIsLoading = function () {
+				$scope.isLoading = 	$scope.isLoadingData
+									|| $scope.isLoadingCount
+									|| $scope.isLoadingNuts;
+			}
 			$scope.getData = function () {
+				$scope.isLoadingData = true;
 				$http.get("recipes?limit=" + $scope.perPage + "&page=" + $scope.page).then(function (transmit) {
 				//$http.get("r" + $scope.page).then(function (transmit) {
 					$scope.data = transmit.data;
 				});
 				$http.get("recipes/count").then(function (transmit) {
+					$scope.isLoadingCount = true;
 					$scope.maxPage = Math.ceil(transmit.data.count / $scope.perPage);
+					$scope.isLoadingCount = false;
+					$scope.computeIsLoading();
 				});
+				$scope.isLoadingData = false;
+				$scope.computeIsLoading();
 			}
 			$(function() {
 				$scope.getData();
@@ -72,6 +86,9 @@
 
 {% block content %}
 <div ng-app="mbApp" ng-controller="mbCtrl">
+<div ng-show="isLoading" class="alert alert-warning">
+  Loading data...
+</div>
 <h1>{{ title }}</h1>
 	<div class="table-responsive">
 		<table class="table table-default table-hover">
@@ -83,7 +100,7 @@
 				<th ng-click="orderByMe('servings')">Serves</th>
 				<th ng-click="orderByMe('cuisine')">Cuisine</th>
 			</tr>
-		<tr ng-repeat="x in data.recipes | orderBy:mbOrderBy:mbReverse">
+		<tr ng-hide="isLoading" ng-repeat="x in data.recipes | orderBy:mbOrderBy:mbReverse">
 			<td>{{ '{{x.id}}' }}</td>
 			<td><a ng-href="/recipe_{{ '{{x.id}}' }}.html">{{ '{{x.title}}' }}</a></td>
 			<td><img ng-src="{{ '{{x.image_uri}}' }}"></img></td>
