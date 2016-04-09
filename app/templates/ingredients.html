@@ -12,6 +12,7 @@
 	</style>
 	<script>
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
+			$scope.isLoading = true;
 			$scope.firstNumber = 1;
 			$scope.page = 1;
 			$scope.perPage = 3;
@@ -97,6 +98,9 @@
 
 {% block content %}
 <div ng-app="mbApp" ng-controller="mbCtrl">
+<div ng-show="isLoading" class="alert alert-warning">
+  Loading data...
+</div>
 <h1>{{ title }}</h1>
 	<div class="table-responsive">
 		<table class="table table-default table-hover">
