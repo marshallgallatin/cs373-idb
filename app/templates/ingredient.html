@@ -8,7 +8,7 @@
 	</style>
 	<script src="http://maps.googleapis.com/maps/api/js"></script>
 	<script>
-	/*
+	
 		function initialize() {
 		  var mapProp = {
 			center:new google.maps.LatLng({{ place }}),
@@ -22,7 +22,7 @@
 			initialize();
 		});
 		$(window).resize(initialize);
-	*/	
+	
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
 			$scope.getData = function () {
 				$http.get("ingredients/{{ i_id }}").then(function (transmit) {
@@ -73,7 +73,7 @@
 		<h4>Nutrition Facts</h4>
 		</th>
 		<tr>
-		<td>Serving Size g</td>
+		<td>Serving Size 100g</td>
 		</tr>
 		<tr style="background-color:black">
 		<td></td>
