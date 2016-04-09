@@ -14,6 +14,7 @@
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
 			$scope.isLoading = true;
 			$scope.isLoadingData = true;
+			$scope.isLoadingNuts = true;
 			$scope.isLoadingCount = true;
 			$scope.firstNumber = 1;
 			$scope.page = 1;
@@ -55,7 +56,9 @@
 				$scope.getData();
 			}
 			$scope.computeIsLoading = function () {
-				$scope.isLoading = $scope.isLoadingData || $scope.isLoadingCount;
+				$scope.isLoading = 	$scope.isLoadingData
+									|| $scope.isLoadingCount
+									|| $scope.isLoadingNuts;
 			}
 			$scope.getData = function () {
 				$scope.isLoadingData = true;
@@ -67,14 +70,17 @@
 						console.log($scope.ing[i].id);
 						//$http.get("ingredients/" + $scope.ing[i].id + "/nutrition").then(function (transmit_nuts) {
 						$http.get("ingredients/test/nutrition"+i).then(function (transmit_nuts) {
+							$scope.isLoadingNuts = true;
 							$scope.nuts.push(transmit_nuts.data);
 							console.log("Current length of nuts:" + $scope.nuts.length);
 							if ($scope.nuts.length == $scope.perPage) {
-								Console.log("Complete nuts at length:" + $scope.ing.length);
+								console.log("Complete nuts at length:" + $scope.ing.length);
 								for (var i2 = 0; i2 < $scope.ing.length; ++i2) {
 									
 									jQuery.extend($scope.ing[i2], $scope.nuts[i2]);
 								}
+								$scope.isLoadingNuts = false;
+								$scope.computeIsLoading();
 							}
 						});
 						console.log($scope.ing[i].id);
@@ -83,7 +89,7 @@
 						} else {console.log("Undefined: Calories ["+i+"]");}
 						if ($scope.nuts != undefined) {
 							console.log("$scope.nuts.length="+$scope.nuts.length);
-						} else {console.log("Undefined: $scope.nuts.length);}
+						} else {console.log("Undefined: $scope.nuts.length");}
 					}
 					
 					$scope.isLoadingData = false;
