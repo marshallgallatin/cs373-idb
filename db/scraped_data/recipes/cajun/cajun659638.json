@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "8 cups cooked long-grain white rice",
-      "name": "rice"
+      "name": "cooked rice"
     },
     {
       "aisle": "Seafood",
@@ -170,7 +170,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon Creole seasoning blend",
-      "name": "seasoning blend"
+      "name": "creole seasoning"
     },
     {
       "aisle": "Seafood",

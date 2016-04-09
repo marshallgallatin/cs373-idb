@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "can",
       "originalString": "1 can coconut milk (I don't recommend using light)",
-      "name": "coconut milk"
+      "name": "light coconut milk"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "teaspoons",
       "originalString": "2 teaspoons Thai red curry paste (if you like it spicy, use the full 2 teaspoons)",
-      "name": "thai red curry paste"
+      "name": "curry paste"
     },
     {
       "aisle": "Spices and Seasonings",

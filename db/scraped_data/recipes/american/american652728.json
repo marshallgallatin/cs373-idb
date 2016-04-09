@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "ounces",
       "originalString": "10 ounces baby bella mushrooms, thickly sliced",
-      "name": "cremini mushroom"
+      "name": "portabello mushroom"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "ounces",
       "originalString": "3 ounces low-fat Swiss cheese, shredded",
-      "name": "swiss cheese"
+      "name": "low-fat swiss cheese"
     }
   ],
   "readyInMinutes": 45,

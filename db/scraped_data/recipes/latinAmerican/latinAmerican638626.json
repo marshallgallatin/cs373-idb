@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup fresh mint leaves",
-      "name": "fresh mint leaves"
+      "name": "mint"
     },
     {
       "aisle": "Produce",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup fresh oregano leaves",
-      "name": "fresh oregano leaves"
+      "name": "oregano"
     },
     {
       "aisle": "Produce",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon freshly ground pepper",
-      "name": "pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -160,7 +160,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 skirt steaks",
-      "name": "steaks"
+      "name": "skirt steaks"
     }
   ],
   "readyInMinutes": 45,

@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon Chile Powder, plus more for sprinkling over top",
-      "name": "chile powder"
+      "name": "chili powder"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -150,7 +150,7 @@
       "metaInformation": [],
       "unit": "ounces",
       "originalString": "4 ounces can Green Chiles, diced",
-      "name": "green chilies"
+      "name": "canned green chili peppers"
     },
     {
       "aisle": "Meat",
@@ -220,7 +220,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "Red Pepper, optional",
-      "name": "crushed red pepper"
+      "name": "red pepper"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -250,7 +250,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1/2 teaspoon Table Salt or 1 teaspoon Sea/Kosher Salt",
-      "name": "table salt"
+      "name": "salt"
     },
     {
       "aisle": "Beverages",

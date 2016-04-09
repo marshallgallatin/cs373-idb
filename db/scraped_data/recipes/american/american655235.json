@@ -1,1 +1,69 @@
-{"vegetarian": false, "glutenFree": true, "title": "Peanut Butter and Jelly Smoothie", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/K5KVRWVR/peanut-butter-and-jelly-smoothie", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Place ingredients in a high speed blender like Blendtec for super smooth texture, blend on high.</li><li>If using a regular blender put milk and strawberries in then blend.</li><li>Next, add banana pieces and peanut butter, process until smooth.</li><li>Garnish with crushed peanuts and serve.</li></ol>", "aggregateLikes": 58, "dairyFree": true, "extendedIngredients": [{"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup almond milk or other non-dairy milk (see my almond milk recipe)", "name": "almond milk"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 bananas, smashed (I used frozen)", "name": "banana"}, {"aisle": "Nut butters, Jams, and Honey", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup peanut butter", "name": "peanut butter"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "\u00bd cup strawberries (about 3 strawberries) or 1 Tbsp strawberry jam", "name": "strawberries"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/peanut-butter-and-jelly-smoothie-655235", "weightWatcherSmartPoints": 12, "id": 655235, "image": "https://spoonacular.com/recipeImages/Peanut-Butter-and-Jelly-Smoothie-655235.jpg", "servings": 2, "whole30": false, "lowFodmap": true}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Peanut Butter and Jelly Smoothie",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/K5KVRWVR/peanut-butter-and-jelly-smoothie",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Place ingredients in a high speed blender like Blendtec for super smooth texture, blend on high.</li><li>If using a regular blender put milk and strawberries in then blend.</li><li>Next, add banana pieces and peanut butter, process until smooth.</li><li>Garnish with crushed peanuts and serve.</li></ol>",
+  "aggregateLikes": 58,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup almond milk or other non-dairy milk (see my almond milk recipe)",
+      "name": "almond milk"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 bananas, smashed (I used frozen)",
+      "name": "banana"
+    },
+    {
+      "aisle": "Nut butters, Jams, and Honey",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup peanut butter",
+      "name": "peanut butter"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup strawberries (about 3 strawberries) or 1 Tbsp strawberry jam",
+      "name": "strawberry"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/peanut-butter-and-jelly-smoothie-655235",
+  "weightWatcherSmartPoints": 12,
+  "id": 655235,
+  "image": "https://spoonacular.com/recipeImages/Peanut-Butter-and-Jelly-Smoothie-655235.jpg",
+  "servings": 2,
+  "whole30": false,
+  "lowFodmap": true
+}

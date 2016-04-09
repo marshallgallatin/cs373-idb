@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "ounce",
       "originalString": "1 ounce fresh bread crumbs",
-      "name": "fresh bread crumbs"
+      "name": "soft bread crumbs"
     },
     {
       "aisle": "Produce",
@@ -79,8 +79,18 @@
       "unitShort": "",
       "metaInformation": [],
       "unit": "",
-      "originalString": "1 Zest and juice of lemon",
+      "originalString": "juice of 1 lemon",
       "name": "lemon juice"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "Zest of 1 lemon",
+      "name": "lemon zest"
     },
     {
       "aisle": "Baking",
@@ -110,7 +120,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup confectioner's sugar",
-      "name": "sugar"
+      "name": "powdered sugar"
     }
   ],
   "readyInMinutes": 45,

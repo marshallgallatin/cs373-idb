@@ -19,7 +19,7 @@
       "unitShort": "l",
       "metaInformation": [],
       "unit": "liters",
-      "originalString": "Brine solution (3- 4 liters water+ 1 1/2 cups coarse salt)",
+      "originalString": "Brine solution (3- 4 liters water+ 1 ½ cups coarse salt)",
       "name": "brine"
     },
     {
@@ -59,7 +59,7 @@
       "unitShort": "",
       "metaInformation": [],
       "unit": "",
-      "originalString": "1 small napa cabbage, (abt 1/2 kg) quartered lengthways with stems attached and washed",
+      "originalString": "1 small napa cabbage, (abt ½ kg) quartered lengthways with stems attached and washed",
       "name": "napa cabbage"
     },
     {
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "1/4 bowl cooked rice",
-      "name": "rice"
+      "name": "cooked rice"
     },
     {
       "aisle": "Seafood",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons fermented baby shrimps/ cincalok (you can even use brined fish/anchovies)",
-      "name": "shrimp"
+      "name": "fermented baby shrimp"
     },
     {
       "aisle": "Produce",

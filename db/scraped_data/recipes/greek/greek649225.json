@@ -23,16 +23,6 @@
       "name": "flour"
     },
     {
-      "aisle": "Condiments",
-      "unitLong": "servings",
-      "amount": 12.0,
-      "unitShort": "servings",
-      "metaInformation": [],
-      "unit": "servings",
-      "originalString": "White Sauce",
-      "name": "barbecue sauce"
-    },
-    {
       "aisle": "Canned and Jarred",
       "unitLong": "can",
       "amount": 1.0,
@@ -43,7 +33,7 @@
       "name": "canned tomatoes"
     },
     {
-      "aisle": "Milk, Eggs, Other Dairy",
+      "aisle": "Bakery/Bread",
       "unitLong": "cup",
       "amount": 1.0,
       "unitShort": "c",
@@ -69,7 +59,7 @@
       "unitShort": "",
       "metaInformation": [],
       "unit": "",
-      "originalString": "4 egg, beaten",
+      "originalString": "4 eggs, beaten",
       "name": "egg"
     },
     {

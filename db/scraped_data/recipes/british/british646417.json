@@ -1,1 +1,139 @@
-{"vegetarian": false, "glutenFree": false, "title": "Healthier Bangers and Mash", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/V6BLCNWF/healthier-bangers-and-mash", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Spray a cast iron skillet with cooking spray and place over medium heat. Saut onions for ten minutes. Add mushrooms and continue to saut for an additional ten minutes until they begin to caramelize.</li><li>In the meantime fill a saucepan halfway with warm water and bring to a simmer over medium heat. Add chicken sausages and cover for 20 minutes.</li><li>Fill a large pot with water and bring to a boil. Add cauliflower and cook uncovered for 20 minutes.</li><li>When the onions and mushrooms have caramelized sprinkle with flour and stir to combine. Pour in chicken broth and red wine, season with salt and pepper. Bring to a simmer and cook for 10-15 minutes stirring occasionally until thickened.</li><li>Remove sausages from pan and discard water. Spray pan with cooking spray and saut sausages until golden brown on all sides.</li><li>Meanwhile, strain cauliflower and place in a food processor with milk, butter, and cream cheese. Pulse until smooth, season with salt and pepper.</li><li>To serve place mashed cauliflower and sausages on a plate and cover with gravy.</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Milk, Eggs, Other Dairy", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon butter", "name": "butter"}, {"aisle": "Produce", "unitLong": "head", "amount": 1.0, "unitShort": "head", "metaInformation": [], "unit": "head", "originalString": "1 head cauliflower", "name": "cauliflower"}, {"aisle": "Meat", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 chicken sausage", "name": "chicken sausage"}, {"aisle": "Cheese", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon fat-free cream cheese", "name": "cream cheese"}, {"aisle": "Baking", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon flour", "name": "flour"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup milk", "name": "milk"}, {"aisle": "Produce", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup mushrooms, sliced", "name": "mushroom"}, {"aisle": "Alcoholic Beverages", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon red wine", "name": "red wine"}, {"aisle": "Canned and Jarred", "unitLong": "cups", "amount": 0.75, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "3/4 cup reduced sodium chicken broth", "name": "reduced sodium chicken broth"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 2.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "salt and pepper to taste", "name": "salt and pepper"}, {"aisle": "Produce", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1/2 yellow onion", "name": "onion"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/healthier-bangers-and-mash-646417", "weightWatcherSmartPoints": 8, "id": 646417, "image": "https://spoonacular.com/recipeImages/Healthier-Bangers-and-Mash-646417.jpg", "servings": 2, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Healthier Bangers and Mash",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/V6BLCNWF/healthier-bangers-and-mash",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Spray a cast iron skillet with cooking spray and place over medium heat. Saut onions for ten minutes. Add mushrooms and continue to saut for an additional ten minutes until they begin to caramelize.</li><li>In the meantime fill a saucepan halfway with warm water and bring to a simmer over medium heat. Add chicken sausages and cover for 20 minutes.</li><li>Fill a large pot with water and bring to a boil. Add cauliflower and cook uncovered for 20 minutes.</li><li>When the onions and mushrooms have caramelized sprinkle with flour and stir to combine. Pour in chicken broth and red wine, season with salt and pepper. Bring to a simmer and cook for 10-15 minutes stirring occasionally until thickened.</li><li>Remove sausages from pan and discard water. Spray pan with cooking spray and saut sausages until golden brown on all sides.</li><li>Meanwhile, strain cauliflower and place in a food processor with milk, butter, and cream cheese. Pulse until smooth, season with salt and pepper.</li><li>To serve place mashed cauliflower and sausages on a plate and cover with gravy.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon butter",
+      "name": "butter"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "head",
+      "amount": 1.0,
+      "unitShort": "head",
+      "metaInformation": [],
+      "unit": "head",
+      "originalString": "1 head cauliflower",
+      "name": "cauliflower"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 chicken sausage",
+      "name": "chicken sausage"
+    },
+    {
+      "aisle": "Cheese",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon fat-free cream cheese",
+      "name": "fat-free cream cheese"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon flour",
+      "name": "flour"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup milk",
+      "name": "milk"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup mushrooms, sliced",
+      "name": "mushroom"
+    },
+    {
+      "aisle": "Alcoholic Beverages",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon red wine",
+      "name": "red wine"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "cups",
+      "amount": 0.75,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "3/4 cup reduced sodium chicken broth",
+      "name": "reduced sodium chicken broth"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 2.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "salt and pepper to taste",
+      "name": "salt and pepper"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 yellow onion",
+      "name": "onion"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/healthier-bangers-and-mash-646417",
+  "weightWatcherSmartPoints": 8,
+  "id": 646417,
+  "image": "https://spoonacular.com/recipeImages/Healthier-Bangers-and-Mash-646417.jpg",
+  "servings": 2,
+  "whole30": false,
+  "lowFodmap": false
+}

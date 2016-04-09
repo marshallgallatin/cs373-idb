@@ -14,43 +14,23 @@
   "extendedIngredients": [
     {
       "aisle": "Cheese",
-      "unitLong": "servings",
-      "amount": 6.0,
-      "unitShort": "servings",
+      "unitLong": "ounce",
+      "amount": 1.0,
+      "unitShort": "oz",
       "metaInformation": [],
-      "unit": "servings",
-      "originalString": "shredded cheddar or mozzerella, to taste",
-      "name": "cheddar cheese"
+      "unit": "oz",
+      "originalString": "to taste shredded cheddar or mozzerella",
+      "name": "cheddar"
     },
     {
       "aisle": "Meat",
-      "unitLong": "servings",
-      "amount": 6.0,
-      "unitShort": "servings",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
       "metaInformation": [],
-      "unit": "servings",
-      "originalString": "sliced chicken, to taste",
-      "name": "cooked sliced chicken"
-    },
-    {
-      "aisle": "Produce",
-      "unitLong": "servings",
-      "amount": 6.0,
-      "unitShort": "servings",
-      "metaInformation": [],
-      "unit": "servings",
-      "originalString": "chopped onions, to taste",
-      "name": "onion"
-    },
-    {
-      "aisle": "Produce",
-      "unitLong": "servings",
-      "amount": 6.0,
-      "unitShort": "servings",
-      "metaInformation": [],
-      "unit": "servings",
-      "originalString": "chopped red peppers, to taste",
-      "name": "red bell pepper"
+      "unit": "serving",
+      "originalString": "to taste cooked, sliced chicken, cooked onions, red peppers, chop",
+      "name": "chicken"
     },
     {
       "aisle": "Baking",
@@ -60,7 +40,7 @@
       "metaInformation": [],
       "unit": "ounce",
       "originalString": "1 package (1/4 ounce) dry yeast",
-      "name": "dry yeast"
+      "name": "yeast"
     },
     {
       "aisle": "Baking",
@@ -84,12 +64,12 @@
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
-      "unitLong": "cup",
-      "amount": 0.25,
-      "unitShort": "c",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
       "metaInformation": [],
-      "unit": "cup",
-      "originalString": "1/4 cup olive oil",
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon olive oil",
       "name": "olive oil"
     },
     {
@@ -115,12 +95,12 @@
     {
       "aisle": "Baking",
       "unitLong": "cups",
-      "amount": 1.25,
+      "amount": 3.0,
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cups",
-      "originalString": "1 1/4 cups all-purpose flour",
-      "name": "flour"
+      "originalString": "3 cups whole wheat flour",
+      "name": "whole-wheat flour"
     }
   ],
   "readyInMinutes": 45,
@@ -133,7 +113,7 @@
   "weightWatcherSmartPoints": 64,
   "id": 634485,
   "image": "https://spoonacular.com/recipeImages/Bbq-Chicken-Pizza-634485.jpg",
-  "servings": 6,
+  "servings": 1,
   "whole30": false,
   "lowFodmap": false
 }

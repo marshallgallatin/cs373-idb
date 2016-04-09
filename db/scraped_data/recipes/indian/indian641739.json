@@ -17,9 +17,7 @@
       "unitLong": "pound",
       "amount": 1.0,
       "unitShort": "lb",
-      "metaInformation": [
-        "boneless and cut into 1\" cubes]"
-      ],
+      "metaInformation": [],
       "unit": "pound",
       "originalString": "1 pound mutton [boneless and cut into 1\" cubes]",
       "name": "mutton"
@@ -32,7 +30,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "1 1/4 cups basmati rice",
-      "name": "basmati rice"
+      "name": "rice"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -52,7 +50,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 pods green cardamom",
-      "name": "cardamom pods"
+      "name": "cardamom"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -72,7 +70,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "8 wholes dry red chilies [adjust to taste]",
-      "name": "chilies"
+      "name": "dried chili peppers"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -82,7 +80,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon dry coriander powder",
-      "name": "coriander powder"
+      "name": "coriander seed"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -92,7 +90,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon coriander seeds",
-      "name": "coriander seeds"
+      "name": "coriander seed"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -112,7 +110,7 @@
       "metaInformation": [],
       "unit": "leaves",
       "originalString": "Fresh Cilantro leaves",
-      "name": "fresh cilantro leaves"
+      "name": "cilantro"
     },
     {
       "aisle": "Canned and Jarred",
@@ -172,7 +170,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "10 whole black peppercorns",
-      "name": "black peppercorns"
+      "name": "black pepper"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -212,7 +210,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "Almonds/Raisins [optional]",
-      "name": "almonds"
+      "name": "almond"
     }
   ],
   "readyInMinutes": 45,

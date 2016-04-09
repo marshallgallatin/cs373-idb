@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "t",
       "originalString": "1/2 t white pepper",
-      "name": "white pepper"
+      "name": "green bell pepper"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "C",
       "originalString": "2 C white rice, cooked, washed and drained",
-      "name": "cooked white rice"
+      "name": "cooked rice"
     },
     {
       "aisle": "Seafood",
@@ -150,7 +150,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "1 red or orange Bell pepper, chopped coarse",
-      "name": "red bell pepper"
+      "name": "orange bell pepper"
     },
     {
       "aisle": "Seafood",
@@ -160,7 +160,7 @@
       "metaInformation": [],
       "unit": "oz",
       "originalString": "1 10 oz jar of oysters or 8-10 oysters with their juices",
-      "name": "oysters"
+      "name": "canned oysters"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",

@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons apple cider vinegar (or rice vinegar)",
-      "name": "apple cider vinegar"
+      "name": "cider vinegar"
     },
     {
       "aisle": "Produce",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup raw cashew nuts",
-      "name": "cashew nuts"
+      "name": "cashew"
     },
     {
       "aisle": "Produce",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons extra-virgin olive oil",
-      "name": "extra-virgin olive oil"
+      "name": "olive oil"
     },
     {
       "aisle": "Produce",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 1/2 cups fresh green beans, cut in half",
-      "name": "green beans"
+      "name": "green bean"
     },
     {
       "aisle": "Produce",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "lime wedges for serving",
-      "name": "lime wedges"
+      "name": "lime"
     },
     {
       "aisle": "Baking",

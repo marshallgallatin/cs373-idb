@@ -64,16 +64,6 @@
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
-      "unitLong": "servings",
-      "amount": 4.0,
-      "unitShort": "servings",
-      "metaInformation": [],
-      "unit": "servings",
-      "originalString": "Egg mixture to brush on the top of the scones",
-      "name": "egg"
-    },
-    {
-      "aisle": "Milk, Eggs, Other Dairy",
       "unitLong": "",
       "amount": 2.0,
       "unitShort": "",

@@ -93,16 +93,6 @@
       "name": "margarine"
     },
     {
-      "aisle": "Baking",
-      "unitLong": "servings",
-      "amount": 8.0,
-      "unitShort": "servings",
-      "metaInformation": [],
-      "unit": "servings",
-      "originalString": "Frosting",
-      "name": "frosting"
-    },
-    {
       "aisle": "Spices and Seasonings",
       "unitLong": "teaspoons",
       "amount": 1.5,
@@ -190,7 +180,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 1/2 cup white rice flour",
-      "name": "white rice flour"
+      "name": "rice flour"
     }
   ],
   "readyInMinutes": 45,

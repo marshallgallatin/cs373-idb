@@ -1,1 +1,119 @@
-{"vegetarian": true, "glutenFree": true, "title": "Japanese Clear Soup", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/BHLV23FR/japanese-clear-soup", "sourceName": "Foodista", "vegan": true, "sustainable": false, "instructions": "<ol><li>1. In a large saucepan bring chicken stock to a boil. Stir in sherry and soy sauce. Reduce heat and simmer several minutes.</li><li>2. Arrange your choice of garnishes in small bowls to pass at the table.</li><li>Ladle broth into soup bowls and serve. </li><li>Microwave Version: 1. Place chicken stock in a deep 2-quart casserole. Microwave, uncovered, on 100%% power until stock boils, about 5 to 7 minutes.</li><li>2. Stir in sherry and soy sauce. Microwave on 30%% power 2 minutes.</li><li>3. Continue with step 2.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Produce", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1/2 Carrot -- shredded", "name": "carrot"}, {"aisle": "Canned and Jarred", "unitLong": "cups", "amount": 4.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "4 cups Homemade chicken stock", "name": "chicken stock"}, {"aisle": "Alcoholic Beverages", "unitLong": "tablespoons", "amount": 4.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "4 tablespoons Dry sherry", "name": "dry sherry"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 Green onion -- finely", "name": "green onion"}, {"aisle": "Produce", "unitLong": "", "amount": 0.5, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1/2 Lemon -- thinly sliced", "name": "lemon"}, {"aisle": "Produce", "unitLong": "", "amount": 4.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "4 Mushrooms -- thinly sliced", "name": "mushroom"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoons", "amount": 2.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "2 tablespoons Soy sauce", "name": "soy sauce"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 Block Firm Tofu", "name": "tofu"}, {"aisle": "Produce", "unitLong": "cubes", "amount": 5.0, "unitShort": "cubes", "metaInformation": [], "unit": "cubes", "originalString": "Tofu -- 5 cubes per serving", "name": "tofu"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/japanese-clear-soup-648462", "weightWatcherSmartPoints": 4, "id": 648462, "image": "https://spoonacular.com/recipeImages/Japanese-Clear-Soup-648462.jpg", "servings": 4, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": true,
+  "title": "Japanese Clear Soup",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/BHLV23FR/japanese-clear-soup",
+  "sourceName": "Foodista",
+  "vegan": true,
+  "sustainable": false,
+  "instructions": "<ol><li>1. In a large saucepan bring chicken stock to a boil. Stir in sherry and soy sauce. Reduce heat and simmer several minutes.</li><li>2. Arrange your choice of garnishes in small bowls to pass at the table.</li><li>Ladle broth into soup bowls and serve. </li><li>Microwave Version: 1. Place chicken stock in a deep 2-quart casserole. Microwave, uncovered, on 100%% power until stock boils, about 5 to 7 minutes.</li><li>2. Stir in sherry and soy sauce. Microwave on 30%% power 2 minutes.</li><li>3. Continue with step 2.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 Carrot -- shredded",
+      "name": "carrot"
+    },
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "cups",
+      "amount": 4.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "4 cups Homemade chicken stock",
+      "name": "chicken stock"
+    },
+    {
+      "aisle": "Alcoholic Beverages",
+      "unitLong": "tablespoons",
+      "amount": 4.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "4 tablespoons Dry sherry",
+      "name": "dry sherry"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 Green onion -- finely",
+      "name": "green onion"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 0.5,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/2 Lemon -- thinly sliced",
+      "name": "lemon"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 4.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "4 Mushrooms -- thinly sliced",
+      "name": "mushroom"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoons",
+      "amount": 2.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "2 tablespoons Soy sauce",
+      "name": "soy sauce"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 Block Firm Tofu",
+      "name": "tofu"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cubes",
+      "amount": 5.0,
+      "unitShort": "cubes",
+      "metaInformation": [],
+      "unit": "cubes",
+      "originalString": "Tofu -- 5 cubes per serving",
+      "name": "tofu"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/japanese-clear-soup-648462",
+  "weightWatcherSmartPoints": 4,
+  "id": 648462,
+  "image": "https://spoonacular.com/recipeImages/Japanese-Clear-Soup-648462.jpg",
+  "servings": 4,
+  "whole30": false,
+  "lowFodmap": false
+}

@@ -143,7 +143,7 @@
       "name": "garlic"
     },
     {
-      "aisle": "Beverages",
+      "aisle": "Frozen",
       "unitLong": "cups",
       "amount": 0.3333333333333333,
       "unitShort": "c",
@@ -190,7 +190,7 @@
       "metaInformation": [],
       "unit": "oz",
       "originalString": "8 oz. Irish cheddar, or sharp cheddar cheese, shredded",
-      "name": "sharp cheddar cheese"
+      "name": "Irish cheddar cheese"
     },
     {
       "aisle": "Baking",

@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "16 cherry tomatoes, halved",
-      "name": "cherry tomatoes"
+      "name": "tomato"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "tbsp",
       "originalString": "2 tbsp fresh dill",
-      "name": "fresh dill"
+      "name": "dill weed"
     },
     {
       "aisle": "Produce",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup greek yogurt",
-      "name": "greek yogurt"
+      "name": "Greek yogurt"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -190,7 +190,7 @@
       "metaInformation": [],
       "unit": "tbsp",
       "originalString": "1 tbsp pepper",
-      "name": "pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Bakery/Bread",
@@ -200,7 +200,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "pita",
-      "name": "pita"
+      "name": "pita bread"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -240,7 +240,7 @@
       "metaInformation": [],
       "unit": "tsp",
       "originalString": "1 tsp turmeric powder",
-      "name": "turmeric powder"
+      "name": "turmeric"
     }
   ],
   "readyInMinutes": 45,

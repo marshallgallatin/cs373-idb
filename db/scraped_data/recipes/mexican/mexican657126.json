@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "lb",
       "originalString": "1 lb sharp cheddar, grated",
-      "name": "sharp cheddar"
+      "name": "sharp cheddar cheese"
     },
     {
       "aisle": "Pasta and Rice",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "4 tortilla wraps",
-      "name": "tortilla wraps"
+      "name": "tortilla"
     }
   ],
   "readyInMinutes": 45,

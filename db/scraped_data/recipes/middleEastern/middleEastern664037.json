@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "tsp",
       "originalString": "2 tsp Dill, Finely Chopped",
-      "name": "fresh dill"
+      "name": "dill weed"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup nonfat greek yogurt",
-      "name": "greek yogurt"
+      "name": "fat-free Greek yogurt"
     },
     {
       "aisle": "Meat",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "tsp",
       "originalString": "2 tsp Pepper",
-      "name": "pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Bakery/Bread",
@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "4 whole-wheat pitas",
-      "name": "pita bread"
+      "name": "whole-wheat pita bread"
     },
     {
       "aisle": "Produce",

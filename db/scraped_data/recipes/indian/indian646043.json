@@ -1,1 +1,179 @@
-{"vegetarian": true, "glutenFree": true, "title": "Gujarati Dry Mung Bean Curry", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/G6ZJW56S/gujarati-dry-mung-bean-curry", "sourceName": "Foodista", "vegan": true, "sustainable": false, "instructions": "<ol><li>Wash the mung beans and boil them in plenty of hot water with a pinch of baking powder until al-dente. If you have a pressure cooker thats about 6-7 whistles. Drain and set aside.</li><li>In a large pan heat the oil and add the mustard seeds (wait for them to pop) then add the cumin seeds, asafoetida, curry leaves, garlic and chilies. Saut until aromatic. Obviously dont let it burn.</li><li>Add the tomatoes, turmeric and mung beans and cook for two minutes. Be careful not to mash it up as you stir.</li><li>Add the salt, sugar, lemon juice and cinnamon powder and cook for a further two minutes.</li><li>Throw in the chopped coriander, combine and serve.</li></ol>", "aggregateLikes": 2, "dairyFree": true, "extendedIngredients": [{"aisle": "Baking", "unitLong": "pinch", "amount": 1.0, "unitShort": "pinch", "metaInformation": [], "unit": "pinch", "originalString": "1 small pinch baking powder", "name": "baking powder"}, {"aisle": "Produce", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 mediums hot chilies, minced", "name": "chilies"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon cinnamon powder", "name": "cinnamon powder"}, {"aisle": "Spices and Seasonings", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/4 cup chopped coriander", "name": "coriander"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 2.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "2 teaspoons cumin seeds", "name": "cumin seed"}, {"aisle": "Ethnic Foods", "unitLong": "", "amount": 6.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "6 curry leaves", "name": "curry leaves"}, {"aisle": "Produce", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon garlic, minced", "name": "garlic"}, {"aisle": "Produce", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon lemon juice or to taste", "name": "lemon juice"}, {"aisle": "Health Foods", "unitLong": "cups", "amount": 1.5, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "1 1/2 cups mung beans", "name": "mung beans"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon mustard seeds", "name": "mustard seeds"}, {"aisle": "Spices and Seasonings", "unitLong": "servings", "amount": 4.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Salt to taste", "name": "salt"}, {"aisle": "Baking", "unitLong": "servings", "amount": 4.0, "unitShort": "servings", "metaInformation": [], "unit": "servings", "originalString": "Sugar to taste", "name": "sugar"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon sunflower oil", "name": "sunflower oil"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 medium tomato, chopped", "name": "tomato"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon turmeric", "name": "turmeric"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/gujarati-dry-mung-bean-curry-646043", "weightWatcherSmartPoints": 12, "id": 646043, "image": "https://spoonacular.com/recipeImages/Gujarati-Dry-Mung-Bean-Curry-646043.jpg", "servings": 4, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": true,
+  "title": "Gujarati Dry Mung Bean Curry",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/G6ZJW56S/gujarati-dry-mung-bean-curry",
+  "sourceName": "Foodista",
+  "vegan": true,
+  "sustainable": false,
+  "instructions": "<ol><li>Wash the mung beans and boil them in plenty of hot water with a pinch of baking powder until al-dente. If you have a pressure cooker thats about 6-7 whistles. Drain and set aside.</li><li>In a large pan heat the oil and add the mustard seeds (wait for them to pop) then add the cumin seeds, asafoetida, curry leaves, garlic and chilies. Saut until aromatic. Obviously dont let it burn.</li><li>Add the tomatoes, turmeric and mung beans and cook for two minutes. Be careful not to mash it up as you stir.</li><li>Add the salt, sugar, lemon juice and cinnamon powder and cook for a further two minutes.</li><li>Throw in the chopped coriander, combine and serve.</li></ol>",
+  "aggregateLikes": 2,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Baking",
+      "unitLong": "pinch",
+      "amount": 1.0,
+      "unitShort": "pinch",
+      "metaInformation": [],
+      "unit": "pinch",
+      "originalString": "1 small pinch baking powder",
+      "name": "baking powder"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 mediums hot chilies, minced",
+      "name": "red pepper"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon cinnamon powder",
+      "name": "cinnamon powder"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/4 cup chopped coriander",
+      "name": "cilantro"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 2.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "2 teaspoons cumin seeds",
+      "name": "cumin seed"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "",
+      "amount": 6.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "6 curry leaves",
+      "name": "curry leaves"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon garlic, minced",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon lemon juice or to taste",
+      "name": "lemon juice"
+    },
+    {
+      "aisle": "Health Foods",
+      "unitLong": "cups",
+      "amount": 1.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "1 1/2 cups mung beans",
+      "name": "bean sprout"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon mustard seeds",
+      "name": "mustard seeds"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "servings",
+      "amount": 4.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Salt to taste",
+      "name": "salt"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "servings",
+      "amount": 4.0,
+      "unitShort": "servings",
+      "metaInformation": [],
+      "unit": "servings",
+      "originalString": "Sugar to taste",
+      "name": "sugar"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon sunflower oil",
+      "name": "sunflower oil"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 medium tomato, chopped",
+      "name": "tomato"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon turmeric",
+      "name": "turmeric"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/gujarati-dry-mung-bean-curry-646043",
+  "weightWatcherSmartPoints": 12,
+  "id": 646043,
+  "image": "https://spoonacular.com/recipeImages/Gujarati-Dry-Mung-Bean-Curry-646043.jpg",
+  "servings": 4,
+  "whole30": false,
+  "lowFodmap": false
+}

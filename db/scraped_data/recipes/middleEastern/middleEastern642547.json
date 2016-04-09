@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons all purpose flour",
-      "name": "all-purpose flour"
+      "name": "flour"
     },
     {
       "aisle": "Baking",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons coriander leaves/cilantro - chopped",
-      "name": "cilantro leaves"
+      "name": "cilantro"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "teaspoons",
       "originalString": "2 teaspoons coriander powder",
-      "name": "coriander powder"
+      "name": "coriander seed"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "pepper",
-      "name": "pepper"
+      "name": "black pepper"
     },
     {
       "aisle": "Spices and Seasonings",

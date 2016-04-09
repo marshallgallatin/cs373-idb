@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon tonkatsu sauce (vegetable and fruit sauce. I use Bull-Dog)",
-      "name": "barbecue sauce"
+      "name": "tonkatsu sauce"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons neutral oil (canola, grapeseed)",
-      "name": "vegetable oil"
+      "name": "canola oil"
     },
     {
       "aisle": "Produce",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup frozen green peas (thawed)",
-      "name": "peas"
+      "name": "frozen peas"
     },
     {
       "aisle": "Pasta and Rice",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "3 cups cooked Japanese rice",
-      "name": "rice"
+      "name": "cooked Japanese rice"
     },
     {
       "aisle": "Ethnic Foods",

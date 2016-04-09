@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "oz",
       "originalString": "7 oz canned fire roasted tomatoes ( about 1/2 a can)",
-      "name": "fire roasted canned tomatoes"
+      "name": "fire-roasted canned tomatoes"
     },
     {
       "aisle": "Produce",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "1 TSP Ground Coriander",
-      "name": "dried coriander"
+      "name": "coriander seed"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "3 tomatillos",
-      "name": "tomatillos"
+      "name": "tomatillo"
     },
     {
       "aisle": "Produce",

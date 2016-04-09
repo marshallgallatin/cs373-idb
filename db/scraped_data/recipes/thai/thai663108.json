@@ -19,7 +19,7 @@
       "unitShort": "T",
       "metaInformation": [],
       "unit": "tbsp",
-      "originalString": "2 tbsp Corn Flour",
+      "originalString": "• 2 tbsp Corn Flour",
       "name": "corn flour"
     },
     {
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "g",
       "originalString": "200 g green beans",
-      "name": "green beans"
+      "name": "green bean"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -109,7 +109,7 @@
       "unitShort": "",
       "metaInformation": [],
       "unit": "",
-      "originalString": "2 Spring Onion, Chopped",
+      "originalString": "• 2 Spring Onion, Chopped",
       "name": "green onion"
     },
     {
@@ -119,7 +119,7 @@
       "unitShort": "g",
       "metaInformation": [],
       "unit": "g",
-      "originalString": "300 g White Fish Fillets, Uncooked",
+      "originalString": "• 300 g White Fish Fillets, Uncooked",
       "name": "white fish fillets"
     }
   ],

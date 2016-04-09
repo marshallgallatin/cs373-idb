@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "c",
       "originalString": "1 c. golden raisins",
-      "name": "golden raisins"
+      "name": "golden raisin"
     },
     {
       "aisle": "Nuts",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "oz",
       "originalString": "1 can (6 oz.) pecans or walnuts, chopped (2 c.)",
-      "name": "pecans"
+      "name": "pecan"
     },
     {
       "aisle": "Nut butters, Jams, and Honey",
@@ -79,8 +79,8 @@
       "unitShort": "oz",
       "metaInformation": [],
       "unit": "oz",
-      "originalString": "1 jar (18 oz.) strawberry or cherry",
-      "name": "strawberry jam"
+      "originalString": "1 jar (18 oz.) strawberry or cherry jam",
+      "name": "jam"
     },
     {
       "aisle": "Baking",

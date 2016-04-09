@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "pint",
       "originalString": "1 pint super-sweet grape tomatoes, quartered",
-      "name": "grape tomatoes"
+      "name": "tomato"
     },
     {
       "aisle": "Produce",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "3 jalapeño chilies, minced",
-      "name": "jalapeno chilies"
+      "name": "jalapeno"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "ounce",
       "originalString": "1 ounce light olive oil",
-      "name": "light olive oil"
+      "name": "olive oil"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",

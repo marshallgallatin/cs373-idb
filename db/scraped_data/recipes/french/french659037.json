@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "4 tablespoons reduced fat sour cream",
-      "name": "low-fat sour cream"
+      "name": "reduced fat sour cream"
     },
     {
       "aisle": "Seafood",
@@ -150,7 +150,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup whole wheat pastry flour",
-      "name": "whole wheat pastry flour"
+      "name": "whole-wheat flour"
     }
   ],
   "readyInMinutes": 45,

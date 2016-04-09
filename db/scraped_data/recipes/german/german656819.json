@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "g",
       "originalString": "70g homemade breadcrumbs",
-      "name": "soft bread crumbs"
+      "name": "bread crumbs"
     },
     {
       "aisle": "Baking",
@@ -49,7 +49,7 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "¾ cup double cream",
+      "originalString": "3/4 cup double cream",
       "name": "double cream"
     },
     {
@@ -109,8 +109,8 @@
       "unitShort": "c",
       "metaInformation": [],
       "unit": "cup",
-      "originalString": "¾ cup vegetable stock from 1/2 cube",
-      "name": "vegetable stock cube"
+      "originalString": "3/4 cup vegetable stock from 1/2 cube",
+      "name": "vegetable broth"
     },
     {
       "aisle": "Alcoholic Beverages",

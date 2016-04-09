@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/8 cup cashews",
-      "name": "cashews"
+      "name": "cashew"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon Coriander powder",
-      "name": "coriander powder"
+      "name": "coriander seed"
     },
     {
       "aisle": "Baking",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/8 cup Golden Raisins",
-      "name": "golden raisins"
+      "name": "golden raisin"
     },
     {
       "aisle": "Produce",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 Green Chilies, finely chopped",
-      "name": "green chilies"
+      "name": "jalapeno"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup Fresh Cream / Half & Half",
-      "name": "half n half cream"
+      "name": "fresh cream"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -220,7 +220,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1/4 teaspoon Turmeric powder",
-      "name": "turmeric powder"
+      "name": "turmeric"
     }
   ],
   "readyInMinutes": 45,

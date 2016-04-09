@@ -1,1 +1,99 @@
-{"vegetarian": true, "glutenFree": true, "title": "Splendid Texas Caviar", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/G2MYF57F/texas-caviar-splendid", "sourceName": "Foodista", "vegan": true, "sustainable": false, "instructions": "<ol><li>Mix together all of the ingredients and allow them to sit in the refrigerator for 5 hours or overnight (if you can).</li><li>It's best if you take the bean salad out of the refrigerator about an hour before serving to bring them to room temperature.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Canned and Jarred", "unitLong": "ounces", "amount": 15.0, "unitShort": "oz", "metaInformation": [], "unit": "ounces", "originalString": "15 ounces black eyed peas, drained and rinsed", "name": "black-eyed pea"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup chopped cilantro", "name": "cilantro"}, {"aisle": "Produce", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon minced garlic", "name": "garlic"}, {"aisle": "Condiments", "unitLong": "drops", "amount": 3.0, "unitShort": "drops", "metaInformation": [], "unit": "drops", "originalString": "3 drops hot sauce", "name": "hot sauce"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 The juice of lime", "name": "lime juice"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 ripe roma tomato, chopped", "name": "tomato"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoons", "amount": 3.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "3 tablespoons of good quality salsa verde", "name": "salsa verde"}], "readyInMinutes": 300, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/splendid-texas-caviar-661386", "weightWatcherSmartPoints": 5, "id": 661386, "image": "https://spoonacular.com/recipeImages/Splendid-Texas-Caviar-661386.jpg", "servings": 3, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": true,
+  "glutenFree": true,
+  "title": "Splendid Texas Caviar",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/G2MYF57F/texas-caviar-splendid",
+  "sourceName": "Foodista",
+  "vegan": true,
+  "sustainable": false,
+  "instructions": "<ol><li>Mix together all of the ingredients and allow them to sit in the refrigerator for 5 hours or overnight (if you can).</li><li>It's best if you take the bean salad out of the refrigerator about an hour before serving to bring them to room temperature.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Canned and Jarred",
+      "unitLong": "ounces",
+      "amount": 15.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "ounces",
+      "originalString": "15 ounces black eyed peas, drained and rinsed",
+      "name": "black-eyed pea"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup chopped cilantro",
+      "name": "cilantro"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon minced garlic",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Condiments",
+      "unitLong": "drops",
+      "amount": 3.0,
+      "unitShort": "drops",
+      "metaInformation": [],
+      "unit": "drops",
+      "originalString": "3 drops hot sauce",
+      "name": "hot sauce"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 The juice of lime",
+      "name": "lime juice"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 ripe roma tomato, chopped",
+      "name": "tomato"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoons",
+      "amount": 3.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "3 tablespoons of good quality salsa verde",
+      "name": "salsa verde"
+    }
+  ],
+  "readyInMinutes": 300,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/splendid-texas-caviar-661386",
+  "weightWatcherSmartPoints": 5,
+  "id": 661386,
+  "image": "https://spoonacular.com/recipeImages/Splendid-Texas-Caviar-661386.jpg",
+  "servings": 3,
+  "whole30": false,
+  "lowFodmap": false
+}

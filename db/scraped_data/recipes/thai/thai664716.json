@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "3 red chilies",
-      "name": "red chilies"
+      "name": "red pepper"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -210,7 +210,7 @@
       "metaInformation": [],
       "unit": "grams",
       "originalString": "140 grams sugar snap peas",
-      "name": "sugar snap peas"
+      "name": "snow pea"
     },
     {
       "aisle": "Produce",
@@ -220,7 +220,7 @@
       "metaInformation": [],
       "unit": "grams",
       "originalString": "200 grams firm tofu, cubed",
-      "name": "firm tofu"
+      "name": "tofu"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
