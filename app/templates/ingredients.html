@@ -13,6 +13,8 @@
 	<script>
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
 			$scope.isLoading = true;
+			$scope.isLoadingData = true;
+			$scope.isLoadingCount = true;
 			$scope.firstNumber = 1;
 			$scope.page = 1;
 			$scope.perPage = 3;
@@ -52,37 +54,46 @@
 				}
 				$scope.getData();
 			}
+			$scope.computeIsLoading = function () {
+				$scope.isLoading = $scope.isLoadingData || $scope.isLoadingCount;
+			}
 			$scope.getData = function () {
+				$scope.isLoadingData = true;
 				//$http.get("ingredients?limit=" + $scope.perPage + "&page=" + $scope.page).then(function (transmit) {
 				$http.get("/ingredients/list").then(function (transmit) {
 					$scope.ing = transmit.data.ingredients;
 					$scope.nuts = [];
 					for (var i = 0; i < $scope.ing.length; ++i) {
-						//alert($scope.ing[i].id);
+						console.log($scope.ing[i].id);
 						//$http.get("ingredients/" + $scope.ing[i].id + "/nutrition").then(function (transmit_nuts) {
 						$http.get("ingredients/test/nutrition"+i).then(function (transmit_nuts) {
 							$scope.nuts.push(transmit_nuts.data);
-							//alert("lengggggg" + $scope.nuts.length);
+							console.log("Current length of nuts:" + $scope.nuts.length);
 							if ($scope.nuts.length == $scope.perPage) {
-								//alert("oooother" + $scope.ing.length);
+								Console.log("Complete nuts at length:" + $scope.ing.length);
 								for (var i2 = 0; i2 < $scope.ing.length; ++i2) {
 									
 									jQuery.extend($scope.ing[i2], $scope.nuts[i2]);
 								}
 							}
 						});
-						/*alert($scope.ing[i].id);
+						console.log($scope.ing[i].id);
 						if ($scope.nuts[i] != undefined) {
-							alert($scope.nuts[i].calories);
-						} else {alert("undef");}
+							console.log("Calories ["+i+"]="+$scope.nuts[i].calories);
+						} else {console.log("Undefined: Calories ["+i+"]");}
 						if ($scope.nuts != undefined) {
-							alert("len"+$scope.nuts.length);
-						} else {alert("legnth undef");}*/
+							console.log("$scope.nuts.length="+$scope.nuts.length);
+						} else {console.log("Undefined: $scope.nuts.length);}
 					}
-					//$scope.$apply();
+					
+					$scope.isLoadingData = false;
+					$scope.computeIsLoading();
 				});
 				$http.get("ingredients/count").then(function (transmit) {
+					$scope.isLoadingCount = true;
 					$scope.maxPage = Math.ceil(transmit.data.count / $scope.perPage);
+					$scope.isLoadingCount = false;
+					$scope.computeIsLoading();
 				});
 			}
 			$(function() {
