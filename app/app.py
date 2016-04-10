@@ -122,6 +122,10 @@ def splash():
 def about():
 	return render_template('about.html', title="About", aboutlit="active")
 
+@app.route('/search', methods=['GET'])
+def search():
+	return request.args.get('q')
+
 @app.route('/recipe.html')
 @app.route('/recipe_<int:r_id>.html')
 def recipe(r_id="test"):
