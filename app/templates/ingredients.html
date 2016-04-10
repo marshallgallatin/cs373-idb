@@ -18,7 +18,8 @@
 			$scope.isLoadingCount = true;
 			$scope.firstNumber = 1;
 			$scope.page = 1;
-			$scope.perPage = 3;
+			{{ realprefix }}$scope.perPage = 10;
+			{{ testprefix }}$scope.perPage = 3;
 			$scope.maxPage = 18;
 			$scope.pages = [1, 2, 3, 4, 5];
 			$scope.ing;
@@ -62,14 +63,14 @@
 			}
 			$scope.getData = function () {
 				$scope.isLoadingData = true;
-				//$http.get("ingredients?limit=" + $scope.perPage + "&page=" + $scope.page).then(function (transmit) {
-				$http.get("/ingredients/list").then(function (transmit) {
+				{{ realprefix }}$http.get("ingredients?limit=" + $scope.perPage + "&page=" + $scope.page).then(function (transmit) {
+				{{ testprefix }}$http.get("/ingredients/list").then(function (transmit) {
 					$scope.ing = transmit.data.ingredients;
 					$scope.nuts = [];
 					for (var i = 0; i < $scope.ing.length; ++i) {
 						console.log($scope.ing[i].id);
-						//$http.get("ingredients/" + $scope.ing[i].id + "/nutrition").then(function (transmit_nuts) {
-						$http.get("ingredients/test/nutrition"+i).then(function (transmit_nuts) {
+						{{ realprefix }}$http.get("ingredients/" + $scope.ing[i].id + "/nutrition").then(function (transmit_nuts) {
+						{{ testprefix }}$http.get("ingredients/test/nutrition"+i).then(function (transmit_nuts) {
 							$scope.isLoadingNuts = true;
 							$scope.nuts.push(transmit_nuts.data);
 							console.log("Current length of nuts:" + $scope.nuts.length);
