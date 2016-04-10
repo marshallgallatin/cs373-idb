@@ -124,7 +124,33 @@ def about():
 
 @app.route('/search', methods=['GET'])
 def search():
-	return request.args.get('q')
+	return render_template('search.html', title=request.args.get('q'), aboutlit="active")
+
+@app.route('/query', methods=['GET'])
+def query():
+	return jsonify(
+	{
+		"results": [
+			{
+				"type": "recipe",
+				"cuisine": "african",
+				"id": 2,
+				"image_uri": "https://spoonacular.com/recipeImages/Ethiopian-Lentil-Curry-642468.jpg",
+				"ready_in_minutes": 75,
+				"servings": 6,
+				"title": "Ethiopian Lentil Curry"
+			},
+			{
+				"type": "ingredient",
+				"id": 789,
+				"image_uri": "https://upload.wikimedia.org/wikipedia/commons/d/d0/BlackEyedPeas.JPG",
+				"name": "black-eyed pea",
+				"origin": "Africa",
+				"scientific_name": "Vigna unguiculata subsp. unguiculata"
+			}
+		],
+		"count": 12
+	})
 
 @app.route('/recipe.html')
 @app.route('/recipe_<int:r_id>.html')
