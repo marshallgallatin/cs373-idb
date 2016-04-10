@@ -63,11 +63,13 @@
 		<div ng-if="x.type == 'recipe'">
 			<a ng-href="/recipe_{{ '{{x.id}}' }}.html">
 			<h3>{{ '{{x.title}}' }} - Recipe</h3>
+			<img ng-src="{{ '{{x.image_uri}}' }}" style="max-height:100px"></img>
 			</a>
 		</div>
 		<div ng-if="x.type == 'ingredient'">
 			<a ng-href="/ingredient_{{ '{{x.id}}' }}.html">
 			<h3>{{ '{{x.name}}' }} - Ingredient</h3>
+			<img ng-src="{{ '{{x.image_uri}}' }}" style="max-height:100px"></img>
 			</a>
 		</div>
 	</div>
