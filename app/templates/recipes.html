@@ -17,7 +17,8 @@
 			$scope.isLoadingCount = true;
 			$scope.firstNumber = 1;
 			$scope.page = 1;
-			$scope.perPage = 10;
+			{{ realprefix }}$scope.perPage = 10;
+			{{ testprefix }}$scope.perPage = 2;
 			$scope.maxPage = 18;
 			$scope.pages = [1, 2, 3, 4, 5];
 			$scope.ing;
@@ -60,8 +61,8 @@
 			}
 			$scope.getData = function () {
 				$scope.isLoadingData = true;
-				$http.get("recipes?limit=" + $scope.perPage + "&page=" + $scope.page).then(function (transmit) {
-				//$http.get("r" + $scope.page).then(function (transmit) {
+				{{ realprefix }}$http.get("recipes?limit=" + $scope.perPage + "&page=" + $scope.page).then(function (transmit) {
+				{{ testprefix }}$http.get("r" + $scope.page).then(function (transmit) {
 					$scope.data = transmit.data;
 				});
 				$http.get("recipes/count").then(function (transmit) {

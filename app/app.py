@@ -134,7 +134,7 @@ def ingredient(i_id="test"):
 
 @app.route('/recipes.html')
 def recipes():
-	return render_template('recipes.html', title="Recipes", recipeslit="active")
+	return render_template('recipes.html', title="Recipes", recipeslit="active", testprefix="//")
 
 @app.route('/ingredients.html')
 def ingredients():
