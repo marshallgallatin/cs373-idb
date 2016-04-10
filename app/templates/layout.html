@@ -31,12 +31,19 @@
 			onResize();
 		});
 	//end http://stackoverflow.com/questions/14735274/bootstrap-css-hides-portion-of-container-below-navbar-navbar-fixed-top
+	angular.module('mbSearchApp', []).controller('mbSearchCtrl', function($scope) {
+		$scope.submit = function() {
+			alert(this.text);
+		}
+	});
+	$(function() {
+		angular.bootstrap(document.getElementById("mbSearchApp"),['mbSearchCtrl']);
+	});
 	</script>
 	{% block scripts %}{% endblock %}
 </head>
 
 <body>
-
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container-fluid">
 		<div class="navbar-header">
@@ -56,14 +63,16 @@
 			<li class={{ aboutlit }}><a href="/about.html">About</a></li>
 		</ul>
 		<div class="col-sm-4">
-		<form class="navbar-form" role="search">
+		<div id="mbSearchApp" ng-app="mbSearchApp" ng-controller="mbSearchCtrl">
+		<form class="navbar-form" role="search" ng-submit="submit()">
 			<div class="input-group">
-				<input type="text" class="form-control" placeholder="Search" name="q">
+				<input type="text" ng-model="text" class="form-control" placeholder="Search">
 				<div class="input-group-btn">
 					<button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
 				</div>
 			</div>
 		</form>
+		</div>
 		</div>
         </div>
 	</div>
