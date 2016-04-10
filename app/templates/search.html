@@ -59,8 +59,8 @@
 <div ng-show="isLoading" class="alert alert-warning">
   Loading data...
 </div>
-	<div class="row" ng-repeat="x in data.results" style="margin-bottom:10px">
-		<div ng-if="x.type == 'recipe'">
+	<div class="row" ng-repeat="x in data.results" style="margin-left:10px; margin-bottom:10px">
+		<div ng-if="x.type == 'recipe'" style="margin-bottom:10px">
 			<h3><a ng-href="/recipe_{{ '{{x.id}}' }}.html">{{ '{{x.title}}' }} - Recipe</a></h3>
 			<div class="row">
 				<div class="col-xs-2">
@@ -71,12 +71,17 @@
 					Serves {{ '{{x.servings}}' }} people.
 				</div>
 			</div>
-		</div><br />
-		<div ng-if="x.type == 'ingredient'">
-			<a ng-href="/ingredient_{{ '{{x.id}}' }}.html">
-			<h3>{{ '{{x.name}}' }} - Ingredient</h3>
-			<img ng-src="{{ '{{x.image_uri}}' }}" style="max-height:100px"></img>
-			</a>
+		</div>
+		<div ng-if="x.type == 'ingredient'" style="margin-bottom:10px">
+			<h3><a ng-href="/ingredient_{{ '{{x.id}}' }}.html">{{ '{{x.name}}' }} - Ingredient</a></h3>
+			<div class="row">
+				<div class="col-xs-2">
+					<a ng-href="/ingredient_{{ '{{x.id}}' }}.html"><img class="img-responsive" ng-src="{{ '{{x.image_uri}}' }}" style="width:100%; margin: auto auto; overflow-y: hidden"></img></a>
+				</div>
+				<div class="col-xs-10">
+					The {{ '{{x.name}}' }} (<i>{{ '{{x.scientific_name}}' }}</i>) originates from {{ '{{x.origin}}' }}.<br />
+				</div>
+			</div>
 		</div>
 	</div>
 	<center>
