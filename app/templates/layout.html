@@ -33,7 +33,8 @@
 	//end http://stackoverflow.com/questions/14735274/bootstrap-css-hides-portion-of-container-below-navbar-navbar-fixed-top
 	angular.module('mbSearchApp', []).controller('mbSearchCtrl', function($scope) {
 		$scope.submit = function() {
-			alert(this.text);
+			{{ realprefix }}top.location = "/search?query=" + this.text;
+			{{ testprefix }}top.location = "/search_" + this.text;
 		}
 	});
 	$(function() {
