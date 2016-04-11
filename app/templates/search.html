@@ -2,6 +2,17 @@
 {% block title %}{{ title }} - IRDb Search{% endblock title %}
 
 {% block scripts %}
+<style>
+	div.img-square {
+		height:75px;
+		background-color:orange;
+		background-size:cover;
+		background-position:center center;
+		background-repeat:no-repeat;
+		border-left: 3px solid orange;
+		border-right: 3px solid orange;
+	}
+</style>
 <script src="http://code.angularjs.org/1.4.8/angular-sanitize.min.js"></script>
 <script>
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $sceDelegate, $sce, $http) {
@@ -66,27 +77,39 @@
   Loading data...
 </div>
 	<div class="row" ng-repeat="x in data.results" style="margin-left:10px; margin-bottom:10px">
-		<div ng-if="x.type == 'recipe'" style="margin-bottom:10px">
+		<div ng-if="x.type == 'recipe'" style="margin-bottom:10px;">
 			<h3><a ng-href="/recipe_{{ '{{x.id}}' }}.html">{{ '{{x.title}}' }} - Recipe</a></h3>
 			<div class="row">
-				<div class="col-xs-2">
-					<a ng-href="/recipe_{{ '{{x.id}}' }}.html"><img class="img-responsive" ng-src="{{ '{{x.image_uri}}' }}" style="width:100%; margin: auto auto; overflow-y: hidden"></img></a>
-				</div>
+				<a ng-href="/recipe_{{ '{{x.id}}' }}.html">
+					<div class="col-xs-2 img-square" style='background-image:url("{{ '{{x.image_uri}}' }}")'></div>
+				</a>
 				<div class="col-xs-10">
 					A {{ '{{x.cuisine}}' }} dish that you can prepare in {{ '{{x.ready_in_minutes}}' }} minutes.<br />
 					Serves {{ '{{x.servings}}' }} people. <p ng-bind-html="x.snippet"></p>
 				</div>
 			</div>
 		</div>
-		<div ng-if="x.type == 'ingredient'" style="margin-bottom:10px">
+		<div ng-if="x.type == 'ingredient'" style="margin-bottom:10px;">
 			<h3><a ng-href="/ingredient_{{ '{{x.id}}' }}.html">{{ '{{x.name}}' }} - Ingredient</a></h3>
 			<div class="row">
-				<div class="col-xs-2">
-					<a ng-href="/ingredient_{{ '{{x.id}}' }}.html"><img class="img-responsive" ng-src="{{ '{{x.image_uri}}' }}" style="width:100%; margin: auto auto; overflow-y: hidden"></img></a>
-				</div>
+				<a ng-href="/recipe_{{ '{{x.id}}' }}.html">
+					<div class="col-xs-2 img-square" style='background-image:url("{{ '{{x.image_uri}}' }}")'></div>
+				</a>
 				<div class="col-xs-10">
 					The {{ '{{x.name}}' }} (<i>{{ '{{x.scientific_name}}' }}</i>) originates from {{ '{{x.origin}}' }}.<br />
 					<p ng-bind-html="x.snippet"></p>
+				</div>
+			</div>
+		</div>
+		
+		<div ng-if="$last">
+			<h3><a ng-href="/ingredient_{{ '{{x.id}}' }}.html">{{ '{{x.name}}' }} - Ingredient</a></h3>
+			<div class="row">
+				<a ng-href="/recipe_{{ '{{x.id}}' }}.html">
+					<div class="col-xs-2 img-square" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/6/6c/Herjangsfjorden_%26_Ofotfjorden,_wide,_2009_09.jpg')"></div>
+				</a>
+				<div class="col-xs-10">
+					A african dish that you can prepare in 75 minutes.<br>
 				</div>
 			</div>
 		</div>
