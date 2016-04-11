@@ -138,7 +138,8 @@ def query():
 				"image_uri": "https://spoonacular.com/recipeImages/Ethiopian-Lentil-Curry-642468.jpg",
 				"ready_in_minutes": 75,
 				"servings": 6,
-				"title": "Ethiopian Lentil Curry"
+				"title": "Ethiopian Lentil Curry",
+				"snippet": "Place the bull <b>test</b>icle in the boi"
 			},
 			{
 				"type": "ingredient",
@@ -146,7 +147,8 @@ def query():
 				"image_uri": "https://upload.wikimedia.org/wikipedia/commons/d/d0/BlackEyedPeas.JPG",
 				"name": "black-eyed pea",
 				"origin": "Africa",
-				"scientific_name": "Vigna unguiculata subsp. unguiculata"
+				"scientific_name": "Vigna unguiculata subsp. unguiculata",
+				"snippet": "Used in <b>Unit Test</b> Soup"
 			}
 		],
 		"count": 12
