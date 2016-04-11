@@ -60,9 +60,10 @@
 					}
 					console.log("Search results: " + $scope.data.results.length);
 					$scope.maxPage = Math.ceil(transmit.data.count / $scope.perPage);
+					
+					$scope.isLoadingData = false;
+					$scope.computeIsLoading();
 				});
-				$scope.isLoadingData = false;
-				$scope.computeIsLoading();
 			}
 			$(function() {
 				$scope.getData();
