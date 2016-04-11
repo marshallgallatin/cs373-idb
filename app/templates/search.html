@@ -2,17 +2,6 @@
 {% block title %}{{ title }} - IRDb Search{% endblock title %}
 
 {% block scripts %}
-<style>
-	div.img-square {
-		height:75px;
-		background-color:orange;
-		background-size:cover;
-		background-position:center center;
-		background-repeat:no-repeat;
-		border-left: 3px solid orange;
-		border-right: 3px solid orange;
-	}
-</style>
 <script src="http://code.angularjs.org/1.4.8/angular-sanitize.min.js"></script>
 <script>
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $sceDelegate, $sce, $http) {
