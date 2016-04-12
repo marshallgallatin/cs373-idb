@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "g",
       "originalString": "20g Granulated sugar",
-      "name": "sugar"
+      "name": "granulated sugar"
     },
     {
       "aisle": "Nut butters, Jams, and Honey",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "g",
       "originalString": "250g Wheat flour",
-      "name": "flour"
+      "name": "all-purpose flour"
     }
   ],
   "readyInMinutes": 120,

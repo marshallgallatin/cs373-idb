@@ -150,7 +150,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "4 MUSHROOMS DICED",
-      "name": "mushroom"
+      "name": "white mushroom"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -170,7 +170,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup SHREDDED OR GRATED PARMESAN",
-      "name": "parmesan"
+      "name": "parmesan cheese"
     },
     {
       "aisle": "Cheese",
@@ -200,7 +200,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup SHREDDED MOZZARELLA",
-      "name": "mozzarella"
+      "name": "mozzarella cheese"
     },
     {
       "aisle": "Produce",

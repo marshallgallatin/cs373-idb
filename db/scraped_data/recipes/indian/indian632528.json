@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "teaspoons",
       "originalString": "2 teaspoons Curry powder",
-      "name": "curry"
+      "name": "curry powder"
     },
     {
       "aisle": "Cheese",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup Sliced white mushrooms",
-      "name": "mushroom"
+      "name": "white mushroom"
     }
   ],
   "readyInMinutes": 45,

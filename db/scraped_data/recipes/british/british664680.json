@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "bunch",
       "originalString": "1 bunch of dill, chopped",
-      "name": "dill"
+      "name": "dill weed"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "kg",
       "originalString": "1 kg mushrooms",
-      "name": "mushroom"
+      "name": "white mushroom"
     },
     {
       "aisle": "Produce",

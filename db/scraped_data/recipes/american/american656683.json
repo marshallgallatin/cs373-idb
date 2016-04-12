@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 1/2 cups sifted all-purpose flour",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup (1/2 pint) heavy cream",
-      "name": "heavy cream"
+      "name": "heavy whipping cream"
     },
     {
       "aisle": "Produce",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "cup poppy seeds, plus more for sprinkling",
-      "name": "poppy seeds"
+      "name": "poppy seed"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "1 1/4 cups sugar",
-      "name": "sugar"
+      "name": "granulated sugar"
     },
     {
       "aisle": "Baking",

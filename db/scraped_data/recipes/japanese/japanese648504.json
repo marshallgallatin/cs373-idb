@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 1/2 tablespoons curry powder, plus more to taste",
-      "name": "curry"
+      "name": "curry powder"
     },
     {
       "aisle": "Produce",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup frozen peas",
-      "name": "frozen peas"
+      "name": "frozen green peas"
     },
     {
       "aisle": "Produce",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "1 pound portobello mushrooms (stems and caps), cut into 1 inch cubes, or 1",
-      "name": "portobello mushroom"
+      "name": "portabello mushroom"
     },
     {
       "aisle": "Baking",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "serving",
       "originalString": "white mushrooms, halved or quartered (depending on size)",
-      "name": "mushroom"
+      "name": "white mushroom"
     }
   ],
   "readyInMinutes": 45,

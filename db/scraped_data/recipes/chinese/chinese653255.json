@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "stalks",
       "originalString": "5 stalks of asian kale",
-      "name": "asian kale"
+      "name": "kai-lan"
     },
     {
       "aisle": "Produce",
@@ -79,8 +79,8 @@
       "unitShort": "T",
       "metaInformation": [],
       "unit": "tablespoons",
-      "originalString": "2 tablespoons sweet soy sauce/ ketjap manis",
-      "name": "sweet soy sauce"
+      "originalString": "2 tablespoons sweet soy sauce/kecap manis",
+      "name": "soy sauce"
     }
   ],
   "readyInMinutes": 45,

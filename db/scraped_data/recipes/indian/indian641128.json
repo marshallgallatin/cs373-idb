@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "tablespoon Curry powder, 1",
-      "name": "curry"
+      "name": "curry powder"
     },
     {
       "aisle": "Alcoholic Beverages",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "ml",
       "originalString": "Dry white wine, 150ml",
-      "name": "dry white wine"
+      "name": "white wine"
     },
     {
       "aisle": "Seafood",

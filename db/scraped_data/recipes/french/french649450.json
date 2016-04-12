@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "1 1/4 cups all-purpose flour",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Meat",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "1 pound white or baby portobello mushrooms, sliced",
-      "name": "portobello mushroom"
+      "name": "portabello mushroom"
     },
     {
       "aisle": "Produce",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup sugar",
-      "name": "sugar"
+      "name": "granulated sugar"
     },
     {
       "aisle": "Beverages",

@@ -1,1 +1,79 @@
-{"vegetarian": false, "glutenFree": false, "title": "Red, White and Blue Crepes", "veryPopular": false, "gaps": "no", "sourceUrl": "http://fullbellysisters.blogspot.com/2014/07/red-white-blue-crepes-happy-july-4th.html", "sourceName": "Full Belly Sisters", "vegan": false, "sustainable": false, "instructions": "", "aggregateLikes": 34, "dairyFree": false, "extendedIngredients": [{"aisle": "Produce", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "blueberries", "name": "blueberries"}, {"aisle": "Refrigerated", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "your favorite cr\u00eapes (here's my", "name": "crepes"}, {"aisle": "Cheese", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "crumbled feta cheese", "name": "feta cheese"}, {"aisle": "Produce", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "raspberry fruit spread or jam", "name": "fruit"}, {"aisle": "Produce", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "raspberries", "name": "raspberries"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Full Belly Sisters", "license": "CC BY-SA 3.0", "spoonacularSourceUrl": "https://spoonacular.com/red-white-blue-crepes-happy-july-4th-driscollsberry-716414", "weightWatcherSmartPoints": 3, "id": 716414, "image": "https://spoonacular.com/recipeImages/red-white-blue-crepes-happy-july-4th-driscollsberry-716414.jpg", "servings": 1, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Red, White and Blue Crepes",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://fullbellysisters.blogspot.com/2014/07/red-white-blue-crepes-happy-july-4th.html",
+  "sourceName": "Full Belly Sisters",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "Spread a teaspoon or so of jam onto the crêpe. Top with a handful of the mixed berries. Sprinkle the cheese over the fruit. Roll up and enjoy!",
+  "aggregateLikes": 34,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "blueberries",
+      "name": "blueberry"
+    },
+    {
+      "aisle": "Refrigerated",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "your favorite crêpes",
+      "name": "crepes"
+    },
+    {
+      "aisle": "Cheese",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "crumbled feta cheese",
+      "name": "feta cheese"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "raspberry fruit spread or jam",
+      "name": "jam"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "raspberries",
+      "name": "raspberry"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Full Belly Sisters",
+  "license": "CC BY-SA 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/red-white-blue-crepes-happy-july-4th-driscollsberry-716414",
+  "weightWatcherSmartPoints": 3,
+  "id": 716414,
+  "image": "https://spoonacular.com/recipeImages/red-white-blue-crepes-happy-july-4th-driscollsberry-716414.jpg",
+  "servings": 1,
+  "whole30": false,
+  "lowFodmap": false
+}

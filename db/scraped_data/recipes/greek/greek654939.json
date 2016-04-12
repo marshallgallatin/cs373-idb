@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "can",
       "originalString": "1 large can tomato sauce",
-      "name": "canned tomato sauce"
+      "name": "tomato sauce"
     },
     {
       "aisle": "Canned and Jarred",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup sliced mushrooms (seasoned & roasted)",
-      "name": "mushroom"
+      "name": "white mushroom"
     },
     {
       "aisle": "Produce",
@@ -170,7 +170,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "cup 1/4 of sun dried tomatoes, chopped",
-      "name": "sun-dried tomatoes"
+      "name": "sun-dried tomato"
     }
   ],
   "readyInMinutes": 45,

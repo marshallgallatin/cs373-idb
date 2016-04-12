@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "3 cups of all purpose flour",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Produce",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "pounds",
       "originalString": "2 pounds of lean ground pork",
-      "name": "ground pork"
+      "name": "lean ground pork"
     },
     {
       "aisle": "Spices and Seasonings",

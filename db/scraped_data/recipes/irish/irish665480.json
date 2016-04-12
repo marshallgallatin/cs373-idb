@@ -1,1 +1,79 @@
-{"vegetarian": false, "glutenFree": false, "title": "Xocai Irish Cream with Xocai Healthy Dark Chocolate Nuggets", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/3GG3D6S6/xocai-irish-cream-with-xocai-healthy-dark-chocolate-nuggets", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Heat Irish cream syrup. Remove from heat and add Nuggets. Stir until melted. Cool. Mix 2 tbsp. of cream mixture with 2 tbsp. of whiskey and add to 1 cup of hot coffee. Repeat with second cup. Garnish with whipped cream and grated Nugget. Serves 2</li></ol>", "aggregateLikes": 1, "dairyFree": false, "extendedIngredients": [{"aisle": "Alcoholic Beverages", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup baileys Irish Cream Syrup", "name": "baileys irish cream"}, {"aisle": "Sweet Snacks", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 chunk Xocai Healthy Chocolate Nugget, grated", "name": "chocolate"}, {"aisle": "Sweet Snacks", "unitLong": "", "amount": 2.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "2 Xocai Healthy Chocolate Nuggets", "name": "chocolate"}, {"aisle": "Alcoholic Beverages", "unitLong": "tablespoons", "amount": 4.0, "unitShort": "T", "metaInformation": [], "unit": "tbsps", "originalString": "4 tbsps Irish Whiskey", "name": "irish whiskey"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 Dollop of Whipped Cream", "name": "whipped cream"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/xocai-irish-cream-with-xocai-healthy-dark-chocolate-nuggets-665480", "weightWatcherSmartPoints": 21, "id": 665480, "image": "https://spoonacular.com/recipeImages/Xocai-Irish-Cream-with-Xocai-Healthy-Dark-Chocolate-Nuggets-665480.jpg", "servings": 2, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Xocai Irish Cream with Xocai Healthy Dark Chocolate Nuggets",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/3GG3D6S6/xocai-irish-cream-with-xocai-healthy-dark-chocolate-nuggets",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Heat Irish cream syrup. Remove from heat and add Nuggets. Stir until melted. Cool. Mix 2 tbsp. of cream mixture with 2 tbsp. of whiskey and add to 1 cup of hot coffee. Repeat with second cup. Garnish with whipped cream and grated Nugget. Serves 2</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Alcoholic Beverages",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup baileys Irish Cream Syrup",
+      "name": "baileys irish cream"
+    },
+    {
+      "aisle": "Sweet Snacks",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 chunk Xocai Healthy Chocolate Nugget, grated",
+      "name": "chocolate"
+    },
+    {
+      "aisle": "Sweet Snacks",
+      "unitLong": "",
+      "amount": 2.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "2 Xocai Healthy Chocolate Nuggets",
+      "name": "chocolate"
+    },
+    {
+      "aisle": "Alcoholic Beverages",
+      "unitLong": "tablespoons",
+      "amount": 4.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tbsps",
+      "originalString": "4 tbsps Irish Whiskey",
+      "name": "irish whiskey"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 Dollop of Whipped Cream",
+      "name": "whipped cream"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/xocai-irish-cream-with-xocai-healthy-dark-chocolate-nuggets-665480",
+  "weightWatcherSmartPoints": 21,
+  "id": 665480,
+  "image": "https://spoonacular.com/recipeImages/Xocai-Irish-Cream-with-Xocai-Healthy-Dark-Chocolate-Nuggets-665480.jpg",
+  "servings": 2,
+  "whole30": false,
+  "lowFodmap": false
+}

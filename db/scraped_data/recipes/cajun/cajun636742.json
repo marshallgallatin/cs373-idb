@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups seafood broth",
-      "name": "seafood broth"
+      "name": "fish stock"
     },
     {
       "aisle": "Ethnic Foods",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon of Cajun Spice",
-      "name": "cajun seasoning"
+      "name": "Creole seasoning"
     },
     {
       "aisle": "Produce",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup of Corn",
-      "name": "corn"
+      "name": "yellow corn"
     },
     {
       "aisle": "Produce",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup of Heavy Cream",
-      "name": "heavy cream"
+      "name": "heavy whipping cream"
     },
     {
       "aisle": "Spices and Seasonings",

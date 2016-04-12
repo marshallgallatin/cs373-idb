@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "package",
       "originalString": "1 package salad greens",
-      "name": "salad greens"
+      "name": "mixed greens"
     },
     {
       "aisle": "Condiments",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "4 tablespoons Wholegrain Mustard",
-      "name": "wholegrain mustard"
+      "name": "mustard"
     },
     {
       "aisle": "Alcoholic Beverages",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "Tablespoon",
       "originalString": "1/2 Tablespoon Cooking Wine",
-      "name": "wine"
+      "name": "cooking wine"
     }
   ],
   "readyInMinutes": 45,

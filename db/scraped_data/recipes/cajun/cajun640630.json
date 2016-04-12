@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "1 chicken bouillon cube",
-      "name": "chicken bouillon cube"
+      "name": "chicken bouillon"
     },
     {
       "aisle": "Seafood",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon Creole seasoning",
-      "name": "creole seasoning"
+      "name": "Creole seasoning"
     },
     {
       "aisle": "Baking",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "cup all-purpose flour",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -190,7 +190,7 @@
       "metaInformation": [],
       "unit": "pint",
       "originalString": "1 pint whipping cream",
-      "name": "whipping cream"
+      "name": "light whipping cream"
     }
   ],
   "readyInMinutes": 45,

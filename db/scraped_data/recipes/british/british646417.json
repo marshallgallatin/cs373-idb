@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon flour",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup mushrooms, sliced",
-      "name": "mushroom"
+      "name": "white mushroom"
     },
     {
       "aisle": "Alcoholic Beverages",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "3/4 cup reduced sodium chicken broth",
-      "name": "reduced sodium chicken broth"
+      "name": "low-sodium chicken broth"
     },
     {
       "aisle": "Spices and Seasonings",

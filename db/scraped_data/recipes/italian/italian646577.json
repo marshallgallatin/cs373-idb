@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "ounce",
       "originalString": "1 ounce of 15 can of tomato sauce",
-      "name": "canned tomato sauce"
+      "name": "tomato sauce"
     },
     {
       "aisle": "Canned and Jarred",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "serving",
       "originalString": "Madras curry powder",
-      "name": "curry"
+      "name": "curry powder"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "can",
       "originalString": "1 can of Dark Red Kidney beans- Rinsed and drained",
-      "name": "red kidney beans"
+      "name": "red kidney bean"
     },
     {
       "aisle": "Spices and Seasonings",

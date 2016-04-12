@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "3 cups flour",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1/8 teaspoon ground cloves",
-      "name": "ground cloves"
+      "name": "clove"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons sugar",
-      "name": "sugar"
+      "name": "granulated sugar"
     }
   ],
   "readyInMinutes": 45,

@@ -1,1 +1,129 @@
-{"vegetarian": false, "glutenFree": false, "title": "Cheesy Potato Corn Scones", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/8NXFR4H8/cheesy-potato-corn-scones", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Lightly greased a baking sheet; set aside.  In a small saucepan, bring the water just to a simmer; remove from heat.  Stir in potato flakes until moistened.  Stir in butter until it's incorporated to potato flakes.</li><li>In a large bowl, combine flour, cornmeal, 3/4 cup of the cheese, baking powder, salt, and poppy seeds; stir in potato mixture and milk.  With floured hand, gently knead and fold the dough for five to six strokes, or until the dough comes together in one mass.  Pat the dough lightly to flatten it into a 9-inch circle on prepared baking sheet.  Cut dough into eight wedges using a pizza cutter or floured knife (do not separate).  Sprinkle edges with remaining cheese.</li><li>Bake in a preheated 400 degree F oven for about 25 minutes or until lightly browned.  Gently pull or cut scones to separate.  Serve warm.</li></ol>", "aggregateLikes": 22, "dairyFree": false, "extendedIngredients": [{"aisle": "Baking", "unitLong": "teaspoons", "amount": 4.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoons", "originalString": "4 teaspoons baking powder", "name": "baking powder"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "stick", "amount": 1.0, "unitShort": "stick", "metaInformation": [], "unit": "stick", "originalString": "1 stick butter, melted", "name": "butter"}, {"aisle": "Cheese", "unitLong": "pounds", "amount": 0.5, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1/2 pound Cheddar cheese, grated", "name": "cheddar cheese"}, {"aisle": "Baking", "unitLong": "cups", "amount": 1.25, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "1 1/4 cups all-purpose flour", "name": "flour"}, {"aisle": "Milk, Eggs, Other Dairy", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup milk", "name": "milk"}, {"aisle": "Baking", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon poppy seeds", "name": "poppy seeds"}, {"aisle": "Pasta and Rice", "unitLong": "cups", "amount": 0.6666666666666666, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "2/3 cup instant mashed potato flakes", "name": "potato flakes"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon salt", "name": "salt"}, {"aisle": "Beverages", "unitLong": "cups", "amount": 0.6666666666666666, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "2/3 cup water", "name": "water"}, {"aisle": "Ethnic Foods", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1/2 cup yellow cornmeal", "name": "yellow cornmeal"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/cheesy-potato-corn-scones-637675", "weightWatcherSmartPoints": 13, "id": 637675, "image": "https://spoonacular.com/recipeImages/Cheesy-Potato-Corn-Scones-637675.jpg", "servings": 8, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Cheesy Potato Corn Scones",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/8NXFR4H8/cheesy-potato-corn-scones",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Lightly greased a baking sheet; set aside.  In a small saucepan, bring the water just to a simmer; remove from heat.  Stir in potato flakes until moistened.  Stir in butter until it's incorporated to potato flakes.</li><li>In a large bowl, combine flour, cornmeal, 3/4 cup of the cheese, baking powder, salt, and poppy seeds; stir in potato mixture and milk.  With floured hand, gently knead and fold the dough for five to six strokes, or until the dough comes together in one mass.  Pat the dough lightly to flatten it into a 9-inch circle on prepared baking sheet.  Cut dough into eight wedges using a pizza cutter or floured knife (do not separate).  Sprinkle edges with remaining cheese.</li><li>Bake in a preheated 400 degree F oven for about 25 minutes or until lightly browned.  Gently pull or cut scones to separate.  Serve warm.</li></ol>",
+  "aggregateLikes": 22,
+  "dairyFree": false,
+  "extendedIngredients": [
+    {
+      "aisle": "Baking",
+      "unitLong": "teaspoons",
+      "amount": 4.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoons",
+      "originalString": "4 teaspoons baking powder",
+      "name": "baking powder"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "stick",
+      "amount": 1.0,
+      "unitShort": "stick",
+      "metaInformation": [],
+      "unit": "stick",
+      "originalString": "1 stick butter, melted",
+      "name": "butter"
+    },
+    {
+      "aisle": "Cheese",
+      "unitLong": "pounds",
+      "amount": 0.5,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1/2 pound Cheddar cheese, grated",
+      "name": "cheddar cheese"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cups",
+      "amount": 1.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "1 1/4 cups all-purpose flour",
+      "name": "all-purpose flour"
+    },
+    {
+      "aisle": "Milk, Eggs, Other Dairy",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup milk",
+      "name": "milk"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon poppy seeds",
+      "name": "poppy seed"
+    },
+    {
+      "aisle": "Pasta and Rice",
+      "unitLong": "cups",
+      "amount": 0.6666666666666666,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "2/3 cup instant mashed potato flakes",
+      "name": "potato flakes"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "cups",
+      "amount": 0.6666666666666666,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "2/3 cup water",
+      "name": "water"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1/2 cup yellow cornmeal",
+      "name": "cornmeal"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/cheesy-potato-corn-scones-637675",
+  "weightWatcherSmartPoints": 13,
+  "id": 637675,
+  "image": "https://spoonacular.com/recipeImages/Cheesy-Potato-Corn-Scones-637675.jpg",
+  "servings": 8,
+  "whole30": false,
+  "lowFodmap": false
+}
