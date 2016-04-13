@@ -36,5 +36,6 @@ script:
     - make IDB2.log
     - ls -al
     - make test
+    - cat tests.tmp
     - ls -al
     - make check

@@ -38,7 +38,7 @@
 				}
 				$textD.toggleClass("text-muted");
 			});
-			$("table tr").hover(function(){
+			$("table tr").hover(function() {
 				$('this').css('cursor', 'pointer');
 			});
 		});
@@ -46,9 +46,13 @@
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
 			$scope.getData = function () {
 				$http.get("recipes/{{ rec_id }}").then(function (transmit) {
-				//$http.get("test/r").then(function (transmit) {
 					$scope.data = transmit.data;
-					$scope.data.instructions = $scope.data.instructions.replace("<ol><li>", "").replace("</li></ol>", "").split("</li><li>");
+					if ($scope.data.instructions.contains("<li>")) {
+						$scope.data.instructions = $scope.data.instructions.replace("<ol><li>", "").replace("</li></ol>", "").split("</li><li>");
+					} else {
+						$scope.data.instructions = $scope.data.instructions.split(/\.\s?(?=[A-Z])/);
+						console.log("instructions length: " + $scope.data.instructions.length);
+					}
 					$scope.halfI = Math.floor($scope.data.ingredients.length / 2);
 				});
 			}

@@ -12,9 +12,14 @@
 	</style>
 	<script>
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
+			$scope.isLoading = true;
+			$scope.isLoadingData = true;
+			$scope.isLoadingNuts = true;
+			$scope.isLoadingCount = true;
 			$scope.firstNumber = 1;
 			$scope.page = 1;
-			$scope.perPage = 10;
+			{{ realprefix }}$scope.perPage = 10;
+			{{ testprefix }}$scope.perPage = 3;
 			$scope.maxPage = 18;
 			$scope.pages = [1, 2, 3, 4, 5];
 			$scope.ing;
@@ -26,12 +31,7 @@
 				} else {
 					$scope.mbReverse = false;
 				}
-				/*
-				function SortByName(a, b) {
-					return ((a.x < b.x) ? -1 : ((a.x > b.x) ? 1 : 0));
-				}
-				$scope.nuts.sort(SortByName);
-				*/
+				
 				$scope.mbOrderBy = x;
 			}
 			$scope.changePage = function(x) {
@@ -56,37 +56,52 @@
 				}
 				$scope.getData();
 			}
+			$scope.computeIsLoading = function () {
+				$scope.isLoading = 	$scope.isLoadingData
+									|| $scope.isLoadingCount
+									|| $scope.isLoadingNuts;
+			}
 			$scope.getData = function () {
-				$http.get("ingredients?limit=" + $scope.perPage + "&page=" + $scope.page).then(function (transmit) {
-				//$http.get("/ingredients/list").then(function (transmit) {
+				$scope.isLoadingData = true;
+				{{ realprefix }}$http.get("ingredients?limit=" + $scope.perPage + "&page=" + $scope.page).then(function (transmit) {
+				{{ testprefix }}$http.get("/ingredients/list").then(function (transmit) {
 					$scope.ing = transmit.data.ingredients;
 					$scope.nuts = [];
 					for (var i = 0; i < $scope.ing.length; ++i) {
-						//alert($scope.ing[i].id);
-						$http.get("ingredients/" + $scope.ing[i].id + "/nutrition").then(function (transmit_nuts) {
-						//$http.get("ingredients/test/nutrition"+i).then(function (transmit_nuts) {
+						console.log($scope.ing[i].id);
+						{{ realprefix }}$http.get("ingredients/" + $scope.ing[i].id + "/nutrition").then(function (transmit_nuts) {
+						{{ testprefix }}$http.get("ingredients/test/nutrition"+i).then(function (transmit_nuts) {
+							$scope.isLoadingNuts = true;
 							$scope.nuts.push(transmit_nuts.data);
-							//alert("lengggggg" + $scope.nuts.length);
+							console.log("Current length of nuts:" + $scope.nuts.length);
 							if ($scope.nuts.length == $scope.perPage) {
-								//alert("oooother" + $scope.ing.length);
+								console.log("Complete nuts at length:" + $scope.ing.length);
 								for (var i2 = 0; i2 < $scope.ing.length; ++i2) {
 									
 									jQuery.extend($scope.ing[i2], $scope.nuts[i2]);
 								}
+								$scope.isLoadingNuts = false;
+								$scope.computeIsLoading();
 							}
 						});
-						/*alert($scope.ing[i].id);
+						console.log($scope.ing[i].id);
 						if ($scope.nuts[i] != undefined) {
-							alert($scope.nuts[i].calories);
-						} else {alert("undef");}
+							console.log("Calories ["+i+"]="+$scope.nuts[i].calories);
+						} else {console.log("Undefined: Calories ["+i+"]");}
 						if ($scope.nuts != undefined) {
-							alert("len"+$scope.nuts.length);
-						} else {alert("legnth undef");}*/
+							console.log("$scope.nuts.length="+$scope.nuts.length);
+						} else {console.log("Undefined: $scope.nuts.length");}
 					}
-					//$scope.$apply();
+					
+					$scope.isLoadingData = false;
+					$scope.computeIsLoading();
 				});
 				$http.get("ingredients/count").then(function (transmit) {
+					$scope.isLoadingCount = true;
 					$scope.maxPage = Math.ceil(transmit.data.count / $scope.perPage);
+					console.log("Check maxPage value immediately before signalling finish:"+$scope.maxPage);
+					$scope.isLoadingCount = false;
+					$scope.computeIsLoading();
 				});
 			}
 			$(function() {
@@ -102,6 +117,9 @@
 
 {% block content %}
 <div ng-app="mbApp" ng-controller="mbCtrl">
+<div ng-show="isLoading" class="alert alert-warning">
+  Loading data...
+</div>
 <h1>{{ title }}</h1>
 	<div class="table-responsive">
 		<table class="table table-default table-hover">
@@ -122,7 +140,7 @@
 				<th ng-click="orderByMe('saturated_fat_g')">Saturated Fat (g)</th>
 				<th ng-click="orderByMe('cholesterol_mg')">Cholesterol (g)</th>
 			</tr>
-		<tr ng-repeat="x in ing | orderBy:mbOrderBy:mbReverse">
+		<tr ng-hide="isLoading" ng-repeat="x in ing | orderBy:mbOrderBy:mbReverse">
 			<td>{{ '{{x.id}}' }}</td>
 			<td><a ng-href="/ingredient_{{ '{{x.id}}' }}.html">{{ '{{x.name}}' }}</a></td>
 			<td>{{ '{{x.calories}}' }}</td>
