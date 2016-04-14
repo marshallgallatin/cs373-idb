@@ -45,6 +45,8 @@
 							};
 			$scope.showMore = function () {
 				$scope.maxCount += 3;
+				var y = $("#recipes").scrollTop();
+				$("#recipes").animate({ scrollTop: y + 75 }, 600);
 			}
 			$scope.drawMap = function () {
 				var mapProp = {
@@ -101,7 +103,7 @@
 		<h3>Originates from {{ '{{ basic.origin }}' }}</h3>
 		<div id="googleMap" style="height:300px;background-color:transparent"></div>
 		<h3>Used in recipes:</h3>
-		<div style="max-height:550px; overflow-y:auto">
+		<div id="recipes" style="max-height:550px; overflow-y:auto">
 			<a ng-repeat="x in recipes" ng-if="$index < maxCount" style="color:black" ng-href="/recipe_{{ '{{x.id}}' }}.html">
 				<div class="col-xs-11" style="margin-top:5px; margin-bottom:10px; box-shadow: 5px 5px 5px #888888;">
 					<div class="img-vert" style="width:100%; max-height:200px; min-height:100px; overflow-y:hidden; background-image:url({{ '{{x.image_uri}}' }})"></div>
