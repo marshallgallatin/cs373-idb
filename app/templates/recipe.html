@@ -13,8 +13,27 @@
 		white-space: nowrap;
 		width: 1%;
 	}
+	div.img-square {
+		min-height:100px;
+		max-height:400px;
+		background-size:auto 100%;
+	}
 	</style>
 	<script>
+		var ratio = .75;
+		var debounceRectIt;
+		function rectIt() {
+			$("div.img-square").height($(window).height() * ratio);
+		}
+		window.addEventListener('load', function(event) {
+			clearTimeout(debounceRectIt);
+			debounceRectIt = setTimeout(rectIt, 50);
+		});
+		window.addEventListener('resize', function(event) {
+			clearTimeout(debounceRectIt);
+			debounceRectIt = setTimeout(rectIt, 50);
+		});
+
 		$(document).ready(function(){
 			$("table tr").click(function(event){
 				$glyph = $(this).children().find(".glyphicon");
@@ -125,9 +144,7 @@
 			<br />Ready in: {{ '{{data.ready_in_minutes}}' }}
 			<br />Serves: {{ '{{data.servings}}' }}
 		</div>
-		<div style="padding-top:10px" class="col-xs-12 col-sm-6 col-lg-6">
-			<img class="img-responsive" src={{ '{{data.image_uri}}' }}></img>
-		</div>
+		<div class="col-xs-12 col-sm-6 col-lg-6 img-responsive img-square" style="padding-top:10px; background-image:url({{ '{{data.image_uri}}' }})"></div>
 	</div>
 	
 	<div class="page-header">
