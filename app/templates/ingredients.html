@@ -69,9 +69,8 @@
 					$scope.nuts = new Array($scope.perPage);
 					for (var i = 0; i < $scope.ing.length; ++i) {
 						console.log($scope.ing[i].id);
-						//{{ realprefix }}$http.get("ingredients/" + $scope.ing[i].id + "/nutrition").then(function (transmit_nuts) {
-						//{{ testprefix }}$http.get("ingredients/test/nutrition"+i).then(function (transmit_nuts) {
 						{{ realprefix }}$http.get("ingredients/" + $scope.ing[i].id + "/nutrition").then((function(savedI) {
+						{{ testprefix }}$http.get("ingredients/test/nutrition"+i).then((function(savedI) {
 							return function(transmit_nuts) {
 								$scope.isLoadingNuts = true;
 								$scope.nuts[savedI] = transmit_nuts.data;
