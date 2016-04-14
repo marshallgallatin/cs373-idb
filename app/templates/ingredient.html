@@ -5,6 +5,10 @@
 		cursor: hand;
 		cursor: pointer;
 	}
+	div.img-square {
+		max-height:400px;
+		background-size:auto 100%;
+	}
 	</style>
 	<script src="http://maps.googleapis.com/maps/api/js"></script>
 	<script>
@@ -72,6 +76,7 @@
 		<div style="padding-top:10px" class="col-xs-12 col-sm-6 col-lg-6">
 			<img class="img-responsive" ng-src="{{ '{{basic.image_uri}}' }}"></img>
 		</div>
+		<div class="col-xs-12 col-sm-6 col-lg-6 img-square" style="padding-top:10px; background-image:url({{ '{{basic.image_uri}}' }})"></div>
 	</div>
 	
 	<div class="col-xs-12 col-sm-6">
