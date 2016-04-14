@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "16 cherry tomatoes, halved",
-      "name": "tomato"
+      "name": "cherry tomato"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup long grain rice",
-      "name": "rice"
+      "name": "long-grain rice"
     },
     {
       "aisle": "Canned and Jarred",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups low sodium chicken broth",
-      "name": "low sodium chicken broth"
+      "name": "low-sodium chicken broth"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -220,7 +220,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "3 boneless skinless chicken breasts",
-      "name": "skinless boneless chicken breasts"
+      "name": "skinless boneless chicken breast"
     },
     {
       "aisle": "Spices and Seasonings",

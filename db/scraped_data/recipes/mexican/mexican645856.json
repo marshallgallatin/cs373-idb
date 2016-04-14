@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup Anaheim peppers, seeded, diced",
-      "name": "anaheim peppers"
+      "name": "Anaheim pepper"
     },
     {
       "aisle": "Produce",
@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "1 1/2 cups cherries, pitted, diced",
-      "name": "cherries"
+      "name": "cherry"
     },
     {
       "aisle": "Produce",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "ounces",
       "originalString": "12 ounces salmon fillet",
-      "name": "salmon fillet"
+      "name": "raw salmon"
     },
     {
       "aisle": "Spices and Seasonings",

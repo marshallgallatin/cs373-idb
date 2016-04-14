@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "1 pound boneless chicken thighs, thinly sliced",
-      "name": "boneless chicken thighs"
+      "name": "chicken thigh"
     },
     {
       "aisle": "Canned and Jarred",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "Chile-garlic paste",
-      "name": "chili-garlic paste"
+      "name": "chili pepper paste"
     },
     {
       "aisle": "Ethnic Foods",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "ounces",
       "originalString": "8 ounces mushrooms, any variety",
-      "name": "mushroom"
+      "name": "white mushroom"
     },
     {
       "aisle": "Gluten Free",

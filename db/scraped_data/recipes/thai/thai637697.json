@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "grams",
       "originalString": "500 grams chicken thigh or breast meat, cut into cubes",
-      "name": "chicken breast meat"
+      "name": "chicken thigh"
     },
     {
       "aisle": "Produce",
@@ -180,7 +180,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup of coarse roasted peanuts",
-      "name": "roasted peanuts"
+      "name": "roasted peanut"
     },
     {
       "aisle": "Produce",
@@ -210,7 +210,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "4 cups unsweetened coconut milk",
-      "name": "unsweetened coconut milk"
+      "name": "coconut milk"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",

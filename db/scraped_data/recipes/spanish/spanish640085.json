@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups corn kernels, from 2 large or 4 small ears of corn",
-      "name": "corn kernels"
+      "name": "yellow corn"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup fresh ricotta",
-      "name": "fresh ricotta"
+      "name": "ricotta cheese"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons grated Pecorino Romano cheese",
-      "name": "pecorino romano cheese"
+      "name": "Romano cheese"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup whole milk",
-      "name": "milk"
+      "name": "whole milk"
     }
   ],
   "readyInMinutes": 45,

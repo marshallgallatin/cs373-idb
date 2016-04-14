@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "oz",
       "originalString": "8 oz fresh Bella mushrooms (crimini or regular okay)",
-      "name": "portobello mushroom"
+      "name": "portabello mushroom"
     },
     {
       "aisle": "Canned and Jarred",
@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "packet",
       "originalString": "1 packet beef stroganoff powder (McCormick)",
-      "name": "beef stock powder"
+      "name": "beef stroganoff powder"
     },
     {
       "aisle": "Produce",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "4 cups wide egg noodles",
-      "name": "wide egg noodles"
+      "name": "egg noodles"
     },
     {
       "aisle": "Condiments",

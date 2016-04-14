@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "1 pound Beef flank steak, sliced into 1/2-inch slices",
-      "name": "beef steak"
+      "name": "flank steak"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups Cooked white long grain rice",
-      "name": "rice"
+      "name": "long-grain rice"
     },
     {
       "aisle": "Spices and Seasonings",

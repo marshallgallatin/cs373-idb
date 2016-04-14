@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "12 cherry tomatoes",
-      "name": "tomato"
+      "name": "cherry tomato"
     },
     {
       "aisle": "Condiments",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "3/4 cup Dijon mustard",
-      "name": "dijon mustard"
+      "name": "mustard"
     },
     {
       "aisle": "Ethnic Foods",
@@ -150,7 +150,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "12 bite sized mushrooms",
-      "name": "mushroom"
+      "name": "white mushroom"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -250,7 +250,7 @@
       "metaInformation": [],
       "unit": "lbs",
       "originalString": "1 whole chicken (about 3 lbs)",
-      "name": "whole chicken"
+      "name": "raw chicken"
     },
     {
       "aisle": "Produce",

@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "1 1/2 cups organic evaporated cane sugar",
-      "name": "cane sugar"
+      "name": "granulated sugar"
     },
     {
       "aisle": "Baking",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "Extra Chocolate Chips for decoration, optional",
-      "name": "chocolate chips"
+      "name": "semisweet chocolate chips"
     },
     {
       "aisle": "Baking",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "oz",
       "originalString": "1 10 oz bag chocolate chips",
-      "name": "chocolate chips"
+      "name": "semisweet chocolate chips"
     },
     {
       "aisle": "Nut butters, Jams, and Honey",

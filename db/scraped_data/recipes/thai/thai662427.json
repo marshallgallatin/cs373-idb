@@ -1,1 +1,109 @@
-{"vegetarian": false, "glutenFree": true, "title": "Sweet and Spicy Thai Relish", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/3KP7ZFWX/sweet-spicy-thai-relish", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Heat a large cast iron skillet over medium heat. Once hot, dry-fry (meaning, dont add any fat or oil to the pan) the whole chilies for one minute, then set aside in a small bowl. They should be fragrant and slightly darker in color, but not burnt. In the same pan, dry-fry the chopped onion, bell pepper, and garlic for 2 minutes until brown but not burnt, then set aside on a large plate.</li><li>Toss in the tomatoes and dry-fry for 1-2 minutes until charred on the outside, stirring frequently. Set on the plate with the onions, pepper, and garlic. Turn the stove off, then use your hands to break apart the chilies into smaller pieces. Dont try to use a knife, because they will fly all over the kitchen. Place the chilies in the bowl of a blender or large food processor, then wash your hands thoroughly with soap and warm water to remove any oils left from the chilies.</li><li>Add the third cup fish sauce, quarter cup lime juice, and sugar to the blender, along with the reserved onion, bell pepper, garlic, and tomatoes. Pulse on chop mode or equivalent until the mixture forms a chunky sauce. Serve either warm or chilled.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Produce", "unitLong": "", "amount": 5.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "5 small dried chile de arbols, or other red chilies (check the produce section or Hispanic foods aisle)", "name": "chile"}, {"aisle": "Ethnic Foods", "unitLong": "cups", "amount": 0.3333333333333333, "unitShort": "c", "metaInformation": [], "unit": "c", "originalString": "1/3 c. fish sauce", "name": "fish sauce"}, {"aisle": "Produce", "unitLong": "cloves", "amount": 3.0, "unitShort": "cloves", "metaInformation": [], "unit": "cloves", "originalString": "3 large cloves garlic, coarsely chopped", "name": "garlic"}, {"aisle": "Produce", "unitLong": "", "amount": 12.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "12 cherry or grape tomatoes, halved", "name": "grape tomatoes"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.25, "unitShort": "c", "metaInformation": [], "unit": "c", "originalString": "1/4 c. lime juice", "name": "lime juice"}, {"aisle": "Produce", "unitLong": "cups", "amount": 0.5, "unitShort": "c", "metaInformation": [], "unit": "c", "originalString": "1/2 c. very coarsely chopped onion", "name": "onion"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 red bell pepper, coarsely chopped", "name": "red bell pepper"}, {"aisle": "Baking", "unitLong": "pinch", "amount": 1.0, "unitShort": "pinch", "metaInformation": [], "unit": "pinch", "originalString": "1 pinch of sugar", "name": "sugar"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/sweet-spicy-thai-relish-662427", "weightWatcherSmartPoints": 1, "id": 662427, "image": "https://spoonacular.com/recipeImages/Sweet---Spicy-Thai-Relish-662427.jpg", "servings": 3, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Sweet and Spicy Thai Relish",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/3KP7ZFWX/sweet-spicy-thai-relish",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Heat a large cast iron skillet over medium heat. Once hot, dry-fry (meaning, dont add any fat or oil to the pan) the whole chilies for one minute, then set aside in a small bowl. They should be fragrant and slightly darker in color, but not burnt. In the same pan, dry-fry the chopped onion, bell pepper, and garlic for 2 minutes until brown but not burnt, then set aside on a large plate.</li><li>Toss in the tomatoes and dry-fry for 1-2 minutes until charred on the outside, stirring frequently. Set on the plate with the onions, pepper, and garlic. Turn the stove off, then use your hands to break apart the chilies into smaller pieces. Dont try to use a knife, because they will fly all over the kitchen. Place the chilies in the bowl of a blender or large food processor, then wash your hands thoroughly with soap and warm water to remove any oils left from the chilies.</li><li>Add the third cup fish sauce, quarter cup lime juice, and sugar to the blender, along with the reserved onion, bell pepper, garlic, and tomatoes. Pulse on chop mode or equivalent until the mixture forms a chunky sauce. Serve either warm or chilled.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 5.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "5 small dried chile de arbols, or other red chilies (check the produce section or Hispanic foods aisle)",
+      "name": "red pepper"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "cups",
+      "amount": 0.3333333333333333,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "c",
+      "originalString": "1/3 c. fish sauce",
+      "name": "fish sauce"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 3.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "3 large cloves garlic, coarsely chopped",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 12.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "12 cherry or grape tomatoes, halved",
+      "name": "cherry tomato"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.25,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "c",
+      "originalString": "1/4 c. lime juice",
+      "name": "lime juice"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 0.5,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "c",
+      "originalString": "1/2 c. very coarsely chopped onion",
+      "name": "onion"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 red bell pepper, coarsely chopped",
+      "name": "red bell pepper"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "pinch",
+      "amount": 1.0,
+      "unitShort": "pinch",
+      "metaInformation": [],
+      "unit": "pinch",
+      "originalString": "1 pinch of sugar",
+      "name": "granulated sugar"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/sweet-spicy-thai-relish-662427",
+  "weightWatcherSmartPoints": 1,
+  "id": 662427,
+  "image": "https://spoonacular.com/recipeImages/Sweet---Spicy-Thai-Relish-662427.jpg",
+  "servings": 3,
+  "whole30": false,
+  "lowFodmap": false
+}

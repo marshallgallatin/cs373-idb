@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup flour",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Meat",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "ounce",
       "originalString": "1 (10-ounce) package frozen peas",
-      "name": "frozen peas"
+      "name": "frozen green peas"
     },
     {
       "aisle": "Spices and Seasonings",

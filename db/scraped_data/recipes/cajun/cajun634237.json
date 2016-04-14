@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup granulated sugar, divided",
-      "name": "sugar"
+      "name": "granulated sugar"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups heavy cream",
-      "name": "heavy cream"
+      "name": "heavy whipping cream"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "1 1/4 cups whole milk",
-      "name": "milk"
+      "name": "whole milk"
     }
   ],
   "readyInMinutes": 45,

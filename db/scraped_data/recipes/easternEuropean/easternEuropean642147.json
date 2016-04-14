@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "oz",
       "originalString": "4 oz fresh mushrooms – sliced",
-      "name": "mushroom"
+      "name": "white mushroom"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup milk",
-      "name": "milk"
+      "name": "whole milk"
     },
     {
       "aisle": "Produce",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "lbs",
       "originalString": "1.25 lbs beef flank or sirloin steak – cut across the grain, thin sliced",
-      "name": "sirloin steak"
+      "name": "flank steak"
     },
     {
       "aisle": "Cheese",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "oz",
       "originalString": "8 oz. velveeta",
-      "name": "velveeta cheese"
+      "name": "Velveeta cheese"
     },
     {
       "aisle": "Beverages",

@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "1/4 pound boneless chicken breast, cut into small cubes",
-      "name": "boneless chicken breast"
+      "name": "chicken breast"
     },
     {
       "aisle": "Produce",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup frozen green peas (thawed)",
-      "name": "frozen peas"
+      "name": "frozen green peas"
     },
     {
       "aisle": "Pasta and Rice",

@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "pound calamari cleaned, skinned,",
-      "name": "calamari"
+      "name": "squid"
     },
     {
       "aisle": "Canned and Jarred",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "12 Clams, littleneck Or mussels or both",
-      "name": "mussel"
+      "name": "littleneck clam"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "3 Roma plum tomatoes - (to 4) minced",
-      "name": "tomato"
+      "name": "plum tomato"
     },
     {
       "aisle": "Ethnic Foods",
@@ -160,7 +160,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "pound medium shrimp in shells heads off",
-      "name": "shrimp"
+      "name": "raw shrimp"
     },
     {
       "aisle": "Pasta and Rice",
@@ -170,7 +170,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups raw white rice",
-      "name": "rice"
+      "name": "long-grain rice"
     }
   ],
   "readyInMinutes": 45,

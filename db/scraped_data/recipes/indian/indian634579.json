@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "pounds",
       "originalString": "5 pounds Beef Chuck Roast",
-      "name": "beef chuck roast"
+      "name": "beef chuck"
     },
     {
       "aisle": "Canned and Jarred",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "t",
       "originalString": "1 t curry powder",
-      "name": "curry"
+      "name": "curry powder"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "t",
       "originalString": "2 t mild curry powder",
-      "name": "curry"
+      "name": "curry powder"
     },
     {
       "aisle": "Produce",

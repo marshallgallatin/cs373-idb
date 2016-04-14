@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "lb",
       "originalString": "1 1/2 lb. beef chuck meat, well-trimmed and cut into 1/2 inch pieces",
-      "name": "beef stew meat"
+      "name": "beef chuck"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "oz",
       "originalString": "1 (15 oz.) can of low-sodium beef broth",
-      "name": "canned beef broth"
+      "name": "beef broth"
     },
     {
       "aisle": "Produce",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "t",
       "originalString": "1 1/2 t. Dijon mustard",
-      "name": "dijon mustard"
+      "name": "mustard"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "t",
       "originalString": "1 t. dry mustard",
-      "name": "dry mustard"
+      "name": "mustard seed"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "T",
       "originalString": "3 T. flour",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Produce",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "t",
       "originalString": "1 t. minced fresh marjoram",
-      "name": "fresh marjoram"
+      "name": "marjoram"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -190,7 +190,7 @@
       "metaInformation": [],
       "unit": "oz",
       "originalString": "8 oz. Irish cheddar, or sharp cheddar cheese, shredded",
-      "name": "Irish cheddar cheese"
+      "name": "sharp cheddar cheese"
     },
     {
       "aisle": "Baking",
@@ -200,7 +200,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon sugar",
-      "name": "sugar"
+      "name": "granulated sugar"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",

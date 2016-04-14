@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "5 cups all-purpose flour",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "3/4 cup milk",
-      "name": "milk"
+      "name": "whole milk"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup sugar",
-      "name": "sugar"
+      "name": "granulated sugar"
     },
     {
       "aisle": "Baking",

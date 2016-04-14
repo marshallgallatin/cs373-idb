@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "slices",
       "originalString": "8 French bread slices, stale",
-      "name": "french bread"
+      "name": "baguette"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "4 cups milk",
-      "name": "milk"
+      "name": "whole milk"
     },
     {
       "aisle": "Produce",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "cup Sugar",
-      "name": "sugar"
+      "name": "granulated sugar"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",

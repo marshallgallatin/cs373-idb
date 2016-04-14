@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "can",
       "originalString": "1 can liver pate",
-      "name": "liver pate"
+      "name": "pate"
     },
     {
       "aisle": "Produce",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup finely chopped mushrooms",
-      "name": "mushroom"
+      "name": "white mushroom"
     }
   ],
   "readyInMinutes": 25,

@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "teaspoons",
       "originalString": "2 teaspoons dijon mustard",
-      "name": "dijon mustard"
+      "name": "mustard"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon lemon thyme, fresh finely chopped",
-      "name": "lemon thyme"
+      "name": "thyme"
     },
     {
       "aisle": "Produce",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup low-fat milk",
-      "name": "low-fat milk"
+      "name": "reduced fat milk"
     },
     {
       "aisle": "Frozen",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "4 tablespoons reduced fat sour cream",
-      "name": "reduced fat sour cream"
+      "name": "low-fat sour cream"
     },
     {
       "aisle": "Seafood",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "ounces",
       "originalString": "8 ounces wild Alaskan Salmon filets, cooked and flaked into pieces",
-      "name": "salmon filets"
+      "name": "raw salmon"
     },
     {
       "aisle": "Spices and Seasonings",

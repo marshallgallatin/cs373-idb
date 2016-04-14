@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup all purpose flour",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Baking",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "5 tablespoons sugar, divided",
-      "name": "sugar"
+      "name": "granulated sugar"
     }
   ],
   "readyInMinutes": 45,

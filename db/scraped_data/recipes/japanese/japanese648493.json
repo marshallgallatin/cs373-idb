@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "slices",
       "originalString": "12 slices salmon, about 2 to 3 ounces",
-      "name": "salmon"
+      "name": "raw salmon"
     },
     {
       "aisle": "Produce",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon vinegar",
-      "name": "vinegar"
+      "name": "distilled vinegar"
     }
   ],
   "readyInMinutes": 45,

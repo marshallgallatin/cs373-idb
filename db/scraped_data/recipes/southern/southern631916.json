@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "1 pound shrimp",
-      "name": "shrimp"
+      "name": "raw shrimp"
     },
     {
       "aisle": "Canned and Jarred",
@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 sun dried tomatoes packed in olive oil",
-      "name": "sun-dried tomatoes"
+      "name": "sun-dried tomato"
     },
     {
       "aisle": "Produce",

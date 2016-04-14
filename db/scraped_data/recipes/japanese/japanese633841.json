@@ -1,1 +1,109 @@
-{"vegetarian": false, "glutenFree": true, "title": "Baked Teriyaki Chicken Drumsticks", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/P2H7T2SX/baked-teriyaki-chicken-drumsticks", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>In a large bowl, mix teriyaki sauce, salt vegetable oil, honey, and ginger.  Add the chicken to the marinade.  Let the chicken marinade for about 4-5 hours.</li><li>Preheat oven to 450 degrees.  Add the sliced onions and diced garlic on the baking pan.  Lay the chicken on top of the onions and garlic.  Bake the chicken for 30 minutes turning once until cooked.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Meat", "unitLong": "", "amount": 6.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "6 chicken drumsticks", "name": "chicken drumsticks"}, {"aisle": "Produce", "unitLong": "cloves", "amount": 2.0, "unitShort": "cloves", "metaInformation": [], "unit": "cloves", "originalString": "2 cloves of garlic diced", "name": "garlic"}, {"aisle": "Ethnic Foods", "unitLong": "tablespoon", "amount": 1.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoon", "originalString": "1 tablespoon of shredded ginger", "name": "ginger"}, {"aisle": "Nut butters, Jams, and Honey", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon of honey", "name": "honey"}, {"aisle": "Produce", "unitLong": "", "amount": 1.0, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1 onion, sliced", "name": "onion"}, {"aisle": "Spices and Seasonings", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "Salt, pepper, garlic,", "name": "salt"}, {"aisle": "Ethnic Foods", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "1 cup of teriyaki sauce", "name": "teriyaki sauce"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "teaspoon", "amount": 1.0, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1 teaspoon of vegetable oil", "name": "vegetable oil"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": false, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/baked-teriyaki-chicken-drumsticks-633841", "weightWatcherSmartPoints": 33, "id": 633841, "image": "https://spoonacular.com/recipeImages/Baked-Teriyaki-Chicken-Drumsticks-633841.jpg", "servings": 1, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Baked Teriyaki Chicken Drumsticks",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/P2H7T2SX/baked-teriyaki-chicken-drumsticks",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>In a large bowl, mix teriyaki sauce, salt vegetable oil, honey, and ginger.  Add the chicken to the marinade.  Let the chicken marinade for about 4-5 hours.</li><li>Preheat oven to 450 degrees.  Add the sliced onions and diced garlic on the baking pan.  Lay the chicken on top of the onions and garlic.  Bake the chicken for 30 minutes turning once until cooked.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Meat",
+      "unitLong": "",
+      "amount": 6.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "6 chicken drumsticks",
+      "name": "chicken drumstick"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "cloves",
+      "amount": 2.0,
+      "unitShort": "cloves",
+      "metaInformation": [],
+      "unit": "cloves",
+      "originalString": "2 cloves of garlic diced",
+      "name": "garlic"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoon",
+      "amount": 1.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoon",
+      "originalString": "1 tablespoon of shredded ginger",
+      "name": "ginger"
+    },
+    {
+      "aisle": "Nut butters, Jams, and Honey",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon of honey",
+      "name": "honey"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "",
+      "amount": 1.0,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1 onion, sliced",
+      "name": "onion"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "Salt, pepper, garlic,",
+      "name": "salt"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "1 cup of teriyaki sauce",
+      "name": "teriyaki sauce"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "teaspoon",
+      "amount": 1.0,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1 teaspoon of vegetable oil",
+      "name": "vegetable oil"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/baked-teriyaki-chicken-drumsticks-633841",
+  "weightWatcherSmartPoints": 33,
+  "id": 633841,
+  "image": "https://spoonacular.com/recipeImages/Baked-Teriyaki-Chicken-Drumsticks-633841.jpg",
+  "servings": 1,
+  "whole30": false,
+  "lowFodmap": false
+}

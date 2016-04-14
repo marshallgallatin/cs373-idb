@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "10 1/2 cups all-purpose flour",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "c",
       "originalString": "1 c. milk",
-      "name": "milk"
+      "name": "whole milk"
     },
     {
       "aisle": "Spices and Seasonings",

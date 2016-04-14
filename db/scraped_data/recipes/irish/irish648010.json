@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup condensed milk",
-      "name": "condensed milk"
+      "name": "sweetened condensed milk"
     },
     {
       "aisle": "Baking",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "oz",
       "originalString": "1 oz Irish Whiskey",
-      "name": "irish whiskey"
+      "name": "whiskey"
     },
     {
       "aisle": "Baking",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups homogenized milk",
-      "name": "milk"
+      "name": "whole milk"
     },
     {
       "aisle": "Baking",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 1/2 cups pastry flour (all-purpose is fine)",
-      "name": "pastry flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Spices and Seasonings",

@@ -4,16 +4,25 @@
 	<title>{% block title %}{% endblock %}</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+	<script src="/static/js/jquery.min.js"></script>
+	<script src="/static/js/bootstrap.min.js"></script>
+	<script src="/static/js/angular.min.js"></script>
 	<style>
 	body {
 		background-color: #f2f2f2
 	}
 	div.container {
 		background-color: white
+	}
+	div.img-square {
+		height:75px;
+		//background-color:orange;
+		background-size:auto 75px;
+		background-position:center center;
+		background-repeat:no-repeat;
+		border-left: 3px solid orange;
+		border-right: 3px solid orange;
 	}
 	</style>
 	<script>
@@ -36,7 +45,6 @@
 </head>
 
 <body>
-
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container-fluid">
 		<div class="navbar-header">
@@ -55,7 +63,17 @@
 			<li class={{ ingredientslit }}><a href="/ingredients.html">Ingredients</a></li>
 			<li class={{ aboutlit }}><a href="/about.html">About</a></li>
 		</ul>
-        </div><!--/.nav-collapse -->
+		<div class="col-sm-4">
+		<form class="navbar-form" role="search" action="search">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Search" name="q">
+				<div class="input-group-btn">
+					<button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+				</div>
+			</div>
+		</form>
+		</div>
+        </div>
 	</div>
 </nav>
 

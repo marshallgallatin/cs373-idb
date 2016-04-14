@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "5 1/2 cups flour",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup sugar",
-      "name": "sugar"
+      "name": "granulated sugar"
     },
     {
       "aisle": "Beverages",

@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup whipping cream plus",
-      "name": "whipping cream"
+      "name": "light whipping cream"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons whipping cream",
-      "name": "whipping cream"
+      "name": "light whipping cream"
     }
   ],
   "readyInMinutes": 45,

@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "1 1/2 cups (s) of chicken strips",
-      "name": "chicken strips"
+      "name": "chicken thigh"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon of rice wine vinegar",
-      "name": "rice wine vinegar"
+      "name": "rice vinegar"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons of rice wine vinegar",
-      "name": "rice wine vinegar"
+      "name": "rice vinegar"
     },
     {
       "aisle": "Produce",
@@ -170,7 +170,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "1 1/2 tablespoons of sugar",
-      "name": "sugar"
+      "name": "granulated sugar"
     }
   ],
   "readyInMinutes": 45,

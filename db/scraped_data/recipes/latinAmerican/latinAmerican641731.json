@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups organic flour",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Baking",
@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup organic sugar",
-      "name": "sugar"
+      "name": "granulated sugar"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",

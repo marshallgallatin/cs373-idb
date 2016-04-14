@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "1 pound Chicken breast (boneless)",
-      "name": "boneless chicken breast"
+      "name": "chicken breast"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup Fresh Cream",
-      "name": "cream"
+      "name": "fresh cream"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1/2 teaspoon Fennel seeds",
-      "name": "fennel seeds"
+      "name": "fennel seed"
     },
     {
       "aisle": "Ethnic Foods",
@@ -170,7 +170,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "Sugar",
-      "name": "sugar"
+      "name": "granulated sugar"
     },
     {
       "aisle": "Produce",

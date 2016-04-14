@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "6 burrito size tortillas",
-      "name": "tortilla"
+      "name": "flour tortilla"
     },
     {
       "aisle": "Produce",
@@ -190,7 +190,7 @@
       "metaInformation": [],
       "unit": "lb",
       "originalString": "1 lb sirloin, trimmed and diced (1/2 inch)",
-      "name": "sirloin beef"
+      "name": "beef sirloin"
     }
   ],
   "readyInMinutes": 30,

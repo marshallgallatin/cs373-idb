@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "Cups",
       "originalString": "1.5 Cups of Chopped Chicken",
-      "name": "chicken"
+      "name": "raw chicken"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon of Curry",
-      "name": "curry"
+      "name": "curry powder"
     },
     {
       "aisle": "Produce",
@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "1.5 cups of Blended tomato",
-      "name": "canned tomato sauce"
+      "name": "tomato sauce"
     },
     {
       "aisle": "Nut butters, Jams, and Honey",

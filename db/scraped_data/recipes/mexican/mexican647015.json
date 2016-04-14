@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "10-inch",
       "originalString": "12 10-inch corn tortillas",
-      "name": "corn tortillas"
+      "name": "corn tortilla"
     },
     {
       "aisle": "Produce",
@@ -200,7 +200,7 @@
       "metaInformation": [],
       "unit": "dash",
       "originalString": "1 dash white vinegar",
-      "name": "vinegar"
+      "name": "distilled vinegar"
     }
   ],
   "readyInMinutes": 240,

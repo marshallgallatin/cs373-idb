@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups canned corn",
-      "name": "canned corn"
+      "name": "canned yellow corn"
     },
     {
       "aisle": "Produce",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon Creole seasoning (more or less to taste)",
-      "name": "creole seasoning"
+      "name": "Creole seasoning"
     },
     {
       "aisle": "Baking",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup all-purpose flour",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Spices and Seasonings",

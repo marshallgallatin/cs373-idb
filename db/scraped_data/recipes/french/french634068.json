@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup all purpose flour (sifted)",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Produce",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup milk",
-      "name": "milk"
+      "name": "whole milk"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "teaspoons",
       "originalString": "2 teaspoons sugar",
-      "name": "sugar"
+      "name": "granulated sugar"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",

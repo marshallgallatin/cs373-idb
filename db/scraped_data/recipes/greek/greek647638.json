@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup black olives",
-      "name": "black olives"
+      "name": "olive"
     },
     {
       "aisle": "Canned and Jarred",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup shredded lettuce",
-      "name": "lettuce"
+      "name": "butterhead lettuce"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "1 1/2 tablespoons Tahini paste",
-      "name": "tahini paste"
+      "name": "tahini"
     },
     {
       "aisle": "Pasta and Rice",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "10-inch",
       "originalString": "1 10-inch tortilla",
-      "name": "tortilla"
+      "name": "flour tortilla"
     }
   ],
   "readyInMinutes": 45,

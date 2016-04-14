@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup dry red wine",
-      "name": "dry red wine"
+      "name": "red wine"
     },
     {
       "aisle": "Refrigerated",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "oz",
       "originalString": "4-5 oz. Kataifi pastry (shredded phyllo)",
-      "name": "pie pastry"
+      "name": "phyllo dough"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",

@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "1 1/2 tablespoons all purpose flour",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Canned and Jarred",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "1 pound beef chuck (stewing beef)",
-      "name": "beef chuck roast"
+      "name": "beef chuck"
     },
     {
       "aisle": "Produce",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "pints",
       "originalString": "2 pints button mushrooms (about 20 mushrooms), rinsed, stems removed, cut in half",
-      "name": "mushroom"
+      "name": "white mushroom"
     },
     {
       "aisle": "Produce",

@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon Dijon mustard, hot",
-      "name": "dijon mustard"
+      "name": "mustard"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "1/2 pound Lean ground pork, shoulder",
-      "name": "ground pork"
+      "name": "lean ground pork"
     },
     {
       "aisle": "Meat",

@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "ounces",
       "originalString": "8 ounces can tomato sauce",
-      "name": "canned tomato sauce"
+      "name": "tomato sauce"
     },
     {
       "aisle": "Canned and Jarred",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "pounds",
       "originalString": "2 pounds grouper or a white fish",
-      "name": "fish"
+      "name": "grouper"
     },
     {
       "aisle": "Produce",

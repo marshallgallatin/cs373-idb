@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "teaspoons",
       "originalString": "2 teaspoons Red Wine Vinegar",
-      "name": "red wine vinegar"
+      "name": "red or white wine vinegar"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -160,7 +160,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "1 pound boneless, skinless chicken breasts",
-      "name": "skinless boneless chicken breasts"
+      "name": "skinless boneless chicken breast"
     },
     {
       "aisle": "Produce",
@@ -180,7 +180,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1/2 teaspoon white wine vinegar",
-      "name": "white wine vinegar"
+      "name": "red or white wine vinegar"
     }
   ],
   "readyInMinutes": 75,

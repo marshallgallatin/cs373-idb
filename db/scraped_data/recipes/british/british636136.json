@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "ounces",
       "originalString": "10 ounces golden syrup",
-      "name": "corn syrup"
+      "name": "cane syrup"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "1 3/4 cups all-purpose flour",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",

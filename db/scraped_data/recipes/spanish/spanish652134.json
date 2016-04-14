@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "1 pound chorizo sausage, casing removed",
-      "name": "chorizo sausage"
+      "name": "chorizo"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup peas",
-      "name": "pea"
+      "name": "green pea"
     },
     {
       "aisle": "Produce",
@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups dry rice",
-      "name": "rice"
+      "name": "long-grain rice"
     },
     {
       "aisle": "Ethnic Foods",
@@ -150,7 +150,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1/4 teaspoon saffron threads",
-      "name": "saffron threads"
+      "name": "saffron"
     },
     {
       "aisle": "Seafood",
@@ -160,7 +160,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "3/4 pound peeled and deveined shrimp",
-      "name": "shrimp"
+      "name": "raw shrimp"
     },
     {
       "aisle": "Produce",
@@ -190,7 +190,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "1/2 pound firm white fish, cut into bite-size pieces",
-      "name": "white fish"
+      "name": "grouper"
     }
   ],
   "readyInMinutes": 45,

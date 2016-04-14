@@ -122,6 +122,38 @@ def splash():
 def about():
 	return render_template('about.html', title="About", aboutlit="active")
 
+@app.route('/search', methods=['GET'])
+def search():
+	return render_template('search.html', title=request.args.get('q'), aboutlit="active")
+
+@app.route('/query', methods=['GET'])
+def query():
+	return jsonify(
+	{
+		"results": [
+			{
+				"type": "recipe",
+				"cuisine": "african",
+				"id": 2,
+				"image_uri": "https://spoonacular.com/recipeImages/Ethiopian-Lentil-Curry-642468.jpg",
+				"ready_in_minutes": 75,
+				"servings": 6,
+				"title": "Ethiopian Lentil Curry",
+				"snippet": "Place the bull <b>test</b>icle in the boi"
+			},
+			{
+				"type": "ingredient",
+				"id": 789,
+				"image_uri": "https://upload.wikimedia.org/wikipedia/commons/d/d0/BlackEyedPeas.JPG",
+				"name": "black-eyed pea",
+				"origin": "Africa",
+				"scientific_name": "Vigna unguiculata subsp. unguiculata",
+				"snippet": "Used in <b>Unit Test</b> Soup"
+			}
+		],
+		"count": 12
+	})
+
 @app.route('/recipe.html')
 @app.route('/recipe_<int:r_id>.html')
 def recipe(r_id="test"):
@@ -134,11 +166,11 @@ def ingredient(i_id="test"):
 
 @app.route('/recipes.html')
 def recipes():
-	return render_template('recipes.html', title="Recipes", recipeslit="active")
+	return render_template('recipes.html', title="Recipes", recipeslit="active", testprefix="//")
 
 @app.route('/ingredients.html')
 def ingredients():
-	return render_template('ingredients.html', title="Ingredients", ingredientslit="active")
+	return render_template('ingredients.html', title="Ingredients", ingredientslit="active", testprefix="//")
 
 @app.route("/<path:path>")
 def static_html(path):

@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "3/4 cup Chicken, Seafood, or Veggie Broth",
-      "name": "broth"
+      "name": "chicken broth"
     },
     {
       "aisle": "Ethnic Foods",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon of Cajun Spice",
-      "name": "cajun seasoning"
+      "name": "Creole seasoning"
     },
     {
       "aisle": "Produce",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup of Heavy Cream",
-      "name": "heavy cream"
+      "name": "heavy whipping cream"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1 teaspoon of Old Bay Seasoning",
-      "name": "old bay seasoning"
+      "name": "Old Bay Seasoning"
     },
     {
       "aisle": "Spices and Seasonings",

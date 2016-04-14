@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups Dry roasted peanuts",
-      "name": "dry roasted peanuts"
+      "name": "dry-roasted peanut"
     },
     {
       "aisle": "Baking",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "3/4 cup sugar",
-      "name": "sugar"
+      "name": "granulated sugar"
     },
     {
       "aisle": "Baking",

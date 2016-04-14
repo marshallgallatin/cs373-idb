@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "can",
       "originalString": "1 can whole mushrooms, sliced in half (it's chunkier that way)",
-      "name": "mushroom"
+      "name": "white mushroom"
     },
     {
       "aisle": "Meat",
@@ -150,7 +150,7 @@
       "metaInformation": [],
       "unit": "kilogram",
       "originalString": "1 1/2 kilogram pork spareribs",
-      "name": "pork spareribs"
+      "name": "pork sparerib"
     },
     {
       "aisle": "Produce",

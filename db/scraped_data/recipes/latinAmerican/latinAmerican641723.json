@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup sugar",
-      "name": "sugar"
+      "name": "granulated sugar"
     },
     {
       "aisle": "Baking",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "quart",
       "originalString": "1 quart whole milk",
-      "name": "milk"
+      "name": "whole milk"
     }
   ],
   "readyInMinutes": 45,

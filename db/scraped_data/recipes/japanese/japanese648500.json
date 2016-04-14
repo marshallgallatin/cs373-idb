@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "1 pound well-trimmed beef top sirloin 3 cups sliced napa cabbage",
-      "name": "beef top sirloin steak"
+      "name": "beef sirloin"
     },
     {
       "aisle": "Produce",
@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "3 tablespoons rice wine vinegar",
-      "name": "rice wine vinegar"
+      "name": "rice vinegar"
     },
     {
       "aisle": "Produce",
@@ -160,7 +160,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon sugar",
-      "name": "sugar"
+      "name": "granulated sugar"
     },
     {
       "aisle": "Beverages",

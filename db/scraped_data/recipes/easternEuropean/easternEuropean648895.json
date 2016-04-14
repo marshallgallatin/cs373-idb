@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "can",
       "originalString": "1 can white kidney beans",
-      "name": "canned white kidney beans"
+      "name": "canned cannellini beans"
     },
     {
       "aisle": "Condiments",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons coarse mustard",
-      "name": "coarse grain mustard"
+      "name": "mustard"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup heavy cream",
-      "name": "heavy cream"
+      "name": "heavy whipping cream"
     },
     {
       "aisle": "Meat",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "1 pound pork kielbasa",
-      "name": "pork"
+      "name": "kielbasa"
     },
     {
       "aisle": "Produce",

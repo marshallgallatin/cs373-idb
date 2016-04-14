@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "1 pound of pork chops, shoulder or loin. Sliced thinly",
-      "name": "pork loin"
+      "name": "pork chop"
     },
     {
       "aisle": "Condiments",
@@ -150,7 +150,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 1/2 tablespoons sugar",
-      "name": "sugar"
+      "name": "granulated sugar"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",

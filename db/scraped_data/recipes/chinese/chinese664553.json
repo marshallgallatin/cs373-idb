@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cup Basmati Rice",
-      "name": "rice"
+      "name": "long-grain rice"
     },
     {
       "aisle": "Pasta and Rice",
@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup Beans",
-      "name": "beans"
+      "name": "black turtle bean"
     },
     {
       "aisle": "Produce",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup Corn",
-      "name": "corn"
+      "name": "yellow corn"
     },
     {
       "aisle": "Ethnic Foods",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup Green peas",
-      "name": "pea"
+      "name": "green pea"
     },
     {
       "aisle": "Spices and Seasonings",

@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 kiwis, peeled and and diced",
-      "name": "kiwi"
+      "name": "kiwifruit"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -160,7 +160,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "1 3 pound Pork Tenderloin",
-      "name": "pork tenderloin"
+      "name": "pork loin"
     },
     {
       "aisle": "Produce",
@@ -200,7 +200,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups tomatillos, diced",
-      "name": "tomatillos"
+      "name": "tomatillo"
     }
   ],
   "readyInMinutes": 45,

@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "teaspoons",
       "originalString": "2 teaspoons white sugar",
-      "name": "sugar"
+      "name": "granulated sugar"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon white vinegar",
-      "name": "vinegar"
+      "name": "distilled vinegar"
     }
   ],
   "readyInMinutes": 45,

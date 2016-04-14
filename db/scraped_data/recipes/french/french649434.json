@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "1 1/2 cups shredded gruyere cheese",
-      "name": "gruyere cheese"
+      "name": "Gruyere cheese"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "3 cups heavy cream",
-      "name": "heavy cream"
+      "name": "heavy whipping cream"
     },
     {
       "aisle": "Frozen",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup flour, plain",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "3 cups whole milk",
-      "name": "milk"
+      "name": "whole milk"
     }
   ],
   "readyInMinutes": 45,

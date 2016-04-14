@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "lbs",
       "originalString": "4 lbs chuck roast",
-      "name": "chuck roast"
+      "name": "beef chuck"
     },
     {
       "aisle": "Produce",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "TBSP",
       "originalString": "1 TBSP Ground Mustard",
-      "name": "ground mustard"
+      "name": "mustard seed"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "oz",
       "originalString": "32 oz low sodium beef broth",
-      "name": "low sodium beef broth"
+      "name": "low-sodium beef broth"
     },
     {
       "aisle": "Produce",

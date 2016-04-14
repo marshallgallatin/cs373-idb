@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup dry white wine",
-      "name": "dry white wine"
+      "name": "white wine"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "pounds",
       "originalString": "2 pounds mussels, cleaned",
-      "name": "mussels"
+      "name": "mussel"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",

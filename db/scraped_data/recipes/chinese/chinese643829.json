@@ -1,1 +1,89 @@
-{"vegetarian": false, "glutenFree": true, "title": "Fried Wonton", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/TWWNSZRW/fried-wonton", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Cook in pan for 3-4 minutes.</li><li>Ketchup</li><li>Sugar</li><li>Garlic powder</li><li>Salt</li><li>Some water</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Produce", "unitLong": "cups", "amount": 2.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "2 cups cabbage, chopped", "name": "cabbage"}, {"aisle": "Meat", "unitLong": "pounds", "amount": 0.5, "unitShort": "lb", "metaInformation": [], "unit": "pound", "originalString": "1/2 pound ground beef/pork", "name": "ground pork"}, {"aisle": "Spices and Seasonings", "unitLong": "pinch", "amount": 1.0, "unitShort": "pinch", "metaInformation": [], "unit": "pinch", "originalString": "1 pinch of salt", "name": "salt"}, {"aisle": "Oil, Vinegar, Salad Dressing", "unitLong": "serving", "amount": 1.0, "unitShort": "serving", "metaInformation": [], "unit": "serving", "originalString": "Vegetable oil enough to cover the wonton in the pan", "name": "vegetable oil"}, {"aisle": "Ethnic Foods", "unitLong": "cups", "amount": 2.0, "unitShort": "c", "metaInformation": [], "unit": "cups", "originalString": "2 cups chopped water chestnuts", "name": "water chestnuts"}, {"aisle": "Ethnic Foods", "unitLong": "sheets", "amount": 12.0, "unitShort": "sheets", "metaInformation": [], "unit": "sheets", "originalString": "12 sheets wonton wrappers", "name": "wonton wrappers"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/fried-wonton-643829", "weightWatcherSmartPoints": 46, "id": 643829, "image": "https://spoonacular.com/recipeImages/Fried-Wonton-643829.jpg", "servings": 1, "whole30": true, "lowFodmap": true}
+{
+  "vegetarian": false,
+  "glutenFree": true,
+  "title": "Fried Wonton",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/TWWNSZRW/fried-wonton",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Cook in pan for 3-4 minutes.</li><li>Ketchup</li><li>Sugar</li><li>Garlic powder</li><li>Salt</li><li>Some water</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Produce",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 cups cabbage, chopped",
+      "name": "cabbage"
+    },
+    {
+      "aisle": "Meat",
+      "unitLong": "pounds",
+      "amount": 0.5,
+      "unitShort": "lb",
+      "metaInformation": [],
+      "unit": "pound",
+      "originalString": "1/2 pound ground beef/pork",
+      "name": "ground beef"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "pinch",
+      "amount": 1.0,
+      "unitShort": "pinch",
+      "metaInformation": [],
+      "unit": "pinch",
+      "originalString": "1 pinch of salt",
+      "name": "salt"
+    },
+    {
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "unitLong": "serving",
+      "amount": 1.0,
+      "unitShort": "serving",
+      "metaInformation": [],
+      "unit": "serving",
+      "originalString": "Vegetable oil enough to cover the wonton in the pan",
+      "name": "vegetable oil"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "cups",
+      "amount": 2.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cups",
+      "originalString": "2 cups chopped water chestnuts",
+      "name": "water chestnut"
+    },
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "sheets",
+      "amount": 12.0,
+      "unitShort": "sheets",
+      "metaInformation": [],
+      "unit": "sheets",
+      "originalString": "12 sheets wonton wrappers",
+      "name": "wonton wrappers"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/fried-wonton-643829",
+  "weightWatcherSmartPoints": 46,
+  "id": 643829,
+  "image": "https://spoonacular.com/recipeImages/Fried-Wonton-643829.jpg",
+  "servings": 1,
+  "whole30": true,
+  "lowFodmap": true
+}

@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "bottle",
       "originalString": "1 bottle Irish Ale",
-      "name": "ale"
+      "name": "beer"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "4 tablespoons of cream",
-      "name": "cream"
+      "name": "heavy whipping cream"
     },
     {
       "aisle": "Seafood",

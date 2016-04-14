@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "oz",
       "originalString": "to taste shredded cheddar or mozzerella",
-      "name": "cheddar"
+      "name": "cheddar cheese"
     },
     {
       "aisle": "Meat",
@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "serving",
       "originalString": "to taste cooked, sliced chicken, cooked onions, red peppers, chop",
-      "name": "chicken"
+      "name": "cooked chicken"
     },
     {
       "aisle": "Baking",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "1 1/4 cups all-purpose flour",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Baking",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon granulated sugar or honey",
-      "name": "sugar"
+      "name": "granulated sugar"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",

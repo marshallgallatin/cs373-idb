@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup all purpose flour",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Canned and Jarred",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup dry red wine, optional",
-      "name": "dry red wine"
+      "name": "red wine"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "3 cups lactose free mozzarella cheese, shredded",
-      "name": "fat-free mozzarella cheese"
+      "name": "mozzarella cheese"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "4 cups Natrel Lactose Free Milk",
-      "name": "fat-free milk"
+      "name": "whole milk"
     },
     {
       "aisle": "Spices and Seasonings",

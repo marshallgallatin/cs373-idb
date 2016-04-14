@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons of curry powder",
-      "name": "curry"
+      "name": "curry powder"
     },
     {
       "aisle": "Produce",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "cubes",
       "originalString": "Seasoning cubes",
-      "name": "bouillon cube"
+      "name": "vegetable bouillon"
     },
     {
       "aisle": "Seafood",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup of red kidney beans",
-      "name": "red kidney beans"
+      "name": "red kidney bean"
     },
     {
       "aisle": "Pasta and Rice",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup of Rice",
-      "name": "rice"
+      "name": "long-grain rice"
     },
     {
       "aisle": "Produce",

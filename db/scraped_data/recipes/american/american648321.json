@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "4 cups of all purpose flour",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Canned and Jarred",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "6 cups Sugar",
-      "name": "sugar"
+      "name": "granulated sugar"
     },
     {
       "aisle": "Beverages",

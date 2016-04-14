@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "handful",
       "originalString": "a handful of cherry tomatoes",
-      "name": "tomato"
+      "name": "cherry tomato"
     },
     {
       "aisle": "Produce",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "pinch",
       "originalString": "A pinch of sugar",
-      "name": "sugar"
+      "name": "granulated sugar"
     }
   ],
   "readyInMinutes": 45,

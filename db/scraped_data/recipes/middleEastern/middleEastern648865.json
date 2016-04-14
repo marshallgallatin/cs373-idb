@@ -1,1 +1,109 @@
-{"vegetarian": false, "glutenFree": false, "title": "Kick Butt Baklava", "veryPopular": false, "gaps": "no", "sourceUrl": "http://www.foodista.com/recipe/JYL6FLN2/kick-butt-baklava", "sourceName": "Foodista", "vegan": false, "sustainable": false, "instructions": "<ol><li>Do:</li><li>Preheat the oven to 350 degrees.</li><li>Butter your pan... I used my small Mario Batali loaf pan. Note: this recipe makes a very small baklava so keep that in mind when choosing your pan. That or just double/triple it to make it in a bigger pan.</li><li>In a bowl, combine the walnuts and cinnamon and mix together.</li><li>Unroll phyllo dough and cut it to match your pan length. I say this because the Mario Batali pan that I used was long and quite narrow; it's about 2 inches wide.</li><li>Lay two sheets of phyllo into the bottom of your pan. Sprinkle some of your walnut cinnamon mixture on top; just enough to cover the phyllo. Repeat layers until all ingredients are used, finishing with a phyllo dough layer.</li><li>Using a sharp knife, cut the uncooked baklava into 1 1/2 to 2 inch pieces. Again, adapt this depending on what kind of pan you are using.</li><li>Put your pan into your oven and bake for 30-35 minutes, until golden and crispy.</li><li>While your baklava is cooking, prepare your 'sauce'.</li><li>In a pan on the stove, combine sugar and water and bring to a boil.</li><li>Stir in agave nectar, vanilla and lime zest, reduce heat and simmer for about 15 minutes. Note: keep an eye on it and stir continually so you don't get a sticky gross mess in the bottom of your pan.</li><li>When baklava is done in the oven, remove and immediately pour the 'sauce'on top. It will simmer something crazy against the hot baklava pan. That's ok. Pour it on and then leave it alone. That means let it sit until it's cooled.</li></ol>", "aggregateLikes": 1, "dairyFree": true, "extendedIngredients": [{"aisle": "Ethnic Foods", "unitLong": "tablespoons", "amount": 3.0, "unitShort": "T", "metaInformation": [], "unit": "tablespoons", "originalString": "3 tablespoons agave nectar", "name": "agave nectar"}, {"aisle": "Spices and Seasonings", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon cinnamon", "name": "cinnamon"}, {"aisle": "Bakery/Bread", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "cup Earth Balance, melted", "name": "cup cake"}, {"aisle": "Produce", "unitLong": "teaspoons", "amount": 0.25, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/4 teaspoon lime zest", "name": "lime zest"}, {"aisle": "Frozen", "unitLong": "", "amount": 0.25, "unitShort": "", "metaInformation": [], "unit": "", "originalString": "1/4 of a package of phyllo dough", "name": "phyllo dough"}, {"aisle": "Baking", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "cup sugar", "name": "sugar"}, {"aisle": "Baking", "unitLong": "teaspoons", "amount": 0.5, "unitShort": "t", "metaInformation": [], "unit": "teaspoon", "originalString": "1/2 teaspoon vanilla extract", "name": "vanilla extract"}, {"aisle": "Nuts", "unitLong": "ounces", "amount": 5.0, "unitShort": "oz", "metaInformation": [], "unit": "oz", "originalString": "5 oz chopped walnuts", "name": "walnuts"}, {"aisle": "Beverages", "unitLong": "cup", "amount": 1.0, "unitShort": "c", "metaInformation": [], "unit": "cup", "originalString": "cup water", "name": "water"}], "readyInMinutes": 45, "ketogenic": false, "veryHealthy": true, "cheap": false, "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", "license": "CC BY 3.0", "spoonacularSourceUrl": "https://spoonacular.com/kick-butt-baklava-648865", "weightWatcherSmartPoints": 225, "id": 648865, "image": "https://spoonacular.com/recipeImages/Kick-Butt-Baklava-648865.jpg", "servings": 1, "whole30": false, "lowFodmap": false}
+{
+  "vegetarian": false,
+  "glutenFree": false,
+  "title": "Kick Butt Baklava",
+  "veryPopular": false,
+  "gaps": "no",
+  "sourceUrl": "http://www.foodista.com/recipe/JYL6FLN2/kick-butt-baklava",
+  "sourceName": "Foodista",
+  "vegan": false,
+  "sustainable": false,
+  "instructions": "<ol><li>Do:</li><li>Preheat the oven to 350 degrees.</li><li>Butter your pan... I used my small Mario Batali loaf pan. Note: this recipe makes a very small baklava so keep that in mind when choosing your pan. That or just double/triple it to make it in a bigger pan.</li><li>In a bowl, combine the walnuts and cinnamon and mix together.</li><li>Unroll phyllo dough and cut it to match your pan length. I say this because the Mario Batali pan that I used was long and quite narrow; it's about 2 inches wide.</li><li>Lay two sheets of phyllo into the bottom of your pan. Sprinkle some of your walnut cinnamon mixture on top; just enough to cover the phyllo. Repeat layers until all ingredients are used, finishing with a phyllo dough layer.</li><li>Using a sharp knife, cut the uncooked baklava into 1 1/2 to 2 inch pieces. Again, adapt this depending on what kind of pan you are using.</li><li>Put your pan into your oven and bake for 30-35 minutes, until golden and crispy.</li><li>While your baklava is cooking, prepare your 'sauce'.</li><li>In a pan on the stove, combine sugar and water and bring to a boil.</li><li>Stir in agave nectar, vanilla and lime zest, reduce heat and simmer for about 15 minutes. Note: keep an eye on it and stir continually so you don't get a sticky gross mess in the bottom of your pan.</li><li>When baklava is done in the oven, remove and immediately pour the 'sauce'on top. It will simmer something crazy against the hot baklava pan. That's ok. Pour it on and then leave it alone. That means let it sit until it's cooled.</li></ol>",
+  "aggregateLikes": 1,
+  "dairyFree": true,
+  "extendedIngredients": [
+    {
+      "aisle": "Ethnic Foods",
+      "unitLong": "tablespoons",
+      "amount": 3.0,
+      "unitShort": "T",
+      "metaInformation": [],
+      "unit": "tablespoons",
+      "originalString": "3 tablespoons agave nectar",
+      "name": "agave nectar"
+    },
+    {
+      "aisle": "Spices and Seasonings",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon cinnamon",
+      "name": "cinnamon"
+    },
+    {
+      "aisle": "Produce",
+      "unitLong": "teaspoons",
+      "amount": 0.25,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/4 teaspoon lime zest",
+      "name": "lime zest"
+    },
+    {
+      "aisle": "Frozen",
+      "unitLong": "",
+      "amount": 0.25,
+      "unitShort": "",
+      "metaInformation": [],
+      "unit": "",
+      "originalString": "1/4 of a package of phyllo dough",
+      "name": "phyllo dough"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "cup sugar",
+      "name": "granulated sugar"
+    },
+    {
+      "aisle": "Baking",
+      "unitLong": "teaspoons",
+      "amount": 0.5,
+      "unitShort": "t",
+      "metaInformation": [],
+      "unit": "teaspoon",
+      "originalString": "1/2 teaspoon vanilla extract",
+      "name": "vanilla extract"
+    },
+    {
+      "aisle": "Nuts",
+      "unitLong": "ounces",
+      "amount": 5.0,
+      "unitShort": "oz",
+      "metaInformation": [],
+      "unit": "oz",
+      "originalString": "5 oz chopped walnuts",
+      "name": "walnut"
+    },
+    {
+      "aisle": "Beverages",
+      "unitLong": "cup",
+      "amount": 1.0,
+      "unitShort": "c",
+      "metaInformation": [],
+      "unit": "cup",
+      "originalString": "cup water",
+      "name": "water"
+    }
+  ],
+  "readyInMinutes": 45,
+  "ketogenic": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "spoonacularSourceUrl": "https://spoonacular.com/kick-butt-baklava-648865",
+  "weightWatcherSmartPoints": 225,
+  "id": 648865,
+  "image": "https://spoonacular.com/recipeImages/Kick-Butt-Baklava-648865.jpg",
+  "servings": 1,
+  "whole30": false,
+  "lowFodmap": false
+}

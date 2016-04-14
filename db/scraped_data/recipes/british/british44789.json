@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "3 Lower fat smoked chicken-apple sausages",
-      "name": "chicken fat"
+      "name": "chicken sausage"
     },
     {
       "aisle": "Produce",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "tsp",
       "originalString": "1 tsp Light olive oil with a dash of toasted sesame oil",
-      "name": "light olive oil"
+      "name": "olive oil"
     },
     {
       "aisle": "Canned and Jarred",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup Low sodium chicken stock",
-      "name": "low sodium chicken stock"
+      "name": "low-sodium chicken broth"
     },
     {
       "aisle": "Condiments",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "tsps",
       "originalString": "4 tsps Dry English mustard mixed with 4tsp",
-      "name": "dry mustard"
+      "name": "mustard seed"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -180,7 +180,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup De-alcoholised dry red wine",
-      "name": "wine"
+      "name": "red wine"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -190,7 +190,7 @@
       "metaInformation": [],
       "unit": "tsp",
       "originalString": "1 tsp Yellow mustard seed",
-      "name": "yellow mustard seed"
+      "name": "mustard seed"
     }
   ],
   "readyInMinutes": 134,

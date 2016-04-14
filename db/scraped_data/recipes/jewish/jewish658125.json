@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups dry red wine",
-      "name": "dry red wine"
+      "name": "red wine"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "teaspoons",
       "originalString": "2 teaspoons plain flour",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Produce",

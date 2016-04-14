@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "pounds",
       "originalString": "2 pounds chuck steak cut 1\" cubes",
-      "name": "chuck steak"
+      "name": "beef chuck"
     },
     {
       "aisle": "Ethnic Foods",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "6 whl cloves",
-      "name": "cloves"
+      "name": "clove"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "cup granulated sugar",
-      "name": "sugar"
+      "name": "granulated sugar"
     },
     {
       "aisle": "Produce",
@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "3 tablespoons poppy seeds",
-      "name": "poppy seeds"
+      "name": "poppy seed"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -200,7 +200,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "cup red wine vinegar",
-      "name": "red wine vinegar"
+      "name": "red or white wine vinegar"
     }
   ],
   "readyInMinutes": 45,

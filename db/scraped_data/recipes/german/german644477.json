@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "grams",
       "originalString": "375 grams German#405 flour, sifted",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Produce",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "1/2 pound sugar",
-      "name": "sugar"
+      "name": "granulated sugar"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "ml",
       "originalString": "75 ml Whipping cream",
-      "name": "whipping cream"
+      "name": "light whipping cream"
     }
   ],
   "readyInMinutes": 45,

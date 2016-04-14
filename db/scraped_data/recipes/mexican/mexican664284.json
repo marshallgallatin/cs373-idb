@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups of condensed milk",
-      "name": "condensed milk"
+      "name": "sweetened condensed milk"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "3/4 cup sugar",
-      "name": "sugar"
+      "name": "granulated sugar"
     },
     {
       "aisle": "Baking",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups whole milk",
-      "name": "milk"
+      "name": "whole milk"
     }
   ],
   "readyInMinutes": 45,

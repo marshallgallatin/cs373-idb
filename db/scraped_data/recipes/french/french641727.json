@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups cream",
-      "name": "cream"
+      "name": "heavy whipping cream"
     },
     {
       "aisle": "Frozen",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup sugar",
-      "name": "sugar"
+      "name": "granulated sugar"
     }
   ],
   "readyInMinutes": 45,

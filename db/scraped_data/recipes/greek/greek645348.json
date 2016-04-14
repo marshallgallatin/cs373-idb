@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "1/4 pound greek feta",
-      "name": "feta"
+      "name": "feta cheese"
     },
     {
       "aisle": "Canned and Jarred",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "1 dozen Kalamata olives",
-      "name": "kalamata olives"
+      "name": "Kalamata olive"
     },
     {
       "aisle": "Produce",

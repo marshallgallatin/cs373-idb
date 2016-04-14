@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "quarts",
       "originalString": "1 1/2 quarts fat-skimmed chicken broth",
-      "name": "fat-skimmed chicken broth"
+      "name": "chicken broth"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup frozen petite peas",
-      "name": "frozen peas"
+      "name": "frozen green peas"
     },
     {
       "aisle": "Produce",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1/4 teaspoon saffron threads (optional)",
-      "name": "saffron threads"
+      "name": "saffron"
     },
     {
       "aisle": "Ethnic Foods",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "pounds",
       "originalString": "1 1/2 pounds Shrimp, shelled and Deveined",
-      "name": "shrimp"
+      "name": "raw shrimp"
     }
   ],
   "readyInMinutes": 45,

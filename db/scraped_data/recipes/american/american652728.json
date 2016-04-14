@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon Dijon mustard",
-      "name": "dijon mustard"
+      "name": "mustard"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -99,8 +99,8 @@
       "unitShort": "oz",
       "metaInformation": [],
       "unit": "ounces",
-      "originalString": "12 ounces bottle of stout beer (I used Dark Horse Brewing Company'",
-      "name": "stout beer"
+      "originalString": "12 ounces bottle of stout beer",
+      "name": "beer"
     },
     {
       "aisle": "Produce",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "ounces",
       "originalString": "3 ounces low-fat Swiss cheese, shredded",
-      "name": "low-fat swiss cheese"
+      "name": "low-fat Swiss cheese"
     }
   ],
   "readyInMinutes": 45,

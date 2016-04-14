@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "1 1/4 cups flour",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Tea and Coffee",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup sugar",
-      "name": "sugar"
+      "name": "granulated sugar"
     },
     {
       "aisle": "Baking",

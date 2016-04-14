@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "pinch",
       "originalString": "Pinch of cardamom powder (Cardamom powder is very strong so add only a pinch)",
-      "name": "cardamom powder"
+      "name": "cardamom"
     },
     {
       "aisle": "Produce",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "3 hot green chilies, minced (more or less if you prefer)",
-      "name": "jalapeno"
+      "name": "bird's eye chili"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1/4 teaspoon cinnamon powder",
-      "name": "cinnamon powder"
+      "name": "cinnamon"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "teaspoon",
       "originalString": "1/4 teaspoon fennel powder",
-      "name": "fennel powder"
+      "name": "fennel seed"
     },
     {
       "aisle": "Produce",
@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons single cream (optional)",
-      "name": "single cream"
+      "name": "light whipping cream"
     },
     {
       "aisle": "Produce",

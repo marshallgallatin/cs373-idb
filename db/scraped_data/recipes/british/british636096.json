@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "grams",
       "originalString": "600 grams minced lamb",
-      "name": "lamb"
+      "name": "ground lamb"
     },
     {
       "aisle": "Gourmet",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "milliliters",
       "originalString": "100 milliliters chicken, beef or lamb stock",
-      "name": "lamb stock"
+      "name": "chicken stock"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "milliliters",
       "originalString": "55 milliliters milk",
-      "name": "milk"
+      "name": "whole milk"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons plain flour",
-      "name": "flour"
+      "name": "all-purpose flour"
     },
     {
       "aisle": "Produce",
