@@ -43,7 +43,7 @@
 			});
 		});
 		
-		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
+		angular.module('mbApp', []).controller('mbCtrl', function($scope, $sceDelegate, $sce, $http) {
 			$scope.getData = function () {
 				$http.get("recipes/{{ rec_id }}").then(function (transmit) {
 					$scope.data = transmit.data;
@@ -69,6 +69,7 @@
 							curIng.id = -curIng.id;
 							console.log("\tDetected change.");
 						}
+						curIng.formed_string = $sceDelegate.trustAs($sce.HTML, curIng.formed_string);
 						$scope.getBaseIngredient(i + 1);
 					});
 				}
@@ -115,7 +116,7 @@
 					{{ '{{x.original_string}}' }}
 				</div>
 				<div ng-if="x.id < 0">
-					{{ '{{x.formed_string}}' }}
+					<p ng-bind-html="x.formed_string"></p>
 				</div>
 				</label>
 			</div>
