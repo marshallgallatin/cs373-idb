@@ -42,8 +42,15 @@
 				$('this').css('cursor', 'pointer');
 			});
 		});
-		
+
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $sceDelegate, $sce, $http) {
+			$scope.rString = function (str) {
+				var i = str.length - 1, r = "";
+				while (i >= 0) {
+					r += str[i--];
+				}
+				return r;
+			}
 			$scope.getData = function () {
 				$http.get("recipes/{{ rec_id }}").then(function (transmit) {
 					$scope.data = transmit.data;
@@ -68,6 +75,12 @@
 						if (curIng.formed_string.contains("<a href")) {
 							curIng.id = -curIng.id;
 							console.log("\tDetected change.");
+						} else {
+							var rStr = $scope.rString(curIng.original_string);
+							var rbase = "(" + $scope.rString(baseName).split(" ").join(")?\s(") + ")?";
+							var matches = rStr.match(new RegExp(rbase,"i"));
+							if (matches.length > 0)
+								curIng.formed_string = $scope.rString(rStr.replace(new RegExp(rbase,"i"), $scope.rString("</a>") + matches[0] + $scope.rString("<a href='/ingredient_" + curIng.id + ".html'>")));
 						}
 						curIng.formed_string = $sceDelegate.trustAs($sce.HTML, curIng.formed_string);
 						$scope.getBaseIngredient(i + 1);
