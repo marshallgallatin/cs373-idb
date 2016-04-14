@@ -20,6 +20,7 @@
 			$scope.page = 1;
 			{{ realprefix }}$scope.perPage = 10;
 			{{ testprefix }}$scope.perPage = 3;
+			$scope.count = 18;
 			$scope.maxPage = 18;
 			$scope.pages = [1, 2, 3, 4, 5];
 			$scope.ing;
@@ -76,7 +77,7 @@
 								$scope.nuts[savedI] = transmit_nuts.data;
 								console.log("Current length of nuts:" + $scope.nuts.length);
 								console.log("Writing index:" + savedI);
-								if ($scope.nuts.length == $scope.perPage) {
+								if ($scope.nuts.length == $scope.perPage || ($scope.page == $scope.maxPage && $scope.nuts.length == $scope.remainder)) {
 									console.log("Complete nuts at length:" + $scope.ing.length);
 									for (var i2 = 0; i2 < $scope.ing.length; ++i2) {
 										jQuery.extend($scope.ing[i2], $scope.nuts[i2]);
@@ -93,7 +94,10 @@
 				});
 				$http.get("ingredients/count").then(function (transmit) {
 					$scope.isLoadingCount = true;
-					$scope.maxPage = Math.ceil(transmit.data.count / $scope.perPage);
+					$scope.count = transmit.data.count;
+					$scope.maxPage = Math.ceil($scope.count / $scope.perPage);
+					$scope.remainder = $scope.count % $scope.perPage;
+					if ($scope.remainder == 0) {$scope.remainder = $scope.perPage;}
 					console.log("Check maxPage value immediately before signalling finish:"+$scope.maxPage);
 					$scope.isLoadingCount = false;
 					$scope.computeIsLoading();
