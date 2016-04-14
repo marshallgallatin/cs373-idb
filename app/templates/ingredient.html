@@ -14,14 +14,17 @@
 	<script src="http://maps.googleapis.com/maps/api/js"></script>
 	<script>
 		var ratio = .75, minSize = 300;
+		var debounceRectIt;
 		function rectIt() {
 			$("div.img-square").height($(window).height() * ratio);
 		}
-		$(document).ready(function(){
-			rectIt();
+		$(document).ready(function() {
+			clearTimeout(debounceRectIt);
+			debounceRectIt = setTimeout(rectIt, 50);
 		});
 		window.addEventListener('resize', function(event) {
-			rectIt();
+			clearTimeout(debounceRectIt);
+			debounceRectIt = setTimeout(rectIt, 50);
 		});
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
 			$scope.lat = 30.2849231;
