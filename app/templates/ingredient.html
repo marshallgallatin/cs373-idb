@@ -18,7 +18,7 @@
 		function rectIt() {
 			$("div.img-square").height($(window).height() * ratio);
 		}
-		$(document).ready(function() {
+		window.addEventListener('load', function(event) {
 			clearTimeout(debounceRectIt);
 			debounceRectIt = setTimeout(rectIt, 50);
 		});
