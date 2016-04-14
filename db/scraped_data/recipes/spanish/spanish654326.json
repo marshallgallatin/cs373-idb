@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "quarts",
       "originalString": "1 1/2 quarts fat-skimmed chicken broth",
-      "name": "fat-skimmed chicken broth"
+      "name": "chicken broth"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "pounds",
       "originalString": "1 1/2 pounds Shrimp, shelled and Deveined",
-      "name": "shrimp"
+      "name": "raw shrimp"
     }
   ],
   "readyInMinutes": 45,

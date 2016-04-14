@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "pieces",
       "originalString": "8 pieces chicken wings",
-      "name": "chicken wings"
+      "name": "chicken wing"
     },
     {
       "aisle": "Meat",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "36 littleneck clams",
-      "name": "clam"
+      "name": "littleneck clam"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -170,7 +170,7 @@
       "metaInformation": [],
       "unit": "pounds",
       "originalString": "1 1/2 pounds Shrimp, shelled and Deveined",
-      "name": "shrimp"
+      "name": "raw shrimp"
     },
     {
       "aisle": "Produce",

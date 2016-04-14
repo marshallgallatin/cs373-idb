@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "milliliters",
       "originalString": "175 milliliters milk",
-      "name": "milk"
+      "name": "whole milk"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "grams",
       "originalString": "350 grams Self Raising Flour",
-      "name": "self raising flour"
+      "name": "self-rising flour"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",

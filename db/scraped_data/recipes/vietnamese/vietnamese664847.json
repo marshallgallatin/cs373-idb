@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "4 rice wrappers",
-      "name": "rice"
+      "name": "long-grain rice"
     },
     {
       "aisle": "Gluten Free",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "grams",
       "originalString": "30 grams rice vermicelli",
-      "name": "rice vermicelli"
+      "name": "rice noodles"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "12 tiger prawns (peeled, deveined)",
-      "name": "shrimp"
+      "name": "raw shrimp"
     }
   ],
   "readyInMinutes": 45,

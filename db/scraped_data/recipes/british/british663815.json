@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "milliliters",
       "originalString": "300 milliliters cream",
-      "name": "cream"
+      "name": "heavy whipping cream"
     },
     {
       "aisle": "Baking",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "3 tablespoons of custard powder",
-      "name": "custard powder"
+      "name": "dry custard"
     },
     {
       "aisle": "Nut butters, Jams, and Honey",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "packet",
       "originalString": "a packet of Cottee's cold jelly- as per packet instruction",
-      "name": "jelly"
+      "name": "jam"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "milliliters",
       "originalString": "500 milliliters milk",
-      "name": "milk"
+      "name": "whole milk"
     },
     {
       "aisle": "Produce",

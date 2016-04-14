@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "1 pound fresh lump crab meat, picked over for shells and cartilage",
-      "name": "lump crab meat"
+      "name": "blue crab"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",
@@ -150,7 +150,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 dozen oysters, freshly shucked, liquor reserved",
-      "name": "oysters"
+      "name": "oyster"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -170,7 +170,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon Creole seasoning blend",
-      "name": "creole seasoning"
+      "name": "Creole seasoning"
     },
     {
       "aisle": "Seafood",
@@ -180,7 +180,7 @@
       "metaInformation": [],
       "unit": "pounds",
       "originalString": "2 pounds medium shrimp, peeled and deveined",
-      "name": "shrimp"
+      "name": "raw shrimp"
     },
     {
       "aisle": "Canned and Jarred",

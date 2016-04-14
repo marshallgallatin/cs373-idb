@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "1 1/2 cups shredded gruyere cheese",
-      "name": "gruyere cheese"
+      "name": "Gruyere cheese"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "3 cups whole milk",
-      "name": "milk"
+      "name": "whole milk"
     }
   ],
   "readyInMinutes": 45,

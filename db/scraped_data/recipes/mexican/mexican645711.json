@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "pounds",
       "originalString": "2 pounds white flaky fish (halibut, cod, etc.)",
-      "name": "fish"
+      "name": "halibut"
     },
     {
       "aisle": "Pasta and Rice",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "8 soft taco flour tortillas",
-      "name": "tortilla"
+      "name": "flour tortilla"
     },
     {
       "aisle": "Produce",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup shredded lettuce",
-      "name": "lettuce"
+      "name": "butterhead lettuce"
     },
     {
       "aisle": "Produce",

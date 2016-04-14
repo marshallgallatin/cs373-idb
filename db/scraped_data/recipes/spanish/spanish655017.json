@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "pounds",
       "originalString": "1 1/2 pounds chicken breasts cut into chunks or whole chic",
-      "name": "chicken breasts"
+      "name": "chicken breast"
     },
     {
       "aisle": "Canned and Jarred",
@@ -190,7 +190,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "1 pound shrimp with tails on",
-      "name": "shrimp"
+      "name": "raw shrimp"
     },
     {
       "aisle": "Spices and Seasonings",

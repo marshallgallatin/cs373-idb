@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup milk or soy milk",
-      "name": "soy milk"
+      "name": "whole milk"
     },
     {
       "aisle": "Bakery/Bread",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "slices",
       "originalString": "6 slices toast",
-      "name": "toasted bread"
+      "name": "baguette"
     }
   ],
   "readyInMinutes": 25,

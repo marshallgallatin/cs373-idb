@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup long grain rice",
-      "name": "rice"
+      "name": "long-grain rice"
     },
     {
       "aisle": "Ethnic Foods",
@@ -160,7 +160,7 @@
       "metaInformation": [],
       "unit": "oz",
       "originalString": "6 oz pork tenderloin",
-      "name": "pork tenderloin"
+      "name": "pork loin"
     },
     {
       "aisle": "Spices and Seasonings",

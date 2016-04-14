@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup milk",
-      "name": "milk"
+      "name": "whole milk"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "oz",
       "originalString": "1 - 26 oz jar of pasta sauce or 1 can pizza sauce",
-      "name": "pasta sauce"
+      "name": "marinara sauce"
     },
     {
       "aisle": "Meat",

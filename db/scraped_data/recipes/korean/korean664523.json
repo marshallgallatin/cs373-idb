@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "ounces",
       "originalString": "10 ounces cabbage kimchi",
-      "name": "kimchi cabbage"
+      "name": "kimchi"
     },
     {
       "aisle": "Produce",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup gochujang",
-      "name": "gochujang"
+      "name": "chili pepper paste"
     },
     {
       "aisle": "Produce",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup Korean barbecue bulgogi marinade",
-      "name": "bulgogi marinade"
+      "name": "bulgogi sauce"
     },
     {
       "aisle": "Spices and Seasonings",

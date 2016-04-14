@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "mls",
       "originalString": "40 mls milk",
-      "name": "milk"
+      "name": "whole milk"
     },
     {
       "aisle": "Beverages",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "grams",
       "originalString": "40 grams self raising flour ( or cake flour)",
-      "name": "self raising flour"
+      "name": "self-rising flour"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",

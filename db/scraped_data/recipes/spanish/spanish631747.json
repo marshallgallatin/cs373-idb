@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "c",
       "originalString": "3/4 c. frozen artichoke hearts",
-      "name": "artichoke hearts"
+      "name": "frozen artichoke hearts"
     },
     {
       "aisle": "Canned and Jarred",
@@ -170,7 +170,7 @@
       "metaInformation": [],
       "unit": "lb",
       "originalString": "1 lb. large shrimp",
-      "name": "shrimp"
+      "name": "raw shrimp"
     },
     {
       "aisle": "Meat",
@@ -180,7 +180,7 @@
       "metaInformation": [],
       "unit": "lb",
       "originalString": "1 lb. boneless, skinless chicken thighs",
-      "name": "skinless boneless chicken thighs"
+      "name": "skinless chicken thigh"
     }
   ],
   "readyInMinutes": 45,

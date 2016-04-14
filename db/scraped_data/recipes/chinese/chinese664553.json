@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cup Basmati Rice",
-      "name": "rice"
+      "name": "long-grain rice"
     },
     {
       "aisle": "Pasta and Rice",
@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup Beans",
-      "name": "beans"
+      "name": "black turtle bean"
     },
     {
       "aisle": "Produce",

@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "3/4 pound thin strips sirloin, rib eye or bulgogi beef",
-      "name": "beef"
+      "name": "beef sirloin"
     },
     {
       "aisle": "Produce",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup gochujang",
-      "name": "gochujang"
+      "name": "chili pepper paste"
     },
     {
       "aisle": "Produce",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup Korean barbecue bulgogi marinade",
-      "name": "bulgogi marinade"
+      "name": "bulgogi sauce"
     },
     {
       "aisle": "Spices and Seasonings",

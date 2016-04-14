@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "serving",
       "originalString": "Cooked octopus",
-      "name": "octopus"
+      "name": "cooked octopus"
     },
     {
       "aisle": "Seafood",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "serving",
       "originalString": "Cooked prawns",
-      "name": "shrimp"
+      "name": "cooked shrimp"
     },
     {
       "aisle": "Seafood",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "serving",
       "originalString": "Salmon",
-      "name": "salmon"
+      "name": "raw salmon"
     },
     {
       "aisle": "Seafood",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "serving",
       "originalString": "Salmon caviar",
-      "name": "salmon caviar"
+      "name": "caviar"
     },
     {
       "aisle": "Health Foods",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "serving",
       "originalString": "Lava seaweed",
-      "name": "seaweed"
+      "name": "laver seaweed"
     },
     {
       "aisle": "Produce",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "serving",
       "originalString": "Japanese sticky rice",
-      "name": "sticky rice"
+      "name": "long-grain rice"
     },
     {
       "aisle": "Canned and Jarred",

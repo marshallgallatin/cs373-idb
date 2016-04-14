@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "ounces",
       "originalString": "1 package (about 10 ounces) refrigerated fully-cooked chicken breast strips (about 1 3/4 cups)",
-      "name": "chicken breast strips"
+      "name": "cooked chicken breast"
     },
     {
       "aisle": "Canned and Jarred",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "2 cups uncooked regular long-grain white rice",
-      "name": "rice"
+      "name": "long-grain rice"
     },
     {
       "aisle": "Pasta and Rice",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup Pace® Picante Sauce",
-      "name": "picante sauce"
+      "name": "salsa"
     },
     {
       "aisle": "Seafood",
@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "ounces",
       "originalString": "1 package (16 ounces) turkey kielbasa, sliced",
-      "name": "turkey kielbasa"
+      "name": "kielbasa"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",

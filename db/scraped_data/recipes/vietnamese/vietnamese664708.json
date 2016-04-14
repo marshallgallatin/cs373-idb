@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "head",
       "originalString": "1 head of butter leaf lettuce",
-      "name": "lettuce"
+      "name": "butterhead lettuce"
     },
     {
       "aisle": "Produce",
@@ -111,16 +111,6 @@
       "unit": "sheet",
       "originalString": "12 rice paper sheets",
       "name": "rice paper"
-    },
-    {
-      "aisle": "Ethnic Foods",
-      "unitLong": "servings",
-      "amount": 10.0,
-      "unitShort": "servings",
-      "metaInformation": [],
-      "unit": "servings",
-      "originalString": "Vegetarian Spring Roll",
-      "name": "spring roll paper"
     },
     {
       "aisle": "Produce",

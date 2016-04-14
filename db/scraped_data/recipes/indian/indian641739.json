@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "1 pound mutton [boneless and cut into 1\" cubes]",
-      "name": "mutton"
+      "name": "goat"
     },
     {
       "aisle": "Pasta and Rice",
@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "1 1/4 cups basmati rice",
-      "name": "rice"
+      "name": "long-grain rice"
     },
     {
       "aisle": "Spices and Seasonings",

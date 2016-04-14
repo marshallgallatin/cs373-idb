@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons of cream",
-      "name": "cream"
+      "name": "heavy whipping cream"
     },
     {
       "aisle": "Alcoholic Beverages",
@@ -170,7 +170,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons of vegetable stock",
-      "name": "vegetable stock"
+      "name": "vegetable broth"
     }
   ],
   "readyInMinutes": 45,

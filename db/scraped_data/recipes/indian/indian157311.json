@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "ml",
       "originalString": "1 can (400 ml) coconut milk",
-      "name": "canned coconut milk"
+      "name": "coconut milk"
     },
     {
       "aisle": "Meat",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "tablespoon",
       "originalString": "1 tablespoon lemon grass paste",
-      "name": "lemon grass"
+      "name": "lemongrass"
     },
     {
       "aisle": "Produce",

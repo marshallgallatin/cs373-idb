@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "pounds",
       "originalString": "2 pounds chuck steak cut 1\" cubes",
-      "name": "chuck steak"
+      "name": "beef chuck"
     },
     {
       "aisle": "Ethnic Foods",
@@ -200,7 +200,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "cup red wine vinegar",
-      "name": "red wine vinegar"
+      "name": "red or white wine vinegar"
     }
   ],
   "readyInMinutes": 45,

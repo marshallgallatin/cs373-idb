@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/2 cup baileys Irish Cream Syrup",
-      "name": "baileys irish cream"
+      "name": "Baileys Irish Cream"
     },
     {
       "aisle": "Sweet Snacks",
@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "1 chunk Xocai Healthy Chocolate Nugget, grated",
-      "name": "chocolate"
+      "name": "dark chocolate"
     },
     {
       "aisle": "Sweet Snacks",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "2 Xocai Healthy Chocolate Nuggets",
-      "name": "chocolate"
+      "name": "dark chocolate"
     },
     {
       "aisle": "Alcoholic Beverages",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "tbsps",
       "originalString": "4 tbsps Irish Whiskey",
-      "name": "irish whiskey"
+      "name": "whiskey"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",

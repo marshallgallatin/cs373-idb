@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "5 artichoke hearts, unmarinated",
-      "name": "artichoke hearts"
+      "name": "canned artichoke hearts"
     },
     {
       "aisle": "Pasta and Rice",
@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup uncooked basmati rice",
-      "name": "rice"
+      "name": "long-grain rice"
     },
     {
       "aisle": "Meat",
@@ -40,7 +40,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup boned and skinned white meat of chicken, sliced",
-      "name": "chicken meat"
+      "name": "skinless light chicken meat"
     },
     {
       "aisle": "Canned and Jarred",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "6 clams in their shells (scrub outside of shells)",
-      "name": "clams"
+      "name": "clam"
     },
     {
       "aisle": "Produce",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "6 lg. prawns, shelled and deveined",
-      "name": "shrimp"
+      "name": "raw shrimp"
     },
     {
       "aisle": "Produce",
@@ -140,7 +140,7 @@
       "metaInformation": [],
       "unit": "fillet",
       "originalString": "1 red snapper fillet, cut into 1 inch pieces",
-      "name": "red snapper"
+      "name": "snapper"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",

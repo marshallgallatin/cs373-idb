@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "ml",
       "originalString": "400ml milk",
-      "name": "milk"
+      "name": "whole milk"
     },
     {
       "aisle": "Nut butters, Jams, and Honey",
@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "4 tablespoons nutella",
-      "name": "nutella"
+      "name": "Nutella"
     },
     {
       "aisle": "Oil, Vinegar, Salad Dressing",

@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "lb",
       "originalString": "1/2 lb goose or duck, liver pate or 17 oz. can liver pate",
-      "name": "duck"
+      "name": "pate"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -50,7 +50,7 @@
       "metaInformation": [],
       "unit": "tsps",
       "originalString": "2 tsps milk",
-      "name": "milk"
+      "name": "whole milk"
     },
     {
       "aisle": "Produce",
@@ -110,7 +110,7 @@
       "metaInformation": [],
       "unit": "lb",
       "originalString": "1 6 lb. whole beef tenderloin roast",
-      "name": "roast beef"
+      "name": "beef tenderloin"
     },
     {
       "aisle": "Spices and Seasonings",

@@ -60,7 +60,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "12 cherry tomatoes",
-      "name": "tomato"
+      "name": "cherry tomato"
     },
     {
       "aisle": "Condiments",
@@ -250,7 +250,7 @@
       "metaInformation": [],
       "unit": "lbs",
       "originalString": "1 whole chicken (about 3 lbs)",
-      "name": "whole chicken"
+      "name": "raw chicken"
     },
     {
       "aisle": "Produce",

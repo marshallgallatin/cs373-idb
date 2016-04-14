@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "ounce",
       "originalString": "1 ounce x 9 package frozen artichoke hearts thawed",
-      "name": "artichoke hearts"
+      "name": "frozen artichoke hearts"
     },
     {
       "aisle": "Meat",
@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "pounds",
       "originalString": "1 1/2 pounds beef stew meat cut into 1 inch cubes",
-      "name": "beef stew meat"
+      "name": "beef chuck"
     },
     {
       "aisle": "Canned and Jarred",
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "cups",
       "originalString": "3 cups hot cooked noodles",
-      "name": "cooked noodles"
+      "name": "cooked spaghetti"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",

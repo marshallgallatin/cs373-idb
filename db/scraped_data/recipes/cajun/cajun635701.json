@@ -8,7 +8,7 @@
   "sourceName": "Foodista",
   "vegan": false,
   "sustainable": false,
-  "instructions": "<ol><li>Cook pork meat, liver and seasonings in water (to cover) until meat falls apart; remove meat and reserve some broth.</li><li>Grind meat, onion, green onions and parsley (reserving about 1/2 cup each of green onion tops and parsley).</li><li>Mix ground meat mixture with the 1/2 cups of green onion tops and parsley, rice and enough broth to make a moist dressing.</li><li>Stuff dressing into casing, using a sausage stuffer.</li></ol>",
+  "instructions": "<ol><li>Cook pork meat, liver and seasonings in water (to cover) until meat falls apart; remove meat and reserve some broth.</li><li>Grind meat, onion, green onions and parsley (reserving about 1/2 cup each of green onion tops and parsley).</li><li>Mix ground meat mixture with the 1/2 cups of green onion tops and parsley, rice and enough broth to make a moist dressing.</li><li>Stuff dressing into cold water-soaked sausage casings, using a sausage stuffer.</li></ol>",
   "aggregateLikes": 1,
   "dairyFree": true,
   "extendedIngredients": [
@@ -70,7 +70,7 @@
       "metaInformation": [],
       "unit": "pounds",
       "originalString": "2 pounds pork meat",
-      "name": "pork"
+      "name": "pork loin"
     },
     {
       "aisle": "Meat",
@@ -91,16 +91,6 @@
       "unit": "teaspoons",
       "originalString": "5 teaspoons salt",
       "name": "salt"
-    },
-    {
-      "aisle": "Meat",
-      "unitLong": "servings",
-      "amount": 6.0,
-      "unitShort": "servings",
-      "metaInformation": [],
-      "unit": "servings",
-      "originalString": "Sausage casings, soaked in cold water",
-      "name": "sausage"
     }
   ],
   "readyInMinutes": 45,

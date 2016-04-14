@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "8 Black olives, pitted and quartered",
-      "name": "black olives"
+      "name": "olive"
     },
     {
       "aisle": "Produce",
@@ -90,7 +90,7 @@
       "metaInformation": [],
       "unit": "servings",
       "originalString": "Milk",
-      "name": "milk"
+      "name": "whole milk"
     },
     {
       "aisle": "Cheese",
@@ -130,7 +130,7 @@
       "metaInformation": [],
       "unit": "grams",
       "originalString": "418 grams Canned Alaska salmon (red or pink)",
-      "name": "salmon"
+      "name": "canned salmon"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -150,7 +150,7 @@
       "metaInformation": [],
       "unit": "grams",
       "originalString": "550 grams Ready-made shortcrust pastry",
-      "name": "shortcrust pastry"
+      "name": "pie crust"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -160,7 +160,7 @@
       "metaInformation": [],
       "unit": "ml",
       "originalString": "300 ml Single cream",
-      "name": "single cream"
+      "name": "light whipping cream"
     },
     {
       "aisle": "Seafood",

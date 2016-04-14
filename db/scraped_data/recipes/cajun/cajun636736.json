@@ -80,7 +80,7 @@
       "metaInformation": [],
       "unit": "C",
       "originalString": "3 C fish stock or clam juice",
-      "name": "clam juice"
+      "name": "fish stock"
     },
     {
       "aisle": "Pasta and Rice",
@@ -100,7 +100,7 @@
       "metaInformation": [],
       "unit": "",
       "originalString": "1/2 # canned or fresh crab meat",
-      "name": "crab meat"
+      "name": "blue crab"
     },
     {
       "aisle": "Spices and Seasonings",
@@ -180,7 +180,7 @@
       "metaInformation": [],
       "unit": "pound",
       "originalString": "1 pound shrimp",
-      "name": "shrimp"
+      "name": "raw shrimp"
     },
     {
       "aisle": "Baking",

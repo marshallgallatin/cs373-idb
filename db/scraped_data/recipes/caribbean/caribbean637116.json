@@ -20,7 +20,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1/4 cup coconut",
-      "name": "coconut"
+      "name": "shredded coconut"
     },
     {
       "aisle": "Produce",
@@ -30,7 +30,7 @@
       "metaInformation": [],
       "unit": "tablespoons",
       "originalString": "2 tablespoons coconut",
-      "name": "coconut"
+      "name": "shredded coconut"
     },
     {
       "aisle": "Cheese",
@@ -120,7 +120,7 @@
       "metaInformation": [],
       "unit": "ounce",
       "originalString": "1 (15 ounce) refrigerated pie crust",
-      "name": "refrigerated pie crust"
+      "name": "pie crust"
     },
     {
       "aisle": "Milk, Eggs, Other Dairy",
@@ -180,7 +180,7 @@
       "metaInformation": [],
       "unit": "cup",
       "originalString": "1 cup white chocolate chips",
-      "name": "white chocolate chips"
+      "name": "white chocolate"
     }
   ],
   "readyInMinutes": 150,
