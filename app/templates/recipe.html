@@ -79,7 +79,7 @@
 							var rStr = $scope.rString(curIng.original_string);
 							var rbase = "(" + $scope.rString(baseName).split(" ").join(")?\s(") + ")?";
 							var matches = rStr.match(new RegExp(rbase,"i"));
-							if (matches.length > 0)
+							if (matches != null)
 								curIng.formed_string = $scope.rString(rStr.replace(new RegExp(rbase,"i"), $scope.rString("</a>") + matches[0] + $scope.rString("<a href='/ingredient_" + curIng.id + ".html'>")));
 						}
 						curIng.formed_string = $sceDelegate.trustAs($sce.HTML, curIng.formed_string);
