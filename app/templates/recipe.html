@@ -54,7 +54,20 @@
 						console.log("instructions length: " + $scope.data.instructions.length);
 					}
 					$scope.halfI = Math.floor($scope.data.ingredients.length / 2);
+					$scope.getBaseIngredient();
 				});
+			}
+			$scope.getBaseIngredient = function () {
+				for (var i = 0; i < $scope.data.ingredients; ++i) {
+					var curIng = $scope.data.ingredients[i];
+					$http.get("ingredients/" + i).then(function (transmit) {
+						var baseName = transmit.data.name;
+						curIng.formed_string = curIng.original_string.replace(new RegExp(baseName,"i"), "<a href='ingredient_" + curIng.id + ".html'>" + baseName + "</a>");
+						if (curIng.formed_string.contains("<a href")) {
+							curIng.id = -curIng.id;
+						}
+					});
+				}
 			}
 			$(function() {
 				$scope.getData();
@@ -96,6 +109,9 @@
 				</div>
 				<div ng-if="x.id == 0">
 					{{ '{{x.original_string}}' }}
+				</div>
+				<div ng-if="x.id < 0">
+					{{ '{{x.formed_string}}' }}
 				</div>
 				</label>
 			</div>
