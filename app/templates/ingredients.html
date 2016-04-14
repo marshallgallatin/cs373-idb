@@ -66,31 +66,27 @@
 				{{ realprefix }}$http.get("ingredients?limit=" + $scope.perPage + "&page=" + $scope.page).then(function (transmit) {
 				{{ testprefix }}$http.get("/ingredients/list").then(function (transmit) {
 					$scope.ing = transmit.data.ingredients;
-					$scope.nuts = [];
+					$scope.nuts = new Array($scope.perPage);
 					for (var i = 0; i < $scope.ing.length; ++i) {
 						console.log($scope.ing[i].id);
-						{{ realprefix }}$http.get("ingredients/" + $scope.ing[i].id + "/nutrition").then(function (transmit_nuts) {
-						{{ testprefix }}$http.get("ingredients/test/nutrition"+i).then(function (transmit_nuts) {
-							$scope.isLoadingNuts = true;
-							$scope.nuts.push(transmit_nuts.data);
-							console.log("Current length of nuts:" + $scope.nuts.length);
-							if ($scope.nuts.length == $scope.perPage) {
-								console.log("Complete nuts at length:" + $scope.ing.length);
-								for (var i2 = 0; i2 < $scope.ing.length; ++i2) {
-									
-									jQuery.extend($scope.ing[i2], $scope.nuts[i2]);
+						//{{ realprefix }}$http.get("ingredients/" + $scope.ing[i].id + "/nutrition").then(function (transmit_nuts) {
+						//{{ testprefix }}$http.get("ingredients/test/nutrition"+i).then(function (transmit_nuts) {
+						{{ realprefix }}$http.get("ingredients/" + $scope.ing[i].id + "/nutrition").then((function(savedI) {
+							return function(transmit_nuts) {
+								$scope.isLoadingNuts = true;
+								$scope.nuts[savedI] = transmit_nuts.data;
+								console.log("Current length of nuts:" + $scope.nuts.length);
+								console.log("Writing index:" + savedI);
+								if ($scope.nuts.length == $scope.perPage) {
+									console.log("Complete nuts at length:" + $scope.ing.length);
+									for (var i2 = 0; i2 < $scope.ing.length; ++i2) {
+										jQuery.extend($scope.ing[i2], $scope.nuts[i2]);
+									}
+									$scope.isLoadingNuts = false;
+									$scope.computeIsLoading();
 								}
-								$scope.isLoadingNuts = false;
-								$scope.computeIsLoading();
 							}
-						});
-						console.log($scope.ing[i].id);
-						if ($scope.nuts[i] != undefined) {
-							console.log("Calories ["+i+"]="+$scope.nuts[i].calories);
-						} else {console.log("Undefined: Calories ["+i+"]");}
-						if ($scope.nuts != undefined) {
-							console.log("$scope.nuts.length="+$scope.nuts.length);
-						} else {console.log("Undefined: $scope.nuts.length");}
+						})(i));
 					}
 					
 					$scope.isLoadingData = false;
