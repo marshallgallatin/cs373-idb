@@ -6,12 +6,23 @@
 		cursor: pointer;
 	}
 	div.img-square {
+		min-height:100px;
 		max-height:400px;
 		background-size:auto 100%;
 	}
 	</style>
 	<script src="http://maps.googleapis.com/maps/api/js"></script>
 	<script>
+		var ratio = .75, minSize = 300;
+		function rectIt() {
+			$("div.img-square").height($(window).height() * ratio);
+		}
+		$(document).ready(function(){
+			rectIt();
+		});
+		window.addEventListener('resize', function(event) {
+			rectIt();
+		});
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
 			$scope.lat = 30.2849231;
 			$scope.lng = -97.7362454;
@@ -73,10 +84,7 @@
 			<h1 style="word-wrap: break-word">{{ '{{ basic.name }}' }}</h1>
 			<i>{{ '{{ basic.scientific_name }}' }}</i>
 		</div>
-		<div style="padding-top:10px" class="col-xs-12 col-sm-6 col-lg-6">
-			<img class="img-responsive" ng-src="{{ '{{basic.image_uri}}' }}"></img>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-lg-6 img-square" style="padding-top:10px; background-image:url({{ '{{basic.image_uri}}' }})"></div>
+		<div class="col-xs-12 col-sm-6 col-lg-6 img-responsive img-square" style="padding-top:10px; background-image:url({{ '{{basic.image_uri}}' }})"></div>
 	</div>
 	
 	<div class="col-xs-12 col-sm-6">
