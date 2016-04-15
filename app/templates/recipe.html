@@ -34,34 +34,6 @@
 			debounceRectIt = setTimeout(rectIt, 50);
 		});
 
-		$(document).ready(function(){
-			$("table tr").click(function(event){
-				$glyph = $(this).children().find(".glyphicon");
-				$glyph.toggleClass("glyphicon-minus glyphicon-ok");
-				$textD = $(this).children().eq(1);
-				$nextRow = $(this).next().children().eq(1);
-				
-				if ($textD.hasClass("text-muted")) {
-					//Backward
-					if ($(this).prev().prop("tagName") == undefined || $(this).prev().children().eq(1).hasClass("text-muted"))
-						$textD.addClass("info");
-					
-					if (!$nextRow.hasClass("text-muted"))
-						$nextRow.removeClass("info");
-				} else {
-					//Forward
-					$textD.removeClass("info");
-					
-					if (!$nextRow.hasClass("text-muted"))
-						$nextRow.toggleClass("info");
-				}
-				$textD.toggleClass("text-muted");
-			});
-			$("table tr").hover(function() {
-				$('this').css('cursor', 'pointer');
-			});
-		});
-
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $sceDelegate, $sce, $http) {
 			$scope.stepStats = [];
 			$scope.clickedStep = function (index) {
