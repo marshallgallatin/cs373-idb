@@ -192,7 +192,7 @@
 		<table class="table table-default">
 		<tr ng-click="clickedStep($index)" ng-repeat="x in data.instructions">
 			<td class="fit"><span ng-class="stepStats[$index].done ? 'glyphicon-ok' : 'glyphicon-minus'" class="glyphicon"></span></td>
-			<td ng-class="stepStats[$index].hi ? 'info' : ''">{{ '{{x}}' }}</td>
+			<td ng-class="stepStats[$index].hi ? 'info' : (stepStats[$index].done ? 'text-muted' : '')">{{ '{{x}}' }}</td>
 		</tr>
 		</table>
 	</div>
