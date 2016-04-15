@@ -63,6 +63,17 @@
 		});
 
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $sceDelegate, $sce, $http) {
+			$scope.stepStats = [];
+			$scope.clickedStep = function (index) {
+				$scope.stepStats[index].done = !$scope.stepStats[index].done;
+				for (var i = 0; i < $scope.stepStats.length; ++i) {
+					if ($scope.stepStats[i].done) {$scope.stepStats[i].hi = false;}
+					else {
+						if (i - 1 >= 0) {$scope.stepStats[i].hi = $scope.stepStats[i - 1].done;}
+						else {$scope.stepStats[i].hi = true;}
+					}
+				}
+			}
 			$scope.rString = function (str) {
 				var i = str.length - 1, r = "";
 				while (i >= 0) {
@@ -81,6 +92,10 @@
 					}
 					$scope.halfI = Math.floor($scope.data.ingredients.length / 2);
 					console.log($scope.data);
+					$scope.stepStats = [];
+					for (var i = 0; i < $scope.data.instructions.length; ++i) {
+						$scope.stepStats.push({done:false, hi:i==0});
+					}
 					$scope.getBaseIngredient(0);
 				});
 			}
@@ -144,7 +159,7 @@
 			<br />Ready in: {{ '{{data.ready_in_minutes}}' }}
 			<br />Serves: {{ '{{data.servings}}' }}
 		</div>
-		<div class="col-xs-12 col-sm-6 col-lg-6 img-responsive img-square" style="margin-top:10px; background-image:url({{ '{{data.image_uri}}' }})"></div>
+		<div class="col-xs-12 col-sm-6 col-lg-6"><div class="img-responsive img-square" style="margin-top:10px; background-image:url({{ '{{data.image_uri}}' }})"></div></div>
 	</div>
 	
 	<div class="page-header">
@@ -175,9 +190,9 @@
 	</div>
 	<div>
 		<table class="table table-default">
-		<tr ng-repeat="x in data.instructions">
-			<td class="fit"><span class="glyphicon glyphicon-minus"></span></td>
-			<td ng-class='{info:$first}'>{{ '{{x}}' }}</td>
+		<tr ng-click="clickedStep($index)" ng-repeat="x in data.instructions">
+			<td class="fit"><span ng-class="stepStats[$index].done ? 'glyphicon-ok' : 'glyphicon-minus'" class="glyphicon"></span></td>
+			<td ng-class="stepStats[$index].hi ? 'info' : ''">{{ '{{x}}' }}</td>
 		</tr>
 		</table>
 	</div>
