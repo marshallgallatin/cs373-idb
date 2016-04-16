@@ -54,7 +54,8 @@
 				return r;
 			}
 			$scope.linkByName = function(ingredient, baseName) {
-				ingredient.formed_string = ingredient.original_string.replace(new RegExp(baseName,"i"), "<a href='/ingredient_" + ingredient.id + ".html'>" + baseName + "</a>");
+				console.log("makePluralFwd: " + $scope.makePluralFwd(baseName));
+				ingredient.formed_string = ingredient.original_string.replace(new RegExp($scope.makePluralFwd(baseName),"i"), "<a href='/ingredient_" + ingredient.id + ".html'>" + baseName + "</a>");
 				console.log("Transform ingredient: " + ingredient.formed_string);
 				if (ingredient.formed_string.indexOf("<a href") != -1) {
 					ingredient.id = -ingredient.id;
@@ -63,16 +64,16 @@
 					var rStr = $scope.rString(ingredient.original_string);
 					var rArr = $scope.rString(baseName).split(" ");
 					var xp = "";
+					var tempMatches, matches;
 					for (var r = 0; r < rArr.length; r++) {
-						if (rStr.match(new RegExp(xp+rArr[r],"i"))) {
-							xp += rArr[r];
-							if (rStr.match(new RegExp(xp+" ","i"))) {
-								xp += " ";
-								} else break;
-						} else break;
+						var wordRegex = (r == 0 ? "" : "\\s?") + $scope.makePluralRev(rArr[r]);
+						console.log("wordRegex: " + wordRegex);
+						if (tempMatches = rStr.match(new RegExp(xp+wordRegex,"i"))) {
+							xp += wordRegex;
+							matches = tempMatches;
+						} else if (xp != "") break;
 					}
 					
-					var matches = rStr.match(new RegExp(xp,"i"));
 					if (matches != null) {
 						var rLink = $scope.rString("</a>") + matches[0] + $scope.rString("<a href='/ingredient_" + ingredient.id + ".html'>");
 						console.log("\tMatching string: " + xp);
@@ -82,6 +83,16 @@
 					}
 				}
 				ingredient.formed_string = $sceDelegate.trustAs($sce.HTML, ingredient.formed_string);
+			}
+			$scope.makePluralRev = function(str) {
+				if (str.startsWith("y")) str = str.replace("y", "(sei|y)");
+				else str = "(se?)?" + str;
+				return str;
+			}
+			$scope.makePluralFwd = function(str) {
+				if (str.endsWith("y")) str = str.replace("y$", "(y|ies)");
+				else str += "(e?s)?";
+				return str;
 			}
 			$scope.getData = function () {
 				$http.get("recipes/{{ rec_id }}").then(function (transmit) {
