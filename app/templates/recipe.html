@@ -105,10 +105,10 @@
 			$scope.getBaseIngredient = function (i) {
 				if (i < $scope.data.ingredients.length) {
 					var curIng = $scope.data.ingredients[i];
-					if (curIng.id == 0) {continue;}
+					if (curIng.id == 0) {return $scope.getBaseIngredient(i + 1);}
 					$http.get("ingredients/" + curIng.id).then(function (transmit) {
 						console.log(curIng + " vs " + transmit.data.name);
-						linkByName(curIng, transmit.data.name);
+						$scope.linkByName(curIng, transmit.data.name);
 						$scope.getBaseIngredient(i + 1);
 					});
 				}
