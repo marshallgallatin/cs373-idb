@@ -73,6 +73,7 @@ APP_FILES:=                     \
     ./app/QueryExceptions.py    \
     ./app/QueryHelpers.py       \
     ./app/RecipeQueries.py      \
+    ./app/SearchQueries.py      \
     ./app/testModels.py         \
     ./app/tests.py              \
     ./app/useDatabase.py        \
