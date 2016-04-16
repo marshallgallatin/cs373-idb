@@ -53,6 +53,37 @@
 				}
 				return r;
 			}
+			$scope.linkByName = function(ingredient, baseName) {
+				var baseName = transmit.data.name;
+				curIng.formed_string = curIng.original_string.replace(new RegExp(baseName,"i"), "<a href='/ingredient_" + curIng.id + ".html'>" + baseName + "</a>");
+				console.log("Transform ingredient: " + curIng.formed_string);
+				if (curIng.formed_string.contains("<a href")) {
+					curIng.id = -curIng.id;
+					console.log("\tDetected change.");
+				} else {
+					var rStr = $scope.rString(curIng.original_string);
+					var rArr = $scope.rString(baseName).split(" ");
+					var xp = "";
+					for (var r = 0; r < rArr.length; r++) {
+						if (rStr.match(new RegExp(xp+rArr[r],"i"))) {
+							xp += rArr[r];
+							if (rStr.match(new RegExp(xp+" ","i"))) {
+								xp += " ";
+								} else break;
+						} else break;
+					}
+					
+					var matches = rStr.match(new RegExp(xp,"i"));
+					if (matches != null) {
+						var rLink = $scope.rString("</a>") + matches[0] + $scope.rString("<a href='/ingredient_" + curIng.id + ".html'>");
+						console.log("\tMatching string: " + xp);
+						console.log("\tNew link: " + rLink);
+						curIng.formed_string = $scope.rString(rStr.replace(new RegExp(xp,"i"), rLink));
+						curIng.id = -curIng.id;
+					}
+				}
+				curIng.formed_string = $sceDelegate.trustAs($sce.HTML, curIng.formed_string);
+			}
 			$scope.getData = function () {
 				$http.get("recipes/{{ rec_id }}").then(function (transmit) {
 					$scope.data = transmit.data;
@@ -75,35 +106,7 @@
 				if (i < $scope.data.ingredients.length) {
 					var curIng = $scope.data.ingredients[i];
 					$http.get("ingredients/" + curIng.id).then(function (transmit) {
-						var baseName = transmit.data.name;
-						curIng.formed_string = curIng.original_string.replace(new RegExp(baseName,"i"), "<a href='/ingredient_" + curIng.id + ".html'>" + baseName + "</a>");
-						console.log("Transform ingredient: " + curIng.formed_string);
-						if (curIng.formed_string.contains("<a href")) {
-							curIng.id = -curIng.id;
-							console.log("\tDetected change.");
-						} else {
-							var rStr = $scope.rString(curIng.original_string);
-							var rArr = $scope.rString(baseName).split(" ");
-							var xp = "";
-							for (var r = 0; r < rArr.length; r++) {
-								if (rStr.match(new RegExp(xp+rArr[r],"i"))) {
-									xp += rArr[r];
-									if (rStr.match(new RegExp(xp+" ","i"))) {
-										xp += " ";
-										} else break;
-								} else break;
-							}
-							
-							var matches = rStr.match(new RegExp(xp,"i"));
-							if (matches != null) {
-								var rLink = $scope.rString("</a>") + matches[0] + $scope.rString("<a href='/ingredient_" + curIng.id + ".html'>");
-								console.log("\tMatching string: " + xp);
-								console.log("\tNew link: " + rLink);
-								curIng.formed_string = $scope.rString(rStr.replace(new RegExp(xp,"i"), rLink));
-								curIng.id = -curIng.id;
-							}
-						}
-						curIng.formed_string = $sceDelegate.trustAs($sce.HTML, curIng.formed_string);
+						linkByName(curIng, transmit.data.name);
 						$scope.getBaseIngredient(i + 1);
 					});
 				}
