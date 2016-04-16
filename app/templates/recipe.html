@@ -54,7 +54,6 @@
 				return r;
 			}
 			$scope.linkByName = function(ingredient, baseName) {
-				var baseName = transmit.data.name;
 				ingredient.formed_string = ingredient.original_string.replace(new RegExp(baseName,"i"), "<a href='/ingredient_" + ingredient.id + ".html'>" + baseName + "</a>");
 				console.log("Transform ingredient: " + ingredient.formed_string);
 				if (ingredient.formed_string.indexOf("<a href") != -1) {
@@ -106,7 +105,9 @@
 			$scope.getBaseIngredient = function (i) {
 				if (i < $scope.data.ingredients.length) {
 					var curIng = $scope.data.ingredients[i];
+					if (curIng.id == 0) {continue;}
 					$http.get("ingredients/" + curIng.id).then(function (transmit) {
+						console.log(curIng + " vs " + transmit.data.name);
 						linkByName(curIng, transmit.data.name);
 						$scope.getBaseIngredient(i + 1);
 					});
