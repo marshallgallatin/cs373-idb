@@ -54,7 +54,6 @@
 				return r;
 			}
 			$scope.linkByName = function(ingredient, baseName) {
-				var baseName = transmit.data.name;
 				ingredient.formed_string = ingredient.original_string.replace(new RegExp(baseName,"i"), "<a href='/ingredient_" + ingredient.id + ".html'>" + baseName + "</a>");
 				console.log("Transform ingredient: " + ingredient.formed_string);
 				if (ingredient.formed_string.indexOf("<a href") != -1) {
