@@ -57,7 +57,7 @@
 				var baseName = transmit.data.name;
 				ingredient.formed_string = ingredient.original_string.replace(new RegExp(baseName,"i"), "<a href='/ingredient_" + ingredient.id + ".html'>" + baseName + "</a>");
 				console.log("Transform ingredient: " + ingredient.formed_string);
-				if (ingredient.formed_string.contains("<a href")) {
+				if (ingredient.formed_string.indexOf("<a href") != -1) {
 					ingredient.id = -ingredient.id;
 					console.log("\tDetected change.");
 				} else {
@@ -88,7 +88,7 @@
 				$http.get("recipes/{{ rec_id }}").then(function (transmit) {
 					$scope.data = transmit.data;
 					console.log($scope.data.instructions);
-					if ($scope.data.instructions.contains("<li>")) {
+					if ($scope.data.instructions.indexOf("<li>") != -1) {
 						$scope.data.instructions = $scope.data.instructions.replace("<ol><li>", "").replace("</li></ol>", "").split("</li><li>");
 					} else {
 						$scope.data.instructions = $scope.data.instructions.split(/\.\s?(?=[A-Z])/);
