@@ -3,6 +3,7 @@
 from constants import databaseName
 from models import Base
 from utility import renameKeyInDict
+from SearchQueries import *
 from QueryExceptions import BadQueryException
 from QueryHelpers import ensureIsNonNegative, ensureIsPositive, ensureDictOnlyContains, ensureDictExactlyContains, ensureListIsntEmpty
 from testModels import *
