@@ -19,3 +19,8 @@ def ensureDictExactlyContains(dictionary, *args):
 def ensureListIsntEmpty(aList):
     if len(aList) == 0:
         raise BadQueryException()
+
+def removeNoneDictEntries(aDict):
+    delKeys = [key for key in aDict if aDict[key] is None]
+    for key in delKeys:
+        del aDict[key]
