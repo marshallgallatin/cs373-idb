@@ -136,7 +136,7 @@ class RecipeTest(DatabaseTest):
 
 class IngredientTest(DatabaseTest):
     def test_instantiation1(self):
-        new_ingredient = TestIngredient(name="egg noodles")
+        new_ingredient = TestIngredient(name="egg noodles from IKEA")
         self.session.add(new_ingredient)
         self.session.commit()
 
@@ -153,8 +153,8 @@ class IngredientTest(DatabaseTest):
             self.session.commit()
 
     def test_name_uniqueness(self):
-        new_ingredient1 = TestIngredient(name="egg noodles")
-        new_ingredient2 = TestIngredient(name="egg noodles")
+        new_ingredient1 = TestIngredient(name="egg noodles from IKEA")
+        new_ingredient2 = TestIngredient(name="egg noodles from IKEA")
         self.session.add(new_ingredient1)
         self.session.add(new_ingredient2)
         with self.assertRaises(Exception):
