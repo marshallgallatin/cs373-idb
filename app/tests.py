@@ -224,7 +224,7 @@ class IngredientsInRecipesTest(DatabaseTest):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.new_recipe = Recipe(title="Ikea's Swedish Meatballs")
-        self.new_ingredient = Ingredient(name='egg noodles')
+        self.new_ingredient = Ingredient(name='unittest noodles')
 
     def test_instantiation1(self):
         new_ingredientsInRecipes = TestIngredientsInRecipes(original_string='1 pound egg noodles', ingredient_index=0)
