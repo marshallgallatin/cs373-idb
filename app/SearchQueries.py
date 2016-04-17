@@ -54,7 +54,7 @@ def search(keywords):
             returnDict['type'] = 'ingredient'
 
             name = ingredient.name
-            scientificName = ingredient.scientific_name
+            scientificName = ingredient.scientific_name if ingredient.scientific_name else ''
 
             for kIndex in range(0, len(keywords)):
                 # We use a lambda function as a way of preserving the original string's case
