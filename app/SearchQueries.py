@@ -17,8 +17,8 @@ def search(keywords):
 
         recipesAnd = session.query(models.Recipe).filter(or_(and_(*ilikeGenerator(models.Recipe.title)), and_(*ilikeGenerator(models.Recipe.instructions)))).all()
         ingredientsAnd = session.query(models.Ingredient).filter(or_(and_(*ilikeGenerator(models.Ingredient.name)), and_(*ilikeGenerator(models.Ingredient.scientific_name)))).all()
-        recipesOr = session.query(models.Recipe).filter(or_(*ilikeGenerator(models.Recipe.title), *ilikeGenerator(models.Recipe.instructions))).all()
-        ingredientsOr = session.query(models.Ingredient).filter(or_(*ilikeGenerator(models.Ingredient.name), *ilikeGenerator(models.Ingredient.scientific_name))).all()
+        recipesOr = session.query(models.Recipe).filter(or_(or_(*ilikeGenerator(models.Recipe.title)), or_(*ilikeGenerator(models.Recipe.instructions)))).all()
+        ingredientsOr = session.query(models.Ingredient).filter(or_(or_(*ilikeGenerator(models.Ingredient.name)), or_(*ilikeGenerator(models.Ingredient.scientific_name)))).all()
 
         def getAllSnippets(iterable):
             def bound(number):
