@@ -50,7 +50,7 @@ def search(keywords):
             return returnDict
 
         def ingredientResultDict(ingredient):
-            returnDict = ingredient.summaryDict()
+            returnDict = ingredient.fullDict()
             returnDict['type'] = 'ingredient'
 
             name = ingredient.name
