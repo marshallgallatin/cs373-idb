@@ -71,7 +71,16 @@
 			$scope.computeResultsList = function () {
 				if ($scope.allResults == undefined)
 					$scope.allResults = $scope.data.and.results.concat($scope.data.or.results);
-				$scope.results = $scope.allResults.splice(($scope.page - 1) * $scope.perPage, $scope.perPage);
+				var startI = ($scope.page - 1) * $scope.perPage;
+				$scope.results = $scope.allResults.splice(startI, $scope.perPage);
+				$scope.firstAnd = (startI > $scope.data.and.count ? -1 : 0);
+				if (startI > $scope.data.and.count) {
+					$scope.firstOr = 0;
+				} else if (startI + $scope.perPage > $scope.data.and.count) {
+					$scope.firstOr = $scope.data.and.count % $scope.perPage;
+				} else {
+					$scope.firstOr = -1;
+				}
 			}
 			$(function() {
 				$scope.getData();
@@ -85,7 +94,10 @@
 <div ng-show="isLoading" class="alert alert-warning">
   Loading data...
 </div>
+	<h1>Search Results</h1>
 	<div class="row" ng-repeat="x in results" style="margin-left:10px; margin-bottom:10px">
+		<div ng-if="$index == firstAnd">Exact matches:</div>
+		<div ng-if="$index == firstOr">Partial matches:</div>
 		<div ng-if="x.type == 'recipe'" style="margin-bottom:10px;">
 			<h3><a ng-href="/recipe_{{ '{{x.id}}' }}.html"><span ng-bind-html="x.title"></span> - Recipe</a></h3>
 			<div class="row">
