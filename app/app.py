@@ -137,7 +137,7 @@ def about():
 
 @app.route('/search', methods=['GET'])
 def search():
-	return render_template('search.html', title=request.args.get('q'), aboutlit="active")
+	return render_template('search.html', title=request.args.get('q'), testprefix="//")
 
 @app.route('/query', methods=['GET'])
 def query():
