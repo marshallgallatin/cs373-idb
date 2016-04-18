@@ -69,7 +69,7 @@
 			$scope.computeResultsList = function () {
 				if ($scope.allResults == undefined)
 					$scope.allResults = $scope.data.and.results.concat($scope.data.or.results);
-				$scope.results = $scope.allResults.splice($scope.page * scope.perPage, $scope.perPage);
+				$scope.results = $scope.allResults.splice(($scope.page - 1) * $scope.perPage, $scope.perPage);
 			}
 			$(function() {
 				$scope.getData();
