@@ -482,45 +482,43 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 181	bread crumbs	https://upload.wikimedia.org/wikipedia/commons/e/e1/Breadcrumb.jpg	\N	Worldwide
 182	soft bread crumbs	http://photo.torange.biz/26/26982/HD26982.jpg	\N	Worldwide
 183	parmesan cheese	https://upload.wikimedia.org/wikipedia/commons/5/5b/Parmigiano_reggiano_piece.jpg	\N	Europe
-184	oxtail	https://upload.wikimedia.org/wikipedia/commons/9/94/Raw_oxtail-01.jpg	\N	\N
+184	oxtail	https://upload.wikimedia.org/wikipedia/commons/9/94/Raw_oxtail-01.jpg	\N	Worldwide
 185	garam masala	https://upload.wikimedia.org/wikipedia/commons/5/58/Garammasalaphoto.jpg	\N	Asia
 186	cardamom	https://upload.wikimedia.org/wikipedia/commons/6/68/Black_and_green_cardamom.jpg	Elettaria cardamomum	Asia
-187	rice noodles	\N	\N	\N
-188	cooked rice	\N	\N	\N
-189	hoagie roll	\N	\N	\N
-190	baby carrots	\N	Daucus carota	\N
-191	orange	\N	Citrus sinensis	\N
-192	navel orange	\N	Citrus sinensis	\N
-193	orange juice	\N	\N	\N
-194	tamarind	https://upload.wikimedia.org/wikipedia/commons/c/c1/Tamarind2.jpg	Tamarindus indica	\N
-195	tamarind nectar	\N	\N	\N
-196	yeast	\N	\N	\N
-197	cream of tartar	\N	\N	\N
-198	compressed yeast	\N	\N	\N
-199	brioche	\N	\N	\N
-200	clam	\N	Lamellibranchia	\N
-201	canned clams	\N	\N	\N
-202	canned pumpkin	\N	\N	\N
-203	mussel	\N	Mytilus edulis L.	\N
-204	octopus	\N	Octopus vulgaris Lamarck	\N
-205	oyster	\N	Crassostrea virginica (Gmelin)	\N
-206	canned oysters	\N	\N	\N
-207	biscuit mix	\N	\N	\N
-208	pita bread	\N	\N	\N
-209	bulgur	\N	\N	\N
-210	cake flour	\N	\N	\N
-211	dark rye flour	\N	\N	\N
-212	rice flour	\N	\N	\N
-213	brown rice flour	\N	\N	\N
-214	oat flour	\N	\N	\N
-215	sun-dried tomato	https://upload.wikimedia.org/wikipedia/commons/c/cf/Sun-dried_tomatoes.jpg	\N	NorthAmerica
-216	dill weed	\N	Anethum graveolens	\N
-217	dried dill weed	\N	Anethum graveolens	\N
-218	dill seed	\N	Anethum graveolens	\N
-219	whole-wheat pita bread	\N	\N	\N
-220	corn flour	\N	\N	\N
-221	Italian bread	\N	\N	\N
-222	baguette	\N	\N	\N
+187	rice noodles	https://upload.wikimedia.org/wikipedia/commons/f/f2/Reisnudeln.JPG	\N	Asia
+188	cooked rice	https://upload.wikimedia.org/wikipedia/commons/7/77/Steamed_rice_in_bowl_01.jpg	\N	Worldwide
+189	hoagie roll	https://upload.wikimedia.org/wikipedia/commons/8/89/Fresh_hoagie_rolls_%286189590468%29.jpg	\N	Worldwide
+191	orange	https://upload.wikimedia.org/wikipedia/commons/7/7b/Orange-Whole-%26-Split.jpg	Citrus sinensis	Asia
+192	navel orange	https://upload.wikimedia.org/wikipedia/commons/7/7f/Navel_orange_sectioned.jpg	Citrus sinensis	NorthAmerica
+193	orange juice	https://upload.wikimedia.org/wikipedia/commons/5/5a/Oranges_and_orange_juice.jpg	Citrus sinensis	NorthAmerica
+194	tamarind	https://upload.wikimedia.org/wikipedia/commons/c/c1/Tamarind2.jpg	Tamarindus indica	Africa
+196	yeast	https://upload.wikimedia.org/wikipedia/commons/9/90/Dry_yeast.jpg	Saccharomyces cerevisiae	Worldwide
+197	cream of tartar	https://upload.wikimedia.org/wikipedia/commons/8/84/Potassium_hydrogen_tartrate_%281%29.JPG	Potassium bitartrate	Worldwide
+198	compressed yeast	https://upload.wikimedia.org/wikipedia/commons/e/e9/Compressed_fresh_yeast_-_1.jpg	Saccharomyces cerevisiae	Worldwide
+199	brioche	https://upload.wikimedia.org/wikipedia/commons/4/4a/Brioche.jpg	\N	Europe
+200	clam	https://upload.wikimedia.org/wikipedia/commons/8/8f/Clams.JPG	Bivalvia	Worldwide
+201	canned clams	https://upload.wikimedia.org/wikipedia/commons/8/8f/Clams.JPG	Bivalvia	Worldwide
+202	canned pumpkin	https://upload.wikimedia.org/wikipedia/commons/1/12/One-pie_pumpkin.jpg	Cucurbita pepo	NorthAmerica
+203	mussel	https://upload.wikimedia.org/wikipedia/commons/4/45/CornishMussels.JPG	Mytilus edulis L.	Worldwide
+204	octopus	https://upload.wikimedia.org/wikipedia/commons/4/44/Korean.cuisine-Sannakji.hoe-01.jpg	Octopus vulgaris Lamarck	Worldwide
+205	oyster	https://upload.wikimedia.org/wikipedia/commons/3/37/Oysters_p1040741.jpg	Crassostrea virginica (Gmelin)	Worldwide
+206	canned oysters	https://upload.wikimedia.org/wikipedia/commons/3/37/Oysters_p1040741.jpg	Crassostrea virginica (Gmelin)	Worldwide
+207	biscuit mix	https://upload.wikimedia.org/wikipedia/commons/d/de/Bisquick_biscuits_%285062690206%29.jpg	\N	NorthAmerica
+208	pita bread	https://upload.wikimedia.org/wikipedia/commons/2/23/Nablus_souq_pita_118_-_Aug_2011.jpg	\N	Asia
+209	bulgur	https://upload.wikimedia.org/wikipedia/commons/8/8a/Bulgur2.jpg	Triticum spp.	Asia
+210	cake flour	https://c1.staticflickr.com/1/28/225792129_6c456298a9_b.jpg	\N	Worldwide
+211	dark rye flour	https://upload.wikimedia.org/wikipedia/commons/c/c1/Lithuanian_traditional_bread.jpg	Secale cereale	Worldwide
+212	rice flour	https://upload.wikimedia.org/wikipedia/en/c/cb/Mochiko.jpg	Oryza spp.	Asia
+213	brown rice flour	https://c2.staticflickr.com/8/7024/6497652507_4e31c7a595_b.jpg	Oryza spp.	Asia
+214	oat flour	https://pixabay.com/static/uploads/photo/2015/03/31/16/52/oats-701299_960_720.jpg	Avena sativa	Europe
+215	sun-dried tomato	https://upload.wikimedia.org/wikipedia/commons/c/cf/Sun-dried_tomatoes.jpg	Solanum lycopersicum	NorthAmerica
+216	dill weed	https://pixabay.com/static/uploads/photo/2013/03/01/18/05/branch-87433_960_720.jpg	Anethum graveolens	Europe
+217	dried dill weed	https://upload.wikimedia.org/wikipedia/commons/0/02/Dill-spice.jpg	Anethum graveolens	Europe
+218	dill seed	https://upload.wikimedia.org/wikipedia/commons/d/d6/Dill_seed.JPG	Anethum graveolens	Europe
+219	whole-wheat pita bread	https://upload.wikimedia.org/wikipedia/commons/2/23/Nablus_souq_pita_118_-_Aug_2011.jpg	\N	Asia
+220	corn flour	https://c2.staticflickr.com/4/3296/3132083414_8193ddd6f8_z.jpg?zz=1	Zea mays	NorthAmerica
+221	Italian bread	https://upload.wikimedia.org/wikipedia/commons/b/b2/Ciabatta_cut.JPG	\N	Europe
+222	baguette	https://upload.wikimedia.org/wikipedia/commons/f/f5/Baguettes_-_stonesoup.jpg	\N	Europe
 223	coriander seed	\N	Coriandrum sativum	\N
 224	baking soda	https://pixabay.com/static/uploads/photo/2015/05/15/17/16/baking-soda-768950_960_720.jpg	Sodium bicarbonate	NorthAmerica
 225	bay leaf	https://upload.wikimedia.org/wikipedia/commons/3/37/Indian_bay_leaf_-_tejpatta_-_indisches_Lorbeerblatt.jpg	Laurus nobilis	Europe
