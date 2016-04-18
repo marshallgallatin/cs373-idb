@@ -92,7 +92,7 @@
 				</a>
 				<div class="col-xs-10">
 					A {{ '{{x.cuisine}}' }} dish that you can prepare in {{ '{{x.ready_in_minutes}}' }} minutes.<br />
-					Serves {{ '{{x.servings}}' }} people. <p ng-repeat="s in x.snippets" ng-bind-html="s"></p>
+					Serves {{ '{{x.servings}}' }} people. <span ng-repeat="s in x.snippets" ng-bind-html="s">...</span>
 				</div>
 			</div>
 		</div>
@@ -104,7 +104,7 @@
 				</a>
 				<div class="col-xs-10">
 					The {{ '{{x.name}}' }} (<i>{{ '{{x.scientific_name}}' }}</i>) originates from {{ '{{x.origin}}' }}.<br />
-					<p ng-repeat="s in x.snippets" ng-bind-html="s"></p>
+					<span ng-repeat="s in x.snippets" ng-bind-html="s">...</span>
 				</div>
 			</div>
 		</div>
