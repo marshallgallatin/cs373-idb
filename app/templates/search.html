@@ -38,6 +38,7 @@
 			}
 			$scope.computeIsLoading = function () {
 				$scope.isLoading = 	$scope.isLoadingData;
+				console.log("recompute: " + $scope.isLoading);
 			}
 			$scope.getData = function () {
 				$scope.isLoadingData = true;
@@ -48,6 +49,10 @@
 					console.log("Length 'and' results: " + $scope.data.and.count);
 					console.log("Length 'or' results: " + $scope.data.or.count);
 					$scope.maxPage = Math.ceil(($scope.data.and.count + $scope.data.or.count) / $scope.perPage);
+					console.log("Max Page: " + $scope.maxPage);
+
+					$scope.allResults = $scope.data.and.results.concat($scope.data.or.results);
+					$scope.computeResultsList();
 					
 					$scope.isLoadingData = false;
 					$scope.computeIsLoading();
@@ -61,6 +66,11 @@
 					}
 				}
 			}
+			$scope.computeResultsList = function () {
+				if ($scope.allResults == undefined)
+					$scope.allResults = $scope.data.and.results.concat($scope.data.or.results);
+				$scope.results = $scope.allResults.splice($scope.page * scope.perPage, $scope.perPage);
+			}
 			$(function() {
 				$scope.getData();
 			});
@@ -73,7 +83,7 @@
 <div ng-show="isLoading" class="alert alert-warning">
   Loading data...
 </div>
-	<div class="row" ng-repeat="x in data.and.results" style="margin-left:10px; margin-bottom:10px">
+	<div class="row" ng-repeat="x in results" style="margin-left:10px; margin-bottom:10px">
 		<div ng-if="x.type == 'recipe'" style="margin-bottom:10px;">
 			<h3><a ng-href="/recipe_{{ '{{x.id}}' }}.html">{{ '{{x.title}}' }} - Recipe</a></h3>
 			<div class="row">
