@@ -340,7 +340,7 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 39	yogurt	https://upload.wikimedia.org/wikipedia/commons/e/ea/Turkish_strained_yogurt.jpg	\N	Europe
 40	corn starch	http://3.bp.blogspot.com/-GSgCOGH_uNY/VXIjn17j8AI/AAAAAAAADIA/Fo5m6SVZhu0/s1600/cornstarch-kz.jpg	\N	NorthAmerica
 41	paprika	https://upload.wikimedia.org/wikipedia/commons/9/97/Spanishsmokedpaprika.jpg	Capsicum annuum	NorthAmerica
-42	ground beef	https://upload.wikimedia.org/wikipedia/commons/d/d1/Hackfleisch-1.jpg	Bos taurus	Asia
+42	ground beef	https://upload.wikimedia.org/wikipedia/commons/d/d1/Hackfleisch-1.jpg	Bos taurus	Worldwide
 43	parsley	https://upload.wikimedia.org/wikipedia/commons/9/97/Parsley.jpg	Petroselinum crispum	Europe
 44	dried parsley	https://upload.wikimedia.org/wikipedia/commons/8/8c/Parsley_Dried.JPG	Petroselinum crispum	Europe
 45	oregano	https://pixabay.com/static/uploads/photo/2014/04/10/15/39/oregano-321037_960_720.jpg	Origanum vulgare	Europe
@@ -348,7 +348,7 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 47	tomato	https://upload.wikimedia.org/wikipedia/commons/8/88/Bright_red_tomato_and_cross_section02.jpg	Solanum lycopersicum	SouthAmerica
 48	cumin	https://upload.wikimedia.org/wikipedia/commons/9/9d/4622_-_Cumino_al_mercato_di_Ortigia%2C_Siracusa_-_Foto_Giovanni_Dall'Orto%2C_20_marzo_2014.jpg	Cuminum cyminum	Africa
 49	cumin seed	https://upload.wikimedia.org/wikipedia/commons/6/64/Cumin_seed_whole.JPG	Cuminum cyminum	Africa
-50	brown sugar	https://upload.wikimedia.org/wikipedia/commons/8/82/Brown_sugar_examples.JPG	\N	Worldwide
+50	brown sugar	https://upload.wikimedia.org/wikipedia/commons/8/82/Brown_sugar_examples.JPG	Saccharum sp.	Asia
 51	bean sprout	https://upload.wikimedia.org/wikipedia/commons/7/73/Moyashi.jpg	Vigna radiata	Asia
 52	raw shrimp	https://upload.wikimedia.org/wikipedia/commons/1/11/Shrimp_Shell_%2811833859924%29.jpg	Penaeidae and Pandalidae	Worldwide
 53	daikon	https://upload.wikimedia.org/wikipedia/commons/c/cb/Daikon.Japan.jpg	Raphanus sativus (Longipinratus Group)	Asia
@@ -412,7 +412,7 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 111	mixed vegetables	https://farm4.staticflickr.com/3184/3073658608_6aab855d29_o.jpg	\N	Worldwide
 112	canned pineapple	https://pixabay.com/static/uploads/photo/2015/02/14/18/10/pineapple-636562_960_720.jpg	\N	NorthAmerica
 113	pineapple	https://pixabay.com/static/uploads/photo/2015/02/14/18/10/pineapple-636562_960_720.jpg	\N	SouthAmerica
-114	granulated sugar	https://upload.wikimedia.org/wikipedia/commons/a/a1/Raw_cane_sugar_light.JPG	Sucrose	Worldwide
+114	granulated sugar	https://upload.wikimedia.org/wikipedia/commons/a/a1/Raw_cane_sugar_light.JPG	Saccharum sp.	Asia
 115	half and half	https://upload.wikimedia.org/wikipedia/commons/c/c9/Berkeley_Farms_Fat-Free_Half_%26_Half.jpg	\N	Worldwide
 116	egg white	https://upload.wikimedia.org/wikipedia/commons/9/9c/Bowl_of_egg_whites_no_bg.png	\N	Worldwide
 117	almond	https://upload.wikimedia.org/wikipedia/commons/4/46/Almonds_macro_3.jpg	Prunus dulcis	Asia
@@ -433,11 +433,11 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 132	hot sauce	https://c2.staticflickr.com/4/3897/14992505446_08fb54e0a1_b.jpg	\N	NorthAmerica
 133	Tabasco sauce	https://upload.wikimedia.org/wikipedia/commons/d/d2/Tabasco-varieties.jpg	\N	NorthAmerica
 134	vanilla extract	https://upload.wikimedia.org/wikipedia/commons/7/71/Madagascar_bourbon_vanilla_x.jpg	Vanilla planifolia	NorthAmerica
-135	jalapeno	https://upload.wikimedia.org/wikipedia/commons/d/d6/Immature_jalapeno_capsicum_annuum_var_annuum.jpeg	Capsicum anuum	NorthAmerica
+135	jalapeño	https://upload.wikimedia.org/wikipedia/commons/d/d6/Immature_jalapeno_capsicum_annuum_var_annuum.jpeg	Capsicum anuum	NorthAmerica
 136	cremini mushroom	https://pixabay.com/static/uploads/photo/2015/05/07/12/40/mushrooms-756406_960_720.jpg	Agaricus bisporus	Europe
 137	Worcestershire sauce	https://upload.wikimedia.org/wikipedia/commons/d/d9/Lea_%26_Perrins_worcestershire_sauce_150ml.jpg	\N	Europe
-138	lime	https://upload.wikimedia.org/wikipedia/commons/6/68/Lime-Whole-Split.jpg	Citrus latifolia	Asia
-139	lime juice	https://upload.wikimedia.org/wikipedia/commons/6/68/Lime-Whole-Split.jpg	Citrus latifolia	Asia
+138	lime	https://upload.wikimedia.org/wikipedia/commons/6/68/Lime-Whole-Split.jpg	Citrus X latifolia	NorthAmerica
+139	lime juice	https://upload.wikimedia.org/wikipedia/commons/6/68/Lime-Whole-Split.jpg	Citrus X latifolia	NorthAmerica
 140	grapeseed oil	https://upload.wikimedia.org/wikipedia/commons/2/2a/Grapeseed-oil.jpg	Vitis vinifera	Europe
 141	ginger	https://pixabay.com/static/uploads/photo/2014/07/11/14/41/ginger-389906_960_720.jpg	Zingiber officinale	Asia
 142	ground ginger	https://upload.wikimedia.org/wikipedia/commons/c/c4/Ginger_powder.JPG	Zingiber officinale	Asia
@@ -478,7 +478,7 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 177	brown rice	https://c2.staticflickr.com/4/3159/2889140143_b99fd8dd4c_z.jpg?zz=1	Oryza sativa L.	Asia
 178	cornmeal	https://upload.wikimedia.org/wikipedia/en/5/58/Breading.jpg	Zea mays	NorthAmerica
 179	catfish	https://upload.wikimedia.org/wikipedia/commons/0/0e/Fisch_im_Restaurant.jpg	Ictalurus punctatus (Rafinesque)	Worldwide
-180	molasses	https://upload.wikimedia.org/wikipedia/commons/9/9f/Bottle_of_Molasses.jpg	\N	Worldwide
+180	molasses	https://upload.wikimedia.org/wikipedia/commons/9/9f/Bottle_of_Molasses.jpg	Saccharum sp.	Asia
 181	bread crumbs	https://upload.wikimedia.org/wikipedia/commons/e/e1/Breadcrumb.jpg	\N	Worldwide
 182	soft bread crumbs	http://photo.torange.biz/26/26982/HD26982.jpg	\N	Worldwide
 183	parmesan cheese	https://upload.wikimedia.org/wikipedia/commons/5/5b/Parmigiano_reggiano_piece.jpg	\N	Europe
@@ -488,6 +488,7 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 187	rice noodles	https://upload.wikimedia.org/wikipedia/commons/f/f2/Reisnudeln.JPG	\N	Asia
 188	cooked rice	https://upload.wikimedia.org/wikipedia/commons/7/77/Steamed_rice_in_bowl_01.jpg	\N	Worldwide
 189	hoagie roll	https://upload.wikimedia.org/wikipedia/commons/8/89/Fresh_hoagie_rolls_%286189590468%29.jpg	\N	Worldwide
+190	berbere	https://upload.wikimedia.org/wikipedia/commons/d/dc/Berberespice.jpg	\N	Africa
 191	orange	https://upload.wikimedia.org/wikipedia/commons/7/7b/Orange-Whole-%26-Split.jpg	Citrus sinensis	Asia
 192	navel orange	https://upload.wikimedia.org/wikipedia/commons/7/7f/Navel_orange_sectioned.jpg	Citrus sinensis	NorthAmerica
 193	orange juice	https://upload.wikimedia.org/wikipedia/commons/5/5a/Oranges_and_orange_juice.jpg	Citrus sinensis	NorthAmerica
@@ -551,22 +552,22 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 252	tofu	https://upload.wikimedia.org/wikipedia/commons/3/31/Dong_Dou_Fu_%28tofu%29.jpg	Glycine max	Asia
 253	corn oil	https://upload.wikimedia.org/wikipedia/commons/1/1f/Corn_oil_%28mais%29.jpg	Zea mays	NorthAmerica
 254	peanut oil	https://upload.wikimedia.org/wikipedia/commons/1/16/Peanut_oil_bottle.jpg	Arachis hypogaea	Asia
-255	sunflower oil	\N	Helianthus annuus	\N
-256	safflower oil	\N	\N	\N
-257	coconut oil	\N	\N	\N
-258	mustard oil	\N	\N	\N
-259	shortening	\N	\N	\N
+255	sunflower oil	https://upload.wikimedia.org/wikipedia/commons/0/08/Sunflower_oil_and_sunflower.jpg	Helianthus annuus	NorthAmerica
+256	safflower oil	https://upload.wikimedia.org/wikipedia/commons/9/97/Carthamus_tinctorius_MHNT.BOT.2011.3.34.jpg	Carthamus tinctorius L.	Africa
+257	coconut oil	https://upload.wikimedia.org/wikipedia/commons/6/6d/Coconut_oil_2.jpg	Cocos nucifera	Worldwide
+258	mustard oil	https://upload.wikimedia.org/wikipedia/en/4/47/Mustard_oil.JPG	Sinapis alba, Brassica juncea, and Brassica nigra	Asia
+259	shortening	https://upload.wikimedia.org/wikipedia/commons/6/6f/Strutto.jpg	Triglyceride	Worldwide
 260	ground turkey	https://upload.wikimedia.org/wikipedia/commons/c/c4/Ground_turkey_%284515834437%29.jpg	Meleagris gallopavo	NorthAmerica
 261	shallot	https://upload.wikimedia.org/wikipedia/commons/5/53/Shallots-Whole.jpg	Allium ascalonicum	Asia
 262	mango	https://upload.wikimedia.org/wikipedia/commons/7/79/Alphonso_mango.jpg	Mangifera indica	Asia
-263	saffron	\N	Crocus sativus	\N
+263	saffron	https://upload.wikimedia.org/wikipedia/commons/1/1c/Safran-Weinviertel_Niederreiter_2_Gramm_8285.jpg	Crocus sativus	Europe
 264	kiwifruit	https://upload.wikimedia.org/wikipedia/commons/5/59/Kiwi1.1.jpg	Actinidia deliciosa	Oceania
-265	kale	\N	Brassica oleracea (Acephala Group)	Europe
-266	kai-lan	\N	 Brassica oleracea var. alboglabra	Asia
-267	frozen kale	\N	\N	\N
+265	kale	https://upload.wikimedia.org/wikipedia/commons/4/4b/Kale-Bundle.jpg	Brassica oleracea (Acephala Group)	Europe
+266	kai-lan	https://upload.wikimedia.org/wikipedia/commons/9/90/Gailan.jpg	 Brassica oleracea var. alboglabra	Asia
+267	frozen kale	https://upload.wikimedia.org/wikipedia/commons/4/4b/Kale-Bundle.jpg	Brassica oleracea (Acephala Group)	Europe
 268	low-sodium soy sauce	https://upload.wikimedia.org/wikipedia/commons/c/c7/Kikkoman_Soy_Sauce,_Front-view_jp-type_,.jpg	\N	Asia
-269	salsa	\N	\N	NorthAmerica
-270	salsa verde	\N	\N	NorthAmerica
+269	salsa	https://upload.wikimedia.org/wikipedia/commons/5/5b/Fresh_Salsa_2009_bg.jpg	\N	NorthAmerica
+270	salsa verde	https://upload.wikimedia.org/wikipedia/commons/7/72/Salsa4.jpg	\N	NorthAmerica
 271	chicken broth	https://upload.wikimedia.org/wikipedia/commons/0/08/Bruehe-2.jpg	\N	Worldwide
 272	beef broth	https://upload.wikimedia.org/wikipedia/commons/0/08/Bruehe-2.jpg	\N	Worldwide
 273	low-sodium chicken broth	https://upload.wikimedia.org/wikipedia/commons/0/08/Bruehe-2.jpg	\N	Worldwide
@@ -577,181 +578,181 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 278	chicken bouillon	https://upload.wikimedia.org/wikipedia/commons/f/f5/Br%C3%BChw%C3%BCrfel-1.jpg	\N	Worldwide
 279	beef bouillon	https://upload.wikimedia.org/wikipedia/commons/f/f5/Br%C3%BChw%C3%BCrfel-1.jpg	\N	Worldwide
 280	salt and pepper	https://c1.staticflickr.com/5/4002/4572668303_280b2d7868_b.jpg	\N	Worldwide
-281	mayonnaise	\N	\N	\N
-282	ketchup	\N	\N	\N
-283	mustard	\N	\N	\N
-284	mustard seed	\N	Sinapis alba and Brassica juncea	\N
-285	fennel	\N	Foeniculum vulgare	\N
-286	fennel seed	\N	Foeniculum vulgare	\N
-287	honey mustard	\N	\N	\N
+281	mayonnaise	https://upload.wikimedia.org/wikipedia/commons/6/60/Mayonnaise_%281%29.jpg	\N	Europe
+282	ketchup	https://upload.wikimedia.org/wikipedia/commons/6/61/Homemade_ketchup_canned_%284156502791%29.jpg	\N	Worldwide
+283	mustard	https://upload.wikimedia.org/wikipedia/commons/7/79/DijonMustardExported.JPG	Sinapis alba, Brassica juncea, and Brassica nigra	Asia
+284	mustard seed	https://upload.wikimedia.org/wikipedia/commons/3/35/Mustard.png	Sinapis alba, Brassica juncea, and Brassica nigra	Asia
+285	fennel	https://upload.wikimedia.org/wikipedia/commons/0/0b/Fenouil.jpg	Foeniculum vulgare	Europe
+286	fennel seed	https://upload.wikimedia.org/wikipedia/commons/6/65/Fennel_seed.jpg	Foeniculum vulgare	Europe
+287	honey mustard	https://upload.wikimedia.org/wikipedia/commons/b/b5/Bread_with_mustard.JPG	\N	Europe
 288	clarified butter	https://upload.wikimedia.org/wikipedia/commons/4/43/Butterschmalz-2.jpg	\N	Worldwide
-289	ground lamb	\N	Ovis aries	\N
+289	ground lamb	https://i.ytimg.com/vi/3Xf7xefOQcI/maxresdefault.jpg	Ovis aries	Worldwide
 290	clove	https://upload.wikimedia.org/wikipedia/commons/4/4b/ClovesDried.jpg	Syzygium aromaticum	Asia
-291	lean ground beef	\N	Bos taurus	\N
-292	ground chicken	\N	Gallus gallus	\N
-293	ground pork	\N	\N	\N
-294	lean ground pork	\N	\N	\N
+291	lean ground beef	https://upload.wikimedia.org/wikipedia/commons/d/d1/Hackfleisch-1.jpg	Bos taurus	Worldwide
+292	ground chicken	https://upload.wikimedia.org/wikipedia/commons/2/2b/Riceburger.jpg	Gallus gallus	Worldwide
+293	ground pork	https://upload.wikimedia.org/wikipedia/commons/b/b7/Mettbroetchen.jpg	Sus scrofa domesticus	Worldwide
+294	lean ground pork	https://upload.wikimedia.org/wikipedia/commons/b/b7/Mettbroetchen.jpg	Sus scrofa domesticus	Worldwide
 295	poppy seed	https://upload.wikimedia.org/wikipedia/commons/6/69/Poppy_seeds.jpg	Papaver somniferum	Europe
-296	beef chuck	https://upload.wikimedia.org/wikipedia/commons/4/45/Chuck_steaks.jpg	Bos taurus	\N
+296	beef chuck	https://upload.wikimedia.org/wikipedia/commons/4/45/Chuck_steaks.jpg	Bos taurus	Worldwide
 297	rice vinegar	https://upload.wikimedia.org/wikipedia/commons/d/db/Korean_Rice_Vinegar.jpg	\N	Asia
-298	vanilla pudding mix	\N	\N	\N
-299	lemon pudding mix	\N	\N	\N
-300	hummus	\N	\N	\N
-301	tahini	\N	\N	\N
+298	vanilla pudding	https://upload.wikimedia.org/wikipedia/commons/6/64/Vanilla_pudding_%281129124791%29.jpg	\N	Europe
+299	lemon pudding	https://upload.wikimedia.org/wikipedia/commons/9/90/Lemon_velvet_pudding.jpg	\N	Europe
+300	hummus	https://upload.wikimedia.org/wikipedia/commons/a/ac/Hummus-Tahine-03.JPG	\N	Asia
+301	tahini	https://upload.wikimedia.org/wikipedia/commons/4/4c/Tahinijar_453g.jpg	Sesamum indicum	Asia
 302	baby corn	https://pixabay.com/static/uploads/photo/2014/07/11/17/27/baby-corn-390075_960_720.jpg	Zea mays	Asia
-303	light corn syrup	\N	\N	\N
-304	cane syrup	\N	\N	\N
-305	agave nectar	\N	\N	\N
-306	strawberry	\N	Fragaria X ananassa	\N
-307	raspberry	\N	Rubus spp.	\N
-308	blueberry	\N	Vaccinium spp.	\N
-309	frozen raspberries	\N	\N	\N
-310	light whipping cream	\N	\N	\N
-311	heavy whipping cream	\N	\N	\N
-312	whipped cream	https://upload.wikimedia.org/wikipedia/commons/1/16/Cr%C3%A8me_Chantilly.jpg	\N	\N
-313	frozen whipped topping	https://c1.staticflickr.com/8/7529/16042518496_9e85ede4ed_b.jpg	\N	\N
-314	chorizo	\N	\N	\N
-315	potato flakes	\N	\N	\N
-316	marinara sauce	\N	\N	Europe
-317	rum	\N	\N	\N
-318	cooking wine	\N	\N	\N
-319	red wine	\N	\N	\N
-320	white wine	\N	\N	\N
-321	raisin	\N	Vitis vinifera	\N
-322	golden raisin	\N	Vitis vinifera	\N
-323	anise seed	\N	Pimpinella anisum	\N
-324	yucca	\N	Manihot esculenta	\N
-325	caraway seed	\N	Carum carvi	\N
-326	lotus root	\N	Nelumbo nucifera	\N
-327	ricotta cheese	\N	\N	\N
-328	low-fat ricotta cheese	\N	\N	\N
-329	Romano cheese	\N	\N	\N
-330	feta cheese	\N	\N	\N
-331	low-fat cheddar cheese	\N	\N	\N
-332	sharp cheddar cheese	\N	\N	\N
-333	marjoram	\N	Origanum majorana	\N
-334	monterey jack cheese	\N	\N	\N
-335	low-fat mozzarella cheese	\N	\N	\N
-336	lime zest	\N	Citrus latifolia	\N
-337	sweetened condensed milk	\N	\N	\N
-338	evaporated milk	\N	\N	\N
-339	low-fat Swiss cheese	https://upload.wikimedia.org/wikipedia/commons/8/89/Swiss_cheese_cubes.jpg	\N	\N
+303	light corn syrup	https://i.ytimg.com/vi/0UpG8usOsgI/hqdefault.jpg	Zea mays	NorthAmerica
+304	cane syrup	https://upload.wikimedia.org/wikipedia/commons/2/20/Lyle%27sGoldenSyrup.jpg	Saccharum officinarum	Asia
+305	agave nectar	https://upload.wikimedia.org/wikipedia/commons/6/61/Concentrado_de_Agave.jpg	Agave americana	NorthAmerica
+306	strawberry	https://upload.wikimedia.org/wikipedia/commons/5/53/Strawberry_gariguette_DSC03063.JPG	Fragaria X ananassa	Europe
+307	raspberry	https://upload.wikimedia.org/wikipedia/commons/6/69/Raspberries05.jpg	Rubus spp.	Europe
+308	blueberry	https://upload.wikimedia.org/wikipedia/commons/0/0b/Blueberries-In-Pack.jpg	Vaccinium spp.	NorthAmerica
+309	frozen raspberries	https://upload.wikimedia.org/wikipedia/commons/f/f3/Frozen_Raspberries_-_3.jpg	Rubus spp.	Europe
+310	light whipping cream	https://upload.wikimedia.org/wikipedia/commons/9/91/Meiji_brand_fresh_cream.JPG	\N	Worldwide
+311	heavy whipping cream	https://upload.wikimedia.org/wikipedia/commons/9/91/Meiji_brand_fresh_cream.JPG	\N	Worldwide
+312	whipped cream	https://upload.wikimedia.org/wikipedia/commons/1/16/Cr%C3%A8me_Chantilly.jpg	\N	Worldwide
+313	frozen whipped topping	https://c1.staticflickr.com/8/7529/16042518496_9e85ede4ed_b.jpg	\N	Worldwide
+314	chorizo	https://upload.wikimedia.org/wikipedia/commons/3/3f/Palacioschorizo.jpg	Sus scrofa domesticus	Europe
+315	potato flakes	https://upload.wikimedia.org/wikipedia/commons/5/52/Funeralpotatoesdish.JPG	Solanum tuberosum L.	NorthAmerica
+316	marinara sauce	https://c2.staticflickr.com/4/3317/3189998806_ab73685609_b.jpg	\N	Europe
+317	rum	https://upload.wikimedia.org/wikipedia/commons/a/a2/Myers%27s_Rum_Original_Dark_and_Premium_White_Bottles.PNG	\N	NorthAmerica
+318	cooking wine	https://upload.wikimedia.org/wikipedia/commons/f/f7/Shaoxing-jiu_bottles_by_udono.jpg	\N	Worldwide
+319	red wine	https://upload.wikimedia.org/wikipedia/en/c/c0/Red_Wine_Glass.jpg	Vitis vinifera	Worldwide
+320	white wine	https://upload.wikimedia.org/wikipedia/commons/7/71/White_Wine_Glas.jpg	Vitis vinifera	Worldwide
+321	raisin	https://upload.wikimedia.org/wikipedia/commons/5/5d/Sunmaid-Raisin-Pile.jpg	Vitis vinifera	Asia
+322	golden raisin	https://upload.wikimedia.org/wikipedia/commons/2/2b/Raisins_2.jpg	Vitis vinifera	Asia
+323	anise seed	https://upload.wikimedia.org/wikipedia/commons/9/9c/AniseSeeds.jpg	Pimpinella anisum	Asia
+324	cassava	https://upload.wikimedia.org/wikipedia/commons/7/77/Manihot_esculenta_001.jpg	Manihot esculenta	SouthAmerica
+325	caraway seed	https://upload.wikimedia.org/wikipedia/commons/5/57/K%C3%BCmmel_2012-07-08-9523.jpg	Carum carvi	Worldwide
+326	lotus root	https://upload.wikimedia.org/wikipedia/commons/2/27/Lotus_root.jpg	Nelumbo nucifera	Asia
+327	ricotta cheese	https://upload.wikimedia.org/wikipedia/commons/3/37/Ricotta_dome_on_plate_from_the_top.jpg	\N	Europe
+328	low-fat ricotta cheese	https://upload.wikimedia.org/wikipedia/commons/3/37/Ricotta_dome_on_plate_from_the_top.jpg	\N	Europe
+329	Romano cheese	https://upload.wikimedia.org/wikipedia/commons/3/3a/Romano%2C_3_Months_%287005123366%29.jpg	\N	Europe
+330	feta cheese	https://upload.wikimedia.org/wikipedia/commons/2/28/Feta_Cheese.jpg	\N	Europe
+331	low-fat cheddar cheese	https://upload.wikimedia.org/wikipedia/commons/1/18/Somerset-Cheddar.jpg	\N	Europe
+332	sharp cheddar cheese	https://upload.wikimedia.org/wikipedia/commons/1/18/Somerset-Cheddar.jpg	\N	Europe
+333	marjoram	https://pixabay.com/static/uploads/photo/2013/06/01/03/12/marjoram-115353_960_720.jpg	Origanum majorana	Europe
+334	monterey jack cheese	https://upload.wikimedia.org/wikipedia/commons/e/e2/Vella_Cheese_Young_Jack.jpg	\N	NorthAmerica
+335	low-fat mozzarella cheese	https://upload.wikimedia.org/wikipedia/commons/5/50/Mozzarella_cheese.jpg	\N	Europe
+336	lime zest	https://upload.wikimedia.org/wikipedia/commons/7/7d/Juliennejern.JPG	Citrus X latifolia	NorthAmerica
+337	sweetened condensed milk	https://upload.wikimedia.org/wikipedia/commons/3/36/Tin_of_condensed_milk.jpg	\N	Worldwide
+338	evaporated milk	https://upload.wikimedia.org/wikipedia/commons/0/0f/Dosenmilch.jpg	\N	Worldwide
+339	low-fat Swiss cheese	https://upload.wikimedia.org/wikipedia/commons/8/89/Swiss_cheese_cubes.jpg	\N	Europe
 340	graham cracker	https://upload.wikimedia.org/wikipedia/commons/8/87/Graham-Cracker-Stack.jpg	\N	NorthAmerica
 341	Gruyere cheese	https://upload.wikimedia.org/wikipedia/commons/f/fa/Gruy%C3%A8re.jpg	\N	Europe
 342	Brie cheese	https://upload.wikimedia.org/wikipedia/commons/8/88/Brie_01.jpg	\N	Europe
-343	blue cheese	\N	\N	\N
-344	goat cheese	\N	\N	\N
-345	Velveeta cheese	\N	\N	\N
-346	skim milk	\N	\N	\N
-347	almond milk	\N	\N	\N
-348	buttermilk	\N	\N	\N
-349	low-fat buttermilk	\N	\N	\N
+343	blue cheese	https://upload.wikimedia.org/wikipedia/commons/a/a8/Bleu_de_Gex.jpg	\N	Europe
+344	goat cheese	https://upload.wikimedia.org/wikipedia/commons/8/88/Cheese_55_bg_061806.jpg	\N	Worldwide
+345	Velveeta cheese	https://upload.wikimedia.org/wikipedia/commons/6/69/Velveeta_Cheese.JPG	\N	NorthAmerica
+346	skim milk	https://upload.wikimedia.org/wikipedia/commons/b/bf/Skim_milk_poured_into_cereal_bowl.jpg	\N	Worldwide
+347	almond milk	https://upload.wikimedia.org/wikipedia/commons/d/de/Home-made_almond_milk%2C_November_2012.jpg	\N	Asia
+348	buttermilk	https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Buttermilk.jpg/813px-Buttermilk.jpg	\N	Worldwide
+349	low-fat buttermilk	https://c2.staticflickr.com/4/3523/4075663345_6091b24f44_z.jpg?zz=1	\N	Worldwide
 350	coconut milk	https://upload.wikimedia.org/wikipedia/commons/9/92/Cocomilkjf.JPG	Cocos nucifera	Worldwide
-351	chocolate milk	https://upload.wikimedia.org/wikipedia/commons/7/7d/New_chocolate_milk.JPG	\N	\N
+351	chocolate milk	https://upload.wikimedia.org/wikipedia/commons/7/7d/New_chocolate_milk.JPG	\N	NorthAmerica
 352	lemongrass	https://upload.wikimedia.org/wikipedia/commons/b/bd/YosriNov04Pokok_Serai.JPG	Collinsonia canadensis	Asia
-353	chicken breast	\N	Gallus gallus	\N
-354	skinless boneless chicken breast	\N	Gallus gallus	\N
-355	skinless chicken thigh	\N	Gallus gallus	\N
-356	chicken sausage	\N	Gallus gallus	\N
-357	apple juice	\N	\N	\N
+353	chicken breast	https://pixabay.com/static/uploads/photo/2014/03/05/01/20/chicken-breast-279849_960_720.jpg	Gallus gallus	Worldwide
+354	skinless boneless chicken breast	http://www.public-domain-image.com/free-images/food-and-drink/skinned-and-deboned-chicken-breasts-meat-725x483.jpg	Gallus gallus	Worldwide
+355	skinless chicken thigh	https://upload.wikimedia.org/wikipedia/commons/3/3c/Huenerschenkel_chicken_thigh.JPG	Gallus gallus	Worldwide
+356	chicken sausage	https://upload.wikimedia.org/wikipedia/commons/9/9f/Chinese_sausages_drying.jpg	Gallus gallus	Worldwide
+357	apple juice	https://upload.wikimedia.org/wikipedia/commons/2/23/Apple_juice_with_3apples.jpg	Malus domestica	Europe
 358	quinoa	https://upload.wikimedia.org/wikipedia/commons/4/43/Red_quinoa.png	Chenopodium quinoa Willd.	SouthAmerica
-359	rutabaga	\N	Brassica napus var. napobrassica	\N
-360	arrowroot	\N	Maranta arundinacea	\N
-361	parsnip	\N	Pastinaca sativa	\N
+359	rutabaga	https://upload.wikimedia.org/wikipedia/commons/f/f5/Steckr%C3%BCbe.jpg	Brassica napus var. napobrassica	Europe
+360	arrowroot	https://upload.wikimedia.org/wikipedia/commons/e/e4/Arrowroots.JPG	Maranta arundinacea	SouthAmerica
+361	parsnip	https://upload.wikimedia.org/wikipedia/commons/b/b7/PastinakePflanzegeerntet.jpg	Pastinaca sativa	Europe
 362	raw chicken	https://c1.staticflickr.com/5/4010/4688558649_0feab91c63_b.jpg	Gallus gallus	Worldwide
 363	cooked chicken	https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cooked_chicken_strips.JPG/1280px-Cooked_chicken_strips.JPG	Gallus gallus	Worldwide
 364	orzo	https://upload.wikimedia.org/wikipedia/commons/6/61/EMS-108038-Orzo-rule.JPG	\N	Europe
-365	spaghetti	\N	\N	Europe
+365	spaghetti	https://upload.wikimedia.org/wikipedia/commons/1/12/Spaghetti_spiral,_2008.jpg	\N	Europe
 366	whole-wheat pasta	https://c2.staticflickr.com/4/3451/3185661603_ccfae65578_b.jpg	\N	Europe
-367	chicken drumstick	\N	Gallus gallus	Worldwide
-368	rotisserie chicken	\N	Gallus gallus	Worldwide
-369	cooked chicken breast	\N	Gallus gallus	Worldwide
-370	skinless chicken drumstick	\N	Gallus gallus	Worldwide
-371	okra	\N	Abelmoschus esculentus	\N
-372	chicken thigh	\N	Gallus gallus	Worldwide
+367	chicken drumstick	https://upload.wikimedia.org/wikipedia/commons/8/80/Rosemary_chicken.jpg	Gallus gallus	Worldwide
+368	rotisserie chicken	https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/RotisserieChicken.jpg/1024px-RotisserieChicken.jpg	Gallus gallus	Worldwide
+369	cooked chicken breast	https://pixabay.com/static/uploads/photo/2015/12/07/17/46/chicken-1081088_960_720.jpg	Gallus gallus	Worldwide
+370	skinless chicken drumstick	http://www.publicdomainpictures.net/pictures/60000/nahled/seasoned-chicken-legs.jpg	Gallus gallus	Worldwide
+371	okra	https://upload.wikimedia.org/wikipedia/commons/3/32/Ladies%27_Finger_BNC.jpg	Abelmoschus esculentus	Africa
+372	chicken thigh	https://upload.wikimedia.org/wikipedia/commons/3/3c/Huenerschenkel_chicken_thigh.JPG	Gallus gallus	Worldwide
 373	cherry tomato	https://upload.wikimedia.org/wikipedia/commons/1/10/Tomates_cerises_Luc_Viatour.jpg	Solanum lycopersicum	NorthAmerica
 374	grape tomato	https://upload.wikimedia.org/wikipedia/commons/f/f1/Grape_tomatoes_on_the_vine.JPG	Solanum lycopersicum	Asia
 375	plum tomato	https://upload.wikimedia.org/wikipedia/commons/b/b4/Plum_Tomatoes%2C_Lexington_MA.jpg	Solanum lycopersicum	Europe
-376	skinless light chicken meat	\N	Gallus gallus	Worldwide
-377	snapper	\N	Lutjanidae	\N
-378	chicken wing	\N	Gallus gallus	\N
-379	sorghum flour	\N	\N	\N
-380	peanut	https://upload.wikimedia.org/wikipedia/commons/4/49/Peanuts_%281%29.jpg	Arachis hypogaea	\N
-381	walnut	https://upload.wikimedia.org/wikipedia/commons/7/7f/Walnuts_by_RustedStrings.jpg	Juglans regia	\N
-382	pecan	https://upload.wikimedia.org/wikipedia/commons/7/7a/Pecans-4352.jpg	Carya illinoinensis	\N
-383	roasted peanut	\N	\N	\N
-384	dry-roasted peanut	\N	\N	\N
+376	skinless light chicken meat	https://upload.wikimedia.org/wikipedia/commons/c/c0/Chicken_Breast_Raw.jpg	Gallus gallus	Worldwide
+377	snapper	https://upload.wikimedia.org/wikipedia/commons/b/b7/Red_Snapper.jpg	Lutjanidae	NorthAmerica
+378	chicken wing	https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Home-Made-Fried-Chicken-Wings-2008.jpg/1024px-Home-Made-Fried-Chicken-Wings-2008.jpg	Gallus gallus	Worldwide
+379	sorghum flour	https://c1.staticflickr.com/7/6216/6208567953_f823a4d890_b.jpg	Sorghum bicolor	Africa
+380	peanut	https://upload.wikimedia.org/wikipedia/commons/4/49/Peanuts_%281%29.jpg	Arachis hypogaea	SouthAmerica
+381	walnut	https://upload.wikimedia.org/wikipedia/commons/7/7f/Walnuts_by_RustedStrings.jpg	Juglans regia	Asia
+382	pecan	https://upload.wikimedia.org/wikipedia/commons/7/7a/Pecans-4352.jpg	Carya illinoinensis	NorthAmerica
+383	roasted peanut	https://upload.wikimedia.org/wikipedia/commons/0/0c/Peanutjar.jpg	Arachis hypogaea	SouthAmerica
+384	dry-roasted peanut	https://upload.wikimedia.org/wikipedia/commons/0/0c/Peanutjar.jpg	Arachis hypogaea	SouthAmerica
 385	collard greens	https://upload.wikimedia.org/wikipedia/commons/e/e9/Collard-Greens-Bundle.jpg	Brassica oleracea var. viridis	Europe
-386	frozen artichoke hearts	\N	Cynara scolymus	\N
-387	canned artichoke hearts	\N	Cynara scolymus	\N
-388	artichoke	\N	Cynara scolymus	\N
+386	frozen artichoke hearts	https://upload.wikimedia.org/wikipedia/commons/2/2b/Canned_marinated_artichoke_hearts.JPG	Cynara scolymus	Africa
+387	canned artichoke hearts	https://upload.wikimedia.org/wikipedia/commons/2/2b/Canned_marinated_artichoke_hearts.JPG	Cynara scolymus	Africa
+388	artichoke	https://upload.wikimedia.org/wikipedia/commons/5/5e/Artichokes_being_cooked.jpg	Cynara scolymus	Africa
 389	littleneck clam	https://upload.wikimedia.org/wikipedia/commons/4/4b/Ruditapes_philippinarum.jpg	Venerupis philippinarum	Asia
-390	caviar	\N	\N	Worldwide
-391	raw salmon	\N	Oncorhynchus tshawytscha (Walbaum)	\N
-392	canned salmon	\N	\N	\N
-393	smoked salmon	\N	\N	\N
+390	caviar	https://upload.wikimedia.org/wikipedia/commons/f/ff/Caviar_spoons.jpg	Acipenseridae sp.	Asia
+391	raw salmon	https://upload.wikimedia.org/wikipedia/commons/1/18/Salmon_Fish.JPG	Salmonidae sp.	Worldwide
+392	canned salmon	https://upload.wikimedia.org/wikipedia/commons/1/17/Bagels%27n%27Lox.jpg	Salmonidae sp.	Worldwide
+393	smoked salmon	https://upload.wikimedia.org/wikipedia/commons/9/93/Smoked_Salmon.jpg	Salmonidae sp.	Worldwide
 394	kielbasa	https://upload.wikimedia.org/wikipedia/commons/9/9a/Kielbasas.jpg	\N	Europe
 395	water chestnut	https://upload.wikimedia.org/wikipedia/commons/b/ba/Wasserkastanie_2.jpg	Eleocharis dulcis	Asia
-396	pork shoulder	\N	Sus scrofa domesticus	Worldwide
-397	pork butt	\N	Sus scrofa domesticus	Worldwide
-398	pork chop	\N	Sus scrofa domesticus	Worldwide
-399	pork liver	\N	Sus scrofa domesticus	Worldwide
-400	pork belly	\N	Sus scrofa domesticus	Worldwide
-401	lean pork chop	\N	Sus scrofa domesticus	Worldwide
-402	pork loin	\N	Sus scrofa domesticus	Worldwide
-403	lean pork loin	\N	Sus scrofa domesticus	Worldwide
-404	pork sparerib	\N	Sus scrofa domesticus	Worldwide
-405	cooked lamb stew meat	\N	Ovis aries	Europe
-406	lamb	\N	Ovis aries	Europe
-407	lamb shoulder	\N	Ovis aries	Europe
-408	lamb stew meat	\N	Ovis aries	Europe
-409	lamb loin	\N	Ovis aries	Europe
+396	pork shoulder	https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Pork_shoulder_on_green_egg_smoker.jpg/1024px-Pork_shoulder_on_green_egg_smoker.jpg	Sus scrofa domesticus	Worldwide
+397	pork butt	https://c1.staticflickr.com/9/8363/8334259335_21d195f5cf_b.jpg	Sus scrofa domesticus	Worldwide
+398	pork chop	https://upload.wikimedia.org/wikipedia/commons/d/d6/Pork-chops-001.jpg	Sus scrofa domesticus	Worldwide
+399	pork liver	https://upload.wikimedia.org/wikipedia/commons/2/2f/Pig%27s_liver_with_sauteed_onion.jpg	Sus scrofa domesticus	Worldwide
+400	pork belly	https://upload.wikimedia.org/wikipedia/commons/4/49/Schweinebauch-2.jpg	Sus scrofa domesticus	Worldwide
+401	lean pork chop	https://upload.wikimedia.org/wikipedia/commons/d/d6/Pork-chops-001.jpg	Sus scrofa domesticus	Worldwide
+402	pork loin	https://upload.wikimedia.org/wikipedia/commons/0/05/Poledwiczka_wieprzowa.JPG	Sus scrofa domesticus	Worldwide
+403	lean pork loin	https://upload.wikimedia.org/wikipedia/commons/0/05/Poledwiczka_wieprzowa.JPG	Sus scrofa domesticus	Worldwide
+404	pork sparerib	https://upload.wikimedia.org/wikipedia/commons/0/0d/Raw_pork_spareribs.jpg	Sus scrofa domesticus	Worldwide
+405	cooked lamb stew meat	https://pixabay.com/static/uploads/photo/2014/12/28/09/54/roast-581759_960_720.jpg	Ovis aries	Europe
+406	lamb	https://upload.wikimedia.org/wikipedia/commons/f/f1/Lamb_meat_%282%29.jpg	Ovis aries	Europe
+407	lamb shoulder	https://upload.wikimedia.org/wikipedia/commons/d/d6/Lamb_meat.jpg	Ovis aries	Europe
+408	lamb stew meat	https://upload.wikimedia.org/wikipedia/commons/2/24/Mutton_chop.jpg	Ovis aries	Europe
+409	lamb loin	https://c1.staticflickr.com/9/8184/8141603822_1ec4e0900f.jpg	Ovis aries	Europe
 410	goat	https://upload.wikimedia.org/wikipedia/commons/6/63/Goat_chops.jpg	Capra aegagrus hircus	Asia
-411	hazelnut	\N	Corylus spp.	\N
+411	hazelnut	https://upload.wikimedia.org/wikipedia/commons/4/4e/Corylus_avellana_ripe_nuts.jpg	Corylus spp.	Europe
 412	squid	https://upload.wikimedia.org/wikipedia/commons/f/fb/Lipari-Calmars.jpg	Loligoidae and Ommastrephidae	Worldwide
 413	cooked octopus	https://upload.wikimedia.org/wikipedia/commons/0/09/Octopuses_in_Tsukiji.JPG	Octopus vulgaris Lamarck	Worldwide
-414	wasabi	\N	Wasabia japonica	\N
-415	horseradish	\N	\N	\N
-416	laver seaweed	\N	Porphyra laciniata	\N
-417	stevia	https://upload.wikimedia.org/wikipedia/commons/9/9a/Stevia_plant.jpg	\N	SouthAmerica
-418	wonton wrappers	\N	\N	Asia
-419	egg noodles	\N	\N	\N
-420	chow mein noodles	\N	\N	\N
-421	cooked spaghetti	\N	\N	\N
-422	cooked egg noodles	\N	\N	\N
-423	soba noodles	\N	\N	\N
-424	vermicelli	https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Fideo_%28coiled_vermicelli%29.JPG/1280px-Fideo_%28coiled_vermicelli%29.JPG	\N	\N
+414	wasabi	https://upload.wikimedia.org/wikipedia/commons/3/3c/WasabiOnOroshigane.jpg	Wasabia japonica	Asia
+415	horseradish	https://upload.wikimedia.org/wikipedia/commons/c/ca/Kren_Verkauf.jpg	Armoracia rusticana	Europe
+416	laver seaweed	https://upload.wikimedia.org/wikipedia/commons/b/bc/Porphyra_umbilicalis.jpg	Porphyra umbilicalis	Europe
+417	stevia	https://upload.wikimedia.org/wikipedia/commons/9/9a/Stevia_plant.jpg	Stevia rebaudiana	SouthAmerica
+418	wonton wrappers	https://upload.wikimedia.org/wikipedia/commons/b/b7/Wonton_1.JPG	\N	Asia
+419	egg noodles	https://upload.wikimedia.org/wikipedia/commons/8/86/Egg_noodles.JPG	\N	Asia
+420	chow mein noodles	https://upload.wikimedia.org/wikipedia/commons/8/83/Chow_mein_by_Aaron_Gustafson_in_Austin,_Texas.jpg	\N	Asia
+421	cooked spaghetti	https://pixabay.com/static/uploads/photo/2015/05/24/14/02/spaghetti-781795_960_720.jpg	\N	Europe
+422	cooked egg noodles	https://upload.wikimedia.org/wikipedia/commons/e/e6/Beef_Stroganoff_%26_Egg_Noodles.jpg	\N	Asia
+423	soba noodles	https://pixabay.com/static/uploads/photo/2015/06/08/14/19/soba-noodles-801660_960_720.jpg	\N	Asia
+424	vermicelli	https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Fideo_%28coiled_vermicelli%29.JPG/1280px-Fideo_%28coiled_vermicelli%29.JPG	\N	Europe
 425	ramen noodles	https://upload.wikimedia.org/wikipedia/commons/a/a8/Fresh_ramen_noodle_001.jpg	\N	Asia
 426	udon noodles	https://upload.wikimedia.org/wikipedia/commons/9/97/Kakeudon.jpg	\N	Asia
-427	cellophane noodles	\N	\N	\N
-428	flour tortilla	\N	\N	\N
-429	corn tortilla	\N	\N	\N
-430	tortilla chips	\N	\N	\N
-431	Brussels sprouts	\N	Brassica oleracea (Gemmifera Group)	\N
-432	pine nut	\N	Pinus spp.	\N
-433	low-fat yogurt	\N	\N	\N
+427	cellophane noodles	https://upload.wikimedia.org/wikipedia/commons/d/df/Dongfen.JPG	\N	Asia
+428	flour tortilla	https://upload.wikimedia.org/wikipedia/commons/5/56/NCI_flour_tortillas.jpg	\N	Europe
+429	corn tortilla	https://upload.wikimedia.org/wikipedia/commons/1/18/Tortillas_de_maiz_blanco_%28M%C3%A9xico%29_01.jpg	\N	NorthAmerica
+430	tortilla chips	https://upload.wikimedia.org/wikipedia/commons/e/e9/4003_-_Zermatt_-_Restaurant_Weisshorn.JPG	\N	NorthAmerica
+431	Brussels sprouts	https://upload.wikimedia.org/wikipedia/commons/2/23/Brussels_sprout_closeup.jpg	Brassica oleracea (Gemmifera Group)	Europe
+432	pine nut	https://upload.wikimedia.org/wikipedia/commons/b/b7/KoreanPineSeeds.jpg	Pinus spp.	Worldwide
+433	low-fat yogurt	https://upload.wikimedia.org/wikipedia/commons/e/ea/Turkish_strained_yogurt.jpg	\N	Europe
 434	fresh cream	https://upload.wikimedia.org/wikipedia/commons/6/6c/Strawberries_and_cr%C3%A8me_fra%C3%AEche.jpg	\N	Europe
-435	dulce de leche	\N	\N	\N
-436	almond butter	\N	\N	\N
+435	dulce de leche	https://upload.wikimedia.org/wikipedia/commons/5/5a/DulceDeLeche.jpg	\N	SouthAmerica
+436	almond butter	https://upload.wikimedia.org/wikipedia/en/1/16/Almond_butter.JPG	Prunus dulcis	Asia
 437	oatmeal	https://upload.wikimedia.org/wikipedia/commons/3/39/Oatmeal.jpg	Avena sativa	Europe
-438	turnip	\N	Brassica rapa (Rapifera Group)	\N
-439	duck egg	\N	\N	\N
-440	plum	\N	Prunus spp.	\N
-441	pepperoni	\N	\N	\N
-442	buckwheat flour	\N	\N	\N
+438	turnip	https://upload.wikimedia.org/wikipedia/commons/d/d3/Turnip_2622027.jpg	Brassica rapa (Rapifera Group)	Europe
+439	duck egg	https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Duck_eggs.jpg/717px-Duck_eggs.jpg	\N	Worldwide
+440	plum	https://upload.wikimedia.org/wikipedia/commons/c/c0/Black_Amber_Plum_DS.jpg	Prunus spp.	Europe
+441	pepperoni	https://upload.wikimedia.org/wikipedia/commons/a/a5/Salami_pepperoni_ZIMBO.jpg	\N	NorthAmerica
+442	buckwheat flour	https://upload.wikimedia.org/wikipedia/commons/a/a0/Buckwheat_and_products_from_it_01.jpg	Fagopyrum esculentum	Asia
 443	andouille sausage	https://upload.wikimedia.org/wikipedia/commons/5/5a/Andouille.jpg	\N	Europe
 444	puff pastry	https://upload.wikimedia.org/wikipedia/commons/9/90/Pate_feuilletee_2.jpg	\N	Europe
 445	phyllo dough	https://upload.wikimedia.org/wikipedia/commons/9/9e/Baklava.jpg	\N	Asia
-446	pie crust	\N	\N	\N
-447	beef brisket	https://pixabay.com/static/uploads/photo/2016/03/05/19/42/beef-1238479_960_720.jpg	Bos taurus	\N
-448	corned beef brisket	https://upload.wikimedia.org/wikipedia/commons/7/7b/Cooked_corned_beef.JPG	Bos taurus	\N
+446	pie crust	https://upload.wikimedia.org/wikipedia/commons/f/ff/Flaky_Vegan_Pie_Crust_%284277580052%29.jpg	\N	Worldwide
+447	beef brisket	https://pixabay.com/static/uploads/photo/2016/03/05/19/42/beef-1238479_960_720.jpg	Bos taurus	Worldwide
+448	corned beef brisket	https://upload.wikimedia.org/wikipedia/commons/7/7b/Cooked_corned_beef.JPG	Bos taurus	Worldwide
 449	self-rising flour	https://upload.wikimedia.org/wikipedia/commons/0/09/Flours.jpg	\N	Worldwide
-450	pate	https://upload.wikimedia.org/wikipedia/commons/3/37/Foie_gras_IMGP2356.jpg	\N	\N
-451	slivered almonds	https://c1.staticflickr.com/5/4035/4364750275_ef4ae80661_b.jpg	\N	\N
-452	flank steak	https://upload.wikimedia.org/wikipedia/commons/6/64/Flank_Steak_piece_of_meat.jpg	Bos taurus	\N
-453	beef sirloin	https://upload.wikimedia.org/wikipedia/commons/5/56/Faux-filet.jpg	Bos taurus	\N
+450	pâté	https://upload.wikimedia.org/wikipedia/commons/3/37/Foie_gras_IMGP2356.jpg	\N	Europe
+451	slivered almonds	https://c1.staticflickr.com/5/4035/4364750275_ef4ae80661_b.jpg	Prunus dulcis	Asia
+452	flank steak	https://upload.wikimedia.org/wikipedia/commons/6/64/Flank_Steak_piece_of_meat.jpg	Bos taurus	Worldwide
+453	beef sirloin	https://upload.wikimedia.org/wikipedia/commons/5/56/Faux-filet.jpg	Bos taurus	Worldwide
 454	galangal	https://upload.wikimedia.org/wikipedia/commons/e/e4/Lesser_galangal_Kencur_Luc_Viatour.jpg	Zingiberaceae family	Asia
-455	beef tenderloin	https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Eye_Fillet,_Grass-Fed_Beef.jpg/1280px-Eye_Fillet,_Grass-Fed_Beef.jpg	Bos taurus	\N
+455	beef tenderloin	https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Eye_Fillet,_Grass-Fed_Beef.jpg/1280px-Eye_Fillet,_Grass-Fed_Beef.jpg	Bos taurus	Worldwide
 456	Creole seasoning	https://c1.staticflickr.com/5/4074/4827885241_799d70583b_z.jpg	\N	NorthAmerica
 457	Italian seasoning	https://upload.wikimedia.org/wikipedia/commons/3/33/Italian_Herb_Mix,_Penzeys_Spices,_Arlington_Heights_MA.jpg	\N	Europe
 458	mirin	https://upload.wikimedia.org/wikipedia/commons/a/a1/Japanese_Mirin.JPG	\N	Asia
@@ -771,26 +772,26 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 472	bulgogi sauce	https://upload.wikimedia.org/wikipedia/commons/7/73/Korean.food-Bulgogi-02.jpg	\N	Asia
 473	cherry	https://upload.wikimedia.org/wikipedia/commons/c/c7/Italienische_S%C3%BC%C3%9Fkirschen.JPG	Prunus avium	Europe
 474	Anaheim pepper	https://upload.wikimedia.org/wikipedia/commons/4/40/New_Mexico_green_chile.jpg	Capsicum anuum	NorthAmerica
-475	peach	\N	Prunus persica	\N
-476	orange zest	\N	Citrus sinensis	\N
-477	applesauce	\N	\N	\N
+475	peach	https://upload.wikimedia.org/wikipedia/commons/9/9e/Autumn_Red_peaches.jpg	Prunus persica	Asia
+476	orange zest	https://upload.wikimedia.org/wikipedia/commons/c/c3/Zesting_an_orange.jpg	Citrus sinensis	Asia
+477	applesauce	https://upload.wikimedia.org/wikipedia/commons/f/fa/Applesauce.jpg	Malus domestica	Europe
 478	kombu	https://upload.wikimedia.org/wikipedia/commons/1/10/Kombu.jpg	Laminaria spp.	Asia
 479	shredded coconut	https://c2.staticflickr.com/2/1282/4689571459_fd6db8e913_b.jpg	Cocos nucifera	Worldwide
 480	paneer	https://upload.wikimedia.org/wikipedia/commons/3/36/Panir_Paneer_Indian_cheese_fresh.jpg	\N	Asia
 481	kimchi	https://upload.wikimedia.org/wikipedia/commons/a/a3/Gimchi.jpg	\N	Asia
-482	garlic salt	\N	\N	\N
+482	garlic salt	https://upload.wikimedia.org/wikipedia/commons/6/66/GarlicSalt.jpg	\N	Worldwide
 483	Nutella	https://upload.wikimedia.org/wikipedia/commons/9/9b/Nutella_ak.jpg	\N	Europe
 484	Old Bay Seasoning	https://upload.wikimedia.org/wikipedia/commons/4/4f/Old_Bay_Seasoning.jpg	\N	NorthAmerica
-485	tomatillo	\N	Physalis philadelphica	\N
+485	tomatillo	https://upload.wikimedia.org/wikipedia/commons/9/9f/Tomatillo.jpg	Physalis philadelphica	NorthAmerica
 486	whiskey	https://upload.wikimedia.org/wikipedia/commons/8/8f/Irish_Whiskey2.jpg	\N	Europe
 487	Baileys Irish Cream	https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Baileys_with_Baileys_Rock.JPG/576px-Baileys_with_Baileys_Rock.JPG	\N	Europe
-488	dry custard	https://upload.wikimedia.org/wikipedia/commons/7/7d/Bird's-Custard.jpg	\N	Europe
+488	dry custard	https://upload.wikimedia.org/wikipedia/commons/7/7d/Bird%27s-Custard.jpg	\N	Europe
 489	round steak	https://upload.wikimedia.org/wikipedia/commons/9/9e/Beef_round_top_round_steak_in_pan,_raw.jpg	Bos taurus	Worldwide
 490	taro	https://upload.wikimedia.org/wikipedia/commons/c/c2/Colocasia_esculenta_dsc07801.jpg	Colocasia esculenta	Asia
-491	jicama	\N	Pachyrhizus spp.	\N
-492	tangerine	\N	Citrus reticulata	\N
-493	rhubarb	\N	Rheum rhabarbarum	\N
-494	xylitol	https://upload.wikimedia.org/wikipedia/commons/9/95/Xylitol_crystals.jpg	Xylitol	\N
+491	jicama	https://upload.wikimedia.org/wikipedia/commons/5/5a/Pachyrhizus_erosus_2.jpg	Pachyrhizus spp.	NorthAmerica
+492	tangerine	https://upload.wikimedia.org/wikipedia/commons/2/2a/TangerineFruit.jpg	Citrus reticulata	Africa
+493	rhubarb	https://upload.wikimedia.org/wikipedia/commons/9/9e/CSA-Rhubarb.jpg	Rheum rhabarbarum	Asia
+494	xylitol	https://upload.wikimedia.org/wikipedia/commons/9/95/Xylitol_crystals.jpg	Xylitol	Asia
 495	corn husk	http://res.freestockphotos.biz/pictures/7/7801-close-up-of-a-dried-corn-husk-pv.jpg	Zea mays	NorthAmerica
 496	crawfish	https://upload.wikimedia.org/wikipedia/commons/3/3b/Lots_of_crawfish.jpg	Astacus, Orconectes, and Procambarus spp.	NorthAmerica
 497	blue crab	https://upload.wikimedia.org/wikipedia/commons/9/99/The_Childrens_Museum_of_Indianapolis_-_Atlantic_blue_crab.jpg	Callinectes sapidus Rathbun	NorthAmerica
@@ -803,7 +804,7 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 504	skirt steak	https://upload.wikimedia.org/wikipedia/commons/2/2a/Skirt_Steak.jpg	Bos taurus	Worldwide
 505	garlic paste	https://upload.wikimedia.org/wikipedia/commons/4/43/Roasted_Garlic_Paste.jpg	Allium sativum	Asia
 506	file powder	https://upload.wikimedia.org/wikipedia/commons/5/58/Zherbes.jpg	Sassafras albidum	NorthAmerica
-507	seasoned salt	https://upload.wikimedia.org/wikipedia/commons/0/04/Lawry's_Seasoned_Salt.jpg	\N	NorthAmerica
+507	seasoned salt	https://upload.wikimedia.org/wikipedia/commons/0/04/Lawry%27s_Seasoned_Salt.jpg	\N	NorthAmerica
 508	chili oil	https://upload.wikimedia.org/wikipedia/commons/b/b8/Chilioil.jpg	\N	Asia
 509	lemon pepper	https://upload.wikimedia.org/wikipedia/commons/0/01/Lemon_pepper_-_Zitronenpfeffer.jpg	\N	Worldwide
 510	vodka	https://upload.wikimedia.org/wikipedia/commons/c/c6/Wodkaflaschen.JPG	\N	Asia
@@ -840,7 +841,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 2	65	1 cup brown lentils	1.0	cup	c	1
 2	68	1 can crushed tomatoes	1.0	can	can	2
 2	69	1 cauliflower head, cut into bite size pieces	1.0	\N	\N	3
-2	185	2 tablespoons masala molida, also known as berbere	2.0	tablespoons	T	4
+2	190	2 tablespoons masala molida, also known as berbere	2.0	tablespoons	T	4
 2	23	2 garlic cloves, minced	2.0	cloves	cloves	5
 2	4	1 onion, diced	1.0	\N	\N	6
 2	38	2 cups frozen peas	2.0	cups	c	7
@@ -1434,7 +1435,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 52	0	100g textured vegetable protein	100.0	g	g	12
 52	86	1 tbsp dry thyme	1.0	tbsp	T	13
 53	86	1/2 tsp dried thyme leaves	0.5	tsp	t	0
-53	450	1/2 lb goose or duck, liver pate or 17 oz. can liver pate	0.5	lb	lb	1
+53	450	1/2 lb goose or duck, liver pâté or 17 oz. can liver pâté	0.5	lb	lb	1
 53	14	1 egg, separated	1.0	\N	\N	2
 53	20	2 tsps milk	2.0	tsps	t	3
 53	55	1 8 oz. pkg. mushrooms, finely chopped	8.0	oz	oz	4
@@ -1449,7 +1450,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 54	10	3 Tbsps butter	3.0	Tbsps	Tbsps	2
 54	14	1 beaten egg	1.0	\N	\N	3
 54	23	1 clove garlic, cut before using	1.0	clove	clove	4
-54	450	1 can liver pate	1.0	can	can	5
+54	450	1 can liver pâté	1.0	can	can	5
 54	0	1 Tbsp mixed herbs	1.0	Tbsp	Tbsp	6
 54	55	1 cup finely chopped mushrooms	1.0	cup	c	7
 55	241	1 medium avocado, mashed to a paste	1.0	\N	\N	0
@@ -1557,7 +1558,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 63	45	1 Tablespoon Dried Oregano	1.0	Tablespoon	Tablespoon	9
 63	86	1 Tablespoon Dried Thyme	1.0	Tablespoon	Tablespoon	10
 63	23	3 large cloves of garlic, chopped	3.0	cloves	cloves	11
-63	135	1 jalapeno pepper, seeded	1.0	\N	\N	12
+63	135	1 jalapeño pepper, seeded	1.0	\N	\N	12
 63	81	1 red or orange Bell pepper, chopped coarse	1.0	\N	\N	13
 63	206	1 10 oz jar of oysters or 8-10 oysters with their juices	10.0	oz	oz	14
 63	254	1/2 C peanut oil	0.5	C	C	15
@@ -1734,7 +1735,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 75	94	2 green onions, roughly chopped	2.0	\N	\N	4
 75	34	1 tablespoon Ground Allspice	1.0	tablespoon	T	5
 75	142	2 tsp ground ginger	2.0	tsp	t	6
-75	135	4 jalapenos, seeded and chopped	4.0	\N	\N	7
+75	135	4 jalapeños, seeded and chopped	4.0	\N	\N	7
 75	4	1/2 onion, roughly chopped	0.5	\N	\N	8
 75	96	2 tsp course sea salt	2.0	tsp	t	9
 75	154	4 cups local or organic sweet potatoes peeled and chopped into 1/2 inch cubes	4.0	cups	c	10
@@ -1748,7 +1749,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 76	94	2 green onions, roughly chopped	2.0	\N	\N	5
 76	142	1 tsp ground ginger	1.0	tsp	t	6
 76	457	1 tsp italian seasoning	1.0	tsp	t	7
-76	135	1 jalapeno, roughly chopped	1.0	\N	\N	8
+76	135	1 jalapeño, roughly chopped	1.0	\N	\N	8
 76	139	3 limes, juiced	3.0	\N	\N	9
 76	4	1/2 onion, roughly chopped	0.5	\N	\N	10
 76	58	1 tsp pepper	1.0	tsp	t	11
@@ -1843,7 +1844,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 83	12	1 teaspoon ground cinnamon	1.0	teaspoon	t	5
 83	290	1 teaspoon ground cloves	1.0	teaspoon	t	6
 83	142	1 teaspoon ground ginger	1.0	teaspoon	t	7
-83	135	1 jalapeno, chopped	1.0	\N	\N	8
+83	135	1 jalapeño, chopped	1.0	\N	\N	8
 83	74	1/4 cup light soy sauce	0.25	cup	c	9
 83	326	1 lotus root	1.0	\N	\N	10
 83	400	1 pound pork belly	1.0	pound	lb	11
@@ -2176,11 +2177,11 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 111	271	3 cups chicken broth	3.0	cups	c	2
 111	15	1 cup All-purpose Flour	1.0	cup	c	3
 111	23	1 large garlic clove, miced	1.0	clove	clove	4
-111	311	2 cups • heavy cream, for whipping	2.0	cups	c	5
+111	311	2 cups heavy cream, for whipping	2.0	cups	c	5
 111	41	2 tablespoons sweet Hungarian paprika	2.0	tablespoons	T	6
 111	4	1 cup onion, finely chopped	1.0	cup	c	7
 111	396	4 pounds boneless pork shoulder, cut in 2-inch cubes	4.0	pounds	lb	8
-111	6	1/4 teaspoon • Salt	0.25	teaspoon	t	9
+111	6	1/4 teaspoon Salt	0.25	teaspoon	t	9
 111	459	1 pound (drained weight) sauerkraut	1.0	pound	lb	10
 111	126	1/2 cup sour cream	0.5	cup	c	11
 111	79	1/4 cup tomato puree or plain tomato sauce	0.25	cup	c	12
@@ -2190,7 +2191,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 112	223	1 teaspoon of Coriander	1.0	teaspoon	t	3
 112	48	1 teaspoon of Cumin	1.0	teaspoon	t	4
 112	80	1/2 teaspoon of Curry	0.5	teaspoon	t	5
-112	185	1 teaspoon of Garam Masala*	1.0	teaspoon	t	6
+112	185	1 teaspoon of Garam Masala	1.0	teaspoon	t	6
 112	23	3 cloves of Garlic	3.0	cloves	cloves	7
 112	141	1/2 teaspoon of Ginger	0.5	teaspoon	t	8
 112	260	1 pound of Ground Turkey or 3 cups Leftover Turkey, chopped	1.0	pound	lb	9
@@ -2402,7 +2403,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 130	261	2 tablespoons shallot, finely minced	2.0	tablespoons	T	11
 130	7	1/4 cup water	0.25	cup	c	12
 130	110	1/2 cup whole wheat pastry flour	0.5	cup	c	13
-131	45	¼ tsp dried oregano	0.25	tsp	t	0
+131	45	1/4 tsp dried oregano	0.25	tsp	t	0
 131	238	1 eggplant (aubergine) or 4 cups chopped	1.0	\N	\N	1
 131	72	2 Tbsp extra-virgin olive oil	2.0	Tbsp	Tbsp	2
 131	87	2 Tbsp chopped fresh basil	2.0	Tbsp	Tbsp	3
@@ -2596,9 +2597,9 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 149	0	1 large golden beet	1.0	\N	\N	3
 149	135	1 jalapeño, roasted	1.0	\N	\N	4
 149	18	1 tablespoon lemon juice	1.0	tablespoon	T	5
-149	72	¼ cup olive oil	0.25	cup	c	6
+149	72	1/4 cup olive oil	0.25	cup	c	6
 149	6	Salt to taste	4.0	servings	servings	7
-149	301	¼ cup tahini (sesame paste)	0.25	cup	c	8
+149	301	1/4 cup tahini (sesame paste)	0.25	cup	c	8
 149	162	Turmeric, paprika and olive oil for sprinkling on top	4.0	servings	servings	9
 149	438	1 large turnip	1.0	\N	\N	10
 150	237	2 cucumbers, seeded and sliced	2.0	\N	\N	0
@@ -3670,7 +3671,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 240	155	1/2 C of yams, skinned and coarse grated	0.5	cup	c	9
 240	4	1/2 C of red or other onion, skinned and coarse grated	0.5	cup	c	10
 241	15	7 cups bread flour	7.0	cups	c	0
-241	50	¼ cup brown sugar	0.25	cup	c	1
+241	50	1/4 cup brown sugar	0.25	cup	c	1
 241	14	2 eggs	2.0	\N	\N	2
 241	6	1/4 teaspoon salt	0.25	teaspoon	t	3
 241	71	1/2 cup vegetable oil	0.5	cup	c	4
@@ -3928,7 +3929,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 265	139	2 limes, juiced	2.0	\N	\N	4
 265	72	Olive oil	4.0	servings	servings	5
 265	280	Salt and pepper	4.0	servings	servings	6
-265	261	1 cup shallot, diced (or ¼ red onion)	1.0	cup	c	7
+265	261	1 cup shallot, diced (or 1/4 red onion)	1.0	cup	c	7
 265	47	1 medium tomato, seeded and finely chopped	1.0	\N	\N	8
 266	8	2 teaspoons baking powder	2.0	teaspoons	t	0
 266	10	3 teaspoons butter	3.0	teaspoons	t	1
@@ -3957,7 +3958,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 267	0	1 bag of frozen french fries	1.0	bag	bag	4
 267	23	3 garlic cloves, minced	3.0	cloves	cloves	5
 267	3	1 green bell pepper, julienned	1.0	\N	\N	6
-267	135	1 jalapeno pepper, seeded and chopped finely	1.0	\N	\N	7
+267	135	1 jalapeño pepper, seeded and chopped finely	1.0	\N	\N	7
 267	375	8 inches plum tomatoes, halved and cut into 1 chunks	8.0	inches	inches	8
 267	76	1 red bell pepper, julienned	1.0	\N	\N	9
 267	100	1 teaspoon red wine vinegar	1.0	teaspoon	t	10
@@ -4033,7 +4034,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 273	72	extra-virgin olive oil	4.0	servings	servings	1
 273	452	1 1 pound flank steak	1.0	pound	lb	2
 273	23	3 garlic clove, minced	3.0	clove	clove	3
-273	135	1/2 large jalapeno, seeded and minced ( whole 1 if brave)	0.5	\N	\N	4
+273	135	1/2 large jalapeño, seeded and minced ( whole 1 if brave)	0.5	\N	\N	4
 273	18	1/2 Lemon, juice of	0.5	\N	\N	5
 273	139	Juice of large 1/2 lime	0.5	\N	\N	6
 273	280	Salt and pepper	4.0	servings	servings	7
@@ -4043,7 +4044,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 274	23	3 clv garlic, chopped	3.0	\N	\N	1
 274	94	3 green onions, sliced	3.0	\N	\N	2
 274	17	1 tablespoon (15 ml) honey	15.0	ml	ml	3
-274	135	1 jalapeno pepper (seeded), 1/4 inch chunks	1.0	\N	\N	4
+274	135	1 jalapeño pepper (seeded), 1/4 inch chunks	1.0	\N	\N	4
 274	139	2 tablespoons (30 ml) lime juice	30.0	ml	ml	5
 274	262	1 mango (seeded), 1/2 inch chunks	1.0	\N	\N	6
 274	113	1 fresh pineapple, 1/2 inch chunks	1.0	\N	\N	7
@@ -4054,7 +4055,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 275	428	8 soft taco flour tortillas	8.0	\N	\N	2
 275	92	2 tablespoons fresh cilantro, minced	2.0	tablespoons	T	3
 275	161	1/4 cup nonfat Greek yogurt	0.25	cup	c	4
-275	135	1 small jalapeno, seeded and finely minced (use more or less based on personal preference)	1.0	\N	\N	5
+275	135	1 small jalapeño, seeded and finely minced (use more or less based on personal preference)	1.0	\N	\N	5
 275	156	1 cup shredded lettuce	1.0	cup	c	6
 275	139	1 tablespoon fresh lime juice	1.0	tablespoon	T	7
 275	336	1 tablespoon lime zest	1.0	tablespoon	T	8
@@ -4091,7 +4092,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 278	429	12 10-inch corn tortillas	12.0	10-inch	10-inch	5
 278	23	4 cloves garlic	4.0	cloves	cloves	6
 278	48	ground cumin	2.0	servings	servings	7
-278	135	1 small jalapeno	1.0	\N	\N	8
+278	135	1 small jalapeño	1.0	\N	\N	8
 278	138	1 lime	1.0	\N	\N	9
 278	334	shredded monterey jack cheese	2.0	servings	servings	10
 278	192	1 navel orange	1.0	\N	\N	11
@@ -4159,7 +4160,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 283	23	1 clove garlic, minced	1.0	clove	clove	5
 283	143	1 teaspoon garlic powder	1.0	teaspoon	t	6
 283	48	1 teaspoon ground cumin	1.0	teaspoon	t	7
-283	135	1/2 jalapeno, minced	0.5	\N	\N	8
+283	135	1/2 jalapeño, minced	0.5	\N	\N	8
 283	139	Juice of 1 lime	1.0	\N	\N	9
 283	264	2 kiwis, peeled and and diced	2.0	\N	\N	10
 283	97	1/2 teaspoon Kosher salt	0.5	teaspoon	t	11
@@ -4185,7 +4186,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 285	92	1/2 cup fresh cilantro (large stems removed)	0.5	cup	c	1
 285	23	1 clove garlic, minced	1.0	clove	clove	2
 285	48	1/4 - 1/2 t. ground cumin	0.25	t	t	3
-285	135	1 whole jalapeno, quartered, seeds removed, sliced thin.	1.0	\N	\N	4
+285	135	1 whole jalapeño, quartered, seeds removed, sliced thin.	1.0	\N	\N	4
 285	139	juice from 1/2 a lime	2.0	\N	\N	5
 285	4	1/4 of an onion chopped (approximately 1/4 cup)	0.25	\N	\N	6
 285	6	Salt to taste	4.0	servings	servings	7
@@ -4641,7 +4642,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 322	165	10 ounces Frozen chopped Spinach, with excess water squeezed out	10.0	ounces	oz	3
 322	311	1/2 cup Half & Half or Heavy Cream	0.5	cup	c	4
 322	334	12 ounces Montery Jack & Cheddar Cheese Mix	12.0	ounces	oz	5
-322	135	2 Jalapenos, finely chopped	2.0	\N	\N	6
+322	135	2 jalapeños, finely chopped	2.0	\N	\N	6
 322	316	3 cups Marinara Sauce (home made or a jar of 24 oz store bought)	3.0	cups	c	7
 322	56	12 Baby Portabella Mushrooms, sliced	12.0	\N	\N	8
 322	280	Salt & Pepper, to taste	6.0	servings	servings	9
@@ -5161,7 +5162,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 365	76	1 cup sweet peppers, diced	1.0	cup	c	11
 365	366	6 ounces whole wheat spaghetti	6.0	ounces	oz	12
 366	0	8 oz bamboo shoots (sliced and drained)	8.0	oz	oz	0
-366	50	¼ cup brown sugar	0.25	cup	c	1
+366	50	1/4 cup brown sugar	0.25	cup	c	1
 366	353	1 lb chicken breast	1.0	lb	lb	2
 366	350	13.5 oz coconut milk	13.5	oz	oz	3
 366	163	1 teaspoon fish sauce (nam pla)	1.0	teaspoon	t	4
@@ -5312,7 +5313,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 377	53	2 daikon radishes, sliced thin on the bias	2.0	\N	\N	5
 377	163	1/2 cup fish sauce	0.5	cup	c	6
 377	23	1 clove garlic, minced	1.0	clove	clove	7
-377	135	1 sliced jalapeno for extra heat	1.0	\N	\N	8
+377	135	1 sliced jalapeño for extra heat	1.0	\N	\N	8
 377	139	1/2 cup lime juice	0.5	cup	c	9
 377	281	1/3 cup mayonnaise	0.3333333333333333	cup	c	10
 377	297	1/4 cup rice vinegar	0.25	cup	c	11
@@ -5342,25 +5343,24 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 379	23	1 1/2 garlic clove	1.5	cloves	cloves	1
 379	141	1/2 teaspoon ginger	0.5	teaspoon	t	2
 379	30	3/4 cup hoisin sauce	0.75	cup	c	3
-379	30	Garlic Lime Hoisin Sauce	10.0	servings	servings	4
-379	491	1 jicama	1.0	\N	\N	5
-379	156	1 head of butter leaf lettuce	1.0	head	head	6
-379	139	2 tablespoons lime	2.0	tablespoons	T	7
-379	76	1 red bell pepper	1.0	\N	\N	8
-379	502	12 rice paper sheets	12.0	sheet	sheet	9
-379	87	12 leaves of Thai basil	12.0	leaves	leaves	10
-379	82	1 yellow bell pepper	1.0	\N	\N	11
-379	32	1 teaspoon Sriracha (or to taste)	1.0	teaspoon	t	12
+379	491	1 jicama	1.0	\N	\N	4
+379	156	1 head of butter leaf lettuce	1.0	head	head	5
+379	139	2 tablespoons lime	2.0	tablespoons	T	6
+379	76	1 red bell pepper	1.0	\N	\N	7
+379	502	12 rice paper sheets	12.0	sheet	sheet	8
+379	87	12 leaves of Thai basil	12.0	leaves	leaves	9
+379	82	1 yellow bell pepper	1.0	\N	\N	10
+379	32	1 teaspoon Sriracha (or to taste)	1.0	teaspoon	t	11
 380	92	cilantro sprigs	1.0	sprigs	sprigs	0
 380	237	1 cucumber, peeled in stripes, and sliced thinly	1.0	\N	\N	1
 380	163	2 tablespoons of fish sauce	2.0	tablespoons	T	2
 380	23	1 tablespoon minced garlic	1.0	tablespoon	T	3
 380	58	2 tablespoons fresh ground black pepper	2.0	tablespoons	T	4
-380	135	jalapeno	6.0	servings	servings	5
+380	135	jalapeño	6.0	servings	servings	5
 380	398	1 pound of pork chops, shoulder or loin. Sliced thinly	1.0	pound	lb	6
 380	281	mayo	6.0	servings	servings	7
 380	4	2 tablespoons of finely chopped onion	2.0	tablespoons	T	8
-380	450	pate	6.0	servings	servings	9
+380	450	pâté	6.0	servings	servings	9
 380	0	pickled carrot and daikon	6.0	servings	servings	10
 380	28	1 teaspoon of sesame seed oil	1.0	teaspoon	t	11
 380	189	6 sub rolls	6.0	\N	\N	12
@@ -5642,6 +5642,7 @@ COPY "Nutritional Content" (id, ingredient_id, calories, total_fat_g, saturated_
 187	187	364	0.56	0.153	0	182	80.18	1.6	0.12	5.95	0	0	18	0.7
 188	188	130	0.28	0.077	0	1	28.17	0.4	0.05	2.69	0	0	10	1.2
 189	189	296	8.7	2.5	0	361	50.7	4.5	4.8	0.01	0	0	98	3.5
+190	190	333	0	0	0	7667	33.33	33.33	0	0	50000	40.2	0	12.06
 191	191	49	0.3	0.035	0	0	11.89	2.5	0	1.04	230	48.5	40	0.09
 192	192	49	0.15	0.017	0	1	12.54	2.2	8.5	0.91	247	59.1	43	0.13
 193	193	45	0.2	0.024	0	1	10.4	0.2	8.4	0.7	200	50	11	0.2
@@ -6057,8 +6058,8 @@ COPY "Recipe" (id, title, image_uri, instructions, cuisine, ready_in_minutes, se
 72	New Orleans Red Beans and Rice with Andouille Sausage	https://spoonacular.com/recipeImages/New-Orleans-Red-Beans-and-Rice-with-Andouille-Sausage-653055.jpg	<ol><li>Soak the beans overnight in cool water.  The next day, drain and add fresh water to cover beans in Dutch oven. Bring to a boil, then reduce to medium-high heat and simmer for 45-60 minutes or until tender, but not falling apart.  Drain.</li><li>Meanwhile, add oil to a skillet and saute onions, celery and bell pepper until translucent, about 8-10 minutes.  Add garlic and saute for 2 more minutes, stirring occasionally.  Add sauteed vegetables to beans, ham hock, sausage, seasonings, and just enough water to cover.</li><li>Bring to a boil, then reduce heat to a low simmer. Cook for 2 hours at least, preferably 3, until the gravy gets creamy. Adjust seasonings as you go along. Stir occasionally, making sure that it doesn't burn and/or stick to the bottom of the pot.</li><li>If the gravy does not get to the right consistancy, you can scoop some of the beans out and mash them, then return them to the pot and stir. Note: it's not considered cheating:)</li><li>Serve over long-grain rice.</li></ol>	cajun	45	6	f	f	t	t
 73	Seafood Gumbo	https://spoonacular.com/recipeImages/Seafood-Gumbo-659638.jpg	<ol><li>Heat oil in a large heavy stockpot over medium-high heat.</li><li>Add the flour and stir constantly until a light brown roux is formed.</li><li>Add the onions, bell pepper, celery and garlic. Saut until the onions become translucent and the vegetables are tender.</li><li>Add the tomatoes and tomato pure and cook over medium heat for 10 minutes.</li><li>Add the Creole seasoning, thyme, bay leaves and about 1/2 teaspoon each of salt and pepper, and continue to cook another 10 minutes.</li><li>Add the okra, and cook for another 10 minutes, then add the stock. Bring to a boil, then reduce heat to simmer and cook another 30 minutes.</li><li>Reduce heat to low.</li><li>About 10 minutes prior to serving, add the shrimp, oysters and oyster liquor. Just prior to serving, add the crab meat (the crab meat does not need to be cooked, just stir until it is heated through.</li><li>Taste and correct seasonings if necessary.</li><li>Remove from heat and sprinkle the fil powder on the surface of the gumbo; cover and let stand for 15 minutes. Uncover and stir to mix.</li><li>Serve hot with French bread and cold beverages.</li></ol>	cajun	45	12	f	f	f	t
 74	Authentic Jamaican Curry Chicken	https://spoonacular.com/recipeImages/Authentic-Jamaican-Curry-Chicken-633088.jpg	<ol><li>Season the chicken with all of the ingredients except for the potatoes and water and marinate up to 2 hours or overnight in the fridge.</li><li>Add the oil to a Dutch oven and on high heat, fry the only the chicken pieces until it is brown and seared on each side for about 10 minutes.</li><li>After the meat is nice and brown on both sides, add the remaining vegetable marinade, scotch bonnet pepper and water to the pot, cover and bring to a boil.</li><li>Add the potatoes and lower to a simmer and stew it for about 1 hour until it has a thick consistency.</li></ol>	caribbean	45	4	f	f	t	t
-75	Caribbean black bean and sweet potato soup	https://spoonacular.com/recipeImages/Caribbean-black-bean-and-sweet-potato-soup-637099.jpg	<ol><li>Rinse beans and place in a large bowl. Cover beans with   4 inches of water and soak overnight (or 8 hours). Strain and rinse black beans.</li><li>In a large soup pot, heat the oil over medium heat. Add onion and jalapeno and saut for 10 minutes, until soft.</li><li>Add beans and vegetable broth or water. Stir in ginger, allspice, thyme and salt. Bring to a boil, then reduce heat and simmer for 1 hour 30 minutes.</li><li>Add sweet potatoes and brown sugar and simmer for an additional 30 minutes, until beans and sweet potatoes are soft.</li><li>Puree 1 cup of the soup in a blender and then add it back into the soup pot. Stir in cilantro and green onion. Salt and pepper to taste.</li></ol>	caribbean	45	6	t	t	t	t
-76	Caribbean Chicken Thighs	https://spoonacular.com/recipeImages/Caribbean-Chicken-Thighs-637103.jpg	<ol><li>Prepare marinade: In a food processor, add lime juice, garlic, onion, jalapeno, and green onion . Pulse until pureed.</li><li>Pour into a small bowl, add pineapple juice, brown sugar, and spices. Mix together.</li><li>In a gallon plastic bag, add chicken, and marinade. Mix together. Place in fridge and let marinate for at least 4 hours to 24 hours.</li><li>Preheat broiler. Remove from bag and place chicken skin side down in a baking sheet lined with aluminum foil. Cook for 5 minutes till the tops are no longer pink. Flip over and cook for remaining 25 minutes till the skin is crispy.</li><li>Serve immediately. Enjoy!</li></ol>	caribbean	45	2	f	f	t	t
+75	Caribbean black bean and sweet potato soup	https://spoonacular.com/recipeImages/Caribbean-black-bean-and-sweet-potato-soup-637099.jpg	<ol><li>Rinse beans and place in a large bowl. Cover beans with   4 inches of water and soak overnight (or 8 hours). Strain and rinse black beans.</li><li>In a large soup pot, heat the oil over medium heat. Add onion and jalapeño and saute for 10 minutes, until soft.</li><li>Add beans and vegetable broth or water. Stir in ginger, allspice, thyme and salt. Bring to a boil, then reduce heat and simmer for 1 hour 30 minutes.</li><li>Add sweet potatoes and brown sugar and simmer for an additional 30 minutes, until beans and sweet potatoes are soft.</li><li>Puree 1 cup of the soup in a blender and then add it back into the soup pot. Stir in cilantro and green onion. Salt and pepper to taste.</li></ol>	caribbean	45	6	t	t	t	t
+76	Caribbean Chicken Thighs	https://spoonacular.com/recipeImages/Caribbean-Chicken-Thighs-637103.jpg	<ol><li>Prepare marinade: In a food processor, add lime juice, garlic, onion, jalapeño, and green onion . Pulse until pureed.</li><li>Pour into a small bowl, add pineapple juice, brown sugar, and spices. Mix together.</li><li>In a gallon plastic bag, add chicken, and marinade. Mix together. Place in fridge and let marinate for at least 4 hours to 24 hours.</li><li>Preheat broiler. Remove from bag and place chicken skin side down in a baking sheet lined with aluminum foil. Cook for 5 minutes till the tops are no longer pink. Flip over and cook for remaining 25 minutes till the skin is crispy.</li><li>Serve immediately. Enjoy!</li></ol>	caribbean	45	2	f	f	t	t
 77	Caribbean Truffle Pie	https://spoonacular.com/recipeImages/Caribbean-Truffle-Pie-637116.jpg	<ol><li>Heat oven to 450 degrees. Allow 1 crust pouch to stand at room temperature for 15 to 20 minutes. (Refrigerate remaining crust for a later use.) Remove pie crust from pouch. Unfold crust; remove plastic sheet. Sprinkle with 2 tablespoons coconut; press in lightly. Carefully lift crust off second plastic sheet. Place crust, coconut side up, in 9-inch pie pan; press in bottom and up sides of pan. Flute edge; prick crust generously with fork. Bake at 450 degrees for 9 to 11 minutes or until golden brown. Cool crust while preparing streusel and filling. Reduce oven temperature to 425 degrees.</li><li>In small bowl, combine flour and 1/4 cup sugar. With pastry blender or fork, cut in butter until mixture resembles coarse crumbs. Stir in 1/4 cup coconut. Spread mixture in ungreased shallow baking pan. Bake at 425 degrees for 4 to 8 minutes or until golden brown, stirring every minutes. Set aside.</li><li>In medium saucepan, combine pudding mix, 1/2 cup sugar, lime juice and egg yolks; mix well. Stir in 2 cups water. Cook and stir over medium heat until mixture comes to a full boil. Remove from heat; stir in lime peel. In small bowl, combine white chocolate chips and 1/2 cup of the hot pudding mixture; stir until chips are melted.</li><li>In small bowl, beat cream cheese until light and fluffy. Add white chocolate chip mixture; beat until smooth. Spoon and spread in baked crust. Stir sour cream into remaining pie filling mixture; blend well. Spoon and spread over cream cheese layer. Refrigerate 2 hours or until chilled.</li><li>In small bowl, beat whipping cream until stiff peaks form. Pipe or spoon around edge of pie; garnish with line slices. Sprinkle streusel in center of pie. Store in refrigerator. </li></ol>	caribbean	150	8	f	f	f	f
 78	Trinidad Callaloo Soup	https://spoonacular.com/recipeImages/Trinidad-Callaloo-Soup-663822.jpg	<ol><li>Saute onion, okra, salt pork, thyme, garlic, habanero and scallions until the okra and onions brown.</li><li>Stir in the callaloo with the chicken stock and simmer until the callaloo is tender.</li><li>Puree with a stick blender. Adjust seasoning to taste with salt and pepper.</li><li>Stir in coconut milk and crab, then warm gently.</li><li>Serve with rice.</li></ol>	caribbean	45	4	f	f	t	t
 79	Rice and Peas with Coconut Curry Mackerel	https://spoonacular.com/recipeImages/rice-and-peas-with-coconut-curry-mackerel-716364.jpg	Pour 1 cup of coconut milk in a pot with 1 seasoning cube and allow to boil for a minute. Pour in your rice and peas in the boiling coconut milk and pour 2 cups of water and leave to boil till the rice and peas are soft on low heat. In a separate pot, season and bring the mackerel to boil in the rest of the coconut milk, curry powder and some water. Toss in the chopped onion, scotch bonnet peppers and garlic and allow to simmer on medium heat. Once the fish is cooked, add the corn starch to thicken the sauce and allow to simmer for 4 minutes on low heat. Serve with the rice and peas	caribbean	45	4	f	f	t	t
@@ -6131,7 +6132,7 @@ COPY "Recipe" (id, title, image_uri, instructions, cuisine, ready_in_minutes, se
 146	Sauerkraut Dip with Bacon and Garlic	https://spoonacular.com/recipeImages/Sauerkraut-Dip-with-Bacon-and-Garlic-659321.jpg	<ol><li>Cook bacon until crisp, then drain and crumble.</li><li>Drain off bacon drippings and cook shallot in the same skillet until soft. Discard drained bacon drippings.</li><li>Place drained sauerkraut and other ingredients in a food processor and run until smooth.</li></ol>	german	45	6	f	f	t	f
 147	Classic Greek Moussaka	https://spoonacular.com/recipeImages/Classic-Greek-Moussaka-639606.jpg	<ol><li>Sprinkle the egg plant slices with salt and let them stand for 45 minutes. Then wash thoroughly to remove excess salt.</li><li>Thinly brush each slice with olive oil and bake in the preheated grill pan for several minutes on each side. Set aside. Repeat until all slices are grilled.</li><li>For the meat sauce lightly saute the onions in olive oil until tender.</li><li>Add ground beef and saute, stirring frequently to break up the clumps of meat, until the meat is no longer pink.</li><li>Stir in tomatoes, garlic, cinnamon, allspice, salt and pepper and simmer briefly on low heat.</li><li>Add in tomato paste and a little water if the sauce is to thick. Remove from heat and set aside.</li><li>For the bchamel sauce add flour to the melted butter, stirring constantly. When the mixture is evenly thick, gradually whisk in warm milk.  Gently bring to the boil, then remove from heat, season with pepper and nutmeg. Whisk in (vigorously) the egg yolks. Set aside.</li><li>Thinly coat with olive oil a suitable ovenproof baking dish, sprinkle the bottom with homemade bread crumbs.</li><li>Place a layer of egg plant, cover with some meat sauce and feta cheese and repeat this until the pan is almost full. Finish with a layer of feta cheese.</li><li>Top with bchamel sauce.</li><li>Cover with tin foil and bake in a preheated oven at 180C for 1 hour.</li><li>Remove moussaka from the oven and let it set at room temperature 45 minutes before serving.</li></ol>	greek	135	4	f	f	f	f
 148	Eggplant Fries with Tzatziki Sauce	https://spoonacular.com/recipeImages/Eggplant-Fries-with-Tzatziki-Sauce-642287.jpg	<ol><li>Preheat oven to 450F</li><li>Mix salt, garlic powder, italian seasonings, paprika, and breadcrumbs in a bowl.</li><li>In another bowl, mix yogurt &amp; egg together.</li><li>-First place the eggplant strips into egg/yogurt mixture then coat them in breadcrumb mixture evenly.</li><li>Place them on a parchment paper lined or greased baking pan and bake for 10-15 minutes rotating once and until slightly brown.</li><li>Serve with tzatziki.</li></ol>	greek	25	2	t	f	f	f
-149	Fire-Roasted Jalapeno Hummus with Turnip and Beet Chips	https://spoonacular.com/recipeImages/Fire-Roasted-Jalapeo-Hummus-with-Turnip-and-Beet-Chips-642893.jpg	<ol><li>Start by making the chips. Preheat oven to 415 degrees (and if you have a convection option on your oven, I recommend using it!). Slice turnip and beet thinly (peel on or off...I leave the peels on), place all slices in a plastic bag (I just use the plastic produce bags from the produce section of the store), drizzle in olive oil, add your salt and garlic powder, and shake it like Shake N Bake! Lay roots flat on a lightly-oiled cookie sheet (or two) and bake in the oven to desired crip level, between 11 and 15 minutes. The thicker slices will likely need to be turned over if they're not getting crispy within 10 minutes or so.</li><li>While the chips are baking, make the hummus. Wrap the cloves of garlic in foil. Using tongs, roast the jalapeo and wrapped garlic over a flame (I used my gas stove) until the flesh is blackened, soft and hot.  When cool enough to handle, remove the stem and seeds from the jalapeo.  Place all ingredients (including jalapeo flesh) in a blender or food processor, and blend until ingredients are combined and there are no more chunks. You may need to use a rubber spatula to stir around the ingredients in order to blend them well.  Spoon hummus into a serving bowl. Drizzle olive oil on top and sprinkle paprika and turmeric.  Serve with beet and turnip chips.</li></ol>	greek	45	4	t	t	t	t
+149	Fire-Roasted Jalapeño Hummus with Turnip and Beet Chips	https://spoonacular.com/recipeImages/Fire-Roasted-Jalapeo-Hummus-with-Turnip-and-Beet-Chips-642893.jpg	<ol><li>Start by making the chips. Preheat oven to 415 degrees (and if you have a convection option on your oven, I recommend using it!). Slice turnip and beet thinly (peel on or off...I leave the peels on), place all slices in a plastic bag (I just use the plastic produce bags from the produce section of the store), drizzle in olive oil, add your salt and garlic powder, and shake it like Shake N Bake! Lay roots flat on a lightly-oiled cookie sheet (or two) and bake in the oven to desired crip level, between 11 and 15 minutes. The thicker slices will likely need to be turned over if they're not getting crispy within 10 minutes or so.</li><li>While the chips are baking, make the hummus. Wrap the cloves of garlic in foil. Using tongs, roast the jalapeo and wrapped garlic over a flame (I used my gas stove) until the flesh is blackened, soft and hot.  When cool enough to handle, remove the stem and seeds from the jalapeo.  Place all ingredients (including jalapeo flesh) in a blender or food processor, and blend until ingredients are combined and there are no more chunks. You may need to use a rubber spatula to stir around the ingredients in order to blend them well.  Spoon hummus into a serving bowl. Drizzle olive oil on top and sprinkle paprika and turmeric.  Serve with beet and turnip chips.</li></ol>	greek	45	4	t	t	t	t
 150	Great Greek Salad	https://spoonacular.com/recipeImages/Great-Greek-Salad-645265.jpg	<ol><li>In a large salad bowl, toss together the cucumbers, olives, roma tomatoes, sun-dried tomatoes, 2 tablespoons reserved sun-dried tomato oil, red onion, vinegar, and seasoning.</li><li>Chill until serving.</li><li>Right before serving toss in the feta and stir to combine.</li></ol>	greek	15	4	t	f	t	f
 151	Greek Side Salad	https://spoonacular.com/recipeImages/Greek-Salad-645348.jpg	<ol><li> Slice the vegetables into bite-size wedges</li><li>Toss in a bowl with olive oil </li><li>Place feta on top of the salad or break up into crumbles</li></ol>	greek	15	4	t	f	t	f
 152	Greek Shrimp Orzo	https://spoonacular.com/recipeImages/Greek-Shrimp-Orzo-645354.jpg	<ol><li>Combine lemon juice and 1/2 cup olive oil.</li><li>Bring large pot of salted water to a boil over high heat.</li><li>Pour in orzo and cook until al dente.</li><li>Drain the pasta, pour into a large serving bowl, and immediately add lemon juice/olive oil mixture.  Stir well.</li><li>Heat a large skillet over medium-high heat and add 1 tbsp olive oil.  Add shrimp, salt and pepper, and cook for about 2 minutes, or until the shrimp are just done.</li><li>Add the shrimp, green onions, parsley, and feta to the orzo mixture.  Stir well.</li><li>Let the orzo sit for 1 hour.  If you make it earlier in the day, cover and refrigerate.  Bring to room temperature before serving.</li><li>Just before serving, add the basil and gently mix.  If desired, serve over a bed of spinach or lettuce.</li></ol>	greek	45	6	f	f	f	f
@@ -6249,23 +6250,23 @@ COPY "Recipe" (id, title, image_uri, instructions, cuisine, ready_in_minutes, se
 264	Flank Steak With Chimichurri Sauce	https://spoonacular.com/recipeImages/Flank-Steak-With-Chimichurri-Sauce-643055.jpg	<ol><li>For the Sauce: Mix parsley, oregano, red pepper flakes (if you are using) and garlic in a food processor or blender and mix until combined.  Drizzle in olive oil and red wine vinegar and process until combined. </li><li> Season sauce to taste with salt and pepper.  Let set for at least 1 hour.</li><li>Season steak with salt and pepper.  Grill over medium high heat for 5 minutes on each side for medium rare.  Let rest for 5 minutes.</li></ol>	latinAmerican	75	4	f	f	t	t
 265	Fresh and Simple Swai Ceviche	https://spoonacular.com/recipeImages/Fresh-and-Simple-Swai-Ceviche-643428.jpg	<ol><li>Place the diced fish into  of the lime juice and refrigerate for at least 3 hours. Strain when ready to proceed.</li><li>Mix the veggies with the remaining lime juice.</li><li>Stir in the fish and cilantro. Drizzle with olive oil and add the chile-garlic sauce. Gently toss.</li><li>Salt and pepper to taste. Serve with tortilla chips or a salad.</li></ol>	latinAmerican	45	4	f	f	t	t
 266	Gluten-Free Tres Leches Cake	https://spoonacular.com/recipeImages/Gluten-Free-Tres-Leches-Cake-644907.jpg	<ol><li>Preheat oven to 350 degrees. Generously butter a 13X9 baking dish. In a large bowl, beat  c sugar, egg yolks, and butter until light and fluffy, about 5 minutes. Fold in the vanilla extract, orange zest, cinnamon, sorghum flour, masa harina, baking powder, xanthan gum, and milk.</li><li>In another large bowl, beat egg whites to soft peaks, adding cream of tartar after about 20 seconds. Gradually add the remaining  c sugar and continue beating until egg whites are glossy and firm, but not dry.</li><li>Gently fold the egg whites into the cake mixture. Pour this batter into the baking dish, spreading out evenly.  Bake until the cake is golden and a toothpick inserted in the center comes out clean, about 25 minutes. Pierce cake all over with a toothpick.</li><li>Whisk together the milks, and pour evenly over cake. Allow to cool for a bit, and cover and place in refrigerator for 4 hours, up to overnight.</li><li>Before serving,  place the whipping cream, sugar, and vanilla in a mixer bowl and whisk to stiff peaks, and nice and thick. Spread over cake and top with strawberries and mint leaves.</li><li>Allow to chill in refrigerator until ready to serve.</li></ol>	latinAmerican	45	10	f	f	t	f
-267	Lomo Saltado Beef Stir Fry	https://spoonacular.com/recipeImages/Lizs-Lomo-Saltado-650225.jpg	<ol><li>Prepare the frozen french fries according to directions. Set aside when complete and keep warm.</li><li>Heat a large wok or skillet over medium-high heat. Saute the onions and bell peppers until translucent, about 10 minutes. Add the garlic and jalapeno and cook for an additional minute. Mix everything until combined.</li><li>Add the beef chunks, cumin, complete seasoning, soy sauce and red wine vinegar sauce. Mix well and cook until beef is no longer pink about 5 to 7 minutes.</li><li>Add the tomato chunks and add the cover and cook for additional 5 minutes. When ready to serve, add the french fries and toss everything gently together.</li><li>Serve lomo saltado over a bed of white rice and garnish with freshly chopped cilantro leaves. Enjoy with aji sauce on the side.</li></ol>	latinAmerican	45	4	f	f	t	t
+267	Lomo Saltado Beef Stir Fry	https://spoonacular.com/recipeImages/Lizs-Lomo-Saltado-650225.jpg	<ol><li>Prepare the frozen french fries according to directions. Set aside when complete and keep warm.</li><li>Heat a large wok or skillet over medium-high heat. Saute the onions and bell peppers until translucent, about 10 minutes. Add the garlic and jalapeño and cook for an additional minute. Mix everything until combined.</li><li>Add the beef chunks, cumin, complete seasoning, soy sauce and red wine vinegar sauce. Mix well and cook until beef is no longer pink about 5 to 7 minutes.</li><li>Add the tomato chunks and add the cover and cook for additional 5 minutes. When ready to serve, add the french fries and toss everything gently together.</li><li>Serve lomo saltado over a bed of white rice and garnish with freshly chopped cilantro leaves. Enjoy with aji sauce on the side.</li></ol>	latinAmerican	45	4	f	f	t	t
 268	Crispy-Crowned Guacamole Fish Fillets	https://spoonacular.com/recipeImages/Crispy-Crowned-Guacamole-Fish-Fillets-157399.jpg	<ol><li>Prepare the guacamole by dicing the onion, cutting the tomatoes, and crushing the garlic. Mix these ingredients with the ripe avocado and spice with salt, pepper, cilantro, and tabasco.</li><li>Fry the fish for 5 minutes.</li><li>Crush the tortilla chips with your hands.</li><li>Cut the bell peppers in strips.</li><li>Place the fish on a plate, use a fork to distribute the guacamole on the fish and crown the fish with the crispy crushed tortilla chips.</li></ol>	mexican	30	2	f	f	t	t
-269	Black Bean and Peppers Taco Filling	https://spoonacular.com/recipeImages/Black-Bean-and-Peppers-Taco-Filling-635058.jpg	<ol><li>In a skillet add olive oil, onions and bell pepper. Cook until tender, about 3  5 minutes. Add tomatoes and seasonings, saute for 10 minutes. Add black beans and cook until warm.</li><li>Serve with tortillas.</li><li>Additional toppings: Romaine Lettuce, Cheese, jalapenos, salsa, hot sauce, avocado, and greek yogurt</li></ol>	mexican	45	8	t	t	t	t
+269	Black Bean and Peppers Taco Filling	https://spoonacular.com/recipeImages/Black-Bean-and-Peppers-Taco-Filling-635058.jpg	<ol><li>In a skillet add olive oil, onions and bell pepper. Cook until tender, about 3  5 minutes. Add tomatoes and seasonings, saute for 10 minutes. Add black beans and cook until warm.</li><li>Serve with tortillas.</li><li>Additional toppings: Romaine Lettuce, Cheese, jalapeños, salsa, hot sauce, avocado, and greek yogurt</li></ol>	mexican	45	8	t	t	t	t
 270	Black Bean and Veggie Burgers with Corn Salsa	https://spoonacular.com/recipeImages/Black-Bean-and-Veggie-Burgers-with-Corn-Salsa-635059.jpg	<ol><li>Mix all the salsa ingredients together and chill for about an hour before serving.</li><li>Preheat your oven to 425 degrees F. Spray two baking sheets lightly with the nonstick spray and set aside.</li><li>Add the carrot to a bowl with a little water, cover it and microwave for about two minutes. Once cooled, mash them and add them to the mashed black beans. Mix together then add the remaining vegetables and mix well.</li><li>Add the oatmeal, breadcrumbs, seasoning and salsa. Mix together until combined. Add the flour and mix well. If the mixture is too moist, add more flour and adjust the seasoning, as needed.</li><li>Form the mixture into patties and place them on the baking sheets. Bake for about 20 minutes, flipping them halfway through cooking. When the burgers are finished, serve with the Corn Salsa or your favorite topping.</li></ol>	mexican	45	8	t	t	f	t
 271	Chilled Avocado and Cucumber Soup with Prawn and Scallop Salsa	https://spoonacular.com/recipeImages/Chilled-Avocado-and-Cucumber-Soup-With-Prawn-and-Scallop-Salsa-638588.jpg	<ol><li>In a small sauce pot, combine the minced shallots, red chili pepper flakes and oil.</li><li>Heat the oil over very low heat and simmer for about 3 minutes.</li><li>Remove from the heat and let stand for 3 minutes. Stir in the lime zest and the water.</li><li>Let stand for at least an hour, then strain the oil into a small bowl or jar.</li><li>Adding water in the oil with the lime zest dissolves and carries water-soluble flavors.</li><li>Set aside, while you prepare the soup.</li><li>Place the cucumber, avocado and green onion in a blender.</li><li>Squeeze the lime juice and add 2 tablespoon of the miso paste.</li><li>Blend the ingredients adding the water to dilute the mixture until smooth and creamy.</li><li>Season the soup (to taste) with more miso paste and lime juice if necessary.</li><li>Transfer the soup into a large bowl, cover and chill in the refrigerator for at least 2 hours.</li><li>To cook the prawns and scallops, heat a skillet over medium-high heat.</li><li>Then, season the prawns and scallops with salt and pepper on both sides.</li><li>Once the pan is nice and hot, add one tablespoon of the oil.</li><li>Add the prawns and scallops and cooked until they are done. </li><li>Remove and transfer to a bowl. Then, add the orange pieces, black olives and cilantro.</li><li>Cut the prawns into 3 or 4 pieces depending on the size and add these to the bowl.</li><li>Season with a little bit of sea salt and black pepper (if necessary) and drizzle with chili-lime oil.</li><li>Toss gently with a spoon to combine.</li><li>To serve the dish, bring out the four individual bowls and the avocado soup from the fridge.</li><li>Ladle the soup onto the bowls, then garnish with the prawn and scallop salsa and finish with more drizzle of the chili-lime oil.</li></ol>	mexican	45	4	f	f	t	t
 272	Corn Avocado Salsa	https://spoonacular.com/recipeImages/Corn-Avocado-Salsa-640062.jpg	<ol><li>Preheat oven to 375 degrees.</li><li>Spread corn flat on a baking sheet.</li><li>Spray lightly with olive oil spray.</li><li>Roast corn in the oven for about 8-10 minutes. (Be careful not to brown too much or burn.)</li><li>Remove from heat and allow to cool.</li><li>Finely chop red pepper and garlic and mix in a bowl.</li><li>Peel and coarsely chop avocado and add to bowl.</li><li>Add cooled corn.</li><li>Mix in cumin and vinegar and blend well.</li></ol>	mexican	25	2	t	t	t	t
-273	Flank Steak with Herbed Salsa	https://spoonacular.com/recipeImages/Flank-Steak-with-Herbed-Salsa-643061.jpg	<ol><li>Preheat a grill pan or light a grill.</li><li>In a medium bowl, combine the tomatoes with the scallions, cilantro, Jalapeno, garlic and lemon  lime juice. Season the salsa with salt and freshly ground pepper.</li><li>Season with salt and pepper the flank steak.</li><li>Using a grill pan brush a shadow of oil on the bottom of it. Place the pan over high heat and when hot add the flank steak. Cook until nicely charred outside and medium rare inside. About 3 minutes per side.</li><li>Transfer the steak to a carving board and let rest for 5 minutes.</li><li>Thinly slice the steak across the grain and serve with the herbed salsa.</li></ol>	mexican	45	4	f	f	t	t
+273	Flank Steak with Herbed Salsa	https://spoonacular.com/recipeImages/Flank-Steak-with-Herbed-Salsa-643061.jpg	<ol><li>Preheat a grill pan or light a grill.</li><li>In a medium bowl, combine the tomatoes with the scallions, cilantro, jalapeño, garlic and lemon  lime juice. Season the salsa with salt and freshly ground pepper.</li><li>Season with salt and pepper the flank steak.</li><li>Using a grill pan brush a shadow of oil on the bottom of it. Place the pan over high heat and when hot add the flank steak. Cook until nicely charred outside and medium rare inside. About 3 minutes per side.</li><li>Transfer the steak to a carving board and let rest for 5 minutes.</li><li>Thinly slice the steak across the grain and serve with the herbed salsa.</li></ol>	mexican	45	4	f	f	t	t
 274	Grilled Chicken With Pineapple Salsa	https://spoonacular.com/recipeImages/Grilled-Chicken-With-Pineapple-Salsa-645670.jpg	<ol><li>Make marinade of 1/3 cup lime juice, 1/3 cup olive oil, 1 teaspoon salt, and 1/4 teaspoon pepper.</li><li>Marinate chicken overnight. Combine salsa. Saute pineapple, mango, peppers, onions, and garlic. Add lime juice and honey and refrigerate (up to 24 hours).</li><li>Bring to room temperature to serve. Grill chicken breasts and serve with sauce and white rice.</li></ol>	mexican	45	1	f	f	t	t
-275	Grilled Fish Tacos with Spicy Tequila-Lime Guacamole	https://spoonacular.com/recipeImages/Grilled-Fish-Tacos-W--Spicy-Tequila-Lime-Guacamole-645711.jpg	<ol><li>Using a fork or potato masher, mash avocado in a bowl.</li><li>Add yogurt, lime juice, lime zest and tequila; mix well.</li><li>Add jalapeno, onion, salt/pepper and cilantro; stir until all ingredients are incorporated and smooth.</li><li>Adjust seasonings if desired.</li><li>Pour finished guacamole into serving bowl; set aside.</li><li>Preheat a grill pan to med-high heat.</li><li>Drizzle fish on each side with olive oil and season with salt and pepper.</li><li>Grill fish on each side until opaque, about 4 mins.</li><li>Remove fish from grill and flake into large chunks with a fork.</li><li>Heat tortillas on the grill pan until blisters form.</li><li>To assemble tacos, spread a dollop of guacamole onto tortilla, add fish, and top with shredded lettuce and chopped tomatoes (or whatever toppings you prefer).</li><li>Optional: squeeze additional lime juice over the fish.</li><li>Enjoy with a Mexican beer or tasty margarita! :)</li><li>Note: if you have any leftover guacamole, serve it as a dip with tortilla chips!</li></ol>	mexican	45	4	f	f	f	f
+275	Grilled Fish Tacos with Spicy Tequila-Lime Guacamole	https://spoonacular.com/recipeImages/Grilled-Fish-Tacos-W--Spicy-Tequila-Lime-Guacamole-645711.jpg	<ol><li>Using a fork or potato masher, mash avocado in a bowl.</li><li>Add yogurt, lime juice, lime zest and tequila; mix well.</li><li>Add jalapeño, onion, salt/pepper and cilantro; stir until all ingredients are incorporated and smooth.</li><li>Adjust seasonings if desired.</li><li>Pour finished guacamole into serving bowl; set aside.</li><li>Preheat a grill pan to med-high heat.</li><li>Drizzle fish on each side with olive oil and season with salt and pepper.</li><li>Grill fish on each side until opaque, about 4 mins.</li><li>Remove fish from grill and flake into large chunks with a fork.</li><li>Heat tortillas on the grill pan until blisters form.</li><li>To assemble tacos, spread a dollop of guacamole onto tortilla, add fish, and top with shredded lettuce and chopped tomatoes (or whatever toppings you prefer).</li><li>Optional: squeeze additional lime juice over the fish.</li><li>Enjoy with a Mexican beer or tasty margarita! :)</li><li>Note: if you have any leftover guacamole, serve it as a dip with tortilla chips!</li></ol>	mexican	45	4	f	f	f	f
 276	Grilled Salmon With Cherry, Pineapple, Mango Salsa	https://spoonacular.com/recipeImages/Grilled-Salmon-With-Cherry--Pineapple--Mango-Salsa-645856.jpg	<ol><li>Combine all the above ingredients except the olive oil and salmon into a mixing bowl. Stir gently. Add one splash of olive oil and taste for seasoning. Cover and refrigerate until ready to use.</li><li>Lightly oil and season a salmon fillet with a splash of olive oil and salt and pepper. Place flesh side down on a cleaned and oiled grill or pan. Cook for 2-4 minutes depending on the thickness. Flip and cook for another 2-4 minutes. Salmon will be cooked when the flesh is no longer opaque. I tend to like it pretty rare, but it's your salmon- cook it how you want it!</li><li>Top salmon with salsa and serve!</li></ol>	mexican	45	2	f	f	t	t
 277	Grilled Salmon With Mango Salsa	https://spoonacular.com/recipeImages/Grilled-Salmon-With-Mango-Salsa-645863.jpg	<ol><li>To make salsa: In bowl, combine mango, pineapple, onion, cilantro and lime juice. Season to taste with salt. Set aside 20 minute to 1 hour, to blend.</li><li>Heat grill to medium-high. Season salmon with salt and pepper. Place fish on hot grill, skin-side down, and cook 5 minutes. Do not worry if skin is blackened. Turn and grill fish until it is no longer raw in center, about 3 minutes, depending on thickness of the fish.</li><li>To serve, place piece of grilled salmon in center of each of 4 dinner plates. Arrange about 1/4 cup salsa along either side of fish.</li><li>This recipe yields 4 servings.</li></ol>	mexican	45	4	f	f	t	t
-278	Homemade Hard Taco Night with Carnitas and Pinto Beans	https://spoonacular.com/recipeImages/Homemade-Hard-Taco-Night-with-Carnitas-and-Pinto-Beans-647015.jpg	<ol><li>Into a hot pan sizzling with a glug or two of vegetable oil I sear my pork, using tongs to turn each piece over until each side of each cube is nicely browned.</li><li>I add 1 cup of red onion and garlic to my sizzling pork pieces, and toss well.  I cook this until the onion softens about 4 minutes.</li><li>Then I add my orange juice and the juice from 1/2 a lime, which I stir in well.   I bring them just to a boil before I add my chicken stock, which covers about 3/4 of my meat.  I set the heat to medium, and bring this to a slow simmer to braise for the next three hours.</li><li>I fried taco shells by adding a few inches of vegetable oil to a deep fry pan and set it to high heat.  When sizzling, using tongs, I floated 1/2 of a 10 corn tortilla on the surface of the blistering oil  about 5 seconds did the trick, or until it set.</li><li>Moving quickly but carefully, I flipped the tortilla over, rolling it in the oil, releasing the tongs from one edge and immediately catching the other edge in their grip.</li><li>Holding the other edge under the hot oil, I fried it until crunchy, then dipped the center fold into the pot to crisp it up last.   Be careful to pour all the oil out when lifting your shells from the fryer.  I sprinkled them with sea salt while hot</li><li>I put my small deep pan, with a few glugs of oil, over the heat for about 10 minutes before adding 1/2 a cup of my diced onion and some minced garlic.  I cook this until just softened and fragrant.  Then I add about a teaspoon of black pepper, a healthy sprinkling of cumin, and a dash of sea salt.  Finally, I add my can of pinto beans, liquid and all.  I cover and bring to a simmer, heating all the beans through.</li><li>I peel and mash the avocados, adding fresh cilantro, a dash of minced garlic, a squeeze of lemon juice, sea salt, cracked black pepper, 1/4 cup diced red onion, and ground cumin to make guacamole.</li><li>In another bowl, Ive mixed my diced tomatoes, 1/4 cup diced red onion, minced garlic, fresh cilantro, the juice of 1/2 a lime, a glug of oil, and a dash of white vinegar together (along with some diced jalapeno, if you want heat), to make a quick fresh delicious pico de gallo.</li><li>Scoop up about 4 tablespoons of the fat from the carnitas and dump it into the beans for flavor.</li><li>After about 15 minutes, and some squishing of beans with my fork, they are thick and syrupy.</li><li>Build tacos as desired using shredded cheese, pork, beans, pico, guacamole, sour cream and cilantro.</li></ol>	mexican	240	2	f	f	t	f
+278	Homemade Hard Taco Night with Carnitas and Pinto Beans	https://spoonacular.com/recipeImages/Homemade-Hard-Taco-Night-with-Carnitas-and-Pinto-Beans-647015.jpg	<ol><li>Into a hot pan sizzling with a glug or two of vegetable oil I sear my pork, using tongs to turn each piece over until each side of each cube is nicely browned.</li><li>I add 1 cup of red onion and garlic to my sizzling pork pieces, and toss well.  I cook this until the onion softens about 4 minutes.</li><li>Then I add my orange juice and the juice from 1/2 a lime, which I stir in well.   I bring them just to a boil before I add my chicken stock, which covers about 3/4 of my meat.  I set the heat to medium, and bring this to a slow simmer to braise for the next three hours.</li><li>I fried taco shells by adding a few inches of vegetable oil to a deep fry pan and set it to high heat.  When sizzling, using tongs, I floated 1/2 of a 10 corn tortilla on the surface of the blistering oil  about 5 seconds did the trick, or until it set.</li><li>Moving quickly but carefully, I flipped the tortilla over, rolling it in the oil, releasing the tongs from one edge and immediately catching the other edge in their grip.</li><li>Holding the other edge under the hot oil, I fried it until crunchy, then dipped the center fold into the pot to crisp it up last.   Be careful to pour all the oil out when lifting your shells from the fryer.  I sprinkled them with sea salt while hot</li><li>I put my small deep pan, with a few glugs of oil, over the heat for about 10 minutes before adding 1/2 a cup of my diced onion and some minced garlic.  I cook this until just softened and fragrant.  Then I add about a teaspoon of black pepper, a healthy sprinkling of cumin, and a dash of sea salt.  Finally, I add my can of pinto beans, liquid and all.  I cover and bring to a simmer, heating all the beans through.</li><li>I peel and mash the avocados, adding fresh cilantro, a dash of minced garlic, a squeeze of lemon juice, sea salt, cracked black pepper, 1/4 cup diced red onion, and ground cumin to make guacamole.</li><li>In another bowl, Ive mixed my diced tomatoes, 1/4 cup diced red onion, minced garlic, fresh cilantro, the juice of 1/2 a lime, a glug of oil, and a dash of white vinegar together (along with some diced jalapeño, if you want heat), to make a quick fresh delicious pico de gallo.</li><li>Scoop up about 4 tablespoons of the fat from the carnitas and dump it into the beans for flavor.</li><li>After about 15 minutes, and some squishing of beans with my fork, they are thick and syrupy.</li><li>Build tacos as desired using shredded cheese, pork, beans, pico, guacamole, sour cream and cilantro.</li></ol>	mexican	240	2	f	f	t	f
 279	Mini Stuffed Mexican Bell Peppers	https://spoonacular.com/recipeImages/Mini-Stuffed-Mexican-Bell-Peppers-651977.jpg	<ol><li>1. Roast the vegetables:  Preheat oven to 400 degrees.Cut the tomatillos in half, slice the onion into 1/2 in slices and remove garlic from covering. Place on baking sheet. Roast till tomatillos are tender and start to brown, about 20 minutes.</li><li>2. Meanwhile,make the sauce: Add tomatillos, onion, garlic, tomatoes, green chilies, chipotles, chili powder, cumin, paprika, and coriander to blender or food processor. Blend until smooth.</li><li>3. In a large bowel, add the turkey, beans, and sauce, Mix together until everything is evenly distributed.</li><li>4. Cut tops off mini bell peppers and remove any seeds. Stuff turkey mixture into peppers until slightly overflowing. Place in 9 by 13 glass dish. Repeat for all bell peppers.</li><li>5. Cook at 400 for 20 minutes. For the last 5 minutes, turn on the broiler and get some color on the peppers.</li><li>6. Serve with your favorite salsa (used my Pico De Gallo from my tortilla soup), sour cream and avocado.</li><li>ENJOY!</li></ol>	mexican	45	4	f	f	t	t
 280	Nacho Mama's Cheese Nachos	https://spoonacular.com/recipeImages/Nacho-Mamas-Cheese-Nachos-652926.jpg	<ol><li>To get started, grab a pan and melt up your butter. Add in the flour and create a roux. Then add in your milk, put the heat on medium and let the mixture thicken.</li><li>Turn the heat down to low and add in the cheese.</li><li>Once it's melted add in your green chilies, chili powder, cumin, and cilantro. Now add in the salsa.</li><li>Lay your chips in an oven proof bowl and pour the cheese over the top. Now add on your desired toppings.</li><li>Throw them in the oven for about 10 minutes at 350 degrees.</li></ol>	mexican	45	1	f	f	f	f
 281	Poblano, Mango, and Black Bean Quesadilla	https://spoonacular.com/recipeImages/Poblano--Mango--and-Black-Bean-Quesadilla-656519.jpg	<ol><li>Heat olive oil, onions, poblano, oregano, salt and pepper in large pan. Saute for about five minutes.</li><li>Add black beans. Let heat for one minute, stirring occasionally.</li><li>Pull pan off heat. Add mangoes and avocado. Stir.</li><li>In another pan, sprinkle large flour tortilla with cheddar cheese, and fry in butter. *Note: for a lower-fat option, place tortilla on baking sheet, sprinkle tortilla with cheese and place under broiler.</li><li>Place pan under broiler to allow cheese to melt.</li><li>Cover half the tortilla with bean mixture, and fold in half.</li><li>Serve with sour cream, salsa and guacamole.</li></ol>	mexican	45	2	t	f	f	f
 282	Pork Shoulder Tacos with Chipotle Greek Yogurt and Coleslaw	https://spoonacular.com/recipeImages/Pork-Shoulder-Tacos-with-Chipotle-Greek-Yogurt-and-Coleslaw-656820.jpg	<ol><li>To Make the pork shoulder:</li><li>Place all ingredients in the crock pot.  Cook for 5 hours on low.  Meat should be tender and easily shred when finished cooking.</li><li>To Make the Chipotle Greek Yogurt:</li><li>In a small bowl, add the Greek yogurt.  Crack open your can of chipotle chilies in adobo sauce and remove the seeds from 3 or 4 of the chilies (about half of the can). Finely chop and add to the Greek yogurt. Add about a teaspoon of the adobo sauce.  Stir. For a spicier sauce, add additional chipotle chilies.</li><li>To Make the no-mayo coleslaw:</li><li>Thinly slice the cabbage and chop the green onion.  Peel and julienne the carrot.  Add all veggies to a large mixing bowl.  Mix the lime juice, apple cider vinegar and olive oil together in a small bowl.  Drizzle the liquid over the veggies.  Add salt and pepper to taste and if youre one of those cilantro people, add a handful of chopped cilantro.  Mix thoroughly and serve on your taco.</li><li>To assemble the tacos, simply heat your favorite tortilla on the stove until warm. Spoon desired amount of meat, chipotle Greek yogurt sauce, and coleslaw on the tortilla and enjoy!</li><li>Nutritional information is per taco.</li></ol>	mexican	45	12	f	f	t	f
-283	Pork Tenderloin With Mango-Kiwi Glaze Served With Tomatillo Salsa	https://spoonacular.com/recipeImages/Pork-Tenderloin-With-Mango-Kiwi-Glaze-Served-With-Tomatillo-Salsa-656839.jpg	<ol><li>Dry Rub the Pork:</li><li>Mix together the spices.</li><li>Rub the pork with the spice mix. Cover and refrigerate for 2 hours.</li><li>Make the Glaze*:</li><li>Saute the onion, garlic, ginger, and jalapeno in 2 teaspoons of olive oil.</li><li>Add the mango, kiwi, salt, pepper, and cayenne. Cook over medium heat for 10 minutes or until mixture thickens slightly.</li><li>Cool.</li><li>Puree in blender or food processor. Strain into a clean bowl.</li><li>Add lime juice and set aside.</li><li>This can be made a day ahead.</li><li>Cook and glaze the pork:</li><li>Preheat oven to 425F.</li><li>Heat 2 teaspoons olive oil in an oven-proof pan. Sear the pork on all sides in the hot pan.</li><li>Place the pork in the oven for 5 minutes. Brush with glaze.</li><li>Cook for another 5 minutes and brush with more glaze. Reserve the remaining glaze to serve alongside the pork.</li><li>Allow to finish cooking for 10 minutes or until the internal temperature reaches 145F.</li><li>Remove from oven and allow to rest for at least 10-15 minutes before slicing.</li><li>Make the Tomatillo Salsa**:</li><li>Mix ingredients together.</li><li>Allow to sit until ready to use.</li><li>Serve with the pork tenderloin.</li><li>Can be made a day ahead.</li><li>Serve it up:</li><li>Slice the pork and serve with the salsa and any remaining glaze.</li></ol>	mexican	45	4	f	f	t	t
+283	Pork Tenderloin With Mango-Kiwi Glaze Served With Tomatillo Salsa	https://spoonacular.com/recipeImages/Pork-Tenderloin-With-Mango-Kiwi-Glaze-Served-With-Tomatillo-Salsa-656839.jpg	<ol><li>Dry Rub the Pork:</li><li>Mix together the spices.</li><li>Rub the pork with the spice mix. Cover and refrigerate for 2 hours.</li><li>Make the Glaze*:</li><li>Saute the onion, garlic, ginger, and jalapeño in 2 teaspoons of olive oil.</li><li>Add the mango, kiwi, salt, pepper, and cayenne. Cook over medium heat for 10 minutes or until mixture thickens slightly.</li><li>Cool.</li><li>Puree in blender or food processor. Strain into a clean bowl.</li><li>Add lime juice and set aside.</li><li>This can be made a day ahead.</li><li>Cook and glaze the pork:</li><li>Preheat oven to 425F.</li><li>Heat 2 teaspoons olive oil in an oven-proof pan. Sear the pork on all sides in the hot pan.</li><li>Place the pork in the oven for 5 minutes. Brush with glaze.</li><li>Cook for another 5 minutes and brush with more glaze. Reserve the remaining glaze to serve alongside the pork.</li><li>Allow to finish cooking for 10 minutes or until the internal temperature reaches 145F.</li><li>Remove from oven and allow to rest for at least 10-15 minutes before slicing.</li><li>Make the Tomatillo Salsa**:</li><li>Mix ingredients together.</li><li>Allow to sit until ready to use.</li><li>Serve with the pork tenderloin.</li><li>Can be made a day ahead.</li><li>Serve it up:</li><li>Slice the pork and serve with the salsa and any remaining glaze.</li></ol>	mexican	45	4	f	f	t	t
 284	Pressed Bean, Veggie and Cheddar Burrito	https://spoonacular.com/recipeImages/Pressed-Bean--Veggie---Cheddar-Burrito-657126.jpg	<ol><li>Get all the ingredients ready first, diced the veggies, shred the cheese, rinse the beans. I leave the avocado slicing until I'm ready to assemble so it does't brown.</li><li>In a large saute pan, over medium high heat, add a few drizzles of olive oil and the corn, bell peppers and onions. Season with salt, pepper and garlic powder. You are looking just to cook until the veggies are just starting to soften. Add in the black beans and the lime juice. Cook for a couple minutes until the beans are warmed through.</li><li>Thats it! Now time to assemble. Lay the tortilla flat, add a line of cheese, the veggies and a few slices of avocado.</li><li>Fold the end over the filling then fold in the sides. Roll until almost at the end then add a little bit more cheese so it gets sealed a bit better.</li><li>Place the burrito onto a panini press set on high, You are looking just to crunch up the outside a bit. Notice mine opened up in the corner, its because I used whole grain tortilla wraps and found that they were more brittle then a regular wrap.</li></ol>	mexican	45	4	t	f	t	f
 285	Restaurant Style Salsa	https://spoonacular.com/recipeImages/Restaurant-Style-Salsa-658180.png	<ol><li>Combine all ingredients in a food processor. Pulse until you get the salsa consistency you like. 10 to 15 pulses. Test seasonings and adjust accordingly.</li><li>Store in a Tupperware container.</li><li>Ready in 5 minutes</li></ol>	mexican	5	4	f	f	t	t
 286	Roasted Veggie Burrito	https://spoonacular.com/recipeImages/Roasted-Veggie-Burrito-658705.jpg	<ol><li>Preheat oven to 425 degrees. Slice veggies into  inch bite sizes pieces, and onion into small slices. Place on baking sheet, add 1 tbsp olive oil, pepper to taste, garlic powder, onion powder and chili powder. Toss together until evenly distributed.Bake until veggies begin to caramelize, about 25 minutes.</li><li>Heat 1 tbsp olive oil in a large frying pan over medium high heat. Add beans and spices. Stir and cook until beans are heated through, about 5 minutes. Add veggies and mix together. Let everything heat together for about 2 minutes. Remove from heat.</li><li>Assemble Burrito: On a flour burrito tortilla, place about  cup veggie and black bean mixture per burrito. Add  of the cheese to each burrito. Add 1 TBSP sour cream, salsa on top on each burrito. Add 2 TBSP of guacamole and corn to each burrito. Fold the edges in and roll along the long edge of the tortilla.If desired, place on foil and roll so that foil is wrapped around the burrito.</li></ol>	mexican	45	4	t	f	f	f
@@ -6302,9 +6303,9 @@ COPY "Recipe" (id, title, image_uri, instructions, cuisine, ready_in_minutes, se
 317	BBQ Beef Brisket	https://spoonacular.com/recipeImages/BBQ-Beef-Brisket-634486.jpg	<ol><li>Trim any large, thick pieces of fat from the brisket (dont remove all of the fat because it keeps the meat moist during cooking and adds flavor)</li><li>Sprinkle brisket with salt and pepper.</li><li>Mix the onion powder, garlic powder, smoked paprika, cumin, and cayenne pepper together in a small bowl.</li><li>Dry rub both sides of the brisket with the seasoning mixture.</li><li>Heat oil in a pan over medium-high heat and sear the meat on both sides.</li><li>Remove from the heat and set aside.</li><li>Stir together the honey barbecue sauce and brown sugar.</li><li>Pour half of the sauce into the bottom of your slow cooker.</li><li>Place the brisket, fatty side up, into the slow cooker.</li><li>Cover the top o the brisket with the remaining sauce.</li><li>Cover the slow cooker and set heat to low for 9 hours, or until fork tender.</li><li>When the brisket is cooked, remove it carefully from the slow cooker and place it on a cutting board.</li><li>Pour the sauce from the slow cooker into a saucepan and let it cool.</li><li>Skim the fat that has risen to the top of the sauce in the large bowl.</li><li>It will appear lighter in color than the sauce, like droplets of oil on the surface. Skim as much fat as you can.</li><li>In a small bowl, stir together cornstarch and 1 tbs. of water till completely smooth.</li><li>Pour the cornstarch mixture into the bowl of sauce and stir to combine.</li><li>Reduce the sauce quickly in a saucepan on the stovetop by simmering it to 10 minutes.</li><li>Pour the sauce over the brisket and serve.</li><li>The leftovers make great BBQ sandwiches.</li><li>If you like crockpot food, be sure to check out some of my favorite recipes at www.mealdiva.com</li></ol>	southern	45	8	f	f	t	t
 318	Boozy BBQ Chicken	https://spoonacular.com/recipeImages/Boozy-Bbq-Chicken-635675.jpg	<ol><li>DIRECTIONS:</li><li>Open beer start to drink.</li><li>Soak wooden skewers in a shallow dish filled with water. In a large glass or ceramic dish, mix orange juice, olive oil, wine, soy sauce, Sriracha or Tabasco sauce, molasses, garlic, ginger and pepper.</li><li>Cut orange, peppers, onion & broccoli into large bite-sized chunks (at least 1" thick) and place in the dish.</li><li>Add mushrooms and tomatoes.</li><li>Stir veggies in marinade to coat.</li><li>Cover and refrigerate while you prep chicken.</li><li>Warm outdoor grill to medium heat.</li><li>Rinse chicken and pat dry with paper towel (toss that towel!).</li><li>In small bowl mix mustard, salt and pepper. Brush chicken with mustard mixture.</li><li>Wash your hands and go stir those veggies so all sides absorb the marinade.</li><li>When beer is half empty, refill can with salad dressing and squeeze in juice from 1/2 lemon.</li><li>Put can on a disposable baking sheet. Place upright chicken on can like a stand, inserting can into cavity of chicken.</li><li>Place baking sheet with beer and chicken on the preheated grill.</li><li>Cover. Set your time for 1 hour.</li><li>Start on a second beer or that remaining white wine.</li><li>In a medium saucepan, pour rice, water, and 3-4 splashes of your beverage (about 1/4 cup) into medium sauce pan.</li><li>Bring to a boil, stir and reduce heat to low.</li><li>Cover with lid and cook for 25-30 minutes.</li><li>Back to the kebabs.</li><li>Remove veggies from fridge and using the sharp end of the skewer begin threading.</li><li>Distribute veggies evenly onto 6-8 skewers.</li><li>Check rice: It's done when all liquid is absorbed but before it starts sticking to the bottom of the pan.</li><li>Turn off heat under the rice and let it sit.</li><li>Go back to grill.</li><li>You should be at about an hour on the chicken.</li><li>Carefully slice in to see meat has gone from pink to white.</li><li>Remove from grill</li><li>Allow to cool for at least 15 minutes so you don't burn the hell out of yourself cutting it into pieces for your guest(s).</li><li>In the meantime throw those kebabs directly on the grill.</li><li>Flip them over after about 5 minutes to get the other side and allow to cook for another 5-8min.</li><li>Kebabs are done when veggies are al dente (softened but still firm).</li><li>Turn off grill and remove from heat.</li><li>Put rice in a serving dish, and chicken pieces and full skewers on a platter. Squeeze remaining lemon juice over chicken.</li><li>Let people serve themselves.</li><li>Eat, drink and be merry!</li><li>DW | Food and Drink</li></ol>	southern	45	6	f	f	f	t
 319	Brandy Bread Pudding	https://spoonacular.com/recipeImages/Brandy-Bread-Pudding-635901.jpg	<ol><li>Preheat oven to 325. Put the raisins in a bowl, pour the brandy over them and let soak for 1/2 hour. Arrange the 8 slices of bread, which you have buttered on both sides, in a buttered baking dish. Bring the milk to a boil, remove from the heat and stir in the sugar until completely dissolved. With an electric mixer, beat the eggs and egg yolks; pour in the milk gradually and add the vanilla. In the baking dish pour the raisins and brandy over the </li></ol>	southern	45	1	t	f	f	f
-320	Gluten Free and Flour-Less Bread with Collard Greens	https://spoonacular.com/recipeImages/Gluten-Free---Flour-Less-Bread-w--Collard-Greens-644791.jpg	<ol><li>Preheat your oven to 375 degrees. Begin by roasting the garlic, jalapenos and bell pepper. Leave the skin on the garlic cloves, wrap in tin foil and place wrapped garlic and all peppers on a cookie sheet; roast for 20 - 25 minutes, until veggies look puffy and skin is browned and flaying away from the flesh of the peppers.  A few minutes after putting the garlic and peppers in the oven, open both bags of collard greens, spread the greens over a cookie sheet and place in oven for 12 minutes with the roasting peppers in order to thaw the greens.</li><li>Remove the greens and roasted veggies from the oven; allow to cool. While cooling, crack the eggs into a large mixing bowl. Beat eggs, add the grapeseed oil and stir.  Once the greens are cool enough to handle, take large handfuls of the collard greens and squeeze all the water out of them over the sink. Once the water is squeezed out, put the handfuls in the mixing bowl with the egg.  Do this for all of the collards.</li><li>Using your fingers, remove the skin from the peppers, remove the seeds and chop into small pieces.  Remove the garlic cloves from the foil, remove the skin and coarsely chop the garlic.  Add chopped peppers and garlic to the mixing bowl with the collards and egg.  Add salt and crushed red pepper to the mixing bowl.  Using a fork, mix everything together until everything is coated with egg.</li><li>Line a baking sheet with parchment paper. Turn the collard mixture out on top of the parchment paper.  Using a fork, press mixture firmly into the parchment paper. There is enough in this recipe to cover a 12 x 17 baking sheet, though be prepared to do a lot of pressing in order to evenly disburse the mixture over the full sheet.</li><li>Bake in the oven for 30  35 minutes until the edges are just barely beginning to brown and the collards feel dry and firm to the touch.</li><li>Allow to cool and pulling the edges of the parchment paper, place on a chopping block. Chop the bread into desired sizes. This makes 12 decent sized squares. Use for sandwiches, paninis, personal-sized pizzas or eat plain as a snack.</li></ol>	southern	45	12	t	f	t	t
+320	Gluten Free and Flour-Less Bread with Collard Greens	https://spoonacular.com/recipeImages/Gluten-Free---Flour-Less-Bread-w--Collard-Greens-644791.jpg	<ol><li>Preheat your oven to 375 degrees. Begin by roasting the garlic, jalapeños and bell pepper. Leave the skin on the garlic cloves, wrap in tin foil and place wrapped garlic and all peppers on a cookie sheet; roast for 20 - 25 minutes, until veggies look puffy and skin is browned and flaying away from the flesh of the peppers.  A few minutes after putting the garlic and peppers in the oven, open both bags of collard greens, spread the greens over a cookie sheet and place in oven for 12 minutes with the roasting peppers in order to thaw the greens.</li><li>Remove the greens and roasted veggies from the oven; allow to cool. While cooling, crack the eggs into a large mixing bowl. Beat eggs, add the grapeseed oil and stir.  Once the greens are cool enough to handle, take large handfuls of the collard greens and squeeze all the water out of them over the sink. Once the water is squeezed out, put the handfuls in the mixing bowl with the egg.  Do this for all of the collards.</li><li>Using your fingers, remove the skin from the peppers, remove the seeds and chop into small pieces.  Remove the garlic cloves from the foil, remove the skin and coarsely chop the garlic.  Add chopped peppers and garlic to the mixing bowl with the collards and egg.  Add salt and crushed red pepper to the mixing bowl.  Using a fork, mix everything together until everything is coated with egg.</li><li>Line a baking sheet with parchment paper. Turn the collard mixture out on top of the parchment paper.  Using a fork, press mixture firmly into the parchment paper. There is enough in this recipe to cover a 12 x 17 baking sheet, though be prepared to do a lot of pressing in order to evenly disburse the mixture over the full sheet.</li><li>Bake in the oven for 30  35 minutes until the edges are just barely beginning to brown and the collards feel dry and firm to the touch.</li><li>Allow to cool and pulling the edges of the parchment paper, place on a chopping block. Chop the bread into desired sizes. This makes 12 decent sized squares. Use for sandwiches, paninis, personal-sized pizzas or eat plain as a snack.</li></ol>	southern	45	12	t	f	t	t
 321	Herb chicken with sweet potato mash and sauteed broccoli	https://spoonacular.com/recipeImages/Herb-chicken-with-sweet-potato-mash-and-sauted-broccoli-646651.jpg	<ol><li> Preheat the oven to 350F (180C) or 320F (160C) for convection oven and cook the chicken according to the pack instructions.</li><li> About 15 minutes before the end of the chicken cooking time, place the diced potato into boiling water for 5 minutes, then add the sweet potato and cook until the potatoes are tender. Roughly mash, adding butter, salt, and pepper to taste, then mash thoroughly.</li><li> Heat the oil in a pan and quickly saut the broccoli until tender. Cover to keep warm.</li><li> Remove the chicken from the oven, leave to cool for a minute then cut the bag open and gently tip the contents into a dish.</li><li> Slice the chicken breasts into chunky pieces on a board, keeping the chicken breast shape together.</li><li> Serve the mash potato topped with the chicken and remaining sauce with a side of broccoli.</li></ol>	southern	45	4	f	f	t	f
-322	How Sweet It Is Sweet Potato Lasagne	https://spoonacular.com/recipeImages/How-Sweet-It-Is-Sweet-Potato-Lasagne-647563.jpg	<ol><li>Slice the Sweet Potato into 1/4 inch thick slices. Boil until semi-cooked (about 10 min). Rub the slices with a dry curry powder & olive oil (1cup) mixture. Set aside and let marinate for at least 10 min.</li><li>Slice Eggplants into 1/4 inch thick slices and rub all over with an olive oil (1 cup)/dried basil/salt & pepper mix. Set aside and let marinate for at least 15 min.</li><li>Pour canola or vegetable cooking oil into a pan. Saute spinach and mushrooms for about 3-5 min, add in jalapenos and salt & pepper to taste.</li><li>Turn the heat down and add in some heavy cream and about 1/2 of the mexican cheeses until mixture is creamy, but not watery.</li><li>Start layering the lasagne in this order: Sweet Potatoes, Spinach/Mushroom Mix, Eggplants, Marinara Sauce, Sweet Potatoes, Spinach/Mushrom Mix, Eggplants, Then finally sprinkle the remaining Monterey Jack/Cheddar Cheese Blend on top.</li><li>Bake at 350-375 for about 35-45 min, depending on how your oven works. You'll know it's ready when you can pass through a fork easily through all the layers.</li><li>Devour with Passion</li></ol>	southern	45	6	t	f	t	f
+322	How Sweet It Is Sweet Potato Lasagne	https://spoonacular.com/recipeImages/How-Sweet-It-Is-Sweet-Potato-Lasagne-647563.jpg	<ol><li>Slice the Sweet Potato into 1/4 inch thick slices. Boil until semi-cooked (about 10 min). Rub the slices with a dry curry powder & olive oil (1cup) mixture. Set aside and let marinate for at least 10 min.</li><li>Slice Eggplants into 1/4 inch thick slices and rub all over with an olive oil (1 cup)/dried basil/salt & pepper mix. Set aside and let marinate for at least 15 min.</li><li>Pour canola or vegetable cooking oil into a pan. Saute spinach and mushrooms for about 3-5 min, add in jalapeños and salt & pepper to taste.</li><li>Turn the heat down and add in some heavy cream and about 1/2 of the mexican cheeses until mixture is creamy, but not watery.</li><li>Start layering the lasagne in this order: Sweet Potatoes, Spinach/Mushroom Mix, Eggplants, Marinara Sauce, Sweet Potatoes, Spinach/Mushrom Mix, Eggplants, Then finally sprinkle the remaining Monterey Jack/Cheddar Cheese Blend on top.</li><li>Bake at 350-375 for about 35-45 min, depending on how your oven works. You'll know it's ready when you can pass through a fork easily through all the layers.</li><li>Devour with Passion</li></ol>	southern	45	6	t	f	t	f
 323	Kale and Roasted Sweet Potato Soup with Chicken Sausage	https://spoonacular.com/recipeImages/Kale-and-Roasted-Sweet-Potato-Soup-with-Chicken-Sausage-648721.jpg	<ol><li>Place cubed sweet potatoes in a baking pan or dish. Season with salt and pepper and coat with olive oil.</li><li>Bake for 20  25 minutes, until soft. Remove from oven and set aside.</li><li>In a dutch oven over medium heat, warm some olive oil.</li><li>Cook the chicken sausage until just browned.</li><li>Add in onion and mushrooms and cook for about 3  5 minutes, until softened.</li><li>Add in garlic, thyme, coriander, some sea salt and black pepper. Stir in and cook for about 1 minute.</li><li>Pour in chicken stock and bring to a boil.</li><li>Reduce heat and simmer for about 5  10 minutes.</li><li>Add in roasted sweet potatoes and kale.</li><li>Push the kale down into the soup so its submerged. Cook for about 3  5 minutes, until bright green and tender.</li></ol>	southern	45	4	f	f	t	t
 324	Lamb and Sweet Potato Stew	https://spoonacular.com/recipeImages/Lamb-and-Sweet-Potato-Stew-649190.jpg	<ol><li>In a bowl toss lamb with flour and salt and pepper to taste. In a 10-inch skillet heat oil over moderately high heat and saute garlic, stirring, 1 minute. Add lamb and brown, stirring, about 2 minutes. Add wine and boil 1 minute. Add water and cinnamon stick and scatter sweet potato on top.</li><li>Simmer stew, covered, about 30 minutes, or until lamb is tender, and season with salt and pepper.</li><li>Serves 2.</li></ol>	southern	45	1	f	f	f	t
 325	Lentil, Sweet Potato and Spinach Soup	https://spoonacular.com/recipeImages/Lentil--Sweet-Potato-and-Spinach-Soup-649946.jpg	<ol><li>Let the dry beans soak for a 2-3 hours before you start the soup. When ready to cook, pour the water in a pot, let boil and add the onions and garlic. Add the lentils, peanut butter, and bay leaves when the water comes to a steady boil. Cover the pot and cut up the potatoes and carrots. Let the lentils cook for an hour or so, checking on it periodically (adding water is common). Then add the potatoes and carrots, along with various seasonings (curry, salt, pepper and cumin) and cover. Make sure to taste as go and let cook for about another 45 minutes to an hour. Turn off the flame and place a bunch of fresh spinach on the bottom of a bowl, pour in the soup and enjoy!</li></ol>	southern	45	6	t	t	t	t
@@ -6359,7 +6360,7 @@ COPY "Recipe" (id, title, image_uri, instructions, cuisine, ready_in_minutes, se
 374	Vegetarian Thai Red Curry	https://spoonacular.com/recipeImages/Vegetarian-Thai-Red-Curry-664716.jpg	<ol><li>Whizz the paste ingredients in a food processor. Marinate the tofu in 2 tbsp soy sauce, juice 1 lime and the chopped chili.</li><li>Heat half the oil in a large pan. Add 3-4 tbsp paste and fry for 2 mins. Stir in the coconut milk with 100ml water, the courgette, aubergine and pepper and cook for 10 mins until almost tender.</li><li>Drain the tofu, pat dry, then fry in the remaining oil in a small pan until golden.</li><li>Add the mushrooms, sugar snaps and most of the basil to the curry, then season with the sugar, remaining lime juice and soy sauce. Cook for 4 mins until the mushrooms are tender, then add the tofu and heat through. Scatter with sliced chili and basil and serve with jasmine rice.</li></ol>	thai	45	4	t	t	t	t
 375	Easy To Make Spring Rolls	https://spoonacular.com/recipeImages/Easy-To-Make-Spring-Rolls-642129.jpg	<ol><li>Have all the ingredients ready for assembly. In a large bowl filled with water, dip a wrapper in the water. The rice wrapper will begin to soften and this is your cue to remove it from the water and lay it flat. Place 2 shrimp halves in a row across the center and top with basil, mint, cilantro and lettuce. Leave about 1 to 2 inches uncovered on each side.  Fold uncovered sides inward, then tightly roll the wrapper, beginning at the end with the lettuce.  Repeat with remaining wrappers and ingredients. Cut and serve at room temperature with dipping sauce.</li><li>The Culinary Chases Note: The rice wrapper can be fussy to handle if you let it soak too long. I usually give it a couple of swishes in the water and then remove. It may feel slightly stiff but by the time you are ready to roll up, the wrapper will become very pliable.  A typical spring roll contains cooked rice vermicelli, slivers of cooked pork and julienned carrots but you can use whatever suits your fancy.  Enjoy!</li></ol>	vietnamese	45	4	f	f	t	t
 376	Gluten Free Vegetarian Spring Rolls With Thai-Style Peanut Sauce	https://spoonacular.com/recipeImages/Gluten-Free-Vegetarian-Spring-Rolls-With-Thai-Style-Peanut-Sauce-644859.jpg	<ol><li>Bring a large pot of water to boil over high heat. Remove from heat and stir in the rice noodles. Let stand 10 minutes, stirring occasionally, or until soft and opaque. Drain and rinse under cold water for 30 seconds; drain again. Cut into 1-inch lengths and transfer to a large bowl.</li><li>Add all of the remaining ingredients, except the rice papers and sauce, to the noodles and mix well.</li><li>Prepare a bowl of warm water large enough to dip the rice papers. Working with one at a time, dip the rice paper in the warm water until it begins to soften, 8-10 seconds. Transfer to a flat work surface. Working quickly, put about 1/4 cup filling on each wrapper. Fold the bottom of the wrapper up over the filling, and then fold each side toward the center. Roll from the bottom to the top of each roll, as tightly as you can without ripping the wrapper. Wrap in plastic to keep from drying out. Repeat with remaining wrappers and filling. Serve at room temperature, with Peanut Dipping sauce. Alternatively, refrigerate for a minimum of 2 hours, or overnight, and serve 4To prepare Peanut Dipping Sauce:</li><li>To prepare Peanut Dipping Sauce:</li><li>In a small bowl, combine the warm water and sugar, stirring until the sugar is dissolved. Add the remaining ingredients, whisking until smooth and well blended. Serve at room temperature.</li></ol>	vietnamese	45	15	t	f	f	t
-377	Grilled Chicken Banh Mi	https://spoonacular.com/recipeImages/Grilled-Chicken-Banh-Mi-645634.jpg	<ol><li>Mix the first six ingredients in a baking dish. Add the chicken breasts to the dish, cover, and refrigerate at least 1 hour. </li><li>Stir the hot tap water and sugar in a medium bowl, until the sugar dissolves. Add the vinegar, salt, red pepper, sliced carrots and radishes. Cover and refrigerate for at least 30 minutes.</li><li>Heat the grill to medium. Grill the chicken breasts for 5 minutes per side. Remove from heat and cover them with foil to rest for 5 minutes.</li><li>Open the sub rolls and grill the insides for about 1-3 minute until toasted.</li><li>Drain the pickled veggies. Slice the chicken into thin pieces.</li><li>Spread mayo over in the sub rolls. Layer the cucumbers, chicken, pickled veggies, cilantro leaves and jalapenos in the rolls.</li><li>Serve immediately! </li></ol>	vietnamese	110	6	f	f	f	t
+377	Grilled Chicken Banh Mi	https://spoonacular.com/recipeImages/Grilled-Chicken-Banh-Mi-645634.jpg	<ol><li>Mix the first six ingredients in a baking dish. Add the chicken breasts to the dish, cover, and refrigerate at least 1 hour. </li><li>Stir the hot tap water and sugar in a medium bowl, until the sugar dissolves. Add the vinegar, salt, red pepper, sliced carrots and radishes. Cover and refrigerate for at least 30 minutes.</li><li>Heat the grill to medium. Grill the chicken breasts for 5 minutes per side. Remove from heat and cover them with foil to rest for 5 minutes.</li><li>Open the sub rolls and grill the insides for about 1-3 minute until toasted.</li><li>Drain the pickled veggies. Slice the chicken into thin pieces.</li><li>Spread mayo over in the sub rolls. Layer the cucumbers, chicken, pickled veggies, cilantro leaves and jalapeños in the rolls.</li><li>Serve immediately! </li></ol>	vietnamese	110	6	f	f	f	t
 378	Phyllo Dough Baked Spring Rolls	https://spoonacular.com/recipeImages/Phyllo-Dough-Baked-Spring-Rolls-655903.jpg	<ol><li>Place 2 Tbsp. oil in a wok or large frying pan over medium to high heat.</li><li>Add garlic, galangal (or ginger), shallots, and chili. Stir-fry until fragrant (about 1 minute). Stir-frying Tip: Add a little water to the wok/pan when it gets too dry instead of more oil.</li><li>Add cabbage, mushrooms, and tofu and shrimp. As you stir-fry, add the sauce.</li><li>Stir-fry 1-2 minutes, add the rest of the vegetables, except for the bean sprouts, coriander and basil.</li><li>Stir-fry until vegetables have softened.</li><li>Remove from heat and add bean sprouts, tossing to mix in.</li><li>Do a taste test for salt, adding 1 Tbsp. more fish or soy sauce if not salty enough.</li><li>ASSEMBLING THE ROLLS</li><li>Paint half of 1 sheet of phyllo dough with melted butter, margarine, or olive oil.</li><li>Using the butter as glue, fold the sheet in half to form a rectangle.</li><li>Pile about 1/3 cup of filling at the bottom of a narrow side, leaving a 2-inch border on 3 sides.</li><li>To form the log, fold the bottom flap up and over the filling, fold in the sides and roll up to seal.</li><li>Paint the roll with melted butter and place, seam side down, onto a baking sheet.</li><li>Repeat with the remaining sheets of phyllo dough.</li><li>Tips: Spread the filling lengthwise along the phyllo dough nearer the end closest to you. Also, try not to include too much of the liquid left in the bottom of your wok/pan (a slotted spoon works well for this  drier filling is better. Now sprinkle some of the fresh coriander and basil over the filling.</li><li>BAKING THE ROLLS</li><li>Preheat the oven to 400.</li><li>Bake in the center of the oven for 15 to 20 minutes, until lightly golden all over.</li></ol>	vietnamese	45	20	f	f	f	t
 379	Vegetarian Spring Rolls With Garlic Lime Sauce	https://spoonacular.com/recipeImages/Vegetarian-Spring-Rolls-With-Garlic-Lime-Sauce-664708.jpg	<ol><li>Julienne red and yellow bell pepper, carrots, jicama and Thai basil into 1/8in thin and 2 inch long strips.</li><li>Fill a round pie pan or shallow plate with warm water. Dip one rice paper, making sure both sides are soaked. Lay on a flat flour towel cloth. Wait ten seconds for the paper to soft before using.</li><li>Peel rice paper off of cloth.</li><li>Place half of one butter leaf lettuce on top. Make sure to discard the ribbing.</li><li>Add a thin layer of each vegetable and finish with a few pieces of Thai Basil.</li><li>Starting at one end, fold the edge towards the middle. Repeat with parallel side. Rotate the spring roll by 90 degrees and roll form one end to the next.</li><li>Cut each roll diagonally and place facing up on a serving platter.</li><li>Garlic Lime Hoisin Sauce: Using a mortar and pestle crush garlic and ginger. Whisk in lime and Sriracha. Add hoisin sauce and whisk to combine.</li></ol>	vietnamese	45	10	t	f	t	t
 380	Vietnamese Banh Mi	https://spoonacular.com/recipeImages/Vietnamese-Banh-Mi-664828.jpg	<ol><li>Mix all marinade ingredients (except for pork) in a plastic bag. Let all ingredients dissolve in oil, then add slices of pork.</li><li>Allow pork to marinade for at least 1 hour.</li><li>Heat pan on medium heat, lay slices of pork, one layer at a time. When one side is cooked, flip to other side to finish cooking.</li><li>Let the meat rest for 10 minutes and then slice into strips</li><li>Assemble pork in your sandwich</li></ol>	vietnamese	45	6	f	f	f	t
