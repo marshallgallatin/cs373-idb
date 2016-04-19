@@ -17,12 +17,16 @@
 	</style>
 	<script>
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
-			$scope.runTests = function () {
-				$http.get("unittest").then(function (transmit) {
-					$scope.unitoutput = transmit.data;
-				});
-			}
-		});
+			$scope.getData = function() {
+				$http.get('sweetmusic/data').then( function(transmit) {
+					$scope.data = transmit.data;
+					console.log($scope.data);
+				})
+			};
+			$(function() {
+				$scope.getData();
+			});
+		}); // end angular.module(...)
 	</script>
 {% endblock scripts %}
 
@@ -174,3 +178,4 @@ for item in data['results']:
 	<pre>{{ '{{unitoutput}}' }}</pre>
 </div>
 {% endblock content %}
+

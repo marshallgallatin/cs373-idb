@@ -198,20 +198,27 @@ sweetmusic_url = 'http://sweetmusic.me/'
 
 @app.route("/sweetmusic.html")
 def sweetmusic():
+	return render_template('sweetmusic.html', title="SweetMusic")
+
+@app.route("/sweetmusic/data")
+def sweetmusic_data():
 	major_lazer_id = 'http://sweetmusic.me/artists?ids=738wLrAtLtCtFOLvQBXOXp'
 	response = requests.get(major_lazer_id).json()
 	# print(response)
 	album_id = response['artists'][0]['album_id']
-	getFeaturedArtistsFromAlbumID(album_id)
-	return render_template('sweetmusic.html', title="SweetMusic")
+	featured_artists = getFeaturedArtistsFromAlbumID(album_id)
+	print(featured_artists)
+	return jsonify(featured_artists)
 
 # returns a set of ids of all artists on an album_id
 def getFeaturedArtistsFromAlbumID(album_id):
 	url = sweetmusic_url + 'albums?ids=' + album_id
 	response = requests.get(url).json()
-	artist_ids = {a['artist_id'] for t in response['albums'][0]['tracks'] for a in t['artists']}
+	artist_ids = {a['artist_id']:a['artist_name'] for t in response['albums'][0]['tracks'] for a in t['artists']}
+	return artist_ids
 	# print(response)
-	print(artist_ids)
+	# print(artist_ids)
+
 
 def getArtistsFromTrack(track):
 	return 
