@@ -38,21 +38,49 @@
 			}
 			$scope.computeIsLoading = function () {
 				$scope.isLoading = 	$scope.isLoadingData;
+				console.log("recompute: " + $scope.isLoading);
 			}
 			$scope.getData = function () {
 				$scope.isLoadingData = true;
-				$http.get("query?q={{ title }}&limit=" + $scope.perPage + "&page=" + $scope.page).then(function (transmit) {
+				$http.get("searchTEST?keywords={{ title }}&limit=" + $scope.perPage + "&page=" + $scope.page).then(function (transmit) {
 					$scope.data = transmit.data;
-					for (var i = 0; i < $scope.data.results.length; ++i) {
-						$scope.data.results[i].snippet = $sceDelegate.trustAs($sce.HTML, $scope.data.results[i].snippet)
-						console.log("sanitizing: " + $scope.data.results[i].snippet);
-					}
-					console.log("Search results: " + $scope.data.results.length);
-					$scope.maxPage = Math.ceil(transmit.data.count / $scope.perPage);
+					$scope.processResults($scope.data.and.results);
+					$scope.processResults($scope.data.or.results);
+					console.log("Length 'and' results: " + $scope.data.and.count);
+					console.log("Length 'or' results: " + $scope.data.or.count);
+					$scope.maxPage = Math.ceil(($scope.data.and.count + $scope.data.or.count) / $scope.perPage);
+					console.log("Max Page: " + $scope.maxPage);
+
+					$scope.allResults = $scope.data.and.results.concat($scope.data.or.results);
+					$scope.computeResultsList();
 					
 					$scope.isLoadingData = false;
 					$scope.computeIsLoading();
 				});
+			}
+			$scope.processResults = function (results) {
+				for (var i = 0; i < results.length; ++i) {
+					if (results[i].title != undefined) results[i].title = $sceDelegate.trustAs($sce.HTML, results[i].title);
+					else results[i].name = $sceDelegate.trustAs($sce.HTML, results[i].name);
+					for (var y = 0; y < results[i].snippets.length; ++y) {
+						results[i].snippets[y] = $sceDelegate.trustAs($sce.HTML, results[i].snippets[y]);
+						console.log("sanitizing: " + results[i].snippets[y]);
+					}
+				}
+			}
+			$scope.computeResultsList = function () {
+				if ($scope.allResults == undefined)
+					$scope.allResults = $scope.data.and.results.concat($scope.data.or.results);
+				var startI = ($scope.page - 1) * $scope.perPage;
+				$scope.results = $scope.allResults.splice(startI, $scope.perPage);
+				$scope.firstAnd = (startI > $scope.data.and.count ? -1 : 0);
+				if (startI > $scope.data.and.count) {
+					$scope.firstOr = 0;
+				} else if (startI + $scope.perPage > $scope.data.and.count) {
+					$scope.firstOr = $scope.data.and.count % $scope.perPage;
+				} else {
+					$scope.firstOr = -1;
+				}
 			}
 			$(function() {
 				$scope.getData();
@@ -66,40 +94,36 @@
 <div ng-show="isLoading" class="alert alert-warning">
   Loading data...
 </div>
-	<div class="row" ng-repeat="x in data.results" style="margin-left:10px; margin-bottom:10px">
+	<h1>Search Results</h1>
+	<div class="row" ng-repeat="x in results" style="margin-left:10px; margin-bottom:10px">
+		<div ng-if="$index == firstAnd">Exact matches:</div>
+		<div ng-if="$index == firstOr">Partial matches:</div>
 		<div ng-if="x.type == 'recipe'" style="margin-bottom:10px;">
-			<h3><a ng-href="/recipe_{{ '{{x.id}}' }}.html">{{ '{{x.title}}' }} - Recipe</a></h3>
+			<h3><a ng-href="/recipe_{{ '{{x.id}}' }}.html"><span ng-bind-html="x.title"></span> - Recipe</a></h3>
 			<div class="row">
 				<a ng-href="/recipe_{{ '{{x.id}}' }}.html">
 					<div class="col-xs-2 img-square" style='background-image:url("{{ '{{x.image_uri}}' }}")'></div>
 				</a>
 				<div class="col-xs-10">
 					A {{ '{{x.cuisine}}' }} dish that you can prepare in {{ '{{x.ready_in_minutes}}' }} minutes.<br />
-					Serves {{ '{{x.servings}}' }} people. <p ng-bind-html="x.snippet"></p>
+					Serves {{ '{{x.servings}}' }} people.
+					<div style="width:100%; text-overflow:ellipsis;">
+						...<span ng-repeat="s in x.snippets"><span ng-bind-html="s"></span>...</span>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div ng-if="x.type == 'ingredient'" style="margin-bottom:10px;">
-			<h3><a ng-href="/ingredient_{{ '{{x.id}}' }}.html">{{ '{{x.name}}' }} - Ingredient</a></h3>
+			<h3><a ng-href="/ingredient_{{ '{{x.id}}' }}.html"><span ng-bind-html="x.name"></span> - Ingredient</a></h3>
 			<div class="row">
 				<a ng-href="/recipe_{{ '{{x.id}}' }}.html">
 					<div class="col-xs-2 img-square" style='background-image:url("{{ '{{x.image_uri}}' }}")'></div>
 				</a>
 				<div class="col-xs-10">
 					The {{ '{{x.name}}' }} (<i>{{ '{{x.scientific_name}}' }}</i>) originates from {{ '{{x.origin}}' }}.<br />
-					<p ng-bind-html="x.snippet"></p>
-				</div>
-			</div>
-		</div>
-		
-		<div ng-if="$last">
-			<h3><a ng-href="/ingredient_{{ '{{x.id}}' }}.html">{{ '{{x.name}}' }} - Ingredient</a></h3>
-			<div class="row">
-				<a ng-href="/recipe_{{ '{{x.id}}' }}.html">
-					<div class="col-xs-2 img-square" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/6/6c/Herjangsfjorden_%26_Ofotfjorden,_wide,_2009_09.jpg')"></div>
-				</a>
-				<div class="col-xs-10">
-					A african dish that you can prepare in 75 minutes.<br>
+					<div style="width:100%; text-overflow:ellipsis;">
+						...<span ng-repeat="s in x.snippets"><span ng-bind-html="s"></span>...</span>
+					</div>
 				</div>
 			</div>
 		</div>

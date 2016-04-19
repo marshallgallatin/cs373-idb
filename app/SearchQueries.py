@@ -7,7 +7,7 @@ import re
 
 replaceTagWithSpaceRegularExpression = re.compile('\</li\>\<li\>')
 removeTagRegularExpression = re.compile('\<ol\>\<li\>|\</li\>\</ol\>')
-boldTagsRegularExpression = re.compile('(\<b\>.*\</b\>)?')
+boldTagsRegularExpression = re.compile('.*(\<b\>.*\</b\>).*')
 numberOfWordsOnEitherSideOfMatch = 3
 
 def search(keywords):
@@ -47,6 +47,7 @@ def search(keywords):
             returnDict['title'] = title
             returnDict['snippets'] = [snippet for snippet in getAllSnippets(instructions.split(' '))]
 
+            QueryHelpers.removeNoneDictEntries(returnDict)
             return returnDict
 
         def ingredientResultDict(ingredient):
@@ -64,6 +65,7 @@ def search(keywords):
             returnDict['name'] = name
             returnDict['snippets'] = [snippet for snippet in getAllSnippets(scientificName.split(' '))]
 
+            QueryHelpers.removeNoneDictEntries(returnDict)
             return returnDict
 
         andResults = [recipeResultDict(recipe) for recipe in recipesAnd] + [ingredientResultDict(ingredient) for ingredient in ingredientsAnd]
