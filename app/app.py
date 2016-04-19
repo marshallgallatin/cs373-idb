@@ -194,13 +194,27 @@ def static_html(path):
 def unittest():
 	return subprocess.getoutput('python3 tests.py -v')
 
+sweetmusic_url = 'http://sweetmusic.me/'
+
 @app.route("/sweetmusic.html")
 def sweetmusic():
-	url = 'http://sweetmusic.me/artists?ids=738wLrAtLtCtFOLvQBXOXp'
-	response = requests.get(url)
-	print(response.json())
+	major_lazer_id = 'http://sweetmusic.me/artists?ids=738wLrAtLtCtFOLvQBXOXp'
+	response = requests.get(major_lazer_id).json()
+	# print(response)
+	album_id = response['artists'][0]['album_id']
+	getFeaturedArtistsFromAlbumID(album_id)
 	return render_template('sweetmusic.html', title="SweetMusic")
-	return render_template('sweetmusic.html', title="SweetMusic")
+
+# returns a set of ids of all artists on an album_id
+def getFeaturedArtistsFromAlbumID(album_id):
+	url = sweetmusic_url + 'albums?ids=' + album_id
+	response = requests.get(url).json()
+	artist_ids = {a['artist_id'] for t in response['albums'][0]['tracks'] for a in t['artists']}
+	# print(response)
+	print(artist_ids)
+
+def getArtistsFromTrack(track):
+	return 
 
 ############  WEBSITE TEST ENTRY POINTS ###########
 # These will be used as unit tests run locally
