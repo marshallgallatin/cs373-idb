@@ -18,4 +18,8 @@ def getFeaturedArtistsFromArtistID(artist_id):
 
 def getArtistIDJson(artist_id):
 	url = sweetmusic_url + 'artists?ids=' + artist_id
-	return requests.get(url).json()
+	response = requests.get(url).json()
+	response['name'] = 'major lazer'
+	response['children'] = [{'name': 'child1'}]
+	print(response)
+	return response
