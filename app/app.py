@@ -3,6 +3,7 @@
 import re
 from flask import Flask, jsonify, request, render_template
 from flask_restful import reqparse, abort, Api, Resource
+import requests
 import RecipeQueries
 import IngredientQueries
 import SearchQueries
@@ -193,6 +194,14 @@ def static_html(path):
 def unittest():
 	return subprocess.getoutput('python3 tests.py -v')
 
+@app.route("/sweetmusic.html")
+def sweetmusic():
+	url = 'http://sweetmusic.me/artists?ids=738wLrAtLtCtFOLvQBXOXp'
+	response = requests.get(url)
+	print(response.json())
+	return render_template('sweetmusic.html', title="SweetMusic")
+	return render_template('sweetmusic.html', title="SweetMusic")
+
 ############  WEBSITE TEST ENTRY POINTS ###########
 # These will be used as unit tests run locally
 ###################################################
@@ -363,4 +372,4 @@ def page_not_found(error):
 	return render_template('404.html', error=error)
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000, debug=True)
