@@ -7,7 +7,7 @@ import re
 
 replaceTagWithSpaceRegularExpression = re.compile('\</li\>\<li\>')
 removeTagRegularExpression = re.compile('\<ol\>\<li\>|\</li\>\</ol\>')
-boldTagsRegularExpression = re.compile('(\<b\>.*\</b\>)?')
+boldTagsRegularExpression = re.compile('.*(\<b\>.*\</b\>).*')
 numberOfWordsOnEitherSideOfMatch = 3
 
 def search(keywords):
