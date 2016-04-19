@@ -16,7 +16,6 @@
 	}
 
 	.node circle {
-	  cursor: pointer;
 	  fill: #fff;
 	  stroke: steelblue;
 	  stroke-width: 1.5px;
@@ -43,9 +42,9 @@
 			}
 
 			$scope.D3 = function() {
-				var m = [20, 120, 20, 120],
-				    w = 1280 - m[1] - m[3],
-				    h = 800 - m[0] - m[2],
+				var m = {'top': 20, 'right': 120, 'bottom': 20, 'left': 120},
+				    w = 1280 - m.right - m.left,
+				    h = 800 - m.top - m.bottom,
 				    i = 0,
 				    root;
 
@@ -56,26 +55,12 @@
     				.projection(function(d) { return [d.y, d.x]; });
 
 				var svg = d3.select('#body').append('svg')
-					.attr('width', w + m[1] + m[3])
-					.attr('height', h + m[0] + m[2])
+					.attr('width', w + m.right + m.left)
+					.attr('height', h + m.top + m.bottom)
 					.append('g')
-						.attr('transform', 'translate(' + m[3] + ',' + m[0] + ')');
+						.attr('transform', 'translate(' + m.left + ',' + m.top + ')');
 
-				// edit root from here
-				var json = {{ json|tojson}};
-				console.log(json)
-				root = json;
-
-				// function toggleAll(d) {
-				//     if (d.children) {
-				//       d.children.forEach(toggleAll);
-				//       toggle(d);
-				//     }
-				// }
-				
-				// root.children.forEach(toggleAll);
-
-				// update(root);
+				var json = {{ json|tojson }};
 
 				var nodes = tree.nodes(json),
 					links = tree.links(nodes);
@@ -118,10 +103,10 @@
 {% endblock title %}
 
 {% block content %}
-<h1>Sweet Music Page </h1>
+<h1>Sweet Music Page</h1>
 <div ng-app="mbApp" ng-controller="mbCtrl">
 	<div class="container">
-		<h2> D3 </h2>
+		<h2> Featured Artists </h2>
 		<div id="body">
 		</div>
 	</div>
