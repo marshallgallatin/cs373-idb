@@ -79,7 +79,7 @@
 				if ($scope.allResults == undefined)
 					$scope.allResults = $scope.data.and.results.concat($scope.data.or.results);
 				var startI = ($scope.page - 1) * $scope.perPage;
-				$scope.results = $scope.allResults.splice(startI, $scope.perPage);
+				$scope.results = $scope.allResults.slice(startI, startI + $scope.perPage);
 				$scope.firstAnd = (startI > $scope.data.and.count ? -1 : 0);
 				if (startI > $scope.data.and.count) {
 					$scope.firstOr = 0;
