@@ -15,3 +15,7 @@ def getFeaturedArtistsFromArtistID(artist_id):
 	album_id = response['artists'][0]['album_id']
 	featured_artists = getFeaturedArtistsFromAlbumID(album_id)
 	return featured_artists
+
+def getArtistIDJson(artist_id):
+	url = sweetmusic_url + 'artists?ids=' + artist_id
+	return requests.get(url).json()

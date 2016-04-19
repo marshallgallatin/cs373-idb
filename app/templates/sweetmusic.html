@@ -14,6 +14,23 @@
 		white-space: pre;
 		overflow: scroll;
 	}
+
+	.node circle {
+	  cursor: pointer;
+	  fill: #fff;
+	  stroke: steelblue;
+	  stroke-width: 1.5px;
+	}
+
+	.node text {
+	  font-size: 11px;
+	}
+
+	path.link {
+	  fill: none;
+	  stroke: #ccc;
+	  stroke-width: 1.5px;
+	}
 	</style>
 
 	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
@@ -24,112 +41,136 @@
 				console.log(data)
 				$scope.data = '{{ data }}'
 			}
+
 			$scope.D3 = function() {
-				var w = 900,
-					h = 400;
+				var m = [20, 120, 20, 120],
+				    w = 1280 - m[1] - m[3],
+				    h = 800 - m[0] - m[2],
+				    i = 0,
+				    root;
 
-				var circleWidth = 5;
+				var tree = d3.layout.tree()
+					.size([h,w])
 
-				var colors = d3.scale.category20c(); // d3 utility function, colors
+				var diagonal = d3.svg.diagonal()
+    				.projection(function(d) { return [d.y, d.x]; });
 
-				var nodes = [
-					{name: "Parent"},
-					{name: "child1"},
-					{name: "child2", target: [0]},
-					{name: "child3", target: [0]},
-					{name: "child4", target: [1]},
-					{name: "child5", target: [0, 1, 2, 3]}
-				]
+				var vis = d3.select('#body').append('svg:svg')
+					.attr('width', w + m[1] + m[3])
+					.attr('height', h + m[0] + m[2])
+					.append('svg:g')
+						.attr('transform', 'translate(' + m[3] + ',' + m[0] + ')');
 
-				// source, target
-				var links = [];
-				for (var i = 0; i < nodes.length; i++)
-				{
-					// check that the node we're working with has targets
-					// if the target exists
-					if (nodes[i].target !== undefined)
-					{
-						for (var x = 0; x < nodes[i].target.length; x++)
-						{
-							links.push({
-								source: nodes[i],
-								target: nodes[nodes[i].target[x]]
-							})
-						}
-					}
+				function update(source) {
+				  var duration = d3.event && d3.event.altKey ? 5000 : 500;
+
+				  // Compute the new tree layout.
+				  var nodes = tree.nodes(root).reverse();
+
+				  // Normalize for fixed-depth.
+				  nodes.forEach(function(d) { d.y = d.depth * 180; });
+
+				  // Update the nodes…
+				  var node = vis.selectAll("g.node")
+				      .data(nodes, function(d) { return d.id || (d.id = ++i); });
+
+				  // Enter any new nodes at the parent's previous position.
+				  var nodeEnter = node.enter().append("svg:g")
+				      .attr("class", "node")
+				      .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+				      .on("click", function(d) { toggle(d); update(d); });
+
+				  nodeEnter.append("svg:circle")
+				      .attr("r", 1e-6)
+				      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+				  nodeEnter.append("svg:text")
+				      .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
+				      .attr("dy", ".35em")
+				      .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
+				      .text(function(d) { return d.name; })
+				      .style("fill-opacity", 1e-6);
+
+				  // Transition nodes to their new position.
+				  var nodeUpdate = node.transition()
+				      .duration(duration)
+				      .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+
+				  nodeUpdate.select("circle")
+				      .attr("r", 4.5)
+				      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+				  nodeUpdate.select("text")
+				      .style("fill-opacity", 1);
+
+				  // Transition exiting nodes to the parent's new position.
+				  var nodeExit = node.exit().transition()
+				      .duration(duration)
+				      .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
+				      .remove();
+
+				  nodeExit.select("circle")
+				      .attr("r", 1e-6);
+
+				  nodeExit.select("text")
+				      .style("fill-opacity", 1e-6);
+
+				  // Update the links…
+				  var link = vis.selectAll("path.link")
+				      .data(tree.links(nodes), function(d) { return d.target.id; });
+
+				  // Enter any new links at the parent's previous position.
+				  link.enter().insert("svg:path", "g")
+				      .attr("class", "link")
+				      .attr("d", function(d) {
+				        var o = {x: source.x0, y: source.y0};
+				        return diagonal({source: o, target: o});
+				      })
+				    .transition()
+				      .duration(duration)
+				      .attr("d", diagonal);
+
+				  // Transition links to their new position.
+				  link.transition()
+				      .duration(duration)
+				      .attr("d", diagonal);
+
+				  // Transition exiting nodes to the parent's new position.
+				  link.exit().transition()
+				      .duration(duration)
+				      .attr("d", function(d) {
+				        var o = {x: source.x, y: source.y};
+				        return diagonal({source: o, target: o});
+				      })
+				      .remove();
+
+				  // Stash the old positions for transition.
+				  nodes.forEach(function(d) {
+				    d.x0 = d.x;
+				    d.y0 = d.y;
+				  });
 				}
 
-				var myChart = d3.select('#chart')
-					.append('svg')
-						.attr('width', w)
-						.attr('height', h)
-
-				// force layout
-				var force = d3.layout.force()
-					.nodes(nodes)
-					.links([])
-					.gravity(0.3)
-					.charge(-1000)
-					.size([w, h])
-
-				var link = myChart.selectAll('line')
-					.data(links)
-					.enter().append('line')
-					.attr('stroke', 'black')
-
-				var node = myChart.selectAll('circle')
-					.data(nodes)
-					.enter()
-					.append('g')
-					.call(force.drag)
-
-				// changes every node in the graphic
-				node.append('circle')
-					.attr('cx', function(d) {
-						return d.x;
-					})
-					.attr('cy', function(d) {
-						return d.y;
-					})
-					.attr('r', circleWidth)
-					.attr('fill', colors[1])
-
-				node.append('text')
-					.text(function(d) {return d.name})
-					.attr('font-family', 'Robot Slab')
-					.attr('text-anchor', 'beginning')
-					.attr('fill', function(d, i) {
-						if (i > 0) { return "black"; } // if child
-						else { return "blue"; }
-					})
-					.attr('font-size', function(d, i) {
-						if (i == 0) { return '1.8em'; } // if parent
-						return '1em';
-					})
-
-				force.on('tick', function(e) { // 'tick' is javascript's time passing
-					node.attr('transform', function(d, i) {
-						return 'translate(' + d.x + ',' + d.y + ')';
-					})
-
-					link
-						.attr('x1', function(d) {
-							return d.source.x;
-						})
-						.attr('y1', function(d) {
-							return d.source.y;
-						})
-						.attr('x2', function(d) {
-							return d.target.x;
-						})
-						.attr('y2', function(d) {
-							return d.target.y;
-						})
-				})
+				// Toggle children.
+				function toggle(d) {
+				  if (d.children) {
+				    d._children = d.children;
+				    d.children = null;
+				  } else {
+				    d.children = d._children;
+				    d._children = null;
+				  }
+				}
 
 
-				force.start();
-			}
+				var json = '{{ json }}'
+				console.log(json)
+				root = json;
+				root.x0 = h/2;
+				root.y0 = 0;
+				update(root);
+
+			} // end $scope.D3
 
 			$(function() {
 				$scope.getData();
@@ -146,17 +187,11 @@
 {% block content %}
 <h1>Sweet Music Page </h1>
 <div ng-app="mbApp" ng-controller="mbCtrl">
-	<div class="row"> 
-		<div class="col-xs-12 col-sm-6 col-lg-6">
-			<div ng-repeat="x in data">
-				<br /> {{ data }}
-			</div>
-		</div>
-	</div>
 	<div class="container">
 		<h2> D3 </h2>
-	<div id="chart"></div>
-</div>
+		<div id="body">
+		</div>
+	</div>
 </div>
 {% endblock content %}
 

@@ -200,8 +200,8 @@ def sweetmusic():
 	major_lazer_id = '738wLrAtLtCtFOLvQBXOXp'
 	featured_artists = SweetMusicQueries.getFeaturedArtistsFromArtistID(major_lazer_id)
 	data = featured_artists
-	print(data)
-	return render_template('sweetmusic.html', title="SweetMusic", data=data, json=data)
+	json = SweetMusicQueries.getArtistIDJson(major_lazer_id)
+	return render_template('sweetmusic.html', title="SweetMusic", data=data, json=json)
 
 ############  WEBSITE TEST ENTRY POINTS ###########
 # These will be used as unit tests run locally
