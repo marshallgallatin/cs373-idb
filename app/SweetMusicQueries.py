@@ -6,7 +6,7 @@ sweetmusic_url = 'http://sweetmusic.me/'
 def getFeaturedArtistsFromAlbumID(album_id):
 	url = sweetmusic_url + 'albums?ids=' + album_id
 	response = requests.get(url).json()
-	artist_ids = {a['artist_id']:a['artist_name'] for t in response['albums'][0]['tracks'] for a in t['artists']}
+	artist_ids = {a['artist_name'] for t in response['albums'][0]['tracks'] for a in t['artists']}
 	return artist_ids
 
 def getFeaturedArtistsFromArtistID(artist_id):
