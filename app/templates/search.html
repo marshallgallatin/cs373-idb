@@ -138,7 +138,7 @@
 	<center>
 		<ul class="pagination">
 			<li ng-if="maxPage > pageWheelLength"><a ng-click="changePage(-1)">First</a></li>
-			<li ng-repeat="p in pages"><a ng-click="changePage($index)">{{ '{{pages[$index]}}' }}</a></li>
+			<li ng-repeat="p in pages" ng-class="pages[$index] == page ? 'active' : ''"><a ng-click="changePage($index)">{{ '{{pages[$index]}}' }}</a></li>
 			<li ng-if="maxPage > pageWheelLength"><a ng-click="changePage(-2)">Last</a></li>
 		</ul>
 		<br />Max Page: {{ '{{maxPage}}' }}
