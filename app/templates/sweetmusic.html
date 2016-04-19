@@ -35,12 +35,6 @@
 	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 	<script>
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
-			$scope.getData = function() {
-				var data = '{{ data }}'
-				console.log(data)
-				$scope.data = '{{ data }}'
-			}
-
 			$scope.D3 = function() {
 				var m = {'top': 20, 'right': 120, 'bottom': 20, 'left': 120},
 				    w = 1280 - m.right - m.left,
@@ -84,14 +78,13 @@
 
 				node.append('text')
 					.attr("dx", function(d) { return d.children ? -8 : 8; })
-				    .attr("dy", 3)
-				    .attr("text-anchor", function(d) { return d.children ? "end" : "start"; })
+				    .attr("dy", -15)
+				    .attr("text-anchor", function(d) {return d.root ? "start" : "end"})
 				    .text(function(d) { console.log(d); return d.name; });
 
 			} // end $scope.D3
 
 			$(function() {
-				$scope.getData();
 				$scope.D3();
 			});
 		}); // end angular.module(...)

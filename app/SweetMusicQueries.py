@@ -27,7 +27,5 @@ def buildArtistTree(artist_id, depth):
 	featured_artists = getFeaturedArtistsFromArtistID(artist_id)
 	tree = dict()
 	tree['name'] = json['artists'][0]['name'] + ' - ' + json['artists'][0]['recent_album']
-	tree['children'] = [buildArtistTree(x, depth - 1) for x in featured_artists if depth > 0]
-	# if depth > 0:
-	# 	tree['children'] = [buildArtistTree(x, depth - 1) for x in featured_artists]
+	tree['children'] = [buildArtistTree(x, depth - 1) for x in featured_artists if depth > 0 and x != artist_id]
 	return tree

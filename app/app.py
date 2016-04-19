@@ -198,13 +198,12 @@ def unittest():
 @app.route("/sweetmusic.html")
 def sweetmusic():
 	major_lazer_id = '738wLrAtLtCtFOLvQBXOXp'
-	featured_artists = SweetMusicQueries.getFeaturedArtistsFromArtistID(major_lazer_id)
-	data = featured_artists
 	json = SweetMusicQueries.getArtistIDJson(major_lazer_id)
 	tree = SweetMusicQueries.buildArtistTree(major_lazer_id, 1)
+	tree['root'] = True
 	print(json)
 	print(tree)
-	return render_template('sweetmusic.html', title="SweetMusic", data=data, json=tree)
+	return render_template('sweetmusic.html', title="SweetMusic", json=tree)
 
 ############  WEBSITE TEST ENTRY POINTS ###########
 # These will be used as unit tests run locally
