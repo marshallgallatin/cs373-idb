@@ -127,7 +127,7 @@
 					<div class="col-xs-2 img-square" style='background-image:url("{{ '{{x.image_uri}}' }}")'></div>
 				</a>
 				<div class="col-xs-10">
-					The {{ '{{x.name}}' }} (<i>{{ '{{x.scientific_name}}' }}</i>) originates from {{ '{{x.origin}}' }}.<br />
+					The <span ng-bind-html="x.name"></span> (<i>{{ '{{x.scientific_name}}' }}</i>) originates from {{ '{{x.origin}}' }}.<br />
 					<div style="width:100%; text-overflow:ellipsis;">
 						...<span ng-repeat="s in x.snippets"><span ng-bind-html="s"></span>...</span>
 					</div>
