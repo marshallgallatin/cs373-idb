@@ -23,12 +23,16 @@ def search(keywords):
             kw = keyword.lower()
             if kw in knownDietRestrictions:
                 restrictions[kw] = True
+                keywords.remove(kw)
             if kw in glutenFree:
                 restrictions['gluten_free'] = True
+                keywords.remove(kw)
             if kw in dairyFree:
                 restrictions['dairy_free'] = True
+                keywords.remove(kw)
             if kw in Cuisine.__members__:
                 restrictions['cuisine'] = Cuisine[kw].name
+                keywords.remove(kw)
 
         filteredRecipes = session.query(models.Recipe).filter_by(**restrictions)
 
