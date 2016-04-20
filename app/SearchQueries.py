@@ -1,3 +1,4 @@
+from enums import Cuisine
 from sqlalchemy import orm
 from sqlalchemy import or_, and_
 from useDatabase import sessionInstance
@@ -10,14 +11,33 @@ removeTagRegularExpression = re.compile('\<ol\>\<li\>|\</li\>\</ol\>')
 boldTagsRegularExpression = re.compile('.*(\<b\>.*\</b>).*')
 numberOfWordsOnEitherSideOfMatch = 3
 
+
 def search(keywords):
     with sessionInstance() as session:
+        # Diet and cuisine restrictions
+        knownDietRestrictions = ['vegetarian', 'vegan', 'gluten_free', 'dairy_free']
+        glutenFree = ['gluten-free']
+        dairyFree = ['dairy-free', 'lactose-free', 'nondairy', 'non-dairy']
+        restrictions = {}
+        for keyword in keywords:
+            kw = keyword.lower()
+            if kw in knownDietRestrictions:
+                restrictions[kw] = True
+            if kw in glutenFree:
+                restrictions['gluten_free'] = True
+            if kw in dairyFree:
+                restrictions['dairy_free'] = True
+            if kw in Cuisine.__members__:
+                restrictions['cuisine'] = Cuisine[kw].name
+
+        filteredRecipes = session.query(models.Recipe).filter_by(**restrictions)
+
         def ilikeGenerator(column):
             return map(lambda x:column.ilike('%' + x + '%'), keywords)
 
-        recipesAnd = session.query(models.Recipe).filter(or_(and_(*ilikeGenerator(models.Recipe.title)), and_(*ilikeGenerator(models.Recipe.instructions)))).all()
+        recipesAnd = filteredRecipes.filter(or_(and_(*ilikeGenerator(models.Recipe.title)), and_(*ilikeGenerator(models.Recipe.instructions)))).all()
         ingredientsAnd = session.query(models.Ingredient).filter(or_(and_(*ilikeGenerator(models.Ingredient.name)), and_(*ilikeGenerator(models.Ingredient.scientific_name)))).all()
-        recipesOr = session.query(models.Recipe).filter(or_(or_(*ilikeGenerator(models.Recipe.title)), or_(*ilikeGenerator(models.Recipe.instructions)))).all()
+        recipesOr = filteredRecipes.filter(or_(or_(*ilikeGenerator(models.Recipe.title)), or_(*ilikeGenerator(models.Recipe.instructions)))).all()
         ingredientsOr = session.query(models.Ingredient).filter(or_(or_(*ilikeGenerator(models.Ingredient.name)), or_(*ilikeGenerator(models.Ingredient.scientific_name)))).all()
 
         def getAllSnippets(iterable):
