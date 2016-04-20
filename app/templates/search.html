@@ -13,6 +13,7 @@
 			{{ testprefix }}$scope.perPage = 2;
 			$scope.maxPage = 18;
 			$scope.pages = [1, 2, 3, 4, 5];
+			$scope.pageWheelLength = 5;
 			$scope.ing;
 			$scope.changePage = function(x) {
 				if (x == -1) {
@@ -34,7 +35,8 @@
 				for (var i = 0; i < $scope.pages.length; ++i) {
 					$scope.pages[i] = $scope.firstNumber + i;
 				}
-				$scope.getData();
+
+				$scope.computeResultsList();
 			}
 			$scope.computeIsLoading = function () {
 				$scope.isLoading = 	$scope.isLoadingData;
@@ -50,6 +52,11 @@
 					console.log("Length 'or' results: " + $scope.data.or.count);
 					$scope.maxPage = Math.ceil(($scope.data.and.count + $scope.data.or.count) / $scope.perPage);
 					console.log("Max Page: " + $scope.maxPage);
+
+					$scope.pages = [];
+					for (var i = 1; i <= $scope.pageWheelLength && i <= $scope.maxPage; ++i) {
+						$scope.pages.push(i);
+					}
 
 					$scope.allResults = $scope.data.and.results.concat($scope.data.or.results);
 					$scope.computeResultsList();
@@ -72,7 +79,7 @@
 				if ($scope.allResults == undefined)
 					$scope.allResults = $scope.data.and.results.concat($scope.data.or.results);
 				var startI = ($scope.page - 1) * $scope.perPage;
-				$scope.results = $scope.allResults.splice(startI, $scope.perPage);
+				$scope.results = $scope.allResults.slice(startI, startI + $scope.perPage);
 				$scope.firstAnd = (startI > $scope.data.and.count ? -1 : 0);
 				if (startI > $scope.data.and.count) {
 					$scope.firstOr = 0;
@@ -120,7 +127,7 @@
 					<div class="col-xs-2 img-square" style='background-image:url("{{ '{{x.image_uri}}' }}")'></div>
 				</a>
 				<div class="col-xs-10">
-					The {{ '{{x.name}}' }} (<i>{{ '{{x.scientific_name}}' }}</i>) originates from {{ '{{x.origin}}' }}.<br />
+					The <span ng-bind-html="x.name"></span> (<i>{{ '{{x.scientific_name}}' }}</i>) originates from {{ '{{x.origin}}' }}.<br />
 					<div style="width:100%; text-overflow:ellipsis;">
 						...<span ng-repeat="s in x.snippets"><span ng-bind-html="s"></span>...</span>
 					</div>
@@ -130,13 +137,9 @@
 	</div>
 	<center>
 		<ul class="pagination">
-			<li><a ng-click="changePage(-1)">First</a></li>
-			<li><a ng-click="changePage(0)">{{ '{{pages[0]}}' }}</a></li>
-			<li><a ng-click="changePage(1)">{{ '{{pages[1]}}' }}</a></li>
-			<li><a ng-click="changePage(2)">{{ '{{pages[2]}}' }}</a></li>
-			<li><a ng-click="changePage(3)">{{ '{{pages[3]}}' }}</a></li>
-			<li><a ng-click="changePage(4)">{{ '{{pages[4]}}' }}</a></li>
-			<li><a ng-click="changePage(-2)">Last</a></li>
+			<li ng-if="maxPage > pageWheelLength"><a ng-click="changePage(-1)">First</a></li>
+			<li ng-repeat="p in pages" ng-class="p == page ? 'active' : ''"><a ng-click="changePage($index)">{{ '{{p}}' }}</a></li>
+			<li ng-if="maxPage > pageWheelLength"><a ng-click="changePage(-2)">Last</a></li>
 		</ul>
 		<br />Max Page: {{ '{{maxPage}}' }}
 	</center>

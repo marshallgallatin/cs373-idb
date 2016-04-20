@@ -114,11 +114,7 @@
 	<center>
 		<ul class="pagination">
 			<li><a ng-click="changePage(-1)">First</a></li>
-			<li><a ng-click="changePage(0)">{{ '{{pages[0]}}' }}</a></li>
-			<li><a ng-click="changePage(1)">{{ '{{pages[1]}}' }}</a></li>
-			<li><a ng-click="changePage(2)">{{ '{{pages[2]}}' }}</a></li>
-			<li><a ng-click="changePage(3)">{{ '{{pages[3]}}' }}</a></li>
-			<li><a ng-click="changePage(4)">{{ '{{pages[4]}}' }}</a></li>
+			<li ng-repeat="p in pages" ng-class="p == page ? 'active' : ''"><a ng-click="changePage($index)">{{ '{{p}}' }}</a></li>
 			<li><a ng-click="changePage(-2)">Last</a></li>
 		</ul>
 		<br />Max Page: {{ '{{maxPage}}' }}
