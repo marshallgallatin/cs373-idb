@@ -7,7 +7,7 @@ import re
 
 replaceTagWithSpaceRegularExpression = re.compile('\</li\>\<li\>')
 removeTagRegularExpression = re.compile('\<ol\>\<li\>|\</li\>\</ol\>')
-boldTagsRegularExpression = re.compile('(\<b\>.*\</b\>)?')
+boldTagsRegularExpression = re.compile('.*(\<b\>.*\</b>).*')
 numberOfWordsOnEitherSideOfMatch = 3
 
 def search(keywords):
@@ -25,7 +25,8 @@ def search(keywords):
                 return max(0, min(len(iterable), number))
 
             for index, word in enumerate(iterable):
-                if boldTagsRegularExpression.match(word).group(0):
+                match = boldTagsRegularExpression.match(word)
+                if match:
                     yield ' '.join(iterable[bound(index-numberOfWordsOnEitherSideOfMatch):bound(index+numberOfWordsOnEitherSideOfMatch)])
 
         keywordFinderRegularExpressions = []
