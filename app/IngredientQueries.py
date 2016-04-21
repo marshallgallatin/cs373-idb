@@ -37,7 +37,9 @@ def getIngredientByID(id):
         return None
     with sessionInstance() as session:
         try:
-            return session.query(models.Ingredient).filter(models.Ingredient.id == id).one().fullDict()
+            fullDict = session.query(models.Ingredient).filter(models.Ingredient.id == id).one().fullDict()
+            del fullDict['id']
+            return fullDict
         except orm.exc.NoResultFound:
             return None
 

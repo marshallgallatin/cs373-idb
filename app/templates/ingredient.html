@@ -106,7 +106,7 @@
 		<div id="recipes" style="max-height:550px; overflow-y:auto">
 			<a ng-repeat="x in recipes" ng-if="$index < maxCount" style="color:black" ng-href="/recipe_{{ '{{x.id}}' }}.html">
 				<div class="col-xs-11" style="margin-top:5px; margin-bottom:10px; box-shadow: 5px 5px 5px #888888;">
-					<div class="img-vert" style="width:100%; max-height:200px; min-height:100px; overflow-y:hidden; background-image:url({{ '{{x.image_uri}}' }})"></div>
+					<div class="img-vert" style="width:100%; max-height:200px; min-height:100px; overflow-y:hidden; background-image:url('{{ '{{x.image_uri}}' }}')"></div>
 					<h4>{{ '{{x.title}}' }}</h4>
 				</div>
 			</a>

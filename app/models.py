@@ -153,7 +153,6 @@ class Ingredient(Base):
             dict: A dictionary with the names of each column as keys, and the value of column as the values.
         """
         columnKeys = getColumnNamesInDeclarationOrder(Ingredient)
-        columnKeys.remove('id')
         selfAsDict = self.__dict__
         return {key:selfAsDict[key] for key in columnKeys}
 
