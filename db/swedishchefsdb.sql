@@ -812,6 +812,7 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 512	brandy	https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Cognac_glass.jpg/1024px-Cognac_glass.jpg	\N	Europe
 513	dark chocolate	https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Schokolade-schwarz.jpg/1024px-Schokolade-schwarz.jpg	Theobroma cacao	NorthAmerica
 514	mixed greens	https://c1.staticflickr.com/9/8062/8196883582_745c9fcbfc_b.jpg	\N	Worldwide
+515	textured vegetable protein	https://upload.wikimedia.org/wikipedia/commons/5/5e/Textured_vegetable_protein.jpg	Glycine max	NorthAmerica
 \.
 
 
@@ -821,7 +822,7 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 -- Name: Ingredient_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('"Ingredient_id_seq"', 515, TRUE);
+SELECT pg_catalog.setval('"Ingredient_id_seq"', 516, TRUE);
 
 --
 -- TOC entry 2051 (class 0 OID 16717)
@@ -1432,7 +1433,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 52	96	sea salt, to taste	12.0	servings	servings	9
 52	255	2 tbsp unrefined sunflower oil	2.0	tbsp	T	10
 52	41	1 tsp sweet paprika	1.0	tsp	t	11
-52	0	100g textured vegetable protein	100.0	g	g	12
+52	515	100g textured vegetable protein	100.0	g	g	12
 52	86	1 tbsp dry thyme	1.0	tbsp	T	13
 53	86	1/2 tsp dried thyme leaves	0.5	tsp	t	0
 53	450	1/2 lb goose or duck, liver pâté or 17 oz. can liver pâté	0.5	lb	lb	1
@@ -5443,6 +5444,28 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 385	114	1 tablespoon sugar	1.0	tablespoon	T	5
 385	7	250g water	250.0	g	g	6
 385	211	100g wholemeal flour	100.0	g	g	7
+386	7	1 cup boiling water	1	cup	c	0
+386	515	1 cup textured vegetable protein (TVP)	1	cup	c	1
+386	282	1 tbsp. ketchup	1	tablespoon	T	2
+386	71	1 tbsp. vegetable oil	1	tablespoon	T	3
+386	4	1 small to medium onion, chopped	1	\N	\N	4
+386	3	1 green bell pepper, cored and chopped	1	\N	\N	5
+386	135	1 large jalapeno pepper, cored and chopped (keep seeds to make it spicy)	1	\N	\N	6
+386	23	2 cloves garlic, chopped	2	cloves	\N	7
+386	95	1 tbsp. chili powder	1	tablespoon	T	8
+386	48	1 tsp. cumin	1	teaspoon	t	9
+386	45	1 tsp. oregano	1	teaspoon	t	10
+386	122	1/4 tsp. cayenne pepper	0.25	teaspoon	t	11
+386	70	1 6-oz. can tomato paste	6	ounces	oz	12
+386	35	1 15-oz. can black beans, with liquid	15	ounces	oz	13
+386	6	1/2 tsp. salt	0.5	teaspoon	t	14
+386	7	1 cup hot water	1	cup	c	15
+387	154	2 kilos of sweet potatoes	2	kilograms	kg	0
+387	7	1 liter of water	1	liter	l	1
+387	114	1 1/2 kilos of sugar	1.5	kilograms	kg	2
+387	18	1 tablespoon of lemon juice	1	tablespoon	T	3
+387	12	1 teaspoon of cinnamon	1	teaspoon	t	4
+387	134	1 teaspoon of vanilla	1	teaspoon	t	5
 \.
 
 
@@ -5966,6 +5989,7 @@ COPY "Nutritional Content" (id, ingredient_id, calories, total_fat_g, saturated_
 512	512	224	0	0	0	0	0	0	0	0	0	0	0	0
 513	513	598	42.63	24.489	3	20	45.9	10.9	23.99	7.79	39	0	73	11.9
 514	514	11	0	0	0	46	2.11	0.7	0	0.7	4600	21	40	1.98
+515	515	333	0	0	0	8	29.17	16.67	12.5	50	0	0	330	11.34
 \.
 
 
@@ -5975,7 +5999,7 @@ COPY "Nutritional Content" (id, ingredient_id, calories, total_fat_g, saturated_
 -- Name: Nutritional Content_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('"Nutritional Content_id_seq"', 515, FALSE);
+SELECT pg_catalog.setval('"Nutritional Content_id_seq"', 516, FALSE);
 
 --
 -- TOC entry 2048 (class 0 OID 16682)
@@ -6369,6 +6393,8 @@ COPY "Recipe" (id, title, image_uri, instructions, cuisine, ready_in_minutes, se
 383	Vietnamese Spring Rolls With Hoisin Peanut Dipping Sauce	https://spoonacular.com/recipeImages/Vietnamese-Spring-Rolls-With-Hoisin-Peanut-Dipping-Sauce-664845.jpg	<ol><li>Bring a saucepan to a boil on medium heat.  Add shrimp and poach for 3-4 minutes until bright pink.  Allow to cool to room temperature.  Remove skins, devein and slice in half crosswise.  Set aside.  Bring a medium saucepan filled halfway with water to a boil.  Once a rapid boil is reached, add rice vermicelli noodles, cover and immediately remove from heat.  Set timer for 5 minutes.  After 5 minutes, drain noodles in a colander and rinse with cold water to stop cooking.  Allow to dry at room temperature or in the refrigerator.</li><li>Meanwhile, begin to prepare the dipping sauce.  Heat a small small saucepan with olive oil on medium-low heat.  Add garlic and saute quickly, about 20 seconds.  Do not let garlic burn.  Add peanut butter and hoisin sauce and continue to stir.  When sauce begins to incorporate and thickens up, add water.  Adjust to taste and continue to add water, 1 tbsp. at a time, if it becomes too thick.  Remove from heat and set aside.</li><li>To assemble rolls, dip single sheets of rice paper into hot water.  Allow excess water to drain and quickly place on a plate.  Once rice paper becomes pliable and soft, add shrimp, softened noodles, cucumbers, red peppers, cilantro and mint.  Carefully roll closed and slice in half.  Serve with hoisin peanut dipping sauce.</li></ol>	vietnamese	45	1	f	f	f	t
 384	Vietnamese Spring Rolls	https://spoonacular.com/recipeImages/Vietnamese-Spring-Rolls-664847.jpg	<ol><li>Soak the rice vermicelli in warm water until they turn soft, then drain them.</li><li>Fill a bowl with warm water. Dip one wrapper at a time into the water for about 1-2 second to soften.</li><li>Lay the wrapper on a dry chopping board or dinner plate. The rice paper should become pliable within seconds.</li><li>In a row across the centre, put 3 prawns, some vermicelli, carrots, bean sprouts, and a few leaves of basil. Leaving about 4-5cm on each side.</li><li>Fold the sides inward, then start to roll tightly and firmly from the end that is near to you into a cylinder, enclosing the filling completely.</li><li>Repeat with the remaining ingredients.</li><li>For the dipping sauce, mix all the ingredients and stir well until the sugar dissolves. Then, put in chopped coriander.</li><li>Serve spring rolls with dipping sauce.</li></ol>	vietnamese	45	4	f	f	f	t
 385	Wholemeal Steam Bun	https://spoonacular.com/recipeImages/Wholemeal-Steam-Bun-665306.jpg	<ol><li>METHOD:</li><li>1.Mix all the ingredients A together and knead into smooth and elastic dough.</li><li>2.Cover with a piece of wet cloth and leave to prove until double its size.</li><li>3.Sift B top of the dough and knead well to distribute the baking powder until the dough is smooth again.</li><li>4.Cover and allow dough to rest for 15 minutes before shaping.</li><li>Meat Fillings :</li><li>boiled eggs (shelled and cut into )</li><li>Marinade for meat : 30 minutes</li><li>Shredded chicken/pork</li><li>2 tbsp. BBQ sauce</li><li>water</li><li>Filling:</li><li>1.Heat oil in a pan adds in marinated meat and stirs fry till aromatic, adds in some water and cooks for 5 minutes until soft. Taste and dish up and leave to cool and chill in the fridge for 3 hours.</li><li>2.Divide dough 12 portions and shape balls.</li><li>3.Flatten, roll into a round shape and add 1 tbsp of filling and pleat the top into a Pau/Bun.</li><li>4.Line Pau/Bun with a piece of white paper and let it prove again for another 15 minutes.</li><li>5.Steam Pau/Bun with high heat for about 15 minutes or until the Pau/Bun is cooked.</li><li>6.Serve hot.</li></ol>	vietnamese	45	16	f	f	f	t
+386	KC's TVP Chili	/static/img/kcs_tvp_chili.jpg	<ol><li>In a medium bowl, combine boiling water, TVP and ketchup. Set aside.</li><li>Heat vegetable oil in a 3-qt. cooking pot, then add the onion, bell pepper, jalapeno, and garlic. Saute for a few minutes until soft.</li><li>Sprinkle chili powder, cumin, oregano, and cayenne pepper into the TVP mixture and stir with a fork.</li><li>Add spiced TVP to the pot, stir and cook for a few more minutes.</li><li>Stir in tomato paste, black beans, salt, and a cup of hot water.</li><li>Cover and simmer for about an hour.</li><li>Serve warm along with any grain of your choice.</li></ol>	southern	80	5	t	t	t	t
+387	Dulce de Batata	https://upload.wikimedia.org/wikipedia/commons/d/d4/Dulce_de_batata1.JPG	<ol><li>Peel the sweet potatoes and cut them in to small slices.<\li><li>Boil them in a small casserole dish with the lemon juice (this is to keep them from darkening).<\li><li>In a big casserole dish put the water, sugar and the vanilla. Boil it at a low temperature for half an hour, this is to prepare the syrup.<\li><li>Take the sweet potatoes, drain them, add them to the large casserole dish full of syrup.<\li><li>Let them cook until the syrup becomes thick and the sweet potatoes are cooked.<\li><li>Remove the dish from the heat.<\li><li>Add the cinnamon to the dish.<\li><li>Let the mixture cool before serving it. It can also be bottled or packaged.</li></ol>	latinAmerican	180	24	t	t	t	t
 \.
 
 
@@ -6378,7 +6404,7 @@ COPY "Recipe" (id, title, image_uri, instructions, cuisine, ready_in_minutes, se
 -- Name: Recipe_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('"Recipe_id_seq"', 386, TRUE);
+SELECT pg_catalog.setval('"Recipe_id_seq"', 388, TRUE);
 
 --
 -- TOC entry 1924 (class 2606 OID 16679)
