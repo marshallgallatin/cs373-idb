@@ -36,9 +36,16 @@
 	<script>
 		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
 			$scope.D3 = function() {
-				var m = {'top': 20, 'right': 120, 'bottom': 20, 'left': 120},
-				    w = 1280 - m.right - m.left,
-				    h = 800 - m.top - m.bottom,
+				var bodyWidth = document.getElementById('body').offsetWidth;
+				var bodyHeight = document.getElementById('body').offsetHeight;
+				if (bodyHeight == 0)
+				{
+					bodyHeight = 800;
+				}
+
+				var m = {'top': 20, 'right': 20, 'bottom': 20, 'left': 20},
+				    w = bodyWidth - m.right - m.left,
+				    h = bodyHeight - m.top - m.bottom,
 				    i = 0,
 				    root;
 
@@ -77,10 +84,10 @@
 					.attr('r', 4.5);
 
 				node.append('text')
-					.attr("dx", function(d) { return d.children ? -8 : 8; })
+					.attr("dx", function(d) { return d.children ? -8 : 8; })	
 				    .attr("dy", -15)
 				    .attr("text-anchor", function(d) {return d.root ? "start" : "end"})
-				    .text(function(d) { console.log(d); return d.name; });
+				    .text(function(d) { return d.name; });
 
 			} // end $scope.D3
 
@@ -98,11 +105,8 @@
 {% block content %}
 <h1>Sweet Music Page</h1>
 <div ng-app="mbApp" ng-controller="mbCtrl">
-	<div class="container">
-		<h2> Featured Artists </h2>
-		<div id="body">
-		</div>
-	</div>
+	<h2> Featured Artists </h2>
+	<div id="body"></div>
 </div>
 {% endblock content %}
 
