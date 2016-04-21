@@ -123,7 +123,7 @@
 		<div ng-if="x.type == 'ingredient'" style="margin-bottom:10px;">
 			<h3><a ng-href="/ingredient_{{ '{{x.id}}' }}.html"><span ng-bind-html="x.name"></span> - Ingredient</a></h3>
 			<div class="row">
-				<a ng-href="/recipe_{{ '{{x.id}}' }}.html">
+				<a ng-href="/ingredient_{{ '{{x.id}}' }}.html">
 					<div class="col-xs-2 img-square" style='background-image:url("{{ '{{x.image_uri}}' }}")'></div>
 				</a>
 				<div class="col-xs-10">
