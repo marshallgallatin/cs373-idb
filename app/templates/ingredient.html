@@ -96,7 +96,10 @@
 			<h1 style="word-wrap: break-word">{{ '{{ basic.name }}' }}</h1>
 			<i>{{ '{{ basic.scientific_name }}' }}</i>
 		</div>
-		<div class="col-xs-12 col-sm-6 col-lg-6"><div class="img-responsive img-square" style="margin-top:10px; background-image:url({{ '{{basic.image_uri}}' }})"></div></div>
+		<div class="col-xs-12 col-sm-6 col-lg-6">
+			<img style="display: none;" onload='setTimeout(rectIt, 50)' src="{{ '{{basic.image_uri}}' }}">
+			<div class="img-responsive img-square" style="margin-top:10px; background-image:url('{{ '{{basic.image_uri}}' }}')"></div>
+		</div>
 	</div>
 	
 	<div class="col-xs-12 col-sm-6">
