@@ -1,0 +1,112 @@
+{% extends "layout.html" %}
+{% block scripts %}
+	<style>
+	td {
+		padding-left: 5px
+	}
+	.img-responsive {
+		max-height: 300px
+	}
+	.panel-code {
+		font-family: Menlo, Monaco, Consolas, "Courier New" , monospace;
+		background-color: #f9f2f4;
+		text-align: left;
+		white-space: pre;
+		overflow: scroll;
+	}
+
+	.node circle {
+	  fill: #fff;
+	  stroke: steelblue;
+	  stroke-width: 1.5px;
+	}
+
+	.node text {
+	  font-size: 11px;
+	}
+
+	path.link {
+	  fill: none;
+	  stroke: #ccc;
+	  stroke-width: 1.5px;
+	}
+	</style>
+
+	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script>
+		angular.module('mbApp', []).controller('mbCtrl', function($scope, $http) {
+			$scope.D3 = function() {
+				var bodyWidth = document.getElementById('body').offsetWidth;
+				var bodyHeight = document.getElementById('body').offsetHeight;
+				if (bodyHeight == 0)
+				{
+					bodyHeight = 800;
+				}
+
+				var m = {'top': 20, 'right': 20, 'bottom': 20, 'left': 20},
+				    w = bodyWidth - m.right - m.left,
+				    h = bodyHeight - m.top - m.bottom,
+				    i = 0,
+				    root;
+
+				var tree = d3.layout.tree()
+					.size([h,w])
+
+				var diagonal = d3.svg.diagonal()
+    				.projection(function(d) { return [d.y, d.x]; });
+
+				var svg = d3.select('#body').append('svg')
+					.attr('width', w + m.right + m.left)
+					.attr('height', h + m.top + m.bottom)
+					.append('g')
+						.attr('transform', 'translate(' + m.left + ',' + m.top + ')');
+
+				var json = {{ json|tojson }};
+
+				var nodes = tree.nodes(json),
+					links = tree.links(nodes);
+
+				var link = svg.selectAll('path.link')
+					.data(links)
+					.enter().append('path')
+						.attr('class', 'link')
+						.attr('d', diagonal);
+
+				var node = svg.selectAll('g.node')
+					.data(nodes)
+					.enter().append('g')
+						.attr('class', 'node')
+						.attr('transform', function(d) {
+							return 'translate(' + d.y + ',' + d.x + ')';
+						})
+
+				node.append('circle')
+					.attr('r', 4.5);
+
+				node.append('text')
+					.attr("dx", function(d) { return d.children ? -8 : 8; })	
+				    .attr("dy", -15)
+				    .attr("text-anchor", function(d) {return d.root ? "start" : "end"})
+				    .text(function(d) { return d.name; });
+
+			} // end $scope.D3
+
+			$(function() {
+				$scope.D3();
+			});
+		}); // end angular.module(...)
+	</script>
+{% endblock scripts %}
+
+{% block title %}
+{{ title }}
+{% endblock title %}
+
+{% block content %}
+<h1>Sweet Music Page</h1>
+<div ng-app="mbApp" ng-controller="mbCtrl">
+	<h2> Featured Artists </h2>
+	<div id="body"></div>
+</div>
+{% endblock content %}
+

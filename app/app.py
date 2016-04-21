@@ -3,9 +3,11 @@
 import re
 from flask import Flask, jsonify, request, render_template
 from flask_restful import reqparse, abort, Api, Resource
+import requests
 import RecipeQueries
 import IngredientQueries
 import SearchQueries
+import SweetMusicQueries
 import subprocess
 
 app = Flask(__name__)
@@ -192,6 +194,13 @@ def static_html(path):
 @app.route("/unittest")
 def unittest():
 	return subprocess.getoutput('python3 tests.py -v')
+
+@app.route("/sweetmusic.html")
+def sweetmusic():
+	major_lazer_id = '738wLrAtLtCtFOLvQBXOXp'
+	tree = SweetMusicQueries.buildArtistTree(major_lazer_id, 2)
+	tree['root'] = True
+	return render_template('sweetmusic.html', title="SweetMusic", json=tree)
 
 ############  WEBSITE TEST ENTRY POINTS ###########
 # These will be used as unit tests run locally
