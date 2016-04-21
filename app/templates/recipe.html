@@ -144,7 +144,7 @@
 			<img ng-show="data.dairy_free" style="max-height:50px;" src="https://www.nuggetmarket.com/img/special-diets/USDDF.png"></img>
 			<img ng-show="data.vegan" style="max-height:50px;" src="http://previews.123rf.com/images/dinozzz/dinozzz1207/dinozzz120700048/14634682-Grunge-vegan-food-rubber-stamp-vector-illustration--Stock-Vector.jpg"></img>
 			<img ng-show="data.vegetarian" style="max-height:50px;" src="http://chop4naija.com/wp-content/uploads/2016/02/Suitable-for-Vegetarians-Sticker.png"></img>
-			<br />Ready in: {{ '{{data.ready_in_minutes}}' }}
+			<br /><img class="img-responsive" style="display:inline-block; max-height:35px;" src="/static/img/time.png"></img> {{ '{{data.ready_in_minutes}}' }} minutes
 			<br />Serves: {{ '{{data.servings}}' }}
 		</div>
 		<div class="col-xs-12 col-sm-6 col-lg-6"><div class="img-responsive img-square" style="margin-top:10px; background-image:url('{{ '{{data.image_uri}}' }}')"></div></div>
