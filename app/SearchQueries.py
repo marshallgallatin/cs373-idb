@@ -8,6 +8,7 @@ import re
 
 replaceTagWithSpaceRegularExpression = re.compile('\</li\>\<li\>')
 removeTagRegularExpression = re.compile('\<ol\>\<li\>|\</li\>\</ol\>')
+removeAllTagRegularExpression = re.compile(r'<[^>]+>')
 boldTagsRegularExpression = re.compile('.*(\<b\>.*\</b>).*')
 numberOfWordsOnEitherSideOfMatch = 3
 
@@ -100,6 +101,7 @@ def search(keywords):
 
             title = recipe.title
             instructions = removeTagRegularExpression.sub('', replaceTagWithSpaceRegularExpression.sub(' ', recipe.instructions))
+            instructions = removeAllTagRegularExpression.sub('', instructions)
 
             for kIndex in range(0, len(keywords)):
                 # We use a lambda function as a way of preserving the original string's case
