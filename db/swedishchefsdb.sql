@@ -813,6 +813,8 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 513	dark chocolate	https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Schokolade-schwarz.jpg/1024px-Schokolade-schwarz.jpg	Theobroma cacao	NorthAmerica
 514	mixed greens	https://c1.staticflickr.com/9/8062/8196883582_745c9fcbfc_b.jpg	\N	Worldwide
 515	textured vegetable protein	https://upload.wikimedia.org/wikipedia/commons/5/5e/Textured_vegetable_protein.jpg	Glycine max	NorthAmerica
+516	M&M's	https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Plain-M%26Ms-Pile.jpg/1013px-Plain-M%26Ms-Pile.jpg	\N	NorthAmerica
+517	Cheerios	https://upload.wikimedia.org/wikipedia/en/6/65/Wiki_cheerios.jpg	\N	NorthAmerica
 \.
 
 
@@ -822,7 +824,7 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 -- Name: Ingredient_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('"Ingredient_id_seq"', 516, TRUE);
+SELECT pg_catalog.setval('"Ingredient_id_seq"', 518, TRUE);
 
 --
 -- TOC entry 2051 (class 0 OID 16717)
@@ -1137,12 +1139,12 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 23	460	12 ounces bottle of stout beer	12.0	ounces	oz	8
 23	123	1 medium sweet onion, diced	1.0	\N	\N	9
 23	339	3 ounces low-fat Swiss cheese, shredded	3.0	ounces	oz	10
-24	0	4 cups Cheerios	4.0	cups	c	0
+24	517	4 cups Cheerios	4.0	cups	c	0
 24	5	1 cup Creamy peanut butter, (up to 1-1/2)	1.0	cup	c	1
 24	0	2 cups Crisp rice cereal	2.0	cups	c	2
 24	384	2 cups Dry roasted peanuts	2.0	cups	c	3
 24	303	1 cup Light corn syrup	1.0	cup	c	4
-24	0	2 cups M&M's	2.0	cups	c	5
+24	516	2 cups M&M's	2.0	cups	c	5
 24	114	3/4 cup sugar	0.75	cup	c	6
 24	134	1/4 teaspoon vanilla extract	0.25	teaspoon	t	7
 25	305	1 teaspoon agave	1.0	teaspoon	t	0
@@ -5990,6 +5992,8 @@ COPY "Nutritional Content" (id, ingredient_id, calories, total_fat_g, saturated_
 513	513	598	42.63	24.489	3	20	45.9	10.9	23.99	7.79	39	0	73	11.9
 514	514	11	0	0	0	46	2.11	0.7	0	0.7	4600	21	40	1.98
 515	515	333	0	0	0	8	29.17	16.67	12.5	50	0	0	330	11.34
+516	516	492	21.13	13.08	14	61	71.19	2.8	63.68	4.33	187	0.5	105	1.11
+517	517	376	6.73	1.5	0	497	73.23	9.4	4.36	12.09	3299	21.6	401	33.17
 \.
 
 
@@ -5999,7 +6003,7 @@ COPY "Nutritional Content" (id, ingredient_id, calories, total_fat_g, saturated_
 -- Name: Nutritional Content_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('"Nutritional Content_id_seq"', 516, FALSE);
+SELECT pg_catalog.setval('"Nutritional Content_id_seq"', 518, FALSE);
 
 --
 -- TOC entry 2048 (class 0 OID 16682)
