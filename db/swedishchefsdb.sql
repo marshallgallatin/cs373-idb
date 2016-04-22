@@ -815,6 +815,8 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 515	textured vegetable protein	https://upload.wikimedia.org/wikipedia/commons/5/5e/Textured_vegetable_protein.jpg	Glycine max	NorthAmerica
 516	M&M's	https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Plain-M%26Ms-Pile.jpg/1013px-Plain-M%26Ms-Pile.jpg	\N	NorthAmerica
 517	Cheerios	https://upload.wikimedia.org/wikipedia/en/6/65/Wiki_cheerios.jpg	\N	NorthAmerica
+518	Rice Krispies	https://upload.wikimedia.org/wikipedia/en/f/f5/Rice-Krispies-Box-Small.jpg	\N	NorthAmerica
+519	amchar masala	http://www.cliqueltd.com/images/big/clqex252_3.jpg	\N	NorthAmerica
 \.
 
 
@@ -824,7 +826,7 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 -- Name: Ingredient_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('"Ingredient_id_seq"', 518, TRUE);
+SELECT pg_catalog.setval('"Ingredient_id_seq"', 520, TRUE);
 
 --
 -- TOC entry 2051 (class 0 OID 16717)
@@ -840,7 +842,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 1	5	peanut butter	4.0	tablespoon	T	4
 1	6	3/4 teaspoon salt	0.75	teaspoon	t	5
 1	7	6 cups water	6.0	cups	c	6
-2	0	1 tablespoon amchar masala	1.0	tablespoon	T	0
+2	519	1 tablespoon amchar masala	1.0	tablespoon	T	0
 2	65	1 cup brown lentils	1.0	cup	c	1
 2	68	1 can crushed tomatoes	1.0	can	can	2
 2	69	1 cauliflower head, cut into bite size pieces	1.0	\N	\N	3
@@ -1141,7 +1143,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 23	339	3 ounces low-fat Swiss cheese, shredded	3.0	ounces	oz	10
 24	517	4 cups Cheerios	4.0	cups	c	0
 24	5	1 cup Creamy peanut butter, (up to 1-1/2)	1.0	cup	c	1
-24	0	2 cups Crisp rice cereal	2.0	cups	c	2
+24	518	2 cups Crisp rice cereal	2.0	cups	c	2
 24	384	2 cups Dry roasted peanuts	2.0	cups	c	3
 24	303	1 cup Light corn syrup	1.0	cup	c	4
 24	516	2 cups M&M's	2.0	cups	c	5
@@ -5994,6 +5996,8 @@ COPY "Nutritional Content" (id, ingredient_id, calories, total_fat_g, saturated_
 515	515	333	0	0	0	8	29.17	16.67	12.5	50	0	0	330	11.34
 516	516	492	21.13	13.08	14	61	71.19	2.8	63.68	4.33	187	0.5	105	1.11
 517	517	376	6.73	1.5	0	497	73.23	9.4	4.36	12.09	3299	21.6	401	33.17
+518	518	381	2.05	0.458	0	527	85.05	0.4	9.87	6.75	3788	63.3	5	30.42
+519	519	300	20	8	0	80	100	80	16	20	1000	18	700	16.2
 \.
 
 
@@ -6003,7 +6007,7 @@ COPY "Nutritional Content" (id, ingredient_id, calories, total_fat_g, saturated_
 -- Name: Nutritional Content_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('"Nutritional Content_id_seq"', 518, FALSE);
+SELECT pg_catalog.setval('"Nutritional Content_id_seq"', 520, FALSE);
 
 --
 -- TOC entry 2048 (class 0 OID 16682)
