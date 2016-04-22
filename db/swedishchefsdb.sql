@@ -817,6 +817,12 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 517	Cheerios	https://upload.wikimedia.org/wikipedia/en/6/65/Wiki_cheerios.jpg	\N	NorthAmerica
 518	Rice Krispies	https://upload.wikimedia.org/wikipedia/en/f/f5/Rice-Krispies-Box-Small.jpg	\N	NorthAmerica
 519	amchar masala	http://www.cliqueltd.com/images/big/clqex252_3.jpg	\N	NorthAmerica
+520	instant coffee	https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Instant_coffee.jpg/1024px-Instant_coffee.jpg	\N	Europe
+521	frozen peas and carrots	https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Washing_peas_and_carrots.jpg/1024px-Washing_peas_and_carrots.jpg	\N	NorthAmerica
+522	dried apricots	https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Ab_food_04.jpg/1024px-Ab_food_04.jpg	Prunus armeniaca	Asia
+523	crunchy peanut butter	https://upload.wikimedia.org/wikipedia/en/6/63/Skippy_jars.jpg	\N	NorthAmerica
+524	unsweetened cocoa powder	https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cocoa_powder.jpg/768px-Cocoa_powder.jpg	Theobroma cacao	SouthAmerica
+525	duck	https://pixabay.com/static/uploads/photo/2014/04/05/11/27/roast-315693_960_720.jpg	Anas platyrhynchos	NorthAmerica
 \.
 
 
@@ -826,7 +832,7 @@ COPY "Ingredient" (id, name, image_uri, scientific_name, origin) FROM STDIN;
 -- Name: Ingredient_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('"Ingredient_id_seq"', 520, TRUE);
+SELECT pg_catalog.setval('"Ingredient_id_seq"', 526, TRUE);
 
 --
 -- TOC entry 2051 (class 0 OID 16717)
@@ -1040,7 +1046,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 15	7	1/2 cup water	0.5	cup	c	24
 15	137	2 teaspoons Worcestershire Sauce	2.0	teaspoons	t	25
 15	4	2 large yellow onions, diced	2.0	\N	\N	26
-16	0	4 pounds baby back ribs	4.0	pounds	lb	0
+16	404	4 pounds baby back ribs	4.0	pounds	lb	0
 16	50	1/2 cup brown sugar	0.5	cup	c	1
 16	122	1/2 teaspoon cayenne	0.5	teaspoon	t	2
 16	95	4 teaspoons chile powder	4.0	teaspoons	t	3
@@ -1051,7 +1057,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 16	23	1 Clove Garlic, Minced	1.0	Clove	Clove	8
 16	143	2 teaspoons garlic powder	2.0	teaspoons	t	9
 16	48	2 teaspoons ground cumin	2.0	teaspoons	t	10
-16	0	2 teaspoons instant coffee granules	2.0	teaspoons	t	11
+16	520	2 teaspoons instant coffee granules	2.0	teaspoons	t	11
 16	0	1 teaspoon liquid smoke	1.0	teaspoon	t	12
 16	180	3 tablespoons molasses	3.0	tablespoons	T	13
 16	71	1 tablespoon oil	1.0	tablespoon	T	14
@@ -1065,7 +1071,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 17	435	dulce de leche	24.0	servings	servings	2
 17	14	3 eggs	3.0	\N	\N	3
 17	15	1 1/4 cups flour	1.25	cups	c	4
-17	0	1 tablespoon instant espresso powder	1.0	tablespoon	T	5
+17	520	1 tablespoon instant espresso powder	1.0	tablespoon	T	5
 17	230	1 1/4 cups semisweet chocolate chip	1.25	cups	c	6
 17	114	1/2 cup sugar	0.5	cup	c	7
 17	134	1 tablespoon vanilla extract	1.0	tablespoon	T	8
@@ -1131,16 +1137,17 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 22	245	1 (15 oz) can white hominy or sweet corn, drained	15.0	oz	oz	7
 22	47	2 mediums tomatoes, chopped	2.0	\N	\N	8
 23	56	10 ounces baby bella mushrooms, thickly sliced	10.0	ounces	oz	0
-23	181	1 cup fresh whole wheat bread crumbs (I used a food processor to turn 3 pieces of high-fiber 1/4 cup parsley, chopped	1.0	cup	c	1
-23	283	1 tablespoon Dijon mustard	1.0	tablespoon	T	2
-23	86	1 teaspoon dried thyme	1.0	teaspoon	t	3
-23	14	1 large egg and 1 egg white, lightly beaten	1.0	\N	\N	4
-23	291	1 1/2 pounds lean ground beef (93 percent lean or better)	1.5	pounds	lb	5
-23	72	1/4 cup olive oil	0.25	cup	c	6
-23	58	teaspoon salt and fresh ground pepper to taste (I used about 1/2 each)	1.0	teaspoon	t	7
-23	460	12 ounces bottle of stout beer	12.0	ounces	oz	8
-23	123	1 medium sweet onion, diced	1.0	\N	\N	9
-23	339	3 ounces low-fat Swiss cheese, shredded	3.0	ounces	oz	10
+23	181	1 cup fresh whole wheat bread crumbs	1.0	cup	c	1
+23	43	1/4 cup parsley, chopped	0.25	cup	c	2
+23	283	1 tablespoon Dijon mustard	1.0	tablespoon	T	3
+23	86	1 teaspoon dried thyme	1.0	teaspoon	t	4
+23	14	1 large egg and 1 egg white, lightly beaten	1.0	\N	\N	5
+23	291	1 1/2 pounds lean ground beef (93 percent lean or better)	1.5	pounds	lb	6
+23	72	1/4 cup olive oil	0.25	cup	c	7
+23	58	teaspoon salt and fresh ground pepper to taste (I used about 1/2 each)	1.0	teaspoon	t	8
+23	460	12 ounces bottle of stout beer	12.0	ounces	oz	9
+23	123	1 medium sweet onion, diced	1.0	\N	\N	10
+23	339	3 ounces low-fat Swiss cheese, shredded	3.0	ounces	oz	11
 24	517	4 cups Cheerios	4.0	cups	c	0
 24	5	1 cup Creamy peanut butter, (up to 1-1/2)	1.0	cup	c	1
 24	518	2 cups Crisp rice cereal	2.0	cups	c	2
@@ -1150,10 +1157,10 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 24	114	3/4 cup sugar	0.75	cup	c	6
 24	134	1/4 teaspoon vanilla extract	0.25	teaspoon	t	7
 25	305	1 teaspoon agave	1.0	teaspoon	t	0
-25	0	1 tablespoon organic crunchy peanut butter	1.0	tablespoon	T	1
+25	523	1 tablespoon organic crunchy peanut butter	1.0	tablespoon	T	1
 25	346	1/2 cup non-fat milk	0.5	cup	c	2
 25	437	cup quick cooking oats	1.0	cup	c	3
-25	0	1 teaspoon unsweetened cocoa	1.0	teaspoon	t	4
+25	524	1 teaspoon unsweetened cocoa	1.0	teaspoon	t	4
 26	347	1 cup almond milk or other non-dairy milk (see my almond milk recipe)	1.0	cup	c	0
 26	9	2 bananas, smashed (I used frozen)	2.0	\N	\N	1
 26	5	1/2 cup peanut butter	0.5	cup	c	2
@@ -1282,7 +1289,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 37	6	1/2 teaspoon salt	0.5	teaspoon	t	9
 37	229	1/4 cup confectioner's sugar	0.25	cup	c	10
 38	470	1 teaspoon Almond extract	1.0	teaspoon	t	0
-38	0	Fresh Berries	10.0	servings	servings	1
+38	306	Fresh Berries	10.0	servings	servings	1
 38	0	1/2 cup Mrs Richardson's Butterscotch Caramel sauce	0.5	cup	c	2
 38	298	1 large box instant vanilla pudding	1.0	box	box	3
 38	20	3 cups milk	3.0	cups	c	4
@@ -1801,7 +1808,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 79	249	1/2 cup of red kidney beans	0.5	cup	c	7
 79	174	1 cup of Rice	1.0	cup	c	8
 79	107	3 scotch bonnet peppers	3.0	\N	\N	9
-80	0	1 (8 -10 lb.) Duck	8.0	lb	lb	0
+80	525	1 (8 -10 lb.) Duck	8.0	lb	lb	0
 80	462	1/4 teaspoon five spice powder	0.25	teaspoon	t	1
 80	30	Hoisin sauce	12.0	servings	servings	2
 80	17	1 teaspoon honey	1.0	teaspoon	t	3
@@ -1834,7 +1841,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 81	74	1 tablespoon soy sauce	1.0	tablespoon	T	20
 82	3	1/4 cup bell pepper, diced	0.25	cup	c	0
 82	2	1/4 cup carrot, slivered	0.25	cup	c	1
-82	0	1/4 cup fat-free mayonnaise	0.25	cup	c	2
+82	281	1/4 cup fat-free mayonnaise	0.25	cup	c	2
 82	141	1 teaspoon ginger root, freshly grated	1.0	teaspoon	t	3
 82	94	2 green onions, sliced	2.0	\N	\N	4
 82	268	1/2 tablespoon low-sodium soy sauce	0.5	tablespoon	T	5
@@ -1911,8 +1918,8 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 87	157	2 bunches romaine lettuce hearts	2.0	bunches	bunches	9
 87	94	6 scallions	6.0	\N	\N	10
 87	28	3 tablespoons sesame oil	3.0	tablespoons	T	11
-87	0	juice of 1 mandarin (cut crosswise then tablespoon into jar over a strainer)	1.0	\N	\N	12
-87	0	3 tablespoons white sesame seeds	3.0	tablespoons	T	13
+87	492	juice of 1 mandarin (cut crosswise then tablespoon into jar over a strainer)	1.0	\N	\N	12
+87	46	3 tablespoons white sesame seeds	3.0	tablespoons	T	13
 87	494	1 1/2 tablespoons xylitol (I use Epic Dental brand)	1.5	tablespoons	T	14
 87	492	6-8 fresh satsuma mandarins	6.0	\N	\N	15
 88	14	3 eggs, beaten	3.0	\N	\N	0
@@ -1928,7 +1935,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 88	268	4 TBSP Low Sodium Soy Sauce	4.0	TBSP	TBSP	10
 88	72	1 TBSP Olive Oil	1.0	TBSP	TBSP	11
 88	166	1 TBSP Onion Powder	1.0	TBSP	TBSP	12
-88	0	1 cup frozen peas and carrots, thawed	1.0	cup	c	13
+88	521	1 cup frozen peas and carrots, thawed	1.0	cup	c	13
 88	402	6 oz pork tenderloin	6.0	oz	oz	14
 88	6	1 TBSP Salt	1.0	TBSP	TBSP	15
 89	23	4 garlic cloves, finely chopped	4.0	cloves	cloves	0
@@ -2023,7 +2030,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 97	239	2 cups cooked broccoli, chopped small	2.0	cups	c	0
 97	69	head of cauliflower, raw	1.0	head	head	1
 97	257	1 + 1 T coconut oil or butter	1.0	\N	\N	2
-97	0	3 cups of cooked brown rice, cold	3.0	cups	c	3
+97	177	3 cups of cooked brown rice, cold	3.0	cups	c	3
 97	23	5 cloves of garlic, chopped	5.0	cloves	cloves	4
 97	140	1 + 1 T grapeseed oil	1.0	\N	\N	5
 97	268	3T reduced-sodium soy sauce	3.0	T	T	6
@@ -2089,7 +2096,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 102	345	8 oz. velveeta	8.0	oz	oz	9
 102	7	1 cup water	1.0	cup	c	10
 103	279	2 beef bouillon cubes	2.0	\N	\N	0
-103	0	2 1/2 lb.s top round beef roast	2.5	lb	lb	1
+103	489	2 1/2 lb.s top round beef roast	2.5	lb	lb	1
 103	15	2 tbsp.s flour	2.0	tbsp	T	2
 103	58	1/2 tsp. ground pepper	0.5	tsp	t	3
 103	71	3 tbsp.s oil	3.0	tbsp	T	4
@@ -2126,7 +2133,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 106	181	150 g gluten-free bread crumbs	150.0	g	g	2
 106	440	25 plums, pitted	25.0	\N	\N	3
 106	128	1 kg mashed red skin potatoes (red potatoes have a higher amount of starch so the dough is stickier)	1.0	kg	kg	4
-106	0	1/2 tsp rum extract	0.5	tsp	t	5
+106	317	1/2 tsp rum extract	0.5	tsp	t	5
 106	0	3-4 tbsp sucanat	3.0	tbsp	T	6
 106	255	2 tbsp unrefined sunflower oil	2.0	tbsp	T	7
 106	134	1 tsp vanilla extract	1.0	tsp	t	8
@@ -2212,7 +2219,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 113	114	20g Granulated sugar	20.0	g	g	4
 113	483	200g Nutella	200.0	g	g	5
 113	6	1 pinch Salt	1.0	pinch	pinch	6
-113	0	50cl Skimmed milk	50.0	cl	cl	7
+113	346	50cl Skimmed milk	50.0	cl	cl	7
 113	15	250g Wheat flour	250.0	g	g	8
 114	238	1 lrg eggplant unpeeled, diced	1.0	\N	\N	0
 114	330	4 ounces diced feta cheese (optional)	4.0	ounces	oz	1
@@ -2503,7 +2510,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 140	14	2 large eggs	2.0	\N	\N	4
 140	15	1 1/4 cup (150 g) flour	150.0	g	g	5
 140	493	21 ounces (600 g) rhubarb, peeled and cubed	600.0	g	g	6
-140	0	1 3/4 ounces (50 g) roasted almonds, ground	50.0	g	g	7
+140	117	1 3/4 ounces (50 g) roasted almonds, ground	50.0	g	g	7
 140	6	1 3/4 cups Salt (sack salt, not Iodized)	1.75	cups	c	8
 140	114	1 cup SUGAR, BROWN, 2 LB	1.0	cup	c	9
 140	134	1 teaspoon (5 ml) vanilla extract	5.0	ml	ml	10
@@ -2726,7 +2733,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 160	4	1/2 medium onion, chopped (about 3/4 cup)	0.75	cup	c	11
 160	6	1/4 teaspoon salt	0.25	teaspoon	t	12
 160	7	3 quarts cold water	3.0	quarts	quarts	13
-161	0	1 pack package Angel hair spaghetti 12	1.0	\N	\N	0
+161	365	1 pack package Angel hair spaghetti 12	1.0	\N	\N	0
 161	79	1 large can tomato sauce	1.0	can	can	1
 161	67	1 can diced tomatoes	1.0	can	can	2
 161	87	Fresh basil	8.0	servings	servings	3
@@ -2848,7 +2855,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 170	185	1 teaspoon garam masala	1.0	teaspoon	t	8
 170	282	1 teaspoon Ketchup	1.0	teaspoon	t	9
 170	139	1 tablespoon Lime juice	1.0	tablespoon	T	10
-170	0	A few nuts n raisins	9.0	servings	servings	11
+170	380	A few nuts n raisins	9.0	servings	servings	11
 170	4	1 Big Onion Chopped	1.0	\N	\N	12
 170	59	1/2 teaspoon Pepper Powder	0.5	teaspoon	t	13
 170	6	1/4 teaspoon salt	0.25	teaspoon	t	14
@@ -2913,7 +2920,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 174	187	rice noodles	2.0	servings	servings	5
 174	383	1/4 cup Natural roasted peanuts	0.25	cup	c	6
 174	489	1 pound Black Angus Inside Round Steak (cut in thin slices)	1.0	pound	lb	7
-174	0	1 teaspoon Sambal Oelek	1.0	teaspoon	t	8
+174	78	1 teaspoon Sambal Oelek	1.0	teaspoon	t	8
 174	74	2 tablespoons Soy sauce	2.0	tablespoons	T	9
 175	434	Crème fraiche, 150ml	150.0	ml	ml	0
 175	80	tablespoon Curry powder, 1	1.0	tablespoon	T	1
@@ -3001,7 +3008,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 180	64	2% Milk, as needed	4.0	servings	servings	13
 180	4	3 mediums Onions,	3.0	\N	\N	14
 180	480	1/4 cup Paneer, grated (cottage cheese)	0.25	cup	c	15
-180	0	1/2 cup peas and carrots	0.5	cup	c	16
+180	521	1/2 cup peas and carrots	0.5	cup	c	16
 180	27	5 mediums Potatoes, boiled-peeled-grated	5.0	\N	\N	17
 180	6	Salt to taste	4.0	servings	servings	18
 180	227	1 cup Tomato puree	1.0	cup	c	19
@@ -3107,7 +3114,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 187	2	1/4 cup carrots, finely grated	0.25	cup	c	3
 187	448	2 pounds corned beef brisket	2.0	pounds	lb	4
 187	23	2 cloves garlic, minced	2.0	cloves	cloves	5
-187	0	2 cups Guinness	2.0	cups	c	6
+187	460	2 cups Guinness	2.0	cups	c	6
 187	287	3 spicy honey mustard	3.0	\N	\N	7
 187	361	1 pound parsnips, roughly chopped	1.0	pound	lb	8
 187	27	2 cups potatoes, boiled and mashed roughly (try to use the floury kind of potato)	2.0	cups	c	9
@@ -3169,7 +3176,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 194	210	1/2 c. (2 oz.) plain cake flour	2.0	oz	oz	3
 194	197	1 1/2 t. cream of tartar	1.5	t	t	4
 194	50	1/2 cup dark brown sugar	0.5	cup	c	5
-194	0	1/2 c. dried apricots, chopped	0.5	c	c	6
+194	522	1/2 c. dried apricots, chopped	0.5	c	c	6
 194	437	2 1/2 c. (7 1/2 oz.) old-fashioned oatmeal	7.5	oz	oz	7
 194	6	1/4 teaspoon salt	0.25	teaspoon	t	8
 194	15	3/4 cup unbleached all-purpose flour	0.75	cup	c	9
@@ -3524,7 +3531,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 226	74	1/2 cup soy sauce	0.5	cup	c	8
 226	164	1/2 pound fresh spinach	0.5	pound	lb	9
 226	114	1 tablespoon sugar	1.0	tablespoon	T	10
-226	0	8 ounces firm tofu (preferably silken), cut in 1/2" cubes	8.0	ounces	oz	11
+226	252	8 ounces firm tofu (preferably silken), cut in 1/2" cubes	8.0	ounces	oz	11
 226	7	130 ml water	130.0	ml	ml	12
 227	23	1/2 teaspoon Minced Garlic	0.5	teaspoon	t	0
 227	141	1 1/2 teaspoons ginger root	1.5	teaspoons	t	1
@@ -3596,7 +3603,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 233	297	1 tablespoon rice vinegar	1.0	tablespoon	T	2
 233	28	1 teaspoon sesame oil	1.0	teaspoon	t	3
 233	74	2 tablespoons soy sauce	2.0	tablespoons	T	4
-234	0	6 baby carrots, cut up	6.0	\N	\N	0
+234	2	6 baby carrots, cut up	6.0	\N	\N	0
 234	91	2 smalls chives, cut into squares	2.0	\N	\N	1
 234	141	1 ginger	1.0	\N	\N	2
 234	142	pinch of ginger powder-taste as you go to adjust flavors	1.0	pinch	pinch	3
@@ -3636,7 +3643,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 237	58	Freshly-ground black pepper to taste	6.0	servings	servings	0
 237	2	2 large carrots, sliced	2.0	\N	\N	1
 237	250	2 large celery stalks with leaves on, chopped	2.0	stalks	stalks	2
-237	0	1 5-6 pound chicken	5.0	pound	lb	3
+237	362	1 5-6 pound chicken	5.0	pound	lb	3
 237	216	Optional: fresh dill or parsley for garnish	6.0	servings	servings	4
 237	14	3 Eggs	3.0	\N	\N	5
 237	216	3 sprigs fresh dill	3.0	sprigs	sprigs	6
@@ -3777,7 +3784,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 249	163	1/2 cup fish sauce	0.5	cup	c	2
 249	23	12 garlic cloves	12.0	cloves	cloves	3
 249	141	2 tbsp minced ginger	2.0	tbsp	T	4
-249	0	4 cups gochugaru (Korean red chili flakes)	4.0	cups	c	5
+249	61	4 cups gochugaru (Korean red chili flakes)	4.0	cups	c	5
 249	94	3 green onions, cut into 2-inch pieces	3.0	\N	\N	6
 249	148	3 Napa cabbages	3.0	\N	\N	7
 249	29	2 cups radish (1/2 Korean radish), cut into matchstick pieces	2.0	cups	c	8
@@ -3827,7 +3834,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 253	114	Pinch of sugar	1.0	pinch	pinch	13
 253	252	1 cup firm tofu, rinsed and cut into 1-inch cubes	1.0	cup	c	14
 253	233	1 cup zucchini, julienned	1.0	cup	c	15
-254	0	Brine solution (3- 4 liters water+ 1 ½ cups coarse salt)	3.0	liters	l	0
+254	7	Brine solution (3- 4 liters water+ 1 1/2 cups coarse salt)	3.0	liters	l	0
 254	78	3 tablespoons chilly paste (reduce for less spicy)/ korean gochujang paste	3.0	tablespoons	T	1
 254	163	1/8 cup fish sauce	0.125	cup	c	2
 254	23	1 whole garlic bulb, skinned	1.0	\N	\N	3
@@ -3849,7 +3856,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 255	6	3 tablespoons of salt	3.0	tablespoons	T	8
 255	94	3 organic scallions, sliced, include green and white parts	3.0	\N	\N	9
 255	28	1 teaspoon of toasted sesame oil	1.0	teaspoon	t	10
-256	0	1 ahi tuna steak (approx. less than a 1 lb.)	1.0	\N	\N	0
+256	103	1 ahi tuna steak (approx. less than a 1 lb.)	1.0	\N	\N	0
 256	152	5 small leaves of fresh mint	5.0	leaves	leaves	1
 256	297	1/2 tablespoon rice vinegar (recommended: O Yuzu Rice Vinegar)	0.5	\N	\N	2
 256	139	1 Juice of lime	1.0	\N	\N	3
@@ -4157,7 +4164,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 282	280	Salt pepper to taste	12.0	servings	servings	13
 282	105	1 cup vegetable broth	1.0	cup	c	14
 282	4	1 yellow onion	1.0	\N	\N	15
-283	0	2 teaspoons dried ancho chili powder	2.0	teaspoons	t	0
+283	95	2 teaspoons dried ancho chili powder	2.0	teaspoons	t	0
 283	58	Freshly-ground black pepper to taste	4.0	servings	servings	1
 283	122	Pinch of Cayenne pepper	1.0	pinch	pinch	2
 283	92	1 tablespoon cilantro, chopped fine	1.0	tablespoon	T	3
@@ -4474,7 +4481,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 307	216	2 tsp Dill, Finely Chopped	2.0	tsp	t	2
 307	14	1 egg	1.0	\N	\N	3
 307	23	3 cloves garlic, minced	3.0	cloves	cloves	4
-307	0	1/2 cup nonfat greek yogurt	0.5	cup	c	5
+307	161	1/2 cup nonfat greek yogurt	0.5	cup	c	5
 307	260	2 lbs ground turkey	2.0	lbs	lb	6
 307	300	1/4 cup hummus	0.25	cup	c	7
 307	18	1/2 lemon, juiced	0.5	\N	\N	8
@@ -4818,7 +4825,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 339	14	1 Large Egg	1.0	\N	\N	0
 339	298	1 (3 oz.) pkg. vanilla instant pudding	3.0	oz	oz	1
 339	264	1 kiwi fruit, peeled	1.0	\N	\N	2
-339	0	1 c. light cream	1.0	c	c	3
+339	310	1 c. light cream	1.0	c	c	3
 339	20	60ml Milk	60.0	ml	ml	4
 339	306	1 1/2 cups strawberries (about ½ pint)	1.5	cups	c	5
 339	0	1 (9 oz.) pkg. white or yellow cake mix	9.0	oz	oz	6
@@ -5219,7 +5226,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 370	4	1 onion (cut into wedges)	1.0	\N	\N	7
 370	74	1 tablespoon soy sauce	1.0	tablespoon	T	8
 371	50	1/4 cup Brown Sugar	0.25	cup	c	0
-371	0	1 teaspoon Hot Chili Sauce	1.0	teaspoon	t	1
+371	78	1 teaspoon Hot Chili Sauce	1.0	teaspoon	t	1
 371	163	2 tablespoons Fish Sauce	2.0	tablespoons	T	2
 371	141	2 tablespoons Minced Fresh Ginger	2.0	tablespoons	T	3
 371	162	1 tablespoon ground Dried Turmeric	1.0	tablespoon	T	4
@@ -5231,7 +5238,7 @@ COPY "IngredientsInRecipes" (recipe_id, ingredient_id, original_string, amount, 
 372	2	1 c. julienned carrots	1.0	c	c	2
 372	78	2 teaspoons hot chili paste (depending on how spicy you prefer your dish- start with 1 tsp and taste test it)	2.0	teaspoons	t	3
 372	40	1 teaspoon corn starch dissolved in 1 tablespoon cold water	1.0	teaspoon	t	4
-372	0	1 12 ounce block extra firm tofu, drained and pressed to remove water	12.0	ounce	oz	5
+372	252	1 12 ounce block extra firm tofu, drained and pressed to remove water	12.0	ounce	oz	5
 372	163	1 T. fish sauce	1.0	T	T	6
 372	467	3 tablespoons oyster sauce	3.0	tablespoons	T	7
 372	28	2 tablespoons Sesame oil	2.0	tablespoons	T	8
@@ -5998,6 +6005,13 @@ COPY "Nutritional Content" (id, ingredient_id, calories, total_fat_g, saturated_
 517	517	376	6.73	1.5	0	497	73.23	9.4	4.36	12.09	3299	21.6	401	33.17
 518	518	381	2.05	0.458	0	527	85.05	0.4	9.87	6.75	3788	63.3	5	30.42
 519	519	300	20	8	0	80	100	80	16	20	1000	18	700	16.2
+520	520	353	0.5	0.197	0	37	75.4	0	0	12.2	0	0	141	4.41
+521	521	53	0.47	0.084	0	79	11.15	3.4	0	3.4	9497	11.2	27	1.09
+522	522	241	0.51	0.017	0	10	62.64	7.3	53.44	3.39	3604	1	55	2.66
+523	523	589	49.94	7.607	0	486	21.57	8	8.41	24.06	0	0	45	1.9
+524	524	228	13.7	8.07	0	21	57.9	37	1.75	19.6	0	0	128	13.86
+524	524	228	13.7	8.07	0	21	57.9	37	1.75	19.6	0	0	128	13.86
+525	525	404	39.34	13.22	76	63	0	0	0	11.49	168	2.8	11	2.4
 \.
 
 
@@ -6007,7 +6021,7 @@ COPY "Nutritional Content" (id, ingredient_id, calories, total_fat_g, saturated_
 -- Name: Nutritional Content_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('"Nutritional Content_id_seq"', 520, FALSE);
+SELECT pg_catalog.setval('"Nutritional Content_id_seq"', 526, FALSE);
 
 --
 -- TOC entry 2048 (class 0 OID 16682)
