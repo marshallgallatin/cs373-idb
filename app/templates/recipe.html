@@ -101,6 +101,7 @@
 					if ($scope.data.instructions.indexOf("<li>") != -1) {
 						$scope.data.instructions = $scope.data.instructions.replace("<ol><li>", "").replace("</li></ol>", "").split("</li><li>");
 					} else {
+						$scope.data.instructions = $scope.data.instructions.replace(/<[^.]+>/g, "");
 						$scope.data.instructions = $scope.data.instructions.split(/\.\s?(?=[A-Z])/);
 						console.log("instructions length: " + $scope.data.instructions.length);
 					}
